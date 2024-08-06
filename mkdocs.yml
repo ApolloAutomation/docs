@@ -1,13 +1,15 @@
 extra_css:
   - stylesheets/extra.css
-
 site_name: Apollo Docs
+site_url: https://wiki.apolloautomation.com
 theme:
   logo: assets/Apollo_Square.png
   name: material
   features:
-    - navigation.tabs
     - navigation.sections
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.progress
     - toc.integrate
     - navigation.top
     - search.suggest
@@ -59,3 +61,12 @@ markdown_extensions:
 
 copyright: |
   &copy; 2023 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
+
+nav:
+  - Home:
+    - Sensors:
+      - Getting Started: sensors/gettingstarted.md
+      - Bluetooth Tracking: sensors/bluetoothtracking.md
+      - MSR-1:
+        - Updating: sensors/msr1/updating.md
+    - Contact Us: contact.md
