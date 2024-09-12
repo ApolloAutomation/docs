@@ -1,13 +1,12 @@
 # Bluetooth Tracking
 
-#### <span style="text-decoration: underline;">**Apple iPhone/iWatch**</span>  
-
+#### <span style="text-decoration: underline;">**Apple iPhone/iWatch**</span>
 
 ##### Alternative HACS Integration: [iPhone Detect](https://github.com/mudape/iphonedetect)
 
-[https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6](https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6)  
-  
-Thanks to user [Jacob Pfeifer](https://discord.com/channels/1126966963206361199/1126966963755819080/1202032228050419732)!  
+[https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6](https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6)
+
+Thanks to user [Jacob Pfeifer](https://discord.com/channels/1126966963206361199/1126966963755819080/1202032228050419732)!
 Ok, so looks like I've got signal strength tracking working for Apple watches by getting the mac address from the home assistant private ble device integration. Here's a quick write-up if anyone else is interested. The end of the doc has a complete configuration file example.
 
 ```
@@ -31,6 +30,7 @@ text_sensor:
 ```
 
 3.)  Create a template sensor for storing and transmitting the rssi value:
+
 ```yaml
 sensor:
   - platform: template
@@ -46,6 +46,7 @@ sensor:
 ```
 
 4.) Create a custom ble tracker that uses the mac address from home assistant to match the device:
+
 ```yaml
 esp32_ble_tracker:
   scan_parameters:
@@ -63,6 +64,7 @@ esp32_ble_tracker:
 ```
 
 5) Ensure the power save mode for wifi is set to light (msr-1 defaults to using none which does not work with bluetooth tracking):
+
 ```yaml
 wifi:
   power_save_mode: light
@@ -73,6 +75,7 @@ At this point if you install the changes on the device you should be successfull
 ## OPTIONAL PRESENCE DETECTION SECTION
 
 6) Create configuration values for detection signal strength:
+
 ```yaml
 number:
   - platform: template
@@ -102,6 +105,7 @@ number:
 ```
 
 7) Create a sensor for storing and filtering the presence value:
+
 ```yaml
 sensor:
   - platform: template
@@ -113,6 +117,7 @@ sensor:
 ```
 
 8) Create a sensor for transmitting the filtered presence state:
+
 ```yaml
 binary_sensor:
   - platform: template
@@ -130,6 +135,7 @@ binary_sensor:
 ```
 
 9) Update the rssi value to set the presence value when it receives a new rssi value:
+
 ```yaml
 sensor:
   - platform: template
@@ -156,7 +162,9 @@ sensor:
 Now once you install the esphome changes you should be able to go to the device and set db values for the presence detection and also should see a presence sensor state.
 
 ## COMPLETE CONFIGURATION
+
 A complete example of a configuration:
+
 ```yaml
 substitutions:
   name: apollo-msr-1-6c7a64
@@ -222,7 +230,7 @@ sensor:
       - sliding_window_moving_average:
           window_size: 3
           send_every: 1
-          
+        
 
 binary_sensor:
   - platform: template
@@ -294,41 +302,41 @@ wifi:
     [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en_US&gl=US&pli=1)  
     [Apple](https://apps.apple.com/us/app/home-assistant/id1099568401)
 3. Navigate to the HA settings  
-      
+    
     [![Screenshot_20231109_235524_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235524-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235524-photos.jpg)
 4. Select Companion app  
-      
+    
     [![Screenshot_20231109_235557_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235557-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235557-photos.jpg)
 5. Select Manage sensors  
-      
+    
     [![Screenshot_20231109_235621_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235621-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235621-photos.jpg)
 6. Turn on the "BLE Transmitter"  
-      
+    
     [![Screenshot_20231109_235702_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235702-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235702-photos.jpg)
 7. After opening BLE transmitter and turning it on, then scroll down to get the iBeacon unique ID  
-      
+    
     [![Screenshot_20231109_235757_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235757-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235757-photos.jpg)
 8. Add it to the ESPHome yaml config for the MSR-1  
-      
+    
     [![ESPHome YAML Edit.png](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/esphome-yaml-edit.png)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/esphome-yaml-edit.png)
 9. Be sure to add "power\_save\_mode: LIGHT" to the wifi section  
-      
+    
     ```
     # Example config.yaml
     wifi:
       ssid: !secret wifi_ssid
       password: !secret wifi_password
       power_save_mode: LIGHT
-    
+  
     esp32_ble_tracker:
-    
+  
     binary_sensor:
       - platform: ble_presence
         ibeacon_uuid: '77a6438d-ea95-4522-b46c-cb2b4412076f'
         ibeacon_major: 100
         ibeacon_minor: 1
         name: "Jane's Phone"
-    
+  
     ```
 10. Should be all set!
 
@@ -357,3 +365,4 @@ power\_save\_mode: light
 If you encounter a device with a blank name (e.g., anything Android), you'll need to click "Configure" and enter the UUID manually. This is because Home Assistant does not allow devices with empty names (interestingly, their own companion app permits forcing an Android to become an iBeacon but then doesn't require a name field).
 
 For devices where you don't know the IRK, you may have to wait about 300 seconds for your iBeacon Tracker to process 10 different iterations of the same UUID but with the last four characters randomly changed. Once ten instances have appeared, the iBeacon Tracker integration should recognize they're all the same device and combine them into a single tracker element. Just be patient, though it can be a bit frustrating.
+```
