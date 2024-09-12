@@ -5,6 +5,7 @@ site_url: https://wiki.apolloautomation.com
 theme:
   logo: assets/Apollo_Square.png
   name: material
+  custom_dir: overrides
   features:
     - navigation.sections
     - navigation.path
