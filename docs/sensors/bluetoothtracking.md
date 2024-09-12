@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Bluetooth Tracking
 
 #### <span style="text-decoration: underline;">**Apple iPhone/iWatch**</span>
