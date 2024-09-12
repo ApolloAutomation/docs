@@ -1,0 +1,9 @@
+source: docs
+paths:
+  uploads: uploads
+  static: ''
+  collections: ''
+  data: ''
+editor:
+  default_path:
+timezone: Etc/UTC
