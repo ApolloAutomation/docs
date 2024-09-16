@@ -52,8 +52,6 @@ _editables:
     table: true
     underline: true
     undo: true
-    redo: true
     removeformat: true
-    copyformatting: true
 
 timezone: Etc/UTC
