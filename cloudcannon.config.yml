@@ -1,7 +1,3 @@
-paths:
-  uploads: docs
-  uploads_use_relative_path: true
-  static: docs
 collections_config:
   docs:
     path: docs
@@ -12,6 +8,11 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    filter:
+      base: strict
+      exclude:
+        - /schema
+        - /schema.json
 _editables:
   content:
     allow_custom_markup: false
