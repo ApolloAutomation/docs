@@ -4,4 +4,6 @@
 
 Welcome to Apollo Docs
 
-![](/co-2-graph.png)
+&nbsp;
+
+![](../cs6xir5fyo8wvsbi9sw3466ghouwft7hha.png)
