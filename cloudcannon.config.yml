@@ -1,18 +1,30 @@
+paths:
+  uploads: "docs"
+  uploads_filename:
+  uploads_use_relative_path:
+  static: "docs"
+  dam_uploads:
+  dam_uploads_filename:
+  dam_static:
+  collections:
+  data:
+  layouts:
+  includes:
 collections_config:
   docs:
     path: docs
     output: true
     url: /[full_slug]/
-    name: Documentation
-    icon: notes
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
     filter:
       base: strict
       exclude:
         - /schema
         - /schema.json
+    name: Documentation
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 _editables:
   content:
     allow_custom_markup: false
@@ -40,4 +52,8 @@ _editables:
     table: true
     underline: true
     undo: true
+    redo: true
+    removeformat: true
+    copyformatting: true
+
 timezone: Etc/UTC
