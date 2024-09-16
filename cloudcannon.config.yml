@@ -52,6 +52,5 @@ _editables:
     table: true
     underline: true
     undo: true
-    removeformat: true
 
 timezone: Etc/UTC
