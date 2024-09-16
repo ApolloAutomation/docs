@@ -6,4 +6,4 @@ Welcome to Apollo Docs
 
 &nbsp;
 
-![](https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/<image_id>/<variant_name>)
+<img src="/uploads/bit-ly-3xrp5bx-2.png" height="656" width="656" />
