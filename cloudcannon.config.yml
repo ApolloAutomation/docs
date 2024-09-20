@@ -1,5 +1,5 @@
 paths:
-  uploads: "docs"
+  uploads: "assets"
   uploads_filename:
   uploads_use_relative_path:
   static: "docs"
