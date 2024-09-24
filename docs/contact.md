@@ -10,4 +10,4 @@
 
 &nbsp;
 
-<img src="/assets/img-4098.jpeg" height="3024" width="4032" />
+![](assets/20240503-171942.jpg)
