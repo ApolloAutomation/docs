@@ -2,6 +2,7 @@ extra_css:
   - stylesheets/extra.css
 site_name: Apollo Docs
 site_url: https://apolloautomation.github.io/Docs/
+use_directory_urls: true
 theme:
   logo: assets/Apollo_Square.png
   name: material
