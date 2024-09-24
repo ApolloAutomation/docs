@@ -1,6 +1,6 @@
 &nbsp;
 
-![](/assets/apollo-1.png)
+<img src="/assets/Apollo.png" height="800" width="800" />
 
 &nbsp;
 
