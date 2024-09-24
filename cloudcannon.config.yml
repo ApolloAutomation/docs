@@ -1,8 +1,8 @@
 paths:
-  uploads: "docs/assets"
+  uploads: "assets"
   uploads_filename:
   uploads_use_relative_path:
-  static: ""
+  static: "docs"
   dam_uploads:
   dam_uploads_filename:
   dam_static:
