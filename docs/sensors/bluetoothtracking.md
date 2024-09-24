@@ -1,10 +1,9 @@
 ---
 comments: true
 ---
-
 # Bluetooth Tracking
 
-#### <span style="text-decoration: underline;">**Apple iPhone/iWatch**</span>
+#### **Apple iPhone/iWatch**
 
 ##### Alternative HACS Integration: [iPhone Detect](https://github.com/mudape/iphonedetect)
 
@@ -33,7 +32,7 @@ text_sensor:
     attribute: current_address
 ```
 
-3.)  Create a template sensor for storing and transmitting the rssi value:
+3\.)  Create a template sensor for storing and transmitting the rssi value:
 
 ```yaml
 sensor:
@@ -49,7 +48,7 @@ sensor:
           send_every: 1
 ```
 
-4.) Create a custom ble tracker that uses the mac address from home assistant to match the device:
+4\.) Create a custom ble tracker that uses the mac address from home assistant to match the device:
 
 ```yaml
 esp32_ble_tracker:
@@ -67,7 +66,7 @@ esp32_ble_tracker:
           }
 ```
 
-5) Ensure the power save mode for wifi is set to light (msr-1 defaults to using none which does not work with bluetooth tracking):
+5. Ensure the power save mode for wifi is set to light (msr-1 defaults to using none which does not work with bluetooth tracking):
 
 ```yaml
 wifi:
@@ -78,7 +77,7 @@ At this point if you install the changes on the device you should be successfull
 
 ## OPTIONAL PRESENCE DETECTION SECTION
 
-6) Create configuration values for detection signal strength:
+6. Create configuration values for detection signal strength:
 
 ```yaml
 number:
@@ -108,7 +107,7 @@ number:
     update_interval: never
 ```
 
-7) Create a sensor for storing and filtering the presence value:
+7. Create a sensor for storing and filtering the presence value:
 
 ```yaml
 sensor:
@@ -120,7 +119,7 @@ sensor:
           send_every: 1
 ```
 
-8) Create a sensor for transmitting the filtered presence state:
+8. Create a sensor for transmitting the filtered presence state:
 
 ```yaml
 binary_sensor:
@@ -138,7 +137,7 @@ binary_sensor:
       }
 ```
 
-9) Update the rssi value to set the presence value when it receives a new rssi value:
+9. Update the rssi value to set the presence value when it receives a new rssi value:
 
 ```yaml
 sensor:
@@ -227,14 +226,14 @@ sensor:
               id(room_presence_debounce).publish_state(0);
             }
         - script.execute: presence_timeout  # Publish 0 if no rssi received
-  
+
   - platform: template
     id: room_presence_debounce
     filters:
       - sliding_window_moving_average:
           window_size: 3
           send_every: 1
-        
+
 
 binary_sensor:
   - platform: template
@@ -294,70 +293,70 @@ wifi:
 
 ```
 
-##### <span style="text-decoration: underline;">**Android** </span>Helpful links:   
-[ESP32 Bluetooth Low Energy Tracker Hub](https://esphome.io/components/esp32_ble_tracker.html)  
-[iBeacon support for ble\_presence](https://github.com/esphome/esphome/pull/1627)  
-[ESP32 Bluetooth Low Energy Beacon](https://esphome.io/components/esp32_ble_beacon.html)  
+##### <span style="text-decoration: underline;">**Android** </span>Helpful links:
+[ESP32 Bluetooth Low Energy Tracker Hub](https://esphome.io/components/esp32_ble_tracker.html)
+[iBeacon support for ble\_presence](https://github.com/esphome/esphome/pull/1627)
+[ESP32 Bluetooth Low Energy Beacon](https://esphome.io/components/esp32_ble_beacon.html)
 [iBeacon Region](https://owntracks.org/booklet/features/beacons/)
 
-1. Install the iBeacon integration in HA  
+1. Install the iBeacon integration in HA
     [iBeacon Install Guide](https://www.home-assistant.io/integrations/ibeacon/)
-2. Install the Home Assistant App on your device  
-    [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en_US&gl=US&pli=1)  
+2. Install the Home Assistant App on your device
+    [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en_US&gl=US&pli=1)
     [Apple](https://apps.apple.com/us/app/home-assistant/id1099568401)
-3. Navigate to the HA settings  
-    
+3. Navigate to the HA settings
+
     [![Screenshot_20231109_235524_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235524-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235524-photos.jpg)
-4. Select Companion app  
-    
+4. Select Companion app
+
     [![Screenshot_20231109_235557_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235557-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235557-photos.jpg)
-5. Select Manage sensors  
-    
+5. Select Manage sensors
+
     [![Screenshot_20231109_235621_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235621-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235621-photos.jpg)
-6. Turn on the "BLE Transmitter"  
-    
+6. Turn on the "BLE Transmitter"
+
     [![Screenshot_20231109_235702_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235702-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235702-photos.jpg)
-7. After opening BLE transmitter and turning it on, then scroll down to get the iBeacon unique ID  
-    
+7. After opening BLE transmitter and turning it on, then scroll down to get the iBeacon unique ID
+
     [![Screenshot_20231109_235757_Photos.jpg](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/screenshot-20231109-235757-photos.jpg)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/screenshot-20231109-235757-photos.jpg)
-8. Add it to the ESPHome yaml config for the MSR-1  
-    
+8. Add it to the ESPHome yaml config for the MSR-1
+
     [![ESPHome YAML Edit.png](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/scaled-1680-/esphome-yaml-edit.png)](https://wiki.apolloautomation.cloud/uploads/images/gallery/2023-11/esphome-yaml-edit.png)
-9. Be sure to add "power\_save\_mode: LIGHT" to the wifi section  
-    
+9. Be sure to add "power\_save\_mode: LIGHT" to the wifi section
+
     ```
     # Example config.yaml
     wifi:
       ssid: !secret wifi_ssid
       password: !secret wifi_password
       power_save_mode: LIGHT
-  
+
     esp32_ble_tracker:
-  
+
     binary_sensor:
       - platform: ble_presence
         ibeacon_uuid: '77a6438d-ea95-4522-b46c-cb2b4412076f'
         ibeacon_major: 100
         ibeacon_minor: 1
         name: "Jane's Phone"
-  
+
     ```
 10. Should be all set!
 
-##### Thanks to our Discord user albuquerquefx for the information below!  
-  
+##### Thanks to our Discord user albuquerquefx for the information below!
+
 
 
 For those interested in using their MSR-1 as a Bluetooth proxy while also actively scanning for BLE devices, you'll need to add the following to your ESP32 YAML file (I'm using a 1.5-second scan interval with a 750ms window for sensing BLE beacons):
 
-esp32\_ble\_tracker:  
- id: ${name}\_ble\_tracker  
- scan\_parameters:  
- interval: 1500ms  
- window: 750ms  
+esp32\_ble\_tracker:
+ id: ${name}\_ble\_tracker
+ scan\_parameters:
+ interval: 1500ms
+ window: 750ms
  active: true
 
-bluetooth\_proxy:  
+bluetooth\_proxy:
  active: true
 
 Additionally, you need to include this entry in your existing Wi-Fi section:
