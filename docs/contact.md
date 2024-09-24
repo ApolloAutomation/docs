@@ -1,6 +1,6 @@
-<img src="/docs/assets/tree.jpg" height="1024" width="1024" />
-
 &nbsp;
+
+![](/assets/apollo-1.png)
 
 &nbsp;
 
