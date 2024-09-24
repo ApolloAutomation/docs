@@ -10,4 +10,4 @@
 
 &nbsp;
 
-<img src="/docs/assets/20240503-180144.jpg" height="3000" width="4000" />
+<img src="/assets/img-4098.jpeg" height="3024" width="4032" />
