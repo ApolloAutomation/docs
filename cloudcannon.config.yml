@@ -25,16 +25,6 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  base:
-    path: "/"
-    output: true
-    url: /[full_slug]/
-    filter:
-      base: strict
-      exclude:
-        - /schema
-        - /schema.json
-    name: "Root"
     
 _editables:
   content:
