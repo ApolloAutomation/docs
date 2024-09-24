@@ -10,4 +10,4 @@
 
 &nbsp;
 
-<img src="/assets/tree.jpg" height="1024" width="1024" />
+<img src="/docs/assets/apolloautomation.png" height="344" width="900" />
