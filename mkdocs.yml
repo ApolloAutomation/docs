@@ -66,9 +66,21 @@ copyright: |
 
 nav:
   - Home:
+    - Getting Started: gettingstarted.md
     - Sensors:
       - Getting Started: sensors/gettingstarted.md
       - Bluetooth Tracking: sensors/bluetoothtracking.md
       - MSR-1:
         - Updating: sensors/msr1/updating.md
     - Contact Us: contact.md
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
