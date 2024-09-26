@@ -53,5 +53,29 @@ _editables:
     table: true
     underline: true
     undo: true
+_inputs:
+  image:
+    type: image
+    options:
+      paths:
+        uploads: images
+      accepts_mime_type:
+        - image/png
+        - image/jpeg
+        - image/jpg
+      allowed_sources:
+        - site-files
+      empty_type: 
+      resize_style: contain
+      width: 400
+      height: 300
+      expandable: true
+      prevent_resize_existing_files: false
+      mime_type: image/png
+      sizes:
+        - size: 2x
+          target: _retina_image_file
+image: /docs/assets/image.png
+_retina_image_file: /docs/assets/image-2x.png
 
 timezone: Etc/UTC
