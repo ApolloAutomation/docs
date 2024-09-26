@@ -67,7 +67,7 @@ copyright: |
 nav:
   - Home:
     - General:
-      - Getting Started: general/setup/Getting-Started.md
+      - Getting Started: general/Setup/Getting-Started.md
     - Sensors:
       - Getting Started: sensors/gettingstarted.md
       - Bluetooth Tracking: sensors/bluetoothtracking.md
