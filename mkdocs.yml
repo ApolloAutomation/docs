@@ -84,18 +84,18 @@ nav:
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
-          - Getting Started: products/air1/setup/getting-started.md
+          - Getting Started: products/msr1/setup/getting-started.md
           - Updating: products/msr1/updating.md
-          - Bluetooth Tracking: general/bluetoothtracking.md
+          - Bluetooth Tracking: products/msr1/buetoothtracking.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
-          - Getting Started: products/air1/setup/getting-started.md
+          - Getting Started: products/msr2/setup/getting-started.md
           - Updating: products/msr2/updating.md
-          - Bluetooth Tracking: general/bluetoothtracking.md
+          - Bluetooth Tracking: products/msr2/buetoothtracking.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
@@ -104,31 +104,31 @@ nav:
           - FAQ: products/air1/faq.md
           - Getting Started: products/air1/setup/getting-started.md
           - Updating: products/air1/updating.md
-          - Bluetooth Tracking: general/bluetoothtracking.md
+          - Bluetooth Tracking: products/air1/buetoothtracking.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
       - MTR-1:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
-          - Getting Started: products/air1/setup/getting-started.md
+          - Getting Started: products/mtr1/setup/getting-started.md
           - Updating: products/mtr1/updating.md
-          - Bluetooth Tracking: general/bluetoothtracking.md
+          - Bluetooth Tracking: products/mtr1/buetoothtracking.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
       - PLT-1:
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
-          - Getting Started: products/air1/setup/getting-started.md
+          - Getting Started: products/plt1/setup/getting-started.md
           - Updating: products/plt1/updating.md
-          - Bluetooth Tracking: general/bluetoothtracking.md
+          - Bluetooth Tracking: products/plt1/buetoothtracking.md
           - Reviews: example.md
           - Examples: example.md
       - ODroid Hub:
           - Introduction: products/odroidhub/introduction.md
           - FAQ: products/odroidhub/faq.md
-          - Getting Started: products/air1/setup/getting-started.md
+          - Getting Started: products/odroidhub/setup/getting-started.md
           - Reviews: example.md
   - DIY: example.md
   - Contact Us: contact.md
