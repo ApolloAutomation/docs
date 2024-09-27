@@ -4,7 +4,7 @@
 
 ### **Welcome to Apollo Automation Docs!**
 
-This will be a location for troubleshooting and how to guides. If you have a question please email us at <a href="mailto:support@apolloautomation.com" target="_blank" rel="noopener">Support@ApolloAutomation.com</a> or jump in our <a href="https://discord.gg/mMNgQPyF94 " target="_blank" rel="noopener">Discord</a>
+This will be a location for troubleshooting and how to guides. If you have a question please email us at <a href="mailto:support@apolloautomation.com" title="Email support for help!" target="_blank" rel="noopener">Support@ApolloAutomation.com</a> or jump in our <a href="https://discord.gg/F3RZGPcuzV" title="Apollo Automation Discord" target="_blank" rel="noopener">Discord</a>
 
 ### **Frequent Links:**
 
@@ -16,7 +16,7 @@ This will be a location for troubleshooting and how to guides. If you have a que
 
 ### **What is Apollo Automation?**
 
-Apollo Automation is a small startup building home automation hardware that is quality, affordable, and community driven. We host monthly live streams in our <a href="https://discord.gg/mMNgQPyF94 " target="_blank" rel="noopener">Discord</a>. Apollo Automation started as a small side project for a group of friends in Lexington, KY USA. Named after Trevor's dog <a href="https://apolloautomation.com/pages/our-team" target="_blank" rel="noopener">Apollo</a> we built our first sensor due to frustration with the offerings at the time. Apollo Automation quickly grew from a side project to a real deal. We still and always will maintain our core premisses: Building our products ourselves instead of outsourcing, being transparent and available, and working with the community.
+Apollo Automation is a small startup building home automation hardware that is quality, affordable, and community driven. We host monthly live streams in our <a href="https://discord.gg/mMNgQPyF94 " target="_blank" rel="noopener">Discord</a>. Apollo Automation started as a small side project for a group of friends in Lexington, KY USA. Named after Trevor's dog <a href="https://apolloautomation.com/pages/our-team" target="_blank" rel="noopener">Apollo</a> we built our first sensor due to frustration with the offerings at the time. Apollo Automation quickly grew from a side project to a real deal. We still and always will maintain our core premises: Building our products ourselves instead of outsourcing, being transparent and available, and working with the community.
 
 ### **What do we offer?**
 

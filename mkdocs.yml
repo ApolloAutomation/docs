@@ -5,6 +5,7 @@ site_url: https://apolloautomation.github.io/
 use_directory_urls: true
 theme:
   logo: assets/Apollo_Square.png
+  favicon: assets//favicon.png
   name: material
   custom_dir: overrides
   features:
