@@ -21,7 +21,3 @@ Apollo Automation is a small startup dedicated to creating high-quality, afforda
 ### **What do we offer?**
 
 We strive to build quality products that solve real problems in home automation. Our focus is on innovation rather than imitation, and we’re proud to offer some of the best support in the industry. As a small, agile team, we are deeply committed to growing our community of users and expanding our manufacturing capabilities.
-
-&nbsp;
-
-&nbsp;
