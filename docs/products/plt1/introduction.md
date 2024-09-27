@@ -14,6 +14,6 @@ The PLT-1 uses a capacitive soil moisture sensor, which offers much better accur
 
 \- Piezo Buzzer
 
-\- Optional DS18b20 waterproof soil temperature probe (20 cm / 7.8 inches)
+\- Optional <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf" target="_blank" rel="noopener">DS18b20</a> waterproof soil temperature probe (20 cm / 7.8 inches)
 
 &nbsp;
