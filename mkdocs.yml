@@ -5,7 +5,6 @@ site_url: https://apolloautomation.github.io/
 repo_url: https://github.com/ApolloAutomation/docs
 edit_uri: https://github.com/ApolloAutomation/docs/edit/main/docs
 
-
 use_directory_urls: true
 theme:
   logo: assets/Apollo_Square.png
@@ -19,7 +18,6 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - toc.integrate
-    - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -31,26 +29,26 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: custom
-      accent: custom 
-    - scheme: slate 
+      accent: custom
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Switch to light mode
       primary: custom
       accent: green
 
 plugins:
   - glightbox:
-        draggable: false
-  - search 
+      draggable: false
+  - search
   - social:
       cards_layout_options:
-          background_color: "#111111" 
-          color: "#daa520"
-          font_family: Figtree 
+        background_color: "#111111"
+        color: "#daa520"
+        font_family: Figtree
 
 extra:
   social:
@@ -78,14 +76,69 @@ markdown_extensions:
 copyright: |
   &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
+nav:
+  - Home: index.md
+  - Products:
+      - General:
+          - Introduction: products/general/introduction.md
+          - Getting Started: products/general/setup/getting-started.md
+      - MSR-1:
+          - Introduction: products/msr1/introduction.md
+          - FAQ: products/msr1/faq.md
+          - Getting Started: products/msr1/getting-started.md
+          - Updating: products/msr1/updating.md
+          - Calibrating:
+              - Calibrating CO2: products/msr1/calibrating/co2.md
+          - Bluetooth Tracking: products/msr1/bluetoothtracking.md
+          - Reviews: example.md
+          - Examples: example.md
+          - Troubleshooting: example.md
+      - MSR-2:
+          - Introduction: products/msr2/introduction.md
+          - FAQ: products/msr2/faq.md
+          - Getting Started: products/msr2/getting-started.md
+          - Updating: products/msr2/updating.md
+          - Calibrating:
+              - Calibrating CO2: products/msr2/calibrating/co2.md
+          - Bluetooth Tracking: products/msr2/bluetoothtracking.md
+          - Reviews: example.md
+          - Examples: example.md
+          - Troubleshooting: example.md
+      - AIR-1:
+          - Introduction: products/air1/introduction.md
+          - FAQ: products/air1/faq.md
+          - Getting Started: products/air1/getting-started.md
+          - Updating: products/air1/updating.md
+          - Calibrating:
+              - Calibrating CO2: products/air1/calibrating/co2.md
+          - Bluetooth Tracking: products/air1/bluetoothtracking.md
+          - Reviews: example.md
+          - Examples: example.md
+          - Troubleshooting: example.md
+      - MTR-1:
+          - Introduction: products/mtr1/introduction.md
+          - FAQ: products/mtr1/faq.md
+          - Getting Started: products/mtr1/getting-started.md
+          - Updating: products/mtr1/updating.md
+          - Calibrating:
+              - Calibrating CO2: products/mtr1/calibrating/co2.md
+          - Bluetooth Tracking: products/mtr1/bluetoothtracking.md
+          - Reviews: example.md
+          - Examples: example.md
+          - Troubleshooting: example.md
+      - PLT-1:
+          - Introduction: products/plt1/introduction.md
+          - FAQ: products/plt1/faq.md
+          - Getting Started: products/plt1/getting-started.md
+          - Updating: products/plt1/updating.md
+          - Bluetooth Tracking: products/plt1/bluetoothtracking.md
+          - Reviews: example.md
+          - Examples: example.md
+      - ODroid Hub:
+          - Introduction: products/odroidhub/introduction.md
+          - FAQ: products/odroidhub/faq.md
+          - Getting Started: products/odroidhub/setup/getting-started.md
+          - Reviews: example.md
+  - DIY: example.md
+  - Contact Us: contact.md
     

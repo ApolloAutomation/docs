@@ -1,0 +1,1 @@
+--8<-- "products/general/setup/bluetooth-tracking.md"
