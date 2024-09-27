@@ -2,6 +2,10 @@ extra_css:
   - stylesheets/extra.css
 site_name: Apollo Docs
 site_url: https://apolloautomation.github.io/
+repo_url: https://github.com/ApolloAutomation/docs
+edit_uri: https://github.com/ApolloAutomation/docs/edit/main/docs
+
+
 use_directory_urls: true
 theme:
   logo: assets/Apollo_Square.png
@@ -9,7 +13,8 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.path
     - navigation.instant
     - navigation.instant.progress
@@ -19,6 +24,8 @@ theme:
     - search.highlight
     - content.tabs.link
     - content.code.annotation
+    - content.code.edit
+    - content.code.copy
     - content.code.copy
   language: en
   palette:
@@ -36,8 +43,14 @@ theme:
       accent: green
 
 plugins:
-  - social
-  - search
+  - glightbox:
+        draggable: false
+  - search 
+  - social:
+      cards_layout_options:
+          background_color: "#111111" 
+          color: "#daa520"
+          font_family: Figtree 
 
 extra:
   social:
