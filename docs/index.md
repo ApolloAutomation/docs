@@ -16,7 +16,7 @@ This will be a location for troubleshooting and how to guides. If you have a que
 
 ### **What is Apollo Automation?**
 
-Apollo Automation is a small startup focused on building high-quality, affordable, and community-driven home automation hardware. We host monthly livestreams on our Discord channel. Apollo Automation began as a side project for a group of friends in Lexington, KY, USA, and was named after Trevor’s dog, Apollo. Our first sensor was created out of frustration with the products available at the time. Since then, Apollo Automation has grown from a side project into a full-fledged business. We remain committed to our core values: building our products in-house rather than outsourcing, staying transparent and accessible, and collaborating closely with the community.
+Apollo Automation is a small startup dedicated to creating high-quality, affordable, and community-driven home automation hardware. What started as a side project among friends in Lexington, KY, quickly grew into a full-fledged business. Named after Trevor’s dog, Apollo, our first sensor was born out of frustration with existing products. Today, we continue to uphold our core values: building our products in-house, maintaining transparency and accessibility, and working closely with our community. You can always reach us directly, and we also host a monthly livestream on our Discord and YouTube channels to stay connected and engaged with our users.
 
 ### **What do we offer?**
 
