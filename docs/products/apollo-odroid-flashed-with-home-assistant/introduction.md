@@ -1,0 +1,3 @@
+![](../../assets/apolloautomation-finals-15.jpg)
+
+The Apollo Odroid Flashed With Home Assistant is an ODROID-M1S 8GB and is a plug-and-play solution for starting your smart home with Home Assistant. It comes with a 64GB eMMC pre-flashed with Home Assistant OS, an Apollo Automation-designed case, a USA power supply (USB-C), and an Ethernet cable. Ready to go out of the box, this setup makes it easy to launch your home automation journey.
