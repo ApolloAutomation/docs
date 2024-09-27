@@ -86,10 +86,11 @@ nav:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
           - Getting Started: products/msr1/getting-started.md
-          - Updating: products/msr1/updating.md
-          - Calibrating:
-              - Calibrating CO2: products/msr1/calibrating/co2.md
-          - Bluetooth Tracking: products/msr1/bluetoothtracking.md
+          - Additional Info:
+            - Updating: products/msr1/updating.md
+            - Calibrating:
+                - Calibrating CO2: products/msr1/calibrating/co2.md
+            - Bluetooth Proxy: products/msr1/bluetoothproxy.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
@@ -97,10 +98,11 @@ nav:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
           - Getting Started: products/msr2/getting-started.md
-          - Updating: products/msr2/updating.md
-          - Calibrating:
-              - Calibrating CO2: products/msr2/calibrating/co2.md
-          - Bluetooth Tracking: products/msr2/bluetoothtracking.md
+          - Additional Info:
+            - Updating: products/msr2/updating.md
+            - Calibrating:
+                - Calibrating CO2: products/msr2/calibrating/co2.md
+            - Bluetooth Tracking: products/msr2/bluetoothproxy.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
@@ -108,10 +110,11 @@ nav:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
           - Getting Started: products/air1/getting-started.md
-          - Updating: products/air1/updating.md
-          - Calibrating:
-              - Calibrating CO2: products/air1/calibrating/co2.md
-          - Bluetooth Tracking: products/air1/bluetoothtracking.md
+          - Additional Info:
+            - Updating: products/air1/updating.md
+            - Calibrating:
+                - Calibrating CO2: products/air1/calibrating/co2.md
+            - Bluetooth Tracking: products/air1/bluetoothproxy.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
@@ -119,10 +122,11 @@ nav:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
           - Getting Started: products/mtr1/getting-started.md
-          - Updating: products/mtr1/updating.md
-          - Calibrating:
-              - Calibrating CO2: products/mtr1/calibrating/co2.md
-          - Bluetooth Tracking: products/mtr1/bluetoothtracking.md
+          - Additional Info:
+            - Updating: products/mtr1/updating.md
+            - Calibrating:
+                - Calibrating CO2: products/mtr1/calibrating/co2.md
+            - Bluetooth Tracking: products/mtr1/bluetoothproxy.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
@@ -130,8 +134,9 @@ nav:
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
           - Getting Started: products/plt1/getting-started.md
-          - Updating: products/plt1/updating.md
-          - Bluetooth Tracking: products/plt1/bluetoothtracking.md
+          - Additional Info:
+            - Updating: products/plt1/updating.md
+            - Bluetooth Tracking: products/plt1/bluetoothproxy.md
           - Reviews: example.md
           - Examples: example.md
       - ODroid Hub:
