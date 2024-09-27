@@ -79,8 +79,59 @@ copyright: |
   &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
 
 
+nav:
+  - Home: index.md
+  - General:
+    - Getting Started: general/Setup/Getting-Started.md
+  - Products:
+    - MSR-1:
+      - FAQ: sensors/msr1/faq.md
+      - Getting Started: general/Setup/Getting-Started.md
+      - Updating: sensors/msr1/updating.md
+      - Bluetooth Tracking: general/bluetoothtracking.md
+      - Reviews:
+      - Examples:
+      - Troubleshooting:
+    - MSR-2:
+      - FAQ: sensors/msr2/faq.md
+      - Getting Started: general/Setup/Getting-Started.md
+      - Updating: sensors/msr2/updating.md
+      - Bluetooth Tracking: general/bluetoothtracking.md
+      - Reviews:
+      - Examples:
+      - Troubleshooting:
+    - AIR-1:
+      - FAQ: sensors/air1/faq.md
+      - Getting Started: general/Setup/Getting-Started.md
+      - Updating: sensors/air1/updating.md
+      - Bluetooth Tracking: general/bluetoothtracking.md
+      - Reviews:
+      - Examples:
+      - Troubleshooting:
+    - MTR-1:
+      - FAQ: sensors/mtr1/faq.md
+      - Getting Started: general/Setup/Getting-Started.md
+      - Updating: sensors/mtr1/updating.md
+      - Bluetooth Tracking: general/bluetoothtracking.md
+      - Reviews:
+      - Examples:
+      - Troubleshooting:
+    - PLT-1:
+      - FAQ: sensors/plt1/faq.md
+      - Getting Started: general/Setup/Getting-Started.md
+      - Updating: sensors/plt1/updating.md
+      - Bluetooth Tracking: general/bluetoothtracking.md
+      - Reviews:
+      - Examples:
+    - ODroid Hub:
+      - FAQ: sensors/odroidhub/faq.md
+      - Getting Started: general/Setup/Getting-Started.md
+      - Reviews:
     
-    
+  - DIY:
+  - Contact Us: contact.md
+        
+  
     
     
     
