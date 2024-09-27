@@ -4,14 +4,16 @@ The PLT-1 uses a capacitive soil moisture sensor, which offers much better accur
 
 ### Sensors:
 
-1 RGB LED
+\- Capacitive Soil Moisture
 
-1 Piezo Buzzer
+\- <a href="https://files.seeedstudio.com/wiki/Grove-AHT20_I2C_Industrial_Grade_Temperature_and_Humidity_Sensor/AHT20-datasheet-2020-4-16.pdf" target="_blank" rel="noopener">AHT20-F</a>: Air temperature and humidity sensor (The "F" version is important as it offers dust protection)
 
-<a href="https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf" target="_blank" rel="noopener">LTR390 UV</a> : Lux/UV
+\- <a href="https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf" target="_blank" rel="noopener">LTR390</a> UV: Lux/UV sensor
 
-<a href="http://www.aosong.com/en/products-113.html" target="_blank" rel="noopener">AHT20-F</a> : Air temp/humidity. F is important, it protects from dust.
+\- RGB LED
 
-Optional <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf" target="_blank" rel="noopener">DS18b20</a> waterproof soil temp probe. 20cm / 7.8 inch
+\- Piezo Buzzer
+
+\- Optional DS18b20 waterproof soil temperature probe (20 cm / 7.8 inches)
 
 &nbsp;
