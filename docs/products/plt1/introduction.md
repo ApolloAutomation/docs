@@ -6,7 +6,7 @@
 
 1 Piezo Buzzer
 
-Capacitive soil moisture. Much better than resistive. Conformal coating on ground contact portion.
+The PLT-1 uses a capacitive soil moisture sensor, which offers much better accuracy and durability compared to resistive sensors. Additionally, the ground contact portion is protected with a conformal coating, ensuring longevity and resistance to environmental factors.
 
 <a href="https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf" target="_blank" rel="noopener">LTR390 UV</a> : Lux/UV
 
