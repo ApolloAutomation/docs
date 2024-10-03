@@ -21,3 +21,7 @@ link
 # Smart Home Scene PLT-1 Review
 
 link
+
+# Smart Home Australia PLT-1 Review
+
+link
