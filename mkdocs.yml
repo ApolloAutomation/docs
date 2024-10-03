@@ -142,10 +142,10 @@ nav:
           - Examples: 
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting: products/plt1/troubleshooting.md
-      - ODroid Hub:
-          - Introduction: products/odroidhub/introduction.md
-          - FAQ: products/odroidhub/faq.md
-          - Getting Started: products/odroidhub/setup/getting-started.md
+      - Apollo ODroid:
+          - Introduction: products/apolloodroid/introduction.md
+          - FAQ: products/apolloodroid/faq.md
+          - Getting Started: products/apolloodroid/setup/getting-started.md
           - Reviews: example.md
   - DIY: example.md
   - Contact Us: contact.md
