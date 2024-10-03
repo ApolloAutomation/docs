@@ -12,7 +12,7 @@ This will be a location for troubleshooting and how to guides. If you have a que
 * [Tuning your MSR-2 radar]()
 * [Setting up zones on the MTR-1]()
 * [Discord (Support, community, updates, live stream)]()
-* [YouTube ( Tutorials, live stream )]()
+* <a href="https://www.youtube.com/@ApolloAutomation" target="_blank" rel="noopener">YouTube ( Tutorials, live stream )</a>
 
 ### **What is Apollo Automation?**
 
