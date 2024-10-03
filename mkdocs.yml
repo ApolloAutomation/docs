@@ -139,7 +139,7 @@ nav:
             - Bluetooth Tracking: products/plt1/bluetoothproxy.md
             - Sensor Definitons: products/plt1/sensor-definitions.md
           - Reviews: products/plt1/reviews.md
-          - Examples: products/plt-1/examples.md
+          - Examples: products/plt-1/example.md
           - Troubleshooting: products/plt1/troubleshooting.md
       - ODroid Hub:
           - Introduction: products/odroidhub/introduction.md
