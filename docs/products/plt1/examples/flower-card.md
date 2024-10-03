@@ -12,7 +12,7 @@ This is used as a base for the sister-integration [https://github.com/Olen/homea
 
 <a href="https://github.com/Olen/lovelace-flower-card?tab=readme-ov-file" target="_blank" rel="noopener"><strong>Flower Card GitHub</strong></a>
 
-### **<u>Flower Card Code</u>**
+Flower Card Code
 
 ```yaml
 type: custom:flower-card
