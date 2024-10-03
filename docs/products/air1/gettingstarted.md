@@ -1,1 +1,1 @@
-\--8&lt;-- "/docs/products/general/setup/getting-started.md"
+\--8&lt;-- "/products/general/setup/getting-started.md"
