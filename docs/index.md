@@ -4,7 +4,7 @@
 
 ### **Welcome to Apollo Automation Docs!**
 
-This will be a location for troubleshooting and how to guides. If you have a question please email us at <a href="mailto:support@apolloautomation.com" title="Email support for help!" target="_blank" rel="noopener">support@apolloautomation.com</a> or jump in our <a href="https://discord.gg/F3RZGPcuzV" title="Apollo Automation Discord" target="_blank" rel="noopener">Discord</a>
+This will be a location for troubleshooting and how to guides. If you have a question please email us at <a href="mailto:support@apolloautomation.com" title="Email support for help!" target="_blank" rel="noopener">support@apolloautomation.com</a> or jump in our <a href="https://discord.gg/F3RZGPcuzV" title="Apollo Automation Discord" target="_blank" rel="noopener">Discord</a>.
 
 ### **Frequent Links:**
 
@@ -12,7 +12,7 @@ This will be a location for troubleshooting and how to guides. If you have a que
 * [Tuning your MSR-2 radar]()
 * [Setting up zones on the MTR-1]()
 * [Discord (Support, community, updates, live stream)]()
-* [YouTube ( Tutorials, live stream )]()
+* <a href="https://www.youtube.com/@ApolloAutomation" target="_blank" rel="noopener">YouTube ( Tutorials, live stream )</a>
 
 ### **What is Apollo Automation?**
 
