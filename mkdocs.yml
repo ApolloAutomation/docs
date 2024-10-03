@@ -4,6 +4,7 @@ site_name: Apollo Docs
 site_url: https://apolloautomation.github.io/
 repo_url: https://github.com/ApolloAutomation/docs
 edit_uri: https://github.com/ApolloAutomation/docs/edit/main/docs
+site_author: Apollo Automation LLC
 
 use_directory_urls: true
 theme:
@@ -60,18 +61,7 @@ extra:
       link: https://discord.gg/mMNgQPyF94
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
   - pymdownx.snippets
-  - admonition
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
 
 copyright: |
   &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
