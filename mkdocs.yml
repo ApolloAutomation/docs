@@ -17,7 +17,7 @@ site_author: Apollo Automation LLC
 use_directory_urls: true
 theme:
   logo: assets/Apollo_Square.png
-  favicon: assets//favicon.png
+  favicon: assets/favicon.png
   name: material
   font:
     text: Roboto
@@ -104,58 +104,58 @@ nav:
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
-          - Getting Started: products/msr1/gettingstarted.md
+          - Getting Started: products/general/setup/getting-started-msr1.md
           - Additional Info:
             - Updating: products/msr1/updating.md
             - Calibrating:
                 - Calibrating CO2: products/msr1/calibrating/co2.md
-            - Bluetooth Proxy: products/msr1/bluetoothproxy.md
+            - Bluetooth Proxy: products/general/setup/bluetooth-proxy-msr1.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
-          - Getting Started: products/msr2/gettingstarted.md
+          - Getting Started: products/general/setup/getting-started-msr2.md
           - Additional Info:
             - Updating: products/msr2/updating.md
             - Calibrating:
                 - Calibrating CO2: products/msr2/calibrating/co2.md
-            - Bluetooth Tracking: products/msr2/bluetoothproxy.md
+            - Bluetooth Proxy: products/general/setup/bluetooth-proxy-msr2.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
-          - Getting Started: products/air1/gettingstarted.md
+          - Getting Started: products/general/setup/getting-started-air1.md
           - Additional Info:
             - Updating: products/air1/updating.md
             - Calibrating:
                 - Calibrating CO2: products/air1/calibrating/co2.md
-            - Bluetooth Tracking: products/air1/bluetoothproxy.md
+            - Bluetooth Proxy: products/general/setup/bluetooth-proxy-air1.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
       - MTR-1:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
-          - Getting Started: products/mtr1/gettingstarted.md
+          - Getting Started: products/general/setup/getting-started-mtr1.md
           - Additional Info:
             - Updating: products/mtr1/updating.md
             - Calibrating:
                 - Calibrating CO2: products/mtr1/calibrating/co2.md
-            - Bluetooth Tracking: products/mtr1/bluetoothproxy.md
+            - Bluetooth Proxy: products/general/setup/bluetooth-proxy-mtr1.md
           - Reviews: example.md
           - Examples: example.md
           - Troubleshooting: example.md
       - PLT-1:
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
-          - Getting Started: products/plt1/gettingstarted.md
+          - Getting Started: products/general/setup/getting-started-plt1.md
           - Additional Info:
             - Updating: products/plt1/updating.md
-            - Bluetooth Tracking: products/plt1/bluetoothproxy.md
+            - Bluetooth Proxy: products/general/setup/bluetooth-proxy-plt1.md
             - Sensor Definitons: products/plt1/sensor-definitions.md
           - Reviews: products/plt1/reviews.md
           - Examples: 

@@ -19,7 +19,7 @@ You can connect to the ESPHome addon in Home Assistant to easily update your dev
 
 Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
 
-![image.png](/docs/assets/9P0image.png)
+![image.png](../assets/9P0image.png)
 
 ```yaml
 # Your Wi-Fi SSID and password - keep the quotes and just replace the name and password between the quotes!
