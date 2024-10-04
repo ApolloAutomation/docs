@@ -104,7 +104,7 @@ nav:
           - Calibrating and Updating:
             - Calibrating:
               - CO2: products/general/calibrating-and-updating/co2-calibration.md
-              - CO2 MObile: products/general/calibrating-and-updating/co2-calibration-quick-mobile.md
+              - CO2 Mobile: products/general/calibrating-and-updating/co2-calibration-quick-mobile.md
               - Temperature and Humidity: example.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
       - MSR-1:
