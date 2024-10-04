@@ -1,1 +1,1 @@
---8<-- "products/general/setup/getting-started.md"
+---8<--- "products/general/setup/getting-started.md"
