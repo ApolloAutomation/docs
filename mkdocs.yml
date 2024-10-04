@@ -164,7 +164,7 @@ nav:
       - Apollo ODroid:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md
-          - Getting Started: products/apolloodroid/setup/getting-started.md
+          - Getting Started: products/apolloodroid/getting-started.md
           - Reviews: products/apolloodroid/reviews.md
   - DIY: example.md
   - Contact Us: contact.md
