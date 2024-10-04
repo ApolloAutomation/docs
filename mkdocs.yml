@@ -101,6 +101,11 @@ nav:
       - General:
           - Introduction: products/general/introduction.md
           - Getting Started: products/general/setup/getting-started.md
+          - Calibrating and Updating:
+            - Calibrating:
+              - CO2:
+              - Temperature and Humidity:
+            - Updating: products/general/calibrating-and-updating/updating-firmware.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
