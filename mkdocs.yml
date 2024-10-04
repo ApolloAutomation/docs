@@ -83,10 +83,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       check_paths: true
+      base_path: "../docs"
   - admonition
   - pymdownx.arithmatex:
       generic: true
-      base_path: "../docs"
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
