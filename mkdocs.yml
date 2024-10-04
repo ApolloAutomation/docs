@@ -165,7 +165,7 @@ nav:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md
           - Getting Started: products/apolloodroid/setup/getting-started.md
-          - Reviews: example.md
+          - Reviews: products/apolloodroid/reviews.md
   - DIY: example.md
   - Contact Us: contact.md
     
