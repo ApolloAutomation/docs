@@ -67,7 +67,6 @@ plugins:
         background_color: "#111111"
         color: "#daa520"
         font_family: Figtree
-  - markdown-include
 
 extra:
   social:
@@ -82,7 +81,6 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - admonition
   - pymdownx.arithmatex:
       generic: true
