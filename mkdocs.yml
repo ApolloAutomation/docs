@@ -44,7 +44,7 @@ theme:
         icon: material/brightness-auto
         name: Color theme set to Automatic. Click to change
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: light
       primary: custom
       accent: custom
       toggle:
