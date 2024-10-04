@@ -103,8 +103,9 @@ nav:
           - Getting Started: products/general/setup/getting-started.md
           - Calibrating and Updating:
             - Calibrating:
-              - CO2:
-              - Temperature and Humidity:
+              - CO2: products/general/calibrating-and-updating/co2-calibration.md
+              - CO2 MObile: products/general/calibrating-and-updating/co2-calibration-quick-mobile.md
+              - Temperature and Humidity: example.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
