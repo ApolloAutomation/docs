@@ -101,6 +101,12 @@ nav:
       - General:
           - Introduction: products/general/introduction.md
           - Getting Started: products/general/setup/getting-started.md
+          - Calibrating and Updating:
+            - Calibrating:
+              - CO2: products/general/calibrating-and-updating/co2-calibration.md
+              - CO2 Mobile: products/general/calibrating-and-updating/co2-calibration-quick-mobile.md
+              - Temperature and Humidity: example.md
+            - Updating: products/general/calibrating-and-updating/updating-firmware.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
@@ -164,8 +170,8 @@ nav:
       - Apollo ODroid:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md
-          - Getting Started: products/apolloodroid/setup/getting-started.md
-          - Reviews: example.md
+          - Getting Started: products/apolloodroid/getting-started.md
+          - Reviews: products/apolloodroid/reviews.md
   - DIY: example.md
   - Contact Us: contact.md
     
