@@ -1,5 +1,13 @@
 extra_css:
   - stylesheets/extra.css
+  - https://unicons.iconscout.com/release/v4.0.8/css/line.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
+  # - css/lightgallery.min.css
+  - stylesheets/extra.css
+  - stylesheets/nocopy.css
+  - stylesheets/design.css
+  - stylesheets/osano.css
+  - stylesheets/pmm.css
 site_name: Apollo Docs
 site_url: https://apolloautomation.github.io/
 repo_url: https://github.com/ApolloAutomation/docs
@@ -11,6 +19,9 @@ theme:
   logo: assets/Apollo_Square.png
   favicon: assets//favicon.png
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
   custom_dir: overrides
   features:
     - navigation.tabs
@@ -61,7 +72,18 @@ extra:
       link: https://discord.gg/mMNgQPyF94
 
 markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
 
 copyright: |
   &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
