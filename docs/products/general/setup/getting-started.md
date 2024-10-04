@@ -1,8 +1,5 @@
 # Getting Started
 
-
-
-
 This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our [Discord](https://discord.gg/mMNgQPyF94) for some help.
 
 ### Connecting Through Hotspot
