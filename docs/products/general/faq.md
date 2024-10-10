@@ -86,7 +86,11 @@ If your space is not an issue then please reboot or even try reinstalling the es
 
 #### Question:
 
+My CO2 values are way off from my other Apollo devices.
+
 #### Answer:
+
+If your sensor is exposed to high levels of vibrations or too much airflow, the SCD40 CO2 sensor will have issues working properly. https://sensirion.com/products/catalog/SCD40
 
 ---
 
@@ -96,7 +100,6 @@ If your space is not an issue then please reboot or even try reinstalling the es
 
 ---
 
-### ~~General Troubleshooting Suggestions~~  
-
+### ~~General Troubleshooting Suggestions~~
 
 If your gates are acting strangely and reporting much more energy than they should, make sure there is no tension on the usb cable. One user reported still energy in gates 2 and 3 until the tension was removed from the cable.
