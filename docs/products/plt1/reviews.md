@@ -1,27 +1,13 @@
-# Michael Leen PLT-1 Review
+# [Simon Says Home Assistant PLT-1 Review](https://youtu.be/hocliw98_Gk?si=8TMFLD7xiYah1RmJ)
 
-link
+# [Michael Leen PLT-1 Review](https://youtu.be/tSYUJESNyFM?si=9k0OBns9XvNzYjyz)
 
 # Bearded Tinker PLT-1 Review
 
-link
-
-# Simon PLT-1 Review
-
-link
-
 # Hands On Katie PLT-1 Review
-
-link
 
 # Mostly Chris PLT-1 Review
 
-link
-
 # Smart Home Scene PLT-1 Review
 
-link
-
 # Smart Home Australia PLT-1 Review
-
-link
