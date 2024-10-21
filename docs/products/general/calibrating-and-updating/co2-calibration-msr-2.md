@@ -1,1 +1,1 @@
---8<-- "products/general/setup/calibrating-and-updating/co2-calibration.md"
+--8<-- "products/general/calibrating-and-updating/co2-calibration.md"
