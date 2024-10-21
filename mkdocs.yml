@@ -137,7 +137,7 @@ nav:
           - Additional Info:
             - Updating: products/msr2/updating.md
             - Calibrating:
-                - Calibrating CO2: products/general/calibrating-and-updating/co2-calibration.md
+                - Calibrating CO2: products/general/calibrating-and-updating/co2-calibration-msr-2.md
             - Bluetooth Proxy: products/general/setup/bluetooth-proxy-msr2.md
           - Reviews: example.md
           - Examples: example.md
