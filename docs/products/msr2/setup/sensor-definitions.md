@@ -115,7 +115,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
 •	Radar Zone 3 Occupancy: Displays the occupancy status of Zone 3. The reading shows “Clear,” indicating no occupancy.
 
-Configuration:
+#### Configuration:
 
 •	DPS Temperature Offset: Offsets the heat from the ESP chip for a more accurate temperature.
 
@@ -125,7 +125,7 @@ Configuration:
 
 •	Firmware Update: Shows the status of the firmware update.
 
-Radar Zone Configuration:
+#### Radar Zone Configuration:
 
 •	g0 Move Threshold: Configures the movement sensitivity threshold for Zone 0.
 
@@ -163,11 +163,11 @@ Radar Zone Configuration:
 
 •	g8 Still Threshold: Configures the stillness sensitivity threshold for Zone 8.
 
-Bluetooth:
+#### Bluetooth:
 
 •	ld2410 Bluetooth: A toggle to enable or disable Bluetooth functionality for the sensor.
 
-Radar Zone Configuration:
+#### Radar Zone Configuration:
 
 •	Radar End Zone 1: Sets the end distance for Zone 1, shown as 50.0 cm.
 
@@ -187,7 +187,7 @@ Radar Zone Configuration:
 
 •	Startup Light Blink: A toggle to enable or disable the blinking of the startup light.
 
-Diagnostic:
+#### Diagnostic:
 
 •	ESP Temperature: Displays the current temperature of the ESP32 chip, shown here as 131.0°F.
 
