@@ -1,6 +1,6 @@
 # Getting Started
 
-This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our [Discord](https://discord.gg/mMNgQPyF94) for some help.
+This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our [Discord](https://dsc.gg/apolloautomation) for some help.
 
 ### Connecting Through Hotspot
 
@@ -38,18 +38,14 @@ wifi_password: "your-wifi-pass-here"
 
    1. **Once you connect your sensor to wifi through the above process, open up Home Assistant. Then in the bottom left click on “Settings”**
 
-   ![homeassistantsettings.png](../assets/homeassistantsettings.png)
-   2. **From there click on “Devices And Services”**
+   ![homeassistantsettings.png](../assets/homeassistantsettings.png) 2. **From there click on “Devices And Services”**
 
-   ![homeassistant_deviceandservices.png](../assets/homeassistant-deviceandservices.png)
-   3. **Look for the discovered sensor. It should be named “apollo-msr-mk1” with some random letters and numbers (Those come from the device's mac address). Click on “Configure” and then “Submit”.**
-      1. **If you do not see the device as discovered, make sure you have the ESPHome integration installed to Home Assistant you can find** [**their instructions here**](https://esphome.io/guides/getting_started_hassio.html#connecting-your-device-to-home-assistant)
+   ![homeassistant_deviceandservices.png](../assets/homeassistant-deviceandservices.png) 3. **Look for the discovered sensor. It should be named “apollo-msr-mk1” with some random letters and numbers (Those come from the device's mac address). Click on “Configure” and then “Submit”.**
+   1. **If you do not see the device as discovered, make sure you have the ESPHome integration installed to Home Assistant you can find** [**their instructions here**](https://esphome.io/guides/getting_started_hassio.html#connecting-your-device-to-home-assistant)
 
-   ![img4_optimized.png](../assets/img4-optimized.png)
-   4. **Add the sensor to ESPHome. It will now show up in the ESPHome integration**
+   ![img4_optimized.png](../assets/img4-optimized.png) 4. **Add the sensor to ESPHome. It will now show up in the ESPHome integration**
 
-   ![img5_optimized.png](../assets/img5-optimized.png)
-   5. **The sensor has now been added to Home Assistant and you can use it as you please. For ideas please visit our ideas section or join our** [**Discord**](https://discord.gg/mMNgQPyF94)
+   ![img5_optimized.png](../assets/img5-optimized.png) 5. **The sensor has now been added to Home Assistant and you can use it as you please. For ideas please visit our ideas section or join our** [**Discord**](https://dsc.gg/apolloautomation)
 
    ![img6_optimized.png](../assets/img6-optimized.png)
 
@@ -63,7 +59,7 @@ wifi_password: "your-wifi-pass-here"
 
    ### Sensors
 
-   You should now have the sensor added! If you have any problems or need help please join our [Discord](https://discord.gg/mMNgQPyF94) and post in the \#support channel. Or just join to check out product development and community spotlights. Our team monitors that and can quickly respond there. Or visit our [ideas section](https://wiki.apolloautomation.cloud/Ideas/MultisensorMk1) to find cool ways to display the information
+   You should now have the sensor added! If you have any problems or need help please join our [Discord](https://dsc.gg/apolloautomation) and post in the \#support channel. Or just join to check out product development and community spotlights. Our team monitors that and can quickly respond there. Or visit our [ideas section](https://wiki.apolloautomation.cloud/Ideas/MultisensorMk1) to find cool ways to display the information
 
    ### Looking For Ideas On How To Use Your Sensor?
 
@@ -71,4 +67,4 @@ wifi_password: "your-wifi-pass-here"
    * Turn The LED Red When CO2 Is Over 1000 ppm
    * Send You An Alert When Motion Is Detected After 11 pm
 
-   Or check out our \#show-off channel in the Apollo [Discord](https://discord.gg/mMNgQPyF94) for community submissions
+   Or check out our \#show-off channel in the Apollo [Discord](https://dsc.gg/apolloautomation) for community submissions
