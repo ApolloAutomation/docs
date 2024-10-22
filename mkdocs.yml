@@ -118,7 +118,7 @@ nav:
             - Adjusting Wifi Power: products/general/setup/adjusting-wifi-power.md
             - Adding To Hidden Wifi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
             - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
-          - Battery Sensors: products/general/battery-sensors.md
+          - Battery Sensors:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
       - MSR-1:
