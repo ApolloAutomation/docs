@@ -113,7 +113,7 @@
 
 * This shows how long the PLT-1 has been running continuously since its last reboot or power-up. An uptime of 13 hours and 37 minutes indicates that the device has been stable and working for a decent period without any issues.
 
-# Buttons
+## Buttons
 
 When looking at the PLT-1 in the below orientation, the boot button is on the left and the reset is on the right by the USB-C port
 
