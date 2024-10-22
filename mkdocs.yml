@@ -126,7 +126,7 @@ nav:
           - FAQ: products/msr1/faq.md
           - Getting Started: products/general/setup/getting-started-msr1.md
           - Additional Info:
-            - General Tips: products/general/msr1/setup/general-tips.md
+            - General Tips: products/msr1/setup/general-tips.md
           - Reviews: example.md
           - Examples: example.md
       - MSR-2:
