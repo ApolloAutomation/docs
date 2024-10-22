@@ -161,7 +161,8 @@ nav:
               - Home Assistant: products/mtr1/setup/zones-ha.md
               - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
           - Reviews: example.md
-          - Examples: example.md
+          - Examples:
+            - MTR-1 Corner Mount: products/mtr1/examples/crookedtoe-mtr1.md
           - Troubleshooting:
             - MTR-1 Boot Mode: products/mtr1/troubleshooting/mtr1-boot-mode.md
             - Manually Uploading Code To MTR-1: products/mtr1/troubleshooting/mtr1-code.md
