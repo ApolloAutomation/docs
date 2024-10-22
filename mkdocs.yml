@@ -114,11 +114,13 @@ nav:
           - Additional Info:
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
             - Change Update Frequency: products/general/setup/how-to-change-the-update-frequency-of-sensors_force-update.md
-            - Adding SCD40 Temp: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
+            - Adding SCD40 Temp/Hum: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
             - Adjusting Wifi Power: products/general/setup/adjusting-wifi-power.md
             - Adding To Hidden Wifi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
             - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
-          - Battery Sensors: products/general/battery-sensors.md
+          - Battery Sensors: products/general/battery-sensors
+            - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
+            - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
