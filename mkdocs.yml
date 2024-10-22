@@ -127,6 +127,7 @@ nav:
           - Getting Started: products/general/setup/getting-started-msr1.md
           - Additional Info:
             - General Tips: products/msr1/setup/general-tips.md
+            - Sensor Definitons: products/msr1/sensor-definitions.md
           - Reviews: example.md
           - Examples: example.md
       - MSR-2:
@@ -134,7 +135,8 @@ nav:
           - FAQ: products/msr2/faq.md
           - Getting Started: products/general/setup/getting-started-msr2.md
           - Additional Info:
-            - General Tips: example.md
+            - General Tips: products/general/msr2/setup/general-tips.md
+            - Sensor Definitons: products/msr2/sensor-definitions.md
           - Reviews: example.md
           - Examples: example.md
       - AIR-1:
@@ -142,14 +144,19 @@ nav:
           - FAQ: products/air1/faq.md
           - Getting Started: products/general/setup/getting-started-air1.md
           - Additional Info:
-            - General Tips: example.md
+            - General Tips: products/air1/setup/general-tips.md
+            - Sensor Definitons: products/air1/sensor-definitions.md
           - Examples: example.md
       - MTR-1:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
           - Getting Started: products/general/setup/getting-started-mtr1.md
           - Additional Info:
-            - General Tips: example.md
+            - General Tips: products/mtr1/setup/general-tips.md
+            - Sensor Definitons: products/mtr1/setup/sensor-definitions.md
+            - Zone Configuration:
+              - Home Assistant: products/mtr1/setup/zones-ha.md
+              - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
           - Reviews: example.md
           - Examples: example.md
       - PLT-1:
