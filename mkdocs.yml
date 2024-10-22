@@ -125,27 +125,31 @@ nav:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
           - Getting Started: products/general/setup/getting-started-msr1.md
-          - Additional Info: example.md
+          - Additional Info:
+            - General Tips: example.md
           - Reviews: example.md
           - Examples: example.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
           - Getting Started: products/general/setup/getting-started-msr2.md
-          - Additional Info: example.md
+          - Additional Info:
+            - General Tips: example.md
           - Reviews: example.md
           - Examples: example.md
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
           - Getting Started: products/general/setup/getting-started-air1.md
-          - Additional Info: example.md
+          - Additional Info:
+            - General Tips: example.md
           - Examples: example.md
       - MTR-1:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
           - Getting Started: products/general/setup/getting-started-mtr1.md
-          - Additional Info: example.md
+          - Additional Info:
+            - General Tips: example.md
           - Reviews: example.md
           - Examples: example.md
       - PLT-1:
@@ -154,8 +158,6 @@ nav:
           - Getting Started: products/general/setup/getting-started-plt1.md
           - Additional Info:
             - General Tips: products/plt1/general-tips.md
-            - Updating: products/plt1/updating.md
-            - Bluetooth Proxy: products/general/setup/bluetooth-proxy-plt1.md
             - Sensor Definitons: products/plt1/sensor-definitions.md
             - Calibrating Soil Moisture: products/plt1/calibrating-plt1.md
           - Reviews: products/plt1/reviews.md
