@@ -181,7 +181,7 @@ nav:
           - Troubleshooting:
             - PLT-1 Boot Mode: products/plt1/plt1-boot-mode.md
             - Manually Uploading Code To PLT-1: products/plt1/plt1-code.md
-            - Teardown and Reassembly Of PLT-1: products/mtr1/plt1-teardown.md
+            - Teardown and Reassembly Of PLT-1: products/plt1/plt1-teardown.md
       - Apollo ODroid:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md
