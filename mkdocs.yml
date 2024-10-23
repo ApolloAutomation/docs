@@ -150,7 +150,9 @@ nav:
             - General Tips: products/air1/setup/general-tips.md
             - Sensor Definitons: products/air1/sensor-definitions.md
           - Reviews: products/air1/air1-reviews.md
-          - Examples: example.md
+          - Examples:
+            - Air Quality Dashboard: products/air1/examples/air1-dashboard-examples.md
+            - Firstof9's Apex Charts: procuts/air1/examples/firstof9's-apex-charts.md
           - Troubleshooting:
             - AIR-1 Boot Mode: products/air1/troubleshooting/air1-boot-mode.md
             - Manually Uploading Code To AIR-1: products/air1/troubleshooting/air1-code.md
