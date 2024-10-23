@@ -10,7 +10,7 @@ If your device has already been connected to Home Assistant previously please re
 
 [![ComSelection.png](https://apolloautomation.github.io/docs/products/mtr1/assets/comselection.png)](https://apolloautomation.github.io/docs/products/mtr1/assets/comselection.png)
 
-If no device shows, click cancel and then install the recommended driver that shows on the popup. If you have installed the driver, tried different cables, and it still won't work refer here for putting the sensor in bootloader mode and then retry step 3. Putting sensor In Boot Mode Document
+If no device shows, click cancel and then install the recommended driver that shows on the popup. If you have installed the driver, tried different cables, and it still won't work refer [here](https://apolloautomation.github.io/docs/products/plt1/plt1-boot-mode/) for putting the sensor in bootloader mode and then retry step 3.
 
 4\. Choose to install the new firmware
 
@@ -25,6 +25,6 @@ If no device shows, click cancel and then install the recommended driver that sh
 1. After finishing, check for the Apollo hotspot and connect. This might not show if you previously had the MTR-1 connected to your wifi
 2. Log into Home Assistant and go to the ESPHome addon check to see if you can adopt the device.
 
-If you encounter the below error, please complete the Putting MTR-1 In Boot Mode Document and go back to step 3.
+If you encounter the below error, please complete the [Putting PLT-1 In Boot Mode Document](https://apolloautomation.github.io/docs/products/plt1/plt1-boot-mode/) and go back to step 3.
 
 [![](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806793309.png)](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806793309.png)
