@@ -150,6 +150,10 @@ nav:
             - General Tips: products/air1/setup/general-tips.md
             - Sensor Definitons: products/air1/sensor-definitions.md
           - Examples: example.md
+          - Troubleshooting:
+            - AIR-1 Boot Mode: products/air1/troubleshooting/air1-boot-mode.md
+            - Manually Uploading Code To AIR-1: products/air1/troubleshooting/air1-code.md
+            - Teardown and Reassembly Of AIR-1: products/air1/troubleshooting/air1-teardown.md
       - MTR-1:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
