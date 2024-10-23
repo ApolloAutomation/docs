@@ -149,7 +149,7 @@ nav:
           - Additional Info:
             - General Tips: products/air1/setup/general-tips.md
             - Sensor Definitons: products/air1/sensor-definitions.md
-          - Reviews: examples.md
+          - Reviews: products/air1/air1-reviews.md
           - Examples: example.md
           - Troubleshooting:
             - AIR-1 Boot Mode: products/air1/troubleshooting/air1-boot-mode.md
