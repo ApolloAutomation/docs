@@ -160,7 +160,7 @@ nav:
             - Zone Configuration:
               - Home Assistant: products/mtr1/setup/zones-ha.md
               - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
-          - Reviews: products/mtr-1/
+          - Reviews: products/mtr1/mtr1-reviews.md
           - Examples:
             - MTR-1 Corner Mount: products/mtr1/examples/crookedtoe-mtr1.md
           - Troubleshooting:
