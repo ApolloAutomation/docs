@@ -140,7 +140,7 @@ nav:
             - Zone Configuration:
               - Home Assistant: products/mtr1/setup/zones-ha.md
               - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
-          - Reviews: example.md
+          - Reviews: products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
             - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
