@@ -148,7 +148,7 @@ nav:
           - Getting Started: products/general/setup/getting-started-air1.md
           - Additional Info:
             - General Tips: products/air1/setup/general-tips.md
-            - Sensor Definitons: products/air1/sensor-definitions.md
+            - Sensor Definitons: products/air1/setup/sensor-definitions.md
           - Reviews: products/air1/air1-reviews.md
           - Examples:
             - Air Quality Dashboard: products/air1/examples/air1-dashboard-examples.md
