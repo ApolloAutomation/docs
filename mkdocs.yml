@@ -143,6 +143,7 @@ nav:
           - Reviews: example.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
+            - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
