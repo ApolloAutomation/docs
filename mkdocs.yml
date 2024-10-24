@@ -135,8 +135,8 @@ nav:
           - FAQ: products/msr2/faq.md
           - Getting Started: products/general/setup/getting-started-msr2.md
           - Additional Info:
-            - General Tips: products/general/msr2/setup/general-tips.md
-            - Sensor Definitons: products/msr2/sensor-definitions.md
+            - General Tips: products/general/msr2/setup/msr2-general-tips.md
+            - Sensor Definitons: products/msr2/msr2-sensor-definitions.md
             - Zone Configuration:
               - Home Assistant: products/mtr1/setup/zones-ha.md
               - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
