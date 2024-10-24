@@ -1,3 +1,3 @@
-1\. Press the reset button and let go to restart the device<br><br>2\. Quickly press and hold the boot button for 2-3 seconds<br><br>3\. The RGB Light on your device should flash green if connected to Wi-Fi, blue if connected to Wi-Fi and Home Assistant, or yellow if no Wi-Fi or Home Assistant connection.
+1\. Press the reset button and let go to restart the device<br>\- TEMP-1B reset button<br>\- PLT-1B reset button<br><br>2\. Quickly press and hold the boot button for 2-3 seconds<br>\- TEMP-1B boot button<br>\- PLT-1B reset button<br><br>3\. The RGB Light on your device should flash green if connected to Wi-Fi, blue if connected to Wi-Fi and Home Assistant, or yellow if no Wi-Fi or Home Assistant connection.
 
 Yellow: No connection to Wi-Fi or Home Assistant<br>Green: Connection to Wi-Fi only<br>Blue: Connection to Wi-Fi and Home Assistant
