@@ -141,7 +141,8 @@ nav:
               - Home Assistant: products/mtr1/setup/zones-ha.md
               - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
           - Reviews: example.md
-          - Examples: example.md
+          - Examples:
+            - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
