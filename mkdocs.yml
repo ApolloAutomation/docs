@@ -122,6 +122,7 @@ nav:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
+          - Contact Us / Support: 
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
