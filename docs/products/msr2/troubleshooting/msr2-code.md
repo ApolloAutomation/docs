@@ -8,7 +8,7 @@ If your device has already been connected to Home Assistant previously please re
 
 ![ComSelection.png](../assets/comselection.png)
 
-If no device shows, click cancel and then install the recommended driver that shows on the popup. If you have installed the driver, tried different cables, and it still won't work refer [here](https://apolloautomation.github.io/docs/products/msr2/troubleshooting/msr2-boot-mode/)for putting the MSR-2 in bootloader mode and then retry step 3.
+If no device shows, click cancel and then install the recommended driver that shows on the popup. If you have installed the driver, tried different cables, and it still won't work refer [here](https://apolloautomation.github.io/docs/products/msr2/troubleshooting/msr2-boot-mode/) for putting the MSR-2 in bootloader mode and then retry step 3.
 
 4. Choose to install the new firmware
 
