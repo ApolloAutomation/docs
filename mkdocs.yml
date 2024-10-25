@@ -128,7 +128,7 @@ nav:
           - Getting Started: products/general/setup/getting-started-msr1.md
           - Additional Info:
             - General Tips: products/msr1/setup/general-tips.md
-            - Sensor Definitons: products/msr1/sensor-definitions.md
+            - Sensor Definitons: products/msr1/setup/sensor-definitions.md
             - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
           - Reviews: products/msr1/msr1-reviews.md
           - Examples:
