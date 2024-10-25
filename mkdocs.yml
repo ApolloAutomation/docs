@@ -129,8 +129,11 @@ nav:
           - Additional Info:
             - General Tips: products/msr1/setup/general-tips.md
             - Sensor Definitons: products/msr1/sensor-definitions.md
+            - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
           - Reviews: products/msr1/msr1-reviews.md
-          - Examples: example.md
+          - Examples:
+            - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
+            - MSR-1 Alarmo: products/msr1/examples/msr1-alarmo.md
           - Troubleshooting:
             - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
             - Manually Uploading Code To MSR-1: products/msr1/troubleshooting/msr1-code.md
