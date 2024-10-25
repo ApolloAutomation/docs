@@ -129,6 +129,9 @@ nav:
           - Additional Info:
             - General Tips: products/msr1/setup/general-tips.md
             - Sensor Definitons: products/msr1/setup/sensor-definitions.md
+            - Zone Configuration: 
+              - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
+              - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
             - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
           - Reviews: products/msr1/msr1-reviews.md
           - Examples:
