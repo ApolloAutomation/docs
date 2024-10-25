@@ -145,6 +145,10 @@ nav:
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
             - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
+          - Troubleshooting:
+            - MSR-2 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
+            - Manually Uploading Code To MSR-2: products/msr2/troubleshooting/msr2-code.md
+            - Teardown and Reassembly Of MSR-2: products/msr2/troubleshooting/msr2-teardown.md
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
