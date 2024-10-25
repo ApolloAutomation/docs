@@ -100,28 +100,29 @@ nav:
   - Products:
       - General:
           - Introduction: products/general/introduction.md
+          - FAQ: products/general/faq.md
           - Getting Started: products/general/setup/getting-started.md
-          - Calibrating and Updating:
+          - Additional Info:
             - Calibrating:
               - CO2: products/general/calibrating-and-updating/co2-calibration.md
               - CO2 Mobile: products/general/calibrating-and-updating/co2-calibration-quick-mobile.md
               - Temperature and Humidity: products/general/temp-hum-calibration.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
-          - Troubleshooting:
-            - Uploading Code Through ESPHome: products/general/troubleshooting/manually-uploading-code-through-esphome.md
-            - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
-            - Ubiquiti MDNS: products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
-          - Additional Info:
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
             - Change Update Frequency: products/general/setup/how-to-change-the-update-frequency-of-sensors_force-update.md
             - Adding SCD40 Temp/Hum: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
             - Adjusting Wifi Power: products/general/setup/adjusting-wifi-power.md
             - Adding To Hidden Wifi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
             - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
+          - Troubleshooting:
+            - Uploading Code Through ESPHome: products/general/troubleshooting/manually-uploading-code-through-esphome.md
+            - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
+            - Ubiquiti MDNS: products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
           - Battery Sensors:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
+          - Contact Us / Support: products/general/contact-us/contact-us-support.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
@@ -213,5 +214,5 @@ nav:
           - Getting Started: products/apolloodroid/getting-started.md
           - Reviews: products/apolloodroid/reviews.md
   - DIY: example.md
-  - Contact Us: contact.md
+  - Contact Us / Support: products/general/contact-us/contact-us-support.md
     
