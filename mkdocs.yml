@@ -129,7 +129,7 @@ nav:
           - Additional Info:
             - General Tips: products/msr1/setup/general-tips.md
             - Sensor Definitons: products/msr1/sensor-definitions.md
-          - Reviews: example.md
+          - Reviews: products/msr1/msr1-reviews.md
           - Examples: example.md
           - Troubleshooting:
             - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
