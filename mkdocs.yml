@@ -121,6 +121,7 @@ nav:
           - Battery Sensors:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
+            - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
@@ -172,6 +173,7 @@ nav:
           - Reviews: products/mtr1/mtr1-reviews.md
           - Examples:
             - MTR-1 Corner Mount: products/mtr1/examples/crookedtoe-mtr1.md
+            - MTR-1 Alarmo: products/mtr1/examples/mtr1-alarmo.md
           - Troubleshooting:
             - MTR-1 Boot Mode: products/mtr1/troubleshooting/mtr1-boot-mode.md
             - Manually Uploading Code To MTR-1: products/mtr1/troubleshooting/mtr1-code.md
