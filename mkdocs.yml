@@ -129,6 +129,7 @@ nav:
           - Additional Info:
             - General Tips: products/msr1/setup/general-tips.md
             - Sensor Definitons: products/msr1/sensor-definitions.md
+            - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
           - Reviews: products/msr1/msr1-reviews.md
           - Examples:
             - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
