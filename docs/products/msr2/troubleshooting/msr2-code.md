@@ -1,5 +1,3 @@
-# Manually Uploading Code Through ESPHome
-
 If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can upload a fresh set of firmware by following the below guide. The utility does need to be run from Chrome or Edge.
 
 If your device has already been connected to Home Assistant previously please refer to Removing Device From Home Assistant first before proceeding
