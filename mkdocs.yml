@@ -131,6 +131,10 @@ nav:
             - Sensor Definitons: products/msr1/sensor-definitions.md
           - Reviews: example.md
           - Examples: example.md
+          - Troubleshooting:
+            - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
+            - Manually Uploading Code To MSR-1: products/msr1/troubleshooting/msr1-code.md
+            - Teardown and Reassembly Of MSR-1: products/msr1/troubleshooting/msr1-teardown.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
