@@ -16,6 +16,6 @@
 
 # [Instagram](https://www.instagram.com/apollo_automation/)
 
-## Support Email: support@apolloautomation.com
+# Support Email: support@apolloautomation.com
 
 #
