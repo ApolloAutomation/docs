@@ -105,7 +105,7 @@ nav:
             - Calibrating:
               - CO2: products/general/calibrating-and-updating/co2-calibration.md
               - CO2 Mobile: products/general/calibrating-and-updating/co2-calibration-quick-mobile.md
-              - Temperature and Humidity: example.md
+              - Temperature and Humidity: products/general/temp-hum-calibration.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
           - Troubleshooting:
             - Uploading Code Through ESPHome: products/general/troubleshooting/manually-uploading-code-through-esphome.md
