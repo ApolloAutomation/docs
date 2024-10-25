@@ -100,6 +100,7 @@ nav:
   - Products:
       - General:
           - Introduction: products/general/introduction.md
+          - FAQ: products/general/faq.md
           - Getting Started: products/general/setup/getting-started.md
           - Calibrating and Updating:
             - Calibrating:
