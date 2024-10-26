@@ -6,7 +6,7 @@
 
 4\. Disable [power save mode](https://esphome.io/components/wifi.html#power-save-mode) in ESPHome. (See directions below)
 
-# WiFI Power Save Mode
+# WiFi Power Save Mode
 
 The WiFi interface of all ESPs offer three power save modes to reduce the      amount of power spent on WiFi. While some options *can* reduce the power usage of the ESP, they generally also decrease the reliability of the WiFi connection, with frequent disconnections from the router in the highest power saving mode.
 
