@@ -96,5 +96,7 @@ image: /docs/assets/image.png
 _retina_image_file: /docs/assets/image-2x.png
 source_editor:
   tab_size: 4
+content_editor:
+  tab_size: 4
 
 timezone: Etc/UTC
