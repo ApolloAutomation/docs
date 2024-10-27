@@ -12,7 +12,7 @@ This will be a location for troubleshooting and how to guides. If you have a que
 
 ### **Frequent Links:**
 
-* [Getting your sensor connected to Home Assistant]()
+* [Getting your sensor connected to Home Assistant](https://wiki.apolloautomation.com/products/general/setup/getting-started/)
 * [Tuning your MSR-2 radar]()
 * [Setting up zones on the MTR-1]()
 * [Discord (Support, community, updates, live stream)]()
