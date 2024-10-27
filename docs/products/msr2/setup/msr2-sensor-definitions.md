@@ -5,12 +5,12 @@ Once added to Home Assistant you can configure different settings for your senso
 ### Controls
 
 * **RGB Light**
-  * A RGB Neopixel. Click on the light bulb to change the color. Click on the toggle to turn on or off
+    * A RGB Neopixel. Click on the light bulb to change the color. Click on the toggle to turn on or off
 
 ### Sensors
 
 * **CO2**
-  * True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. This can be calibrated following this guide but does come precalibrated: [Here](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration)
+  * True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. This can be calibrated following this guide but does come precalibrated: [Here](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration")
 * **ESP Temperature**
   * This is the temperature of the internal ESP chip. Think of it like your measured CPU temp on your PC
 * **LTR390 Light**
@@ -41,13 +41,13 @@ Once added to Home Assistant you can configure different settings for your senso
 ### Configuration
 
 * **CO2 Calibration Number**
-  * See calibrating CO2: [Here](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration)
+  * See calibrating CO2: [Here](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
 * **ESP Reboot**
   * Performs a restart of the sensor
 * **Factory Reset Radar**
   * Sets the radar's move thresholds back to their original values from the manufacturer
 * **g0-g8 Move & Still Threshold**
-  * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.cloud/books/msr-1/page/how-to-tune-mmwave-using-home-assistant)
+  * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)
 * **Radar Control Bluetooth**
   * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app if you wanted to upload new firmware to the radar unit (Not the MSR-1 in general, just the radar chip)
 * **Radar Distance Resolution**

@@ -105,7 +105,7 @@ nav:
           - Additional Info:
             - Calibrating:
               - CO2: products/general/calibrating-and-updating/co2-calibration.md
-              - CO2 Mobile: products/general/calibrating-and-updating/co2-calibration-quick-mobile.md
+              - CO2 Quick: products/general/calibrating-and-updating/co2-calibration-quick.md
               - Temperature and Humidity: products/general/temp-hum-calibration.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
