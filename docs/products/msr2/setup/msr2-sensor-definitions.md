@@ -5,8 +5,7 @@ Once added to Home Assistant you can configure different settings for your senso
 ### Controls
 
 * **RGB Light**
-    * A RGB Neopixel. Click on the light bulb to change the color. Click on the toggle to turn on or off
-    * Test
+  * A RGB Neopixel. Click on the light bulb to change the color. Click on the toggle to turn on or off
 
 ### Sensors
 
