@@ -48,7 +48,7 @@ My lux sensor doesn't seem to be working how do I fix it?
 
 #### Answer 4:
 
-The default update\_interval is 60 seconds which isnt great for automations revolving around measuring lux values. [Please follow this short guide](https://wiki.apolloautomation.com/books/general/page/how-to-edit-your-sensors-lux-update-interval "How to Edit your lux sensor update interval") to edit the lux update\_interval down to a more responsive 3-5seconds.
+The default update\_interval is 60 seconds which isnt great for automations revolving around measuring lux values. [Please follow this short guide](https://wiki.apolloautomation.com/products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval/ "How to Edit your lux sensor update interval") to edit the lux update\_interval down to a more responsive 3-5seconds.
 
 ---
 
