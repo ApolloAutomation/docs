@@ -2,21 +2,21 @@
 
 #### This is where our most frequently asked questions will be for now!
 
-#### Question:
+#### Question 1:
 
 How much power do your sensors use?
 
-#### Answer:
+#### Answer 1:
 
 All apollo sensors use 1amp or less, some of them 350-500mA.
 
 ---
 
-#### Question:
+#### Question 2:
 
 What all can the MSR-2 LD2410B mmWave sensor go through?
 
-#### Answer:
+#### Answer 2:
 
 It can reliably go through drywall.
 
@@ -32,11 +32,11 @@ We have seen this happen before - please first try to restart your radar, then f
 
 ---
 
-#### Question:
+#### Question 3:
 
 How do I reset my Wi-Fi?
 
-#### Answer:
+#### Answer 3:
 
 Plug in your device then hold down the boot button for 10 seconds. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 
