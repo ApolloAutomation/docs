@@ -42,41 +42,41 @@ Plug in your device then hold down the boot button for 10 seconds. The Wi-Fi cre
 
 ---
 
-#### Question:
+#### Question 4:
 
 My lux sensor doesn't seem to be working how do I fix it?
 
-#### Answer:
+#### Answer 4:
 
 The default update\_interval is 60 seconds which isnt great for automations revolving around measuring lux values. [Please follow this short guide](https://wiki.apolloautomation.com/books/general/page/how-to-edit-your-sensors-lux-update-interval "How to Edit your lux sensor update interval") to edit the lux update\_interval down to a more responsive 3-5seconds.
 
 ---
 
-#### Question:
+#### Question 5:
 
 Do I need to push the "Clean" button for my Air-1 or setup an automation for it?
 
-#### Answer:
+#### Answer 5:
 
 No, your Air-1 will self-clean once a week per this [recommended documentation from the manufacturer.](https://sensirion.com/media/documents/6791EFA0/62A1F68F/Sensirion_Datasheet_Environmental_Node_SEN5x.pdf)
 
 ---
 
-#### Question:
+#### Question 6:
 
 Can your sensors be used with OpenHAB?
 
-#### Answer:
+#### Answer 6:
 
 Yes, please install [this binding](https://github.com/seime/openhab-esphome "OpenHAB-ESPHome") and then restart OpenHAB and our devices will show up to configure!
 
 ---
 
-#### Question:
+#### Question 7:
 
 I am getting the error "Failed to import device" in ESPHome Dashboard when trying to adopt my Apollo device.
 
-#### Answer:
+#### Answer 7:
 
 Make sure you have enough free space in Home Assistant - Protip: check for old backups you can delete!
 
@@ -84,19 +84,15 @@ If your space is not an issue then please reboot or even try reinstalling the es
 
 ---
 
-#### Question:
+#### Question 8:
 
 My CO2 values are way off from my other Apollo devices.
 
-#### Answer:
+#### Answer 8:
 
 If your sensor is exposed to high levels of vibrations or too much airflow, the SCD40 CO2 sensor will have issues working properly. https://sensirion.com/products/catalog/SCD40
 
 ---
-
-#### Question:
-
-#### Answer:
 
 ---
 
