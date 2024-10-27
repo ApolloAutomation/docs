@@ -2,7 +2,7 @@
 
 <img src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" height="344" width="900" />
 
-# **We recently switched to this new wiki and are actively working to fix any issues. If you spot any errors, please help us improve by** [**opening an issue on our GitHub**](https://github.com/ApolloAutomation/docs/issues)**, messaging us on** [**Discord**](https://dsc.gg/apolloautomation "Click to join our Discord server!")**, or emailing us at** [**support@apolloautomation.com**]()**. Thank you for your patience and support!**
+# **We recently switched to this new wiki and are actively working to fix any issues. If you spot any errors, please help us improve by** [**opening an issue on our GitHub**](https://github.com/ApolloAutomation/docs/issues)**, messaging us on** [**Discord**](https://dsc.gg/apolloautomation "Click to join our Discord server!")**, or emailing us at** [**support@apolloautomation.com**](support@apolloautomation.com "Email us for support!")**. Thank you for your patience and support!**
 
 &nbsp;
 
