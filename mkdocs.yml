@@ -150,8 +150,8 @@ nav:
             - General Tips: products/msr2/setup/msr2-general-tips.md
             - Sensor Definitons: products/msr2/setup/msr2-sensor-definitions.md
             - Zone Configuration:
-              - Home Assistant: products/mtr1/setup/zones-ha.md
-              - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
+              - Home Assistant: products/msr2/calibrating-and-updating/how-to-tune-mmwave-using-home-assistant.md
+              - HLK Radar Tool App: products/msr2/calibrating-and-updating/how-to-tune-mmwave-using-hlkradartool.md
           - Reviews: products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
