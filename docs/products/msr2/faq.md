@@ -12,7 +12,7 @@
 
 4\. Can the MSR-2 detect multiple people?
 
-•	Yes, the MSR-2 supports multi-target tracking, allowing it to detect up to 3 people and provide data on their movement and location within a defined space.
+•	No, the MSR-2 supports single-target tracking only but it has better still detection.
 
 5\. What is the benefit of the LUX and UV sensor?
 
