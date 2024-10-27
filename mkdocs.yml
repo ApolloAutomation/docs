@@ -105,7 +105,7 @@ nav:
           - Additional Info:
             - Calibrating:
               - CO2: products/general/calibrating-and-updating/co2-calibration.md
-              - CO2 Mobile: products/general/calibrating-and-updating/co2-calibration-quick-mobile.md
+              - CO2 Quick: products/general/calibrating-and-updating/co2-calibration-quick.md
               - Temperature and Humidity: products/general/temp-hum-calibration.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
@@ -193,7 +193,7 @@ nav:
             - MTR-1 Boot Mode: products/mtr1/troubleshooting/mtr1-boot-mode.md
             - Manually Uploading Code To MTR-1: products/mtr1/troubleshooting/mtr1-code.md
             - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
-      - PLT-1:
+      - PLT-1:qu
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
           - Getting Started: products/general/setup/getting-started-plt1.md
