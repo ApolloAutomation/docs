@@ -193,7 +193,7 @@ nav:
             - MTR-1 Boot Mode: products/mtr1/troubleshooting/mtr1-boot-mode.md
             - Manually Uploading Code To MTR-1: products/mtr1/troubleshooting/mtr1-code.md
             - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
-      - PLT-1:qu
+      - PLT-1:
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
           - Getting Started: products/general/setup/getting-started-plt1.md
