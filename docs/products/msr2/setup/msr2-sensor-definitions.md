@@ -10,7 +10,7 @@ Once added to Home Assistant you can configure different settings for your senso
 ### Sensors
 
 * **CO2**
-  * True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. This can be calibrated following this guide but does come precalibrated: [Here](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration)
+  * True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. This can be calibrated following this guide but does come precalibrated: [Here](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration")
 * **ESP Temperature**
   * This is the temperature of the internal ESP chip. Think of it like your measured CPU temp on your PC
 * **LTR390 Light**
