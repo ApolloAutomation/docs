@@ -77,5 +77,7 @@ _inputs:
           target: _retina_image_file
 image: /docs/assets/image.png
 _retina_image_file: /docs/assets/image-2x.png
+source_editor:
+  tab_size: 2
 
 timezone: Etc/UTC
