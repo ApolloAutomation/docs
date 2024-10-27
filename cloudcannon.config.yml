@@ -26,33 +26,50 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
     
-_editables:
-  content:
-    allow_custom_markup: false
-    remove_custom_markup: false
-    blockquote: true
-    bold: true
-    bulletedlist: true
-    code: true
-    copyformatting: true
-    embed: true
-    format: p h1 h2 h3 h4 h5 h6
-    horizontalrule: true
-    image: true
-    image_size_attributes: true
-    indent: true
-    italic: true
-    link: true
-    numberedlist: true
-    outdent: true
-    redo: true
-    removeformat: true
-    strike: true
-    subscript: true
-    superscript: true
-    table: true
-    underline: true
-    undo: true
+_snippets_imports:
+  python_markdown_extensions:
+    include:
+      - python_markdown_admonition
+      - python_markdown_collapsible_admonition
+      - python_markdown_button
+      - python_markdown_reference_button
+      - python_markdown_diagram
+      - python_markdown_code_block
+      - python_markdown_footnote
+      - python_markdown_footnote_marker
+      - python_markdown_icon
+      - python_markdown_inline_code
+      - python_markdown_mathjax
+      - python_markdown_inline_mathjax
+      - python_markdown_tabs
+      - python_markdown_marker
+      - python_markdown_block_snippet
+      - python_markdown_image
+      - python_markdown_reference_image
+      - python_markdown_reference_template_image
+      - python_markdown_reference_link
+      - python_markdown_link
+      - python_markdown_reference
+      - python_markdown_abbreviation
+      - python_markdown_reference_template
+_snippets:
+  result:
+    template: python_markdown_markdown_in_html
+    inline: false
+    preview:
+      text: Result
+    definitions:
+      tag_name: div
+      content_key: content
+      tag_attributes:
+        - source_key: class
+          type: string
+          default: result
+          allowed_values:
+            - result
+    _inputs:
+      content:
+        type: markdown
 _inputs:
   image:
     type: image
