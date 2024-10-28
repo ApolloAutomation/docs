@@ -5,3 +5,14 @@
     --md-accent-fg-color--dark:  #9ABC31;
     --md-accent-fg-color--light:  #9ABC31;
   }
+  
+/* Increase indentation for nested list items */
+ul ul {
+    padding-left: 20px; /* Adjust this value as needed */
+    margin-top: 0.2em;
+}
+
+/* Adjust font size or other styles if needed */
+ul ul li {
+    font-size: 0.95em; /* Optional */
+}
