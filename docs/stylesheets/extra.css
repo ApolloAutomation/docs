@@ -16,3 +16,12 @@ ul ul {
 ul ul li {
     font-size: 0.95em; /* Optional */
 }
+/* Increase indentation specifically for nested lists in Material theme */
+.md-typeset ul ul {
+    padding-left: 1.5em !important;  /* Adjust as needed */
+    margin-top: 0.2em !important;
+}
+
+.md-typeset ul ul li {
+    font-size: 0.95em !important; /* Optional: adjust font size for nested items */
+}
