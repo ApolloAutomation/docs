@@ -12,7 +12,7 @@
 
 4\. How long does the battery last in the PLT-1?
 
-•	Battery life depends on usage and sensor update intervals. Frequent updates will reduce battery life. You can adjust the sleep and wake intervals in the ESPHome configuration to optimize battery usage.
+•	Battery life depends on usage and sensor update intervals. Frequent updates will reduce battery life. You can adjust the sleep and wake intervals in the ESPHome configuration to optimize battery usage. We have seen closer to 6 months with 8 hour wake up intervals. Should be 3-6 months but depending on usage it could be much longer! It uses an 18650 battery.
 
 5\. How does the optional soil temperature probe work?
 
