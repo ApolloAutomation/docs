@@ -1,8 +1,5 @@
 # Adding The SCD40 CO2 Sensor To The AIR-1
 
-
-
-  
 1\. Unplug your AIR-1 from power and remove the back
 
 ![IMG_3790.jpeg](../assets/img-3790.jpeg)
@@ -15,4 +12,4 @@
 
 ![IMG_3791.jpeg](../assets/img-3791.jpeg)
 
-5\. Put your AIR-1 cover on. Please refer to our [CO2 calibration guide](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration "CO2 Calibration") to calibrate the CO2 module.
+5\. Put your AIR-1 cover on. Please refer to our [CO2 calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO2 module.

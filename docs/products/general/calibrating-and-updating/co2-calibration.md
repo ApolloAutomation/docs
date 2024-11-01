@@ -22,11 +22,10 @@
 
 6\. Press the Calibrate SCD40 button and you are all set!
 
-If you do not see this button, either [update your firmware](https://wiki.apolloautomation.cloud/books/general/page/updating-firmware) or refer to this [older revision](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration/revisions/289)
+If you do not see this button, either [update your firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/).
 
 It can take a few times clicking the calibrate for it to equalize correctly. If you don't see the SCD40 reporting 400-500 ppm then click it again.
 
-  
 ![Button CO2 Calibration.png](../assets/button-co2-calibration.png)
 
 7\. Now your CO2 sensor should be calibrated! Be sure to setup some nice cards on your dashboard so you can monitor the CO2 levels. My bedroom's CO2 levels got dangerously high and I had to run my HVAC more frequently at night to circulate the air. See examples of cards and data below.
