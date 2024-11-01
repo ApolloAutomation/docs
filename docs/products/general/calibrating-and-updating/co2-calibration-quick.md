@@ -8,4 +8,4 @@
 
 3\. Click on the button that says "PRESS" and then you are done. ![image.png](../assets/N7Eimage.png)
 
-5\. Go get your sensor from outside and plug your sensor in wherever you want it!
+4\. Go get your sensor from outside and plug your sensor in wherever you want it!
