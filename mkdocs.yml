@@ -212,6 +212,24 @@ nav:
             - PLT-1 Boot Mode: products/plt1/plt1-boot-mode.md
             - Manually Uploading Code To PLT-1: products/plt1/plt1-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1/plt1-teardown.md
+      - PLT-1B:
+          - Introduction: products/plt1/introduction.md
+          - FAQ: products/plt1/faq.md
+          - Getting Started: products/general/setup/getting-started-plt1.md
+          - Additional Info:
+            - General Tips: products/plt1/general-tips.md
+            - Sensor Definitons: products/plt1/sensor-definitions.md
+            - Calibrating Soil Moisture: products/plt1/calibrating-plt1.md
+            - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
+            - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
+            - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
+          - Reviews: products/plt1/reviews.md
+          - Examples: 
+            - Flower Card: products/plt1/examples/flower-card.md
+          - Troubleshooting:
+            - PLT-1 Boot Mode: products/plt1/plt1-boot-mode.md
+            - Manually Uploading Code To PLT-1: products/plt1/plt1-code.md
+            - Teardown and Reassembly Of PLT-1: products/plt1/plt1-teardown.md
       - H-1:
           - Introduction: products/h1/introduction.md
           - FAQ: products/h1/faq.md
