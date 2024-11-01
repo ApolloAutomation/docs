@@ -16,7 +16,7 @@ Once the ornament is awake, press the gold button to play one of the pre-loaded 
 
 4\. Add to Home Assistant (Optional):
 
-For additional customization, connect the H-1 to Home Assistant following the setup guide on our Apollo Wiki. Through Home Assistant, you can add new songs, change LED effects, and create custom automations.
+For additional customization, connect the H-1 to Home Assistant following the [setup guide](https://wiki.apolloautomation.com/products/general/setup/getting-started/). Through Home Assistant, you can add new songs, change LED effects, and create custom automations.
 
 5\. Enjoy Your Ornament:
 
