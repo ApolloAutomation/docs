@@ -134,7 +134,7 @@ nav:
           - Additional Info:
             - General Tips: products/msr1/setup/general-tips.md
             - Sensor Definitons: products/msr1/setup/sensor-definitions.md
-            - Zone Configuration: 
+            - Radar Tuning: 
               - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
               - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
               - mmWave Tuning: products/general/calibrating-and-updating/mmwave-videos.md
@@ -154,7 +154,7 @@ nav:
           - Additional Info:
             - General Tips: products/msr2/setup/msr2-general-tips.md
             - Sensor Definitons: products/msr2/setup/msr2-sensor-definitions.md
-            - Zone Configuration:
+            - Radar Tuning:
               - Home Assistant: products/msr2/calibrating-and-updating/zones-ha.md
               - HLK Radar Tool App: products/msr2/calibrating-and-updating/zones-hlk.md
               - mmWave Tuning: products/general/calibrating-and-updating/mmwave-videos.md
