@@ -127,6 +127,7 @@ nav:
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
           - Source Code and 3D Files: products/general/links.md
+          - Sensor Comparisons: products/general/comparisons.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
