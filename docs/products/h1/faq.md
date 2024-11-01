@@ -34,7 +34,7 @@ To integrate the H-1 with Home Assistant, follow the setup guide on our Apollo W
 
 8\. Does the ornament require any additional power source?
 
-The Apollo H-1 operates on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It can also be powered by the USB-C port.
+The Apollo H-1 operates on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a CR123A battery. It can also be powered by the USB-C port.
 
 9\. Can I gift the Apollo H-1 to friends or family?
 
