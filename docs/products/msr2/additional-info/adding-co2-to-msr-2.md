@@ -1,10 +1,7 @@
 # Adding CO2 To MSR-2
 
-***This is for the MSR-1 but it is very similar to the MSR-2.***  
-  
+***This is for the MSR-1 but it is very similar to the MSR-2.***
 
-
-  
 1\. Unplug your MSR-2 from power and remove the back
 
 ![IMG_3784.jpeg](../assets/img-3784.jpeg)
@@ -21,4 +18,4 @@
 
 ![IMG_3789.jpeg](../assets/img-3789.jpeg)
 
-5\. Put your MSR-2 back in the case and slide the back cover on. Please refer to our [CO2 calibration guide](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration "CO2 Calibration") to calibrate the CO2 module.
+5\. Put your MSR-2 back in the case and slide the back cover on. Please refer to our [CO2 calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO2 module.
