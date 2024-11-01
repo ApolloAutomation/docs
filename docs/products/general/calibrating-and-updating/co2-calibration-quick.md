@@ -1,6 +1,6 @@
 # CO2 Calibration - The Quick method - Desktop Only not mobile
 
-#### This article will guide you through a simple calibration of your CO2 sensor for any Apollo Automation device!
+This article will guide you through a simple calibration of your CO2 sensor for any Apollo Automation device!
 
 1\. Go to your home assistant dashboard and hit the letter "e" - It will pop up with an entity filter and here we will type in "Calibrate CO2" and select the correct device.<br> ***\*HINT\**** **If you cannot get this menu to pop-up, click somewhere on the home assistant dashboard then press your "e" key** ***\*HINT\****<br> ![image.png](../assets/image_2.png)
 
