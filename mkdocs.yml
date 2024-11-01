@@ -213,10 +213,10 @@ nav:
             - Manually Uploading Code To PLT-1: products/plt1/plt1-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1/plt1-teardown.md
       - H-1:
-          - Introduction: products/apolloodroid/introduction.md
-          - FAQ: products/apolloodroid/faq.md
-          - Getting Started: products/apolloodroid/getting-started.md
-          - Reviews: products/apolloodroid/reviews.md
+          - Introduction: products/h1/introduction.md
+          - FAQ: products/h1/faq.md
+          - Getting Started: products/h1/getting-started.md
+          - Reviews: products/h1/reviews.md
       - Apollo ODroid:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md
