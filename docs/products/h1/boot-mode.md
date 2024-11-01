@@ -8,7 +8,7 @@ This will cover how to put the H-1 into boot mode. Sometimes, this is needed to 
 
 2\. Press and hold the boot button, while holding the boot button plug the H-1 back into your computer/power and then release the boot button
 
-3\. Continue with [uploading the firmware](https://active-lyrebird.cloudvent.net/products/plt1/plt1-code/)
+3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/h1/code/)
 
 ## **Boot and Reset Buttons**
 
@@ -16,4 +16,4 @@ This will cover how to put the H-1 into boot mode. Sometimes, this is needed to 
 
 2\. Press and hold the boot button, while holding it press and release the reset button, then release the boot button
 
-3\. Continue with [uploading the firmware](https://active-lyrebird.cloudvent.net/products/plt1/plt1-code/)
+3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/h1/code/)
