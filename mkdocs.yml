@@ -119,7 +119,7 @@ nav:
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
             - Change Update Frequency: products/general/setup/how-to-change-the-update-frequency-of-sensors_force-update.md
             - Adding SCD40 Temp/Hum: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
-            - Adjusting Wifi Power: products/general/setup/adjusting-wifi-power.md
+            - Adjusting WiFi Power: products/general/setup/adjusting-wifi-power.md
             - Adding To Hidden Wifi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
             - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
             - Piezo Buzzer: products/general/piezo.md
