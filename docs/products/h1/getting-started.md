@@ -8,11 +8,13 @@ If the device is in sleep mode, press the gold button on the back of the ornamen
 
 3\. Play Holiday Songs:
 
-Once the ornament is awake, press the gold button to play one of the pre-loaded songs:
+Once the ornament is awake, press the gold button (see image below) to play one of the pre-loaded songs:
 
 * 1 Press: Sleigh Bells
 * 2 Presses: Rudolph the Red-Nosed Reindeer
 * 3 Presses (Long press): Let it Snow
+
+![](../../assets/screenshot-2024-11-01-015948-1.png)
 
 4\. Add to Home Assistant (Optional):
 
