@@ -116,6 +116,7 @@ nav:
             - Adjusting Wifi Power: products/general/setup/adjusting-wifi-power.md
             - Adding To Hidden Wifi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
             - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
+            - Piezo Buzzer: products/general/piezo.md
           - Troubleshooting:
             - Uploading Code Through ESPHome: products/general/troubleshooting/manually-uploading-code-through-esphome.md
             - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
