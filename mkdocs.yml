@@ -213,9 +213,9 @@ nav:
             - Manually Uploading Code To PLT-1: products/plt1/plt1-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1/plt1-teardown.md
       - PLT-1B:
-          - Introduction: products/plt1/introduction.md
-          - FAQ: products/plt1/faq.md
-          - Getting Started: products/general/setup/getting-started-plt1.md
+          - Introduction: products/plt1b/introduction.md
+          - FAQ: products/plt1b/faq.md
+          - Getting Started: products/plt1b/getting-started-plt1.md
           - Additional Info:
             - General Tips: products/plt1/general-tips.md
             - Sensor Definitons: products/plt1/sensor-definitions.md
