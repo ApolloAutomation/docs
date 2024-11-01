@@ -244,6 +244,11 @@ nav:
           - FAQ: products/h1/faq.md
           - Getting Started: products/h1/getting-started.md
           - Reviews: products/h1/reviews.md
+          - Examples: 
+            - Holiday Songs: example.md
+          - Troubleshooting:
+            - H-1 Boot Mode: products/h1/boot-mode.md
+            - Manually Uploading Code To H-1: products/h1/code.md
       - Apollo ODroid:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md
