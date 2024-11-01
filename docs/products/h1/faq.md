@@ -30,7 +30,7 @@ Absolutely! The H-1 is designed to look festive on any holiday setup, whether yo
 
 7\. How do I set up the Apollo H-1 with Home Assistant?
 
-To integrate the H-1 with Home Assistant, follow the setup guide on our Apollo Wiki or reach out to our support team for assistance. Once connected, you can unlock additional functionality and customizations.
+To integrate the H-1 with Home Assistant, follow getting started guide or reach out to our support team for assistance. Once connected, you can unlock additional functionality and customizations.
 
 8\. Does the ornament require any additional power source?
 
@@ -42,4 +42,4 @@ Yes, the H-1 makes a wonderful gift! It’s unique, festive, and supports a good
 
 10\. Where can I find more information about the Apollo H-1 and similar products?
 
-For more details, setup guides, and other products, visit our Apollo Wiki or join us on [Discord](dsc.gg/apolloautomation)for community support and discussions.
+For more details, setup guides, and other products, email us at support@apolloautomation.com or join us on [Discord](dsc.gg/apolloautomation) for community support and discussions.
