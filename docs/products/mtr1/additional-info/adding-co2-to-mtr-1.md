@@ -1,8 +1,5 @@
 # Adding CO2 To MTR-1
 
-
-
-  
 1\. Unplug your MTR-1 from power and remove the back (board shown is msr-1)
 
 ![IMG_3784.jpeg](../assets/img-3784.jpeg)
@@ -19,4 +16,4 @@
 
 ![IMG_3789.jpeg](../assets/img-3789.jpeg)
 
-5\. Put your MTR-1 back in the case and slide the back cover on. Please refer to our [CO2 calibration guide](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration "CO2 Calibration") to calibrate the CO2 module.
+5\. Put your MTR-1 back in the case and slide the back cover on. Please refer to our [CO2 calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO2 module.
