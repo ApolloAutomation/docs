@@ -108,7 +108,13 @@ nav:
               - CO2: products/general/calibrating-and-updating/co2-calibration.md
               - CO2 Quick: products/general/calibrating-and-updating/co2-calibration-quick.md
               - Temperature and Humidity: products/general/temp-hum-calibration.md
-              - mmWave Tuning: products/general/calibrating-and-updating/mmwave-videos.md
+              - Radar Tuning:
+                - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
+                - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
+                - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
+              - Zone Configuration:
+                - Home Assistant: products/mtr1/setup/zones-ha.md
+                - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
             - Change Update Frequency: products/general/setup/how-to-change-the-update-frequency-of-sensors_force-update.md
@@ -138,7 +144,7 @@ nav:
             - Radar Tuning: 
               - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
               - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
-              - mmWave Tuning: products/general/calibrating-and-updating/mmwave-videos.md
+              - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
             - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
           - Reviews: products/msr1/msr1-reviews.md
           - Examples:
@@ -158,7 +164,7 @@ nav:
             - Radar Tuning:
               - Home Assistant: products/msr2/calibrating-and-updating/zones-ha.md
               - HLK Radar Tool App: products/msr2/calibrating-and-updating/zones-hlk.md
-              - mmWave Tuning: products/general/calibrating-and-updating/mmwave-videos.md
+              - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
           - Reviews: products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
