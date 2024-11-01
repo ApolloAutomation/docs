@@ -1,6 +1,6 @@
 This will cover how to put the H-1 into boot mode. Sometimes, this is needed to upload new firmware if the device is struggling.
 
-![](../../assets/apollo-h-1-1.png)
+![](../../assets/screenshot-2024-11-01-015948.png)
 
 ## **Boot Button Only**
 
