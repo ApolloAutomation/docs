@@ -17,3 +17,5 @@ RTTTL Website: [https://picaxe.com/rtttl-ringtones-for-tune-command/](https://pi
 This is a good site to test RTTTL tones: <a href="https://adamonsoon.github.io/rtttl-play/" target="_blank" rel="noopener">https://adamonsoon.github.io/rtttl-play/</a>
 
 5\. Click on the Perform Action button
+
+6\. You can also Perform Actions through automations in Home Assistant
