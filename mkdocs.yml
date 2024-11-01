@@ -126,7 +126,7 @@ nav:
           - Troubleshooting:
             - Uploading Code Through ESPHome: products/general/troubleshooting/manually-uploading-code-through-esphome.md
             - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
-            - Ubiquiti mDNS: products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
+            - Auto Discover Device mDNS Issue: products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
             - Connection Issues: products/general/troubleshooting/connection-issues.md
           - Battery Sensors:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
