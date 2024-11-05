@@ -4,7 +4,7 @@ If you're experiencing false triggers, we recommend using Radar Engineering Mode
 
 Here is a video of how to tune the mmWave sensor using radar engineering mode,
 
-<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/6VrTfaFyMPk?si=KI9gcbJB0EgAT3uW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
+<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/w_Gq62Edsnc?si=IxNE-pt-3u2FHMzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
 1. Open Home Assistant
 2. Navigate to Settings&gt;Devices & services&gt;ESPHome&gt;Select the MSR-2
