@@ -13,7 +13,7 @@ This will be a location for troubleshooting and how to guides. If you have a que
 ### **Frequent Links:**
 
 * [Getting your sensor connected to Home Assistant](https://wiki.apolloautomation.com/products/general/setup/getting-started/ "Getting Started")
-* [Tuning your MSR-2 radar](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/how-to-tune-mmwave-using-home-assistant/)
+* [Tuning your MSR-2 radar](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on the MTR-1](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/ "MTR-1 Zone Setup with HLK app")
 * [Discord (Support, community, updates, live stream)](https://discord.gg/F3RZGPcuzV "Join the discord now!")
 * <a href="https://www.youtube.com/@ApolloAutomation" title="Check out our Youtube channel!" target="_blank" rel="noopener">YouTube ( Tutorials, live stream )</a>
