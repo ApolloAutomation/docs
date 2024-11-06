@@ -20,7 +20,7 @@ To play the songs, press the gold button on the back of the ornament:
 
 \- 2 presses for Rudolph the Red-Nosed Reindeer
 
-\- 3 presses (Long press) for Let it Snow
+\- Long press for Let it Snow
 
 5\. What does purchasing the Apollo H-1 support?
 
