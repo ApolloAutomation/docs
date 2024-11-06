@@ -1,3 +1,5 @@
+![](../../assets/apollo-h-1-info.png)
+
 1\. What songs are pre-loaded on the Apollo H-1?
 
 The H-1 comes with three classic holiday songs: Sleigh Bells, Rudolph the Red-Nosed Reindeer, and Let it Snow. You can play these songs by pressing the gold button on the back of the ornament—one press for Sleigh Bells, two for Rudolph the Red-Nosed Reindeer, and three for Let it Snow. Each song is paired with a unique LED effect for added festive flair.
