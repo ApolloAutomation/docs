@@ -12,7 +12,7 @@ Once the ornament is awake, press the gold button (see image below) to play one 
 
 * 1 Press: Sleigh Bells
 * 2 Presses: Rudolph the Red-Nosed Reindeer
-* 3 Presses (Long press): Let it Snow
+* Long press: Let it Snow
 
 ![](../../assets/screenshot-2024-11-01-015948-1.png)
 
