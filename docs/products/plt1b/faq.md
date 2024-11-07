@@ -38,3 +38,5 @@
     * The PLT-1B is battery-operated and slightly larger, while the non-battery (NB) version is compact and connects directly to a power source.
 20. **Can I use multiple PLT-1B sensors in one Home Assistant setup?**
     * Yes, you can add multiple PLT-1B sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+21. **Can you charge the battery by plugging in the device?**
+    * No, you cannot charge the battery through the USB port.
