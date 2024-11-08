@@ -28,20 +28,19 @@ Now choose "raw configuration editor"
 
 Now you need to be VERY careful. You are editing all of your dashboards but we can avoid issues by scrolling to the very bottom and then copying and pasting the code seen below. (Picture below shows where we will paste the code) (Code below)
 
-![AIR-1 Dashboard End.png](../assets/air-1-dashboard-end.png)  
-  
+![AIR-1 Dashboard End.png](../assets/air-1-dashboard-end.png)
+
 **Be sure to change the entity ID to match your device or else the card will not work.** You can find your device ID by going to the ESPHome addon and selecting the Edit option.
 
 ![AIR-1 ID.png](../assets/air-1-id.png)
 
-The easiest way to change all of the entity IDs in the code is by using AI (ChatGPT etc.) or by using a code editor like Virtual Studio Code (VSC). In VSC you can Find (ctrl+f) the old ID and Replace (select the small arrow to toggle open the Replace box) it with your ID. Now you are ready to copy the code into the Raw configurator editor. (See code below)  
-  
+The easiest way to change all of the entity IDs in the code is by using AI (ChatGPT etc.) or by using a code editor like Visual Studio Code (VSC). In VSC you can Find (ctrl+f) the old ID and Replace (select the small arrow to toggle open the Replace box) it with your ID. Now you are ready to copy the code into the Raw configurator editor. (See code below)
+
 VSC Find/Replace
 
 ![AIR-1 Find and Replace.png](../assets/OQfair-1-find-and-replace.png)
 
-ChatGPT  
-![Good ChatGPT.png](../assets/vBggood-chatgpt.png)  
+ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
 
 **This is the code!**
 
