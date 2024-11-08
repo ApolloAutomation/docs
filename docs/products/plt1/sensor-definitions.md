@@ -39,6 +39,10 @@
 
 ### Controls:
 
+#### Accessory Power:
+
+* This allows you to control the power delivery to the sensor. Toggled ON sends power to the entire device. Toggled OFF only sends power to the ESP chip. When in the OFF position you will be unable turn on the LED light.
+
 #### RGB Light:
 
 * This allows you to control the RGB LED on the PLT-1. You can toggle it on or off directly from the ESPHome dashboard, which can be useful for creating visual alerts or indications related to plant health (e.g., turning green if everything is fine, red if moisture is too low, etc.).
