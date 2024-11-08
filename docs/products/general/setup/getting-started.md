@@ -59,7 +59,7 @@ wifi_password: "your-wifi-pass-here"
 
    ### Sensors
 
-   You should now have the sensor added! If you have any problems or need help please join our [Discord](https://dsc.gg/apolloautomation) and post in the \#support channel. Or just join to check out product development and community spotlights. Our team monitors that and can quickly respond there. Or visit our [ideas section](https://wiki.apolloautomation.cloud/Ideas/MultisensorMk1) to find cool ways to display the information
+   You should now have the sensor added! If you have any problems or need help please join our [Discord](https://dsc.gg/apolloautomation) and post in the \#support channel. Or just join to check out product development and community spotlights. Our team monitors that and can quickly respond there.
 
    ### Looking For Ideas On How To Use Your Sensor?
 
@@ -67,4 +67,4 @@ wifi_password: "your-wifi-pass-here"
    * Turn The LED Red When CO2 Is Over 1000 ppm
    * Send You An Alert When Motion Is Detected After 11 pm
 
-   Or check out our \#show-off channel in the Apollo [Discord](https://dsc.gg/apolloautomation) for community submissions
+   Or check out our \#showcase channel in the Apollo [Discord](https://dsc.gg/apolloautomation) for community submissions

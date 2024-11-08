@@ -7,7 +7,7 @@ Once added to Home Assistant you can configure different settings for your senso
 * **RGB Light**
   * 3 RGB Neopixels. Click on the light bulb to change the color. Click on the toggle to turn on or off
 * **Calibrate SCD40**
-  * Refer to the [CO2 calibration guide](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration). Place your sensor outside and click this button to calibrate the CO2 levels
+  * Refer to the [CO2 calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/). Place your sensor outside and click this button to calibrate the CO2 levels
 
 ### Sensors
 
@@ -16,7 +16,7 @@ Once added to Home Assistant you can configure different settings for your senso
 * **Carbon Monoxide**
   * Measurement from MiCS-4514 gas sensor
 * **CO2**
-  * True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. This can be calibrated following this guide but does come precalibrated: [Here](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration)
+  * True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. This can be calibrated following this guide but does come precalibrated: [Here](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
 * **DPS310 Pressure**
   * Atmospheric pressure, used to better calibrate the SCD40 CO2 module
 * **DPS310 Temperature**
@@ -68,9 +68,9 @@ Once added to Home Assistant you can configure different settings for your senso
 * **ESP Reboot**
   * Performs a restart of the sensor
 * **SEN55 Temperature Offset**
-  * Allows you to calibrate the SEN55 temperature. Please refer to our [calibration guide](https://wiki.apolloautomation.cloud/books/msr-1/page/msr-1-temperature-humidity-offsets "MSR-1 Temperature &amp; Humidity Offsets")
+  * Allows you to calibrate the SEN55 temperature. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets")
 * **SEN55 Humidity Offset**
-  * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.cloud/books/msr-1/page/msr-1-temperature-humidity-offsets "MSR-1 Temperature &amp; Humidity Offsets")
+  * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets")
 * Startup Light Blink
   * Controls if the led blinks after power on when trying to connect to HA
 
