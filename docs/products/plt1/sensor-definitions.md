@@ -83,13 +83,13 @@
 
 * This is the amount of time the sensor remains active after a connection has been established. A run duration of 60 seconds is often enough to send all sensor data and updates before entering the sleep mode (to save energy). It’s useful for battery-powered devices.
 
-#### Sleep Duration: 5 minutes
+#### Sleep Duration: 480-720 minutes
 
-* This setting specifies how long the PLT-1 will remain in sleep mode between connection intervals. A 5-minute sleep duration is a good balance between battery life and update frequency. You can adjust this depending on how often you want the sensor to wake up and report new data.
+* This setting specifies how long the PLT-1 will remain in sleep mode between connection intervals. A 480-720 minute sleep duration is a good balance between battery life and update frequency. You can adjust this depending on how often you want the sensor to wake up and report new data.
 
 #### Sleep After Connecting: Enabled
 
-* This configuration means the PLT-1 will enter sleep mode after it finishes sending data during each connection. Enabling sleep mode helps conserve battery life, making it ideal for a battery-powered setup.
+* This configuration means the PLT-1 will enter sleep mode after it finishes sending data during each connection. Enabling sleep mode helps conserve battery life, making it ideal for a battery-powered setup. This will override the Run Duration setting. Toggling this off will default to the Run Duration setting.
 
 #### Prevent Sleep: Enabled
 
