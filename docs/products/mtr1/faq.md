@@ -40,7 +40,7 @@
 
 11\. How do I adjust the sensitivity of the motion detection?
 
-•	Sensitivity can be adjusted via the ESPHome configuration. This allows you to fine-tune the radar to avoid false positives or to increase sensitivity for very precise detection.
+•	Sensitivity can NOT be adjusted via the ESPHome configuration. The MTR-1 LD2450 mmWave sensor cannot be tuned like the MSR-2 can. The MTR-1 can set zones and track multiple users instead.
 
 12\. Can the MTR-1 detect motion through walls?
 
