@@ -53,7 +53,7 @@ wifi_password: "your-wifi-pass-here"
 
    #####
 
-   Head on over to the CO2 Calibration page [https://wiki.apolloautomation.com/books/general/page/co2-calibration](https://wiki.apolloautomation.com/books/general/page/co2-calibration) to calibrate your new sensor.
+   Head on over to the [CO2 Calibration page](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/) to calibrate your new sensor.
 
    ##### Note: This is not necessary if you did not purchase the CO2 sensor addon!
 
