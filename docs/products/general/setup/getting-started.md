@@ -34,6 +34,8 @@ wifi_password: "your-wifi-pass-here"
 
    ![image.png](../assets/image.png)
 
+   ###
+
    ### Connecting Sensor To Home Assistant
 
    1. **Once you connect your sensor to wifi through the above process, open up Home Assistant. Then in the bottom left click on “Settings”**
@@ -68,3 +70,25 @@ wifi_password: "your-wifi-pass-here"
    * Send You An Alert When Motion Is Detected After 11 pm
 
    Or check out our \#showcase channel in the Apollo [Discord](https://dsc.gg/apolloautomation) for community submissions
+
+### Connecting to Home Assistant via ESPHome Integration:
+
+1\. Click the "Notification" Icon in the bottom left.
+
+![](../../../assets/connect-to-esphome-integration-1.png "Esphome Notification Icon")
+
+2\. Click "check it out" to go to the integrations page and see the new device that was found.
+
+![](../../../assets/connect-to-esphome-integration-2.png "Esphome New Device Discovered")
+
+3\. Click "ADD" to begin adding the device to home assistant.
+
+![Click add to add device to esphome integration](../../../assets/connect-to-esphome-integration-3.png)
+
+4\. Click "SUBMIT" to confirm you want to add your new Apollo device to home assistant.
+
+![Submit to confirm adding to esphome integration](../../../assets/connect-to-esphome-integration-4.png)
+
+5\. Give it an area and click "FINISH".
+
+![Define what area it is in then click finish](../../../assets/connect-to-esphome-integration-5.png)
