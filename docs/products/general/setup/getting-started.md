@@ -34,37 +34,24 @@ wifi_password: "your-wifi-pass-here"
 
    ![image.png](../assets/image.png)
 
-   ### Connecting Sensor To Home Assistant
+### Connecting to Home Assistant via ESPHome Integration:
 
-   1. **Once you connect your sensor to wifi through the above process, open up Home Assistant. Then in the bottom left click on “Settings”**
+1\. Click the "Notification" Icon in the bottom left.
 
-   ![homeassistantsettings.png](../assets/homeassistantsettings.png) 2. **From there click on “Devices And Services”**
+![](../../../assets/connect-to-esphome-integration-1.png "Esphome Notification Icon")
 
-   ![homeassistant_deviceandservices.png](../assets/homeassistant-deviceandservices.png) 3. **Look for the discovered sensor. It should be named “apollo-msr-mk1” with some random letters and numbers (Those come from the device's mac address). Click on “Configure” and then “Submit”.**
-   1. **If you do not see the device as discovered, make sure you have the ESPHome integration installed to Home Assistant you can find** [**their instructions here**](https://esphome.io/guides/getting_started_hassio.html#connecting-your-device-to-home-assistant)
+2\. Click "check it out" to go to the integrations page and see the new device that was found.
 
-   ![img4_optimized.png](../assets/img4-optimized.png) 4. **Add the sensor to ESPHome. It will now show up in the ESPHome integration**
+![](../../../assets/connect-to-esphome-integration-2.png "Esphome New Device Discovered")
 
-   ![img5_optimized.png](../assets/img5-optimized.png) 5. **The sensor has now been added to Home Assistant and you can use it as you please. For ideas please visit our ideas section or join our** [**Discord**](https://dsc.gg/apolloautomation)
+3\. Click "ADD" to begin adding the device to home assistant.
 
-   ![img6_optimized.png](../assets/img6-optimized.png)
+![Click add to add device to esphome integration](../../../assets/connect-to-esphome-integration-3.png)
 
-   #### 6\. Next steps:
+4\. Click "SUBMIT" to confirm you want to add your new Apollo device to home assistant.
 
-   #####
+![Submit to confirm adding to esphome integration](../../../assets/connect-to-esphome-integration-4.png)
 
-   Head on over to the [CO2 Calibration page](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/) to calibrate your new sensor.
+5\. Give it an area and click "FINISH".
 
-   ##### Note: This is not necessary if you did not purchase the CO2 sensor addon!
-
-   ### Sensors
-
-   You should now have the sensor added! If you have any problems or need help please join our [Discord](https://dsc.gg/apolloautomation) and post in the \#support channel. Or just join to check out product development and community spotlights. Our team monitors that and can quickly respond there.
-
-   ### Looking For Ideas On How To Use Your Sensor?
-
-   * Graph CO2 Over Time
-   * Turn The LED Red When CO2 Is Over 1000 ppm
-   * Send You An Alert When Motion Is Detected After 11 pm
-
-   Or check out our \#showcase channel in the Apollo [Discord](https://dsc.gg/apolloautomation) for community submissions
+![Define what area it is in then click finish](../../../assets/connect-to-esphome-integration-5.png)
