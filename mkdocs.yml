@@ -97,9 +97,9 @@ copyright: |
   &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
 
 nav:
-  - Home: index.md
-  - Products:
+  - Apollo: 
       - General:
+          - Home: index.md
           - Introduction: products/general/introduction.md
           - FAQ: products/general/faq.md
           - Getting Started: products/general/setup/getting-started.md
@@ -254,5 +254,6 @@ nav:
           - FAQ: products/apolloodroid/faq.md
           - Getting Started: products/apolloodroid/getting-started.md
           - Reviews: products/apolloodroid/reviews.md
-  - Contact Us / Support: products/general/contact-us/contact-us-support.md
+      - Contact Us / Support: products/general/contact-us/contact-us-support.md
+    
     
