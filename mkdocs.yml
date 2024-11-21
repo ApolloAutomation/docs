@@ -97,7 +97,8 @@ copyright: |
   &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
 
 nav:
-  - Home: index.md
+  - Home: 
+      - Home: index.md
   - General:
       - Introduction: products/general/introduction.md
       - FAQ: products/general/faq.md
