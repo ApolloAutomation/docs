@@ -98,8 +98,8 @@ copyright: |
 
 nav:
   - Apollo: 
-      - Home: index.md
       - General:
+          - Home: index.md
           - Introduction: products/general/introduction.md
           - FAQ: products/general/faq.md
           - Getting Started: products/general/setup/getting-started.md
