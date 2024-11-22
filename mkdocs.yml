@@ -146,6 +146,7 @@ nav:
               - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
               - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
             - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
+          - Addons: products/msr1/addons/adding-co2-to-msr-1.md
           - Reviews: products/msr1/msr1-reviews.md
           - Examples:
             - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
