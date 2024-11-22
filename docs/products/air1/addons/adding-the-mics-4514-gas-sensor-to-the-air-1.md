@@ -1,4 +1,3 @@
 # Adding The MiCS-4514 Gas Sensor To The AIR-1
 
-1\. Unplug your AIR-1 from power and follow the video  
-  
+1\. Unplug your AIR-1 from power and follow the video https://www.youtube.com/watch?v=lCzuQIrm9GI
