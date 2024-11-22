@@ -146,6 +146,7 @@ nav:
               - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
               - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
             - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
+          - Addons: products/msr1/addons/adding-co2-to-msr-1.md
           - Reviews: products/msr1/msr1-reviews.md
           - Examples:
             - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
@@ -184,6 +185,7 @@ nav:
             - Zone Configuration:
               - Home Assistant: products/mtr1/setup/zones-ha.md
               - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
+          - Addons: products/mtr1/addons/adding-co2-to-mtr-1.md
           - Reviews: products/mtr1/mtr1-reviews.md
           - Examples:
             - MTR-1 Corner Mount: products/mtr1/examples/crookedtoe-mtr1.md
