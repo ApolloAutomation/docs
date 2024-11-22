@@ -1,6 +1,6 @@
 # Adding CO2 to AIR-1
 
-[Please Click here if you have the older AIR-1 case with the black mesh sides]().
+[Please Click here if you have the older AIR-1 case with the black mesh sides](https://wiki.apolloautomation.com/products/air1/addons/adding-co2-to-air-1-mesh-case-design/ "Wiki for old air-1 case design with mesh sides").
 
 1\. Unplug your AIR-1 from power and lift the top of the case or "lid".
 
