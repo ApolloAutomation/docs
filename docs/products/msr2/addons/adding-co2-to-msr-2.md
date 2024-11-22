@@ -22,4 +22,6 @@
 
 6\. Gently press the backplate of the MSR-2 case onto the MSR-2 until it lightly snaps into place. Please do not force it, if necessary please repeat steps above until it seats in the case without any force required.
 
+![](../../../assets/msr-2-add-co2-pic-15.jpg)
+
 7\. Please refer to our [CO2 calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO2 module after installation. This is required for all CO2 addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).
