@@ -1,5 +1,7 @@
 # Adding CO2 to AIR-1
 
+[Please Click here if you have the older AIR-1 case with the black mesh sides]().
+
 1\. Unplug your AIR-1 from power and lift the top of the case or "lid".
 
 ![](../../../assets/air-1-add-co2-pic-1.jpg)![](../../../assets/air-1-add-co2-pic-2.jpg)![](../../../assets/air-1-add-co2-pic-3.jpg)
