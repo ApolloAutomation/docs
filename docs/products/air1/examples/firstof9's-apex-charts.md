@@ -48,7 +48,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
   - type: sections
     max_columns: 3
     title: Air Quality
-    path: air-quality2
+    path: air-quality
     icon: mdi:air-filter
     sections:
       - type: grid
@@ -60,7 +60,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               show_states: true
               colorize_states: true
             series:
-              - entity: sensor.apollo_air_1_cc6b64_pm_10_m_weight_concentration
+              - entity: sensor.downstairs_air_sensor_pm_10_m_weight_concentration
                 name: PM10
                 stroke_width: 2
                 group_by:
@@ -68,7 +68,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
                   duration: 1h
                 show:
                   legend_value: false
-              - entity: sensor.apollo_air_1_cc6b64_pm_1_m_weight_concentration
+              - entity: sensor.downstairs_air_sensor_pm_1_m_weight_concentration
                 name: PM1
                 stroke_width: 2
                 group_by:
@@ -76,7 +76,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
                   duration: 1h
                 show:
                   legend_value: false
-              - entity: sensor.apollo_air_1_cc6b64_pm_2_5_m_weight_concentration
+              - entity: sensor.downstairs_air_sensor_pm_2_5_m_weight_concentration
                 name: PM2.5
                 stroke_width: 2
                 group_by:
@@ -84,7 +84,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
                   duration: 1h
                 show:
                   legend_value: false
-              - entity: sensor.apollo_air_1_cc6b64_pm_4_m_weight_concentration
+              - entity: sensor.downstairs_air_sensor_pm_4_m_weight_concentration
                 name: PM4
                 stroke_width: 2
                 group_by:
@@ -97,7 +97,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               show: true
               title: PM10 (10m average)
               show_states: true
-              colorize_states: false
+              colorize_states: true
             graph_span: 24h
             experimental:
               color_threshold: true
@@ -108,13 +108,14 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               label: now
               color: red
             series:
-              - entity: sensor.apollo_air_1_cc6b64_pm_10_m_weight_concentration
+              - entity: sensor.downstairs_air_sensor_pm_10_m_weight_concentration
                 name: PM10
                 stroke_width: 3
                 fill_raw: last
                 extend_to: now
                 show:
                   legend_value: false
+                  header_color_threshold: true
                 group_by:
                   func: avg
                   duration: 10min
@@ -131,7 +132,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
                     value: 55
                   - color: rgb(0,228,0)
                     value: 0
-              - entity: sensor.apollo_air_1_cc6b64_pm_10_m_weight_concentration
+              - entity: sensor.downstairs_air_sensor_pm_10_m_weight_concentration
                 name: PM10
                 color: orange
                 opacity: 0.3
@@ -164,7 +165,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               show: true
               title: PM2.5 (10m average)
               show_states: true
-              colorize_states: false
+              colorize_states: true
             graph_span: 24h
             experimental:
               color_threshold: true
@@ -175,31 +176,32 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               label: now
               color: red
             series:
-              - entity: sensor.apollo_air_1_cc6b64_pm_2_5_m_weight_concentration
+              - entity: sensor.downstairs_air_sensor_pm_2_5_m_weight_concentration
                 name: PM2.5
                 stroke_width: 3
                 fill_raw: last
                 extend_to: now
                 show:
                   legend_value: false
+                  header_color_threshold: true
                 group_by:
                   func: avg
                   duration: 10min
                 color_threshold:
                   - color: rgb(126,0,35)
-                    value: 35.5
+                    value: 250.5
                   - color: rgb(143,63,151)
-                    value: 35.5
+                    value: 150.5
                   - color: rgb(255,0,0)
-                    value: 35.5
+                    value: 55.5
                   - color: rgb(255,126,0)
-                    value: 35.4
+                    value: 35.5
                   - color: rgb(255,255,0)
-                    value: 12
+                    value: 12.1
                   - color: rgb(0,228,0)
                     value: 0
-              - entity: sensor.apollo_air_1_cc6b64_pm_2_5_m_weight_concentration
-                name: PM2.5
+              - entity: sensor.downstairs_air_sensor_pm_2_5_m_weight_concentration
+                name: PM10
                 color: orange
                 opacity: 0.3
                 stroke_width: 3
@@ -229,7 +231,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               show: true
               title: CO2 (10m average)
               show_states: true
-              colorize_states: false
+              colorize_states: true
             graph_span: 24h
             experimental:
               color_threshold: true
@@ -240,13 +242,14 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               label: now
               color: red
             series:
-              - entity: sensor.apollo_air_1_cc6b64_co2
+              - entity: sensor.downstairs_air_sensor_co2
                 name: CO2
                 stroke_width: 3
                 fill_raw: last
                 extend_to: now
                 show:
                   legend_value: false
+                  header_color_threshold: true
                 group_by:
                   func: avg
                   duration: 10min
@@ -259,7 +262,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
                     value: 1000
                   - color: '#008000'
                     value: 0
-              - entity: sensor.apollo_air_1_cc6b64_co2
+              - entity: sensor.downstairs_air_sensor_co2
                 name: CO2
                 color: orange
                 opacity: 0.3
@@ -288,7 +291,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               show: true
               title: VOC (10m average)
               show_states: true
-              colorize_states: false
+              colorize_states: true
             experimental:
               color_threshold: true
             graph_span: 24h
@@ -299,11 +302,12 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               label: now
               color: red
             series:
-              - entity: sensor.apollo_air_1_cc6b64_sen55_voc
+              - entity: sensor.downstairs_air_sensor_sen55_voc
                 name: VOC
                 stroke_width: 3
                 show:
                   legend_value: false
+                  header_color_threshold: true
                 extend_to: now
                 fill_raw: last
                 group_by:
@@ -319,7 +323,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
                     value: 150
                   - color: '#008000'
                     value: 0
-              - entity: sensor.apollo_air_1_cc6b64_sen55_voc
+              - entity: sensor.downstairs_air_sensor_sen55_voc
                 name: VOC
                 opacity: 0.5
                 stroke_width: 3
@@ -346,7 +350,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               show: true
               title: NOx (10m average)
               show_states: true
-              colorize_states: false
+              colorize_states: true
             experimental:
               color_threshold: true
             graph_span: 24h
@@ -357,10 +361,11 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
               label: now
               color: red
             series:
-              - entity: sensor.apollo_air_1_cc6b64_sen55_nox
+              - entity: sensor.downstairs_air_sensor_sen55_nox
                 name: NOx
                 show:
                   legend_value: false
+                  header_color_threshold: true
                 stroke_width: 3
                 fill_raw: last
                 extend_to: now
@@ -376,7 +381,7 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
                     value: 20
                   - color: '#008000'
                     value: 0
-              - entity: sensor.apollo_air_1_cc6b64_sen55_nox
+              - entity: sensor.downstairs_air_sensor_sen55_nox
                 name: NOx
                 opacity: 0.5
                 stroke_width: 3
@@ -397,355 +402,87 @@ ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
                     value: 20
                   - color: '#008000'
                     value: 0
-```
-
-If you are using the old masonry-style dashboards, please paste in this code:
-
-```yaml
-  - title: Air Quality
-    path: air-quality
-    icon: mdi:air-filter
-    cards:
-      - type: custom:apexcharts-card
-        header:
-          show: true
-          title: PM (1h average)
-          show_states: true
-          colorize_states: true
-        series:
-          - entity: sensor.apollo_air_1_cc6b64_pm_10_m_weight_concentration
-            name: PM10
-            stroke_width: 2
-            group_by:
-              func: avg
-              duration: 1h
-            show:
-              legend_value: false
-          - entity: sensor.apollo_air_1_cc6b64_pm_1_m_weight_concentration
-            name: PM1
-            stroke_width: 2
-            group_by:
-              func: avg
-              duration: 1h
-            show:
-              legend_value: false
-          - entity: sensor.apollo_air_1_cc6b64_pm_2_5_m_weight_concentration
-            name: PM2.5
-            stroke_width: 2
-            group_by:
-              func: avg
-              duration: 1h
-            show:
-              legend_value: false
-          - entity: sensor.apollo_air_1_cc6b64_pm_4_m_weight_concentration
-            name: PM4
-            stroke_width: 2
-            group_by:
-              func: avg
-              duration: 1h
-            show:
-              legend_value: false
-      - type: custom:apexcharts-card
-        header:
-          show: true
-          title: PM10 (10m average)
-          show_states: true
-          colorize_states: false
-        graph_span: 24h
-        experimental:
-          color_threshold: true
-        span:
-          start: day
-        now:
-          show: true
-          label: now
-          color: red
-        series:
-          - entity: sensor.apollo_air_1_cc6b64_pm_10_m_weight_concentration
-            name: PM10
-            stroke_width: 3
-            fill_raw: last
-            extend_to: now
-            show:
-              legend_value: false
-            group_by:
-              func: avg
-              duration: 10min
-            color_threshold:
-              - color: rgb(126,0,35)
-                value: 425
-              - color: rgb(143,63,151)
-                value: 355
-              - color: rgb(255,0,0)
-                value: 255
-              - color: rgb(255,126,0)
-                value: 155
-              - color: rgb(255,255,0)
-                value: 55
-              - color: rgb(0,228,0)
-                value: 0
-          - entity: sensor.apollo_air_1_cc6b64_pm_10_m_weight_concentration
-            name: PM10
-            color: orange
-            opacity: 0.3
-            stroke_width: 3
-            fill_raw: last
-            show:
-              in_header: false
-              legend_value: false
-            offset: '-24h'
-            group_by:
-              func: avg
-              duration: 10min
-            color_threshold:
-              - color: rgb(126,0,35)
-                value: 425
-              - color: rgb(143,63,151)
-                value: 355
-              - color: rgb(255,0,0)
-                value: 255
-              - color: rgb(255,126,0)
-                value: 155
-              - color: rgb(255,255,0)
-                value: 55
-              - color: rgb(0,228,0)
-                value: 0
-      - type: custom:apexcharts-card
-        header:
-          show: true
-          title: PM2.5 (10m average)
-          show_states: true
-          colorize_states: false
-        graph_span: 24h
-        experimental:
-          color_threshold: true
-        span:
-          start: day
-        now:
-          show: true
-          label: now
-          color: red
-        series:
-          - entity: sensor.apollo_air_1_cc6b64_pm_2_5_m_weight_concentration
-            name: PM10
-            stroke_width: 3
-            fill_raw: last
-            extend_to: now
-            show:
-              legend_value: false
-            group_by:
-              func: avg
-              duration: 10min
-            color_threshold:
-              - color: rgb(126,0,35)
-                value: 35.5
-              - color: rgb(143,63,151)
-                value: 35.5
-              - color: rgb(255,0,0)
-                value: 35.5
-              - color: rgb(255,126,0)
-                value: 35.4
-              - color: rgb(255,255,0)
-                value: 12
-              - color: rgb(0,228,0)
-                value: 0
-          - entity: sensor.apollo_air_1_cc6b64_pm_2_5_m_weight_concentration
-            name: PM10
-            color: orange
-            opacity: 0.3
-            stroke_width: 3
-            fill_raw: last
-            show:
-              in_header: false
-              legend_value: false
-            offset: '-24h'
-            group_by:
-              func: avg
-              duration: 10min
-            color_threshold:
-              - color: rgb(126,0,35)
-                value: 250.5
-              - color: rgb(143,63,151)
-                value: 150.5
-              - color: rgb(255,0,0)
-                value: 55.5
-              - color: rgb(255,126,0)
-                value: 35.5
-              - color: rgb(255,255,0)
-                value: 12.1
-              - color: rgb(0,228,0)
-                value: 0
-      - type: custom:apexcharts-card
-        header:
-          show: true
-          title: CO2 (10m average)
-          show_states: true
-          colorize_states: false
-        graph_span: 24h
-        experimental:
-          color_threshold: true
-        span:
-          start: day
-        now:
-          show: true
-          label: now
-          color: red
-        series:
-          - entity: sensor.apollo_air_1_cc6b64_co2
-            name: CO2
-            stroke_width: 3
-            fill_raw: last
-            extend_to: now
-            show:
-              legend_value: false
-            group_by:
-              func: avg
-              duration: 10min
-            color_threshold:
-              - color: '#FF0000'
-                value: 5000
-              - color: '#FFA500'
-                value: 2000
-              - color: '#FFFF00'
-                value: 1000
-              - color: '#008000'
-                value: 0
-          - entity: sensor.apollo_air_1_cc6b64_co2
-            name: CO2
-            color: orange
-            opacity: 0.3
-            stroke_width: 3
-            fill_raw: last
-            show:
-              in_header: false
-              legend_value: false
-            offset: '-24h'
-            group_by:
-              func: avg
-              duration: 10min
-            color_threshold:
-              - color: '#FF0000'
-                value: 5000
-              - color: '#FFA500'
-                value: 2000
-              - color: '#FFFF00'
-                value: 1000
-              - color: '#008000'
-                value: 0
-      - type: custom:apexcharts-card
-        header:
-          show: true
-          title: VOC (10m average)
-          show_states: true
-          colorize_states: false
-        experimental:
-          color_threshold: true
-        graph_span: 24h
-        span:
-          start: day
-        now:
-          show: true
-          label: now
-          color: red
-        series:
-          - entity: sensor.apollo_air_1_cc6b64_sen55_voc
-            name: VOC
-            stroke_width: 3
-            show:
-              legend_value: false
-            extend_to: now
-            fill_raw: last
-            group_by:
-              func: avg
-              duration: 10min
-              fill: last
-            color_threshold:
-              - color: '#FF0000'
-                value: 400
-              - color: '#FFA500'
-                value: 250
-              - color: '#FFFF00'
-                value: 150
-              - color: '#008000'
-                value: 0
-          - entity: sensor.apollo_air_1_cc6b64_sen55_voc
-            name: VOC
-            opacity: 0.5
-            stroke_width: 3
-            fill_raw: last
-            show:
-              in_header: false
-              legend_value: false
-            offset: '-24h'
-            group_by:
-              func: avg
-              duration: 10min
-              fill: last
-            color_threshold:
-              - color: '#FF0000'
-                value: 400
-              - color: '#FFA500'
-                value: 250
-              - color: '#FFFF00'
-                value: 150
-              - color: '#008000'
-                value: 0
-      - type: custom:apexcharts-card
-        header:
-          show: true
-          title: NOx (10m average)
-          show_states: true
-          colorize_states: false
-        experimental:
-          color_threshold: true
-        graph_span: 24h
-        span:
-          start: day
-        now:
-          show: true
-          label: now
-          color: red
-        series:
-          - entity: sensor.apollo_air_1_cc6b64_sen55_nox
-            name: NOx
-            show:
-              legend_value: false
-            stroke_width: 3
-            fill_raw: last
-            extend_to: now
-            group_by:
-              func: avg
-              duration: 10min
-            color_threshold:
-              - color: '#FF0000'
-                value: 300
-              - color: '#FFA500'
-                value: 150
-              - color: '#FFFF00'
-                value: 20
-              - color: '#008000'
-                value: 0
-          - entity: sensor.apollo_air_1_cc6b64_sen55_nox
-            name: NOx
-            opacity: 0.5
-            stroke_width: 3
-            fill_raw: last
-            show:
-              in_header: false
-              legend_value: false
-            offset: '-24h'
-            group_by:
-              func: avg
-              duration: 10min
-            color_threshold:
-              - color: '#FF0000'
-                value: 300
-              - color: '#FFA500'
-                value: 150
-              - color: '#FFFF00'
-                value: 20
-              - color: '#008000'
-                value: 0
+          - type: conditional
+            conditions:
+              - condition: or
+                conditions:
+                  - condition: numeric_state
+                    entity: sensor.downstairs_air_sensor_nitrogen_dioxide
+                    above: 0
+                  - condition: numeric_state
+                    entity: sensor.downstairs_air_sensor_methane
+                    above: 0
+                  - condition: numeric_state
+                    entity: sensor.downstairs_air_sensor_hydrogen
+                    above: 0
+                  - condition: numeric_state
+                    entity: sensor.downstairs_air_sensor_ethanol
+                    above: 0
+                  - condition: numeric_state
+                    entity: sensor.downstairs_air_sensor_carbon_monoxide
+                    above: 0
+                  - condition: numeric_state
+                    entity: sensor.downstairs_air_sensor_ammonia
+                    above: 0
+            card:
+              type: custom:apexcharts-card
+              header:
+                show: true
+                title: Gases (5m average)
+                show_states: true
+                colorize_states: true
+              series:
+                - entity: sensor.downstairs_air_sensor_carbon_monoxide
+                  name: CO
+                  stroke_width: 2
+                  group_by:
+                    func: avg
+                    duration: 5m
+                  show:
+                    legend_value: false
+                - entity: sensor.downstairs_air_sensor_nitrogen_dioxide
+                  name: NO2
+                  stroke_width: 2
+                  group_by:
+                    func: avg
+                    duration: 5m
+                  show:
+                    legend_value: false
+                - entity: sensor.downstairs_air_sensor_methane
+                  name: Methane
+                  stroke_width: 2
+                  group_by:
+                    func: avg
+                    duration: 5m
+                  show:
+                    legend_value: false
+                - entity: sensor.downstairs_air_sensor_hydrogen
+                  name: Hydrogen
+                  stroke_width: 2
+                  group_by:
+                    func: avg
+                    duration: 5m
+                  show:
+                    legend_value: false
+                - entity: sensor.downstairs_air_sensor_ethanol
+                  name: Ethanol
+                  stroke_width: 2
+                  group_by:
+                    func: avg
+                    duration: 5m
+                  show:
+                    legend_value: false
+                - entity: sensor.downstairs_air_sensor_ammonia
+                  name: Ammonia
+                  stroke_width: 2
+                  group_by:
+                    func: avg
+                    duration: 5m
+                  show:
+                    legend_value: false
+            layout_options:
+              grid_columns: 4
+              grid_rows: 6
 ```
 
 Now click save in the top right and remember to not hit any buttons or make any other edits before saving!
