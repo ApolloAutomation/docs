@@ -165,6 +165,7 @@ nav:
               - Home Assistant: products/msr2/calibrating-and-updating/zones-ha.md
               - HLK Radar Tool App: products/msr2/calibrating-and-updating/zones-hlk.md
               - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
+          - Addons: products/msr2/addons/adding-co2-to-msr-2.md
           - Reviews: products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
