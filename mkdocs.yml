@@ -155,6 +155,7 @@ nav:
             - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
             - Manually Uploading Code To MSR-1: products/msr1/troubleshooting/msr1-code.md
             - Teardown and Reassembly Of MSR-1: products/msr1/troubleshooting/msr1-teardown.md
+            - Reset Wi-Fi Credentials: products/msr1/troubleshooting/msr1-reset-wi-fi-credentials.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
@@ -175,6 +176,7 @@ nav:
             - MSR-2 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
             - Manually Uploading Code To MSR-2: products/msr2/troubleshooting/msr2-code.md
             - Teardown and Reassembly Of MSR-2: products/msr2/troubleshooting/msr2-teardown.md
+            - Reset Wi-Fi Credentials: products/msr2/troubleshooting/msr2-reset-wi-fi-credentials.md
       - MTR-1:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
@@ -194,6 +196,7 @@ nav:
             - MTR-1 Boot Mode: products/mtr1/troubleshooting/mtr1-boot-mode.md
             - Manually Uploading Code To MTR-1: products/mtr1/troubleshooting/mtr1-code.md
             - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
+            - Reset Wi-Fi Credentials: products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
@@ -212,7 +215,7 @@ nav:
             - AIR-1 Boot Mode: products/air1/troubleshooting/air1-boot-mode.md
             - Manually Uploading Code To AIR-1: products/air1/troubleshooting/air1-code.md
             - Teardown and Reassembly Of AIR-1: products/air1/troubleshooting/air1-teardown.md
-            - Refer Wi-Fi Credentials on AIR-1: products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
+            - Reset Wi-Fi Credentials: products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
       - PLT-1:
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
