@@ -212,6 +212,7 @@ nav:
             - AIR-1 Boot Mode: products/air1/troubleshooting/air1-boot-mode.md
             - Manually Uploading Code To AIR-1: products/air1/troubleshooting/air1-code.md
             - Teardown and Reassembly Of AIR-1: products/air1/troubleshooting/air1-teardown.md
+            - Refer Wi-Fi Credentials on AIR-1: products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
       - PLT-1:
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
