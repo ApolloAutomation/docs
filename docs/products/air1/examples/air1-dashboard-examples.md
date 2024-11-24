@@ -1,5 +1,9 @@
 # AIR-1 Home Assistant Dashboard Examples
 
+Really neat dashboard for your AIR-1 by user "keex"!
+
+[https://community.home-assistant.io/t/apollo-air-1-dashboard/785311](https://community.home-assistant.io/t/apollo-air-1-dashboard/785311)
+
 #### **CO2 Charts**
 
 ##### Home Assistant Sensor
@@ -44,7 +48,6 @@ severity:
   yellow: 1000
   red: 2000
 ```
-
 
 #### **VOC Charts**
 
