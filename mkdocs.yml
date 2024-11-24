@@ -128,7 +128,7 @@ nav:
             - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
             - Connection Issues: products/general/troubleshooting/connection-issues.md
             - Unifi Auto Discover Device mDNS Issue: products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
-            - OPNsenseAuto Discover Device mDNS Issue: products/general/troubleshooting/opnsense-mdns-auto-discover-issue.md
+            - OPNsense Auto Discover Device mDNS Issue: products/general/troubleshooting/opnsense-mdns-auto-discover-issue.md
           - Battery Sensors:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
