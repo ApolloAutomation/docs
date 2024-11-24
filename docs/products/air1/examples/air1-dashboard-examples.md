@@ -2,6 +2,8 @@
 
 Really neat dashboard for your AIR-1 by user "keex"!
 
+![](../../../assets/air-1-keex-dashboard-image-1-1.png)
+
 [https://community.home-assistant.io/t/apollo-air-1-dashboard/785311](https://community.home-assistant.io/t/apollo-air-1-dashboard/785311)
 
 #### **CO2 Charts**
