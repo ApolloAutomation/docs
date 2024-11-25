@@ -26,7 +26,7 @@ No. The Apollo Odroid runs Home Assistant OS, which is entirely locally managed.
 
 5\. Can I expand the storage on the Apollo Odroid?
 
-Yes. While it comes with 64GB eMMC storage, you can add your own NVMe drive (careful, not all NVMe drives will work) https://wiki.odroid.com/odroid-m1s/hardware/nvme. We suggest the Kingston NV2 1TB drive https://amzn.to/40GgmE8
+Yes. While it comes with 64GB eMMC storage, you can add your own NVMe drive (careful, not all NVMe drives will work) [https://wiki.odroid.com/odroid-m1s/hardware/nvme](https://wiki.odroid.com/odroid-m1s/hardware/nvme). We suggest the Kingston NV2 1TB drive [https://amzn.to/40GgmE8](https://amzn.to/40GgmE8)
 
 6\. Does the Apollo Odroid support wireless connectivity?
 
