@@ -3,7 +3,7 @@
 2. **How does the capacitive soil moisture sensor work?**
    * The PLT-1B uses a capacitive soil moisture sensor that measures water content in the soil by detecting changes in the dielectric permittivity. Unlike resistive sensors, it doesn’t corrode due to a protective conformal coating, ensuring durability.
 3. **How is the PLT-1B powered?**
-   * The PLT-1B operates with a **rechargeable** 18650 battery (not included), giving it portability for plant monitoring without being tied to an outlet.
+   * The PLT-1B operates with a **rechargeable** 18650 Flat Top battery (not included), giving it portability for plant monitoring without being tied to an outlet. Example battery to use: [https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery](https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery)
 4. **How long does the battery last in the PLT-1B?**
    * Battery life depends on sleep/wake intervals. Waking every 8 hours provides around 6 months of battery life, and waking every 12 hours or more can extend it to about a year.
 5. **How does the optional soil temperature probe work?**
