@@ -42,6 +42,10 @@ The Apollo H-1 operates on battery power, making it easy to hang and place where
 
 Yes, the H-1 makes a wonderful gift! It’s unique, festive, and supports a good cause, making it a great option for holiday gifting.
 
-10\. Where can I find more information about the Apollo H-1 and similar products?
+10\. My H-1 is draining battery too fast- how do i fix this?
+
+Please make sure if you are on the smart firmware to disable the "prevent sleep" option on the home assistant device page!
+
+11\. Where can I find more information about the Apollo H-1 and similar products?
 
 For more details, setup guides, and other products, email us at support@apolloautomation.com or join us on [Discord](dsc.gg/apolloautomation) for community support and discussions.
