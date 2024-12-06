@@ -249,7 +249,7 @@ nav:
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
             - PLT-1 Boot Mode: products/plt1b/plt1b-boot-mode.md
-            - Manually Uploading Code To PLT-1: products/plt1/plt1-code.md
+            - Manually Uploading Code To PLT-1: products/plt1b/plt1b-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1b/plt1b-teardown.md
       - H-1:
           - Introduction: products/h1/introduction.md
