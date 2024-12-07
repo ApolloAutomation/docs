@@ -48,4 +48,4 @@ Please make sure if you are on the smart firmware to disable the "prevent sleep"
 
 11\. Where can I find more information about the Apollo H-1 and similar products?
 
-For more details, setup guides, and other products, email us at support@apolloautomation.com or join us on [Discord](dsc.gg/apolloautomation) for community support and discussions.
+For more details, setups, guides, and other products please email us at support@apolloautomation.com or join us on [Discord](https://dsc.gg/apolloautomation)!
