@@ -24,6 +24,6 @@
 
 ![](../../../assets/toggle-ota-mode-automation-5.png)
 
-15\. Now you are done! You can toggle your OTA mode on and after one hour it will automatically be turned off for you!
+15\. Now you are done! You can toggle your OTA mode on so that you can update your devices and after one hour it will automatically be turned off for you!
 
 &nbsp;
