@@ -130,4 +130,8 @@
 
 •	The AIR-1’s CO2 and gas sensors are intended for air quality monitoring but do not meet the safety standards for CO2 or gas leak detection as defined by the NBIC, NFPA, or IFC. For safety purposes, dedicated gas or CO2 monitors should be used.
 
+34\. My AIR-1 CO2 sensors are having a sawtooth pattern, is there any explanation?
+
+•	Some users have noticed the AIR-1 with the "Apollo" side facing up will produce strange behavior with the CO2 sensor readings fluctuating way more than they should. Simply turning the AIR-1 to the other side makes this problem go away!
+
 &nbsp;
