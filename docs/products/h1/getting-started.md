@@ -1,6 +1,8 @@
 1\. Power Up the H-1:
 
-Insert a CR123A battery or plug it into a power source using the USB-C port.
+Insert a (rechargable) [RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/dp/B0CSKD7N3D) or plug it into a power source using the USB-C port.
+
+![](../../assets/h-1-battery-insert.jpg)
 
 2\. Turn on the Ornament:
 
