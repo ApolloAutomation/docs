@@ -22,6 +22,34 @@ To connect through the sensor's onboard hotspot follow the below:
 
    ![](../../../assets/getting-started-connect-to-hotspot-image-3.png)
 
+### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
+
+Pre-requirement: Bluetooth built in such as a raspberry pi or at least one ESP32 BLE Proxy.
+
+1\. Navigate to settings -&gt; integrations then click the "ADD" button below your new Apollo device!
+
+![](../../../assets/improv-ble-pic-1.png)
+
+2\. Click submit when it asks if you want to setup your new device and shows you a MAC address.
+
+![](../../../assets/improv-ble-pic-2.png)
+
+3\. Type in your Wi-Fi name and password in the two fields.
+
+![](../../../assets/improv-ble-pic-3.png)
+
+4\. Wait for it to finish, you will see the image below while it connects.
+
+![](../../../assets/improv-ble-pic-4.png)
+
+5\. Click the link shown in the image below (do not click close).
+
+![](../../../assets/improv-ble-pic-5-1.png)
+
+6\. When successful, you will see this image appear!
+
+![](../../../assets/improv-ble-pic-6.png)
+
 ### Connecting To ESPHome Device Compiler (previously ESPHome Addon)
 
 Note: You can skip the esphome device compiler completely if you do not want to rename your sensor or make edits to the yaml. [Please Skip to the next part by clicking here!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration)
