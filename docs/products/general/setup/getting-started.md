@@ -1,6 +1,6 @@
 # Getting Started
 
-This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our [Discord](https://dsc.gg/apolloautomation) for some help.
+This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">Discord</a> for some help.
 
 ### Connecting Through Hotspot
 
@@ -38,17 +38,23 @@ wifi_ssid: "your-wifi-ssid-here"
 wifi_password: "your-wifi-pass-here"
 ```
 
-1\.
+1\. Click the ESPHome Compiler in your sidebar then click "TAKE CONTROL" for your new Apollo Device!
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-1.png)
 
-1. &nbsp;
-2. Once installed you'll have the addon's name in your sidebar.
-   1. 1. ![esphome-device-compiler-dashboard-pic-2](../../../assets/esphome-device-compiler-dashboard-pic-2.png)
-      2. Click on adopt for your sensor![Screenshot 2024-06-06 at 4.06.20 PM.png](../assets/screenshot-2024-06-06-at-4-06-20-pm.png)
-      3. Then adopt again
+2\. Rename your sensor here (this only renames the sensor in the ESPHome Device Compiler's Dashboard) or skip it and continue on by clicking "TAKE CONTROL" again as shown below.
 
-   ![image.png](../assets/image.png)
+![](../../../assets/getting-started-esphome-device-compiler-pic-2.png)
+
+3\. Click install (DO NOT click skip!) and let your device get adopted into the ESPHome Device Compiler. Please have patience as this takes a few minutes to compile and then install to your new Apollo device!
+
+![](../../../assets/getting-started-esphome-device-compiler-pic-3.png)
+
+4\. When it is finished, it will look like this image below and you can click "Close" in the bottom right to get back to the main screen. As long as it says "INFO OTA successful" then it finished successfully. There is no need to be worried about "ERROR Logger not configured" as that was removed to allow for other components to exist on your new Apollo device!
+
+![](../../../assets/getting-started-esphome-device-compiler-pic-4.png)
+
+5\. Your new device is now adopted into the ESPHome Device Compiler and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
 ### Connecting to Home Assistant via ESPHome Integration:
 
@@ -71,3 +77,7 @@ wifi_password: "your-wifi-pass-here"
 5\. Give it an area and click "FINISH".
 
 ![Define what area it is in then click finish](../../../assets/connect-to-esphome-integration-5.png)
+
+6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
+
+7\. Check out our other wiki articles or <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">reach out to us on Discord</a> if you have any other questions!
