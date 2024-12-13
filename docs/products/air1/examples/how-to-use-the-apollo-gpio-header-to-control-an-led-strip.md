@@ -4,11 +4,11 @@ This tutorial will guide you through setting up one of our MSR-2 devices (works 
 
 **Materials Needed for tutorial:**
 
-- [Apollo MSR-2](https://apolloautomation.com/products/msr-2), [Apollo MTR-1](https://apolloautomation.com/products/mtr-1), and all other future Apollo Automation products with the mezzanine port.
-- [Apollo GPIO Header](https://apolloautomation.com/products/msr-2-gpio-header)
-- ws2812b aka neopixel RGB led strip or similar. sk6812 RGBW strip will also work.
-- Optional DuPont Cables for GPIO Header but any DuPont cables will do.
-- USB-C cable and power brick to power MSR-2
+* [Apollo MSR-2](https://apolloautomation.com/products/msr-2), [Apollo MTR-1](https://apolloautomation.com/products/mtr-1), and all other future Apollo Automation products with the mezzanine port.
+* [Apollo GPIO Header](https://apolloautomation.com/products/msr-2-gpio-header)
+* ws2812b aka neopixel RGB led strip or similar. sk6812 RGBW strip will also work. I used BTF Lighting ws2812b 60 leds/meter and white PCB.
+* Optional DuPont Cables for GPIO Header but any DuPont cables will do.
+* USB-C cable and power brick to power MSR-2
 
 You are limited to 300mA of power output from the 5v port. You can either attach an external power supply and power the MSR-2 via 5v and gnd pins or work with the limited power output of the port
 
@@ -19,8 +19,6 @@ Above is an image of the GPIO Header and its pinouts. We can use ports 2,4,6,7 f
 Did you know you can power the esp32 from the 5v and gnd pin? That means you can connect an external power supply and power it without the side USB port being used! This also allows for more power to be given to your LEDs!
 
 We cannot use the IO ports 0,1,18, or 19 for LEDs but you can use ports 0 and 1 for i2c sensors.
-
-
 
 **Connecting the GPIO Header to the MSR-2**
 
@@ -48,8 +46,7 @@ Step 5. Slide the GPIO Header back plate for the MSR-2 over your sensor and gent
 
 If the back plate does not gently go onto the sensor please investigate and confirm it is in the right orientation.
 
-**Connecting DuPont pins to proper GPIO ports**
-Now we need to reference the GPIO pinout we looked at above and then connect three wires. You will need three male-to-male DuPont wires included in your kit. I suggest using red for power aka 5v, White for ground aka GND, and green for data aka port IO7. Most LED strips will also have this same color scheme and it's easier to match like colors together.
+**Connecting DuPont pins to proper GPIO ports** Now we need to reference the GPIO pinout we looked at above and then connect three wires. You will need three male-to-male DuPont wires included in your kit. I suggest using red for power aka 5v, White for ground aka GND, and green for data aka port IO7. Most LED strips will also have this same color scheme and it's easier to match like colors together.
 
 ![](../assets/4OHLuxZVKc1TcCGLfvAEf-1UUl-IzmeHzQ.jpg_1719610515)
 
@@ -83,7 +80,7 @@ You will see some YAML code here and you do NOT want to touch anything above lin
 
 Step 2. Copy the code below and paste it to line 20 in your ESPHome yaml for this device.
 
-```generic
+```yaml
 light:
   - platform: esp32_rmt_led_strip
     id: bed_led
@@ -110,11 +107,13 @@ light:
       - addressable_rainbow:
 ```
 
+This is where you can change your number of LEDs as well as the GPIO pin used for the LED data!<br> Make sure to check out [https://esphome.io/components/light/index.html#light-effects](https://esphome.io/components/light/index.html#light-effects) for all the effects supported such as addressable scan effect!
 
-This is where you can change your number of LEDs as well as the GPIO pin used for the LED data!  
-Make sure to check out [https://esphome.io/components/light/index.html#light-effects](https://esphome.io/components/light/index.html#light-effects) for all the effects supported such as addressable scan effect!Step 3. Confirm you do not have any red lines showing errors in your code![](../assets/EQdHu-pdF_2D7T6GJkjdqSQYZptmHk-cmw.png_1719612604)
-You change the rmt\_channel to 1 because 0 is being used by the built-in LED of the MSR-2.
-Step 4. Hit save and then install in the top right. It should have a popup where you select "wirelessly" then it will begin compiling the firmware and finally installing the compiled firmware to your MSR-2.Step 5. Go into home assistant and confirm you now have a new light entity called Bed LED
+Step 3. Confirm you do not have any red lines showing errors in your code![](../assets/EQdHu-pdF_2D7T6GJkjdqSQYZptmHk-cmw.png_1719612604)You change the rmt\_channel to 1 because 0 is being used by the built-in LED of the MSR-2.
+
+Step 4. Hit save and then install in the top right. It should have a popup where you select "wirelessly" then it will begin compiling the firmware and finally installing the compiled firmware to your MSR-2.
+
+Step 5. Go into home assistant and confirm you now have a new light entity called Bed LED
 
 ![](../assets/YfpAVN1FtpsODgbFgZg8qEVBNjl3NgaAvQ.png_1719613175)
 
@@ -124,4 +123,4 @@ Step 6. Click on the name "Bed LED" circled and it will pop up a color picker. Y
 
 ![](../assets/JI4fSugUQvhRpK1FauJEEPoj3Vwe-QD02Q.jpg_1719613900)
 
-That's all folks! Thanks to Smart Home Sellout for putting this tutorial together!
+&nbsp;
