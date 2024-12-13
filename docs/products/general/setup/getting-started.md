@@ -7,19 +7,21 @@ This will walk you through the process of connecting your new Apollo Automation 
 To connect through the sensor's onboard hotspot follow the below:
 
 1. Plug the sensor into a quality power brick. They require 5v and under an amp so most phone chargers will be fine. ESP devices are sensitive to power fluctuations and users have had some issues with really cheap power bricks. If your device is restarting or unavailable please try a different power brick.
-2. On your phone or PC, open the wifi settings and connect to "Apollo MSR-1 Hotspot", it might take a minute for the wifi network to show up
+2. On your phone or PC, open the WiFi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the WiFi network to show up.
 3. Once connected it should automatically open a dashboard for your sensor
-   * If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
-4. Select the wifi network that you would like your sensor to connect to
-5. Input the wifi password. After connecting, the sensor's dashboard will automatically close. You've successfully connected your sensor, please check out the "Connecting Sensor To Home Assistant" section for the next steps.
 
-### Connecting To ESPHome Addon
+   If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
-You can connect to the ESPHome addon in Home Assistant to easily update your device. If you don't have ESPHome addon installed you can follow the steps here: [Installing ESPHome Dashboard](https://esphome.io/guides/getting_started_hassio.html)
+4. Select the WiFi network that you would like your sensor to connect to.
+5. Input the WiFi password. After connecting, the sensor's dashboard will automatically close. You've successfully connected your sensor, please check out the "Connecting Sensor To Home Assistant" section for the next steps.
+
+### Connecting To ESPHome Device Compiler (previously ESPHome Addon)
+
+You can connect to the ESPHome Device Compiler addon in Home Assistant to easily update your device. If you don't have ESPHome Device Compiler addon installed you can follow the steps here: <a href="https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler" target="_blank" rel="noopener">Installing The ESPHome Device Compiler.</a>
 
 Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
 
-![image.png](../assets/9P0image.png)
+![esphome-device-compiler-dashboard-pic-1.png](../../../assets/esphome-device-compiler-dashboard-pic-1.png)
 
 ```yaml
 # Your Wi-Fi SSID and password - keep the quotes and just replace the name and password between the quotes!
@@ -27,8 +29,8 @@ wifi_ssid: "your-wifi-ssid-here"
 wifi_password: "your-wifi-pass-here"
 ```
 
-1. 1. Once installed you'll have the addon's icon on the left side of your HA instance:
-      1. ![Screenshot 2024-06-06 at 2.57.55 PM.png](../assets/screenshot-2024-06-06-at-2-57-55-pm.png)
+1. 1. Once installed you'll have the addon's name in your sidebar.
+      1. ![esphome-device-compiler-dashboard-pic-2](../../../assets/esphome-device-compiler-dashboard-pic-2.png)
       2. Click on adopt for your sensor![Screenshot 2024-06-06 at 4.06.20 PM.png](../assets/screenshot-2024-06-06-at-4-06-20-pm.png)
       3. Then adopt again
 
