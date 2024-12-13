@@ -42,7 +42,7 @@ Pre-requirement: Bluetooth built in such as a raspberry pi or at least one ESP32
 
 ![](../../../assets/improv-ble-pic-4.png)
 
-5\. Click the link shown in the image below (do not click close).
+5\. <a href="https://my.home-assistant.io/redirect/config_flow_start?domain=esphome" target="_blank" rel="noopener">Click the link shown in the image below</a> (do not click close).
 
 ![](../../../assets/improv-ble-pic-5-1.png)
 
