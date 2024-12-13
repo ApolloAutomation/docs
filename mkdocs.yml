@@ -209,6 +209,7 @@ nav:
           - Addons:
             - CO2 Addon: products/air1/addons/adding-co2-to-air-1.md
             - MiCS Addon: products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
+            - GPIO Addon: products/air1/addons/adding-gpio-header-to-air-1.md
           - Reviews: products/air1/air1-reviews.md
           - Examples:
             - Air Quality Dashboard: products/air1/examples/air1-dashboard-examples.md
