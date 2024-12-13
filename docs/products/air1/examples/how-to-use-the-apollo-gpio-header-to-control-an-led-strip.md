@@ -109,7 +109,7 @@ light:
 
 This is where you can change your number of LEDs as well as the GPIO pin used for the LED data!<br> Make sure to check out [https://esphome.io/components/light/index.html#light-effects](https://esphome.io/components/light/index.html#light-effects) for all the effects supported such as addressable scan effect!
 
-Step 3. Confirm you do not have any red lines showing errors in your code![](../assets/EQdHu-pdF_2D7T6GJkjdqSQYZptmHk-cmw.png_1719612604) You change the rmt\_channel to 1 because 0 is being used by the built-in LED of the MSR-2.
+Step 3. Confirm you do not have any red lines showing errors in your code![](../assets/EQdHu-pdF_2D7T6GJkjdqSQYZptmHk-cmw.png_1719612604)You change the rmt\_channel to 1 because 0 is being used by the built-in LED of the MSR-2.
 
 Step 4. Hit save and then install in the top right. It should have a popup where you select "wirelessly" then it will begin compiling the firmware and finally installing the compiled firmware to your MSR-2.
 
