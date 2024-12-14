@@ -2,7 +2,7 @@ If your device becomes unresponsive and you've exhausted the other troubleshooti
 
 If your device has already been connected to Home Assistant previously please refer to Removing Device From Home Assistant first before proceeding
 
-1. Plug your sensor into your computer with a quality USB-C cable that supports data transfer
+1. Hold the boot button then plug your sensor into your computer with a quality USB-C cable that supports data transfer. Let go of the boot button once you plug the usb cable in!
 2. Navigate to our installer page and click connect [\*\* Install Page \*\*](https://apolloautomation.github.io/H-1/)
 3. Select your Apollo device, it will show with a similar name to the one below, and click connect. If you aren't sure which device it is, you can unplug the sensor and see which disappears.
 
