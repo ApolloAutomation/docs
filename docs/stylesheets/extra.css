@@ -30,3 +30,8 @@ ul ul li {
 article.md-typeset img {
   max-width: 500px
 }
+
+/* brandon edited this while trying to fix images */
+article.md-typeset img {
+  max-height: 600px
+}
