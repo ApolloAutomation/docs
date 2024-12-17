@@ -27,6 +27,6 @@ ul ul li {
 }
 
 /* brandon edited this while trying to fix images */
-article img {
+article.md-typeset img {
   max-width: 500px
 }
