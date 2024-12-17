@@ -26,6 +26,7 @@ ul ul li {
     font-size: 0.95em !important; /* Optional: adjust font size for nested items */
 }
 
+/* brandon edited this while trying to fix images */
 article img {
   max-width: 500px
 }
