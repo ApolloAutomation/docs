@@ -25,3 +25,7 @@ ul ul li {
 .md-typeset ul ul li {
     font-size: 0.95em !important; /* Optional: adjust font size for nested items */
 }
+
+article img {
+  max-width: 500px
+}
