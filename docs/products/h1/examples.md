@@ -45,3 +45,5 @@ king:d=8,o=6,b=75:c,c,c,d,c,c,4g5,a5,g5,a5,b5,4c,4c,c,c,c,d,c,c,4g5,a5,g5,a5,b5,
 ```yaml
 white:d=8,o=5,b=95:2e,f,e,d#,e,2f,f#,4g.,p,a,b,c6,d6,c6,b,a,2g.,c,d,4e,4e,e,4a,g,4c,4c,c,4g,f,2e,f,e,d,c,1d,2e,f,e,d#,e,2f,f#,4g.,p,a,b,c6,d6,c6,b,a,2g.,c,d,4e,4e,e,4a,g,2c6.,c,d,4e,4e,8a.,16b4,b4,b4,1c
 ```
+
+Huge thanks to discord user @cirdanlunae@mastodon.social
