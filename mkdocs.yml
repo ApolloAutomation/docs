@@ -259,7 +259,7 @@ nav:
           - Getting Started: products/h1/getting-started.md
           - Reviews: products/h1/reviews.md
           - Examples: 
-            - Holiday Songs: example.md
+            - Holiday Songs: products/h1/holiday-songs.md
           - Troubleshooting:
             - H-1 Boot Mode: products/h1/boot-mode.md
             - Manually Uploading Code To H-1: products/h1/code.md
