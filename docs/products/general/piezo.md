@@ -33,3 +33,7 @@ This is a good site to test RTTTL tones: <a href="https://adamonsoon.github.io/r
 5\. Click on the Perform Action button
 
 6\. You can also Perform Actions through automations in Home Assistant
+
+### Check out these Holiday themed buzzer examples too!
+
+[https://wiki.apolloautomation.com/products/h1/holiday-songs/](https://wiki.apolloautomation.com/products/h1/holiday-songs/ "Holiday Song Buzzer Examples")
