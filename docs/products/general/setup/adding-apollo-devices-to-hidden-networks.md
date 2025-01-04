@@ -1,38 +1,35 @@
 # Adding Apollo Devices To Hidden Networks
 
-Thanks to [Panzer ](https://discord.com/channels/1126966963206361199/1126969359236071465/1184558540166266962)from our [Discord](https://discord.gg/mMNgQPyF94).
+1\. Open the Esphome Device Builder.
 
-I took stock MSR1s, created a config file in ESPHome under HA, added the hidden networks and the fast\_connect option, and installed via "plug into this computer." I plugged them into my desktop, downloaded the compiled firmware, and installed it via the web-ESPHome bit. Use "install," not "prepare for first use." The YAML file is below; the secrets file has the Wi-Fi info. After that, you can unplug it from your computer and plug it in somewhere else. (Please alter the "name" and "friendly name" to something unique for each of your MSR1 units in a way that works for you. In my example, this is my 6th unit.)
+![](../../../assets/bluetooth-proxy-tutorial-1.png)
 
-![Hidden SSID 1.png](../assets/hidden-ssid-1.png)
+2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
 
-![Hidden SSID 2.png](../assets/hidden-ssid-2.png)
+3\. Click "Edit" as shown below.
 
-```
-substitutions:
-  name: apollo-msr1-06
-  friendly_name: Apollo MSR1 06
-packages:
-  ApolloAutomation.MSR-1: github://ApolloAutomation/MSR-1/Integrations/ESPHome/MSR-1.yaml
-esphome:
-  name: ${name}
-  name_add_mac_suffix: false
-  friendly_name: ${friendly_name}
-api:
-  encryption:
-    key: makeyourownrandomkeyhere=
+![](../../../assets/bluetooth-proxy-tutorial-2.png)
 
+4\. Copy the code inside the codeblock below.
 
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+```yaml
   fast_connect: True
 ```
 
-[Use this link for ESPHome web https://web.esphome.io/](https://web.esphome.io/)
+5\. Paste the code as shown below directly below the yaml you just edited above. Make sure the spaces look the same and there are no red lines under any of the code.
 
-![Hidden 3.png](../assets/hidden-3.png)
+![](../../../assets/hidden-ssid-tutorial-1.png)
 
-![Hidden 4.png](../assets/hidden-4.png)
+6 Click save then Install in the top right.
 
-![Hidden 1.png](../assets/hidden-1.png)
+![](../../../assets/hidden-ssid-tutorial-2.png)
+
+7\. Click "Wirelessly" and let it finish compiling then installing.
+
+![](../../../assets/hidden-ssid-tutorial-3.png)
+
+8\. When you see this "OTA Successful" it has finished and you can click "Close" in the bottom right.
+
+![](../../../assets/hidden-ssid-tutorial-4.png)
+
+9\. You are finished and your Apollo device is now able to connect to your Wi-Fi with a hidden SSID! Make sure you understand the downsides as [mentioned here](https://esphome.io/components/wifi.html "downsides of fast_connect: true").<br><br>**fast\_connect** (*Optional*, boolean): If enabled, directly connects to WiFi network without doing a full scan first. This is required for hidden networks and can significantly improve connection times. Defaults to `off`. The downside is that this option connects to the first network the ESP sees, even if that network is very far away and better ones are available.
