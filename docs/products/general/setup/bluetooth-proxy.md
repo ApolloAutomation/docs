@@ -2,11 +2,60 @@
 
 This guide shows you how to make your Apollo device act as a "BLE Proxy" which lets Bluetooth devices talk back to home assistant using Apollo devices as the "next hop"!
 
-1\. Open the Esphome Compiler (previously called the esphome dashboard.
+#### Method 1: Switch to \_BLE.yaml fork
+
+1\. Open the Esphome Device Builder.
 
 ![](../../../assets/bluetooth-proxy-tutorial-1.png)
 
-2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install ESPHome Device Compiler") and then move on to step 3.
+2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
+
+3\. Click "Edit" as shown below.
+
+![](../../../assets/bluetooth-proxy-tutorial-2.png)
+
+4\. Add a \# before the packages line and the line after it as shown in the image below.
+
+![](../../../assets/bluetooth-proxy-tutorial-10.png)
+
+5\. Copy the code inside the codeblock below.
+
+```yaml
+packages:
+  ApolloAutomation.MTR-1: # name of package/project
+    url: https://github.com/ApolloAutomation/MTR-1 # url of the repository
+    ref: main # branch, tag or commit SHA
+    files: [Integrations/ESPHome/MTR-1_BLE.yaml] # Path to config from base repo URL
+    refresh: 1min # how often to sync updates from the remote url
+```
+
+6\. Paste the code as shown below directly below the yaml you just edited above. Make sure the spaces look the same and there are no red lines under any of the code.
+
+![](../../../assets/bluetooth-proxy-tutorial-9.png)
+
+7\. Click save then Install in the top right.
+
+![](../../../assets/bluetooth-proxy-tutorial-11.png)
+
+8\. Click "Wirelessly" and let it finish compiling then installing.
+
+![](../../../assets/bluetooth-proxy-tutorial-6.png)
+
+9\. When you see this "OTA Successful" it has finished and you can click "Close" in the bottom right.
+
+![](../../../assets/bluetooth-proxy-tutorial-7.png)
+
+10\. You are finished and your Apollo device is now acting as a Bluetooth Proxy!
+
+---
+
+#### Method 2: Manually enter the BLE proxy yaml
+
+1\. Open the Esphome Device Builder.
+
+![](../../../assets/bluetooth-proxy-tutorial-1.png)
+
+2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
 
 3\. Click "Edit" as shown below.
 
@@ -28,15 +77,21 @@ bluetooth_proxy:
 esp32_ble_tracker:
   scan_parameters:
     active: false
+#we are required to use this old esp-idf framework that uses less space
+esp32:
+  framework:
+    type: esp-idf
+    version: 4.4.8
+    platform_version: 5.4.0
 ```
 
 7\. Paste the code on a new line at the very bottom of the file as shown below.
 
-![](../../../assets/bluetooth-proxy-tutorial-3-1.png)
+![](../../../assets/bluetooth-proxy-tutorial-7-1.png)
 
 8\. Click save then Install in the top right.
 
-![](../../../assets/bluetooth-proxy-tutorial-4-1.png)
+![](../../../assets/bluetooth-proxy-tutorial-8.png)
 
 8\. Click "Wirelessly" and let it finish compiling then installing.
 
