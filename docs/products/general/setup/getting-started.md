@@ -26,9 +26,9 @@ To connect through the sensor's onboard hotspot follow the below:
 
 > !!! note<br>    test
 
-> !!! note
+> !!! note<br>Pre-requirement: Bluetooth built in such as a raspberry pi or at least one ESP32 BLE Proxy.
 
-    Pre-requirement: Bluetooth built in such as a raspberry pi or at least one ESP32 BLE Proxy.
+Pre-requirement: Bluetooth built in such as a raspberry pi or at least one ESP32 BLE Proxy.
 
 Pre-requirement: Bluetooth built in such as a raspberry pi or at least one ESP32 BLE Proxy.
 
