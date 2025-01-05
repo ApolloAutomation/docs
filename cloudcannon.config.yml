@@ -27,7 +27,7 @@ collections_config:
     disable_file_actions: false
 _editables:
   content:
-    allow_custom_markup: false
+    allow_custom_markup: true
     remove_custom_markup: false
     blockquote: true
     bold: true
