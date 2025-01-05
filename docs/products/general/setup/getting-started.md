@@ -112,6 +112,4 @@ wifi_password: "your-wifi-pass-here"
 
 7\. Check out our other wiki articles or <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">reach out to us on Discord</a> if you have any other questions!
 
-[Check out our other wiki articles](){ .md-button }
-
-[Subscribe to our newsletter](#){ .md-button }
+[Join our discord](https://dsc.gg/apolloautomation){ .md-button .md-button--primary }
