@@ -28,11 +28,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 !!! tip "this is a tip" this works tho
 
-will this still be the same tho
-
-!!! note<br>    wow does this work
-
-> !!! note<br>    i wonder if this works
+&nbsp;
 
 1\. Navigate to settings -&gt; integrations then click the "ADD" button below your new Apollo device!
 
