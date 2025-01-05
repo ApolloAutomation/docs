@@ -75,6 +75,9 @@ _inputs:
       sizes:
         - size: 2x
           target: _retina_image_file
+#brandon edited testing things
+  content_field:
+    escape_html: false
 image: /docs/assets/image.png
 _retina_image_file: /docs/assets/image-2x.png
 source_editor:
