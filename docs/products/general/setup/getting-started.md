@@ -32,6 +32,8 @@ will this still be the same tho
 
 !!! note<br>    wow does this work
 
+> !!! note<br>    i wonder if this works
+
 1\. Navigate to settings -&gt; integrations then click the "ADD" button below your new Apollo device!
 
 ![](../../../assets/improv-ble-pic-1.png)
