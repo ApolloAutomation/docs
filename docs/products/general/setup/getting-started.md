@@ -112,6 +112,10 @@ wifi_password: "your-wifi-pass-here"
 
 <div markdown="1" class="row"> > :memo: **This is a memo**</div>
 
+    > :memo:{.float-left .pct33} **Use Size**
+    > This is a small note floated left
+
+
 &nbsp;
 
 7\. Check out our other wiki articles or <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">reach out to us on Discord</a> if you have any other questions!
