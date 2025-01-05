@@ -52,6 +52,7 @@ _editables:
     table: true
     underline: true
     undo: true
+    snippet: true
 _inputs:
   image:
     type: image
