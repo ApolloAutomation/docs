@@ -108,8 +108,4 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
 
-&nbsp;
-
-7\. Check out our other wiki articles or <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">reach out to us on Discord</a> if you have any other questions!
-
 [Click here to Join our discord for fast support!]("https://dsc.gg/apolloautomation" target="_blank" rel="noopener"){ .md-button .md-button--primary }
