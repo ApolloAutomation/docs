@@ -92,7 +92,6 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - extra
-  - pymdownx.extra
 
 copyright: |
   &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
