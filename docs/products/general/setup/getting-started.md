@@ -112,4 +112,5 @@ wifi_password: "your-wifi-pass-here"
 
 testing
 
-[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation)\{ .md-button .md-button--primary \}
+[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation){ .md-button .md-button--primary }
+
