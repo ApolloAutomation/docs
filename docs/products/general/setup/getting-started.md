@@ -30,6 +30,8 @@ To connect through the sensor's onboard hotspot follow the below:
 
 will this still be the same tho
 
+!!! note<br>    wow does this work
+
 1\. Navigate to settings -&gt; integrations then click the "ADD" button below your new Apollo device!
 
 ![](../../../assets/improv-ble-pic-1.png)
