@@ -24,6 +24,12 @@ To connect through the sensor's onboard hotspot follow the below:
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
+> !!! note<br>    test
+
+> !!! note
+
+    Pre-requirement: Bluetooth built in such as a raspberry pi or at least one ESP32 BLE Proxy.
+
 Pre-requirement: Bluetooth built in such as a raspberry pi or at least one ESP32 BLE Proxy.
 
 1\. Navigate to settings -&gt; integrations then click the "ADD" button below your new Apollo device!
@@ -108,4 +114,4 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
 
-[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation){ .md-button .md-button--primary }
+[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation)\{ .md-button .md-button--primary \}
