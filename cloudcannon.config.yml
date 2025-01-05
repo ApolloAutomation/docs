@@ -82,4 +82,11 @@ source_editor:
 content_editor:
   tab_size: 4
 
+_snippets_imports:
+  python_markdown_extensions:
+    include:
+      - python_markdown_admonition
+      - python_markdown_collapsible_admonition
+
+
 timezone: Etc/UTC
