@@ -1,6 +1,6 @@
 # Adding The MiCS-4514 Gas Sensor To The AIR-1
 
-!!! note "Note"
+!!! note inline end "Note"
 
     [If you have the Original Design of the AIR-1 please click here](https://www.youtube.com/watch?v=ZKGwc2ZSMrw "Mesh Case Design for the AIR-1")
 
