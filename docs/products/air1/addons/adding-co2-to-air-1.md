@@ -2,7 +2,7 @@
 
 !!! tip "Tip"
 
-    [If you have the Original Design of the AIR-1 please click here](https://www.youtube.com/watch?v=ZKGwc2ZSMrw "Mesh Case Design for the AIR-1")
+    [If you have the Original Design of the AIR-1 please click here](https://wiki.apolloautomation.com/products/air1/addons/adding-co2-to-air-1-mesh-case-design/ "Mesh Case Design for the AIR-1")
 
 1\. Unplug your AIR-1 from power and lift the top of the case or "lid".
 
