@@ -18,7 +18,7 @@
 
 ![](../../../assets/mtr1-zones-ha-pic-1.png)![](../../../assets/mtr1-zones-ha-pic-2.png)
 
-4\. Make sure to scroll to the very bottom and start a new line all the way to the left as shown in the image below.
+4\. Make sure to scroll to the very bottom and start a new line all the way to the left as shown in the image below. Make sure to save and exit in the top right when finished.
 
 ![](../../../assets/mtr1-zones-ha-pic-3.png)
 
