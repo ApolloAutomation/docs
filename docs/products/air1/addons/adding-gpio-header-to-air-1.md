@@ -34,6 +34,10 @@
 
 9\. You are now done and your AIR-1 is now able to be used with the GPIO Header addon! Here is the pinout image below and <a href="https://wiki.apolloautomation.com/products/air1/examples/how-to-use-the-apollo-gpio-header-to-control-an-led-strip/" target="_blank" rel="noopener">here's a great wiki article showing you how to add a small led strip!</a>
 
+!!! warning "Warning"
+
+    ##### If you plan to use a lot of leds or your gpio project requires a lot of power then you need to use a dedicated power supply and not try to use too much power (under 350mA) from the GPIO of the device! You can power the AIR-1 via the vcc (5v) and GND pins but please do not power it via the pins AND the USB-C port, it should be one or the other.
+
 ##### Warning: If you plan to use a lot of leds or your gpio project requires a lot of power then you need to use a dedicated power supply and not try to use too much power (under 1amp) from the GPIO of the device! You can power the AIR-1 via the vcc (5v) and GND pins but please do not power it via the pins AND the USB-C port, it should be one or the other.
 
 ![](../../../assets/gpio-header-pinout.webp)
