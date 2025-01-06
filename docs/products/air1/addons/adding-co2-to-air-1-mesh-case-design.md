@@ -1,4 +1,4 @@
-# Adding The SCD40 CO2 Sensor To The AIR-1 (Mesh Case Design)
+# Adding The SCD40 CO2 Sensor To The AIR-1 (Original Design)
 
 1\. Unplug your AIR-1 from power and remove the back
 
