@@ -11,14 +11,14 @@ To connect through the sensor's onboard hotspot follow the below:
 
    ![](../../../assets/getting-started-connect-to-hotspot-image-1.png)
 
-3. Once connected it should automatically open a dashboard for your sensor
+   3\. Once connected it should automatically open a dashboard for your sensor
 
    If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
    ![](../../../assets/getting-started-connect-to-hotspot-image-2.png)
 
-4. Select the WiFi network that you would like your sensor to connect to.
-5. Input the WiFi password. After connecting, the sensor's dashboard will automatically close. You've successfully connected your sensor, please check out the "Connecting Sensor To Home Assistant" section for the next steps.
+3. Select the WiFi network that you would like your sensor to connect to.
+4. Input the WiFi password. After connecting, the sensor's dashboard will automatically close. You've successfully connected your sensor, please check out the "Connecting Sensor To Home Assistant" section for the next steps.
 
    ![](../../../assets/getting-started-connect-to-hotspot-image-3.png)
 
@@ -110,4 +110,4 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
 
-[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation){ .md-button .md-button--primary }
+[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation)\{ .md-button .md-button--primary \}
