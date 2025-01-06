@@ -6,21 +6,23 @@ This will walk you through the process of connecting your new Apollo Automation 
 
 To connect through the sensor's onboard hotspot follow the below:
 
-1. Plug the sensor into a quality power brick. They require 5v and under an amp so most phone chargers will be fine. ESP devices are sensitive to power fluctuations and users have had some issues with really cheap power bricks. If your device is restarting or unavailable please try a different power brick.
-2. On your phone or PC, open the WiFi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the WiFi network to show up.
+1\. Plug the sensor into a quality power brick. They require 5v and under an amp so most phone chargers will be fine. ESP devices are sensitive to power fluctuations and users have had some issues with really cheap power bricks. If your device is restarting or unavailable please try a different power brick.
 
-   ![](../../../assets/getting-started-connect-to-hotspot-image-1.png)
+2\. On your phone or PC, open the WiFi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the WiFi network to show up.
 
-3. Once connected it should automatically open a dashboard for your sensor
+![](../../../assets/getting-started-connect-to-hotspot-image-1.png)
 
-   If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
+3\. Once connected it should automatically open a dashboard for your sensor
 
-   ![](../../../assets/getting-started-connect-to-hotspot-image-2.png)
+If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
-4. Select the WiFi network that you would like your sensor to connect to.
-5. Input the WiFi password. After connecting, the sensor's dashboard will automatically close. You've successfully connected your sensor, please check out the "Connecting Sensor To Home Assistant" section for the next steps.
+![](../../../assets/getting-started-connect-to-hotspot-image-2.png)
 
-   ![](../../../assets/getting-started-connect-to-hotspot-image-3.png)
+4\. Select the WiFi network that you would like your sensor to connect to.
+
+5\. Input the WiFi password. After connecting, the sensor's dashboard will automatically close. You've successfully connected your sensor, please check out the "Connecting Sensor To Home Assistant" section for the next steps.
+
+![](../../../assets/getting-started-connect-to-hotspot-image-3.png)
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
@@ -110,4 +112,4 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
 
-[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation){ .md-button .md-button--primary }
+[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation)\{ .md-button .md-button--primary \}

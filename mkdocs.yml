@@ -238,7 +238,7 @@ nav:
       - PLT-1B:
           - Introduction: products/plt1b/introduction.md
           - FAQ: products/plt1b/faq.md
-          - Getting Started: products/plt1b/getting-started.md
+          - Getting Started: products/general/setup/getting-started-plt1.md
           - Additional Info:
             - General Tips: products/plt1b/general-tips.md
             - Sensor Definitons: products/plt1/sensor-definitions.md
