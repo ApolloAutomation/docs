@@ -1,13 +1,18 @@
 # Zone Configuration Using Home Assistant
 
-***Disclaimer: Currently having issues saving the zones after restarting the device when using this method. It is recommended to use the [HLKRadarTool App Zone Configuration Guide](https://wiki.apolloautomation.com/books/mtr-1-ImK/page/zone-configuration-using-hlkradartool-app).***  
-  
-You will need to have HACS and Plotly installed to make it easier to visualize the zones. If you already have HACS then you can skip Step 1. Same for Step 2 if you have Plotly.  
-  
-1\. Install [HACS](https://hacs.xyz/docs/setup/download/)  
-2\. Install [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card)  
-3\. Copy the code below and add a Home Assistant card to visualize your zones. You will need to change all of the sensor\_apollo\_mtr\_1 entity IDs to match your MTR-1 device. This can be done quickly by using a code editor or ChatGPT.  
-![Screenshot 2024-05-13 at 12.13.38 PM.png](../assets/screenshot-2024-05-13-at-12-13-38-pm.png)
+***Disclaimer: Currently having issues saving the zones after restarting the device when using this method. It is recommended to use the*** [***HLKRadarTool App Zone Configuration Guide***](https://wiki.apolloautomation.com/books/mtr-1-ImK/page/zone-configuration-using-hlkradartool-app)***.***
+
+!!! warning "Warning"
+
+    ***Users are currently having issues saving the zones after restarting the device when using this method. It is recommended to use the*** [***HLKRadarTool App Zone Configuration Guide***](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)***.***
+
+You will need to have HACS and Plotly installed to make it easier to visualize the zones. If you already have HACS then you can skip Step 1. Same for Step 2 if you have Plotly.
+
+1\.Install [HACS](https://hacs.xyz/docs/use/)
+
+2\. Install [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card)
+
+3\. Copy the code below and add a Home Assistant card to visualize your zones. You will need to change all of the sensor\_apollo\_mtr\_1 entity IDs to match your MTR-1 device. This can be done quickly by using a code editor or ChatGPT.<br> ![Screenshot 2024-05-13 at 12.13.38 PM.png](../assets/screenshot-2024-05-13-at-12-13-38-pm.png)
 
 ```
 type: custom:plotly-graph
@@ -180,35 +185,14 @@ entities:
       - $ex 7500 * Math.cos((2 * Math.PI)/360 * 60)
       - 0
 raw_plotly_config: true
-
 ```
 
-4\. Open Home Assistant and select Settings  
-![Screenshot 2024-05-13 at 11.44.31 AM.png](../assets/screenshot-2024-05-13-at-11-44-31-am.png)  
-5\. Select Devices and services  
-![Screenshot 2024-05-13 at 11.45.55 AM.png](../assets/screenshot-2024-05-13-at-11-45-55-am.png)  
-6\. Select ESPHome  
-![Screenshot 2024-05-13 at 11.47.59 AM.png](../assets/screenshot-2024-05-13-at-11-47-59-am.png)  
-7\. Select your MTR-1 device
+4\. Open Home Assistant and select Settings<br> ![Screenshot 2024-05-13 at 11.44.31 AM.png](../assets/screenshot-2024-05-13-at-11-44-31-am.png)<br> 5. Select Devices and services<br> ![Screenshot 2024-05-13 at 11.45.55 AM.png](../assets/screenshot-2024-05-13-at-11-45-55-am.png)<br> 6. Select ESPHome<br> ![Screenshot 2024-05-13 at 11.47.59 AM.png](../assets/screenshot-2024-05-13-at-11-47-59-am.png)<br> 7. Select your MTR-1 device
 
-![Screenshot 2024-05-13 at 11.48.42 AM.png](../assets/screenshot-2024-05-13-at-11-48-42-am.png)  
-8\. Scroll down to the Configuration section and you should see Zone 1-3 X and Y boxes.   
-\- LD2450 Bluetooth can be turned on if you would like to use the HLKRadarTool App to configure the zones.   
-\- Multi Target Tracking toggled on helps it detect up to three targets better (still trying to figure out "how" this works).   
-\- Zone Type allows you to select Disabled, Detection, or Filter.  
-\- Disabled: Disable zone area detection  
-\- Detection: Only detects targets in the specified zone  
-\- Filter: Excludes a zone from detection  
-![Screenshot 2024-05-13 at 11.50.04 AM.png](../assets/screenshot-2024-05-13-at-11-50-04-am.png)  
-9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.  
-![Screenshot 2024-05-13 at 12.13.38 PM.png](../assets/KNGscreenshot-2024-05-13-at-12-13-38-pm.png)  
-10\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.  
-![Screenshot 2024-05-13 at 3.59.40 PM.png](../assets/screenshot-2024-05-13-at-3-59-40-pm.png)  
-11\. Select the Settings cog in the top right.  
-![Screenshot 2024-05-13 at 4.00.59 PM.png](../assets/screenshot-2024-05-13-at-4-00-59-pm.png)  
-12\. Change the unit of measurement to mm and select Update.  
-![Screenshot 2024-05-13 at 4.02.53 PM.png](../assets/screenshot-2024-05-13-at-4-02-53-pm.png)  
-13\. Now you should see targets on the card.  
-![Screenshot 2024-05-13 at 3.35.00 PM.png](../assets/screenshot-2024-05-13-at-3-35-00-pm.png)  
-14\. Now we can make zones around the targets where you want to Detect presence or filter them out!  
-15\. If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try to toggle on Multi Target Radar. This should wake up the mmWave module and retrieve your saved zones. (Thanks to our Discord members for helping figure this out)
+![Screenshot 2024-05-13 at 11.48.42 AM.png](../assets/screenshot-2024-05-13-at-11-48-42-am.png)<br> 8. Scroll down to the Configuration section and you should see Zone 1-3 X and Y boxes.<br> - LD2450 Bluetooth can be turned on if you would like to use the HLKRadarTool App to configure the zones.<br> - Multi Target Tracking toggled on helps it detect up to three targets better (still trying to figure out "how" this works).<br> - Zone Type allows you to select Disabled, Detection, or Filter.<br> - Disabled: Disable zone area detection<br> - Detection: Only detects targets in the specified zone<br> - Filter: Excludes a zone from detection<br> ![Screenshot 2024-05-13 at 11.50.04 AM.png](../assets/screenshot-2024-05-13-at-11-50-04-am.png)<br> 9. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.<br> ![Screenshot 2024-05-13 at 12.13.38 PM.png](../assets/KNGscreenshot-2024-05-13-at-12-13-38-pm.png)<br> 10. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.<br> ![Screenshot 2024-05-13 at 3.59.40 PM.png](../assets/screenshot-2024-05-13-at-3-59-40-pm.png)<br> 11. Select the Settings cog in the top right.<br> ![Screenshot 2024-05-13 at 4.00.59 PM.png](../assets/screenshot-2024-05-13-at-4-00-59-pm.png)<br> 12. Change the unit of measurement to mm and select Update.<br> ![Screenshot 2024-05-13 at 4.02.53 PM.png](../assets/screenshot-2024-05-13-at-4-02-53-pm.png)<br> 13. Now you should see targets on the card.<br> ![Screenshot 2024-05-13 at 3.35.00 PM.png](../assets/screenshot-2024-05-13-at-3-35-00-pm.png)<br> 14. Now we can make zones around the targets where you want to Detect presence or filter them out
+
+!!! ! tip "Tip for zone configuration resetting"
+
+    If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try to toggle on Multi Target Radar. This should wake up the mmWave module and retrieve your saved zones
+
+&nbsp;
