@@ -54,11 +54,13 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![](../../../assets/improv-ble-pic-6.png)
 
-### Connecting To ESPHome Device Compiler (previously ESPHome Addon)
+### Connecting To ESPHome Device Builder
 
-Note: You can skip the esphome device compiler completely if you do not want to rename your sensor or make edits to the yaml. [Please Skip to the next part by clicking here!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration)
+!!! tip "Skip the ESPHome Device Builder unless..."
 
-You can add the ESPHome Device Compiler addon in Home Assistant to easily update your device or edit the yaml. If you don't have ESPHome Device Compiler addon installed you can follow the steps here: <a href="https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler" target="_blank" rel="noopener">Installing The ESPHome Device Compiler.</a>
+    Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!")unless you need to rename your sensor or do manual edits to the yaml
+
+You can add the ESPHome Device Builder addon in Home Assistant to easily update your device or edit the yaml. If you don't have ESPHome Device Builder addon installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder").
 
 Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
 
@@ -70,7 +72,7 @@ wifi_ssid: "your-wifi-ssid-here"
 wifi_password: "your-wifi-pass-here"
 ```
 
-1\. Click the ESPHome Compiler in your sidebar then click "TAKE CONTROL" for your new Apollo Device!
+1\. Click the ESPHome Builder in your sidebar then click "TAKE CONTROL" for your new Apollo Device!
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-1.png)
 
@@ -78,7 +80,7 @@ wifi_password: "your-wifi-pass-here"
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-2.png)
 
-3\. Click install (DO NOT click skip!) and let your device get adopted into the ESPHome Device Compiler. Please have patience as this takes a few minutes to compile and then install to your new Apollo device!
+3\. Click install (DO NOT click skip!) and let your device get adopted into the ESPHome Device Builder. Please have patience as this takes a few minutes to compile and then install to your new Apollo device!
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-3.png)
 
@@ -86,7 +88,7 @@ wifi_password: "your-wifi-pass-here"
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-4.png)
 
-5\. Your new device is now adopted into the ESPHome Device Compiler and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
+5\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
 ### Connecting to Home Assistant via ESPHome Integration:
 
@@ -112,4 +114,4 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
 
-[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation){ .md-button .md-button--primary }
+[Click here to Join our discord for fast support!](https://dsc.gg/apolloautomation)\{ .md-button .md-button--primary \}

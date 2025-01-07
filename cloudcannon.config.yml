@@ -1,5 +1,5 @@
 paths:
-  uploads: "docs/assets"
+#  uploads: "docs/assets"
   uploads_filename:
   uploads_use_relative_path: true
   static: ""
@@ -10,6 +10,9 @@ paths:
   data:
   layouts:
   includes:
+#brandon changed this
+  uploads: '[base_path]/assets'
+
 collections_config:
   docs:
     path: docs
@@ -66,11 +69,15 @@ _inputs:
       allowed_sources:
         - site-files
       empty_type: 
-      resize_style: contain
+#      resize_style: contain
+#brandon changed this
+      resize_style: none
       width: 400
       height: 300
       expandable: true
-      prevent_resize_existing_files: false
+#      prevent_resize_existing_files: false
+#brandon changed this
+      prevent_resize_existing_files: true
       mime_type: image/png
       sizes:
         - size: 2x
