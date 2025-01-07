@@ -2,13 +2,13 @@
 
 !!! tip "This should be done every 1-2 years."
 
-    The [SCD40 CO2 sensor](https://sensirion.com/products/catalog/SCD40 "Docmentation on SCD40 CO2 Sensor!") has a long lifetime but it requires re-calibration after 1-2 years back to a 420ppm baseline!
+    The [SCD40 CO2 sensor](https://sensirion.com/products/catalog/SCD40 "Docmentation on SCD40 CO2 Sensor!"){:target="_blank" rel="noopener noreferrer"} has a long lifetime but it requires re-calibration after 1-2 years back to a 420ppm baseline!
 
 ![AIR-1 Shown Outdoors for CO2 Calibration Portrait Image](assets/air-1-co2-calibration-portrait-image-1.jpg "AIR-1 Shown Outdoors for CO2 Calibration")
 
 1\. Bring your sensor outside and plug it in. You might need a USB battery bank if you live in an apartment or otherwise cannot get power outside of your building.
 
-2\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page").
+2\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page"){:target="_blank" rel="noopener noreferrer"}.
 
 3\. Click device as shown in the image below
 
@@ -32,7 +32,7 @@ Note the steep decline in CO2 ppm due to opening door, window and running fan.
 
 ![CO2_8.jpg](assets/air-1-co2-calibration-image-5.jpg)
 
-[Wisconsin Department of Health CO2 Level Chart](https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm)
+[Wisconsin Department of Health CO2 Level Chart](https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm){:target="_blank" rel="noopener noreferrer"}
 
 ![CO2 Health Department.png](assets/air-1-co2-calibration-image-6.jpg)
 
