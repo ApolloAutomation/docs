@@ -28,14 +28,14 @@ It can take a few times clicking the calibrate for it to equalize correctly some
 
     The CO2 levels in a bedroom with the door closed and no ventilation can easily spike to levels where you lose focus or worse!
 
-Dangerous CO2 levels in bedroom. Steep decline in level due to opening door, window and running fan.
+Note the steep decline in CO2 ppm due to opening door, window and running fan.
 
-![CO2_8.jpg](../assets/co2-8.jpg)
+![CO2_8.jpg](assets/air-1-co2-calibration-image-5.jpg)
 
-Wisconsin Department of Health CO2 Level Chart
+[Wisconsin Department of Health CO2 Level Chart](https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm)
 
-![CO2 Health Department.png](../assets/co2-health-department.png)
+![CO2 Health Department.png](assets/air-1-co2-calibration-image-6.jpg)
 
-CO2 levels staying below 1500 ppm after changing HVAC fan schedule to circulate air more frequently. Need to increase air exchange to get below 1000 ppm for a safer environment.
+CO2 levels staying below 1500 ppm after changing HVAC fan schedule to circulate air more frequently. This could be improved by  increasing air exchange to get below 1000 ppm for a safer environment.
 
 ![Plotly CO2 Graph.png](../assets/plotly-co2-graph.png)
