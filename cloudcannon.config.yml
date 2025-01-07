@@ -10,6 +10,7 @@ paths:
   data:
   layouts:
   includes:
+#brandon changed this
   uploads: '[base_path]/assets'
 
 collections_config:
@@ -72,7 +73,8 @@ _inputs:
       width: 400
       height: 300
       expandable: true
-      prevent_resize_existing_files: false
+#      prevent_resize_existing_files: false
+      prevent_resize_existing_files: true
       mime_type: image/png
       sizes:
         - size: 2x

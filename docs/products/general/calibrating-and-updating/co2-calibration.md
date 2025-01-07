@@ -2,29 +2,25 @@
 
 1\. Take your sensor outside (for a walk :D) and plug it in. Make sure it is connected to Home Assistant and let it sit powered on for 3-5 minutes outside before starting the calibration.
 
-![CO2_1.png](../assets/co2-1.png)
+!!! tip "This should be done every 1-2 years."
 
-2\. Navigate to your Home Assistant Dashboard and select settings
+    The [SCD40 CO2 sensor](https://sensirion.com/products/catalog/SCD40 "Docmentation on SCD40 CO2 Sensor!") has a long lifetime but it requires re-calibration after 1-2 years back to a 420ppm baseline!
 
-![CO2_2.png](../assets/co2-2.png)
+![AIR-1 Shown Outdoors for CO2 Calibration Portrait Image](assets/air-1-co2-calibration-portrait-image-1.jpg "AIR-1 Shown Outdoors for CO2 Calibration")
 
-3\. Select Devices & Services
+1\. Bring your sensor outside and plug it in. You might need a USB battery bank if you live in an apartment or otherwise cannot get power outside of your building.
 
-![CO2_3.png](../assets/co2-3.png)
+2\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page")
 
-4\. Select ESPHome
+3\. Click device as shown in the image below
 
-![CO2_4.png](../assets/co2-4.png)
+![](assets/air-1-co2-calibration-image-2-1.jpg)
 
-5\. Find your sensor and click on the blue “1 device” link
+4\. Click the "Press" button next to Calibrate SCD40 to 420ppmbutton and you should see the CO2 readings at 420ppm or near it.
 
-![CO2_5.png](../assets/co2-5.png)
+![](assets/air-1-co2-calibration-image-3.jpg)
 
-6\. Press the Calibrate SCD40 button and you are all set!
-
-If you do not see this button, either [update your firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/).
-
-It can take a few times clicking the calibrate for it to equalize correctly. If you don't see the SCD40 reporting 400-500 ppm then click it again.
+It can take a few times clicking the calibrate for it to equalize correctly sometimes. If you don't see the SCD40 reporting 400-500 ppm then click it again.
 
 ![Button CO2 Calibration.png](../assets/button-co2-calibration.png)
 
