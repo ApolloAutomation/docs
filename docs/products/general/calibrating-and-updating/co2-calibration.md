@@ -1,7 +1,5 @@
 # CO2 Calibration
 
-1\. Take your sensor outside (for a walk :D) and plug it in. Make sure it is connected to Home Assistant and let it sit powered on for 3-5 minutes outside before starting the calibration.
-
 !!! tip "This should be done every 1-2 years."
 
     The [SCD40 CO2 sensor](https://sensirion.com/products/catalog/SCD40 "Docmentation on SCD40 CO2 Sensor!") has a long lifetime but it requires re-calibration after 1-2 years back to a 420ppm baseline!
@@ -20,15 +18,15 @@
 
 ![](assets/air-1-co2-calibration-image-3.jpg)
 
-It can take a few times clicking the calibrate for it to equalize correctly sometimes. If you don't see the SCD40 reporting 400-500 ppm then click it again.
+It can take a few times clicking the calibrate for it to equalize correctly sometimes. If you don't see the SCD40 reporting 400-500 ppm then click the button again.
 
-![Button CO2 Calibration.png](../assets/button-co2-calibration.png)
+5\. Now your CO2 sensor should be calibrated! Be sure to setup some nice cards on your dashboard so you can monitor the CO2 levels.
 
-7\. Now your CO2 sensor should be calibrated! Be sure to setup some nice cards on your dashboard so you can monitor the CO2 levels. My bedroom's CO2 levels got dangerously high and I had to run my HVAC more frequently at night to circulate the air. See examples of cards and data below.
+![Image of CO2ppm on a graph](assets/air-1-co2-calibration-image-4.jpg)
 
-Example Home Assistant Card
+!!! danger inline "Dangerous CO2 level considerations"
 
-![CO2_7.png](../assets/co2-7.png)
+    The CO2 levels in a bedroom with the door closed and no ventilation can easily spike to levels where you lose focus or worse!
 
 Dangerous CO2 levels in bedroom. Steep decline in level due to opening door, window and running fan.
 
