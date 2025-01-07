@@ -71,9 +71,9 @@ _inputs:
       empty_type: 
 #      resize_style: contain
 #brandon changed this
-      resize_style: none
-      width: 400
-      height: 300
+#      resize_style: none
+#      width: 400
+#      height: 300
       expandable: true
 #      prevent_resize_existing_files: false
 #brandon changed this
