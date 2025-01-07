@@ -24,7 +24,7 @@ It can take a few times clicking the calibrate for it to equalize correctly some
 
 ![Image of CO2ppm on a graph](assets/air-1-co2-calibration-image-4.jpg)
 
-!!! danger inline "Dangerous CO2 level considerations"
+!!! danger "Dangerous CO2 level considerations"
 
     The CO2 levels in a bedroom with the door closed and no ventilation can easily spike to levels where you lose focus or worse!
 
