@@ -1,5 +1,5 @@
 paths:
-  uploads: "docs/assets"
+#  uploads: "docs/assets"
   uploads_filename:
   uploads_use_relative_path: true
   static: ""
@@ -10,6 +10,8 @@ paths:
   data:
   layouts:
   includes:
+  uploads: '[base_path]/assets'
+
 collections_config:
   docs:
     path: docs
