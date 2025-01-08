@@ -14,7 +14,7 @@
 
 ![](assets/air-1-co2-calibration-image-2-1.jpg)
 
-4\. Click the "Press" button next to Calibrate SCD40 to 420ppm and you should see the CO2 readings at 420ppm or near it.
+4\. Click the "Press" button next to Calibrate SCD40 to 420ppm and you should see the [CO2 readings at 420ppm or near it.](https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121 "NASA CO2 Levels")
 
 ![](assets/air-1-co2-calibration-image-3.jpg)
 
