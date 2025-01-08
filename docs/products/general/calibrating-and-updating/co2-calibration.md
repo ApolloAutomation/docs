@@ -10,7 +10,7 @@
 
 2\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page")\{:target="\_blank" rel="noopener noreferrer"\}.
 
-3\. Click device as shown in the image below
+3\. Click device as shown in the image below.
 
 ![](assets/air-1-co2-calibration-image-2-1.jpg)
 
