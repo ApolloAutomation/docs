@@ -89,9 +89,13 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.mark
   - attr_list
   - extra
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
 copyright: |
   &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
