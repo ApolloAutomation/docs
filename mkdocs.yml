@@ -109,8 +109,8 @@ nav:
           - Getting Started: products/general/setup/getting-started.md
           - Additional Info:
             - Calibrating:
-              - CO2: products/general/calibrating-and-updating/co2-calibration.md
-              - CO2 Quick: products/general/calibrating-and-updating/co2-calibration-quick.md
+              - CO<sub>2</sub>: products/general/calibrating-and-updating/co2-calibration.md
+              - CO<sub>2</sub> Quick: products/general/calibrating-and-updating/co2-calibration-quick.md
               - Temperature and Humidity: products/general/temp-hum-calibration.md
               - Radar Tuning:
                 - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
@@ -211,7 +211,7 @@ nav:
             - General Tips: products/air1/setup/general-tips.md
             - Sensor Definitons: products/air1/setup/sensor-definitions.md
           - Addons:
-            - CO2 Addon: products/air1/addons/adding-co2-to-air-1.md
+            - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
             - MiCS Addon: products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
             - GPIO Addon: products/air1/addons/adding-gpio-header-to-air-1.md
           - Reviews: products/air1/air1-reviews.md
