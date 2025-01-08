@@ -2,7 +2,7 @@
 
 This article will guide you through a simple calibration of your CO<sub>2</sub> sensor for any Apollo Automation device!
 
-1\. Plug your sensor in outside and let it sit for 5 minutes or more to get normalized readings.
+1\. Plug your sensor in outside and let it sit for 5 minutes or more to get normalized readings. This should be around [420 ppm per NASA.](https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121 "NASA CO<sub>2</sub> levels")
 
 ![](assets/air-1-co2-calibration-portrait-quick-pic-3.jpg)
 
