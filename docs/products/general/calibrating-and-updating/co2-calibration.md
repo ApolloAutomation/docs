@@ -2,19 +2,19 @@
 
 !!! tip "This should be done every 1-2 years."
 
-    The [SCD40 CO2 sensor](https://sensirion.com/products/catalog/SCD40 "Docmentation on SCD40 CO2 Sensor!")\{:target="\_blank" rel="noopener noreferrer"\} has a long lifetime ([over 10 years](https://sensirion.com/media/documents/48C4B7FB/66E05452/CD_DS_SCD4x_Datasheet_D1.pdf "scd10 datasheet showing lifetime over 10 years")) but it requires re-calibration after 1-2 years back to a 420 ppm baseline!
+    The [SCD40 CO2 sensor](https://sensirion.com/products/catalog/SCD40 "Docmentation on SCD40 CO2 Sensor!"){:target="\_blank" rel="noopener noreferrer"} has a long lifetime ([over 10 years](https://sensirion.com/media/documents/48C4B7FB/66E05452/CD_DS_SCD4x_Datasheet_D1.pdf "scd10 datasheet showing lifetime over 10 years")) but it requires re-calibration after 1-2 years back to a 420 ppm baseline!
 
 ![AIR-1 Shown Outdoors for CO2 Calibration Portrait Image](assets/air-1-co2-calibration-portrait-image-1.jpg "AIR-1 Shown Outdoors for CO2 Calibration")
 
 1\. Bring your sensor outside and plug it in. You might need a USB battery bank if you live in an apartment or otherwise cannot get power outside of your building.
 
-2\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page")\{:target="\_blank" rel="noopener noreferrer"\}.
+2\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
 
 3\. Click device as shown in the image below.
 
 ![](assets/air-1-co2-calibration-image-2-1.jpg)
 
-4\. Click the "Press" button next to Calibrate SCD40 to 420 ppm and you should see the [CO<sub>2</sub> readings at 420 ppm or near it.](https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121 "NASA CO2 Levels")
+4\. Click the "Press" button next to Calibrate SCD40 to 420 ppm and you should see the CO<sub>2</sub> readings at 420 ppm or near it.
 
 ![](assets/air-1-co2-calibration-image-3.jpg)
 
@@ -32,9 +32,11 @@ Note the steep decline in CO<sub>2</sub> ppm detected due to the door and window
 
 ![CO2_8.jpg](assets/air-1-co2-calibration-image-5.jpg)
 
-[Wisconsin Department of Health CO<sub>2</sub> Level Chart](https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm)\{:target="\_blank" rel="noopener noreferrer"\}
+<a href="https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm" target="_blank" rel="noreferrer nofollow noopener">Wisconsin Department of Health CO<sub>2</sub> Level Chart</a>
 
 ![CO2 Health Department.png](assets/air-1-co2-calibration-image-6.jpg)
+
+&nbsp;
 
 !!! example "CO2 levels dropping due to HVAC Fan on a schedule"
 
