@@ -86,7 +86,8 @@ source_editor:
   tab_size: 4
 content_editor:
   tab_size: 4
-
+  
+#brandon added this
 _snippets_imports:
   python_markdown_extensions:
     include:
@@ -95,3 +96,51 @@ _snippets_imports:
 
 
 timezone: Etc/UTC
+
+
+#brandon added this
+_snippets:
+  mkdoc_button:
+    snippet: "[[[button_text]]]([[button_link]]){ [[button_class]] }"
+    preview:
+      text:
+        - key: button_text
+        - 'Button'
+      subtext:
+        - key: button_link
+    params:
+      button_text:
+        parser: content
+        options:
+          editor_key: button_text
+          forbidden_tokens: ["]"]
+          style:
+            trim_text: true
+      button_link:
+        parser: argument
+        options:
+          model:
+            editor_key: button_link
+          format:
+            forbidden_tokens: [")"]
+            string_boundary: ['']
+      button_class:
+        parser: content
+        options:
+          editor_key: button_class
+          forbidden_tokens: ["}"]
+          style:
+            trim_text: true
+    _inputs:
+      button_class:
+        type: select
+        label: Button type
+        options:
+          values:
+            - name: Primary
+              class: '.md-button .md-button--primary'
+            - name: Secondary
+              class: '.md-button'
+          value_key: class
+          allow_empty: false
+

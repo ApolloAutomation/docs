@@ -10,7 +10,7 @@ This article will guide you through a simple calibration of your CO<sub>2</sub> 
 
 !!! tip "Hint"
 
-    If you cannot get this menu to pop-up, click somewhere on the home assistant dashboard then press your "e" key
+    If you cannot get this menu to pop-up, click somewhere on the home assistant dashboard then press your "e" key.
 
 ![Image of popup with CO2 calibration choice circled in red](assets/co2-calibration-quick-pic-1.png)
 
