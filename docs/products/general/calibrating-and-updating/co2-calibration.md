@@ -36,8 +36,6 @@ Note the steep decline in CO<sub>2</sub> ppm detected due to the door and window
 
 ![CO2 Health Department.png](assets/air-1-co2-calibration-image-6.jpg)
 
-&nbsp;
-
 !!! example "CO2 levels dropping due to HVAC Fan on a schedule"
 
     This could be improved by increasing air exchange to get below 1000 ppm for a safer environment.
