@@ -70,7 +70,6 @@ _inputs:
         - site-files
       empty_type: 
       resize_style: contain
-      resize_style: none
       width: 400
       height: 300
       expandable: true
