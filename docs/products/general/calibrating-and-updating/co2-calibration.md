@@ -26,7 +26,7 @@ It might take several attempts clicking the "Press" button for it to equalize co
 
 !!! danger "Dangerous CO<sub>2</sub> level considerations"
 
-    The CO<sub>2</sub> levels in a bedroom with the door closed and no ventilation can easily spike to levels where you lose focus or worse!
+    CO<sub>2</sub> levels in a closed, unventilated bedroom can quickly rise to concentrations that may impair focus or even pose health risks.
 
 Note the steep decline in CO<sub>2</sub> ppm detected due to the door and window being opened and fan turned on.
 
