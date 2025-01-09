@@ -18,15 +18,15 @@
 
 ![](assets/air-1-co2-calibration-image-3.jpg)
 
-It can take a few times clicking the calibrate for it to equalize correctly sometimes. If you don't see the SCD40 reporting 400-500 ppm then click the button again.
+It might take several attempts clicking the "Press" button for it to equalize correctly. If you don't see the SCD40 reporting 400-500 ppm then click the button again.
 
 5\. Now your CO<sub>2</sub> sensor should be calibrated! Be sure to setup some nice cards on your dashboard so you can monitor the CO<sub>2</sub> levels.
 
 ![Image of CO2ppm on a graph](assets/air-1-co2-calibration-image-4.jpg)
 
-!!! danger "Dangerous CO2 level considerations"
+!!! danger "Dangerous CO<sub>2</sub> level considerations"
 
-    The CO2 levels in a bedroom with the door closed and no ventilation can easily spike to levels where you lose focus or worse!
+    The CO<sub>2</sub> levels in a bedroom with the door closed and no ventilation can easily spike to levels where you lose focus or worse!
 
 Note the steep decline in CO<sub>2</sub> ppm detected due to the door and window being opened and fan turned on.
 
@@ -36,7 +36,7 @@ Note the steep decline in CO<sub>2</sub> ppm detected due to the door and window
 
 ![CO2 Health Department.png](assets/air-1-co2-calibration-image-6.jpg)
 
-!!! example "CO2 levels dropping due to HVAC Fan on a schedule"
+!!! example "CO<sub>2</sub> levels dropping due to HVAC Fan on a schedule"
 
     This could be improved by increasing air exchange to get below 1000 ppm for a safer environment.
 
