@@ -36,8 +36,6 @@ theme:
     - content.code.annotation
     - content.code.edit
     - content.code.copy
-    - content.code.copy
-    - navigation.sections
     - content.code.annotate
   language: en
   palette:
