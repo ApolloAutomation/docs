@@ -6,7 +6,7 @@ This article will guide you through a simple calibration of your CO<sub>2</sub> 
 
 ![](assets/air-1-co2-calibration-portrait-quick-pic-3.jpg)
 
-2\. Go to your home assistant dashboard and hit the letter "e" - It will pop up with an entity filter and here we will type in "Calibrate CO<sub>2</sub>" and select the correct device.
+2\. Go to your Home Assistant dashboard and hit the letter "e" - It will pop up with an entity filter then type in "Calibrate CO<sub>2</sub>" and select the correct device.
 
 !!! tip "Hint"
 
