@@ -101,10 +101,6 @@ markdown_extensions:
 
 copyright: |
   &copy; 2025 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
-<p>
-  &copy; {{ now().year }} 
-  <a href="https://github.com/ApolloAutomation" target="_blank" rel="noopener">Apollo Automation LLC</a>
-</p>
 
 nav:
   - Apollo: 
