@@ -83,10 +83,6 @@
 
 * This value represents the voltage at which the soil is considered completely dry. A dry voltage of 2.7V indicates the sensor has defined this threshold for when your plant needs watering. Automations can be created to alert you when the voltage rises to this point, signaling that the soil is too dry.
 
-#### Run Duration: 60 seconds
-
-* This is the amount of time the sensor remains active after a connection has been established. A run duration of 60 seconds is often enough to send all sensor data and updates before entering the sleep mode (to save energy). It’s useful for battery-powered devices.
-
 #### Sleep Duration: 480-720 minutes
 
 * This setting specifies how long the PLT-1 will remain in sleep mode between connection intervals. A 480-720 minute sleep duration is a good balance between battery life and update frequency. You can adjust this depending on how often you want the sensor to wake up and report new data.
