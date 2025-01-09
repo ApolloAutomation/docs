@@ -2,6 +2,11 @@
 
 Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
 
+!!! info "Controls"
+
+    * **RGB Light**
+      * An RGB Neopixel LED. Click on the light bulb to change the color. Click on the toggle to turn on or off
+
 ### Controls
 
 * **RGB Light**
@@ -54,6 +59,25 @@ Once added to Home Assistant you can configure different settings for your senso
   * Best to keep on 0.75m in many cases. If you change it to 0.25m the first few gates become very very sensitive and the maximum detection distance shrinks a lot.
 * **Radar Zone 1 Start**
   * This sets the starting distance for Zone 1 in cm. This is the distance from the sensor to the start of Zone 1
+
+??? info "Radar End Zone 1" - This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 1. - This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 2 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 2. - This defines “Zone 3” of the radar. It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 3.
+
+    !!! warning
+        - Do not bring any alcoholic beverages
+        - Do not bring cigarettes or vape
+        - Do not talk to strangers
+
+&nbsp;
+
+??? info "Radar End Zones"
+    - Radar End Zone 1
+        - This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 1.
+    - Radar End Zone 2
+        - This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 2.
+    - Radar End Zone 3
+        - This defines “Zone 3” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 3.
+
+
 * **Radar End Zone 1**
   * This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 1.
 * **Radar End Zone 2**
