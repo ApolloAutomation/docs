@@ -44,7 +44,7 @@
 
 12\. Can the MTR-1 detect motion through walls?
 
-•	Yes, the mmWave radar in the MTR-1 can detect movement through certain materials, such as light walls or thin furniture, though you may need to adjust the sensitivity to prevent false positives from nearby rooms.
+•	Yes, the mmWave radar in the MTR-1 can detect movement through certain materials, such as light walls or thin furniture, though you may need to adjust the zones to prevent false positives from nearby rooms. [Please visit the tuning articles for more info](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)!
 
 13\. Can the MTR-1 be used outdoors?
 
