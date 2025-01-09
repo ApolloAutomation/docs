@@ -68,7 +68,7 @@
 
 18\. Can I customize the MTR-1’s features?
 
-•	Yes, the MTR-1 is fully customizable through ESPHome. You can modify sensor settings, change reporting intervals, adjust sensitivity, and create custom automations based on the sensor readings.
+•	Yes, the MTR-1 is fully customizable through ESPHome. You can modify sensor settings, change reporting intervals, and create custom automations based on the sensor readings.
 
 19\. What is the reporting frequency of the MTR-1’s sensors?
 
