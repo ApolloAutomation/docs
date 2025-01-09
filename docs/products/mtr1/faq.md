@@ -44,7 +44,7 @@
 
 12\. Can the MTR-1 detect motion through walls?
 
-•	Yes, the mmWave radar in the MTR-1 can detect movement through certain materials, such as light walls or thin furniture, though you may need to adjust the sensitivity to prevent false positives from nearby rooms.
+•	Yes, the mmWave radar in the MTR-1 can detect movement through certain materials, such as light walls or thin furniture, though you may need to adjust the zones to prevent false positives from nearby rooms. [Please visit the tuning articles for more info](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)!
 
 13\. Can the MTR-1 be used outdoors?
 
@@ -68,7 +68,7 @@
 
 18\. Can I customize the MTR-1’s features?
 
-•	Yes, the MTR-1 is fully customizable through ESPHome. You can modify sensor settings, change reporting intervals, adjust sensitivity, and create custom automations based on the sensor readings.
+•	Yes, the MTR-1 is fully customizable through ESPHome. You can modify sensor settings, change reporting intervals, and create custom automations based on the sensor readings.
 
 19\. What is the reporting frequency of the MTR-1’s sensors?
 
