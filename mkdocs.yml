@@ -96,6 +96,10 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+#brandon added this
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 copyright: |
   &copy; 2025 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
