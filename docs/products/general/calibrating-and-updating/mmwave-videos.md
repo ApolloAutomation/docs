@@ -5,8 +5,8 @@ If you're experiencing false triggers, we recommend using Radar Engineering Mode
 
 Here is a video of how to tune the mmWave sensor using radar engineering mode,
 
-<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/w_Gq62Edsnc?si=IxNE-pt-3u2FHMzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe></div>
+<div class="cms-embed">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/w_Gq62Edsnc?si=IxNE-pt-3u2FHMzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""&gt;
+&lt;/iframe&gt;</div>
 
 1. Open Home Assistant
 2. Navigate to Settings&gt;Devices & services&gt;ESPHome&gt;Select the MSR-2
@@ -25,15 +25,13 @@ Thanks to [MakeItWorkTech](https://www.youtube.com/@makeitworktech) for this met
 
 **<u>Example</u>**
 
-\- You may have an open-concept kitchen and living room, and you want the MSR-1 to activate your under-cabinet lights only when you're in the kitchen.
+\- You may have an open-concept kitchen and living room, and you want the MSR-2 to activate your under-cabinet lights only when you're in the kitchen.
 
 Here's how:
 
 1. Stand in the desired trigger locations.
 2. Observe the gate energy.
 3. Adjust the gate threshold slider to the right, increasing the energy required to trigger the mmWave sensor. This ensures that your kitchen lights only come on when you're actually in the kitchen, not just walking by in the living room. Also, you can lower the gate threshold in the kitchen by moving the slider to the left. This makes the mmWave sensor more sensitive, even when standing still. This way, you avoid having the lights go off while reading a recipe or doing the dishes.
-
-\- From clarinetJWD, "Engineering mode is what I was missing at first. I did exactly that, and now detection is basically perfect! My under cabinet lights now come on to max brightness whenever someone is in the kitchen, and return to their previous value when they leave. Next up is replacing the really flaky motion switch in my garage so it stops shutting off when I'm doing a project at the workbench! Thanks, these are really good.
 
 **<u>References</u>**
 
