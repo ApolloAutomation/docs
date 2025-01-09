@@ -37,6 +37,8 @@ theme:
     - content.code.edit
     - content.code.copy
     - content.code.copy
+    - navigation.sections
+    - content.code.annotate
   language: en
   palette:
     - media: "(prefers-color-scheme)"
@@ -98,7 +100,11 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
+  &copy; 2025 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
+<p>
+  &copy; {{ now().year }} 
+  <a href="https://github.com/ApolloAutomation" target="_blank" rel="noopener">Apollo Automation LLC</a>
+</p>
 
 nav:
   - Apollo: 
