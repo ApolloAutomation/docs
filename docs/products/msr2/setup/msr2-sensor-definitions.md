@@ -322,4 +322,4 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Shows the time since last reboot.
 
-[Click here to join our discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){ .md-button .md-button--primary }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){ .md-button }
