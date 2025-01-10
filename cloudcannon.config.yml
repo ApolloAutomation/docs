@@ -108,12 +108,17 @@ _snippets:
         - 'Button'
       subtext:
         - key: button_link
+      metadata:
+        - text:
+            - key: button_icon
+    picker_preview:
+      text: Button
     params:
       button_text:
         parser: content
         options:
           editor_key: button_text
-          forbidden_tokens: ["]"]
+          forbidden_tokens: ["]", ":"]
           style:
             trim_text: true
       button_link:
@@ -143,4 +148,61 @@ _snippets:
               class: '.md-button'
           value_key: class
           allow_empty: false
-
+  mkdoc_button_with_icon:
+    snippet: "[[[button_text]] :[[button_icon]]:]([[button_link]]){ [[button_class]] }"
+    preview:
+      text:
+        - key: button_text
+        - 'Button'
+      subtext:
+        - key: button_link
+      metadata:
+        - text:
+            - key: button_icon
+    picker_preview:
+      text: Button with icon
+    params:
+      button_text:
+        parser: content
+        options:
+          editor_key: button_text
+          forbidden_tokens: ["]", ":"]
+          style:
+            trim_text: true
+      button_link:
+        parser: argument
+        options:
+          model:
+            editor_key: button_link
+          format:
+            forbidden_tokens: [")"]
+            string_boundary: ['']
+      button_class:
+        parser: content
+        options:
+          editor_key: button_class
+          forbidden_tokens: ["}"]
+          style:
+            trim_text: true
+      button_icon:
+        parser: content
+        options:
+            editor_key: button_icon
+            forbidden_tokens: [':']
+    _inputs:
+      button_class:
+        type: select
+        label: Button type
+        options:
+          values:
+            - name: Primary
+              class: '.md-button .md-button--primary'
+            - name: Secondary
+              class: '.md-button'
+          value_key: class
+          allow_empty: false
+      button_icon:
+        type: text
+        label: Button Icon
+        comment: >
+          Search available icons <a href="https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search">here</a>. Remove the colons on each side when pasting.
