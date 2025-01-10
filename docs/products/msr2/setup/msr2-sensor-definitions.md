@@ -14,8 +14,6 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * True CO<sub>2</sub> reading from the SCD40. This will be Unknown if you do not have the CO<sub>2</sub> module. SDC40 can be calibrated [following this guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO<sub>2</sub> Calibration").
 
-    &nbsp;
-
     **ESP Temperature**
 
     * This is the temperature of the internal microcontroller. Think of it like your measured CPU temp on your PC.
