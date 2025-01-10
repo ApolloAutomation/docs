@@ -66,39 +66,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * This is a configurable zone. Think of zones like distances from the radar unit. Zone 3 might be from 200 cm to 300 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 3”
 
-
-### Sensors
-
-* **CO2**
-  * True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. This can be calibrated following this guide but does come precalibrated: [Here](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration")
-* **ESP Temperature**
-  * This is the temperature of the internal ESP chip. Think of it like your measured CPU temp on your PC
-* **LTR390 Light**
-  * Light level measured in lux by LTR390
-* **LTR390 UV Index**
-  * UV index measured by LTR390
-* **Radar Detection Distance**
-  * The last detected distance by the radar. This will stay at the last known value so sometimes can be misleading
-* **Radar Move Energy**
-  * The amount of movement measured by the LD2410B. Faster movements have higher %
-* **Radar Moving Target**
-  * Does the radar have a moving target it is tracking
-* **Radar Still Distance**
-  * The last measured distance of a still target. It will hold the last value so sometimes can be misleading
-* **Radar Still Energy**
-  * The energy of the current still target
-* **Radar Still Target**
-  * Does the radar have a still target
-* **Radar Target**
-  * Does the radar have a still or moving target. Good for triggering automation.
-* **Radar Zone 1 Occupancy**
-  * This is a configurable zone. Think of zones like distances from the radar unit. Zone 1 might be from 0 cm to 120 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 1”
-* **Radar Zone 2 Occupancy**
-  * Same as zone 1 but just the second zone from the sensor
-* **Radar Zone 3 Occupancy**
-  * Same as zone 1 & 2 but with the third zone.
-
-??? info "Configuration"
+???+ info "Configuration"
 
     **CO2 Calibration Number**
 
@@ -128,33 +96,23 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * This sets the starting distance for Zone 1 in cm. This is the distance from the sensor to the start of Zone 1
 
-!!! info "Radar Zones"
-    === "Unordered List"
+    DPS Temperature Offset
 
-        ``` markdown
-        * This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “100” that means from 0 to 100 centimeters from the sensor is zone 1.
-        * * This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 2 Occupancy” sensor. So if this number is set to “200” that means from zone 2 end distance to 200 centimeters from the sensor is zone 2.
-        * It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “300” that means from zone 2 end distance to 300 centimeters from the sensor is zone 3.
-        ```
+    * Offsets the heat from the ESP chip for a more accurate temperature.
 
-### Configuration
+    ESP Reboot
 
-* **CO2 Calibration Number**
-  * See calibrating CO2: [Here](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
-* **ESP Reboot**
-  * Performs a restart of the sensor
-* **Factory Reset Radar**
-  * Sets the radar's move thresholds back to their original values from the manufacturer
-* **g0-g8 Move & Still Threshold**
-  * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)
-* **Radar Control Bluetooth**
-  * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app if you wanted to upload new firmware to the radar unit (Not the MSR-1 in general, just the radar chip)
-* **Radar Distance Resolution**
-  * Best to keep on 0.75m in many cases. If you change it to 0.25m the first few gates become very very sensitive and the maximum detection distance shrinks a lot.
-* **Radar Zone 1 Start**
-  * This sets the starting distance for Zone 1 in cm. This is the distance from the sensor to the start of Zone 1
+    * A control to reboot the ESP32 system.
 
-??? info "Radar End Zones"
+    Factory Reset Radar
+
+    * Resets the radar to its factory settings.
+
+    Firmware Update
+
+    * Shows the status of the firmware update.
+
+???+ info "Radar End Zones"
 
     Radar End Zone 1
 
@@ -233,43 +191,81 @@ Once added to Home Assistant you can configure different settings for your senso
 
 •	Firmware Update: Shows the status of the firmware update.
 
-#### Radar Zone Configuration:
+??? info "Radar Zone Configuration"
 
-•	g0 Move Threshold: Configures the movement sensitivity threshold for Zone 0.
+    **g0 Move Threshold**
 
-•	g0 Still Threshold: Configures the stillness sensitivity threshold for Zone 0.
+    * Configures the movement sensitivity threshold for gate 0.
 
-•	g1 Move Threshold: Configures the movement sensitivity threshold for Zone 1.
+    **g0 Still Threshold**
 
-•	g1 Still Threshold: Configures the stillness sensitivity threshold for Zone 1.
+    * Configures the stillness sensitivity threshold for gate 0.
 
-•	g2 Move Threshold: Configures the movement sensitivity threshold for Zone 2.
+    **g1 Move Threshold**
 
-•	g2 Still Threshold: Configures the stillness sensitivity threshold for Zone 2.
+    * Configures the movement sensitivity threshold for gate 1.
 
-•	g3 Move Threshold: Configures the movement sensitivity threshold for Zone 3.
+    **g1 Still Threshold**
 
-•	g3 Still Threshold: Configures the stillness sensitivity threshold for Zone 3.
+    * Configures the stillness sensitivity threshold for gate 1.
 
-•	g4 Move Threshold: Configures the movement sensitivity threshold for Zone 4.
+    **g2 Move Threshold**
 
-•	g4 Still Threshold: Configures the stillness sensitivity threshold for Zone 4.
+    * Configures the movement sensitivity threshold for gate 2.
 
-•	g5 Move Threshold: Configures the movement sensitivity threshold for Zone 5.
+    **g2 Still Threshold**
 
-•	g5 Still Threshold: Configures the stillness sensitivity threshold for Zone 5.
+    * Configures the stillness sensitivity threshold for for gate 2.
 
-•	g6 Move Threshold: Configures the movement sensitivity threshold for Zone 6.
+    **g3 Move Threshold**
 
-•	g6 Still Threshold: Configures the stillness sensitivity threshold for Zone 6.
+    * Configures the movement sensitivity threshold for gate 3.
 
-•	g7 Move Threshold: Configures the movement sensitivity threshold for Zone 7.
+    **g3 Still Threshold**
 
-•	g7 Still Threshold: Configures the stillness sensitivity threshold for Zone 7.
+    * Configures the stillness sensitivity threshold for gate 3.
 
-•	g8 Move Threshold: Configures the movement sensitivity threshold for Zone 8.
+    **g4 Move Threshold**
 
-•	g8 Still Threshold: Configures the stillness sensitivity threshold for Zone 8.
+    * Configures the movement sensitivity threshold for gate 4.
+
+    **g4 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 4.
+
+    **g5 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 5.
+
+    **g5 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 5.
+
+    **g6 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 6.
+
+    **g6 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 6.
+
+    **g7 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 7.
+
+    **g7 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 7.
+
+    **g8 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 8.
+
+    **g8 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 8.
+
+&nbsp;
 
 #### Bluetooth:
 
