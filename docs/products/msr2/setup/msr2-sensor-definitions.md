@@ -147,15 +147,15 @@ Once added to Home Assistant you can configure different settings for your senso
 
 #### Sensors:
 
-•	CO₂: Detects CO₂ levels in the environment. In this case, the value is unknown, indicating that the reading may not be available or calibrated.
+•	CO₂: Detects CO₂ levels in the environment.
 
-•	DPS310 Pressure: Measures the air pressure in the environment. Here, the pressure is shown as 14.36 psi.
+•	DPS310 Pressure: Measures the air pressure in the environment.
 
-•	DPS310 Temperature: Measures the ambient air temperature using the DPS310 sensor (89.4°F shown).
+•	DPS310 Temperature: Measures the ambient air temperature using the DPS310 sensor.
 
-•	LTR390 Light: Measures the light intensity in lux. Here, the reading is 82.5 lx.
+•	LTR390 Light: Measures the light intensity in lux.
 
-•	LTR390 UV Index: Detects ultraviolet (UV) light levels and provides a UV index. The current reading is 0.00000 UVI, indicating no detectable UV light.
+•	LTR390 UV Index: Detects ultraviolet (UV) light levels and provides a UV index.
 
 #### Radar Sensors:
 
@@ -290,6 +290,30 @@ Once added to Home Assistant you can configure different settings for your senso
 •	Radar Zone Boundary: Adjusts the radar zone boundary, shown as 0.0 cm.
 
 •	Startup Light Blink: A toggle to enable or disable the blinking of the startup light.
+
+??? warning "Diagnostic"
+
+    **ESP Temperature**
+
+    * Displays the current temperature of the ESP32 chip, shown here as 131.0°F.
+
+    • g0 to g8 Move Energy: Displays the move energy levels for zones g0 to g8
+
+    • g0 to g8 Still Energy: Displays the still energy levels for zones g0 to g8
+
+    • Online: Shows the connection status, displayed as “Connected.”
+
+    • Query Params: Provides access to query parameters for debugging or advanced configurations.
+
+    • Radar Firmware Version: Displays the current firmware version for the radar, shown as “2.04.23022511.”
+
+    • Restart Radar: Button to restart the radar sensor.
+
+    • RSSI: Displays the WiFi signal strength, currently at -68 dBm.
+
+    • Uptime: Shows the time the device has been running continuously, currently 555:27:36 (555 hours).
+
+    • Device Name: Displays the device’s name on the network, “apollo-msr-2”
 
 #### Diagnostic:
 
