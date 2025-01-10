@@ -97,6 +97,36 @@ Once added to Home Assistant you can configure different settings for your senso
 * **Radar Zone 3 Occupancy**
   * Same as zone 1 & 2 but with the third zone.
 
+??? info "Configuration"
+
+    **CO2 Calibration Number**
+
+    * See calibrating CO2: [Here](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
+
+    **ESP Reboot**
+
+    * Performs a restart of the sensor
+
+    **Factory Reset Radar**
+
+    * Sets the radar's move thresholds back to their original values from the manufacturer
+
+    **g0-g8 Move & Still Threshold**
+
+    * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)
+
+    **Radar Control Bluetooth**
+
+    * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app if you wanted to upload new firmware to the radar unit (Not the MSR-1 in general, just the radar chip)
+
+    **Radar Distance Resolution**
+
+    * Best to keep on 0.75m in many cases. If you change it to 0.25m the first few gates become very very sensitive and the maximum detection distance shrinks a lot.
+
+    **Radar Zone 1 Start**
+
+    * This sets the starting distance for Zone 1 in cm. This is the distance from the sensor to the start of Zone 1
+
 ### Configuration
 
 * **CO2 Calibration Number**
