@@ -6,16 +6,38 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **RGB Light**
 
-    An RGB Neopixel LED. Click on the light bulb to change the color. Click on the toggle to turn on or off
+    * One RGB Neopixel LED. Click on the light bulb or color wheel to change the color. Click on the toggle to turn on or off.
 
-    !!! example "A RGB Neopixel"
+???+ info "Sensors"
 
-        A RGB Neopixel. Click on the light bulb to change the color. Click on the toggle to turn on or off
-
-### Controls
-
-* **RGB Light**
-  * A RGB Neopixel. Click on the light bulb to change the color. Click on the toggle to turn on or off
+    * **CO2**
+      * True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. SDC40 can be calibrated [following this guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration").
+    * **ESP Temperature**
+      * This is the temperature of the internal microcontroller. Think of it like your measured CPU temp on your PC.
+    * **LTR390 Light**
+      * Light level measured in lux by LTR390
+    * **LTR390 UV Index**
+      * UV index measured by LTR390
+    * **Radar Detection Distance**
+      * The last detected distance by the radar. This will stay at the last known value so sometimes can be misleading
+    * **Radar Move Energy**
+      * The amount of movement measured by the LD2410B. Faster movements have higher %
+    * **Radar Moving Target**
+      * Does the radar have a moving target it is tracking
+    * **Radar Still Distance**
+      * The last measured distance of a still target. It will hold the last value so sometimes can be misleading
+    * **Radar Still Energy**
+      * The energy of the current still target
+    * **Radar Still Target**
+      * Does the radar have a still target
+    * **Radar Target**
+      * Does the radar have a still or moving target. Good for triggering automation.
+    * **Radar Zone 1 Occupancy**
+      * This is a configurable zone. Think of zones like distances from the radar unit. Zone 1 might be from 0 cm to 120 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 1”
+    * **Radar Zone 2 Occupancy**
+      * Same as zone 1 but just the second zone from the sensor
+    * **Radar Zone 3 Occupancy**
+      * Same as zone 1 & 2 but with the third zone.
 
 ### Sensors
 
