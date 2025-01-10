@@ -130,24 +130,23 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “300” that means from zone 2 end distance to 300 centimeters from the sensor is zone 3.
 
-* **Radar Max Move Distance**
-  * Maximum distance gate for movement detection. Value between 2 and 8 inclusive
-  * Useful in a bathroom or other scenario where you want to avoid detection after a certain gate count.
-  * Useful for triggering on "radar target" instead of triggering on zone 1/2/3 occupancy instead.
-* **Radar Max Still Distance**
-  * Maximum distance gate for still detection. Value between 2 and 8 inclusive. Defaults to 8.
-  * Useful in a bathroom or other scenario where you want to avoid detection after a certain gate count.
-  * Useful for triggering on "radar target" instead of triggering on zone 1/2/3 occupancy instead.
-* **Radar Timeout**
-  * The time in seconds that the radar's presence will stay high after the target is lost.
+???+ info "Radar Gate Distance Tuning and Timeout"
 
-### Detailed Sensor Definitions
+    ??? example "Radar Max Move Distance"
 
-#### Controls:
+        * Maximum distance gate for movement detection. Value between 2 and 8 inclusive
+        * Useful in a bathroom or other scenario where you want to avoid detection after a certain gate number (distance).
+        * Useful for triggering on "radar target" instead of triggering on zone 1/2/3 occupancy instead.
 
-•	Calibrate SCD40 to 420ppm: A control option to calibrate the SCD40 CO₂ sensor to outdoor baseline levels.
+    ??? example "Radar Max Still Distance "
 
-•	RGB Light: Control to toggle the RGB LED on or off for visual notifications.
+        * Maximum distance gate for still detection. Value between 2 and 8 inclusive. Defaults to 8.
+        * Useful in a bathroom or other scenario where you want to avoid detection after a certain gate number (distance).
+        * Useful for triggering on "radar target" instead of triggering on zone 1/2/3 occupancy instead.
+
+    ???+ info "Radar Timeout"
+
+        The time in seconds that the radar's presence will stay high after the target is lost.
 
 ??? success "Radar Sensors"
 
@@ -195,13 +194,11 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Indicates whether Zone 3 is occupied or clear.
 
-####
-
 ??? info "Radar Zone Configuration"
 
     !!! warning "Keeping these enabled permanently is bad"
 
-        Please toggle ld2410 Bluetooth on, configure your sensor, then turn ld2410 bluetooth back off. Otherwise, your Wi-Fi and database could become overwhelmed with excessive traffic.
+        Please toggle ld2410 Bluetooth on, configure your sensor, then turn ld2410 Bluetooth back off. Otherwise, your Wi-Fi and database could become overwhelmed with excessive traffic.
 
     **g0 Move Threshold**
 
@@ -299,26 +296,40 @@ Once added to Home Assistant you can configure different settings for your senso
 
 •	Startup Light Blink: A toggle to enable or disable the blinking of the startup light.
 
-??? warning "Diagnostic"
+??? info "Diagnostic"
 
     **ESP Temperature**
 
-    * Displays the current temperature of the ESP32 chip, shown here as 131.0°F.
+    * Displays the current temperature of the ESP32 chip.
 
-    • g0 to g8 Move Energy: Displays the move energy levels for zones g0 to g8
+    **g0 move energy to g8 move energy**
 
-    • g0 to g8 Still Energy: Displays the still energy levels for zones g0 to g8
+    * Displays the move energy levels for gates g0 through g8
 
-    • Online: Shows the connection status, displayed as “Connected.”
+    **g0 move energy to g8 still energy**
 
-    • Query Params: Provides access to query parameters for debugging or advanced configurations.
+    * Displays the still energy levels for gates g0 through g8
 
-    • Radar Firmware Version: Displays the current firmware version for the radar, shown as “2.04.23022511.”
+    **Online**
 
-    • Restart Radar: Button to restart the radar sensor.
+    * Shows the connection status.
 
-    • RSSI: Displays the WiFi signal strength, currently at -68 dBm.
+    **Query Params**
 
-    • Uptime: Shows the time the device has been running continuously, currently 555:27:36 (555 hours).
+    * Button to query parameters for debugging or advanced configurations.
 
-    • Device Name: Displays the device’s name on the network, “apollo-msr-2”
+    **Radar Firmware Version**
+
+    * Displays the current firmware version for the radar.
+
+    **Restart Radar**
+
+    * Button to restart the radar sensor.
+
+    **RSSI**
+
+    * Displays the Wi-Fi signal strength.
+
+    **Uptime**
+
+    * Shows the time since last reboot.
