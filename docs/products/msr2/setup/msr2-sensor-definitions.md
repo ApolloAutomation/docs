@@ -160,24 +160,6 @@ Once added to Home Assistant you can configure different settings for your senso
 
             The time in seconds that the radar's presence will stay high after the target is lost.
 
-??? info "Radar Gate Distance Tuning and Timeout"
-
-    ???+ example "Radar Max Move Distance"
-
-        * Maximum distance gate for movement detection. Value between 2 and 8 inclusive
-        * Useful in a bathroom or other scenario where you want to avoid detection after a certain gate number (distance).
-        * Useful for triggering on "radar target" instead of triggering on zone 1/2/3 occupancy instead.
-
-    ???+ example "Radar Max Still Distance "
-
-        * Maximum distance gate for still detection. Value between 2 and 8 inclusive. Defaults to 8.
-        * Useful in a bathroom or other scenario where you want to avoid detection after a certain gate number (distance).
-        * Useful for triggering on "radar target" instead of triggering on zone 1/2/3 occupancy instead.
-
-    ???+ info "Radar Timeout"
-
-        The time in seconds that the radar's presence will stay high after the target is lost.
-
 ??? success "Radar Sensors"
 
     **Radar Detection Distance**
