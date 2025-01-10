@@ -8,15 +8,27 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * One RGB Neopixel LED. Click on the light bulb or color wheel to change the color. Click on the toggle to turn on or off.
 
+    **Calibrate SCD40 to 420ppm**
+
+    * A control option to <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">calibrate the SCD40 CO₂ sensor</a> to <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">outdoor baseline levels.</a>
+
 ???+ info "Sensors"
 
     **CO<sub>2</sub>**
 
-    * True CO<sub>2</sub> reading from the SCD40. This will be Unknown if you do not have the CO<sub>2</sub> module. SDC40 can be calibrated [following this guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO<sub>2</sub> Calibration").
+    * True CO<sub>2</sub> reading from the SCD40. This will be Unknown if you do not have the CO<sub>2</sub> module. SDC40 can be calibrated <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" title="CO<sub>2</sub> Calibration" target="_blank" rel="noopener">following this guide</a>.
 
     **ESP Temperature**
 
     * This is the temperature of the internal microcontroller. Think of it like your measured CPU temp on your PC.
+
+    **DPS310 Pressure**
+
+    * Measures the air pressure in the environment.
+
+    **DPS310 Temperature**
+
+    * Measures the ambient air temperature using the DPS310 sensor.
 
     **LTR390 Light**
 
@@ -68,10 +80,6 @@ Once added to Home Assistant you can configure different settings for your senso
 
 ???+ info "Configuration"
 
-    **CO2 Calibration Number**
-
-    * See calibrating CO2: [Here](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
-
     **ESP Reboot**
 
     * Performs a restart of the sensor
@@ -88,23 +96,19 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app if you wanted to upload new firmware to the radar unit (Not the MSR-1 in general, just the radar chip)
 
-    **Radar Distance Resolution**
-
-    * Best to keep on 0.75m in many cases. If you change it to 0.25m the first few gates become very very sensitive and the maximum detection distance shrinks a lot.
-
     **Radar Zone 1 Start**
 
     * This sets the starting distance for Zone 1 in cm. This is the distance from the sensor to the start of Zone 1
 
-    DPS Temperature Offset
+    **DPS Temperature Offset**
 
     * Offsets the heat from the ESP chip for a more accurate temperature.
 
-    ESP Reboot
+    **ESP Reboot**
 
     * A control to reboot the ESP32 system.
 
-    Factory Reset Radar
+    **Factory Reset Radar**
 
     * Resets the radar to its factory settings.
 
@@ -145,53 +149,59 @@ Once added to Home Assistant you can configure different settings for your senso
 
 •	RGB Light: Control to toggle the RGB LED on or off for visual notifications.
 
-#### Sensors:
+??? success "Radar Sensors"
 
-•	CO₂: Detects CO₂ levels in the environment.
+    **Radar Detection Distance**
 
-•	DPS310 Pressure: Measures the air pressure in the environment.
+    * Shows the distance to the detected target, measured in inches.
 
-•	DPS310 Temperature: Measures the ambient air temperature using the DPS310 sensor.
+    **Radar Move Energy**
 
-•	LTR390 Light: Measures the light intensity in lux.
+    * Displays the energy of movement detected by the radar, represented as a percentage.
 
-•	LTR390 UV Index: Detects ultraviolet (UV) light levels and provides a UV index.
+    **Radar Moving Distance**
 
-#### Radar Sensors:
+    * Displays the distance of a moving target, measured in inches.
 
-•	Radar Detection Distance: Shows the distance to the detected target, measured in inches. Here, it is shown as 52 inches.
+    **Radar Moving Target**
 
-•	Radar Move Energy: Displays the energy of movement detected by the radar, represented as a percentage. The reading is 100%, indicating high movement energy.
+    * Detects whether a moving target is present.
 
-•	Radar Moving Distance: Measures the distance of moving targets, shown as 57 inches.
+    **Radar Still Distance**
 
-•	Radar Moving Target: Detects whether a moving target is present. The value is “Detected,” meaning a moving target is actively being tracked.
+    * Displays the distance of a still target, measured in inches.
 
-•	Radar Still Distance: Shows the distance of still targets, measured at 56 inches.
+    **Radar Still Energy**
 
-•	Radar Still Energy: Displays the energy detected from still objects. The value is 100%, showing strong detection of still objects.
+    * Displays the energy detected from still objects.
 
-•	Radar Still Target: Detects whether a still target is present. The value is “Detected,” meaning a still target is being tracked.
+    **Radar Still Target**
 
-•	Radar Target: Overall detection of a target by the radar. The sensor shows “Detected,” indicating that a target is present.
+    * Detects whether a still target is present.
 
-•	Radar Zone 1 Occupancy: Indicates whether Zone 1 is occupied or clear. In this case, it is “Clear.”
+    **Radar Target**
 
-•	Radar Zone 2 Occupancy: Shows whether Zone 2 is occupied. The sensor indicates “Detected,” meaning Zone 2 is occupied.
+    * Overall detection of a target by the radar.
 
-•	Radar Zone 3 Occupancy: Displays the occupancy status of Zone 3. The reading shows “Clear,” indicating no occupancy.
+    **Radar Zone 1 Occupancy**
 
-#### Configuration:
+    * Indicates whether Zone 1 is occupied or clear.
 
-•	DPS Temperature Offset: Offsets the heat from the ESP chip for a more accurate temperature.
+    **Radar Zone 2 Occupancy**
 
-•	ESP Reboot: A control to reboot the ESP32 system.
+    * Indicates whether Zone 2 is occupied or clear.
 
-•	Factory Reset Radar: Resets the radar to its factory settings.
+    **Radar Zone 3 Occupancy**
 
-•	Firmware Update: Shows the status of the firmware update.
+    * Indicates whether Zone 3 is occupied or clear.
+
+####
 
 ??? info "Radar Zone Configuration"
+
+    !!! warning "Keeping these enabled permanently is bad"
+
+        Please toggle ld2410 Bluetooth on, configure your sensor, then turn ld2410 bluetooth back off. Otherwise, your Wi-Fi and database could become overwhelmed with excessive traffic.
 
     **g0 Move Threshold**
 
@@ -265,8 +275,6 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Configures the stillness sensitivity threshold for gate 8.
 
-&nbsp;
-
 #### Bluetooth:
 
 •	ld2410 Bluetooth: A toggle to enable or disable Bluetooth functionality for the sensor.
@@ -314,25 +322,3 @@ Once added to Home Assistant you can configure different settings for your senso
     • Uptime: Shows the time the device has been running continuously, currently 555:27:36 (555 hours).
 
     • Device Name: Displays the device’s name on the network, “apollo-msr-2”
-
-#### Diagnostic:
-
-•	ESP Temperature: Displays the current temperature of the ESP32 chip, shown here as 131.0°F.
-
-•	g0 to g8 Move Energy: Displays the move energy levels for zones g0 to g8
-
-•	g0 to g8 Still Energy: Displays the still energy levels for zones g0 to g8
-
-•	Online: Shows the connection status, displayed as “Connected.”
-
-•	Query Params: Provides access to query parameters for debugging or advanced configurations.
-
-•	Radar Firmware Version: Displays the current firmware version for the radar, shown as “2.04.23022511.”
-
-•	Restart Radar: Button to restart the radar sensor.
-
-•	RSSI: Displays the WiFi signal strength, currently at -68 dBm.
-
-•	Uptime: Shows the time the device has been running continuously, currently 555:27:36 (555 hours).
-
-•	Device Name: Displays the device’s name on the network, “apollo-msr-2”
