@@ -92,9 +92,9 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)
 
-    **Radar Control Bluetooth**
+    **ld2410 Bluetooth**
 
-    * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app if you wanted to upload new firmware to the radar unit (Not the MSR-1 in general, just the radar chip)
+    * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/).
 
     **Radar Zone 1 Start**
 
@@ -112,9 +112,9 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Resets the radar to its factory settings.
 
-    Firmware Update
+    **Firmware Update**
 
-    * Shows the status of the firmware update.
+    * Shows whether a firmware update is available.
 
     ??? info "Radar End Zones"
 
@@ -130,19 +130,17 @@ Once added to Home Assistant you can configure different settings for your senso
 
         * It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “300” that means from zone 2 end distance to 300 centimeters from the sensor is zone 3.
 
-???+ info "Radar End Zones"
+    **Radar Engineering Mode**
 
-    Radar End Zone 1
+    * Used to enable g0-g8 threshold sliders for <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/" target="_blank" rel="noopener">mmWave tuning</a>.
 
-    * This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “100” that means from 0 to 100 centimeters from the sensor is zone 1.
+    **Radar Timeout**
 
-    Radar End Zone 2
+    * Configures the timeout for the radar in seconds.
 
-    * This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 2 Occupancy” sensor. So if this number is set to “200” that means from zone 2 end distance to 200 centimeters from the sensor is zone 2.
+    **Startup Light Blink**
 
-    Radar End Zone 3
-
-    * It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “300” that means from zone 2 end distance to 300 centimeters from the sensor is zone 3.
+    A toggle to enable or disable the blinking of the RGB LED during MSR-2 initial boot.
 
 ???+ info "Radar Gate Distance Tuning and Timeout"
 
@@ -285,30 +283,6 @@ Once added to Home Assistant you can configure different settings for your senso
     **g8 Still Threshold**
 
     * Configures the stillness sensitivity threshold for gate 8.
-
-#### Bluetooth:
-
-•	ld2410 Bluetooth: A toggle to enable or disable Bluetooth functionality for the sensor.
-
-#### Radar Zone Configuration:
-
-•	Radar End Zone 1: Sets the end distance for Zone 1, shown as 50.0 cm.
-
-•	Radar End Zone 2: Sets the end detection range for Zone 2, shown as 150.0 cm.
-
-•	Radar End Zone 3: Sets the end detection range for Zone 3, shown as 250.0 cm.
-
-•	Radar Engineering Mode: A toggle for advanced radar settings adjustments.
-
-•	Radar Max Move Energy: Adjusts the maximum movement energy threshold.
-
-•	Radar Max Still Energy: Adjusts the maximum stillness energy threshold.
-
-•	Radar Timeout: Configures the timeout for the radar in seconds, shown as 5.0 seconds.
-
-•	Radar Zone Boundary: Adjusts the radar zone boundary, shown as 0.0 cm.
-
-•	Startup Light Blink: A toggle to enable or disable the blinking of the startup light.
 
 ??? info "Diagnostic"
 
