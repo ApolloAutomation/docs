@@ -142,7 +142,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     A toggle to enable or disable the blinking of the RGB LED during MSR-2 initial boot.
 
-???+ info "Radar Gate Distance Tuning and Timeout"
+??? info "Radar Gate Distance Tuning and Timeout"
 
     ???+ example "Radar Max Move Distance"
 
