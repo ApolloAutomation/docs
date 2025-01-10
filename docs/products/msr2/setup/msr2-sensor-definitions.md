@@ -22,35 +22,35 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **LTR390 Light**
 
-    * Light level measured in lux by LTR390
+    * Light level measured in lux by LTR390.
 
     **LTR390 UV Index**
 
-    * UV index measured by LTR390
+    * UV index measured by LTR390.
 
     **Radar Detection Distance**
 
-    * The last detected distance by the radar. This will stay at the last known value so sometimes can be misleading
+    * The last detected distance by the radar. This will stay at the last known value so sometimes can be misleading.
 
     **Radar Move Energy**
 
-    * The amount of movement measured by the LD2410B. Faster movements have higher %
+    * The amount of movement measured by the LD2410B. Faster movements have higher percentage.
 
     **Radar Moving Target**
 
-    * Does the radar have a moving target it is tracking
+    * Does the radar have a moving target it is tracking.
 
     **Radar Still Distance**
 
-    * The last measured distance of a still target. It will hold the last value so sometimes can be misleading
+    * The last measured distance of a still target. It will hold the last value so sometimes can be misleading.
 
     **Radar Still Energy**
 
-    * The energy of the current still target
+    * The energy of the current still target.
 
     **Radar Still Target**
 
-    * Does the radar have a still target
+    * Does the radar have a still target.
 
     **Radar Target**
 
@@ -58,15 +58,15 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Radar Zone 1 Occupancy**
 
-    * This is a configurable zone. Think of zones like distances from the radar unit. Zone 1 might be from 0 cm to 120 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 1”
+    * This is a configurable zone. Think of zones like distances from the radar unit. Zone 1 might be from 0 cm to 100 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 1”
 
     **Radar Zone 2 Occupancy**
 
-    * Same as zone 1 but just the second zone from the sensor
+    * This is a configurable zone. Think of zones like distances from the radar unit. Zone 2 might be from 100 cm to 200 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 2”
 
     **Radar Zone 3 Occupancy**
 
-    * Same as zone 1 & 2 but with the third zone.
+    * This is a configurable zone. Think of zones like distances from the radar unit. Zone 3 might be from 200 cm to 300 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 3”
 
 ### Sensors
 
