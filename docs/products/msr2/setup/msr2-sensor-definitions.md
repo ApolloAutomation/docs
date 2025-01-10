@@ -116,6 +116,20 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Shows the status of the firmware update.
 
+    ??? info "Radar End Zones"
+
+        **Radar End Zone 1**
+
+        * This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “100” that means from 0 to 100 centimeters from the sensor is zone 1.
+
+        **Radar End Zone 2**
+
+        * This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 2 Occupancy” sensor. So if this number is set to “200” that means from zone 2 end distance to 200 centimeters from the sensor is zone 2.
+
+        **Radar End Zone 3**
+
+        * It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “300” that means from zone 2 end distance to 300 centimeters from the sensor is zone 3.
+
 ???+ info "Radar End Zones"
 
     Radar End Zone 1
