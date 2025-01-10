@@ -5,7 +5,8 @@ Once added to Home Assistant you can configure different settings for your senso
 !!! info "Controls"
 
     * **RGB Light**
-      * An RGB Neopixel LED. Click on the light bulb to change the color. Click on the toggle to turn on or off
+
+      An RGB Neopixel LED. Click on the light bulb to change the color. Click on the toggle to turn on or off
 
 ### Controls
 
@@ -63,13 +64,16 @@ Once added to Home Assistant you can configure different settings for your senso
 ??? info "Radar End Zones"
 
     Radar End Zone 1
-      - This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 1.
+
+    * This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “100” that means from 0 to 100 centimeters from the sensor is zone 1.
 
     Radar End Zone 2
-      - This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 2.
+
+    * This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 2 Occupancy” sensor. So if this number is set to “200” that means from zone 2 end distance to 200 centimeters from the sensor is zone 2.
 
     Radar End Zone 3
-      - It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 3.
+
+    * It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “300” that means from zone 2 end distance to 300 centimeters from the sensor is zone 3.
 
 * **Radar Max Move Distance**
   * Maximum distance gate for movement detection. Value between 2 and 8 inclusive
