@@ -206,7 +206,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Indicates whether Zone 3 is occupied or clear.
 
-??? info "Radar Zone Configuration"
+??? info "Radar Gate Configuration"
 
     !!! warning "Keeping these enabled permanently is bad"
 
