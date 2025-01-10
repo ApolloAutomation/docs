@@ -66,6 +66,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * This is a configurable zone. Think of zones like distances from the radar unit. Zone 3 might be from 200 cm to 300 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 3”
 
+
 ### Sensors
 
 * **CO2**
@@ -126,6 +127,15 @@ Once added to Home Assistant you can configure different settings for your senso
     **Radar Zone 1 Start**
 
     * This sets the starting distance for Zone 1 in cm. This is the distance from the sensor to the start of Zone 1
+
+!!! info "Radar Zones"
+    === "Unordered List"
+
+        ``` markdown
+        * This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “100” that means from 0 to 100 centimeters from the sensor is zone 1.
+        * * This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 2 Occupancy” sensor. So if this number is set to “200” that means from zone 2 end distance to 200 centimeters from the sensor is zone 2.
+        * It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “300” that means from zone 2 end distance to 300 centimeters from the sensor is zone 3.
+        ```
 
 ### Configuration
 
