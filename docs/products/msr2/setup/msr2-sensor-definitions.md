@@ -2,7 +2,7 @@
 
 Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
 
-!!! info "Controls"
+???+ info "Controls"
 
     **RGB Light**
 
