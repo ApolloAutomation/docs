@@ -12,7 +12,7 @@
 
 ![](assets/renaming-devices-pic-3-1.png)
 
-##### ESPHome Integration Part 2
+##### ESPHome Integration - Part 2
 
 1\. Click "device" as shown in the image below.
 
