@@ -24,6 +24,6 @@
 
 ![](assets/updating-firmware-pic-4.png)
 
-6\. Once you see "**INFO OTA successful**" you are done. Click **STOP** to exit.
+6\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
 
 ![](assets/updating-firmware-pic-5-1.png)

@@ -1,64 +1,49 @@
 # Renaming Apollo Devices
 
-##### **ESPHome Integration**
+##### ESPHome Integration - Part 1
 
-1\. Go to settings and select Devices & services
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
 
-![Easy Renaming 3.png](../assets/easy-renaming-3.png)
+2\. Click the 3 dots then "Rename" as shown in the image below.
 
- 2. Select ESPHome
+![](assets/renaming-devices-pic-2.png)
 
-![Easy Renaming 4.png](../assets/easy-renaming-4.png)
+3\. Give it a new name such as "Kitchen mmWave Sensor" and click "OK".
 
-3\. Select the three dots next to the device and select Rename
+![](assets/renaming-devices-pic-3-1.png)
 
-![Easy Renaming 5.png](../assets/easy-renaming-5.png)
+##### ESPHome Integration - Part 2
 
-4\. Rename the device and select OK
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
 
-![Easy Renaming 6.png](../assets/easy-renaming-6.png)
+2\. Click "device" as shown in the image below.
 
-##### **ESPHome Addon**
+![](assets/updating-firmware-pic-6.png)
 
-1\. Select the ESPHome addon in the sidebar
+3\. Click the pencil in the top right then repeat your new name here such as "Kitchen mmWave Sensor" and click "UPDATE".
 
-2\. Select Edit on the device you want to rename
+![](assets/updating-firmware-pic-8.png)
 
-![Easy Renaming 1.png](../assets/easy-renaming-1.png)
+4\. Click "RENAME" and it will update all of your entities to use the updated name!
 
-3\. Chane the friendly\_name and save it
+![](assets/updating-firmware-pic-9.png)
 
-![Easy Renaming 2.png](../assets/easy-renaming-2.png)
+##### ESPHome Addon
 
-**These new names can be used in automations.**
+1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to rename.
 
-![Easy Renaming 7.png](../assets/easy-renaming-7.png)
+![](assets/renaming-devices-pic-5.png)
 
-##### **Full Renaming**
+!!! danger "This is code and requires you to follow the directions carefully."
 
-Thanks to [Panzer ](https://discord.com/channels/1126966963206361199/1126966963755819080/1184197925774053376)from our [Discord](https://discord.gg/mMNgQPyF94).
+    Editing the YAML here means even a space matters. Follow the guide just as shown and ask questions if you need help!
 
-1. Install the first MSR-1 using the standard method to get a default ESPHome configuration.
-2. Edit this configuration to update the "name" and "friendly name" as desired.
-3. SSH into the ESPHome directory and copy this configuration six times, then modify each copy with unique names, friendly names, and API keys. (Can also use VSCode/File Editor to copy the configuration from the ESPHome folder) 
-    1. ![Screenshot 2024-01-08 at 5.29.41 PM.png](../assets/screenshot-2024-01-08-at-5-29-41-pm.png)
-4. Delete the initially defined sensor in ESPHome and devices (if added there), and possibly reboot.
-5. Now with six distinct configs, use the 'install' option in ESPHome, select "plug into this computer", and connect the MSR-1 to your computer.
-6. Download the generated "factory-image" from ESPHome on Home Assistant (HA) and flash it. This will install the sensors without MAC-based names.
-7. Repeat the process for the remaining sensors.
-8. Add the sensors to devices if they are discovered.
-9. Can now update the sensors wirelessly again.
+2\. Change the "name" to "kitchen-mmwave-sensor" or similar. Do not use any spaces or caps here, only numbers, letters, and hypens. This will be your new hostname i.e. kitchen-mmwave-sensor.local.
 
-![Renaming sensors 2.png](../assets/renaming-sensors-2.png)
+3\. Change the "friendly\_name" to "Kitchen mmWave Sensor" or similar. This will be the name used in Home Assistant for your Device and your entities unless you override it in the ESPHome Integration.
 
-![Renaming sensors 1.png](../assets/renaming-sensors-1.png)
+![](assets/renaming-devices-pic-6.png)
 
-##### **Alternative Method** 
+4\. Click "SAVE" then "INSTALL" in the top right.
 
-Thanks to [lpbaud](https://discord.com/channels/1126966963206361199/1194704940396978256/1195131472395382794) from our [Discord](https://discord.gg/mMNgQPyF94).
-
-Instead of changing the name as your document suggests, you can go to System > Devices and Services > Devices, then click the device you want to rename. Next, click the pencil icon in the upper right corner of the screen and rename the device there. Doing it this way, after you click "Update," it will ask if you want to change the entity ID, as shown in the picture above. If you click "Update" here, it will change all the entity IDs, like in the other picture above.  
-  
-![Renaming devices using pencil.png](../assets/renaming-devices-using-pencil.png)  
-  
-Here's another tip for using this naming scheme or a similar one in Node-RED: In the Entity State node dialog, if you click the empty box labeled "Entity," a small box will open beneath it displaying a list of all the available entity names, in no particular order. If you start typing in that box, it filters the list based on what you type. So, if my kitchen MSR is named msr-k and I want to trigger an event based on the value of radar target, I would type "-k target." The space between words acts as a wildcard, so the list is filtered by everything containing "-k" and "target," allowing you to select the one you need. Quite handy.
+![](assets/renaming-devices-pic-7.png)
