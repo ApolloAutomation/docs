@@ -22,18 +22,26 @@
 
 ![](assets/updating-firmware-pic-8.png)
 
-\:fontawesome-solid-pencil:
+3\. Click "RENAME" and it will update all of your entities to use the updated name!
+
+![](assets/updating-firmware-pic-9.png)
 
 ##### ESPHome Addon
 
-1\. Select the ESPHome addon in the sidebar
+1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to rename.
 
-2\. Select Edit on the device you want to rename
+![](assets/renaming-devices-pic-5.png)
 
-![Easy Renaming 1.png](../assets/easy-renaming-1.png)
+!!! danger "This is code and requires you to follow the directions carefully."
 
-3\. Change the friendly\_name and save it
+    Editing the YAML here means even a space matters. Follow the guide just as shown and ask questions if you need help!
 
-![Easy Renaming 2.png](../assets/easy-renaming-2.png)
+2\. Change the "name" to "kitchen-mmwave-sensor" or similar. Do not use any spaces or caps here, only numbers, letters, and hypens. This will be your new hostname i.e. kitchen-mmwave-sensor.local.
 
-These new names can be used in automations.
+3\. Change the "friendly\_name" to "Kitchen mmWave Sensor" or similar. This will be the name used in Home Assistant for your Device and your entities unless you override it in the ESPHome Integration.
+
+![](assets/renaming-devices-pic-6.png)
+
+4\. Click "SAVE" then "INSTALL" in the top right.
+
+![](assets/renaming-devices-pic-7.png)
