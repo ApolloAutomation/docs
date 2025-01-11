@@ -1,24 +1,29 @@
-# Updating Firmware
+# Updating with ESPHome Device Builder
 
-## Updating Through ESPHome Device Builder
-
-**In HomeAssistant open the** <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noopener"><strong>ESPHome addon</strong></a>
+1\. In Home Assistant open the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noopener"><strong>ESPHome Device Builder</strong></a>**.**
 
 [![](assets/esphome-addon-image.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&amp;repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
-1. **Or click this to** [**Open your Home Assistant instance and show the dashboard of the ESPHome add-on.**](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&amp;repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon "Open your Home Assistant instance and show the dashboard of the ESPHome add-on.")
-2. **Make sure you are running the latest version of ESPHome**
-3. **On older hardware, it will not auto-update so you will have to uninstall and reinstall ESPHome**
-4. **Find the sensor you want to update and click the three dots in the bottom right**
+!!! tip inline "Make sure you are running the latest version of ESPHome"
 
-**![Firmware1.png](../assets/firmware1.png)**
+    You should be fully up to date with the ESPHome Device Builder before updating our sensors for ideal performance and ease of troubleshooting!
 
-**5\. Select “Validate” from the list**
+2\. Find the sensor you want to update and click the three dots on the far right.
 
-![Firmware2.png](../assets/firmware2.png)
+![](assets/updating-firmware-pic-1.png)
 
-**6\. Once the validation completes, click “Install” in the bottom right**
+3\. Select “**Validate**” from the list.
 
-![Firmware3.png](../assets/firmware3.png)
+![](assets/updating-firmware-pic-2.png)
 
-**7\. Complete!**
+4\. Once the validation completes, click “**Install**” in the bottom right.
+
+![](assets/updating-firmware-pic-3.png)
+
+5\. Click "**Wirelessly**".
+
+![](assets/updating-firmware-pic-4.png)
+
+6\. Once you see "**INFO OTA successful**" you are done. Click **STOP** to exit.
+
+![](assets/updating-firmware-pic-5-1.png)
