@@ -2,7 +2,7 @@
 
 ## Updating Through ESPHome Device Builder
 
-**In HomeAssistant open the** <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener"><strong>ESPHome addon</strong></a>
+**In HomeAssistant open the** <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank"><strong>ESPHome addon</strong></a>
 
 <a href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&amp;repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon" target="_blank" rel="noopener"><img src="assets/esphome-addon-image.svg" /></a>
 
