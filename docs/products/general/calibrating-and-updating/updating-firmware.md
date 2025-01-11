@@ -4,7 +4,7 @@
 
 [![](assets/esphome-addon-image.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&amp;repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
-!!! tip inline "Make sure you are running the latest version of ESPHome"
+!!! tip "Make sure you are running the latest version of ESPHome"
 
     You should be fully up to date with the ESPHome Device Builder before updating our sensors for ideal performance and ease of troubleshooting!
 
