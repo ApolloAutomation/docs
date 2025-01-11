@@ -14,15 +14,17 @@
 
 ##### ESPHome Integration - Part 2
 
-1\. Click "device" as shown in the image below.
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
+
+2\. Click "device" as shown in the image below.
 
 ![](assets/updating-firmware-pic-6.png)
 
-2\. Click the pencil in the top right then repeat your new name here such as "Kitchen mmWave Sensor" and click "UPDATE".
+3\. Click the pencil in the top right then repeat your new name here such as "Kitchen mmWave Sensor" and click "UPDATE".
 
 ![](assets/updating-firmware-pic-8.png)
 
-3\. Click "RENAME" and it will update all of your entities to use the updated name!
+4\. Click "RENAME" and it will update all of your entities to use the updated name!
 
 ![](assets/updating-firmware-pic-9.png)
 
