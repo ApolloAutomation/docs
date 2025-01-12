@@ -1,32 +1,65 @@
 # How To Add Temp And Humidity From SCD40
 
-1\. Navigate to the ESPHome addon  
-  
- 2. Select the Edit button under the desired device
+1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to change.
 
-![ESPHome Edit Button.png](../assets/esphome-edit-button_1.png)
+![](assets/add-temp-hum-scd40-pic-1.png)
 
- 3. Insert your code (The example below is for our AIR-1 SEN55 sensor but this applies to MSR-1/2, MTR or any sensor with the CO2 module)
+2\. Copy the YAML below and put it at the bottom on a new line with no spaces before it.
 
-```
+!!! note "This example is for the AIR-1"
+
+    However this will also work with our MSR-2 and MTR-1 devices too!
+
+```yaml
 sensor:
-  - platform: scd4x
-    id: !extend scd40 
+  - id: !extend scd40
     temperature:
       name: "SCD40 Temperature"
+      id: "temperature"
+      filters:
+        - lambda: return x - id(scd40_temperature_offset).state;
     humidity:
       name: "SCD40 Humidity"
+      id: "humidity"
+      filters:
+        - lambda: return x - id(scd40_humidity_offset).state;
+
+number:
+  - platform: template
+    name: SCD40 Temperature Offset
+    id: scd40_temperature_offset
+    initial_value: 14.54
+    min_value: -70.0
+    max_value: 70.0
+    entity_category: "CONFIG"
+    unit_of_measurement: "°C"
+    optimistic: true
+    update_interval: never
+    step: 0.1
+    mode: box
+  - platform: template
+    name: SCD40 Humidity Offset
+    id: scd40_humidity_offset
+    restore_value: true
+    initial_value: -18.86
+    min_value: -70.0
+    max_value: 70.0
+    entity_category: "CONFIG"
+    unit_of_measurement: "%"
+    optimistic: true
+    update_interval: never
+    step: 0.1
+    mode: box
 ```
 
-![Screenshot 2024-05-20 at 8.49.17â€¯PM.png](../assets/screenshot-2024-05-20-at-8-49-17-pm.png)   
- 4. In the top right of the same screen Select Save and then Install   
-  
- 5. If it compiles correctly then you should see a green Success
+![](assets/add-temp-hum-scd40-pic-4.png)
 
-![Install Success.png](../assets/install-success_1.png)
+3\. In the top right of the same screen click "SAVE" and then "INSTALL".
 
- 6. When you see the sensor logs, you are finished and can select Stop
+4\. Once you see "INFO OTA successful" you are done. Click "STOP" to exit.
 
-![Sensor Log Stop.png](../assets/sensor-log-stop_1.png)
+![](assets/add-temp-hum-scd40-pic-3.png)
 
- 7. Now your sensor value should update!
+5\. Once you are finished, you will have two new boxes inside the Home Assistant ESPHome integration device page for your device where you can fill in an offset. Give them up to 1minute to take effect!
+
+![](assets/add-temp-hum-scd40-pic-5.png)
