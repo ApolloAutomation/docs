@@ -164,7 +164,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Radar Detection Distance**
 
-    * Shows the distance to the detected target, measured in inches.
+    * Shows the distance to the detected target, measured in cm.
 
     **Radar Move Energy**
 
@@ -172,7 +172,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Radar Moving Distance**
 
-    * Displays the distance of a moving target, measured in inches.
+    * Displays the distance of a moving target, measured in cm.
 
     **Radar Moving Target**
 
@@ -180,7 +180,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Radar Still Distance**
 
-    * Displays the distance of a still target, measured in inches.
+    * Displays the distance of a still target, measured in cm.
 
     **Radar Still Energy**
 
@@ -322,4 +322,4 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){     .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){      .md-button }
