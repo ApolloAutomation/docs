@@ -26,7 +26,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){     .md-button .md-button--primary }
+[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){      .md-button .md-button--primary }
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
@@ -80,7 +80,7 @@ wifi_password: "your-wifi-pass-here"
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-1.png)
 
-2\. Rename your sensor here (this only renames the sensor in the ESPHome Device Compiler's Dashboard) or skip it and continue on by clicking "TAKE CONTROL" again as shown below.
+2\. Rename your sensor here (this only renames the sensor in the ESPHome Device Compiler's Dashboard) or skip it and continue on by clicking "**TAKE CONTROL**" again as shown below.
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-2.png)
 
@@ -88,9 +88,9 @@ wifi_password: "your-wifi-pass-here"
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-3.png)
 
-4\. When it is finished, it will look like this image below and you can click "Close" in the bottom right to get back to the main screen. As long as it says "INFO OTA successful" then it finished successfully. There is no need to be worried about "ERROR Logger not configured" as that was removed to allow for other components to exist on your new Apollo device!
+4\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
 
-![](../../../assets/getting-started-esphome-device-compiler-pic-4.png)
+![](assets/getting-started-pic-4.png)
 
 5\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
@@ -98,24 +98,24 @@ wifi_password: "your-wifi-pass-here"
 
 1\. Click the "Notification" Icon in the bottom left.
 
-![](../../../assets/connect-to-esphome-integration-1.png "Esphome Notification Icon")
+![](assets/getting-started-pic-5.png)
 
 2\. Click "check it out" to go to the integrations page and see the new device that was found.
 
-![](../../../assets/connect-to-esphome-integration-2.png "Esphome New Device Discovered")
+![](assets/getting-started-pic-7.png)
 
 3\. Click "ADD" to begin adding the device to home assistant.
 
-![Click add to add device to esphome integration](../../../assets/connect-to-esphome-integration-3.png)
+![](assets/getting-started-pic-6-1.png)
 
 4\. Click "SUBMIT" to confirm you want to add your new Apollo device to home assistant.
 
-![Submit to confirm adding to esphome integration](../../../assets/connect-to-esphome-integration-4.png)
+![](assets/getting-started-pic-8.png)
 
 5\. Give it an area and click "FINISH".
 
-![Define what area it is in then click finish](../../../assets/connect-to-esphome-integration-5.png)
+![](assets/getting-started-pic-9.png)
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){       .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){        .md-button .md-button--primary }
