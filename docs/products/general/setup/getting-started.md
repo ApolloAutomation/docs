@@ -16,7 +16,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
-4\. Select the WiFi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "Save".
+4\. Select the WiFi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
 
 ![](assets/getting-started-pic-2.png)
 
@@ -26,7 +26,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){        .md-button .md-button--primary }
+[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){          .md-button .md-button--primary }
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
@@ -34,7 +34,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
     Bluetooth built in such as a raspberry pi or at least one ESP32 BLE Proxy. If you have already followed the "Connecting through Hotspot" please skip this section.
 
-1\. Navigate to settings -&gt; integrations then click the "ADD" button below your new Apollo device!
+1\. Navigate to settings -&gt; integrations then click the "**ADD**" button below your new Apollo device!
 
 ![](../../../assets/improv-ble-pic-1.png)
 
@@ -76,7 +76,7 @@ wifi_ssid: "your-wifi-ssid-here"
 wifi_password: "your-wifi-pass-here"
 ```
 
-1\. Click the ESPHome Builder in your sidebar then click "TAKE CONTROL" for your new Apollo Device!
+1\. Click the ESPHome Builder in your sidebar then click "**TAKE CONTROL**" for your new Apollo Device!
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-1.png)
 
@@ -84,7 +84,7 @@ wifi_password: "your-wifi-pass-here"
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-2.png)
 
-3\. Click install (DO NOT click skip!) and let your device get adopted into the ESPHome Device Builder. Please have patience as this takes a few minutes to compile and then install to your new Apollo device!
+3\. Click "**INSTALL**" (DO NOT click skip!) and let your device get adopted into the ESPHome Device Builder. Please have patience as this takes a few minutes to compile and then install to your new Apollo device!
 
 ![](../../../assets/getting-started-esphome-device-compiler-pic-3.png)
 
@@ -96,26 +96,26 @@ wifi_password: "your-wifi-pass-here"
 
 ### Connecting to Home Assistant via ESPHome Integration:
 
-1\. Click the "Notification" Icon in the bottom left.
+1\. Click the "**Notifications**" Icon in the bottom left.
 
 ![](assets/getting-started-pic-5.png)
 
-2\. Click "check it out" to go to the integrations page and see the new device that was found.
+2\. Click "**Check it out**" to go to the integrations page and see the new device that was found.
 
 ![](assets/getting-started-pic-7.png)
 
-3\. Click "ADD" to begin adding the device to home assistant.
+3\. Click "**ADD**" to begin adding the device to home assistant.
 
 ![](assets/getting-started-pic-6-1.png)
 
-4\. Click "SUBMIT" to confirm you want to add your new Apollo device to home assistant.
+4\. Click "**SUBMIT**" to confirm you want to add your new Apollo device to home assistant.
 
 ![](assets/getting-started-pic-8.png)
 
-5\. Give it an area and click "FINISH".
+5\. Give it an area and click "**FINISH**".
 
 ![](assets/getting-started-pic-9.png)
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){          .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){            .md-button .md-button--primary }
