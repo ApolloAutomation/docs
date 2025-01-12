@@ -10,7 +10,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 2\. On your phone or PC, open the WiFi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the WiFi network to show up.
 
-![](../../../assets/getting-started-connect-to-hotspot-image-1.png)
+![](assets/getting-started-pic-1-1.png)
 
 3\. Once connected it should automatically open a dashboard for your sensor
 
@@ -18,11 +18,17 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![](../../../assets/getting-started-connect-to-hotspot-image-2.png)
 
-4\. Select the WiFi network that you would like your sensor to connect to.
+4\. Select the WiFi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "Save".
 
-5\. Input the WiFi password. After connecting, the sensor's dashboard will automatically close. You've successfully connected your sensor, please check out the "Connecting Sensor To Home Assistant" section for the next steps.
+![](assets/getting-started-pic-2.png)
 
-![](../../../assets/getting-started-connect-to-hotspot-image-3.png)
+!!! tip "Tip for Mesh Wi-Fi systems or multiple Access Points"
+
+    If you have multiple access points or a mesh system please manually type in your Wi-Fi network so it will join with the strongest signal!
+
+5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
+
+[Click here for next steps- Connecting Sensor to Home Assistant](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){ .md-button .md-button--primary }
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
@@ -112,6 +118,6 @@ wifi_password: "your-wifi-pass-here"
 
 ![Define what area it is in then click finish](../../../assets/connect-to-esphome-integration-5.png)
 
-6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
+6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){ .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){   .md-button .md-button--primary }
