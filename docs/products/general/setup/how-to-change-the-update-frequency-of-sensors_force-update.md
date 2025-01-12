@@ -1,42 +1,20 @@
-# How To Change The Update Frequency Of Sensors/Force Update
+# How To Change The Update Frequency Of Sensors
 
- 1. Navigate to the ESPHome addon  
-  
- 2. Select the Edit button under the desired device
+1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to change.
 
-![ESPHome Edit Button.png](../assets/esphome-edit-button.png)
+![](assets/update-frequency-pic-1.png)
 
- 3. Insert your code (The example below is for our AIR-1 SEN55 sensor)
+2\. Insert the YAML for the sensor you want to edit(The example below is for our AIR-1 SEN55 sensor).
 
-```
+```yaml
 sensor:
   - platform: sen5x
     id: !extend sen55
     update_interval: 5s
 ```
 
-![SEN55 update interval.png](../assets/sen55-update-interval.png)   
- 4. In the top right of the same screen Select Save and then Install   
-  
- 5. If it compiles correctly then you should see a green Success
+3\. In the top right of the same screen click "SAVE" and then "INSTALL".
 
-![Install Success.png](../assets/install-success.png)
+4\. Once you see "INFO OTA successful" you are done. Click "STOP" to exit.
 
- 6. When you see the sensor logs, you are finished and can select Stop
-
-![Sensor Log Stop.png](../assets/sensor-log-stop.png)
-
- 7. Now your sensor value should update!  
-  
-**Force Update**
-
-Follow the same steps above but use this code to force the sensor to update.
-
-```
-sensor:
-- platform: sen5x
-  id: !extend sen55
-  nox:
-    name: "SEN55 NOX"
-    force_update: True
-```
+![](assets/update-frequency-pic-3.png)
