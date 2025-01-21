@@ -68,14 +68,12 @@ _inputs:
         - image/jpg
       allowed_sources:
         - site-files
-      empty_type: 
+#brandon changed this
+#      empty_type: 
 #      resize_style: contain
 #      width: 400
 #      height: 300
-#brandon changed this
-      width: 800
-      height: 600
-      expandable: true
+#      expandable: true
 #      prevent_resize_existing_files: false
 #brandon changed this
       prevent_resize_existing_files: true
