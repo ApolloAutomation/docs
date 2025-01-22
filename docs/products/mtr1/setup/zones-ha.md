@@ -225,7 +225,7 @@ variables:
 
 ![Screenshot 2024-05-13 at 11.48.42 AM.png](../../../assets/mtr1-zones-ha-pic-4.png)
 
-8\. Scroll down until you get to the Configuration section and you see the empty boxes for zones 1-3 for both X and Y coordinates.
+11\. Scroll down until you get to the Configuration section and you see the empty boxes for zones 1-3 for both X and Y coordinates.
 
 !!! tip "Suggested settings"
 
@@ -235,18 +235,20 @@ variables:
     * Detection: Only detects targets in the specified zone.
     * Filter: Excludes a zone from detection.
 
-9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.<br> ![Screenshot 2024-05-13 at 12.13.38 PM.png](../assets/KNGscreenshot-2024-05-13-at-12-13-38-pm.png)
+12\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.<br> ![Screenshot 2024-05-13 at 12.13.38 PM.png](../assets/KNGscreenshot-2024-05-13-at-12-13-38-pm.png)
 
-10\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.<br> ![Screenshot 2024-05-13 at 3.59.40 PM.png](../assets/screenshot-2024-05-13-at-3-59-40-pm.png)
+13\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.<br> ![Screenshot 2024-05-13 at 3.59.40 PM.png](../assets/screenshot-2024-05-13-at-3-59-40-pm.png)
 
-11\. Select the Settings cog in the top right.<br> ![Screenshot 2024-05-13 at 4.00.59 PM.png](../assets/screenshot-2024-05-13-at-4-00-59-pm.png)
+14\. Select the Settings cog in the top right.<br> ![Screenshot 2024-05-13 at 4.00.59 PM.png](../assets/screenshot-2024-05-13-at-4-00-59-pm.png)
 
-12\. Change the unit of measurement to mm and select Update.<br> ![Screenshot 2024-05-13 at 4.02.53 PM.png](../assets/screenshot-2024-05-13-at-4-02-53-pm.png)
+15\. Change the unit of measurement to mm and select Update.<br> ![Screenshot 2024-05-13 at 4.02.53 PM.png](../assets/screenshot-2024-05-13-at-4-02-53-pm.png)
 
-13\. Now you should see targets on the card.<br> ![Screenshot 2024-05-13 at 3.35.00 PM.png](../assets/screenshot-2024-05-13-at-3-35-00-pm.png)
+16\. Now you should see targets on the card.<br> ![Screenshot 2024-05-13 at 3.35.00 PM.png](../assets/screenshot-2024-05-13-at-3-35-00-pm.png)
 
-14\. Now we can make zones around the targets where you want to Detect presence or filter them out
+17\. Now we can make zones around the targets where you want to Detect presence or filter them out
 
-!!! ! tip "Tip for zone configuration resetting"
+!!! tip tip "Tip for zone configuration resetting"
 
     If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try to toggle on Multi Target Radar. This should wake up the mmWave module and retrieve your saved zones
+
+&nbsp;
