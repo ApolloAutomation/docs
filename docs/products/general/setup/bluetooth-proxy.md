@@ -27,6 +27,13 @@ packages:
     ref: main # branch, tag or commit SHA
     files: [Integrations/ESPHome/MTR-1_BLE.yaml] # Path to config from base repo URL
     refresh: 1min # how often to sync updates from the remote url
+
+#we are required to use this old esp-idf framework that uses less space
+esp32:
+  framework:
+    type: esp-idf
+    version: 4.4.8
+    platform_version: 5.4.0
 ```
 
 6\. Paste the code as shown below directly below the yaml you just edited above. Make sure the spaces look the same and there are no red lines under any of the code.
