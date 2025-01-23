@@ -1,4 +1,4 @@
-# Updating with ESPHome Device Builder
+# Switching to Beta branch with ESPHome Device Builder
 
 1\. In Home Assistant open the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noopener"><strong>ESPHome Device Builder</strong></a>**.**
 
