@@ -6,13 +6,13 @@ The DEV-1 is a great starter device for tinkerers and can be purchased on its ow
 
 The DEV-1 does NOT come pre-flashed with ESPHome or WLED and requires you to flash it yourself, however there is a getting started video we've made here:
 
-<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/oiKnTH1gg0Q?si=nNFDbHxZBuWIXHyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
-
-Example ESPHome yaml:
+<div class="cms-embed">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oiKnTH1gg0Q?si=nNFDbHxZBuWIXHyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""&gt;&lt;/iframe&gt;</div>
 
 Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated api key inside the codeblock as shown below then paste it in the code below where you see "use-a-randomly-generated-key-here".
 
 ![](assets/apollo-dev-1-image-2.png)
+
+**Example ESPHome yaml**:
 
 ```yaml
 #Define Project
