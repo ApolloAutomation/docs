@@ -133,7 +133,7 @@ nav:
             - Change Update Frequency: products/general/setup/change-the-update-frequency-of-sensors.md
             - Adding SCD40 Temp/Hum: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
             - Adjusting WiFi Power: products/general/setup/adjusting-wifi-power.md
-            - Adding To Hidden WiFi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
+            - Hidden WiFi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
             - Bluetooth Proxy: products/general/setup/bluetooth-proxy.md
             - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
             - Piezo Buzzer: products/general/piezo.md
