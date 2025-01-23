@@ -1,0 +1,5 @@
+![](assets/apollo-dev-1-image-1.png)
+
+The Apollo DEV-1 is a very small devboard that we use to prototype before creating other new products. It has a built in RGB light (using GPIO3) and can push up to 600mA out of the 3.3v pin however 100-200mA of that will be used by the esp
+
+The Apollo MSR-2 is a compact, versatile mmWave multisensor for Home Assistant, designed for precise motion detection and smart home automation. It builds on the MSR-1 with a smaller form factor, an additional expansion slot, and improved sensors for temperature and pressure. The sensor includes LUX/UV detection, an optional CO2 sensor, RGB LED, and piezo buzzer for customizable notifications. Fully open-source and expandable, the MSR-2 offers seamless integration with Home Assistant, making it ideal for automating lighting, air quality monitoring, and more. Access to support and customization resources is available via our Discord and GitHub.
