@@ -43,6 +43,6 @@ packages:
 
 ![](assets/switch-to-beta-pic-6.png)
 
-6\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" in the bottom right to exit.
+7\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" in the bottom right to exit.
 
 ![](assets/switch-to-beta-pic-7.png)
