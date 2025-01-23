@@ -137,6 +137,7 @@ nav:
             - Bluetooth Proxy: products/general/setup/bluetooth-proxy.md
             - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
             - Piezo Buzzer: products/general/piezo.md
+            - Switch to Beta: products/general/setup/switch-to-beta-branch.md
           - Troubleshooting:
             - Uploading Code Through ESPHome: products/general/troubleshooting/manually-uploading-code-through-esphome.md
             - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
