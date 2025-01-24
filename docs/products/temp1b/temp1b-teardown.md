@@ -1,3 +1,11 @@
-# Teardown and Reassembly Of MSR-2
+# Teardown Of TEMP-1B
 
-<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/hkNrhJuMmxI?si=cvG542WvhXfDhVGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
+1\. Gently pry open the case lid as shown in the image below.
+
+![](assets/temp-1b-pry-open.jpg)
+
+![](assets/temp-1b-lid-off.jpg)2\. Once the lid is removed either lift the PCB out or gently dump the pcb out by turning it upside down.
+
+![](assets/temp-1b-lift-pcb-out-1.jpg)
+
+![](assets/temp-1b-remove-case.jpg)3\. The teardown is complete!
