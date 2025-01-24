@@ -34,20 +34,4 @@
 * ##### **Gates are pre-defined by the radar module and are in meters (m)**
 * ##### **Zones are user-configurable and are in centimeters (cm) ![Gate, Zones and RR.png](../assets/gate-zones-and-rr.png)**
 
-##### **Increased ESP Temperature**
-
-If you are experiencing higher than normal ESP temperatures ~140+ degrees F then changing the wifi power save mode option might help decrease the temperature. Here is the link to the ESPHome WiFi Component [Power Save Mode](https://esphome.io/components/wifi.html#power-save-mode).
-
-**Power Save Mode** The WiFi interface of all ESPs offer three power save modes to reduce the amount of power spent on WiFi. While some options can reduce the power usage of the ESP, they generally also decrease the reliability of the WiFi connection, with frequent disconnections from the router in the highest power saving mode.
-
-NONE (least power saving, Default for ESP8266)<br> LIGHT (Default for ESP32)<br> HIGH (most power saving)
-
-```
-wifi:
-  # ...
-  power_save_mode: none
-```
-
-The code above can be added to the devices .yaml through the ESPHome addon edit button.
-
-(Thank you for the suggestion, Brian!)<br> (Referenced from ESPHome website)
+  &nbsp;
