@@ -1,4 +1,4 @@
-This will cover how to put the TEMP-1B into boot mode. This is needed to force the device into boot mode to flash the firmware.
+This will cover how to put the TEMP-1B into boot mode. This is needed to force the device into boot mode to reflash the firmware.
 
 ##### Method 1: Boot Button Only
 
