@@ -1,3 +1,5 @@
+![](assets/apollo-dev-1-image-1.png)
+
 The Apollo DEV-1 is a very small dev board that we use to prototype before creating other new products. It has a built in RGB light (using GPIO3) and can push up to 600mA out of the 3.3v pin however 100-200mA of that will be used by the microcontroller itself. You are able to back-feed power via the 5v and G (ground) pins or use the USB-C port to power it, but NOT both at the same time.
 
 The DEV-1 is a great starter device for tinkerers and can be purchased on its own or with a breadboard and dupont wires (jumper wires) if you need those too.
@@ -16,7 +18,6 @@ The DEV-1 does NOT come pre-flashed with ESPHome or WLED and requires you to fla
     allowfullscreen>
   </iframe>
 </div>
-
 
 Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated API key inside the code block as shown below then paste it in the code below where you see "use-a-randomly-generated-key-here".
 
