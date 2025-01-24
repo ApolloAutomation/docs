@@ -6,7 +6,7 @@ If your device has already been connected to Home Assistant please delete it fro
 
 2\. Navigate to our installer page and click connect under Battery Firmware [Apollo TEMP-1 Installer](https://apolloautomation.github.io/TEMP-1/)
 
-!!! failure inline "Remove the battery!"
+!!! failure "Remove the battery!"
 
     This will not work properly if the battery is still supplying power to the TEMP-1B. Please remove the battery if you are having issues!
 
