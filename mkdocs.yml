@@ -279,6 +279,8 @@ nav:
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
           - Addons:
             - Magnetic Mount: products/temp1b/addons/magnetic-mount.md
+            - Temp Probe: products/temp1b/addons/temp-probe.md
+            - Food Probe: products/temp1b/addons/food-probe.md
           - Reviews: products/temp1b/reviews.md
           - Examples: 
             - Use Cases: products/temp1b/examples/use-cases.md
