@@ -10,7 +10,7 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 2\. Once inserted, proceed to step 3 unless you have a battery in it
 
-!!! ! tip "If you are using it with a battery you need to push the reset button."
+!!! tip "If you are using it with a battery you need to push the reset button."
 
     The TEMP-1B looks for the temp probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have a battery in it or power cycle your TEMP-1B to make it reliably use the new food temperature probe.
 
