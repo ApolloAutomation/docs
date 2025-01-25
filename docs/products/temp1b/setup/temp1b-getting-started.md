@@ -1,3 +1,3 @@
-# TEMP-1B Sensor Definitions
+# TEMP-1B Getting Started
 
 &nbsp;
