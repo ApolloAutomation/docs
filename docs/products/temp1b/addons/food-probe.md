@@ -1,28 +1,22 @@
-# TEMP-1B Magnetic Mount
+# TEMP-1B Food Probe
 
 The TEMP-1B comes with an optional magnetic mount which can be used to secure the TEMP-1B to your fridge or grill as shown below.
 
+The TEMP-1B comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1 itself needs to stay in a cool environment.
+
 ![](assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
 
-1\. To use your magnetic mount place it with the magnet facing upwards as shown:
+To use your food probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
-![](assets/temp1b-magnetic-mount-pic-1.jpg)
+![](assets/food-probe-insert-1.jpg)
 
-2\. Align the lid with the hole in the top right and place your TEMP-1B inside the magnetic mount and gently press down.
+![](assets/food-probe-fully-inserted.jpg)
 
-![](assets/temp1b-magnetic-mount-installed-pic-1.jpg)
+!!! tip "If you are using it with a battery you need to push the reset button."
 
-![](assets/temp1b-magnetic-mount-installed-pic-2.jpg)
+    The TEMP-1B looks for the food probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have a battery in it or power cycle your TEMP-1B to make it reliably use the new food temperature probe.
 
-3\. It will sit flush as shown in the image below.
-
-![](assets/temp1b-magnetic-mount-installed-pic-3-1.jpg)
-
-4\. Affix your TEMP-1B to the outside of fridge or a safe cool place on the grill.
-
-![](assets/temp1b-magnetic-mount-safe-outside-fridge-mounting.jpg)
-
-![](assets/temp1b-magnetic-mount-safe-grill-mounting.jpg)
+![](assets/food-probe-pic-1.jpg)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
