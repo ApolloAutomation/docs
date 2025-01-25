@@ -1,3 +1,3 @@
-![](../../assets/plt-1b-usa-esp.png)
+![](assets/temp-1b-lid-on.jpg)
 
-The PLT-1B (18650 battery) is equipped with a capacitive soil moisture sensor, providing enhanced accuracy and durability over resistive alternatives. The sensor’s ground contact portion is coated with a conformal layer, ensuring long-lasting performance and resistance to environmental factors. It also features an AHT20-F air temperature and humidity sensor, which includes dust protection, an LTR390 UV sensor for Lux/UV measurements, an RGB LED, a piezo buzzer, and an optional DS18b20 waterproof soil temperature probe (20 cm / 7.8 inches).
+The TEMP-1B (16340 battery) can be used with an optional temperature probe which come in two lengths or a food safe grill probe. The TEMP-1B itself can be used with an optional magnetic mount to mount it to a fridge, grill, or other surface while taking measurements, however, it should not be left outside for long periods of time or allowed to get wet. It also features an AHT20-F air temperature and humidity sensor, which includes dust protection, an RGB LED, a piezo buzzer, and an optional DS18b20 waterproof soil temperature probe (20 cm / 7.8 inches).
