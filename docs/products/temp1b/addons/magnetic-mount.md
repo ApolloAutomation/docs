@@ -18,7 +18,7 @@ The TEMP-1B comes with an optional magnetic mount which can be used to secure th
 
 ![](assets/temp1b-magnetic-mount-installed-pic-3-1.jpg)
 
-4\. Affix your TEMP-1B to a fridge or a safe cool place on the grill.
+4\. Affix your TEMP-1B to the outside of fridge or a safe cool place on the grill.
 
 ![](assets/temp1b-magnetic-mount-safe-outside-fridge-mounting.jpg)
 
@@ -27,5 +27,3 @@ The TEMP-1B comes with an optional magnetic mount which can be used to secure th
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
     The TEMP-1B should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your TEMP-1B if there will be high moisture content in the air or if it is expected to rain.
-
-&nbsp;
