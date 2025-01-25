@@ -277,6 +277,8 @@ nav:
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Insert Battery: products/temp1b/setup/insert-battery.md
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
+          - Addons:
+            - Magnetic Mount: products/temp1b/addons/magnetic-mount.md
           - Reviews: products/temp1b/reviews.md
           - Examples: 
             - Use Cases: products/temp1b/examples/use-cases.md
