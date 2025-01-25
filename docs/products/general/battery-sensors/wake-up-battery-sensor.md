@@ -2,4 +2,4 @@
 
 !!! success "Head to the awake helper wiki article"
 
-    If you need to keep your sensor awake for extended periods of time we suggest using our <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noopener">OTA awake helper</a>.
+    If you need to keep your sensor awake for extended periods of time we suggest using our [OTA awake helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/).
