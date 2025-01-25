@@ -1,4 +1,4 @@
-# TEMP-1B Magnetic Mount
+# TEMP-1B Temp Probe
 
 The TEMP-1B comes with an optional magnetic mount which can be used to secure the TEMP-1B to your fridge or grill as shown below.
 

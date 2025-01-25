@@ -1,22 +1,26 @@
 # TEMP-1B Food Probe
 
-The TEMP-1B comes with an optional magnetic mount which can be used to secure the TEMP-1B to your fridge or grill as shown below.
-
 The TEMP-1B comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1 itself needs to stay in a cool environment.
 
 ![](assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
 
-To use your food probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
+1\. To use your food probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
 ![](assets/food-probe-insert-1.jpg)
 
 ![](assets/food-probe-fully-inserted.jpg)
+
+2\. Once inserted, proceed to step 3 unless you have a battery in it!
 
 !!! tip "If you are using it with a battery you need to push the reset button."
 
     The TEMP-1B looks for the food probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have a battery in it or power cycle your TEMP-1B to make it reliably use the new food temperature probe.
 
 ![](assets/food-probe-pic-1.jpg)
+
+3\. Go to the device page of your TEMP-1B in Home Assistant and choose probe "Food".
+
+![](assets/temp1b-food-probe-pic-1.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
