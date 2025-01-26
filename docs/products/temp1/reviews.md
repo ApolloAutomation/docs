@@ -2,16 +2,16 @@
 
 ---
 
-# Simon Says TEMP-1B Review
+# Simon Says TEMP-1 Review
 
-# Michael Leen TEMP-1B Review
+# Michael Leen TEMP-1 Review
 
-# Mostly Chris TEMP-1B Review
+# Mostly Chris TEMP-1 Review
 
-# Bearded Tinker TEMP-1B Review
+# Bearded Tinker TEMP-1 Review
 
-# Hands On Katie TEMP-1B Review
+# Hands On Katie TEMP-1 Review
 
-# Smart Home Scene TEMP-1B Review
+# Smart Home Scene TEMP-1 Review
 
-# Smart Home Australia TEMP-1B Review
+# Smart Home Australia TEMP-1 Review
