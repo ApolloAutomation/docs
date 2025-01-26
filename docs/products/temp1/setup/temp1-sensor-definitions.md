@@ -19,14 +19,6 @@ Once added to Home Assistant you can configure different settings for your senso
 
 ???+ info "Sensors"
 
-    **Battery level**
-
-    * Displays the remaining battery percentage. Values range from 0-100%
-
-    **Battery voltage**
-
-    * Represents the current voltage level of the battery for real-time monitoring.
-
     **Board Humidity**
 
     * Measures and reports the current humidity level on the board.
@@ -55,7 +47,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **ESP Reboot**
 
-    * Button to press which reboots your TEMP-1B.
+    * Button to press which reboots your TEMP-1.
 
     **Firmware Update**
 
@@ -80,7 +72,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Prevent Sleep**
 
-    * Prevents the TEMP-1B from going to sleep. When sleeping, your TEMP-1B will NOT respond to home assistant it is effectively off until it wakes up again.
+    * Prevents the TEMP-1 from going to sleep. When sleeping, your TEMP-1 will NOT respond to home assistant it is effectively off until it wakes up again.
     * Click on the toggle to turn on or off. Defaults to ON.
 
     **Probe Temp Difference Threshold**
@@ -109,4 +101,4 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){             .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){              .md-button }
