@@ -267,6 +267,27 @@ nav:
             - PLT-1 Boot Mode: products/plt1b/plt1b-boot-mode.md
             - Manually Uploading Code To PLT-1: products/plt1b/plt1b-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1b/plt1b-teardown.md
+      - TEMP-1:
+          - Introduction: products/temp1/introduction.md
+          - FAQ: products/temp1/faq.md
+          - Getting Started: products/general/setup/getting-started-temp1.md
+          - Additional Info:
+            - Sensor Definitons: products/temp1/setup/temp1-sensor-definitions.md
+            - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
+            - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
+            - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
+          - Addons:
+            - Magnetic Mount: products/temp1/addons/magnetic-mount.md
+            - Temp Probe: products/temp1/addons/temp-probe.md
+            - Food Probe: products/temp1/addons/food-probe.md
+          - Reviews: products/temp1/reviews.md
+          - Examples: 
+            - Use Cases: products/temp1/examples/use-cases.md
+          - Troubleshooting:
+            - TEMP-1 Boot Mode: products/temp1/troubleshooting/temp1-boot-mode.md
+            - Manually Uploading Code To TEMP-1: products/temp1/troubleshooting/temp1-code.md
+            - Teardown and Reassembly Of TEMP-1: products/temp1/troubleshooting/temp1-teardown.md
+            - Reset Wi-Fi Credentials: products/temp1/troubleshooting/temp1-reset-wi-fi-credentials.md
       - TEMP-1B:
           - Introduction: products/temp1b/introduction.md
           - FAQ: products/temp1b/faq.md

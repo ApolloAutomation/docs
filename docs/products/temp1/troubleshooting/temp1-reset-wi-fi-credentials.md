@@ -1,4 +1,4 @@
-# Reset Wi-Fi Credentials on your TEMP-1B
+# Reset Wi-Fi Credentials on your TEMP-1
 
 1\. Plug the device into power.
 
