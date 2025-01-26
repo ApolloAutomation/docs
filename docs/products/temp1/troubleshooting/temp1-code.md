@@ -10,7 +10,7 @@ If your device has already been connected to Home Assistant please delete it fro
 
 ![](assets/temp-1b-reflash-pic-2-1.png)
 
-4\. Click "Install ApolloAutomation.TEMP-1B".
+4\. Click "Install ApolloAutomation.TEMP-1".
 
 ![](assets/temp-1b-reflash-pic-3.png)
 
