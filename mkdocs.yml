@@ -248,9 +248,9 @@ nav:
           - Examples: 
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
-            - PLT-1 Boot Mode: products/plt1/plt1-boot-mode.md
-            - Manually Uploading Code To PLT-1: products/plt1/plt1-code.md
-            - Teardown and Reassembly Of PLT-1: products/plt1/plt1-teardown.md
+            - PLT-1 Boot Mode: products/plt1/troubleshooting/plt1-boot-mode.md
+            - Manually Uploading Code To PLT-1: products/plt1/troubleshooting/plt1-code.md
+            - Teardown and Reassembly Of PLT-1: products/plt1/troubleshooting/plt1-teardown.md
             - Reset Wi-Fi Credentials: products/plt1/troubleshooting/plt1-reset-wi-fi-credentials.md
       - PLT-1B:
           - Introduction: products/plt1b/introduction.md
@@ -268,9 +268,9 @@ nav:
           - Examples: 
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
-            - PLT-1 Boot Mode: products/plt1b/plt1b-boot-mode.md
-            - Manually Uploading Code To PLT-1: products/plt1b/plt1b-code.md
-            - Teardown and Reassembly Of PLT-1: products/plt1b/plt1b-teardown.md
+            - PLT-1 Boot Mode: products/plt1b/troubleshooting/plt1b-boot-mode.md
+            - Manually Uploading Code To PLT-1: products/plt1btroubleshooting//plt1b-code.md
+            - Teardown and Reassembly Of PLT-1: products/plt1b/troubleshooting/plt1b-teardown.md
             - Reset Wi-Fi Credentials: products/plt1b/troubleshooting/plt1b-reset-wi-fi-credentials.md
       - TEMP-1:
           - Introduction: products/temp1/introduction.md
