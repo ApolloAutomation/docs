@@ -1,4 +1,4 @@
-# TEMP-1B Sensor Definitions
+# TEMP-1 Sensor Definitions
 
 Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
 
