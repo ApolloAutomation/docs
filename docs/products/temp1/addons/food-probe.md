@@ -12,9 +12,9 @@ The TEMP-1 comes with an optional food probe which can be used to monitor food t
 
 2\. Once inserted, proceed to step 3 unless you have a battery in it
 
-!!! tip "If you are using it with a battery you need to push the reset button."
+!!! tip "If you have it plugged into power you need to push the reset button."
 
-    The TEMP-1 looks for the food probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have a battery in it or power cycle your TEMP-1 to make it reliably use the new food temperature probe.
+    The TEMP-1 looks for the food probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have it plugged in or power cycle your TEMP-1 to make it reliably use the new food temperature probe.
 
 &nbsp;
 
