@@ -270,7 +270,7 @@ nav:
       - TEMP-1B:
           - Introduction: products/temp1b/introduction.md
           - FAQ: products/temp1b/faq.md
-          - Getting Started: products/general/setup/getting-started.md
+          - Getting Started: products/general/setup/getting-started-temp1.md
           - Additional Info:
             - Sensor Definitons: products/temp1b/setup/temp1b-sensor-definitions.md
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
