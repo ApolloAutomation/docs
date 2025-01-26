@@ -38,7 +38,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![](../../../assets/improv-ble-pic-1.png)
 
-2\. Click submit when it asks if you want to setup your new device and shows you a MAC address.
+2\. Click submit when it asks if you want to setup your new device and shows you the hostname of your device.
 
 ![](assets/temp1b-improv-ble-4.png)
 
