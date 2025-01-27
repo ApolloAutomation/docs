@@ -18,12 +18,12 @@
 
 ![](assets/msr-2-gpio-header-pic-3.jpg)
 
-4\. Align the new back for your MSR-2 that came with the GPIO Header addon. Push down on the corners closest to the USB-C addon first, and then push the back on securely on the other two corners.
+4\. Align the new back for your MSR-2 that came with the GPIO Header addon. Push down on the corners closest to the GPIO Header addon first, and then push the back on securely on the other two corners.
 
 ![](assets/msr-2-gpio-header-pic-5.jpg)
 
 ![](assets/msr-2-gpio-header-pic-4.jpg)
 
-!!! failure "Known issues with the rear usb-c addons"
+!!! tip "Make sure to check out our MSR-2 GPIO Header LED Strip Tutorial!"
 
-    There are sadly limitations regarding the rear usb-c addons from Apollo. We have found that some USB-C power delivery circuits and anker plugs seem to have issues. Any non USB-C-PD circuit at 5volts should work fine!
+    Brandon AKA SmartHomeSellout made this neat tutorial for how to connect a short LED strip to your MSR-2
