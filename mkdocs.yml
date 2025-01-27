@@ -190,7 +190,7 @@ nav:
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
             - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
-            - GPIO Header LED Strip: products/msr2/examples/how-to-use-the-apollo-gpio-header-to-control-an-led-strip.md
+            - GPIO Header LED Strip: products/msr2/examples/gpio-header-control-an-led-strip.md
           - Troubleshooting:
             - MSR-2 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
             - Manually Uploading Code To MSR-2: products/msr2/troubleshooting/msr2-code.md
