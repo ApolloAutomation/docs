@@ -186,6 +186,7 @@ nav:
           - Addons:
             - CO<sub>2</sub> Addon: products/msr2/addons/adding-co2-to-msr-2.md
             - Female Rear USB-C: products/msr2/addons/adding-rear-female-usb-to-msr-2.md
+            - GPIO Addon: products/msr2/addons/adding-gpio-header-to-msr-2.md
           - Reviews: products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
