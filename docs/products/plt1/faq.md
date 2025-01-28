@@ -36,15 +36,15 @@
 
 10\. **Can I customize the PLT-1’s functionality?**
 
-* Yes! The PLT-1 is fully customizable through ESPHome, and the software and CAD files are available to the community. You can modify the firmware, adjust settings, and even print new cases for the sensor.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1B. Our <a href="https://github.com/ApolloAutomation/PLT-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
-11\. **What is the RGB LED and piezo buzzer used for?**
+11\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED can be used for visual alerts, such as changing colors based on soil moisture or plant health. The piezo buzzer can emit sounds for critical notifications, like low moisture warnings or reminders to check on your plants.
+* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like low moisture levels or high UV exposure.
 
-12\. **What is the benefit of using the conformal coating on the soil moisture sensor?**
+12\. **What is the benefit of using a conformal coating on the soil moisture sensor?**
 
-* The conformal coating adds an extra layer of protection to the capacitive soil moisture sensor, ensuring it lasts longer and resists environmental factors like moisture, which can degrade uncoated sensors over time.
+* The conformal coating protects the sensor from moisture-related degradation, improving its lifespan and durability.
 
 13\. **What plants are compatible with the PLT-1?**
 
