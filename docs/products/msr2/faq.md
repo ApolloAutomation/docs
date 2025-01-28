@@ -1,6 +1,6 @@
 1\. **What sensors are included in the MSR-2?**
 
-* The MSR-2 includes several built-in sensors such as a mmWave radar for motion detection, a LUX and UV sensor, a temperature and pressure sensor, and an optional CO2 sensor.
+* The MSR-2 includes several built-in sensors such as an mmWave radar for motion detection, a LUX and UV sensor, a temperature and pressure sensor, and an optional CO2 sensor.
 
 2\. **How does the mmWave radar sensor work?**
 
@@ -8,15 +8,15 @@
 
 3\. **What is the maximum detection range of the mmWave radar?**
 
-* The HLK-LD2410b mmWave radar sensor has a maximum detection range of about 6 meters (19.6 feet) with multi-target tracking capabilities, making it ideal for room-wide monitoring.
+* The HLK-LD2410B mmWave radar sensor has a maximum detection range of about 6 meters (19.6 feet) with multi-target tracking capabilities, making it ideal for room-wide monitoring.
 
 4\. **Can the MSR-2 detect multiple people?**
 
-* No, the MSR-2 supports single-target tracking only but it has better still detection.
+* No, the MSR-2 supports single-target tracking only but it has better still detection than the MTR-1 which makes it uniquely suited for situations where you need to track a very still target like on a bed, couch, etc.
 
 5\. **What is the benefit of the LUX and UV sensor?**
 
-* The LUX sensor measures the amount of light in a room, while the UV sensor tracks the ultraviolet index. These readings can be used to automate lighting systems, such as turning on or off lights depending on the ambient brightness, or to measure sunlight exposure in a room.
+* The LUX sensor measures the amount of light in a room, while the UV sensor tracks the ultraviolet index from the sun. These readings can be used to automate lighting systems, such as turning on or off lights depending on the ambient brightness, or to measure sunlight exposure in a room.
 
 6\. **How does the optional CO2 sensor work?**
 
@@ -30,13 +30,13 @@
 
 * You can create a variety of automations, such as turning on lights when motion is detected, adjusting ventilation when CO2 levels rise, or triggering alarms based on motion or environmental changes.
 
-9\. **What is the purpose of the RGB LED and piezo buzzer?**
+9\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED can be customized to display different colors for various events, such as turning red when CO2 levels are high or green for system notifications. The piezo buzzer can be used for audible alerts, such as notifying you of motion detection or other important events.
+* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like low moisture levels or high UV exposure.
 
-10\. **How do I adjust the sensitivity of the motion detection?**
+10\. **How do I adjust the sensitivity of the presence detection?**
 
-* Sensitivity adjustments can be made through the ESPHome configuration, allowing you to fine-tune the radar to avoid false positives or to increase its sensitivity for more precise detections.
+* Sensitivity adjustments can be made through the <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant Device Page</a> or <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">HLK Radar Tool app </a>allowing you to fine-tune the radar to avoid false positives or to increase its sensitivity for more precise detections.
 
 11\. **Does the mmWave sensor detect through walls?**
 
@@ -62,9 +62,9 @@
 
 * The MSR-2 is powered via USB-C and can be plugged into a standard wall outlet using a 5V adapter.
 
-17\. **Can I customize the MSR-2’s features?**
+17\. **Can I customize the MSR-2 functionality?**
 
-* Absolutely. The MSR-2 is fully customizable through ESPHome. You can modify the configuration to meet your specific needs, such as adjusting sensor reporting intervals, configuring automations, or customizing the RGB LED and buzzer alerts.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the MSR-2. Our <a href="https://github.com/ApolloAutomation/MSR-2" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 18\. **How often does the MSR-2 report sensor data?**
 

@@ -38,7 +38,7 @@
 
 * The PLT-1B’s reporting frequency is adjustable in ESPHome. You can set it for frequent updates or extend intervals to conserve battery life.
 
-11\. **Can I customize the PLT-1B’s functionality?**
+11\. **Can I customize the PLT-1B functionality?**
 
 * Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1B. Our <a href="https://github.com/ApolloAutomation/PLT-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
