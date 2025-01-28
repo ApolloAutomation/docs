@@ -44,7 +44,7 @@
 
 12\. **Can the MSR-2 be used outdoors?**
 
-* The MSR-2 is primarily designed for indoor use. However, with proper enclosure and environmental protection, it could potentially be used outdoors. Be cautious about weather conditions and moisture exposure.
+* No, the MSR-2 is primarily designed for indoor use and high humidity or temperatures too high or low could damage the device.
 
 13\. **What’s new in the MSR-2 compared to the MSR-1?**
 
