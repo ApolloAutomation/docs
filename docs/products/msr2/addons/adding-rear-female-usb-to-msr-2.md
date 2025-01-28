@@ -25,7 +25,3 @@
 5\. Push down on the corners closest to the USB-C addon first, and then push the back on securely on the other two corners.
 
 ![](assets/msr-2-female-usb-c-pic-5.jpeg)
-
-!!! failure "Known issues with the rear usb-c addons"
-
-    There are sadly limitations regarding the rear usb-c addons from Apollo. We have found that some USB-C power delivery circuits and anker plugs seem to have issues. Any non USB-C-PD circuit at 5volts should work fine!
