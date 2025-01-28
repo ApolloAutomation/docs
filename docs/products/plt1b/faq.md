@@ -1,10 +1,10 @@
 1\. **What sensors are included in the PLT-1B?**
 
-* The PLT-1B includes sensors for soil moisture, air temperature, humidity, LUX, and UV. An optional DS18b20 waterproof soil temperature probe is available for more precise soil temperature monitoring.
+* The PLT-1B comes with sensors to measure soil moisture, air temperature, humidity, LUX, and UV. There is also an optional DS18b20 waterproof soil temperature probe available for measuring soil temperature.
 
 2\. **How does the capacitive soil moisture sensor work?**
 
-* The PLT-1B uses a capacitive soil moisture sensor that measures water content in the soil by detecting changes in the dielectric permittivity. Unlike resistive sensors, it doesn’t corrode due to a protective conformal coating, ensuring durability.
+* The capacitive soil moisture sensor measures the water content in the soil by detecting changes in the dielectric permittivity of the soil, which is affected by moisture. It’s more durable than resistive sensors because it doesn’t corrode and is protected with a conformal coating.
 
 3\. **How is the PLT-1B powered?**
 
