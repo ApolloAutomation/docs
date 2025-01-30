@@ -24,7 +24,7 @@ jobs:
       - run: pip install mkdocs-glightbox
       - run: pip install mkdocs-material[imaging]
       - run: sudo apt-get install imagemagick pngquant
-      - run: find . -name '*.png' -execdir bash -c 'mogrify -resize 750x "$1"' - {} \;
+      - run: find . -name '*.png' -execdir bash -c 'mogrify -resize '750x>' "$1"' - {} \;
       - run: find . -name '*.png' -execdir bash -c 'pngquant "$1" --ext .png --force' - {} \;
       # Replace 2 spaces with 4 spaces in list items
       - name: Replace two spaces with four before list items
