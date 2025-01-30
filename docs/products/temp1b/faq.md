@@ -6,7 +6,7 @@
 
 2\. **How long does the battery last in the TEMP-1B?**
 
-* Battery life depends on sleep/wake intervals. Waking every 12 hours provides around 3 months of battery life.
+* Battery life depends on sleep/wake intervals. Waking every 12 hours provides around 6+ months of battery life.
 
 3\. **Can you charge the battery by plugging in the device?**
 
