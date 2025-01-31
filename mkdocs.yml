@@ -273,7 +273,7 @@ nav:
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
             - PLT-1 Boot Mode: products/plt1b/troubleshooting/plt1b-boot-mode.md
-            - Manually Uploading Code To PLT-1: products/plt1btroubleshooting//plt1b-code.md
+            - Manually Uploading Code To PLT-1: products/plt1b/troubleshooting/plt1b-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1b/troubleshooting/plt1b-teardown.md
             - Reset Wi-Fi Credentials: products/plt1b/troubleshooting/plt1b-reset-wi-fi-credentials.md
       - TEMP-1:
