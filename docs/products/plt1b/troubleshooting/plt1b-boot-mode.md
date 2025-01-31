@@ -14,7 +14,7 @@ This will cover how to put the PLT-1B into boot mode. Sometimes, this is needed 
 
 2\. Use a pin to press and hold the boot button, while holding the boot button plug the PLT-1B back into your computer/power and then release the boot button
 
-3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/plt1/plt1-code/)
+3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-code/)
 
 ## **Boot and Reset Buttons**
 
@@ -24,4 +24,4 @@ This will cover how to put the PLT-1B into boot mode. Sometimes, this is needed 
 
 ![](../../assets/plt-boot-mode-pic-6.jpg)![](../../assets/plt-boot-mode-pic-7.jpg)
 
-3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/plt1/plt1-code/)
+3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-code/)
