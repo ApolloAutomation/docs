@@ -81,3 +81,9 @@
 21\. **Can I use multiple PLT-1B sensors in one Home Assistant setup?**
 
 * Yes, you can add multiple PLT-1B sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+
+22\. **Optional Probe Addons:**
+
+* 1\.5m (~5ft) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
+
+* 20cm (~8in) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
