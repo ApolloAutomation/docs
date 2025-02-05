@@ -14,7 +14,7 @@ The TEMP-1 comes with an optional temp probe which can be used to monitor a frid
 
 3\. Go to the device page of your TEMP-1 in Home Assistant and choose probe "Dallas" aka Temperature.
 
-![](assets/temp1b-temp-probe-pic-1.png)
+![](assets/temp1b-temp-probe-pic-1-1.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
