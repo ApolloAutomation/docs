@@ -22,7 +22,7 @@ The TEMP-1B comes with an optional food probe which can be used to monitor food 
 
 3\. Go to the device page of your TEMP-1B in Home Assistant and choose probe "Food".
 
-![](assets/temp1b-food-probe-pic-1.png)
+![](assets/temp1b-food-probe-pic-1-1.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
