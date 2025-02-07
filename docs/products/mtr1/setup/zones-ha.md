@@ -239,13 +239,23 @@ variables:
 
 13\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.<br> ![Screenshot 2024-05-13 at 3.59.40 PM.png](../assets/screenshot-2024-05-13-at-3-59-40-pm.png)
 
-14\. Select the Settings cog in the top right.<br> ![Screenshot 2024-05-13 at 4.00.59 PM.png](../assets/screenshot-2024-05-13-at-4-00-59-pm.png)
+14\. Select the Settings cog in the top right.
 
-15\. Change the unit of measurement to mm and select Update.<br> ![Screenshot 2024-05-13 at 4.02.53 PM.png](../assets/screenshot-2024-05-13-at-4-02-53-pm.png)
+![Screenshot 2024-05-13 at 4.00.59 PM.png](../assets/screenshot-2024-05-13-at-4-00-59-pm.png)
 
-16\. Now you should see targets on the card.<br> ![Screenshot 2024-05-13 at 3.35.00 PM.png](../assets/screenshot-2024-05-13-at-3-35-00-pm.png)
+15\. Change the unit of measurement to mm and select Update.
 
-17\. Now we can make zones around the targets where you want to Detect presence or filter them out
+![Screenshot 2024-05-13 at 4.02.53 PM.png](../assets/screenshot-2024-05-13-at-4-02-53-pm.png)
+
+16\. Your X and Y Targets will now look like this.
+
+![](assets/mtr-1-zone-setup-pic-1.png)
+
+17\. Now you should see targets on the card.
+
+![Screenshot 2024-05-13 at 3.35.00 PM.png](../assets/screenshot-2024-05-13-at-3-35-00-pm.png)
+
+18\. Now we can make zones around the targets where you want to Detect presence or filter them out
 
 !!! tip tip "Tip for zone configuration resetting"
 
