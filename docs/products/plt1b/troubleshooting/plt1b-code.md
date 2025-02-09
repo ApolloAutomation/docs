@@ -1,8 +1,10 @@
-# Manually Uploading Code Through ESPHome
+# Factory Re-Flash PLT-1B
 
-If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can upload a fresh set of firmware by following the below guide. The utility does need to be run from Chrome or Edge.
+!!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the below guide."
 
-If your device has already been connected to Home Assistant previously please refer to Removing Device From Home Assistant first before proceeding
+    This needs to be done in Chrome, Edge, or another Chromium based browser.
+
+If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
 1. Plug your sensor into your computer with a quality USB-C cable that supports data transfer
 2. Navigate to our installer page and click connect [\*\* Install Page \*\*](https://apolloautomation.github.io/PLT-1/)
@@ -20,11 +22,8 @@ If no device shows, click cancel and then install the recommended driver that sh
 
 [![](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806082666.png)](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806082666.png)
 
-6\. VERY IMPORTANT - you need to unplug your device and plug it back in to leave boot mode!
+!!! warning "Power cycle your device before doing anything else!"
 
-1. After finishing, check for the Apollo hotspot and connect. This might not show if you previously had it connected to your wifi
-2. Log into Home Assistant and go to the ESPHome addon check to see if you can adopt the device.
+    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-If you encounter the below error, please complete the [Putting PLT-1B In Boot Mode Document](https://wiki.apolloautomation.com/products/plt1b/plt1b-boot-mode/) and go back to step 3.
-
-[![](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806793309.png)](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806793309.png)
+6\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/" target="_blank" rel="noopener">proceed to the getting started guide</a> and setup your sensor as a new device!
