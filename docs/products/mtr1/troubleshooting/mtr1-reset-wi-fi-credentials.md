@@ -2,9 +2,9 @@
 
 1\. Plug the device into power
 
-2\. Long press the Boot button for 10 seconds
+2\. Long press the Boot button (the button on the right) for 10 seconds
 
-![MTR-1 Boot Button.png](../assets/mtr-1-boot-button.png)
+![MTR-1 Boot Button.png](assets/mtr-1-boot-button.jpg)
 
 ![20240501_155316.jpg](../assets/9Rp20240501-155316.jpg)
 
