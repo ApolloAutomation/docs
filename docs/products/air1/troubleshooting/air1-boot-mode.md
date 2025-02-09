@@ -12,7 +12,7 @@
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your AIR-1 then let go of the button.
 
-3\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-code/)
+3\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-code/).
 
 ##### Method 2: Boot and Reset Buttons
 
@@ -24,4 +24,4 @@
 
 ![](assets/air-1-reset-boot-buttons-arrows.jpg)
 
-4\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-code/)
+4\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-code/).
