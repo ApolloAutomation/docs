@@ -12,8 +12,6 @@ If your device has already been connected to Home Assistant please <a href="http
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
 
-![](assets/air-1-boot-button.jpg)
-
 3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/MSR-2/" target="_blank" rel="noreferrer nofollow noopener">Apollo MSR-2 Installer</a>.
 
 3\. Click the big "Connect" button.
