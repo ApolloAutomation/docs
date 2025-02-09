@@ -1,8 +1,8 @@
 # Factory Re-Flash AIR-1
 
-!!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the below guide."
+!!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
-    This needs to be done in Chrome, Edge, or another Chromium based browser.
+    This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
 
 If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
