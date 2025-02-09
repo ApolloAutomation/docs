@@ -169,7 +169,7 @@ nav:
             - MSR-1 Alarmo: products/msr1/examples/msr1-alarmo.md
           - Troubleshooting:
             - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
-            - Manually Uploading Code To MSR-1: products/msr1/troubleshooting/msr1-code.md
+            - Factory Re-Flash MSR-1: products/msr1/troubleshooting/msr1-code.md
             - Teardown and Reassembly Of MSR-1: products/msr1/troubleshooting/msr1-teardown.md
             - Reset Wi-Fi Credentials: products/msr1/troubleshooting/msr1-reset-wi-fi-credentials.md
       - MSR-2:
@@ -194,7 +194,7 @@ nav:
             - GPIO Header LED Strip: products/msr2/examples/gpio-header-control-an-led-strip.md
           - Troubleshooting:
             - MSR-2 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
-            - Manually Uploading Code To MSR-2: products/msr2/troubleshooting/msr2-code.md
+            - Factory Re-Flash MSR-2: products/msr2/troubleshooting/msr2-code.md
             - Teardown and Reassembly Of MSR-2: products/msr2/troubleshooting/msr2-teardown.md
             - Reset Wi-Fi Credentials: products/msr2/troubleshooting/msr2-reset-wi-fi-credentials.md
       - MTR-1:
@@ -214,7 +214,7 @@ nav:
             - MTR-1 Alarmo: products/mtr1/examples/mtr1-alarmo.md
           - Troubleshooting:
             - MTR-1 Boot Mode: products/mtr1/troubleshooting/mtr1-boot-mode.md
-            - Manually Uploading Code To MTR-1: products/mtr1/troubleshooting/mtr1-code.md
+            - Factory Re-Flash MTR-1: products/mtr1/troubleshooting/mtr1-code.md
             - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
             - Reset Wi-Fi Credentials: products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
       - AIR-1:
@@ -236,7 +236,7 @@ nav:
             - GPIO Header LED Strip: products/air1/examples/how-to-use-the-apollo-gpio-header-to-control-an-led-strip.md
           - Troubleshooting:
             - AIR-1 Boot Mode: products/air1/troubleshooting/air1-boot-mode.md
-            - Manually Uploading Code To AIR-1: products/air1/troubleshooting/air1-code.md
+            - Factory Re-Flash AIR-1: products/air1/troubleshooting/air1-code.md
             - Teardown and Reassembly Of AIR-1: products/air1/troubleshooting/air1-teardown.md
             - Reset Wi-Fi Credentials: products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
       - PLT-1:
@@ -253,7 +253,7 @@ nav:
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
             - PLT-1 Boot Mode: products/plt1/troubleshooting/plt1-boot-mode.md
-            - Manually Uploading Code To PLT-1: products/plt1/troubleshooting/plt1-code.md
+            - Factory Re-Flash PLT-1: products/plt1/troubleshooting/plt1-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1/troubleshooting/plt1-teardown.md
             - Reset Wi-Fi Credentials: products/plt1/troubleshooting/plt1-reset-wi-fi-credentials.md
       - PLT-1B:
@@ -273,7 +273,7 @@ nav:
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
             - PLT-1 Boot Mode: products/plt1b/troubleshooting/plt1b-boot-mode.md
-            - Manually Uploading Code To PLT-1: products/plt1b/troubleshooting/plt1b-code.md
+            - Factory Re-Flash PLT-1: products/plt1b/troubleshooting/plt1b-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1b/troubleshooting/plt1b-teardown.md
             - Reset Wi-Fi Credentials: products/plt1b/troubleshooting/plt1b-reset-wi-fi-credentials.md
       - TEMP-1:
@@ -295,7 +295,7 @@ nav:
             - Use Cases: products/temp1/examples/use-cases.md
           - Troubleshooting:
             - TEMP-1 Boot Mode: products/temp1/troubleshooting/temp1-boot-mode.md
-            - Manually Uploading Code To TEMP-1: products/temp1/troubleshooting/temp1-code.md
+            - Factory Re-Flash TEMP-1: products/temp1/troubleshooting/temp1-code.md
             - Teardown and Reassembly Of TEMP-1: products/temp1/troubleshooting/temp1-teardown.md
             - Reset Wi-Fi Credentials: products/temp1/troubleshooting/temp1-reset-wi-fi-credentials.md
       - TEMP-1B:
@@ -318,7 +318,7 @@ nav:
             - Use Cases: products/temp1b/examples/use-cases.md
           - Troubleshooting:
             - TEMP-1B Boot Mode: products/temp1b/troubleshooting/temp1b-boot-mode.md
-            - Manually Uploading Code To TEMP-1B: products/temp1b/troubleshooting/temp1b-code.md
+            - Factory Re-Flash TEMP-1B: products/temp1b/troubleshooting/temp1b-code.md
             - Teardown and Reassembly Of TEMP-1B: products/temp1b/troubleshooting/temp1b-teardown.md
             - Reset Wi-Fi Credentials: products/temp1b/troubleshooting/temp1b-reset-wi-fi-credentials.md
       - H-1:
@@ -330,7 +330,7 @@ nav:
             - Holiday Songs: products/h1/holiday-songs.md
           - Troubleshooting:
             - H-1 Boot Mode: products/h1/boot-mode.md
-            - Manually Uploading Code To H-1: products/h1/code.md
+            - Factory Re-Flash H-1: products/h1/code.md
       - Apollo ODroid:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md
