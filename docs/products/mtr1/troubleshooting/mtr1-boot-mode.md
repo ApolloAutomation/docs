@@ -1,22 +1,27 @@
 # Putting The MTR-1 In Boot Mode
 
-This will cover how to put the MTR-1 into boot mode. Sometimes, this is needed to upload new firmware if the device is struggling.
+!!! info "This will cover how to put the MTR-1 into boot mode."
 
-**Boot Button Only**
+    This is needed to force the device into boot mode to reflash the firmware.
 
-1. See the photo below to help access the boot button through the top of the case
-2. Use a pin to press and hold the boot button, while holding the boot button plug the MTR-1 back into your computer/power and then release the boot button
+##### Method 1: Boot Button Only
 
-![MTR-1 Boot Button.png](../assets/mtr-1-boot-button.png)<br> 4. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/mtr1/troubleshooting/mtr1-code/)
+1\. Position the MTR-1 as shown in the image below and locate the small opening to press the boot button (the right button).
 
-**Boot and Reset Buttons**
+![](assets/mtr-1-boot-button.jpg)
 
-1. Unplug the device
-2. Slide the back of the case off
-3. Remove the device from the case
-4. Plug it back into your computer
-5. Press and hold the boot button, while holding it press and release the reset button, then release the boot button
+2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MTR-1 then let go of the button.
 
-![20240501_155316.jpg](../assets/9Rp20240501-155316.jpg)
+3\. Continue with <a href="https://wiki.apolloautomation.com/products/mtr1/troubleshooting/mtr1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
-6\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/mtr1/troubleshooting/mtr1-code/)
+##### Method 2: Boot and Reset Buttons
+
+1\. Unplug the device and locate the boot and reset buttons as shown in the image above.
+
+2\. Plug it into your computer.
+
+3\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
+
+![](assets/mtr-1-reset-button.jpg)
+
+4\. Continue with <a href="https://wiki.apolloautomation.com/products/mtr1/troubleshooting/mtr1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.

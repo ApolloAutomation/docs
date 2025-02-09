@@ -30,4 +30,8 @@ If your device has already been connected to Home Assistant please <a href="http
 
 ![](assets/temp-1b-reflash-pic-7.png)
 
+!!! warning "Power cycle your device before doing anything else!"
+
+    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
+
 7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-temp1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and setup your sensor as a new device!
