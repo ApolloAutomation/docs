@@ -1,4 +1,8 @@
-This will cover how to put the TEMP-1B into boot mode. This is needed to force the device into boot mode to reflash the firmware.
+# Putting The TEMP-1B In Boot Mode
+
+!!! info "This will cover how to put the TEMP-1B into boot mode."
+
+    This is needed to force the device into boot mode to reflash the firmware.
 
 ##### Method 1: Boot Button Only
 
@@ -12,9 +16,9 @@ If you prefer, please remove the lid by gently prying up on the small slit by th
 
 ![](assets/temp-1b-boot-button-lid-off.jpg)
 
-2\. Push and hold the boot button then (while still holding the button down) plug in your TEMP-1B to your computer's USB port then let go of the button.
+2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your TEMP-1B then let go of the button.
 
-3\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1b/troubleshooting/temp1b-code/)
+3\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1b/troubleshooting/temp1b-code/).
 
 ##### Method 2: Boot and Reset Buttons
 
@@ -24,4 +28,4 @@ If you prefer, please remove the lid by gently prying up on the small slit by th
 
 3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
 
-4\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1b/troubleshooting/temp1b-code/)
+4\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1b/troubleshooting/temp1b-code/).

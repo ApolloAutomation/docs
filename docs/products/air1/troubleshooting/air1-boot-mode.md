@@ -1,16 +1,27 @@
 # Putting The AIR-1 In Boot Mode
 
-This will cover how to put the AIR-1 into boot mode. This is sometimes needed for uploading new firmware if the device is struggling.
+!!! info "This will cover how to put the AIR-1 into boot mode."
 
-**Boot Button Only**
+    This is needed to force the device into boot mode to reflash the firmware.
 
-1. Plug in the device
-2. See the photo below to help access the boot button through the back of the case
-3. Use a pin to press and hold the boot button, while holding the boot button plug it back into your computer/power and then release the boot button
-4. Continue with [Uploading your Code via our ESPHome Web Flasher](https://apolloautomation.github.io/docs/products/air1/troubleshooting/air1-code/ "Uploading your Code via our ESPHome Web Flasher")
+##### Method 1: Boot Button Only
 
-**Boot and Reset Button**
+1\. Position the AIR-1 so that the USB-C port is facing you. On the left side of the USB-C port, locate a small opening to press the boot button (the right button).
 
-1. Plug it into your computer
-2. Press and hold the boot button, while holding it press and release the reset button, then release the boot button<br> ![AIR-1 Boot-Reset Red.png](../assets/air-1-boot-reset-red.png)
-3. Continue with [Uploading your Code via our ESPHome Web Flasher](https://apolloautomation.github.io/docs/products/air1/troubleshooting/air1-code/ "Uploading your Code via our ESPHome Web Flasher")
+![](assets/air-1-boot-button.jpg)
+
+2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your AIR-1 then let go of the button.
+
+3\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-code/).
+
+##### Method 2: Boot and Reset Buttons
+
+1\. Unplug the device and locate the boot and reset buttons as shown in the image above.
+
+2\. Plug it into your computer.
+
+3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
+
+![](assets/air-1-reset-boot-buttons-arrows.jpg)
+
+4\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-code/).
