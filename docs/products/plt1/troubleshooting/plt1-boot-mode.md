@@ -6,7 +6,7 @@
 
 ##### Method 1: Boot Button Only
 
-1\. Position the PLT-1 as shown in the image below and locate the small opening to press the boot button (the right button).
+1\. Position the PLT-1 as shown in the image below and locate the small opening to press the boot button.
 
 ![](../../../assets/screenshot-2024-10-23-at-12-32-55-pm.png)
 
@@ -20,7 +20,7 @@
 
 2\. Plug it into your computer.
 
-3\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
+3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
 
 ![](../../../assets/screenshot-2024-10-23-at-12-35-01-pm.png)
 
