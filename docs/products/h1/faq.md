@@ -1,51 +1,50 @@
 ![](../../assets/apollo-h-1-info.png)
 
-1\. What songs are pre-loaded on the Apollo H-1?
+1\. **What songs are pre-loaded on the Apollo H-1?**
 
-The H-1 comes with three classic holiday songs: Sleigh Bells, Rudolph the Red-Nosed Reindeer, and Let it Snow. You can play these songs by pressing the gold button on the back of the ornament—one press for Sleigh Bells, two for Rudolph the Red-Nosed Reindeer, and three for Let it Snow. Each song is paired with a unique LED effect for added festive flair.
+* The H-1 comes with three classic holiday songs: Sleigh Bells, Rudolph the Red-Nosed Reindeer, and Let it Snow. You can play these songs by pressing the gold button on the back of the ornament—one press for Sleigh Bells, two for Rudolph the Red-Nosed Reindeer, and three for Let it Snow. Each song is paired with a unique LED effect for added festive flair.
 
-2\. Can I customize the songs and LED effects?
+2\. **Can I customize the songs and LED effects?**
 
-Yes! While the H-1 ships pre-loaded with three songs and light effects, you can integrate it with Home Assistant to further customize songs, LED patterns, and more. This makes the H-1 a versatile addition to your smart home holiday setup.
+* Yes! While the H-1 ships pre-loaded with three songs and light effects, you can integrate it with Home Assistant to further customize songs, LED patterns, and more. This makes the H-1 a versatile addition to your smart home holiday setup.
 
-3\. Is the Apollo H-1 “smart” right out of the box?
+3\. **Is the Apollo H-1 “smart” right out of the box?**
 
-The H-1 is pre-flashed with a simple firmware that operates independently, allowing you to play songs with the gold button without needing any additional setup. For a full “smart” experience, you can connect the H-1 to Home Assistant, where you can program custom automations, change songs, and adjust LED effects.
+* The H-1 is pre-flashed with a simple firmware that operates independently, allowing you to play songs with the gold button without needing any additional setup. For a full “smart” experience, you can connect the H-1 to Home Assistant, where you can program custom automations, change songs, and adjust LED effects.
 
-4\. How do I activate the pre-loaded songs?
+4\. **How do I activate the pre-loaded songs?**
 
-To play the songs, press the gold button on the back of the ornament:
+* To play the songs, press the gold button on the back of the ornament:
+  * 1 press for Sleigh Bells
+  * 2 presses for Rudolph the Red-Nosed Reindeer
+  * Long press for Let it Snow
 
-\- 1 press for Sleigh Bells
+5\. **What does purchasing the Apollo H-1 support?**
 
-\- 2 presses for Rudolph the Red-Nosed Reindeer
+* All proceeds from the H-1 go to a local charity in Lexington, KY. This initiative allows us to give back to our community as a thank you for the support we receive from our customers, friends, and family.
 
-\- Long press for Let it Snow
+6\. **Can the Apollo H-1 be used as a standard holiday ornament?**
 
-5\. What does purchasing the Apollo H-1 support?
+* Absolutely! The H-1 is designed to look festive on any holiday setup, whether you choose to use the pre-loaded music and lights or integrate it as part of a smart home. It’s a fun and functional ornament that brings joy in multiple ways.
 
-All proceeds from the H-1 go to a local charity in Lexington, KY. This initiative allows us to give back to our community as a thank you for the support we receive from our customers, friends, and family.
+7\. **How do I set up the Apollo H-1 with Home Assistant?**
 
-6\. Can the Apollo H-1 be used as a standard holiday ornament?
+* To integrate the H-1 with Home Assistant, follow getting started guide or reach out to our support team for assistance. Once connected, you can unlock additional functionality and customizations.
 
-Absolutely! The H-1 is designed to look festive on any holiday setup, whether you choose to use the pre-loaded music and lights or integrate it as part of a smart home. It’s a fun and functional ornament that brings joy in multiple ways.
+8\. **Does the ornament require any additional power source?**
 
-7\. How do I set up the Apollo H-1 with Home Assistant?
+* The Apollo H-1 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a [(rechargable) RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/dp/B0CSKD7N3D). It can also be powered by the USB-C port. The H-1 usb-c port will NOT charge the battery, you need an external charger.
 
-To integrate the H-1 with Home Assistant, follow getting started guide or reach out to our support team for assistance. Once connected, you can unlock additional functionality and customizations.
+9\. **Can I gift the Apollo H-1 to friends or family?**
 
-8\. Does the ornament require any additional power source?
+* Yes, the H-1 makes a wonderful gift! It’s unique, festive, and supports a good cause, making it a great option for holiday gifting.
 
-The Apollo H-1 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a [(rechargable) RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/dp/B0CSKD7N3D). It can also be powered by the USB-C port. The H-1 usb-c port will NOT charge the battery, you need an external charger.
+10\. **My H-1 is draining battery too fast- how do i fix this?**
 
-9\. Can I gift the Apollo H-1 to friends or family?
+* Please make sure if you are on the smart firmware to disable the "prevent sleep" option on the home assistant device page!
 
-Yes, the H-1 makes a wonderful gift! It’s unique, festive, and supports a good cause, making it a great option for holiday gifting.
+11\. **Where can I find more information about the Apollo H-1 and similar products?**
 
-10\. My H-1 is draining battery too fast- how do i fix this?
+* For more details, setups, guides, and other products please email us at support@apolloautomation.com
 
-Please make sure if you are on the smart firmware to disable the "prevent sleep" option on the home assistant device page!
-
-11\. Where can I find more information about the Apollo H-1 and similar products?
-
-For more details, setups, guides, and other products please email us at support@apolloautomation.com or join us on [Discord](https://dsc.gg/apolloautomation)!
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                 .md-button .md-button--primary }
