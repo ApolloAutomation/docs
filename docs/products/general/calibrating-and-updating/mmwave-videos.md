@@ -30,20 +30,25 @@ How to tune the mmWave sensor using radar engineering mode.
 </div>
 
 
-1. Open Home Assistant.
-2. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
-3. Scroll down to the Configuration section.
-4. Turn on Radar Engineering Mode (REM).
+1\. Open Home Assistant.
 
-   ![](assets/mmwave-tuning-pic-1.png)
+2\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
 
-5. Scroll down to the Diagnostic section and you will see that REM shows the move and still energy for gates 0-8.
+3\. Scroll down to the Configuration section.
 
-   ![](assets/mmwave-tuning-pic-2-1.png)
+4\. Turn on Radar Engineering Mode (REM).
 
-6. The gates are different distances from the sensor<br>![Radar Gates Colored](assets/radar-gates-colored.png "Radar Gates Colored")
-7. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.<br>![](assets/mmwave-tuning-pic-3.png)
-8. Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.<br>![](assets/mmwave-tuning-pic-4.png)
+![](assets/mmwave-tuning-pic-1.png)
+
+5\. Scroll down to the Diagnostic section and you will see that REM shows the move and still energy for gates 0-8.
+
+![](assets/mmwave-tuning-pic-2-1.png)
+
+6\. The gates are different distances from the sensor<br>![Radar Gates Colored](assets/radar-gates-colored.png "Radar Gates Colored")
+
+7\. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.<br>![](assets/mmwave-tuning-pic-3.png)
+
+8\. Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.<br>![](assets/mmwave-tuning-pic-4.png)
 
 !!! quote "Quote from popular Youtuber Make It Work Tech"
 
