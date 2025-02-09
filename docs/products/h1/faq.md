@@ -47,4 +47,4 @@
 
 * For more details, setups, guides, and other products please email us at support@apolloautomation.com
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                               .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                 .md-button .md-button--primary }
