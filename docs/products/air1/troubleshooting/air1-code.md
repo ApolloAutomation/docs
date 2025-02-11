@@ -16,19 +16,19 @@ If your device has already been connected to Home Assistant please <a href="http
 
 ![](assets/air-1-reflash-pic-1.png)
 
-3\. Select the open com port then click Connect.
+4\. Select the open com port then click Connect.
 
 ![](assets/air-1-reflash-pic-2-1.png)
 
-4\. Click "Install ApolloAutomation.AIR-1".
+5\. Click "Install ApolloAutomation.AIR-1".
 
 ![](assets/air-1-reflash-pic-3.png)
 
-5\. Click "INSTALL".
+6\. Click "INSTALL".
 
 ![](assets/air-1-reflash-pic-4.png)
 
-6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
 ![](assets/air-1-reflash-pic-5.png)
 
@@ -36,4 +36,4 @@ If your device has already been connected to Home Assistant please <a href="http
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and setup your sensor as a new device!
+8\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and setup your sensor as a new device!
