@@ -30,7 +30,9 @@ collections_config:
     disable_file_actions: false
 _editables:
   content:
-    allow_custom_markup: true
+#changed this to false per Tom at CloudCannon recommendation for now as a workaround
+#    allow_custom_markup: true
+    allow_custom_markup: false
     remove_custom_markup: false
     blockquote: true
     bold: true
