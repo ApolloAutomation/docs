@@ -1,8 +1,10 @@
 # Piezo Buzzer
 
----
+This guide will walk you through using the buzzer on your Apollo Device.
 
-This guide will walk you through using the buzzer on your Apollo Device. You can also call the Action through automations in Home Assistant!
+!!! tip "You can also use the buzzer as an Action through automations in Home Assistant"
+
+    This might still be called a "Service Call" depending on the version of ESPHome firmware your device is using!
 
 1\. Open Home Assistant and navigate to developer tools in the bottom left.
 
@@ -34,12 +36,6 @@ This guide will walk you through using the buzzer on your Apollo Device. You can
 
 5\. Click on the Perform Action button.
 
----
-
 <a href="https://picaxe.com/rtttl-ringtones-for-tune-command/" title="Example RTTL Tones" target="_blank" rel="noreferrer nofollow noopener">Click here</a> to find example RTTTL Tones and <a href="https://adamonsoon.github.io/rtttl-play/" title="Test RTTTL Tones" target="_blank" rel="noreferrer nofollow noopener">click here</a> to test RTTTL Tones.
-
-!!! tip "You can also use the buzzer as an Action through automations in Home Assistant"
-
-    This might still be called a "Service Call" depending on the version of ESPHome firmware your device is using!
 
 Check out these <a href="https://wiki.apolloautomation.com/products/h1/holiday-songs/" target="_blank" rel="noreferrer nofollow noopener">Holiday themed buzzer examples</a> too!
