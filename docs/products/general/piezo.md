@@ -1,6 +1,6 @@
 # Piezo Buzzer
 
-This guide will walk you through using the buzzer on your MSR-1. You can also call the below service through automations in Home Assistant.
+This guide will walk you through using the buzzer on your MSR-1. You can also call the Action through automations in Home Assistant.
 
 1\. Open Home Assistant and navigate to developer tools in the bottom left.
 
