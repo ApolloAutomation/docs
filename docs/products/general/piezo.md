@@ -1,10 +1,12 @@
 # Piezo Buzzer
 
+---
+
 This guide will walk you through using the buzzer on your MSR-1. You can also call the Action through automations in Home Assistant.
 
 1\. Open Home Assistant and navigate to developer tools in the bottom left.
 
-2\. Select Actions.
+2\. Click Actions at the top of the page.
 
 3\. Select your devices buzzer in the Action box by typing in "buzzer" and selecting it.
 
