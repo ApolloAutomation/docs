@@ -10,7 +10,7 @@
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](assets/plt-1-prevent-sleep-pic-1.png)
+![](assets/plt-1-prevent-sleep-pic-1-2.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
