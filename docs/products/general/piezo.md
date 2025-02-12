@@ -60,4 +60,4 @@ This is a good site to test RTTTL tones: <a href="https://adamonsoon.github.io/r
 
     This might still be called a "Service Call" depending on the version of ESPHome firmware your device is using!
 
-###### Check out these <a href="https://wiki.apolloautomation.com/products/h1/holiday-songs/" target="_blank" rel="noreferrer nofollow noopener">Holiday themed buzzer examples</a> too!
+Check out these <a href="https://wiki.apolloautomation.com/products/h1/holiday-songs/" target="_blank" rel="noreferrer nofollow noopener">Holiday themed buzzer examples</a> too!
