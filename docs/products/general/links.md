@@ -1,3 +1,13 @@
-# [GitHub](https://github.com/ApolloAutomation)
+# Useful Links
 
-# [Printables](https://www.printables.com/@Apollo_1187039)
+---
+
+# <a href="https://github.com/ApolloAutomation" target="_blank" rel="noreferrer nofollow noopener">GitHub</a>
+
+---
+
+# <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">Printables</a>
+
+---
+
+# <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noreferrer nofollow noopener">Discord</a>
