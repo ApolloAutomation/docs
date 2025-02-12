@@ -36,9 +36,7 @@ This guide will walk you through using the buzzer on your Apollo Device. You can
 
 ---
 
-RTTTL Website: [https://picaxe.com/rtttl-ringtones-for-tune-command/](https://picaxe.com/rtttl-ringtones-for-tune-command/)
-
-This is a good site to test RTTTL tones: <a href="https://adamonsoon.github.io/rtttl-play/" target="_blank" rel="noopener">https://adamonsoon.github.io/rtttl-play/</a>
+<a href="https://picaxe.com/rtttl-ringtones-for-tune-command/" title="Example RTTL Tones" target="_blank" rel="noreferrer nofollow noopener">Click here</a> to find example RTTTL Tones and <a href="https://adamonsoon.github.io/rtttl-play/" title="Test RTTTL Tones" target="_blank" rel="noreferrer nofollow noopener">click here</a> to test RTTTL Tones.
 
 !!! tip "You can also use the buzzer as an Action through automations in Home Assistant"
 
