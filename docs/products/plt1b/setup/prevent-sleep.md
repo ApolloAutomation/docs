@@ -10,13 +10,13 @@
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](assets/plt-1-prevent-sleep-pic-1-2.png)
+![](assets/plt-1b-prevent-sleep-pic-1.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](assets/plt-1-prevent-sleep-pic-2.png)
+![](assets/plt-1b-prevent-sleep-pic-2.png)
 
-4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 5 minutes.
+4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 12 hours.
 
 !!! warning "Read this before turning off Prevent Sleep!"
 
