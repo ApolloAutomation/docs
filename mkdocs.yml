@@ -293,6 +293,7 @@ nav:
           - Reviews: products/temp1/reviews.md
           - Examples: 
             - Use Cases: products/temp1/examples/use-cases.md
+            - Automations: products/temp1/examples/temp1-automation-examples.md
           - Troubleshooting:
             - TEMP-1 Boot Mode: products/temp1/troubleshooting/temp1-boot-mode.md
             - Factory Re-Flash TEMP-1: products/temp1/troubleshooting/temp1-code.md
