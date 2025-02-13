@@ -42,8 +42,6 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 ??? tip "Advanced users click here for the YAML"
 
-    ??? tip "Advanced users click here for the YAML"
-
     ```yaml
     alias: Freezer Over Max Temp Automation
     description: Warning for the freezer when it reaches the max temperature.
