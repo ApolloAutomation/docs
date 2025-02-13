@@ -90,6 +90,6 @@ This will guide you through setting up the food probe to alert you when your des
 
 1\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left.
 
-[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){           .md-button .md-button--primary }
+[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){target=_blank}{           .md-button .md-button--primary }
 
 2\. testing
