@@ -1,17 +1,19 @@
 # Automation Examples using a TEMP-1
 
-!!! note "This will guide you through a simple automation which will alert you when your temp-1 food probe is over temp!"
+###### Temperature Probe Example
 
-    This will guide you through a simple automation which will alert you when your temp-1 food probe is over temp!
-
-######
-
-Testing
-
-!!! example "Food Probe Example"
-
-    ###### Food Probe Example Test
-
-######
+1\.
 
 &nbsp;
+
+??? example "This will guide you through setting up the food probe to alert you when your target temperature is met!"
+
+    ###### Food Probe Example
+
+    1\. Head to Settings -&gt; Automations & scenes -&gt;then click Create Automation in the bottom left.[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){ .md-button .md-button--primary }
+
+    2\. testing
+
+###### Food Probe Example
+
+This will guide you through setting up the food probe to alert you when your fod
