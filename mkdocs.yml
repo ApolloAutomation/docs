@@ -292,6 +292,7 @@ nav:
             - Food Probe: products/temp1/addons/food-probe.md
           - Reviews: products/temp1/reviews.md
           - Examples: 
+            - Alert Outside Range: products/temp1/examples/temp1-alert-example.md
             - Use Cases: products/temp1/examples/use-cases.md
             - Automations: products/temp1/examples/temp1-automation-examples.md
           - Troubleshooting:
