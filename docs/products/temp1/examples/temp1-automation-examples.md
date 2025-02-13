@@ -18,7 +18,7 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){                  .md-button .md-button--primary }
+[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){                   .md-button .md-button--primary }
 
 6\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users click here for the YAML.
 
