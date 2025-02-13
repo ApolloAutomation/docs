@@ -14,13 +14,17 @@ This will guide you through how to setup an automation using the temperature pro
 
 ![](assets/temp-1-temp-probe-ex-automation-pic-2.png)
 
-4\. The automation is now ready to
+4\. The automation is now ready to be created -
+
+5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation".
+
+[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){        .md-button .md-button--primary }
+
+6\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above.
+
+7\.
 
 &nbsp;
-
-1\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left.
-
-2\.
 
 &nbsp;
 
@@ -30,7 +34,7 @@ This will guide you through how to setup an automation using the temperature pro
 
     ###### Food Probe Example
 
-    1\. Head to Settings -&gt; Automations & scenes -&gt;then click Create Automation in the bottom left.[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){      .md-button .md-button--primary }
+    1\. Head to Settings -&gt; Automations & scenes -&gt;then click Create Automation in the bottom left.[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){        .md-button .md-button--primary }
 
     2\. testing
 
@@ -42,6 +46,6 @@ This will guide you through setting up the food probe to alert you when your des
 
 1\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left.
 
-[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){      .md-button .md-button--primary }
+[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){        .md-button .md-button--primary }
 
 2\. testing
