@@ -22,4 +22,4 @@ This guide will walk you through setting up your Apollo Home Assistant hub aka t
 
 5\. Now that you've got Home Assistant running, your Apollo Automation devices are ready to use!
 
-[Click here to head to our general getting started guide!](https://wiki.apolloautomation.com/products/general/setup/getting-started/){ .md-button .md-button--primary }
+[Click here to head to our general getting started guide!](https://wiki.apolloautomation.com/products/general/setup/getting-started/){   .md-button .md-button--primary }
