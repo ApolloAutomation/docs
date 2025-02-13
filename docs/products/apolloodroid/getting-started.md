@@ -10,7 +10,7 @@ This guide will walk you through setting up your Apollo Home Assistant hub aka t
 
 !!! tip "You can also access your device from it's IP address instead of the default hostname of homeassistant.local"
 
-    If you'd prefer, you can go into your router and find the IP address that your Odroid received and use the IP address with port 8123 at the end such as: http://192.168.1.30:8123
+    If you'd prefer, you can go into your router and find the IP address that your Odroid received and use the IP address with port 8123 at the end such as: <a href="http://192.168.1.30:8123" title="Change yours to the correct IP address on your subnet!" target="_blank" rel="noreferrer nofollow noopener">http://192.168.1.30:8123</a>
 
 ![Screenshot 2024-06-14 at 2.42.08 PM.png](assets/screenshot-2024-06-14-at-2-42-08-pm.png)
 
@@ -22,4 +22,4 @@ This guide will walk you through setting up your Apollo Home Assistant hub aka t
 
 5\. Now that you've got Home Assistant running, your Apollo Automation devices are ready to use!
 
-[Click here to head to our general getting started guide!](https://wiki.apolloautomation.com/products/general/setup/getting-started/){   .md-button .md-button--primary }
+[Click here to head to our general getting started guide!](https://wiki.apolloautomation.com/products/general/setup/getting-started/){     .md-button .md-button--primary }
