@@ -16,9 +16,9 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 4\. The automation is now ready to be created -
 
-5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation".
+5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){           .md-button .md-button--primary }
+[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){                   .md-button .md-button--primary }
 
 6\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users click here for the YAML.
 
@@ -41,8 +41,6 @@ This will guide you through how to setup an automation in Home Assistant using t
 ![](assets/temp-1-temp-probe-ex-automation-pic-6.png)
 
 ??? tip "Advanced users click here for the YAML"
-
-    ??? tip "Advanced users click here for the YAML"
 
     ```yaml
     alias: Freezer Over Max Temp Automation
@@ -88,8 +86,4 @@ mode: single
 
 This will guide you through setting up the food probe to alert you when your desired food temperature is met.
 
-1\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left.
-
-[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){           .md-button .md-button--primary }
-
-2\. testing
+1\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left. <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
