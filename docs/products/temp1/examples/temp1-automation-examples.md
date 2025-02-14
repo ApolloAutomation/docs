@@ -18,9 +18,7 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-[Click here to go straight there!](http://homeassistant.local:8123/config/automation/edit/new){                   .md-button .md-button--primary }
-
-6\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users click here for the YAML.
+6\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users skip to step 10.
 
 ![](assets/temp-1-temp-probe-ex-automation-pic-3.png)
 
@@ -36,31 +34,13 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 ![](assets/temp-1-temp-probe-ex-automation-pic-5.png)
 
-9\. Click save in the bottom right and then give it a Name and optionally a Description and a Category as well.
+9\. Click save in the bottom right and then give it a Name and optionally a Description and a Category as well. You are done!
 
 ![](assets/temp-1-temp-probe-ex-automation-pic-6.png)
 
-??? tip "Advanced users click here for the YAML"
+---
 
-    ```yaml
-    alias: Freezer Over Max Temp Automation
-    description: Warning for the freezer when it reaches the max temperature.
-    triggers:
-      - trigger: numeric_state
-        entity_id:
-          - number.apollo_temp_1_max_probe_temp
-        above: 30
-    conditions: []
-    actions:
-      - action: notify.mobile_app_brandons_iphone
-        metadata: {}
-        data:
-          title: Check the freezer!
-          message: >-
-            The temperature probe on your TEMP-1 reached its max temperature and
-            your freezer might be having issues.
-    mode: single
-    ```
+10\. YAML for Advanced Users
 
 ```yaml
 alias: Freezer Over Max Temp Automation
