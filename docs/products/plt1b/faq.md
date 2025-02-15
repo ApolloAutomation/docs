@@ -8,7 +8,7 @@
 
 3\. **How is the PLT-1B powered?**
 
-* The PLT-1B operates with a **rechargeable** 18650 Flat Top battery (not included), giving it portability for plant monitoring without being tied to an outlet. Example battery to use: [https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery](https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery)
+* The PLT-1B operates with a **rechargeable** 18650 Flat Top battery (not included), giving it portability for plant monitoring without being tied to an outlet. Example battery to use: [https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery](https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery).
 
 4\. **Can you charge the battery by plugging in the device?**
 
@@ -85,5 +85,4 @@
 22\. **Optional Probe Addons:**
 
 * 1\.5m (~5ft) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
-
 * 20cm (~8in) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
