@@ -2,7 +2,7 @@
 
 1\.**How is the TEMP-1B powered?**
 
-* The TEMP-1B operates with a **rechargeable** 16340 Flat Top battery (not included), giving it portability for temp monitoring without being tied to an outlet.
+* The TEMP-1B operates with a **rechargeable** <a href="https://www.amazon.com/Rechargeable-Capacity-Batteries-Headlamp-Flashlight/dp/B0CZLGH9FW" target="_blank" rel="noreferrer nofollow noopener">16340 Flat Top battery</a> (not included), giving it portability for temp monitoring without being tied to an outlet.
 
 2\. **How long does the battery last in the TEMP-1B?**
 
@@ -15,9 +15,7 @@
 4\. **What are the Optional Probe Addons?**
 
 * 1\.5m (~5ft) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
-
 * 20cm (~8in) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
-
 * 1m (~3ft) Stainless Steel Food-Safe Probe (NTC) – Max 350°C (662°F). Perfect for grilling, baking, and food prep (not dishwasher safe).
 
 5\. **Is the TEMP-1B weatherproof? Can I use it outdoors?**

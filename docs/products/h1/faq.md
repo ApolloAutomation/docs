@@ -29,11 +29,11 @@
 
 7\. **How do I set up the Apollo H-1 with Home Assistant?**
 
-* To integrate the H-1 with Home Assistant, follow getting started guide or reach out to our support team for assistance. Once connected, you can unlock additional functionality and customizations.
+* To integrate the H-1 with Home Assistant, follow getting started guide or reach out to our support team for assistance. Once connected, you can unlock additional functionality and customization.
 
 8\. **Does the ornament require any additional power source?**
 
-* The Apollo H-1 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a [(rechargable) RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/dp/B0CSKD7N3D). It can also be powered by the USB-C port. The H-1 usb-c port will NOT charge the battery, you need an external charger.
+* The Apollo H-1 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a [(rechargable) RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/Rechargeable-Capacity-Batteries-Headlamp-Flashlight/dp/B0CZLGH9FW). It can also be powered by the USB-C port. The H-1 USB-C port will NOT charge the battery, you need an external charger.
 
 9\. **Can I gift the Apollo H-1 to friends or family?**
 
@@ -47,4 +47,4 @@
 
 * For more details, setups, guides, and other products please email us at support@apolloautomation.com
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                 .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                  .md-button .md-button--primary }
