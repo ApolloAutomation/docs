@@ -1,10 +1,10 @@
-# Automation Examples using a TEMP-1
+# Automation Examples using a TEMP-1B
 
 ###### Freezer Temperature Probe Example
 
 This will guide you through how to setup an automation in Home Assistant using the temperature probe in your freezer! At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
 
-1\. Place the temperature probe into your freezer and then wait for it to normalize around 0°F (-18°C). Make sure your TEMP-1 is in a cool dry place - only the temp probe and wire can withstand the temperatures in the fridge, freezer, etc.
+1\. Place the temperature probe into your freezer and then wait for it to normalize around 0°F (-18°C). Make sure your TEMP-1B is in a cool dry place - only the temp probe and wire can withstand the temperatures in the fridge, freezer, etc.
 
 2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30°F so I would want to go slightly above that range. However, <a href="https://www.energy.gov/energysaver/refrigerator-freezer-use-and-temperature-tips" target="_blank" rel="noreferrer nofollow noopener">in most freezers, they should NOT reach above 0</a>°<a href="https://www.energy.gov/energysaver/refrigerator-freezer-use-and-temperature-tips" target="_blank" rel="noreferrer nofollow noopener">F</a> so you will likely need to input a lower value than me. my minimums are around -20°F.
 
@@ -18,7 +18,7 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-6\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users skip to step 10.
+6\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B device such as "temp-1b max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users skip to step 10.
 
 ![](assets/temp-1-temp-probe-ex-automation-pic-3.png)
 
@@ -30,7 +30,7 @@ This will guide you through how to setup an automation in Home Assistant using t
 
     You need the Home Assistant mobile app installed on your phone for this step to work! If you do not have it, try another notification instead of using your phone such as a TTS notification on your speakers. This could be a fun way to announce that dinner is ready!
 
-8\. Type in your preferred message and if you want, check the box for title and type in your title for the message as well. Mine says: "The temperature probe on your TEMP-1 reached its max temperature and your freezer might be having issues." and "Check the freezer!".
+8\. Type in your preferred message and if you want, check the box for title and type in your title for the message as well. Mine says: "The temperature probe on your TEMP-1B reached its max temperature and your freezer might be having issues." and "Check the freezer!".
 
 ![](assets/temp-1-temp-probe-ex-automation-pic-5.png)
 
@@ -48,7 +48,7 @@ description: Warning for the freezer when it reaches the max temperature.
 triggers:
   - trigger: numeric_state
     entity_id:
-      - number.apollo_temp_1_max_probe_temp
+      - number.apollo_temp_1b_max_probe_temp
     above: 30
 conditions: []
 actions:
@@ -57,7 +57,7 @@ actions:
     data:
       title: Check the freezer!
       message: >-
-        The temperature probe on your TEMP-1 reached its max temperature and
+        The temperature probe on your TEMP-1B reached its max temperature and
         your freezer might be having issues.
 mode: single
 ```
@@ -74,7 +74,7 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left. <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-4\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Advanced users skip to step 8.
+4\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1b device such as "temp-1b max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Advanced users skip to step 8.
 
 ![](assets/temp-1-food-probe-ex-automation-pic-3.png)
 
@@ -86,7 +86,7 @@ This will guide you through how to setup an automation in Home Assistant using t
 
     You need the Home Assistant mobile app installed on your phone for this step to work! If you do not have it, try another notification instead of using your phone such as a TTS notification on your speakers. This could be a fun way to announce that dinner is ready!
 
-6\. Type in your preferred message and if you want, check the box for title and type in your title for the message as well. Mine says: "The temperature probe on your TEMP-1 reached its max temperature and your food is ready." and "Check the food!".
+6\. Type in your preferred message and if you want, check the box for title and type in your title for the message as well. Mine says: "The temperature probe on your TEMP-1B reached its max temperature and your food is ready." and "Check the food!".
 
 ![](assets/temp-1-food-probe-ex-automation-pic-5.png)
 
@@ -104,7 +104,7 @@ description: Warning for the food when it reaches the max temperature.
 triggers:
   - trigger: numeric_state
     entity_id:
-      - number.apollo_temp_1_max_probe_temp
+      - number.apollo_temp_1b_max_probe_temp
     above: 165
 conditions: []
 actions:
@@ -113,6 +113,6 @@ actions:
     data:
       title: Check the food!
       message: >-
-        The temperature probe on your TEMP-1 reached its max temperature and your food is ready.
+        The temperature probe on your TEMP-1B reached its max temperature and your food is ready.
 mode: single
 ```
