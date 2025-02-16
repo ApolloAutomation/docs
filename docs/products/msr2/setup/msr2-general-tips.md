@@ -1,15 +1,5 @@
 # General Tips
 
-##### MSR-2
-
-&nbsp;
-
-![](../assets/msr-2-bare-pcb-front.jpg)
-
-![](../assets/msr-2-bare-pcb-rear.jpg)
-
-![](../assets/msr-2-ld2410-front-no-case.jpg)
-
 ##### **Light Sensor (LTR-390UV)**
 
 ![20240514_123742.jpg](../assets/20240514-123742.jpg)
