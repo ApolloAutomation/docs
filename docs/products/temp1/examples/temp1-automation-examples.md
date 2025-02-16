@@ -70,7 +70,7 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 ![](assets/temp-1-food-probe-ex-automation-pic-1.png)
 
-2\. Place the food probe inside your food once it's on the grill. Make sure your TEMP-1 is in a cool dry place - only the food probe and the wire can withstand temperatures on a grill, in the oven, etc.
+2\. Place the food probe inside your food once it's on the grill. Make sure your TEMP-1 is in a cool dry place - only the <a href="https://wiki.apolloautomation.com/products/temp1/addons/food-probe/" title="Click me for more info on installation of food probe and usage." target="_blank" rel="noreferrer nofollow noopener">food probe and the wire can withstand temperatures on a grill, in the oven, etc</a>.
 
 3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left. <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
