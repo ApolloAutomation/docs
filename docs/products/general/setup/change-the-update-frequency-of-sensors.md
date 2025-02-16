@@ -13,7 +13,7 @@ sensor:
     update_interval: 5s
 ```
 
-!!! tip "You might also want to add \"force_update: true\" to make your sensor show the frequent updates in the gui."
+!!! tip "You might also want to add force_update: true to make your sensor show the frequent updates in the gui."
 
     **force\_update** (*Optional*, boolean): If true, this option will force the frontend (usually Home Assistant) to create a state changed event when the sensor updates even if the value stayed the same. Some applications like Grafana require this when working with Home Assistant, but beware it can significantly increase the database size. Defaults to `false`.
 
