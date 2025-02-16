@@ -20,12 +20,12 @@ The MSR-2 should be mounted 1.5-2 meters off the ground which will then provide 
 
 **![ld2410 table.png](../assets/ld2410-table.png)![Gate, Zones and RR.png](../assets/gate-zones-and-rr.png)**
 
-![MSR-1 radar map.png](../assets/msr-1-radar-map.png)![Radar gates Colored.png](../assets/radar-gates-colored.png)
-
 !!! tip "These are some useful hints!"
 
     * The FOV angle is -60 to 60 degrees - 120 degrees total.
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
     * Zones are user-configurable and are in cm.
+
+![MSR-1 radar map.png](../assets/msr-1-radar-map.png)![Radar gates Colored.png](../assets/radar-gates-colored.png)
 
 #####
