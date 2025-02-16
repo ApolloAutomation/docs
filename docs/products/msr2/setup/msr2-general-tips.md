@@ -4,7 +4,7 @@
 
 ![20240514_123742.jpg](../assets/20240514-123742.jpg)
 
-* When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy
+When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy
 
 !!! warning "The RGB LED will trigger the Light sensor!"
 
@@ -12,7 +12,7 @@
 
 ##### **Mounting**
 
-![LD2410 Zone map.png](../assets/ld2410-zone-map.png)
+The MSR-2 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120degree FOV of the mmWave radar.
 
 ![LD2410 Gates.png](../assets/ld2410-gates.png)
 
@@ -22,9 +22,7 @@
 
 **![ld2410 table.png](../assets/ld2410-table.png)**
 
-![MSR-1 radar map.png](../assets/msr-1-radar-map.png)
-
-![Radar gates Colored.png](../assets/radar-gates-colored.png)
+![MSR-1 radar map.png](../assets/msr-1-radar-map.png)![Radar gates Colored.png](../assets/radar-gates-colored.png)
 
 !!! tip "These are some useful hints!"
 
