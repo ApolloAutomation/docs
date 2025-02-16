@@ -18,7 +18,7 @@ The MSR-2 should be mounted 1.5-2 meters off the ground which will then provide 
 
 The MSR-2 can also be mounted on the ceiling if you can provide power and mount our articulating stand on the ceiling.
 
-!!! ! tip "These are some useful hints!"
+!!! tip "These are some useful hints!"
 
     * The FOV angle is -60 to 60 degrees - 120 degrees total.
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
