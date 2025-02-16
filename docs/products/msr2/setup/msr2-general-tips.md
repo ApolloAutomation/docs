@@ -2,16 +2,23 @@
 
 ##### MSR-2
 
-![](../assets/msr-2-bare-pcb-front.jpg)<br> ![](../assets/msr-2-bare-pcb-rear.jpg)<br> ![](../assets/msr-2-ld2410-front-no-case.jpg)
+&nbsp;
+
+![](../assets/msr-2-bare-pcb-front.jpg)
+
+![](../assets/msr-2-bare-pcb-rear.jpg)
+
+![](../assets/msr-2-ld2410-front-no-case.jpg)
 
 ##### **Light Sensor (LTR-390UV)**
 
 ![20240514_123742.jpg](../assets/20240514-123742.jpg)
 
-* When mounting the MSR-2 be sure to position the device so that the two large holes are not covered
-  * This allows more light to enter and will ensure better accuracy
-* The onboard RGB LED will trigger the light sensor
-  * Be cognizant of this when making automations based on light/LUX
+* When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy
+
+!!! warning "The RGB LED will trigger the Light sensor!"
+
+    Make sure that your automations do not interfere with each other. This includes being aware that your onboard LED can trigger the lux reading but not the uv reading of the LTR390 in your device.
 
 ##### **Mounting**
 
@@ -29,9 +36,10 @@
 
 ![Radar gates Colored.png](../assets/radar-gates-colored.png)
 
-* FOV angle -60 to 60
-* Gate images above are using a Radar Distance Resolution of 0.75m
-* ##### **Gates are pre-defined by the radar module and are in meters (m)**
-* ##### **Zones are user-configurable and are in centimeters (cm) ![Gate, Zones and RR.png](../assets/gate-zones-and-rr.png)**
+!!! tip "These are some useful hints!"
 
-  &nbsp;
+    * The FOV angle is -60 to 60 degrees - 120 degrees total.
+    * Gates are pre-defined by the radar module and are in 0.75 meter increments.
+    * Zones are user-configurable and are in cm.
+
+##### **![Gate, Zones and RR.png](../assets/gate-zones-and-rr.png)**
