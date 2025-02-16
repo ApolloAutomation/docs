@@ -317,7 +317,9 @@ nav:
             - Food Probe: products/temp1b/addons/food-probe.md
           - Reviews: products/temp1b/reviews.md
           - Examples: 
+            - Alert Outside Range: products/temp1b/examples/temp1b-alert-example.md
             - Use Cases: products/temp1b/examples/use-cases.md
+            - Automations: products/temp1b/examples/temp1b-automation-examples.md
           - Troubleshooting:
             - TEMP-1B Boot Mode: products/temp1b/troubleshooting/temp1b-boot-mode.md
             - Factory Re-Flash TEMP-1B: products/temp1b/troubleshooting/temp1b-code.md
