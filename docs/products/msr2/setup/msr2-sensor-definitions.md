@@ -90,7 +90,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **g0-g8 Move & Still Threshold**
 
-    * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)
+    * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/)
 
     **ld2410 Bluetooth**
 
@@ -322,4 +322,4 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){        .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){         .md-button }
