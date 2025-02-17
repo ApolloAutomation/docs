@@ -4,7 +4,7 @@
 
 ![20240514_123742.jpg](../assets/20240514-123742.jpg)
 
-When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy
+When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy.
 
 !!! warning "The RGB LED will trigger the Light sensor!"
 
