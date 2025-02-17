@@ -14,11 +14,11 @@ When mounting the MSR-2 be sure to position the device so that the two large hol
 
 The MSR-2 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120degree FOV of the mmWave radar.
 
-![LD2410 Gates.png](../assets/ld2410-gates.png)
+![ld2410_mounting_hor-1.jpeg](../assets/ld2410-mounting-hor-1.jpeg)
 
 The MSR-2 can also be mounted on the ceiling if you can provide power and mount our articulating stand on the ceiling.
 
-![ld2410_mounting_hor-1.jpeg](../assets/ld2410-mounting-hor-1.jpeg)
+![LD2410 Gates.png](../assets/ld2410-gates.png)
 
 !!! tip "These are some useful hints!"
 
