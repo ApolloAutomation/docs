@@ -4,7 +4,7 @@
 
 !!! info "Welcome to Apollo Automation Docs!"
 
-    **We recently switched to this new wiki and are actively working to fix any issues. This will be a location for troubleshooting and how-to guides. If you spot any errors, please help us improve by** [**opening an issue on our GitHub**](https://github.com/ApolloAutomation/docs/issues)**, messaging us on** [**Discord**](https://dsc.gg/apolloautomation "Click to join our Discord server!")**, or emailing us at** [**support@apolloautomation.com**]()**. Thank you for your patience and support!**
+    **This will be a great location for troubleshooting and how-to guides. If you spot any errors, please help us improve by** [**opening an issue on our GitHub**](https://github.com/ApolloAutomation/docs/issues)**, messaging us on** [**Discord**](https://dsc.gg/apolloautomation "Click to join our Discord server!")**, or emailing us at** [**support@apolloautomation.com**]()**. Thank you for your patience and support!**
 
 ### Frequent Links
 
