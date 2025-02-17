@@ -46,14 +46,11 @@ Once added to Home Assistant you can configure different settings for your senso
 * **SEN55 Temperature**
   * Measurement of temperature from the SEN55, will be most accurate
 * **SEN55 VOC**
-  * VOC index from the SEN55
-* **VOC Quality**
-  * This uses the VOC index and a scale to output an easier to use variable
-    * 0-79: Improved
-    * 80-119: Normal
-    * 120-199: Abnormal
-    * 200-299: Very abnormal
-    * 300+: Extremely abnormal
+  * <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index from the SEN55</a>.
+* **VOC Quality** -This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/Info_Note_Integration_VOC_NOx_Sensor.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index and a scale to output an easier to use variable </a>
+
+  0-79: **Improved** -&gt; 80-149: **Normal** -&gt; 150-249: **Abnormal** -&gt; 250-399: **Very abnormal** -&gt; 400+: **Extremely abnormal**
+
 * **PM 0.3 To 1 µm**
   * Disabled by default but can be enabled in HA. Shows particulate count that are from 0.3 to 1.0 µm
 * **PM 1 To 2.5 µm**
@@ -68,11 +65,11 @@ Once added to Home Assistant you can configure different settings for your senso
 * **ESP Reboot**
   * Performs a restart of the sensor
 * **SEN55 Temperature Offset**
-  * Allows you to calibrate the SEN55 temperature. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets")
+  * Allows you to calibrate the SEN55 temperature. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
 * **SEN55 Humidity Offset**
-  * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets")
+  * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
 * Startup Light Blink
-  * Controls if the led blinks after power on when trying to connect to HA
+  * Controls if the led blinks after power on when trying to connect to Home Assistant.
 
 ![AIR-1 Sensor Data.jpg](../assets/air-1-sensor-data.jpg)
 
@@ -82,7 +79,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
 • Calibrate SCD40 to 420ppm: A control option to calibrate the SCD40 CO₂ sensor to a specific concentration, typically outdoor levels.
 
-• Clean SEN55: This control allows you to clean the SEN55 sensor, likely clearing any temporary issues or recalibrating.
+• Clean SEN55: This control allows you to clean the SEN55 sensor, likely clearing any temporary issues or re-calibrating.
 
 • RGB Light: Control to toggle the RGB LED light on or off, which can be used for visual notifications.
 
