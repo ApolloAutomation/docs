@@ -16,13 +16,13 @@
 
 ![](assets/temp-1b-prevent-sleep-pic-2.png)
 
-4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 12 hours.
+4\. Type in the amount of hours you want your sensor to sleep in the "Sleep Duration" box. Defaults to 12 hours.
 
 !!! warning "Read this before turning off Prevent Sleep!"
 
     When "Prevent Sleep" is toggled off, your sensor will immediately begin sleeping. Please make sure you are ready to make this sensor sleep before toggling off prevent sleep.
 
-5\. When you are ready, toggle off "Prevent Sleep" and your sensor will go to sleep. It will wake up every 8 minutes, or on the interval you set in step 4. If you need to keep your sensor awake, head to our <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noreferrer nofollow noopener">OTA Awake helper tutorial</a>!
+5\. When you are ready, toggle off "Prevent Sleep" and your sensor will go to sleep. It will wake up every 12 hours, or on the interval you set in step 4. If you need to keep your sensor awake, head to our <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noreferrer nofollow noopener">OTA Awake helper tutorial</a>!
 
 6\. You can wake your sensor by <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/wake-up-battery-sensor/" target="_blank" rel="noreferrer nofollow noopener">following this guide</a> or you can power cycle your device. If there is a battery in it, the battery will need to be removed or the reset button pressed.
 
