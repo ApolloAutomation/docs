@@ -1,4 +1,4 @@
-# Adding CO2 to AIR-1
+# Adding CO<sub>2</sub> to AIR-1
 
 !!! tip "Tip"
 
@@ -20,11 +20,11 @@
 
 ![](../../../assets/air-1-add-co2-pic-6.jpg)![](../../../assets/air-1-add-co2-pic-7.jpg)
 
-5\. Flip the PCB over and identify the bottom right corner where the small black mezzanine connector lives. You will see an "X" indicating which corner needs to be lined up with the SCD40 CO2 sensor. There is an X on the SCD40 sensor's PCB as well, you can see it in the image below but it is slightly cut off on the PCB itself. There is also a "gold dot" in the top left of the SCD40 when oriented properly.
+5\. Flip the PCB over and identify the bottom right corner where the small black mezzanine connector lives. You will see an "X" indicating which corner needs to be lined up with the SCD40 CO<sub>2</sub> sensor. There is an X on the SCD40 sensor's PCB as well, you can see it in the image below but it is slightly cut off on the PCB itself. There is also a "gold dot" in the top left of the SCD40 when oriented properly.
 
 ![](../../../assets/air-1-add-co2-pic-8.jpg)
 
-6\. Gently push the SCD40 CO2 module onto the black mezzanine connector.
+6\. Gently push the SCD40 CO<sub>2</sub> module onto the black mezzanine connector.
 
 ![](../../../assets/air-1-add-co2-pic-9-1.jpg)
 
@@ -36,4 +36,4 @@
 
 ![](../../../assets/air-1-add-co2-pic-12.jpg)![](../../../assets/air-1-add-co2-pic-13.jpg)![](../../../assets/air-1-add-co2-pic-14.jpg)
 
-9\. Please refer to our [CO2 calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO2 module after installation. This is required for all CO2 addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).
+9\. Please refer to our [CO<sub>2</sub> calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).
