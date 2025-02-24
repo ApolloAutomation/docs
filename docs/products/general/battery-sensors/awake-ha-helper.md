@@ -26,7 +26,7 @@
 
 ![](../../../assets/toggle-ota-mode-on.png)
 
-7\. Now when you reboot your device or when it wakes up on its wake timer, it will no longer go back to sleep.
+7\. Now when you reboot your Apollo device or when it wakes up on its wake timer, it will no longer go back to sleep.
 
 !!! null "Warning: This will keep ALL of your apollo devices from sleeping."
 
