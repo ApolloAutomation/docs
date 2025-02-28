@@ -32,7 +32,7 @@
 
 8\. **Can I customize the TEMP-1B’s functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1B. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP-1B. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 9\. **What are the RGB LED and piezo buzzer used for?**
 
