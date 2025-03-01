@@ -32,7 +32,7 @@ How to tune the mmWave sensor using radar engineering mode.
 
 ![Radar Gates Colored](assets/radar-gates-colored.png "Radar Gates Colored")
 
-6 Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
+6\. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 
 ![](assets/mmwave-tuning-pic-3.png)
 
