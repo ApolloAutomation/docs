@@ -7,15 +7,7 @@ The DEV-1 is a great starter device for tinkerers and can be purchased on its ow
 The DEV-1 does NOT come pre-flashed with ESPHome or WLED and requires you to flash it yourself, however there is a getting started video we've made here:
 
 <div class="cms-embed">
-  <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/oiKnTH1gg0Q?si=nNFDbHxZBuWIXHyH" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/oiKnTH1gg0Q?si=nNFDbHxZBuWIXHyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
   </iframe>
 </div>
 
@@ -23,7 +15,21 @@ Please <a href="https://esphome.io/components/api.html#configuration-variables" 
 
 ![](assets/apollo-dev-1-image-2.png)
 
-**Example ESPHome yaml**:
+**GPIO Pins Listed:**
+
+```yaml
+#These are the i2c pins
+i2c:
+  sda: GPIO1
+  scl: GPIO0
+```
+
+```yaml
+#This is the onboard LED pin
+GPIO3
+```
+
+**Example ESPHome yaml:**
 
 ```yaml
 #Define Project
@@ -75,6 +81,7 @@ captive_portal:
 web_server:
   port: 80
 
+#onboard LED using pin GPIO3 as shown below
 light:
   - platform: esp32_rmt_led_strip
     id: rgb_onboard_light
