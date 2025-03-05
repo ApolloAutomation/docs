@@ -33,7 +33,7 @@ packages:
 
 ![](../../../assets/bluetooth-proxy-tutorial-9.png)
 
-7\. Click save then Install in the top right.
+7\. Click save then Install in the top right. 
 
 ![](../../../assets/bluetooth-proxy-tutorial-11.png)
 
