@@ -1,4 +1,4 @@
-![](../../assets/air-1-usa-esp.png)
+![](assets/air-1-wwha.png)
 
 The Apollo AIR-1 is a compact, feature-rich air quality sensor designed for Home Assistant users. It operates locally over WiFi using ESPHome, without the need for a cloud or subscription. Powered by USB-C, the AIR-1 offers open-source software and CAD drawings for customization.
 
