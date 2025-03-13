@@ -9,7 +9,8 @@ extra_css:
   - stylesheets/osano.css
   - stylesheets/pmm.css
 site_name: Apollo Docs
-site_url: https://apolloautomation.github.io/
+#site_url: https://apolloautomation.github.io/
+site_url: https://wiki.apolloautomation.com
 repo_url: https://github.com/ApolloAutomation/docs
 edit_uri: https://github.com/ApolloAutomation/docs/edit/main/docs
 site_author: Apollo Automation LLC
