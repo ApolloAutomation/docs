@@ -116,3 +116,129 @@ actions:
         The temperature probe on your TEMP-1 reached its max temperature and your food is ready.
 mode: single
 ```
+
+###### Cook Chicken Example
+
+This will guide you through adding button to your dashboard called "Chicken Monitor" and an automation that runs when the button is pressed! This will turn the RGB LED Green when running, message your phone when it starts and when it finishes, then turn the RGB LED off. Thanks to Discord user RalphP for this!
+
+1\. Create a new toggle helper called "Chicken Monitor". Please <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noreferrer nofollow noopener">click here</a> for step by step directions on creating a toggle helper.
+
+![](assets/temp-1-cook-chicken-example-pic-1.png)
+
+2\. Edit your dashboard, add a button card, select Chicken Monitor, and then save.
+
+![](assets/temp-1-cook-chicken-example-pic-3.png)![](assets/temp-1-cook-chicken-example-pic-2.png)
+
+3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
+
+4\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "On". Advanced users skip to step 25 for the YAML.
+
+![](assets/temp-1-cook-chicken-example-pic-4.png)
+
+5\. Create a Trigger ID for this called "Chicken Monitor On".
+
+![](assets/temp-1-cook-chicken-example-pic-5.png)![](assets/temp-1-cook-chicken-example-pic-6-1.png)
+
+6\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "Off". Create a Trigger ID for this called "Chicken Monitor Off".
+
+![](assets/temp-1-cook-chicken-example-pic-21.png)
+
+7\. Click Add Trigger then Entity then Numeric state and search for your temp-1 food probe entity such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 160°F(71.1C) because the Chicken will rest and reach 165°F once removed from the oven/grill.
+
+![](assets/temp-1-cook-chicken-example-pic-7.png)
+
+8\. Create a Trigger ID for this called "Temp Reached".
+
+![](assets/temp-1-cook-chicken-example-pic-8.png)
+
+9\. Click Add Action and search "choose" then select it.
+
+![](assets/temp-1-cook-chicken-example-pic-12.png)
+
+10\. Under option 1 select "Add Condition" then search "trigger id" and select Triggered by.
+
+![](assets/temp-1-cook-chicken-example-pic-13.png)
+
+11\. Check off the option "Button Pressed" that we created in step 5 above.
+
+![](assets/temp-1-cook-chicken-example-pic-14.png)
+
+12\. While still under Option 1 in the choose action: Click Add Action and search "light" then select Light: Turn on.
+
+![](assets/temp-1-cook-chicken-example-pic-9.png)
+
+13\. Click choose entity then search for your device such as "Temp-1 RGB Light".
+
+![](assets/temp-1-cook-chicken-example-pic-10.png)
+
+14\. Click "Advanced Options" and then click the check box for Color name then select a color from the dropdown such as Green.
+
+![](assets/temp-1-cook-chicken-example-pic-11.png)
+
+15\. While still under Option 1 in the choose action: Click Add Action and search "mobile" and then select your phone in the list.
+
+![](assets/temp-1-cook-chicken-example-pic-15.png)
+
+16\. Write in a custom title and or message- the message is required but the title is not.
+
+![](assets/temp-1-cook-chicken-example-pic-16.png)
+
+17\. This is how option 1 will look when you are done with this part:
+
+![](assets/temp-1-cook-chicken-example-pic-17-1.png)
+
+18\. Click "Add Option" at the bottom then under option 2 select "Add Condition" then search "trigger id" and select Triggered by.
+
+![](assets/temp-1-cook-chicken-example-pic-13.png)
+
+19\. Check off the option "Temp Reached" that we created in step 7 above.
+
+![](assets/temp-1-cook-chicken-example-pic-18-1.png)
+
+20\. While still under Option 2 in the choose action: Click Add Action and search "repeat" then select "Until" in the dropdown.
+
+![](assets/temp-1-cook-chicken-example-pic-22.png)
+
+21\. Under Until Conditions, select "Add condition" then search "state".
+
+![](assets/temp-1-cook-chicken-example-pic-25.png)
+
+22\. Type in Chicken Monitor and select it, then click "Off" in the dropdown for the state of the sensor.
+
+![](assets/temp-1-cook-chicken-example-pic-26.png)
+
+23\. Click "Add Action" under the "until" condition we created above. Be very careful to select the correct "Add Action" button as shown below.
+
+![](assets/temp-1-cook-chicken-example-pic-27.png)
+
+24\. Search "light toggle" in the search bar shown then select "Choose entity" and select your the rgb led for your device
+
+![](assets/temp-1-cook-chicken-example-pic-28.png)
+
+25\. Head down to Add Action under Option 2 and search "mobile" then select your phone as you did above in step 15. Give it a message and a title as shown below.
+
+![](assets/temp-1-cook-chicken-example-pic-29.png)
+
+26\. Optionally add another action here for speaking out loud on your smart speakers such as Homepods. Click add Action then search "TTS". This requires you to have piper and a few other things already setup.
+
+![](assets/temp-1-cook-chicken-example-pic-30.png)![](assets/temp-1-cook-chicken-example-pic-31.png)
+
+27\. Click "Add Option" (this is now Option 3). We will choose add condition then search "triggered by" and then choose the "Chicken Monitor Off" Trigger ID that we created in step 6.
+
+28\. While still under Option 3 in the choose action: Click Add Action and search "light" then select Light: Turn off.
+
+![](assets/temp-1-cook-chicken-example-pic-19.png)
+
+29\. Click choose entity then search for your device such as "Temp-1 RGB Light".
+
+![](assets/temp-1-cook-chicken-example-pic-20.png)
+
+30\. Choose "Add Action" and search mobile like we did above and select your mobile phone. Give it an optional title and message as shown below.
+
+![](assets/temp-1-cook-chicken-example-pic-33.png)
+
+31\. Click save in the bottom right then give it a name and save
+
+![](assets/temp-1-cook-chicken-example-pic-34.png)
+
+32\. You now have one automation which unifies the button you created in the dashboard and alerts you when your chicken is almost done via a phone notification, a blinking green led, and an optional TTS notification to your smart speakers! Thanks again to discord user RalphP for this example!
