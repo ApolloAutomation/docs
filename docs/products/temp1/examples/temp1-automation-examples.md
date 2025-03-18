@@ -237,4 +237,8 @@ This will guide you through adding button to your dashboard called "Chicken Moni
 
 ![](assets/temp-1-cook-chicken-example-pic-33.png)
 
-31\. You now have one automation which unifies the button you created in the dashboard and alerts you when your chicken is almost done via a phone notification, a blinking green led, and an optional TTS notification to your smart speakers! Thanks again to discord user RalphP for this example!
+31\. Click save in the bottom right then give it a name and save
+
+![](assets/temp-1-cook-chicken-example-pic-34.png)
+
+32\. You now have one automation which unifies the button you created in the dashboard and alerts you when your chicken is almost done via a phone notification, a blinking green led, and an optional TTS notification to your smart speakers! Thanks again to discord user RalphP for this example!
