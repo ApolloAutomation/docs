@@ -119,7 +119,7 @@ mode: single
 
 ###### Cook Chicken Example
 
-This will guide you through adding button to your dashboard called "Chicken Monitor" and an automation that runs when the button is pressed! This will turn the RGB LED Green when running, message your phone when it starts and when it finishes, then turn the RGB LED off. Thanks to Discord user RalphP for this!
+This will guide you through adding a button to your dashboard called "Chicken Monitor" and an automation that runs when the button is pressed! This will turn the RGB LED Green when running, message your phone when it starts and when it finishes, plus when the temperature is reached, then turn the RGB LED off. Thanks to Discord user RalphP for this!
 
 1\. Create a new toggle helper called "Chicken Monitor". Please <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noreferrer nofollow noopener">click here</a> for step by step directions on creating a toggle helper.
 
