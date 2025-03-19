@@ -4,10 +4,6 @@
 
 ![20240501_155316.jpg](../assets/20240501-155316.jpg)![20240501_155130.jpg](../assets/20240501-155130.jpg)![20240501_155248.jpg](../assets/20240501-155248.jpg)
 
-&nbsp;
-
-&nbsp;
-
 ##### **Light Sensor (LTR-390UV)**
 
 ![Screenshot 2024-04-30 at 5.42.54 PM.png](../assets/screenshot-2024-04-30-at-5-42-54-pm.png)
@@ -36,16 +32,10 @@ The detection is 60 degrees from center on each side. So it is a cone when you a
 
 If you are experiencing higher than normal ESP temperatures ~140+ degrees F then changing the wifi power save mode option might help decrease the temperature. Here is the link to the ESPHome WiFi Component [Power Save Mode](https://esphome.io/components/wifi.html#power-save-mode).
 
-**Power Save Mode** The WiFi interface of all ESPs offer three power save modes to reduce the amount of power spent on WiFi. While some options can reduce the power usage of the ESP, they generally also decrease the reliability of the WiFi connection, with frequent disconnections from the router in the highest power saving mode.
+**Power Save Mode** The Wi-Fi interface of all ESP32 devices offer three power save modes to reduce the amount of power spent on Wi-Fi. While some options can reduce the power usage of the ESP, they generally also decrease the reliability of the Wi-Fi connection, with frequent disconnections from the router in the highest power saving mode. Switch to "none" to get the best Wi-Fi performance!
 
-NONE (least power saving, Default for ESP8266)<br> LIGHT (Default for ESP32)<br> HIGH (most power saving)
-
-```
+```yaml
 wifi:
   # ...
   power_save_mode: none
 ```
-
-The code above can be added to the devices .yaml through the ESPHome addon edit button.
-
-(Thank you for the suggestion, Brian!)<br> (Referenced from ESPHome website)
