@@ -30,9 +30,11 @@ The detection is 60 degrees from center on each side. So it is a cone when you a
 
 ##### **Increased ESP Temperature**
 
-If you are experiencing higher than normal ESP temperatures ~140+ degrees F then changing the wifi power save mode option might help decrease the temperature. Here is the link to the ESPHome WiFi Component [Power Save Mode](https://esphome.io/components/wifi.html#power-save-mode).
+If you are experiencing higher than normal ESP temperatures ~140+ degrees F then <a href="https://wiki.apolloautomation.com/products/general/setup/adjusting-wifi-power/" target="_blank" rel="noreferrer nofollow noopener">changing the wifi power save mode</a> option might help decrease the temperature. Here is the link to the ESPHome WiFi Component [Power Save Mode](https://esphome.io/components/wifi.html#power-save-mode).
 
-**Power Save Mode** The Wi-Fi interface of all ESP32 devices offer three power save modes to reduce the amount of power spent on Wi-Fi. While some options can reduce the power usage of the ESP, they generally also decrease the reliability of the Wi-Fi connection, with frequent disconnections from the router in the highest power saving mode. Switch to "none" to get the best Wi-Fi performance!
+##### **Improve Wi-Fi Connection**
+
+The Wi-Fi interface of all ESP32 devices offer three power save modes to reduce the amount of power spent on Wi-Fi. While some options can reduce the power usage of the ESP, they generally also decrease the reliability of the Wi-Fi connection, with frequent disconnections from the router in the highest power saving mode. Switch to "none" to get the best Wi-Fi performance!
 
 ```yaml
 wifi:
