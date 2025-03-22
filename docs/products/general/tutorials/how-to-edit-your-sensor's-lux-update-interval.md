@@ -24,4 +24,10 @@ sensor:
 
 ![image.png](../assets/QBoimage.png)
 
-4\. Click "SAVE" and then click "INSTALL" as shown in the image above. Once that is finished your sensor should now be reporting at your new update\_interval such as 5 seconds!
+4\. In the top right of the same screen click "SAVE" and then "INSTALL".
+
+5\. Once you see "INFO OTA successful" you are done. Click "STOP" to exit.
+
+![](assets/update-frequency-pic-3.png)
+
+6\. Once that is finished your sensor should now be reporting at your new update\_interval such as 5 seconds!
