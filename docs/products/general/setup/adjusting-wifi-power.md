@@ -1,8 +1,12 @@
 # Adjusting Wifi Power Save
 
-The ESP chips produce a significant amount of energy (heat) constantly using Wi-Fi. This guide explains how to [adjust the wifi power save mode to high](https://esphome.io/components/wifi.html#power-save-mode) to combat this.
+The ESP chips produce a significant amount of energy (heat) constantly using Wi-Fi. This guide explains how to <a href="https://esphome.io/components/wifi.html#power-save-mode" target="_blank" rel="noreferrer nofollow noopener">adjust the wifi power save mode to high</a> to combat this.
 
-1\. Open the Esphome Device Builder.
+!!! warning "This will negatively effect your Wi-Fi performance!"
+
+    While some options *can* reduce the power usage of the ESP, they generally also decrease the reliability of the WiFi connection, with frequent disconnections from the router in the highest power saving mode.
+
+1\. Open the ESPHome Device Builder.
 
 ![](../../../assets/power-save-tutorial-1.png)
 
@@ -22,12 +26,12 @@ The ESP chips produce a significant amount of energy (heat) constantly using Wi-
 
 ![](../../../assets/power-save-tutorial-3-1.png)
 
-6\. Click save then Install in the top right.
+6\. In the top right of the same screen click "SAVE" and then "INSTALL".
 
-![](../../../assets/power-save-tutorial-4-1.png)
+![](assets/renaming-devices-pic-7-1.png)
 
-7\. When you see this "OTA Successful" it has finished and you can click "Close" in the bottom right.
+7\. Once you see "INFO OTA successful" you are done. Click "STOP" to exit.
 
-![](../../../assets/power-save-tutorial-5.png)
+![](../tutorials/assets/update-frequency-pic-3.png)
 
-8\. You are finished and your Apollo device is now
+8\. You are finished and your Apollo device now has power\_save\_mode set to high!
