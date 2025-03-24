@@ -6,7 +6,7 @@
 
 If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
-1\. Position the MSR-1 as shown in the image below and locate the small opening to press the boot button (the right button).
+1\. Position the MSR-1 as shown in the image below and locate the small opening to <a href="https://wiki.apolloautomation.com/products/msr1/troubleshooting/msr1-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">press the boot button (the left button).</a>
 
 ![](../assets/msr-1-top-shot-boot-button.jpg)
 
