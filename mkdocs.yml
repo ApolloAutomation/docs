@@ -348,7 +348,7 @@ nav:
       - DEV-1:
           - Introduction: products/dev1/introduction.md
       - Contact Us / Support: products/general/contact-us/contact-us-support.md
-
+#### ***START OF HOMEY SECTION***
   - Homey:
       - General:
           - Home: homey.md
@@ -390,3 +390,156 @@ nav:
             - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
           - Source Code and 3D Files: homey/products/general/links.md
           - Sensor Comparisons: homey/products/general/comparisons.md
+      - MSR-2:
+          - Introduction: homey/products/msr2/introduction.md
+          - FAQ: homey/products/msr2/faq.md
+          - Getting Started: homey/products/general/setup/getting-started-msr2.md
+          - Additional Info:
+            - General Tips: homey/products/msr2/setup/msr2-general-tips.md
+            - Sensor Definitons: homey/products/msr2/setup/msr2-sensor-definitions.md
+            - Radar Tuning:
+              - Home Assistant: homey/products/msr2/calibrating-and-updating/zones-ha.md
+              - HLK Radar Tool App: homey/products/msr2/calibrating-and-updating/zones-hlk.md
+              - mmWave Tuning Videos: homey/products/general/calibrating-and-updating/mmwave-videos.md
+          - Addons:
+            - CO<sub>2</sub> Addon: homey/products/msr2/addons/adding-co2-to-msr-2.md
+            - Female Rear USB-C: homey/products/msr2/addons/adding-rear-female-usb-to-msr-2.md
+            - GPIO Addon: homey/products/msr2/addons/adding-gpio-header-to-msr-2.md
+          - Reviews: homey/products/msr2/msr2-reviews.md
+          - Examples:
+            - MSR-2 Dashboards: homey/products/msr2/examples/msr2-dashboards.md
+            - MSR-2 Alarmo: homey/products/msr2/examples/msr2-alarmo.md
+            - GPIO Header LED Strip: homey/products/msr2/examples/gpio-header-control-an-led-strip.md
+          - Troubleshooting:
+            - MSR-2 Boot Mode: homey/products/msr2/troubleshooting/msr2-boot-mode.md
+            - Factory Re-Flash MSR-2: homey/products/msr2/troubleshooting/msr2-code.md
+            - Teardown and Reassembly Of MSR-2: homey/products/msr2/troubleshooting/msr2-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/msr2/troubleshooting/msr2-reset-wi-fi-credentials.md
+      - MTR-1:
+          - Introduction: homey/products/mtr1/introduction.md
+          - FAQ: homey/products/mtr1/faq.md
+          - Getting Started: homey/products/general/setup/getting-started-mtr1.md
+          - Additional Info:
+            - General Tips: homey/products/mtr1/setup/general-tips.md
+            - Sensor Definitons: homey/products/mtr1/setup/sensor-definitions.md
+            - Zone Configuration:
+              - Home Assistant: homey/products/mtr1/setup/zones-ha.md
+              - HLK Radar Tool App: homey/products/mtr1/setup/zones-hlk.md
+          - Addons: homey/products/mtr1/addons/adding-co2-to-mtr-1.md
+          - Reviews: homey/products/mtr1/mtr1-reviews.md
+          - Examples:
+            - MTR-1 Corner Mount: homey/products/mtr1/examples/crookedtoe-mtr1.md
+            - MTR-1 Alarmo: homey/products/mtr1/examples/mtr1-alarmo.md
+          - Troubleshooting:
+            - MTR-1 Boot Mode: homey/products/mtr1/troubleshooting/mtr1-boot-mode.md
+            - Factory Re-Flash MTR-1: homey/products/mtr1/troubleshooting/mtr1-code.md
+            - Teardown and Reassembly Of MTR-1: homey/products/mtr1/troubleshooting/mtr1-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
+      - AIR-1:
+          - Introduction: homey/products/air1/introduction.md
+          - FAQ: homey/products/air1/faq.md
+          - Getting Started: homey/products/general/setup/getting-started-air1.md
+          - Additional Info:
+            - General Tips: homey/products/air1/setup/general-tips.md
+            - Sensor Definitons: homey/products/air1/setup/sensor-definitions.md
+            - Prevent Sleep: homey/products/air1/setup/prevent-sleep.md
+          - Addons:
+            - CO<sub>2</sub> Addon: homey/products/air1/addons/adding-co2-to-air-1.md
+            - MiCS Addon: homey/products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
+            - GPIO Addon: homey/products/air1/addons/adding-gpio-header-to-air-1.md
+          - Reviews: homey/products/air1/air1-reviews.md
+          - Examples:
+            - Air Quality Dashboard: homey/products/air1/examples/air1-dashboard-examples.md
+            - Firstof9's Apex Charts: homey/products/air1/examples/firstof9's-apex-charts.md
+            - GPIO Header LED Strip: homey/products/air1/examples/how-to-use-the-apollo-gpio-header-to-control-an-led-strip.md
+          - Troubleshooting:
+            - AIR-1 Boot Mode: homey/products/air1/troubleshooting/air1-boot-mode.md
+            - Factory Re-Flash AIR-1: homey/products/air1/troubleshooting/air1-code.md
+            - Teardown and Reassembly Of AIR-1: homey/products/air1/troubleshooting/air1-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
+      - PLT-1:
+          - Introduction: homey/products/plt1/introduction.md
+          - FAQ: homey/products/plt1/faq.md
+          - Getting Started: homey/products/general/setup/getting-started-plt1.md
+          - Additional Info:
+            - General Tips: homey/products/plt1/general-tips.md
+            - Sensor Definitons: homey/products/plt1/setup/plt1-sensor-definitions.md
+            - Calibrating Soil Moisture: homey/products/plt1/calibrating-plt1.md
+            - Prevent Sleep: homey/products/plt1/setup/prevent-sleep.md
+          - Reviews: homey/products/plt1/reviews.md
+          - Examples: 
+            - Flower Card: homey/products/plt1/examples/flower-card.md
+          - Troubleshooting:
+            - PLT-1 Boot Mode: homey/products/plt1/troubleshooting/plt1-boot-mode.md
+            - Factory Re-Flash PLT-1: homey/products/plt1/troubleshooting/plt1-code.md
+            - Teardown and Reassembly Of PLT-1: homey/products/plt1/troubleshooting/plt1-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/plt1/troubleshooting/plt1-reset-wi-fi-credentials.md
+      - PLT-1B:
+          - Introduction: homey/products/plt1b/introduction.md
+          - FAQ: homey/products/plt1b/faq.md
+          - Getting Started: homey/products/general/setup/getting-started-plt1.md
+          - Additional Info:
+            - General Tips: homey/products/plt1b/general-tips.md
+            - Sensor Definitons: homey/products/plt1b/setup/plt1b-sensor-definitions.md
+            - Calibrating Soil Moisture: homey/products/plt1/calibrating-plt1.md
+            - Prevent Sleep: homey/products/plt1b/setup/prevent-sleep.md
+            - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
+            - Keep Your Sensor Awake With HA Helper: homey/products/general/battery-sensors/awake-ha-helper.md
+            - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
+          - Reviews: homey/products/plt1/reviews.md
+          - Examples: 
+            - Flower Card: homey/products/plt1/examples/flower-card.md
+          - Troubleshooting:
+            - PLT-1 Boot Mode: homey/products/plt1b/troubleshooting/plt1b-boot-mode.md
+            - Factory Re-Flash PLT-1: homey/products/plt1b/troubleshooting/plt1b-code.md
+            - Teardown and Reassembly Of PLT-1: homey/products/plt1b/troubleshooting/plt1b-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/plt1b/troubleshooting/plt1b-reset-wi-fi-credentials.md
+      - TEMP-1:
+          - Introduction: homey/products/temp1/introduction.md
+          - FAQ: homey/products/temp1/faq.md
+          - Getting Started: homey/products/general/setup/getting-started-temp1.md
+          - Additional Info:
+            - Sensor Definitons: homey/products/temp1/setup/temp1-sensor-definitions.md
+            - Prevent Sleep: homey/products/temp1/setup/prevent-sleep.md
+            - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
+            - Keep Your Sensor Awake With HA Helper: homey/products/general/battery-sensors/awake-ha-helper.md
+            - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
+          - Addons:
+            - Magnetic Mount: homey/products/temp1/addons/magnetic-mount.md
+            - Temp Probe: homey/products/temp1/addons/temp-probe.md
+            - Food Probe: homey/products/temp1/addons/food-probe.md
+          - Reviews: homey/products/temp1/reviews.md
+          - Examples: 
+            - Alert Outside Range: homey/products/temp1/examples/temp1-alert-example.md
+            - Use Cases: homey/products/temp1/examples/use-cases.md
+            - Automations: homey/products/temp1/examples/temp1-automation-examples.md
+          - Troubleshooting:
+            - TEMP-1 Boot Mode: homey/products/temp1/troubleshooting/temp1-boot-mode.md
+            - Factory Re-Flash TEMP-1: homey/products/temp1/troubleshooting/temp1-code.md
+            - Teardown and Reassembly Of TEMP-1: homey/products/temp1/troubleshooting/temp1-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/temp1/troubleshooting/temp1-reset-wi-fi-credentials.md
+      - TEMP-1B:
+          - Introduction: homey/products/temp1b/introduction.md
+          - FAQ: homey/products/temp1b/faq.md
+          - Getting Started: homey/products/general/setup/getting-started-temp1.md
+          - Additional Info:
+            - Sensor Definitons: homey/products/temp1b/setup/temp1b-sensor-definitions.md
+            - Prevent Sleep: homey/products/temp1b/setup/prevent-sleep.md
+            - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
+            - Keep Your Sensor Awake With HA Helper: homey/products/general/battery-sensors/awake-ha-helper.md
+            - Insert Battery: homey/products/temp1b/setup/insert-battery.md
+            - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
+          - Addons:
+            - Magnetic Mount: homey/products/temp1b/addons/magnetic-mount.md
+            - Temp Probe: homey/products/temp1b/addons/temp-probe.md
+            - Food Probe: homey/products/temp1b/addons/food-probe.md
+          - Reviews: homey/products/temp1b/reviews.md
+          - Examples: 
+            - Alert Outside Range: homey/products/temp1b/examples/temp1b-alert-example.md
+            - Use Cases: homey/products/temp1b/examples/use-cases.md
+            - Automations: homey/products/temp1b/examples/temp1b-automation-examples.md
+          - Troubleshooting:
+            - TEMP-1B Boot Mode: homey/products/temp1b/troubleshooting/temp1b-boot-mode.md
+            - Factory Re-Flash TEMP-1B: homey/products/temp1b/troubleshooting/temp1b-code.md
+            - Teardown and Reassembly Of TEMP-1B: homey/products/temp1b/troubleshooting/temp1b-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/temp1b/troubleshooting/temp1b-reset-wi-fi-credentials.md
