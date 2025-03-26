@@ -10,13 +10,13 @@
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](assets/plt-1-prevent-sleep-pic-1.png)
+![](assets/plt-1b-prevent-sleep-pic-1.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](assets/plt-1-prevent-sleep-pic-2.png)
+![](assets/plt-1b-prevent-sleep-pic-2.png)
 
-4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 5 minutes.
+4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 12 hours.
 
 !!! warning "Read this before turning off Prevent Sleep!"
 
@@ -28,4 +28,4 @@
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
-    The PLT-1 should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your PLT-1 if there will be high moisture content in the air or if it is expected to rain.
+    The PLT-1B should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your PLT-1B if there will be high moisture content in the air or if it is expected to rain.
