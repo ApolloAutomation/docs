@@ -26,7 +26,7 @@ theme:
   custom_dir: overrides
   features:
     - navigation.tabs
-    - navigation.tabs.sticky
+#    - navigation.tabs.sticky
     - navigation.path
     - navigation.instant
     - navigation.instant.progress
