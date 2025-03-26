@@ -30,8 +30,6 @@
 
 7\. Now the Homey/ESPHome auto-discover issue should be fixed!
 
-8\. If this does not work then you can also try checking IGMP Snooping (checkbox above Multicast DNS) on your IoT networks.
-
 ##### **Method 2: Unifi iOS App.**
 
 1\. Open the UniFi app.
