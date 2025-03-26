@@ -352,9 +352,9 @@ nav:
   - Homey:
       - General:
           - Home: homey.md
-          - Introduction: /homey/products/general/introduction.md
-          - FAQ: /homey/products/general/faq.md
-          - Getting Started: /homey/products/general/setup/getting-started.md
+          - Introduction: homey/products/general/introduction.md
+          - FAQ: homey/products/general/faq.md
+          - Getting Started: homey/products/general/setup/getting-started.md
           - Additional Info:
             - Calibrating:
               - CO<sub>2</sub>: /homey/products/general/calibrating-and-updating/co2-calibration.md
