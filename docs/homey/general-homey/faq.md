@@ -45,14 +45,11 @@
 #### **7\. I am getting the error "Failed to import device" in ESPHome Dashboard when trying to adopt my Apollo device.**
 
 * Make sure you have enough free space in Home Assistant - Protip: check for old backups you can delete!
-
 * If your space is not an issue then please reboot or even try reinstalling the ESPHome Device Builder addon and see if that helps!
 
 ---
 
 #### **8\. My CO2 values are way off from my other Apollo devices.**
-
-#### **Answer 8:**
 
 * If your sensor is exposed to high levels of vibrations or too much airflow, the SCD40 CO2 sensor will have issues working properly. https://sensirion.com/products/catalog/SCD40
 
