@@ -111,7 +111,7 @@ copyright: |
   &copy; 2025 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
 
 nav:
-  - Apollo: 
+  - Home Assistant:
       - General:
           - Home: index.md
           - Introduction: products/general/introduction.md
@@ -345,5 +345,45 @@ nav:
       - DEV-1:
           - Introduction: products/dev1/introduction.md
       - Contact Us / Support: products/general/contact-us/contact-us-support.md
-    
-    
+
+  - Homey:
+      - General:
+          - Home: index.md
+          - Introduction: products/general/introduction.md
+          - FAQ: products/general/faq.md
+          - Getting Started: products/general/setup/getting-started.md
+          - Additional Info:
+            - Calibrating:
+              - CO<sub>2</sub>: products/general/calibrating-and-updating/co2-calibration.md
+              - CO<sub>2</sub> Quick: products/general/calibrating-and-updating/co2-calibration-quick.md
+              - Temperature and Humidity: products/general/temp-hum-calibration.md
+              - Radar Tuning:
+                - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
+                - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
+                - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
+              - Zone Configuration:
+                - Home Assistant: products/mtr1/setup/zones-ha.md
+                - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
+            - Updating: products/general/calibrating-and-updating/updating-firmware.md
+            - Renaming Devices: products/general/setup/renaming-apollo-devices.md
+            - Change Update Frequency: products/general/setup/change-the-update-frequency-of-sensors.md
+            - Change Lux Update Interval: products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval.md
+            - Adding SCD40 Temp/Hum: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
+            - Adjusting WiFi Power: products/general/setup/adjusting-wifi-power.md
+            - Hidden WiFi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
+            - Bluetooth Proxy: products/general/setup/bluetooth-proxy.md
+            - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
+            - Piezo Buzzer: products/general/piezo.md
+            - Switch to Beta: products/general/setup/switch-to-beta-branch.md
+          - Troubleshooting:
+            - Uploading Code Through ESPHome: products/general/troubleshooting/manually-uploading-code-through-esphome.md
+            - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
+            - Connection Issues: products/general/troubleshooting/connection-issues.md
+            - Unifi Auto Discover Device mDNS Issue: products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
+            - OPNsense Auto Discover Device mDNS Issue: products/general/troubleshooting/opnsense-mdns-auto-discover-issue.md
+          - Battery Sensors:
+            - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
+            - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
+            - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
+          - Source Code and 3D Files: products/general/links.md
+          - Sensor Comparisons: products/general/comparisons.md
