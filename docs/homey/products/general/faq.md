@@ -1,4 +1,4 @@
-# F.A.Q. ~ Frequenty Asked Questions
+# F.A.Q. ~ Frequently Asked Questions
 
 #### 1\. How much power do your sensors use?
 
@@ -14,7 +14,7 @@
 
 #### 3\. My MSR-2 is triggering and no one is there.
 
-* We have seen this happen before - please first try to restart your radar, then factory reset your radar, then try a factory firmware flash. We also see success with users re-seating their LD2410B mmWave sensor.
+* We have seen this happen before - please first try to restart your radar, then factory reset your radar, then try a factory firmware flash. We also see success with users re-seating their LD2410B mmWave sensor. Make sure your gates are tuned!
 
 ---
 
@@ -42,14 +42,7 @@
 
 ---
 
-#### **7\. I am getting the error "Failed to import device" in ESPHome Dashboard when trying to adopt my Apollo device.**
-
-* Make sure you have enough free space in Home Assistant - Protip: check for old backups you can delete!
-* If your space is not an issue then please reboot or even try reinstalling the ESPHome Device Builder addon and see if that helps!
-
----
-
-#### **8\. My CO2 values are way off from my other Apollo devices.**
+#### **7\. My CO2 values are way off from my other Apollo devices.**
 
 * If your sensor is exposed to high levels of vibrations or too much airflow, the SCD40 CO2 sensor will have issues working properly. https://sensirion.com/products/catalog/SCD40
 
