@@ -1,26 +1,21 @@
 # Ubiquiti Unifi mDNS Auto Discover Issue
 
-**If mDNS is unchecked then Home Assistant and ESPHome will not auto discover new devices. Also, if you have different networks that Home Assistant and ESPHome devices are on, then you will need mDNS on both networks and firewall rules between them. (Thank you to the Ubiquiti Discord member Blue!) Below are guides for using your PC and the Unifi Network mobile app to fix this issue.  
-  
-Quick Guide**
+!!! tip "If mDNS is unchecked then Homey and ESPHome will not auto discover new devices"
 
-1. Settings > Network > Multicast Settings > Select the networks you want mDNS/IGMP Snooping on
+    If you have different networks that Homey and ESPHome devices are on, then you will need mDNS working across both networks and firewall rules allowing access between them. Below are guides for using your PC and the Unifi iOS app to fix this issue.
 
-![mDNS Settings.jpeg](../assets/mdns-settings.jpeg)
+##### **Method 1: Browser**
 
-(Thank you to the Ubiquiti Discord member MK!)  
-  
-**Steps for PC**
+1\. Log into your Unifi network through your default IP address which is usually 192.168.1.1
 
-1\. Log into your Unifi network through your default IP address which is usually 192.168.1.1  
 2\. Select Network
 
 ![mdns1.PNG](../assets/mdns1.PNG)
 
 3\. Select Settings
 
-![mdns2.PNG](../assets/mdns2.PNG)  
-  
+![mdns2.PNG](../assets/mdns2.PNG)
+
 4\. Select Networks
 
 ![mdns3.PNG](../assets/mdns3.PNG)
@@ -33,17 +28,17 @@ Quick Guide**
 
 ![mdns5.PNG](../assets/78Kmdns5.PNG)
 
-7\. Now the Home Assistant/ESPHome auto-discover issue should be fixed!  
+7\. Now the Homey/ESPHome auto-discover issue should be fixed!
+
 8\. If this does not work then you can also try checking IGMP Snooping (checkbox above Multicast DNS) on your IoT networks.
 
-  
-**Steps for the Unifi Network Mobile App**
+##### **Method 2: Unifi iOS App.**
 
-1\. Open the Unifi Network app
+1\. Open the UniFi app.
 
 ![mmdns1.PNG](../assets/mmdns1.PNG)
 
-2\. Tap Settings/Gear Icon
+2\. Tap Settings icon in the bottom right.
 
 ![mmdns2.PNG](../assets/mmdns2.PNG)
 
@@ -51,12 +46,12 @@ Quick Guide**
 
 ![mmdns3.PNG](../assets/mmdns3.PNG)
 
-4\. Tap Default Network
+4\. Tap Default Network.
 
 ![mmdns4.PNG](../assets/mmdns4.PNG)
 
-5\. Tap the Multicast DNS slider
+5\. Tap IPv4 then turn on the Multicast DNS slider.
 
 ![mmdns5.PNG](../assets/mmdns5.PNG)
 
-6\. Now the Home Assistant/ESPHome auto-discover issue should be fixed!
+6\. Now the Homey/ESPHome auto-discover issue should be fixed!
