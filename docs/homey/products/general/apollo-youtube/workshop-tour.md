@@ -1,2 +1,0 @@
-# Apollo Automation Workshop Tour
-

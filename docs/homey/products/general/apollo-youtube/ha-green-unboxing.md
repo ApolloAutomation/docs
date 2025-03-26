@@ -1,2 +1,0 @@
-# Home Assistant Green Unboxing
-
