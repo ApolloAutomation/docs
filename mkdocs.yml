@@ -26,6 +26,7 @@ theme:
   custom_dir: overrides
   features:
     - navigation.tabs
+#i think it looks better with sticky off - Brandon
 #    - navigation.tabs.sticky
     - navigation.path
     - navigation.instant
