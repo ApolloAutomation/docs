@@ -1,6 +1,6 @@
 #
 
-<img src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" height="344" width="900" />
+<img height="344" width="900" src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" />
 
 !!! info "Welcome to Apollo Automation Docs!"
 
@@ -8,7 +8,7 @@
 
 ### Frequent Links
 
-* [Getting your sensor connected to Home Assistant](https://wiki.apolloautomation.com/products/general/setup/getting-started/ "Getting Started")
+* [Getting your sensor connected to Homey](https://wiki.apolloautomation.com/products/general/setup/getting-started/ "Getting Started with Homey!")
 * [Tuning your MSR-2 radar](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on the MTR-1](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/ "MTR-1 Zone Setup with HLK app")
 * [Discord (Support, community, updates, live stream)](https://discord.gg/F3RZGPcuzV "Join the discord now!")
@@ -16,7 +16,7 @@
 
 ### What is Apollo Automation?
 
-Apollo Automation is a small startup dedicated to creating high-quality, affordable, and community-driven home automation hardware. What started as a side project among friends in Lexington, KY, quickly grew into a full-fledged business. Named after Trevor’s dog, Apollo, our first sensor was born out of frustration with existing products. Today, we continue to uphold our core values: building our products in-house, maintaining transparency and accessibility, and working closely with our community. You can always reach us directly, and we also host a monthly livestream on our Discord and YouTube channels to stay connected and engaged with our users.
+Apollo Automation is a small startup dedicated to creating high-quality, affordable, and community-driven home automation hardware. What started as a side project among friends in Lexington, KY, quickly grew into a full-fledged business. Named after Trevor’s dog, Apollo, our first sensor was born out of frustration with existing products. Today, we continue to uphold our core values: building our products in-house, maintaining transparency and accessibility, and working closely with our community. You can always reach us directly, and we also host a monthly live-stream on our Discord and <a href="https://www.youtube.com/@ApolloAutomation/streams" target="_blank" rel="noreferrer nofollow noopener">YouTube channels</a> to stay connected and engaged with our users.
 
 ### What do we offer?
 
