@@ -102,11 +102,13 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
-
 #brandon added this 1/10/25
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+#brandon added this 3/26/25
+  - toc:
+      permalink: true
 
 copyright: |
   &copy; 2025 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
