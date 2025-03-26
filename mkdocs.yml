@@ -348,7 +348,7 @@ nav:
 
   - Homey:
       - General:
-          - Home: index.md
+          - Home: homey-index.md
           - Introduction: products/general/introduction.md
           - FAQ: products/general/faq.md
           - Getting Started: products/general/setup/getting-started.md
