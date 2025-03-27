@@ -347,6 +347,8 @@ nav:
           - Reviews: products/apolloodroid/reviews.md
       - DEV-1:
           - Introduction: products/dev1/introduction.md
+      - DEV-2:
+          - Introduction: products/dev2/introduction.md
       - Contact Us / Support: products/general/contact-us/contact-us-support.md
 #### ***START OF HOMEY SECTION***
   - Homey:
