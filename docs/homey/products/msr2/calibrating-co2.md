@@ -1,0 +1,1 @@
+--8<-- "products/general/calibrating-and-updating/co2-calibration-quick.md"

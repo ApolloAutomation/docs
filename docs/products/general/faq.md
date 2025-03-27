@@ -1,4 +1,4 @@
-# F.A.Q. ~ Frequenty Asked Questions
+# F.A.Q. ~ Frequently Asked Questions
 
 #### 1\. How much power do your sensors use?
 
@@ -45,7 +45,6 @@
 #### **7\. I am getting the error "Failed to import device" in ESPHome Dashboard when trying to adopt my Apollo device.**
 
 * Make sure you have enough free space in Home Assistant - Protip: check for old backups you can delete!
-
 * If your space is not an issue then please reboot or even try reinstalling the ESPHome Device Builder addon and see if that helps!
 
 ---
