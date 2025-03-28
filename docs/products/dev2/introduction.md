@@ -4,7 +4,7 @@ The Apollo DEV-2 is a very small dev board that we use to prototype before creat
 
 The DEV-2 is a great starter device for tinkerers and can be purchased on its own or with a breadboard and dupont wires (jumper wires) if you need those too.
 
-The DEV-2 does NOT come pre-flashed with ESPHome or WLED and requires you to flash it yourself, however there is a getting started video we've made here on the older Dev-1 board. The information is still the same except you'll be using a slightly differently yaml as shared below:
+The DEV-2 does NOT come pre-flashed with ESPHome or WLED and requires you to flash it yourself, however there is a getting started video we've made here on the older DEV-1 board. The information is still the same except you'll be using a slightly differently yaml as shared below:
 
 <div class="cms-embed">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/oiKnTH1gg0Q?si=nNFDbHxZBuWIXHyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
@@ -51,9 +51,12 @@ esphome:
 
 # Define Board
 esp32:
-  board: esp32-c3-devkitm-1
+  board: esp32-c6-devkitm-1
+  variant: esp32c6
   framework:
     type: esp-idf
+    version: 5.3.1
+    platform_version: 6.9.0
 
 # Enable logging
 logger:
@@ -73,7 +76,7 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Apollo-Dev-1 Fallback Hotspot"
+    ssid: "Apollo-Dev-2 Fallback Hotspot"
     password: !secret wifi_password
 
 captive_portal:
