@@ -6,7 +6,7 @@
 
     **This will be a great location for troubleshooting and how-to guides. If you spot any errors, please help us improve by** [**opening an issue on our GitHub**](https://github.com/ApolloAutomation/docs/issues)**, messaging us on** [**Discord**](https://dsc.gg/apolloautomation "Click to join our Discord server!")**, or emailing us at** [**support@apolloautomation.com**]()**. Thank you for your patience and support!**
 
-    **This Homey Wiki is actively being updated with new homey articles to replace old Home Assistant placeholder wiki articles!**
+    **This Homey Wiki is actively being updated with new Homey articles to replace old Home Assistant placeholder wiki articles!**
 
 ### Frequent Links
 
