@@ -31,3 +31,18 @@ jobs:
         run: |
           find . -name '*.md' -exec sed -i 's/^  \*/    */' {} \;
       - run: mkdocs gh-deploy --force
+ 
+  notify:
+    name: Notify on Failure
+    needs: [ deploy ]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord notification
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ needs.deploy.result }}
+          title: Build Failed - Docs
+          description: Docs deploy job failed. Check the logs for details.
+          content: "Hey <@1355984268496605356>"
