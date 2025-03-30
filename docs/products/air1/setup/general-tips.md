@@ -96,7 +96,7 @@ The optional CO<sub>2</sub> sensor addon is a great way to add the ability to tr
 
 !!! tip "We suggest triggering alert automations, hvac or a fan turning on, etc when CO<sub>2</sub> is over 1000"
 
-    Opening a window, turning on a fan, the HVAC in the house, etc are all great ways to get CO&lt;sub&gt;2&lt;/sub&gt; to go down!
+    Opening a window, turning on a fan, the HVAC in the house, etc are all great ways to get CO<sub>2</sub> to go down!
 
 ---
 
