@@ -26,7 +26,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                               .md-button .md-button--primary }
+[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                .md-button .md-button--primary }
 
 ### Adding Apollo Automation App in Homey:
 
@@ -42,18 +42,28 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ### Connecting to Homey:
 
-1\. Open the Homey App on your phone and navigate to the Devices tab at the bottom then select the (+) icon in the top right and choose "**New Device**". Choose "Allow" if it pops up asking to find bluetooth devices, or you can change this later in settings.
+1\. Open the Homey App on your phone and navigate to the Devices tab at the bottom then select the (+) icon in the top right and choose "**New Device**". Choose "Allow" if it pops up asking to find Bluetooth devices, or you can change this later in settings.
+
+![](assets/homey-getting-started-pic-2-1.png)
 
 2\. Select Apollo Automation under Brands in the bottom left then choose "Every Apollo Sensor". When prompted, click "Connect".
+
+![](assets/homey-getting-started-pic-3.png)![](assets/homey-getting-started-pic-4.png)
 
 3\. Your Apollo devices will automatically show up and if not, please first connect it to your Wi-Fi following the steps outlined here.
 
 4\. Select the device you want to add, in this case an Apollo MTR-1 and click Continue at the bottom.
 
+![](assets/homey-getting-started-pic-5.png)
+
 5\. Click Continue Setup and choose a Zone to place your device in. If you are new to Homey you can choose Home and move it to another Zone later after you create more zones!
+
+![](assets/homey-getting-started-pic-6.png)
 
 6\. Change any other default settings like the Name, icon, etc or just click Finish in the bottom right.
 
+![](assets/homey-getting-started-pic-7.png)
+
 7\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                 .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                  .md-button .md-button--primary }
