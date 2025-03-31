@@ -1,10 +1,10 @@
 # Getting Started
 
-This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">Discord</a> for some help.
+This will walk you through the process of connecting your new Apollo Automation sensor to Homey. If at any point you get stuck, join our <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">Discord</a> for some help.
 
 ### Connecting Through Hotspot
 
-To connect through the sensor's onboard hotspot follow the below:
+To get your new Apollo sensor connected to your Wi-Fi, follow the steps below!
 
 1\. Plug the sensor into a quality power brick. They require 5v and under an amp so most phone chargers will be fine. ESP devices are sensitive to power fluctuations and users have had some issues with really cheap power bricks. If your device is restarting or unavailable please try a different power brick.
 
@@ -26,100 +26,34 @@ If this does not automatically open the dashboard, please open your web browser 
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                             .md-button .md-button--primary }
+[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                               .md-button .md-button--primary }
 
-### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
+### Adding Apollo Automation App in Homey:
 
-!!! note "Pre-requirement:"
+1\. <a href="https://homey.app/en-us/app/com.apolloautomation/Apollo-Automation/test/" target="_blank" rel="noreferrer nofollow noopener">Navigate to this website</a> and click "Install App". For now this needs to be done from a desktop PC or a browser.
 
-    Bluetooth built in such as a raspberry pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a>. If you have already followed the "Connecting through Hotspot" please skip this section.
+![](assets/homey-install-app.png)
 
-1\. Navigate to settings -&gt; integrations then click the "**ADD**" button below your new Apollo device!
+![](assets/homey-install-app-confirm.png)
 
-![](../../../assets/improv-ble-pic-1.png)
+2\. Select the Homey device you want to install it on and then click "Install App" again!
 
-2\. Click submit when it asks if you want to setup your new device and shows you the hostname of your device.
+3\. Your device will install the Apollo Automation Homey App then move to the next section.
 
-![](assets/temp1b-improv-ble-4.png)
+### Connecting to Homey:
 
-3\. Type in your Wi-Fi name and password in the two fields.
+1\. Open the Homey App on your phone and navigate to the Devices tab at the bottom then select the (+) icon in the top right and choose "**New Device**". Choose "Allow" if it pops up asking to find bluetooth devices, or you can change this later in settings.
 
-![](../../../assets/improv-ble-pic-3.png)
+2\. Select Apollo Automation under Brands in the bottom left then choose "Every Apollo Sensor". When prompted, click "Connect".
 
-4\. Wait for it to finish, you will see the image below while it connects.
+3\. Your Apollo devices will automatically show up and if not, please first connect it to your Wi-Fi following the steps outlined here.
 
-![](../../../assets/improv-ble-pic-4.png)
+4\. Select the device you want to add, in this case an Apollo MTR-1 and click Continue at the bottom.
 
-5\. <a href="https://my.home-assistant.io/redirect/config_flow_start?domain=esphome" target="_blank" rel="noopener">Click the link shown in the image below</a> (do not click close).
+5\. Click Continue Setup and choose a Zone to place your device in. If you are new to Homey you can choose Home and move it to another Zone later after you create more zones!
 
-![](../../../assets/improv-ble-pic-5-1.png)
+6\. Change any other default settings like the Name, icon, etc or just click Finish in the bottom right.
 
-6\. When successful, you will see this image appear!
+7\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
-![](../../../assets/improv-ble-pic-6.png)
-
-### Connecting To ESPHome Device Builder
-
-!!! tip "Skip the ESPHome Device Builder unless..."
-
-    Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!")unless you need to rename your sensor or do manual edits to the yaml
-
-You can add the ESPHome Device Builder addon in Home Assistant to easily update your device or edit the yaml. If you don't have ESPHome Device Builder addon installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder").
-
-Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
-
-![esphome-device-compiler-dashboard-pic-1.png](../../../assets/esphome-device-compiler-dashboard-pic-1.png)
-
-```yaml
-# Your Wi-Fi SSID and password - keep the quotes and just replace the name and password between the quotes!
-wifi_ssid: "your-wifi-ssid-here"
-wifi_password: "your-wifi-pass-here"
-```
-
-1\. Click "Show" in the top right to show your discovered devices!
-
-![](assets/esphome-device-builder-show-discovered-device.png)
-
-2\. Click the ESPHome Builder in your sidebar then click "**TAKE CONTROL**" for your new Apollo Device!
-
-![](assets/esphome-device-builder-pic-1.png)
-
-3\. Rename your sensor here (this only renames the sensor in the ESPHome Device Compiler's Dashboard) or skip it and continue on by clicking "**TAKE CONTROL**" again as shown below.
-
-![](assets/esphome-device-builder-pic-2.png)
-
-4\. Click "**INSTALL**" (DO NOT click skip!) and let your device get adopted into the ESPHome Device Builder. Please have patience as this takes a few minutes to compile and then install to your new Apollo device!
-
-![](assets/esphome-device-builder-pic-3.png)
-
-5\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
-
-![](assets/getting-started-pic-4.png)
-
-6\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
-
-### Connecting to Home Assistant via ESPHome Integration:
-
-1\. Click the "**Notifications**" Icon in the bottom left.
-
-![](assets/getting-started-pic-5.png)
-
-2\. Click "**Check it out**" to go to the integrations page and see the new device that was found.
-
-![](assets/getting-started-pic-7.png)
-
-3\. Click "**ADD**" to begin adding the device to home assistant.
-
-![](assets/getting-started-pic-6-1.png)
-
-4\. Click "**SUBMIT**" to confirm you want to add your new Apollo device to home assistant.
-
-![](assets/getting-started-pic-8.png)
-
-5\. Give it an area and click "**FINISH**".
-
-![](assets/getting-started-pic-9.png)
-
-6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
-
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                               .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                 .md-button .md-button--primary }
