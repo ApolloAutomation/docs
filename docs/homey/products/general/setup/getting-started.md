@@ -64,4 +64,4 @@ If this does not automatically open the dashboard, please open your web browser 
 
 7\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                    .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                     .md-button .md-button--primary }
