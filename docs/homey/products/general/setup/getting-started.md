@@ -2,7 +2,7 @@
 
 This will walk you through the process of connecting your new Apollo Automation sensor to Homey. If at any point you get stuck, join our <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">Discord</a> for some help.
 
-### Connecting Through Hotspot
+### Connecting Through Hotspot:
 
 To get your new Apollo sensor connected to your Wi-Fi, follow the steps below!
 
@@ -26,8 +26,6 @@ If this does not automatically open the dashboard, please open your web browser 
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                .md-button .md-button--primary }
-
 ### Adding Apollo Automation App in Homey:
 
 1\. <a href="https://homey.app/en-us/app/com.apolloautomation/Apollo-Automation/test/" target="_blank" rel="noreferrer nofollow noopener">Navigate to this website</a> and click "Install App". For now this needs to be done from a desktop PC or a browser.
@@ -50,7 +48,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![](assets/homey-getting-started-pic-3.png)![](assets/homey-getting-started-pic-4.png)
 
-3\. Your Apollo devices will automatically show up and if not, please first connect it to your Wi-Fi following the steps outlined here.
+3\. Your Apollo devices will automatically show up and if not, please first <a href="https://wiki.apolloautomation.com/homey/products/general/setup/getting-started/#connecting-through-hotspot" target="_blank" rel="noreferrer nofollow noopener">connect it to your Wi-Fi following the steps outlined here</a>.
 
 4\. Select the device you want to add, in this case an Apollo MTR-1 and click Continue at the bottom.
 
@@ -66,4 +64,4 @@ If this does not automatically open the dashboard, please open your web browser 
 
 7\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                  .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                    .md-button .md-button--primary }
