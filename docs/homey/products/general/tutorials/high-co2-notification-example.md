@@ -1,33 +1,23 @@
-# How to edit your Sensor's LUX update interval
+# High CO<sub>2</sub> Notification
 
-This guide will show you how to edit the lux updates down to 5 seconds.
+!!! tip "This guide will show you how to create a flow that sends a notification to everyone who's home when the CO2 is over a set threshold, 1500 ppm in this example."
 
-!!! tip "Your sensor is defaulting to 60 seconds for updates to the state of the lux sensor."
+    This guide is made using the web browser due to using Advanced Flows version of Homey as well!
 
-    This is the default for all esphome devices using lux because it uses less Wi-Fi airtime fairness and writes less to your Home Assistant Database. Suggested not to go below 5 seconds.
+1\. First we need to open a web browser such as Firefox and head to <a href="https://my.homey.app" target="_blank" rel="noreferrer nofollow noopener">the Homey webapp</a> and click on the Flow tab on the left side.
 
-1\. Select the <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">ESPHome Builder</a> in the sidebar then click "EDIT" on the device you want to change.
+2\. Click "New Flow" then "Advanced Flow"
 
-![image.png](assets/update-frequency-pic-1.png)
+![](assets/homey-flow-example-pic-1.png)
 
-2\. Copy this code and enter it just like shown in the next step. Make sure there are no extra spaces or any other characters it needs to look just like the example in the next step.
+3\. Click "Add" and select "When".
 
-```yaml
-#LUX sensor update interval
-sensor:
-  - platform: ltr390
-    id: !extend ltr_390
-    update_interval: 5s
-```
+![](assets/homey-flow-example-pic-2.png)
 
-3\. Paste the code you copied in step 2 below your sensor's existing yaml as shown below.
+4\. In the search bar at the top, type in "co2-level" and select the sensor you want to track.
 
-![image.png](../assets/QBoimage.png)
+![](assets/homey-flow-example-pic-3.png)
 
-4\. In the top right of the same screen click "SAVE" and then "INSTALL".
+5\. Place your node on your flow area with a left click.
 
-5\. Once you see "INFO OTA successful" you are done. Click "STOP" to exit.
-
-![](assets/update-frequency-pic-3.png)
-
-6\. Once that is finished your sensor should now be reporting at your new update\_interval such as 5 seconds!
+&nbsp;
