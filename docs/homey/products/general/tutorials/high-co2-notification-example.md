@@ -52,6 +52,10 @@
 
 ![](assets/homey-flow-example-pic-11.png)
 
+13\. Click "User" and choose "Everyone who's home" or your preferred option.
+
+![](assets/homey-flow-example-pic-18.png)
+
 13\. Click "Add" and select "Delay" and then place it on your flow canvas. Change to minutes and input 5 for adding a 5 minute delay then drag a line from "set a color" to the delay.
 
 ![](assets/homey-flow-example-pic-15.png)
@@ -62,12 +66,12 @@
 
 15\. Drag a line from the Delay in step 13 to the Turn off card and that's it! Click save at the top and give your flow a name.
 
-![](assets/homey-flow-example-pic-16.png)
+![](assets/homey-flow-example-pic-16-1.png)
 
 16\. As a bonus, you can add a note reminding you what this automation does. Click "Add" then click "Note" and type in "CO2 level alert with RGB LEDs" on the note.
 
-![](assets/homey-flow-example-pic-17.png)
+![](assets/homey-flow-example-pic-17-1.png)
 
-7\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
+17\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
-[Run into issues? Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                      .md-button .md-button--primary }
+[Run into issues? Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                        .md-button .md-button--primary }
