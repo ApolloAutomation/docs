@@ -74,4 +74,4 @@
 
 17\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
-[Run into issues? Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                        .md-button .md-button--primary }
+[Run into issues? Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                          .md-button .md-button--primary }
