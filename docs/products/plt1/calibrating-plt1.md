@@ -36,12 +36,12 @@ This guide will take you through calibrating your PLT-1’s moisture sensor. The
 
 11\. Once the Soil ADC value is populated, enter it into the “Dry Voltage” entity.
 
-![](../../assets/4.png)
+![](assets/plt-1-calibration-pic-4.png)
 
 12\. Now, place the stake/probe portion of the PLT-1 into a cup of water. Be careful not to submerge the entire sensor—only the exposed PCB below the “Apollo” label and the horizontal line can be exposed to water.
 
 13\. Grab the “Soil ADC” value again and enter it into the “100% Water Voltage” entity.
 
-![](../../assets/5-2.png)
+![](assets/plt-1-calibration-pic-6.png)
 
 14\. You can now return your PLT-1 to your plant. Congratulations, your sensor is calibrated!
