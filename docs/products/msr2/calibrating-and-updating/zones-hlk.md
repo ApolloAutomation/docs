@@ -1,14 +1,14 @@
 # How To Tune mmWave Using HLKRadarTool
 
-**Auto-Calibration (Average, Maximum, and Intelligent)**
+###### **Auto-Calibration**
 
-1\. Download the HLKRadarTool app for either [Android](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US%E2%89%B7=US)or [Apple](https://apps.apple.com/us/app/hlkradartool/id1638651152)
+1\. Download the HLKRadarTool app for either [Android](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US%E2%89%B7=US)or [Apple](https://apps.apple.com/us/app/hlkradartool/id1638651152).
 
 The default password to connect to the HLKRadarTool is "HiLink"
 
-2\. Ensure the mmWave radar you want to tune has Radar Control Bluetooth turned on. Home Assistant &gt; Settings &gt; Devices & services &gt; ESPHome Devices &gt; Select Device &gt; Scroll down and toggle on Radar Control Bluetooth
+2\. Ensure the mmWave radar you want to tune has LD2410 Bluetooth turned on. Home Assistant &gt; Settings &gt; Devices & services &gt; ESPHome Devices &gt; Select Device &gt; Scroll down and toggle on ld2410 Bluetooth.
 
-![Radar Control Bluetooth.png](../assets/radar-control-bluetooth.png)
+![Radar Control Bluetooth.png](assets/msr-2-mmwave-hlk-pic-1.png)
 
 3\. Open the app and select your device
 
@@ -40,11 +40,11 @@ The default password to connect to the HLKRadarTool is "HiLink"
 
 ![Max.png](../assets/max.png)
 
-**Intelligent** - Sets the gate sensitivity equal to or just above the maximum move and still energy
+**Intelligent** \- Sets the gate sensitivity equal to or just above the maximum move and still energy.
 
 **![Intelligent.png](../assets/intelligent.png)**
 
-**Manual Calibration**
+###### Manual Calibration
 
 1\. Repeat steps 1-5 above.
 
