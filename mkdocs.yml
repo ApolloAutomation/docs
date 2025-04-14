@@ -358,6 +358,7 @@ nav:
           - FAQ: homey/products/general/faq.md
           - Getting Started: homey/products/general/setup/getting-started.md
           - Example Flows:
+            - Air Quality Notification: homey/products/general/tutorials/air-quality-notification-example.md
             - High CO2 Notification: homey/products/general/tutorials/high-co2-notification-example.md
           - Additional Info:
             - Calibrating:
