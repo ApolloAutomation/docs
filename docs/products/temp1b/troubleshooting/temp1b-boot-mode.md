@@ -26,6 +26,8 @@ If you prefer, please remove the lid by gently prying up on the small slit by th
 
 2\. Plug it into your computer.
 
-3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
+3\. Hold down the boot button (shown above), then press and release the reset button (shown below) while keeping the boot button pressed. Finally, release the boot button.
+
+![](assets/temp-1-reset-button-lid-off.jpg)
 
 4\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1b/troubleshooting/temp1b-code/).

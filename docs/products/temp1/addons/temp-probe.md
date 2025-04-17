@@ -12,7 +12,7 @@ The TEMP-1 comes with an optional temp probe which can be used to monitor a frid
 
 ![](assets/temp1-temp-probe-pic-1.jpg)
 
-3\. Go to the device page of your TEMP-1 in Home Assistant and choose probe "Dallas" aka Temperature.
+3\. Go to the device page of your TEMP-1 in Home Assistant and choose the Temperature Probe.
 
 ![](assets/temp1b-temp-probe-pic-1-1.png)
 
