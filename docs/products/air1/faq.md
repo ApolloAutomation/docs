@@ -76,7 +76,7 @@
 
 20\. **How customizable is the AIR-1?**
 
-* The AIR-1 is fully customizable via ESPHome. You can adjust sensor settings, create automations, modify reporting intervals, and even customize the RGB LED and piezo buzzer. Additionally, we provide open-source CAD drawings and code for further customization.
+* The AIR-1 is fully customizable via ESPHome. You can adjust sensor settings, create automations, modify reporting intervals, and even customize the RGB LEDs. Additionally, we provide open-source CAD drawings and code for further customization.
 
 21\. **How frequently does the AIR-1 report data?**
 
@@ -92,7 +92,7 @@
 
 24\. **What’s the difference between the AIR-1 and other air quality sensors?**
 
-* The AIR-1 is unique because it offers local control with no cloud or subscription required. It also provides a wide range of sensor data (PM, VOC, NOx, CO2, temperature, humidity) in a compact, affordable package. The addition of the RGB LED, piezo buzzer, and open-source nature makes it highly customizable.
+* The AIR-1 is unique because it offers local control with no cloud or subscription required. It also provides a wide range of sensor data (PM, VOC, NOx, CO2, temperature, humidity) in a compact, affordable package. The addition of the RGB LEDs and open-source nature makes it highly customizable.
 
 25\. **What are the optional add-ons for the AIR-1?**
 
