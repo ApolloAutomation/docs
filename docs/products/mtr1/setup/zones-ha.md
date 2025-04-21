@@ -1,9 +1,5 @@
 # Zone Configuration Using Home Assistant
 
-!!! tip "Tip"
-
-    ***Users are currently having issues saving the zones after restarting the device when using this method. It is recommended to use the*** [***HLKRadarTool App Zone Configuration Guide***](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)***.***
-
 1\.Install [HACS](https://hacs.xyz/docs/use/)
 
 2\. Install [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") and [Decluttering Card](https://github.com/custom-cards/decluttering-card "Click here to install Decluttering Card!") inside HACS.
