@@ -37,10 +37,10 @@ At Apollo, we are actively working on adding support for every smart home ecosys
 * **Integration:** Fully supported via a custom yaml edit for your device where you fill in the server IP/hostname, mqtt username, and mqtt password.
 
 ```yaml
-  mqtt:
-    broker: 192.168.1.252
-    username: mqtt-user
-    password: mqtt-password
+mqtt:
+  broker: 192.168.1.252
+  username: mqtt-user
+  password: mqtt-password
 ```
 
 * **Support:** We do not provide support for this platform but if enough users want it that could change. We of course always support the hardware of our products though!
