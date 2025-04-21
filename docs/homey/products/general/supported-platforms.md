@@ -1,1 +1,1 @@
---8<-- "products/general/supported-platforms/.md"
+--8<-- "products/general/supported-platforms.md"
