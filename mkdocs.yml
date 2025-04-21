@@ -155,6 +155,7 @@ nav:
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
           - Source Code and 3D Files: products/general/links.md
           - Sensor Comparisons: products/general/comparisons.md
+          - Supported Platforms: products/general/supported-platforms.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
@@ -393,6 +394,7 @@ nav:
             - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
           - Source Code and 3D Files: homey/products/general/links.md
           - Sensor Comparisons: homey/products/general/comparisons.md
+          - Supported Platforms: homey/products/general/supported-platforms.md
       - MSR-2:
           - Introduction: homey/products/msr2/introduction.md
           - FAQ: homey/products/msr2/faq.md
