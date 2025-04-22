@@ -1,0 +1,28 @@
+label: Wiki Article
+fields:
+  - name: title
+    label: Page Title
+    type: text
+    comment: The main title of the documentation page.
+
+  - name: description
+    label: Short Description
+    type: text
+    default: "Documentation page for Apollo Automation."
+    comment: Used for page previews, cards, and search snippets.
+
+  - name: published
+    label: Published
+    type: boolean
+    default: true
+    comment: Toggle visibility in navigation and public site.
+
+  - name: tags
+    label: Tags
+    type: list
+    comment: Add optional keywords for search or grouping.
+
+  - name: order
+    label: Sidebar Order
+    type: number
+    comment: Lower numbers appear earlier in the navigation.
