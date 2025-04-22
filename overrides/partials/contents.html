@@ -1,0 +1,10 @@
+{% for child in page.children %}
+  <article class="md-content__inner">
+    <h2>
+      <a href="{{ child.url | url }}">{{ child.title }}</a>
+    </h2>
+    <p>
+      {{ child.meta.description or ("Documentation for " ~ child.title) }}
+    </p>
+  </article>
+{% endfor %}
