@@ -1,3 +1,7 @@
+---
+title: H-1 Getting Started
+description: H-1 Getting Started tutorial.
+---
 1\. Power Up the H-1:
 
 Insert a (rechargable) [RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/dp/B0CSKD7N3D) or plug it into a power source using the USB-C port.

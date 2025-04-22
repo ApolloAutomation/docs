@@ -1,3 +1,7 @@
+---
+title: Factory Re-Flash H-1
+description: Step by step guide for re-flashing the H-1 back to factory firmware.
+---
 If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can upload a fresh set of firmware by following the below guide. The utility does need to be run from Chrome or Edge.
 
 If your device has already been connected to Home Assistant previously please refer to Removing Device From Home Assistant first before proceeding

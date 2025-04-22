@@ -1,3 +1,7 @@
+---
+title: H-1 Introduction
+description: H-1 Introduction.
+---
 ![](../../assets/h-1-usa.png)
 
 The Apollo H-1 is our special holiday ornament, designed to bring festive cheer to your home while supporting a good cause. As the first in our annual series, this ornament is crafted with both functionality and community spirit in mind. All proceeds from the H-1 go directly to a local charity in Lexington, KY, reflecting our commitment to giving back and celebrating the season alongside our community.

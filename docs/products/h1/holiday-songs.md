@@ -1,3 +1,7 @@
+---
+title: H-1 Holiday Songs Buzzer List
+description: List of H-1 Holiday Songs to use with the buzzer.
+---
 # Jingle Bells (Ornate)
 
 ```yaml

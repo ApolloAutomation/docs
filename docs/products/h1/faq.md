@@ -1,3 +1,7 @@
+---
+title: H-1 FAQ
+description: Frequently asked questions about the H-1.
+---
 ![](../../assets/apollo-h-1-info.png)
 
 1\. **What songs are pre-loaded on the Apollo H-1?**

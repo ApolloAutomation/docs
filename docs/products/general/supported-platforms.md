@@ -2,8 +2,6 @@
 title: Supported Platforms
 description: A list of platforms compatible with Apollo Automation products.
 ---
-
-
 ![](assets/apollo-logo.png)
 
 At Apollo, we are actively working on adding support for every smart home ecosystem out there. Although we are a works with Home Assistant partner and a Made for ESPHome partner, we want everyone to be able to use our sensors! Please take a look at the list of smart home ecosystems below to see the type of support we offer and the type of integration/functionality our sensors have. If you see any outdated info or have any questions/comments/concerns, please reach out to us at support@apolloautomation.com or come say hi in our [discord server](https://dsc.gg/apolloautomation)!
