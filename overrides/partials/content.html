@@ -1,0 +1,10 @@
+{% for page in pages %}
+  <article>
+    <h3>
+      <a href="{{ page.url | url }}">{{ page.title }}</a>
+    </h3>
+    <p>
+      {{ page.meta.description or ("Documentation for " ~ page.title) }}
+    </p>
+  </article>
+{% endfor %}
