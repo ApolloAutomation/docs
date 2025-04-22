@@ -1,3 +1,7 @@
+---
+title: Apollo Odroid Reviews
+description: The Apollo Odroid Reviews.
+---
 # Simon Says Home Assistant
 
 ## <a href="https://youtu.be/T-eZecdI6T8?si=nwX157vkhdls9CPM" target="_blank" rel="noopener">-  My Favorite Home Assistant Hardware, Apollo Odroid! </a>

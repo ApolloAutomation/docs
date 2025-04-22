@@ -1,3 +1,7 @@
+---
+title: Apollo Odroid Introduction
+description: The Apollo Odroid is a ready-to-use device designed to kickstart your smart home journey with ease.
+---
 ![](../../assets/apolloautomation-finals-15.jpg)
 
 The Apollo Odroid is a ready-to-use device designed to kickstart your smart home journey with ease. Built on the powerful ODROID-M1S platform with 8GB of RAM and 64GB of onboard eMMC storage, this unit comes pre-flashed with Home Assistant OS. This means that from the moment you unbox it, you can dive right into automating your home without any complex setup or flashing processes.
