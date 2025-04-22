@@ -1,6 +1,10 @@
-{% for child in section.children %}
-  <article>
-    <h3><a href="{{ child.url | url }}">{{ child.title }}</a></h3>
-    <p>{{ child.meta.description or ("Documentation for " ~ child.title) }}</p>
-  </article>
+{% for item in nav %}
+  {% if item.children %}
+    {% for page in item.children %}
+      <article>
+        <h3><a href="{{ page.url | url }}">{{ page.title }}</a></h3>
+        <p>{{ page.meta.description or ("Documentation for " ~ page.title) }}</p>
+      </article>
+    {% endfor %}
+  {% endif %}
 {% endfor %}
