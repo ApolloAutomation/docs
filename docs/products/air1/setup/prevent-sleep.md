@@ -1,3 +1,7 @@
+---
+title: AIR-1 Prevent Sleep
+description: Guide to help you learn about Prevent Sleep.
+---
 # Prevent Sleep
 
 !!! tip "Put your sensors to sleep!"

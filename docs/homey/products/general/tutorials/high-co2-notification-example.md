@@ -1,3 +1,8 @@
+---
+title: High CO₂ Notification Example
+description: Example flow for sending alerts when CO₂ levels exceed a defined threshold.
+---
+
 # High CO<sub>2</sub> Notification
 
 !!! tip "This guide will show you how to create a flow that sends a notification to everyone who's home when the CO2 is over a set threshold, 1000 ppm in this example."

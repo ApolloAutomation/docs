@@ -1,3 +1,7 @@
+---
+title: Temp and Humidity Calibration and Offset Examples
+description: Temp and Humidity Calibration and Offset Examples.
+---
 # Simple and Advanced Examples of Temperature & Humidity Offsets
 
 #### **Simple Offsets for Temperature and Humidity:**

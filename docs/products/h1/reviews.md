@@ -1,3 +1,7 @@
+---
+title: H-1 Reviews
+description: H-1 Reviews.
+---
 # Simon Says Home Assistant
 
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/qyFMkp9x7KA?si=M0AglgB3nNBhkOQG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>

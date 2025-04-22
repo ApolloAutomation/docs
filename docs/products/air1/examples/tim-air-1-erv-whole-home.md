@@ -1,3 +1,7 @@
+---
+title: Tim's AIR-1 ERV Whole Home Solution
+description: A user-shared ERV solution featuring the AIR-1 - Tim's AIR-1 ERV Whole Home Solution.
+---
 # Tim's AIR-1 ERV Whole Home Solution
 
 esp32 C6 which drives two single phase inverters via two dac mcp4725 and four relays. Hrv is o3ozon cwp250. Ducts zinc plated steel at fi160 and max vents 90mm distribution.

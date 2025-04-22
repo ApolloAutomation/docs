@@ -1,3 +1,7 @@
+---
+title: AIR-1 Home Assistant Dashboard Examples
+description: AIR-1 Home Assistant Dashboard Examples
+---
 # AIR-1 Home Assistant Dashboard Examples
 
 Really neat dashboard for your AIR-1 by user "keex"!

@@ -1,3 +1,8 @@
+---
+title: Apollo Odroid FAQ
+description: Apollo Odroid FAQ.
+---
+
 1\. **What is the Apollo Odroid?**
 
 The Apollo Odroid is a plug-and-play device pre-configured with Home Assistant OS. It’s designed to simplify the setup of your smart home by providing an out-of-the-box solution for home automation, running on the powerful ODROID-M1S platform.

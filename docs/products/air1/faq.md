@@ -1,3 +1,8 @@
+---
+title: AIR-1 FAQ
+description: Frequently asked questions about the AIR-1 environmental sensor, including setup, features, and troubleshooting.
+---
+
 1\. **What sensors are included in the AIR-1?**
 
 * The AIR-1 uses a SEN55 which includes sensors for PM1, PM2.5, PM4, PM10 (particulate matter), <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC Index</a> (volatile organic compounds), <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">NOx Index </a>(nitrogen oxides), temperature, and humidity. Addon sensors include the <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO2</a> and the <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS gas sensor</a>.

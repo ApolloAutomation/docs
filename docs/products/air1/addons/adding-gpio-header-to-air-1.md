@@ -1,3 +1,7 @@
+---
+title: Adding GPIO Header to AIR-1
+description: Adding Optional GPIO Header to AIR-1.
+---
 # Adding GPIO Header to AIR-1
 
 1\. Unplug your AIR-1 from power and lift the top of the case or "lid".

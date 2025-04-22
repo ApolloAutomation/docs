@@ -1,5 +1,7 @@
-#
-
+---
+title: Homey Integration
+description: Guide to integrating Apollo Automation devices with the Homey smart home platform.
+---
 <img height="344" width="900" src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" />
 
 !!! info "Welcome to Apollo Automation Docs!"

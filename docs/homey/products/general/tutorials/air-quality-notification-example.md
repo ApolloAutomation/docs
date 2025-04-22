@@ -1,3 +1,9 @@
+---
+title: Air Quality Notification Example
+description: Example flow that sends alerts based on changing indoor air quality levels.
+---
+
+
 # Air Quality Notification
 
 !!! tip "This guide will show you how to create a flow that sends a notification to everyone who's home when the air quality in your home is less than ideal."

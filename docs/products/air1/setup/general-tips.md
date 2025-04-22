@@ -1,3 +1,7 @@
+---
+title: AIR-1 General Tips
+description: Guide to help you understand which sensors you should be concerned with and expected safe or not safe thresholds to alert or automate on.
+---
 # AIR-1 General Tips
 
 The AIR-1 has multiple different types of sensors and this guide will help you understand which ones you should be concerned with and expected safe or not safe thresholds to alert or automate on.

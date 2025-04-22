@@ -1,3 +1,7 @@
+---
+title: Firstof9's AIR-1 Apex Charts Dashboard
+description: A custom dashboard made by discord/github user Firstof9 using Apex Charts for a really neat AIR-1 dashboard.
+---
 # Firstof9's AIR-1 Apex Charts Dashboard
 
 Firstof9 has created this beautiful responsive dashboard with [Apexcharts-card](https://github.com/RomRider/apexcharts-card "ApexCharts-card") custom card from [HACS](https://hacs.xyz/ "Home Assistant Community Store")!
