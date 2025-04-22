@@ -1,4 +1,7 @@
-
+---
+title: High CO₂ Notification Example
+description: Example flow for sending alerts when CO₂ levels exceed a defined threshold.
+---
 
 # High CO<sub>2</sub> Notification
 
