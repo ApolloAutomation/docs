@@ -69,6 +69,7 @@ plugins:
         background_color: "#111111"
         color: "#daa520"
         font_family: Figtree
+  - meta
 
 extra:
   social:
