@@ -83,6 +83,14 @@ _inputs:
       sizes:
         - size: 2x
           target: _retina_image_file
+#brandon added this 4/22/25 to add default descriptions
+  title:
+    type: text
+    comment: "The title of the page."
+  description:
+    type: text
+    comment: "A short description of the page."
+
 image: /docs/assets/image.png
 _retina_image_file: /docs/assets/image-2x.png
 source_editor:
