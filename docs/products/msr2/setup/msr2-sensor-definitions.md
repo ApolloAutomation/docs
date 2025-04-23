@@ -1,3 +1,7 @@
+---
+title: MSR-2 Sensor Definitions
+description: These are all of the entities exposed by the MSR-2 to automate on!
+---
 # Sensor Definitions
 
 Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.

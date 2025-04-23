@@ -1,3 +1,7 @@
+---
+title: MSR-2 General Tips
+description: Multiple helpful images for mounting, lux/rgb, and gate and zone visualization.
+---
 # General Tips
 
 ##### **Light Sensor (LTR-390UV)**

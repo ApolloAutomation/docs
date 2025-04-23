@@ -1,3 +1,7 @@
+---
+title: MSR-2 Dashboard Examples
+description: MSR-2 Dashboard Examples.
+---
 # MSR-2 Home Assistant Dashboard Examples
 
 **Radar Scatter Plot With Apex Charts For **[**MSR-2**](https://shop.apolloautomation.cloud/products/multisensor-mk1)
