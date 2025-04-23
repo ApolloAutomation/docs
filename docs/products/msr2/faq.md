@@ -1,3 +1,7 @@
+---
+title: MSR-2 FAQ
+description: Frequently asked questions about the MSR-2 mmWave sensor.
+---
 1\. **What sensors are included in the MSR-2?**
 
 * The MSR-2 includes several built-in sensors such as an mmWave radar for motion detection, a LUX and UV sensor, a temperature and pressure sensor, and an optional CO2 sensor.

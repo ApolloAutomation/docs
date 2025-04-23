@@ -1,3 +1,7 @@
+---
+title: MSR-2 Home Assistant Zone Configuration
+description: Tutorial for MSR-2 Home Assistant Zone Configuration.
+---
 # How To Tune mmWave Using Home Assistant
 
 If you're experiencing false triggers, we recommend using Radar Engineering Mode (REM) to monitor the gate energy and adjust the gate threshold to eliminate them.  

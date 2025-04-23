@@ -1,3 +1,7 @@
+---
+title: MSR-2 HLKRadarTool app Zone Configuration
+description: Tutorial for MSR-2 HLKRadarTool app Zone Configuration.
+---
 # How To Tune mmWave Using HLKRadarTool
 
 ###### **Auto-Calibration**

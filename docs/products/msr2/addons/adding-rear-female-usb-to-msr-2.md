@@ -1,3 +1,7 @@
+---
+title: Add the rear female usb-c port to your MSR-2
+description: Tutorial on adding the rear female usb-c port to your MSR-2.
+---
 # Adding Rear Female USB-C To MSR-2
 
 1\. Unplug your MSR-2 from power and remove the back
