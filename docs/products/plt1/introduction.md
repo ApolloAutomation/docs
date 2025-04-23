@@ -1,4 +1,10 @@
-![](../../assets/plt-1-usa-esp.png)
+---
+title: PLT-1 Introduction
+description: PLT-1 Introduction.
+---
+# Introduction
+
+<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=2GC-WnIIdao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
 The PLT-1 is equipped with a capacitive soil moisture sensor, providing enhanced accuracy and durability over resistive alternatives. The sensor’s ground contact portion is coated with a conformal layer, ensuring long-lasting performance and resistance to environmental factors. It also features an AHT20-F air temperature and humidity sensor, which includes dust protection, an LTR390 UV sensor for Lux/UV measurements, an RGB LED, a piezo buzzer, and an optional DS18b20 waterproof soil temperature probe (20 cm / 7.8 inches).
 

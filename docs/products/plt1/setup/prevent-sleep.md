@@ -1,3 +1,7 @@
+---
+title: PLT-1 Prevent Sleep 
+description: Tutorial for how to enable/disable prevent sleep.
+---
 # Prevent Sleep
 
 !!! tip "Put your sensors to sleep!"

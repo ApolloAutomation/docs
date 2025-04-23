@@ -1,3 +1,7 @@
+---
+title: PLT-1 FAQ
+description: PLT-1 FAQ.
+---
 1\. **What sensors are included in the PLT-1?**
 
 * The PLT-1 comes with sensors to measure soil moisture, air temperature, humidity, LUX, and UV. There is also an optional DS18b20 waterproof soil temperature probe available for measuring soil temperature.

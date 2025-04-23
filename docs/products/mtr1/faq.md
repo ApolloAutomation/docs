@@ -1,3 +1,7 @@
+---
+title: MTR-1 FAQ
+description: Frequently asked questions about the MTR-1 mmWave sensor.
+---
 1\. **What sensors are included in the MTR-1?**
 
 * The MTR-1 includes a multi-target mmWave radar sensor for detecting motion and positioning, as well as LUX, UV, temperature, and pressure sensors. There’s also an optional CO2 sensor available.

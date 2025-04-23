@@ -1,3 +1,7 @@
+---
+title: MTR-1 Home Assistant Zone Configuration
+description: Tutorial for MTR-1 Home Assistant Zone Configuration.
+---
 # Zone Configuration Using Home Assistant
 
 1\.Install [HACS](https://hacs.xyz/docs/use/)

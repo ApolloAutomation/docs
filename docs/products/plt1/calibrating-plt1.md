@@ -1,3 +1,7 @@
+---
+title: Calibrating the PLT-1
+description: Step by step guide for calibrating the PLT-1.
+---
 This guide will take you through calibrating your PLT-1’s moisture sensor. The sensors come with a default calibration, so this method is only necessary if you want to make your own adjustments.
 
 1\. Take your PLT-1 out of the soil and clean off the probe. It’s important to remove all dirt for the most accurate calibration.

@@ -1,3 +1,7 @@
+---
+title: MTR-1 General Tips
+description: Multiple helpful images for mounting, lux/rgb, and zone visualization.
+---
 # General Tips
 
 ##### **MTR-1 PCB with Sensors**
