@@ -1,3 +1,7 @@
+---
+title: TEMP-1B Food Probe Guide
+description: Step by step guide for installing and using the optional Food Probe with the TEMP-1B.
+---
 # TEMP-1B Food Probe
 
 The TEMP-1B comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1 itself needs to stay in a cool environment.

@@ -1,3 +1,7 @@
+---
+title: PLT-1B Sensor Definitions
+description: Full list of definitions for the PLT-1B and its various sensors.
+---
 # Sensors
 
 ### <a href="https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf" target="_blank" rel="noopener">LTR390 UV</a>

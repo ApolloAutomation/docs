@@ -1,3 +1,7 @@
+---
+title: TEMP-1B Magnetic Mount Guide
+description: Step by step guide for installing and using the optional Magnetic Mount with the TEMP-1B.
+---
 # TEMP-1B Magnetic Mount
 
 The TEMP-1B comes with an optional magnetic mount which can be used to secure the TEMP-1B to your fridge or grill as shown below.

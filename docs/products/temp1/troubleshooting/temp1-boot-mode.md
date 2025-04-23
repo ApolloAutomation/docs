@@ -1,3 +1,7 @@
+---
+title: Putting The TEMP-1 In Boot Mode
+description: Step by step guide for putting The TEMP-1 In Boot Mode.
+---
 # Putting The TEMP-1 In Boot Mode
 
 !!! info "This will cover how to put the TEMP-1 into boot mode."

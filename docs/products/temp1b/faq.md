@@ -1,3 +1,7 @@
+---
+title: TEMP-1B FAQ
+description: Frequently asked questions about the TEMP-1B temperature sensor.
+---
 # **TEMP-1B FAQ**
 
 1\.**How is the TEMP-1B powered?**

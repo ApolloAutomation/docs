@@ -1,3 +1,7 @@
+---
+title: Factory Re-Flash PLT-1B
+description: Step by step guide for re-flashing the PLT-1B back to factory firmware.
+---
 # Factory Re-Flash PLT-1B
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the below guide."
