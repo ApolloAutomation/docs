@@ -1,3 +1,7 @@
+---
+title: Putting The PLT-1B In Boot Mode
+description: Step by step guide for putting The PLT-1B In Boot Mode.
+---
 # Putting The PLT-1B In Boot Mode
 
 !!! info "This will cover how to put the PLT-1B into boot mode."

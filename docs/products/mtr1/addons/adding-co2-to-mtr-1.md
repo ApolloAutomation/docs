@@ -1,3 +1,8 @@
+---
+title: adding CO2 to MTR-1
+description: Step by step tutorial for adding the SCD40 CO2 sensor to the MTR-1.
+---
+
 # Adding CO<sub>2</sub> To MTR-1
 
 1\. Unplug your MTR-1 from power and remove the stand if attached.

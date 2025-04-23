@@ -1,3 +1,7 @@
+---
+title: MTR-1 Sensor Definitons
+description: These are all of the entities exposed by the MTR-1 to automate on!
+---
 # Sensor Definitions
 
 ![Image 5-1-24 at 4.55 PM.jpeg](../assets/image-5-1-24-at-4-55-pm.jpeg)

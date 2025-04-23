@@ -12,17 +12,17 @@ description: A list of resellers across the globe for Apollo Automation products
 
 Note: All resellers listed in Alphabetical order.
 
-###### USA
+## USA
 
 * [Ameridroid](https://ameridroid.com/search?q=apollo+automation) (California)
 * [Dongle Jungle](https://www.donglejungle.com) (California)
 * [DrZzs store](https://www.drzzs.com/product-category/sensors/) (Utah)
 
-###### UK
+## UK
 
 * [The Pi Hut](https://thepihut.com/collections/apollo-automation)
 
-###### Europe
+## Europe
 
 * [Domo-Supply](https://www.domo-supply.com/en/brand/163-apollo-automation) (Switzerland)
 * [Open Circuit](https://opencircuit.shop/brand/apollo-automation) (Netherlands)

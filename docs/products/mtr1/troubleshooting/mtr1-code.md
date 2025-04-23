@@ -1,3 +1,7 @@
+---
+title: Factory Re-Flash MTR-1
+description: Step by step guide for re-flashing the MTR-1 back to factory firmware.
+---
 # Factory Re-Flash MTR-1
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
