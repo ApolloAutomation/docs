@@ -79,8 +79,6 @@ extra:
       link: https://www.youtube.com/@ApolloAutomation
     - icon: fontawesome/brands/discord
       link: https://dsc.gg/apolloautomation
-#brandon added this 4/22/25 - this fixes the "None" from showing up in wiki link embeds such as discord
-  default_description: "Documentation page for Apollo Automation."
 
 markdown_extensions:
   - pymdownx.highlight:

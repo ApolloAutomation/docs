@@ -60,6 +60,13 @@ _editables:
     undo: true
     snippet: true
 _inputs:
+#brandon added this 4/23/25 to add default descriptions
+  page_title:
+    type: textarea
+    comment: "The title of the page."
+  page_description:
+    type: textarea
+    comment: "A short description of the page."
   image:
     type: image
     options:
@@ -83,13 +90,6 @@ _inputs:
       sizes:
         - size: 2x
           target: _retina_image_file
-#brandon added this 4/22/25 to add default descriptions
-  title:
-    type: text
-    comment: "The title of the page."
-  description:
-    type: text
-    comment: "A short description of the page."
 
 image: /docs/assets/image.png
 _retina_image_file: /docs/assets/image-2x.png
@@ -105,11 +105,9 @@ _snippets_imports:
       - python_markdown_admonition
       - python_markdown_collapsible_admonition
 
-
 timezone: Etc/UTC
 
-
-#brandon added this
+#brandon added these for adding buttons
 _snippets:
   mkdoc_button:
     snippet: "[[[button_text]]]([[button_link]]){ [[button_class]] }"
