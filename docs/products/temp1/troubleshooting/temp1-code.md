@@ -16,7 +16,11 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Click "Connect" under the Non Battery Firmware option since you are using a TEMP-1.
 
-![](assets/temp-1-reflash-pic-1.png)
+!!! tip "Use R2 version unless instructed to use R1 by support!"
+
+    R2 is what all of our devices use except a very small batch of TEMP-1 and TEMP-1B
+
+![](assets/temp-1-reflash-pic-1-1.png)
 
 3\. Select the open com port then click Connect.
 

@@ -18,19 +18,27 @@ If your device has already been connected to Home Assistant please <a href="http
 
     This will not work properly if the battery is still supplying power to the TEMP-1B. Please remove the battery if you are having issues!
 
-3\. Select the open com port then click Connect.
+3\. Click "Connect" under the Battery Firmware option since you are using a TEMP-1B.
+
+![](assets/temp-1b-reflash-pic-1.png)
+
+!!! tip "Use R2 version unless instructed to use R1 by support!"
+
+    R2 is what all of our devices use except a very small batch of TEMP-1 and TEMP-1B
+
+4\. Select the open com port then click Connect.
 
 ![](assets/temp-1b-reflash-pic-2-1.png)
 
-4\. Click "Install ApolloAutomation.TEMP-1B".
+5\. Click "Install ApolloAutomation.TEMP-1B".
 
 ![](assets/temp-1b-reflash-pic-3.png)
 
-5\. Click "INSTALL".
+6\. Click "INSTALL".
 
 ![](assets/temp-1b-reflash-pic-4.png)
 
-6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
 ![](assets/temp-1b-reflash-pic-7.png)
 
@@ -38,4 +46,4 @@ If your device has already been connected to Home Assistant please <a href="http
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/" target="_blank" rel="noopener">proceed to the getting started guide</a> and setup your sensor as a new device!
+8\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/" target="_blank" rel="noopener">proceed to the getting started guide</a> and setup your sensor as a new device!
