@@ -99,6 +99,9 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+#brandon added this 4/27/25 - allows for content tabs like iphone vs android
+  - pymdownx.tabbed:
+      alternate_style: true
 #brandon added this 1/8/25
   - def_list
   - pymdownx.tasklist:
