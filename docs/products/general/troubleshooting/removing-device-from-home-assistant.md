@@ -1,3 +1,7 @@
+---
+title: Removing Device From Home Assistant
+description: Tutorial to Removing Device From Home Assistant.
+---
 # Removing Device From Home Assistant
 
 This will cover how to remove an Apollo device from Home Assistant

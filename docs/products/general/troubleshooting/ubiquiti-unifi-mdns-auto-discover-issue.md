@@ -1,3 +1,7 @@
+---
+title: Ubiquiti Unifi mDNS Auto Discover Issue
+description: Tutorial to help fix the Ubiquiti Unifi mDNS Auto Discover Issue.
+---
 # Ubiquiti Unifi mDNS Auto Discover Issue
 
 !!! tip "If mDNS is unchecked then Home Assistant and ESPHome will not auto discover new devices"

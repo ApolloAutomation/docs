@@ -1,4 +1,8 @@
-# Manually Uploading Code Through ESPHome
+---
+title: Manually Uploading Code Through ESPHome Device Builder
+description: Manually Uploading Code Through ESPHome Device Builder
+---
+# Manually Uploading Code Through ESPHome Device Builder
 
 If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can upload a fresh set of firmware by following the below guide. The utility does need to be run from Chrome or Edge.
 

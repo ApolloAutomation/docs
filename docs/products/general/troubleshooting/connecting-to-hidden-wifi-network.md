@@ -1,3 +1,7 @@
+---
+title: Connecting To Hidden Wifi Network
+description: How to Connect To Hidden Wifi Network
+---
 # Connecting To Hidden Wifi Network
 
 Changing your wifi connection to fast connect can have stability problems1. [Setup your device](https://wiki.apolloautomation.cloud/books/general/page/getting-started) using a regular wifi network

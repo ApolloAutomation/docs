@@ -1,3 +1,7 @@
+---
+title: Connection Issues
+description: Suggestions for Connection Issues
+---
 1\. Try a couple of different power cord and power brick combinations - this matters a lot more than you'd think!
 
 2\. Check to see if the sensor's hotspot is showing up. (this means it is not connected to a network)
