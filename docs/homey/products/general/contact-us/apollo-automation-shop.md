@@ -1,3 +1,1 @@
-# Apollo Automation Shop
-
-## [Apollo Automation Shop](https://apolloautomation.com/)
+--8<-- "products/general/apollo-automation-shop.md"

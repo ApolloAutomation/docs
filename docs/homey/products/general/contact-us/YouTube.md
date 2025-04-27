@@ -1,3 +1,1 @@
-# YouTube
-
-[http://www.youtube.com/@ApolloAutomation](http://www.youtube.com/@ApolloAutomation)
+--8<-- "products/general/YouTube.md"

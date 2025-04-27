@@ -1,3 +1,1 @@
-# GitHub
-
-## https://github.com/ApolloAutomation
+--8<-- "products/general/GitHub.md"
