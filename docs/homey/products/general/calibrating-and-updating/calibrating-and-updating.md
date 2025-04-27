@@ -1,1 +1,1 @@
-\--8&lt;-- "products/general/setup/calibrating-and-updating/updating-firmware.md"
+--8<-- "products/general/calibrating-and-updating.md"

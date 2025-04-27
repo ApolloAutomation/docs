@@ -1,8 +1,1 @@
-# Our Team
-
-#####   
-
-
-  
-  
-[Our Team Page](https://apolloautomation.com/pages/our-team)  
+--8<-- "products/general/our-team.md"
