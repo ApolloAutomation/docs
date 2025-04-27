@@ -286,4 +286,4 @@ The [HLK-LD2450](https://www.hlktech.net/index.php?id=1157) mmWave sensor is use
 
     * Displays the Wi-Fi signal strength.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                 .md-button }
