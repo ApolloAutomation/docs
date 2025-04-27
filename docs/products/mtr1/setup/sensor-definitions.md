@@ -10,9 +10,18 @@ description: These are all of the entities exposed by the MTR-1 to automate on!
 
 The [HLK-LD2450](https://www.hlktech.net/index.php?id=1157) mmWave sensor is used in the MTR-1. <a href="https://drive.google.com/drive/folders/1aItrdziwnEqI-ovDWf24Lj6ioALaljFA?usp=sharing" target="_blank" rel="noreferrer nofollow noopener">Click Here</a> for the datasheet.
 
-[HLKRadarTool Android App](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool)
+=== "Android"
 
-[HLKRadarTool iOS App](https://apps.apple.com/us/app/hlkradartool/id1638651152)
+    1. Open the Play Store.
+    2. Search for "HLK RadarTool" or <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool" target="_blank" rel="noreferrer nofollow noopener">click this link!</a>
+    3. Tap **Install**.
+
+=== "iPhone"
+
+    1. Open the App Store.
+    2. Search for "HLK RadarTool" or <a href="https://apps.apple.com/us/app/hlkradartool/id1638651152" target="_blank" rel="noreferrer nofollow noopener">click this link!</a>
+    3. Tap **Get**.
+
 
 ???+ info "Controls"
 
@@ -286,4 +295,4 @@ The [HLK-LD2450](https://www.hlktech.net/index.php?id=1157) mmWave sensor is use
 
     * Displays the Wi-Fi signal strength.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                 .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                   .md-button }
