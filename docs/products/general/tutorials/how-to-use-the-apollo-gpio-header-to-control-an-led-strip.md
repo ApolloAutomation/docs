@@ -1,3 +1,7 @@
+---
+title: How To Use The Apollo GPIO Header To Control An LED Strip
+description: Tutorial on How To Use The Apollo GPIO Header To Control An LED Strip
+---
 # How To Use The Apollo GPIO Header To Control An LED Strip
 
 This tutorial will guide you through setting up one of our MSR-2 devices (works with any mezzanine port on any Apollo Device) with the optional $4.99 GPIO Header which adds pins for you to easily add functionality to your device! In this tutorial, however, we will be focusing on adding an LED strip to your Apollo device.

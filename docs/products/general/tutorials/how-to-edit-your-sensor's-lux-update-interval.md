@@ -1,3 +1,7 @@
+---
+title: How to edit your Sensor's LUX update interval
+description: How to edit your Sensor's LUX update interval
+---
 # How to edit your Sensor's LUX update interval
 
 This guide will show you how to edit the lux updates down to 5 seconds.
