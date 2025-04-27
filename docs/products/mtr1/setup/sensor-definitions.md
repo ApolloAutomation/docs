@@ -6,7 +6,7 @@ description: These are all of the entities exposed by the MTR-1 to automate on!
 
 !!! note "Ensure that the LD2450 firmware version is V2.02.23090617 or later for proper integration functionality. "
 
-    The newer version of the firmware includes an "auto update" function so you might want to test it out!
+    The newer version of the firmware includes an "auto calibrate" function so you might want to test it out!
 
 The [HLK-LD2450](https://www.hlktech.net/index.php?id=1157) mmWave sensor is used in the MTR-1. <a href="https://drive.google.com/drive/folders/1aItrdziwnEqI-ovDWf24Lj6ioALaljFA?usp=sharing" target="_blank" rel="noreferrer nofollow noopener">Click Here</a> for the datasheet.
 
