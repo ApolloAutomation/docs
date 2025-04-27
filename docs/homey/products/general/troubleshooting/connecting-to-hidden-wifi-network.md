@@ -1,1 +1,0 @@
---8<-- "products/general/connecting-to-hidden-wifi-network.md"
