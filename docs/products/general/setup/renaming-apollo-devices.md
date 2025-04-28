@@ -1,3 +1,7 @@
+---
+title: How To Add Renaming Apollo Devices
+description: Tutorial for How To Rename Apollo Devices.
+---
 # Renaming Apollo Devices
 
 ##### ESPHome Integration - Part 1

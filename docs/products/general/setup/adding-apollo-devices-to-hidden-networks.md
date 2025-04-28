@@ -1,3 +1,8 @@
+---
+title: Adding Apollo Devices To Hidden Networks
+description: Tutorial for how to add Apollo Devices To Hidden Networks.
+---
+
 # Adding Apollo Devices To Hidden Networks
 
 1\. Open the Esphome Device Builder.

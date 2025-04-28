@@ -1,3 +1,7 @@
+---
+title: Bluetooth Tracker Setup
+description: Tutorial for how to turn your Apollo device into a BLE tracker to track an iPhone!
+---
 # Bluetooth Tracking
 
 **Apple iPhone and Apple Watch**

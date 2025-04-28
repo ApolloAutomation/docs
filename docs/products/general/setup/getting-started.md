@@ -1,3 +1,7 @@
+---
+title: Getting Started
+description: Generic getting started article.
+---
 # Getting Started
 
 This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">Discord</a> for some help.

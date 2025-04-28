@@ -1,3 +1,7 @@
+---
+title: How To Add Temp And Humidity From SCD40
+description: Tutorial for How To Add Temp And Humidity entities From the SCD40 CO2 sensor.
+---
 # How To Add Temp And Humidity From SCD40
 
 1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to change.
