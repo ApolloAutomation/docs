@@ -458,8 +458,6 @@ nav:
           - Reviews: homey/products/air1/air1-reviews.md
           - Examples:
             - Air Quality Dashboard: homey/products/air1/examples/air1-dashboard-examples.md
-            - Firstof9's Apex Charts: homey/products/air1/examples/firstof9's-apex-charts.md
-            - GPIO Header LED Strip: homey/products/air1/examples/how-to-use-the-apollo-gpio-header-to-control-an-led-strip.md
           - Troubleshooting:
             - AIR-1 Boot Mode: homey/products/air1/troubleshooting/air1-boot-mode.md
             - Factory Re-Flash AIR-1: homey/products/air1/troubleshooting/air1-code.md
