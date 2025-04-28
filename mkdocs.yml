@@ -384,8 +384,6 @@ nav:
               - Radar Tuning:
                 - mmWave Tuning Videos: homey/products/general/calibrating-and-updating/mmwave-videos.md
             - Hidden WiFi Networks: homey/products/general/setup/adding-apollo-devices-to-hidden-networks.md
-            - Bluetooth Proxy: homey/products/general/setup/bluetooth-proxy.md
-            - Bluetooth Tracking: homey/products/general/setup/bluetooth-tracking.md
             - Renaming Devices: homey/products/general/setup/renaming-apollo-devices.md
           - Troubleshooting:
             - Removing Devices: homey/products/general/troubleshooting/removing-device-from-homey.md
@@ -460,8 +458,6 @@ nav:
           - Reviews: homey/products/air1/air1-reviews.md
           - Examples:
             - Air Quality Dashboard: homey/products/air1/examples/air1-dashboard-examples.md
-            - Firstof9's Apex Charts: homey/products/air1/examples/firstof9's-apex-charts.md
-            - GPIO Header LED Strip: homey/products/air1/examples/how-to-use-the-apollo-gpio-header-to-control-an-led-strip.md
           - Troubleshooting:
             - AIR-1 Boot Mode: homey/products/air1/troubleshooting/air1-boot-mode.md
             - Factory Re-Flash AIR-1: homey/products/air1/troubleshooting/air1-code.md
