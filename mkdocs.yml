@@ -84,8 +84,16 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+#  - pymdownx.snippets:
+#      base_path: "docs"
+#brandon added 4/28/25 to fix homey images with snippets
   - pymdownx.snippets:
-      base_path: "docs"
+      base_path: docs/products
+  - pymdownx.pathconverter:
+      base_path:   docs/products
+      absolute:    true
+      tags:        'img a link'
+
   - admonition
   - pymdownx.arithmatex:
       generic: true
