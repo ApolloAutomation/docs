@@ -88,10 +88,11 @@ markdown_extensions:
 #      base_path: "docs"
 #brandon added 4/28/25 to fix homey images with snippets
   - pymdownx.snippets:
-      base_path: docs/products
+      base_path: docs
   - pymdownx.pathconverter:
-      base_path:   docs/products
-      absolute:    true
+      base_path:   docs
+      relative_path: docs/homey
+      absolute:    false
       tags:        'img a link'
 
   - admonition
