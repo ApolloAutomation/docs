@@ -1,3 +1,5 @@
+# This needs to be redone for Homey if it can be duplicated.
+
 !!! tip "Radar Engineering Mode (REM)"
 
     If you're experiencing false triggers, we recommend using Radar Engineering Mode (REM) to monitor the gate energy and adjust the gate threshold to eliminate them.
