@@ -1,1 +1,1 @@
---8<-- "products/general/contact-us/apollo-automation-shop.md"
+--8<-- "products/general/contact-us/apollo-automation-shop.md:5:"

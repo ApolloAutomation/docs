@@ -1,1 +1,1 @@
---8<-- "products/general/comparisons.md"
+--8<-- "products/general/comparisons.md:5:"
