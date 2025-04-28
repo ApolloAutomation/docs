@@ -93,9 +93,9 @@ markdown_extensions:
         - docs
   - pymdownx.pathconverter:
       # Resolve relative URLs against your source files:
-      base_path: products
+      base_path: !relative
       # Rewrite them as if the HTML lives under homey/products:
-      relative_path: homey/products
+      relative_path: !relative
       absolute: false
       tags: 'img a link'
   - admonition
