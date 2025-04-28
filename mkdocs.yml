@@ -382,23 +382,11 @@ nav:
             - Calibrating:
               - CO<sub>2</sub>: homey/products/general/calibrating-and-updating/co2-calibration.md
               - Radar Tuning:
-#                - Homey: homey/products/msr1/calibrating-and-updating/zones-ha.md
-                - HLK Radar Tool App: homey/products/msr1/calibrating-and-updating/zones-hlk.md
                 - mmWave Tuning Videos: homey/products/general/calibrating-and-updating/mmwave-videos.md
-              - Zone Configuration:
-                - Home Assistant: homey/products/mtr1/setup/zones-ha.md
-                - HLK Radar Tool App: homey/products/mtr1/setup/zones-hlk.md
-#            - Updating: homey/products/general/calibrating-and-updating/updating-firmware.md
-#            - Renaming Devices: homey/products/general/setup/renaming-apollo-devices.md
-#            - Change Update Frequency: homey/products/general/setup/change-the-update-frequency-of-sensors.md
-#            - Change Lux Update Interval: homey/products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval.md
-#            - Adding SCD40 Temp/Hum: homey/products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
-#            - Adjusting WiFi Power: homey/products/general/setup/adjusting-wifi-power.md
-#            - Hidden WiFi Networks: homey/products/general/setup/adding-apollo-devices-to-hidden-networks.md
-#            - Bluetooth Proxy: homey/products/general/setup/bluetooth-proxy.md
-#            - Bluetooth Tracking: homey/products/general/setup/bluetooth-tracking.md
-#            - Piezo Buzzer: homey/products/general/piezo.md
-#            - Switch to Beta: homey/products/general/setup/switch-to-beta-branch.md
+            - Hidden WiFi Networks: homey/products/general/setup/adding-apollo-devices-to-hidden-networks.md
+            - Bluetooth Proxy: homey/products/general/setup/bluetooth-proxy.md
+            - Bluetooth Tracking: homey/products/general/setup/bluetooth-tracking.md
+            - Renaming Devices: homey/products/general/setup/renaming-apollo-devices.md
           - Troubleshooting:
             - Uploading Code Through ESPHome: homey/products/general/troubleshooting/manually-uploading-code-through-esphome.md
             - Removing Devices: homey/products/general/troubleshooting/removing-device-from-home-assistant.md
