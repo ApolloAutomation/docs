@@ -384,8 +384,6 @@ nav:
               - Radar Tuning:
                 - mmWave Tuning Videos: homey/products/general/calibrating-and-updating/mmwave-videos.md
             - Hidden WiFi Networks: homey/products/general/setup/adding-apollo-devices-to-hidden-networks.md
-            - Bluetooth Proxy: homey/products/general/setup/bluetooth-proxy.md
-            - Bluetooth Tracking: homey/products/general/setup/bluetooth-tracking.md
             - Renaming Devices: homey/products/general/setup/renaming-apollo-devices.md
           - Troubleshooting:
             - Removing Devices: homey/products/general/troubleshooting/removing-device-from-homey.md
