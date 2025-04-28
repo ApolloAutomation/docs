@@ -1,3 +1,1 @@
-# AIR-1 General Tips
-
-&nbsp;
+--8<-- "products/air1/setup/general-tips.md:5:"

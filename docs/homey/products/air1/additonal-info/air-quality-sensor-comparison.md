@@ -1,3 +1,1 @@
-# Air Quality Sensor Comparison
-
-#### [Air Quality Sensor Comparison](https://apolloautomation-my.sharepoint.com/:x:/p/trevor/Ea1--coB6rNKvRX07CGsVHEBUF-zUPuyyFvRED-WdjCC_Q?e=NFjC1Y)
+--8<-- "products/air1/additional-info/air-quality-sensor-comparison.md:5:"
