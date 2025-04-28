@@ -1,1 +1,1 @@
---8<-- "products/general/temp-hum-calibration.md"
+--8<-- "products/general/temp-hum-calibration.md:5:"

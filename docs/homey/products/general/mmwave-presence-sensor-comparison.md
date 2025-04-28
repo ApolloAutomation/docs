@@ -1,1 +1,1 @@
---8<-- "products/general/mmwave-presence-sensor-comparison.md"
+--8<-- "products/general/mmwave-presence-sensor-comparison.md:5:"

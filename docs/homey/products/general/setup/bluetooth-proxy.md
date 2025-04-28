@@ -1,1 +1,1 @@
---8<-- "products/general/setup/bluetooth-proxy.md"
+--8<-- "products/general/setup/bluetooth-proxy.md:5:"

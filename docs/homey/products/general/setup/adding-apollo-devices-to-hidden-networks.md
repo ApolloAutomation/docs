@@ -1,1 +1,1 @@
---8<-- "products/general/setup/adding-apollo-devices-to-hidden-networks.md"
+--8<-- "products/general/setup/adding-apollo-devices-to-hidden-networks.md:5:"
