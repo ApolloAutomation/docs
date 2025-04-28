@@ -1,1 +1,1 @@
---8<-- "products/general/opnsense-mdns-auto-discover-issue.md"
+--8<-- "products/general/troubleshooting/opnsense-mdns-auto-discover-issue.md"

@@ -1,1 +1,1 @@
---8<-- "products/general/connection-issues.md"
+--8<-- "products/general/troubleshooting/connection-issues.md"

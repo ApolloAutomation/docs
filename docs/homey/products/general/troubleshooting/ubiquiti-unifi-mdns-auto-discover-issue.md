@@ -1,1 +1,1 @@
---8<-- "products/general/ubiquiti-unifi-mdns-auto-discover-issue.md"
+--8<-- "products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md"

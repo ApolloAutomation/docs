@@ -1,1 +1,1 @@
---8<-- "products/general/GitHub.md"
+--8<-- "products/general/contact-us/GitHub.md"
