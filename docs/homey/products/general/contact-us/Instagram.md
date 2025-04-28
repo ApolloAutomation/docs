@@ -1,1 +1,1 @@
---8<-- "products/general/Instagram.md"
+--8<-- "products/general/contact-us/Instagram.md"

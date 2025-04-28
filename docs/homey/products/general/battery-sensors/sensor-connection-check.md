@@ -1,1 +1,1 @@
---8<-- "products/general/sensor-connection-check.md"
+--8<-- "products/general/battery-sensors/sensor-connection-check.md"
