@@ -101,6 +101,7 @@ _snippets_imports:
     include:
       - python_markdown_admonition
       - python_markdown_collapsible_admonition
+      - python_markdown_tabs
 
 timezone: Etc/UTC
 

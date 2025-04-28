@@ -86,11 +86,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       base_path: "docs"
-#brandon added 4/28/25 to fix homey images with snippets
-  - pymdownx.pathconverter:
-      base_path: docs       # resolve relative ref’s from your docs/ folder
-      absolute: true        # force every converted path to start with a leading slash
-      tags: 'img a link'    # rewrite <img src> and Markdown […](…) links
   - admonition
   - pymdownx.arithmatex:
       generic: true
