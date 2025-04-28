@@ -84,8 +84,21 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+#  - pymdownx.snippets:
+#      base_path: "docs"
+#brandon added 4/28/25 - allows for path rewrites for images to work with snippets from homey redirecting to main wiki
+markdown_extensions:
   - pymdownx.snippets:
-      base_path: "docs"
+      base_path:
+        - docs/products
+  - pymdownx.pathconverter:
+      # Resolve relative URLs against your source files:
+      base_path: docs/products
+      # Rewrite them as if the HTML lives under homey/products:
+      relative_path: docs/homey/products
+      absolute: false
+      tags: 'img a link'
+
   - admonition
   - pymdownx.arithmatex:
       generic: true
