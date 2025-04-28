@@ -1,1 +1,1 @@
---8<-- "products/general/setup/getting-started.md:5:"
+--8<-- "homey/products/general/setup/getting-started.md:5:"
