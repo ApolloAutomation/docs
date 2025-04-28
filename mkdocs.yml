@@ -90,7 +90,7 @@ markdown_extensions:
 markdown_extensions:
   - pymdownx.snippets:
       base_path:
-        - docs/products
+        - docs
   - pymdownx.pathconverter:
       # Resolve relative URLs against your source files:
       base_path: products
