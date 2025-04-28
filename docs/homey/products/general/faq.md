@@ -1,1 +1,1 @@
---8<-- "products/general/faq.md"
+--8<-- "products/general/faq.md:5:"
