@@ -168,6 +168,14 @@ nav:
           - Sensor Comparisons: products/general/comparisons.md
           - Supported Platforms: products/general/supported-platforms.md
           - Resellers: products/general/resellers.md
+      - LED-1:
+          - Introduction: products/led1/introduction.md
+          - FAQ: products/led1/faq.md
+          - Getting Started: products/led1/getting-started-led1.md
+          - Additional Info:
+            - General Tips: products/led1/setup/led1-general-tips.md
+            - Pinout Guide: products/led1/setup/led1-pinout-guide.md
+          - Reviews: products/led1/led1-reviews.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
