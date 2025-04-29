@@ -36,7 +36,7 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
         Before proceeding to the next steps, make sure to unplug your device!
 
-#### Connect LEDs
+#### Wire up LEDs
 
 !!! danger "Before proceeding, consider double checking your power supply and leds use the same voltage!"
 
@@ -48,7 +48,7 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
 3\. Repeat step 2 for a second led strip using Output 2 if you have a second led strip!
 
-#### Connect to your Wi-Fi
+#### Connect to Wi-Fi
 
 Your device is now ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
 
