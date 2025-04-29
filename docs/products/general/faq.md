@@ -59,4 +59,6 @@ description: Frequently Asked Questions.
 
 * If your sensor is exposed to high levels of vibrations or too much airflow, the SCD40 CO2 sensor will have issues working properly. https://sensirion.com/products/catalog/SCD40
 
+&nbsp;
+
 ---

@@ -1,1 +1,0 @@
---8<-- "products/air1/examples/tim-air-1-erv-whole-home.md:5:"
