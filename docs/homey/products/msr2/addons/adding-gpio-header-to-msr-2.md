@@ -2,11 +2,11 @@
 
 1\. Unplug your MSR-2 from power and remove the back.
 
-![](../../../assets/msr-2-add-co2-pic-1.jpg)
+![](../../../../assets/msr-2-add-co2-pic-1.jpg)
 
-![](../../../assets/msr-2-add-co2-pic-2.jpg)
+![](../../../../assets/msr-2-add-co2-pic-2.jpg)
 
-![](../../../assets/msr-2-add-co2-pic-3-1.jpg)
+![](../../../../assets/msr-2-add-co2-pic-3-1.jpg)
 
 2\. Identify the "X" on the PCB on the back of your MSR-2 and the "X" on the top left corner of the GPIO Header addon.
 
