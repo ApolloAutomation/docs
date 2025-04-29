@@ -57,13 +57,20 @@ _editables:
     undo: true
     snippet: true
 _inputs:
-#brandon added this 4/23/25 to add default descriptions
-  page_title:
-    type: textarea
-    comment: "The title of the page."
-  page_description:
-    type: textarea
-    comment: "A short description of the page."
+#brandon added this 4/29/25 to add default descriptions
+  title:
+    type: text           # simple single-line text field
+    label: Title         # human-friendly label
+    description: Enter the article title
+    context:
+      path: "docs/**/*.md"
+  description:
+    type: textarea       # multi-line text area
+    label: Description   # human-friendly label
+    description: A short summary of the article
+    context:
+      path: "docs/**/*.md"
+
   image:
     type: image
     options:
