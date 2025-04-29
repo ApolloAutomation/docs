@@ -22,4 +22,10 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
     You can use a 5 volt, 12 volt, or 24v power supply here!
 
-More words after the content tabs!
+#### Connect LEDs
+
+!!! danger "Before proceeding, consider double checking your power supply and leds use the same voltage!"
+
+    The LED-1 will output the same voltage that is input to the device, so make sure to connect 5V led strips if you're using a 5V power supply - same with 12V and 24V!
+
+1\. Grab a female "JST-SM 3 pin connector" such as the extra included with your led strips, and
