@@ -63,13 +63,13 @@ _inputs:
     label: Title         # human-friendly label
     description: Enter the article title
     context:
-      path: "wiki/**/*.md"
+      path: "docs/**/*.md"
   description:
     type: textarea       # multi-line text area
     label: Description   # human-friendly label
     description: A short summary of the article
     context:
-      path: "wiki/**/*.md"
+      path: "docs/**/*.md"
 
   image:
     type: image
