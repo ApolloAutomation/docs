@@ -1,6 +1,6 @@
 ---
-title: Add the rear female usb-c port to your MSR-2
-description: Tutorial on adding the rear female usb-c port to your MSR-2.
+title: MSR-2 Outlet Mount
+description: Tutorial for using the MSR-2 Outlet Mount.
 ---
 # MSR-2 Outlet Mount
 
