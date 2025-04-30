@@ -469,7 +469,7 @@ nav:
             - GPIO Addon: homey/products/air1/addons/adding-gpio-header-to-air-1.md
           - Reviews: homey/products/air1/air1-reviews.md
           - Examples:
-            - Air Quality Dashboard: homey/products/air1/examples/air1-dashboard-examples.md
+            - Air Quality Dashboard: homey/products/air1/examples/air1-air-quality-notification-example.md
           - Troubleshooting:
             - AIR-1 Boot Mode: homey/products/air1/troubleshooting/air1-boot-mode.md
             - Factory Re-Flash AIR-1: homey/products/air1/troubleshooting/air1-code.md

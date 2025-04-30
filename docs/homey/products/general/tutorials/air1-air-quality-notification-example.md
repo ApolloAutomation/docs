@@ -1,0 +1,1 @@
+--8<-- "products/air1/air-quality-notification-example.md:5:"
