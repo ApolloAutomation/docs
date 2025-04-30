@@ -2,8 +2,6 @@
 title: Air Quality Notification Example
 description: Example flow that sends alerts based on changing indoor air quality levels.
 ---
-
-
 # Air Quality Notification
 
 !!! tip "This guide will show you how to create a flow that sends a notification to everyone who's home when the air quality in your home is less than ideal."
@@ -14,23 +12,23 @@ description: Example flow that sends alerts based on changing indoor air quality
 
 2\. Click "New Flow" then "Advanced Flow".
 
-![](assets/homey-flow-example-pic-1.png)
+![](../../general/tutorials/assets/homey-flow-example-pic-1.png)
 
 3\. Click "Add" and select "When".
 
-![](assets/homey-flow-example-pic-2.png)
+![](../../general/tutorials/assets/homey-flow-example-pic-2.png)
 
 4\. In the search bar at the top, type in "co2 becomes" and select the card for the sensor you want to track. We are choosing "CO2 becomes greater than" for the Apollo AIR-1 device.
 
-![](assets/homey-flow-example-pic-3-1.png)
+![](../../general/tutorials/assets/homey-flow-example-pic-3-1.png)
 
 5\. Place your card on your flow area with a left click. You should have this node on your flow canvas.
 
-![](assets/homey-flow-example-pic-4-1.png)
+![](../../general/tutorials/assets/homey-flow-example-pic-4-1.png)
 
 6\. Select "ppm" and type in your value, we will use 999.
 
-![](assets/homey-flow-example-pic-7.png)
+![](../../general/tutorials/assets/homey-flow-example-pic-7.png)
 
 7\. Duplicate steps 4 and 5 above but this time select "CO2 becomes less than" and place it on your flow canvas.Make sure to fill in your less than ppm value such as 1000.
 
@@ -80,4 +78,4 @@ description: Example flow that sends alerts based on changing indoor air quality
 
 17\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
-[Run into issues? Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                              .md-button .md-button--primary }
+[Run into issues? Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                                .md-button .md-button--primary }

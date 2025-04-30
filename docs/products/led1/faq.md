@@ -4,9 +4,10 @@ description: Frequently asked questions about the LED-1 controller.
 ---
 1\. **What is the maximum power output of the LED-1?**
 
-* The LED-1 is able to safely offer 10 amps of power using either 5V, 12V, or a 24V power supply.
-* The device can also be powered via USB-C-PD (Power Delivery) with 5V or 12V.
-* The device has a built-in re-settable fuse that will trip if this is exceeded. The output voltage is the same as the input voltage, so please make sure you buy the same 5V, or 12V, or 24V power supply and LED strips.
+* The LED-1 is able to safely offer 10 amps of power using either 5V, 12V, or a 24V when using an external power supply.
+* The device can also be powered via USB-C-PD (Power Delivery) with 5V or 12V at 3 amps.
+* The device can also be powered by USB-C with 5V at 3 amps.
+* The device has a built-in replaceable fuse that will trip if this is exceeded. The output voltage is the same as the input voltage, so please make sure you buy the same 5V, or 12V, or 24V power supply and LED strips.
 
 2\. **How long of an LED strip can I use with the LED-1?**
 
