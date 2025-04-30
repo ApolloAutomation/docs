@@ -30,9 +30,9 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
     The External Power Supply is the best way to get the longest distance and power out of your device. You can get up to 10amps of power at 5V, 12V, or 24V using an external power supply!
 
-    1\. Take your power supply and connect the output power to the input terminals of your LED-1. If you still need a power supply, check out our <a href="https://active-lyrebird.cloudvent.net/products/led1/setup/led1-general-tips/" target="_blank" rel="noreferrer nofollow noopener">suggestions here.</a> Be very careful and make sure you are connecting the positive red wire to the + sign and the negative black wire to the - sign. Most power supplies will have a barrel connector only rated for 3 amps on it, so we suggest that you cut the barrel connector off and split out the red and black wires to put directly into the LED-1.
+    1\. Take your power supply and connect the output power to the input terminals of your LED-1. If you still need a power supply, check out our <a href="https://wiki.apolloautomation.com/products/led1/setup/led1-general-tips/" target="_blank" rel="noreferrer nofollow noopener">suggestions here.</a> Be very careful and make sure you are connecting the positive red wire to the + sign and the negative black wire to the - sign. Most power supplies will have a barrel connector only rated for 3 amps on it, so we suggest that you cut the barrel connector off and split out the red and black wires to put directly into the LED-1.
 
-    !!! null "Unplug the power!"
+    !!! warning "Unplug the power!"
 
         Before proceeding to the next steps, make sure to unplug your device!
 
