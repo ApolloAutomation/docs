@@ -1,1 +1,1 @@
---8<-- "/docs/homey/products/general/tutorials/air-quality-notification-example.md:5:"
+--8<-- "products/general/tutorials/air-quality-notification-example.md:5:"
