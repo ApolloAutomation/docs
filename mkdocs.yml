@@ -214,6 +214,7 @@ nav:
             - CO<sub>2</sub> Addon: products/msr2/addons/adding-co2-to-msr-2.md
             - Female Rear USB-C: products/msr2/addons/adding-rear-female-usb-to-msr-2.md
             - GPIO Addon: products/msr2/addons/adding-gpio-header-to-msr-2.md
+            - Outlet Mount: products/msr2/addons/msr2-outlet-mount.md
           - Reviews: products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
@@ -418,9 +419,11 @@ nav:
               - HLK Radar Tool App: homey/products/msr2/calibrating-and-updating/zones-hlk.md
               - mmWave Tuning Videos: homey/products/general/calibrating-and-updating/mmwave-videos.md
           - Addons:
+            - Articulating Stand: homey/products/msr2/addons/adding-articulating-stand-to-msr-2.md
             - CO<sub>2</sub> Addon: homey/products/msr2/addons/adding-co2-to-msr-2.md
             - Female Rear USB-C: homey/products/msr2/addons/adding-rear-female-usb-to-msr-2.md
             - GPIO Addon: homey/products/msr2/addons/adding-gpio-header-to-msr-2.md
+            - Outlet Mount: homey/products/msr2/addons/msr2-outlet-mount.md
           - Reviews: homey/products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: homey/products/msr2/examples/msr2-dashboards.md
