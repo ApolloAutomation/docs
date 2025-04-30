@@ -10,7 +10,7 @@ The Apollo LED-1 is a compact, versatile LED Controller for Home Assistant. Full
 
 **Key Features:**
 
-* Powered via either usb-c (5v only), usb-c PD (5v or 12v) or external power supply (5v, 12v, or 24v).
-* Two fused outputs able to handle 5amps of power each totaling 10 amps.
-* Built in MEMS digital microphone for WLED AudioReactive functionality.
+* Powered via either USB-C (5 V only), USB-C PD (5 V or 12 V) or external power supply (5 V, 12 V, or 24 V).
+* Two fused outputs able to handle 10 Amps total - either from one output or both but max of 10 Amps.
+* Built in MEMS digital microphone for WLED Audio Reactive functionality.
 * Built in relay to kill power to LEDs for less power usage (great for battery projects).
