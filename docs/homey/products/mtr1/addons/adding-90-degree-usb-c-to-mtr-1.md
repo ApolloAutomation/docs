@@ -1,8 +1,8 @@
 ---
-title: adding Articulating Stand to MTR-1
-description: Step by step tutorial for adding the Articulating Stand addon to the MTR-1.
+title: adding 90 degree USB-C to MTR-1
+description: Step by step tutorial for adding 90 degree USB-C to MTR-1.
 ---
-# Adding Articulating Stand To MTR-1
+# Adding 90 degree USB-C to MTR-1
 
 1\. Gather the MTR-1, 90 degree addon, and optional top facing USB-C Plug.
 
@@ -23,3 +23,7 @@ description: Step by step tutorial for adding the Articulating Stand addon to th
 5\. Plug into an outlet and enjoy your sensor!
 
 ![](../../../../products/mtr1/addons/assets/mtr-1-90-addon-final-image.webp)
+
+!!! success "You're ready to begin using your device!"
+
+    Make sure to head to our <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-mtr1/" target="_blank" rel="noreferrer nofollow noopener">getting started guide</a> to get your MTR-1 up and running!

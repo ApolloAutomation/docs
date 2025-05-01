@@ -215,6 +215,7 @@ nav:
             - Female Rear USB-C: products/msr2/addons/adding-rear-female-usb-to-msr-2.md
             - GPIO Addon: products/msr2/addons/adding-gpio-header-to-msr-2.md
             - Outlet Mount: products/msr2/addons/msr2-outlet-mount.md
+            - 90 Degree Addon: products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
           - Reviews: products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
@@ -425,6 +426,7 @@ nav:
             - Female Rear USB-C: homey/products/msr2/addons/adding-rear-female-usb-to-msr-2.md
             - GPIO Addon: homey/products/msr2/addons/adding-gpio-header-to-msr-2.md
             - Outlet Mount: homey/products/msr2/addons/msr2-outlet-mount.md
+            - 90 Degree Addon: products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
           - Reviews: homey/products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: homey/products/msr2/examples/msr2-dashboards.md
