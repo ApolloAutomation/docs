@@ -12,7 +12,11 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
 === "USB Power"
 
-    1\. Connect a USB-C cable to a 5V 3A or larger power supply and the other end into your LED-1. We suggest using a quality USB-C cable that can handle 3 amps or larger. If you are not sure if yours supports 3 amps, buy a new cable from us or off Amazon etc
+    1\. Connect a USB-C cable to a 5V 3A or larger power supply and the other end into your LED-1. We suggest using a quality USB-C cable that can handle 3 amps or larger. If you are not sure if yours supports 3 amps, buy a new cable from our store or a reputable one off of Amazon, Monoprice, etc.
+
+    !!! warning "Unplug the power!"
+
+        Before proceeding to the next steps, make sure to unplug your device!
 
 === "USB Power Delivery"
 
@@ -43,6 +47,8 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
     The LED-1 will output the same voltage that is input to the device, so make sure to connect 5V led strips if you're using a 5V power supply - same with 12V and 24V!
 
 1\. Grab a male JST-SM 3 pin connector such as the extra included with your led strips and carefully note the red wire for positive, the green for data, and the white for ground.
+
+![](assets/jst-sm-power-data-ground-labeled.png)
 
 2\. Inspect the LED-1 and look for the two Wago connectors labeled "Output 1" and "Output 2". Insert the red power wire into the far left terminal of output 1 then the green wire into the middle terminal of Output 1 then the white wire into the third terminal for Output 1.
 
