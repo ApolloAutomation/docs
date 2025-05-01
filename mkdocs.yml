@@ -240,6 +240,7 @@ nav:
             - CO<sub>2</sub> Addon: products/mtr1/addons/adding-co2-to-mtr-1.md
             - Male Rear USB-C: products/mtr1/addons/adding-rear-male-usb-to-mtr-1.md
             - GPIO Addon: products/mtr1/addons/adding-gpio-header-to-mtr-1.md
+            - 90 Degree Addon: products/mtr1/addons/adding-90-degree-usb-c-to-mtr-1.md
           - Reviews: products/mtr1/mtr1-reviews.md
           - Examples:
             - MTR-1 Corner Mount: products/mtr1/examples/crookedtoe-mtr1.md
@@ -449,6 +450,7 @@ nav:
             - CO<sub>2</sub> Addon: homey/products/mtr1/addons/adding-co2-to-mtr-1.md
             - Male Rear USB-C: homey/products/mtr1/addons/adding-rear-male-usb-to-mtr-1.md
             - GPIO Addon: homey/products/mtr1/addons/adding-gpio-header-to-mtr-1.md
+            - 90 Degree Addon: homey/products/mtr1/addons/adding-90-degree-usb-c-to-mtr-1.md
           - Reviews: homey/products/mtr1/mtr1-reviews.md
           - Examples:
             - MTR-1 Corner Mount: homey/products/mtr1/examples/crookedtoe-mtr1.md
