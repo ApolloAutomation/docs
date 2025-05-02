@@ -14,8 +14,6 @@ Most power supplies will have a barrel connector only rated for 3 amps on it, so
 
     The LED-1 will protect itself, but not the led strips connected to it. So if you connect a 24 volt power supply to the device, it will send 24v out to the LED strips. Make sure to pair your LEDs and Power supplies with the same voltage!
 
-When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy.
-
 ##### LED Strips
 
 * <a href="https://www.amazon.com/dp/B01CDTEG1O" target="_blank" rel="noreferrer nofollow noopener">WS2812B</a> which are 5V RGB LED strips.
