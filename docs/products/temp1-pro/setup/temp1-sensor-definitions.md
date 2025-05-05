@@ -1,12 +1,19 @@
 ---
-title: TEMP-1 Sensor Definitions
-description: Full list of definitions for the TEMP-1 and its various sensors.
+title: TEMP-1 Pro Sensor Definitions
+description: >-
+  Full list of definitions for the TEMP-1 Pro and its various sensors and
+  available ports.
 ---
-# TEMP-1 Sensor Definitions
+# TEMP-1 Pro Sensor Definitions
 
 Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
 
 ???+ info "Controls"
+
+    **Alarm Outside Humidity Range**
+
+    * Alarm that sounds when the thresholds are met for the sensor.
+    * Click on the toggle to turn on or off. Defaults to OFF.
 
     **Alarm Outside Temp Range**
 
@@ -16,10 +23,6 @@ Once added to Home Assistant you can configure different settings for your senso
     **RGB Light**
 
     * <a href="https://esphome.io/components/light/index.html#light-effects" target="_blank" rel="noopener">One RGB Neopixel LED</a>. Click on the light bulb or color wheel to change the color. Click on the toggle to turn on or off.
-
-    **Temp Probe Select**
-
-    * Choose the probe connected to the TEMP-1B. The options are Dallas or Food. The Dallas sensor is a temperature probe (available in long or short versions), while the Food probe is a stainless steel, food-safe option suitable for use with a grill.
 
 ???+ info "Sensors"
 
@@ -105,4 +108,4 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){              .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                .md-button }
