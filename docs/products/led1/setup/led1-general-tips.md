@@ -28,7 +28,7 @@ Most power supplies will have a barrel connector only rated for 3 amps on it, so
 
 <a href="https://www.amazon.com/BTF-LIGHTING-Connectors-WS2812B-WS2811-WS2812/dp/B01DC0KIT2" target="_blank" rel="noreferrer nofollow noopener">JST-SM 3 pin connectors</a> are helpful to connect multiple led strips or to solder them onto led strips to create multiple smaller sections. These have a maximum rating of 3 amps.
 
-<a href="https://www.amazon.com/BTF-LIGHTING-Chasing-Transparent-Connector-Controller/dp/B0CZ36T33F" target="_blank" rel="noreferrer nofollow noopener">10mm Width Transparent Connector Kit</a> You might want to use these 24v FCOB connectors for the WS2814 LEDs suggested above. Make sure to choose the same width of led strip + connector (10mm, 12mm, etc).
+<a href="https://www.amazon.com/BTF-LIGHTING-Transparent-Connector-Solderless-Extension/dp/B0B3LZ59FB" target="_blank" rel="noreferrer nofollow noopener">10mm Width Transparent Connector Kit</a> You might want to use these 24v FCOB connectors for the WS2814 LEDs suggested above. Make sure to choose the same width of led strip + connector (10mm, 12mm, etc).
 
 ##### Additional Tools
 
