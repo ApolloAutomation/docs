@@ -1,28 +1,26 @@
 ---
-title: TEMP-1 Temp Probe Guide
-description: Step by step guide for installing and using the optional Temp Probe with the TEMP-1.
+title: TEMP Pro-1 Temp Probe Guide
+description: >-
+  Step by step guide for installing and using the optional Temp Probe with the
+  TEMP Pro-1.
 ---
-# TEMP-1 Temp Probe
+# TEMP Pro-1 Temp Probe
 
-The TEMP-1 comes with an optional temp probe which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc. It includes a protected cable but the TEMP-1 itself needs to stay in a cool environment.
+The TEMP Pro-1 comes with an optional temp probe which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc. It includes a protected cable but the TEMP Pro-1 itself needs to stay in a cool environment.
 
-1\. To use your temp probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1.
+1\. To use your temp probe simply take it out of the package and insert it into the left 3.5mm port on your TEMP Pro-1.
 
-![](assets/temp1-temp-probe-insert-1.jpg)
+![](assets/temp-pro-1-temp-probe-insert-1.jpg)
 
-![](assets/temp1-probe-fully-inserted.jpg)
+![](assets/temp-pro-1-temp-probe-inserted.jpg)
 
-2\. Once inserted, proceed to step 3.
+2\. Your probe is now fully inserted and ready to use. Make sure to reboot your device if it is already powered on so that it recognizes the probe!
 
-![](assets/temp1-temp-probe-pic-1.jpg)
-
-3\. Go to the device page of your TEMP-1 in Home Assistant and choose the Temperature Probe.
-
-![](assets/temp1b-temp-probe-pic-1-1.png)
+![](assets/temp-pro-1-temp-probe-full.jpg)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
-    The TEMP-1 should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your TEMP-1 if there will be high moisture content in the air or if it is expected to rain.
+    The TEMP Pro-1 should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your TEMP Pro-1 if there will be high moisture content in the air or if it is expected to rain.
 
 **Example images of the long temperature probe in a mini freezer:**
 
