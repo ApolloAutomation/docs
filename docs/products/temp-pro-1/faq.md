@@ -29,7 +29,7 @@ description: Frequently asked questions about the TEMP-1 Pro temperature sensor.
 
 5\. **How often does the TEMP Pro-1 send sensor data?**
 
-* The TEMP Pro-1 reporting frequency is adjustable in ESPHome but most things default to 60seconds. You can set it for frequent updates or extend intervals to conserve battery life.
+* The TEMP Pro-1 reporting frequency is adjustable in ESPHome but most things default to 60seconds.
 
 6\. **Can I customize the TEMP Pro-1 functionality?**
 
@@ -53,4 +53,4 @@ description: Frequently asked questions about the TEMP-1 Pro temperature sensor.
 
 11\. **Can I use multiple TEMP Pro-1 sensors in one Home Assistant setup?**
 
-* Yes, you can add multiple TEMP-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+* Yes, you can add multiple TEMP Pro-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.

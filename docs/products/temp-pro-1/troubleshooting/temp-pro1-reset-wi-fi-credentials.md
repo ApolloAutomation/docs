@@ -1,8 +1,8 @@
 ---
 title: Reset Wi-Fi Credentials
-description: Step by step guide for resetting the Wi-Fi Credentials on your TEMP-1.
+description: Step by step guide for resetting the Wi-Fi Credentials on your TEMP Pro-1.
 ---
-# Reset Wi-Fi Credentials on your TEMP-1
+# Reset Wi-Fi Credentials on your TEMP Pro-1
 
 1\. Plug the device into power.
 
