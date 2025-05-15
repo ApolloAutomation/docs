@@ -42,4 +42,4 @@ description: Tutorial showing how to replace the 10 A Fuse on the LED-1.
 
 10\. You're all done - enjoy your LED-1!
 
-[Click here to head to our general tips wiki for best practices!](https://wiki.apolloautomation.com/products/led1/setup/led1-general-tips/){ .md-button .md-button--primary }
+[Click here to head to our general tips wiki for best practices!](https://wiki.apolloautomation.com/products/led1/setup/led1-general-tips/){   .md-button .md-button--primary }
