@@ -1,1 +1,1 @@
---8<-- "products/mtr1/setup/general-tips.md"
+--8<-- "homey/products/mtr1/setup/general-tips.md:5:"
