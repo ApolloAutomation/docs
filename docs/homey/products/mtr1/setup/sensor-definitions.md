@@ -1,1 +1,1 @@
---8<-- "products/mtr1/setup/sensor-definitions.md"
+--8<-- "products/mtr1/setup/sensor-definitions.md:5:"
