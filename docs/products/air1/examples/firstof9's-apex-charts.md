@@ -1,6 +1,8 @@
 ---
 title: Firstof9's AIR-1 Apex Charts Dashboard
-description: A custom dashboard made by discord/github user Firstof9 using Apex Charts for a really neat AIR-1 dashboard.
+description: >-
+  A custom dashboard made by discord/github user Firstof9 using Apex Charts for
+  a really neat AIR-1 dashboard.
 ---
 # Firstof9's AIR-1 Apex Charts Dashboard
 
@@ -22,9 +24,9 @@ Next, you need to edit the dashboards here.
 
 ![image.png](../assets/fBWimage.png)
 
-***WARNING YOU ARE ABOUT TO BE ABLE TO WIPE OUT ALL YOUR DASHBOARDS PROCEED WITH CAUTION***
+!!! danger "WARNING YOU ARE ABOUT TO BE ABLE TO WIPE OUT ALL YOUR DASHBOARDS PROCEED WITH CAUTION."
 
-***WARNING YOU ARE ABOUT TO BE ABLE TO WIPE OUT ALL YOUR DASHBOARDS PROCEED WITH CAUTION***
+    You are entering an area where if you copy/paste to the wrong place you could delete other dashboards so please be careful!
 
 Now choose "raw configuration editor"
 
@@ -34,7 +36,7 @@ Now you need to be VERY careful. You are editing all of your dashboards but we c
 
 ![AIR-1 Dashboard End.png](../assets/air-1-dashboard-end.png)
 
-**Be sure to change the entity ID to match your device or else the card will not work.** You can find your device ID by going to the ESPHome addon and selecting the Edit option.
+**Be sure to change the entity ID to match your device or else the card will not work.** You can find your entity ID by going to the ESPHome Device Builder and selecting the Edit option.
 
 ![AIR-1 ID.png](../assets/air-1-id.png)
 
@@ -43,8 +45,6 @@ The easiest way to change all of the entity IDs in the code is by using AI (Chat
 VSC Find/Replace
 
 ![AIR-1 Find and Replace.png](../assets/OQfair-1-find-and-replace.png)
-
-ChatGPT<br> ![Good ChatGPT.png](../assets/vBggood-chatgpt.png)
 
 **This is the code!**
 
