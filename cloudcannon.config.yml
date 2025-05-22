@@ -1,5 +1,5 @@
 paths:
-#  uploads: "docs/assets"
+  uploads: "docs/assets"
   uploads_filename:
   uploads_use_relative_path: true
   static: ""
@@ -10,8 +10,8 @@ paths:
   data:
   layouts:
   includes:
-#brandon changed this
-  uploads: '[base_path]/assets'
+#brandon changed this back 5/22/25
+#  uploads: '[base_path]/assets'
 
 collections_config:
   docs:
@@ -57,20 +57,6 @@ _editables:
     undo: true
     snippet: true
 _inputs:
-#brandon added this 4/29/25 to add default descriptions
-  title:
-    type: text           # simple single-line text field
-    label: Title         # human-friendly label
-    description: Enter the article title
-    context:
-      path: "docs/**/*.md"
-  description:
-    type: textarea       # multi-line text area
-    label: Description   # human-friendly label
-    description: A short summary of the article
-    context:
-      path: "docs/**/*.md"
-
   image:
     type: image
     options:
