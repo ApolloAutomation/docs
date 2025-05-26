@@ -8,6 +8,18 @@ description: Tutorial for MTR-1 HLKRadarTool app Zone Configuration.
 
 1\. Download the HLKRadarTool app for either [Android](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US%E2%89%B7=US)or [Apple](https://apps.apple.com/us/app/hlkradartool/id1638651152)<br>2\. Ensure the mmWave radar you want to configure has Radar Control Bluetooth turned on. Home Assistant &gt; Settings &gt; Devices & services &gt; ESPHome Devices &gt; Select Device &gt; Scroll down and toggle on Radar Control Bluetooth<br> ![Screenshot 2024-05-14 at 10.30.31 AM.png](../assets/screenshot-2024-05-14-at-10-30-31-am.png)<br> 3. Open the HLKRadarTool App and select your device<br> ![Screenshot_20240514_100155_HLKRadarTool.jpg](../assets/screenshot-20240514-100155-hlkradartool.jpg)<br> 4. Select Set in the top right<br> ![Screenshot_20240514_100250_HLKRadarTool.jpg](../assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)<br> 5. Select Close Detection, Area Detection, or Area Filtering. Then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully!<br> - Close Detection: Disable zone area detection<br> - Area Detection: Only detects targets in the specified zone<br> - Area Filtering: Excludes a zone from detection<br> ![Screenshot_20240514_100512_HLKRadarTool.jpg](../assets/screenshot-20240514-100512-hlkradartool.jpg)<br> 6. If set up correctly the zones should be saved as different colors. You can double-check that the settings are saved by looking at your HA entities (picture below). You should be all set!<br> ![Screenshot 2024-05-14 at 11.27.17 AM.png](../assets/screenshot-2024-05-14-at-11-27-17-am.png)![Screenshot_20240514_102430_HLKRadarTool.jpg](../assets/screenshot-20240514-102430-hlkradartool.jpg)
 
+!!! tip "Helpful Hints to understand zones better!"
+
+    * X1 must always be less than X2, and Y1 must always be less than Y2.
+
+    * The Y axis is easier since it's never negative.
+
+      &nbsp;
+
+    * The X axis is where you can get tripped up, especially when both values are negative: -3456 is less than -2345.
+    * The Plotly chart will still render the rectangles even if the X1/X2 and Y1/Y2 values are reversed.
+    * The zones cannot overlap.
+
 ###### Dashboard Card Setup
 
 7\. Copy the code below and add a Home Assistant card to visualize your zones. You will need to change all of the sensor\_apollo\_mtr\_1 entity IDs to match your MTR-1 device. This can be done quickly by using a code editor or ChatGPT.<br> ![Screenshot 2024-05-14 at 11.27.44 AM.png](../assets/screenshot-2024-05-14-at-11-27-44-am.png)
@@ -32,8 +44,8 @@ layout:
     type: number
     fixedrange: true
     range:
-      - 4000
       - -4000
+      - 4000
   yaxis:
     dtick: 1000
     gridcolor: RGBA(200,200,200,0.15)

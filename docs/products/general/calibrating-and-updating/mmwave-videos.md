@@ -1,3 +1,7 @@
+---
+title: mmWave Tuning Videos
+description: Two short videos and a quick sumamry on how to best tune the LD2410B in the MSR-2!
+---
 !!! tip "Radar Engineering Mode (REM)"
 
     If you're experiencing false triggers, we recommend using Radar Engineering Mode (REM) to monitor the gate energy and adjust the gate threshold to eliminate them.

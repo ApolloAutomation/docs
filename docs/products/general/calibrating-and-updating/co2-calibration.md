@@ -1,3 +1,7 @@
+---
+title: CO2 Calibration Tutorial
+description: Step by step guide for re-calibrating your SCD40 CO2 sensor
+---
 # CO<sub>2</sub> Calibration
 
 !!! tip "This should be done every 1-2 years."
