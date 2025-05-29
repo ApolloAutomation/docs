@@ -252,6 +252,34 @@ nav:
             - Factory Re-Flash MTR-1: products/mtr1/troubleshooting/mtr1-code.md
             - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
             - Reset Wi-Fi Credentials: products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
+      - R-PRO-1:
+          - Introduction: products/rpro1/introduction.md
+          - FAQ: products/msr2/faq.md
+          - Getting Started: products/general/setup/getting-started-msr2.md
+          - Additional Info:
+            - General Tips: products/msr2/setup/msr2-general-tips.md
+            - Sensor Definitons: products/msr2/setup/msr2-sensor-definitions.md
+            - Radar Tuning:
+              - Home Assistant: products/msr2/calibrating-and-updating/zones-ha.md
+              - HLK Radar Tool App: products/msr2/calibrating-and-updating/zones-hlk.md
+              - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
+          - Addons:
+            - Articulating Stand: products/msr2/addons/adding-articulating-stand-to-msr-2.md
+            - CO<sub>2</sub> Addon: products/msr2/addons/adding-co2-to-msr-2.md
+            - Female Rear USB-C: products/msr2/addons/adding-rear-female-usb-to-msr-2.md
+            - GPIO Addon: products/msr2/addons/adding-gpio-header-to-msr-2.md
+            - Outlet Mount: products/msr2/addons/msr2-outlet-mount.md
+            - 90 Degree Addon: products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
+          - Reviews: products/msr2/msr2-reviews.md
+          - Examples:
+            - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
+            - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
+            - GPIO Header LED Strip: products/msr2/examples/gpio-header-control-an-led-strip.md
+          - Troubleshooting:
+            - MSR-2 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
+            - Factory Re-Flash MSR-2: products/msr2/troubleshooting/msr2-code.md
+            - Teardown and Reassembly Of MSR-2: products/msr2/troubleshooting/msr2-teardown.md
+            - Reset Wi-Fi Credentials: products/msr2/troubleshooting/msr2-reset-wi-fi-credentials.md
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md

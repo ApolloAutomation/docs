@@ -1,10 +1,10 @@
 ---
-title: Putting The MSR-2 In Boot Mode
-description: Step by step guide for putting The MSR-2 In Boot Mode.
+title: Putting The R-Pro-1 In Boot Mode
+description: Step by step guide for putting The R-Pro-1 In Boot Mode.
 ---
-# Putting The MSR-2 In Boot Mode
+# Putting The R-Pro-1 In Boot Mode
 
-!!! info "This will cover how to put the MSR-2 into boot mode."
+!!! info "This will cover how to put the R-Pro-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
