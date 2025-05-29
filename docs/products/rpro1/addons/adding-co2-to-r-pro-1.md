@@ -1,10 +1,10 @@
 ---
-title: Add the SCD40 CO2 sensor to your MSR-2
-description: Tutorial on adding the SCD40 CO2 sensor to your MSR-2.
+title: Add the SCD40 CO2 sensor to your R-Pro-1
+description: Tutorial on adding the SCD40 CO2 sensor to your R-Pro-1.
 ---
-# Adding CO<sub>2</sub> To MSR-2
+# Adding CO<sub>2</sub> To R-Pro-1
 
-1\. Unplug your MSR-2 from power and remove the back
+1\. Unplug your R-Pro-1 from power and remove the back
 
 ![](../../../assets/msr-2-add-co2-pic-1.jpg)![](../../../assets/msr-2-add-co2-pic-2.jpg)![](../../../assets/msr-2-add-co2-pic-3-1.jpg)
 
