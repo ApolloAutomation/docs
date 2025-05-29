@@ -1,6 +1,6 @@
 ---
-title: MSR-2 FAQ
-description: Frequently asked questions about the MSR-2 mmWave sensor.
+title: R-Pro-1 FAQ
+description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 ---
 1\. **What sensors are included in the MSR-2?**
 

@@ -1,6 +1,6 @@
 ---
 title: MSR-2 Home Assistant Zone Configuration
-description: Tutorial for MSR-2 Home Assistant Zone Configuration.
+description: Tutorial for R-Pro-1 Home Assistant Zone Configuration.
 ---
 # How To Tune mmWave Using Home Assistant
 

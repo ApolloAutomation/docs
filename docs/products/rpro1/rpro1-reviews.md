@@ -1,7 +1,10 @@
 ---
-title: MSR-2 Reviews
-description: Youtuber reviews and feedback about the MSR-2 sensor from Apollo Automation.
+title: R-Pro-1 Reviews
+description: Youtuber reviews and feedback about the R-Pro-1 sensor from Apollo Automation.
 ---
+
+These need to be updated
+
 # [Simon Says Home Assistant MSR-2 Review](https://www.youtube.com/watch?v=U4qUhFSAxbk)
 
 # [Smart Home Scene MSR-2 Review](https://smarthomescene.com/reviews/apollo-msr-2-review-the-smallest-presence-sensor-ever-made/)
