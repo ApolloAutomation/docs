@@ -265,7 +265,6 @@ nav:
               - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
           - Addons:
             - CO<sub>2</sub> Addon: products/rpro1/addons/adding-co2-to-r-pro-1.md
-            - GPIO Addon: products/rpro/addons/adding-gpio-header-to-r-pro-1.md
             - Gang Box Mount: products/rpro/addons/attaching-3d-printed-gang-box-mount-to-r-pro-1.md
           - Reviews: products/rpro1/rpro1-reviews.md
 #need to add later          - Examples:
