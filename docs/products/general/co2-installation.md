@@ -1,8 +1,8 @@
 ---
-title: Articulating Stand Addon Tutorial
-description: QR Code from the Articulating stand for both MSR-2 and MTR-1 points here
+title: CO2 Installation Page with Redirects to all products.
+description: QR Code for the CO2 addon points here
 ---
-# CO<sub>2</sub> Calibration
+# CO<sub>2</sub> Installation
 
 We have the CO<sub>2</sub> Addon for the MSR-2, MTR-1, AIR-1, and new R-PRO-1. Choose your specific Apollo sensor below to head to that wiki article!
 
