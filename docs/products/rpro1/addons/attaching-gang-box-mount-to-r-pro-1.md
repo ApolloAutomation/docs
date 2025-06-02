@@ -8,21 +8,24 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 
 ![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
-2\. With the back removed, identify the bottom left corner where the small black mezzanine connector lives. You will see an "X" indicating which corner needs to be lined up with the SCD40 CO<sub>2</sub> sensor. There is an X on the SCD40 sensor's PCB as well, you can see it in the image below but it is slightly cut off on the PCB itself.
+2\. Gently lift the PCB out of the case and set it face down with the ethernet port facing up.
 
-!!! tip "Other ways to identify the correct orientation"
+![](../../../assets/rpro-1-bare-pcb-eth-up.jpeg)
 
-    * There is also a "gold dot" in the top left of the SCD40 when oriented properly.
-    * There is a torn corner on top of the SCD40 on the top right.
+3\. Grab the two gang box mount pieces and orient them with the tabs with the screw holes in them facing downwards.
 
-3\. Gently push the SCD40 CO<sub>2</sub> module onto the black mezzanine connector.
+!!! danger "Before continuing and sliding the mounts on, please verify you have the pieces oriented as shown in the images below."
 
-![](../../../assets/rpro-1-add-co2-seat-scd40.jpg)![](../../../assets/rpro-1-add-co2-scd40-installed.jpg)
+    If the mounts are not put on properly the R-PRO-1 could be damaged!
 
-5\. Slide the case back over the R-PRO-1, making sure that the case has the hole for the USB-C port and the SCD40 facing toward you.
+3\. Gently push the top mount labeled "TOP" into the pcb as shown below. Make sure the orientation is identical to the image below!
 
-![](../../../assets/rpro-1-add-co2-scd40-installed.webp)
+![](../../../assets/rpro-1-attach-gang-box-mount-top.jpeg)
 
-6\. Gently press the backplate of the R-PRO-1 case onto the R-PRO-1 until it lightly snaps into place. Please do not force it, if necessary please repeat steps above until it seats in the case without any force required.
+4\. Gently push the top mount labeled "BOTTOM" into the pcb as shown below. Make sure the orientation is identical to the image below!
 
-7\. Please refer to our <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" title="CO2 Calibration" target="_blank" rel="noreferrer nofollow noopener">CO<sub>2</sub> calibration guide</a> to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).
+![](../../../assets/rpro-1-attach-gang-box-mount-bottom.jpeg)
+
+6\. The end result should look identical to the image below. You are now ready to turn it over and install it inside of a 1 gang box.
+
+![](../../../assets/rpro-1-attach-gang-box-mount-installed.jpeg)
