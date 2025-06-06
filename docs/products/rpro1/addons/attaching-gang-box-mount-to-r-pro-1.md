@@ -2,9 +2,9 @@
 title: Add the gang box mounts to your R-Pro-1
 description: Tutorial on adding the gang box mounts to your R-Pro-1.
 ---
-# Adding Gang Box Mounts To R-Pro-1
+# Adding Gang Box Mounts To R-PRO-1
 
-1\. Unplug your R-Pro-1 from power and remove the back.
+1\. Unplug your R-PRO-1 from power and remove the back.
 
 ![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
