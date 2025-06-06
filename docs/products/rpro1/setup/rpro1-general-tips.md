@@ -34,7 +34,7 @@ The R-PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the 
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
     * Zones are user-configurable and are in cm.
 
-##### **Gate and FOV Visualization**
+##### **Gate Visualization**
 
 **![ld2410 table.png](../assets/ld2410-table.png)![Gate, Zones and RR.png](../assets/gate-zones-and-rr.png)**
 
