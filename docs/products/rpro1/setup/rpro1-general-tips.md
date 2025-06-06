@@ -1,6 +1,8 @@
 ---
-title: R-Pro-1 General Tips
-description: Multiple helpful images for mounting, lux/rgb, and gate and zone visualization.
+title: R-PRO-1 General Tips
+description: >-
+  Multiple helpful images for mounting, lux/rgb, and gate and zone
+  visualization.
 ---
 # General Tips
 
@@ -8,21 +10,23 @@ description: Multiple helpful images for mounting, lux/rgb, and gate and zone vi
 
 ![20240514_123742.jpg](../assets/20240514-123742.jpg)
 
-When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy.
+The R-PRO-1 doesn't have any slits on the front of the case, so UV rays can't directly reach the sensor for UV detection. However, light can still enter from around the edges or behind the front panel, allowing the lux readings to spike when ambient light is present.
 
 !!! warning "The RGB LED will trigger the Light sensor!"
 
     Make sure that your automations do not interfere with each other. This includes being aware that your onboard LED can trigger the lux reading but not the uv reading of the LTR390 in your device.
 
-##### **Mounting**
+##### **Wall Mounting**
 
-The MSR-2 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120degree FOV of the mmWave radar.
+The R-PRO-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120degree FOV of the mmWave radar.
 
-![ld2410_mounting_hor-1.jpeg](../assets/ld2410-mounting-hor-1.jpeg)
+![ld2410_mounting_hor-1.jpeg](../../../assets/ld2412-mmwave-radar-cones-1.png)
 
-The MSR-2 can also be mounted on the ceiling if you can provide power and mount our articulating stand on the ceiling.
+##### **Ceiling Mounting**
 
-![LD2410 Gates.png](../assets/ld2410-gates.png)
+The R-PRO-1 should be mounted 2.6-3meters high when mounted on the ceiling using our ceiling mount kit.
+
+![LD2410 Gates.png](../../../assets/ld2412-ceiling-mount-radar-cone.png)
 
 !!! tip "These are some useful hints!"
 

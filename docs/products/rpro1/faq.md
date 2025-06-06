@@ -4,11 +4,11 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 ---
 1\. **What sensors are included in the R-PRO-1?**
 
-* The R-PRO-1 includes several built-in sensors such as an mmWave radar for motion detection, a LUX and UV sensor, and an optional CO<sub>2</sub> sensor.
+* The R-PRO-1 includes several built-in sensors such as a LD2450 mmWave radar sensor and optional LD2412 mmWave radar for presence detection, a LUX and UV sensor, and an optional CO<sub>2</sub> sensor.
 
 2\. **How does the mmWave radar sensor work?**
 
-* The mmWave radar sensor can detect movement, even subtle motions like someone sitting still in a room. It works by emitting radar waves that reflect off objects and detects motion based on the change in the signal. The sensor is highly effective in detecting people in a room, even through light walls.
+* The LD2450 emits **millimeter-wave radar signals (at 24GHz)** into the environment. When these signals hit a person or object, they bounce back. The sensor detects these returned signals and calculates key information.
 
 3\. **What is the maximum detection range of the mmWave radar?**
 
@@ -24,7 +24,7 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 * The LUX sensor measures the amount of light in a room, while the UV sensor tracks the ultraviolet index from the sun. These readings can be used to automate lighting systems, such as turning on or off lights depending on the ambient brightness, or to measure sunlight exposure in a room.
 * !!! tip "Mounting behind a faceplate or using ceiling mount removes ability for lux or UV to work properly"
 
-      There is no way for the lux or UV index to work properly if there is no light or uv able to hit the sensor.
+          There is no way for the lux or UV index to work properly if there is no light or uv able to hit the sensor.
 
 6\. **How does the optional CO<sub>2</sub> sensor work?**
 
@@ -77,7 +77,7 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 
 18\. **Can I use multiple R-PRO-1 sensors in my Home Assistant setup?**
 
-* Yes, you can have multiple MSR-2 sensors connected to the same Home Assistant instance. Each device will show up as a separate entity, allowing you to monitor and automate different rooms or areas in your home.
+* Yes, you can have multiple R-PRO-1 sensors connected to the same Home Assistant instance. Each R-PRO-1 will show up as a separate device with a lot of entities to configure and automate on, allowing you to monitor and automate different rooms or areas in your home.
 
 19\. **What addons are available for the R-PRO-1?**
 
