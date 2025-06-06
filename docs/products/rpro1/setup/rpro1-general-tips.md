@@ -8,7 +8,7 @@ description: >-
 
 ##### **Light Sensor (LTR-390UV)**
 
-![20240514_123742.jpg](../assets/20240514-123742.jpg)
+![20240514_123742.jpg](../../../assets/rpro-ltr-390.jpg)
 
 The R-PRO-1 doesn't have any slits on the front of the case, so UV rays can't directly reach the sensor for UV detection. However, light can still enter from around the edges or behind the front panel, allowing the lux readings to spike when ambient light is present.
 
@@ -20,11 +20,11 @@ The R-PRO-1 doesn't have any slits on the front of the case, so UV rays can't di
 
 The R-PRO-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120degree FOV of the mmWave radar.
 
-![ld2410_mounting_hor-1.jpeg](../../../assets/ld2412-mmwave-radar-cones-1.png)
+![ld2410_mounting_hor-1.jpeg](../../../assets/ld2412-wall-mount-radar-cone.png)
 
 ##### **Ceiling Mounting**
 
-The R-PRO-1 should be mounted 2.6-3meters high when mounted on the ceiling using our ceiling mount kit.
+The R-PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the ceiling using our ceiling mount kit.
 
 ![LD2410 Gates.png](../../../assets/ld2412-ceiling-mount-radar-cone.png)
 
