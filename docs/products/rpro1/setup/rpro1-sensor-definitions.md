@@ -1,14 +1,10 @@
 ---
-title: R-Pro-1 Sensor Definitions
-description: These are all of the entities exposed by the R-Pro-1 to automate on!
+title: R-PRO-1 Sensor Definitions
+description: These are all of the entities exposed by the R-PRO-1 to automate on!
 ---
 # Sensor Definitions
 
-!!! note "Ensure that the LD2410 firmware version is V2.04.23022511 or later for proper integration functionality. "
-
-    The newer version of the firmware includes an "auto calibrate" function so you might want to test it out!
-
-Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
+This serves as a list of all sensor definitions to help understand what each entity does for your new R-PRO-1!
 
 ???+ info "Controls"
 
@@ -18,25 +14,181 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Calibrate SCD40 to 420ppm**
 
-    * A control option to <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">calibrate the SCD40 CO₂ sensor</a> to <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">outdoor baseline levels.</a>
+    * A control option to <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">calibrate the SCD40 CO₂ sensor</a> to <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">outdoor baseline levels.</a> (disabled by default)
 
 ???+ info "Sensors"
 
     **CO<sub>2</sub>**
 
-    * True CO<sub>2</sub> reading from the SCD40. This will be Unknown if you do not have the CO<sub>2</sub> module. SDC40 can be calibrated <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" title="CO<sub>2</sub> Calibration" target="_blank" rel="noopener">following this guide</a>.
+    * CO<sub>2</sub> reading from the SCD40. This will be Unknown if you do not have the CO<sub>2</sub> module. SDC40 can be calibrated <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" title="CO<sub>2</sub> Calibration" target="_blank" rel="noopener">following this guide</a>. (disabled by default)
 
     **ESP Temperature**
 
-    * This is the temperature of the internal microcontroller. Think of it like your measured CPU temp on your PC.
+    * This is the temperature of the internal microcontroller. Think of it like your measured CPU temp on your PC. (disabled by default)
 
-    **DPS310 Pressure**
+    **LD2412 Moving Target**
 
-    * Measures the air pressure in the environment.
+    * Displays a status of "Detected" or "Clear" determined by whether the sensor identifies only a moving target.
 
-    **DPS310 Temperature**
+    **LD2412 Presence**
 
-    * Measures the ambient air temperature using the DPS310 sensor.
+    * Displays a status of "Detected" or "Clear" determined by whether the sensor observes a moving or stationary target.
+
+    **LD2412 Still Target**
+
+    * Displays a status of "Detected" or "Clear" determined by whether the sensor identifies only a still target.
+
+    **LD2412 Detection Distance**
+
+    * Displays the distance of the target being tracked. Known to not work properly at this time. (disabled by default)
+
+    **LD2412 Move Energy**
+
+    * Displays the energy of the moving target being tracked. (disabled by default)
+
+    **LD2412 Moving Distance**
+
+    * Displays the distance of the moving target being tracked. Known to not work properly at this time. (disabled by default)
+
+    **LD2412 Still Distance**
+
+    * Displays the distance of the still target being tracked. Known to not work properly at this time. (disabled by default)
+
+    **LD2412 Still Energy**
+
+    * Displays the energy of the still target being tracked. (disabled by default)
+
+    **LD2450 Moving Target Count**
+
+    * Count of all moving targets. (max 3)
+
+    **LD2450 Presence Target Count**
+
+    * Count of all presence targets. (max 3)
+
+    **LD2450 Still Target Count**
+
+    * Count of all still targets. (max 3)
+
+    **LD2450 Target-1 Angle**
+
+    * Angle of target in `degrees (°)` relative to the `ld2450` sensor.
+
+    **LD2450 Target-1 Direction**
+
+    * Direction of the target relative to the `ld2450` sensor. Possible values are: `Stationary`, `Moving away`, `Approaching`, `NA`.
+
+    **LD2450 Target-1 Distance**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor along the X-axis (negative for left side of the sensor, positive for right side of the sensor). The `ld2450` module can detect targets from -3000 to 3000 mm in `X` direction.
+
+    **LD2450 Target-1 Resolution**
+
+    * The `ld2450` target detection range resolution in `millimeter (mm)`. (disabled by default)
+
+    **LD2450 Target-1 Speed**
+
+    * Speed of the moving target in `mm/s`.
+
+    **LD2450 Target-1 X**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor along the X-axis (negative for left side of the sensor, positive for right side of the sensor). The `ld2450` module can detect targets from -3000 to 3000 mm in `X` direction.
+
+    **LD2450 Target-1 Y**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor in the Y direction (near/far). The `ld2450` module can detect targets from 0 to 6000 mm in `Y` direction.
+
+    **LD2450 Target-2 Angle**
+
+    * Angle of target in `degrees (°)` relative to the `ld2450` sensor.
+
+    **LD2450 Target-2 Direction**
+
+    * Direction of the target relative to the `ld2450` sensor. Possible values are: `Stationary`, `Moving away`, `Approaching`, `NA`.
+
+    **LD2450 Target-2 Distance**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor along the X-axis (negative for left side of the sensor, positive for right side of the sensor). The `ld2450` module can detect targets from -3000 to 3000 mm in `X` direction.
+
+    **LD2450 Target-2 Resolution**
+
+    * The `ld2450` target detection range resolution in `millimeter (mm)`. (disabled by default)
+
+    **LD2450 Target-2 Speed**
+
+    * Speed of the moving target in `mm/s`.
+
+    **LD2450 Target-2 X**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor along the X-axis (negative for left side of the sensor, positive for right side of the sensor). The `ld2450` module can detect targets from -3000 to 3000 mm in `X` direction.
+
+    **LD2450 Target-2 Y**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor in the Y direction (near/far). The `ld2450` module can detect targets from 0 to 6000 mm in `Y` direction.
+
+    **LD2450 Target-3 Angle**
+
+    * Angle of target in `degrees (°)` relative to the `ld2450` sensor.
+
+    **LD2450 Target-3 Direction**
+
+    * Direction of the target relative to the `ld2450` sensor. Possible values are: `Stationary`, `Moving away`, `Approaching`, `NA`.
+
+    **LD2450 Target-3 Distance**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor along the X-axis (negative for left side of the sensor, positive for right side of the sensor). The `ld2450` module can detect targets from -3000 to 3000 mm in `X` direction.
+
+    **LD2450 Target-3 Resolution**
+
+    * The `ld2450` target detection range resolution in `millimeter (mm)`. (disabled by default)
+
+    **LD2450 Target-3 Speed**
+
+    * Speed of the moving target in `mm/s`.
+
+    **LD2450 Target-3 X**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor along the X-axis (negative for left side of the sensor, positive for right side of the sensor). The `ld2450` module can detect targets from -3000 to 3000 mm in `X` direction.
+
+    **LD2450 Target-3 Y**
+
+    * Distance in `millimeter (mm)` of the target from the `ld2450` sensor in the Y direction (near/far). The `ld2450` module can detect targets from 0 to 6000 mm in `Y` direction.
+
+    **LD2450 Zone-1 All Target Count**
+
+    * Total targets detected in the zone, whether they are stationary or in motion.
+
+    **LD2450 Zone-1 Moving Target Count**
+
+    * Count of moving targets in the zone.
+
+    **LD2450 Zone-1 Still Target Count**
+
+    * Count of stationary targets in the zone.
+
+    **LD2450 Zone-2 All Target Count**
+
+    * Total targets detected in the zone, whether they are stationary or in motion.
+
+    **LD2450 Zone-2 Moving Target Count**
+
+    * Count of moving targets in the zone.
+
+    **LD2450 Zone-2 Still Target Count**
+
+    * Count of stationary targets in the zone.
+
+    **LD2450 Zone-3 All Target Count**
+
+    * Total targets detected in the zone, whether they are stationary or in motion.
+
+    **LD2450 Zone-3 Moving Target Count**
+
+    * Count of moving targets in the zone.
+
+    **LD2450 Zone-3 Still Target Count**
+
+    * Count of stationary targets in the zone.
 
     **LTR390 Light**
 
@@ -46,113 +198,159 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * UV index measured by LTR390.
 
-    **Radar Detection Distance**
+    **SCD40 Humidity**
 
-    * The last detected distance by the radar. This will stay at the last known value so sometimes can be misleading.
+    * Humidity reading from the optional SCD40 CO2 sensor.
 
-    **Radar Move Energy**
+    **SCD40 Temperature**
 
-    * The amount of movement measured by the LD2410B. Faster movements have higher percentage.
-
-    **Radar Moving Target**
-
-    * Does the radar have a moving target it is tracking.
-
-    **Radar Still Distance**
-
-    * The last measured distance of a still target. It will hold the last value so sometimes can be misleading.
-
-    **Radar Still Energy**
-
-    * The energy of the current still target.
-
-    **Radar Still Target**
-
-    * Does the radar have a still target.
-
-    **Radar Target**
-
-    * Does the radar have a still or moving target. Good for triggering automation.
-
-    **Radar Zone 1 Occupancy**
-
-    * This is a configurable zone. Think of zones like distances from the radar unit. Zone 1 might be from 0 cm to 100 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 1”
-
-    **Radar Zone 2 Occupancy**
-
-    * This is a configurable zone. Think of zones like distances from the radar unit. Zone 2 might be from 100 cm to 200 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 2”
-
-    **Radar Zone 3 Occupancy**
-
-    * This is a configurable zone. Think of zones like distances from the radar unit. Zone 3 might be from 200 cm to 300 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 3”
+    * Temperature reading from the optional SCD40 CO2 sensor.
 
 ???+ info "Configuration"
 
     **ESP Reboot**
 
-    * Performs a restart of the sensor
+    * Performs a restart of the sensor.
 
-    **Factory Reset Radar**
+    **Firmware Type**
 
-    * Sets the radar's move thresholds back to their original values from the manufacturer
+    * Drop-down selector with "WiFi" or "Ethernet" option. Allows you to switch between firmware without re-flashing the device manually. Once you choose the firmware you'd like to use, you then need to click the "PRESS" button next to "Firmware Update".
 
-    **g0-g8 Move & Still Threshold**
+    **Firmware Update**
 
-    * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/)
-
-    **ld2410 Bluetooth**
-
-    * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/).
-
-    **Radar Zone 1 Start**
-
-    * This sets the starting distance for Zone 1 in cm. This is the distance from the sensor to the start of Zone 1
-
-    **DPS Temperature Offset**
-
-    * Offsets the heat from the ESP chip for a more accurate temperature.
-
-    **ESP Reboot**
-
-    * A control to reboot the ESP32 system.
-
-    **Factory Reset Radar**
-
-    * Resets the radar to its factory settings.
+    * Button which begins the firmware update process to switch between Wi-Fi and Ethernet firmware options. Process takes around 5 minutes and the sensor reboots with the new firmware once it finishes.
 
     **Firmware Update**
 
     * Shows whether a firmware update is available.
 
-    ??? info "Radar End Zones"
+    **LD2412 Bluetooth**
 
-        **Radar End Zone 1**
+    * This allows you to turn on the LD2412 Bluetooth module. This allows you to connect to the HLK Radar Tool phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/).
 
-        * This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “100” that means from 0 to 100 centimeters from the sensor is zone 1.
+    **LD2412 Factory Reset**
 
-        **Radar End Zone 2**
+    * Sets the radar's move and still thresholds back to their original values from the manufacturer.
 
-        * This defines “Zone 2” of the radar. It is a distance from the sensor that specifies what “Zone 2” is. It connects to the “Radar Zone 2 Occupancy” sensor. So if this number is set to “200” that means from zone 2 end distance to 200 centimeters from the sensor is zone 2.
+    **LD2412 g0-g13 Move & Still Threshold Sliders**
 
-        **Radar End Zone 3**
+    * Sliders which can tune out false positives in 0.75 meter increment "gates" starting at zero meters and going up to 9 meters for the g13 slider.
 
-        * It is a distance from the sensor that specifies what “Zone 3” is. It connects to the “Radar Zone 3 Occupancy” sensor. So if this number is set to “300” that means from zone 2 end distance to 300 centimeters from the sensor is zone 3.
+    **LD2412 Max Move Distance**
 
-    **Radar Engineering Mode**
+    * Maximum distance gate for movement detection. Value between 2 and 13 inclusive.
 
-    * Used to enable g0-g8 threshold sliders for <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/" target="_blank" rel="noopener">mmWave tuning</a>.
+    **LD2412 Max Still Distance**
 
-    **Radar Timeout**
+    * Maximum distance gate for still detection. Value between 2 and 13 inclusive.
 
-    * Configures the timeout for the radar in seconds.
+    **LD2412 Mode**
+
+    * Drop-down selector for the mode for the LD2412. Choices are Normal, Engineering, or Dynamic background correction. (Defaults to normal)
+
+    **LD2412 Timeout**
+
+    * Time in seconds before the LD2412 Radar detection entities switch from Occupied to Clear.
+
+    **LD2450 Bluetooth**
+
+    * This allows you to turn on the LD2450 Bluetooth module. This allows you to connect to the HLK Radar Tool phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/).
+
+    **LD2450 Factory Reset**
+
+    * Sets the radar's move and still thresholds back to their original values from the manufacturer.
+
+    **LD2450 Multi Target Tracking**
+
+    * Turn on/off the Multi Target Tracking option. The initial state set based on the corresponding setting as read from LD2450 module at boot.
+
+    **LD2450 Timeout**
+
+    * Time in seconds before the LD2450 Radar detection entities switch from Occupied to Clear.
+
+    **LD2450 Zone Type**
+
+    * Drop-down of the zone detection modes. It can be set to `Disabled`, `Detection` or `Filter`. Selecting the `Disabled` option will disable zone area detection. `Detection` mode is used to detect only targets in the specified area, while `Filter` mode can be used to exclude an area from detection.
+
+    **LD2450 Zone-1 X1**
+
+    * Start X coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the X-axis (negative for left side (-3000) of the sensor, positive for right side (3000) of the sensor).
+
+    **LD2450 Zone-1 X2**
+
+    * End X coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the X-axis (negative for left side (-3000) of the sensor, positive for right side (3000) of the sensor).
+
+    **LD2450 Zone-1 Y1**
+
+    * Start Y coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the Y-axis, values range from 0 to 6000.
+
+    **LD2450 Zone-1 Y2**
+
+    * Start Y coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the Y-axis, values range from 0 to 6000.
+
+    **LD2450 Zone-2 X1**
+
+    * Start X coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the X-axis (negative for left side (-3000) of the sensor, positive for right side (3000) of the sensor).
+
+    **LD2450 Zone-2 X2**
+
+    * End X coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the X-axis (negative for left side (-3000) of the sensor, positive for right side (3000) of the sensor).
+
+    **LD2450 Zone-2 Y1**
+
+    * Start Y coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the Y-axis, values range from 0 to 6000.
+
+    **LD2450 Zone-2 Y2**
+
+    * Start Y coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the Y-axis, values range from 0 to 6000.
+
+    **LD2450 Zone-3 X1**
+
+    * Start X coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the X-axis (negative for left side (-3000) of the sensor, positive for right side (3000) of the sensor).
+
+    **LD2450 Zone-3 X2**
+
+    * End X coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the X-axis (negative for left side (-3000) of the sensor, positive for right side (3000) of the sensor).
+
+    **LD2450 Zone-3 Y1**
+
+    * Start Y coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the Y-axis, values range from 0 to 6000.
+
+    **LD2450 Zone-3 Y2**
+
+    * Start Y coordinate in `millimeter (mm)` of the zone from the `ld2450` sensor along the Y-axis, values range from 0 to 6000.
 
     **Reduce DB Reporting**
 
-    * A toggle to enable or disable reduced reporting from various entities on the msr-2. This will make multiple entities use filters and not update their state unless a threshold is met - ultimately using less Wi-Fi airtime and less database usage in home assistant.
+    * A toggle to enable or disable reduced reporting from various entities on the r-pro-1. This will make multiple entities use filters and not update their state unless a threshold is met - ultimately using less Wi-Fi airtime and less database usage in Home Assistant.
 
-    **Startup Light Blink**
+    **LD2412 Baud Rate**
 
-    * A toggle to enable or disable the blinking of the RGB LED during MSR-2 initial boot.
+    * Baud rate for LD2412 sensor to talk to the R-PRO-1. Defaults to 115200 (disabled by default) no need to ever edit this.
+
+    **LD2412 Distance Resolution**
+
+    * Distance Resolution for LD2412. Disabled by default.
+
+    **LD2412 Hardware output pin level**
+
+    * Hardware outpin pin level for LD2412. Disabled by default.
+
+    **LD2450 Baud Rate**
+
+    * Baud rate for LD2450 sensor to talk to the R-PRO-1. Defaults to 256000 (disabled by default) no need to ever edit this.
+
+    **SCD40 Humidity Offset**
+
+    * Humidity Offset fill in the blank for the optional SCD40 CO2 sensor addon.
+
+    **SCD40 Temperature Offset**
+
+    * Temperature Offset fill in the blank for the optional SCD40 CO2 sensor addon.
+
+    **Radar Engineering Mode**
+
+    * Used to enable g0-g13 threshold sliders for <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/" target="_blank" rel="noopener">mmWave tuning</a>.
 
     ???+ info "Radar Gate Distance Tuning and Timeout"
 
@@ -172,57 +370,11 @@ Once added to Home Assistant you can configure different settings for your senso
 
             The time in seconds that the radar's presence will stay high after the target is lost.
 
-??? success "Radar Sensors"
-
-    **Radar Detection Distance**
-
-    * Shows the distance to the detected target, measured in cm.
-
-    **Radar Move Energy**
-
-    * Displays the energy of movement detected by the radar, represented as a percentage.
-
-    **Radar Moving Distance**
-
-    * Displays the distance of a moving target, measured in cm.
-
-    **Radar Moving Target**
-
-    * Detects whether a moving target is present.
-
-    **Radar Still Distance**
-
-    * Displays the distance of a still target, measured in cm.
-
-    **Radar Still Energy**
-
-    * Displays the energy detected from still objects.
-
-    **Radar Still Target**
-
-    * Detects whether a still target is present.
-
-    **Radar Target**
-
-    * Overall detection of a target by the radar.
-
-    **Radar Zone 1 Occupancy**
-
-    * Indicates whether Zone 1 is occupied or clear.
-
-    **Radar Zone 2 Occupancy**
-
-    * Indicates whether Zone 2 is occupied or clear.
-
-    **Radar Zone 3 Occupancy**
-
-    * Indicates whether Zone 3 is occupied or clear.
-
 ??? info "Radar Gate Configuration"
 
     !!! warning "Keeping these enabled permanently is bad"
 
-        Please toggle ld2410 Bluetooth on, configure your sensor, then turn ld2410 Bluetooth back off. Otherwise, your Wi-Fi and database could become overwhelmed with excessive traffic.
+        Please toggle ld2412 Bluetooth on, configure your sensor, then turn ld2412 Bluetooth back off. Otherwise, your Wi-Fi and database could become overwhelmed with excessive traffic.
 
     **g0 Move Threshold**
 
@@ -296,33 +448,85 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Configures the stillness sensitivity threshold for gate 8.
 
+    **g9 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 8.
+
+    **g9 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 8.
+
+    **g10 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 8.
+
+    **g10 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 8.
+
+    **g11 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 8.
+
+    **g11 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 8.
+
+    **g12 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 8.
+
+    **g12 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 8.
+
+    **g13 Move Threshold**
+
+    * Configures the movement sensitivity threshold for gate 8.
+
+    **g13 Still Threshold**
+
+    * Configures the stillness sensitivity threshold for gate 8.
+
 ??? info "Diagnostic"
 
     **ESP Temperature**
 
-    * Displays the current temperature of the ESP32 chip.
+    * Displays the current temperature of the ESP32 chip. (Disabled by Default)
 
-    **g0 move energy to g8 move energy**
+    **LD2412 g0 move energy to g13 move energy**
 
-    * Displays the move energy levels for gates g0 through g8
+    * Displays the move energy levels for gates g0 through g13
 
-    **g0 move energy to g8 still energy**
+    **LD2412 g0 move energy to g13 still energy**
 
-    * Displays the still energy levels for gates g0 through g8
+    * Displays the still energy levels for gates g0 through g13
 
     **Online**
 
     * Shows the connection status.
 
-    **Query Params**
+    **LD2412 Query Params**
 
     * Button to query parameters for debugging or advanced configurations.
 
-    **Radar Firmware Version**
+    **LD2412 BT MAC**
 
-    * Displays the current firmware version for the radar.
+    * Displays the Bluetooth MAC Address for the LD2412. (Disabled by Default)
 
-    **Restart Radar**
+    **LD2412 Firmware**
+
+    * Displays the current firmware version for the LD2412 radar. (Disabled by Default)
+
+    **LD2450 BT MAC**
+
+    * Displays the Bluetooth MAC Address for the LD2450. (Disabled by Default)
+
+    **LD2450 Firmware**
+
+    * Displays the current firmware version for the LD2450 radar. (Disabled by Default)
+
+    **LD2412 Restart Radar**
 
     * Button to restart the radar sensor.
 
@@ -334,4 +538,4 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){               .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                       .md-button }

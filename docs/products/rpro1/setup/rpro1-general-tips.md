@@ -18,7 +18,7 @@ The R-PRO-1 doesn't have any slits on the front of the case, so UV rays can't di
 
 ##### **Wall Mounting**
 
-The R-PRO-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120degree FOV of the mmWave radar.
+The R-PRO-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120 degree FOV for the LD2450 and 150 degree FOV for the LD2412.
 
 ![ld2410_mounting_hor-1.jpeg](../../../assets/ld2412-wall-mount-radar-cone.png)
 
@@ -28,16 +28,28 @@ The R-PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the 
 
 ![LD2410 Gates.png](../../../assets/ld2412-ceiling-mount-radar-cone.png)
 
-!!! tip "These are some useful hints!"
+!!! tip "There are actually two sensors in your r-pro-1 if you bought the optional LD2412 addon!"
 
-    * The FOV angle is -60 to 60 degrees - 120 degrees total.
+    **The multi-target LD2450:**
+
+    * The horizontal FOV angle is -60 to 60 degrees - 120 degrees total.
+    * The vertical FOV angle is -35 to 35 degrees - 70 degrees total.
+    * Zones are X and Y coordinate zones and are user-configurable.
+
+    **Helpful hints for LD2450 Zones:**
+
+    * The X axis is where you can get tripped up, especially when both values are negative: -3456 is less than -2345.
+    * X1 must always be less than X2, and Y1 must always be less than Y2.
+    * The Y axis is easier since it's never negative.
+    * The Plotly chart will still render the rectangles even if the X1/X2 and Y1/Y2 values are reversed.
+    * The zones cannot overlap.
+
+    **The single-target LD2412:**
+
+    * The horizontal FOV angle is -75 to 75 degrees - 150 degrees total.
+    * The vertical FOV angle is -35 to 35 degrees - 70 degrees total.
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
-    * Zones are user-configurable and are in cm.
 
 ##### **Gate Visualization**
 
-**![ld2410 table.png](../assets/ld2410-table.png)![Gate, Zones and RR.png](../assets/gate-zones-and-rr.png)**
-
-![MSR-1 radar map.png](../assets/msr-1-radar-map.png)![Radar gates Colored.png](../assets/radar-gates-colored.png)
-
-#####
+![](../../../assets/ld2412-gate-visualization.png)
