@@ -236,6 +236,14 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     * Sliders which can tune out false positives in 0.75 meter increment "gates" starting at zero meters and going up to 9 meters for the g13 slider.
 
+    **LD2412 Max Move Distance**
+
+    * Maximum distance gate for movement detection. Value between 2 and 13 inclusive.
+
+    **LD2412 Max Still Distance**
+
+    * Maximum distance gate for still detection. Value between 2 and 13 inclusive.
+
     **LD2412 Mode**
 
     * Drop-down selector for the mode for the LD2412. Choices are Normal, Engineering, or Dynamic background correction. (Defaults to normal)
@@ -530,4 +538,4 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                    .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                       .md-button }
