@@ -20,29 +20,29 @@ The default password to connect to the HLKRadarTool is "HiLink".
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your MSR-2 and scroll down until you see LD2410 Bluetooth.
 
-![](../../../assets/msr-2-toggle-on-ld2410-bluetooth-1.png)
+![](../../../assets/msr-2-toggle-on-ld2410-bluetooth.png)
 
-3\. Open the app and select your device
+2\. Open the app and select your device
 
 ![Find Device.png](../assets/find-device.png)
 
-4\. Turn on Engineering Mode
+3\. Turn on Engineering Mode
 
 ![EM.png](../assets/em.png)
 
-5\. Select More and then select Parameter settings
+4\. Select More and then select Parameter settings
 
 ![More and PS.png](../assets/more-and-ps.png)
 
-6\. Select Detect background noise
+5\. Select Detect background noise
 
 ![DBN.png](../assets/dbn.png)
 
-7\. Insert Delay detection and Detection time values. (For iPhone users Delay detection cannot be 0). Then select Start. This will give us our reference values so we can auto-calibrate the mmWave sensor.
+6\. Insert Delay detection and Detection time values. (For iPhone users Delay detection cannot be 0). Then select Start. This will give us our reference values so we can auto-calibrate the mmWave sensor.
 
 ![DD, DT and Start.png](../assets/dd-dt-and-start.png)
 
-8\. Select Back to navigate to the Parameter settings. Then select one of the auto-calibration buttons.
+7\. Select Back to navigate to the Parameter settings. Then select one of the auto-calibration buttons.
 
 **Average** - Sets the gate sensitivity to the average move and still energy
 
