@@ -34,9 +34,9 @@ How to tune the mmWave sensor using radar engineering mode.
 
 The gates are 0.75meter increments from the sensor - allowing you to "tune" each 0.75 meter section until your sensor works as intended!
 
-![ld2410 table.png](../../../assets/msr-2-ld2410-gate-table.png)
+![](../../../assets/msr-2-ld2410-gate-table.png)
 
-![MSR-1 radar map.png](../../../assets/msr-2-ld2410-gates-visualized.png)
+![](../../../assets/msr-2-ld2410-gates-visualized.png)
 
 Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 

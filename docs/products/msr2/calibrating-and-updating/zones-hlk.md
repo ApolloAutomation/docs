@@ -2,17 +2,25 @@
 title: MSR-2 HLKRadarTool app Zone Configuration
 description: Tutorial for MSR-2 HLKRadarTool app Zone Configuration.
 ---
-# How To Tune mmWave Using HLKRadarTool
+# How To Tune MSR-2 Using HLKRadarTool
 
 ###### **Auto-Calibration**
 
-1\. Download the HLKRadarTool app for either [Android](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US%E2%89%B7=US)or [Apple](https://apps.apple.com/us/app/hlkradartool/id1638651152).
+1\. Download the HLKRadarTool app.
 
-The default password to connect to the HLKRadarTool is "HiLink"
+=== "iPhone"
 
-2\. Ensure the mmWave radar you want to tune has LD2410 Bluetooth turned on. Home Assistant &gt; Settings &gt; Devices & services &gt; ESPHome Devices &gt; Select Device &gt; Scroll down and toggle on ld2410 Bluetooth.
+    <a href="https://apps.apple.com/us/app/hlkradartool/id1638651152" target="_blank" rel="noreferrer nofollow noopener">Click Here to download</a>
 
-![Radar Control Bluetooth.png](assets/msr-2-mmwave-hlk-pic-1.png)
+=== "Android"
+
+    <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
+
+The default password to connect to the HLKRadarTool is "HiLink".
+
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your MSR-2 and scroll down until you see LD2410 Bluetooth.
+
+![](../../../assets/msr-2-toggle-on-ld2410-bluetooth-1.png)
 
 3\. Open the app and select your device
 
@@ -44,7 +52,7 @@ The default password to connect to the HLKRadarTool is "HiLink"
 
 ![Max.png](../assets/max.png)
 
-**Intelligent** \- Sets the gate sensitivity equal to or just above the maximum move and still energy.
+**Intelligent** - Sets the gate sensitivity equal to or just above the maximum move and still energy.
 
 **![Intelligent.png](../assets/intelligent.png)**
 
