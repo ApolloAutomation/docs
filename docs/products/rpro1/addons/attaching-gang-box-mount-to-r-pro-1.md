@@ -26,6 +26,6 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 
 ![](../../../assets/r-pro-1-gang-box-bottom-mount.jpg)
 
-5\. The end result should look identical to the image below. You are now ready to turn it over and install it inside of a 1 gang box.
+5\. The end result should look identical to the image below. You are now ready to install it inside of a 1 gang box.
 
 ![](../../../assets/r-pro-1-gang-box-mounts-installed.jpg)
