@@ -14,18 +14,36 @@ description: Step by step guide for putting The R-PRO-1 In Boot Mode.
 
 ![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
-2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
+2\. Gently remove the PCB from the case and flip it over.
 
-3\. Continue with <a href="https://wiki.apolloautomation.com/products/msr2/troubleshooting/msr2-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
+![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
+
+3\. Locate the boot button on the bottom right side of the PCB.
+
+![](../../../assets/r-pro-1-boot-button.jpg)
+
+4\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R-PRO-1 then let go of the button.
+
+5\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
 
 ##### Method 2: Boot and Reset Buttons
 
-1\. Unplug the device and locate the boot and reset buttons as shown in the image above.
+1\. Unplug your R-PRO-1 from power and remove the back.
 
-2\. Plug it into your computer.
+![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
-3\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
+2\. Gently remove the PCB from the case and flip it over.
 
-![](assets/msr-2-reset-button.jpg)
+![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
 
-4\. Continue with <a href="https://wiki.apolloautomation.com/products/msr2/troubleshooting/msr2-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
+3\. Locate the boot button on the bottom right side of the PCB.
+
+![](../../../assets/r-pro-1-boot-button.jpg)
+
+4\. Locate the reset button on the bottom left side of the PCB.
+
+![](../../../assets/r-pro-1-reset-button.jpg)
+
+5\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
+
+6\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
