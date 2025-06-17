@@ -4,6 +4,8 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 ---
 # Adding Gang Box Mounts To R-PRO-1
 
+###### Attaching Mounts
+
 1\. Unplug your R-PRO-1 from power and remove the back.
 
 ![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
@@ -29,3 +31,17 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 5\. The end result should look identical to the image below. You are now ready to install it inside of a 1 gang box.
 
 ![](../../../assets/r-pro-1-gang-box-mounts-installed.jpg)
+
+###### Installing Mounts in 1-Gang Box
+
+1\. Line up the holes in your 1-gang box (yours will be attached to the wall already).
+
+![](../../../assets/r-pro-1-gang-box-line-up-holes.jpg)
+
+2\. Place screws through the blank faceplate and gently place over the r-pro-1 mounting holes.
+
+![](../../../assets/r-pro-1-gang-box-install-faceplate.jpg)
+
+3\. Screw in the screws slowly to make sure not to break the mounts or the blank faceplate. At the end yours will look just like the image below!
+
+![](../../../assets/r-pro-1-gang-box-face-plate-installed-finished.jpg)
