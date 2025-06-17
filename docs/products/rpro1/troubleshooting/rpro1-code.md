@@ -1,8 +1,8 @@
 ---
-title: Factory Re-Flash R-Pro-1
-description: Step by step guide for re-flashing the R-Pro-1 back to factory firmware.
+title: Factory Re-Flash R-PRO-1
+description: Step by step guide for re-flashing the R-PRO-1 back to factory firmware.
 ---
-# Factory Re-Flash R-Pro-1
+# Factory Re-Flash R-PRO-1
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 

@@ -1,18 +1,18 @@
 ---
-title: Putting The R-Pro-1 In Boot Mode
-description: Step by step guide for putting The R-Pro-1 In Boot Mode.
+title: Putting The R-PRO-1 In Boot Mode
+description: Step by step guide for putting The R-PRO-1 In Boot Mode.
 ---
-# Putting The R-Pro-1 In Boot Mode
+# Putting The R-PRO-1 In Boot Mode
 
-!!! info "This will cover how to put the R-Pro-1 into boot mode."
+!!! info "This will cover how to put the R-PRO-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
 ##### Method 1: Boot Button Only
 
-1\. Position the MSR-2 as shown in the image below and locate the small opening to press the boot button (the right button).
+1\. Unplug your R-PRO-1 from power and remove the back.
 
-![](assets/msr-2-boot-button.jpg)
+![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
 
