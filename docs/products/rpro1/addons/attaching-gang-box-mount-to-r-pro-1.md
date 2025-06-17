@@ -8,11 +8,11 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 
 ![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
-2\. Gently lift the PCB out of the case and set it face down with the ethernet port facing up.
+2\. Gently lift the PCB out of the case and set it face up with the USB-C port facing down.
 
-![](../../../assets/rpro-1-bare-pcb-eth-up.jpeg)
+![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
 
-3\. Grab the two gang box mount pieces and orient them with the tabs with the screw holes in them facing downwards.
+3\. Take the two gang box mount pieces and identify the one labeled "TOP" and the other piece which is the bottom mount.
 
 !!! danger "Before continuing and sliding the mounts on, please verify you have the pieces oriented as shown in the images below."
 
@@ -20,12 +20,12 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 
 3\. Gently push the top mount labeled "TOP" into the pcb as shown below. Make sure the orientation is identical to the image below!
 
-![](../../../assets/rpro-1-attach-gang-box-mount-top.jpeg)
+![](../../../assets/r-pro-1-gang-box-top-mount.jpg)
 
 4\. Gently push the top mount labeled "BOTTOM" into the pcb as shown below. Make sure the orientation is identical to the image below!
 
-![](../../../assets/rpro-1-attach-gang-box-mount-bottom.jpeg)
+![](../../../assets/r-pro-1-gang-box-bottom-mount.jpg)
 
 6\. The end result should look identical to the image below. You are now ready to turn it over and install it inside of a 1 gang box.
 
-![](../../../assets/rpro-1-attach-gang-box-mount-installed.jpeg)
+![](../../../assets/r-pro-1-gang-box-mounts-installed.jpg)
