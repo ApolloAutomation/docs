@@ -19,10 +19,10 @@ description: Tutorial on adding the SCD40 CO2 sensor to your R-Pro-1.
 
 ![](../../../assets/rpro-1-add-co2-seat-scd40.jpg)![](../../../assets/rpro-1-add-co2-scd40-installed.jpg)
 
-5\. Slide the case back over the R-PRO-1, making sure that the case has the hole for the USB-C port and the SCD40 facing toward you.
+4\. Slide the case back over the R-PRO-1, making sure that the case has the hole for the USB-C port and the SCD40 facing toward you.
 
-![](../../../assets/rpro-1-add-co2-scd40-installed.webp)
+5\. Gently press the backplate of the R-PRO-1 case onto the R-PRO-1 until it lightly snaps into place. Please do not force it, if necessary please repeat steps above until it seats in the case without any force required.
 
-6\. Gently press the backplate of the R-PRO-1 case onto the R-PRO-1 until it lightly snaps into place. Please do not force it, if necessary please repeat steps above until it seats in the case without any force required.
+![](../../../assets/r-pro-1-scd40-installed-press-case-down.jpg)
 
-7\. Please refer to our <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" title="CO2 Calibration" target="_blank" rel="noreferrer nofollow noopener">CO<sub>2</sub> calibration guide</a> to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).
+[Click here to head to the CO2 calibration guide!](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/){ .md-button .md-button--primary }
