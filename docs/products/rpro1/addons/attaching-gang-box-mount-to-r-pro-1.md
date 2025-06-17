@@ -32,7 +32,7 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 
 ![](../../../assets/r-pro-1-gang-box-mounts-installed.jpg)
 
-###### Installing Mounts in 1-Gang Box
+###### Install in 1-Gang Box
 
 1\. Line up the holes in your 1-gang box (yours will be attached to the wall already).
 
