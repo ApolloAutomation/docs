@@ -4,6 +4,8 @@ description: Tutorial on installing the ceiling mount addon for the R-PRO-1.
 ---
 # Install Ceiling Mount for R-PRO-1
 
+###### Attaching Mounts
+
 1\. Unplug your R-PRO-1 from power and remove the back.
 
 ![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
@@ -26,6 +28,30 @@ description: Tutorial on installing the ceiling mount addon for the R-PRO-1.
 
 ![](../../../assets/r-pro-1-ceiling-box-bottom-mount.jpg)
 
-5\. The end result should look identical to the image below. You are now ready to turn it over and install it inside of the ceiling mount.
+5\. The end result should look identical to the image below. You are now ready to install it inside of the ceiling mount.
 
 ![](../../../assets/r-pro-1-ceiling-box-mounts-installed.jpg)
+
+###### Install in Ceiling Mount
+
+1\. Remove the cover to expose the inside of the installed Ceiling Mount.
+
+![](../../../assets/r-pro-1-ceiling-mount-cover-removed.jpg)
+
+2\. Plug in Ethernet cable or USB-C cable.
+
+![](../../../assets/r-pro-1-ceiling-mount-plug-in-eth.jpg)
+
+3\. Gently slide R-PRO-1 into the Ceiling Mount.
+
+![](../../../assets/r-pro-1-ceiling-mount-insert-r-pro-1.jpg)
+
+4\. Push the R-PRO-1 back 1inch (around 2.5cm) to make sure the lip of the cover fits over the Ceiling Mount.
+
+![](../../../assets/r-pro-1-ceiling-mount-recess-r-pro-1.jpg)
+
+5\. Gently press the ceiling mount cover until it is securely attached to the Ceiling Mount.
+
+![](../../../assets/r-pro-1-ceiling-mount-replace-cover.jpg)
+
+&nbsp;
