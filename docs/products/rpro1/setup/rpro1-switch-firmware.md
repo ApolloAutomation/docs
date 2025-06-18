@@ -14,10 +14,26 @@ description: >-
 
 1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below your Apollo R-PRO-1.
 
-&nbsp;
+![](../../../assets/select-r-pro-1-device.png)
+
+2\. Scroll down until you see the "Firmware Type" dropdown and select "Ethernet".
+
+![](../../../assets/r-pro-1-select-ethernet.png)
+
+3\. Locate the Firmware Update entity and click on "PRESS".
+
+![](../../../assets/r-pro-1-click-press-on-firmware-update-button-1.png)
 
 ###### Switch to Wi-Fi
 
 1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below your Apollo R-PRO-1.
 
-&nbsp;
+![](../../../assets/select-r-pro-1-device.png)
+
+2\. Scroll down until you see the "Firmware Type" dropdown and select "WiFi".
+
+![](../../../assets/r-pro-1-select-wifi.png)
+
+3\. Locate the Firmware Update entity and click on "PRESS".
+
+![](../../../assets/r-pro-1-click-press-on-firmware-update-button.png)
