@@ -277,4 +277,28 @@ variables:
 
 ###### LD2412 Configuration
 
-&nbsp;
+1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below the Apollo R-PRO-1.
+
+![](../../../assets/select-r-pro-1-device.png)
+
+2\. Scroll down until you see "LD2412 Mode" and change it from "Normal" to "Engineering".
+
+!!! tip "The LD2412 can be tuned using the steps below to work perfectly in your environment!"
+
+    The LD2412 has "gates" at 0.75meter increments starting at g0 and ending at g13. These gates allow you to raise the threshold needed to trigger occupancy in each 0.75meter increment.
+
+    This is very useful in scenarios where you want to tune out a fan, a cat sitting on the stairs, etc.
+
+3\. Scroll down to the Diagnostic section and you will see "LD2412 g00 move energy" through "LD2412 g13 still energy" are showing percentages from 0-100%.
+
+![](../../../assets/r-pro-1-ld2412-move-still-energy.png)
+
+4\. Scroll up to the Configuration section and identify the threshold sliders for g0-g13 for both moving and still energy.
+
+Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
+
+![](../../../assets/ld2412-less-sensitive.png)
+
+Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.
+
+![](../../../assets/ld2412-more-sensitive.png)
