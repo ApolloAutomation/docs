@@ -257,6 +257,7 @@ nav:
           - FAQ: products/rpro1/faq.md
           - Getting Started: products/general/setup/getting-started-rpro1.md
           - Additional Info:
+            - Switch Firmware: products/rpro1/setup/rpro1-switch-firmware.md
             - General Tips: products/rpro1/setup/rpro1-general-tips.md
             - Sensor Definitons: products/rpro1/setup/rpro1-sensor-definitions.md
             - Radar Tuning:
