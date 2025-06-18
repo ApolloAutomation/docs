@@ -18,11 +18,15 @@ description: >-
 
 2\. Scroll down until you see the "Firmware Type" dropdown and select "Ethernet".
 
-![](../../../assets/r-pro-1-select-ethernet.png)
+![](../../../assets/r-pro-1-select-ethernet-2.png)
 
 3\. Locate the Firmware Update entity and click on "PRESS".
 
-![](../../../assets/r-pro-1-click-press-on-firmware-update-button-1.png)
+![](../../../assets/r-pro-1-click-press-on-firmware-update-button.png)
+
+4\. Wait a few minutes - this will download the new firmware file from our github repo and then install the image.
+
+5\. Your device is now on the Ethernet firmware and is ready to configure!
 
 ###### Switch to Wi-Fi
 
@@ -37,3 +41,7 @@ description: >-
 3\. Locate the Firmware Update entity and click on "PRESS".
 
 ![](../../../assets/r-pro-1-click-press-on-firmware-update-button.png)
+
+4\. Wait a few minutes - this will download the new firmware file from our github repo and then install the image.
+
+[Head to the getting started docs to join to your Wi-Fi](https://wiki.apolloautomation.com/products/general/setup/getting-started-rpro1/#connecting-through-hotspot){ .md-button .md-button--primary }
