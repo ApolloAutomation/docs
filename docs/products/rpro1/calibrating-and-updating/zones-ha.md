@@ -12,11 +12,11 @@ description: Tutorial for R-PRO-1 Home Assistant Zone Configuration.
 
     The optional LD2412 mmWave sensor allows you to have perfect still detection for one target at up to 9 meters so it's a great addition to the sensor.
 
+Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/calibrating-and-updating/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your LD2450 instead.
+
 ###### LD2450 Configuration
 
-Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to tune using the HLK Radartool App and we suggest using that to set up your LD2450 instead.
-
-1\.Install [HACS](https://hacs.xyz/docs/use/)
+1\.Install [HACS](https://hacs.xyz/docs/use/).
 
 2\. Install [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") and [Decluttering Card](https://github.com/custom-cards/decluttering-card "Click here to install Decluttering Card!") inside HACS.
 
@@ -210,7 +210,7 @@ decluttering_templates:
       raw_plotly_config: true
 ```
 
-6\. Copy the code below to use in the next step. Please change the "name" in the code below to the name of your MTR-1 sensor. If you are unsure what name to use here, please head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page") and navigate to your device then find the full device name. Unless you renamed it, your device will likely be called "apollo\_mtr\_1\_" with 6 random numbers/letters after the final underscore as shown in the example image below.
+6\. Copy the code below to use in the next step. Please change the "name" in the code below to the name of your R-PRO-1 sensor. If you are unsure what name to use here, please head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page") and navigate to your device then find the full device name. Unless you renamed it, your device will likely be called "apollo\_r\_pro\_1\_" with 6 random numbers/letters after the final underscore as shown in the example image below.
 
 ```yaml
 template: apollo_mtr_1
@@ -245,25 +245,29 @@ variables:
     * Detection: Only detects targets in the specified zone.
     * Filter: Excludes a zone from detection.
 
-12\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.<br> ![Screenshot 2024-05-13 at 12.13.38 PM.png](../assets/KNGscreenshot-2024-05-13-at-12-13-38-pm.png)
+12\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.
 
-13\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.<br> ![Screenshot 2024-05-13 at 3.59.40 PM.png](../assets/screenshot-2024-05-13-at-3-59-40-pm.png)
+![](../../../assets/ld2450-zone-input.png)
+
+13\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.
+
+![](../../../assets/ld2450-target-inches.png)
 
 14\. Select the Settings cog in the top right.
 
-![Screenshot 2024-05-13 at 4.00.59 PM.png](../assets/screenshot-2024-05-13-at-4-00-59-pm.png)
+![Screenshot 2024-05-13 at 4.00.59 PM.png](../../../assets/ld2450-target-select-settings.png)
 
 15\. Change the unit of measurement to mm and select Update.
 
-![Screenshot 2024-05-13 at 4.02.53 PM.png](../assets/screenshot-2024-05-13-at-4-02-53-pm.png)
+![Screenshot 2024-05-13 at 4.02.53 PM.png](../../../assets/ld2450-target-change-uom.png)
 
 16\. Your X and Y Targets will now look like this.
 
-![](assets/mtr-1-zone-setup-pic-1.png)
+![](../../../assets/ld2450-target-updated-uom.png)
 
 17\. Now you should see targets on the card.
 
-![Screenshot 2024-05-13 at 3.35.00 PM.png](../assets/screenshot-2024-05-13-at-3-35-00-pm.png)
+![Screenshot 2024-05-13 at 3.35.00 PM.png](../../../assets/ld2450-target-updated-card.png)
 
 18\. Now we can make zones around the targets where you want to Detect presence or filter them out
 
