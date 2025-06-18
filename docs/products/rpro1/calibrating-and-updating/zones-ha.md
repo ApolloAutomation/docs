@@ -210,13 +210,13 @@ decluttering_templates:
       raw_plotly_config: true
 ```
 
-6\. Copy the code below to use in the next step. Please change the "name" in the code below to the name of your R-PRO-1 sensor. If you are unsure what name to use here, please head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page") and navigate to your device then find the full device name. Unless you renamed it, your device will likely be called "apollo\_r\_pro\_1\_" with 6 random numbers/letters after the final underscore as shown in the example image below.
+6\. Copy the code below to use in the next step. Please change the "name" in the code below to the name of your R-PRO-1 sensor. If you are unsure what name to use here, please head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page") and navigate to your device then find the full device name. Unless you renamed it, your device will likely be called "apollo\_r\_pro\_1\_eth\_" with 6 random numbers/letters after the final underscore as shown in the example image below.
 
 ```yaml
-template: apollo_mtr_1
+template: apollo_r_pro_1
 type: custom:decluttering-card
 variables:
-  - name: apollo_mtr_1_c64a28
+  - name: apollo_r_pro_1_eth_593904
 ```
 
 ![](../../../assets/mtr1-zones-ha-pic-7.png)
@@ -233,7 +233,7 @@ variables:
 
 10\. Click device as shown in the image below
 
-![Screenshot 2024-05-13 at 11.48.42 AM.png](../../../assets/mtr1-zones-ha-pic-4.png)
+![Screenshot 2024-05-13 at 11.48.42 AM.png](../../../assets/select-r-pro-1-device.png)
 
 11\. Scroll down until you get to the Configuration section and you see the empty boxes for zones 1-3 for both X and Y coordinates.
 
