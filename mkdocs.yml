@@ -263,7 +263,6 @@ nav:
             - Radar Tuning:
               - Home Assistant: products/rpro1/calibrating-and-updating/zones-ha.md
               - HLK Radar Tool App: products/rpro1/calibrating-and-updating/zones-hlk.md
-              - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
           - Addons:
             - CO<sub>2</sub> Addon: products/rpro1/addons/adding-co2-to-r-pro-1.md
             - 1-Gang Box Mount: products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
