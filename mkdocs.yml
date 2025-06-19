@@ -187,9 +187,8 @@ nav:
           - Examples:
             - Create Logo Image: products/m1/examples/create-logo-image.md
           - Troubleshooting:
-            - M-1 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
-            - Factory Re-Flash M-1: products/msr2/troubleshooting/msr2-code.md
-            - Teardown and Reassembly Of M-1: products/msr2/troubleshooting/msr2-teardown.md
+            - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
+            - Factory Re-Flash M-1: products/m1/troubleshooting/m1-code.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
