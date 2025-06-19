@@ -12,16 +12,10 @@ Pre-flashed with WLED firmware, the M-1 offers an easy and fun user experience r
 
 **Use Cases:**
 
-Dynamic indoor or outdoor digital signage for advertising or information displays.
-
-Interactive art installations and digital murals.
-
-Real-time data visualization like weather, stock prices, or social media feeds.
-
-Custom notifications and alerts in smart homes or workplaces.
-
-Scoreboards and event displays at sports venues or conferences.
-
-Ambient lighting with customizable patterns and colors for mood setting.
-
-DIY projects for gaming or retro pixel art displays.
+* Dynamic indoor or outdoor digital signage for advertising or information displays.
+* Interactive art installations and digital murals.
+* Real-time data visualization like weather, stock prices, or social media feeds.
+* Custom notifications and alerts in smart homes or workplaces.
+* Scoreboards and event displays at sports venues or conferences.
+* Ambient lighting with customizable patterns and colors for mood setting.
+* DIY projects for gaming or retro pixel art displays.
