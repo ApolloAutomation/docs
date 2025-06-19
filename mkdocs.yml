@@ -189,28 +189,6 @@ nav:
           - Troubleshooting:
             - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: products/m1/troubleshooting/m1-code.md
-      - MSR-1:
-          - Introduction: products/msr1/introduction.md
-          - FAQ: products/msr1/faq.md
-          - Getting Started: products/general/setup/getting-started-msr1.md
-          - Additional Info:
-            - General Tips: products/msr1/setup/general-tips.md
-            - Sensor Definitons: products/msr1/setup/sensor-definitions.md
-            - Radar Tuning: 
-              - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
-              - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
-              - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
-            - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
-          - Addons: products/msr1/addons/adding-co2-to-msr-1.md
-          - Reviews: products/msr1/msr1-reviews.md
-          - Examples:
-            - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
-            - MSR-1 Alarmo: products/msr1/examples/msr1-alarmo.md
-          - Troubleshooting:
-            - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
-            - Factory Re-Flash MSR-1: products/msr1/troubleshooting/msr1-code.md
-            - Teardown and Reassembly Of MSR-1: products/msr1/troubleshooting/msr1-teardown.md
-            - Reset Wi-Fi Credentials: products/msr1/troubleshooting/msr1-reset-wi-fi-credentials.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
@@ -395,6 +373,10 @@ nav:
             - Factory Re-Flash TEMP-1B: products/temp1b/troubleshooting/temp1b-code.md
             - Teardown and Reassembly Of TEMP-1B: products/temp1b/troubleshooting/temp1b-teardown.md
             - Reset Wi-Fi Credentials: products/temp1b/troubleshooting/temp1b-reset-wi-fi-credentials.md
+      - DEV-1:
+          - Introduction: products/dev1/introduction.md
+      - DEV-2:
+          - Introduction: products/dev2/introduction.md
       - H-1:
           - Introduction: products/h1/introduction.md
           - FAQ: products/h1/faq.md
@@ -410,10 +392,28 @@ nav:
           - FAQ: products/apolloodroid/faq.md
           - Getting Started: products/apolloodroid/getting-started.md
           - Reviews: products/apolloodroid/reviews.md
-      - DEV-1:
-          - Introduction: products/dev1/introduction.md
-      - DEV-2:
-          - Introduction: products/dev2/introduction.md
+      - MSR-1:
+          - Introduction: products/msr1/introduction.md
+          - FAQ: products/msr1/faq.md
+          - Getting Started: products/general/setup/getting-started-msr1.md
+          - Additional Info:
+            - General Tips: products/msr1/setup/general-tips.md
+            - Sensor Definitons: products/msr1/setup/sensor-definitions.md
+            - Radar Tuning: 
+              - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
+              - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
+              - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
+            - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
+          - Addons: products/msr1/addons/adding-co2-to-msr-1.md
+          - Reviews: products/msr1/msr1-reviews.md
+          - Examples:
+            - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
+            - MSR-1 Alarmo: products/msr1/examples/msr1-alarmo.md
+          - Troubleshooting:
+            - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
+            - Factory Re-Flash MSR-1: products/msr1/troubleshooting/msr1-code.md
+            - Teardown and Reassembly Of MSR-1: products/msr1/troubleshooting/msr1-teardown.md
+            - Reset Wi-Fi Credentials: products/msr1/troubleshooting/msr1-reset-wi-fi-credentials.md
       - Contact Us / Support: products/general/contact-us/contact-us-support.md
 #### ***START OF HOMEY SECTION***
   - Homey:
