@@ -1,0 +1,9 @@
+---
+title: LED-1 Pinout Guide
+description: LED-1 Pinout Guide
+---
+# LED-1 Pinout Guide
+
+<table><tbody><tr><th><p><strong>GPIO Pin</strong></p></th><th><p><strong>LED-1 PCB</strong></p></th><th><p><strong>Use Case</strong></p></th></tr><tr><td><p>GPIO_0</p></td><td><p>Button</p></td><td><p>Touch button</p></td></tr><tr><td><p></p></td><td><p></p></td><td><p></p></td></tr><tr><td><p>GPIO_13</p></td><td><p>LED Data 1 Output</p></td><td><p>Data line for LEDs</p></td></tr><tr><td><p>GPIO_15</p></td><td><p>LED Data 2 Output</p></td><td><p>Data line for LEDs</p></td></tr><tr><td><p>GPIO_22</p></td><td><p>LED Relay</p></td><td><p>Relay for LEDs</p></td></tr><tr><td><p>GPIO_12</p></td><td><p>Pin I2S SD</p></td><td><p>Microphone SD</p></td></tr><tr><td><p>GPIO_27</p></td><td><p>Pin I2S WS</p></td><td><p>Microphone WS</p></td></tr><tr><td><p>GPIO_14</p></td><td><p>Pin I2S SCK</p></td><td><p>Microphone SCK</p></td></tr><tr><td><p></p></td><td><p></p></td><td><p></p></td></tr><tr><td><p>GPIO_25</p></td><td><p>Extra GPIO</p></td><td><p>Extra GPIO</p></td></tr><tr><td><p>GPIO_32</p></td><td><p>Extra GPIO</p></td><td><p>Extra GPIO</p></td></tr><tr><td><p>GPIO_33</p></td><td><p>Extra GPIO</p></td><td><p>Extra GPIO</p></td></tr><tr><td><p>GND Pin</p></td><td><p>GND Pin</p></td><td><p>Exposed Ground</p></td></tr><tr><td><p>5V Pin</p></td><td><p>5V Pin</p></td><td><p>Exposed 5V</p></td></tr><tr><td><p>3.3V Pin</p></td><td><p>3.3V Pin</p></td><td><p>Exposed 3.3V</p></td></tr></tbody></table>
+
+If you have re-flashed your device with other WLED firmware, please fill in the gpio numbers above in WLED to get your device working as expected!
