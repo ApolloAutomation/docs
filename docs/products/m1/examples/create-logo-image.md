@@ -6,4 +6,6 @@ description: Step by step guide to adding your own logo or image to the M-1 LED 
 
 Head to the our repo and download the tool here! https://github.com/ApolloAutomation/PixelMagicTool
 
-1\. [Download PixelMagic](https://raw.githubusercontent.com/ApolloAutomation/PixelMagicTool/main/pxmagic.htm) and then open it!
+1\. <a href="https://raw.githubusercontent.com/ApolloAutomation/PixelMagicTool/main/pxmagic.htm" target="_blank" rel="noreferrer nofollow noopener">Download</a> the Pixel Magic Tool here!
+
+testing <a href="https://raw.githubusercontent.com/ApolloAutomation/PixelMagicTool/main/pxmagic.htm" download>Download pxmagic.htm</a>
