@@ -177,23 +177,19 @@ nav:
             - Pinout Guide: products/led1/setup/led1-pinout-guide.md
             - How To Replace The Fuse: products/led1/setup/led1-replace-fuse.md
           - Reviews: products/led1/led1-reviews.md
-      - MATRIX-1:
+      - M-1 (LED Matrix):
           - Introduction: products/m1/introduction.md
           - FAQ: products/m1/faq.md
-          - Getting Started: products/general/setup/getting-started-m1.md
+          - Getting Started: products/m1/setup/getting-started-m1.md
           - Additional Info:
-            - General Tips: products/msr2/setup/msr2-general-tips.md
-            - Sensor Definitons: products/msr2/setup/msr2-sensor-definitions.md
+            - General Tips: products/m1/setup/m1-general-tips.md
           - Reviews: products/m1/m1-reviews.md
           - Examples:
-            - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
-            - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
-            - GPIO Header LED Strip: products/msr2/examples/gpio-header-control-an-led-strip.md
+            - Create Logo Image: products/m1/examples/create-logo-image.md
           - Troubleshooting:
-            - MSR-2 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
-            - Factory Re-Flash MSR-2: products/msr2/troubleshooting/msr2-code.md
-            - Teardown and Reassembly Of MSR-2: products/msr2/troubleshooting/msr2-teardown.md
-            - Reset Wi-Fi Credentials: products/msr2/troubleshooting/msr2-reset-wi-fi-credentials.md
+            - M-1 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
+            - Factory Re-Flash M-1: products/msr2/troubleshooting/msr2-code.md
+            - Teardown and Reassembly Of M-1: products/msr2/troubleshooting/msr2-teardown.md
       - MSR-1:
           - Introduction: products/msr1/introduction.md
           - FAQ: products/msr1/faq.md
