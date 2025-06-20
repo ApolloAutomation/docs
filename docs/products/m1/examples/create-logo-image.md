@@ -4,6 +4,10 @@ description: Step by step guide to adding your own logo or image to the M-1 LED 
 ---
 # Create your own image for the M-1
 
+!!! success "You can upload multiple new images as presets in WLED."
+
+    The WLED firmware on your device will allow you to call these presets in automations or make buttons to control them on your Home Assistant dashboard!
+
 #### Create New Image
 
 1\. <a href="https://github.com/ApolloAutomation/PixelMagicTool/blob/main/pxmagic.htm" target="_blank" rel="noreferrer nofollow noopener">Click this link</a> and then click "Download raw file" as shown below.
