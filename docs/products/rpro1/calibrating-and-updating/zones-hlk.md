@@ -62,13 +62,19 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ###### Dashboard Card Setup
 
-6\. Copy the code below and add a Home Assistant card to visualize your zones. You will need to change all of the apollo\_r\_pro\_1 entity IDs to match your R-PRO-1 device. This can be done quickly by using a code editor or ChatGPT.
+1\. Install [HACS](https://hacs.xyz/docs/use/).
+
+2\. Install [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
+
+3\. Copy the code below and add a Home Assistant card to visualize your zones. You will need to replace "apollo\_r\_pro\_1\_eth\_593904" to match your R-PRO-1 device. This can be done quickly by using a code editor or ChatGPT.
+
+&nbsp;
 
 ![Screenshot 2024-05-14 at 11.27.44 AM.png](../../../assets/r-pro-1-card-working-targets.png)
 
 ```
 type: custom:plotly-graph
-title: Target Positions
+title: R-PRO-1 Target Positions
 refresh_interval: 1
 hours_to_show: current_day
 layout:
@@ -238,6 +244,10 @@ entities:
       - 0
 raw_plotly_config: true
 ```
+
+## Live YAML Generator
+
+<iframe src="/snippets/rpro1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
 
 ###### LD2412 Configuration
 
