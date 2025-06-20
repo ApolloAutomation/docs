@@ -30,13 +30,13 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 4\. Make sure to scroll to the very bottom and start a new line all the way to the left as shown in the image below. Make sure to save and exit in the top right when finished.
 
-![](../../../assets/mtr1-zones-ha-pic-3.png)
+![](../../../assets/r-pro-1-decluttering-templates.png)
 
 5\. Copy the code below and paste it on the new line from step 4.
 
 ```yaml
 decluttering_templates:
-  apollo_mtr_1:
+  apollo_r_pro_1:
     card:
       type: custom:plotly-graph
       title: Target Positions - [[name]]
@@ -78,9 +78,9 @@ decluttering_templates:
             shape: spline
             width: 5
           x:
-            - $ex hass.states["sensor.[[name]]_target_1_x"].state
+            - $ex hass.states["sensor.[[name]]_ld2450_target_1_x"].state
           'y':
-            - $ex hass.states["sensor.[[name]]_target_1_y"].state
+            - $ex hass.states["sensor.[[name]]_ld2450_target_1_y"].state
         - entity: ''
           name: Target2
           marker:
@@ -89,9 +89,9 @@ decluttering_templates:
             shape: spline
             width: 5
           x:
-            - $ex hass.states["sensor.[[name]]_target_2_x"].state
+            - $ex hass.states["sensor.[[name]]_ld2450_target_2_x"].state
           'y':
-            - $ex hass.states["sensor.[[name]]_target_2_y"].state
+            - $ex hass.states["sensor.[[name]]_ld2450_target_2_y"].state
         - entity: ''
           name: Target3
           marker:
@@ -100,9 +100,9 @@ decluttering_templates:
             shape: spline
             width: 5
           x:
-            - $ex hass.states["sensor.[[name]]_target_3_x"].state
+            - $ex hass.states["sensor.[[name]]_ld2450_target_3_x"].state
           'y':
-            - $ex hass.states["sensor.[[name]]_target_3_y"].state
+            - $ex hass.states["sensor.[[name]]_ld2450_target_3_y"].state
         - entity: ''
           name: Zone1
           mode: lines
@@ -113,17 +113,17 @@ decluttering_templates:
             shape: line
             width: 2
           x:
-            - $ex hass.states["number.[[name]]_zone_1_x1"].state
-            - $ex hass.states["number.[[name]]_zone_1_x1"].state
-            - $ex hass.states["number.[[name]]_zone_1_x2"].state
-            - $ex hass.states["number.[[name]]_zone_1_x2"].state
-            - $ex hass.states["number.[[name]]_zone_1_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_x2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_x2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_x1"].state
           'y':
-            - $ex hass.states["number.[[name]]_zone_1_y1"].state
-            - $ex hass.states["number.[[name]]_zone_1_y2"].state
-            - $ex hass.states["number.[[name]]_zone_1_y2"].state
-            - $ex hass.states["number.[[name]]_zone_1_y1"].state
-            - $ex hass.states["number.[[name]]_zone_1_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_y2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_y2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_1_y1"].state
         - entity: ''
           name: Zone2
           mode: lines
@@ -134,17 +134,17 @@ decluttering_templates:
             shape: line
             width: 2
           x:
-            - $ex hass.states["number.[[name]]_zone_2_x1"].state
-            - $ex hass.states["number.[[name]]_zone_2_x1"].state
-            - $ex hass.states["number.[[name]]_zone_2_x2"].state
-            - $ex hass.states["number.[[name]]_zone_2_x2"].state
-            - $ex hass.states["number.[[name]]_zone_2_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_x2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_x2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_x1"].state
           'y':
-            - $ex hass.states["number.[[name]]_zone_2_y1"].state
-            - $ex hass.states["number.[[name]]_zone_2_y2"].state
-            - $ex hass.states["number.[[name]]_zone_2_y2"].state
-            - $ex hass.states["number.[[name]]_zone_2_y1"].state
-            - $ex hass.states["number.[[name]]_zone_2_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_y2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_y2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_2_y1"].state
         - entity: ''
           name: Zone3
           mode: lines
@@ -155,17 +155,17 @@ decluttering_templates:
             shape: line
             width: 2
           x:
-            - $ex hass.states["number.[[name]]_zone_3_x1"].state
-            - $ex hass.states["number.[[name]]_zone_3_x1"].state
-            - $ex hass.states["number.[[name]]_zone_3_x2"].state
-            - $ex hass.states["number.[[name]]_zone_3_x2"].state
-            - $ex hass.states["number.[[name]]_zone_3_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_x1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_x2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_x2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_x1"].state
           'y':
-            - $ex hass.states["number.[[name]]_zone_3_y1"].state
-            - $ex hass.states["number.[[name]]_zone_3_y2"].state
-            - $ex hass.states["number.[[name]]_zone_3_y2"].state
-            - $ex hass.states["number.[[name]]_zone_3_y1"].state
-            - $ex hass.states["number.[[name]]_zone_3_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_y2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_y2"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_y1"].state
+            - $ex hass.states["number.[[name]]_ld2450_zone_3_y1"].state
         - entity: ''
           name: Coverage
           mode: lines
@@ -219,7 +219,7 @@ variables:
   - name: apollo_r_pro_1_eth_593904
 ```
 
-![](../../../assets/mtr1-zones-ha-pic-7.png)
+![](../../../assets/r-pro-1-find-device-name.png)
 
 7\. Click edit dashboard in the top right then choose ADD CARD in the bottom right. Type in "Manual" then select Manual.
 
@@ -227,7 +227,7 @@ variables:
 
 8\. Paste in the code you copied from step 6 and you should now see this:
 
-![](../../../assets/mtr1-zones-ha-pic-6.png)
+![](../../../assets/r-pro-1-card-axis-labeled.png)
 
 9\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page")
 
@@ -251,23 +251,23 @@ variables:
 
 13\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.
 
-![](../../../assets/ld2450-target-inches.png)
+![](../../../assets/r-pro-1-card-change-units-from-inches.png)
 
 14\. Select the Settings cog in the top right.
 
-![Screenshot 2024-05-13 at 4.00.59 PM.png](../../../assets/ld2450-target-select-settings.png)
+![Screenshot 2024-05-13 at 4.00.59 PM.png](../../../assets/r-pro-1-card-change-units-settings.png)
 
 15\. Change the unit of measurement to mm and select Update.
 
-![Screenshot 2024-05-13 at 4.02.53 PM.png](../../../assets/ld2450-target-change-uom.png)
+![Screenshot 2024-05-13 at 4.02.53 PM.png](../../../assets/r-pro-1-card-change-units-select-mm.png)
 
 16\. Your X and Y Targets will now look like this.
 
-![](../../../assets/ld2450-target-updated-uom.png)
+![](../../../assets/r-pro-1-card-change-units-all-changed-to-mm.png)
 
 17\. Now you should see targets on the card.
 
-![Screenshot 2024-05-13 at 3.35.00 PM.png](../../../assets/ld2450-target-updated-card.png)
+![Screenshot 2024-05-13 at 3.35.00 PM.png](../../../assets/r-pro-1-card-working-targets.png)
 
 18\. Now we can make zones around the targets where you want to Detect presence or filter them out
 
