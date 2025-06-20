@@ -76,7 +76,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 4\. Head to a dashboard view and click the pencil icon to edit dashboard then click one of the large "+" signs, type in manual, and click on it.
 
-![](../../../assets/mtr-1-card-working-targets.png)
+![](../../../assets/ld2450-add-plotly-graph-gif.gif)
 
 5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
