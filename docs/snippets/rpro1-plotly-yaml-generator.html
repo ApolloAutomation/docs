@@ -74,8 +74,8 @@
 <body>
   <h1>R-PRO-1 Plotly YAML Generator</h1>
 
-  <label for="deviceID">Enter your device name (e.g. <code>apollo_r_pro_1_eth_593904</code>):</label><br/>
-  <input type="text" id="deviceID" placeholder="Your device name" />
+  <label for="deviceName">Enter your device name (e.g. <code>apollo_r_pro_1_eth_593904</code>):</label><br/>
+  <input type="text" id="deviceName" placeholder="Your device name" />
 
   <br/>
   <button onclick="generateYAML()">Generate YAML</button>
@@ -85,7 +85,7 @@
 
   <script>
     function generateYAML() {
-      const id = document.getElementById("deviceID").value.trim();
+      const id = document.getElementById("deviceName").value.trim();
       const out = document.getElementById("yamlOutput");
 
       if (!id) {
@@ -111,7 +111,9 @@ layout:
     zerolinecolor: RGBA(200,200,200,0.15)
     type: number
     fixedrange: true
-    range: [-4000, 4000]
+    range:
+      - -4000
+      - 4000
   yaxis:
     dtick: 1000
     gridcolor: RGBA(200,200,200,0.15)
@@ -119,24 +121,147 @@ layout:
     scaleanchor: x
     scaleratio: 1
     fixedrange: true
-    range: [7500, 0]
+    range:
+      - 7500
+      - 0
 entities:
-  - name: Target1
-    x: [\`$ex hass.states["sensor.${id}_ld2450_target_1_x"].state\`]
-    y: [\`$ex hass.states["sensor.${id}_ld2450_target_1_y"].state\`]
-    marker: { size: 12 }
-    line: { shape: spline, width: 5 }
-  - name: Target2
-    x: [\`$ex hass.states["sensor.${id}_ld2450_target_2_x"].state\`]
-    y: [\`$ex hass.states["sensor.${id}_ld2450_target_2_y"].state\`]
-    marker: { size: 12 }
-    line: { shape: spline, width: 5 }
-  - name: Target3
-    x: [\`$ex hass.states["sensor.${id}_ld2450_target_3_x"].state\`]
-    y: [\`$ex hass.states["sensor.${id}_ld2450_target_3_y"].state\`]
-    marker: { size: 12 }
-    line: { shape: spline, width: 5 }
-# (Optional) Add zone/coverage data below if needed
+  - entity: ''
+    name: Target1
+    marker:
+      size: 12
+    line:
+      shape: spline
+      width: 5
+    x:
+      - $ex hass.states["sensor.${id}_ld2450_target_1_x"].state
+    'y':
+      - $ex hass.states["sensor.${id}_ld2450_target_1_y"].state
+  - entity: ''
+    name: Target2
+    marker:
+      size: 12
+    line:
+      shape: spline
+      width: 5
+    x:
+      - $ex hass.states["sensor.${id}_ld2450_target_2_x"].state
+    'y':
+      - $ex hass.states["sensor.${id}_ld2450_target_2_y"].state
+  - entity: ''
+    name: Target3
+    marker:
+      size: 12
+    line:
+      shape: spline
+      width: 5
+    x:
+      - $ex hass.states["sensor.${id}_ld2450_target_3_x"].state
+    'y':
+      - $ex hass.states["sensor.${id}_ld2450_target_3_y"].state
+  - entity: ''
+    name: Zone1
+    mode: lines
+    fill: toself
+    fillcolor: RGBA(20,200,0,0.06)
+    line:
+      color: RGBA(20,200,0,0.2)
+      shape: line
+      width: 2
+    x:
+      - $ex hass.states["number.${id}_ld2450_zone_1_x1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_1_x1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_1_x2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_1_x2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_1_x1"].state
+    'y':
+      - $ex hass.states["number.${id}_ld2450_zone_1_y1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_1_y2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_1_y2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_1_y1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_1_y1"].state
+  - entity: ''
+    name: Zone2
+    mode: lines
+    fill: toself
+    fillcolor: RGBA(200,0,255,0.06)
+    line:
+      color: RGBA(200,0,255,0.2)
+      shape: line
+      width: 2
+    x:
+      - $ex hass.states["number.${id}_ld2450_zone_2_x1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_2_x1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_2_x2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_2_x2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_2_x1"].state
+    'y':
+      - $ex hass.states["number.${id}_ld2450_zone_2_y1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_2_y2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_2_y2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_2_y1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_2_y1"].state
+  - entity: ''
+    name: Zone3
+    mode: lines
+    fill: toself
+    fillcolor: RGBA(200,120,55,0.06)
+    line:
+      color: RGBA(200,120,55,0.2)
+      shape: line
+      width: 2
+    x:
+      - $ex hass.states["number.${id}_ld2450_zone_3_x1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_3_x1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_3_x2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_3_x2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_3_x1"].state
+    'y':
+      - $ex hass.states["number.${id}_ld2450_zone_3_y1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_3_y2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_3_y2"].state
+      - $ex hass.states["number.${id}_ld2450_zone_3_y1"].state
+      - $ex hass.states["number.${id}_ld2450_zone_3_y1"].state
+  - entity: ''
+    name: Coverage
+    mode: lines
+    fill: tonexty
+    fillcolor: rgba(168, 216, 234, 0.15)
+    line:
+      shape: line
+      width: 1
+      dash: dot
+    x:
+      - 0
+      - $ex 7500 * Math.sin((2 * Math.PI)/360 * 60)
+      - 4500
+      - 4000
+      - 3000
+      - 2000
+      - 1000
+      - 0
+      - -1000
+      - -2000
+      - -3000
+      - -4000
+      - -4500
+      - $ex -7500 * Math.sin((2 * Math.PI)/360 * 60)
+      - 0
+    'y':
+      - 0
+      - $ex 7500 * Math.cos((2 * Math.PI)/360 * 60)
+      - $ex Math.sqrt( 7500**2 - 4500**2 )
+      - $ex Math.sqrt( 7500**2 - 4000**2 )
+      - $ex Math.sqrt( 7500**2 - 3000**2 )
+      - $ex Math.sqrt( 7500**2 - 2000**2 )
+      - $ex Math.sqrt( 7500**2 - 1000**2 )
+      - 7500
+      - $ex Math.sqrt( 7500**2 - 1000**2 )
+      - $ex Math.sqrt( 7500**2 - 2000**2 )
+      - $ex Math.sqrt( 7500**2 - 3000**2 )
+      - $ex Math.sqrt( 7500**2 - 4000**2 )
+      - $ex Math.sqrt( 7500**2 - 4500**2 )
+      - $ex 7500 * Math.cos((2 * Math.PI)/360 * 60)
+      - 0
 raw_plotly_config: true`;
 
       out.textContent = yaml;
