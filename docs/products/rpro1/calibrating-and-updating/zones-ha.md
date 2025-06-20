@@ -12,7 +12,7 @@ description: Tutorial for R-PRO-1 Home Assistant Zone Configuration.
 
     The optional LD2412 mmWave sensor allows you to have perfect still detection for one target at up to 9 meters so it's a great addition to the sensor.
 
-Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/calibrating-and-updating/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your LD2450 instead.
+Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/calibrating-and-updating/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R-PRO-1 LD2450.
 
 ###### LD2450 Configuration
 
@@ -26,7 +26,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 3\. Click edit dashboard in the top right then click the 3 dots menu then choose "Raw configuration editor".
 
-![](../../../assets/mtr1-zones-ha-pic-1.png)![](../../../assets/mtr1-zones-ha-pic-2.png)
+![](../../../assets/select-raw-configuration-editor-gif.gif)
 
 4\. Make sure to scroll to the very bottom and start a new line all the way to the left as shown in the image below. Make sure to save and exit in the top right when finished.
 
@@ -249,7 +249,7 @@ variables:
 
 ![](../../../assets/ld2450-zone-input.png)
 
-13\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 targets X and Y values.
+13\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 X and Y target values.
 
 ![](../../../assets/r-pro-1-card-change-units-from-inches.png)
 
@@ -269,7 +269,7 @@ variables:
 
 ![Screenshot 2024-05-13 at 3.35.00 PM.png](../../../assets/r-pro-1-card-working-targets.png)
 
-18\. Now we can make zones around the targets where you want to Detect presence or filter them out
+18\. Now we can make zones around the targets where you want to Detect presence or filter them out.
 
 !!! tip tip "Tip for zone configuration resetting"
 

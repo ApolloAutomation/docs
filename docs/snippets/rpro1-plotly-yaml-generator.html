@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>R-PRO-1 Plotly YAML Generator</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 1.5rem;
+      margin: 0;
+      background: #f9fafb;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input {
+      padding: 0.5rem;
+      margin: 0.5rem 0 1rem 0;
+      width: 100%;
+      max-width: 480px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #0057b7;
+      color: white;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 1rem;
+      margin-top: 1rem;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      border-left: 4px solid #0057b7;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>R-PRO-1 Plotly YAML Generator</h1>
+
+  <label for="deviceID">Enter your device ID (e.g. <code>apollo_r_pro_1_eth_593904</code>):</label><br/>
+  <input type="text" id="deviceID" placeholder="Your device ID" />
+
+  <br/>
+  <button onclick="generateYAML()">Generate YAML</button>
+  <button onclick="copyYAML()">Copy YAML</button>
+
+  <pre id="yamlOutput"># Your YAML will appear here after entering a device ID</pre>
+
+  <script>
+    function generateYAML() {
+      const id = document.getElementById("deviceID").value.trim();
+      const out = document.getElementById("yamlOutput");
+
+      if (!id) {
+        out.textContent = "# Please enter a valid device ID above";
+        return;
+      }
+
+      const yaml = `type: custom:plotly-graph
+title: R-PRO-1 Target Positions
+refresh_interval: 1
+hours_to_show: current_day
+layout:
+  height: 230
+  margin:
+    l: 50
+    r: 20
+    t: 20
+    b: 40
+  showlegend: true
+  xaxis:
+    dtick: 1000
+    gridcolor: RGBA(200,200,200,0.15)
+    zerolinecolor: RGBA(200,200,200,0.15)
+    type: number
+    fixedrange: true
+    range: [-4000, 4000]
+  yaxis:
+    dtick: 1000
+    gridcolor: RGBA(200,200,200,0.15)
+    zerolinecolor: RGBA(200,200,200,0.15)
+    scaleanchor: x
+    scaleratio: 1
+    fixedrange: true
+    range: [7500, 0]
+entities:
+  - name: Target1
+    x: [\`$ex hass.states["sensor.${id}_ld2450_target_1_x"].state\`]
+    y: [\`$ex hass.states["sensor.${id}_ld2450_target_1_y"].state\`]
+    marker: { size: 12 }
+    line: { shape: spline, width: 5 }
+  - name: Target2
+    x: [\`$ex hass.states["sensor.${id}_ld2450_target_2_x"].state\`]
+    y: [\`$ex hass.states["sensor.${id}_ld2450_target_2_y"].state\`]
+    marker: { size: 12 }
+    line: { shape: spline, width: 5 }
+  - name: Target3
+    x: [\`$ex hass.states["sensor.${id}_ld2450_target_3_x"].state\`]
+    y: [\`$ex hass.states["sensor.${id}_ld2450_target_3_y"].state\`]
+    marker: { size: 12 }
+    line: { shape: spline, width: 5 }
+# (Optional) Add zone/coverage data below if needed
+raw_plotly_config: true`;
+
+      out.textContent = yaml;
+    }
+
+    function copyYAML() {
+      const text = document.getElementById("yamlOutput").textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
