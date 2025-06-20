@@ -14,13 +14,15 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
 
 <iframe src="/snippets/mtr1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
 
+&nbsp;
+
 4\. Head to a dashboard view and click the pencil icon to edit dashboard then click one of the large "+" signs, type in manual, and click on it.
 
 ![](../../../assets/ld2450-add-plotly-graph-gif.gif)
 
 5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
-![](../../../assets/r-pro-1-plotly-graph-image.png)
+![](../../../assets/mtr-1-card-working-targets.png)
 
 6\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page")
 
