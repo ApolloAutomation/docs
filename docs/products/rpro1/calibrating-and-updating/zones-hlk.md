@@ -12,7 +12,7 @@ description: Tutorial for R-Pro-1 HLKRadarTool app Zone Configuration.
 
     The newer version of the firmware includes an "auto calibrate" function so you might want to test it out!
 
-The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="noreferrer nofollow noopener">HLK-LD2450</a> mmWave sensor is used in the MTR-1. <a href="https://drive.google.com/drive/folders/1aItrdziwnEqI-ovDWf24Lj6ioALaljFA?usp=sharing" target="_blank" rel="noreferrer nofollow noopener">Click Here</a> for the datasheet.
+The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="noreferrer nofollow noopener">HLK-LD2450</a> mmWave sensor is used in the R-PRO-1. <a href="https://drive.google.com/drive/folders/1aItrdziwnEqI-ovDWf24Lj6ioALaljFA?usp=sharing" target="_blank" rel="noreferrer nofollow noopener">Click Here</a> for the datasheet.
 
 === "iPhone"
 
@@ -22,7 +22,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your MTR-1 and scroll down until you see LD2450 Bluetooth.
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your R-PRO-1 and scroll down until you see LD2450 Bluetooth.
 
 ![Screenshot 2024-05-14 at 10.30.31 AM.png](../../../assets/mtr-1-toggle-on-ld2450-bluetooth.png)
 
@@ -32,27 +32,21 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
 
-![Screenshot_20240514_100155_HLKRadarTool.jpg](../assets/screenshot-20240514-100155-hlkradartool.jpg)
+![Screenshot_20240514_100155_HLKRadarTool.jpg](../../../assets/r-pro-1-select-ld2450-module.png)
 
 3\. Select Set in the top right.
 
-![Screenshot_20240514_100250_HLKRadarTool.jpg](../assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)
+![Screenshot_20240514_100250_HLKRadarTool.jpg](../../../assets/r-pro-1-hlk-app-select-set.png)
 
-4\. Select Detection then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
+4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit** — you should see a confirmation message: **"Setup successfully."**
 
-!!! tip "There are three ways to use your MTR-1!"
+!!! tip "There are three ways to use your R-PRO-1!"
 
-    You can use any of these three choices to control your MTR-1 differently. The most common option is "Detection" which lets you setup three areas and track three targets within them.<br>**Disabled**: Disable zone area detection<br>**Detection**: Only detects targets in the specified zone<br>**Filter**: Excludes a zone from detection
+    You can use any of these three choices to control your R-PRO-1 differently. The most common option is "Detection" which lets you setup three areas and track three targets within them.<br>**Disabled**: Disable multi-zone area detection and just tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
 
     Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
-![Screenshot_20240514_100512_HLKRadarTool.jpg](../assets/screenshot-20240514-100512-hlkradartool.jpg)
-
-5\. If set up correctly the zones should be saved as different colors. You can double-check that the settings are saved by looking at your HA entities (picture below). You should be all set!
-
-![Screenshot 2024-05-14 at 11.27.17 AM.png](../assets/screenshot-2024-05-14-at-11-27-17-am.png)
-
-![Screenshot_20240514_102430_HLKRadarTool.jpg](../assets/screenshot-20240514-102430-hlkradartool.jpg)
+![Screenshot_20240514_100512_HLKRadarTool.jpg](../../../assets/r-pro-1-hlk-app-setup-zones.png)
 
 !!! tip "Helpful Hints to understand zones better!"
 
@@ -68,9 +62,9 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ###### Dashboard Card Setup
 
-6\. Copy the code below and add a Home Assistant card to visualize your zones. You will need to change all of the apollo\_mtr\_1 entity IDs to match your MTR-1 device. This can be done quickly by using a code editor or ChatGPT.
+6\. Copy the code below and add a Home Assistant card to visualize your zones. You will need to change all of the apollo\_r\_pro\_1 entity IDs to match your R-PRO-1 device. This can be done quickly by using a code editor or ChatGPT.
 
-![Screenshot 2024-05-14 at 11.27.44 AM.png](../assets/screenshot-2024-05-14-at-11-27-44-am.png)
+![Screenshot 2024-05-14 at 11.27.44 AM.png](../../../assets/r-pro-1-card-working-targets.png)
 
 ```
 type: custom:plotly-graph
@@ -113,9 +107,9 @@ entities:
       shape: spline
       width: 5
     x:
-      - $ex hass.states["sensor.apollo_mtr_1_982da4_target_1_x"].state
+      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_1_x"].state
     'y':
-      - $ex hass.states["sensor.apollo_mtr_1_982da4_target_1_y"].state
+      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_1_y"].state
   - entity: ''
     name: Target2
     marker:
@@ -124,9 +118,9 @@ entities:
       shape: spline
       width: 5
     x:
-      - $ex hass.states["sensor.apollo_mtr_1_982da4_target_2_x"].state
+      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_2_x"].state
     'y':
-      - $ex hass.states["sensor.apollo_mtr_1_982da4_target_2_y"].state
+      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_2_y"].state
   - entity: ''
     name: Target3
     marker:
@@ -135,9 +129,9 @@ entities:
       shape: spline
       width: 5
     x:
-      - $ex hass.states["sensor.apollo_mtr_1_982da4_target_3_x"].state
+      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_3_x"].state
     'y':
-      - $ex hass.states["sensor.apollo_mtr_1_982da4_target_3_y"].state
+      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_3_y"].state
   - entity: ''
     name: Zone1
     mode: lines
@@ -148,17 +142,17 @@ entities:
       shape: line
       width: 2
     x:
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_x1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_x1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_x2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_x2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x1"].state
     'y':
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_y1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_y2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_y2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_y1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_1_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y1"].state
   - entity: ''
     name: Zone2
     mode: lines
@@ -169,17 +163,17 @@ entities:
       shape: line
       width: 2
     x:
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_x1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_x1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_x2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_x2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x1"].state
     'y':
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_y1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_y2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_y2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_y1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_2_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y1"].state
   - entity: ''
     name: Zone3
     mode: lines
@@ -190,17 +184,17 @@ entities:
       shape: line
       width: 2
     x:
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_x1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_x1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_x2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_x2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x1"].state
     'y':
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_y1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_y2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_y2"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_y1"].state
-      - $ex hass.states["number.apollo_mtr_1_982da4_zone_3_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y2"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y1"].state
+      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y1"].state
   - entity: ''
     name: Coverage
     mode: lines
