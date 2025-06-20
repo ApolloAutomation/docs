@@ -249,6 +249,10 @@ raw_plotly_config: true
 
 <iframe src="/snippets/rpro1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
 
+&nbsp;
+
+&nbsp;
+
 ###### LD2412 Configuration
 
 &nbsp;

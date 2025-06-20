@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>R-PRO-1 Plotly YAML Generator</title>
   <style>
+    :root {
+      color-scheme: light dark;
+    }
+
     body {
       font-family: system-ui, sans-serif;
       padding: 1.5rem;
       margin: 0;
-      background: #f9fafb;
-      color: #111;
+      background-color: var(--bg, #f9fafb);
+      color: var(--text, #111);
+      transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     h1 {
@@ -28,8 +33,10 @@
       width: 100%;
       max-width: 480px;
       font-size: 1rem;
-      border: 1px solid #ccc;
+      border: 1px solid var(--border, #ccc);
       border-radius: 4px;
+      background-color: var(--input-bg, #fff);
+      color: var(--text, #111);
     }
 
     button {
@@ -44,7 +51,7 @@
     }
 
     pre {
-      background: #f0f0f0;
+      background-color: var(--pre-bg, #f0f0f0);
       padding: 1rem;
       margin-top: 1rem;
       overflow-x: auto;
@@ -52,19 +59,29 @@
       border-left: 4px solid #0057b7;
       font-size: 0.9rem;
     }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e0e0e0;
+        --border: #444;
+        --input-bg: #1e1e1e;
+        --pre-bg: #1a1a1a;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>R-PRO-1 Plotly YAML Generator</h1>
 
-  <label for="deviceID">Enter your device ID (e.g. <code>apollo_r_pro_1_eth_593904</code>):</label><br/>
-  <input type="text" id="deviceID" placeholder="Your device ID" />
+  <label for="deviceID">Enter your device name (e.g. <code>apollo_r_pro_1_eth_593904</code>):</label><br/>
+  <input type="text" id="deviceID" placeholder="Your device name" />
 
   <br/>
   <button onclick="generateYAML()">Generate YAML</button>
   <button onclick="copyYAML()">Copy YAML</button>
 
-  <pre id="yamlOutput"># Your YAML will appear here after entering a device ID</pre>
+  <pre id="yamlOutput"># Your YAML will appear here after entering a device name</pre>
 
   <script>
     function generateYAML() {
@@ -72,7 +89,7 @@
       const out = document.getElementById("yamlOutput");
 
       if (!id) {
-        out.textContent = "# Please enter a valid device ID above";
+        out.textContent = "# Please enter a valid device name above";
         return;
       }
 
