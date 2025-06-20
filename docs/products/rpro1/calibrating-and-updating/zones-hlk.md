@@ -261,6 +261,8 @@ raw_plotly_config: true
 
 &nbsp;
 
+&nbsp;
+
 ###### LD2412 Configuration
 
 &nbsp;
