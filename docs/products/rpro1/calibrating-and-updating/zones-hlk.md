@@ -24,7 +24,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your R-PRO-1 and scroll down until you see LD2450 Bluetooth.
 
-![Screenshot 2024-05-14 at 10.30.31 AM.png](../../../assets/mtr-1-toggle-on-ld2450-bluetooth.png)
+![](../../../assets/mtr-1-toggle-on-ld2450-bluetooth.png)
 
 2\. Open the HLKRadarTool App and select your device.
 
@@ -32,11 +32,11 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
 
-![Screenshot_20240514_100155_HLKRadarTool.jpg](../../../assets/r-pro-1-select-ld2450-module.png)
+![](../../../assets/r-pro-1-select-ld2450-module.png)
 
 3\. Select Set in the top right.
 
-![Screenshot_20240514_100250_HLKRadarTool.jpg](../../../assets/r-pro-1-hlk-app-select-set.png)
+![](../../../assets/r-pro-1-hlk-app-select-set.png)
 
 4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit** — you should see a confirmation message: **"Setup successfully."**
 
@@ -46,7 +46,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
-![Screenshot_20240514_100512_HLKRadarTool.jpg](../../../assets/r-pro-1-hlk-app-setup-zones.png)
+![](../../../assets/r-pro-1-hlk-app-setup-zones.png)
 
 !!! tip "Helpful Hints to understand zones better!"
 
@@ -66,196 +66,17 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 2\. Install [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
 
-3\. Copy the code below and add a Home Assistant card to visualize your zones. You will need to replace "apollo\_r\_pro\_1\_eth\_593904" to match your R-PRO-1 device. This can be done quickly by using a code editor or ChatGPT.
-
-&nbsp;
-
-![Screenshot 2024-05-14 at 11.27.44 AM.png](../../../assets/r-pro-1-card-working-targets.png)
-
-```
-type: custom:plotly-graph
-title: R-PRO-1 Target Positions
-refresh_interval: 1
-hours_to_show: current_day
-layout:
-  height: 230
-  margin:
-    l: 50
-    r: 20
-    t: 20
-    b: 40
-  showlegend: true
-  xaxis:
-    dtick: 1000
-    gridcolor: RGBA(200,200,200,0.15)
-    zerolinecolor: RGBA(200,200,200,0.15)
-    type: number
-    fixedrange: true
-    range:
-      - -4000
-      - 4000
-  yaxis:
-    dtick: 1000
-    gridcolor: RGBA(200,200,200,0.15)
-    zerolinecolor: RGBA(200,200,200,0.15)
-    scaleanchor: x
-    scaleratio: 1
-    fixedrange: true
-    range:
-      - 7500
-      - 0
-entities:
-  - entity: ''
-    name: Target1
-    marker:
-      size: 12
-    line:
-      shape: spline
-      width: 5
-    x:
-      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_1_x"].state
-    'y':
-      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_1_y"].state
-  - entity: ''
-    name: Target2
-    marker:
-      size: 12
-    line:
-      shape: spline
-      width: 5
-    x:
-      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_2_x"].state
-    'y':
-      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_2_y"].state
-  - entity: ''
-    name: Target3
-    marker:
-      size: 12
-    line:
-      shape: spline
-      width: 5
-    x:
-      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_3_x"].state
-    'y':
-      - $ex hass.states["sensor.apollo_r_pro_1_eth_593904_ld2450_target_3_y"].state
-  - entity: ''
-    name: Zone1
-    mode: lines
-    fill: toself
-    fillcolor: RGBA(20,200,0,0.06)
-    line:
-      color: RGBA(20,200,0,0.2)
-      shape: line
-      width: 2
-    x:
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_x1"].state
-    'y':
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_1_y1"].state
-  - entity: ''
-    name: Zone2
-    mode: lines
-    fill: toself
-    fillcolor: RGBA(200,0,255,0.06)
-    line:
-      color: RGBA(200,0,255,0.2)
-      shape: line
-      width: 2
-    x:
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_x1"].state
-    'y':
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_2_y1"].state
-  - entity: ''
-    name: Zone3
-    mode: lines
-    fill: toself
-    fillcolor: RGBA(200,120,55,0.06)
-    line:
-      color: RGBA(200,120,55,0.2)
-      shape: line
-      width: 2
-    x:
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_x1"].state
-    'y':
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y2"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y1"].state
-      - $ex hass.states["number.apollo_r_pro_1_eth_593904_ld2450_zone_3_y1"].state
-  - entity: ''
-    name: Coverage
-    mode: lines
-    fill: tonexty
-    fillcolor: rgba(168, 216, 234, 0.15)
-    line:
-      shape: line
-      width: 1
-      dash: dot
-    x:
-      - 0
-      - $ex 7500 * Math.sin((2 * Math.PI)/360 * 60)
-      - 4500
-      - 4000
-      - 3000
-      - 2000
-      - 1000
-      - 0
-      - -1000
-      - -2000
-      - -3000
-      - -4000
-      - -4500
-      - $ex -7500 * Math.sin((2 * Math.PI)/360 * 60)
-      - 0
-    'y':
-      - 0
-      - $ex 7500 * Math.cos((2 * Math.PI)/360 * 60)
-      - $ex Math.sqrt( 7500**2 - 4500**2 )
-      - $ex Math.sqrt( 7500**2 - 4000**2 )
-      - $ex Math.sqrt( 7500**2 - 3000**2 )
-      - $ex Math.sqrt( 7500**2 - 2000**2 )
-      - $ex Math.sqrt( 7500**2 - 1000**2 )
-      - 7500
-      - $ex Math.sqrt( 7500**2 - 1000**2 )
-      - $ex Math.sqrt( 7500**2 - 2000**2 )
-      - $ex Math.sqrt( 7500**2 - 3000**2 )
-      - $ex Math.sqrt( 7500**2 - 4000**2 )
-      - $ex Math.sqrt( 7500**2 - 4500**2 )
-      - $ex 7500 * Math.cos((2 * Math.PI)/360 * 60)
-      - 0
-raw_plotly_config: true
-```
-
-## Live YAML Generator
+3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. ** ** Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_r\_pro\_1\_eth\_593904", with six random characters at the end.
 
 <iframe src="/snippets/rpro1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
 
-&nbsp;
+4\. Head to a dashboard view and click the pencil icon to edit dashboard then click one of the large "+" signs, type in manual, and click on it.
 
-&nbsp;
+![](../../../assets/ld2450-add-plotly-graph-gif.gif)
 
-&nbsp;
+5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
-&nbsp;
+![](../../../assets/r-pro-1-plotly-graph-image.png)
 
 ###### LD2412 Configuration
 

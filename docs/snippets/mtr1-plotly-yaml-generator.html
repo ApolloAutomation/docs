@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>R-PRO-1 Plotly YAML Generator</title>
+  <title>MTR-1 Plotly YAML Generator with Custom Zone Names</title>
   <style>
     :root {
       color-scheme: light dark;
     }
-
     body {
       font-family: system-ui, sans-serif;
       padding: 1.5rem;
@@ -17,16 +16,13 @@
       color: var(--text, #111);
       transition: background-color 0.2s ease, color 0.2s ease;
     }
-
     h1 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
-
     label {
       font-weight: bold;
     }
-
     input {
       padding: 0.5rem;
       margin: 0.5rem 0 1rem 0;
@@ -38,7 +34,6 @@
       background-color: var(--input-bg, #fff);
       color: var(--text, #111);
     }
-
     button {
       padding: 0.5rem 1rem;
       font-size: 1rem;
@@ -49,7 +44,6 @@
       background-color: #0057b7;
       color: white;
     }
-
     pre {
       background-color: var(--pre-bg, #f0f0f0);
       padding: 1rem;
@@ -59,7 +53,6 @@
       border-left: 4px solid #0057b7;
       font-size: 0.9rem;
     }
-
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #121212;
@@ -72,10 +65,19 @@
   </style>
 </head>
 <body>
-  <h1>R-PRO-1 Plotly YAML Generator</h1>
+  <h1>MTR-1 Plotly YAML Generator</h1>
 
-  <label for="deviceName">Enter your device name (e.g. <code>apollo_r_pro_1_eth_593904</code>):</label><br/>
-  <input type="text" id="deviceName" placeholder="Your device name" />
+  <label for="deviceName">Enter your device name (e.g. <code>apollo_mtr_1_c64a28</code>):</label><br/>
+  <input type="text" id="deviceName" placeholder="Your device name" value="apollo_mtr_1_c64a28" />
+
+  <br><label for="zone1Name">Zone 1 Name:</label><br/>
+  <input type="text" id="zone1Name" placeholder="Zone1" value="Zone1" />
+
+  <br><label for="zone2Name">Zone 2 Name:</label><br/>
+  <input type="text" id="zone2Name" placeholder="Zone2" value="Zone2" />
+
+  <br><label for="zone3Name">Zone 3 Name:</label><br/>
+  <input type="text" id="zone3Name" placeholder="Zone3" value="Zone3" />
 
   <br/>
   <button onclick="generateYAML()">Generate YAML</button>
@@ -86,6 +88,9 @@
   <script>
     function generateYAML() {
       const id = document.getElementById("deviceName").value.trim();
+      const zone1 = document.getElementById("zone1Name").value.trim() || "Zone1";
+      const zone2 = document.getElementById("zone2Name").value.trim() || "Zone2";
+      const zone3 = document.getElementById("zone3Name").value.trim() || "Zone3";
       const out = document.getElementById("yamlOutput");
 
       if (!id) {
@@ -94,7 +99,7 @@
       }
 
       const yaml = `type: custom:plotly-graph
-title: R-PRO-1 Target Positions
+title: MTR-1 Target Positions
 refresh_interval: 1
 hours_to_show: current_day
 layout:
@@ -133,9 +138,9 @@ entities:
       shape: spline
       width: 5
     x:
-      - $ex hass.states["sensor.${id}_ld2450_target_1_x"].state
+      - $ex hass.states["sensor.${id}_target_1_x"].state
     'y':
-      - $ex hass.states["sensor.${id}_ld2450_target_1_y"].state
+      - $ex hass.states["sensor.${id}_target_1_y"].state
   - entity: ''
     name: Target2
     marker:
@@ -144,9 +149,9 @@ entities:
       shape: spline
       width: 5
     x:
-      - $ex hass.states["sensor.${id}_ld2450_target_2_x"].state
+      - $ex hass.states["sensor.${id}_target_2_x"].state
     'y':
-      - $ex hass.states["sensor.${id}_ld2450_target_2_y"].state
+      - $ex hass.states["sensor.${id}_target_2_y"].state
   - entity: ''
     name: Target3
     marker:
@@ -155,11 +160,11 @@ entities:
       shape: spline
       width: 5
     x:
-      - $ex hass.states["sensor.${id}_ld2450_target_3_x"].state
+      - $ex hass.states["sensor.${id}_target_3_x"].state
     'y':
-      - $ex hass.states["sensor.${id}_ld2450_target_3_y"].state
+      - $ex hass.states["sensor.${id}_target_3_y"].state
   - entity: ''
-    name: Zone1
+    name: ${zone1}
     mode: lines
     fill: toself
     fillcolor: RGBA(20,200,0,0.06)
@@ -168,19 +173,19 @@ entities:
       shape: line
       width: 2
     x:
-      - $ex hass.states["number.${id}_ld2450_zone_1_x1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_1_x1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_1_x2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_1_x2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_1_x1"].state
+      - $ex hass.states["number.${id}_zone_1_x1"].state
+      - $ex hass.states["number.${id}_zone_1_x1"].state
+      - $ex hass.states["number.${id}_zone_1_x2"].state
+      - $ex hass.states["number.${id}_zone_1_x2"].state
+      - $ex hass.states["number.${id}_zone_1_x1"].state
     'y':
-      - $ex hass.states["number.${id}_ld2450_zone_1_y1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_1_y2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_1_y2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_1_y1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_1_y1"].state
+      - $ex hass.states["number.${id}_zone_1_y1"].state
+      - $ex hass.states["number.${id}_zone_1_y2"].state
+      - $ex hass.states["number.${id}_zone_1_y2"].state
+      - $ex hass.states["number.${id}_zone_1_y1"].state
+      - $ex hass.states["number.${id}_zone_1_y1"].state
   - entity: ''
-    name: Zone2
+    name: ${zone2}
     mode: lines
     fill: toself
     fillcolor: RGBA(200,0,255,0.06)
@@ -189,19 +194,19 @@ entities:
       shape: line
       width: 2
     x:
-      - $ex hass.states["number.${id}_ld2450_zone_2_x1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_2_x1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_2_x2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_2_x2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_2_x1"].state
+      - $ex hass.states["number.${id}_zone_2_x1"].state
+      - $ex hass.states["number.${id}_zone_2_x1"].state
+      - $ex hass.states["number.${id}_zone_2_x2"].state
+      - $ex hass.states["number.${id}_zone_2_x2"].state
+      - $ex hass.states["number.${id}_zone_2_x1"].state
     'y':
-      - $ex hass.states["number.${id}_ld2450_zone_2_y1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_2_y2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_2_y2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_2_y1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_2_y1"].state
+      - $ex hass.states["number.${id}_zone_2_y1"].state
+      - $ex hass.states["number.${id}_zone_2_y2"].state
+      - $ex hass.states["number.${id}_zone_2_y2"].state
+      - $ex hass.states["number.${id}_zone_2_y1"].state
+      - $ex hass.states["number.${id}_zone_2_y1"].state
   - entity: ''
-    name: Zone3
+    name: ${zone3}
     mode: lines
     fill: toself
     fillcolor: RGBA(200,120,55,0.06)
@@ -210,17 +215,17 @@ entities:
       shape: line
       width: 2
     x:
-      - $ex hass.states["number.${id}_ld2450_zone_3_x1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_3_x1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_3_x2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_3_x2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_3_x1"].state
+      - $ex hass.states["number.${id}_zone_3_x1"].state
+      - $ex hass.states["number.${id}_zone_3_x1"].state
+      - $ex hass.states["number.${id}_zone_3_x2"].state
+      - $ex hass.states["number.${id}_zone_3_x2"].state
+      - $ex hass.states["number.${id}_zone_3_x1"].state
     'y':
-      - $ex hass.states["number.${id}_ld2450_zone_3_y1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_3_y2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_3_y2"].state
-      - $ex hass.states["number.${id}_ld2450_zone_3_y1"].state
-      - $ex hass.states["number.${id}_ld2450_zone_3_y1"].state
+      - $ex hass.states["number.${id}_zone_3_y1"].state
+      - $ex hass.states["number.${id}_zone_3_y2"].state
+      - $ex hass.states["number.${id}_zone_3_y2"].state
+      - $ex hass.states["number.${id}_zone_3_y1"].state
+      - $ex hass.states["number.${id}_zone_3_y1"].state
   - entity: ''
     name: Coverage
     mode: lines
