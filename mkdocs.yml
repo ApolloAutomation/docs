@@ -190,6 +190,7 @@ nav:
           - Troubleshooting:
             - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: products/m1/troubleshooting/m1-code.md
+            - Find IP and Hostname: products/m1/troubleshooting/m1-find-ip-address-and-hostname.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
