@@ -52,4 +52,4 @@ description: >-
 
 ![](../../../assets/m-1-matrix-scrolling-text-example-preset-save.gif)
 
-[Click here to setup your M-1 LED Matrix with a custom logo or image!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){   .md-button .md-button--primary }
+[Click here to setup your M-1 LED Matrix with a custom logo or image!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){     .md-button .md-button--primary }
