@@ -2,7 +2,6 @@
 title: Bluetooth Proxy Setup
 description: Tutorial for how to turn your Apollo device into a BLE proxy!
 ---
-
 # Bluetooth Proxy
 
 This guide shows you how to make your Apollo device act as a "BLE Proxy" which lets Bluetooth devices talk back to home assistant using Apollo devices as the "next hop"!
@@ -34,11 +33,15 @@ packages:
     refresh: 1min # how often to sync updates from the remote url
 ```
 
+!!! success "Replace MTR-1 in all three areas of the code you copied above with MSR-2, AIR-1 etc."
+
+    Scroll down and follow method \#2, or manually replace "MTR-1" with "MSR-2", "AIR-1", or whichever sensor you're using in each instance.
+
 6\. Paste the code as shown below directly below the yaml you just edited above. Make sure the spaces look the same and there are no red lines under any of the code.
 
 ![](../../../assets/bluetooth-proxy-tutorial-9.png)
 
-7\. Click save then Install in the top right. 
+7\. Click save then Install in the top right.
 
 ![](../../../assets/bluetooth-proxy-tutorial-11.png)
 
