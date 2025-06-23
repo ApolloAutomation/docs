@@ -18,7 +18,7 @@ description: Step by step guide to adding your own logo or image to the M-1 LED 
 
 ![](../../../assets/pixelmagictool-point-to-file.png)
 
-3\. Fill in the IP address or the hostname.local such as apollo-led-matrix.local
+3\. Fill in the IP address or the hostname.local of your M-1 device such as apollo-led-matrix.local
 
 ![](../../../assets/pixelmagictool-hostname.png)
 
