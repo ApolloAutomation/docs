@@ -186,6 +186,7 @@ nav:
           - Reviews: products/m1/m1-reviews.md
           - Examples:
             - Create Logo Image: products/m1/examples/create-logo-image.md
+            - Scrolling Text: products/m1/examples/scrolling-text.md
           - Troubleshooting:
             - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: products/m1/troubleshooting/m1-code.md
