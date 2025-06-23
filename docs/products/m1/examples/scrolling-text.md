@@ -42,6 +42,8 @@ description: >-
 
 ![](../../../assets/m-1-wled-scrolling-text-effect-sliders.png)
 
+---
+
 6\. To customize the text’s Color, Background Color, and Gradient, just click the Fx, Bg, and Gr circles and choose your colors using the color picker!
 
 ![](../../../assets/m-1-matrix-scrolling-text-example-fx-bg-gr-gif.gif)
@@ -50,4 +52,4 @@ description: >-
 
 ![](../../../assets/m-1-matrix-scrolling-text-example-preset-save.gif)
 
-[Click here to setup your M-1 LED Matrix with a custom logo or image!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){ .md-button .md-button--primary }
+[Click here to setup your M-1 LED Matrix with a custom logo or image!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){   .md-button .md-button--primary }
