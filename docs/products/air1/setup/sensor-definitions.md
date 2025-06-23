@@ -25,6 +25,7 @@ Once added to Home Assistant you can configure different settings for your senso
 **Ammonia (NH₃)**
 
 * Measures the concentration of ammonia in the air, which can come from agricultural emissions, cleaning products, or industrial processes.
+* **Baseline 0 ppm**.
 
 **Carbon Monoxide (CO)**
 
@@ -42,19 +43,23 @@ Once added to Home Assistant you can configure different settings for your senso
 **Ethanol (C₂H₅OH)**
 
 * Detects ethanol vapors, commonly found in cleaning agents, sanitizers, or alcohol-based products.
+* **Baseline is 0 ppm**.
 
 **Hydrogen (H₂)**
 
 * Monitors the concentration of hydrogen gas, which can indicate leaks or industrial processes.
+* **Baseline is 0 ppm**.
 
 **Methane (CH₄)**
 
 * Detects methane concentrations, which can indicate natural gas leaks or emissions from agricultural activities.
 * **Detects measurements of greater than 1000ppm**(Methane CH4 )
+* **Baseline is 0 ppm**.
 
 **Nitrogen Dioxide (NO₂)**
 
 * Measures the levels of nitrogen dioxide, a harmful gas often produced by vehicle emissions and industrial processes.
+* **Baseline is 0.16ppm not 0 ppm**.
 
 **PM &lt;10µm Weight Concentration**
 
