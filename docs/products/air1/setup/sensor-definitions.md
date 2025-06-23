@@ -25,6 +25,7 @@ Once added to Home Assistant you can configure different settings for your senso
 **Ammonia (NH₃)**
 
 * Measures the concentration of ammonia in the air, which can come from agricultural emissions, cleaning products, or industrial processes.
+* **Baseline 0 ppm**.
 
 **Carbon Monoxide (CO)**
 
@@ -55,6 +56,7 @@ Once added to Home Assistant you can configure different settings for your senso
 **Nitrogen Dioxide (NO₂)**
 
 * Measures the levels of nitrogen dioxide, a harmful gas often produced by vehicle emissions and industrial processes.
+* **Baseline is 0.16ppm not 0 ppm**.
 
 **PM &lt;10µm Weight Concentration**
 
