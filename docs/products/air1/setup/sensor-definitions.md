@@ -29,6 +29,7 @@ Once added to Home Assistant you can configure different settings for your senso
 **Carbon Monoxide (CO)**
 
 * Detects the concentration of carbon monoxide, a dangerous, odorless gas typically produced by combustion.
+* **Baseline is 4.16ppm not 0 ppm**.
 
 **(Carbon Dioxide (CO₂)**
 
@@ -49,6 +50,7 @@ Once added to Home Assistant you can configure different settings for your senso
 **Methane (CH₄)**
 
 * Detects methane concentrations, which can indicate natural gas leaks or emissions from agricultural activities.
+* **Detects measurements of greater than 1000ppm**(Methane CH4 )
 
 **Nitrogen Dioxide (NO₂)**
 
@@ -78,11 +80,11 @@ Once added to Home Assistant you can configure different settings for your senso
 
 * Measures relative humidity in the air, which impacts comfort and the overall environment.
 
-**SEN55 NOX**
+**SEN55 NOX Index**
 
-* Monitors nitrogen oxides (NOX), harmful gases produced by burning fossil fuels and industrial processes.
+* Monitors nitrogen oxides (NOX index), harmful gases produced by burning fossil fuels and industrial processes.
 
-**SEN55 VOC**
+**SEN55 VOC Index**
 
 Detects volatile organic compounds (VOC Index), which are emitted from paints, cleaning products, and industrial chemicals. <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index from the SEN55</a>.
 
