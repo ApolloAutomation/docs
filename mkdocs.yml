@@ -187,6 +187,7 @@ nav:
           - Examples:
             - Create Logo Image: products/m1/examples/create-logo-image.md
             - Scrolling Text: products/m1/examples/scrolling-text.md
+            - QR Code Generator: products/m1/examples/qr-code-generator.md
           - Troubleshooting:
             - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: products/m1/troubleshooting/m1-code.md
@@ -331,6 +332,7 @@ nav:
           - FAQ: products/temp1/faq.md
           - Getting Started: products/general/setup/getting-started-temp1.md
           - Additional Info:
+            - General Tips: products/temp1/setup/temp1-general-tips/temp1-general-tips.md
             - Sensor Definitons: products/temp1/setup/temp1-sensor-definitions.md
             - Prevent Sleep: products/temp1/setup/prevent-sleep.md
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
@@ -355,6 +357,7 @@ nav:
           - FAQ: products/temp1b/faq.md
           - Getting Started: products/general/setup/getting-started-temp1.md
           - Additional Info:
+            - General Tips: products/temp1/setup/temp1-general-tips/temp1-general-tips.md
             - Sensor Definitons: products/temp1b/setup/temp1b-sensor-definitions.md
             - Prevent Sleep: products/temp1b/setup/prevent-sleep.md
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
