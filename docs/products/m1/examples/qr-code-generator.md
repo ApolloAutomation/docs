@@ -4,7 +4,11 @@ description: Step by step guide to setting up your own QR code for Wi-Fi, link t
 ---
 # 🔧 QR Code Generator (Wi-Fi, Text, URL)
 
-!!! tip "You can set multiple different custom QR Codes as presets in WLED."
+!!! tip "This guide will walk you through creating a QR code which when scanned from a phone will give the option to join to your Wi-Fi."
+
+    It's a great way to share your guest Wi-Fi with people without needing to share a long name and password!
+
+    You can also create a QR code which spells out some words in text, or links to a URL, or even a vcard (contact information)!
 
     The WLED firmware on your device will allow you to call these presets in automations or make buttons to control them on your Home Assistant dashboard!
 

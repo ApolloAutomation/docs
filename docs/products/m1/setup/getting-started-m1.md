@@ -18,4 +18,24 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 1\. Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!
 
-&nbsp;
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and it will automatically be discovered.
+
+![](../../../assets/m-1-setup-wled-integration-add-device.png)
+
+2\. Click Add and then Click Submit.
+
+![](../../../assets/m-1-setup-wled-integration-click-submit.png)
+
+3\. Give it a name and a location and then click Skip and Finish.
+
+![](../../../assets/m-1-setup-wled-integration-name-location-finish.png)
+
+4\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/wled" target="_blank" rel="noreferrer nofollow noopener">WLED Integrations page</a> and click on 1 device below your M-1 LED Matrix.
+
+![](../../../assets/m-1-setup-wled-integration-click-device.png)
+
+5\. From here you can control your M-1 LED Matrix by changing the color, selecting presets, and more!
+
+![](../../../assets/m-1-setup-wled-integration-test-device.png)
+
+[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){ .md-button .md-button--primary }
