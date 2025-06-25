@@ -187,6 +187,7 @@ nav:
           - Examples:
             - Create Logo Image: products/m1/examples/create-logo-image.md
             - Scrolling Text: products/m1/examples/scrolling-text.md
+            - QR Code Generator: products/m1/examples/qr-code-generator.md
           - Troubleshooting:
             - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: products/m1/troubleshooting/m1-code.md
