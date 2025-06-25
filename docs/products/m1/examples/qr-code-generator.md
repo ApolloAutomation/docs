@@ -8,6 +8,8 @@ description: Step by step guide to setting up your own QR code for Wi-Fi, link t
 
     The WLED firmware on your device will allow you to call these presets in automations or make buttons to control them on your Home Assistant dashboard!
 
+1\. Fill in the SSID (your Wi-FI name) and your Wi-FI password then click Generate QR Code and finally click Download.
+
 <div style="margin-top: 1em; line-height: 1.8;">
   <label><strong>QR Code Type:</strong><br>
     <select id="qrType" onchange="updateForm()" style="width: 100%; max-width: 300px;">
