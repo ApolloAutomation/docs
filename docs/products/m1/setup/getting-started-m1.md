@@ -18,4 +18,8 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 1\. Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!
 
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and it will automatically be discovered.
+
+![](../../../assets/m-1-setup-wled-integration-add-device.png)
+
 &nbsp;
