@@ -176,11 +176,11 @@ nav:
             - General Tips: products/led1/setup/led1-general-tips.md
             - Pinout Guide: products/led1/setup/led1-pinout-guide.md
             - How To Replace The Fuse: products/led1/setup/led1-replace-fuse.md
-          - Reviews: products/led1/led1-reviews.md
           - Troubleshooting:
             - LED-1 Boot Mode: products/m1/troubleshooting/led1-boot-mode.md
             - Factory Re-Flash LED-1: products/led1/troubleshooting/led1-reflash.md
             - Find IP and Hostname: products/led1/troubleshooting/led1-find-ip-address-and-hostname.md
+          - Reviews: products/led1/led1-reviews.md
       - M-1 (LED Matrix):
           - Introduction: products/m1/introduction.md
           - FAQ: products/m1/faq.md
@@ -188,7 +188,7 @@ nav:
           - Additional Info:
             - General Tips: products/m1/setup/m1-general-tips.md
             - Matrix Settings: products/m1/setup/m1-matrix-settings.md
-          - Reviews: products/m1/m1-reviews.md
+            - Pinout Guide: products/m1/setup/m1-pinout-guide.md
           - Examples:
             - Create Logo Image: products/m1/examples/create-logo-image.md
             - Scrolling Text: products/m1/examples/scrolling-text.md
@@ -197,6 +197,7 @@ nav:
             - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: products/m1/troubleshooting/m1-reflash.md
             - Find IP and Hostname: products/m1/troubleshooting/m1-find-ip-address-and-hostname.md
+          - Reviews: products/m1/m1-reviews.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
@@ -215,7 +216,6 @@ nav:
             - GPIO Addon: products/msr2/addons/adding-gpio-header-to-msr-2.md
             - Outlet Mount: products/msr2/addons/msr2-outlet-mount.md
             - 90 Degree Addon: products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
-          - Reviews: products/msr2/msr2-reviews.md
           - Examples:
             - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
             - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
@@ -225,6 +225,7 @@ nav:
             - Factory Re-Flash MSR-2: products/msr2/troubleshooting/msr2-code.md
             - Teardown and Reassembly Of MSR-2: products/msr2/troubleshooting/msr2-teardown.md
             - Reset Wi-Fi Credentials: products/msr2/troubleshooting/msr2-reset-wi-fi-credentials.md
+          - Reviews: products/msr2/msr2-reviews.md
       - MTR-1:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
@@ -241,7 +242,6 @@ nav:
             - Male Rear USB-C: products/mtr1/addons/adding-rear-male-usb-to-mtr-1.md
             - GPIO Addon: products/mtr1/addons/adding-gpio-header-to-mtr-1.md
             - 90 Degree Addon: products/mtr1/addons/adding-90-degree-usb-c-to-mtr-1.md
-          - Reviews: products/mtr1/mtr1-reviews.md
           - Examples:
             - MTR-1 Corner Mount: products/mtr1/examples/crookedtoe-mtr1.md
             - MTR-1 Alarmo: products/mtr1/examples/mtr1-alarmo.md
@@ -250,6 +250,7 @@ nav:
             - Factory Re-Flash MTR-1: products/mtr1/troubleshooting/mtr1-code.md
             - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
             - Reset Wi-Fi Credentials: products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
+          - Reviews: products/mtr1/mtr1-reviews.md
       - R-PRO-1:
           - Introduction: products/rpro1/introduction.md
           - FAQ: products/rpro1/faq.md
@@ -266,13 +267,13 @@ nav:
             - 1-Gang Box Mount: products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
             - Ceiling Mount: products/rpro1/addons/install-ceiling-mount-for-r-pro-1.md
             - LD2412 Addon: products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md
-          - Reviews: products/rpro1/rpro1-reviews.md
-#need to add later          - Examples:
           - Troubleshooting:
             - R-PRO-1 Boot Mode: products/rpro1/troubleshooting/rpro1-boot-mode.md
             - Factory Re-Flash R-PRO-1: products/rpro1/troubleshooting/rpro1-code.md
             - Teardown and Reassembly Of R-PRO-1: products/rpro1/troubleshooting/rpro1-teardown.md
             - Reset Wi-Fi Credentials: products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md
+          - Reviews: products/rpro1/rpro1-reviews.md
+#need to add later          - Examples:
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
@@ -285,7 +286,6 @@ nav:
             - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
             - MiCS Addon: products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
             - GPIO Addon: products/air1/addons/adding-gpio-header-to-air-1.md
-          - Reviews: products/air1/air1-reviews.md
           - Examples:
             - Air Quality Dashboard: products/air1/examples/air1-dashboard-examples.md
             - Firstof9's Apex Charts: products/air1/examples/firstof9's-apex-charts.md
@@ -295,6 +295,7 @@ nav:
             - Factory Re-Flash AIR-1: products/air1/troubleshooting/air1-code.md
             - Teardown and Reassembly Of AIR-1: products/air1/troubleshooting/air1-teardown.md
             - Reset Wi-Fi Credentials: products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
+          - Reviews: products/air1/air1-reviews.md
       - PLT-1:
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
@@ -304,7 +305,6 @@ nav:
             - Sensor Definitons: products/plt1/setup/plt1-sensor-definitions.md
             - Calibrating Soil Moisture: products/plt1/calibrating-plt1.md
             - Prevent Sleep: products/plt1/setup/prevent-sleep.md
-          - Reviews: products/plt1/reviews.md
           - Examples: 
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
@@ -312,6 +312,7 @@ nav:
             - Factory Re-Flash PLT-1: products/plt1/troubleshooting/plt1-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1/troubleshooting/plt1-teardown.md
             - Reset Wi-Fi Credentials: products/plt1/troubleshooting/plt1-reset-wi-fi-credentials.md
+          - Reviews: products/plt1/reviews.md
       - PLT-1B:
           - Introduction: products/plt1b/introduction.md
           - FAQ: products/plt1b/faq.md
@@ -324,7 +325,6 @@ nav:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
-          - Reviews: products/plt1/reviews.md
           - Examples: 
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
@@ -332,6 +332,7 @@ nav:
             - Factory Re-Flash PLT-1: products/plt1b/troubleshooting/plt1b-code.md
             - Teardown and Reassembly Of PLT-1: products/plt1b/troubleshooting/plt1b-teardown.md
             - Reset Wi-Fi Credentials: products/plt1b/troubleshooting/plt1b-reset-wi-fi-credentials.md
+          - Reviews: products/plt1/reviews.md
       - TEMP-1:
           - Introduction: products/temp1/introduction.md
           - FAQ: products/temp1/faq.md
@@ -347,7 +348,6 @@ nav:
             - Magnetic Mount: products/temp1/addons/magnetic-mount.md
             - Temp Probe: products/temp1/addons/temp-probe.md
             - Food Probe: products/temp1/addons/food-probe.md
-          - Reviews: products/temp1/reviews.md
           - Examples: 
             - Alert Outside Range: products/temp1/examples/temp1-alert-example.md
             - Use Cases: products/temp1/examples/use-cases.md
@@ -357,6 +357,7 @@ nav:
             - Factory Re-Flash TEMP-1: products/temp1/troubleshooting/temp1-code.md
             - Teardown and Reassembly Of TEMP-1: products/temp1/troubleshooting/temp1-teardown.md
             - Reset Wi-Fi Credentials: products/temp1/troubleshooting/temp1-reset-wi-fi-credentials.md
+          - Reviews: products/temp1/reviews.md
       - TEMP-1B:
           - Introduction: products/temp1b/introduction.md
           - FAQ: products/temp1b/faq.md
@@ -373,7 +374,6 @@ nav:
             - Magnetic Mount: products/temp1b/addons/magnetic-mount.md
             - Temp Probe: products/temp1b/addons/temp-probe.md
             - Food Probe: products/temp1b/addons/food-probe.md
-          - Reviews: products/temp1b/reviews.md
           - Examples: 
             - Alert Outside Range: products/temp1b/examples/temp1b-alert-example.md
             - Use Cases: products/temp1b/examples/use-cases.md
@@ -383,6 +383,7 @@ nav:
             - Factory Re-Flash TEMP-1B: products/temp1b/troubleshooting/temp1b-code.md
             - Teardown and Reassembly Of TEMP-1B: products/temp1b/troubleshooting/temp1b-teardown.md
             - Reset Wi-Fi Credentials: products/temp1b/troubleshooting/temp1b-reset-wi-fi-credentials.md
+          - Reviews: products/temp1b/reviews.md
       - DEV-1:
           - Introduction: products/dev1/introduction.md
       - DEV-2:
@@ -415,7 +416,6 @@ nav:
               - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
             - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
           - Addons: products/msr1/addons/adding-co2-to-msr-1.md
-          - Reviews: products/msr1/msr1-reviews.md
           - Examples:
             - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
             - MSR-1 Alarmo: products/msr1/examples/msr1-alarmo.md
@@ -424,6 +424,7 @@ nav:
             - Factory Re-Flash MSR-1: products/msr1/troubleshooting/msr1-code.md
             - Teardown and Reassembly Of MSR-1: products/msr1/troubleshooting/msr1-teardown.md
             - Reset Wi-Fi Credentials: products/msr1/troubleshooting/msr1-reset-wi-fi-credentials.md
+          - Reviews: products/msr1/msr1-reviews.md
       - Contact Us / Support: products/general/contact-us/contact-us-support.md
 #### ***START OF HOMEY SECTION***
   - Homey:
