@@ -12,7 +12,7 @@ description: Step by step guide for re-flashing the M-1 back to factory firmware
 
 3\. Download the firmware <a href="https://github.com/MoonModules/WLED/releases/download/v0.14.1-beta.32/WLEDMM_0.14.1-b32.40_adafruit_matrixportal_esp32s3.bin" target="_blank" rel="noreferrer nofollow noopener">.bin file from here</a>.
 
-4\. [Download ESP Flasher (Windows EXE)](static/ESP-Flasher.exe) and open it.
+4\. Download <a href="https://wiki.apolloautomation.com/static/ESP-Flasher.exe" title="Click here to download the ESP-Flasher Tool" target="_blank" rel="noreferrer nofollow noopener">ESP Flasher (Windows EXE)</a> and open it.
 
 5\. Click the Serial port dropdown and select the open COM port.
 
@@ -28,4 +28,4 @@ description: Step by step guide for re-flashing the M-1 back to factory firmware
 
 8\. The device is still in "boot mode" and needs to be power cycled. Either unplug the power cable or click the reset button (the right button) to force the device to reboot.
 
-[Head to the Getting Started article to setup your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){ .md-button .md-button--primary }
+[Head to the Getting Started article to setup your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){  .md-button .md-button--primary }
