@@ -24,19 +24,31 @@ Click on **Config**, then **WiFi Setup**. In the **mDNS address** field, enter t
 
     Make sure not to use invalid characters for your hostname!
 
-    1. **Length:**
-       * The **entire hostname** (including dots) must be **≤ 253 characters**.
-       * Each **label** (the part between dots) must be **1–63 characters**.
-    2. **Characters:**
-       * Allowed characters are:
-         * Lowercase **a–z**
-         * Digits **0–9**
-         * Hyphen **`-`**
-    3. **No special characters**:
-       * No underscores (`_`), spaces, punctuation, or other symbols.
-    4. **Start and end restrictions:**
-       * Each label must **start and end with a letter or digit**.
-       * Labels **cannot begin or end with a hyphen**.
+    ### Length
+
+    - The **entire hostname** (including dots) must be ≤ **253 characters**.
+    - Each **label** (the part between dots) must be **1–63 characters**.
+
+    ### Characters
+
+    Allowed characters are:
+
+    - Lowercase **a–z**
+    - Digits **0–9**
+    - Hyphen **`-`**
+
+    ### No Special Characters
+
+    - No underscores (`_`), spaces, punctuation, or other symbols.
+
+    ### Start and End Restrictions
+
+    - Each label must **start and end** with a **letter or digit**.
+    - Labels **cannot begin or end** with a **hyphen**.
+
+    ### Case-Insensitive
+
+    - Hostnames are **not case sensitive** (`HostName` = `hostname`).
 
 ###### LED Settings
 
