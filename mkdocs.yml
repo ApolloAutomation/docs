@@ -183,6 +183,7 @@ nav:
           - Getting Started: products/m1/setup/getting-started-m1.md
           - Additional Info:
             - General Tips: products/m1/setup/m1-general-tips.md
+            - Matrix Settings: products/m1/setup/m1-matrix-settings.md
           - Reviews: products/m1/m1-reviews.md
           - Examples:
             - Create Logo Image: products/m1/examples/create-logo-image.md

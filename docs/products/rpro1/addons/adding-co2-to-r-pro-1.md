@@ -12,7 +12,7 @@ description: Tutorial on adding the SCD40 CO2 sensor to your R-Pro-1.
 
 !!! tip "Other ways to identify the correct orientation"
 
-    * There is also a "gold dot" in the top left of the SCD40 when oriented properly.
+    * There is also a "gold dot" in the top right of the SCD40 when oriented properly.
     * There is a torn corner on top of the SCD40 on the top right.
 
 3\. Gently push the SCD40 CO<sub>2</sub> module onto the black mezzanine connector.
