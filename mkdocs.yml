@@ -177,6 +177,10 @@ nav:
             - Pinout Guide: products/led1/setup/led1-pinout-guide.md
             - How To Replace The Fuse: products/led1/setup/led1-replace-fuse.md
           - Reviews: products/led1/led1-reviews.md
+          - Troubleshooting:
+            - LED-1 Boot Mode: products/m1/troubleshooting/led1-boot-mode.md
+            - Factory Re-Flash LED-1: products/led1/troubleshooting/led1-reflash.md
+            - Find IP and Hostname: products/led1/troubleshooting/led1-find-ip-address-and-hostname.md
       - M-1 (LED Matrix):
           - Introduction: products/m1/introduction.md
           - FAQ: products/m1/faq.md
@@ -191,7 +195,7 @@ nav:
             - QR Code Generator: products/m1/examples/qr-code-generator.md
           - Troubleshooting:
             - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
-            - Factory Re-Flash M-1: products/m1/troubleshooting/m1-code.md
+            - Factory Re-Flash M-1: products/m1/troubleshooting/m1-reflash.md
             - Find IP and Hostname: products/m1/troubleshooting/m1-find-ip-address-and-hostname.md
       - MSR-2:
           - Introduction: products/msr2/introduction.md
