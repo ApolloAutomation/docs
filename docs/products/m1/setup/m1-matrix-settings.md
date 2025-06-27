@@ -8,7 +8,7 @@ description: >-
 
 !!! note "Below we will go through the WLED settings needed for your device to work properly with the HUB75 LED Matrix attached to the M-1"
 
-    This guide is needed if you reflashed your M-1 LED Matrix <a href="" target="_blank" rel="noreferrer nofollow noopener">following our flashing guide</a>.
+    This guide is needed if you reflashed your M-1 LED Matrix <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-reflash/" target="_blank" rel="noreferrer nofollow noopener">following our flashing guide</a>.
 
 ###### Friendly Name
 
