@@ -8,7 +8,7 @@ description: >-
 
 The AIR-1 has multiple different types of sensors and this guide will help you understand which ones you should be concerned with and expected safe or not safe thresholds to alert or automate on.
 
-##### <a href="https://sensirion.com/products/catalog/SEN55" title="SEN55 Documentation" target="_blank" rel="noreferrer nofollow noopener">SEN55 Environmental Sensor</a>
+###### <a href="https://sensirion.com/products/catalog/SEN55" title="SEN55 Documentation" target="_blank" rel="noreferrer nofollow noopener">SEN55 Environmental Sensor</a>
 
 The SEN55 is the powerhouse of the AIR-1 with multiple sensors such as particulate matter, volatile organic compounds (VOCs), oxidizing gases, such as nitrogen oxides (NOx), as well as humidity & temperature.
 
@@ -26,11 +26,11 @@ The SEN55 is the powerhouse of the AIR-1 with multiple sensors such as particula
 
     <a href="https://www.epa.gov/indoor-air-quality-iaq/sources-indoor-particulate-matter-pm" target="_blank" rel="noreferrer nofollow noopener">This article</a> goes over lots of ways to reduce pm particles in your home!
 
-# Safe PM Levels
+###### Safe PM Levels
 
 Particulate Matter (PM) refers to a mixture of solid particles and liquid droplets found in the air. These are often classified by size, as smaller particles pose greater risks to health due to their ability to penetrate deeper into the lungs.
 
-## What Do PM1, PM2.5, PM4, and PM10 Mean?
+###### What Do PM1, PM2.5, PM4, and PM10 Mean?
 
 <table><thead><tr><th><p><strong>PM Type</strong></p></th><th><p><strong>Size (µm)</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>≤ 1.0</p></td><td><p>Ultrafine particles that can reach deep into the lungs and bloodstream.</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 2.5</p></td><td><p>Fine particles; linked to respiratory and cardiovascular issues.</p></td></tr><tr><td><p>PM4</p></td><td><p>≤ 4.0</p></td><td><p>Less commonly regulated; typically used in industrial settings.</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 10</p></td><td><p>Inhalable particles; may irritate eyes, nose, and throat.</p></td></tr></tbody></table>
 
@@ -38,17 +38,15 @@ Particulate Matter (PM) refers to a mixture of solid particles and liquid drople
 
 ---
 
-## Recommended Safe Exposure Limits
+###### Recommended Safe Exposure Limits
 
-### WHO Guidelines (2021)
-
-The <a href="https://www.who.int/publications/i/item/9789240034228" target="_blank" rel="noreferrer nofollow noopener"><strong>World Health Organization (WHO)</strong></a> provides the following exposure limits for particulate matter:
+The **World Health Organization (WHO)** <a href="https://www.who.int/publications/i/item/9789240034228" target="_blank" rel="noreferrer nofollow noopener">provides the following exposure limits</a> for particulate matter:
 
 <table><thead><tr><th><p><strong>PM Type</strong></p></th><th><p><strong>24-Hour Limit (µg/m³)</strong></p></th><th><p><strong>Annual Average (µg/m³)</strong></p></th></tr></thead><tbody><tr><td><p>PM2.5</p></td><td><p>≤ 15</p></td><td><p>≤ 5</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 45</p></td><td><p>≤ 15</p></td></tr></tbody></table>
 
 ---
 
-## U.S. EPA Air Quality Index (AQI) – PM2.5
+###### U.S. EPA Air Quality Index (AQI) – PM2.5
 
 The **U.S. Environmental Protection Agency (EPA)**<a href="https://www.airnow.gov" target="_blank" rel="noreferrer nofollow noopener"> defines safety thresholds</a> for PM2.5 based on a 24-hour average:
 
@@ -56,15 +54,13 @@ The **U.S. Environmental Protection Agency (EPA)**<a href="https://www.airnow.go
 
 ---
 
-## Indoor Air Quality Notes
+###### Indoor Air Quality Notes
 
 * **PM1** and **PM2.5** are especially important for indoor air monitoring since these smaller particles are more likely to come from cooking, candles, smoking, or inadequate ventilation.
 * Use an **air purifier with a HEPA filter** to reduce PM1–PM2.5 concentrations indoors.
 * Keep **PM2.5 below 12 µg/m³** indoors for general safety; below **5 µg/m³** for ideal long-term health protection.
 
 ---
-
-## Summary
 
 <table><thead><tr><th><p><strong>PM Size</strong></p></th><th><p><strong>Safe Range</strong></p></th><th><p><strong>Health Concern</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>No official limit — keep as low as possible</p></td><td><p>Ultrafine particles — most dangerous</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 12 µg/m³ (EPA), ≤ 5 µg/m³ (WHO annual)</p></td><td><p>Penetrates lungs and bloodstream</p></td></tr><tr><td><p>PM4</p></td><td><p>Industrial contexts only — no public health limits</p></td><td><p>Less regulated</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 45 µg/m³ (WHO 24-hour)</p></td><td><p>Triggers upper respiratory irritation</p></td></tr></tbody></table>
 
