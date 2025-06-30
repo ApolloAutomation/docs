@@ -14,4 +14,6 @@ description: Step by step guide for putting The M-1 In Boot Mode.
 
 ![](../../../assets/m-1-hold-boot-webp.webp)
 
-3\. Proceed to the flashing guide!
+3\. You are now ready to reflash your device!
+
+[Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-reflash/){ .md-button .md-button--primary }
