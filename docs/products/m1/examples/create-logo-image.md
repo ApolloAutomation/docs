@@ -24,7 +24,7 @@ description: Step by step guide to adding your own logo or image to the M-1 LED 
 
 !!! tip "If you need help figuring out your hostname you can edit it from the wled wifi settings"
 
-    You can use an app like "wled-native" on iOS to auto-discover your WLED devices and then go into wifi settings to see your IP and hostname!
+    You can use an app like "wled-native" on iOS to auto-discover your WLED devices and then go into wifi settings to see your IP and hostname! <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Here's a step-by-step guide</a>.
 
 4\. Fill in a Preset Name such as "Apollo Logo".
 
