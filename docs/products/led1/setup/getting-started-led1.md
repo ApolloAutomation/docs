@@ -48,7 +48,7 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
 1\. Grab a male JST-SM 3 pin connector such as the extra included with your led strips and carefully note the red wire for positive, the green for data, and the white for ground.
 
-![](assets/jst-sm-power-data-ground-labeled.png)
+![](../../../assets/jst-sm-power-data-ground-labeled.png)
 
 2\. Inspect the LED-1 and look for the two Wago connectors labeled "Output 1" and "Output 2". Insert the red power wire into the far left terminal of output 1 then the green wire into the middle terminal of Output 1 then the white wire into the third terminal for Output 1.
 
@@ -60,7 +60,7 @@ Your device is now ready to connect to your Wi-Fi and begin controlling via Home
 
 1\. Plug your power supply or usb-c power in and the LED-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select WLED-AP. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to http://4.3.2.1/ and you should be prompted with the same image seen below.
 
-![](assets/led-1-getting-started-pic-1.png)
+![](../../../assets/led-1-getting-started-pic-1.png)
 
 #### Join to Home Assistant
 

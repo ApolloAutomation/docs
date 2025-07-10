@@ -176,8 +176,10 @@ nav:
             - General Tips: products/led1/setup/led1-general-tips.md
             - Pinout Guide: products/led1/setup/led1-pinout-guide.md
             - How To Replace The Fuse: products/led1/setup/led1-replace-fuse.md
+          - Addons:
+            - Microphone: products/led1/addons/adding-microphone-to-led-1.md
           - Troubleshooting:
-            - LED-1 Boot Mode: products/m1/troubleshooting/led1-boot-mode.md
+            - LED-1 Boot Mode: products/led1/troubleshooting/led1-boot-mode.md
             - Factory Re-Flash LED-1: products/led1/troubleshooting/led1-reflash.md
             - Find IP and Hostname: products/led1/troubleshooting/led1-find-ip-address-and-hostname.md
           - Reviews: products/led1/led1-reviews.md
@@ -189,6 +191,8 @@ nav:
             - General Tips: products/m1/setup/m1-general-tips.md
             - Matrix Settings: products/m1/setup/m1-matrix-settings.md
             - Pinout Guide: products/m1/setup/m1-pinout-guide.md
+          - Addons:
+            - Microphone: products/m1/addons/adding-microphone-to-m-1.md
           - Examples:
             - Create Logo Image: products/m1/examples/create-logo-image.md
             - Scrolling Text: products/m1/examples/scrolling-text.md
