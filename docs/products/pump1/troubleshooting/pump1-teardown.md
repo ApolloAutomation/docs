@@ -1,8 +1,8 @@
 ---
-title: R-PRO-1 Teardown
-description: Step by step guide for tearing down your R-PRO-1 to replace parts, clean it, swap cases, etc.
+title: PUMP-1 Teardown
+description: Step by step guide for tearing down your PUMP-1 to replace parts, clean it, swap cases, etc.
 ---
-# Teardown and Reassembly Of R-PRO-1
+# Teardown and Reassembly Of PUMP-1
 
 ###### Disassembly:
 
