@@ -1,8 +1,6 @@
 ---
 title: R-PRO-1 Teardown
-description: >-
-  Step by step guide for tearing down your R-PRO-1 to replace parts, clean it,
-  swap cases, etc.
+description: Step by step guide for tearing down your R-PRO-1 to replace parts, clean it, swap cases, etc.
 ---
 # Teardown and Reassembly Of R-PRO-1
 
