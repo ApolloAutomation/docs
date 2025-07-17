@@ -90,4 +90,4 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                        .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                         .md-button }
