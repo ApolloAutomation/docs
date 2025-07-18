@@ -44,10 +44,6 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     * Shows whether a firmware update is available.
 
-    **Hourly Water Check**
-
-    * Automatic water level monitoring with audible alerts.
-
     **Max Safe Run Time**
 
     * Maximum time the pump will run before shutting off. Defaults to 100 seconds.
@@ -90,4 +86,4 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                         .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                          .md-button }
