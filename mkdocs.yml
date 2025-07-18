@@ -305,8 +305,8 @@ nav:
           - FAQ: products/pump1/faq.md
           - Getting Started: products/general/setup/getting-started-pump1.md
           - Additional Info:
-            - General Tips: products/pump1/setup/general-tips.md
-            - Sensor Definitons: products/pump1/pump1-sensor-definitions.md
+            - General Tips: products/pump1/setup/pump1-general-tips.md
+            - Sensor Definitons: products/pump1/setup/pump1-sensor-definitions.md
 #          - Addons:
 #            - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
           - Troubleshooting:
