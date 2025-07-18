@@ -20,9 +20,13 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
     Later, you can use this to access your device at http://apollo-led-matrix.local in a browser instead of using the IP address!
 
+[Click here to change a few settings before using your device!](https://wiki.apolloautomation.com/products/m1/setup/m1-matrix-settings/){  .md-button .md-button--primary }
+
 #### Join to Home Assistant
 
-1\. Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!
+!!! tip "Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!"
+
+    Please follow the steps below to get your device added to Home Assistant!
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and it will automatically be discovered.
 
@@ -44,4 +48,4 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 ![](../../../assets/m-1-setup-wled-integration-test-device.png)
 
-[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){    .md-button .md-button--primary }
+[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){     .md-button .md-button--primary }
