@@ -52,7 +52,7 @@ Click on **Config**, then **WiFi Setup**. In the **mDNS address** field, enter t
 
 ###### LED Settings
 
-Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and set **Chain Length** to **1** and click **Save**.
+Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**.
 
 ![](../../../assets/m-1-led-settings.gif)
 
@@ -63,6 +63,10 @@ Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and 
 ![](../../../assets/m-1-2d-settings.gif)
 
 ###### AudioReactive Settings
+
+!!! failure "The Audioreactive is currently not working due to pcb manufacturing failure"
+
+    We are working on a permanent fix but the digital microphone installed by JLCPCB sadly has been broken on most of the devices so it is not working at this time.
 
 Click on **Config**, then **AudioReactive**. Check **Enabled** then select **16 digitalmic** for Pin I2s SD, select **6 digitalmic A5** for Pin I2S WS, and select **7 digitalmic** for Pin I2S SCK and click **Save**.
 
