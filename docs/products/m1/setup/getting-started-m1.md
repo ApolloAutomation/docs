@@ -20,7 +20,19 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
     Later, you can use this to access your device at http://apollo-led-matrix.local in a browser instead of using the IP address!
 
-[Click here to change a few settings before using your device!](https://wiki.apolloautomation.com/products/m1/setup/m1-matrix-settings/){  .md-button .md-button--primary }
+#### Post-Connect Setup
+
+!!! success "Please complete setup by changing a few settings!"
+
+    The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please follow the two steps below to finish setting up your device!
+
+1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**.
+
+![](../../../assets/m-1-led-settings.gif)
+
+2\. Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel Dimensions** to **64 x 64** and click **Save**.
+
+![](../../../assets/m-1-2d-settings.gif)
 
 #### Join to Home Assistant
 
@@ -48,4 +60,4 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 ![](../../../assets/m-1-setup-wled-integration-test-device.png)
 
-[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){     .md-button .md-button--primary }
+[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){       .md-button .md-button--primary }
