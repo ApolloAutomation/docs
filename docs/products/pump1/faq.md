@@ -6,9 +6,9 @@ description: Frequently asked questions about the PUMP-1 Fluid Pump Sensor
 
 * The PUMP-1 has been successfully tested with 33 feet of tubing and a vertical lift of 14 feet, while still maintaining strong head pressure. This demonstrates its capability to move water efficiently over long distances and significant elevation gains.
 
-2\. **What motor is used for the PUMP-1?**
+2\. **What is the pump model used for the PUMP-1?**
 
-* The motor used is a jrk-370sh-18215.
+* The pump model is a DSB413-A.
 
 3\. **What is the flow rate of the PUMP-1?**
 
