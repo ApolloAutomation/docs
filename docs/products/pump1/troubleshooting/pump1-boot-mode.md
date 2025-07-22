@@ -10,40 +10,32 @@ description: Step by step guide for putting The PUMP-1 In Boot Mode.
 
 ##### Method 1: Boot Button Only
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+!!! danger "Empty the water reservoir and make sure no water is present in the tubes"
 
-![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
+    Make sure that there is no water which is able to damage the device. This is a precautionary measure just to be safe!
 
-2\. Gently remove the PCB from the case and flip it over.
+1\. Disconnect your PUMP-1 from power. With the device facing you, locate the boot button—it’s the button on the right.
 
-![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
+2\. Plug in a USB cable that supports power and data into your computer.
 
-3\. Locate the boot button on the bottom right side of the PCB.
+3\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your PUMP-1 then let go of the button.
 
-![](../../../assets/r-pro-1-boot-button.jpg)
+![](../../../assets/pump-1-hold-boot-button-video.webp)
 
-4\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R-PRO-1 then let go of the button.
+4\. You are now ready to reflash your device!
 
-5\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
+[Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/pump1/troubleshooting/pump1-reflash/){    .md-button .md-button--primary }
 
 ##### Method 2: Boot and Reset Buttons
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+1\. Plug in a USB cable that supports power and data into your computer and connect the other end to your PUMP-1. With the device facing you, locate the reset (left) and boot (right) buttons.
 
-![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
+![](../../../assets/pump-1-buttons-labeled.jpg)
 
-2\. Gently remove the PCB from the case and flip it over.
+2\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
 
-![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
+![](../../../assets/pump-1-hold-boot-and-reset-button-video.webp)
 
-3\. Locate the boot button on the bottom right side of the PCB.
+3\. You are now ready to reflash your device!
 
-![](../../../assets/r-pro-1-boot-button.jpg)
-
-4\. Locate the reset button on the bottom left side of the PCB.
-
-![](../../../assets/r-pro-1-reset-button.jpg)
-
-5\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
-
-6\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
+[Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/pump1/troubleshooting/pump1-reflash/){    .md-button .md-button--primary }

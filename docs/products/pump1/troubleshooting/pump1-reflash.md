@@ -1,49 +1,47 @@
 ---
-title: Putting The PUMP-1 In Boot Mode
-description: Step by step guide for putting The PUMP-1 In Boot Mode.
+title: Reflashing The PUMP-1.
+description: Step by step guide for reflashing The PUMP-1.
 ---
-# Putting The PUMP-1 In Boot Mode
+# Reflashing The PUMP-1
 
-!!! info "This will cover how to put the PUMP-1 into boot mode."
+!!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
-    This is needed to force the device into boot mode to reflash the firmware.
+    This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
 
-##### Method 1: Boot Button Only
+1\. Disconnect your PUMP-1 from power. With the device facing you, locate the boot button—it’s the button on the right.
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+!!! danger "Empty the water reservoir and make sure no water is present in the tubes"
 
-![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
+    Make sure that there is no water which is able to damage the device. This is a precautionary measure just to be safe!
 
-2\. Gently remove the PCB from the case and flip it over.
+2\. Plug in a USB cable that supports power and data into your computer.
 
-![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
+3\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your PUMP-1 then let go of the button.
 
-3\. Locate the boot button on the bottom right side of the PCB.
+![](../../../assets/pump-1-hold-boot-button-video.webp)
 
-![](../../../assets/r-pro-1-boot-button.jpg)
+4\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/PUMP-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PUMP-1 Installer</a>.
 
-4\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R-PRO-1 then let go of the button.
+![](../../../assets/pump-1-reflash-connect-button.png)
 
-5\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
+5\. Select the open com port then click Connect.
 
-##### Method 2: Boot and Reset Buttons
+![](../../../assets/pump-1-reflash-com-port.png)
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+7\.. Click Install PUMP-1.
 
-![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
+![](../../../assets/pump-1-reflash-click-install.png)
 
-2\. Gently remove the PCB from the case and flip it over.
+7\. Click Install.
 
-![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
+![](../../../assets/pump-1-reflash-click-install-confirm.png)
 
-3\. Locate the boot button on the bottom right side of the PCB.
+8\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](../../../assets/r-pro-1-boot-button.jpg)
+![](../../../assets/pump-1-reflash-install-complete.png)
 
-4\. Locate the reset button on the bottom left side of the PCB.
+!!! warning "Power cycle your device before doing anything else!"
 
-![](../../../assets/r-pro-1-reset-button.jpg)
+    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-5\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
-
-6\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
+[Head to the Getting Started article to setup your PUMP-1 as a new device!](https://wiki.apolloautomation.com/products/general/setup/getting-started-pump1/){      .md-button .md-button--primary }

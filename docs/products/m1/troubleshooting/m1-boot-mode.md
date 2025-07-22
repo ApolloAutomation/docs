@@ -10,7 +10,7 @@ description: Step by step guide for putting The M-1 In Boot Mode.
 
 1\. Plug in a USB cable that supports power and data into your computer.
 
-2\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your M-1 LED Matrix then let go of the button.
+2\. Push and hold the boot button (the left button). While still holding the button down, plug in a USB-C cable into the USB-C port of your M-1 LED Matrix then let go of the button.
 
 ![](../../../assets/m-1-hold-boot-webp.webp)
 
