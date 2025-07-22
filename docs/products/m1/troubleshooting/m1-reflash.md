@@ -38,4 +38,4 @@ description: Step by step guide for re-flashing the M-1 back to factory firmware
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-[Head to the Getting Started article to setup your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){      .md-button .md-button--primary }
+[Head to the Getting Started article to setup your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){       .md-button .md-button--primary }
