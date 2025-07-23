@@ -307,8 +307,8 @@ nav:
           - Additional Info:
             - General Tips: products/pump1/setup/pump1-general-tips.md
             - Sensor Definitons: products/pump1/setup/pump1-sensor-definitions.md
-#          - Addons:
-#            - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
+          - Addons:
+            - Inlet and Outlet Hose Addons: products/pump1/addons/attaching-hoses-to-pump-1.md
           - Troubleshooting:
             - PUMP-1 Boot Mode: products/pump1/troubleshooting/pump1-boot-mode.md
             - Factory Re-Flash PUMP-1: products/pump1/troubleshooting/pump1-reflash.md
