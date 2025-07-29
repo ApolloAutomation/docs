@@ -16,4 +16,4 @@ description: Tutorial for Attaching the bottle to the PUMP-1
 
 3\. Slide the bottle into the base until it is securely seated.
 
-[Click here to learn how to attach the inlet and outlet tubes!](https://wiki.apolloautomation.com/products/pump1/addons/attaching-tubes-to-pump-1.md){  .md-button .md-button--primary }
+[Click here to learn how to attach the inlet and outlet tubes!](https://wiki.apolloautomation.com/products/pump1/addons/attaching-tubes-to-pump-1){  .md-button .md-button--primary }
