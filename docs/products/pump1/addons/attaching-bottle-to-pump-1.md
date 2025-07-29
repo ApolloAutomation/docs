@@ -4,8 +4,6 @@ description: Tutorial for Attaching the bottle to the PUMP-1
 ---
 # Attaching the bottle to the PUMP-1
 
-##### Attaching Fluid Input Sensor
-
 1\. Begin by placing the small white connector through the hole in the base of the water bottle and gently press the input fluid level sensor into place.
 
 !!! tip "Make sure to orient your fluid level sensor correctly as shown in the gif below"
@@ -18,4 +16,4 @@ description: Tutorial for Attaching the bottle to the PUMP-1
 
 3\. Slide the bottle into the base until it is securely seated.
 
-[Click here to learn how to attach the second optional Fluid Output Sensor!](https://wiki.apolloautomation.com/products/pump1/addons/attaching-fluid-level-sensors-pump-1/){ .md-button .md-button--primary }
+[Click here to learn how to attach the inlet and outlet tubes!](https://wiki.apolloautomation.com/products/pump1/addons/attaching-tubes-to-pump-1.md){  .md-button .md-button--primary }
