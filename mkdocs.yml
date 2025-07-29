@@ -277,7 +277,6 @@ nav:
             - Teardown and Reassembly Of R-PRO-1: products/rpro1/troubleshooting/rpro1-teardown.md
             - Reset Wi-Fi Credentials: products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md
           - Reviews: products/rpro1/rpro1-reviews.md
-#need to add later          - Examples:
       - AIR-1:
           - Introduction: products/air1/introduction.md
           - FAQ: products/air1/faq.md
@@ -308,13 +307,14 @@ nav:
             - General Tips: products/pump1/setup/pump1-general-tips.md
             - Sensor Definitons: products/pump1/setup/pump1-sensor-definitions.md
           - Addons:
-            - Inlet and Outlet Hose Addons: products/pump1/addons/attaching-hoses-to-pump-1.md
+            - Bottle Addon: products/pump1/addons/attaching-bottle-to-pump-1.md
+            - Inlet and Outlet Tube Addons: products/pump1/addons/attaching-tubes-to-pump-1.md
+            - Fluid Sensor Addons: products/pump1/addons/attaching-fluid-level-sensors-pump-1.md
           - Troubleshooting:
             - PUMP-1 Boot Mode: products/pump1/troubleshooting/pump1-boot-mode.md
             - Factory Re-Flash PUMP-1: products/pump1/troubleshooting/pump1-reflash.md
             - Teardown and Reassembly Of PUMP-1: products/pump1/troubleshooting/pump1-teardown.md
             - Reset Wi-Fi Credentials: products/pump1/troubleshooting/pump1-reset-wi-fi-credentials.md
-#          - Reviews: products/pump1/pump1-reviews.md
       - PLT-1:
           - Introduction: products/plt1/introduction.md
           - FAQ: products/plt1/faq.md
