@@ -308,7 +308,9 @@ nav:
             - General Tips: products/pump1/setup/pump1-general-tips.md
             - Sensor Definitons: products/pump1/setup/pump1-sensor-definitions.md
           - Addons:
-            - Inlet and Outlet Hose Addons: products/pump1/addons/attaching-hoses-to-pump-1.md
+            - Bottle Addon: products/pump1/addons/attaching-bottle-to-pump-1.md
+            - Inlet and Outlet Tube Addons: products/pump1/addons/attaching-toses-to-pump-1.md
+            - Fluid Sensor Addons: products/pump1/addons/attaching-fluid-level-sensors-pump-1.md
           - Troubleshooting:
             - PUMP-1 Boot Mode: products/pump1/troubleshooting/pump1-boot-mode.md
             - Factory Re-Flash PUMP-1: products/pump1/troubleshooting/pump1-reflash.md
