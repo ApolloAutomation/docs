@@ -192,19 +192,19 @@ Choose the number of panels you are using below to get started!
 
     2\. Since we are using four panels, we will begin by editing Segment 0 and setting the Stop X to "256" and the Stop Y to "16".
 
-    ![](../../../assets/two-panels-setup-segment-0.gif)
+    ![](../../../assets/four-panels-setup-segment-0-1.gif)
 
     3\. Click on Add segment, give it a name (such as Segment 1) then set the Start Y to "16" and the Stop Y to "32".
 
-    ![](../../../assets/two-panels-setup-segment-1.gif)
+    ![](../../../assets/four-panels-setup-segment-1.gif)
 
     4\. Click on Add segment, give it a name (such as Segment 2) then set the Start Y to "32" and the Stop Y to "48".
 
-    ![](../../../assets/two-panels-setup-segment-2.gif)
+    ![](../../../assets/four-panels-setup-segment-2.gif)
 
     5\. Click on Add segment, give it a name (such as Segment 3) then set the Start Y to "48" and the Stop Y to "64".
 
-    ![](../../../assets/two-panels-setup-segment-3.gif)
+    ![](../../../assets/four-panels-setup-segment-3.gif)
 
     6\. You should see four equal segments 0-3 at the top of the screen.
 
@@ -220,4 +220,4 @@ Choose the number of panels you are using below to get started!
 
     8\. Save your segments by creating a new preset. Click on the + Preset button and typing in a name then clicking Save at the bottom.
 
-    ![](../../../assets/two-panels-save-preset.gif)
+    ![](../../../assets/four-panels-save-preset.gif)
