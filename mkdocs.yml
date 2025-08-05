@@ -187,6 +187,7 @@ nav:
           - Introduction: products/m1/introduction.md
           - FAQ: products/m1/faq.md
           - Getting Started: products/m1/setup/getting-started-m1.md
+          - Multiple Panels: products/m1/setup/m1-multiple-panels.md
           - Additional Info:
             - General Tips: products/m1/setup/m1-general-tips.md
             - Matrix Settings: products/m1/setup/m1-matrix-settings.md
