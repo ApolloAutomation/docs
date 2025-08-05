@@ -28,7 +28,7 @@ Choose the number of panels you are using below to get started!
 
 === "Three Panels"
 
-    1\. Set both of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third panel.
+    1\. Set all three of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third panel.
 
     ![](../../../assets/three-panels-connect-data-cable.webp)
 
