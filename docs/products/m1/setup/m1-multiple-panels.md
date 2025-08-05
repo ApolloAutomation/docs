@@ -152,8 +152,72 @@ Choose the number of panels you are using below to get started!
 
 === "Three Panels"
 
-    wefwef
+    1\. Navigate to the main page of your wled instance in a browser or using the WLED-native app and focus on the Segments section.
+
+    2\. Since we are using three panels, we will begin by editing Segment 0 and setting the Stop X to "192" and the Stop Y to "16".
+
+    ![](../../../assets/three-panels-setup-segment-0.gif)
+
+    3\. Click on Add segment, give it a name (such as Segment 1) then set the Start Y to "16" and the Stop Y to "32".
+
+    ![](../../../assets/three-panels-setup-segment-1-1.gif)
+
+    4\. Click on Add segment, give it a name (such as Segment 2) then set the Start Y to "32" and the Stop Y to "48".
+
+    ![](../../../assets/three-panels-setup-segment-2-1.gif)
+
+    5\. Click on Add segment, give it a name (such as Segment 3) then set the Start Y to "48" and the Stop Y to "64".
+
+    ![](../../../assets/three-panels-setup-segment-3.gif)
+
+    6\. You should see four equal segments 0-3 at the top of the screen.
+
+    ![](../../../assets/two-panels-4x-segments.png)
+
+    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! 32 Character maximum limit in WLED.
+
+    ![](../../../assets/two-panels-example-scrolling-text-setup.gif)
+
+    !!! warning "Your segments need to be saved to a Preset or they will disappear when you reboot or run other presets."
+
+        You must save your segments as a preset or they will get wiped away after a reboot or when another preset with different segments is used.
+
+    8\. Save your segments by creating a new preset. Click on the + Preset button and typing in a name then clicking Save at the bottom.
+
+    ![](../../../assets/three-panels-save-preset.gif)
 
 === "Four Panels"
 
-    wefwef
+    1\. Navigate to the main page of your wled instance in a browser or using the WLED-native app and focus on the Segments section.
+
+    2\. Since we are using four panels, we will begin by editing Segment 0 and setting the Stop X to "256" and the Stop Y to "16".
+
+    ![](../../../assets/two-panels-setup-segment-0.gif)
+
+    3\. Click on Add segment, give it a name (such as Segment 1) then set the Start Y to "16" and the Stop Y to "32".
+
+    ![](../../../assets/two-panels-setup-segment-1.gif)
+
+    4\. Click on Add segment, give it a name (such as Segment 2) then set the Start Y to "32" and the Stop Y to "48".
+
+    ![](../../../assets/two-panels-setup-segment-2.gif)
+
+    5\. Click on Add segment, give it a name (such as Segment 3) then set the Start Y to "48" and the Stop Y to "64".
+
+    ![](../../../assets/two-panels-setup-segment-3.gif)
+
+    6\. You should see four equal segments 0-3 at the top of the screen.
+
+    ![](../../../assets/two-panels-4x-segments.png)
+
+    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! 32 Character maximum limit in WLED.
+
+    ![](../../../assets/two-panels-example-scrolling-text-setup.gif)
+
+    !!! warning "Your segments need to be saved to a Preset or they will disappear when you reboot or run other presets."
+
+        You must save your segments as a preset or they will get wiped away after a reboot or when another preset with different segments is used.
+
+    8\. Save your segments by creating a new preset. Click on the + Preset button and typing in a name then clicking Save at the bottom.
+
+    ![](../../../assets/two-panels-save-preset.gif)
