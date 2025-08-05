@@ -191,6 +191,7 @@ nav:
           - Additional Info:
             - General Tips: products/m1/setup/m1-general-tips.md
             - Matrix Settings: products/m1/setup/m1-matrix-settings.md
+            - Segments: products/m1/setup/m1-segments.md
             - Pinout Guide: products/m1/setup/m1-pinout-guide.md
           - Addons:
             - Microphone: products/m1/addons/adding-microphone-to-m-1.md
