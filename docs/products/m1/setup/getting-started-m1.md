@@ -16,7 +16,7 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 2\. Tap on **WI-FI Settings** then input your Wi-Fi SSID where it shows **Your\_Network** and input your Wi-Fi password directly below it and then click **Save and Connect**.
 
-!!! tip "You can also set your hostname here such as \"apollo-led-matrix\" or similar"
+!!! tip "You can also set your hostname here such as apollo-led-matrix"
 
     Later, you can use this to access your device at http://apollo-led-matrix.local in a browser instead of using the IP address!
 
@@ -60,4 +60,4 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 ![](../../../assets/m-1-setup-wled-integration-test-device.png)
 
-[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){         .md-button .md-button--primary }
+[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){          .md-button .md-button--primary }

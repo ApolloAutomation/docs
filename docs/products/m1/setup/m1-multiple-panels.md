@@ -28,7 +28,7 @@ Choose the number of panels you are using below to get started!
 
 === "Three Panels"
 
-    1\. Set both of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third panel.
+    1\. Set all three of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third panel.
 
     ![](../../../assets/three-panels-connect-data-cable.webp)
 
@@ -58,18 +58,48 @@ Choose the number of panels you are using below to get started!
 
 === "Two Panels"
 
-    1\. Open WLED and head to the LED Settings
+    1\. Navigate to your WLED instance in a browser or using the WLED-native app on your phone. You can use http://your-hostname-here.local or its IP address. <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Click here if you need to find your IP or hostname</a>.
 
-    2\.
+    2\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **2** then **Save**.
+
+    ![](../../../assets/chain-length-2-gif.gif)
+
+    3\. Click on **Config**, then **2D Configuration** and change the **Panel Dimensions** to **128 x 64** and click **Save**.
+
+    ![](../../../assets/2d-config-128-width.gif)
+
+    4\. Reboot WLED before proceeding. Tap **Info** at the top, scroll down, and select **Reboot WLED**. When prompted, tap again to confirm the reboot.
+
+    ![](../../../assets/reboot-wled-gif.gif)
 
 === "Three Panels"
 
-    1\. Open WLED and head to the LED Settings
+    1\. Navigate to your WLED instance in a browser or using the WLED-native app on your phone. You can use http://your-hostname-here.local or its IP address. <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Click here if you need to find your IP or hostname</a>.
 
-    2\.
+    2\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **3** then **Save**.
+
+    ![](../../../assets/chain-length-3-gif.gif)
+
+    3\. Click on **Config**, then **2D Configuration** and change the **Panel Dimensions** to **192 x 64** and click **Save**.
+
+    ![](../../../assets/2d-config-192-width.gif)
+
+    4\. Reboot WLED before proceeding. Tap **Info** at the top, scroll down, and select **Reboot WLED**. When prompted, tap again to confirm the reboot.
+
+    ![](../../../assets/reboot-wled-gif.gif)
 
 === "Four Panels"
 
-    1\. Open WLED and head to the LED Settings
+    1\. Navigate to your WLED instance in a browser or using the WLED-native app on your phone. You can use http://your-hostname-here.local or its IP address. <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Click here if you need to find your IP or hostname</a>.
 
-    2\.
+    2\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **4** then **Save**.
+
+    ![](../../../assets/chain-length-4-gif.gif)
+
+    3\. Click on **Config**, then **2D Configuration** and change the **Panel Dimensions** to **256 x 64** and click **Save**.
+
+    ![](../../../assets/2d-config-256-width.gif)
+
+    4\. Reboot WLED before proceeding. Tap **Info** at the top, scroll down, and select **Reboot WLED**. When prompted, tap again to confirm the reboot.
+
+    ![](../../../assets/reboot-wled-gif.gif)
