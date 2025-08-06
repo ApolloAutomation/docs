@@ -1,3 +1,4 @@
+```html
 <h2 style="color:#1e88e5; display: flex; align-items: center; gap: 10px;">
   <img src="/assets/yaml-generator-apollo-logo-small.png" alt="Apollo Automation Logo" style="height: 32px;">
   Apollo Automation M-1 LED Matrix YAML Generator
@@ -194,18 +195,18 @@
     console.log("Initializing Apollo Matrix YAML Generator...");
 
     const defaultFX = 122;
-    const output   = document.getElementById("output");
-    const entries  = document.getElementById("entity-entries");
-    const urlInput = document.getElementById("matrix-url");
-    if (!output || !entries || !urlInput) return;
-    if (entries.hasChildNodes()) return;
-
     const defaultConfigs = [
       { primary: "temperature", primaryEntity: "weather.nowcast", secondary: "feels_like", secondaryEntity: "sensor.feels_like", tempUnit: "F" },
       { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "none",      secondaryEntity: "",                   tempUnit: "F" },
       { primary: "co2",         primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc",       secondaryEntity: "sensor.brandon_air_1_sen55_voc", tempUnit: "F" },
       { primary: "ping",        primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo", tempUnit: "F" }
     ];
+
+    const output   = document.getElementById("output");
+    const entries  = document.getElementById("entity-entries");
+    const urlInput = document.getElementById("matrix-url");
+    if (!output || !entries || !urlInput) return;
+    if (entries.hasChildNodes()) return;
 
     // Build fields
     for (let i = 0; i < 4; i++) {
@@ -257,51 +258,50 @@
     urlInput.addEventListener("input", updateYAML);
     urlInput.addEventListener("change", updateYAML);
 
-    // Generate YAML with special-case logic
+    // Generate YAML with fallback for segment 1
     function updateYAML() {
       console.log("Updating YAML...");
       const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
-        const pType = fs.querySelector('select[name="primary"]').value;
-        const pEnt  = fs.querySelector('input[name="primaryEntity"]').value.trim();
-        const sType = fs.querySelector('select[name="secondary"]').value;
-        const sEnt  = fs.querySelector('input[name="secondaryEntity"]').value.trim();
-        const unit  = fs.querySelector('select[name="tempunit"]')?.value || "F";
-        const custom = fs.querySelector('textarea[name="custom"]')?.value.trim() || "";
+        const pTypeRaw = fs.querySelector('select[name="primary"]').value;
+        const pEntRaw  = fs.querySelector('input[name="primaryEntity"]').value.trim();
+        const sType    = fs.querySelector('select[name="secondary"]').value;
+        const sEntRaw  = fs.querySelector('input[name="secondaryEntity"]').value.trim();
+        const unit     = fs.querySelector('select[name="tempunit"]')?.value || "F";
+        const custom   = fs.querySelector('textarea[name="custom"]')?.value.trim() || "";
 
-        if (!pEnt && pType !== 'custom') return null;
+        // Fallback to defaultConfigs for missing primary/secondary
+        const pEnt = pEntRaw || defaultConfigs[i].primaryEntity;
+        const sEnt = (sType !== "none") ? (sEntRaw || defaultConfigs[i].secondaryEntity) : "";
 
         let tpl = "";
 
-        // Special cases
-        if (pType === "lock") {
+        if (pTypeRaw === "lock") {
           const name = pEnt.split('.').pop()
-                       .replace(/_lock$/, "")
-                       .replace(/_/g, " ")
-                       .replace(/\b\w/g, m => m.toUpperCase());
+                        .replace(/_lock$/, "")
+                        .replace(/_/g, " ")
+                        .replace(/\b\w/g, m => m.toUpperCase());
           tpl = `{{ states('${pEnt}') == 'locked' and '${name} Locked' or '${name} Unlocked' }}`;
         }
-        else if (pType === "door") {
+        else if (pTypeRaw === "door") {
           const name = pEnt.split('.').pop()
-                       .replace(/_sensor$/, "")
-                       .replace(/_/g, " ")
-                       .replace(/\b\w/g, m => m.toUpperCase());
+                        .replace(/_sensor$/, "")
+                        .replace(/_/g, " ")
+                        .replace(/\b\w/g, m => m.toUpperCase());
           tpl = `{{ states('${pEnt}') == 'on' and '${name} Sensor Open' or '${name} Sensor Closed' }}`;
         }
-        else if (pType === "co2" && sType === "voc") {
+        else if (pTypeRaw === "co2" && sType === "voc") {
           tpl = `{{ states('${pEnt}') | int }}ppm {{ states('${sEnt}') | int }}ppm`;
         }
-        // Fallback
         else {
-          let pVal = (pType === "custom" && custom)
+          let pVal = (pTypeRaw === "custom" && custom)
                      ? custom
-                     : formatDataType(pEnt, pType, unit);
-          let sVal = (sType === "custom" && custom && pType !== "custom")
+                     : formatDataType(pEnt, pTypeRaw, unit);
+          let sVal = (sType === "custom" && custom && pTypeRaw !== "custom")
                      ? custom
                      : (sType !== "none" ? formatDataType(sEnt, sType, unit) : "");
 
-          // Add labels for non-custom
-          if (pType !== "custom" && pVal) {
-            const lbl = dataTypeLabel(pType);
+          if (pTypeRaw !== "custom" && pVal) {
+            const lbl = dataTypeLabel(pTypeRaw);
             if (lbl) pVal = `${lbl}: ${pVal}`;
           }
           if (sType !== "custom" && sType !== "none" && sVal) {
@@ -309,13 +309,13 @@
             if (lbl) sVal = `${lbl}: ${sVal}`;
           }
 
-          if (pType === "custom") {
+          if (pTypeRaw === "custom") {
             tpl = custom;
           } else if (sType === "custom" && custom) {
             tpl = `${pVal} ${custom}`;
           } else {
             tpl = sVal
-              ? `${pVal}${getSeparator(pType, sType)}${sVal}`
+              ? `${pVal}${getSeparator(pTypeRaw, sType)}${sVal}`
               : pVal;
           }
         }
@@ -326,7 +326,7 @@
         "fx": ${defaultFX},
         "n": "${tpl}"
       }`;
-      }).filter(Boolean);
+      });
 
       output.textContent = `rest_command:
   matrix_all_segments:
@@ -374,3 +374,4 @@ ${segments.join(",\n")}
   }
 })();
 </script>
+```
