@@ -1,3 +1,4 @@
+```html
 <h2 style="color:#1e88e5; display: flex; align-items: center; gap: 10px;">
   <img src="/assets/yaml-generator-apollo-logo-small.png" alt="Apollo Automation Logo" style="height: 32px;">
   Apollo Automation M-1 LED Matrix YAML Generator
@@ -122,15 +123,16 @@
     console.log("Initializing Apollo Matrix YAML Generator...");
     
     const defaultFX = 122;
-    const output = document.getElementById("output");
-    const entries = document.getElementById("entity-entries");
-    const urlInput = document.getElementById("matrix-url");
+    const output     = document.getElementById("output");
+    const entries    = document.getElementById("entity-entries");
+    const urlInput   = document.getElementById("matrix-url");
     
     if (!output || !entries || !urlInput) {
       console.error("Required elements not found");
       return;
     }
 
+    // Prevent double initialization
     if (entries.hasChildNodes()) {
       console.log("Generator already initialized");
       return;
@@ -138,9 +140,9 @@
 
     const defaultConfigs = [
       { primary: "temperature", primaryEntity: "weather.nowcast", secondary: "feels_like", secondaryEntity: "sensor.feels_like", tempUnit: "F" },
-      { primary: "lock", primaryEntity: "lock.front_door_lock", secondary: "none", secondaryEntity: "none", tempUnit: "F" },
-      { primary: "co2", primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc", secondaryEntity: "sensor.brandon_air_1_sen55_voc", tempUnit: "F" },
-      { primary: "ping", primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo", tempUnit: "F" }
+      { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "none",      secondaryEntity: "",                   tempUnit: "F" },
+      { primary: "co2",         primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc",       secondaryEntity: "sensor.brandon_air_1_sen55_voc", tempUnit: "F" },
+      { primary: "ping",        primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo", tempUnit: "F" }
     ];
 
     console.log("Populating segments...");
@@ -196,7 +198,7 @@
             <option value="custom"${def.secondary === 'custom' ? ' selected' : ''}>Custom Text/Value</option>
           </select>
         </label>
-        <label class="secondary-entity" style="display: ${def.secondary !== 'none' || i === 1 ? 'block' : 'none'};">
+        <label class="secondary-entity" style="display: ${def.secondary !== 'none' ? 'block' : 'none'};">
           Secondary Entity ID:
           <input type="text" name="secondaryEntity" value="${def.secondaryEntity}" placeholder="e.g., sensor.feels_like" data-id="${i}">
         </label>
@@ -213,9 +215,149 @@
         </label>
       `;
       entries.appendChild(fieldset);
+
+      // Always show Segment 1's secondary-entity field:
+      if (i === 1) {
+        const secLabel = fieldset.querySelector('.secondary-entity');
+        secLabel.style.display = 'block';
+      }
     }
 
-    // ...rest of your JS (listeners, updateYAML, etc.) remains unchanged...
+    // Attach listeners and YAML-generation logic (unchanged from original):
+    entries.querySelectorAll("input, select, textarea").forEach(el => {
+      el.addEventListener("input", updateYAML);
+      el.addEventListener("change", updateYAML);
+    });
+    urlInput.addEventListener("input", updateYAML);
+    urlInput.addEventListener("change", updateYAML);
+
+    function formatDataType(entity, dataType, tempUnit = "F") {
+      if (!entity.trim()) return "";
+      switch (dataType) {
+        case "temperature":
+          return tempUnit === "C"
+            ? `{{ state_attr('${entity}','temperature') | round(1) }}C`
+            : `{{ state_attr('${entity}','temperature') | round(0) | int }}F`;
+        case "humidity":
+          return `{{ state_attr('${entity}','humidity') | round(0) | int }}%`;
+        case "pressure":
+          return `{{ state_attr('${entity}','pressure') | round(1) }}`;
+        case "weather_condition":
+          return `{{ states('${entity}') | title }}`;
+        case "feels_like":
+          return tempUnit === "C"
+            ? `{{ states('${entity}') | round(1) }}C`
+            : `{{ states('${entity}') | round(0) | int }}F`;
+        case "co2":
+        case "voc":
+          return `{{ states('${entity}') | int }}ppm`;
+        case "pm25":
+          return `{{ states('${entity}') | round(1) }}μg/m³`;
+        case "lock":
+          return `{{ states('${entity}') == 'locked' and 'Locked' or 'Unlocked' }}`;
+        case "ping":
+          return `{{ states('${entity}') | float | round(0) | int }}ms`;
+        case "alarm":
+          return `{{ states('${entity}') | title }}`;
+        case "motion":
+          return `{{ states('${entity}') == 'on' and 'Motion' or 'Clear' }}`;
+        case "door":
+          return `{{ states('${entity}') == 'on' and 'Open' or 'Closed' }}`;
+        case "light":
+          return `{{ states('${entity}') | round(0) | int }}lx`;
+        case "battery":
+          return `{{ states('${entity}') | round(0) | int }}%`;
+        case "power":
+          return `{{ states('${entity}') | round(1) }}W`;
+        default:
+          return "";
+      }
+    }
+
+    function getSeparator(primaryType, secondaryType) {
+      if ((primaryType === "co2" && secondaryType === "voc") ||
+          (primaryType === "voc" && secondaryType === "co2") ||
+          (primaryType === "ping" && secondaryType === "alarm") ||
+          (primaryType === "alarm" && secondaryType === "ping")) {
+        return " ";
+      }
+      if ((primaryType === "temperature" || primaryType === "feels_like") &&
+          (secondaryType === "temperature" || secondaryType === "feels_like")) {
+        return " FL: ";
+      }
+      return " ";
+    }
+
+    function updateYAML() {
+      console.log("Updating YAML...");
+      const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
+        const pType = fs.querySelector('select[name="primary"]').value;
+        const pEntity = fs.querySelector('input[name="primaryEntity"]').value.trim();
+        const sType = fs.querySelector('select[name="secondary"]').value;
+        const sEntity = fs.querySelector('input[name="secondaryEntity"]').value.trim();
+        const unit  = fs.querySelector('select[name="tempunit"]')?.value || "F";
+        const custom = fs.querySelector('textarea[name="custom"]').value.trim();
+
+        if (!pEntity && pType !== 'custom') return null;
+
+        let tpl = "";
+        if (pType === "custom" && custom) {
+          tpl = custom;
+        } else if (sType === "custom" && custom) {
+          tpl = formatDataType(pEntity, pType, unit) + " " + custom;
+        } else {
+          const pPart = formatDataType(pEntity, pType, unit);
+          const sPart = (sType !== "none" && sEntity)
+                      ? formatDataType(sEntity, sType, unit)
+                      : "";
+          tpl = sPart
+            ? pPart + getSeparator(pType, sType) + sPart
+            : pPart;
+        }
+        tpl = tpl.replace(/"/g, '\\"');
+        return `      {
+        "id": ${i},
+        "fx": ${defaultFX},
+        "n": "${tpl}"
+      }`;
+      }).filter(Boolean);
+
+      output.textContent = `rest_command:
+  matrix_all_segments:
+    url: ${urlInput.value.trim()}/json/state
+    content_type: 'application/json'
+    verify_ssl: false
+    method: 'post'
+    timeout: 20
+    payload: >
+      {
+        "seg":[
+${segments.join(",\n")}
+        ]
+      }`;
+    }
+
+    window.copyYAML = function() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(output.textContent).then(() => {
+          alert("YAML copied to clipboard!");
+        }).catch(() => {
+          fallbackCopy();
+        });
+      } else {
+        fallbackCopy();
+      }
+    };
+
+    function fallbackCopy() {
+      const ta = document.createElement("textarea");
+      ta.value = output.textContent;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); alert("Copied!"); }
+      catch { alert("Copy failed."); }
+      document.body.removeChild(ta);
+    }
 
     updateYAML();
     console.log("Generator initialized successfully");
@@ -228,3 +370,4 @@
   }
 })();
 </script>
+```
