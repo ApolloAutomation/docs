@@ -111,6 +111,7 @@
 </form>
 
 <h3 style="color:#1e88e5;">📝 Generated YAML:</h3>
+<button onclick="debugShowAllFields()" style="background: #ff9800; margin-bottom: 10px;">🔧 Debug: Show All Fields</button>
 <pre id="output"></pre>
 <button class="copy-button" onclick="copyYAML()">📋 Copy to Clipboard</button>
 
@@ -398,6 +399,14 @@ ${segments.join(",\n")}
       } else {
         fallbackCopy();
       }
+    };
+
+    // Debug function to show all fields
+    window.debugShowAllFields = function() {
+      entries.querySelectorAll('.secondary-entity, .temp-unit, .custom-template').forEach(el => {
+        el.style.display = 'block';
+      });
+      console.log("All fields forced visible for debugging");
     };
 
     function fallbackCopy() {
