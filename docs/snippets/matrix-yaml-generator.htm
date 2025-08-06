@@ -95,11 +95,17 @@
       return;
     }
 
+    // Prevent double initialization
+    if (entries.hasChildNodes()) {
+      console.log("Generator already initialized");
+      return;
+    }
+
     const defaultConfigs = [
-      { type: "weather", entity: "weather.nowcast" },
-      { type: "lock", entity: "lock.front_door_lock" },
-      { type: "air", entity: "sensor.brandon_air_1_co2" },
-      { type: "ping_alarm", entity: "sensor.1_1_1_1_round_trip_time_average" }
+      { type: "weather", entity: "weather.nowcast", secondary: "sensor.feels_like" },
+      { type: "lock", entity: "lock.front_door_lock", secondary: "" },
+      { type: "air", entity: "sensor.brandon_air_1_co2", secondary: "sensor.brandon_air_1_sen55_voc" },
+      { type: "ping_alarm", entity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm_control_panel.alarmo" }
     ];
 
     console.log("Populating segments...");
@@ -121,6 +127,9 @@
         <label>Primary Entity ID:
           <input type="text" name="entity" value="${def.entity}" placeholder="e.g., sensor.temp_living_room" data-id="${i}">
         </label>
+        <label class="secondary-entity" style="display: none;">Secondary Entity ID:
+          <input type="text" name="secondary" value="${def.secondary || ''}" placeholder="e.g., sensor.feels_like" data-id="${i}">
+        </label>
         <label>Custom Template (only used for 'Custom Jinja'):
           <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter full Jinja template here"></textarea>
         </label>
@@ -131,18 +140,49 @@
     entries.querySelectorAll("input, select, textarea").forEach(el => {
       el.addEventListener("input", updateYAML);
       el.addEventListener("change", updateYAML);
+      
+      // Handle type changes to show/hide secondary entity field
+      if (el.name === "type") {
+        el.addEventListener("change", function() {
+          const fieldset = el.closest("fieldset");
+          const secondaryLabel = fieldset.querySelector(".secondary-entity");
+          const secondaryInput = fieldset.querySelector('input[name="secondary"]');
+          
+          if (el.value === "weather" || el.value === "air" || el.value === "ping_alarm") {
+            secondaryLabel.style.display = "block";
+            
+            // Set default secondary entity based on type
+            if (el.value === "weather" && !secondaryInput.value) {
+              secondaryInput.value = "sensor.feels_like";
+            } else if (el.value === "air" && !secondaryInput.value) {
+              secondaryInput.value = "sensor.brandon_air_1_sen55_voc";
+            } else if (el.value === "ping_alarm" && !secondaryInput.value) {
+              secondaryInput.value = "alarm_control_panel.alarmo";
+            }
+          } else {
+            secondaryLabel.style.display = "none";
+          }
+          updateYAML();
+        });
+        
+        // Trigger initial show/hide
+        el.dispatchEvent(new Event('change'));
+      }
     });
 
-    function formatTemplate(entity, type) {
+    function formatTemplate(entity, type, secondaryEntity = "") {
       switch (type) {
         case "weather":
-          return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('sensor.feels_like') | round(0) | int }}F`;
+          const feelsLike = secondaryEntity || "sensor.feels_like";
+          return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('${feelsLike}') | round(0) | int }}F`;
         case "lock":
           return `{{ states('${entity}') == 'locked' and 'Front Door Locked' or 'Front Door Unlocked' }}`;
         case "air":
-          return `CO2 {{ states('${entity}') | int }}ppm VOC {{ states('sensor.brandon_air_1_sen55_voc') | int }}ppm`;
+          const vocSensor = secondaryEntity || "sensor.brandon_air_1_sen55_voc";
+          return `CO2 {{ states('${entity}') | int }}ppm VOC {{ states('${vocSensor}') | int }}ppm`;
         case "ping_alarm":
-          return `Ping {{ states('${entity}') | float | round(0) | int }}ms {{ states('alarm_control_panel.alarmo') | title }}`;
+          const alarmPanel = secondaryEntity || "alarm_control_panel.alarmo";
+          return `Ping {{ states('${entity}') | float | round(0) | int }}ms {{ states('${alarmPanel}') | title }}`;
         default:
           return "";
       }
@@ -153,6 +193,7 @@
       const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
         const type = fs.querySelector('select[name="type"]').value;
         const entity = fs.querySelector('input[name="entity"]').value.trim();
+        const secondary = fs.querySelector('input[name="secondary"]').value.trim();
         const custom = fs.querySelector('textarea[name="custom"]').value.trim();
         if (!entity && type !== 'custom') return null;
 
@@ -160,7 +201,7 @@
         if (type === "custom" && custom) {
           template = custom;
         } else {
-          template = formatTemplate(entity, type);
+          template = formatTemplate(entity, type, secondary);
         }
 
         template = template.replace(/"/g, '\\"');
