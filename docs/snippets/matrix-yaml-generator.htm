@@ -1,4 +1,3 @@
-```html
 <h2 style="color:#1e88e5; display: flex; align-items: center; gap: 10px;">
   <img src="/assets/yaml-generator-apollo-logo-small.png" alt="Apollo Automation Logo" style="height: 32px;">
   Apollo Automation M-1 LED Matrix YAML Generator
@@ -29,61 +28,15 @@
 </div>
 
 <style>
-  form, fieldset, input, select, textarea, button {
-    font-family: inherit;
-    font-size: 1rem;
-  }
-  fieldset {
-    background: #f9f9f9;
-    border: 1px solid #cce0ff;
-    border-radius: 8px;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
-  legend {
-    color: #1e88e5;
-    font-weight: bold;
-    padding: 0 0.5em;
-  }
-  label {
-    display: block;
-    margin: 0.5em 0 0.25em;
-    font-weight: 500;
-    color: #1e88e5;
-  }
-  input, select, textarea {
-    width: 100%;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-  }
-  button {
-    background-color: #1e88e5;
-    color: white;
-    border: none;
-    padding: 0.6em 1em;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 1em;
-  }
-  button:hover {
-    background-color: #0d6fd3;
-  }
-  pre {
-    background: #1e1e1e;
-    color: #dcdcdc;
-    padding: 1em;
-    border-radius: 8px;
-    overflow: auto;
-    font-size: 0.85rem;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  .copy-button {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-  }
+  form, fieldset, input, select, textarea, button { font-family: inherit; font-size: 1rem; }
+  fieldset { background: #f9f9f9; border: 1px solid #cce0ff; border-radius: 8px; padding: 1em; margin-bottom: 1em; }
+  legend { color: #1e88e5; font-weight: bold; padding: 0 0.5em; }
+  label { display: block; margin: 0.5em 0 0.25em; font-weight: 500; color: #1e88e5; }
+  input, select, textarea { width: 100%; padding: 0.5em; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+  button { background-color: #1e88e5; color: white; border: none; padding: 0.6em 1em; border-radius: 6px; cursor: pointer; margin-top: 1em; }
+  button:hover { background-color: #0d6fd3; }
+  pre { background: #1e1e1e; color: #dcdcdc; padding: 1em; border-radius: 8px; overflow: auto; font-size: 0.85rem; white-space: pre-wrap; word-wrap: break-word; }
+  .copy-button { margin-top: 0.5em; margin-bottom: 1em; }
 </style>
 
 <form id="entity-form">
@@ -180,9 +133,9 @@
     const defaultFX = 122;
     const defaultConfigs = [
       { primary: "temperature", primaryEntity: "weather.nowcast", secondary: "feels_like", secondaryEntity: "sensor.feels_like", tempUnit: "F" },
-      { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "none",      secondaryEntity: "",                          tempUnit: "F" },
-      { primary: "co2",         primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc",       secondaryEntity: "sensor.brandon_air_1_sen55_voc", tempUnit: "F" },
-      { primary: "ping",        primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo", tempUnit: "F" }
+      { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "door",      secondaryEntity: "binary_sensor.front_door_sensor_contact", tempUnit: "F" },
+      { primary: "co2",         primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc",       secondaryEntity: "sensor.brandon_air_1_sen55_voc",       tempUnit: "F" },
+      { primary: "ping",        primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo",    tempUnit: "F" }
     ];
 
     const output   = document.getElementById("output");
@@ -250,9 +203,9 @@
         const pEnt = pEntRaw || defaultConfigs[i].primaryEntity;
         const sEnt = sType !== "none" ? (sEntRaw || defaultConfigs[i].secondaryEntity) : "";
 
-        // build the display string
         const parts = [];
 
+        // Primary
         if (pType === "lock") {
           const name = deriveName(pEnt);
           parts.push(`{{ states('${pEnt}') == 'locked' and '${name} Locked' or '${name} Unlocked' }}`);
@@ -261,20 +214,23 @@
         } else {
           const label = dataTypeLabel(pType);
           const val   = formatDataType(pEnt, pType, unit);
-          // temp & alarm have no colon
-          if (label === "Temp" || label === "Alarm") {
+          if (label === "Temp" || label === "Alarm" || label === "CO2") {
             parts.push(`${label} ${val}`);
           } else {
             parts.push(`${label}: ${val}`);
           }
         }
 
-        if (sType === "voc" && pType === "co2") {
+        // Secondary
+        if (sType === "door") {
+          const name = deriveName(sEnt);
+          parts.push(`{{ states('${sEnt}') == 'on' and '${name} Sensor Open' or '${name} Sensor Closed' }}`);
+        } else if (sType === "voc" && pType === "co2") {
           parts.push(`VOC ${formatDataType(sEnt, "voc", unit)}`);
         } else if (sType !== "none") {
           const label = dataTypeLabel(sType);
           const val   = formatDataType(sEnt, sType, unit);
-          if (label === "Temp" || label === "Alarm") {
+          if (label === "Temp" || label === "Alarm" || label === "CO2") {
             parts.push(`${label} ${val}`);
           } else {
             parts.push(`${label}: ${val}`);
@@ -309,19 +265,9 @@ ${blocks.join(',\n')}
 
     window.copyYAML = function() {
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(output.textContent).catch(fallbackCopy);
-      } else {
-        fallbackCopy();
+        navigator.clipboard.writeText(output.textContent).catch(() => {});
       }
     };
-    function fallbackCopy() {
-      const ta = document.createElement("textarea");
-      ta.value = output.textContent;
-      document.body.appendChild(ta);
-      ta.select();
-      try { document.execCommand("copy"); } catch {}
-      document.body.removeChild(ta);
-    }
 
     updateYAML();
   }
@@ -333,4 +279,3 @@ ${blocks.join(',\n')}
   }
 })();
 </script>
-```
