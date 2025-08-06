@@ -130,6 +130,12 @@
         <label class="secondary-entity" style="display: none;">Secondary Entity ID:
           <input type="text" name="secondary" value="${def.secondary || ''}" placeholder="e.g., sensor.feels_like" data-id="${i}">
         </label>
+        <label class="temp-unit" style="display: none;">Temperature Unit:
+          <select name="tempunit" data-id="${i}">
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="C">Celsius (°C)</option>
+          </select>
+        </label>
         <label>Custom Template (only used for 'Custom Jinja'):
           <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter full Jinja template here"></textarea>
         </label>
@@ -147,20 +153,26 @@
           const fieldset = el.closest("fieldset");
           const secondaryLabel = fieldset.querySelector(".secondary-entity");
           const secondaryInput = fieldset.querySelector('input[name="secondary"]');
+          const tempUnitLabel = fieldset.querySelector(".temp-unit");
           
-          if (el.value === "weather" || el.value === "air" || el.value === "ping_alarm") {
+          if (el.value === "weather") {
             secondaryLabel.style.display = "block";
-            
-            // Set default secondary entity based on type
-            if (el.value === "weather" && !secondaryInput.value) {
+            tempUnitLabel.style.display = "block";
+            if (!secondaryInput.value) {
               secondaryInput.value = "sensor.feels_like";
-            } else if (el.value === "air" && !secondaryInput.value) {
+            }
+          } else if (el.value === "air" || el.value === "ping_alarm") {
+            secondaryLabel.style.display = "block";
+            tempUnitLabel.style.display = "none";
+            
+            if (el.value === "air" && !secondaryInput.value) {
               secondaryInput.value = "sensor.brandon_air_1_sen55_voc";
             } else if (el.value === "ping_alarm" && !secondaryInput.value) {
               secondaryInput.value = "alarm_control_panel.alarmo";
             }
           } else {
             secondaryLabel.style.display = "none";
+            tempUnitLabel.style.display = "none";
           }
           updateYAML();
         });
@@ -170,11 +182,15 @@
       }
     });
 
-    function formatTemplate(entity, type, secondaryEntity = "") {
+    function formatTemplate(entity, type, secondaryEntity = "", tempUnit = "F") {
       switch (type) {
         case "weather":
           const feelsLike = secondaryEntity || "sensor.feels_like";
-          return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('${feelsLike}') | round(0) | int }}F`;
+          if (tempUnit === "C") {
+            return `{{ state_attr('${entity}','temperature') | round(1) }}C {{ states('${entity}') | title }} FL: {{ states('${feelsLike}') | round(1) }}C`;
+          } else {
+            return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('${feelsLike}') | round(0) | int }}F`;
+          }
         case "lock":
           return `{{ states('${entity}') == 'locked' and 'Front Door Locked' or 'Front Door Unlocked' }}`;
         case "air":
@@ -194,6 +210,7 @@
         const type = fs.querySelector('select[name="type"]').value;
         const entity = fs.querySelector('input[name="entity"]').value.trim();
         const secondary = fs.querySelector('input[name="secondary"]').value.trim();
+        const tempUnit = fs.querySelector('select[name="tempunit"]')?.value || "F";
         const custom = fs.querySelector('textarea[name="custom"]').value.trim();
         if (!entity && type !== 'custom') return null;
 
@@ -201,7 +218,7 @@
         if (type === "custom" && custom) {
           template = custom;
         } else {
-          template = formatTemplate(entity, type, secondary);
+          template = formatTemplate(entity, type, secondary, tempUnit);
         }
 
         template = template.replace(/"/g, '\\"');
