@@ -1,4 +1,3 @@
-
 <h2 style="color:#1e88e5; display: flex; align-items: center; gap: 10px;">
   <img src="/assets/yaml-generator-apollo-logo-small.png" alt="Apollo Automation Logo" style="height: 32px;">
   Apollo Automation M-1 LED Matrix YAML Generator
@@ -17,6 +16,12 @@
     border-radius: 8px;
     padding: 1em;
     margin-bottom: 1em;
+  }
+
+  legend {
+    color: #1e88e5;
+    font-weight: bold;
+    padding: 0 0.5em;
   }
 
   label {
@@ -56,6 +61,13 @@
     border-radius: 8px;
     overflow: auto;
     font-size: 0.85rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .copy-button {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
   }
 </style>
 
@@ -65,91 +77,101 @@
 
 <h3 style="color:#1e88e5;">📝 Generated YAML:</h3>
 <pre id="output"></pre>
-<button onclick="copyYAML()">📋 Copy to Clipboard</button>
+<button class="copy-button" onclick="copyYAML()">📋 Copy to Clipboard</button>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const defaultFX = 122;
-  const output = document.getElementById("output");
-  const entries = document.getElementById("entity-entries");
-
-  const defaultConfigs = [
-    { type: "weather", entity: "weather.nowcast" },
-    { type: "lock", entity: "lock.front_door_lock" },
-    { type: "air", entity: "sensor.brandon_air_1_co2" },
-    { type: "ping_alarm", entity: "sensor.1_1_1_1_round_trip_time_average" }
-  ];
-
-  console.log("Populating segments...");
-
-  for (let i = 0; i < 4; i++) {
-    const def = defaultConfigs[i];
-    const fieldset = document.createElement("fieldset");
-    fieldset.innerHTML = `
-      <legend style="color:#1e88e5;">Segment ${i}</legend>
-      <label>Format:
-        <select name="type" data-id="${i}">
-          <option value="weather"${def.type === 'weather' ? ' selected' : ''}>Weather + Feels Like</option>
-          <option value="lock"${def.type === 'lock' ? ' selected' : ''}>Lock (Locked/Unlocked)</option>
-          <option value="air"${def.type === 'air' ? ' selected' : ''}>CO2 + VOC</option>
-          <option value="ping_alarm"${def.type === 'ping_alarm' ? ' selected' : ''}>Ping + Alarm</option>
-          <option value="custom">Custom Jinja</option>
-        </select>
-      </label>
-      <label>Primary Entity ID:
-        <input type="text" name="entity" value="${def.entity}" placeholder="e.g., sensor.temp_living_room" data-id="${i}">
-      </label>
-      <label>Custom Template (only used for 'Custom Jinja'):
-        <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter full Jinja template here"></textarea>
-      </label>
-    `;
-    entries.appendChild(fieldset);
-  }
-
-  entries.querySelectorAll("input, select, textarea").forEach(el => {
-    el.addEventListener("input", updateYAML);
-    el.addEventListener("change", updateYAML);
-  });
-
-  function formatTemplate(entity, type) {
-    switch (type) {
-      case "weather":
-        return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('sensor.feels_like') | round(0) | int }}F`;
-      case "lock":
-        return `{{ states('${entity}') == 'locked' and 'Front Door Locked' or 'Front Door Unlocked' }}`;
-      case "air":
-        return `CO2 {{ states('${entity}') | int }}ppm VOC {{ states('sensor.brandon_air_1_sen55_voc') | int }}ppm`;
-      case "ping_alarm":
-        return `Ping {{ states('${entity}') | float | round(0) | int }}ms {{ states('alarm_control_panel.alarmo') | title }}`;
-      default:
-        return "";
+(function() {
+  'use strict';
+  
+  function initializeGenerator() {
+    console.log("Initializing Apollo Matrix YAML Generator...");
+    
+    const defaultFX = 122;
+    const output = document.getElementById("output");
+    const entries = document.getElementById("entity-entries");
+    
+    if (!output || !entries) {
+      console.error("Required elements not found");
+      return;
     }
-  }
 
-  function updateYAML() {
-    console.log("Updating YAML...");
-    const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
-      const type = fs.querySelector('select[name="type"]').value;
-      const entity = fs.querySelector('input[name="entity"]').value.trim();
-      const custom = fs.querySelector('textarea[name="custom"]').value.trim();
-      if (!entity && type !== 'custom') return null;
+    const defaultConfigs = [
+      { type: "weather", entity: "weather.nowcast" },
+      { type: "lock", entity: "lock.front_door_lock" },
+      { type: "air", entity: "sensor.brandon_air_1_co2" },
+      { type: "ping_alarm", entity: "sensor.1_1_1_1_round_trip_time_average" }
+    ];
 
-      let template = "";
-      if (type === "custom" && custom) {
-        template = custom;
-      } else {
-        template = formatTemplate(entity, type);
+    console.log("Populating segments...");
+
+    for (let i = 0; i < 4; i++) {
+      const def = defaultConfigs[i];
+      const fieldset = document.createElement("fieldset");
+      fieldset.innerHTML = `
+        <legend>Segment ${i}</legend>
+        <label>Format:
+          <select name="type" data-id="${i}">
+            <option value="weather"${def.type === 'weather' ? ' selected' : ''}>Weather + Feels Like</option>
+            <option value="lock"${def.type === 'lock' ? ' selected' : ''}>Lock (Locked/Unlocked)</option>
+            <option value="air"${def.type === 'air' ? ' selected' : ''}>CO2 + VOC</option>
+            <option value="ping_alarm"${def.type === 'ping_alarm' ? ' selected' : ''}>Ping + Alarm</option>
+            <option value="custom">Custom Jinja</option>
+          </select>
+        </label>
+        <label>Primary Entity ID:
+          <input type="text" name="entity" value="${def.entity}" placeholder="e.g., sensor.temp_living_room" data-id="${i}">
+        </label>
+        <label>Custom Template (only used for 'Custom Jinja'):
+          <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter full Jinja template here"></textarea>
+        </label>
+      `;
+      entries.appendChild(fieldset);
+    }
+
+    entries.querySelectorAll("input, select, textarea").forEach(el => {
+      el.addEventListener("input", updateYAML);
+      el.addEventListener("change", updateYAML);
+    });
+
+    function formatTemplate(entity, type) {
+      switch (type) {
+        case "weather":
+          return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('sensor.feels_like') | round(0) | int }}F`;
+        case "lock":
+          return `{{ states('${entity}') == 'locked' and 'Front Door Locked' or 'Front Door Unlocked' }}`;
+        case "air":
+          return `CO2 {{ states('${entity}') | int }}ppm VOC {{ states('sensor.brandon_air_1_sen55_voc') | int }}ppm`;
+        case "ping_alarm":
+          return `Ping {{ states('${entity}') | float | round(0) | int }}ms {{ states('alarm_control_panel.alarmo') | title }}`;
+        default:
+          return "";
       }
+    }
 
-      template = template.replace(/"/g, '\\"');
-      return `      {
+    function updateYAML() {
+      console.log("Updating YAML...");
+      const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
+        const type = fs.querySelector('select[name="type"]').value;
+        const entity = fs.querySelector('input[name="entity"]').value.trim();
+        const custom = fs.querySelector('textarea[name="custom"]').value.trim();
+        if (!entity && type !== 'custom') return null;
+
+        let template = "";
+        if (type === "custom" && custom) {
+          template = custom;
+        } else {
+          template = formatTemplate(entity, type);
+        }
+
+        template = template.replace(/"/g, '\\"');
+        return `      {
         "id": ${i},
         "fx": ${defaultFX},
         "n": "${template}"
       }`;
-    }).filter(Boolean);
+      }).filter(Boolean);
 
-    const yaml = `rest_command:
+      const yaml = `rest_command:
   matrix_all_segments:
     url: http://apollo-matrix-2.local/json/state
     content_type: 'application/json'
@@ -159,20 +181,58 @@ document.addEventListener("DOMContentLoaded", function() {
     payload: >
       {
         "seg":[
-${segments.join(",
-")}
+${segments.join(",\n")}
         ]
       }`;
 
-    output.textContent = yaml;
+      output.textContent = yaml;
+    }
+
+    // Make copyYAML function global
+    window.copyYAML = function() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(output.textContent).then(() => {
+          alert("YAML copied to clipboard!");
+        }).catch(err => {
+          console.error('Failed to copy: ', err);
+          fallbackCopy();
+        });
+      } else {
+        fallbackCopy();
+      }
+    };
+
+    function fallbackCopy() {
+      const textArea = document.createElement("textarea");
+      textArea.value = output.textContent;
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        alert("YAML copied to clipboard!");
+      } catch (err) {
+        alert("Copy failed. Please manually select and copy the text.");
+      }
+      document.body.removeChild(textArea);
+    }
+
+    updateYAML();
+    console.log("Generator initialized successfully");
   }
 
-  function copyYAML() {
-    navigator.clipboard.writeText(output.textContent).then(() => {
-      alert("YAML copied to clipboard!");
+  // Multiple initialization strategies
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeGenerator);
+  } else {
+    initializeGenerator();
+  }
+
+  // Fallback initialization
+  if (typeof window !== 'undefined') {
+    window.addEventListener('load', function() {
+      setTimeout(initializeGenerator, 100);
     });
   }
-
-  updateYAML();
-});
+})();
 </script>
