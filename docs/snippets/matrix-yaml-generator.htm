@@ -132,9 +132,9 @@
   function initializeGenerator() {
     const defaultFX = 122;
     const defaultConfigs = [
-      { primary: "temperature", primaryEntity: "weather.nowcast", secondary: "feels_like", secondaryEntity: "sensor.feels_like", tempUnit: "F" },
-      { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "door",      secondaryEntity: "binary_sensor.front_door_sensor_contact", tempUnit: "F" },
-      { primary: "co2",         primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc",       secondaryEntity: "sensor.brandon_air_1_sen55_voc",       tempUnit: "F" },
+      { primary: "temperature", primaryEntity: "weather.nowcast",     secondary: "feels_like", tempUnit: "F" },
+      { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "door",       secondaryEntity: "binary_sensor.front_door_sensor_contact", tempUnit: "F" },
+      { primary: "co2",         primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc",     secondaryEntity: "sensor.brandon_air_1_sen55_voc",       tempUnit: "F" },
       { primary: "ping",        primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo",    tempUnit: "F" }
     ];
 
@@ -151,8 +151,7 @@
         <label>Primary Data Type:
           <select name="primary" data-id="${i}">
             ${["temperature","humidity","pressure","weather_condition","feels_like","co2","voc","pm25","lock","ping","alarm","motion","door","light","battery","power","custom"]
-              .map(v => `<option value="${v}"${def.primary===v?' selected':''}>${dataTypeLabel(v) || v}</option>`)
-              .join('')}
+              .map(v => `<option value="${v}"${def.primary===v?' selected':''}>${dataTypeLabel(v)||v}</option>`).join('')}
           </select>
         </label>
         <label>Primary Entity ID:
@@ -161,8 +160,7 @@
         <label>Secondary Data Type:
           <select name="secondary" data-id="${i}">
             ${["none","temperature","humidity","pressure","weather_condition","feels_like","co2","voc","pm25","lock","ping","alarm","motion","door","light","battery","power","custom"]
-              .map(v => `<option value="${v}"${def.secondary===v?' selected':''}>${v}</option>`)
-              .join('')}
+              .map(v => `<option value="${v}"${def.secondary===v?' selected':''}>${v}</option>`).join('')}
           </select>
         </label>
         <label class="secondary-entity" style="display:${def.secondary!=='none'?'block':'none'};">
@@ -205,40 +203,55 @@
 
         const parts = [];
 
-        // Primary
-        if (pType === "lock") {
+        // Combined lock+door case
+        if (pType === "lock" && sType === "door") {
           const name = deriveName(pEnt);
-          parts.push(`{{ states('${pEnt}') == 'locked' and '${name} Locked' or '${name} Unlocked' }}`);
-        } else if (pType === "custom" && custom) {
+          parts.push(`{{ '${name} ' ~ (states('${sEnt}')=='on' and 'Open' or 'Closed') ~ ' and ' ~ (states('${pEnt}')=='locked' and 'Locked' or 'Unlocked') }}`);
+        }
+        // lock only
+        else if (pType === "lock") {
+          const name = deriveName(pEnt);
+          parts.push(`{{ states('${pEnt}')=='locked' and '${name} Locked' or '${name} Unlocked' }}`);
+        }
+        // custom only
+        else if (pType === "custom" && custom) {
           parts.push(custom);
-        } else {
+        }
+        // everything else
+        else {
           const label = dataTypeLabel(pType);
           const val   = formatDataType(pEnt, pType, unit);
-          if (label === "Temp" || label === "Alarm" || label === "CO2") {
+          if (["Temp","Alarm","CO2"].includes(label)) {
             parts.push(`${label} ${val}`);
           } else {
             parts.push(`${label}: ${val}`);
           }
         }
 
-        // Secondary
-        if (sType === "door") {
-          const name = deriveName(sEnt);
-          parts.push(`{{ states('${sEnt}') == 'on' and '${name} Sensor Open' or '${name} Sensor Closed' }}`);
-        } else if (sType === "voc" && pType === "co2") {
-          parts.push(`VOC ${formatDataType(sEnt, "voc", unit)}`);
-        } else if (sType !== "none") {
-          const label = dataTypeLabel(sType);
-          const val   = formatDataType(sEnt, sType, unit);
-          if (label === "Temp" || label === "Alarm" || label === "CO2") {
-            parts.push(`${label} ${val}`);
-          } else {
-            parts.push(`${label}: ${val}`);
+        // secondary, skip because combined handled door
+        if (!(pType === "lock" && sType === "door")) {
+          if (sType === "voc" && pType === "co2") {
+            parts.push(`VOC ${formatDataType(sEnt,"voc",unit)}`);
+          }
+          else if (sType === "lock") {
+            const name = deriveName(sEnt);
+            parts.push(`{{ states('${sEnt}')=='locked' and '${name} Locked' or '${name} Unlocked' }}`);
+          }
+          else if (sType === "custom" && custom) {
+            parts.push(custom);
+          }
+          else if (sType !== "none") {
+            const label = dataTypeLabel(sType);
+            const val   = formatDataType(sEnt, sType, unit);
+            if (["Temp","Alarm","CO2"].includes(label)) {
+              parts.push(`${label} ${val}`);
+            } else {
+              parts.push(`${label}: ${val}`);
+            }
           }
         }
 
         const line = parts.join(" ").replace(/"/g, '\\"');
-
         return [
           '          {',
           `            "id": ${i},`,
