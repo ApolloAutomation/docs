@@ -1,6 +1,10 @@
 ---
-title: M-1 LED Matrix Setting up scrolling text with the states of Home Assistant entities!
-description: Step by step guide for custom scrolling text using the states of Home Assistant entities!
+title: >-
+  M-1 LED Matrix Setting up scrolling text with the states of Home Assistant
+  entities!
+description: >-
+  Step by step guide for custom scrolling text using the states of Home
+  Assistant entities!
 ---
 # Share Data from Home Assistant on your M-1 LED Matrix
 
@@ -22,6 +26,7 @@ The <a href="https://www.home-assistant.io/integrations/wled/" target="_blank" r
 
 <iframe src="/static/matrix-jinja-generator.html" width="100%" height="700" style="border: 1px solid #ccc; border-radius: 6px;"></iframe>
 
+&nbsp;
 
 2\. Copy the code below and paste it at the very bottom of your configuration.yaml file.
 
