@@ -26,6 +26,8 @@ The <a href="https://www.home-assistant.io/integrations/wled/" target="_blank" r
 
 <iframe src="/snippets/matrix-yaml-generator.htm" width="100%" height="700" style="border: 1px solid #ccc; border-radius: 6px;"></iframe>
 
+&nbsp;
+
 3\. Head back to the configuration.yaml file you opened in step 1 and paste your yaml generated on to a new line at the bottom of the YAML file.
 
 &nbsp;
