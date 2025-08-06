@@ -199,6 +199,7 @@ nav:
             - Create Logo Image: products/m1/examples/create-logo-image.md
             - Scrolling Text: products/m1/examples/scrolling-text.md
             - QR Code Generator: products/m1/examples/qr-code-generator.md
+            - Share Data From Home Assistant : products/m1/examples/share-data-from-home-assistant.md
           - Troubleshooting:
             - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: products/m1/troubleshooting/m1-reflash.md
