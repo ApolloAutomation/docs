@@ -4,6 +4,32 @@
 </h2>
 <p style="font-size: 1rem; color: #333;">Use this generator to build a fully templated <code>rest_command</code> for your Apollo Automation M-1 Matrix display. Each segment can show real-time data from Home Assistant.</p>
 
+<div style="background: #e3f2fd; border: 1px solid #1e88e5; border-radius: 8px; padding: 1em; margin: 1em 0;">
+  <h3 style="color:#1e88e5; margin-top: 0;">🔍 How to Find Entity IDs</h3>
+  <p style="margin-bottom: 0.5em;"><strong>Method 1 - Developer Tools:</strong></p>
+  <ol style="margin: 0 0 1em 1.5em;">
+    <li>In Home Assistant, go to <strong>Developer Tools</strong> → <strong>States</strong></li>
+    <li>Use the search box to find your device/sensor</li>
+    <li>Copy the <strong>Entity ID</strong> (e.g., <code>sensor.living_room_temperature</code>)</li>
+  </ol>
+  
+  <p style="margin-bottom: 0.5em;"><strong>Method 2 - Settings:</strong></p>
+  <ol style="margin: 0 0 1em 1.5em;">
+    <li>Go to <strong>Settings</strong> → <strong>Devices & Services</strong> → <strong>Entities</strong></li>
+    <li>Search for your device or use filters</li>
+    <li>Click on the entity to see its full ID</li>
+  </ol>
+  
+  <p style="margin-bottom: 0.5em;"><strong>Method 3 - Device Page (Easiest):</strong></p>
+  <ol style="margin: 0 0 1em 1.5em;">
+    <li>Go to <strong>Settings</strong> → <strong>Devices & Services</strong> → <strong>Devices</strong></li>
+    <li>Click on your device</li>
+    <li>All entity IDs for that device will be listed</li>
+  </ol>
+  
+  <p style="margin: 0; font-size: 0.9em; color: #666;"><strong>💡 Tip:</strong> Entity IDs follow the format <code>domain.device_name</code> (like <code>sensor.outdoor_temperature</code> or <code>weather.home</code>)</p>
+</div>
+
 <style>
   form, fieldset, input, select, textarea, button {
     font-family: inherit;
@@ -72,6 +98,15 @@
 </style>
 
 <form id="entity-form">
+  <fieldset>
+    <legend style="color:#1e88e5;">Device Configuration</legend>
+    <label>Apollo Matrix URL:
+      <input type="text" id="matrix-url" value="http://apollo-matrix.local" placeholder="e.g., http://192.168.1.100 or http://apollo-matrix.local">
+    </label>
+    <p style="font-size: 0.9em; color: #666; margin: 0.5em 0 0 0;">
+      💡 Enter your Apollo Matrix device's IP address or hostname. If you need help finding the IP or hostname, <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" style="color: #1e88e5; text-decoration: underline;">click here</a>.
+    </p>
+  </fieldset>
   <div id="entity-entries"></div>
 </form>
 
@@ -89,8 +124,9 @@
     const defaultFX = 122;
     const output = document.getElementById("output");
     const entries = document.getElementById("entity-entries");
+    const urlInput = document.getElementById("matrix-url");
     
-    if (!output || !entries) {
+    if (!output || !entries || !urlInput) {
       console.error("Required elements not found");
       return;
     }
@@ -176,6 +212,10 @@
           }
           updateYAML();
         });
+
+    // Add event listener for URL input
+    urlInput.addEventListener("input", updateYAML);
+    urlInput.addEventListener("change", updateYAML);
         
         // Trigger initial show/hide
         el.dispatchEvent(new Event('change'));
@@ -231,7 +271,7 @@
 
       const yaml = `rest_command:
   matrix_all_segments:
-    url: http://apollo-matrix-2.local/json/state
+    url: ${urlInput.value.trim()}/json/state
     content_type: 'application/json'
     verify_ssl: false
     method: 'post'
