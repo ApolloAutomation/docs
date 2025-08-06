@@ -1,12 +1,67 @@
-<h2>🧩 WLED Matrix YAML Generator (4 Segments)</h2>
-<p>Select the entity type and enter the full Home Assistant entity ID. Example: <code>sensor.temp_living_room</code></p>
+
+<h2 style="color:#1e88e5; display: flex; align-items: center; gap: 10px;"><img src="/assets/yaml-generator-apollo-logo-small.png" alt="Apollo Automation Logo" style="height: 32px;">Apollo Automation M-1 LED Matrix YAML Generator</h2>
+<p style="font-size: 1rem; color: #333;">Use this generator to build a fully templated <code>rest_command</code> for your Apollo Automation M-1 Matrix display. Each segment can show real-time data from Home Assistant.</p>
+
+<style>
+  form, fieldset, input, select, textarea, button {
+    font-family: inherit;
+    font-size: 1rem;
+  }
+
+  fieldset {
+    background: #f9f9f9;
+    border: 1px solid #cce0ff;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  label {
+    display: block;
+    margin: 0.5em 0 0.25em;
+    font-weight: 500;
+    color: #1e88e5;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 0.6em 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+
+  button:hover {
+    background-color: #0d6fd3;
+  }
+
+  pre {
+    background: #1e1e1e;
+    color: #dcdcdc;
+    padding: 1em;
+    border-radius: 8px;
+    overflow: auto;
+    font-size: 0.85rem;
+  }
+</style>
 
 <form id="entity-form">
   <div id="entity-entries"></div>
 </form>
 
-<h3>📝 Generated YAML:</h3>
-<pre id="output" style="background:#1e1e1e;color:#dcdcdc;padding:1em;overflow:auto;border-radius:5px;"></pre>
+<h3 style="color:#1e88e5;">📝 Generated YAML:</h3>
+<pre id="output"></pre>
 <button onclick="copyYAML()">📋 Copy to Clipboard</button>
 
 <script>
@@ -14,57 +69,56 @@ const defaultFX = 122;
 const output = document.getElementById("output");
 const entries = document.getElementById("entity-entries");
 
-const exampleEntities = [
+const defaultConfigs = [
   { type: "weather", entity: "weather.nowcast" },
   { type: "lock", entity: "lock.front_door_lock" },
-  { type: "sensor", entity: "sensor.brandon_air_1_co2" },
-  { type: "alarm_control_panel", entity: "alarm_control_panel.alarmo" }
+  { type: "air", entity: "sensor.brandon_air_1_co2" },
+  { type: "ping_alarm", entity: "sensor.1_1_1_1_round_trip_time_average" }
 ];
 
-// Build 4 input blocks
 for (let i = 0; i < 4; i++) {
+  const def = defaultConfigs[i];
   const div = document.createElement("div");
-  const example = exampleEntities[i];
   div.innerHTML = `
-    <fieldset style="margin-bottom:1em;border:1px solid #ccc;padding:1em;border-radius:6px;">
-      <legend>Segment ${i}</legend>
-      <label>Entity Type:
+    <fieldset>
+      <legend style="color:#1e88e5;">Segment ${i}</legend>
+      <label>Format:
         <select name="type" data-id="${i}">
-          <option value="sensor">sensor</option>
-          <option value="lock">lock</option>
-          <option value="alarm_control_panel">alarm_control_panel</option>
-          <option value="weather">weather</option>
-          <option value="other">other</option>
+          <option value="weather">Weather + Feels Like</option>
+          <option value="lock">Lock (Locked/Unlocked)</option>
+          <option value="air">CO2 + VOC</option>
+          <option value="ping_alarm">Ping + Alarm</option>
+          <option value="custom">Custom Jinja</option>
         </select>
-      </label><br>
-      <label>Entity ID:
-        <input type="text" name="entity" value="${example.entity}" placeholder="e.g., sensor.temp_living_room" data-id="${i}" style="width: 300px;">
+      </label>
+      <label>Primary Entity ID:
+        <input type="text" name="entity" value="${def.entity}" placeholder="e.g., sensor.temp_living_room" data-id="${i}">
+      </label>
+      <label>Custom Template (only used for 'Custom Jinja'):
+        <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter full Jinja template here"></textarea>
       </label>
     </fieldset>
   `;
   entries.appendChild(div);
 }
 
-// Update YAML output when inputs change
-entries.querySelectorAll("input, select").forEach(el => {
+entries.querySelectorAll("input, select, textarea").forEach(el => {
   el.addEventListener("input", updateYAML);
   el.addEventListener("change", updateYAML);
 });
 
 function formatTemplate(entity, type) {
-  if (!entity) return "";
-  const name = entity.split(".")[1]?.replace(/_/g, " ");
   switch (type) {
-    case "sensor":
-      return `{{ states('${entity}') | round(0) }} (${name})`;
-    case "lock":
-      return `${name}: {{ 'Locked' if is_state('${entity}', 'locked') else 'Unlocked' }}`;
-    case "alarm_control_panel":
-      return `Alarm: {{ states('${entity}') | title }}`;
     case "weather":
-      return `Weather: {{ states('${entity}') | title }}`;
+      return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('sensor.feels_like') | round(0) | int }}F`;
+    case "lock":
+      return `{{ states('${entity}') == 'locked' and 'Front Door Locked' or 'Front Door Unlocked' }}`;
+    case "air":
+      return `CO2 {{ states('${entity}') | int }}ppm VOC {{ states('sensor.brandon_air_1_sen55_voc') | int }}ppm`;
+    case "ping_alarm":
+      return `Ping {{ states('${entity}') | float | round(0) | int }}ms {{ states('alarm_control_panel.alarmo') | title }}`;
     default:
-      return `{{ states('${entity}') }} (${name})`;
+      return "";
   }
 }
 
@@ -72,13 +126,39 @@ function updateYAML() {
   const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
     const type = fs.querySelector('select[name="type"]').value;
     const entity = fs.querySelector('input[name="entity"]').value.trim();
-    if (!entity) return null;
-    const template = formatTemplate(entity, type).replace(/"/g, '\\"');
-    return `      {\n        "id": ${i},\n        "fx": ${defaultFX},\n        "n": "${template}"\n      }`;
+    const custom = fs.querySelector('textarea[name="custom"]').value.trim();
+    if (!entity && type !== 'custom') return null;
+
+    let template = "";
+    if (type === "custom" && custom) {
+      template = custom;
+    } else {
+      template = formatTemplate(entity, type);
+    }
+
+    template = template.replace(/"/g, '\"');
+    return `      {
+        "id": ${i},
+        "fx": ${defaultFX},
+        "n": "${template}"
+      }`;
   }).filter(Boolean);
 
-  const yaml = `rest_command:\n  matrix_all_segments:\n    url: http://10.10.10.176/json/state\n    content_type: 'application/json'\n    verify_ssl: false\n    method: 'post'\n    timeout: 20\n    payload: >\n      {\n        "seg":[\n${segments.join(",\n")}\n        ]\n      }`;
-  
+  const yaml = `rest_command:
+  matrix_all_segments:
+    url: http://apollo-matrix-2.local/json/state
+    content_type: 'application/json'
+    verify_ssl: false
+    method: 'post'
+    timeout: 20
+    payload: >
+      {
+        "seg":[
+${segments.join(",
+")}
+        ]
+      }`;
+
   output.textContent = yaml;
 }
 

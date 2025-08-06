@@ -14,50 +14,14 @@ The <a href="https://www.home-assistant.io/integrations/wled/" target="_blank" r
 
 ![](../../../assets/m1-navigate-to-configuration-yaml.gif)
 
-!!! danger "This file is used by Home Assistant and must be careful edited"
+!!! danger "This file is used by Home Assistant and must be carefully edited."
 
-    Home Assistant requires this file to work properly so only make changes exactly as shown below. Do NOT add any extra spaces or change anything other than what is shown in the steps below!
+    Home Assistant depends on this file to function correctly. Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
+
+2\. Setup
 
 ## 🧩 WLED Matrix YAML Generator
 
 <iframe src="/snippets/matrix-yaml-generator.htm" width="100%" height="700" style="border: 1px solid #ccc; border-radius: 6px;"></iframe>
 
-
 &nbsp;
-
-2\. Copy the code below and paste it at the very bottom of your configuration.yaml file.
-
-```yaml
-rest_command:
-  matrix_all_segments:
-    url: http://10.10.10.176/json/state
-    content_type: 'application/json'
-    verify_ssl: false
-    method: 'post'
-    timeout: 20
-    payload: >
-      {
-        "seg":[
-          {
-            "id":0,
-            "fx":122,
-            "n": "{{state_attr('weather.nowcast','temperature')}}F {{states('weather.nowcast')|title}} FL: {{ states('sensor.feels_like') | round(0) | int }}F"
-          },
-          {
-            "id":1,
-            "fx":122,
-            "n": "{{ states('lock.front_door_lock') == 'locked' and 'Front Door Locked' or 'Front Door Unlocked' }}"
-          },
-          {
-            "id":2,
-            "fx":122,
-            "n": "CO2 {{states('sensor.brandon_air_1_co2') | int}}ppm VOC {{states('sensor.brandon_air_1_sen55_voc') | int}}ppm"
-          },
-          {
-            "id":3,
-            "fx":122,
-            "n": "Ping {{ states('sensor.1_1_1_1_round_trip_time_average') | float | round(0) | int }}ms {{ states('alarm_control_panel.alarmo') }}"
-          }
-        ]
-      }
-```
