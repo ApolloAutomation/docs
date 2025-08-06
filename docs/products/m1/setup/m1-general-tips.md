@@ -4,13 +4,12 @@ description: Multiple helpful tips to use your M-1 LED Matrix to the fullest!
 ---
 # General Tips
 
-###### Known issues
+The M-1 LED Matrix is using <a href="https://github.com/MoonModules/WLED-MM" target="_blank" rel="noreferrer nofollow noopener">WLED MoonModules</a> which is a fork of WLED that supports the Hub75 Matrix.
 
-As of 6/25/25 these are the known issues with the firmware shipped with the device:
+WLED uses <a href="https://wiki.apolloautomation.com/products/m1/setup/m1-segments/" target="_blank" rel="noreferrer nofollow noopener">segments</a> which allow you to create virtual led strips (or panels) of leds to control individually. This is useful in cases where you want to <a href="https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/#software-setup" target="_blank" rel="noreferrer nofollow noopener">connect multiple panels and have text scrolling across the screens</a>.
 
-* <a href="https://github.com/MoonModules/WLED-MM/issues/243" target="_blank" rel="noreferrer nofollow noopener">unable to set default preset at boot</a> (only will boot to orange screen)
-* randomly crashes after 1-2 days
-* <a href="https://github.com/MoonModules/WLED-MM/issues/242" target="_blank" rel="noreferrer nofollow noopener">changing custom preset to effect does not work</a> unless you turn the leds off then back on (not power cycle).
-* <a href="https://github.com/MoonModules/WLED-MM/issues/241" target="_blank" rel="noreferrer nofollow noopener">Error 11 not enough space after saving some presets</a>
-* Once you edit a setting and save in the LED Preferences and go try to save again it will crash the device. <a href="https://chatgpt.com/share/685dba2e-3818-8010-8b44-592d802f0782" target="_blank" rel="noreferrer nofollow noopener">Workaround for now is to edit the json manually using ChatGPT.</a>
-* <a href="https://github.com/MoonModules/WLED-MM/issues/247" target="_blank" rel="noreferrer nofollow noopener">Image and effects are shifted to the left by 1 column</a>
+Segments are also able to be used to control two panels from one controller such as making the first segment a 64x64 panel and the second segment control second 64x64 panel.
+
+The M-1 matrix is able to be controlled via the <a href="https://mm.kno.wled.ge/interfaces/json-api/" target="_blank" rel="noreferrer nofollow noopener">JSON API</a> and this allows to do some really neat things such as send data from Home Assistant to show up as "scrolling text" on your matrix. (Works best with 2 or 3 panels not 4 due to 32 characters available as scrolling text.
+
+The M-1 Matrix can be controlled using the <a href="https://mm.kno.wled.ge/interfaces/json-api/" target="_blank" rel="noreferrer nofollow noopener">JSON API</a>, allowing you to do some really cool things like sending data from Home Assistant to display as scrolling text on the matrix. (For best results, use 1 to 3 panels instead of 4, as the scrolling text supports up to 32 characters.)
