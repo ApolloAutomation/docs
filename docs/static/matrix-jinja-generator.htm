@@ -1,0 +1,92 @@
+<h2>🧩 WLED Matrix YAML Generator (4 Segments)</h2>
+<p>Select the entity type and enter the full Home Assistant entity ID. Example: <code>sensor.temp_living_room</code></p>
+
+<form id="entity-form">
+  <div id="entity-entries"></div>
+</form>
+
+<h3>📝 Generated YAML:</h3>
+<pre id="output" style="background:#1e1e1e;color:#dcdcdc;padding:1em;overflow:auto;border-radius:5px;"></pre>
+<button onclick="copyYAML()">📋 Copy to Clipboard</button>
+
+<script>
+const defaultFX = 122;
+const output = document.getElementById("output");
+const entries = document.getElementById("entity-entries");
+
+const exampleEntities = [
+  { type: "weather", entity: "weather.nowcast" },
+  { type: "lock", entity: "lock.front_door_lock" },
+  { type: "sensor", entity: "sensor.brandon_air_1_co2" },
+  { type: "alarm_control_panel", entity: "alarm_control_panel.alarmo" }
+];
+
+// Build 4 input blocks
+for (let i = 0; i < 4; i++) {
+  const div = document.createElement("div");
+  const example = exampleEntities[i];
+  div.innerHTML = `
+    <fieldset style="margin-bottom:1em;border:1px solid #ccc;padding:1em;border-radius:6px;">
+      <legend>Segment ${i}</legend>
+      <label>Entity Type:
+        <select name="type" data-id="${i}">
+          <option value="sensor">sensor</option>
+          <option value="lock">lock</option>
+          <option value="alarm_control_panel">alarm_control_panel</option>
+          <option value="weather">weather</option>
+          <option value="other">other</option>
+        </select>
+      </label><br>
+      <label>Entity ID:
+        <input type="text" name="entity" value="${example.entity}" placeholder="e.g., sensor.temp_living_room" data-id="${i}" style="width: 300px;">
+      </label>
+    </fieldset>
+  `;
+  entries.appendChild(div);
+}
+
+// Update YAML output when inputs change
+entries.querySelectorAll("input, select").forEach(el => {
+  el.addEventListener("input", updateYAML);
+  el.addEventListener("change", updateYAML);
+});
+
+function formatTemplate(entity, type) {
+  if (!entity) return "";
+  const name = entity.split(".")[1]?.replace(/_/g, " ");
+  switch (type) {
+    case "sensor":
+      return `{{ states('${entity}') | round(0) }} (${name})`;
+    case "lock":
+      return `${name}: {{ 'Locked' if is_state('${entity}', 'locked') else 'Unlocked' }}`;
+    case "alarm_control_panel":
+      return `Alarm: {{ states('${entity}') | title }}`;
+    case "weather":
+      return `Weather: {{ states('${entity}') | title }}`;
+    default:
+      return `{{ states('${entity}') }} (${name})`;
+  }
+}
+
+function updateYAML() {
+  const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
+    const type = fs.querySelector('select[name="type"]').value;
+    const entity = fs.querySelector('input[name="entity"]').value.trim();
+    if (!entity) return null;
+    const template = formatTemplate(entity, type).replace(/"/g, '\\"');
+    return `      {\n        "id": ${i},\n        "fx": ${defaultFX},\n        "n": "${template}"\n      }`;
+  }).filter(Boolean);
+
+  const yaml = `rest_command:\n  matrix_all_segments:\n    url: http://10.10.10.176/json/state\n    content_type: 'application/json'\n    verify_ssl: false\n    method: 'post'\n    timeout: 20\n    payload: >\n      {\n        "seg":[\n${segments.join(",\n")}\n        ]\n      }`;
+  
+  output.textContent = yaml;
+}
+
+function copyYAML() {
+  navigator.clipboard.writeText(output.textContent).then(() => {
+    alert("YAML copied to clipboard!");
+  });
+}
+
+updateYAML();
+</script>
