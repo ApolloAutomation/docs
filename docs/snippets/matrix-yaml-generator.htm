@@ -53,15 +53,139 @@
 <pre id="output"></pre>
 <button class="copy-button" onclick="copyYAML()">📋 Copy to Clipboard</button>
 
-<!-- Generator script will be injected here -->
-<script src="matrix-generator.js"></script>
+<script>
+(function() {
+  'use strict';
+  const output = document.getElementById("output");
+  const entries = document.getElementById("entity-entries");
+  const urlInput = document.getElementById("matrix-url");
+
+  const defaultConfigs = [
+    { primary: "temperature", primaryEntity: "weather.nowcast", secondary: "feels_like", secondaryEntity: "sensor.feels_like", tempUnit: "F" },
+    { primary: "lock", primaryEntity: "lock.front_door_lock", secondary: "none", secondaryEntity: "", tempUnit: "F" },
+    { primary: "co2", primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc", secondaryEntity: "sensor.brandon_air_1_sen55_voc", tempUnit: "F" },
+    { primary: "ping", primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo", tempUnit: "F" }
+  ];
+
+  for (let i = 0; i < 4; i++) {
+    const def = defaultConfigs[i];
+    const fieldset = document.createElement("fieldset");
+    fieldset.innerHTML = `
+      <legend>Segment ${i}</legend>
+      <label>Primary Data Type:
+        <input type="text" name="primary" value="${def.primary}" data-id="${i}">
+      </label>
+      <label>Primary Entity ID:
+        <input type="text" name="primaryEntity" value="${def.primaryEntity}" placeholder="e.g., sensor.living_room_temperature" data-id="${i}">
+      </label>
+      <label>Secondary Data Type:
+        <input type="text" name="secondary" value="${def.secondary}" data-id="${i}">
+      </label>
+      <label>Secondary Entity ID:
+        <input type="text" name="secondaryEntity" value="${def.secondaryEntity}" placeholder="e.g., sensor.feels_like" data-id="${i}">
+      </label>
+      <label>Temperature Unit:
+        <select name="tempunit" data-id="${i}">
+          <option value="F"${def.tempUnit === 'F' ? ' selected' : ''}>Fahrenheit (°F)</option>
+          <option value="C"${def.tempUnit === 'C' ? ' selected' : ''}>Celsius (°C)</option>
+        </select>
+      </label>
+      <label>Custom Template:
+        <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter custom Jinja template (e.g., {{ states('sensor.custom') }} units)"></textarea>
+      </label>
+    `;
+    entries.appendChild(fieldset);
+  }
+
+  function updateYAML() {
+    const defaultFX = 122;
+    const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
+      const primaryType = fs.querySelector('input[name="primary"]').value;
+      const primaryEntity = fs.querySelector('input[name="primaryEntity"]').value.trim();
+      const secondaryType = fs.querySelector('input[name="secondary"]').value;
+      const secondaryEntity = fs.querySelector('input[name="secondaryEntity"]').value.trim();
+      const tempUnit = fs.querySelector('select[name="tempunit"]')?.value || "F";
+      const custom = fs.querySelector('textarea[name="custom"]').value.trim();
+
+      if (!primaryEntity && primaryType !== 'custom') return null;
+
+      let template = primaryType + ':' + primaryEntity;
+      if (secondaryType !== 'none' && secondaryEntity) {
+        template += ' | ' + secondaryType + ':' + secondaryEntity;
+      }
+      if (custom) {
+        template += ' ' + custom;
+      }
+
+      template = template.replace(/"/g, '\\"');
+      return `      {
+        "id": ${i},
+        "fx": ${defaultFX},
+        "n": "${template}"
+      }`;
+    }).filter(Boolean);
+
+    const yaml = `rest_command:
+  matrix_all_segments:
+    url: ${urlInput.value.trim()}/json/state
+    content_type: 'application/json'
+    verify_ssl: false
+    method: 'post'
+    timeout: 20
+    payload: >
+      {
+        "seg":[
+${segments.join(",\n")}
+        ]
+      }`;
+
+    output.textContent = yaml;
+  }
+
+  entries.querySelectorAll("input, select, textarea").forEach(el => {
+    el.addEventListener("input", updateYAML);
+    el.addEventListener("change", updateYAML);
+  });
+  urlInput.addEventListener("input", updateYAML);
+  urlInput.addEventListener("change", updateYAML);
+
+  window.copyYAML = function() {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(output.textContent).then(() => {
+        alert("YAML copied to clipboard!");
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+        fallbackCopy();
+      });
+    } else {
+      fallbackCopy();
+    }
+  };
+
+  function fallbackCopy() {
+    const textArea = document.createElement("textarea");
+    textArea.value = output.textContent;
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      alert("YAML copied to clipboard!");
+    } catch (err) {
+      alert("Copy failed. Please manually select and copy the text.");
+    }
+    document.body.removeChild(textArea);
+  }
+
+  updateYAML();
+})();
+</script>
 
 <style>
   form, fieldset, input, select, textarea, button {
     font-family: inherit;
     font-size: 1rem;
   }
-
   fieldset {
     background: #f9f9f9;
     border: 1px solid #cce0ff;
@@ -69,20 +193,17 @@
     padding: 1em;
     margin-bottom: 1em;
   }
-
   legend {
     color: #1e88e5;
     font-weight: bold;
     padding: 0 0.5em;
   }
-
   label {
     display: block;
     margin: 0.5em 0 0.25em;
     font-weight: 500;
     color: #1e88e5;
   }
-
   input, select, textarea {
     width: 100%;
     max-width: 100%;
@@ -91,7 +212,6 @@
     border-radius: 6px;
     box-sizing: border-box;
   }
-
   button {
     background-color: #1e88e5;
     color: white;
@@ -101,11 +221,9 @@
     cursor: pointer;
     margin-top: 1em;
   }
-
   button:hover {
     background-color: #0d6fd3;
   }
-
   pre {
     background: #1e1e1e;
     color: #dcdcdc;
@@ -116,12 +234,10 @@
     white-space: pre-wrap;
     word-wrap: break-word;
   }
-
   .copy-button {
     margin-top: 0.5em;
     margin-bottom: 1em;
   }
 </style>
-
 </body>
 </html>
