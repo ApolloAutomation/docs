@@ -68,29 +68,31 @@
 <button onclick="copyYAML()">📋 Copy to Clipboard</button>
 
 <script>
-const defaultFX = 122;
-const output = document.getElementById("output");
-const entries = document.getElementById("entity-entries");
+document.addEventListener("DOMContentLoaded", function() {
+  const defaultFX = 122;
+  const output = document.getElementById("output");
+  const entries = document.getElementById("entity-entries");
 
-const defaultConfigs = [
-  { type: "weather", entity: "weather.nowcast" },
-  { type: "lock", entity: "lock.front_door_lock" },
-  { type: "air", entity: "sensor.brandon_air_1_co2" },
-  { type: "ping_alarm", entity: "sensor.1_1_1_1_round_trip_time_average" }
-];
+  const defaultConfigs = [
+    { type: "weather", entity: "weather.nowcast" },
+    { type: "lock", entity: "lock.front_door_lock" },
+    { type: "air", entity: "sensor.brandon_air_1_co2" },
+    { type: "ping_alarm", entity: "sensor.1_1_1_1_round_trip_time_average" }
+  ];
 
-for (let i = 0; i < 4; i++) {
-  const def = defaultConfigs[i];
-  const div = document.createElement("div");
-  div.innerHTML = `
-    <fieldset>
+  console.log("Populating segments...");
+
+  for (let i = 0; i < 4; i++) {
+    const def = defaultConfigs[i];
+    const fieldset = document.createElement("fieldset");
+    fieldset.innerHTML = `
       <legend style="color:#1e88e5;">Segment ${i}</legend>
       <label>Format:
         <select name="type" data-id="${i}">
-          <option value="weather">Weather + Feels Like</option>
-          <option value="lock">Lock (Locked/Unlocked)</option>
-          <option value="air">CO2 + VOC</option>
-          <option value="ping_alarm">Ping + Alarm</option>
+          <option value="weather"${def.type === 'weather' ? ' selected' : ''}>Weather + Feels Like</option>
+          <option value="lock"${def.type === 'lock' ? ' selected' : ''}>Lock (Locked/Unlocked)</option>
+          <option value="air"${def.type === 'air' ? ' selected' : ''}>CO2 + VOC</option>
+          <option value="ping_alarm"${def.type === 'ping_alarm' ? ' selected' : ''}>Ping + Alarm</option>
           <option value="custom">Custom Jinja</option>
         </select>
       </label>
@@ -100,54 +102,54 @@ for (let i = 0; i < 4; i++) {
       <label>Custom Template (only used for 'Custom Jinja'):
         <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter full Jinja template here"></textarea>
       </label>
-    </fieldset>
-  `;
-  entries.appendChild(div);
-}
-
-entries.querySelectorAll("input, select, textarea").forEach(el => {
-  el.addEventListener("input", updateYAML);
-  el.addEventListener("change", updateYAML);
-});
-
-function formatTemplate(entity, type) {
-  switch (type) {
-    case "weather":
-      return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('sensor.feels_like') | round(0) | int }}F`;
-    case "lock":
-      return `{{ states('${entity}') == 'locked' and 'Front Door Locked' or 'Front Door Unlocked' }}`;
-    case "air":
-      return `CO2 {{ states('${entity}') | int }}ppm VOC {{ states('sensor.brandon_air_1_sen55_voc') | int }}ppm`;
-    case "ping_alarm":
-      return `Ping {{ states('${entity}') | float | round(0) | int }}ms {{ states('alarm_control_panel.alarmo') | title }}`;
-    default:
-      return "";
+    `;
+    entries.appendChild(fieldset);
   }
-}
 
-function updateYAML() {
-  const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
-    const type = fs.querySelector('select[name="type"]').value;
-    const entity = fs.querySelector('input[name="entity"]').value.trim();
-    const custom = fs.querySelector('textarea[name="custom"]').value.trim();
-    if (!entity && type !== 'custom') return null;
+  entries.querySelectorAll("input, select, textarea").forEach(el => {
+    el.addEventListener("input", updateYAML);
+    el.addEventListener("change", updateYAML);
+  });
 
-    let template = "";
-    if (type === "custom" && custom) {
-      template = custom;
-    } else {
-      template = formatTemplate(entity, type);
+  function formatTemplate(entity, type) {
+    switch (type) {
+      case "weather":
+        return `{{ state_attr('${entity}','temperature') }}F {{ states('${entity}') | title }} FL: {{ states('sensor.feels_like') | round(0) | int }}F`;
+      case "lock":
+        return `{{ states('${entity}') == 'locked' and 'Front Door Locked' or 'Front Door Unlocked' }}`;
+      case "air":
+        return `CO2 {{ states('${entity}') | int }}ppm VOC {{ states('sensor.brandon_air_1_sen55_voc') | int }}ppm`;
+      case "ping_alarm":
+        return `Ping {{ states('${entity}') | float | round(0) | int }}ms {{ states('alarm_control_panel.alarmo') | title }}`;
+      default:
+        return "";
     }
+  }
 
-    template = template.replace(/"/g, '\\"');
-    return `      {
+  function updateYAML() {
+    console.log("Updating YAML...");
+    const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
+      const type = fs.querySelector('select[name="type"]').value;
+      const entity = fs.querySelector('input[name="entity"]').value.trim();
+      const custom = fs.querySelector('textarea[name="custom"]').value.trim();
+      if (!entity && type !== 'custom') return null;
+
+      let template = "";
+      if (type === "custom" && custom) {
+        template = custom;
+      } else {
+        template = formatTemplate(entity, type);
+      }
+
+      template = template.replace(/"/g, '\\"');
+      return `      {
         "id": ${i},
         "fx": ${defaultFX},
         "n": "${template}"
       }`;
-  }).filter(Boolean);
+    }).filter(Boolean);
 
-  const yaml = `rest_command:
+    const yaml = `rest_command:
   matrix_all_segments:
     url: http://apollo-matrix-2.local/json/state
     content_type: 'application/json'
@@ -162,14 +164,15 @@ ${segments.join(",
         ]
       }`;
 
-  output.textContent = yaml;
-}
+    output.textContent = yaml;
+  }
 
-function copyYAML() {
-  navigator.clipboard.writeText(output.textContent).then(() => {
-    alert("YAML copied to clipboard!");
-  });
-}
+  function copyYAML() {
+    navigator.clipboard.writeText(output.textContent).then(() => {
+      alert("YAML copied to clipboard!");
+    });
+  }
 
-updateYAML();
+  updateYAML();
+});
 </script>
