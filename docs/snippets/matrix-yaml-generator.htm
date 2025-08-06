@@ -13,21 +13,18 @@
     <li>Use the search box to find your device/sensor</li>
     <li>Copy the <strong>Entity ID</strong> (e.g., <code>sensor.living_room_temperature</code>)</li>
   </ol>
-  
   <p style="margin-bottom: 0.5em;"><strong>Method 2 - Settings:</strong></p>
   <ol style="margin: 0 0 1em 1.5em;">
     <li>Go to <strong>Settings</strong> → <strong>Devices & Services</strong> → <strong>Entities</strong></li>
     <li>Search for your device or use filters</li>
     <li>Click on the entity to see its full ID</li>
   </ol>
-  
   <p style="margin-bottom: 0.5em;"><strong>Method 3 - Device Page (Easiest):</strong></p>
   <ol style="margin: 0 0 1em 1.5em;">
     <li>Go to <strong>Settings</strong> → <strong>Devices & Services</strong> → <strong>Devices</strong></li>
     <li>Click on your device</li>
     <li>All entity IDs for that device will be listed</li>
   </ol>
-  
   <p style="margin: 0; font-size: 0.9em; color: #666;"><strong>💡 Tip:</strong> Entity IDs follow the format <code>domain.device_name</code> (like <code>sensor.outdoor_temperature</code> or <code>weather.home</code>)</p>
 </div>
 
@@ -56,7 +53,6 @@
   }
   input, select, textarea {
     width: 100%;
-    max-width: 100%;
     padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -94,10 +90,10 @@
   <fieldset>
     <legend style="color:#1e88e5;">Device Configuration</legend>
     <label>Apollo Matrix URL:
-      <input type="text" id="matrix-url" value="http://apollo-matrix.local" placeholder="e.g., http://192.168.1.100 or http://apollo-matrix.local">
+      <input type="text" id="matrix-url" value="http://apollo-matrix.local" placeholder="e.g., http://192.168.1.100">
     </label>
     <p style="font-size: 0.9em; color: #666; margin: 0.5em 0 0 0;">
-      💡 Enter your Apollo Matrix device's IP address or hostname. If you need help finding the IP or hostname, <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" style="color: #1e88e5; text-decoration: underline;">click here</a>.
+      💡 Enter your Apollo Matrix device's IP or hostname. <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" style="color:#1e88e5;">Help</a>
     </p>
   </fieldset>
   <div id="entity-entries"></div>
@@ -118,7 +114,7 @@
       humidity: 'Humidity',
       pressure: 'Pressure',
       weather_condition: 'Weather',
-      co2: 'CO₂',
+      co2: 'CO2',
       voc: 'VOC',
       pm25: 'PM2.5',
       lock: 'Lock',
@@ -202,34 +198,34 @@
         <label>Primary Data Type:
           <select name="primary" data-id="${i}">
             ${["temperature","humidity","pressure","weather_condition","feels_like","co2","voc","pm25","lock","ping","alarm","motion","door","light","battery","power","custom"]
-              .map(v => `<option value="${v}"${def.primary===v?' selected':''}>${dataTypeLabel(v) || v.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</option>`)
+              .map(v => `<option value="${v}"${def.primary===v?' selected':''}>${dataTypeLabel(v) || v}</option>`)
               .join('')}
           </select>
         </label>
         <label>Primary Entity ID:
-          <input type="text" name="primaryEntity" value="${def.primaryEntity}" placeholder="e.g., sensor.living_room_temperature" data-id="${i}">
+          <input type="text" name="primaryEntity" value="${def.primaryEntity}" data-id="${i}">
         </label>
         <label>Secondary Data Type:
           <select name="secondary" data-id="${i}">
             ${["none","temperature","humidity","pressure","weather_condition","feels_like","co2","voc","pm25","lock","ping","alarm","motion","door","light","battery","power","custom"]
-              .map(v => `<option value="${v}"${def.secondary===v?' selected':''}>${v==='none'?'None':dataTypeLabel(v) || v.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</option>`)
+              .map(v => `<option value="${v}"${def.secondary===v?' selected':''}>${v}</option>`)
               .join('')}
           </select>
         </label>
         <label class="secondary-entity" style="display:${def.secondary!=='none'?'block':'none'};">
           Secondary Entity ID:
-          <input type="text" name="secondaryEntity" value="${def.secondaryEntity}" placeholder="e.g., sensor.feels_like" data-id="${i}">
+          <input type="text" name="secondaryEntity" value="${def.secondaryEntity}" data-id="${i}">
         </label>
         <label class="temp-unit" style="display:${/^(temperature|feels_like)$/.test(def.primary)||/^(temperature|feels_like)$/.test(def.secondary)?'block':'none'};">
           Temperature Unit:
           <select name="tempunit" data-id="${i}">
-            <option value="F"${def.tempUnit==='F'?' selected':''}>Fahrenheit (°F)</option>
-            <option value="C"${def.tempUnit==='C'?' selected':''}>Celsius (°C)</option>
+            <option value="F"${def.tempUnit==='F'?' selected':''}>Fahrenheit</option>
+            <option value="C"${def.tempUnit==='C'?' selected':''}>Celsius</option>
           </select>
         </label>
         <label class="custom-template" style="display:${(def.primary==='custom'||def.secondary==='custom')?'block':'none'};">
           Custom Template:
-          <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter custom Jinja template"></textarea>
+          <textarea name="custom" data-id="${i}"></textarea>
         </label>
       `;
       entries.appendChild(fs);
@@ -243,7 +239,7 @@
     urlInput.addEventListener("change", updateYAML);
 
     function updateYAML() {
-      const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
+      const blocks = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
         const pType   = fs.querySelector("select[name=primary]").value;
         const pEntRaw = fs.querySelector("input[name=primaryEntity]").value.trim();
         const sType   = fs.querySelector("select[name=secondary]").value;
@@ -252,56 +248,48 @@
         const custom  = fs.querySelector("textarea[name=custom]").value.trim();
 
         const pEnt = pEntRaw || defaultConfigs[i].primaryEntity;
-        const sEnt = sType !== "none"
-          ? (sEntRaw || defaultConfigs[i].secondaryEntity)
-          : "";
+        const sEnt = sType !== "none" ? (sEntRaw || defaultConfigs[i].secondaryEntity) : "";
 
+        // build the display string
         const parts = [];
 
-        // Primary
-        if (pType === "custom" && custom) {
-          parts.push(custom);
-        } else if (pType === "lock") {
+        if (pType === "lock") {
           const name = deriveName(pEnt);
           parts.push(`{{ states('${pEnt}') == 'locked' and '${name} Locked' or '${name} Unlocked' }}`);
-        } else if (pType === "door") {
-          const name = deriveName(pEnt);
-          parts.push(`{{ states('${pEnt}') == 'on' and '${name} Sensor Open' or '${name} Sensor Closed' }}`);
-        } else {
-          const val   = formatDataType(pEnt, pType, unit);
-          const label = dataTypeLabel(pType);
-          if (label === "Temp" || label === "Alarm") {
-            parts.push(`${label} ${val}`);      // no colon
-          } else if (label) {
-            parts.push(`${label}: ${val}`);
-          } else {
-            parts.push(val);
-          }
-        }
-
-        // Secondary
-        if (sType === "custom" && custom) {
+        } else if (pType === "custom" && custom) {
           parts.push(custom);
-        } else if (sType === "lock") {
-          const name = deriveName(sEnt);
-          parts.push(`{{ states('${sEnt}') == 'locked' and '${name} Locked' or '${name} Unlocked' }}`);
-        } else if (sType === "door") {
-          const name = deriveName(sEnt);
-          parts.push(`{{ states('${sEnt}') == 'on' and '${name} Sensor Open' or '${name} Sensor Closed' }}`);
-        } else if (sType !== "none") {
-          const val   = formatDataType(sEnt, sType, unit);
-          const label = dataTypeLabel(sType);
+        } else {
+          const label = dataTypeLabel(pType);
+          const val   = formatDataType(pEnt, pType, unit);
+          // temp & alarm have no colon
           if (label === "Temp" || label === "Alarm") {
-            parts.push(`${label} ${val}`);      // no colon
-          } else if (label) {
-            parts.push(`${label}: ${val}`);
+            parts.push(`${label} ${val}`);
           } else {
-            parts.push(val);
+            parts.push(`${label}: ${val}`);
           }
         }
 
-        const tpl = parts.join(" ").replace(/"/g, '\\"');
-        return `      { "id": ${i}, "fx": ${defaultFX}, "n": "${tpl}" }`;
+        if (sType === "voc" && pType === "co2") {
+          parts.push(`VOC ${formatDataType(sEnt, "voc", unit)}`);
+        } else if (sType !== "none") {
+          const label = dataTypeLabel(sType);
+          const val   = formatDataType(sEnt, sType, unit);
+          if (label === "Temp" || label === "Alarm") {
+            parts.push(`${label} ${val}`);
+          } else {
+            parts.push(`${label}: ${val}`);
+          }
+        }
+
+        const line = parts.join(" ").replace(/"/g, '\\"');
+
+        return [
+          '          {',
+          `            "id": ${i},`,
+          `            "fx": ${defaultFX},`,
+          `            "n": "${line}"`,
+          '          }'
+        ].join('\n');
       });
 
       output.textContent = `rest_command:
@@ -314,14 +302,14 @@
     payload: >
       {
         "seg":[
-${segments.join(",\n")}
+${blocks.join(',\n')}
         ]
       }`;
     }
 
     window.copyYAML = function() {
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(output.textContent).then(() => alert("YAML copied!"), () => fallbackCopy());
+        navigator.clipboard.writeText(output.textContent).catch(fallbackCopy);
       } else {
         fallbackCopy();
       }
@@ -331,8 +319,7 @@ ${segments.join(",\n")}
       ta.value = output.textContent;
       document.body.appendChild(ta);
       ta.select();
-      try { document.execCommand("copy"); alert("Copied!"); }
-      catch { alert("Copy failed"); }
+      try { document.execCommand("copy"); } catch {}
       document.body.removeChild(ta);
     }
 
