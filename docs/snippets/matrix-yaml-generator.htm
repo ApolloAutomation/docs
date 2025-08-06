@@ -1,5 +1,5 @@
 
-<h2 style="color:#1e88e5; display: flex; align-items: center; gap: 10px;"><img src="/assets/yaml-generator-apollo-logo-small.png" alt="Apollo Automation Logo" style="height: 32px;">Apollo Automation M-1 LED Matrix YAML Generator</h2>
+<h2 style="color:#1e88e5; display: flex; align-items: center; gap: 10px;"><img src="yaml-generator-apollo-logo-small.png" alt="Apollo Automation Logo" style="height: 32px;">Apollo Automation M-1 LED Matrix YAML Generator</h2>
 <p style="font-size: 1rem; color: #333;">Use this generator to build a fully templated <code>rest_command</code> for your Apollo Automation M-1 Matrix display. Each segment can show real-time data from Home Assistant.</p>
 
 <style>
@@ -136,7 +136,7 @@ function updateYAML() {
       template = formatTemplate(entity, type);
     }
 
-    template = template.replace(/"/g, '\"');
+    template = template.replace(/"/g, '\\"');
     return `      {
         "id": ${i},
         "fx": ${defaultFX},
