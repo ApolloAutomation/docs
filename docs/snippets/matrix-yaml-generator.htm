@@ -111,7 +111,6 @@
 (function() {
   'use strict';
 
-  // Human-readable labels for data types
   function dataTypeLabel(type) {
     const labels = {
       temperature: 'Temp',
@@ -134,9 +133,8 @@
     return labels[type] || '';
   }
 
-  // Format raw entity state/value
   function formatDataType(entity, dataType, tempUnit = "F") {
-    if (!entity.trim()) return "";
+    if (!entity) return '';
     switch (dataType) {
       case "temperature":
         return tempUnit === "C"
@@ -157,16 +155,12 @@
         return `{{ states('${entity}') | int }}ppm`;
       case "pm25":
         return `{{ states('${entity}') | round(1) }}μg/m³`;
-      case "lock":
-        return `{{ states('${entity}') == 'locked' and 'Locked' or 'Unlocked' }}`;
       case "ping":
         return `{{ states('${entity}') | float | round(0) | int }}ms`;
       case "alarm":
         return `{{ states('${entity}') | title }}`;
       case "motion":
         return `{{ states('${entity}') == 'on' and 'Motion' or 'Clear' }}`;
-      case "door":
-        return `{{ states('${entity}') == 'on' and 'Open' or 'Closed' }}`;
       case "light":
         return `{{ states('${entity}') | round(0) | int }}lx`;
       case "battery":
@@ -174,30 +168,23 @@
       case "power":
         return `{{ states('${entity}') | round(1) }}W`;
       default:
-        return "";
+        return '';
     }
   }
 
-  // Smart separators
-  function getSeparator(a, b) {
-    if ((a === "co2" && b === "voc") || (a === "voc" && b === "co2") ||
-        (a === "ping" && b === "alarm") || (a === "alarm" && b === "ping")) {
-      return " ";
-    }
-    if ((a === "temperature" || a === "feels_like") &&
-        (b === "temperature" || b === "feels_like")) {
-      return " FL: ";
-    }
-    return " ";
+  function deriveName(entity) {
+    return entity.split('.').pop()
+      .replace(/_lock$/, '')
+      .replace(/_sensor$/, '')
+      .replace(/_/g, ' ')
+      .replace(/\b\w/g, m => m.toUpperCase());
   }
 
   function initializeGenerator() {
-    console.log("Initializing Apollo Matrix YAML Generator...");
-
     const defaultFX = 122;
     const defaultConfigs = [
       { primary: "temperature", primaryEntity: "weather.nowcast", secondary: "feels_like", secondaryEntity: "sensor.feels_like", tempUnit: "F" },
-      { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "none",      secondaryEntity: "",                   tempUnit: "F" },
+      { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "none",      secondaryEntity: "",                          tempUnit: "F" },
       { primary: "co2",         primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc",       secondaryEntity: "sensor.brandon_air_1_sen55_voc", tempUnit: "F" },
       { primary: "ping",        primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo", tempUnit: "F" }
     ];
@@ -208,17 +195,15 @@
     if (!output || !entries || !urlInput) return;
     if (entries.hasChildNodes()) return;
 
-    // Build fields
-    for (let i = 0; i < 4; i++) {
-      const def = defaultConfigs[i];
-      const fs  = document.createElement("fieldset");
+    defaultConfigs.forEach((def, i) => {
+      const fs = document.createElement("fieldset");
       fs.innerHTML = `
         <legend>Segment ${i}</legend>
         <label>Primary Data Type:
           <select name="primary" data-id="${i}">
             ${["temperature","humidity","pressure","weather_condition","feels_like","co2","voc","pm25","lock","ping","alarm","motion","door","light","battery","power","custom"]
-              .map(v => `<option value="${v}"${def.primary===v?' selected':''}>${dataTypeLabel(v)||v.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</option>`)
-              .join("")}
+              .map(v => `<option value="${v}"${def.primary===v?' selected':''}>${dataTypeLabel(v) || v.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</option>`)
+              .join('')}
           </select>
         </label>
         <label>Primary Entity ID:
@@ -227,11 +212,11 @@
         <label>Secondary Data Type:
           <select name="secondary" data-id="${i}">
             ${["none","temperature","humidity","pressure","weather_condition","feels_like","co2","voc","pm25","lock","ping","alarm","motion","door","light","battery","power","custom"]
-              .map(v => `<option value="${v}"${def.secondary===v?' selected':''}>${v==='none'?'None':dataTypeLabel(v)||v.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</option>`)
-              .join("")}
+              .map(v => `<option value="${v}"${def.secondary===v?' selected':''}>${v==='none'?'None':dataTypeLabel(v) || v.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</option>`)
+              .join('')}
           </select>
         </label>
-        <label class="secondary-entity" style="display:${def.secondary!=='none'||i===1?'block':'none'};">
+        <label class="secondary-entity" style="display:${def.secondary!=='none'?'block':'none'};">
           Secondary Entity ID:
           <input type="text" name="secondaryEntity" value="${def.secondaryEntity}" placeholder="e.g., sensor.feels_like" data-id="${i}">
         </label>
@@ -244,13 +229,12 @@
         </label>
         <label class="custom-template" style="display:${(def.primary==='custom'||def.secondary==='custom')?'block':'none'};">
           Custom Template:
-          <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter custom Jinja template (e.g., {{ states('sensor.custom') }} units)"></textarea>
+          <textarea name="custom" rows="2" cols="60" data-id="${i}" placeholder="Enter custom Jinja template"></textarea>
         </label>
       `;
       entries.appendChild(fs);
-    }
+    });
 
-    // Listeners
     entries.querySelectorAll("input, select, textarea").forEach(el => {
       el.addEventListener("input", updateYAML);
       el.addEventListener("change", updateYAML);
@@ -258,74 +242,66 @@
     urlInput.addEventListener("input", updateYAML);
     urlInput.addEventListener("change", updateYAML);
 
-    // Generate YAML with fallback for segment 1
     function updateYAML() {
-      console.log("Updating YAML...");
       const segments = Array.from(entries.querySelectorAll("fieldset")).map((fs, i) => {
-        const pTypeRaw = fs.querySelector('select[name="primary"]').value;
-        const pEntRaw  = fs.querySelector('input[name="primaryEntity"]').value.trim();
-        const sType    = fs.querySelector('select[name="secondary"]').value;
-        const sEntRaw  = fs.querySelector('input[name="secondaryEntity"]').value.trim();
-        const unit     = fs.querySelector('select[name="tempunit"]')?.value || "F";
-        const custom   = fs.querySelector('textarea[name="custom"]')?.value.trim() || "";
+        const pType   = fs.querySelector("select[name=primary]").value;
+        const pEntRaw = fs.querySelector("input[name=primaryEntity]").value.trim();
+        const sType   = fs.querySelector("select[name=secondary]").value;
+        const sEntRaw = fs.querySelector("input[name=secondaryEntity]").value.trim();
+        const unit    = fs.querySelector("select[name=tempunit]")?.value || "F";
+        const custom  = fs.querySelector("textarea[name=custom]").value.trim();
 
-        // Fallback to defaultConfigs for missing primary/secondary
         const pEnt = pEntRaw || defaultConfigs[i].primaryEntity;
-        const sEnt = (sType !== "none") ? (sEntRaw || defaultConfigs[i].secondaryEntity) : "";
+        const sEnt = sType !== "none"
+          ? (sEntRaw || defaultConfigs[i].secondaryEntity)
+          : "";
 
-        let tpl = "";
+        const parts = [];
 
-        if (pTypeRaw === "lock") {
-          const name = pEnt.split('.').pop()
-                        .replace(/_lock$/, "")
-                        .replace(/_/g, " ")
-                        .replace(/\b\w/g, m => m.toUpperCase());
-          tpl = `{{ states('${pEnt}') == 'locked' and '${name} Locked' or '${name} Unlocked' }}`;
-        }
-        else if (pTypeRaw === "door") {
-          const name = pEnt.split('.').pop()
-                        .replace(/_sensor$/, "")
-                        .replace(/_/g, " ")
-                        .replace(/\b\w/g, m => m.toUpperCase());
-          tpl = `{{ states('${pEnt}') == 'on' and '${name} Sensor Open' or '${name} Sensor Closed' }}`;
-        }
-        else if (pTypeRaw === "co2" && sType === "voc") {
-          tpl = `{{ states('${pEnt}') | int }}ppm {{ states('${sEnt}') | int }}ppm`;
-        }
-        else {
-          let pVal = (pTypeRaw === "custom" && custom)
-                     ? custom
-                     : formatDataType(pEnt, pTypeRaw, unit);
-          let sVal = (sType === "custom" && custom && pTypeRaw !== "custom")
-                     ? custom
-                     : (sType !== "none" ? formatDataType(sEnt, sType, unit) : "");
-
-          if (pTypeRaw !== "custom" && pVal) {
-            const lbl = dataTypeLabel(pTypeRaw);
-            if (lbl) pVal = `${lbl}: ${pVal}`;
-          }
-          if (sType !== "custom" && sType !== "none" && sVal) {
-            const lbl = dataTypeLabel(sType);
-            if (lbl) sVal = `${lbl}: ${sVal}`;
-          }
-
-          if (pTypeRaw === "custom") {
-            tpl = custom;
-          } else if (sType === "custom" && custom) {
-            tpl = `${pVal} ${custom}`;
+        // Primary
+        if (pType === "custom" && custom) {
+          parts.push(custom);
+        } else if (pType === "lock") {
+          const name = deriveName(pEnt);
+          parts.push(`{{ states('${pEnt}') == 'locked' and '${name} Locked' or '${name} Unlocked' }}`);
+        } else if (pType === "door") {
+          const name = deriveName(pEnt);
+          parts.push(`{{ states('${pEnt}') == 'on' and '${name} Sensor Open' or '${name} Sensor Closed' }}`);
+        } else {
+          const val   = formatDataType(pEnt, pType, unit);
+          const label = dataTypeLabel(pType);
+          if (label === "Temp" || label === "Alarm") {
+            parts.push(`${label} ${val}`);      // no colon
+          } else if (label) {
+            parts.push(`${label}: ${val}`);
           } else {
-            tpl = sVal
-              ? `${pVal}${getSeparator(pTypeRaw, sType)}${sVal}`
-              : pVal;
+            parts.push(val);
           }
         }
 
-        tpl = tpl.replace(/"/g, '\\"');
-        return `      {
-        "id": ${i},
-        "fx": ${defaultFX},
-        "n": "${tpl}"
-      }`;
+        // Secondary
+        if (sType === "custom" && custom) {
+          parts.push(custom);
+        } else if (sType === "lock") {
+          const name = deriveName(sEnt);
+          parts.push(`{{ states('${sEnt}') == 'locked' and '${name} Locked' or '${name} Unlocked' }}`);
+        } else if (sType === "door") {
+          const name = deriveName(sEnt);
+          parts.push(`{{ states('${sEnt}') == 'on' and '${name} Sensor Open' or '${name} Sensor Closed' }}`);
+        } else if (sType !== "none") {
+          const val   = formatDataType(sEnt, sType, unit);
+          const label = dataTypeLabel(sType);
+          if (label === "Temp" || label === "Alarm") {
+            parts.push(`${label} ${val}`);      // no colon
+          } else if (label) {
+            parts.push(`${label}: ${val}`);
+          } else {
+            parts.push(val);
+          }
+        }
+
+        const tpl = parts.join(" ").replace(/"/g, '\\"');
+        return `      { "id": ${i}, "fx": ${defaultFX}, "n": "${tpl}" }`;
       });
 
       output.textContent = `rest_command:
@@ -343,10 +319,9 @@ ${segments.join(",\n")}
       }`;
     }
 
-    // Copy helper
     window.copyYAML = function() {
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(output.textContent).then(() => alert("YAML copied!"), fallbackCopy);
+        navigator.clipboard.writeText(output.textContent).then(() => alert("YAML copied!"), () => fallbackCopy());
       } else {
         fallbackCopy();
       }
@@ -356,19 +331,16 @@ ${segments.join(",\n")}
       ta.value = output.textContent;
       document.body.appendChild(ta);
       ta.select();
-      try { document.execCommand('copy'); alert("Copied!"); }
+      try { document.execCommand("copy"); alert("Copied!"); }
       catch { alert("Copy failed"); }
       document.body.removeChild(ta);
     }
 
-    // Initial render
     updateYAML();
-    console.log("Generator initialized successfully");
   }
 
-  // Init on load
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeGenerator);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeGenerator);
   } else {
     initializeGenerator();
   }
