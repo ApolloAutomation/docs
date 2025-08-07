@@ -24,22 +24,20 @@ The <a href="https://www.home-assistant.io/integrations/wled/" target="_blank" r
 
 2\. Fill in the YAML generator below with your own entity IDs. When you are done, click **Copy to Clipboard** at the bottom then move to step 3.
 
-&nbsp;
-
 <iframe src="/snippets/matrix-yaml-generator.htm" width="100%" height="700" style="border: 1px solid #ccc; border-radius: 6px;"></iframe>
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 3\. Head back to the configuration.yaml file you opened in step 1 and paste your yaml generated on to a new line at the bottom of the YAML file.
 
-&nbsp;
+![](../../../assets/m-1-matrix-automation-example-yaml.png)
 
 4\. Click on **Developer Tools** then Check Configuration - as long as there is a green response you are safe to continue. Scroll down and click on **Restful Command**. Click Actions at the top and type in "matrix" then click on the new matrix command you just made and click **Perform Action**.
 
 ![](../../../assets/m1-config-check-restful-actions-gif.gif)
 
-5\. Create an **Automation** that
+5\. Create a new **Automation** that uses a time pattern trigger to trigger every minute.
+
+![](../../../assets/m-1-matrix-automation-example-trigger.gif)
+
+6\. Create an **Action** aka "Then do" and type in *matrix* then click the "RESTful command: matrix\_all\_segments" option. Click **Save** and name the automation when you are done. This will make the matrix update every 1 minute!
+
+![](../../../assets/m-1-matrix-automation-example-action.gif)
