@@ -70,4 +70,8 @@ Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and 
 
 Click on **Config**, then **AudioReactive**. Check **Enabled** then select **16 digitalmic** for Pin I2s SD, select **6 digitalmic A5** for Pin I2S WS, and select **7 digitalmic** for Pin I2S SCK and click **Save**.
 
-![](../../../assets/m-1-audioreactive-settings.gif)
+Scroll to the bottom of the **AudioReactive** settings and set the **Mode** to **Off** and click **Save**.
+
+![](../../../assets/m-1-audio-reactive-mode-off.png)
+
+&nbsp;
