@@ -132,34 +132,10 @@
   function initializeGenerator() {
     const defaultFX = 122;
     const defaultConfigs = [
-      {
-        primary: "temperature",
-        primaryEntity: "weather.nowcast",
-        secondary: "feels_like",
-        secondaryEntity: "sensor.feels_like",
-        tempUnit: "F"
-      },
-      {
-        primary: "lock",
-        primaryEntity: "lock.front_door_lock",
-        secondary: "door",
-        secondaryEntity: "binary_sensor.front_door_sensor_contact",
-        tempUnit: "F"
-      },
-      {
-        primary: "co2",
-        primaryEntity: "sensor.brandon_air_1_co2",
-        secondary: "voc",
-        secondaryEntity: "sensor.brandon_air_1_sen55_voc",
-        tempUnit: "F"
-      },
-      {
-        primary: "ping",
-        primaryEntity: "sensor.1_1_1_1_round_trip_time_average",
-        secondary: "alarm",
-        secondaryEntity: "alarm_control_panel.alarmo",
-        tempUnit: "F"
-      }
+      { primary: "temperature", primaryEntity: "weather.nowcast",     secondary: "feels_like", secondaryEntity: "sensor.feels_like",                  tempUnit: "F" },
+      { primary: "lock",        primaryEntity: "lock.front_door_lock", secondary: "door",       secondaryEntity: "binary_sensor.front_door_sensor_contact", tempUnit: "F" },
+      { primary: "co2",         primaryEntity: "sensor.brandon_air_1_co2", secondary: "voc",       secondaryEntity: "sensor.brandon_air_1_sen55_voc",       tempUnit: "F" },
+      { primary: "ping",        primaryEntity: "sensor.1_1_1_1_round_trip_time_average", secondary: "alarm", secondaryEntity: "alarm_control_panel.alarmo",    tempUnit: "F" }
     ];
 
     const output   = document.getElementById("output");
@@ -189,13 +165,7 @@
         </label>
         <label class="secondary-entity" style="display:${def.secondary!=='none'?'block':'none'};">
           Secondary Entity ID:
-          <input
-            type="text"
-            name="secondaryEntity"
-            value="${def.secondaryEntity}"
-            placeholder="sensor.feels_like"
-            data-id="${i}"
-          >
+          <input type="text" name="secondaryEntity" value="${def.secondaryEntity}" placeholder="sensor.feels_like" data-id="${i}">
         </label>
         <label class="temp-unit" style="display:${/^(temperature|feels_like)$/.test(def.primary)||/^(temperature|feels_like)$/.test(def.secondary)?'block':'none'};">
           Temperature Unit:
@@ -231,21 +201,24 @@
         const pEnt = pEntRaw || defaultConfigs[i].primaryEntity;
         const sEnt = sType !== "none" ? (sEntRaw || defaultConfigs[i].secondaryEntity) : "";
 
-        const parts = [];
-
-        // combined lock+door
+        let tpl;
+        // Combined lock + door: use proper HA if-else
         if (pType === "lock" && sType === "door") {
           const name = deriveName(pEnt);
-          parts.push(`{{ '${name} ' ~ (states('${sEnt}')=='on'?'Open':'Closed') ~ ' and ' ~ (states('${pEnt}')=='locked'?'Locked':'Unlocked') }}`);
+          tpl = `{{ '${name} ' ~ ('Open' if is_state('${sEnt}','on') else 'Closed') ~ ' and ' ~ ('Locked' if is_state('${pEnt}','locked') else 'Unlocked') }}`;
         }
+        // Lock only
         else if (pType === "lock") {
           const name = deriveName(pEnt);
-          parts.push(`{{ states('${pEnt}')=='locked' and '${name} Locked' or '${name} Unlocked' }}`);
+          tpl = `{{ is_state('${pEnt}','locked') and '${name} Locked' or '${name} Unlocked' }}`;
         }
+        // Custom template
         else if (pType === "custom" && custom) {
-          parts.push(custom);
+          tpl = custom;
         }
+        // Fallback others
         else {
+          const parts = [];
           const label = dataTypeLabel(pType);
           const val   = formatDataType(pEnt, pType, unit);
           if (["Temp","Alarm","CO2"].includes(label)) {
@@ -253,39 +226,28 @@
           } else {
             parts.push(`${label}: ${val}`);
           }
-        }
-
-        // secondary (skip door when combined)
-        if (!(pType==="lock"&&sType==="door")) {
-          if (sType==="voc"&&pType==="co2") {
+          if (sType === "voc" && pType === "co2") {
             parts.push(`VOC ${formatDataType(sEnt,"voc",unit)}`);
-          }
-          else if (sType==="lock") {
-            const name = deriveName(sEnt);
-            parts.push(`{{ states('${sEnt}')=='locked' and '${name} Locked' or '${name} Unlocked' }}`);
-          }
-          else if (sType==="custom"&&custom) {
+          } else if (sType === "custom" && custom) {
             parts.push(custom);
-          }
-          else if (sType!=="none") {
-            const label = dataTypeLabel(sType);
-            const val   = formatDataType(sEnt, sType, unit);
-            if (["Temp","Alarm","CO2"].includes(label)) {
-              parts.push(`${label} ${val}`);
+          } else if (sType !== "none") {
+            const sl = dataTypeLabel(sType);
+            const sv = formatDataType(sEnt, sType, unit);
+            if (["Temp","Alarm","CO2"].includes(sl)) {
+              parts.push(`${sl} ${sv}`);
             } else {
-              parts.push(`${label}: ${val}`);
+              parts.push(`${sl}: ${sv}`);
             }
           }
+          tpl = parts.join(" ");
         }
 
-        const line = parts.join(" ").replace(/"/g,'\\"');
-        return [
-          '          {',
-          `            "id": ${i},`,
-          `            "fx": ${defaultFX},`,
-          `            "n": "${line}"`,
-          '          }'
-        ].join('\n');
+        tpl = tpl.replace(/"/g, '\\"');
+        return `      {
+        "id": ${i},
+        "fx": ${defaultFX},
+        "n": "${tpl}"
+      }`;
       });
 
       output.textContent = `rest_command:
@@ -298,7 +260,7 @@
     payload: >
       {
         "seg":[
-${blocks.join(',\n')}
+${blocks.join(",\n")}
         ]
       }`;
     }
