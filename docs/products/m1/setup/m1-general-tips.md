@@ -10,6 +10,4 @@ WLED uses <a href="https://wiki.apolloautomation.com/products/m1/setup/m1-segmen
 
 Segments are also able to be used to control two panels from one controller such as making the first segment a 64x64 panel and the second segment control second 64x64 panel.
 
-The M-1 matrix is able to be controlled via the <a href="https://mm.kno.wled.ge/interfaces/json-api/" target="_blank" rel="noreferrer nofollow noopener">JSON API</a> and this allows to do some really neat things such as send data from Home Assistant to show up as "scrolling text" on your matrix. (Works best with 2 or 3 panels not 4 due to 32 characters available as scrolling text.
-
 The M-1 Matrix can be controlled using the <a href="https://mm.kno.wled.ge/interfaces/json-api/" target="_blank" rel="noreferrer nofollow noopener">JSON API</a>, allowing you to do some really cool things like sending data from Home Assistant to display as scrolling text on the matrix. (For best results, use 1 to 3 panels instead of 4, as the scrolling text supports up to 32 characters.)
