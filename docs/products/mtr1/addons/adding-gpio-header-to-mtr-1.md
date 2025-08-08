@@ -32,4 +32,4 @@ description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1
 
 ![](../../../assets/gpio-header-pinout.webp)
 
-[Click here to head to the GPIO Header LED Strip Tutorial!](https://wiki.apolloautomation.com/products/msr2/examples/gpio-header-control-an-led-strip/){ .md-button .md-button--primary }
+[Click here to head to the GPIO Header LED Strip Tutorial!](https://wiki.apolloautomation.com/products/msr2/examples/gpio-header-control-an-led-strip/){   .md-button .md-button--primary }
