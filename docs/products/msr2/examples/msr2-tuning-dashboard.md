@@ -30,7 +30,14 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 6\. Use the YAML generator below and paste the code below onto the new line you just added at the bottom of the **Raw configuration editor** in step 5.
 
-<iframe src="/snippets/msr-2-dashboard-yaml-generator.html" width="100%" height="600" style="border:0;"></iframe>
+<iframe
+  id="msr2"
+  src="/snippets/msr-2-dashboard-yaml-generator.html"
+  width="100%"
+  height="760"
+  style="border:0;"
+  loading="lazy">
+</iframe>
 
 7\.
 
