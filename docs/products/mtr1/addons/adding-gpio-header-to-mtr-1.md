@@ -32,10 +32,4 @@ description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1
 
 ![](../../../assets/gpio-header-pinout.webp)
 
-!!! ! tip "Make sure to check out our GPIO Header LED Strip Tutorial!"
-
-    Brandon AKA SmartHomeSellout made this neat tutorial for how to connect a short LED strip to your MSR-2
-
-    <a href="https://wiki.apolloautomation.com/products/msr2/examples/gpio-header-control-an-led-strip/" target="_blank" rel="noreferrer nofollow noopener">GPIO LED Strip Tutorial</a><br>
-
-&nbsp;
+[Click here to head to the GPIO Header LED Strip Tutorial!](https://wiki.apolloautomation.com/products/msr2/examples/gpio-header-control-an-led-strip/){   .md-button .md-button--primary }
