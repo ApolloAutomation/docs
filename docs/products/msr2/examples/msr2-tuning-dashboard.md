@@ -28,9 +28,11 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 ![](../../../assets/m-1-edit-dashboard-raw-config-editor-gif.gif)
 
-6\. Copy the code below and paste it on the new line you created above at the bottom of the **Raw configuration editor**.
+6\. Use the YAML generator below and paste the code below onto the new line you just added at the bottom of the **Raw configuration editor** in step 5.
 
 <iframe src="/snippets/msr-2-dashboard-yaml-generator.html" width="100%" height="600" style="border:0;"></iframe>
+
+7\.
 
 &nbsp;
 
