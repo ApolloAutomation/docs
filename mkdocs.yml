@@ -224,7 +224,7 @@ nav:
             - Outlet Mount: products/msr2/addons/msr2-outlet-mount.md
             - 90 Degree Addon: products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
           - Examples:
-            - MSR-2 Dashboards: products/msr2/examples/msr2-dashboards.md
+            - MSR-2 Tuning Dashboard: products/msr2/examples/msr2-tuning-dashboard.md
             - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
             - GPIO Header LED Strip: products/msr2/examples/gpio-header-control-an-led-strip.md
           - Troubleshooting:
