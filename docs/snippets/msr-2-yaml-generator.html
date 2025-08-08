@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MSR-2 Dashboard YAML Generator</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --border: #e2e8f0;
+      --info-bg: #eef5ff;
+      --info-border: #cfe0ff;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; margin: 0; background: var(--bg); color: var(--text); }
+    .wrap { max-width: 960px; margin: 32px auto; padding: 16px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 10px 24px rgba(2, 6, 23, 0.06); padding: 24px; }
+    h1 { margin: 0 0 12px; font-size: 20px; }
+    h2 { margin: 0 0 8px; font-size: 16px; }
+    p.sub { margin-top: 0; color: var(--muted); font-size: 14px; }
+    .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+    label { font-weight: 600; font-size: 14px; }
+    input[type="text"] { flex: 1 1 320px; min-width: 260px; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; outline: none; box-shadow: inset 0 1px 0 rgba(2,6,23,0.02); }
+    input[type="text"]:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); }
+    .btn { border: 1px solid var(--border); background: var(--card); color: var(--text); padding: 10px 14px; border-radius: 12px; cursor: pointer; transition: transform .06s ease, box-shadow .2s ease, background .2s ease; box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06); }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 14px rgba(2, 6, 23, 0.08); }
+    .btn:active { transform: translateY(0); }
+    .btn.primary { background: var(--primary); color: white; border-color: transparent; }
+    .btn.primary:hover { background: var(--primary-hover); }
+    textarea { width: 100%; height: 140px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; border: 1px solid var(--border); border-radius: 12px; padding: 12px; resize: vertical; background: #fbfdff; }
+    .footer { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 12px; }
+    .toast { position: fixed; right: 20px; bottom: 20px; background: #111827; color: #fff; padding: 10px 14px; border-radius: 12px; box-shadow: 0 10px 18px rgba(0,0,0,.15); opacity: 0; transform: translateY(10px); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .callout { background: var(--info-bg); border: 1px solid var(--info-border); border-left: 4px solid var(--primary); border-radius: 14px; padding: 14px 16px; margin: 0 0 16px; }
+    .callout ol { margin: 8px 0 8px 18px; }
+    .callout li { margin: 6px 0; }
+    code { background: #f1f5f9; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="callout">
+        <h2>🔍 How to Find Your <em>Device Name</em></h2>
+        <ol>
+          <li><strong>Method 1 — Developer Tools:</strong> In Home Assistant, go to <em>Developer Tools → States</em>. Use the search box to find your device/sensor. Click any result and copy the full ID (e.g., <code>sensor.apollo_msr_2_m4c4dd_radar_distance</code>). Your <em>device name</em> is the middle part: <code>apollo_msr_2_m4c4dd</code>.</li>
+          <li><strong>Method 2 — Settings:</strong> Go to <em>Settings → Devices & Services → Entities</em>. Search for your device or use filters. Click an entity to view its full ID and pull out the middle part (e.g., <code>apollo_msr_2_m4c4dd</code>).</li>
+          <li><strong>Method 3 — Device Page (Easiest):</strong> Go to <em>Settings → Devices & Services → Devices</em>. Click your device. The page lists all related entity IDs; from any one like <code>sensor.apollo_msr_2_m4c4dd_radar_distance</code>, the device name is <code>apollo_msr_2_m4c4dd</code>.</li>
+        </ol>
+      </div>
+
+      <h1>MSR-2 Dashboard YAML Generator</h1>
+      <p class="sub">Enter your <code>device name</code>, generate the YAML, and copy it. "Generate" will also auto-copy.</p>
+
+      <div class="row">
+        <label for="deviceBaseName">Device Name</label>
+        <input type="text" id="deviceBaseName" value="apollo_msr_2_m4c4dd" placeholder="Enter your device name" pattern="^[a-z0-9_]+$" title="Use only lowercase letters, numbers, and underscores" />
+        <button class="btn primary" id="generateBtn" title="Generate and auto-copy YAML">Generate YAML</button>
+      </div>
+
+      <textarea id="yamlOutput" readonly></textarea>
+
+      <div class="footer">
+        <button class="btn primary" id="copyBtn" title="Copy to Clipboard">📋 Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Copied to clipboard</div>
+
+  <script>
+    const toast = document.getElementById('toast');
+    const input = document.getElementById('deviceBaseName');
+
+    // #1 Input sanity + normalization
+    function sanitizeName(v) {
+      return (v || '')
+        .toLowerCase()              // force lowercase
+        .replace(/\s+/g, '_')      // spaces -> underscores
+        .replace(/[^a-z0-9_]/g, '') // strip invalid chars
+        .replace(/_+/g, '_')        // collapse multiple underscores
+        .replace(/^_+|_+$/g, '');   // trim leading/trailing underscores
+    }
+
+    input.addEventListener('input', () => {
+      const start = input.selectionStart;
+      const end = input.selectionEnd;
+      const newVal = sanitizeName(input.value);
+      input.value = newVal;
+      // try to keep caret position roughly stable
+      input.setSelectionRange(start, end);
+    });
+
+    let toastTimer = null;
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 1400);
+    }
+
+    // Build YAML string
+    function buildYAML(name) {
+      return `- type: sections
+  max_columns: 4
+  title: MSR-2 Configuration
+  path: msr-2-configuration
+  sections:
+    - type: grid
+      cards:
+        - type: custom:streamline-card
+          template: ld2410_controls
+          variables:
+            device_base_name: ${name}
+        - type: custom:streamline-card
+          template: ld2410_zone_configuration
+          variables:
+            device_base_name: ${name}
+    - type: grid
+      cards:
+        - type: custom:streamline-card
+          template: ld2410_distances_chart
+          variables:
+            device_base_name: ${name}
+            chart_unit_of_measurement: in
+        - type: custom:streamline-card
+          template: ld2410_occupancy_history
+          variables:
+            device_base_name: ${name}
+    - type: grid
+      cards:
+        - type: custom:streamline-card
+          template: ld2410_gate_energy_chart
+          variables:
+            device_title: Gate Energy Chart
+            device_base_name: ${name}
+        - type: custom:streamline-card
+          template: ld2410_zone_occupancy
+          variables:
+            device_base_name: ${name}
+    - type: grid
+      cards:
+        - type: custom:streamline-card
+          template: ld2410_gate_energy_configuration
+          variables:
+            device_base_name: ${name}`;
+    }
+
+    // Render YAML to textarea; optionally copy
+    function renderYAML({ copy = false } = {}) {
+      const raw = input.value || 'apollo_msr_2_m4c4dd';
+      const name = sanitizeName(raw) || 'apollo_msr_2_m4c4dd';
+      const yaml = buildYAML(name);
+      const output = document.getElementById('yamlOutput');
+      output.value = yaml;
+      if (copy) {
+        navigator.clipboard.writeText(yaml).then(() => showToast('YAML copied')).catch(() => {/* ignore */});
+      }
+    }
+
+    function copyYAML() {
+      const yaml = document.getElementById('yamlOutput').value;
+      navigator.clipboard.writeText(yaml)
+        .then(() => showToast('YAML copied'))
+        .catch(() => showToast('Copy failed'));
+    }
+
+    document.getElementById('generateBtn').addEventListener('click', () => renderYAML({ copy: true }));
+    document.getElementById('copyBtn').addEventListener('click', copyYAML);
+
+    // Auto-generate YAML on load WITHOUT copying, so the box isn't blank
+    renderYAML({ copy: false });
+  </script>
+</body>
+</html>
