@@ -37,6 +37,8 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 &nbsp;
 
+&nbsp;
+
 7\. Paste the code from the YAML generator onto the new line you just added at the bottom of the **Raw configuration editor** in step 5. Click **Save** in the top right.
 
 &nbsp;
