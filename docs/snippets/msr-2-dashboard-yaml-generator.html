@@ -1,8 +1,14 @@
+Got it—sanitization is gone. The generator now uses **exactly** what you type, including a trailing underscore.
+
+Save as `docs/snippets/msr-2-dashboard-yaml-generator.html`:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>MSR-2 Dashboard YAML Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
       --bg: #f6f8fb;
@@ -12,53 +18,78 @@
       --primary: #2563eb;
       --primary-hover: #1d4ed8;
       --border: #e2e8f0;
-      --info-bg: #eef5ff;
-      --info-border: #cfe0ff;
     }
     * { box-sizing: border-box; }
-    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; margin: 0; background: var(--bg); color: var(--text); }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
     .wrap { max-width: 960px; margin: 32px auto; padding: 16px; }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 10px 24px rgba(2, 6, 23, 0.06); padding: 24px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(2, 6, 23, 0.06);
+      padding: 24px;
+    }
     h1 { margin: 0 0 12px; font-size: 20px; }
-    h2 { margin: 0 0 8px; font-size: 16px; }
-    p.sub { margin-top: 0; color: var(--muted); font-size: 14px; }
-    .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+    p.sub { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+    .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
     label { font-weight: 600; font-size: 14px; }
-    input[type="text"] { flex: 1 1 320px; min-width: 260px; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; outline: none; box-shadow: inset 0 1px 0 rgba(2,6,23,0.02); }
+    input[type="text"] {
+      flex: 1 1 320px; min-width: 260px;
+      border: 1px solid var(--border); border-radius: 10px;
+      padding: 10px 12px; outline: none; box-shadow: inset 0 1px 0 rgba(2,6,23,0.02);
+    }
     input[type="text"]:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); }
-    .btn { border: 1px solid var(--border); background: var(--card); color: var(--text); padding: 10px 14px; border-radius: 12px; cursor: pointer; transition: transform .06s ease, box-shadow .2s ease, background .2s ease; box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06); }
+    .btn {
+      border: 1px solid var(--border); background: var(--card); color: var(--text);
+      padding: 10px 14px; border-radius: 12px; cursor: pointer;
+      transition: transform .06s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06);
+    }
     .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 14px rgba(2, 6, 23, 0.08); }
     .btn:active { transform: translateY(0); }
-    .btn.primary { background: var(--primary); color: white; border-color: transparent; }
+    .btn.primary { background: var(--primary); color: #fff; border-color: transparent; }
     .btn.primary:hover { background: var(--primary-hover); }
-    textarea { width: 100%; height: 140px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; border: 1px solid var(--border); border-radius: 12px; padding: 12px; resize: vertical; background: #fbfdff; }
-    .footer { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 12px; }
-    .toast { position: fixed; right: 20px; bottom: 20px; background: #111827; color: #fff; padding: 10px 14px; border-radius: 12px; box-shadow: 0 10px 18px rgba(0,0,0,.15); opacity: 0; transform: translateY(10px); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
+    textarea {
+      width: 100%; height: 140px; resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      border: 1px solid var(--border); border-radius: 12px; padding: 12px; background: #fbfdff;
+    }
+    .footer { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
+    .toast {
+      position: fixed; right: 20px; bottom: 20px;
+      background: #111827; color: #fff; padding: 10px 14px; border-radius: 12px;
+      box-shadow: 0 10px 18px rgba(0,0,0,.15); opacity: 0; transform: translateY(10px);
+      pointer-events: none; transition: opacity .2s ease, transform .2s ease;
+    }
     .toast.show { opacity: 1; transform: translateY(0); }
-    .callout { background: var(--info-bg); border: 1px solid var(--info-border); border-left: 4px solid var(--primary); border-radius: 14px; padding: 14px 16px; margin: 0 0 16px; }
-    .callout ol { margin: 8px 0 8px 18px; }
-    .callout li { margin: 6px 0; }
-    code { background: #f1f5f9; padding: 2px 6px; border-radius: 6px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
-      <div class="callout">
-        <h2>🔍 How to Find Your <em>Device Name</em></h2>
-        <ol>
-          <li><strong>Method 1 — Developer Tools:</strong> In Home Assistant, go to <em>Developer Tools → States</em>. Use the search box to find your device/sensor. Click any result and copy the full ID (e.g., <code>sensor.apollo_msr_2_m4c4dd_radar_distance</code>). Your <em>device name</em> is the middle part: <code>apollo_msr_2_m4c4dd</code>.</li>
-          <li><strong>Method 2 — Settings:</strong> Go to <em>Settings → Devices & Services → Entities</em>. Search for your device or use filters. Click an entity to view its full ID and pull out the middle part (e.g., <code>apollo_msr_2_m4c4dd</code>).</li>
-          <li><strong>Method 3 — Device Page (Easiest):</strong> Go to <em>Settings → Devices & Services → Devices</em>. Click your device. The page lists all related entity IDs; from any one like <code>sensor.apollo_msr_2_m4c4dd_radar_distance</code>, the device name is <code>apollo_msr_2_m4c4dd</code>.</li>
-        </ol>
-      </div>
-
       <h1>MSR-2 Dashboard YAML Generator</h1>
-      <p class="sub">Enter your <code>device name</code>, generate the YAML, and copy it. "Generate" will also auto-copy.</p>
+      <p class="sub">Enter your <code>device name</code>, then generate and copy the YAML.</p>
 
       <div class="row">
         <label for="deviceBaseName">Device Name</label>
-        <input type="text" id="deviceBaseName" value="apollo_msr_2_m4c4dd" placeholder="Enter your device name" pattern="^[a-z0-9_]+$" title="Use only lowercase letters, numbers, and underscores" />
+        <input
+          type="text"
+          id="deviceBaseName"
+          value="apollo_msr_2_m4c4dd"
+          placeholder="Enter your device name"
+          autocomplete="off"
+          autocapitalize="none"
+          autocorrect="off"
+          spellcheck="false"
+          inputmode="text"
+          pattern="^[a-z0-9_]+$"
+          title="Use only lowercase letters, numbers, and underscores"
+        />
         <button class="btn primary" id="generateBtn" title="Generate and auto-copy YAML">Generate YAML</button>
       </div>
 
@@ -70,30 +101,12 @@
     </div>
   </div>
 
-  <div id="toast" class="toast">Copied to clipboard</div>
+  <div id="toast" class="toast" role="status" aria-live="polite">Copied to clipboard</div>
 
   <script>
     const toast = document.getElementById('toast');
     const input = document.getElementById('deviceBaseName');
-
-    // #1 Input sanity + normalization
-    function sanitizeName(v) {
-      return (v || '')
-        .toLowerCase()              // force lowercase
-        .replace(/\s+/g, '_')      // spaces -> underscores
-        .replace(/[^a-z0-9_]/g, '') // strip invalid chars
-        .replace(/_+/g, '_')        // collapse multiple underscores
-        .replace(/^_+|_+$/g, '');   // trim leading/trailing underscores
-    }
-
-    input.addEventListener('input', () => {
-      const start = input.selectionStart;
-      const end = input.selectionEnd;
-      const newVal = sanitizeName(input.value);
-      input.value = newVal;
-      // try to keep caret position roughly stable
-      input.setSelectionRange(start, end);
-    });
+    const output = document.getElementById('yamlOutput');
 
     let toastTimer = null;
     function showToast(msg) {
@@ -101,10 +114,11 @@
       toast.classList.add('show');
       clearTimeout(toastTimer);
       toastTimer = setTimeout(() => toast.classList.remove('show'), 1400);
-    }    // Build YAML string with 2-space left pad for embedding under parent lists
+    }
+
+    // Indent helper for the sections block only
     function indentBlock(str, spaces = 2) {
       const pad = ' '.repeat(spaces);
-      // Indent each line using multiline regex; avoids quoting \n inside strings
       return str.replace(/^/gm, pad);
     }
 
@@ -152,23 +166,792 @@
           template: ld2410_gate_energy_configuration
           variables:
             device_base_name: ${name}`;
-      return indentBlock(base, 2);
+
+      const append = `streamline_templates:
+  ld2410_controls:
+    default:
+      device_title: LD2410  Controls
+    card:
+      type: entities
+      title: '[[device_title]]'
+      entities:
+        - entity: switch.[[device_base_name]]_radar_engineering_mode
+          name: Radar Engineering Mode
+        - entity: switch.[[device_base_name]]_ld2410_bluetooth
+          name: LD2410 Bluetooth
+        - entity: button.[[device_base_name]]_restart_radar
+          name: Restart Radar
+        - entity: button.[[device_base_name]]_factory_reset_radar
+          name: Factory Reset Radar
+        - entity: button.[[device_base_name]]_esp_reboot
+          name: ESP Reboot
+  ld2410_distances_chart:
+    default:
+      device_title: LD2410
+      move_bar_color: '#4b0082'
+      still_bar_color: '#274e13'
+      detection_bar_color: '#8b0000'
+      show_radar_targets: true
+      show_zones: true
+      show_distance: true
+      show_gates: true
+      show_max_gates: true
+      bar_size: 35
+      chart_unit_of_measurement: input_entity
+      chart_unit_of_measurement_entity: input_select.ld2410_distances_chart_unit_of_measurement
+    card:
+      type: custom:plotly-graph
+      title: '[[device_title]] Distances'
+      refresh_interval: 1
+      raw_plotly_config: true
+      init:
+        - >-
+          $ex { vars.is_valid_uom = (uom) => { return uom === 'mm' || uom ===
+          'cm' || uom === 'm' || uom === 'in' || uom === 'ft' || uom === 'yd';
+          };
+
+          vars.get_entity_uom = (entity, default_uom) => { let entity_obj =
+          hass.states[entity];
+
+          if (entity_obj === undefined) { if (default_uom === undefined) { throw
+          new TypeError("UOM entity not found -> " + entity); }
+
+          return default_uom; }
+
+          var uom = undefined;
+
+          if (entity_obj.attributes !== undefined &&
+          entity_obj.attributes.unit_of_measurement !== undefined) { uom =
+          entity_obj.attributes.unit_of_measurement; } else { uom =
+          entity_obj.state; }
+
+          if (uom === undefined || !vars.is_valid_uom(uom)) { if (default_uom
+          === undefined) { throw new TypeError("Entity UOM is invalid -> " +
+          entity + " === " + uom); }
+
+          return default_uom; }
+
+          return uom; };
+
+          vars.conversionTable = [ ['mm_cm', 0.1], ['mm_m', 0.001], ['mm_in',
+          1/25.4], ['mm_ft', 1/304.8], ['mm_yd', 1/914.4], ['cm_mm', 10],
+          ['cm_m', 0.01], ['cm_in', 1/2.54], ['cm_ft', 1/30.48], ['cm_yd',
+          1/91.44], ['m_mm', 1000], ['m_cm', 100], ['m_in', 39.3701], ['m_ft',
+          3.28084], ['m_yd', 1.09361], ['in_mm', 25.4], ['in_cm', 2.54],
+          ['in_m', 1/39.3701], ['in_ft', 1/12], ['in_yd', 1/36], ['ft_mm',
+          304.8], ['ft_cm', 30.48], ['ft_m', 1/3.28084], ['ft_in', 12], ['ft_yd',
+          1/3], ['yd_mm', 914.4], ['yd_cm', 91.44], ['yd_m', 1/1.09361], ['yd_in',
+          36], ['yd_ft', 3] ];
+
+          vars.chart_uom = '[[chart_unit_of_measurement]]';
+
+          if (vars.chart_uom === 'input_entity') { let chart_uom_entity =
+          '[[chart_unit_of_measurement_entity]]'; vars.chart_uom =
+          vars.get_entity_uom(chart_uom_entity, 'cm'); }
+
+          if (!vars.is_valid_uom(vars.chart_uom)) { vars.chart_uom = "cm"; }
+
+          vars.convert_to_chart_uom = (from_uom, value) => { if (from_uom ===
+          vars.chart_uom) return value;
+
+          let key = from_uom + '_' + vars.chart_uom; for (let i = 0; i <
+          vars.conversionTable.length; i++) { if (vars.conversionTable[i][0] ===
+          key) { return value * vars.conversionTable[i][1]; } }
+
+          return value; };
+
+          vars.get_entity_state = (entity, default_state) => { let entity_obj =
+          hass.states[entity];
+
+          if (entity_obj === undefined) { if (default_state === undefined) {
+          throw new TypeError("Entity not found -> " + entity); }
+
+          return default_state; }
+
+          var state = entity_obj.state;
+
+          if (state === undefined || state === null) { if (default_state ===
+          undefined) { throw new TypeError("Entity state is undefined or null ->
+          " + entity); }
+
+          return default_state; }
+
+          return state; };
+
+          vars.entity_to_chart_uom_value = (entity_name) => { return
+          vars.convert_to_chart_uom(vars.get_entity_uom(entity_name),
+          vars.get_entity_state(entity_name, 0)); };
+
+          vars.get_occupied_symbol = (entity_state) =>{ if (entity_state ===
+          'on') { return "circle"; } else { return "circle-open"; } }; }
+        - >-
+          $ex { let chart_uom = '[[chart_unit_of_measurement]]';
+
+          if (chart_uom !== 'input_entity' && !vars.is_valid_uom(chart_uom)) {
+          throw new TypeError("Invalid chart_unit_of_measurement [valid -
+          mm|cm|m|in|ft|yd], " + chart_uom); } }
+        - >-
+          $ex { let gate_size_str =
+          vars.get_entity_state('select.[[device_base_name]]_ld2410_gate_size',
+          '0.75m'); vars.gate_size = vars.convert_to_chart_uom('m',
+          parseFloat(gate_size_str.replace(/[^0-9.]/g, '')));
+          vars.max_detection_range = vars.gate_size * 8;
+
+          vars.marker_symbol_size = 10;
+
+          vars.show_radar_targets = Boolean('[[show_radar_targets]]');
+          vars.show_zones = Boolean('[[show_zones]]'); vars.show_distance =
+          Boolean('[[show_distance]]'); vars.show_gates =
+          Boolean('[[show_gates]]'); vars.show_max_gates =
+          Boolean('[[show_max_gates]]'); }
+        - >-
+          $ex { vars.radar_max_still_gate =
+          vars.get_entity_state('number.[[device_base_name]]_radar_max_still_distance');
+          vars.radar_max_still_distance = vars.radar_max_still_gate *
+          vars.gate_size;
+
+          vars.radar_max_move_gate =
+          vars.get_entity_state('number.[[device_base_name]]_radar_max_move_distance');
+          vars.radar_max_move_distance = vars.radar_max_move_gate *
+          vars.gate_size; }
+        - >-
+          $ex { vars.start_zone_1 =
+          vars.entity_to_chart_uom_value('number.[[device_base_name]]_radar_zone_1_start');
+          vars.end_zone_1 =
+          vars.entity_to_chart_uom_value('number.[[device_base_name]]_radar_end_zone_1');
+          vars.end_zone_2 =
+          vars.entity_to_chart_uom_value('number.[[device_base_name]]_radar_end_zone_2');
+          vars.end_zone_3 =
+          vars.entity_to_chart_uom_value('number.[[device_base_name]]_radar_end_zone_3');
+          }
+        - >-
+          $ex { vars.zone_marker_symbol_offset = vars.gate_size * 0.22;
+
+          let zone_1_occupied_state =
+          vars.get_entity_state('binary_sensor.[[device_base_name]]_radar_zone_1_occupancy');
+          vars.zone_1_occupied = vars.show_zones && zone_1_occupied_state ===
+          'on'; vars.zone_1_occupied_symbol =
+          vars.get_occupied_symbol(zone_1_occupied_state);
+
+          let zone_2_occupied_state =
+          vars.get_entity_state('binary_sensor.[[device_base_name]]_radar_zone_2_occupancy');
+          vars.zone_2_occupied = vars.show_zones && zone_2_occupied_state ===
+          'on'; vars.zone_2_occupied_symbol =
+          vars.get_occupied_symbol(zone_2_occupied_state);
+
+          let zone_3_occupied_state =
+          vars.get_entity_state('binary_sensor.[[device_base_name]]_radar_zone_3_occupancy');
+          vars.zone_3_occupied = vars.show_zones && zone_3_occupied_state ===
+          'on'; vars.zone_3_occupied_symbol =
+          vars.get_occupied_symbol(zone_3_occupied_state); }
+      defaults:
+        entity:
+          type: bar
+          showlegend: false
+          orientation: h
+          insidetextanchor: middle
+      entities:
+        - entity: ''
+          visible: $ex vars.show_max_gates
+          texttemplate:
+            - $ex 'G' + ~~vars.radar_max_still_gate
+            - $ex 'G' + ~~vars.radar_max_move_gate
+          marker:
+            color:
+              - '[[still_bar_color]]'
+              - '[[move_bar_color]]'
+          x:
+            - $ex vars.radar_max_still_distance;
+            - $ex vars.radar_max_move_distance;
+          'y':
+            - Max Still
+            - Max Move
+        - entity: ''
+          visible: $ex vars.show_gates
+          marker:
+            colorscale: Portland
+            color:
+              - 0
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+          texttemplate:
+            - G1
+            - G2
+            - G3
+            - G4
+            - G5
+            - G6
+            - G7
+            - G8
+          x:
+            - $ex vars.gate_size
+            - $ex vars.gate_size
+            - $ex vars.gate_size
+            - $ex vars.gate_size
+            - $ex vars.gate_size
+            - $ex vars.gate_size
+            - $ex vars.gate_size
+            - $ex vars.gate_size
+          'y':
+            - Gates
+            - Gates
+            - Gates
+            - Gates
+            - Gates
+            - Gates
+            - Gates
+            - Gates
+        - entity: ''
+          visible: $ex vars.show_distance
+          texttemplate: $ex '%{x:.2f} ' + vars.chart_uom
+          marker:
+            color:
+              - '[[still_bar_color]]'
+              - '[[move_bar_color]]'
+              - '[[detection_bar_color]]'
+          x:
+            - >-
+              $ex
+              vars.entity_to_chart_uom_value('sensor.[[device_base_name]]_radar_still_distance');
+            - >-
+              $ex
+              vars.entity_to_chart_uom_value('sensor.[[device_base_name]]_radar_moving_distance');
+            - >-
+              $ex
+              vars.entity_to_chart_uom_value('sensor.[[device_base_name]]_radar_detection_distance');
+          'y':
+            - Still
+            - Moving
+            - Detection
+        - entity: ''
+          visible: $ex vars.show_zones
+          marker:
+            color:
+              - '#00000000'
+              - red
+              - blue
+              - green
+          texttemplate:
+            - ''
+            - Zone 1
+            - Zone 2
+            - Zone 3
+          x:
+            - $ex vars.start_zone_1;
+            - $ex (vars.end_zone_1 - vars.start_zone_1);
+            - $ex (vars.end_zone_2 - vars.end_zone_1);
+            - $ex (vars.end_zone_3 - vars.end_zone_2);
+          'y':
+            - Zones
+            - Zones
+            - Zones
+            - Zones
+        - entity: ''
+          visible: $ex vars.show_zones
+          type: scatter
+          mode: markers
+          marker:
+            color: '#FFFFFFFF'
+            symbol:
+              - $ex vars.zone_1_occupied_symbol
+              - $ex vars.zone_2_occupied_symbol
+              - $ex vars.zone_3_occupied_symbol
+            size: $ex vars.marker_symbol_size
+          x:
+            - $ex (vars.end_zone_1 - vars.zone_marker_symbol_offset);
+            - $ex (vars.end_zone_2 - vars.zone_marker_symbol_offset);
+            - $ex (vars.end_zone_3 - vars.zone_marker_symbol_offset);
+          'y':
+            - Zones
+            - Zones
+            - Zones
+        - entity: ''
+          visible: $ex vars.show_radar_targets
+          text:
+            - ''
+            - Detected
+            - ''
+            - Moving
+            - ''
+            - Still
+          insidetextanchor: start
+          marker:
+            color:
+              - '#00000000'
+              - '#000000E6'
+              - '#00000000'
+              - '#000000E6'
+              - '#00000000'
+              - '#000000E6'
+          x:
+            - $ex vars.radar_target_spacer_size
+            - $ex vars.radar_target_size
+            - $ex vars.radar_target_spacer_size
+            - $ex vars.radar_target_size
+            - $ex vars.radar_target_spacer_size
+            - $ex vars.radar_target_size
+          'y':
+            - Target
+            - Target
+            - Target
+            - Target
+            - Target
+            - Target
+        - entity: ''
+          visible: $ex vars.show_radar_targets
+          type: scatter
+          mode: markers
+          marker:
+            color: '#FFFFFFFF'
+            symbol:
+              - $ex vars.radar_target_occupied_symbol
+              - $ex vars.radar_target_moving_occupied_symbol
+              - $ex vars.radar_target_still_occupied_symbol
+            size: $ex vars.marker_symbol_size
+          x:
+            - >-
+              $ex (vars.radar_target_spacer_size + vars.radar_target_size -
+              vars.radar_target_marker_offset);
+            - >-
+              $ex (vars.radar_target_spacer_size * 2 + vars.radar_target_size *
+              2 - vars.radar_target_marker_offset);
+            - >-
+              $ex (vars.radar_target_spacer_size * 3 + vars.radar_target_size *
+              3 - vars.radar_target_marker_offset);
+          'y':
+            - Target
+            - Target
+            - Target
+      layout:
+        height: $ex vars.layout_height
+        dragmode: false
+        hovermode: false
+        barmode: relative
+        margin:
+          t: $ex vars.layout_margin_t;
+          l: 60
+          r: 30
+          b: $ex vars.layout_margin_b
+        xaxis:
+          dtick: $ex (vars.max_detection_range / 8);
+          ticksuffix: $ex ' ' + vars.chart_uom
+          tickangle: 60
+          fixedrange: true
+          range:
+            - 0
+            - $ex vars.max_detection_range * 1.003;
+        yaxis:
+          tickangle: -30
+          showgrid: false
+      config:
+        displayModeBar: false
+        disablePinchToZoom: true
+  ld2410_gate_energy_chart:
+    default:
+      device_title: LD2410
+      move_bar_color: '#4b0082'
+      move_threshold_color: '#9467bd'
+      still_bar_color: '#274e13'
+      still_threshold_color: '#8cb640'
+    card:
+      type: custom:plotly-graph
+      title: '[[device_title]] Gate Energy'
+      refresh_interval: 1
+      raw_plotly_config: true
+      init:
+        - >-
+          $ex { vars.get_entity_state = (entity, default_state) => { let
+          entity_obj = hass.states[entity];
+
+          if (entity_obj === undefined) { if (default_state === undefined) {
+          throw new TypeError("Entity not found -> " + entity); }
+
+          return default_state; }
+
+          var state = entity_obj.state;
+
+          if (state === undefined || state === null || state === 'unknown') { if
+          (default_state === undefined) { throw new TypeError("Entity state is
+          undefined or null -> " + entity); }
+
+          return default_state; }
+
+          return state; }; }
+        - >-
+          $ex { let radar_engineering_mode =
+          vars.get_entity_state('switch.[[device_base_name]]_radar_engineering_mode');
+          vars.show_radar_engineering_mode_on = radar_engineering_mode === 'on';
+          }
+      defaults:
+        entity:
+          texttemplate: '%{y}'
+          x:
+            - G0
+            - G1
+            - G2
+            - G3
+            - G4
+            - G5
+            - G6
+            - G7
+            - G8
+      entities:
+        - entity: ''
+          name: Move Energy
+          legendgroup: Move
+          type: bar
+          marker:
+            color: '[[move_bar_color]]'
+          'y':
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g0_move_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g1_move_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g2_move_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g3_move_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g4_move_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g5_move_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g6_move_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g7_move_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g8_move_energy',
+              0)
+        - entity: ''
+          name: Move Threshold
+          legendgroup: Move
+          visible: $ex vars.show_radar_engineering_mode_on
+          type: scatter
+          mode: markers
+          marker:
+            symbol: arrow-right
+            size: 15
+            color: '[[move_threshold_color]]'
+          'y':
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g0_move_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g1_move_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g2_move_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g3_move_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g4_move_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g5_move_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g6_move_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g7_move_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g8_move_threshold')
+        - entity: ''
+          name: Still Energy
+          legendgroup: Still
+          type: bar
+          marker:
+            color: '[[still_bar_color]]'
+          'y':
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g0_still_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g1_still_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g2_still_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g3_still_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g4_still_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g5_still_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g6_still_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g7_still_energy',
+              0)
+            - >-
+              $ex
+              vars.get_entity_state('sensor.[[device_base_name]]_g8_still_energy',
+              0)
+        - entity: ''
+          name: Still Threshold
+          legendgroup: Still
+          visible: $ex vars.show_radar_engineering_mode_on
+          type: scatter
+          mode: markers
+          marker:
+            symbol: arrow-left
+            size: 15
+            color: '[[still_threshold_color]]'
+          'y':
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g0_still_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g1_still_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g2_still_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g3_still_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g4_still_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g5_still_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g6_still_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g7_still_threshold')
+            - >-
+              $ex
+              vars.get_entity_state('number.[[device_base_name]]_g8_still_threshold')
+      layout:
+        barmode: group
+        dragmode: false
+        hovermode: false
+        legend:
+          itemsizing: constant
+          orientation: h
+        margin:
+          t: 15
+          l: 30
+          r: 10
+        xaxis:
+          showgrid: false
+          tickfont:
+            size: 20
+        yaxis:
+          dtick: 10
+          fixedrange: true
+          range:
+            - 0
+            - 100.3
+        annotations:
+          - text: Turn on "Radar Engineering Mode"<br>to see the gate energy values.
+            visible: $ex !vars.show_radar_engineering_mode_on
+            showarrow: false
+            x: G4
+            'y': 50
+            font:
+              size: 20
+              color: '#FFFFFF'
+            borderpad: 16
+            bgcolor: '#000000BB'
+      config:
+        displayModeBar: false
+        disablePinchToZoom: true
+  ld2410_occupancy_history:
+    default:
+      device_title: LD2410
+      hours_to_show: 1
+    card:
+      type: history-graph
+      title: '[[device_title]] Occupancy History'
+      hours_to_show: '[[hours_to_show]]'
+      entities:
+        - entity: binary_sensor.[[device_base_name]]_radar_target
+          name: Detected
+        - entity: binary_sensor.[[device_base_name]]_radar_zone_1_occupancy
+          name: Zone 1
+        - entity: binary_sensor.[[device_base_name]]_radar_zone_2_occupancy
+          name: Zone 2
+        - entity: binary_sensor.[[device_base_name]]_radar_zone_3_occupancy
+          name: Zone 3
+        - entity: number.[[device_base_name]]_g0_move_threshold
+          name: G0 move threshold
+        - entity: number.[[device_base_name]]_g0_still_threshold
+          name: G0 still threshold
+        - entity: number.[[device_base_name]]_g1_move_threshold
+          name: G1 move threshold
+        - entity: number.[[device_base_name]]_g1_still_threshold
+          name: G1 still threshold
+        - entity: number.[[device_base_name]]_g2_move_threshold
+          name: G2 move threshold
+        - entity: number.[[device_base_name]]_g2_still_threshold
+          name: G2 still threshold
+        - entity: number.[[device_base_name]]_g3_move_threshold
+          name: G3 move threshold
+        - entity: number.[[device_base_name]]_g3_still_threshold
+          name: G3 still threshold
+        - entity: number.[[device_base_name]]_g4_move_threshold
+          name: G4 move threshold
+        - entity: number.[[device_base_name]]_g4_still_threshold
+          name: G4 still threshold
+        - entity: number.[[device_base_name]]_g5_move_threshold
+          name: G5 move threshold
+        - entity: number.[[device_base_name]]_g5_still_threshold
+          name: G5 still threshold
+        - entity: number.[[device_base_name]]_g6_move_threshold
+          name: G6 move threshold
+        - entity: number.[[device_base_name]]_g6_still_threshold
+          name: G6 still threshold
+        - entity: number.[[device_base_name]]_g7_move_threshold
+          name: G7 move threshold
+        - entity: number.[[device_base_name]]_g7_still_threshold
+          name: G7 still threshold
+        - entity: number.[[device_base_name]]_g8_move_threshold
+          name: G8 move threshold
+        - entity: number.[[device_base_name]]_g8_still_threshold
+          name: G8 still threshold
+  ld2410_zone_configuration:
+    default:
+      device_title: LD2410
+    card:
+      type: entities
+      title: '[[device_title]] Zone Config'
+      entities:
+        - entity: number.[[device_base_name]]_radar_timeout
+          name: Radar Timeout
+        - entity: number.[[device_base_name]]_radar_zone_1_start
+          name: Start Zone 1
+        - entity: number.[[device_base_name]]_radar_end_zone_1
+          name: End Zone 1
+        - entity: number.[[device_base_name]]_radar_end_zone_2
+          name: End Zone 2
+        - entity: number.[[device_base_name]]_radar_end_zone_3
+          name: End Zone 3
+  ld2410_zone_occupancy:
+    default:
+      device_title: LD2410
+    card:
+      type: entities
+      title: '[[device_title]] Target / Occupancy'
+      entities:
+        - entity: binary_sensor.[[device_base_name]]_radar_target
+          name: Radar Target
+        - entity: binary_sensor.[[device_base_name]]_radar_moving_target
+          name: Radar Moving Target
+        - entity: binary_sensor.[[device_base_name]]_radar_still_target
+          name: Radar Still Target
+        - entity: binary_sensor.[[device_base_name]]_radar_zone_1_occupancy
+          name: Radar Zone 1 Occupancy
+        - entity: binary_sensor.[[device_base_name]]_radar_zone_2_occupancy
+          name: Radar Zone 2 Occupancy
+        - entity: binary_sensor.[[device_base_name]]_radar_zone_3_occupancy
+          name: Radar Zone 3 Occupancy
+  ld2410_gate_energy_configuration:
+    default:
+      device_title: LD2410
+    card:
+      type: entities
+      title: '[[device_title]] Gate Config'
+      entities:
+        - entity: number.[[device_base_name]]_radar_max_move_distance
+          name: Max Move Gate
+        - entity: number.[[device_base_name]]_radar_max_still_distance
+          name: Max Still Gate
+        - entity: number.[[device_base_name]]_g0_move_threshold
+          name: G0 move threshold
+        - entity: number.[[device_base_name]]_g0_still_threshold
+          name: G0 still threshold
+        - entity: number.[[device_base_name]]_g1_move_threshold
+          name: G1 move threshold
+        - entity: number.[[device_base_name]]_g1_still_threshold
+          name: G1 still threshold
+        - entity: number.[[device_base_name]]_g2_move_threshold
+          name: G2 move threshold
+        - entity: number.[[device_base_name]]_g2_still_threshold
+          name: G2 still threshold
+        - entity: number.[[device_base_name]]_g3_move_threshold
+          name: G3 move threshold
+        - entity: number.[[device_base_name]]_g3_still_threshold
+          name: G3 still threshold
+        - entity: number.[[device_base_name]]_g4_move_threshold
+          name: G4 move threshold
+        - entity: number.[[device_base_name]]_g4_still_threshold
+          name: G4 still threshold
+        - entity: number.[[device_base_name]]_g5_move_threshold
+          name: G5 move threshold
+        - entity: number.[[device_base_name]]_g5_still_threshold
+          name: G5 still threshold
+        - entity: number.[[device_base_name]]_g6_move_threshold
+          name: G6 move threshold
+        - entity: number.[[device_base_name]]_g6_still_threshold
+          name: G6 still threshold
+        - entity: number.[[device_base_name]]_g7_move_threshold
+          name: G7 move threshold
+        - entity: number.[[device_base_name]]_g7_still_threshold
+          name: G7 still threshold
+        - entity: number.[[device_base_name]]_g8_move_threshold
+          name: G8 move threshold
+        - entity: number.[[device_base_name]]_g8_still_threshold
+          name: G8 still threshold`;
+
+      // Indent the sections block only; keep streamline_templates spacing as-is
+      return indentBlock(base, 2) + '\n\n' + append;
     }
 
-    // Render YAML to textarea; optionally copy
     function renderYAML({ copy = false } = {}) {
-      const raw = input.value || 'apollo_msr_2_m4c4dd';
-      const name = sanitizeName(raw) || 'apollo_msr_2_m4c4dd';
+      const name = input.value || 'apollo_msr_2_m4c4dd';
       const yaml = buildYAML(name);
-      const output = document.getElementById('yamlOutput');
       output.value = yaml;
       if (copy) {
-        navigator.clipboard.writeText(yaml).then(() => showToast('YAML copied')).catch(() => {/* ignore */});
+        navigator.clipboard.writeText(yaml)
+          .then(() => showToast('YAML copied'))
+          .catch(() => {});
       }
     }
 
     function copyYAML() {
-      const yaml = document.getElementById('yamlOutput').value;
+      const yaml = output.value;
       navigator.clipboard.writeText(yaml)
         .then(() => showToast('YAML copied'))
         .catch(() => showToast('Copy failed'));
@@ -177,8 +960,9 @@
     document.getElementById('generateBtn').addEventListener('click', () => renderYAML({ copy: true }));
     document.getElementById('copyBtn').addEventListener('click', copyYAML);
 
-    // Auto-generate YAML on load WITHOUT copying, so the box isn't blank
+    // Generate on load (no auto-copy) so the box isn't blank
     renderYAML({ copy: false });
   </script>
 </body>
 </html>
+```
