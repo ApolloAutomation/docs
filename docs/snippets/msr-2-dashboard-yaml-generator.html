@@ -101,11 +101,15 @@
       toast.classList.add('show');
       clearTimeout(toastTimer);
       toastTimer = setTimeout(() => toast.classList.remove('show'), 1400);
+    }    // Build YAML string with 2-space left pad for embedding under parent lists
+    function indentBlock(str, spaces = 2) {
+      const pad = ' '.repeat(spaces);
+      // Indent each line using multiline regex; avoids quoting \n inside strings
+      return str.replace(/^/gm, pad);
     }
 
-    // Build YAML string
     function buildYAML(name) {
-      return `- type: sections
+      const base = `- type: sections
   max_columns: 4
   title: MSR-2 Configuration
   path: msr-2-configuration
@@ -148,6 +152,7 @@
           template: ld2410_gate_energy_configuration
           variables:
             device_base_name: ${name}`;
+      return indentBlock(base, 2);
     }
 
     // Render YAML to textarea; optionally copy
