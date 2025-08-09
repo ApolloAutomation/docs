@@ -25,11 +25,15 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 <iframe id="msr2" src="/snippets/msr-2-dashboard-yaml-generator.html" width="100%" height="760" style="border:0;" loading="lazy">
 </iframe>
 
+!!! tip "Create backups to restore to before moving forward!"
+
+    Back up your Home Assistant instance and back up a copy of the **Raw configuration editor** mentioned below before you make any changes just to be safe!
+
 6\. Click **Edit dashboard** in the top right then click the 3 dots from the **Edit Dashboard** menu and click **Raw configuration editor**. Navigate to the end of the document and paste the code from the YAML generator at the very bottom of the **Raw configuration editor**. Click **Save** in the top right.
 
 !!! danger "This file is used by Home Assistant and must be carefully edited."
 
-    Home Assistant depends on this file to function correctly. Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
+    Home Assistant depends on this file to function correctly - it is what displays your dashboard "views". Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
 
 ![](../../../assets/msr-2-yaml-generator-copy-paste-raw-gif.gif)
 
