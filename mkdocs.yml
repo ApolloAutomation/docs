@@ -262,13 +262,13 @@ nav:
           - Introduction: products/rpro1/introduction.md
           - FAQ: products/rpro1/faq.md
           - Getting Started: products/general/setup/getting-started-rpro1.md
+          - Radar Tuning:
+            - Home Assistant: products/rpro1/calibrating-and-updating/zones-ha.md
+            - HLK Radar Tool App: products/rpro1/calibrating-and-updating/zones-hlk.md
           - Additional Info:
             - Switch Firmware: products/rpro1/setup/rpro1-switch-firmware.md
             - General Tips: products/rpro1/setup/rpro1-general-tips.md
             - Sensor Definitons: products/rpro1/setup/rpro1-sensor-definitions.md
-            - Radar Tuning:
-              - Home Assistant: products/rpro1/calibrating-and-updating/zones-ha.md
-              - HLK Radar Tool App: products/rpro1/calibrating-and-updating/zones-hlk.md
           - Addons:
             - CO<sub>2</sub> Addon: products/rpro1/addons/adding-co2-to-r-pro-1.md
             - 1-Gang Box Mount: products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
