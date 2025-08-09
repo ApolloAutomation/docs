@@ -20,8 +20,6 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 ![](../../../assets/home-assistant-take-control-gif.gif)
 
-![](../../../assets/m-1-edit-dashboard-raw-config-editor-gif.gif)
-
 5\. Use the YAML generator below and enter in your device name such as apollo\_msr\_2\_m4c4dd and then click **Generate YAML**. It will copy the YAML for you to use in the next step!
 
 <iframe id="msr2" src="/snippets/msr-2-dashboard-yaml-generator.html" width="100%" height="760" style="border:0;" loading="lazy">
