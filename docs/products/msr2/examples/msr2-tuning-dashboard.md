@@ -30,21 +30,13 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 6\. Use the YAML generator below and enter in your device name such as apollo\_msr\_2\_m4c4dd and then click **Generate YAML**. It will copy the YAML for you to use in the next step!
 
-&nbsp;
-
 <iframe id="msr2" src="/snippets/msr-2-dashboard-yaml-generator.html" width="100%" height="760" style="border:0;" loading="lazy">
 </iframe>
-
-&nbsp;
-
-&nbsp;
 
 7\. Paste the code from the YAML generator onto the new line you just added at the bottom of the **Raw configuration editor** in step 5. Click **Save** in the top right.
 
 &nbsp;
 
 8\. You should now have a new <a href="https://www.home-assistant.io/dashboards/views/" target="_blank" rel="noreferrer nofollow noopener">dashboard view</a> called **MSR-2 Configuration** and you should be ready to configure your sensor!
-
-&nbsp;
 
 &nbsp;
