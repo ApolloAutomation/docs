@@ -22,7 +22,7 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 5\. Click **Edit dashboard** in the top right then click the 3 dots from the **Edit Dashboard** menu and click **Raw configuration editor**. Navigate to the end of the document and insert several blank lines.
 
-!!! warning "This file is used by Home Assistant and must be carefully edited."
+!!! danger "This file is used by Home Assistant and must be carefully edited."
 
     Home Assistant depends on this file to function correctly. Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
 
@@ -33,10 +33,10 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 <iframe id="msr2" src="/snippets/msr-2-dashboard-yaml-generator.html" width="100%" height="760" style="border:0;" loading="lazy">
 </iframe>
 
-7\. Paste the code you copied above onto the new line you just added at the bottom of the **Raw configuration editor** in step 5. Click Save in the top right.
+7\. Paste the code from the YAML generator onto the new line you just added at the bottom of the **Raw configuration editor** in step 5. Click **Save** in the top right.
 
-&nbsp;
+![](../../../assets/msr-2-yaml-generator-copy-paste-raw-gif.gif)
 
-&nbsp;
+8\. You should now have a new <a href="https://www.home-assistant.io/dashboards/views/" target="_blank" rel="noreferrer nofollow noopener">dashboard view</a> called **MSR-2 Configuration** and you should be ready to configure your sensor!
 
-&nbsp;
+![](../../../assets/msr-2-dashboard-example-finished.png)
