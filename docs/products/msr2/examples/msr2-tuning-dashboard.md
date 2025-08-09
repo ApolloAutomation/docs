@@ -20,23 +20,21 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 ![](../../../assets/home-assistant-take-control-gif.gif)
 
-5\. Click **Edit dashboard** in the top right then click the 3 dots from the **Edit Dashboard** menu and click **Raw configuration editor**. Navigate to the end of the document and insert several blank lines.
+![](../../../assets/m-1-edit-dashboard-raw-config-editor-gif.gif)
+
+5\. Use the YAML generator below and enter in your device name such as apollo\_msr\_2\_m4c4dd and then click **Generate YAML**. It will copy the YAML for you to use in the next step!
+
+<iframe id="msr2" src="/snippets/msr-2-dashboard-yaml-generator.html" width="100%" height="760" style="border:0;" loading="lazy">
+</iframe>
+
+6\. Click **Edit dashboard** in the top right then click the 3 dots from the **Edit Dashboard** menu and click **Raw configuration editor**. Navigate to the end of the document and paste the code from the YAML generator at the very bottom of the **Raw configuration editor**. Click **Save** in the top right.
 
 !!! danger "This file is used by Home Assistant and must be carefully edited."
 
     Home Assistant depends on this file to function correctly. Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
 
-![](../../../assets/m-1-edit-dashboard-raw-config-editor-gif.gif)
-
-6\. Use the YAML generator below and enter in your device name such as apollo\_msr\_2\_m4c4dd and then click **Generate YAML**. It will copy the YAML for you to use in the next step!
-
-<iframe id="msr2" src="/snippets/msr-2-dashboard-yaml-generator.html" width="100%" height="760" style="border:0;" loading="lazy">
-</iframe>
-
-7\. Paste the code from the YAML generator onto the new line you just added at the bottom of the **Raw configuration editor** in step 5. Click **Save** in the top right.
-
 ![](../../../assets/msr-2-yaml-generator-copy-paste-raw-gif.gif)
 
-8\. You should now have a new <a href="https://www.home-assistant.io/dashboards/views/" target="_blank" rel="noreferrer nofollow noopener">dashboard view</a> called **MSR-2 Configuration** and you should be ready to configure your sensor!
+7\. You should now have a new <a href="https://www.home-assistant.io/dashboards/views/" target="_blank" rel="noreferrer nofollow noopener">dashboard view</a> called **MSR-2 Configuration** and you should be ready to configure your sensor!
 
 ![](../../../assets/msr-2-dashboard-example-finished.png)
