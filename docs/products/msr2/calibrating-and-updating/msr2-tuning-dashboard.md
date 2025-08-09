@@ -4,7 +4,7 @@ description: Tutorial on creating an MSR-2 tuning dashboard.
 ---
 # MSR-2 Tuning Dashboard
 
-!!! note "Huge shoutout to discurd user MirkoP for creating this!"
+!!! note "Huge shoutout to discord user MirkoP for creating this!"
 
     We all owe a huge thanks to MirkoP from discord/github for creating and sharing this with everyone! <a href="https://github.com/mirkop/apollo-home-assistant/blob/master/streamline_cards/ld2410/README.md" target="_blank" rel="noreferrer nofollow noopener">Source here</a>.
 

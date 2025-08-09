@@ -209,14 +209,14 @@ nav:
           - Introduction: products/msr2/introduction.md
           - FAQ: products/msr2/faq.md
           - Getting Started: products/general/setup/getting-started-msr2.md
+          - Radar Tuning:
+            - MSR-2 Tuning Dashboard: products/msr2/calibrating-and-updating/msr2-tuning-dashboard.md
+            - Home Assistant: products/msr2/calibrating-and-updating/zones-ha.md
+            - HLK Radar Tool App: products/msr2/calibrating-and-updating/zones-hlk.md
+            - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
           - Additional Info:
             - General Tips: products/msr2/setup/msr2-general-tips.md
             - Sensor Definitons: products/msr2/setup/msr2-sensor-definitions.md
-            - Radar Tuning:
-              - Home Assistant: products/msr2/calibrating-and-updating/zones-ha.md
-              - HLK Radar Tool App: products/msr2/calibrating-and-updating/zones-hlk.md
-              - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
-              - MSR-2 Tuning Dashboard: products/msr2/calibrating-and-updating/msr2-tuning-dashboard.md
           - Addons:
             - Articulating Stand: products/msr2/addons/adding-articulating-stand-to-msr-2.md
             - CO<sub>2</sub> Addon: products/msr2/addons/adding-co2-to-msr-2.md
@@ -237,12 +237,12 @@ nav:
           - Introduction: products/mtr1/introduction.md
           - FAQ: products/mtr1/faq.md
           - Getting Started: products/general/setup/getting-started-mtr1.md
+          - Zone Configuration:
+            - Home Assistant: products/mtr1/setup/zones-ha.md
+            - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
           - Additional Info:
             - General Tips: products/mtr1/setup/general-tips.md
             - Sensor Definitons: products/mtr1/setup/sensor-definitions.md
-            - Zone Configuration:
-              - Home Assistant: products/mtr1/setup/zones-ha.md
-              - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
           - Addons:
             - Articulating Stand: products/mtr1/addons/adding-articulating-stand-to-mtr-1.md
             - CO<sub>2</sub> Addon: products/mtr1/addons/adding-co2-to-mtr-1.md
