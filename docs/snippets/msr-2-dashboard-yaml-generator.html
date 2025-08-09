@@ -13,6 +13,8 @@
       --primary: #2563eb;
       --primary-hover: #1d4ed8;
       --border: #e2e8f0;
+      --info-bg: #eef5ff;
+      --info-border: #cfe0ff;
     }
     * { box-sizing: border-box; }
     body {
@@ -62,11 +64,34 @@
       pointer-events: none; transition: opacity .2s ease, transform .2s ease;
     }
     .toast.show { opacity: 1; transform: translateY(0); }
+
+    /* Callout */
+    .callout {
+      background: var(--info-bg);
+      border: 1px solid var(--info-border);
+      border-left: 4px solid var(--primary);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 0 0 16px;
+    }
+    .callout h2 { margin: 0 0 8px; font-size: 16px; }
+    .callout ol { margin: 8px 0 8px 18px; }
+    .callout li { margin: 6px 0; }
+    .callout code { background: #f1f5f9; padding: 2px 6px; border-radius: 6px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
+      <div class="callout">
+        <h2>🔍 How to Find Your <em>Device Name</em></h2>
+        <ol>
+          <li><strong>Method 1 — Developer Tools:</strong> In Home Assistant, go to <em>Developer Tools → States</em>. Use the search box to find your device/sensor. Click any result and copy the full ID (e.g., <code>sensor.apollo_msr_2_m4c4dd_radar_distance</code>). Your <em>device name</em> is the middle part: <code>apollo_msr_2_m4c4dd</code>.</li>
+          <li><strong>Method 2 — Settings:</strong> Go to <em>Settings → Devices & Services → Entities</em>. Search for your device or use filters. Click an entity to view its full ID and pull out the middle part (e.g., <code>apollo_msr_2_m4c4dd</code>).</li>
+          <li><strong>Method 3 — Device Page (Easiest):</strong> Go to <em>Settings → Devices & Services → Devices</em>. Click your device. The page lists all related entity IDs; from any one like <code>sensor.apollo_msr_2_m4c4dd_radar_distance</code>, the device name is <code>apollo_msr_2_m4c4dd</code>.</li>
+        </ol>
+      </div>
+
       <h1>MSR-2 Dashboard YAML Generator</h1>
       <p class="sub">Enter your <code>device name</code>, then generate and copy the YAML.</p>
 
