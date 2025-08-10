@@ -411,7 +411,6 @@ nav:
             - Introduction: products/breakout-boards/sen55-scd40-breakout-board/introduction.md
           - SCD40: 
             - Introduction: products/breakout-boards/scd40-breakout-board/introduction.md
-          - Introduction: products/dev1/introduction.md
       - DEV-1:
           - Introduction: products/dev1/introduction.md
       - DEV-2:
