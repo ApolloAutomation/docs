@@ -406,6 +406,12 @@ nav:
             - Teardown and Reassembly Of TEMP-1B: products/temp1b/troubleshooting/temp1b-teardown.md
             - Reset Wi-Fi Credentials: products/temp1b/troubleshooting/temp1b-reset-wi-fi-credentials.md
           - Reviews: products/temp1b/reviews.md
+      - Breakout Boards:
+          - SEN55-SCD40: 
+            - Introduction: products/breakout-boards/sen55-scd40-breakout-board/introduction.md
+          - SCD40: 
+            - Introduction: products/breakout-boards/scd40-breakout-board/introduction.md
+          - Introduction: products/dev1/introduction.md
       - DEV-1:
           - Introduction: products/dev1/introduction.md
       - DEV-2:
