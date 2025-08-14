@@ -6,9 +6,9 @@ description: Step by step guide for re-flashing the LED-1 back to factory firmwa
 
 1\. Plug in a USB cable that supports power and data into your computer.
 
-2\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your M-1 LED Matrix then let go of the button.
+2\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your LED-1 then let go of the button.
 
-![](../../../assets/m-1-hold-boot-webp.webp)
+&nbsp;
 
 3\. Download the firmware <a href="https://github.com/MoonModules/WLED/releases/download/v0.14.1-beta.32/WLEDMM_0.14.1-b32.40_adafruit_matrixportal_esp32s3.bin" target="_blank" rel="noreferrer nofollow noopener">.bin file from here</a>.
 
@@ -28,4 +28,4 @@ description: Step by step guide for re-flashing the LED-1 back to factory firmwa
 
 8\. The device is still in **boot mode** and needs to be power cycled. To reboot it, either unplug the power cable or press the **reset button** on the back of the device (the button on the right).
 
-[Head to the Getting Started article to setup your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){   .md-button .md-button--primary }
+[Head to the Getting Started article to setup your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){    .md-button .md-button--primary }
