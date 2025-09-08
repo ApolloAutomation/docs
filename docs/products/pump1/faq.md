@@ -49,3 +49,7 @@ description: Frequently asked questions about the PUMP-1 Fluid Pump Sensor
 12\. **Is the PUMP-1 durable?**
 
 * Yes, it is designed for long-term use with proper maintenance and includes safety features like max run-time limits.
+
+13\. **Can I extend the fluid input sensor and fluid output sensor?**
+
+* Yes, you can use a JST PH 2.0 3 pin connector such as <a href="https://www.amazon.com/XUGERIP-Connector-Female-Connectors-Extension/dp/B0D9R28WDR" target="_blank" rel="noreferrer nofollow noopener">these off Amazon</a>.
