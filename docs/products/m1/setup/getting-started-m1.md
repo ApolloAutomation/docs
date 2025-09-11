@@ -6,6 +6,12 @@ description: Getting started with your new M-1!
 
 Congrats on your new M-1! Below we will go through steps to get you up and running in no time.
 
+#### Attach M-1 LED Controller
+
+Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damage in shipping. Gently attach the controller to the back of the M-1 LED Matrix panel as shown in the GIF below.
+
+![](../../../assets/m1-matrix-attach-controller.webp)
+
 #### Connect to Wi-Fi
 
 Your device is ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
@@ -60,4 +66,4 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 ![](../../../assets/m-1-setup-wled-integration-test-device.png)
 
-[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){          .md-button .md-button--primary }
+[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){             .md-button .md-button--primary }

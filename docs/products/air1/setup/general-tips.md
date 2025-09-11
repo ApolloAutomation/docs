@@ -34,7 +34,9 @@ Particulate Matter (PM) refers to a mixture of solid particles and liquid drople
 
 <table><thead><tr><th><p><strong>PM Type</strong></p></th><th><p><strong>Size (µm)</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>≤ 1.0</p></td><td><p>Ultrafine particles that can reach deep into the lungs and bloodstream.</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 2.5</p></td><td><p>Fine particles; linked to respiratory and cardiovascular issues.</p></td></tr><tr><td><p>PM4</p></td><td><p>≤ 4.0</p></td><td><p>Less commonly regulated; typically used in industrial settings.</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 10</p></td><td><p>Inhalable particles; may irritate eyes, nose, and throat.</p></td></tr></tbody></table>
 
-!!! note **PM2.5** and **PM10** are the most widely monitored and regulated for public health purposes.
+!!! note "PM2.5 and PM10 are the most widely monitored and regulated for public health purposes."
+
+    The PM 1, PM2.5, PM4, and PM10 are all four useful even if PM 2.5 and PM 10 are the most common!
 
 ---
 
