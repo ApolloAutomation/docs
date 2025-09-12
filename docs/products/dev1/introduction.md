@@ -91,7 +91,6 @@ light:
     id: rgb_onboard_light
     name: "RGB Onboard Light"
     pin: GPIO3
-    rmt_channel: 0
     default_transition_length: 0s
     chipset: WS2812
     num_leds: 1
