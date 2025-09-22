@@ -2,36 +2,35 @@
 title: H-1 Getting Started
 description: H-1 Getting Started tutorial.
 ---
-1\. Power Up the H-1:
+# Getting Started
 
-Insert a (rechargable) [RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/dp/B0CSKD7N3D) or plug it into a power source using the USB-C port.
+**1\. Powering On the H-2**
 
-![](../../assets/h-1-battery-insert.jpg)
+Insert a rechargeable RC-CR123A (16340) battery, ideally 2800mAh or higher, such as <a class="decorated-link" href="https://www.amazon.com/dp/B0CSKD7N3D">this option on Amazon</a>.
 
-2\. Turn on the Ornament:
+![](../../assets/h-2-insert-battery.webp)
 
-If the device is in sleep mode, press the gold button on the back of the ornament once to wake it up.
+**2\. Turning On the Ornament**
 
-3\. Play Holiday Songs:
+If the device is in sleep mode, press one of the gold buttons on the back to wake it.
 
-Once the ornament is awake, press the gold button (see image below) to play one of the pre-loaded songs:
+**3\. Play Holiday Songs**
 
-* 1 Press: Sleigh Bells
-* 2 Presses: Rudolph the Red-Nosed Reindeer
-* Long press: Let it Snow
+After the ornament is awake, press the gold buttons (see image below) to play a pre-loaded song:
 
-![](../../assets/screenshot-2024-11-01-015948-1.png)
+* **Button 1:** Sleigh Bells
+* **Button 2:** Rudolph the Red-Nosed Reindeer
+* **Button 3:** Let It Snow
+* **Button 4:** White Christmas
 
-4\. Add to Home Assistant (Optional):
+![](../../assets/h-2-front-image.jpg)
 
-For additional customization, you will need to flash the [smart H-1 firmware](https://wiki.apolloautomation.com/products/h1/code/) and then connect to Home Assistant following the [setup guide](https://wiki.apolloautomation.com/products/general/setup/getting-started/). Through Home Assistant, you can add new songs, change LED effects, and create custom automations.
+4\. **Add to Home Assistant** (Optional)
 
-5\. Enjoy Your Ornament:
+For additional customization, you will need to flash the [smart H-2 firmware](https://wiki.apolloautomation.com/products/h1/code/) and then connect to Home Assistant following the [setup guide](https://wiki.apolloautomation.com/products/general/setup/getting-started/). With Home Assistant you can add new songs, change LED effects, and create custom automations.
 
-Hang the H-1 on your tree, place it on a mantel, or incorporate it into any holiday setup for added joy.
+5\. **Enjoy Your Ornament**
 
-6\. Get Support if Needed:
+Hang the H-1 on your tree, place it on a mantel, or incorporate it into any holiday setup for added joy. Your Apollo H-1 is now ready to spread holiday cheer! Enjoy the festive tunes and LED effects, and feel free to share your unique setup with us in the community!
 
-If you encounter any issues, email us at support@apolloautomation.com or reach out on [Discord](dsc.gg/apolloautomation) for assistance.
-
-Your Apollo H-1 is now ready to spread holiday cheer! Enjoy the festive tunes and LED effects, and feel free to share your unique setup with us in the community!
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){               .md-button }
