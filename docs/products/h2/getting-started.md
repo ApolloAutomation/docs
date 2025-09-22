@@ -1,6 +1,6 @@
 ---
-title: H-1 Getting Started
-description: H-1 Getting Started tutorial.
+title: H-2 Getting Started
+description: H-2 Getting Started tutorial.
 ---
 # Getting Started
 
@@ -31,6 +31,6 @@ For additional customization, you will need to flash the [smart H-2 firmware](ht
 
 5\. **Enjoy Your Ornament**
 
-Hang the H-1 on your tree, place it on a mantel, or incorporate it into any holiday setup for added joy. Your Apollo H-1 is now ready to spread holiday cheer! Enjoy the festive tunes and LED effects, and feel free to share your unique setup with us in the community!
+Hang the H-2 on your tree, place it on a mantel, or incorporate it into any holiday setup for added joy. Your Apollo H-2 is now ready to spread holiday cheer! Enjoy the festive tunes and LED effects, and feel free to share your unique setup with us in the community!
 
 [Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){               .md-button }
