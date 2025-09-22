@@ -24,7 +24,7 @@ description: Frequently asked questions about the PUMP-1 Fluid Pump Sensor
 
 6\. **Is the PUMP-1 safe to use with drinking water or pet bowls?**
 
-* Yes, the PUMP-1 is made with food-safe materials suitable for potable water.
+* Yes, the PUMP-1 is made with food-safe materials suitable for potable water. This requires you to <a href="https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling" target="_blank" rel="noreferrer nofollow noopener">regularly clean the device</a> to make sure no bacteria is present.
 
 7\. **Can I use the PUMP-1 to automate watering for plants?**
 
@@ -44,7 +44,7 @@ description: Frequently asked questions about the PUMP-1 Fluid Pump Sensor
 
 11\. **How do I control the pump?**
 
-* The PUMP-1 can be controlled manually or integrated into smart home systems for automated operation based on sensor input or schedules.
+* The PUMP-1 can be controlled manually using the button or integrated into smart home systems for automated operation based on sensor input or schedules.
 
 12\. **Is the PUMP-1 durable?**
 
