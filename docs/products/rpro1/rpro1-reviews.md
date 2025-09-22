@@ -2,17 +2,12 @@
 title: R-Pro-1 Reviews
 description: Youtuber reviews and feedback about the R-Pro-1 sensor from Apollo Automation.
 ---
+&nbsp;
 
-These need to be updated
+# <a href="https://www.youtube.com/watch?v=wBiFkJ_9iYM" target="_blank" rel="noreferrer nofollow noopener">Simon Says Home Assistant R-PRO-1 Review</a>
 
-# [Simon Says Home Assistant MSR-2 Review](https://www.youtube.com/watch?v=U4qUhFSAxbk)
+# [Smart Home Scene R-PRO-1 Review](https://smarthomescene.com/reviews/apollo-r-pro-1-review-dual-mmwave-presence-multisensor-with-poe-support/)
 
-# [Smart Home Scene MSR-2 Review](https://smarthomescene.com/reviews/apollo-msr-2-review-the-smallest-presence-sensor-ever-made/)
+# [MostlyChris R-PRO-1 Review](https://www.youtube.com/watch?v=wVgNE8UtsAM)
 
-# [Home Tech Innovations MSR-2 Review](https://www.youtube.com/watch?v=K3j2rR2dsY0)
-
-# [MostlyChris MSR-2 Review](https://www.youtube.com/watch?v=nQpi2n5UWoQ)
-
-# [Smart Home Australia MSR-2 Review](https://www.youtube.com/watch?v=EzVyzFwdgN4)
-
-# [Michael Leen MSR-2 Review](https://www.youtube.com/watch?v=VdVR8Gs002Q)
+# <a href="https://tech.scargill.net/apollo-r-pro-1-mmwave-multisensor/" target="_blank" rel="noreferrer nofollow noopener">Pete Scargill R-PRO-1 Review</a>
