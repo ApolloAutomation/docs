@@ -205,7 +205,7 @@ VSC Find/Replace
                   - color: rgb(0,228,0)
                     value: 0
               - entity: sensor.downstairs_air_sensor_pm_2_5_m_weight_concentration
-                name: PM10
+                name: PM2.5
                 color: orange
                 opacity: 0.3
                 stroke_width: 3
