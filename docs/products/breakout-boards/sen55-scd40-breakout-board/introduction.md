@@ -26,6 +26,10 @@ GPIO3
 
 The <a href="https://apolloautomation.com/products/apollo-dev-2" target="_blank" rel="noreferrer nofollow noopener">Apollo DEV-2</a> is an ideal starter board for tinkerers, available on its own or bundled with a breadboard and Dupont (jumper) wires. The example YAML below uses the DEV-2 (ESP32 C6 Mini 4MB flash or 8MB flash if newest revision).
 
+!!! success "Make sure to power it via 5V!"
+
+    The SEN55 requires 4.5v or higher so powering via the QWIIC port at 3.3v will not give the SEN55 enough power to work properly.
+
 **Example ESPHome yaml:**
 
 ```yaml
