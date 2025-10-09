@@ -1,15 +1,17 @@
 ---
 title: Introduction
-description: Documentation for PUMP-1, including setup, usage, and best practices.
+description: Documentation for BTN-1, including setup, usage, and best practices.
 ---
 # Introduction
 
-![](../../assets/pump-1-main-1.webp)
+![](../../assets/apollo-btn-1-size.jpg)
 
-The Apollo PUMP-1 is a versatile, compact, and food-safe fluid pump designed to integrate seamlessly with our PLT-1 plant sensor to automate your watering needs. It features two ports for fluid sensors that detect water presence, allowing the pump to automatically stop when watering is complete or if your water bottle runs empty, protecting your system from damage.
+**Customizable Buttons:** 4 Cherry MX-compatible hot-swappable mechanical switches with dual LED feedback (under-key and front indicator LEDs). No soldering required for switch changes.
 
-Perfect for smart home gardeners, the PUMP-1 takes the hassle out of plant care by delivering precise, controlled watering automatically.
+**Modular Design:** Supports large top attachments like e-ink displays for status updates and NFC readers/emitters for contactless interactions. Side attachments include additional buttons, rotary dials, OLED screens, LED matrices, and sensor mezzanines.
 
-Beyond plants, the PUMP-1 is ideal for a variety of other uses such as filling fish tanks, robot vacuum mop tanks, pet bowls, coffee pots, and more. Its reliable performance, food-safe materials, and easy integration make it a perfect addition to any home automation setup.
+**Power & Connectivity:** USB-C or battery powered with Wi-Fi connectivity for wireless control and smart home integration.
 
-Experience effortless and safe fluid control with the Apollo PUMP-1. Smart, simple, and adaptable.
+**Versatile Applications:** Perfect for streamers, content creators, smart home enthusiasts, and IoT projects. Compatible with macro software and home automation platforms.
+
+**Compact & Durable:** Small desktop footprint with sturdy enclosure designed for both desktop and mounted use in various environments.

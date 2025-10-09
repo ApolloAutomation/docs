@@ -1,5 +1,5 @@
 ---
-title: Attaching Inlet and Outlet tubes to the PUMP-1
+title: Attaching Inlet and Outlet tubes to the BVN-1
 description: Tutorial for attaching both the Inlet and the Outlet tubes for the PUMP-1
 ---
 # Attaching Inlet and Outlet tubes to the PUMP-1
