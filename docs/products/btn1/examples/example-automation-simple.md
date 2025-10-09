@@ -16,6 +16,8 @@ description: >-
 
 ![](../../../assets/btn-1-example-gif-2.gif)
 
+4\. Your automation is now live. Click the button 1 button and it should toggle whatever light you selected in the automation!
+
 !!! tip "This is a very simple example automation."
 
     This example will work, however, it will require the attribute such as "Single Click" to change to Double Click or Long Press before it will toggle the light on a Single Click. You can get around this with advanced jinja templating - ChatGPT or Claude is great at helping with this!
