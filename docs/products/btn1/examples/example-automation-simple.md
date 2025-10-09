@@ -1,8 +1,6 @@
 ---
 title: BTN-1 Example automation
-description: >-
-  Example of how to use the BTN-1 Events to create an automation in Home
-  Assistant!
+description: Example of how to use the BTN-1 Events to create an automation in Home Assistant!
 ---
 # Examples
 
