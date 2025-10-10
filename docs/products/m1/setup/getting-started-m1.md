@@ -32,7 +32,7 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
     The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please follow the two steps below to finish setting up your device!
 
-1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**.
+1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**. Make sure to select **Hub75Matrix** is set to **64x64**.
 
 ![](../../../assets/m-1-led-settings.gif)
 
@@ -66,4 +66,4 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 ![](../../../assets/m-1-setup-wled-integration-test-device.png)
 
-[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){             .md-button .md-button--primary }
+[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){              .md-button .md-button--primary }
