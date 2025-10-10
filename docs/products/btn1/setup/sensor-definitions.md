@@ -2,7 +2,7 @@
 title: BTN-1 Sensor Definitions
 description: These are all of the entities exposed by the BTN-1 to automate on!
 ---
-# Sensor Definitions
+# Sensor Definitionsddw
 
 This serves as a list of all sensor definitions to help understand what each entity does for your new BTN-1!
 
@@ -42,19 +42,19 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **Button 1**
 
-    * Displays a Single Click, Double Click, and Long Press Event for Button 1. Great for automating!
+    * Displays a Single Click, Double Click, Four Clicks and Hold Event for Button 1. Great for automating!
 
     **Button 2**
 
-    * Displays a Single Click, Double Click, and Long Press Event for Button 2. Great for automating!
+    * Displays a Single Click, Double Click, Four Clicks and Hold Event for Button 2. Great for automating!
 
     **Button 3**
 
-    * Displays a Single Click, Double Click, and Long Press Event for Button 3. Great for automating!
+    * Displays a Single Click, Double Click, Four Clicks and Hold Event for Button 3. Great for automating!
 
     **Button 4**
 
-    * Displays a Single Click, Double Click, and Long Press Event for Button 4. Great for automating!
+    * Displays a Single Click, Double Click, Four Clicks and Hold Event for Button 4. Great for automating!
 
 ???+ info "Configuration"
 
@@ -88,4 +88,4 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     * Shows the time since last reboot.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                            .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                             .md-button }
