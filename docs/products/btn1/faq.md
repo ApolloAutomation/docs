@@ -2,54 +2,54 @@
 title: BTN-1 FAQ
 description: Frequently asked questions about the BTN-1 Macro Deck
 ---
-1\. **What is the maximum distance this pump can push water?**
+1\. **My BTN-1 is registering single clicks but not multiple, what is wrong?**
 
-* The PUMP-1 has been successfully tested with 33 feet of tubing and a vertical lift of 14 feet, while still maintaining strong head pressure. This demonstrates its capability to move water efficiently over long distances and significant elevation gains.
+* The BTN-1 is likely sleeping and when being woken up it only can register a single button press. We are looking into ways to avoid this but it might be an ESPHome limitation.
 
-2\. **What is the pump model used for the PUMP-1?**
+2\. **Question**
 
-* The pump model is a DSB413-A.
+* Answer
 
-3\. **What is the flow rate of the PUMP-1?**
+3\. **Question**
 
-* 900mL a minute in our testing!
+* Answer
 
-4\. **What is the Inner Diameter (ID) and Outer Diameter (OD) of the tubing?**
+4\. **Question**
 
-* The Inner Diameter is 7mm (7/25) and the Outer Diameter is 10mm.
+* Answer
 
-5\. **What voltage does the Apollo PUMP-1 operate on?**
+5\. **Question**
 
-* The PUMP-1 runs on 5V DC power, compatible with most standard USB power sources.
+* Answer
 
-6\. **Is the PUMP-1 safe to use with drinking water or pet bowls?**
+6\. **Question**
 
-* Yes, the PUMP-1 is made with food-safe materials suitable for potable water. This requires you to <a href="https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling" target="_blank" rel="noreferrer nofollow noopener">regularly clean the device</a> to make sure no bacteria is present.
+* Answer
 
-7\. **Can I use the PUMP-1 to automate watering for plants?**
+7\. **Question**
 
-* Absolutely! It’s designed to integrate seamlessly with our PLT-1 plant sensor for automated watering.
+* Answer
 
-8\. **Can the pump detect when to stop watering automatically?**
+8\. **Question**
 
-* Yes, the PUMP-1 has two ports for fluid sensors that detect water presence to stop the pump when watering is complete or if your water source is empty.
+* Answer
 
-9\. **What other uses does the PUMP-1 support?**
+9\. **Question**
 
-* Besides plant watering, it’s great for filling fish tanks, robot vacuum mop tanks, pet bowls, coffee pots, liquid transfer projects, and can also be used as a drain pump.
+* Answer
 
-10\. **How large is the PUMP-1?**
+10\. **Question**
 
-* The pump measures 3.4in x 1.3in x 1.8in (86.4mm x 33mm x 45.7mm), making it compact and easy to install.
+* Answer
 
-11\. **How do I control the pump?**
+11\. **Question**
 
-* The PUMP-1 can be controlled manually using the button or integrated into smart home systems for automated operation based on sensor input or schedules.
+* Answer
 
-12\. **Is the PUMP-1 durable?**
+12\. **Question**
 
-* Yes, it is designed for long-term use with proper maintenance and includes safety features like max run-time limits.
+* Answer
 
-13\. **Can I extend the fluid input sensor and fluid output sensor?**
+13\. **Question**
 
-* Yes, you can use a JST PH 2.0 3 pin connector such as <a href="https://www.amazon.com/XUGERIP-Connector-Female-Connectors-Extension/dp/B0D9R28WDR" target="_blank" rel="noreferrer nofollow noopener">these off Amazon</a>.
+* Answer
