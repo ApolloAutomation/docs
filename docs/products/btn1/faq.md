@@ -1,6 +1,6 @@
 ---
-title: PUMP-1 FAQ
-description: Frequently asked questions about the PUMP-1 Fluid Pump Sensor
+title: BTN-1 FAQ
+description: Frequently asked questions about the BTN-1 Macro Deck
 ---
 1\. **What is the maximum distance this pump can push water?**
 
