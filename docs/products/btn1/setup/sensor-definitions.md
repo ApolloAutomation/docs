@@ -42,19 +42,19 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **Button 1**
 
-    * Displays a Single Click, Double Click, Four Clicks and Hold Event for Button 1. Great for automating!
+    * Displays a Single Click, Double Click, Triple Click and Hold Event for Button 1. Great for automating!
 
     **Button 2**
 
-    * Displays a Single Click, Double Click, Four Clicks and Hold Event for Button 2. Great for automating!
+    * Displays a Single Click, Double Click, Triple Click and Hold Event for Button 2. Great for automating!
 
     **Button 3**
 
-    * Displays a Single Click, Double Click, Four Clicks and Hold Event for Button 3. Great for automating!
+    * Displays a Single Click, Double Click, Triple Click and Hold Event for Button 3. Great for automating!
 
     **Button 4**
 
-    * Displays a Single Click, Double Click, Four Clicks and Hold Event for Button 4. Great for automating!
+    * Displays a Single Click, Double Click, Triple Click and Hold Event for Button 4. Great for automating!
 
 ???+ info "Configuration"
 

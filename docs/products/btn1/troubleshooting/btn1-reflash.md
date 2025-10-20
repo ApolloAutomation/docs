@@ -2,7 +2,7 @@
 title: Reflashing The PUMP-1.
 description: Step by step guide for reflashing The PUMP-1.
 ---
-# Reflashing The PUMP-1
+# Reflashing The BTN-1
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 

@@ -16,7 +16,7 @@ description: >-
 
 ![](../../../assets/btn-1-example-gif-4.gif)
 
-3\. For the **Single Click** event, click **Add Action**, then search for **Light: Toggle** and select it. Next, choose the entity you want to control, such as **BTN-1 Light**, and click **Save**. Name your automation something like **ESPHome BTN-1 Blueprint**. You can repeat this process for **Double Click**, **Four Clicks**, and **Hold** events.
+3\. For the **Single Click** event, click **Add Action**, then search for **Light: Toggle** and select it. Next, choose the entity you want to control, such as **BTN-1 Light**, and click **Save**. Name your automation something like **ESPHome BTN-1 Blueprint**. You can repeat this process for **Double Click**, **Triple Click**, and **Hold** events.
 
 ![](../../../assets/btn-1-example-gif-5.gif)
 

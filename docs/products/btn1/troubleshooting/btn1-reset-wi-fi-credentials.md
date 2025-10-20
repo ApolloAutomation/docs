@@ -1,8 +1,8 @@
 ---
 title: Reset Wi-Fi Credentials
-description: Step by step guide for resetting the Wi-Fi Credentials on your PUMP-1.
+description: Step by step guide for resetting the Wi-Fi Credentials on your BTN-1.
 ---
-# Reset Wi-Fi Credentials on your PUMP-1
+# Reset Wi-Fi Credentials on your BTN-1
 
 1\. Plug the PUMP-1 into power.
 
