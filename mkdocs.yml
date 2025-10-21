@@ -307,12 +307,12 @@ nav:
           - FAQ: products/btn1/faq.md
           - Getting Started: products/general/setup/getting-started-btn1.md
           - Additional Info:
-            - General Tips: products/btn1/setup/btn1-general-tips.md
-            - Sensor Definitons: products/btn1/setup/btn1-sensor-definitions.md
+            - General Tips: products/btn1/setup/general-tips.md
+            - Sensor Definitons: products/btn1/setup/sensor-definitions.md
           - Troubleshooting:
-            - PUMP-1 Boot Mode: products/btn1/troubleshooting/btn1-boot-mode.md
-            - Factory Re-Flash PUMP-1: products/btn1/troubleshooting/btn1-reflash.md
-            - Teardown and Reassembly Of PUMP-1: products/btn1/troubleshooting/btn1-teardown.md
+            - BTN-1 Boot Mode: products/btn1/troubleshooting/btn1-boot-mode.md
+            - Factory Re-Flash BTN-1: products/btn1/troubleshooting/btn1-reflash.md
+            - Teardown and Reassembly Of BTN-1: products/btn1/troubleshooting/btn1-teardown.md
             - Reset Wi-Fi Credentials: products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
       - PUMP-1:
           - Introduction: products/pump1/introduction.md

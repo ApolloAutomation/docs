@@ -6,7 +6,7 @@ description: Frequently asked questions about the TEMP-1B temperature sensor.
 
 1\.**How is the TEMP-1B powered?**
 
-* The TEMP-1B operates with a **rechargeable** <a href="https://www.amazon.com/Rechargeable-Capacity-Batteries-Headlamp-Flashlight/dp/B0CZLGH9FW" target="_blank" rel="noreferrer nofollow noopener">16340 Flat Top battery</a> (not included), giving it portability for temp monitoring without being tied to an outlet.
+* The TEMP-1B operates with a **rechargeable** <a href="https://www.amazon.com/PAOWANG-Rechargeable-Capacity-Headlamp-Flashlight/dp/B0DF7T9YZ6" target="_blank" rel="noreferrer nofollow noopener">16340 Flat Top battery</a> (not included), giving it portability for temp monitoring without being tied to an outlet.
 
 2\. **How long does the battery last in the TEMP-1B?**
 
