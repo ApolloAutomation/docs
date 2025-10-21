@@ -302,6 +302,18 @@ nav:
             - Teardown and Reassembly Of AIR-1: products/air1/troubleshooting/air1-teardown.md
             - Reset Wi-Fi Credentials: products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
           - Reviews: products/air1/air1-reviews.md
+      - BTN-1:
+          - Introduction: products/btn1/introduction.md
+          - FAQ: products/btn1/faq.md
+          - Getting Started: products/general/setup/getting-started-btn1.md
+          - Additional Info:
+            - General Tips: products/btn1/setup/general-tips.md
+            - Sensor Definitons: products/btn1/setup/sensor-definitions.md
+          - Troubleshooting:
+            - BTN-1 Boot Mode: products/btn1/troubleshooting/btn1-boot-mode.md
+            - Factory Re-Flash BTN-1: products/btn1/troubleshooting/btn1-reflash.md
+            - Teardown and Reassembly Of BTN-1: products/btn1/troubleshooting/btn1-teardown.md
+            - Reset Wi-Fi Credentials: products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
       - PUMP-1:
           - Introduction: products/pump1/introduction.md
           - FAQ: products/pump1/faq.md
@@ -425,6 +437,16 @@ nav:
           - Troubleshooting:
             - H-1 Boot Mode: products/h1/boot-mode.md
             - Factory Re-Flash H-1: products/h1/code.md
+      - H-2:
+          - Introduction: products/h2/introduction.md
+          - FAQ: products/h2/faq.md
+          - Getting Started: products/h2/getting-started.md
+          - Reviews: products/h2/reviews.md
+          - Examples: 
+            - Holiday Songs: products/h2/holiday-songs.md
+          - Troubleshooting:
+            - H-1 Boot Mode: products/h2/troubleshooting/h2-boot-mode.md
+            - Factory Re-Flash H-1: products/h2/troubleshooting/h2-reflash.md
       - Apollo ODroid:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md

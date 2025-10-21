@@ -32,7 +32,7 @@ description: Frequently asked questions about the H-2.
 
 8\. **Does the ornament require any additional power source?**
 
-* The Apollo H-2 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a [(rechargable) RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/Rechargeable-Capacity-Batteries-Headlamp-Flashlight/dp/B0CZLGH9FW). It can also be powered by the USB-C port. The H-2 USB-C port will NOT charge the battery, you need an external charger.
+* The Apollo H-2 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a [(rechargable) RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/PAOWANG-Rechargeable-Capacity-Headlamp-Flashlight/dp/B0DF7T9YZ6). It can also be powered by the USB-C port. The H-2 USB-C port will NOT charge the battery, you need an external charger.
 
 9\. **Can I gift the Apollo H-2 to friends or family?**
 
@@ -46,4 +46,4 @@ description: Frequently asked questions about the H-2.
 
 * For more details, setups, guides, and other products please email us at support@apolloautomation.com
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                   .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                    .md-button .md-button--primary }
