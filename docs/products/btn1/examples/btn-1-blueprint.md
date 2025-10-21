@@ -1,8 +1,6 @@
 ---
 title: BTN-1 4 Event Blueprint
-description: >-
-  Example of how to use the BTN-1 Events with the BTN-1 4 Event Blueprint in
-  Home Assistant!
+description: Example of how to use the BTN-1 Events with the BTN-1 4 Event Blueprint in Home Assistant!
 ---
 # Examples
 
