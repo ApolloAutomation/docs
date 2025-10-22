@@ -27,3 +27,4 @@ Note: All resellers listed in Alphabetical order.
 * [Domo-Supply](https://www.domo-supply.com/en/brand/163-apollo-automation) (Switzerland)
 * [Open Circuit](https://opencircuit.shop/brand/apollo-automation) (Netherlands)
 * [Slim Huisje](https://slimhuisje.nl/collections/vendors?q=Apollo%20Automation) (Netherlands)
+* <a href="https://www.domadoo.fr/en/434_apollo" target="_blank" rel="noreferrer nofollow noopener">Domadoo</a> (France)
