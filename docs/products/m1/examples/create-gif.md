@@ -2,7 +2,7 @@
 title: M-1 LED Matrix Creating Your Own GIF
 description: Step by step guide to adding a GIF to the M-1 LED Matrix!
 ---
-1. Make sure your Apollo M-1 is on firmware version 14.5.1. You can flash your device [here](https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-reflash/).
+1. Make sure you know your Apollo M-1 board revision (look on the back of the controller), Rev 4 or Rev 6, and are on firmware version 14.5.1. You can flash your device [here](https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-reflash/).
 2. Select Config
 3. ![](../../../assets/config.png)
 4. Select Wi-Fi Setup
