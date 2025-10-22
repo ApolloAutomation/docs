@@ -26,7 +26,7 @@ description: Step by step guide to adding a gif to the M-1 LED Matrix!
 
    ![](../../../assets/gsd.gif)
 
-7. Now we need to go to https://ezgif.com/ and select Resize
+7. Now we need to go to [https://ezgif.com/](https://ezgif.com/) and select Resize
 
    ![](../../../assets/resize.png)
 
