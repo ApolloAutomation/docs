@@ -197,6 +197,7 @@ nav:
             - Microphone: products/m1/addons/adding-microphone-to-m-1.md
           - Examples:
             - Create Logo Image: products/m1/examples/create-logo-image.md
+            - Create GIF: products/m1/examples/create-gif.md
             - Scrolling Text: products/m1/examples/scrolling-text.md
             - QR Code Generator: products/m1/examples/qr-code-generator.md
             - Share Data From Home Assistant : products/m1/examples/share-data-from-home-assistant.md
