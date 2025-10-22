@@ -1,6 +1,6 @@
 ---
-title: M-1 LED Matrix Creating Your Own Gif
-description: Step by step guide to adding a gif to the M-1 LED Matrix!
+title: M-1 LED Matrix Creating Your Own GIF
+description: Step by step guide to adding a GIF to the M-1 LED Matrix!
 ---
 1. &nbsp;Select Config
 
@@ -22,19 +22,19 @@ description: Step by step guide to adding a gif to the M-1 LED Matrix!
 
    ![](../../../assets/ip.png)
 
-6. Now find your gif of choice
+6. Now find your GIFof choice
 
    ![](../../../assets/gsd.gif)
 
-7. Now we need to go to https://ezgif.com/ and select Resize
+7. Now we need to go to [https://ezgif.com/](https://ezgif.com/) and select Resize
 
    ![](../../../assets/resize.png)
 
-8. Select Browse and Upload your gif
+8. Select Browse and Upload your GIF
 
    ![](../../../assets/upload-gif.png)
 
-9. Change the Width and Height to 64x64, select resize and save the gif (use an easy name since we will be using it later)
+9. Change the Width and Height to 64x64, select resize and save the GIF (use an easy name since we will be using it later)
 
    ![](../../../assets/64x64-1.png)
 
@@ -46,15 +46,15 @@ description: Step by step guide to adding a gif to the M-1 LED Matrix!
 
     ![](../../../assets/file-system.png)
 
-12. Select Browse, choose your gif and then select Upload
+12. Select Browse, choose your GIF and then select Upload
 
     ![](../../../assets/upload.png)
 
-13. Now go back to your Apollo M-1 IP address, select the Image effect, use the pencil to rename the effect EXACTLY the same as your gif (example: gsd.gif) and select the check mark to save it
+13. Now go back to your Apollo M-1 IP address, select the Image effect, use the pencil to rename the effect EXACTLY the same as your GIF (example: gsd.gif) and select the check mark to save it
 
     ![](../../../assets/image-8.png)
 
-14. Now you should see your gif playing on the Apollo M-1!
+14. Now you should see your GIF playing on the Apollo M-1!
 
     ![](../../../assets/panel.png)
 
