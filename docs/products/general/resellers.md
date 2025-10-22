@@ -15,8 +15,8 @@ Note: All resellers listed in Alphabetical order.
 ## USA
 
 * [Ameridroid](https://ameridroid.com/search?q=apollo+automation) (California)
-* [Dongle Jungle](https://www.donglejungle.com) (California)
-* [DrZzs store](https://www.drzzs.com/product-category/sensors/) (Utah)
+* [Dongle Jungle](https://www.donglejungle.com/search?q=apollo+automation) (California)
+* [DrZzs store](https://www.drzzs.com/product-tag/apollo/) (Utah)
 
 ## UK
 
