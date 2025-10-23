@@ -13,7 +13,7 @@ description: Step by step guide to adding a GIF to the M-1 LED Matrix!
 
    ![](../../../assets/ssid.png)
 
-6. Now you can grab the IP address of the M-1 from your router which should be labeled esp32s3.
+6. Now you can grab the IP address of the M-1 from your router which should be labeled esp32s3 or you can use the WLED Native app to automatically find the device. (Download here: [Android](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid&amp;hl=en_US) / [Apple](https://apps.apple.com/us/app/wled-native/id6446207239))
 
    ![](../../../assets/esp.png)
 
