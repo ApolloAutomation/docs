@@ -14,17 +14,17 @@ Note: All resellers listed in Alphabetical order.
 
 ## USA
 
-* [Ameridroid](https://ameridroid.com/search?q=apollo+automation) (California)
-* [Dongle Jungle](https://www.donglejungle.com/search?q=apollo+automation) (California)
-* [DrZzs store](https://www.drzzs.com/product-tag/apollo/) (Utah)
+* <a href="https://ameridroid.com/search?q=apollo+automation" target="_blank" rel="noreferrer nofollow noopener">Ameridroid</a> (California)
+* <a href="https://www.donglejungle.com/search?q=apollo+automation" target="_blank" rel="noreferrer nofollow noopener">Dongle Jungle</a> (California)
+* <a href="https://www.drzzs.com/product-tag/apollo/" target="_blank" rel="noreferrer nofollow noopener">DrZzs store</a> (Utah)
 
 ## UK
 
-* [The Pi Hut](https://thepihut.com/collections/apollo-automation)
+* <a href="https://thepihut.com/collections/apollo-automation" target="_blank" rel="noreferrer nofollow noopener">The Pi Hut</a>
 
 ## Europe
 
-* [Domo-Supply](https://www.domo-supply.com/en/brand/163-apollo-automation) (Switzerland)
-* [Open Circuit](https://opencircuit.shop/brand/apollo-automation) (Netherlands)
-* [Slim Huisje](https://slimhuisje.nl/collections/vendors?q=Apollo%20Automation) (Netherlands)
 * <a href="https://www.domadoo.fr/en/434_apollo" target="_blank" rel="noreferrer nofollow noopener">Domadoo</a> (France)
+* <a href="https://www.domo-supply.com/en/brand/163-apollo-automation" target="_blank" rel="noreferrer nofollow noopener">Domo-Supply</a> (Switzerland)
+* <a href="https://opencircuit.shop/brand/apollo-automation" target="_blank" rel="noreferrer nofollow noopener">Open Circuit</a> (Netherlands)
+* <a href="https://slimhuisje.nl/collections/vendors?q=Apollo%20Automation" target="_blank" rel="noreferrer nofollow noopener">Slim Huisje</a> (Netherlands)
