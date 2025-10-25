@@ -18,7 +18,7 @@ description: >-
 
 ![](../../../assets/m-1-create-gifs-resize-gifs.gif)
 
-3\. Set the **Width** to **64** and he **Height** to **64** then click **Resize image** then scroll down to the **Resized Image:** section and click the **Save** icon.
+3\. Set the **Width** to **64** and the **Height** to **64** then click **Resize image** then scroll down to the **Resized Image:** section and click the **Save** icon.
 
 ![](../../../assets/m-1-create-gifs-resize-gifs-save.gif)
 
