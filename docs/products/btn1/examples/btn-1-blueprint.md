@@ -6,11 +6,13 @@ description: >-
 ---
 # Blueprint Setup
 
-### Simple Method
+### Automatic Import
 
-1\. Click the button below and follow the steps to import the blueprint.
+1\. Click the import blueprint button below and follow the steps to import the blueprint.
 
 <a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FBTN-1%2FBTN-1.yaml" target="_blank" rel="noopener"><img src="../../../assets/import-blueprint-image.svg" /></a>
+
+&nbsp;
 
 2\. Copy <a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FBTN-1%2FBTN-1.yaml" target="_blank" rel="noreferrer nofollow noopener">this link</a> and paste it into the **Blueprint address** box and click **Preview** then click **Import blueprint**. <a href="https://github.com/jesserockz/blueprints/blob/main/LICENSE" target="_blank" rel="noreferrer nofollow noopener"><em>Thanks Jesse at ESPHome</em></a>*!*
 
@@ -30,7 +32,7 @@ description: >-
 
 4\. Your blueprint is now live. Click the button 1 button and it should toggle whatever light you selected in the blueprint. This can be anything in Home Assistant such as your light, fan, scene, etc!
 
-### Manual Method
+### Manual Import
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/automation/dashboard" target="_blank" rel="noreferrer nofollow noopener">automations page</a> and click on **Blueprints** in the top right then select **Import Blueprint**.
 

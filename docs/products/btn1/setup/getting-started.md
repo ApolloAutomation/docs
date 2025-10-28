@@ -16,23 +16,21 @@ description: Step by step guide to getting started with your BTN-1!
 
 To connect through the sensor's onboard hotspot follow the below:
 
-1\. Plug the BTN-1 in via USB-C. A 5v 1amp power supply will work fine!
+1\. Plug the BTN-1 in via USB-C. A 5v 1amp power supply will work fine
 
-!!! failure "If your sensor is restarting or not broadcasting Wi-Fi try another usb-c cable and power supply!"
+!!! ! failure "If your sensor is restarting or not broadcasting Wi-Fi try another usb-c cable and power supply!"
 
     ESP devices are sensitive to power fluctuations and require constant 5v power. Our devices use 1amp or less so most used phone chargers will work - just make sure it's a quality one!
 
-2\. On your phone or PC, open the WiFi settings and connect to "Apollo BTN-1 Hotspot", it might take a minute for the WiFi network to show up.
+2\. On your phone or PC, open the WiFi settings and connect to "Apollo BTN-1 Hotspot".
 
-![](assets/getting-started-pic-1-1.png)
+![](../../../assets/btn-1-reset-wifi-screenshot.png)
 
-3\. Once connected it should automatically open a dashboard for your sensor
+3\. Once connected it should automatically open a dashboard for your sensor. If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
-If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
+4\. Select the Wi-Fi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
 
-4\. Select the WiFi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
-
-![](assets/getting-started-pic-2.png)
+![](../../../assets/btn-1-getting-started-enter-wifi-details-hotspot.png)
 
 !!! tip "Tip for Mesh Wi-Fi systems or multiple Access Points"
 
@@ -40,7 +38,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                              .md-button .md-button--primary }
+[Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                               .md-button .md-button--primary }
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
@@ -60,15 +58,15 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![](../../../assets/btn-1-improv-ble-esphome-integration.gif)
 
-4\. Your device is now added to your Wi-Fi and added to the ESPHome Integration in Home Assistant. You should now be ready to setup a blueprint and start using your BTN-1!
+4\. Your device is now added to your Wi-Fi and added to the ESPHome Integration in Home Assistant. You should now be ready to <a href="https://wiki.apolloautomation.com/products/btn1/examples/btn-1-blueprint" target="_blank" rel="noreferrer nofollow noopener">setup a blueprint</a> and start using your BTN-1!
 
 ### Connecting To ESPHome Device Builder
 
 !!! tip "Skip the ESPHome Device Builder unless..."
 
-    Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!")unless you need to rename your sensor or do manual edits to the yaml
+    Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!") unless you need to rename your sensor or do manual edits to the yaml
 
-You can add the ESPHome Device Builder addon in Home Assistant to easily update your device or edit the yaml. If you don't have ESPHome Device Builder addon installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder").
+You can add the ESPHome Device Builder addon in Home Assistant to easily update your device or edit the yaml. If you don't have ESPHome Device Builder addon installed you can <a href="http://homeassistant.local:8123/hassio/store" target="_blank" rel="noreferrer nofollow noopener">search esphome device builder on the addon store</a> and install it.
 
 Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
 
@@ -126,4 +124,4 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                 .md-button .md-button--primary }
