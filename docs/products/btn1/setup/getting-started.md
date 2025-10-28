@@ -4,6 +4,8 @@ description: Step by step guide to getting started with your BTN-1!
 ---
 # BTN-1 Getting Started
 
+This will guide you through adding on switches and keycaps to your BTN-1 then adding it to your Wi-Fi and Home Assistant!
+
 ### Installing Brown Switches
 
 1\. Line up the two gold pins with the holes on your BTN-1, then press down gently. Be careful, as the pins can bend or get damaged if too much force is used.
@@ -42,7 +44,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                     .md-button .md-button--primary }
+[Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                        .md-button .md-button--primary }
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
@@ -104,4 +106,4 @@ wifi_password: "your-wifi-pass-here"
 
 2\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                       .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                          .md-button .md-button--primary }
