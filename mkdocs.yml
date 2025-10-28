@@ -306,10 +306,13 @@ nav:
       - BTN-1:
           - Introduction: products/btn1/introduction.md
           - FAQ: products/btn1/faq.md
-          - Getting Started: products/general/setup/getting-started-btn1.md
+          - Getting Started: products/btn1/setup/getting-started.md
           - Additional Info:
             - General Tips: products/btn1/setup/general-tips.md
             - Sensor Definitons: products/btn1/setup/sensor-definitions.md
+          - Examples: 
+            - Blueprint: products/btn1/examples/blueprint.md
+            - Example Automation: products/btn1/examples/example-automation.md
           - Troubleshooting:
             - BTN-1 Boot Mode: products/btn1/troubleshooting/btn1-boot-mode.md
             - Factory Re-Flash BTN-1: products/btn1/troubleshooting/btn1-reflash.md
