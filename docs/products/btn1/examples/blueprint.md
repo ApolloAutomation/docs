@@ -12,8 +12,6 @@ description: >-
 
 <a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FBTN-1%2FBTN-1.yaml" target="_blank" rel="noopener"><img src="../../../assets/import-blueprint-image.svg" /></a>
 
-&nbsp;
-
 2\. Copy <a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FBTN-1%2FBTN-1.yaml" target="_blank" rel="noreferrer nofollow noopener">this link</a> and paste it into the **Blueprint address** box and click **Preview** then click **Import blueprint**. <a href="https://github.com/jesserockz/blueprints/blob/main/LICENSE" target="_blank" rel="noreferrer nofollow noopener"><em>Thanks Jesse at ESPHome</em></a>*!*
 
 ![](../../../assets/btn-1-example-gif-3.gif)
