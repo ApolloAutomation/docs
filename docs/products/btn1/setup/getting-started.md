@@ -4,13 +4,17 @@ description: Step by step guide to getting started with your BTN-1!
 ---
 # BTN-1 Getting Started
 
-### Installing the Brown Switches
+### Installing Brown Switches
 
-1\.
+1\. Line up the two gold pins with the holes on your BTN-1, then press down gently. Be careful, as the pins can bend or get damaged if too much force is used.
 
-### Installing the Keycaps
+![](../../../assets/btn-1-install-switches-gif.webp)
 
-1\.
+### Installing Keycaps
+
+1\. Line up the + on the keycap with the + on the top of the switch you installed. It may require a little pressure, but it should press on smoothly. Once placed, lightly tap to ensure the keycap is fully seated.
+
+![](../../../assets/btn-1-getting-started-installing-keycaps-gif.webp)
 
 ### Connecting Through Hotspot
 
@@ -18,7 +22,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 1\. Plug the BTN-1 in via USB-C. A 5v 1amp power supply will work fine
 
-!!! ! failure "If your sensor is restarting or not broadcasting Wi-Fi try another usb-c cable and power supply!"
+!!! success "If your sensor is restarting or not broadcasting Wi-Fi try another usb-c cable and power supply!"
 
     ESP devices are sensitive to power fluctuations and require constant 5v power. Our devices use 1amp or less so most used phone chargers will work - just make sure it's a quality one!
 
@@ -38,7 +42,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                 .md-button .md-button--primary }
+[Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                     .md-button .md-button--primary }
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
@@ -68,9 +72,9 @@ To connect through the sensor's onboard hotspot follow the below:
 
 You can add the ESPHome Device Builder addon in Home Assistant to easily update your device or edit the yaml. If you don't have ESPHome Device Builder addon installed you can <a href="http://homeassistant.local:8123/hassio/store" target="_blank" rel="noreferrer nofollow noopener">search esphome device builder on the addon store</a> and install it.
 
-Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
+Make sure to fill out your Wi-Fi details in the **secrets** section by clicking on the **secrets** button.
 
-![esphome-device-compiler-dashboard-pic-1.png](../../../assets/esphome-device-compiler-dashboard-pic-1.png)
+![](../../../assets/esphome-device-builder-secrets.png)
 
 ```yaml
 # Your Wi-Fi SSID and password - keep the quotes and just replace the name and password between the quotes!
@@ -78,50 +82,26 @@ wifi_ssid: "your-wifi-ssid-here"
 wifi_password: "your-wifi-pass-here"
 ```
 
-1\. Click "Show" in the top right to show your discovered devices!
+1\. Open the <a href="http://homeassistant.local:8123/5c53de3b_esphome/ingress" target="_blank" rel="noreferrer nofollow noopener"><strong>ESPHome Device Builder</strong></a> dashboard.
 
 ![](assets/esphome-device-builder-show-discovered-device.png)
 
-2\. Click the ESPHome Builder in your sidebar then click "**TAKE CONTROL**" for your new Apollo Device!
+2\. Click **Show** in the top right to show your discovered devices then click on **Take Control** then click **Install**. This can take multiple minutes or longer on low-end hardware.
 
-![](assets/esphome-device-builder-pic-1.png)
+![](../../../assets/btn-1-getting-started-take-control-gif.gif)
 
-3\. Rename your sensor here (this only renames the sensor in the ESPHome Device Compiler's Dashboard) or skip it and continue on by clicking "**TAKE CONTROL**" again as shown below.
+3\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
 
-![](assets/esphome-device-builder-pic-2.png)
+![](../../../assets/btn-1-getting-started-ota-successful.png)
 
-4\. Click "**INSTALL**" (DO NOT click skip!) and let your device get adopted into the ESPHome Device Builder. Please have patience as this takes a few minutes to compile and then install to your new Apollo device!
-
-![](assets/esphome-device-builder-pic-3.png)
-
-5\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
-
-![](assets/getting-started-pic-4.png)
-
-6\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
+4\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
 ### Connecting to Home Assistant via ESPHome Integration:
 
-1\. Click the "**Notifications**" Icon in the bottom left.
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integration</a> then click on **Add** then click **Submit**. When prompted click **Finish** then give it a location and click **Finish** or click **Skip and Finish**.
 
-![](assets/getting-started-pic-5.png)
+![](../../../assets/btn-1-getting-started-esphome-integration-gif.gif)
 
-2\. Click "**Check it out**" to go to the integrations page and see the new device that was found.
+2\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
-![](assets/getting-started-pic-7.png)
-
-3\. Click "**ADD**" to begin adding the device to home assistant.
-
-![](assets/getting-started-pic-6-1.png)
-
-4\. Click "**SUBMIT**" to confirm you want to add your new Apollo device to home assistant.
-
-![](assets/getting-started-pic-8.png)
-
-5\. Give it an area and click "**FINISH**".
-
-![](assets/getting-started-pic-9.png)
-
-6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
-
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                   .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                       .md-button .md-button--primary }
