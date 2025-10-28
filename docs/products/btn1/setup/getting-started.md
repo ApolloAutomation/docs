@@ -4,13 +4,17 @@ description: Step by step guide to getting started with your BTN-1!
 ---
 # BTN-1 Getting Started
 
-### Installing the Brown Switches
+### Installing Brown Switches
 
-1\.
+1\. Line up the two gold pins with the holes on your BTN-1, then press down gently. Be careful, as the pins can bend or get damaged if too much force is used.
 
-### Installing the Keycaps
+![](../../../assets/btn-1-install-switches-gif.webp)
 
-1\.
+### Installing Keycaps
+
+1\. Line up the + on the keycap with the + on the top of the switch you installed. It may require a little pressure, but it should press on smoothly. Once placed, lightly tap to ensure the keycap is fully seated.
+
+![](../../../assets/btn-1-getting-started-installing-keycaps-gif.webp)
 
 ### Connecting Through Hotspot
 
@@ -18,7 +22,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 1\. Plug the BTN-1 in via USB-C. A 5v 1amp power supply will work fine
 
-!!! ! failure "If your sensor is restarting or not broadcasting Wi-Fi try another usb-c cable and power supply!"
+!!! success "If your sensor is restarting or not broadcasting Wi-Fi try another usb-c cable and power supply!"
 
     ESP devices are sensitive to power fluctuations and require constant 5v power. Our devices use 1amp or less so most used phone chargers will work - just make sure it's a quality one!
 
@@ -38,7 +42,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                 .md-button .md-button--primary }
+[Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                   .md-button .md-button--primary }
 
 ### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
@@ -124,4 +128,4 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                   .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                     .md-button .md-button--primary }
