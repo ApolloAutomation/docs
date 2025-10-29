@@ -2,7 +2,7 @@
 title: BTN-1 Sensor Definitions
 description: These are all of the entities exposed by the BTN-1 to automate on!
 ---
-# Sensor Definitionsddw
+# Sensor Definitions
 
 This serves as a list of all sensor definitions to help understand what each entity does for your new BTN-1!
 
