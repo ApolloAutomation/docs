@@ -26,7 +26,7 @@ description: Step by step guide for reflashing The BTN-1.
 
 5\. Click Install **BTN-1** then click **Install** again.
 
-&nbsp;
+![](../../../assets/btn-1-reflash-install.gif)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
@@ -36,4 +36,4 @@ description: Step by step guide for reflashing The BTN-1.
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-[Head to the Getting Started article to setup your BTN-1 as a new device!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/){         .md-button .md-button--primary }
+[Head to the Getting Started article to setup your BTN-1 as a new device!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/){          .md-button .md-button--primary }

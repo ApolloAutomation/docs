@@ -1,33 +1,47 @@
 ---
 title: BTN-1 Teardown
-description: Step by step guide for tearing down your BTN-1 to replace parts, clean it, swap cases, etc.
+description: >-
+  Step by step guide for tearing down your BTN-1 to replace parts, clean it,
+  swap cases, etc.
 ---
 # Teardown and Reassembly Of BTN-1
 
 ###### Disassembly
 
-!!! danger "Drain all liquid from the PUMP-1 before disassembling!"
+!!! warning "If you have a BTN-1 with a battery you should flip the power switch to off"
 
-    Ensure the PUMP-1 is fully drained of liquid before removing any tubes. Failure to do so may result in damage to the unit.
+    The BTN-1 ships with a lithium ion battery, however, this means it needs a master shutoff switch, which is on the left side of your BTN-1
 
-1\. Unplug the USB-C cable and remove the lid.
+1\. Flip the battery switch towards you to the off position. Users with no battery skip to step 2.
 
-![](../../../assets/pump-1-remove-usb-c-and-lid-webp.webp)
+![](../../../assets/btn-1-flip-power-switch-off.webp)
 
-2\. Remove the 3 pin JST connectors using your fingers or needle nose pliers.
+2\. With the BTN-1 USB-C port facing upwards, unplug the USB-C cable and remove the lid.
 
-![](../../../assets/pump-1-remove-jst-sensor-connectors-webp.webp)
+![](../../../assets/btn-1-remove-usb-c-lift-lid.webp)
 
-3\. Detach both the inlet and outlet tubes by pinching near the connection point and twisting gently while pulling - this makes removal much easier.
+3\. Gently lift the BTN-1 green PCB out of the device at an angle so the buttons clear the case easier.
 
-![](../../../assets/pump-1-remove-tubes-webp.webp)
+![](../../../assets/btn-1-remove-pcb.webp)
+
+4\. Remove the 2-pin JST connector and remove the battery.
+
+![](../../../assets/btn-1-unplug-jst.webp)
 
 ###### Reassembly
 
-1\. Attach the two tubes to the pump as shown below. The fluid input tube is the left tube on the same side as the USB-C port and the fluid output tube is the tube on the right on the side of the PUMP-1.
+1\. Re-attach the 2-pin JST connector and place the battery writing side down with the wires on the left side of the case.
 
-![](../../../assets/pump-1-install-tubes-webp.webp)
+![](../../../assets/btn-1-plug-in-jst.webp)
 
-2\. Insert the JST connector coming from your bottle's sensor into the **right-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. The small bump on top of the white connector must be facing **upwards** when inserting it. This ensures proper alignment and a secure connection. Follow up by inserting the second JST connector from the optional fluid output sensor into the **left-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. Finally, place the lid on top of the pump-1 case and gently snap it in place.
+2\. Gently place the BTN-1 green PCB back in the case at an angle so the buttons will slide into cutout in the case.
 
-![](../../../assets/pump-1-install-jst-sensor-connectors-and-lid-webp.webp)
+![](../../../assets/btn-1-replace-pcb.webp)
+
+3\. Line up the lid of the case with the holes for the rgb leds then gently press down to snap it into place.
+
+![](../../../assets/btn-1-replace-lid.webp)
+
+4\. Flip the power switch back on.
+
+![](../../../assets/btn-1-flip-power-switch-on.webp)
