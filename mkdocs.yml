@@ -444,13 +444,13 @@ nav:
       - H-2:
           - Introduction: products/h2/introduction.md
           - FAQ: products/h2/faq.md
-          - Getting Started: products/h2/getting-started.md
-          - Reviews: products/h2/reviews.md
+          - Getting Started: products/h2/setup/getting-started.md
+          - Reviews: products/h2/h2-reviews.md
           - Examples: 
             - Holiday Songs: products/h2/holiday-songs.md
           - Troubleshooting:
-            - H-1 Boot Mode: products/h2/troubleshooting/h2-boot-mode.md
-            - Factory Re-Flash H-1: products/h2/troubleshooting/h2-reflash.md
+            - H-2 Boot Mode: products/h2/troubleshooting/boot-mode.md
+            - Factory Re-Flash H-2: products/h2/troubleshooting/reflash.md
       - Apollo ODroid:
           - Introduction: products/apolloodroid/introduction.md
           - FAQ: products/apolloodroid/faq.md

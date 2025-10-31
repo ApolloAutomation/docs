@@ -2,12 +2,14 @@
 title: H-2 Introduction
 description: H-2 Introduction.
 ---
-![](../../assets/h-2-front-image.jpg)
+![](../../assets/h-2-image.png)
 
-The Apollo H-2 is our special holiday ornament, designed to bring festive cheer to your home while supporting a good cause. As the second in our annual series, this ornament is crafted with both functionality and community spirit in mind. All proceeds from the H-2 go directly to <a href="https://casaoflexington.org/" target="_blank" rel="noreferrer nofollow noopener">Casa De Lexington in Lexington, KY</a> and the <a href="https://www.openhomefoundation.org/" target="_blank" rel="noreferrer nofollow noopener">Open Home Foundation</a>, reflecting our commitment to giving back and celebrating the season alongside our community.
+**Can be powered by USB-C or battery.** Uses a 16340 or RCR123A **<u>rechargeable</u>** battery. The device can charge the battery directly via USB-C for convenient power management.
 
-The H-2 is pre-flashed with a playful firmware featuring four classic holiday songs. With just a press of the gold buttons on the back, you can enjoy the tunes with synchronized LED effects: one press for Sleigh Bells, two presses for Rudolph the Red-Nosed Reindeer, and long press for Let it Snow. Each song brings its own light show, making the H-1 both fun and festive right out of the box.
+The Apollo H-2 is the second edition of our annual holiday ornament! It's our way of saying thank you for your support and giving back to our community.
 
-For those looking to personalize their experience, the H-2 can also be integrated with Home Assistant, transforming it into a “smart” ornament. Through this setup, you can customize songs, LED effects, and create unique holiday automations to suit your style.
+The H-2 ships pre-flashed with a basic firmware featuring four classic holiday tunes. Simply press any of the four buttons on the back to play: Button 1 for Jingle Bells, Button 2 for Rudolph the Red-Nosed Reindeer, Button 3 for Let it Snow, and Button 4 for Blue Christmas. The LEDs light up with unique effects to match each tune!
 
-With the Apollo H-2, we’re blending holiday joy, smart home innovation, and community spirit into a single ornament, making it a perfect addition to any festive setup.
+You can also integrate it with Home Assistant to unlock more features, such as changing the songs and LED effects, bluetooth proxy, and bluetooth tracking. You will need to <a href="https://wiki.apolloautomation.com/products/h2/troubleshooting/h2-reflash/" target="_blank" rel="noreferrer nofollow noopener">reflash it to the smart firmware</a> first!
+
+**New for 2025:** The H-2 features four dedicated song buttons (no more multi-click!), upgraded ESP32-C6 processor with 8MB flash, 58 RGB LEDs (up from 22), USB-C charging, and a logo light for enhanced visual appeal.
