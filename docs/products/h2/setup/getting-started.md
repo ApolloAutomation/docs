@@ -8,7 +8,7 @@ description: H-2 Getting Started tutorial.
 
 Insert a rechargeable RC-CR123A (16340) battery, ideally 2800mAh or higher, such as <a class="decorated-link" href="https://www.amazon.com/CBJJ-Battery-2800mAh-Rechargeable-Flashlight/dp/B0CL9N9XJ6" target="_blank" rel="noreferrer nofollow noopener">this option on Amazon</a>.
 
-![](../../assets/h-2-insert-battery.webp)
+![](../../../assets/h-2-insert-battery.webp)
 
 **2\. Turning On the Ornament**
 
@@ -31,4 +31,4 @@ For additional customization, you will need to flash the [smart H-2 firmware](ht
 
 Hang the H-2 on your tree, place it on a mantel, or incorporate it into any holiday setup for added joy. Your Apollo H-2 is now ready to spread holiday cheer! Enjoy the festive tunes and LED effects, and feel free to share your unique setup with us in the community!
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                 .md-button }
