@@ -8,31 +8,21 @@ description: Step by step guide for re-flashing the H-2 back to factory firmware
 
     This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
 
-1\. Disconnect your H-2 from power. With the device facing you, locate the **boot button** - it’s the button on the right labeled **BT1**.
+1\. Disconnect your H-2 from power. With the device facing you, locate the boot button - it’s the small black button on the right.
 
-!!! danger "Remove the battery before proceeding"
+2\. Plug in a USB cable that supports power and data into your computer.
 
-    Make sure that there is no battery in the device - the battery will prevent it from entering boot mode.
+3\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your H-2 then let go of the button.
 
-1\. Plug in a USB cable that supports power and data into your computer and connect the other end to your H-2.
-
-&nbsp;
-
-2\. With the device facing you, locate the reset (left) and boot (right) buttons.
-
-&nbsp;
-
-3\. Hold down the boot button (the right button), then plug in the USB-c cable, then  release the boot button.
-
-&nbsp;
+![](../../../assets/h-2-boot-mode-method-1-boot-button.webp)
 
 4\. Navigate to our installer page using a chromium based browser such as Chrome or Edge and click **connect** under **H-2 Smart Wi-Fi Firmware** or **H-2 No Wi-Fi Firmware**. Select the open com port and click **connect**.
 
-![](../../../assets/btn-1-reflash-installer-connect.gif)
+![](../../../assets/h-2-reflash-installer-connect.gif)
 
 5\. Click Install **H-2** then click **Install** again.
 
-![](../../../assets/btn-1-reflash-install.gif)
+![](../../../assets/h-2-reflash-install.gif)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
@@ -42,4 +32,4 @@ description: Step by step guide for re-flashing the H-2 back to factory firmware
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-[Head to the Getting Started article to setup your H-2 as a new device!](https://wiki.apolloautomation.com/products/h-2/setup/getting-started/){           .md-button .md-button--primary }
+[Head to the Getting Started article to setup your H-2 as a new device!](https://wiki.apolloautomation.com/products/h-2/setup/getting-started/){             .md-button .md-button--primary }
