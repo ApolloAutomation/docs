@@ -16,8 +16,46 @@ description: >-
 
 \- **Waterproof sealant:** https://www.amazon.com/DAP-18387-Flexible-Purpose-Waterproof/dp/B07JNX6LB1?crid=1L3FXWGEC0AD0&dib=eyJ2IjoiMSJ9.MgTYKMsWiIbFqfkK51cOTUX07s4VqXsG3SpWV-uQDUcsj78Afwg3otaP63d8RayUsmSKqm0QPDW-PCWyZYN1\_r7Qy19p9mD5UaZ\_9xRHqBlvFjW4qJONw8-J7gAP4d9sjD1-\_0-LbuupmNKwFEcJG1tzYmq2yo8Cz7MGzXygPppPOliBbbqNcCJ36tttsN7aeUek8G2nCsO5NRQuMFukLUnlmooIMga88MChiJ7EH7c.gn06pZFOuf3lvwtZYCBbM-jfr7Htp\_GiPG1vw-vMr5I&dib\_tag=se&keywords=Ultra%2BClear%2B5%2Boz.%2BAll%2BPurpose%2BWaterproof%2BSealant&qid=1762895638&sprefix=ultra%2Bclear%2B5%2Boz.%2Ball%2Bpurpose%2Bwaterproof%2Bsealant%2Caps%2C108&sr=8-3&th=1<br><br>\- **Screwdriver**<br><br>\- **Wire strippers**<br><br>\- **Hobby knife**<br><br>\- **Tweezers**
 
-2\. Connect the barrel plug to the WAGO connector. It is the large white compnent on the bottom left of the board below the USB-C port. Connect the RED (+) wire to the top terminal and the BLACK (-) wire to the bottom terminal. You can use the tweezers to depress the top of the WAGO connector, insert the wire, and then release to lock it in place.
+2\. Remove the project box lid by unscrewing the 4 screws.
+
+![](../../../assets/led-1-govee-unscrew-lid-1.jpg)
+
+3\. Remove two of the rubber grommets and cut a small slit using the hobby knife to allow for the power and data connections. The two bottom grommets might be best for an outdoor setup to prevent any water from getting in.
+
+![](../../../assets/led-1-govee-grommets.jpg)
+
+4\. Connect the barrel plug to the WAGO connector. It is the large white compnent on the bottom left of the board below the USB-C port. Connect the RED (+) wire to the top terminal and the BLACK (-) wire to the bottom terminal. You can use the tweezers to depress the top of the WAGO connector, insert the wire, and then release to lock it in place.
 
 ![](../../../assets/led-1-govee-barrel-2.jpg)
 
-3\.
+5\. Remove the cable sheathing of the 3 pin LED connector using the hobby knife. Be careful when cutting, because the cable can roll.
+
+![](../../../assets/led-1-govee-cable-cut.jpg)
+
+![](../../../assets/led-1-govee-cable-off.jpg)
+
+6\.
+
+&nbsp;
+
+7\.
+
+&nbsp;
+
+8\.
+
+&nbsp;
+
+9\.
+
+&nbsp;
+
+10\.
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
