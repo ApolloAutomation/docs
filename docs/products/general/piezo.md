@@ -42,4 +42,4 @@ This guide will walk you through using the buzzer on your Apollo Device.
 
 <a href="https://picaxe.com/rtttl-ringtones-for-tune-command/" title="Example RTTL Tones" target="_blank" rel="noreferrer nofollow noopener">Click here</a> to find example RTTTL Tones and <a href="https://adamonsoon.github.io/rtttl-play/" title="Test RTTTL Tones" target="_blank" rel="noreferrer nofollow noopener">click here</a> to test RTTTL Tones.
 
-Check out these <a href="https://wiki.apolloautomation.com/products/h1/holiday-songs/" target="_blank" rel="noreferrer nofollow noopener">Holiday themed buzzer examples</a> too!
+Check out these <a href="https://wiki.apolloautomation.com/products/general/holiday-songs/" target="_blank" rel="noreferrer nofollow noopener">Holiday themed buzzer examples</a> too!
