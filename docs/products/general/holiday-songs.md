@@ -1,6 +1,6 @@
 ---
-title: H-2 Holiday Songs Buzzer List
-description: List of H-2 Holiday Songs to use with the buzzer.
+title: Holiday Songs Buzzer List
+description: List of Holiday Songs to use with the Holiday ornaments or any Apollo device with a buzzer.
 ---
 # Jingle Bells (Ornate)
 
@@ -49,5 +49,12 @@ king:d=8,o=6,b=75:c,c,c,d,c,c,4g5,a5,g5,a5,b5,4c,4c,c,c,c,d,c,c,4g5,a5,g5,a5,b5,
 ```yaml
 white:d=8,o=5,b=95:2e,f,e,d#,e,2f,f#,4g.,p,a,b,c6,d6,c6,b,a,2g.,c,d,4e,4e,e,4a,g,4c,4c,c,4g,f,2e,f,e,d,c,1d,2e,f,e,d#,e,2f,f#,4g.,p,a,b,c6,d6,c6,b,a,2g.,c,d,4e,4e,e,4a,g,2c6.,c,d,4e,4e,8a.,16b4,b4,b4,1c
 ```
+
+# Dreidel Song
+
+```yaml
+dreidel:d=8,o=5,b=125:a,d,d,e,e,f#,4d,f#,a,a,g,f#,4e,p,e,e,e,f#,f#,g,4e,e,a,g,f#,e,4d,p,f#,a,f#,a,f#,a,4f#,f#,a,a,g,f#,4e,p,e,g,e,g,e,g,4e,e,a,g,f#,e,4d
+```
+
 
 Huge thanks to discord user @cirdanlunae@mastodon.social
