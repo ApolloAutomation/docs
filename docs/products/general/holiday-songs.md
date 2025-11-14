@@ -1,6 +1,8 @@
 ---
 title: Holiday Songs Buzzer List
-description: List of Holiday Songs to use with the Holiday ornaments or any Apollo device with a buzzer.
+description: >-
+  List of Holiday Songs to use with the Holiday ornaments or any Apollo device
+  with a buzzer.
 ---
 # Jingle Bells (Ornate)
 
@@ -56,5 +58,18 @@ white:d=8,o=5,b=95:2e,f,e,d#,e,2f,f#,4g.,p,a,b,c6,d6,c6,b,a,2g.,c,d,4e,4e,e,4a,g
 dreidel:d=8,o=5,b=125:a,d,d,e,e,f#,4d,f#,a,a,g,f#,4e,p,e,e,e,f#,f#,g,4e,e,a,g,f#,e,4d,p,f#,a,f#,a,f#,a,4f#,f#,a,a,g,f#,4e,p,e,g,e,g,e,g,4e,e,a,g,f#,e,4d
 ```
 
+###### Nightmare Before Christmas
 
-Huge thanks to discord user @cirdanlunae@mastodon.social
+# What's This
+
+```yaml
+WhatsThis:d=16,o=5,b=80:e,8g,p,e,8g,p,e,g,a,b,c6,8b,p,d#,8f#,p,d#,f#,g,a,b,8g,p,e,8g,p,e,g,a,b,c6,b,g,b,g,b,g,b,g,b,g,b,g,8b,p,b,8c6
+```
+
+# This Is Halloween
+
+```yaml
+Halloween:d=8,o=5,b=90:g,g,g,g,16g,16g#,f,f,p,16f,16f,f,16f,16f,f,16f,16g,g#,g,p,g,g,g,16g,16g#,a#,16g#,16g,f,p,f,f,16f,16g,g#,g,d#,d,g,a#,a#,16a#,16a,g,a#,a#,16a#,16a,g,16f#6,16f6,d#6,16f#6,16f6,d#6,16d#6,16d6,c6,16d#6,16d6,c6
+```
+
+[Huge thanks to @cirdanlunae](https://mastodon.social/@cirdanlunae){ .md-button .md-button--primary }
