@@ -2,9 +2,7 @@
 title: Introduction
 description: Documentation for M-1, including setup, usage, and best practices.
 ---
-# Introduction
-
-![](../../assets/m-1-apollo-logo-preset.webp)
+<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/pvM2nedk-TA?si=mP7yBt_H1nBphxjW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
 The Apollo Automation M-1 LED Matrix is a vibrant, high-performance display featuring 4096 pixels in a HUB75 format. Powered entirely by our new 5V 3Amp controller, it requires no additional power sources, keeping your setup clean and simple. The compact controller hides discreetly behind the matrix for a sleek installation.
 
