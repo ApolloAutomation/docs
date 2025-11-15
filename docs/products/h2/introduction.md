@@ -2,7 +2,7 @@
 title: H-2 Introduction
 description: H-2 Introduction.
 ---
-![](../../assets/h-2-image.png)
+<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/IK2qY3XfRJo?si=rrEE-BljtVHvoy_a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
 **Can be powered by USB-C or battery.** Uses a 16340 or RCR123A **<u>rechargeable</u>** battery. The device can charge the battery directly via USB-C for convenient power management.
 
