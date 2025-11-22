@@ -64,11 +64,11 @@ Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and 
 
 ###### AudioReactive Settings
 
-!!! failure "The Audioreactive is currently not working due to pcb manufacturing failure"
+!!! success "The Audioreactive is only available on a rev6 PCB with the optional microphone addon"
 
-    We are working on a permanent fix but the digital microphone installed by JLCPCB sadly has been broken on most of the devices so it is not working at this time.
+    The original Rev4 PCB does not have a microphone on the board and will not work. Only Rev6 or newer PCBs with the optional microphone addon will be able to use AudioReactive.
 
-Click on **Config**, then **AudioReactive**. Check **Enabled** then select **16 digitalmic** for Pin I2s SD, select **6 digitalmic A5** for Pin I2S WS, and select **7 digitalmic** for Pin I2S SCK and click **Save**.
+Click on **Config**, then **AudioReactive**. Check **Enabled** then select **10 digitalmic** for Pin I2s SD, select **12 digitalmic A5** for Pin I2S WS, and select **11 digitalmic** for Pin I2S SCK and click **Save**.
 
 Scroll to the bottom of the **AudioReactive** settings and set the **Mode** to **Off** and click **Save**.
 
