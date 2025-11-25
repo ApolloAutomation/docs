@@ -33,8 +33,6 @@ TX: 31
 ADC Pins: 0,1,2,3,4
 ```
 
-&nbsp;
-
 ```yaml
 #This is the onboard LED pin
 GPIO3
