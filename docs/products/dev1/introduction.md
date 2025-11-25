@@ -26,6 +26,11 @@ Please <a href="https://esphome.io/components/api.html#configuration-variables" 
 i2c:
   sda: GPIO1
   scl: GPIO0
+
+RX: 30
+TX: 31
+
+ADC Pins: 0,1,2,3,4
 ```
 
 ```yaml
