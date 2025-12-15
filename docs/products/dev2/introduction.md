@@ -6,6 +6,10 @@ description: Apollo DEV-2 Introduction.
 
 The Apollo DEV-2 is a very small dev board that we use to prototype before creating other new products. It has a built in RGB light (using GPIO3) and can push up to 600mA out of the 3.3v pin however 100-200mA of that will be used by the microcontroller itself. You are able to back-feed power via the 5v and G (ground) pins or use the USB-C port to power it, but NOT both at the same time.
 
+!!! tip "New version has 8MB flash but originally sold with 4MB flash"
+
+    If you're using an older DEV-2 with 4MB flash change the flash\_size: to say 4MB instead of 8MB.
+
 The DEV-2 is a great starter device for tinkerers and can be purchased on its own or with a breadboard and dupont wires (jumper wires) if you need those too.
 
 The DEV-2 does NOT come pre-flashed with ESPHome or WLED and requires you to flash it yourself, however there is a getting started video we've made here on the older DEV-1 board. The information is still the same except you'll be using a slightly differently yaml as shared below:
@@ -46,8 +50,6 @@ esphome:
   name: "${name}"
   friendly_name: Apollo DEV-2
   comment: Apollo DEV-2
-  platformio_options:
-    board_build.flash_mode: dio
 
   project:
     name: "ApolloAutomation.DEV-2"
@@ -55,12 +57,10 @@ esphome:
 
 # Define Board
 esp32:
-  board: esp32-c6-devkitm-1
   variant: esp32c6
+  flash_size: 8MB
   framework:
     type: esp-idf
-    version: 5.3.1
-    platform_version: 6.9.0
 
 # Enable logging
 logger:
@@ -68,7 +68,7 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "use-a-randomly-generated-key-here"
+    key: "your-api-key-here"
 
 ota:
   - platform: esphome
@@ -87,6 +87,7 @@ captive_portal:
 
 web_server:
   port: 80
+  version: 3
 
 #onboard LED using pin GPIO3 as shown below
 light:
