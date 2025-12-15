@@ -22,7 +22,7 @@ description: Step by step guide for putting The H-2 In Boot Mode.
 
 4\. You are now ready to reflash your device!
 
-[Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/h2/reflash/){  .md-button .md-button--primary }
+[Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/h2/troubleshooting/reflash/){  .md-button .md-button--primary }
 
 ## **Boot and Reset Buttons**
 
@@ -36,4 +36,4 @@ description: Step by step guide for putting The H-2 In Boot Mode.
 
 3\. You are now ready to reflash your device!
 
-[Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/h2/reflash/){  .md-button .md-button--primary }
+[Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/h2/troubleshooting/reflash/){  .md-button .md-button--primary }
