@@ -51,8 +51,6 @@ esphome:
   name: "${name}"
   friendly_name: Apollo DEV-1
   comment: Apollo DEV-1
-  platformio_options:
-    board_build.flash_mode: dio
 
   project:
     name: "ApolloAutomation.MSR-2"
@@ -60,7 +58,7 @@ esphome:
 
 # Define Board
 esp32:
-  board: esp32-c3-devkitm-1
+  variant: esp32c3
   framework:
     type: esp-idf
 
@@ -89,6 +87,7 @@ captive_portal:
 
 web_server:
   port: 80
+  version: 3
 
 #onboard LED using pin GPIO3 as shown below
 light:
