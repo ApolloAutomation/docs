@@ -32,7 +32,7 @@ description: Frequently asked questions about the H-2.
 
 8\. **Does the ornament require any additional power source?**
 
-* The Apollo H-2 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">16340 rechargeable battery</a>. It can also be powered by the USB-C port. The H-2 USB-C port will charge the battery very slowly.
+* The Apollo H-2 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">16340 rechargeable battery</a>. It can also be powered by the USB-C port. The H-2 USB-C port will not charge the battery you need a dedicated 16340 charger <a href="https://imrbatteries.com/products/nitecore-sc2-2-channel-battery-charger" target="_blank" rel="noreferrer nofollow noopener">such as this nitecore model</a>.
 
 9\. **Can I gift the Apollo H-2 to friends or family?**
 
@@ -46,4 +46,4 @@ description: Frequently asked questions about the H-2.
 
 * For more details, setups, guides, and other products please email us at support@apolloautomation.com
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                       .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                        .md-button .md-button--primary }
