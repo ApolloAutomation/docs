@@ -28,7 +28,7 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 #### Post-Connect Setup
 
-!!! success "Please complete setup by changing a few settings!"
+!!! warning "Please complete setup by changing a few settings!"
 
     The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please follow the two steps below to finish setting up your device!
 
@@ -66,4 +66,4 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 ![](../../../assets/m-1-setup-wled-integration-test-device.png)
 
-[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){                .md-button .md-button--primary }
+[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){                 .md-button .md-button--primary }
