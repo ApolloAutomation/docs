@@ -6,7 +6,11 @@ description: Frequently asked questions about the M-1 controller.
 
 * The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/#post-connect-setup" target="_blank" rel="noreferrer nofollow noopener">follow the post-connect-setup steps</a> to finish setting up your device!
 
-2\. **What is the maximum power output of the M-1?**
+2\. **Why am I seeing vertical sideways lines? Is my new M-1 Broken?**
+
+* Re-seat the M-1 controller on the back of your M-1 matrix and it should now be working reliably!
+
+3\. **What is the maximum power output of the M-1?**
 
 * The LED-1 is able to safely offer 3 Amps of power using 5 Volts when using the usb-c cable and stock power supply.
 
