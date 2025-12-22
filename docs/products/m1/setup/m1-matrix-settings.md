@@ -58,7 +58,7 @@ Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and 
 
 ###### 2D Settings
 
-2\. Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel Dimensions** to **64 x 64** and click **Save**.
+Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel Dimensions** to **64 x 64** and click **Save**.
 
 ![](../../../assets/m-1-2d-settings.gif)
 
@@ -68,7 +68,11 @@ Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and 
 
     The original Rev4 PCB does not have a microphone on the board and will not work. Only Rev6 or newer PCBs with the optional microphone addon will be able to use AudioReactive.
 
-Click on **Config**, then **AudioReactive**. Check **Enabled** then select **10 digitalmic** for Pin I2s SD, select **12 digitalmic A5** for Pin I2S WS, and select **11 digitalmic** for Pin I2S SCK and click **Save**.
+Click on **Config**, then **AudioReactive**. Check **Enabled** then select **Generic I2S** for the Type.
+
+For the pins, select **10 digitalmic** for Pin I2s SD, select **12 digitalmic A5** for Pin I2S WS, and select **11 digitalmic** for Pin I2S SCK and click **Save**.
+
+![](../../../assets/m-1-audio-reactive-pin-settings.png)
 
 Scroll to the bottom of the **AudioReactive** settings and set the **Mode** to **Off** and click **Save**.
 
