@@ -61,3 +61,7 @@ description: Frequently asked questions about the TEMP-1B temperature sensor.
 14\. **Can I use multiple TEMP-1B sensors in one Home Assistant setup?**
 
 * Yes, you can add multiple TEMP-1B sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+
+15\. **Can I use an extender to make the TEMP-1 temp probe cable longer?**
+
+* Yes, you can, however at some point you will begin getting "voltage drop" and likely run into issues with bad data from the probe. We suggest 1.5meters or less!

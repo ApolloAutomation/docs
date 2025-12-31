@@ -14,8 +14,6 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 * 20cm (~8in) Waterproof Flat Cable (DS18B20) -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
 * 1m (~3ft) Stainless Steel Food-Safe Probe (NTC) – Max 204°C (400°F). Perfect for grilling, baking, and food prep (not dishwasher safe).
 
-Sensor Interface: Equipped with a 3.5mm jack for connecting optional external temperature probes (sold separately). Compatible probe options include:<br>\- 1.5m (~5ft) waterproof flat cable (DS18B20 sensor). Max 85°C 185°F<br>\- 20cm (~8in) waterproof flat cable (DS18B20 sensor). Max 85°C 185°F<br>\- 1m (~3ft) stainless steel food-safe probe (NTC sensor). Max 204°C 400°F **Not dishwasher safe**
-
 3\. **Is the TEMP-1 weatherproof? Can I use it outdoors?**
 
 * The TEMP-1 is primarily designed for indoor use, but components like the waterproof soil probe are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
@@ -55,3 +53,7 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 12\. **Can I use multiple TEMP-1 sensors in one Home Assistant setup?**
 
 * Yes, you can add multiple TEMP-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+
+13\. **Can I use an extender to make the TEMP-1 temp probe cable longer?**
+
+* Yes, you can, however at some point you will begin getting "voltage drop" and likely run into issues with bad data from the probe. We suggest 1.5meters or less!
