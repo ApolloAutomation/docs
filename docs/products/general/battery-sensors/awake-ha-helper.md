@@ -1,26 +1,30 @@
+---
+title: Apollo Battery Devices - Awake HA Helper
+description: How to keep your sensor awake using the Home Assistant Helper.
+---
 # How to keep your sensor awake using the Home Assistant Helper
 
 1\. Open your Home Assistant dashboard and go to settings then select Devices and services and select helpers in the top right. <a href="http://homeassistant.local:8123/config/helpers" title="Open Helpers Page" target="_blank" rel="noopener">Or click here to go straight there</a>.
 
-![](assets/awake-ha-helper-pic-1.png)
+![](../../../assets/awake-ha-helper-pic-1.png)
 
-![](assets/awake-ha-helper-pic-2.png)
+![](../../../assets/awake-ha-helper-pic-2.png)
 
 2\. Select Create Helper in the bottom right.<br>
 
-![](assets/awake-ha-helper-pic-4.png)
+![](../../../assets/awake-ha-helper-pic-4.png)
 
 <br>3\. Scroll down to the bottom and select Toggle.
 
-![](assets/awake-ha-helper-pic-3-1.png)
+![](../../../assets/awake-ha-helper-pic-3-1.png)
 
 <br>4\. For name use "apollo\_ota\_mode" and choose desired icon such as "mdi:sleep-off" then click Create.
 
-![](assets/awake-ha-helper-pic-5.png)
+![](../../../assets/awake-ha-helper-pic-5.png)
 
 5\. Search "apollo\_ota\_mode" and click on the helper shown.
 
-![](assets/awake-ha-helper-pic-6.png)
+![](../../../assets/awake-ha-helper-pic-6.png)
 
 <br>6\. Toggle the OTA mode on as shown below.
 

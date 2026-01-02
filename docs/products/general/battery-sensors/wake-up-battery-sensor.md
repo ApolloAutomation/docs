@@ -1,3 +1,7 @@
+---
+title: Apollo Battery Devices - wake up battery device.
+description: How to wake up your Apollo device which is currently sleeping.
+---
 ###### Method 1
 
 Press the reset button and let go to restart the device<br><a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noreferrer nofollow noopener"><strong>TEMP-1B reset button</strong></a>
@@ -14,7 +18,7 @@ Quickly press and hold the boot button for 4-5 seconds
 
 <a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B boot button</strong></a>
 
-![](../../../homey/products/temp1/troubleshooting/assets/temp-1b-boot-button-lid-off.jpg)
+![](../../../products/temp1/troubleshooting/assets/temp-1b-boot-button-lid-off.jpg)
 
 <a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noreferrer nofollow noopener"><strong>PLT-1B boot button</strong></a>
 
