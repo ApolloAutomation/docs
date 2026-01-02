@@ -1,3 +1,7 @@
+---
+title: Apollo Battery Devices - Sensor Connection Check
+description: How to check if your device is connected to Wi-Fi, Home Assistant, or nothing.
+---
 # Sensor Connection Check
 
 1\. Press the reset button and let go to restart the device<br><a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B reset button</strong></a>
@@ -10,7 +14,7 @@
 
 2\. Press the boot button and let go<br><a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B boot button</strong></a>
 
-![](../../../homey/products/temp1/troubleshooting/assets/temp-1b-boot-button-lid-off.jpg)
+![](../../../products/temp1/troubleshooting/assets/temp-1b-boot-button-lid-off.jpg)
 
 <a href="https://apolloautomation.github.io/docs/products/plt1/general-tips/" target="_blank" rel="noopener"><strong>PLT-1B boot button</strong></a>
 

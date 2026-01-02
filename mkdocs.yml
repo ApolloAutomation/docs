@@ -288,7 +288,7 @@ nav:
           - Additional Info:
             - General Tips: products/air1/setup/general-tips.md
             - Sensor Definitons: products/air1/setup/sensor-definitions.md
-            - Prevent Sleep: products/air1/setup/prevent-sleep.md
+            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
           - Addons:
             - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
             - MiCS Addon: products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
@@ -310,6 +310,7 @@ nav:
           - Additional Info:
             - General Tips: products/btn1/setup/general-tips.md
             - Sensor Definitons: products/btn1/setup/sensor-definitions.md
+            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
           - Examples: 
             - Blueprint: products/btn1/examples/blueprint.md
             - Example Automation: products/btn1/examples/example-automation.md
@@ -342,7 +343,7 @@ nav:
             - General Tips: products/plt1/general-tips.md
             - Sensor Definitons: products/plt1/setup/plt1-sensor-definitions.md
             - Calibrating Soil Moisture: products/plt1/calibrating-plt1.md
-            - Prevent Sleep: products/plt1/setup/prevent-sleep.md
+            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
           - Examples: 
             - Flower Card: products/plt1/examples/flower-card.md
           - Troubleshooting:
@@ -359,7 +360,7 @@ nav:
             - General Tips: products/plt1b/general-tips.md
             - Sensor Definitons: products/plt1b/setup/plt1b-sensor-definitions.md
             - Calibrating Soil Moisture: products/plt1/calibrating-plt1.md
-            - Prevent Sleep: products/plt1b/setup/prevent-sleep.md
+            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
@@ -378,7 +379,7 @@ nav:
           - Additional Info:
             - General Tips: products/temp1/setup/temp1-general-tips.md
             - Sensor Definitons: products/temp1/setup/temp1-sensor-definitions.md
-            - Prevent Sleep: products/temp1/setup/prevent-sleep.md
+            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
@@ -403,7 +404,7 @@ nav:
           - Additional Info:
             - General Tips: products/temp1/setup/temp1-general-tips.md
             - Sensor Definitons: products/temp1b/setup/temp1b-sensor-definitions.md
-            - Prevent Sleep: products/temp1b/setup/prevent-sleep.md
+            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Insert Battery: products/temp1b/setup/insert-battery.md

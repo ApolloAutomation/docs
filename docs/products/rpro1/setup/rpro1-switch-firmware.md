@@ -44,4 +44,4 @@ description: >-
 
 4\. Wait a few minutes - this will download the new firmware file from our github repo and then install the image.
 
-[Head to the getting started docs to join to your Wi-Fi](https://wiki.apolloautomation.com/products/general/setup/getting-started-rpro1/#connecting-through-hotspot){ .md-button .md-button--primary }
+[Head to the getting started docs to get your sensor integrated with Home Assistant!](https://wiki.apolloautomation.com/products/general/setup/getting-started-rpro1/#connecting-through-hotspot){  .md-button .md-button--primary }
