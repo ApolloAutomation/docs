@@ -196,7 +196,8 @@ nav:
           - Addons:
             - Microphone: products/m1/addons/adding-microphone-to-m-1.md
           - Examples:
-            - Create Logo Image: products/m1/examples/create-logo-image.md
+            #need to revisit pixelmagictool at some point
+#            - Create Logo Image: products/m1/examples/create-logo-image.md
             - Add GIFs to WLED: products/m1/examples/add-gifs-to-wled.md
             - Scrolling Text: products/m1/examples/scrolling-text.md
             - QR Code Generator: products/m1/examples/qr-code-generator.md
@@ -313,7 +314,6 @@ nav:
             - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
           - Examples: 
             - Blueprint: products/btn1/examples/blueprint.md
-            - Example Automation: products/btn1/examples/example-automation.md
           - Troubleshooting:
             - BTN-1 Boot Mode: products/btn1/troubleshooting/btn1-boot-mode.md
             - Factory Re-Flash BTN-1: products/btn1/troubleshooting/btn1-reflash.md

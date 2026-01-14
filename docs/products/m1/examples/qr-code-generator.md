@@ -144,4 +144,4 @@ END:VCARD`;
   updateForm();
 </script>
 
-[Click here to add your QR Code to the M-1 LED Matrix!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){        .md-button .md-button--primary }
+2\. If you are on WLED-MM firmware 14.5.1 or higher, you can convert an image to a gif using an online tool and then upload the "gif" QR code to WLED!
