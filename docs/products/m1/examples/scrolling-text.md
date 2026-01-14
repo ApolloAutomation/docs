@@ -51,5 +51,3 @@ description: Step by step guide to adding a WLED Preset for custom scrolling tex
 8\. Here's what your finished product looks like!
 
 ![](../../../assets/m-1-scrolling-text-finished-example-gif.webp)
-
-[Click here to setup your M-1 LED Matrix with a custom logo or image!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){      .md-button .md-button--primary }
