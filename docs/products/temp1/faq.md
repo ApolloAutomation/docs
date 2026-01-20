@@ -57,3 +57,7 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 13\. **Can I use an extender to make the TEMP-1 temp probe cable longer?**
 
 * Yes, you can, however at some point you will begin getting "voltage drop" and likely run into issues with bad data from the probe. We suggest 1.5meters or less!
+
+14\. **Can I use the probe in a salt water tank?**
+
+* Yes, however a very high concentration of salt will likely eventually lead to corrosion and should be checked from time to time. The stainless steel used is "SS304" grade.
