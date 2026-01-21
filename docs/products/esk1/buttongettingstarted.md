@@ -1,3 +1,24 @@
+# ESPHome Starter Kit - Button Getting Started
+
+# Setting Up Your Device
+1. Opening Box
+2. Identifying the ESP32 board
+3. Identifying the button module
+4. Plugging in the button module
+5. Connecting ESP32 to your computer
+
+
+# Setting Up ESPHome Device Builder
+1. Connect to HA ( link to HA getting started )
+2. Install addon here
+3. Install driver?
+4. View it here
+5. Creating secrets file for wifi
+6. Adding new device from bottom right
+
+Now you have a new device, lets make YAMLLLLLL
+
+
 # Writing Your First ESPHome Configuration
 
 This guide walks you through building an ESPHome YAML configuration from scratch. By the end, you'll understand each section and have your Apollo Button Dev Kit connected to Home Assistant.
@@ -9,15 +30,13 @@ This guide walks you through building an ESPHome YAML configuration from scratch
 ESPHome configurations are written in YAML, a human-readable format that uses indentation to define structure. Each section controls a different aspect of your device's behavior.
 
 !!! tip "YAML Basics"
-    - Indentation matters—use **2 spaces** (not tabs)
-    - Colons separate keys from values
-    - Lists use dashes (`-`)
+    - Indentation matters
 
 ---
 
 ## 1. Substitutions
 
-Substitutions are variables you define once and reuse throughout your configuration. This keeps your code clean and makes updates simple.
+Substitutions are variables you define once and reuse throughout your configuration. This keeps your code clean and makes updates simple. In the ESPHome device builder, add this to your YAML config ( picture/link for help )
 
 ```yaml
 substitutions:
@@ -29,7 +48,7 @@ substitutions:
 | Variable | Purpose |
 |----------|---------|
 | `name` | Device identifier used in ESPHome and Home Assistant |
-| `version` | Track your firmware version |
+| `version` | Track your firmware version. Example is Year.Month.Day.1 |
 | `device_description` | Human-readable description (note how it references other variables with `${}`) |
 
 !!! note "Using Substitutions"
@@ -159,7 +178,7 @@ When connected to the fallback hotspot, your phone or computer will automaticall
 
 ## 7. Logger
 
-Enables logging output for debugging.
+Enables logging output for debugging. *What is logger
 
 ```yaml
 logger:
@@ -171,7 +190,7 @@ Logs appear in the ESPHome dashboard when viewing device logs. Useful for troubl
 
 ## 8. Binary Sensors
 
-Now let's add some actual functionality—sensors that report on/off states.
+Now let's add some actual functionality—sensors that report on/off states. *What is binart sensor
 
 ```yaml
 binary_sensor:
@@ -201,6 +220,7 @@ binary_sensor:
 Reports whether the device is connected to Home Assistant. Useful for automations that check device availability.
 
 ### Physical Button
+*Explain this is the GPIO connected to the button module
 
 ```yaml
 - platform: gpio
@@ -210,7 +230,7 @@ Reports whether the device is connected to Home Assistant. Useful for automation
     mode:
       input: true
       pullup: true
-  id: reset_button
+  id: my_button
   name: "Button"
 ```
 
@@ -277,7 +297,7 @@ binary_sensor:
       mode:
         input: true
         pullup: true
-    id: reset_button
+    id: my_button
     name: "Button"
 ```
 
