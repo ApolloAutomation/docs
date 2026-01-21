@@ -432,6 +432,8 @@ nav:
           - Introduction: products/dev1/introduction.md
       - DEV-2:
           - Introduction: products/dev2/introduction.md
+      - ESK-1:
+          - Button Getting Started: products/esk1/buttongettingstarted.md
       - H-1:
           - Introduction: products/h1/introduction.md
           - FAQ: products/h1/faq.md
