@@ -42,4 +42,22 @@ This section only changes the device name shown in the ESPHome integration page.
 
 1\. Make sure you are already using the ESPHome Device Builder app as <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">gone over in the getting started wiki articles</a>.
 
-2\.
+2\. Click the 3 dots next to your new Apollo device and select **Rename hostname** then enter in the new name of your sensor and click **Rename**. This cannot have any spaces or underscores only hyphens, numbers, and lowercase letters such as "**smart-keys**". Once it finishes it will say OTA successful and you can click close to get back to the main dashboard.
+
+![](../../../assets/rename-hostname-esphome-device-builder-gif.gif)
+
+!!! null "We are now ready to rename the friendly_name to a new name such as Smart Keys"
+
+    This can have spaces and capital letters and will be the same name home assistant will give the device and all entity names!
+
+3\. Click **Edit** then replace the text after friendly\_name with your new name such as Smart Keys. Click Save and Install in the top right once you are done with the rename and it will save and install. Once it finishes it will say OTA successful and you can click close to get back to the main dashboard.
+
+![](../../../assets/rename-friendiy-name-esphome-device-builder-gif.gif)
+
+4\. Finally we should delete the device from the ESPHome Integration in home assistant and then add it back! Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>. Next to the device you would like to remove, click the three dots and then **Delete**.
+
+![](../../../assets/delete-device-from-esphome-device-builder-gif2.gif)
+
+5\. Scroll up and add the new auto-discovered device. The name should be the same Friendly name you put in the ESPHome Device builder and all of your entities should be the correct name to begin with!
+
+![](../../../assets/auto-discover-and-add-esphome-device-gif.gif)
