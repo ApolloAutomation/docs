@@ -1,6 +1,8 @@
 ---
 title: Renaming Apollo Devices
-description: Tutorial for How To Rename Apollo Devices in the ESPHome integration and ESPHome Device Builder!
+description: >-
+  Tutorial for How To Rename Apollo Devices in the ESPHome integration and
+  ESPHome Device Builder!
 ---
 # Renaming Apollo Devices
 
@@ -8,7 +10,9 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
 
-2\. On the device you would like to rename, click the pencil icon and enter in a new name then click **Update** and finally click the name you just created.
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
+2\. On the device you want to rename, click the pencil icon and enter a new name. Click **Update**, then select the name you just created.
 
 ![](../../../assets/esphome-integration-rename-device-gif.gif)
 
@@ -27,6 +31,8 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 ##### ESPHome Integration - Part 2
 
 This section only changes the device name shown in the ESPHome integration page. It is safe to skip, but we recommend doing it to keep naming consistent.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
 
