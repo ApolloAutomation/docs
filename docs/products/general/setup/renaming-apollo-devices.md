@@ -1,8 +1,6 @@
 ---
 title: Renaming Apollo Devices
-description: >-
-  Tutorial for How To Rename Apollo Devices in the ESPHome integration and
-  ESPHome Device Builder!
+description: Tutorial for How To Rename Apollo Devices in the ESPHome integration and ESPHome Device Builder!
 ---
 # Renaming Apollo Devices
 
