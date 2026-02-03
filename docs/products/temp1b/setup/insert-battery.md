@@ -10,44 +10,44 @@ description: How to Insert Battery on TEMP-1B.
 
 1\. Gently pry open the case lid as shown in the image below.
 
-![](../troubleshooting/assets/temp-1b-pry-open.jpg)
+![](../troubleshooting/../../../assets/products-temp1-troubleshooting-temp-1b-pry-open.jpg)
 
-![](../troubleshooting/assets/temp-1b-lid-off.jpg)
+![](../troubleshooting/../../../assets/products-temp1-troubleshooting-temp-1b-lid-off.jpg)
 
 2\. Once the lid is removed either lift the PCB out or gently dump the pcb out by turning it upside down.
 
-![](../troubleshooting/assets/temp-1b-lift-pcb-out-1.jpg)
+![](../troubleshooting/../../../assets/products-temp1-troubleshooting-temp-1b-lift-pcb-out-1.jpg)
 
-![](../troubleshooting/assets/temp-1b-remove-case.jpg)
+![](../troubleshooting/../../../assets/products-temp1-troubleshooting-temp-1b-remove-case.jpg)
 
 3\. Align the battery as shown in the image below.
 
-![](assets/temp-1b-battery-insert-pic-1.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-pic-1.jpg)
 
 4\. Insert the battery with the positive terminal facing the + sign.
 
-![](assets/temp-1b-battery-insert-pic-3.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-pic-3.jpg)
 
-![](assets/temp-1b-battery-insert-pic-4.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-pic-4.jpg)
 
 5\. Begin reassembly by placing the battery side down with the RGB led in the top right corner.
 
-![](assets/temp-1b-battery-insert-empty-case.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-empty-case.jpg)
 
-![](assets/temp-1b-battery-insert-pcb-ledge.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-pcb-ledge.jpg)
 
 6\. You will use the "ledge" of the case to set the PCB down and then it will lay down and rest on the ledge of the other side as well.
 
-![](assets/temp-1b-battery-insert-pcb-hinge.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-pcb-hinge.jpg)
 
-![](assets/temp-1b-battery-insert-pcb-flat.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-pcb-flat.jpg)
 
 7\. Align the RGB led in the top right with the small hole in the lid.
 
-![](assets/temp-1b-battery-insert-align-rgb.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-align-rgb.jpg)
 
 8\. Gently press down until it the lid seats.
 
-![](assets/temp-1b-battery-insert-press-case.jpg)
+![](../../../assets/products-temp1-setup-temp-1b-battery-insert-press-case.jpg)
 
 9 You have now installed or reinstalled the battery!

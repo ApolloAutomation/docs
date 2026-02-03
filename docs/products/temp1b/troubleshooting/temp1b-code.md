@@ -20,7 +20,7 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Click "Connect" under the Battery Firmware option since you are using a TEMP-1B.
 
-![](assets/temp-1b-reflash-pic-1.png)
+![](../../../assets/products-temp1b-troubleshooting-temp-1b-reflash-pic-1.png)
 
 !!! tip "Use R2 version unless instructed to use R1 by support!"
 
@@ -28,19 +28,19 @@ If your device has already been connected to Home Assistant please <a href="http
 
 4\. Select the open com port then click Connect.
 
-![](assets/temp-1b-reflash-pic-2-1.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1b-reflash-pic-2-1.png)
 
 5\. Click "Install ApolloAutomation.TEMP-1B".
 
-![](assets/temp-1b-reflash-pic-3.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1b-reflash-pic-3.png)
 
 6\. Click "INSTALL".
 
-![](assets/temp-1b-reflash-pic-4.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1b-reflash-pic-4.png)
 
 7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](assets/temp-1b-reflash-pic-7.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1b-reflash-pic-7.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 

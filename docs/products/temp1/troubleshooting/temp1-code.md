@@ -20,23 +20,23 @@ If your device has already been connected to Home Assistant please <a href="http
 
     R2 is what all of our devices use except a very small batch of TEMP-1 and TEMP-1B
 
-![](assets/temp-1-reflash-pic-1-1.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1-reflash-pic-1-1.png)
 
 3\. Select the open com port then click Connect.
 
-![](assets/temp-1-reflash-pic-2.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1-reflash-pic-2.png)
 
 4\. Click "Install ApolloAutomation.TEMP-1".
 
-![](assets/temp-1-reflash-pic-3.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1-reflash-pic-3.png)
 
 5\. Click "INSTALL".
 
-![](assets/temp-1-reflash-pic-4.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1-reflash-pic-4.png)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](assets/temp-1b-reflash-pic-7.png)
+![](../../../assets/products-temp1-troubleshooting-temp-1b-reflash-pic-7.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 
