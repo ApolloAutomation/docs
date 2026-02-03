@@ -14,7 +14,7 @@ Really neat dashboard for your AIR-1 by user "keex"!
 
 ##### Home Assistant Sensor
 
-![CO 2 Graph.png](../assets/co-2-graph.png)
+![CO 2 Graph.png](../../../assets/products-air1-air1-co-2-graph.png)
 
 ```yaml
 graph: line
@@ -159,7 +159,7 @@ series:
 
 ##### Custom: Plotly Graph Card
 
-![Plotly CO2 Graph.png](../assets/plotly-co2-graph.png)
+![Plotly CO2 Graph.png](../../../assets/products-air1-air1-plotly-co2-graph.png)
 
 ```plaintext
 type: custom:plotly-graph
@@ -172,7 +172,7 @@ title: Bedroom CO2
 
 ##### Home Assistant Guage
 
-![CO2 Guage.png](../assets/co2-guage.png)
+![CO2 Guage.png](../../../assets/products-air1-air1-co2-guage.png)
 
 ```plaintext
 type: gauge
@@ -191,7 +191,7 @@ severity:
 
 ##### Home Assistant Sensor
 
-![AIR-1 VOC HA Sensor.png](../assets/air-1-voc-ha-sensor.png)
+![AIR-1 VOC HA Sensor.png](../../../assets/products-air1-air1-air-1-voc-ha-sensor.png)
 
 ```
 graph: line
@@ -204,7 +204,7 @@ name: Basement VOC
 
 ##### Custom: Plotly Graph Card
 
-![AIR-1 VOC Plotly.png](../assets/air-1-voc-plotly.png)
+![AIR-1 VOC Plotly.png](../../../assets/products-air1-air1-air-1-voc-plotly.png)
 
 ```
 type: custom:plotly-graph
@@ -217,7 +217,7 @@ title: Basement VOC
 
 ##### Home Assistant Guage
 
-![AIR-1 VOC HA Guage.png](../assets/air-1-voc-ha-guage.png)
+![AIR-1 VOC HA Guage.png](../../../assets/products-air1-air1-air-1-voc-ha-guage.png)
 
 ```
 type: gauge
