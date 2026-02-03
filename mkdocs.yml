@@ -122,7 +122,7 @@ markdown_extensions:
       permalink: true
 
 copyright: |
-  &copy; 2025 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
+  &copy; 2026 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
 
 nav:
   - Home Assistant:
@@ -289,7 +289,7 @@ nav:
           - Additional Info:
             - General Tips: products/air1/setup/general-tips.md
             - Sensor Definitons: products/air1/setup/sensor-definitions.md
-            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
+            - Prevent Sleep: products/air1/additonal-info/prevent-sleep.md
           - Addons:
             - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
             - MiCS Addon: products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
@@ -311,7 +311,7 @@ nav:
           - Additional Info:
             - General Tips: products/btn1/setup/general-tips.md
             - Sensor Definitons: products/btn1/setup/sensor-definitions.md
-            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
+            - Prevent Sleep: products/btn1/additonal-info/prevent-sleep.md
           - Examples: 
             - Blueprint: products/btn1/examples/blueprint.md
           - Troubleshooting:
@@ -404,7 +404,7 @@ nav:
           - Additional Info:
             - General Tips: products/temp1/setup/temp1-general-tips.md
             - Sensor Definitons: products/temp1b/setup/temp1b-sensor-definitions.md
-            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
+            - Prevent Sleep: products/temp1b/additonal-info/prevent-sleep.md
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Insert Battery: products/temp1b/setup/insert-battery.md
