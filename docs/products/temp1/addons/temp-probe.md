@@ -8,17 +8,17 @@ The TEMP-1 comes with an optional temp probe which can be used to monitor a frid
 
 1\. To use your temp probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1.
 
-![](assets/temp1-temp-probe-insert-1.jpg)
+![](../../../assets/products-temp1-addons-temp1-temp-probe-insert-1.jpg)
 
-![](assets/temp1-probe-fully-inserted.jpg)
+![](../../../assets/products-temp1-addons-temp1-probe-fully-inserted.jpg)
 
 2\. Once inserted, proceed to step 3.
 
-![](assets/temp1-temp-probe-pic-1.jpg)
+![](../../../assets/products-temp1-addons-temp1-temp-probe-pic-1.jpg)
 
 3\. Go to the device page of your TEMP-1 in Home Assistant and choose the Temperature Probe.
 
-![](assets/temp1b-temp-probe-pic-1-1.png)
+![](../../../assets/products-temp1-addons-temp1b-temp-probe-pic-1-1.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
@@ -26,6 +26,6 @@ The TEMP-1 comes with an optional temp probe which can be used to monitor a frid
 
 **Example images of the long temperature probe in a mini freezer:**
 
-![](assets/temp1b-temp-probe-freezer-pic-1.jpg)
+![](../../../assets/products-temp1-addons-temp1b-temp-probe-freezer-pic-1.jpg)
 
-![](assets/temp1b-temp-probe-freezer-pic-2.jpg)
+![](../../../assets/products-temp1-addons-temp1b-temp-probe-freezer-pic-2.jpg)

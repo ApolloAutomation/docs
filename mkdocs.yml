@@ -506,7 +506,6 @@ nav:
             - OPNsense Auto Discover Device mDNS Issue: homey/products/general/troubleshooting/opnsense-mdns-auto-discover-issue.md
           - Battery Sensors:
             - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
-            - Keep Your Sensor Awake With HA Helper: homey/products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
           - Source Code and 3D Files: homey/products/general/links.md
           - Sensor Comparisons: homey/products/general/comparisons.md
@@ -612,7 +611,6 @@ nav:
             - Calibrating Soil Moisture: homey/products/plt1/calibrating-plt1.md
             - Prevent Sleep: homey/products/plt1b/setup/prevent-sleep.md
             - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
-            - Keep Your Sensor Awake With HA Helper: homey/products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
           - Reviews: homey/products/plt1/reviews.md
           - Examples: 
@@ -630,7 +628,6 @@ nav:
             - Sensor Definitons: homey/products/temp1/setup/temp1-sensor-definitions.md
             - Prevent Sleep: homey/products/temp1/setup/prevent-sleep.md
             - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
-            - Keep Your Sensor Awake With HA Helper: homey/products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
           - Addons:
             - Magnetic Mount: homey/products/temp1/addons/magnetic-mount.md
@@ -654,7 +651,6 @@ nav:
             - Sensor Definitons: homey/products/temp1b/setup/temp1b-sensor-definitions.md
             - Prevent Sleep: homey/products/temp1b/setup/prevent-sleep.md
             - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
-            - Keep Your Sensor Awake With HA Helper: homey/products/general/battery-sensors/awake-ha-helper.md
             - Insert Battery: homey/products/temp1b/setup/insert-battery.md
             - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
           - Addons:

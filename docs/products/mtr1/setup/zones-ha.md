@@ -70,7 +70,7 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
 
 13\. Your X and Y Targets will now look like this.
 
-![](assets/mtr-1-zone-setup-pic-1.png)
+![](../../../assets/products-mtr1-setup-mtr-1-zone-setup-pic-1.png)
 
 14\. Now you should see targets on the card.
 
