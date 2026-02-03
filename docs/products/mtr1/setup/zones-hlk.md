@@ -30,11 +30,11 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
 
-![Screenshot_20240514_100155_HLKRadarTool.jpg](../assets/screenshot-20240514-100155-hlkradartool.jpg)
+![Screenshot_20240514_100155_HLKRadarTool.jpg](../../../assets/products-mtr1-mtr1-screenshot-20240514-100155-hlkradartool.jpg)
 
 3\. Select Set in the top right.
 
-![Screenshot_20240514_100250_HLKRadarTool.jpg](../assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)
+![Screenshot_20240514_100250_HLKRadarTool.jpg](../../../assets/products-mtr1-mtr1-Esxscreenshot-20240514-100250-hlkradartool.jpg)
 
 4\. Select Detection then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
 
@@ -44,13 +44,13 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
-![Screenshot_20240514_100512_HLKRadarTool.jpg](../assets/screenshot-20240514-100512-hlkradartool.jpg)
+![Screenshot_20240514_100512_HLKRadarTool.jpg](../../../assets/products-mtr1-mtr1-screenshot-20240514-100512-hlkradartool.jpg)
 
 5\. If set up correctly the zones should be saved as different colors. You can double-check that the settings are saved by looking at your HA entities (picture below). You should be all set!
 
-![Screenshot 2024-05-14 at 11.27.17 AM.png](../assets/screenshot-2024-05-14-at-11-27-17-am.png)
+![Screenshot 2024-05-14 at 11.27.17 AM.png](../../../assets/products-mtr1-mtr1-screenshot-2024-05-14-at-11-27-17-am.png)
 
-![Screenshot_20240514_102430_HLKRadarTool.jpg](../assets/screenshot-20240514-102430-hlkradartool.jpg)
+![Screenshot_20240514_102430_HLKRadarTool.jpg](../../../assets/products-mtr1-mtr1-screenshot-20240514-102430-hlkradartool.jpg)
 
 !!! tip "Helpful Hints to understand zones better!"
 
