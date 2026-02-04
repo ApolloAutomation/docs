@@ -12,7 +12,7 @@ description: Step by step guide for putting The PLT-1 In Boot Mode.
 
 1\. Position the PLT-1 as shown in the image below and locate the small opening to press the boot button.
 
-![](../../../assets/screenshot-2024-10-23-at-12-32-55-pm.png)
+![](../../../assets/products-plt1-troubleshooting-screenshot-2024-10-23-at-12-32-55-pm.png)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
 
