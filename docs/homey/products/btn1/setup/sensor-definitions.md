@@ -1,0 +1,1 @@
+--8<-- "products/btn1/setup/sensor-definitions.md:5:"

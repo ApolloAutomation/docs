@@ -1,0 +1,1 @@
+--8<-- "products/btn1/setup/getting-started.md:5:"

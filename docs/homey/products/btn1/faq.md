@@ -1,0 +1,1 @@
+--8<-- "products/btn1/faq.md:5:"

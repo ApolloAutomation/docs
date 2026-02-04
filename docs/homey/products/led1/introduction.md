@@ -1,0 +1,1 @@
+--8<-- "products/led1/introduction.md:5:"

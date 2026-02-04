@@ -1,0 +1,1 @@
+--8<-- "products/btn1/addons/btn1-addon.md:5:"

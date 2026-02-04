@@ -1,0 +1,1 @@
+--8<-- "products/pump1/troubleshooting/pump1-teardown.md:7:"

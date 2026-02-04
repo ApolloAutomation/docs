@@ -1,0 +1,1 @@
+--8<-- "products/pump1/troubleshooting/pump1-reset-wi-fi-credentials.md:5:"

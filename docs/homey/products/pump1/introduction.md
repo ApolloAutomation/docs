@@ -1,0 +1,1 @@
+--8<-- "products/pump1/introduction.md:5:"

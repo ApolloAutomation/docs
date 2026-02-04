@@ -1,0 +1,1 @@
+--8<-- "products/pump1/addons/attaching-bottle-to-pump-1.md:5:"
