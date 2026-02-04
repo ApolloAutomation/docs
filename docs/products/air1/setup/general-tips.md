@@ -138,7 +138,7 @@ The optional CO<sub>2</sub> sensor addon is a great way to add the ability to tr
 
 <a href="https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm" target="_blank" rel="noreferrer nofollow noopener">Wisconsin Department of Health CO<sub>2</sub> Level Chart</a>
 
-![CO2 Health Department.png](../../../assets/products-general-calibrating-and-updating-air-1-co2-calibration-image-6.jpg)
+![CO2 Health Department.png](../../../assets/calibrating-and-updating-air-1-co2-calibration-image-6.jpg)
 
 !!! tip "We suggest triggering alert automations, hvac or a fan turning on, etc when CO<sub>2</sub> is over 1000"
 
