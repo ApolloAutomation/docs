@@ -4,7 +4,7 @@ description: Step by step guide for putting The H-1 In Boot Mode.
 ---
 This will cover how to put the H-1 into boot mode. Sometimes, this is needed to upload new firmware if the device is struggling.
 
-![](../../assets/products-h1-boot-mode.md-screenshot-2024-11-01-015948.png)
+![](../../assets/screenshot-2024-11-01-015948.png)
 
 ## **Boot Button Only**
 

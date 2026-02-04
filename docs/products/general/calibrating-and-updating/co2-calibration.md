@@ -44,4 +44,4 @@ Note the steep decline in CO<sub>2</sub> ppm detected due to the door and window
 
     This could be improved by increasing air exchange to get below 1000 ppm for a safer environment.
 
-![Plotly CO2 Graph.png](../../../assets/products-general-calibrating-and-updating-plotly-co2-graph.png)
+![Plotly CO2 Graph.png](../../../assets/plotly-co2-graph.png)
