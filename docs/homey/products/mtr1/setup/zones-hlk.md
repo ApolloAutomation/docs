@@ -17,7 +17,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your MTR-1 and scroll down until you see LD2450 Bluetooth.
 
-![Screenshot 2024-05-14 at 10.30.31 AM.png](../../../../assets/homey-products-mtr1-setup-mtr-1-toggle-on-ld2450-bluetooth.png)
+![Screenshot 2024-05-14 at 10.30.31 AM.png](../../../../assets/mtr-1-toggle-on-ld2450-bluetooth.png)
 
 2\. Open the HLKRadarTool App and select your device.
 
@@ -71,8 +71,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 4\. Head to a dashboard view and click the pencil icon to edit dashboard then click one of the large "+" signs, type in manual, and click on it.
 
-![](../../../../assets/homey-products-mtr1-setup-ld2450-add-plotly-graph-gif.gif)
+![](../../../../assets/ld2450-add-plotly-graph-gif.gif)
 
 5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
-![](../../../../assets/homey-products-mtr1-setup-mtr-1-card-working-targets.png)
+![](../../../../assets/mtr-1-card-working-targets.png)

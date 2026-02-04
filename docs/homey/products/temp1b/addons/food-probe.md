@@ -2,13 +2,13 @@
 
 The TEMP-1B comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1 itself needs to stay in a cool environment.
 
-![](../../../../assets/homey-products-temp1b-addons-temp1b-magnetic-mount-proper-mounting-explained-resized.png)
+![](../../../../assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
 
 1\. To use your food probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
-![](../../../../assets/homey-products-temp1b-addons-food-probe-insert-1.jpg)
+![](../../../../assets/food-probe-insert-1.jpg)
 
-![](../../../../assets/homey-products-temp1b-addons-food-probe-fully-inserted.jpg)
+![](../../../../assets/food-probe-fully-inserted.jpg)
 
 2\. Once inserted, proceed to step 3 unless you have a battery in it
 
@@ -18,11 +18,11 @@ The TEMP-1B comes with an optional food probe which can be used to monitor food 
 
 &nbsp;
 
-![](../../../../assets/homey-products-temp1b-addons-food-probe-pic-1.jpg)
+![](../../../../assets/food-probe-pic-1.jpg)
 
 3\. Go to the device page of your TEMP-1B in Home Assistant and choose probe "Food".
 
-![](../../../../assets/homey-products-temp1b-addons-temp1b-food-probe-pic-1-1.png)
+![](../../../../assets/temp1b-food-probe-pic-1-1.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 

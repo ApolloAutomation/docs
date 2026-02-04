@@ -6,44 +6,44 @@
 
 1\. Gently pry open the case lid as shown in the image below.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-pry-open.jpg)
+![](../../../../assets/temp-1b-pry-open.jpg)
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-lid-off.jpg)
+![](../../../../assets/temp-1b-lid-off.jpg)
 
 2\. Once the lid is removed either lift the PCB out or gently dump the pcb out by turning it upside down.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-lift-pcb-out-1.jpg)
+![](../../../../assets/temp-1b-lift-pcb-out-1.jpg)
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-remove-case.jpg)
+![](../../../../assets/temp-1b-remove-case.jpg)
 
 3\. Align the battery as shown in the image below.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-pic-1.jpg)
+![](../../../../assets/temp-1b-battery-insert-pic-1.jpg)
 
 4\. Insert the battery with the positive terminal facing the + sign.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-pic-3.jpg)
+![](../../../../assets/temp-1b-battery-insert-pic-3.jpg)
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-pic-4.jpg)
+![](../../../../assets/temp-1b-battery-insert-pic-4.jpg)
 
 5\. Begin reassembly by placing the battery side down with the RGB led in the top right corner.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-empty-case.jpg)
+![](../../../../assets/temp-1b-battery-insert-empty-case.jpg)
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-pcb-ledge.jpg)
+![](../../../../assets/temp-1b-battery-insert-pcb-ledge.jpg)
 
 6\. You will use the "ledge" of the case to set the PCB down and then it will lay down and rest on the ledge of the other side as well.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-pcb-hinge.jpg)
+![](../../../../assets/temp-1b-battery-insert-pcb-hinge.jpg)
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-pcb-flat.jpg)
+![](../../../../assets/temp-1b-battery-insert-pcb-flat.jpg)
 
 7\. Align the RGB led in the top right with the small hole in the lid.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-align-rgb.jpg)
+![](../../../../assets/temp-1b-battery-insert-align-rgb.jpg)
 
 8\. Gently press down until it the lid seats.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-battery-insert-press-case.jpg)
+![](../../../../assets/temp-1b-battery-insert-press-case.jpg)
 
 9 You have now installed or reinstalled the battery!

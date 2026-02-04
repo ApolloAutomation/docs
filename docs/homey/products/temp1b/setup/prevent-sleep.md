@@ -10,11 +10,11 @@
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-prevent-sleep-pic-1.png)
+![](../../../../assets/temp-1b-prevent-sleep-pic-1.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](../../../../assets/homey-products-temp1b-setup-temp-1b-prevent-sleep-pic-2.png)
+![](../../../../assets/temp-1b-prevent-sleep-pic-2.png)
 
 4\. Type in the amount of hours you want your sensor to sleep in the "Sleep Duration" box. Defaults to 12 hours.
 

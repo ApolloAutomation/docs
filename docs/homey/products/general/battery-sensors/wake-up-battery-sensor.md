@@ -10,7 +10,7 @@ Press the reset button and let go to restart the device<br><a href="https://wiki
 
 <br><a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noreferrer nofollow noopener"><strong>PLT-1B reset button</strong></a>
 
-![](../../../../assets/homey-products-general-battery-sensors-plt-boot-mode-pic-6-1.jpg)
+![](../../../../assets/plt-boot-mode-pic-6-1.jpg)
 
 ###### Method 2
 
@@ -22,7 +22,7 @@ Quickly press and hold the boot button for 4-5 seconds
 
 <a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noreferrer nofollow noopener"><strong>PLT-1B boot button</strong></a>
 
-![](../../../../assets/homey-products-general-battery-sensors-plt-boot-mode-pic-2.jpg)
+![](../../../../assets/plt-boot-mode-pic-2.jpg)
 
 Your device is now "awake" but it will not stay awake on its own yet. Click the "prevent sleep" button on your device page in Home Assistant or directly on the device web server such as plt-1.local or its IP address.
 

@@ -33,9 +33,9 @@
 
 # Sensor Definitions
 
-![](../../../../assets/homey-products-plt1-setup-screenshot-2024-10-03-at-4-10-25-pm.png)
+![](../../../../assets/screenshot-2024-10-03-at-4-10-25-pm.png)
 
-![](../../../../assets/homey-products-plt1-setup-screenshot-2024-10-03-at-2-25-47-pm.png)
+![](../../../../assets/screenshot-2024-10-03-at-2-25-47-pm.png)
 
 ### Controls:
 
@@ -117,4 +117,4 @@
 
 When looking at the PLT-1 in the below orientation, the boot button is on the left and the reset is on the right by the USB-C port
 
-![](../../../../assets/homey-products-plt1-setup-plt-1-buttons.png)
+![](../../../../assets/plt-1-buttons.png)

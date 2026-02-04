@@ -8,13 +8,13 @@
 
 1\. Position the TEMP-1 so that the USB-C port is facing you. On the right side of the device, locate a small opening where you can use a paperclip to press the boot button.
 
-![](../../../../assets/homey-products-temp1-troubleshooting-temp-1-boot-button-side-view.jpg)
+![](../../../../assets/temp-1-boot-button-side-view.jpg)
 
 If you prefer, please remove the lid by gently prying up on the small slit by the top of the case.
 
-![](../../../../assets/homey-products-temp1-troubleshooting-temp-1-pry-open.jpg)
+![](../../../../assets/temp-1-pry-open.jpg)
 
-![](../../../../assets/homey-products-temp1-troubleshooting-temp-1b-boot-button-lid-off.jpg)
+![](../../../../assets/temp-1b-boot-button-lid-off.jpg)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your TEMP-1 then let go of the button.
 
