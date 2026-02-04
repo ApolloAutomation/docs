@@ -6,7 +6,7 @@ description: How to check if your device is connected to Wi-Fi, Home Assistant, 
 
 1\. Press the reset button and let go to restart the device<br><a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B reset button</strong></a>
 
-![](../../temp1/troubleshooting/../../../assets/products-temp1-troubleshooting-temp-1-reset-button-lid-off.jpg)
+![](../../../assets/products-temp1-troubleshooting-temp-1-reset-button-lid-off.jpg)
 
 <a href="https://apolloautomation.github.io/docs/products/plt1/plt1-boot-mode/" target="_blank" rel="noopener"><strong>PLT-1B reset button</strong></a>
 
@@ -14,7 +14,7 @@ description: How to check if your device is connected to Wi-Fi, Home Assistant, 
 
 2\. Press the boot button and let go<br><a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B boot button</strong></a>
 
-![](../../../products/temp1/troubleshooting/../../../assets/products-temp1-troubleshooting-temp-1b-boot-button-lid-off.jpg)
+![](../../../assets/products-temp1-troubleshooting-temp-1b-boot-button-lid-off.jpg)
 
 <a href="https://apolloautomation.github.io/docs/products/plt1/general-tips/" target="_blank" rel="noopener"><strong>PLT-1B boot button</strong></a>
 
