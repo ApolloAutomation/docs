@@ -12,15 +12,15 @@ description: Step by step guide for putting The R-PRO-1 In Boot Mode.
 
 1\. Unplug your R-PRO-1 from power and remove the back.
 
-![](../../../assets/products-rpro1-troubleshooting-rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/products-rpro1-troubleshooting-rpro-1-add-co2-remove-lid.jpg)
+![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
 2\. Gently remove the PCB from the case and flip it over.
 
-![](../../../assets/products-rpro1-troubleshooting-r-pro-1-no-case-mmwave-facing-up.jpg)
+![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
 
 3\. Locate the boot button on the bottom right side of the PCB.
 
-![](../../../assets/products-rpro1-troubleshooting-r-pro-1-boot-button.jpg)
+![](../../../assets/r-pro-1-boot-button.jpg)
 
 4\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R-PRO-1 then let go of the button.
 
@@ -30,19 +30,19 @@ description: Step by step guide for putting The R-PRO-1 In Boot Mode.
 
 1\. Unplug your R-PRO-1 from power and remove the back.
 
-![](../../../assets/products-rpro1-troubleshooting-rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/products-rpro1-troubleshooting-rpro-1-add-co2-remove-lid.jpg)
+![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
 2\. Gently remove the PCB from the case and flip it over.
 
-![](../../../assets/products-rpro1-troubleshooting-r-pro-1-no-case-mmwave-facing-up.jpg)
+![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
 
 3\. Locate the boot button on the bottom right side of the PCB.
 
-![](../../../assets/products-rpro1-troubleshooting-r-pro-1-boot-button.jpg)
+![](../../../assets/r-pro-1-boot-button.jpg)
 
 4\. Locate the reset button on the bottom left side of the PCB.
 
-![](../../../assets/products-rpro1-troubleshooting-r-pro-1-reset-button.jpg)
+![](../../../assets/r-pro-1-reset-button.jpg)
 
 5\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
 

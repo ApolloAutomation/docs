@@ -12,7 +12,7 @@ If your device has already been connected to Home Assistant please <a href="http
 
 1\. <a href="https://wiki.apolloautomation.com/products/plt1/troubleshooting/plt1-boot-mode/" target="_blank" rel="noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
 
-![](../../../assets/products-plt1-troubleshooting-screenshot-2024-10-23-at-12-32-55-pm.png)
+![](../../../assets/screenshot-2024-10-23-at-12-32-55-pm.png)
 
 2\. Navigate to our installer page and click connect under Non Battery Firmware <a href="https://apolloautomation.github.io/PLT-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1 Installer</a>
 

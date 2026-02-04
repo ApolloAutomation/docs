@@ -37,9 +37,9 @@ description: Full list of definitions for the PLT-1B and its various sensors.
 
 # Sensor Definitions
 
-![](../../../assets/products-plt1b-setup-screenshot-2024-10-03-at-4-10-25-pm.png)
+![](../../../assets/screenshot-2024-10-03-at-4-10-25-pm.png)
 
-![](../../../assets/products-plt1b-setup-screenshot-2024-10-03-at-2-25-47-pm.png)
+![](../../../assets/screenshot-2024-10-03-at-2-25-47-pm.png)
 
 ### Controls:
 
@@ -121,4 +121,4 @@ description: Full list of definitions for the PLT-1B and its various sensors.
 
 When looking at the PLT-1 in the below orientation, the boot button is on the left and the reset is on the right by the USB-C port
 
-![](../../../assets/products-plt1b-setup-plt-1-buttons.png)
+![](../../../assets/plt-1-buttons.png)

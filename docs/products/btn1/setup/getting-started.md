@@ -12,19 +12,19 @@ This will guide you through adding on switches and keycaps to your BTN-1 then ad
 
 1\. Line up the two gold pins with the holes on your BTN-1, then press down gently. Be careful, as the pins can bend or get damaged if too much force is used.
 
-![](../../../assets/products-btn1-setup-btn-1-install-switches-gif.webp)
+![](../../../assets/btn-1-install-switches-gif.webp)
 
 ###### Installing Keycaps
 
 1\. Line up the + on the keycap with the + on the top of the switch you installed. It may require a little pressure, but it should press on smoothly. Once placed, lightly tap to ensure the keycap is fully seated.
 
-![](../../../assets/products-btn1-setup-btn-1-getting-started-installing-keycaps-gif.webp)
+![](../../../assets/btn-1-getting-started-installing-keycaps-gif.webp)
 
 ###### Flip Power Switch
 
 **1\.** Ensure the power switch is **turned on**. ** ** Because the BTN-1 includes a battery, it must have a physical on/off switch. When the device is on its side, flipping the switch **away from you** turns it **on**, and flipping it **toward you** turns it **off**.
 
-![](../../../assets/products-btn1-setup-btn-1-flip-power-switch-on.webp)
+![](../../../assets/btn-1-flip-power-switch-on.webp)
 
 ### Connecting Through Hotspot
 
@@ -38,13 +38,13 @@ To connect through the sensor's onboard hotspot follow the below:
 
 2\. On your phone or PC, open the WiFi settings and connect to "Apollo BTN-1 Hotspot".
 
-![](../../../assets/products-btn1-setup-btn-1-reset-wifi-screenshot.png)
+![](../../../assets/btn-1-reset-wifi-screenshot.png)
 
 3\. Once connected it should automatically open a dashboard for your sensor. If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
 4\. Select the Wi-Fi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
 
-![](../../../assets/products-btn1-setup-btn-1-getting-started-enter-wifi-details-hotspot.png)
+![](../../../assets/btn-1-getting-started-enter-wifi-details-hotspot.png)
 
 !!! tip "Tip for Mesh Wi-Fi systems or multiple Access Points"
 
@@ -62,15 +62,15 @@ To connect through the sensor's onboard hotspot follow the below:
 
 1\. Navigate to settings -&gt; integrations then click the "**ADD**" button below your new Apollo device then click **Submit**.
 
-![](../../../assets/products-btn1-setup-btn-1-improv-ble-add.gif)
+![](../../../assets/btn-1-improv-ble-add.gif)
 
 2\. Once prompted, type in your Wi-Fi name and password in the two fields then click **Submit**. Click on **Close** once it finishes.
 
-![](../../../assets/products-btn1-setup-btn-1-improv-ble-wifi-setup.gif)
+![](../../../assets/btn-1-improv-ble-wifi-setup.gif)
 
 3\. Click on **Add** then click on **Submit**. Choose an area and then click **Finish**.
 
-![](../../../assets/products-btn1-setup-btn-1-improv-ble-esphome-integration.gif)
+![](../../../assets/btn-1-improv-ble-esphome-integration.gif)
 
 4\. Your device is now added to your Wi-Fi and added to the ESPHome Integration in Home Assistant. You should now be ready to <a href="https://wiki.apolloautomation.com/products/btn1/examples/btn-1-blueprint" target="_blank" rel="noreferrer nofollow noopener">setup a blueprint</a> and start using your BTN-1!
 
@@ -84,7 +84,7 @@ You can add the ESPHome Device Builder addon in Home Assistant to easily update 
 
 Make sure to fill out your Wi-Fi details in the **secrets** section by clicking on the **secrets** button.
 
-![](../../../assets/products-btn1-setup-esphome-device-builder-secrets.png)
+![](../../../assets/esphome-device-builder-secrets.png)
 
 ```yaml
 # Your Wi-Fi SSID and password - keep the quotes and just replace the name and password between the quotes!
@@ -98,11 +98,11 @@ wifi_password: "your-wifi-pass-here"
 
 2\. Click **Show** in the top right to show your discovered devices then click on **Take Control** then click **Install**. This can take multiple minutes or longer on low-end hardware.
 
-![](../../../assets/products-btn1-setup-btn-1-getting-started-take-control-gif.gif)
+![](../../../assets/btn-1-getting-started-take-control-gif.gif)
 
 3\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
 
-![](../../../assets/products-btn1-setup-btn-1-getting-started-ota-successful.png)
+![](../../../assets/btn-1-getting-started-ota-successful.png)
 
 4\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
@@ -110,7 +110,7 @@ wifi_password: "your-wifi-pass-here"
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integration</a> then click on **Add** then click **Submit**. When prompted click **Finish** then give it a location and click **Finish** or click **Skip and Finish**.
 
-![](../../../assets/products-btn1-setup-btn-1-getting-started-esphome-integration-gif.gif)
+![](../../../assets/btn-1-getting-started-esphome-integration-gif.gif)
 
 2\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 

@@ -26,7 +26,7 @@ wifi:
 
 1\. Select the ESPHome add on and then select Edit under your desired device.
 
-![](../../../assets/products-general-troubleshooting-screenshot-2024-10-25-at-5-14-48-pm.png)
+![](../../../assets/screenshot-2024-10-25-at-5-14-48-pm.png)
 
 2\.  Add the code below to your devices yaml file. Then select Save and press Install.
 
@@ -34,6 +34,6 @@ wifi:
 power_save_mode: none
 ```
 
-![](../../../assets/products-general-troubleshooting-screenshot-2024-10-25-at-5-25-10-pm.png)
+![](../../../assets/screenshot-2024-10-25-at-5-25-10-pm.png)
 
 3\. Now your device should have a stronger connection. (This will cause the sensors internal temperature to increase.)

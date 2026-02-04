@@ -40,7 +40,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 1\. Navigate to settings -&gt; integrations then click the "**ADD**" button below your new Apollo device!
 
-![](../../../assets/products-general-setup-improv-ble-pic-1.png)
+![](../../../assets/improv-ble-pic-1.png)
 
 2\. Click submit when it asks if you want to setup your new device and shows you the hostname of your device.
 
@@ -48,19 +48,19 @@ If this does not automatically open the dashboard, please open your web browser 
 
 3\. Type in your Wi-Fi name and password in the two fields.
 
-![](../../../assets/products-general-setup-improv-ble-pic-3.png)
+![](../../../assets/improv-ble-pic-3.png)
 
 4\. Wait for it to finish, you will see the image below while it connects.
 
-![](../../../assets/products-general-setup-improv-ble-pic-4.png)
+![](../../../assets/improv-ble-pic-4.png)
 
 5\. <a href="https://my.home-assistant.io/redirect/config_flow_start?domain=esphome" target="_blank" rel="noopener">Click the link shown in the image below</a> (do not click close).
 
-![](../../../assets/products-general-setup-improv-ble-pic-5-1.png)
+![](../../../assets/improv-ble-pic-5-1.png)
 
 6\. When successful, you will see this image appear!
 
-![](../../../assets/products-general-setup-improv-ble-pic-6.png)
+![](../../../assets/improv-ble-pic-6.png)
 
 ### Connecting To ESPHome Device Builder
 
@@ -72,7 +72,7 @@ You can add the ESPHome Device Builder addon in Home Assistant to easily update 
 
 Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
 
-![esphome-device-compiler-dashboard-pic-1.png](../../../assets/products-general-setup-esphome-device-compiler-dashboard-pic-1.png)
+![esphome-device-compiler-dashboard-pic-1.png](../../../assets/esphome-device-compiler-dashboard-pic-1.png)
 
 ```yaml
 # Your Wi-Fi SSID and password - keep the quotes and just replace the name and password between the quotes!

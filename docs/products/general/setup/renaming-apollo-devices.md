@@ -12,7 +12,7 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 
 2\. On the device you want to rename, click the pencil icon and enter a new name. Click **Update**, then select the name you just created.
 
-![](../../../assets/products-general-setup-esphome-integration-rename-device-gif.gif)
+![](../../../assets/esphome-integration-rename-device-gif.gif)
 
 3\. Click the 3 dots in the top right and select **Recreate Entity IDs** then select **Update**.
 
@@ -20,11 +20,11 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 
     You will likely run into a popup showning that 2 entity IDs cannot be regenerated because they are not available. This is fine, we can manually fix these later or just ignore them as they are disabled entities and not expected to be used.
 
-![](../../../assets/products-general-setup-esphome-integration-recreate-entity-ids-gif.gif)
+![](../../../assets/esphome-integration-recreate-entity-ids-gif.gif)
 
 4\. Scroll down to the Diagnostic section and click on **\+2 disabled entities**. Select each entity and replace the old name with the new name. Make sure to replace spaces with underscores as shown in the gif below!
 
-![](../../../assets/products-general-setup-esphome-integration-manually-rename-disabled-entities-gif.gif)
+![](../../../assets/esphome-integration-manually-rename-disabled-entities-gif.gif)
 
 ##### ESPHome Integration - Part 2
 
@@ -36,7 +36,7 @@ This section only changes the device name shown in the ESPHome integration page.
 
 2\. On the device you would like to rename, click the 3 dots icon and select **Rename** and type in your new name then click **OK**.
 
-![](../../../assets/products-general-setup-esphome-integration-rename-device-for-integration-gif.gif)
+![](../../../assets/esphome-integration-rename-device-for-integration-gif.gif)
 
 !!! success "The next section is not necessary unless you use ESPHome Device Builder!"
 
@@ -48,7 +48,7 @@ This section only changes the device name shown in the ESPHome integration page.
 
 2\. Click the 3 dots next to your new Apollo device and select **Rename hostname** then enter in the new name of your sensor and click **Rename**. This cannot have any spaces or underscores only hyphens, numbers, and lowercase letters such as "**smart-keys**". Once it finishes it will say OTA successful and you can click close to get back to the main dashboard.
 
-![](../../../assets/products-general-setup-rename-hostname-esphome-device-builder-gif.gif)
+![](../../../assets/rename-hostname-esphome-device-builder-gif.gif)
 
 !!! null "We are now ready to rename the friendly_name to a new name such as Smart Keys"
 
@@ -56,12 +56,12 @@ This section only changes the device name shown in the ESPHome integration page.
 
 3\. Click **Edit** then replace the text after friendly\_name with your new name such as Smart Keys. Click Save and Install in the top right once you are done with the rename and it will save and install. Once it finishes it will say OTA successful and you can click close to get back to the main dashboard.
 
-![](../../../assets/products-general-setup-rename-friendiy-name-esphome-device-builder-gif.gif)
+![](../../../assets/rename-friendiy-name-esphome-device-builder-gif.gif)
 
 4\. Finally we should delete the device from the ESPHome Integration in home assistant and then add it back! Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>. Next to the device you would like to remove, click the three dots and then **Delete**.
 
-![](../../../assets/products-general-setup-delete-device-from-esphome-device-builder-gif2.gif)
+![](../../../assets/delete-device-from-esphome-device-builder-gif2.gif)
 
 5\. Scroll up and add the new auto-discovered device. The name should be the same Friendly name you put in the ESPHome Device builder and all of your entities should be the correct name to begin with!
 
-![](../../../assets/products-general-setup-auto-discover-and-add-esphome-device-gif.gif)
+![](../../../assets/auto-discover-and-add-esphome-device-gif.gif)

@@ -16,27 +16,27 @@ description: >-
 
 2\. Since we are only using *one panel*, we will begin by editing **Segment 0** and setting the **Stop Y** to "16".
 
-![](../../../assets/products-m1-setup-one-panel-setup-segment-0.gif)
+![](../../../assets/one-panel-setup-segment-0.gif)
 
 3\. Click on Add segment, give it a name such as **Segment 1** then set the **Start Y** to "16" and the **Stop Y** to "32".
 
-![](../../../assets/products-m1-setup-one-panel-setup-segment-1.gif)
+![](../../../assets/one-panel-setup-segment-1.gif)
 
 4\. Click on Add segment, give it a name such as Segment 2 then set the **Start Y** to "32" and the **Stop Y** to "48".
 
-![](../../../assets/products-m1-setup-one-panel-setup-segment-2.gif)
+![](../../../assets/one-panel-setup-segment-2.gif)
 
 5\. Click on Add segment, give it a name such as Segment 3 then set the **Start Y** to "48" and the **Stop Y** to "64".
 
-![](../../../assets/products-m1-setup-one-panel-setup-segment-3.gif)
+![](../../../assets/one-panel-setup-segment-3.gif)
 
 6\. You should see four equal segments 0-3 at the top of the screen.
 
-![](../../../assets/products-m1-setup-two-panels-4x-segments.png)
+![](../../../assets/two-panels-4x-segments.png)
 
 7\. Test it by changing the effect to **Scrolling Text** and editing the name of each segment to be any text you want!
 
-![](../../../assets/products-m1-setup-two-panels-example-scrolling-text-setup.gif)
+![](../../../assets/two-panels-example-scrolling-text-setup.gif)
 
 !!! warning "Your segments need to be saved to a Preset or they will disappear when you reboot or run other presets."
 
@@ -44,4 +44,4 @@ description: >-
 
 8\. Save your segments by creating a new preset. Click on the **\+ Preset** button and typing in a name then clicking **Save** at the bottom.
 
-![](../../../assets/products-m1-setup-one-panel-save-preset.gif)
+![](../../../assets/one-panel-save-preset.gif)

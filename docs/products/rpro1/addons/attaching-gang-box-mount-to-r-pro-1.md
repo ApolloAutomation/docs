@@ -8,11 +8,11 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 
 1\. Unplug your R-PRO-1 from power and remove the back.
 
-![](../../../assets/products-rpro1-addons-rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/products-rpro1-addons-rpro-1-add-co2-remove-lid.jpg)
+![](../../../assets/rpro-1-add-co2-lift-lid-1.jpg)![](../../../assets/rpro-1-add-co2-remove-lid.jpg)
 
 2\. Gently lift the PCB out of the case and set it face up with the USB-C port facing down.
 
-![](../../../assets/products-rpro1-addons-r-pro-1-no-case-mmwave-facing-up.jpg)
+![](../../../assets/r-pro-1-no-case-mmwave-facing-up.jpg)
 
 3\. Take the two gang box mount pieces and identify the one labeled "TOP" and the other piece which is the bottom mount.
 
@@ -22,26 +22,26 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 
 3\. Gently push the top mount labeled "TOP" into the pcb as shown below. Make sure the orientation is identical to the image below!
 
-![](../../../assets/products-rpro1-addons-r-pro-1-gang-box-top-mount.jpg)
+![](../../../assets/r-pro-1-gang-box-top-mount.jpg)
 
 4\. Gently push the top mount into the pcb as shown below. Make sure the orientation is identical to the image below!
 
-![](../../../assets/products-rpro1-addons-r-pro-1-gang-box-bottom-mount.jpg)
+![](../../../assets/r-pro-1-gang-box-bottom-mount.jpg)
 
 5\. The end result should look identical to the image below. You are now ready to install it inside of a 1 gang box.
 
-![](../../../assets/products-rpro1-addons-r-pro-1-gang-box-mounts-installed.jpg)
+![](../../../assets/r-pro-1-gang-box-mounts-installed.jpg)
 
 ###### Install in 1-Gang Box
 
 1\. Line up the holes in your 1-gang box (yours will be attached to the wall already).
 
-![](../../../assets/products-rpro1-addons-r-pro-1-gang-box-line-up-holes.jpg)
+![](../../../assets/r-pro-1-gang-box-line-up-holes.jpg)
 
 2\. Place screws through the blank faceplate and gently place over the r-pro-1 mounting holes.
 
-![](../../../assets/products-rpro1-addons-r-pro-1-gang-box-install-faceplate.jpg)
+![](../../../assets/r-pro-1-gang-box-install-faceplate.jpg)
 
 3\. Screw in the screws slowly to make sure not to break the mounts or the blank faceplate. At the end yours will look just like the image below!
 
-![](../../../assets/products-rpro1-addons-r-pro-1-gang-box-face-plate-installed-finished.jpg)
+![](../../../assets/r-pro-1-gang-box-face-plate-installed-finished.jpg)

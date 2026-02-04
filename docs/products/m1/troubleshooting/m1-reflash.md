@@ -12,27 +12,27 @@ description: Step by step guide for re-flashing the M-1 back to factory firmware
 
 2\. Push and hold the boot button (the left button). While still holding the button down, plug in a USB-C cable into the USB-C port of your M-1 LED Matrix then let go of the button.
 
-![](../../../assets/products-m1-troubleshooting-m-1-hold-boot-webp.webp)
+![](../../../assets/m-1-hold-boot-webp.webp)
 
 3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/WLED-MM-M1/" target="_blank" rel="noreferrer nofollow noopener">Apollo M-1 Installer</a>.
 
-![](../../../assets/products-m1-troubleshooting-m-1-reflash-connect-button.png)
+![](../../../assets/m-1-reflash-connect-button.png)
 
 4\. Select the open com port then click Connect.
 
-![](../../../assets/products-m1-troubleshooting-m-1-reflash-com-port.png)
+![](../../../assets/m-1-reflash-com-port.png)
 
 5\. Click Install M-1.
 
-![](../../../assets/products-m1-troubleshooting-m-1-reflash-click-install.png)
+![](../../../assets/m-1-reflash-click-install.png)
 
 5\. Click Install.
 
-![](../../../assets/products-m1-troubleshooting-m-1-reflash-click-install-confirm.png)
+![](../../../assets/m-1-reflash-click-install-confirm.png)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](../../../assets/products-m1-troubleshooting-m-1-reflash-install-complete.png)
+![](../../../assets/m-1-reflash-install-complete.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 

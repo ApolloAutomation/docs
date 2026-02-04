@@ -10,17 +10,17 @@ This guide shows you how to make your Apollo device act as a "BLE Proxy" which l
 
 1\. Open the Esphome Device Builder.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-1.png)
+![](../../../assets/bluetooth-proxy-tutorial-1.png)
 
 2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
 
 3\. Click "Edit" as shown below.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-2.png)
+![](../../../assets/bluetooth-proxy-tutorial-2.png)
 
 4\. Add a \# before the packages line and the line after it as shown in the image below.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-10.png)
+![](../../../assets/bluetooth-proxy-tutorial-10.png)
 
 5\. Copy the code inside the codeblock below.
 
@@ -39,19 +39,19 @@ packages:
 
 6\. Paste the code as shown below directly below the yaml you just edited above. Make sure the spaces look the same and there are no red lines under any of the code.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-9.png)
+![](../../../assets/bluetooth-proxy-tutorial-9.png)
 
 7\. Click save then Install in the top right.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-11.png)
+![](../../../assets/bluetooth-proxy-tutorial-11.png)
 
 8\. Click "Wirelessly" and let it finish compiling then installing.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-6.png)
+![](../../../assets/bluetooth-proxy-tutorial-6.png)
 
 9\. When you see this "OTA Successful" it has finished and you can click "Close" in the bottom right.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-7.png)
+![](../../../assets/bluetooth-proxy-tutorial-7.png)
 
 10\. You are finished and your Apollo device is now acting as a Bluetooth Proxy!
 
@@ -61,13 +61,13 @@ packages:
 
 1\. Open the Esphome Device Builder.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-1.png)
+![](../../../assets/bluetooth-proxy-tutorial-1.png)
 
 2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
 
 3\. Click "Edit" as shown below.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-2.png)
+![](../../../assets/bluetooth-proxy-tutorial-2.png)
 
 4\. Copy the code inside the codeblock below.
 
@@ -75,7 +75,7 @@ packages:
   power_save_mode: LIGHT
 ```
 
-5\. Paste the code as shown below - make sure the spaces look the same and there are no red lines under any of the code.<br>![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-5.png)
+5\. Paste the code as shown below - make sure the spaces look the same and there are no red lines under any of the code.<br>![](../../../assets/bluetooth-proxy-tutorial-5.png)
 
 6\. Copy the code inside the codeblock below.
 
@@ -89,18 +89,18 @@ esp32_ble_tracker:
 
 7\. Paste the code on a new line at the very bottom of the file as shown below.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-7-1.png)
+![](../../../assets/bluetooth-proxy-tutorial-7-1.png)
 
 8\. Click save then Install in the top right.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-8.png)
+![](../../../assets/bluetooth-proxy-tutorial-8.png)
 
 8\. Click "Wirelessly" and let it finish compiling then installing.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-6.png)
+![](../../../assets/bluetooth-proxy-tutorial-6.png)
 
 9\. When you see this "OTA Successful" it has finished and you can click "Close" in the bottom right.
 
-![](../../../assets/products-general-setup-bluetooth-proxy-tutorial-7.png)
+![](../../../assets/bluetooth-proxy-tutorial-7.png)
 
 10\. You are finished and your Apollo device is now acting as a Bluetooth Proxy!
