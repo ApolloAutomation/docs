@@ -6,27 +6,27 @@ description: Step by step guide for installing and using the optional Magnetic M
 
 The TEMP-1B comes with an optional magnetic mount which can be used to secure the TEMP-1B to your fridge or grill as shown below.
 
-![](../../../assets/products-temp1-addons-temp1b-magnetic-mount-proper-mounting-explained-resized.png)
+![](../../../assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
 
 1\. To use your magnetic mount place it with the magnet facing upwards as shown:
 
-![](../../../assets/products-temp1-addons-temp1b-magnetic-mount-pic-1.jpg)
+![](../../../assets/temp1b-magnetic-mount-pic-1.jpg)
 
 2\. Align the lid with the hole in the top right and place your TEMP-1B inside the magnetic mount and gently press down.
 
-![](../../../assets/products-temp1-addons-temp1b-magnetic-mount-installed-pic-1.jpg)
+![](../../../assets/temp1b-magnetic-mount-installed-pic-1.jpg)
 
-![](../../../assets/products-temp1-addons-temp1b-magnetic-mount-installed-pic-2.jpg)
+![](../../../assets/temp1b-magnetic-mount-installed-pic-2.jpg)
 
 3\. It will sit flush as shown in the image below.
 
-![](../../../assets/products-temp1-addons-temp1b-magnetic-mount-installed-pic-3-1.jpg)
+![](../../../assets/temp1b-magnetic-mount-installed-pic-3-1.jpg)
 
 4\. Affix your TEMP-1B to the outside of fridge or a safe cool place on the grill.
 
-![](../../../assets/products-temp1-addons-temp1b-magnetic-mount-safe-outside-fridge-mounting.jpg)
+![](../../../assets/temp1b-magnetic-mount-safe-outside-fridge-mounting.jpg)
 
-![](../../../assets/products-temp1-addons-temp1b-magnetic-mount-safe-grill-mounting.jpg)
+![](../../../assets/temp1b-magnetic-mount-safe-grill-mounting.jpg)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 

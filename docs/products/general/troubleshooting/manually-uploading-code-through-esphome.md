@@ -16,18 +16,18 @@ If your device has already been connected to Home Assistant previously please re
 
 3. Select your Apollo device, it will show with a similar name to the one below, and click connect. If you aren't sure which device it is, you can unplug the MSR-1 and see which disappears.
 
-![ComSelection.png](../../../assets/products-general-troubleshooting-comselection.png)
+![ComSelection.png](../../../assets/comselection.png)
 
 If no device shows, click cancel and then install the recommended driver that shows on the popup. If you have installed the driver, tried different cables, and it still won't work refer here for putting the MSR-1 in bootloader mode and then retry step 3. Putting MSR-1 In Boot Mode Document
 
 
 4. Choose to install the new firmware
 
-![](../../../assets/products-general-troubleshooting-image-1698806750134.png)
+![](../../../assets/image-1698806750134.png)
 
 6. Wait for the installer to finish
    
-  ![](../../../assets/products-general-troubleshooting-image-1698806082666.png)
+  ![](../../../assets/image-1698806082666.png)
 
 
 7. After finishing, check for the Apollo hotspot and connect. This might not show if you previously had the MSR-1 connected to your wifi
@@ -40,4 +40,4 @@ If no device shows, click cancel and then install the recommended driver that sh
 If you encounter the below error, please complete the Putting MSR-1 In Boot Mode Document and go back to step 3.
 
 
-  ![](../../../assets/products-general-troubleshooting-image-1698806793309.png)
+  ![](../../../assets/image-1698806793309.png)

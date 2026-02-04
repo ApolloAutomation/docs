@@ -18,23 +18,23 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Click the big "Connect" button.
 
-![](../../../assets/products-plt1-troubleshooting-plt-1-reflash-pic-1-1.png)
+![](../../../assets/plt-1-reflash-pic-1-1.png)
 
 4\. Select the open com port then click Connect.
 
-![](../../../assets/products-plt1-troubleshooting-plt-1-reflash-pic-2-1.png)
+![](../../../assets/plt-1-reflash-pic-2-1.png)
 
 5\. Click "Install ApolloAutomation.PLT-1".
 
-![](../../../assets/products-plt1-troubleshooting-plt-1-reflash-pic-3.png)
+![](../../../assets/plt-1-reflash-pic-3.png)
 
 6\. Click "INSTALL".
 
-![](../../../assets/products-plt1-troubleshooting-plt-1-reflash-pic-4.png)
+![](../../../assets/plt-1-reflash-pic-4.png)
 
 7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](../../../assets/products-plt1-troubleshooting-plt-1-reflash-pic-5.png)
+![](../../../assets/plt-1-reflash-pic-5.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 

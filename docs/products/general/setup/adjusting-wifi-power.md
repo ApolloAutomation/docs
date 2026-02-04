@@ -32,10 +32,10 @@ The ESP chips produce a significant amount of energy (heat) constantly using Wi-
 
 6\. In the top right of the same screen click "SAVE" and then "INSTALL".
 
-![](../../../assets/products-general-setup-renaming-devices-pic-7-1.png)
+![](../../../assets/renaming-devices-pic-7-1.png)
 
 7\. Once you see "INFO OTA successful" you are done. Click "STOP" to exit.
 
-![](../../../assets/products-general-setup-update-frequency-pic-3.png)
+![](../../../assets/update-frequency-pic-3.png)
 
 8\. You are finished and your Apollo device now has power\_save\_mode set to high!

@@ -60,7 +60,7 @@ If the back plate does not gently go onto the sensor please investigate and conf
 
 You can add a bit of hot glue to the Dupont wires to hold them together. DO NOT put hot glue into the GPIO Header's female pins that will ruin the addon. I am only suggesting that you can hot-glue the Dupont pins outer shell themselves together to stiffen them up.
 
-![5QMWMycqBmvOz_mlKdoTbZwkC-4__REi8A.jpg](../../../assets/products-air1-air1-5qmwmycqbmvoz-mlkdotbzwkc-4-rei8a.jpg)
+![5QMWMycqBmvOz_mlKdoTbZwkC-4__REi8A.jpg](../../../assets/5qmwmycqbmvoz-mlkdotbzwkc-4-rei8a.jpg)
 
 **Connecting DuPont pins to LED Strip**
 

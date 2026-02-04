@@ -8,6 +8,6 @@ description: >-
 
 1\. Gently pry open the case lid as shown in the image below.
 
-![](../../../assets/products-temppro1-troubleshooting-temp-pro-1-boot-button-lift-lid-jpg.jpeg)
+![](../../../assets/temp-pro-1-boot-button-lift-lid-jpg.jpeg)
 
 2\. The teardown is complete!

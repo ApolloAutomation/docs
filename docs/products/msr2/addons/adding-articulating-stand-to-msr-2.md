@@ -14,10 +14,10 @@ description: Tutorial on adding the rear female usb-c port to your MSR-2.
 
 2\. Align the new backplate that came with the articulating stand addon and gently push down on two corners near the articulating ball mount then the other two corners until it seats flat.
 
-![](../../../assets/products-msr2-addons-msr-2-stand-pic-1.jpg)
+![](../../../assets/msr-2-stand-pic-1.jpg)
 
-![](../../../assets/products-msr2-addons-msr-2-stand-pic-2.jpg)
+![](../../../assets/msr-2-stand-pic-2.jpg)
 
 3\. Align the ball inside the articulating mount and then push down until it's fully seated.
 
-![](../../../assets/products-msr2-addons-msr-2-stand-pic-3.jpg)
+![](../../../assets/msr-2-stand-pic-3.jpg)
