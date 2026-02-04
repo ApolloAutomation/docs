@@ -4,9 +4,9 @@
 
 2\. Long press the Boot button for 10 seconds
 
-![MSR-1 Top Shot Boot Button.jpg](../assets/msr-1-top-shot-boot-button.jpg)
+![MSR-1 Top Shot Boot Button.jpg](../../../assets/products-msr1-msr1-msr-1-top-shot-boot-button.jpg)
 
-![MSR-1_Buttons.jpg](../assets/msr-1-buttons.jpg)
+![MSR-1_Buttons.jpg](../../../assets/products-general-general-msr-1-buttons.jpg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again
 

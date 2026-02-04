@@ -8,7 +8,7 @@ If your device has already been connected to Home Assistant please <a href="http
 
 1\. Position the MSR-1 as shown in the image below and locate the small opening to <a href="https://wiki.apolloautomation.com/products/msr1/troubleshooting/msr1-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">press the boot button (the left button).</a>
 
-![](../assets/msr-1-top-shot-boot-button.jpg)
+![](../../../assets/products-msr1-msr1-msr-1-top-shot-boot-button.jpg)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-1 then let go of the button.
 
@@ -18,19 +18,19 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Click the big "Connect" button.
 
-![](assets/msr-1-reflash-pic-1.png)
+![](../../../assets/products-msr1-troubleshooting-msr-1-reflash-pic-1.png)
 
 3\. Select the open com port then click Connect.
 
-![](assets/msr-1-reflash-pic-2.png)
+![](../../../assets/products-msr1-troubleshooting-msr-1-reflash-pic-2.png)
 
 4\. Click "Install MSR-1".
 
-![](assets/msr-1-reflash-pic-3.png)
+![](../../../assets/products-msr1-troubleshooting-msr-1-reflash-pic-3.png)
 
 5\. Click "INSTALL".
 
-![](assets/msr-1-reflash-pic-4.png)
+![](../../../assets/products-msr1-troubleshooting-msr-1-reflash-pic-4.png)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
