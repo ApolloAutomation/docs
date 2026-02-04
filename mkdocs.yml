@@ -511,6 +511,48 @@ nav:
           - Sensor Comparisons: homey/products/general/comparisons.md
           - Supported Platforms: homey/products/general/supported-platforms.md
           - Resellers: products/general/resellers.md
+      - LED-1:
+          - Introduction: homey/products/led1/introduction.md
+          - FAQ: homey/products/led1/faq.md
+          - Getting Started: homey/products/led1/setup/getting-started-led1.md
+          - Additional Info:
+            - General Tips: homey/products/led1/setup/led1-general-tips.md
+            - Pinout Guide: homey/products/led1/setup/led1-pinout-guide.md
+            - How To Replace The Fuse: homey/products/led1/setup/led1-replace-fuse.md
+          - Addons:
+            - Microphone: homey/products/led1/addons/adding-microphone-to-led-1.md
+          - Examples:
+            - LED-1 Controlling Govee Lights: homey/products/led1/examples/led-1-controlling-govee-lights.md
+          - Troubleshooting:
+            - LED-1 Boot Mode: homey/products/led1/troubleshooting/led1-boot-mode.md
+            - Factory Re-Flash LED-1: homey/products/led1/troubleshooting/led1-reflash.md
+            - Find IP and Hostname: homey/products/led1/troubleshooting/led1-find-ip-address-and-hostname.md
+          - Reviews: homey/products/led1/led1-reviews.md
+      - M-1 (LED Matrix):
+          - Introduction: homey/products/m1/introduction.md
+          - FAQ: homey/products/m1/faq.md
+          - Getting Started: homey/products/m1/setup/getting-started-m1.md
+          - Multiple Panels: homey/products/m1/setup/m1-multiple-panels.md
+          - Additional Info:
+            - General Tips: homey/products/m1/setup/m1-general-tips.md
+            - Matrix Settings: homey/products/m1/setup/m1-matrix-settings.md
+            - Segments: homey/products/m1/setup/m1-segments.md
+            - Pinout Guide: homey/products/m1/setup/m1-pinout-guide.md
+          - Addons:
+            - Microphone: homey/products/m1/addons/adding-microphone-to-m-1.md
+            - Multiple Matrix Panels: homey/products/m1/addons/adding-multiple-matrix-panels-to-m-1.md
+          - Examples:
+            - Add GIFs to WLED: homey/products/m1/examples/add-gifs-to-wled.md
+            - Create GIF: homey/products/m1/examples/create-gif.md
+            - Create Logo Image: homey/products/m1/examples/create-logo-image.md
+            - Scrolling Text: homey/products/m1/examples/scrolling-text.md
+            - QR Code Generator: homey/products/m1/examples/qr-code-generator.md
+            - Share Data From Home Assistant: homey/products/m1/examples/share-data-from-home-assistant.md
+          - Troubleshooting:
+            - M-1 Boot Mode: homey/products/m1/troubleshooting/m1-boot-mode.md
+            - Factory Re-Flash M-1: homey/products/m1/troubleshooting/m1-reflash.md
+            - Find IP and Hostname: homey/products/m1/troubleshooting/m1-find-ip-address-and-hostname.md
+          - Reviews: homey/products/m1/m1-reviews.md
       - MSR-2:
           - Introduction: homey/products/msr2/introduction.md
           - FAQ: homey/products/msr2/faq.md
@@ -564,6 +606,27 @@ nav:
             - Factory Re-Flash MTR-1: homey/products/mtr1/troubleshooting/mtr1-code.md
             - Teardown and Reassembly Of MTR-1: homey/products/mtr1/troubleshooting/mtr1-teardown.md
             - Reset Wi-Fi Credentials: homey/products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
+      - R-PRO-1:
+          - Introduction: homey/products/rpro1/introduction.md
+          - FAQ: homey/products/rpro1/faq.md
+          - Radar Tuning:
+            - Home Assistant: homey/products/rpro1/calibrating-and-updating/zones-ha.md
+            - HLK Radar Tool App: homey/products/rpro1/calibrating-and-updating/zones-hlk.md
+          - Additional Info:
+            - Switch Firmware: homey/products/rpro1/setup/rpro1-switch-firmware.md
+            - General Tips: homey/products/rpro1/setup/rpro1-general-tips.md
+            - Sensor Definitons: homey/products/rpro1/setup/rpro1-sensor-definitions.md
+          - Addons:
+            - CO<sub>2</sub> Addon: homey/products/rpro1/addons/adding-co2-to-r-pro-1.md
+            - 1-Gang Box Mount: homey/products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
+            - Ceiling Mount: homey/products/rpro1/addons/install-ceiling-mount-for-r-pro-1.md
+            - LD2412 Addon: homey/products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md
+          - Troubleshooting:
+            - R-PRO-1 Boot Mode: homey/products/rpro1/troubleshooting/rpro1-boot-mode.md
+            - Factory Re-Flash R-PRO-1: homey/products/rpro1/troubleshooting/rpro1-code.md
+            - Teardown and Reassembly Of R-PRO-1: homey/products/rpro1/troubleshooting/rpro1-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md
+          - Reviews: homey/products/rpro1/rpro1-reviews.md
       - AIR-1:
           - Introduction: homey/products/air1/introduction.md
           - FAQ: homey/products/air1/faq.md
@@ -584,6 +647,41 @@ nav:
             - Factory Re-Flash AIR-1: homey/products/air1/troubleshooting/air1-code.md
             - Teardown and Reassembly Of AIR-1: homey/products/air1/troubleshooting/air1-teardown.md
             - Reset Wi-Fi Credentials: homey/products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
+      - BTN-1:
+          - Introduction: homey/products/btn1/introduction.md
+          - FAQ: homey/products/btn1/faq.md
+          - Getting Started: homey/products/btn1/setup/getting-started.md
+          - Additional Info:
+            - General Tips: homey/products/btn1/setup/general-tips.md
+            - Sensor Definitons: homey/products/btn1/setup/sensor-definitions.md
+            - Prevent Sleep: homey/products/btn1/additional-info/prevent-sleep.md
+          - Addons:
+            - BTN-1 Addon: homey/products/btn1/addons/btn1-addon.md
+          - Examples:
+            - Blueprint: homey/products/btn1/examples/blueprint.md
+            - Example Automation: homey/products/btn1/examples/example-automation.md
+          - Troubleshooting:
+            - BTN-1 Boot Mode: homey/products/btn1/troubleshooting/btn1-boot-mode.md
+            - Factory Re-Flash BTN-1: homey/products/btn1/troubleshooting/btn1-reflash.md
+            - Teardown and Reassembly Of BTN-1: homey/products/btn1/troubleshooting/btn1-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
+          - Reviews: homey/products/btn1/btn1-reviews.md
+      - PUMP-1:
+          - Introduction: homey/products/pump1/introduction.md
+          - FAQ: homey/products/pump1/faq.md
+          - Additional Info:
+            - General Tips: homey/products/pump1/setup/pump1-general-tips.md
+            - Sensor Definitons: homey/products/pump1/setup/pump1-sensor-definitions.md
+          - Addons:
+            - Bottle Addon: homey/products/pump1/addons/attaching-bottle-to-pump-1.md
+            - Inlet and Outlet Tube Addons: homey/products/pump1/addons/attaching-tubes-to-pump-1.md
+            - Fluid Sensor Addons: homey/products/pump1/addons/attaching-fluid-level-sensors-pump-1.md
+          - Troubleshooting:
+            - PUMP-1 Boot Mode: homey/products/pump1/troubleshooting/pump1-boot-mode.md
+            - Factory Re-Flash PUMP-1: homey/products/pump1/troubleshooting/pump1-reflash.md
+            - Teardown and Reassembly Of PUMP-1: homey/products/pump1/troubleshooting/pump1-teardown.md
+            - Reset Wi-Fi Credentials: homey/products/pump1/troubleshooting/pump1-reset-wi-fi-credentials.md
+          - Reviews: homey/products/pump1/pump1-reviews.md
       - PLT-1:
           - Introduction: homey/products/plt1/introduction.md
           - FAQ: homey/products/plt1/faq.md
