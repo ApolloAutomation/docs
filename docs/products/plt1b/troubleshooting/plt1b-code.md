@@ -14,17 +14,17 @@ If your device has already been connected to Home Assistant please <a href="http
 2. Navigate to our installer page and click connect [\*\* Install Page \*\*](https://apolloautomation.github.io/PLT-1/)
 3. Select your Apollo device, it will show with a similar name to the one below, and click connect. If you aren't sure which device it is, you can unplug the sensor and see which disappears.
 
-[![ComSelection.png](https://apolloautomation.github.io/docs/products/mtr1/assets/comselection.png)](https://apolloautomation.github.io/docs/products/mtr1/assets/comselection.png)
+[![ComSelection.png](https://apolloautomation.github.io/docs/products/mtr1/../../../assets/comselection.png)](https://apolloautomation.github.io/docs/products/mtr1/../../../assets/comselection.png)
 
 If no device shows, click cancel and then install the recommended driver that shows on the popup. If you have installed the driver, tried different cables, and it still won't work refer [here](https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/) for putting the sensor in boot mode and then retry step 3.
 
 4\. Choose to install the new firmware
 
-[![](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806750134.png)](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806750134.png)
+[![](https://apolloautomation.github.io/docs/products/mtr1/../../../assets/image-1698806750134.png)](https://apolloautomation.github.io/docs/products/mtr1/../../../assets/image-1698806750134.png)
 
 5\. Wait for the installer to finish - if you see "ERROR Logger is not configured!" that is totally expected! The logger is disabled to make more room for other components on the microcontroller.
 
-[![](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806082666.png)](https://apolloautomation.github.io/docs/products/mtr1/assets/image-1698806082666.png)
+[![](https://apolloautomation.github.io/docs/products/mtr1/../../../assets/image-1698806082666.png)](https://apolloautomation.github.io/docs/products/mtr1/../../../assets/image-1698806082666.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 
@@ -42,7 +42,7 @@ If your device has already been connected to Home Assistant please <a href="http
 
 1\. <a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
 
-![](assets/screenshot-2024-10-23-at-12-32-55-pm.png)
+![](../../../assets/screenshot-2024-10-23-at-12-32-55-pm.png)
 
 2\. Navigate to our installer page and click connect under Battery Firmware <a href="https://apolloautomation.github.io/PLT-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1B Installer</a>
 
@@ -52,23 +52,23 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Click the big "Connect" button.
 
-![](../../../assets/products-plt1b-troubleshooting-plt-1b-reflash-pic-1.png)
+![](../../../../../../assets/products-plt1b-troubleshooting-plt-1b-reflash-pic-1.png)
 
 4\. Select the open com port then click Connect.
 
-![](../../../assets/products-plt1b-troubleshooting-plt-1b-reflash-pic-2.png)
+![](../../../../../../assets/products-plt1b-troubleshooting-plt-1b-reflash-pic-2.png)
 
 5\. Click "Install ApolloAutomation.PLT-1B".
 
-![](../../../assets/products-plt1b-troubleshooting-plt-1b-reflash-pic-3.png)
+![](../../../../../../assets/products-plt1b-troubleshooting-plt-1b-reflash-pic-3.png)
 
 6\. Click "INSTALL".
 
-![](../../../assets/products-plt1b-troubleshooting-plt-1b-reflash-pic-4.png)
+![](../../../../../../assets/products-plt1b-troubleshooting-plt-1b-reflash-pic-4.png)
 
 7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](../../../assets/products-plt1-troubleshooting-plt-1-reflash-pic-5.png)
+![](../../../../../../assets/products-plt1-troubleshooting-plt-1-reflash-pic-5.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 
