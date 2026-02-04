@@ -14,21 +14,21 @@ description: Step by step guide for re-flashing the H-2 back to factory firmware
 
 3\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your H-2 then let go of the button.
 
-![](../../../assets/h-2-boot-mode-method-1-boot-button.webp)
+![](../../../assets/products-h2-troubleshooting-h-2-boot-mode-method-1-boot-button.webp)
 
 4\. Navigate to our installer page using a chromium based browser such as Chrome or Edge and click **connect** under **H-2 Smart Wi-Fi Firmware** or **H-2 No Wi-Fi Firmware**. Select the open com port and click **connect**.
 
 [Click here to head to the reflashing site!](https://apolloautomation.github.io/H-2/){   .md-button .md-button--primary }
 
-![](../../../assets/h-2-reflash-installer-connect.gif)
+![](../../../assets/products-h2-troubleshooting-h-2-reflash-installer-connect.gif)
 
 5\. Click Install **H-2** then click **Install** again.
 
-![](../../../assets/h-2-reflash-install.gif)
+![](../../../assets/products-h2-troubleshooting-h-2-reflash-install.gif)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](../../../assets/pump-1-reflash-install-complete.png)
+![](../../../assets/products-h2-troubleshooting-pump-1-reflash-install-complete.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 

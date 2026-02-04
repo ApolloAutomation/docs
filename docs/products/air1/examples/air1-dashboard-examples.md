@@ -6,7 +6,7 @@ description: AIR-1 Home Assistant Dashboard Examples
 
 Really neat dashboard for your AIR-1 by user "keex"!
 
-![](../../../assets/air-1-keex-dashboard-image-1-1.png)
+![](../../../assets/products-air1-examples-air-1-keex-dashboard-image-1-1.png)
 
 [https://community.home-assistant.io/t/apollo-air-1-dashboard/785311](https://community.home-assistant.io/t/apollo-air-1-dashboard/785311)
 
@@ -27,7 +27,7 @@ hours_to_show: 24
 
 #### Custom: Apexcharts Card
 
-![](../../../assets/air-1-suggestions-co2-smarthomesellout.png)
+![](../../../assets/products-air1-examples-air-1-suggestions-co2-smarthomesellout.png)
 
 ```yaml
 type: custom:apexcharts-card

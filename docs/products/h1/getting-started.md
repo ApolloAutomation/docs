@@ -6,7 +6,7 @@ description: H-1 Getting Started tutorial.
 
 Insert a (rechargable) [RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/dp/B0CSKD7N3D) or plug it into a power source using the USB-C port.
 
-![](../../assets/h-1-battery-insert.jpg)
+![](../../assets/products-h1-getting-started.md-h-1-battery-insert.jpg)
 
 2\. Turn on the Ornament:
 
@@ -20,7 +20,7 @@ Once the ornament is awake, press the gold button (see image below) to play one 
 * 2 Presses: Rudolph the Red-Nosed Reindeer
 * Long press: Let it Snow
 
-![](../../assets/screenshot-2024-11-01-015948-1.png)
+![](../../assets/products-h1-getting-started.md-screenshot-2024-11-01-015948-1.png)
 
 4\. Add to Home Assistant (Optional):
 

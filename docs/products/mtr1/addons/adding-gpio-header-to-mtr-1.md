@@ -6,11 +6,11 @@ description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1
 
 1\. Unplug your MTR-1 from power and remove the stand if attached.
 
-![](../../../assets/mtr-1-add-co2-pic-1.jpg)
+![](../../../assets/products-mtr1-addons-mtr-1-add-co2-pic-1.jpg)
 
 2\. Remove the backplate of the MTR-1.
 
-![](../../../assets/mtr-1-add-co2-pic-4.jpg)
+![](../../../assets/products-mtr1-addons-mtr-1-add-co2-pic-4.jpg)
 
 3\. Identify the "X" on the PCB on the back of your MTR-1 and the "X" on the top left corner of the GPIO Header addon.
 
@@ -30,6 +30,6 @@ description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1
 
 ![](../../../assets/products-mtr1-addons-mtr-1-add-gpio-pic-5.jpg)
 
-![](../../../assets/gpio-header-pinout.webp)
+![](../../../assets/products-mtr1-addons-gpio-header-pinout.webp)
 
 [Click here to head to the GPIO Header LED Strip Tutorial!](https://wiki.apolloautomation.com/products/msr2/examples/gpio-header-control-an-led-strip/){   .md-button .md-button--primary }

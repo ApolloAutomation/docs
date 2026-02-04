@@ -8,4 +8,4 @@ description: Helpful tips to get the most use out of your sensor.
 
 For the most accurate UV and LUX readings, be sure to expose the sensor circled in the image below to light.
 
-![](../../assets/plt-1b-buttons-1.png)
+![](../../assets/products-plt1b-general-tips.md-plt-1b-buttons-1.png)

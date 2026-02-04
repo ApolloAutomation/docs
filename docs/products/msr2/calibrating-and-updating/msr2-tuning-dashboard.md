@@ -18,7 +18,7 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 4\. Head to your <a href="http://homeassistant.local:8123" target="_blank" rel="noreferrer nofollow noopener">Home Assistant dashboard</a> and <a href="https://www.home-assistant.io/getting-started/onboarding_dashboard/#creating-a-new-dashboard-and-edit-cards" target="_blank" rel="noreferrer nofollow noopener"><strong>Take control</strong> of your dashboard</a> by clicking **Edit Dashboard** in the top right then the 3 dots from the **Edit Dashboard** menu and click **Take control**. (this step is only necessary for new Home Assistant users).
 
-![](../../../assets/home-assistant-take-control-gif.gif)
+![](../../../assets/products-msr2-calibrating-and-updating-home-assistant-take-control-gif.gif)
 
 5\. Use the YAML generator below and enter in your device name such as apollo\_msr\_2\_m4c4dd and then click **Generate YAML**. It will copy the YAML for you to use in the next step!
 
@@ -35,8 +35,8 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
     Home Assistant depends on this file to function correctly - it is what displays your dashboard "views". Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
 
-![](../../../assets/msr-2-yaml-generator-copy-paste-raw-gif.gif)
+![](../../../assets/products-msr2-calibrating-and-updating-msr-2-yaml-generator-copy-paste-raw-gif.gif)
 
 7\. You should now have a new <a href="https://www.home-assistant.io/dashboards/views/" target="_blank" rel="noreferrer nofollow noopener">dashboard view</a> called **MSR-2 Configuration** and you should be ready to configure your sensor!
 
-![](../../../assets/msr-2-dashboard-example-finished.png)
+![](../../../assets/products-msr2-calibrating-and-updating-msr-2-dashboard-example-finished.png)

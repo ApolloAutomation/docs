@@ -2,13 +2,13 @@
 title: Apollo SCD40 Breakout Board Introduction
 description: Apollo SCD40 Breakout Board Introduction
 ---
-![](../../../assets/scd40-breakout-board.png)
+![](../../../assets/products-breakout-boards-scd40-breakout-board-scd40-breakout-board.png)
 
 The **SCD40 Breakout Board** is a compact PCB kit featuring the <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener"><strong>SCD40</strong></a>, making it easy to add CO<sub>2</sub> monitoring to any new or existing project.
 
 Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated API key inside the code block as shown below then paste it in the code below where you see "use-a-randomly-generated-key-here".
 
-![](../../../assets/api-key-example.png)
+![](../../../assets/products-breakout-boards-scd40-breakout-board-api-key-example.png)
 
 **GPIO Pins Listed:**
 

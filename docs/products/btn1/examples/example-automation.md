@@ -8,11 +8,11 @@ description: Example of how to use the BTN-1 Events to create an automation in H
 
 2\. Click on **Add trigger** then select **Entity** and then **State**. Then search for your btn-1 and select the btn-1 event. Then select the **Event Type** attribute and select **Single Click** in the box labeled **To**.
 
-![](../../../assets/btn-1-example-gif-1.gif)
+![](../../../assets/products-btn1-examples-btn-1-example-gif-1.gif)
 
 3\. Next click on **Add action** and search **Light: Toggle** and select it. Then choose your entity to turn on such as btn-1 light. Check the box next to Brightness and type in 100 then click Save and name your automation.
 
-![](../../../assets/btn-1-example-gif-2.gif)
+![](../../../assets/products-btn1-examples-btn-1-example-gif-2.gif)
 
 4\. Your automation is now live. Click the button 1 button and it should toggle whatever light you selected in the automation!
 

@@ -4,9 +4,9 @@
 
 2\. Long press the Boot button for 10 seconds
 
-![](../../../../assets/plt-boot-mode-pic-2.jpg)
+![](../../../../assets/homey-products-plt1b-troubleshooting-plt-boot-mode-pic-2.jpg)
 
-![](../../../../assets/plt-boot-mode-pic-4.jpg)
+![](../../../../assets/homey-products-plt1b-troubleshooting-plt-boot-mode-pic-4.jpg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

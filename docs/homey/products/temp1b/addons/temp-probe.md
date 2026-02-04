@@ -4,9 +4,9 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 1\. To use your temp probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
-![](assets/temp-probe-insert-1.jpg)
+![](../../../../assets/homey-products-temp1b-addons-temp-probe-insert-1.jpg)
 
-![](assets/temp-probe-fully-inserted.jpg)
+![](../../../../assets/homey-products-temp1b-addons-temp-probe-fully-inserted.jpg)
 
 2\. Once inserted, proceed to step 3 unless you have a battery in it
 
@@ -16,11 +16,11 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 &nbsp;
 
-![](assets/temp1b-temp-probe-pic-1.jpg)
+![](../../../../assets/homey-products-temp1b-addons-temp1b-temp-probe-pic-1.jpg)
 
 3\. Go to the device page of your TEMP-1B in Home Assistant and choose probe "Dallas" aka Temperature.
 
-![](assets/temp1b-temp-probe-pic-1-1.png)
+![](../../../../assets/homey-products-temp1b-addons-temp1b-temp-probe-pic-1-1.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
@@ -28,6 +28,6 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 **Example images of the long temperature probe in a mini freezer:**
 
-![](assets/temp1b-temp-probe-freezer-pic-1.jpg)
+![](../../../../assets/homey-products-temp1b-addons-temp1b-temp-probe-freezer-pic-1.jpg)
 
-![](assets/temp1b-temp-probe-freezer-pic-2.jpg)
+![](../../../../assets/homey-products-temp1b-addons-temp1b-temp-probe-freezer-pic-2.jpg)

@@ -10,7 +10,7 @@ description: Tutorial for Attaching the bottle to the PUMP-1
 
     The fluid sensor needs to be placed with the flat side with no writing facing outwards and the side with the ears flush with the back towards the plastic enclosure.
 
-![](../../../assets/pump-1-install-fluid-input-sensor-webp.webp)
+![](../../../assets/products-pump1-addons-pump-1-install-fluid-input-sensor-webp.webp)
 
 2\. **(Optional)** Gently press the cable into the **built-in cable slots** located on the underside of the 3D-printed base. This helps keep the wiring neat and secure.
 

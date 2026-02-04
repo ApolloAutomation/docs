@@ -16,15 +16,15 @@ description: Step by step guide for re-flashing the LED-1 back to factory firmwa
 
 5\. Click the **Serial Port** dropdown and choose the available COM port..
 
-![](../../../assets/m-1-select-open-com-port.png)
+![](../../../assets/products-led1-troubleshooting-m-1-select-open-com-port.png)
 
 6\. Browse to the firmware file from Step 3 and select it.
 
-![](../../../assets/m-1-select-firmware-you-downloaded.png)
+![](../../../assets/products-led1-troubleshooting-m-1-select-firmware-you-downloaded.png)
 
 7\. Click **Flash ESP** and wait for the process to complete. Once it's done, it will appear as shown in the image below.
 
-![](../../../assets/m-1-reflash-completed.png)
+![](../../../assets/products-led1-troubleshooting-m-1-reflash-completed.png)
 
 8\. The device is still in **boot mode** and needs to be power cycled. To reboot it, either unplug the power cable or press the **reset button** on the back of the device (the button on the right).
 

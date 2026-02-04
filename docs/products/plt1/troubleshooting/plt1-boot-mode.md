@@ -26,6 +26,6 @@ description: Step by step guide for putting The PLT-1 In Boot Mode.
 
 3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
 
-![](../../../assets/screenshot-2024-10-23-at-12-35-01-pm.png)
+![](../../../assets/products-plt1-troubleshooting-screenshot-2024-10-23-at-12-35-01-pm.png)
 
 4\. Continue with <a href="https://wiki.apolloautomation.com/products/plt1/troubleshooting/plt1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.

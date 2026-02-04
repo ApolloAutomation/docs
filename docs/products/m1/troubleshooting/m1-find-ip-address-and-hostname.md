@@ -20,7 +20,7 @@ description: >-
 
 3\. The M-1 LED Matrix should be detected automatically. Select it, then click the **Config** tab in the top right corner.
 
-![](../../../assets/m-1-find-ip-hostname-gif.webp)
+![](../../../assets/products-m1-troubleshooting-m-1-find-ip-hostname-gif.webp)
 
 !!! danger "WARNING ~ DO NOT UPDATE IT ~ WARNING"
 
@@ -28,12 +28,12 @@ description: >-
 
 4\. Select **WiFi Setup** and at the bottom you will see a box with .local at the end. The letters inside of the box are your hostname and the IP is directly below it. You can change the hostname to whatever you like (using letters, numbers, and dashes only). Click Save and Connect when done.
 
-![](../../../assets/m-1-wled-native-combined-wifi-ip-hostname.png)
+![](../../../assets/products-m1-troubleshooting-m-1-wled-native-combined-wifi-ip-hostname.png)
 
 5\. You can now access your device from a browser at http://the-ip-address-here or http://the-hostname-you-entered.local
 
 6\. Edit the User Interface settings section under the **Server description** with a friendly name that is shown for your device!
 
-![](../../../assets/m-1-wled-native-app-server-description-name-change.png)
+![](../../../assets/products-m1-troubleshooting-m-1-wled-native-app-server-description-name-change.png)
 
 [Click here to learn how to add your own image or logo to the M-1](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){ .md-button .md-button--primary }

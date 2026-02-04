@@ -16,7 +16,7 @@ The <a href="https://www.home-assistant.io/integrations/wled/" target="_blank" r
 
 1\. Install "Studio Code Server" <a href="https://github.com/hassio-addons/addon-vscode" target="_blank" rel="noreferrer nofollow noopener">from the addon store</a> in Home Assistant OS. Click Open Webui and navigate to your configuration.yaml file.
 
-![](../../../assets/m1-navigate-to-configuration-yaml.gif)
+![](../../../assets/products-m1-examples-m1-navigate-to-configuration-yaml.gif)
 
 !!! danger "This file is used by Home Assistant and must be carefully edited."
 
@@ -28,16 +28,16 @@ The <a href="https://www.home-assistant.io/integrations/wled/" target="_blank" r
 
 3\. Head back to the configuration.yaml file you opened in step 1 and paste your yaml generated on to a new line at the bottom of the YAML file.
 
-![](../../../assets/m-1-matrix-automation-example-yaml.png)
+![](../../../assets/products-m1-examples-m-1-matrix-automation-example-yaml.png)
 
 4\. Click on **Developer Tools** then Check Configuration - as long as there is a green response you are safe to continue. Scroll down and click on **Restful Command**. Click Actions at the top and type in "matrix" then click on the new matrix command you just made and click **Perform Action**.
 
-![](../../../assets/m1-config-check-restful-actions-gif.gif)
+![](../../../assets/products-m1-examples-m1-config-check-restful-actions-gif.gif)
 
 5\. Create a new **Automation** that uses a time pattern trigger to trigger every minute.
 
-![](../../../assets/m-1-matrix-automation-example-trigger.gif)
+![](../../../assets/products-m1-examples-m-1-matrix-automation-example-trigger.gif)
 
 6\. Create an **Action** aka "Then do" and type in *matrix* then click the "RESTful command: matrix\_all\_segments" option. Click **Save** and name the automation when you are done. This will make the matrix update every 1 minute!
 
-![](../../../assets/m-1-matrix-automation-example-action.gif)
+![](../../../assets/products-m1-examples-m-1-matrix-automation-example-action.gif)

@@ -4,7 +4,7 @@ description: Documentation for PUMP-1, including setup, usage, and best practice
 ---
 # Introduction
 
-![](../../assets/pump-1-main-1.webp)
+![](../../assets/products-new-product-template-introduction.md-pump-1-main-1.webp)
 
 The Apollo PUMP-1 is a versatile, compact, and food-safe fluid pump designed to integrate seamlessly with our PLT-1 plant sensor to automate your watering needs. It features two ports for fluid sensors that detect water presence, allowing the pump to automatically stop when watering is complete or if your water bottle runs empty, protecting your system from damage.
 

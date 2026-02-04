@@ -306,22 +306,22 @@ wifi:
     [Apple](https://apps.apple.com/us/app/home-assistant/id1099568401)
 3. Navigate to the HA settings
 
-    ![Screenshot_20231109_235524_Photos.jpg](../assets/screenshot-20231109-235524-photos.jpg)
+    ![Screenshot_20231109_235524_Photos.jpg](../../../assets/products-general-setup-screenshot-20231109-235524-photos.jpg)
 4. Select Companion app
 
-    ![Screenshot_20231109_235557_Photos.jpg](../assets/screenshot-20231109-235557-photos.jpg)
+    ![Screenshot_20231109_235557_Photos.jpg](../../../assets/products-general-setup-screenshot-20231109-235557-photos.jpg)
 5. Select Manage sensors
 
-    ![Screenshot_20231109_235621_Photos.jpg](../assets/screenshot-20231109-235621-photos.jpg)
+    ![Screenshot_20231109_235621_Photos.jpg](../../../assets/products-general-setup-screenshot-20231109-235621-photos.jpg)
 6. Turn on the "BLE Transmitter"
 
-    ![Screenshot_20231109_235702_Photos.jpg](../assets/screenshot-20231109-235702-photos.jpg)
+    ![Screenshot_20231109_235702_Photos.jpg](../../../assets/products-general-setup-screenshot-20231109-235702-photos.jpg)
 7. After opening BLE transmitter and turning it on, then scroll down to get the iBeacon unique ID
 
-    ![Screenshot_20231109_235757_Photos.jpg](../assets/screenshot-20231109-235757-photos.jpg)
+    ![Screenshot_20231109_235757_Photos.jpg](../../../assets/products-general-setup-screenshot-20231109-235757-photos.jpg)
 8. Add it to the ESPHome yaml config for the MSR-1
 
-    ![ESPHome YAML Edit.png](../assets/esphome-yaml-edit.png)
+    ![ESPHome YAML Edit.png](../../../assets/products-general-setup-esphome-yaml-edit.png)
 9. Be sure to add "power\_save\_mode: LIGHT" to the wifi section
 
     ```

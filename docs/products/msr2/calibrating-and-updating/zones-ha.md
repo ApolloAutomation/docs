@@ -26,22 +26,22 @@ How to tune the mmWave sensor using radar engineering mode.
 
 2\. Scroll down to the Configuration section and turn on "Radar Engineering Mode".
 
-![Configuration.png](../../../assets/msr-2-toggle-on-rem-1.png)
+![Configuration.png](../../../assets/products-msr2-calibrating-and-updating-msr-2-toggle-on-rem-1.png)
 
 3\. Scroll down to the Diagnostic section and you will see that when REM is enabled, the move and still energy for gates 0-8 are shown.
 
-![Diagnostic.png](../../../assets/msr-2-gate-energies.png)
+![Diagnostic.png](../../../assets/products-msr2-calibrating-and-updating-msr-2-gate-energies.png)
 
 The gates are 0.75meter increments from the sensor - allowing you to "tune" each 0.75 meter section until your sensor works as intended!
 
-![](../../../assets/msr-2-ld2410-gate-table.png)
+![](../../../assets/products-msr2-calibrating-and-updating-msr-2-ld2410-gate-table.png)
 
-![](../../../assets/msr-2-ld2410-gates-visualized.png)
+![](../../../assets/products-msr2-calibrating-and-updating-msr-2-ld2410-gates-visualized.png)
 
 Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 
-![High Threshold.png](../../../assets/msr-2-gate-high-threshold-example.png)
+![High Threshold.png](../../../assets/products-msr2-calibrating-and-updating-msr-2-gate-high-threshold-example.png)
 
 Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.
 
-![Low Threshold.png](../../../assets/msr-2-gate-low-threshold-example.png)
+![Low Threshold.png](../../../assets/products-msr2-calibrating-and-updating-msr-2-gate-low-threshold-example.png)

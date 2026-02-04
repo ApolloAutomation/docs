@@ -10,31 +10,31 @@ This guide will take you through calibrating your PLT-1’s moisture sensor. The
 
 3\. Select Settings and then Devices & Services
 
-![](../../assets/5-1.png)
+![](../../assets/products-plt1-calibrating-plt1.md-5-1.png)
 
 4\. Select the ESPHome Integration
 
-![](../../assets/6.png)
+![](../../assets/products-plt1-calibrating-plt1.md-6.png)
 
 5\. Select your PLT-1 device
 
-![](../../assets/7.png)
+![](../../assets/products-plt1-calibrating-plt1.md-7.png)
 
 6\. Scroll down to the diagnostics section and select entity not shown.
 
-![](../../assets/1-5.png)
+![](../../assets/products-plt1-calibrating-plt1.md-1-5.png)
 
 7\. Select the entity “Soil ADC.”
 
-![](../../assets/1-6.png)
+![](../../assets/products-plt1-calibrating-plt1.md-1-6.png)
 
 8\. Select the gear icon
 
-![](../../assets/2-1.png)
+![](../../assets/products-plt1-calibrating-plt1.md-2-1.png)
 
 9\. Select Enable
 
-![](../../assets/3.png)
+![](../../assets/products-plt1-calibrating-plt1.md-3.png)
 
 10\. Give the sensor a minute for this new entity to populate.
 

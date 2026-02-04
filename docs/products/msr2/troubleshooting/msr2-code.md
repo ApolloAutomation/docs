@@ -36,7 +36,7 @@ If your device has already been connected to Home Assistant please <a href="http
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](../../air1/troubleshooting/assets/air-1-reflash-pic-5.png)
+![](../../../assets/products-msr2-troubleshooting-air-1-reflash-pic-5.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 
