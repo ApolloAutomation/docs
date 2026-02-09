@@ -12,11 +12,11 @@ description: How to disable Prevent Sleep and allow your Apollo device to sleep!
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> and click on the name of your Apollo device.
 
-![](../../../assets/prevent-sleep-integrations-page-gif.gif)
+![](/assets/prevent-sleep-integrations-page-gif.gif)
 
 2\. Scroll down until you see **Prevent Sleep** and **Sleep Duration**.
 
-![](../../../assets/prevent-sleep-and-sleep-duration.png)
+![](/assets/prevent-sleep-and-sleep-duration.png)
 
 3\. Type in the amount of minutes you want your sensor to sleep in the **Sleep Duration** box. Defaults to 5 minutes for some devices and longer for others. We recommend leaving the default values.
 

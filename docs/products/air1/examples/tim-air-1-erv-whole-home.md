@@ -6,11 +6,11 @@ description: A user-shared ERV solution featuring the AIR-1 - Tim's AIR-1 ERV Wh
 
 esp32 C6 which drives two single phase inverters via two dac mcp4725 and four relays. Hrv is o3ozon cwp250. Ducts zinc plated steel at fi160 and max vents 90mm distribution.
 
-![ERV with AIR-1 inside](../../../assets/tim-air-1-example-pic-1.jpg)
+![ERV with AIR-1 inside](/assets/tim-air-1-example-pic-1.jpg)
 
 Check out the data he's logging with the AIR-1 into his custom grafana dashboard!
 
-![Grafana showing AIR-1 data](../../../assets/tim-air-1-example-pic-2.png)
+![Grafana showing AIR-1 data](/assets/tim-air-1-example-pic-2.png)
 
 !!! warning "Tim's warning to others:"
 

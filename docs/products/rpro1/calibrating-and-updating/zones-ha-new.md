@@ -20,11 +20,11 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 2\. Scroll down until you see "LD2450 Zone Type" and choose "Detection" from the drop-down menu.
 
-![](../../../assets/r-pro-1-select-detection.png)
+![](/assets/r-pro-1-select-detection.png)
 
 3\. Begin entering in the X and Y coordinates for each zone.
 
-![](../../../assets/r-pro-1-enter-zone-coordinates-manually.png)
+![](/assets/r-pro-1-enter-zone-coordinates-manually.png)
 
 !!! null "Helpful Hints to understand LD2450 zones better!"
 

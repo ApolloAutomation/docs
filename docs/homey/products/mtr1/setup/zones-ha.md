@@ -13,17 +13,17 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
 
 4\. Head to a dashboard view and click the pencil icon to edit dashboard then click one of the large "+" signs, type in manual, and click on it.
 
-![](../../../../assets/ld2450-add-plotly-graph-gif.gif)
+![](/assets/ld2450-add-plotly-graph-gif.gif)
 
 5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
-![](../../../../assets/mtr-1-card-working-targets.png)
+![](/assets/mtr-1-card-working-targets.png)
 
 6\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page")
 
 7\. Click device as shown in the image below
 
-![](../../../../assets/mtr-1-select-mtr-1.png)
+![](/assets/mtr-1-select-mtr-1.png)
 
 8\. Scroll down until you get to the Configuration section and you see the empty boxes for zones 1-3 for both X and Y coordinates.
 
@@ -37,7 +37,7 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
 
 9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.
 
-![](../../../../assets/ld2450-zone-input.png)
+![](/assets/ld2450-zone-input.png)
 
 !!! tip "Helpful Hints to understand zones better!"
 
@@ -53,23 +53,23 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
 
 10\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 X and Y target values.
 
-![](../../../../assets/r-pro-1-card-change-units-from-inches.png)
+![](/assets/r-pro-1-card-change-units-from-inches.png)
 
 11\. Select the Settings cog in the top right.
 
-![](../../../../assets/r-pro-1-card-change-units-settings.png)
+![](/assets/r-pro-1-card-change-units-settings.png)
 
 12\. Change the unit of measurement to mm and select Update.
 
-![](../../../../assets/mtr-1-uom-mm-1.png)
+![](/assets/mtr-1-uom-mm-1.png)
 
 13\. Your X and Y Targets will now look like this.
 
-![](../../../../assets/mtr-1-zone-setup-pic-1.png)
+![](/assets/mtr-1-zone-setup-pic-1.png)
 
 14\. Now you should see targets on the card.
 
-![](../../../../assets/mtr-1-card-working-targets.png)
+![](/assets/mtr-1-card-working-targets.png)
 
 15\. Now we can make zones around the targets where you want to Detect presence or filter them out.
 
