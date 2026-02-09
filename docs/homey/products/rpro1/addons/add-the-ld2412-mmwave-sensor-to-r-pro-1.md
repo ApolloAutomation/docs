@@ -1,0 +1,1 @@
+--8<-- "products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md:5:"

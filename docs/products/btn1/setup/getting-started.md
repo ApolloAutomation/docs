@@ -94,7 +94,7 @@ wifi_password: "your-wifi-pass-here"
 
 1\. Open the <a href="http://homeassistant.local:8123/5c53de3b_esphome/ingress" target="_blank" rel="noreferrer nofollow noopener"><strong>ESPHome Device Builder</strong></a> dashboard.
 
-![](assets/esphome-device-builder-show-discovered-device.png)
+![](../../../assets/esphome-device-builder-show-discovered-device.png)
 
 2\. Click **Show** in the top right to show your discovered devices then click on **Take Control** then click **Install**. This can take multiple minutes or longer on low-end hardware.
 

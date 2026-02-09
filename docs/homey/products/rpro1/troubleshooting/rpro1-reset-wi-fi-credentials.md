@@ -1,0 +1,1 @@
+--8<-- "products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md:5:"

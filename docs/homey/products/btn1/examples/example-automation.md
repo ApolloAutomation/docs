@@ -1,0 +1,1 @@
+--8<-- "products/btn1/examples/example-automation.md:5:"

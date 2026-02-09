@@ -1,0 +1,1 @@
+--8<-- "products/rpro1/setup/rpro1-sensor-definitions.md:5:"

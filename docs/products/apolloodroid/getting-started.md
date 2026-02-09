@@ -17,13 +17,13 @@ This guide will walk you through setting up your Apollo Home Assistant hub aka t
 
     If you'd prefer, you can go into your router and find the IP address that your Odroid received and use the IP address with port 8123 at the end such as: <a href="http://192.168.1.30:8123" title="Change yours to the correct IP address on your subnet!" target="_blank" rel="noreferrer nofollow noopener">http://192.168.1.30:8123</a>
 
-![Screenshot 2024-06-14 at 2.42.08 PM.png](assets/screenshot-2024-06-14-at-2-42-08-pm.png)
+![Screenshot 2024-06-14 at 2.42.08 PM.png](../../assets/screenshot-2024-06-14-at-2-42-08-pm.png)
 
-![Screenshot 2024-06-14 at 2.44.04 PM.png](assets/screenshot-2024-06-14-at-2-44-04-pm.png)
+![Screenshot 2024-06-14 at 2.44.04 PM.png](../../assets/screenshot-2024-06-14-at-2-44-04-pm.png)
 
 4\. Click on "Create My Smart Home" and wait for the Home Assistant installer to finish.
 
-![Screenshot 2024-06-14 at 2.42.41 PM.png](assets/screenshot-2024-06-14-at-2-42-41-pm.png)
+![Screenshot 2024-06-14 at 2.42.41 PM.png](../../assets/screenshot-2024-06-14-at-2-42-41-pm.png)
 
 5\. Now that you've got Home Assistant running, your Apollo Automation devices are ready to use!
 

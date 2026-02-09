@@ -1,0 +1,1 @@
+--8<-- "products/led1/setup/led1-replace-fuse.md:5:"

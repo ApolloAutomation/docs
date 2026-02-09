@@ -1,6 +1,6 @@
 # Exposed GPIO
 
-![Screenshot 2023-11-18 at 6.33.00 PM.png](../assets/screenshot-2023-11-18-at-6-33-00-pm.png)
+![Screenshot 2023-11-18 at 6.33.00 PM.png](../../../assets/screenshot-2023-11-18-at-6-33-00-pm.png)
 
 The back of the Apollo MSR-1 has exposed GPIO for a variety of uses.
 

@@ -1,0 +1,1 @@
+--8<-- "products/led1/examples/led-1-controlling-govee-lights.md:7:"

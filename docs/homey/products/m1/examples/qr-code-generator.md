@@ -1,0 +1,1 @@
+--8<-- "products/m1/examples/qr-code-generator.md:5:"

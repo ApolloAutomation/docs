@@ -1,0 +1,1 @@
+--8<-- "products/rpro1/troubleshooting/rpro1-boot-mode.md:5:"

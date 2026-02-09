@@ -14,11 +14,11 @@ description: Guide for setting up and using the prevent sleep toggle with the TE
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](../../../assets/products-temp1-setup-prevent-sleep-pic-3.png)
+![](../../../assets/prevent-sleep-pic-3.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](../../../assets/products-temp1-setup-prevent-sleep-pic-2.png)
+![](../../../assets/prevent-sleep-pic-2.png)
 
 4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 8 minutes.
 

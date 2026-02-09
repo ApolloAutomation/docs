@@ -1,0 +1,1 @@
+--8<-- "products/m1/setup/m1-segments.md:7:"

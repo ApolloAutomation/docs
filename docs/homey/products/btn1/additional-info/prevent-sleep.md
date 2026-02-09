@@ -1,0 +1,1 @@
+--8<-- "products/btn1/additional-info/prevent-sleep.md:5:"

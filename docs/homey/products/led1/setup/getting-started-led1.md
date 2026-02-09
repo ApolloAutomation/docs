@@ -1,0 +1,1 @@
+--8<-- "products/led1/setup/getting-started-led1.md:5:"

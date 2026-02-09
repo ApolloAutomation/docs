@@ -1,0 +1,1 @@
+--8<-- "products/pump1/setup/pump1-general-tips.md:7:"

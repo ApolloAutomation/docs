@@ -18,7 +18,7 @@ This guide will walk you through using the buzzer on your Apollo Device.
 
 4\. Input an RTTTL tone into the the string box such as one of the examples below.
 
-![](assets/buzzer-example-image.png)
+![](../../assets/buzzer-example-image.png)
 
 ??? example "Mario"
 

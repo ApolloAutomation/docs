@@ -1,0 +1,1 @@
+--8<-- "products/m1/examples/scrolling-text.md:5:"

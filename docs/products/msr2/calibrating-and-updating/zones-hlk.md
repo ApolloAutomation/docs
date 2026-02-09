@@ -24,37 +24,37 @@ The default password to connect to the HLKRadarTool is "HiLink".
 
 2\. Open the app and select your device
 
-![Find Device.png](../../../assets/products-msr1-msr1-find-device.png)
+![Find Device.png](../../../assets/find-device.png)
 
 3\. Turn on Engineering Mode
 
-![EM.png](../../../assets/products-msr1-msr1-em.png)
+![EM.png](../../../assets/em.png)
 
 4\. Select More and then select Parameter settings
 
-![More and PS.png](../../../assets/products-msr1-msr1-more-and-ps.png)
+![More and PS.png](../../../assets/more-and-ps.png)
 
 5\. Select Detect background noise
 
-![DBN.png](../../../assets/products-msr1-msr1-dbn.png)
+![DBN.png](../../../assets/dbn.png)
 
 6\. Insert Delay detection and Detection time values. (For iPhone users Delay detection cannot be 0). Then select Start. This will give us our reference values so we can auto-calibrate the mmWave sensor.
 
-![DD, DT and Start.png](../../../assets/products-msr1-msr1-dd-dt-and-start.png)
+![DD, DT and Start.png](../../../assets/dd-dt-and-start.png)
 
 7\. Select Back to navigate to the Parameter settings. Then select one of the auto-calibration buttons.
 
 **Average** - Sets the gate sensitivity to the average move and still energy
 
-![Average.png](../../../assets/products-msr1-msr1-average.png)
+![Average.png](../../../assets/average.png)
 
 **Maximum** - Sets the gate sensitivity to the maximum move and still energy
 
-![Max.png](../../../assets/products-msr1-msr1-max.png)
+![Max.png](../../../assets/max.png)
 
 **Intelligent** - Sets the gate sensitivity equal to or just above the maximum move and still energy.
 
-**![Intelligent.png](../../../assets/products-msr1-msr1-intelligent.png)**
+**![Intelligent.png](../../../assets/intelligent.png)**
 
 ###### Manual Calibration
 
@@ -62,6 +62,6 @@ The default password to connect to the HLKRadarTool is "HiLink".
 
 2\. Select Motion or Static sensitivity, change it to your desired value, and select Set.
 
-![Manual.png](../../../assets/products-msr1-msr1-manual.png)
+![Manual.png](../../../assets/manual.png)
 
 3\. Now your MSR-2 should be tuned to your environment!

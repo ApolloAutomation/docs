@@ -1,0 +1,1 @@
+--8<-- "products/pump1/addons/attaching-tubes-to-pump-1.md:5:"

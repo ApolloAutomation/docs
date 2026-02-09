@@ -12,7 +12,7 @@ description: Step by step guide for putting The MTR-1 In Boot Mode.
 
 1\. Position the MTR-1 as shown in the image below and locate the small opening to press the boot button (the right button).
 
-![](../../../assets/products-mtr1-troubleshooting-mtr-1-boot-button.jpg)
+![](../../../assets/mtr-1-boot-button.jpg)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MTR-1 then let go of the button.
 
@@ -26,6 +26,6 @@ description: Step by step guide for putting The MTR-1 In Boot Mode.
 
 3\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
 
-![](../../../assets/products-mtr1-troubleshooting-mtr-1-reset-button.jpg)
+![](../../../assets/mtr-1-reset-button.jpg)
 
 4\. Continue with <a href="https://wiki.apolloautomation.com/products/mtr1/troubleshooting/mtr1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.

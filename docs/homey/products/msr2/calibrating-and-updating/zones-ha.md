@@ -12,15 +12,15 @@ Here is a video of how to tune the mmWave sensor using radar engineering mode,
 2. Navigate to Settings>Devices & services>ESPHome>Select the MSR-2
 3. Scroll down to the Configuration section
 4. Turn on Radar Engineering Mode (REM)  
-    ![Configuration.png](../assets/5l4configuration.png)
+    ![Configuration.png](../../../../assets/5l4configuration.png)
 5. Scroll down to the Diagnostic section and you will see that REM shows the move and still energy for gates 0-8  
-    ![Diagnostic.png](../assets/diagnostic.png)
+    ![Diagnostic.png](../../../../assets/diagnostic.png)
 6. The gates are different distances from the sensor  
-    ![ld2410 table.png](../assets/ld2410-table_1.png)![MSR-1 radar map.png](../assets/msr-1-radar-map_1.png)
+    ![ld2410 table.png](../../../../assets/ld2410-table_1.png)![MSR-1 radar map.png](../../../../assets/msr-1-radar-map_1.png)
 7. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.  
-    ![High Threshold.png](../assets/high-threshold.png)
+    ![High Threshold.png](../../../../assets/high-threshold.png)
 8. Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.  
-    ![Low Threshold.png](../assets/low-threshold.png)
+    ![Low Threshold.png](../../../../assets/low-threshold.png)
 
 **Alternate Method**
 

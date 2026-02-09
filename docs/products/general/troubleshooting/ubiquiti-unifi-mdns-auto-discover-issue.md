@@ -14,23 +14,23 @@ description: Tutorial to help fix the Ubiquiti Unifi mDNS Auto Discover Issue.
 
 2\. Select Network.
 
-![mdns1.PNG](../assets/mdns1.PNG)
+![mdns1.PNG](../../../assets/mdns1.PNG)
 
 3\. Select Settings.
 
-![mdns2.PNG](../assets/mdns2.PNG)
+![mdns2.PNG](../../../assets/mdns2.PNG)
 
 4\. Select Networks.
 
-![mdns3.PNG](../assets/mdns3.PNG)
+![mdns3.PNG](../../../assets/mdns3.PNG)
 
 5\. Select the Default Network
 
-![mdns4.PNG](../assets/mdns4.PNG)
+![mdns4.PNG](../../../assets/mdns4.PNG)
 
 6\. Check Multicast DNS
 
-![mdns5.PNG](../assets/78Kmdns5.PNG)
+![mdns5.PNG](../../../assets/78Kmdns5.PNG)
 
 7\. Now the Home Assistant/ESPHome auto-discover issue should be fixed!
 
@@ -38,22 +38,22 @@ description: Tutorial to help fix the Ubiquiti Unifi mDNS Auto Discover Issue.
 
 1\. Open the UniFi app.
 
-![mmdns1.PNG](../assets/mmdns1.PNG)
+![mmdns1.PNG](../../../assets/mmdns1.PNG)
 
 2\. Tap Settings/Gear Icon
 
-![mmdns2.PNG](../assets/mmdns2.PNG)
+![mmdns2.PNG](../../../assets/mmdns2.PNG)
 
 3\. Tap Networks
 
-![mmdns3.PNG](../assets/mmdns3.PNG)
+![mmdns3.PNG](../../../assets/mmdns3.PNG)
 
 4\. Tap Default Network
 
-![mmdns4.PNG](../assets/mmdns4.PNG)
+![mmdns4.PNG](../../../assets/mmdns4.PNG)
 
 5\. Tap the Multicast DNS slider
 
-![mmdns5.PNG](../assets/mmdns5.PNG)
+![mmdns5.PNG](../../../assets/mmdns5.PNG)
 
 6\. Now the Home Assistant/ESPHome auto-discover issue should be fixed!

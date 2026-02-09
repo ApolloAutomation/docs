@@ -1,0 +1,1 @@
+--8<-- "products/btn1/troubleshooting/btn1-boot-mode.md:5:"

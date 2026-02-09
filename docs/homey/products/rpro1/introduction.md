@@ -1,0 +1,1 @@
+--8<-- "products/rpro1/introduction.md:5:"

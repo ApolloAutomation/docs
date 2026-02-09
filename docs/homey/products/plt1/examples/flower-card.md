@@ -1,4 +1,4 @@
-![](../../../assets/screenshot-2024-09-26-at-10-17-09-am.png)
+![](../../../../assets/screenshot-2024-09-26-at-10-17-09-am.png)
 
 <a href="https://github.com/Olen/homeassistant-plant" target="_blank" rel="noopener"><strong>Home Assistant Plant Integration</strong></a><br><br>This integration can automatically fetch data from <a href="https://open.plantbook.io/docs.html" rel="nofollow">OpenPlantBook</a> if you are a registered user. Registration is free.<br><br>Plants are set up in the UI and all configuration of your plants can be managed there or by automations and scripts.
 

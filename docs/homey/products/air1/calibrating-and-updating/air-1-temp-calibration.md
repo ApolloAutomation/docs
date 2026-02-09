@@ -1,1 +1,2 @@
---8<-- "products/air1/calibrating-and-updating/air-1-temp-calibration.md:5:"
+
+![AIR-1 Temperature Offset 2.png](../../../../assets/air-1-temperature-offset-2.png)

@@ -1,0 +1,1 @@
+--8<-- "products/m1/troubleshooting/m1-find-ip-address-and-hostname.md:7:"

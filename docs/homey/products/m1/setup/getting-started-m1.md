@@ -1,0 +1,1 @@
+--8<-- "products/m1/setup/getting-started-m1.md:5:"

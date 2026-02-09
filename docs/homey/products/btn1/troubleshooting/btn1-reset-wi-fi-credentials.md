@@ -1,0 +1,1 @@
+--8<-- "products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md:5:"

@@ -11,11 +11,3 @@ description: Get in touch with the Apollo Automation team for support, feedback,
 ## Shop Test
 
 ## Support
-
-&nbsp;
-
-![](assets/tree-2.jpg)
-
-&nbsp;
-
-![](assets/tree-3.jpg)

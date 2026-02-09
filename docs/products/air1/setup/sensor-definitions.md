@@ -122,7 +122,7 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
 * **SEN55 Humidity Offset**
   * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
 
-![AIR-1 Sensor Data.jpg](../../../assets/products-air1-setup-air-1-device-page-pic-1.png)
+![AIR-1 Sensor Data.jpg](../../../assets/air-1-device-page-pic-1.png)
 
 #### Configuration:
 
