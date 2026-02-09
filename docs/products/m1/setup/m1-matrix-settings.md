@@ -14,7 +14,7 @@ description: >-
 
 Click on **Config**, then **User Interface**. In the **Server description** field, enter the name you want your M-1 device to display as in the WLED interface—e.g., **Apollo LED Matrix**.
 
-![](../../../assets/m-1-user-interface-settings.gif)
+![](/assets/m-1-user-interface-settings.gif)
 
 ###### Hostname
 
@@ -54,13 +54,13 @@ Click on **Config**, then **WiFi Setup**. In the **mDNS address** field, enter t
 
 Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**.
 
-![](../../../assets/m-1-led-settings.gif)
+![](/assets/m-1-led-settings.gif)
 
 ###### 2D Settings
 
 Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel Dimensions** to **64 x 64** and click **Save**.
 
-![](../../../assets/m-1-2d-settings.gif)
+![](/assets/m-1-2d-settings.gif)
 
 ###### AudioReactive Settings
 
@@ -72,10 +72,10 @@ Click on **Config**, then **AudioReactive**. Check **Enabled** then select **Gen
 
 For the pins, select **10 digitalmic** for Pin I2s SD, select **12 digitalmic A5** for Pin I2S WS, and select **11 digitalmic** for Pin I2S SCK and click **Save**.
 
-![](../../../assets/m-1-audio-reactive-pin-settings.png)
+![](/assets/m-1-audio-reactive-pin-settings.png)
 
 Scroll to the bottom of the **AudioReactive** settings and set the **Mode** to **Off** and click **Save**.
 
-![](../../../assets/m-1-audio-reactive-mode-off.png)
+![](/assets/m-1-audio-reactive-mode-off.png)
 
 &nbsp;

@@ -14,34 +14,34 @@ description: >-
 
 1\. Flip the battery switch towards you to the off position. Users with no battery skip to step 2.
 
-![](../../../assets/btn-1-flip-power-switch-off.webp)
+![](/assets/btn-1-flip-power-switch-off.webp)
 
 2\. With the BTN-1 USB-C port facing upwards, unplug the USB-C cable and remove the lid.
 
-![](../../../assets/btn-1-remove-usb-c-lift-lid.webp)
+![](/assets/btn-1-remove-usb-c-lift-lid.webp)
 
 3\. Gently lift the BTN-1 green PCB out of the device at an angle so the buttons clear the case easier.
 
-![](../../../assets/btn-1-remove-pcb.webp)
+![](/assets/btn-1-remove-pcb.webp)
 
 4\. Remove the 2-pin JST connector and remove the battery.
 
-![](../../../assets/btn-1-unplug-jst.webp)
+![](/assets/btn-1-unplug-jst.webp)
 
 ###### Reassembly
 
 1\. Re-attach the 2-pin JST connector and place the battery writing side down with the wires on the left side of the case.
 
-![](../../../assets/btn-1-plug-in-jst.webp)
+![](/assets/btn-1-plug-in-jst.webp)
 
 2\. Gently place the BTN-1 green PCB back in the case at an angle so the buttons will slide into cutout in the case.
 
-![](../../../assets/btn-1-replace-pcb.webp)
+![](/assets/btn-1-replace-pcb.webp)
 
 3\. Line up the lid of the case with the holes for the rgb leds then gently press down to snap it into place.
 
-![](../../../assets/btn-1-replace-lid.webp)
+![](/assets/btn-1-replace-lid.webp)
 
 4\. Flip the power switch back on.
 
-![](../../../assets/btn-1-flip-power-switch-on.webp)
+![](/assets/btn-1-flip-power-switch-on.webp)

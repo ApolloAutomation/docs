@@ -18,27 +18,27 @@ description: Step by step guide for reflashing The PUMP-1.
 
 3\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your PUMP-1 then let go of the button.
 
-![](../../../assets/pump-1-hold-boot-button-video.webp)
+![](/assets/pump-1-hold-boot-button-video.webp)
 
 4\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/PUMP-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PUMP-1 Installer</a>.
 
-![](../../../assets/pump-1-reflash-connect-button.png)
+![](/assets/pump-1-reflash-connect-button.png)
 
 5\. Select the open com port then click Connect.
 
-![](../../../assets/pump-1-reflash-com-port.png)
+![](/assets/pump-1-reflash-com-port.png)
 
 7\.. Click Install PUMP-1.
 
-![](../../../assets/pump-1-reflash-click-install.png)
+![](/assets/pump-1-reflash-click-install.png)
 
 7\. Click Install.
 
-![](../../../assets/pump-1-reflash-click-install-confirm.png)
+![](/assets/pump-1-reflash-click-install-confirm.png)
 
 8\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](../../../assets/pump-1-reflash-install-complete.png)
+![](/assets/pump-1-reflash-install-complete.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 
