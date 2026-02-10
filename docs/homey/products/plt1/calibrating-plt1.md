@@ -6,42 +6,42 @@ This guide will take you through calibrating your PLT-1’s moisture sensor. The
 
 3\. Select Settings and then Devices & Services
 
-![](../../../assets/5-1.png)
+![](/assets/5-1.png)
 
 4\. Select the ESPHome Integration
 
-![](../../../assets/6.png)
+![](/assets/6.png)
 
 5\. Select your PLT-1 device
 
-![](../../../assets/7.png)
+![](/assets/7.png)
 
 6\. Scroll down to the diagnostics section and select entity not shown.
 
-![](../../../assets/1-5.png)
+![](/assets/1-5.png)
 
 7\. Select the entity “Soil ADC.”
 
-![](../../../assets/1-6.png)
+![](/assets/1-6.png)
 
 8\. Select the gear icon
 
-![](../../../assets/2-1.png)
+![](/assets/2-1.png)
 
 9\. Select Enable
 
-![](../../../assets/3.png)
+![](/assets/3.png)
 
 10\. Give the sensor a minute for this new entity to populate.
 
 11\. Once the Soil ADC value is populated, enter it into the “Dry Voltage” entity.
 
-![](../../../assets/4.png)
+![](/assets/4.png)
 
 12\. Now, place the stake/probe portion of the PLT-1 into a cup of water. Be careful not to submerge the entire sensor—only the exposed PCB below the “Apollo” label and the horizontal line can be exposed to water.
 
 13\. Grab the “Soil ADC” value again and enter it into the “100% Water Voltage” entity.
 
-![](../../../assets/5-2.png)
+![](/assets/5-2.png)
 
 14\. You can now return your PLT-1 to your plant. Congratulations, your sensor is calibrated!

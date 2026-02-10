@@ -3,7 +3,7 @@
 
 2\. Press and hold the Boot button for 10 seconds.
 
-![](../../../../assets/air-1-boot-button.jpg)
+![](/assets/air-1-boot-button.jpg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

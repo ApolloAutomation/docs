@@ -16,6 +16,9 @@ edit_uri: https://github.com/ApolloAutomation/docs/edit/main/docs
 site_author: Apollo Automation LLC
 
 use_directory_urls: true
+validation:
+  links:
+    absolute_links: relative_to_docs
 theme:
   logo: assets/Apollo_Square.png
   favicon: assets/favicon.png

@@ -12,15 +12,15 @@ description: Step by step guide to adding your own logo or image to the M-1 LED 
 
 1\. <a href="https://github.com/ApolloAutomation/PixelMagicTool/blob/main/pxmagic.htm" target="_blank" rel="noreferrer nofollow noopener">Click this link</a> and then click "Download raw file" as shown below.
 
-![](../../../assets/m-1-download-raw-file.png)
+![](/assets/m-1-download-raw-file.png)
 
 2\. Double click the pxmagic.htm file you just downloaded and it will launch in a browser such as Firefox.
 
-![](../../../assets/pixelmagictool-point-to-file.png)
+![](/assets/pixelmagictool-point-to-file.png)
 
 3\. Fill in the IP address or the hostname.local of your M-1 device such as apollo-led-matrix.local
 
-![](../../../assets/pixelmagictool-hostname.png)
+![](/assets/pixelmagictool-hostname.png)
 
 !!! tip "If you need help figuring out your hostname you can edit it from the wled wifi settings"
 
@@ -28,11 +28,11 @@ description: Step by step guide to adding your own logo or image to the M-1 LED 
 
 4\. Fill in a Preset Name such as "Apollo Logo".
 
-![](../../../assets/pixelmagictool-preset-name.png)
+![](/assets/pixelmagictool-preset-name.png)
 
 5\. Slide the brightness slider to 255 if you want it to be full brightness!
 
-![](../../../assets/pixelmagictool-full-brightness.png)
+![](/assets/pixelmagictool-full-brightness.png)
 
 6\. Click Select image and navigate to the image or logo you want and select it.
 
@@ -40,29 +40,29 @@ description: Step by step guide to adding your own logo or image to the M-1 LED 
 
     Not all images are created equal! Some large images dont seem to work properly with the PixelMagicTool. We are still looking for ways to improve it!
 
-![](../../../assets/pixelmagictool-select-image.png)
+![](/assets/pixelmagictool-select-image.png)
 
 7\. Click Generate and you should now see a preview of your image.
 
-![](../../../assets/pixelmagictool-generate-image.png)
+![](/assets/pixelmagictool-generate-image.png)
 
 !!! failure "If you see a warning about large data size then you need to enable compression as shown below."
 
     This is not a perfect solution but some images are too large for WLED presets to support properly.
 
-![](../../../assets/m-1-warning-large-data-size-may-cause-issues.png)
+![](/assets/m-1-warning-large-data-size-may-cause-issues.png)
 
 8\. Enable Compression and move the slider to the left for less compression and to the right for more compression. This step is not necessary unless you get the warning image above. If the warning is ignored, the image will likely fail to save to your m-1 led matrix with various http 400 errors.
 
-![](../../../assets/m-1-enable-compression-defaults.png)
+![](/assets/m-1-enable-compression-defaults.png)
 
 8\. Click Save and you should see a notification in the bottom right confirming that your preset was saved successfully!
 
-![](../../../assets/pixelmagictool-save-image-to-m-1.png)
+![](/assets/pixelmagictool-save-image-to-m-1.png)
 
 9\. Your preset is now live on your device. You might need to refresh the browser to see it. You also will need to "reload" the WLED integration in Home Assistant for your device for new presets to show up!
 
-![](../../../assets/m-1-apollo-logo-example-preset.jpeg)
+![](/assets/m-1-apollo-logo-example-preset.jpeg)
 
 #### Popular Images
 
@@ -72,15 +72,15 @@ description: Step by step guide to adding your own logo or image to the M-1 LED 
 
 1\. Click "+ Preset" on the right side of your WLED instance.
 
-![](../../../assets/wled-add-preset-manually-click-add-preset.png)
+![](/assets/wled-add-preset-manually-click-add-preset.png)
 
 2\. Uncheck the **Use current state** box.
 
-![](../../../assets/wled-add-preset-manually-uncheck-use-current-state.png)
+![](/assets/wled-add-preset-manually-uncheck-use-current-state.png)
 
 3\. Hover over the right side of one of the code blocks below, click **Copy**, then paste it into the API command box and click **Save**.
 
-![](../../../assets/wled-add-preset-manually-save-api-command.png)
+![](/assets/wled-add-preset-manually-save-api-command.png)
 
 **Apollo Logo**
 

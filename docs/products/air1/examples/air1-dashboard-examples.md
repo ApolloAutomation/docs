@@ -6,7 +6,7 @@ description: AIR-1 Home Assistant Dashboard Examples
 
 Really neat dashboard for your AIR-1 by user "keex"!
 
-![](../../../assets/air-1-keex-dashboard-image-1-1.png)
+![](/assets/air-1-keex-dashboard-image-1-1.png)
 
 [https://community.home-assistant.io/t/apollo-air-1-dashboard/785311](https://community.home-assistant.io/t/apollo-air-1-dashboard/785311)
 
@@ -14,7 +14,7 @@ Really neat dashboard for your AIR-1 by user "keex"!
 
 ##### Home Assistant Sensor
 
-![CO 2 Graph.png](../../../assets/co-2-graph.png)
+![CO 2 Graph.png](/assets/co-2-graph.png)
 
 ```yaml
 graph: line
@@ -27,7 +27,7 @@ hours_to_show: 24
 
 #### Custom: Apexcharts Card
 
-![](../../../assets/air-1-suggestions-co2-smarthomesellout.png)
+![](/assets/air-1-suggestions-co2-smarthomesellout.png)
 
 ```yaml
 type: custom:apexcharts-card
@@ -159,7 +159,7 @@ series:
 
 ##### Custom: Plotly Graph Card
 
-![Plotly CO2 Graph.png](../../../assets/plotly-co2-graph.png)
+![Plotly CO2 Graph.png](/assets/plotly-co2-graph.png)
 
 ```plaintext
 type: custom:plotly-graph
@@ -172,7 +172,7 @@ title: Bedroom CO2
 
 ##### Home Assistant Guage
 
-![CO2 Guage.png](../../../assets/co2-guage.png)
+![CO2 Guage.png](/assets/co2-guage.png)
 
 ```plaintext
 type: gauge
@@ -191,7 +191,7 @@ severity:
 
 ##### Home Assistant Sensor
 
-![AIR-1 VOC HA Sensor.png](../../../assets/air-1-voc-ha-sensor.png)
+![AIR-1 VOC HA Sensor.png](/assets/air-1-voc-ha-sensor.png)
 
 ```
 graph: line
@@ -204,7 +204,7 @@ name: Basement VOC
 
 ##### Custom: Plotly Graph Card
 
-![AIR-1 VOC Plotly.png](../../../assets/air-1-voc-plotly.png)
+![AIR-1 VOC Plotly.png](/assets/air-1-voc-plotly.png)
 
 ```
 type: custom:plotly-graph
@@ -217,7 +217,7 @@ title: Basement VOC
 
 ##### Home Assistant Guage
 
-![AIR-1 VOC HA Guage.png](../../../assets/air-1-voc-ha-guage.png)
+![AIR-1 VOC HA Guage.png](/assets/air-1-voc-ha-guage.png)
 
 ```
 type: gauge

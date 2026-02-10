@@ -24,23 +24,23 @@ How to tune the mmWave sensor using radar engineering mode.
 
 3\. Turn on Radar Engineering Mode (REM).
 
-![](../../../../assets/mmwave-tuning-pic-1.png)
+![](/assets/mmwave-tuning-pic-1.png)
 
 4\. Scroll down to the Diagnostic section and you will see that REM shows the move and still energy for gates 0-8.
 
-![](../../../../assets/mmwave-tuning-pic-2-1.png)
+![](/assets/mmwave-tuning-pic-2-1.png)
 
 5\. The gates are different distances from the sensor.
 
-![Radar Gates Colored](../../../../assets/radar-gates-colored.png "Radar Gates Colored")
+![Radar Gates Colored](/assets/radar-gates-colored.png "Radar Gates Colored")
 
 6\. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 
-![](../../../../assets/mmwave-tuning-pic-3.png)
+![](/assets/mmwave-tuning-pic-3.png)
 
 7\. Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.
 
-![](../../../../assets/mmwave-tuning-pic-4.png)
+![](/assets/mmwave-tuning-pic-4.png)
 
 !!! quote "Quote from popular Youtuber Make It Work Tech"
 
