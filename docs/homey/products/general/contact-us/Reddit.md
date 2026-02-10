@@ -1,1 +1,1 @@
---8<-- "products/general/contact-us/Reddit.md"
+--8<-- "products/general/contact-us/Reddit.md:5:"

@@ -1,1 +1,1 @@
---8<-- "products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md"
+--8<-- "products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md:5:"

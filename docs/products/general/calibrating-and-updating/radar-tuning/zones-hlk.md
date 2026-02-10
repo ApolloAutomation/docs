@@ -1,1 +1,1 @@
---8<-- "products/msr1/calibrating-and-updating/zones-hlk.md"
+--8<-- "products/msr1/calibrating-and-updating/zones-hlk.md:5:"

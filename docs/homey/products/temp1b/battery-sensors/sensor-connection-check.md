@@ -1,1 +1,1 @@
---8<-- "homey/products/general/battery-sensors/sensor-connection-check.md"
+--8<-- "homey/products/general/battery-sensors/sensor-connection-check.md:5:"

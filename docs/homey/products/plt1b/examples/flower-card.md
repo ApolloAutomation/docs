@@ -1,1 +1,1 @@
---8<-- "homey/products/plt1/examples/flower-card.md"
+--8<-- "homey/products/plt1/examples/flower-card.md:5:"

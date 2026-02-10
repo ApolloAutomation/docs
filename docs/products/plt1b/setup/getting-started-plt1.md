@@ -1,1 +1,1 @@
---8<-- "products/general/setup/getting-started-plt1.md"
+--8<-- "products/general/setup/getting-started-plt1.md:5:"
