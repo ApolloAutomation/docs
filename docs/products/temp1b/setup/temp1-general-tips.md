@@ -1,0 +1,1 @@
+--8<-- "products/temp1/setup/temp1-general-tips.md"

@@ -1,0 +1,1 @@
+--8<-- "homey/products/general/battery-sensors/wake-up-battery-sensor.md"
