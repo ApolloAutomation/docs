@@ -66,4 +66,4 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 ![](/assets/m-1-setup-wled-integration-test-device.png)
 
-[Click here to learn how to create your own presets!](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){                 .md-button .md-button--primary }
+[Click here to learn how to add custom GIFs to your M-1!](https://wiki.apolloautomation.com/products/m1/examples/add-gifs-to-wled/){                  .md-button .md-button--primary }
