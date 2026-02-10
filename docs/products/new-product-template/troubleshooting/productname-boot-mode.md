@@ -20,7 +20,7 @@ description: Step by step guide for putting The PUMP-1 In Boot Mode.
 
 3\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your PUMP-1 then let go of the button.
 
-![](../../../assets/pump-1-hold-boot-button-video.webp)
+![](/assets/pump-1-hold-boot-button-video.webp)
 
 4\. You are now ready to reflash your device!
 
@@ -30,11 +30,11 @@ description: Step by step guide for putting The PUMP-1 In Boot Mode.
 
 1\. Plug in a USB cable that supports power and data into your computer and connect the other end to your PUMP-1. With the device facing you, locate the reset (left) and boot (right) buttons.
 
-![](../../../assets/pump-1-buttons-labeled.jpg)
+![](/assets/pump-1-buttons-labeled.jpg)
 
 2\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
 
-![](../../../assets/pump-1-hold-boot-and-reset-button-video.webp)
+![](/assets/pump-1-hold-boot-and-reset-button-video.webp)
 
 3\. You are now ready to reflash your device!
 

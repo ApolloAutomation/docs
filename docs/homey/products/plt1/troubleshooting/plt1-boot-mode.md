@@ -8,7 +8,7 @@
 
 1\. Position the PLT-1 as shown in the image below and locate the small opening to press the boot button.
 
-![](../../../../assets/screenshot-2024-10-23-at-12-32-55-pm.png)
+![](/assets/screenshot-2024-10-23-at-12-32-55-pm.png)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
 
@@ -22,6 +22,6 @@
 
 3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
 
-![](../../../../assets/screenshot-2024-10-23-at-12-35-01-pm.png)
+![](/assets/screenshot-2024-10-23-at-12-35-01-pm.png)
 
 4\. Continue with <a href="https://wiki.apolloautomation.com/products/plt1/troubleshooting/plt1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.

@@ -2,7 +2,7 @@
 title: List of Resellers
 description: A list of resellers across the globe for Apollo Automation products!
 ---
-![](../../assets/apollo-logo.png)
+![](/assets/apollo-logo.png)
 
 # Resellers
 

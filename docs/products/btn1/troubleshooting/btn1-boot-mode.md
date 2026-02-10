@@ -18,7 +18,7 @@ description: Step by step guide for putting The BTN-1 In Boot Mode.
 
 2\. Disconnect power from your BTN-1, then hold the right (boot) button while plugging in a USB-C data cable to the BTN-1. Once connected, release the button.
 
-![](../../../assets/btn-1-boot-mode-method-1.webp)
+![](/assets/btn-1-boot-mode-method-1.webp)
 
 4\. You are now ready to reflash your device!
 
@@ -28,15 +28,15 @@ description: Step by step guide for putting The BTN-1 In Boot Mode.
 
 1\. Plug in a USB cable that supports power and data into your computer and connect the other end to your BTN-1.
 
-![](../../../assets/btn-1-plug-in-usb-c.webp)
+![](/assets/btn-1-plug-in-usb-c.webp)
 
 2\. With the device facing you, locate the reset (left) and boot (right) buttons.
 
-![](../../../assets/btn-1-reset-boot-buttons.png)
+![](/assets/btn-1-reset-boot-buttons.png)
 
 2\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
 
-![](../../../assets/btn-1-boot-mode-method-2.webp)
+![](/assets/btn-1-boot-mode-method-2.webp)
 
 3\. You are now ready to reflash your device!
 

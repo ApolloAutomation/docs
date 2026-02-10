@@ -134,11 +134,11 @@ Per Sensirion,
 
 The optional CO<sub>2</sub> sensor addon is a great way to add the ability to track CO<sub>2</sub>. CO<sub>2</sub> levels in a closed, poorly ventilated bedroom can quickly rise to concentrations that may impair focus or even pose health risks. Notice the CO2 levels dropping in the image below when the HVAC was turned on overnight!
 
-![](../../../assets/co2-levels-drop-after-hvac-on.png)
+![](/assets/co2-levels-drop-after-hvac-on.png)
 
 <a href="https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm" target="_blank" rel="noreferrer nofollow noopener">Wisconsin Department of Health CO<sub>2</sub> Level Chart</a>
 
-![CO2 Health Department.png](../../../assets/air-1-co2-calibration-image-6.jpg)
+![CO2 Health Department.png](/assets/air-1-co2-calibration-image-6.jpg)
 
 !!! tip "We suggest triggering alert automations, hvac or a fan turning on, etc when CO<sub>2</sub> is over 1000"
 

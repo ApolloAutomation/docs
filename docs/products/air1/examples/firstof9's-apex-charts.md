@@ -10,19 +10,19 @@ Firstof9 has created this beautiful responsive dashboard with [Apexcharts-card](
 
 The colors will change as severity levels change for each of the sensors below.
 
-![firstof9-dash-image-full.png](../../../assets/firstof9-dash-image-full.png)
+![firstof9-dash-image-full.png](/assets/firstof9-dash-image-full.png)
 
 This guide assumes you already have HACS installed. If you do not, please first [install HACS](https://hacs.xyz/docs/setup/prerequisites "Install HACS").
 
 First, you need to install apexcharts-card by going to the HACS tab and searching "apexcharts-card".
 
-![image.png](../../../assets/xpUimage.png)
+![image.png](/assets/xpUimage.png)
 
 Once downloaded, it is ready to be used for dashboards!
 
 Next, you need to edit the dashboards here.
 
-![image.png](../../../assets/fBWimage.png)
+![image.png](/assets/fBWimage.png)
 
 !!! danger "WARNING YOU ARE ABOUT TO BE ABLE TO WIPE OUT ALL YOUR DASHBOARDS PROCEED WITH CAUTION."
 
@@ -30,21 +30,21 @@ Next, you need to edit the dashboards here.
 
 Now choose "raw configuration editor"
 
-![image.png](../../../assets/EWyimage.png)
+![image.png](/assets/EWyimage.png)
 
 Now you need to be VERY careful. You are editing all of your dashboards but we can avoid issues by scrolling to the very bottom and then copying and pasting the code seen below. (Picture below shows where we will paste the code) (Code below)
 
-![AIR-1 Dashboard End.png](../../../assets/air-1-dashboard-end.png)
+![AIR-1 Dashboard End.png](/assets/air-1-dashboard-end.png)
 
 **Be sure to change the entity ID to match your device or else the card will not work.** You can find your entity ID by going to the ESPHome Device Builder and selecting the Edit option.
 
-![AIR-1 ID.png](../../../assets/air-1-id.png)
+![AIR-1 ID.png](/assets/air-1-id.png)
 
 The easiest way to change all of the entity IDs in the code is by using AI (ChatGPT etc.) or by using a code editor like Visual Studio Code (VSC). In VSC you can Find (ctrl+f) the old ID and Replace (select the small arrow to toggle open the Replace box) it with your ID. Now you are ready to copy the code into the Raw configurator editor. (See code below)
 
 VSC Find/Replace
 
-![AIR-1 Find and Replace.png](../../../assets/OQfair-1-find-and-replace.png)
+![AIR-1 Find and Replace.png](/assets/OQfair-1-find-and-replace.png)
 
 **This is the code!**
 
@@ -491,14 +491,14 @@ VSC Find/Replace
 
 Now click save in the top right and remember to not hit any buttons or make any other edits before saving!
 
-![image.png](../../../assets/jAwimage.png)
+![image.png](/assets/jAwimage.png)
 
 Finally hit "done" in the top right.
 
-![image.png](../../../assets/h9Iimage.png)
+![image.png](/assets/h9Iimage.png)
 
 Hit F5 on your keyboard or refresh your browser and then look for your new "Air Icon" as a new dashboard option and click on it!
 
-![image.png](../../../assets/ssaimage.png)
+![image.png](/assets/ssaimage.png)
 
 Lastly, we do want to thank [firstof9](https://github.com/firstof9 "Thank firstof9") for creating this dashboard and sharing it.

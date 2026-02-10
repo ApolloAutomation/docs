@@ -10,27 +10,27 @@ description: Step by step guide for reflashing The BTN-1.
 
 1\. Plug in a USB cable that supports power and data into your computer and connect the other end to your BTN-1.
 
-![](../../../assets/btn-1-plug-in-usb-c.webp)
+![](/assets/btn-1-plug-in-usb-c.webp)
 
 2\. With the device facing you, locate the reset (left) and boot (right) buttons.
 
-![](../../../assets/btn-1-reset-boot-buttons.png)
+![](/assets/btn-1-reset-boot-buttons.png)
 
 3\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
 
-![](../../../assets/btn-1-boot-mode-method-2.webp)
+![](/assets/btn-1-boot-mode-method-2.webp)
 
 4\. Navigate to our installer page using a chromium based browser such as Chrome or Edge and click **connect** under <a href="https://apolloautomation.github.io/BTN-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo BTN-1 Installer</a>. Select the open com port and click **connect**.
 
-![](../../../assets/btn-1-reflash-installer-connect.gif)
+![](/assets/btn-1-reflash-installer-connect.gif)
 
 5\. Click Install **BTN-1** then click **Install** again.
 
-![](../../../assets/btn-1-reflash-install.gif)
+![](/assets/btn-1-reflash-install.gif)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](../../../assets/pump-1-reflash-install-complete.png)
+![](/assets/pump-1-reflash-install-complete.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 
