@@ -1,1 +1,1 @@
---8<-- "general/setup/bluetooth-tracking.md:5:"
+--8<-- "general/setup/bluetooth-tracking.md"

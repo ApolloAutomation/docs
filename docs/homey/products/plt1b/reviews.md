@@ -1,1 +1,1 @@
---8<-- "homey/products/plt1/reviews.md:5:"
+--8<-- "homey/products/plt1/reviews.md"

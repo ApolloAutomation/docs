@@ -1,1 +1,1 @@
---8<-- "homey/products/plt1/calibrating-plt1.md:5:"
+--8<-- "homey/products/plt1/calibrating-plt1.md"
