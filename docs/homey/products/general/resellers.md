@@ -1,0 +1,1 @@
+--8<-- "products/general/resellers.md:5:"

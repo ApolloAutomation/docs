@@ -1,0 +1,1 @@
+--8<-- "products/general/battery-sensors/awake-ha-helper.md:5:"
