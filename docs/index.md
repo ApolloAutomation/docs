@@ -6,15 +6,22 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 
 !!! info "Welcome to Apollo Automation Docs!"
 
-    **This will be a great location for troubleshooting and how-to guides. If you spot any errors, please help us improve by** [**opening an issue on our GitHub**](https://github.com/ApolloAutomation/docs/issues)**, messaging us on** [**Discord**](https://dsc.gg/apolloautomation "Click to join our Discord server!")**, or emailing us at** [**support@apolloautomation.com**]()**. Thank you for your patience and support!**
+    **This will be a great location for troubleshooting and how-to guides. If you spot any errors, please help us improve by** [**opening an issue on our GitHub**](https://github.com/ApolloAutomation/docs/issues)**, messaging us on** [**Discord**](https://dsc.gg/apolloautomation "Click to join our Discord server!")**, or emailing us at** [**support@apolloautomation.com**](mailto:support@apolloautomation.com)**. Thank you for your patience and support!**
 
 ### Frequent Links
 
 * [Getting your sensor connected to Home Assistant](https://wiki.apolloautomation.com/products/general/setup/getting-started/ "Getting Started")
 * [Tuning your MSR-2 radar](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on the MTR-1](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/ "MTR-1 Zone Setup with HLK app")
+* [AIR-1 General Tips](https://wiki.apolloautomation.com/products/air1/setup/general-tips/)
+* [PLT-1 Prevent Sleep](https://wiki.apolloautomation.com/products/plt1/additional-info/prevent-sleep/)
+* [R-PRO-1 Home Assistant Tuning Guide](https://wiki.apolloautomation.com/products/rpro1/calibrating-and-updating/zones-ha/)
+* [M-1 LED Matrix Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
+* [CO2 Calibration](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
+* [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/)
+* [Bluetooth Proxy](https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/)
 * [Discord (Support, community, updates, live stream)](https://discord.gg/F3RZGPcuzV "Join the discord now!")
-* <a href="https://www.youtube.com/@ApolloAutomation" title="Check out our Youtube channel!" target="_blank" rel="noopener">YouTube ( Tutorials, live stream )</a>
+* [YouTube (Tutorials, live stream)](https://www.youtube.com/@ApolloAutomation "Check out our YouTube channel!")
 
 ### What is Apollo Automation?
 
