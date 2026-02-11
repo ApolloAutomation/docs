@@ -31,5 +31,3 @@ The MSR-2 can also be mounted on the ceiling if you can provide power and mount 
 **![ld2410 table.png](/assets/ld2410-table.png)![Gate, Zones and RR.png](/assets/gate-zones-and-rr.png)**
 
 ![MSR-1 radar map.png](/assets/msr-1-radar-map.png)![Radar gates Colored.png](/assets/radar-gates-colored.png)
-
-#####
