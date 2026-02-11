@@ -8,6 +8,10 @@ description: >-
 
 [Click here to learn how to use these songs with the buzzer on your Apollo device! :material-music-note:](https://wiki.apolloautomation.com/products/general/piezo/){ .md-button .md-button--primary }
 
+1\. Click each box below to see each song then click the copy button on the far right to copy the song.
+
+2\. Play the song in a Home Assistant script, automation, or directly from the developer tools "Actions" tab.
+
 ???+ song-red "Jingle Bells (Ornate)"
 
     ```
