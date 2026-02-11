@@ -96,7 +96,6 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
-  - extra
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
