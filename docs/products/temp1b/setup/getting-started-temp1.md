@@ -1,0 +1,1 @@
+--8<-- "products/general/setup/getting-started-temp1.md:5:"
