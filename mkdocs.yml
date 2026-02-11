@@ -166,6 +166,7 @@ nav:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
+            - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
           - Source Code and 3D Files: products/general/links.md
           - Sensor Comparisons: products/general/comparisons.md
           - Supported Platforms: products/general/supported-platforms.md
