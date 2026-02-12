@@ -18,7 +18,7 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 
 * [Tuning out false positives with the MSR-2](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on MTR-1 with the HLK app](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)
-* [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) — [Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card)
+* [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) - [Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card)
 * [Tune your new R-PRO-1 PoE mmWave sensor](https://wiki.apolloautomation.com/products/rpro1/calibrating-and-updating/zones-ha/)
 * [AIR-1 General Tips](https://wiki.apolloautomation.com/products/air1/setup/general-tips/)
 * [Put your Apollo devices to sleep!](https://wiki.apolloautomation.com/products/general/battery-sensors/prevent-sleep/)
@@ -27,13 +27,13 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 
 ### Community
 
-* [Discord — Support, community, updates, live streams](https://discord.gg/F3RZGPcuzV)
-* [YouTube — Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
+* [Discord - Support, community, updates, live streams](https://discord.gg/F3RZGPcuzV)
+* [YouTube - Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
 
 ### What is Apollo Automation?
 
-Apollo Automation builds high-quality, affordable, open-source home automation hardware — designed and assembled in Lexington, KY. What started as a side project among friends (named after Trevor's dog, Apollo) grew into a full-fledged business driven by community feedback. We build everything in-house, keep our designs transparent, and host a monthly livestream on Discord and YouTube so you can connect with us directly.
+Apollo Automation builds high-quality, affordable, open-source home automation hardware - designed and assembled in Lexington, KY. What started as a side project among friends (named after Trevor's dog, Apollo) grew into a full-fledged business driven by community feedback. We build everything in-house, keep our designs transparent, and host a monthly livestream on Discord and YouTube so you can connect with us directly.
 
 ### What do we offer?
 
-Sensors and devices that solve real problems in home automation — presence detection, air quality monitoring, plant care, and more. Every product ships with ESPHome firmware, full Home Assistant integration, and support from a team that actually uses what we build.
+Sensors and devices that solve real problems in home automation - presence detection, air quality monitoring, plant care, and more. Every product ships with ESPHome firmware, full Home Assistant integration, and support from a team that actually uses what we build.
