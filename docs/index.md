@@ -10,20 +10,25 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 
 ### Most Popular
 
-* [Connect your sensor to Home Assistant](https://wiki.apolloautomation.com/products/general/setup/getting-started/)
+* [Getting started with your brand new Apollo device](https://wiki.apolloautomation.com/products/general/setup/getting-started/)
 * [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/)
-* [Bluetooth Proxy](https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/)
+* [Add Bluetooth Proxy functionality to your Apollo device](https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/)
 
 ### Product Guides
+
+**Radar & Zones**
 
 * [Tuning out false positives with the MSR-2](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on MTR-1 with the HLK app](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)
 * [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) - [Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card)
 * [Tune your new R-PRO-1 PoE mmWave sensor](https://wiki.apolloautomation.com/products/rpro1/calibrating-and-updating/zones-ha/)
-* [AIR-1 General Tips](https://wiki.apolloautomation.com/products/air1/setup/general-tips/)
+
+**Popular Links**
+
+* [Understanding your AIR-1 and the various sensors it exposes](https://wiki.apolloautomation.com/products/air1/setup/general-tips/)
+* [How to re-calibrate your CO<sub>2</sub> sensor](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
 * [Put your Apollo devices to sleep!](https://wiki.apolloautomation.com/products/general/battery-sensors/prevent-sleep/)
 * [Setup your new M-1 LED Matrix with Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
-* [How to re-calibrate your CO<sub>2</sub> sensor](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
 
 ### Community
 
