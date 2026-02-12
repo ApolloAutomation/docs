@@ -33,10 +33,10 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 * [Discord - Support, community, updates, live streams](https://discord.gg/F3RZGPcuzV)
 * [YouTube - Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
 
-### What is Apollo Automation?
+<h3>What is Apollo Automation?</h3>
 
 Apollo Automation builds high-quality, affordable, open-source home automation hardware - designed and assembled in Lexington, KY. What started as a side project among friends (named after Trevor's dog, Apollo) grew into a full-fledged business driven by community feedback. We build everything in-house, keep our designs transparent, and host a monthly livestream on Discord and YouTube so you can connect with us directly.
 
-### What do we offer?
+<h3>What do we offer?</h3>
 
 Sensors and devices that solve real problems in home automation - presence detection, air quality monitoring, plant care, and more. Every product ships with ESPHome firmware, full Home Assistant integration, and support from a team that actually uses what we build.
