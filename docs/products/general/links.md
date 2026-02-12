@@ -39,3 +39,9 @@ description: Links to our github, printables, and discord!
     Introduction videos to understand the features of each product, tutorials, and monthly live streams!
 
     [:octicons-arrow-right-24: Subscribe on YouTube](https://www.youtube.com/@ApolloAutomation){ target=_blank }
+
+!!! note ":fontawesome-brands-reddit: Reddit"
+
+    Join the conversation on our subreddit!
+
+    [:octicons-arrow-right-24: Visit r/ApolloAutomation](https://www.reddit.com/r/ApolloAutomation){ target=_blank }
