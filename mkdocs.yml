@@ -451,7 +451,7 @@ nav:
             - Factory Re-Flash BTN-1: products/btn1/troubleshooting/btn1-reflash.md
             - Teardown and Reassembly Of BTN-1: products/btn1/troubleshooting/btn1-teardown.md
             - Reset Wi-Fi Credentials: products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
-      - ESK-1:
+      - ESPHome Starter Kit:
           - Button Getting Started: products/esk1/buttongettingstarted.md
       - Holiday Ornaments:
           - H-1:
