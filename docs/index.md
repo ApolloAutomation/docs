@@ -27,6 +27,7 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 * [How to re-calibrate your CO<sub>2</sub> sensor](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
 * [Put your Apollo devices to sleep!](https://wiki.apolloautomation.com/products/general/battery-sensors/prevent-sleep/)
 * [Setup your new M-1 LED Matrix with Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
+* [3D Print your own case in any color or material](https://wiki.apolloautomation.com/products/general/links/)
 
 <h3>Community</h3>
 
