@@ -28,7 +28,7 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 * [Put your Apollo devices to sleep!](https://wiki.apolloautomation.com/products/general/battery-sensors/prevent-sleep/)
 * [Setup your new M-1 LED Matrix with Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
 
-### Community
+<h3>Community</h3>
 
 * [Discord - Support, community, updates, live streams](https://discord.gg/F3RZGPcuzV)
 * [YouTube - Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
