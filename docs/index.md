@@ -6,20 +6,38 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 
 !!! info "Welcome to Apollo Automation Docs!"
 
-    **This will be a great location for troubleshooting and how-to guides. If you spot any errors, please help us improve by** [**opening an issue on our GitHub**](https://github.com/ApolloAutomation/docs/issues)**, messaging us on** [**Discord**](https://dsc.gg/apolloautomation "Click to join our Discord server!")**, or emailing us at** [**support@apolloautomation.com**]()**. Thank you for your patience and support!**
+    Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://dsc.gg/apolloautomation), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
-### Frequent Links
+### Most Popular
 
-* [Getting your sensor connected to Home Assistant](https://wiki.apolloautomation.com/products/general/setup/getting-started/ "Getting Started")
-* [Tuning your MSR-2 radar](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
-* [Setting up zones on the MTR-1](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/ "MTR-1 Zone Setup with HLK app")
-* [Discord (Support, community, updates, live stream)](https://discord.gg/F3RZGPcuzV "Join the discord now!")
-* <a href="https://www.youtube.com/@ApolloAutomation" title="Check out our Youtube channel!" target="_blank" rel="noopener">YouTube ( Tutorials, live stream )</a>
+* [Getting started with your brand new Apollo device](https://wiki.apolloautomation.com/products/general/setup/getting-started/)
+* [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/)
+* [Add Bluetooth Proxy functionality to your Apollo device](https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/)
 
-### What is Apollo Automation?
+### Radar & Zones
 
-Apollo Automation is a small startup dedicated to creating high-quality, affordable, and community-driven home automation hardware. What started as a side project among friends in Lexington, KY, quickly grew into a full-fledged business. Named after Trevor’s dog, Apollo, our first sensor was born out of frustration with existing products. Today, we continue to uphold our core values: building our products in-house, maintaining transparency and accessibility, and working closely with our community. You can always reach us directly, and we also host a monthly livestream on our Discord and YouTube channels to stay connected and engaged with our users.
+* [Tuning out false positives with the MSR-2](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
+* [Setting up zones on MTR-1 with the HLK app](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)
+* [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) - [Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card)
+* [Tune your new R-PRO-1 PoE mmWave sensor](https://wiki.apolloautomation.com/products/rpro1/calibrating-and-updating/zones-ha/)
 
-### What do we offer?
+### Quick References
 
-We strive to build quality products that solve real problems in home automation. Our focus is on innovation rather than imitation, and we’re proud to offer some of the best support in the industry. As a small, agile team, we are deeply committed to growing our community of users and expanding our manufacturing capabilities.
+* [Understanding your AIR-1 and the various sensors it exposes](https://wiki.apolloautomation.com/products/air1/setup/general-tips/)
+* [How to re-calibrate your CO<sub>2</sub> sensor](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
+* [Put your Apollo devices to sleep!](https://wiki.apolloautomation.com/products/general/battery-sensors/prevent-sleep/)
+* [Setup your new M-1 LED Matrix with Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
+* [3D Print your own case in any color or material](https://wiki.apolloautomation.com/products/general/links/)
+
+<h3>Community</h3>
+
+* [Discord - Support, community, updates, live streams](https://discord.gg/F3RZGPcuzV)
+* [YouTube - Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
+
+<h3>What is Apollo Automation?</h3>
+
+Apollo Automation builds high-quality, affordable, open-source home automation hardware - designed and assembled in Lexington, KY. What started as a side project among friends (named after Trevor's dog, Apollo) grew into a full-fledged business driven by community feedback. We build everything in-house, keep our designs transparent, and host a monthly livestream on Discord and YouTube so you can connect with us directly.
+
+<h3>What do we offer?</h3>
+
+Sensors and devices that solve real problems in home automation - presence detection, air quality monitoring, plant care, and more. Every product ships with ESPHome firmware, full Home Assistant integration, and support from a team that actually uses what we build.

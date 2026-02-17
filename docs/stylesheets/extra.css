@@ -35,3 +35,103 @@ article.md-typeset img {
 article.md-typeset img {
   max-height: 600px
 }
+
+/* Custom song admonitions - rainbow colors with music note icon */
+:root {
+  --md-admonition-icon--song-red: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');
+  --md-admonition-icon--song-green: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');
+  --md-admonition-icon--song-blue: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');
+  --md-admonition-icon--song-orange: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');
+  --md-admonition-icon--song-teal: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');
+  --md-admonition-icon--song-purple: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');
+}
+
+.md-typeset .admonition.song-red,
+.md-typeset details.song-red {
+  border-color: #E53935;
+}
+.md-typeset .song-red > .admonition-title,
+.md-typeset .song-red > summary {
+  background-color: rgba(229, 57, 53, 0.1);
+}
+.md-typeset .song-red > .admonition-title::before,
+.md-typeset .song-red > summary::before {
+  background-color: #E53935;
+  -webkit-mask-image: var(--md-admonition-icon--song-red);
+  mask-image: var(--md-admonition-icon--song-red);
+}
+
+.md-typeset .admonition.song-green,
+.md-typeset details.song-green {
+  border-color: #43A047;
+}
+.md-typeset .song-green > .admonition-title,
+.md-typeset .song-green > summary {
+  background-color: rgba(67, 160, 71, 0.1);
+}
+.md-typeset .song-green > .admonition-title::before,
+.md-typeset .song-green > summary::before {
+  background-color: #43A047;
+  -webkit-mask-image: var(--md-admonition-icon--song-green);
+  mask-image: var(--md-admonition-icon--song-green);
+}
+
+.md-typeset .admonition.song-blue,
+.md-typeset details.song-blue {
+  border-color: #1E88E5;
+}
+.md-typeset .song-blue > .admonition-title,
+.md-typeset .song-blue > summary {
+  background-color: rgba(30, 136, 229, 0.1);
+}
+.md-typeset .song-blue > .admonition-title::before,
+.md-typeset .song-blue > summary::before {
+  background-color: #1E88E5;
+  -webkit-mask-image: var(--md-admonition-icon--song-blue);
+  mask-image: var(--md-admonition-icon--song-blue);
+}
+
+.md-typeset .admonition.song-orange,
+.md-typeset details.song-orange {
+  border-color: #FB8C00;
+}
+.md-typeset .song-orange > .admonition-title,
+.md-typeset .song-orange > summary {
+  background-color: rgba(251, 140, 0, 0.1);
+}
+.md-typeset .song-orange > .admonition-title::before,
+.md-typeset .song-orange > summary::before {
+  background-color: #FB8C00;
+  -webkit-mask-image: var(--md-admonition-icon--song-orange);
+  mask-image: var(--md-admonition-icon--song-orange);
+}
+
+.md-typeset .admonition.song-teal,
+.md-typeset details.song-teal {
+  border-color: #00897B;
+}
+.md-typeset .song-teal > .admonition-title,
+.md-typeset .song-teal > summary {
+  background-color: rgba(0, 137, 123, 0.1);
+}
+.md-typeset .song-teal > .admonition-title::before,
+.md-typeset .song-teal > summary::before {
+  background-color: #00897B;
+  -webkit-mask-image: var(--md-admonition-icon--song-teal);
+  mask-image: var(--md-admonition-icon--song-teal);
+}
+
+.md-typeset .admonition.song-purple,
+.md-typeset details.song-purple {
+  border-color: #8E24AA;
+}
+.md-typeset .song-purple > .admonition-title,
+.md-typeset .song-purple > summary {
+  background-color: rgba(142, 36, 170, 0.1);
+}
+.md-typeset .song-purple > .admonition-title::before,
+.md-typeset .song-purple > summary::before {
+  background-color: #8E24AA;
+  -webkit-mask-image: var(--md-admonition-icon--song-purple);
+  mask-image: var(--md-admonition-icon--song-purple);
+}

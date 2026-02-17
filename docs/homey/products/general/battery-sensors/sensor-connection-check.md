@@ -8,7 +8,7 @@ description: How to check if your device is connected to Wi-Fi, Home Assistant, 
 
 ![](/assets/temp-1-reset-button-lid-off.jpg)
 
-<a href="https://apolloautomation.github.io/docs/products/plt1/plt1-boot-mode/" target="_blank" rel="noopener"><strong>PLT-1B reset button</strong></a>
+<a href="https://wiki.apolloautomation.com/products/plt1/troubleshooting/plt1-boot-mode/" target="_blank" rel="noopener"><strong>PLT-1B reset button</strong></a>
 
 ![](/assets/plt-boot-mode-pic-6-1.jpg)
 
@@ -16,7 +16,7 @@ description: How to check if your device is connected to Wi-Fi, Home Assistant, 
 
 ![](/assets/temp-1b-boot-button-lid-off.jpg)
 
-<a href="https://apolloautomation.github.io/docs/products/plt1/general-tips/" target="_blank" rel="noopener"><strong>PLT-1B boot button</strong></a>
+<a href="https://wiki.apolloautomation.com/products/plt1/setup/general-tips/" target="_blank" rel="noopener"><strong>PLT-1B boot button</strong></a>
 
 ![](/assets/plt-boot-mode-pic-2.jpg)
 

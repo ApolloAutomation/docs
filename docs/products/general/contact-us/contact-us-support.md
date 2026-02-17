@@ -1,21 +1,19 @@
-# [Our Team Page](https://apolloautomation.com/pages/our-team)
+# Contact Us / Support
 
-<div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/W302yghWyrw?si=caxfUtUas6Kxk1ue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
+!!! tip ":fontawesome-solid-envelope: Email Support"
 
-# [Shop](https://apolloautomation.com/)
+    Have a question or need help with your Apollo device? Our support team is here to help!
 
-# [Discord](https://dsc.gg/apolloautomation) (Dedicated Support)
+    [:octicons-arrow-right-24: support@apolloautomation.com](mailto:support@apolloautomation.com)
 
-# [GitHub](https://github.com/ApolloAutomation)
+!!! example ":fontawesome-brands-discord: Discord"
 
-# [YouTube](http://www.youtube.com/@ApolloAutomation)
+    Join our community for live support, updates, and monthly live streams with the team!
 
-# [Reddit](https://www.reddit.com/r/ApolloAutomation)
+    [:octicons-arrow-right-24: Join our Discord](https://dsc.gg/apolloautomation){ target=_blank }
 
-# [Facebook](https://www.facebook.com/groups/296506776330405)
+---
 
-# [Instagram](https://www.instagram.com/apollo_automation/)
+[:octicons-people-24: Meet Our Team](https://apolloautomation.com/pages/our-team){ target=_blank }
 
-# Support Email: support@apolloautomation.com
-
-#
+Looking for YouTube, GitHub, or social links? Check out our [Useful Links](../links.md) page.
