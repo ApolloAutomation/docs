@@ -2,7 +2,7 @@
 title: Apollo DEV-1 Introduction
 description: Apollo DEV-1 Introduction.
 ---
-![](/assets/apollo-dev-1-image-1.png)
+![](../../assets/apollo-dev-1-pinout.png)
 
 The Apollo DEV-1 is a very small dev board that we use to prototype before creating other new products. It has a built in RGB light (using GPIO3) and can push up to 600mA out of the 3.3v pin however 100-200mA of that will be used by the microcontroller itself. You are able to back-feed power via the 5v and G (ground) pins or use the USB-C port to power it, but NOT both at the same time.
 
@@ -27,10 +27,10 @@ i2c:
   sda: GPIO1
   scl: GPIO0
 
-RX: 30
-TX: 31
+RX: 20
+TX: 21
 
-ADC Pins: 0,1,2,3,4
+ADC Pins: 0,1,2,3,4,5
 ```
 
 ```yaml
