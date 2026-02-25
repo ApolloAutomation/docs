@@ -11,8 +11,8 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 ### Not Sure Which mmWave Sensor to Get?
 
 ```mermaid
-%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 40}}}%%
-flowchart TD
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
+flowchart LR
     START([Which Apollo mmWave sensor is right for me?])
 
     START --> Q1{Do you need PoE or\nEthernet connectivity?}
