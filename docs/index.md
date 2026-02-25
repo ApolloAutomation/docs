@@ -11,13 +11,14 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 ### Not Sure Which mmWave Sensor to Get?
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 40}}}%%
 flowchart TD
     START([Which Apollo mmWave sensor is right for me?])
 
     START --> Q1{Do you need PoE or\nEthernet connectivity?}
 
     Q1 -->|Yes| RPRO
-    Q1 -->|No| Q2{Do you need to track\nmultiple people in zones?}
+    Q1 -->|No| Q2{Do you need to detect and track\nmultiple people in zones?}
 
     Q2 -->|Yes| Q3{Do you also need reliable\nstill detection?\ne.g. sleeping, sitting on a couch}
     Q2 -->|No| MSR
@@ -25,17 +26,16 @@ flowchart TD
     Q3 -->|Yes| RPRO
     Q3 -->|No| MTR
 
-    MSR("<b>MSR-2</b><br/>Best-in-class still detection<br/>Single person · Close to far range<br/>Great for: bedrooms, offices, bathrooms")
-    MTR("<b>MTR-1</b><br/>Track up to 3 people in up to 3 zones<br/>Great for: living rooms, open spaces")
-    RPRO("<b>R-PRO-1</b><br/>Best of both worlds<br/>PoE · Ethernet · Wi-Fi · USB-C<br/>LD2450 zones + optional LD2412 still detection addon")
+    MSR([MSR-2\nBest still detection · Single person])
+    MTR([MTR-1\nUp to 3 people · Up to 3 zones])
+    RPRO([R-PRO-1\nPoE · Ethernet · Best of both worlds])
 
-    classDef product fill:#daa520,stroke:#9a7510,color:#000,font-weight:bold,rx:8
-    classDef question fill:#1e1e2e,stroke:#555,color:#eee
-    classDef start fill:#2d2d2d,stroke:#daa520,color:#daa520,font-weight:bold
-
+    classDef product fill:#4379AA,stroke:#2d5a8a,color:#fff,font-weight:bold
     class MSR,MTR,RPRO product
-    class Q1,Q2,Q3 question
-    class START start
+
+    click MSR href "https://wiki.apolloautomation.com/products/msr2/introduction/" _blank
+    click MTR href "https://wiki.apolloautomation.com/products/mtr1/introduction/" _blank
+    click RPRO href "https://wiki.apolloautomation.com/products/rpro1/introduction/" _blank
 ```
 
 ### Most Popular
