@@ -117,6 +117,8 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
   * Allows you to calibrate the SEN55 temperature. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
 * **SEN55 Humidity Offset**
   * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
+* **DPS310 Pressure Offset**
+  * Allows you to apply a calibration offset (in hPa) to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default (0.0 hPa offset).
 
 ![AIR-1 Sensor Data.jpg](/assets/air-1-device-page-pic-1.png)
 
@@ -137,6 +139,10 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
 **SEN55 Temperature Offset**
 
 * Lets you calibrate the temperature sensor by adjusting the offset in degrees Celsius.
+
+**DPS310 Pressure Offset**
+
+* Allows you to apply a calibration offset (in hPa) to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default (0.0 hPa offset).
 
 #### Diagnostic:
 
