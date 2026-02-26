@@ -26,9 +26,9 @@ flowchart LR
     Q3 -->|Yes| RPRO
     Q3 -->|No| MTR
 
-    MSR("MSR-2<br/>Best still detection · Single person")
-    MTR("MTR-1<br/>Up to 3 people · Up to 3 zones")
-    RPRO("R-PRO-1<br/>PoE · Ethernet · Best of both worlds")
+    MSR["MSR-2<br/>Best still detection · Single person"]
+    MTR["MTR-1<br/>Up to 3 people · Up to 3 zones"]
+    RPRO["R-PRO-1<br/>PoE · Ethernet · Best of both worlds"]
 
     classDef product fill:#4379AA,stroke:#2d5a8a,color:#fff,font-weight:bold
     class MSR,MTR,RPRO product
