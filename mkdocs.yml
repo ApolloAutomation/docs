@@ -355,7 +355,7 @@ nav:
               - Additional Info:
                 - General Tips: products/plt1/general-tips.md
                 - Sensor Definitons: products/plt1/setup/plt1-sensor-definitions.md
-                - Calibrating Soil Moisture: products/plt1/calibrating-plt1.md
+                - Calibrating Soil Moisture: products/plt1/calibrate-plt1.md
                 - Prevent Sleep: products/plt1/additional-info/prevent-sleep.md
               - Examples:
                 - Flower Card: products/plt1/examples/flower-card.md
@@ -372,7 +372,7 @@ nav:
               - Additional Info:
                 - General Tips: products/plt1b/general-tips.md
                 - Sensor Definitons: products/plt1b/setup/plt1b-sensor-definitions.md
-                - Calibrating Soil Moisture: products/plt1b/calibrating-plt1.md
+                - Calibrating Soil Moisture: products/plt1b/calibrate-plt1.md
                 - Prevent Sleep: products/plt1b/additional-info/prevent-sleep.md
                 - How To Wake Up Your Sensor: products/plt1b/battery-sensors/wake-up-battery-sensor.md
                 - Keep Your Sensor Awake With HA Helper: products/plt1b/battery-sensors/awake-ha-helper.md
@@ -669,7 +669,7 @@ nav:
               - Additional Info:
                 - General Tips: homey/products/plt1/general-tips.md
                 - Sensor Definitons: homey/products/plt1/setup/plt1-sensor-definitions.md
-                - Calibrating Soil Moisture: homey/products/plt1/calibrating-plt1.md
+                - Calibrating Soil Moisture: homey/products/plt1/calibrate-plt1.md
                 - Prevent Sleep: homey/products/plt1/setup/prevent-sleep.md
               - Reviews: homey/products/plt1/reviews.md
               - Examples:
@@ -686,7 +686,7 @@ nav:
               - Additional Info:
                 - General Tips: homey/products/plt1b/general-tips.md
                 - Sensor Definitons: homey/products/plt1b/setup/plt1b-sensor-definitions.md
-                - Calibrating Soil Moisture: homey/products/plt1b/calibrating-plt1.md
+                - Calibrating Soil Moisture: homey/products/plt1b/calibrate-plt1.md
                 - Prevent Sleep: homey/products/plt1b/setup/prevent-sleep.md
                 - How To Wake Up Your Sensor: homey/products/plt1b/battery-sensors/wake-up-battery-sensor.md
                 - Sensor Connection Check: homey/products/plt1b/battery-sensors/sensor-connection-check.md
