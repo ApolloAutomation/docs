@@ -142,6 +142,7 @@ nav:
               - CO<sub>2</sub>: products/general/calibrating-and-updating/co2-calibration.md
               - CO<sub>2</sub> Quick: products/general/calibrating-and-updating/co2-calibration-quick.md
               - Temperature and Humidity: products/general/temp-hum-calibration.md
+              - Calibrate PLT-1 Soil Moisture: products/general/calibrating-and-updating/calibrate-plt1.md
               - Radar Tuning:
                 - Home Assistant: products/general/calibrating-and-updating/radar-tuning/zones-ha.md
                 - HLK Radar Tool App: products/general/calibrating-and-updating/radar-tuning/zones-hlk.md
