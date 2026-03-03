@@ -9,7 +9,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 2\. **What does the AIR-1 measure?**
 
-* The AIR-1 measures a variety of air quality metrics, including particulate matter (dust, pollen, etc.), VOCs, NOx, temperature, and humidity. The optional CO2 sensor can track carbon dioxide levels, and the pressure sensor helps provide more accurate CO2 readings.
+* The AIR-1 measures a variety of air quality metrics, including particulate matter (dust, pollen, etc.), VOCs, NOx, temperature, and humidity. The optional CO2 sensor can track carbon dioxide levels.
 
 3\. **How do I connect the AIR-1 to Home Assistant?**
 
@@ -67,66 +67,62 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 * The AIR-1 is powered via a USB-C connection. It can be plugged into any standard wall outlet using a 5V adapter.
 
-17\. **How does the pressure sensor help with CO2 readings?**
-
-* The barometric pressure sensor (DPS310) enhances the accuracy of CO2 readings by compensating for changes in altitude and atmospheric pressure, ensuring more reliable measurements of CO2 levels in different environments.
-
-18\. **My AIR-1 CO2 sensors are having a sawtooth pattern, is there any explanation?**
+17\. **My AIR-1 CO2 sensors are having a sawtooth pattern, is there any explanation?**
 
 * Some users have noticed the AIR-1 with the "Apollo" side facing up will produce strange behavior with the CO2 sensor readings fluctuating way more than they should. Simply turning the AIR-1 to the other side makes this problem go away!
 
-19\. **Can I integrate multiple AIR-1 sensors in my smart home?**
+18\. **Can I integrate multiple AIR-1 sensors in my smart home?**
 
 * Yes, you can have multiple AIR-1 sensors in your Home Assistant setup. Each sensor will be recognized as a separate entity, allowing you to monitor air quality across different rooms or spaces simultaneously.
 
-20\. **How customizable is the AIR-1?**
+19\. **How customizable is the AIR-1?**
 
 * The AIR-1 is fully customizable via ESPHome. You can adjust sensor settings, create automations, modify reporting intervals, and even customize the RGB LEDs. Additionally, we provide open-source CAD drawings and code for further customization.
 
-21\. **How frequently does the AIR-1 report data?**
+20\. **How frequently does the AIR-1 report data?**
 
 * The reporting frequency for each sensor is adjustable via ESPHome but most default to 60 seconds. You can choose to have data reported as frequently as every second, or adjust intervals to save power and reduce data traffic.
 
-22\. **Does the AIR-1 require specific software?**
+21\. **Does the AIR-1 require specific software?**
 
 * The AIR-1 is designed to work seamlessly with Home Assistant through ESPHome. All configuration, monitoring, and automation setups are done through these platforms.
 
-23\. **Is the AIR-1 compatible with other smart home platforms?**
+22\. **Is the AIR-1 compatible with other smart home platforms?**
 
 * While the AIR-1 is optimized for Home Assistant and ESPHome, you may be able to integrate it into other smart home platforms using custom configurations or MQTT, but Home Assistant remains the primary platform.
 
-24\. **What’s the difference between the AIR-1 and other air quality sensors?**
+23\. **What's the difference between the AIR-1 and other air quality sensors?**
 
 * The AIR-1 is unique because it offers local control with no cloud or subscription required. It also provides a wide range of sensor data (PM, VOC, NOx, CO2, temperature, humidity) in a compact, affordable package. The addition of the RGB LEDs and open-source nature makes it highly customizable.
 
-25\. **What are the optional add-ons for the AIR-1?**
+24\. **What are the optional add-ons for the AIR-1?**
 
 * The AIR-1 offers two optional add-ons: a <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO2</a> sensor and the <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS gas sensor</a>. These can be added to enhance air quality monitoring with very accurate CO2 measurements and the ability to detect multiple gases with the MiCS gas sensor.
 
-26\. **What’s in the box?**
+25\. **What's in the box?**
 
-* The AIR-1 comes with the fully assembled board and case, a USB-C power cable, and access to all our documentation, open-source code, and CAD models. You’ll also receive a sticker of Apollo, our mascot.
+* The AIR-1 comes with the fully assembled board and case, a USB-C power cable, and access to all our documentation, open-source code, and CAD models. You'll also receive a sticker of Apollo, our mascot.
 
-27\. **How do I install the AIR-1?**
+26\. **How do I install the AIR-1?**
 
 * Installation is easy. Simply plug the AIR-1 into a wall outlet using the USB-C cable, connect it to your Home Assistant through ESPHome, and configure the settings as desired. <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">Detailed setup instructions are available in our documentation</a>.
 
-28\. **What is the warranty on the AIR-1?**
+27\. **What is the warranty on the AIR-1?**
 
-* The AIR-1 comes with a one-year warranty. If you encounter any issues, we provide support via email, Discord, and our community channels to ensure you’re satisfied with the product.
+* The AIR-1 comes with a one-year warranty. If you encounter any issues, we provide support via email, Discord, and our community channels to ensure you're satisfied with the product.
 
-29\. **Can the AIR-1 be used to monitor 3D printer fumes?**
+28\. **Can the AIR-1 be used to monitor 3D printer fumes?**
 
 * Yes, the AIR-1 can monitor air quality around 3D printers, especially particulate matter (PM) and VOCs emitted during the printing process. It can trigger alerts or automations when levels become unhealthy.
 
-30\. **How long does it take to set up the AIR-1?**
+29\. **How long does it take to set up the AIR-1?**
 
 * Setup typically takes around 5-10 minutes. Once powered and connected to WiFi, it can be configured quickly through ESPHome and Home Assistant.
 
-31\. **How secure is the AIR-1?**
+30\. **How secure is the AIR-1?**
 
 * The AIR-1 operates entirely on your local network and does not send data to the cloud. All information is processed and stored locally, ensuring the security and privacy of your home automation setup.
 
-32\. **Can I use the AIR-1 for safety monitoring (e.g., CO2 or gas leaks)?**
+31\. **Can I use the AIR-1 for safety monitoring (e.g., CO2 or gas leaks)?**
 
-* The AIR-1’s CO2 and gas sensors are intended for air quality monitoring but **DO NOT MEET** the safety standards for CO2 or gas leak detection as defined by the NBIC, NFPA, or IFC. For safety purposes, dedicated gas or CO2 monitors should be used.
+* The AIR-1's CO2 and gas sensors are intended for air quality monitoring but **DO NOT MEET** the safety standards for CO2 or gas leak detection as defined by the NBIC, NFPA, or IFC. For safety purposes, dedicated gas or CO2 monitors should be used.

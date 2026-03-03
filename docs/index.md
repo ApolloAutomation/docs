@@ -8,6 +8,36 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 
     Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://dsc.gg/apolloautomation), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
+### Which mmWave Sensor Should I Buy?
+
+```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
+flowchart LR
+    START{{"Which Apollo mmWave sensor is right for me?"}}
+
+    START --> Q1(["Do you need PoE or<br/>Ethernet connectivity?"])
+
+    Q1 -->|Yes| RPRO
+    Q1 -->|No| Q2(["Do you need to detect and track<br/>multiple people in zones?"])
+
+    Q2 -->|Yes| Q3(["Do you also need reliable still detection?<br/>e.g. sleeping, sitting on a couch"])
+    Q2 -->|No| MSR
+
+    Q3 -->|Yes| RPRO
+    Q3 -->|No| MTR
+
+    MSR(("MSR-2<br/>Best still detection · Single person"))
+    MTR(("MTR-1<br/>Up to 3 people · Up to 3 zones"))
+    RPRO(("R-PRO-1<br/>PoE · Ethernet · Best of both worlds"))
+
+    classDef product fill:#4379AA,stroke:#2d5a8a,color:#fff,font-weight:bold
+    class MSR,MTR,RPRO product
+
+    click MSR href "https://wiki.apolloautomation.com/products/msr2/introduction/" _blank
+    click MTR href "https://wiki.apolloautomation.com/products/mtr1/introduction/" _blank
+    click RPRO href "https://wiki.apolloautomation.com/products/rpro1/introduction/" _blank
+```
+
 ### Most Popular
 
 * [Getting started with your brand new Apollo device](https://wiki.apolloautomation.com/products/general/setup/getting-started/)

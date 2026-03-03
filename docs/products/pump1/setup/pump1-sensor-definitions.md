@@ -54,11 +54,19 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **Stop Pump When Input Dry**
 
-    * This will turn the pump off when the ultrasonic sensor at the bottom of the water bottle detects no water.
+    * This will turn the pump off when the ultrasonic sensor at the bottom of the water bottle detects no water. Note: this check is automatically skipped when **Invert Water Logic** is enabled.
 
     **Stop Pump When Output Wet**
 
     * This turns the pump off when the ultrasonic sensor (mounted on a Keurig tank, fish tank, or similar container) detects that the water level has risen above its monitoring point.
+
+    **Invert Water Logic**
+
+    * Flips the meaning of the Fluid Input sensor so that **Dry** = destination is low (start pumping) and **Wet** = destination is full (stop pumping). Use this when the Input sensor is placed at the low-water mark inside a destination tank (e.g. a CPAP reservoir) rather than at the bottom of a supply bottle. (Disabled by default)
+
+    **Auto Refill**
+
+    * When enabled together with **Invert Water Logic**, the pump automatically starts a fill cycle whenever the Fluid Input sensor reads **Dry** (tank level has dropped below the sensor). The pump stops when the Fluid Output sensor reads **Wet** or when **Max Safe Run Time** is reached, whichever comes first. Requires **Invert Water Logic** to be enabled. (Disabled by default)
 
     **Factory Reset ESP**
 

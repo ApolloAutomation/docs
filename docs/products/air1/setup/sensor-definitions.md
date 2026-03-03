@@ -36,10 +36,6 @@ Once added to Home Assistant you can configure different settings for your senso
 
 * Tracks CO₂ levels in parts per million (ppm), which can indicate poor ventilation and impact overall air quality and cognitive performance. True NDIR CO<sub>2</sub> reading from the SCD40. This will be Unknown if you do not have the CO<sub>2</sub> module. You can <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">re-calibrate the SCD40 CO₂ sensor</a> to <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">outdoor baseline levels.</a>
 
-**DPS310 Pressure**
-
-* Measures air pressure in psi (pounds per square inch), providing insights into atmospheric changes and enhancing the accuracy of CO₂ readings.
-
 **Ethanol (C₂H₅OH)**
 
 * Detects ethanol vapors, commonly found in cleaning agents, sanitizers, or alcohol-based products.
@@ -121,6 +117,8 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
   * Allows you to calibrate the SEN55 temperature. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
 * **SEN55 Humidity Offset**
   * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
+* **DPS310 Pressure Offset**
+  * Allows you to apply a calibration offset (in hPa) to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default (0.0 hPa offset).
 
 ![AIR-1 Sensor Data.jpg](/assets/air-1-device-page-pic-1.png)
 
@@ -141,6 +139,10 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
 **SEN55 Temperature Offset**
 
 * Lets you calibrate the temperature sensor by adjusting the offset in degrees Celsius.
+
+**DPS310 Pressure Offset**
+
+* Allows you to apply a calibration offset (in hPa) to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default (0.0 hPa offset).
 
 #### Diagnostic:
 

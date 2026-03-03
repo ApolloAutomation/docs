@@ -1,0 +1,1 @@
+--8<-- "products/plt1/calibrate-plt1.md:5:"
