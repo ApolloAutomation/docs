@@ -14,17 +14,17 @@ description: >-
 
 2\. Click **Preview** then click **Import blueprint**.
 
-![](/assets/plt-1-blueprint-auto-import.gif)
+![](/assets/btn-1-blueprint-auto-import.gif)
 
 3\. Click on **Apollo Automation PLT-1 Blueprint** and click on **Select a device** then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
 
-![](/assets/plt-1-blueprint-select-device.gif)
+![](/assets/btn-1-blueprint-select-btn-1.gif)
 
 4\. Enter your **plant's name** (this appears in notification messages), then select your **mobile device** for push notifications.
 
 5\. Enable the sensor groups you want to monitor (e.g. Soil Moisture, Air Temperature, Light Intensity) and adjust the thresholds to suit your plant.
 
-![](/assets/plt-1-blueprint-configure-thresholds.gif)
+![](/assets/btn-1-blueprint-single-click-example.gif)
 
 !!! success "Each sensor group is disabled by default — enable only what matters!"
 
@@ -36,19 +36,19 @@ description: >-
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/automation/dashboard" target="_blank" rel="noreferrer nofollow noopener">automations page</a> and click on **Blueprints** in the top right then select **Import Blueprint**.
 
-![](/assets/plt-1-blueprint-manual-import.gif)
+![](/assets/btn-1-blueprint-manual-import.gif)
 
 2\. Copy <a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FPLT-1%2FPLT-1.yaml" target="_blank" rel="noreferrer nofollow noopener">this link</a> and paste it into the **Blueprint address** box and click **Preview** then click **Import blueprint**.
 
-![](/assets/plt-1-blueprint-auto-import.gif)
+![](/assets/btn-1-blueprint-auto-import.gif)
 
 3\. Click on **Apollo Automation PLT-1 Blueprint** and click on **Select a device** then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
 
-![](/assets/plt-1-blueprint-select-device.gif)
+![](/assets/btn-1-blueprint-select-btn-1.gif)
 
 4\. Enter your **plant's name**, select your **mobile device**, enable the sensor groups you want, and set your thresholds.
 
-![](/assets/plt-1-blueprint-configure-thresholds.gif)
+![](/assets/btn-1-blueprint-single-click-example.gif)
 
 !!! success "Each sensor group is disabled by default — enable only what matters!"
 
