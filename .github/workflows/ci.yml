@@ -1,9 +1,12 @@
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
