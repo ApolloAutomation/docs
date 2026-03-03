@@ -1,1 +1,0 @@
---8<-- "products/general/troubleshooting/manually-uploading-code-through-esphome.md:5:"
