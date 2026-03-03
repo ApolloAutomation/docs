@@ -361,6 +361,7 @@ nav:
                 - Prevent Sleep: products/plt1/additional-info/prevent-sleep.md
               - Examples:
                 - Flower Card: products/plt1/examples/flower-card.md
+                - Blueprint: products/plt1/examples/blueprint.md
               - Troubleshooting:
                 - PLT-1 Boot Mode: products/plt1/troubleshooting/plt1-boot-mode.md
                 - Factory Re-Flash PLT-1: products/plt1/troubleshooting/plt1-code.md
@@ -381,6 +382,7 @@ nav:
                 - Sensor Connection Check: products/plt1b/battery-sensors/sensor-connection-check.md
               - Examples:
                 - Flower Card: products/plt1b/examples/flower-card.md
+                - Blueprint: products/plt1b/examples/blueprint.md
               - Troubleshooting:
                 - PLT-1 Boot Mode: products/plt1b/troubleshooting/plt1b-boot-mode.md
                 - Factory Re-Flash PLT-1: products/plt1b/troubleshooting/plt1b-code.md
