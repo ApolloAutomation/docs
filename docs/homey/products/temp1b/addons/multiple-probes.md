@@ -1,0 +1,1 @@
+--8<-- "products/temp1/addons/multiple-probes.md:5:"
