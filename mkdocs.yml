@@ -311,6 +311,7 @@ nav:
                 - Magnetic Mount: products/temp1/addons/magnetic-mount.md
                 - Temp Probe: products/temp1/addons/temp-probe.md
                 - Food Probe: products/temp1/addons/food-probe.md
+                - Multi-Probe Splitter: products/temp1/addons/multiple-probes.md
               - Examples:
                 - Alert Outside Range: products/temp1/examples/temp1-alert-example.md
                 - Use Cases: products/temp1/examples/use-cases.md
@@ -337,6 +338,7 @@ nav:
                 - Magnetic Mount: products/temp1b/addons/magnetic-mount.md
                 - Temp Probe: products/temp1b/addons/temp-probe.md
                 - Food Probe: products/temp1b/addons/food-probe.md
+                - Multi-Probe Splitter: products/temp1b/addons/multiple-probes.md
               - Examples:
                 - Alert Outside Range: products/temp1b/examples/temp1b-alert-example.md
                 - Use Cases: products/temp1b/examples/use-cases.md
@@ -627,6 +629,7 @@ nav:
                 - Magnetic Mount: homey/products/temp1/addons/magnetic-mount.md
                 - Temp Probe: homey/products/temp1/addons/temp-probe.md
                 - Food Probe: homey/products/temp1/addons/food-probe.md
+                - Multi-Probe Splitter: homey/products/temp1/addons/multiple-probes.md
               - Reviews: homey/products/temp1/reviews.md
               - Examples:
                 - Alert Outside Range: homey/products/temp1/examples/temp1-alert-example.md
@@ -651,6 +654,7 @@ nav:
                 - Magnetic Mount: homey/products/temp1b/addons/magnetic-mount.md
                 - Temp Probe: homey/products/temp1b/addons/temp-probe.md
                 - Food Probe: homey/products/temp1b/addons/food-probe.md
+                - Multi-Probe Splitter: homey/products/temp1b/addons/multiple-probes.md
               - Reviews: homey/products/temp1b/reviews.md
               - Examples:
                 - Alert Outside Range: homey/products/temp1b/examples/temp1b-alert-example.md
