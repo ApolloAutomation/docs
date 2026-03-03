@@ -4,7 +4,7 @@ description: Step by step guide for installing and using the TEMP-1 Multi-Probe 
 ---
 # TEMP-1 Multi-Probe Splitter Guide
 
-The TEMP-1 comes with an optional 3.5mm Multi-Probe Splitter which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc with up to 4 probes.
+The TEMP-1 comes with an optional [3.5mm Multi-Probe Splitter](https://apolloautomation.com/products/temp-1-multi-probe-splitter) which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc with up to 4 probes.
 
 !!! success "Firmware version 25.11.20.1 or newer required for TEMP-1 and TEMP-1B"
 
