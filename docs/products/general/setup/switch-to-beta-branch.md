@@ -72,7 +72,9 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-=== "PLT-1"
+=== "PLT-1 / PLT-1B"
+
+    **PLT-1:**
 
     ```yaml
     packages:
@@ -83,7 +85,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-=== "PLT-1B"
+    **PLT-1B:**
 
     ```yaml
     packages:
@@ -105,7 +107,9 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-=== "R_PRO-1 (Ethernet)"
+=== "R_PRO-1"
+
+    **Ethernet:**
 
     ```yaml
     packages:
@@ -116,7 +120,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-=== "R_PRO-1 (WiFi)"
+    **WiFi:**
 
     ```yaml
     packages:
@@ -127,7 +131,9 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-=== "TEMP-1"
+=== "TEMP-1 / TEMP-1B"
+
+    **TEMP-1:**
 
     ```yaml
     packages:
@@ -138,7 +144,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-=== "TEMP-1B"
+    **TEMP-1B:**
 
     ```yaml
     packages:
