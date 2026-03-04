@@ -26,27 +26,135 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
 
 ![](/assets/switch-to-beta-pic-3.png)
 
-4\. Copy paste the code below and add it below the two lines you just commented out.
+4\. Select your product below, copy the code, and paste it below the two lines you just commented out.
 
-```yaml
-packages:
-  ApolloAutomation.PLT-1:
-    url: https://github.com/ApolloAutomation/PLT-1
-    ref: beta
-    files: [Integrations/ESPHome/PLT-1_Minimal.yaml]
-    refresh: 1min
-```
+=== "AIR-1"
+
+    ```yaml
+    packages:
+      ApolloAutomation.AIR-1:
+        url: https://github.com/ApolloAutomation/AIR-1
+        ref: beta
+        files: [Integrations/ESPHome/AIR-1.yaml]
+        refresh: 1min
+    ```
+
+=== "BTN-1"
+
+    ```yaml
+    packages:
+      ApolloAutomation.BTN-1:
+        url: https://github.com/ApolloAutomation/BTN-1
+        ref: beta
+        files: [Integrations/ESPHome/BTN-1_Minimal.yaml]
+        refresh: 1min
+    ```
+
+=== "MSR-2"
+
+    ```yaml
+    packages:
+      ApolloAutomation.MSR-2:
+        url: https://github.com/ApolloAutomation/MSR-2
+        ref: beta
+        files: [Integrations/ESPHome/MSR-2.yaml]
+        refresh: 1min
+    ```
+
+=== "MTR-1"
+
+    ```yaml
+    packages:
+      ApolloAutomation.MTR-1:
+        url: https://github.com/ApolloAutomation/MTR-1
+        ref: beta
+        files: [Integrations/ESPHome/MTR-1.yaml]
+        refresh: 1min
+    ```
+
+=== "PLT-1"
+
+    ```yaml
+    packages:
+      ApolloAutomation.PLT-1:
+        url: https://github.com/ApolloAutomation/PLT-1
+        ref: beta
+        files: [Integrations/ESPHome/PLT-1_Minimal.yaml]
+        refresh: 1min
+    ```
+
+=== "PLT-1B"
+
+    ```yaml
+    packages:
+      ApolloAutomation.PLT-1:
+        url: https://github.com/ApolloAutomation/PLT-1
+        ref: beta
+        files: [Integrations/ESPHome/PLT-1B_Minimal.yaml]
+        refresh: 1min
+    ```
+
+=== "PUMP-1"
+
+    ```yaml
+    packages:
+      ApolloAutomation.PUMP-1:
+        url: https://github.com/ApolloAutomation/PUMP-1
+        ref: beta
+        files: [Integrations/ESPHome/PUMP-1_Minimal.yaml]
+        refresh: 1min
+    ```
+
+=== "R_PRO-1 (Ethernet)"
+
+    ```yaml
+    packages:
+      ApolloAutomation.R_PRO-1:
+        url: https://github.com/ApolloAutomation/R_PRO-1
+        ref: beta
+        files: [Integrations/ESPHome/R_PRO-1_ETH.yaml]
+        refresh: 1min
+    ```
+
+=== "R_PRO-1 (WiFi)"
+
+    ```yaml
+    packages:
+      ApolloAutomation.R_PRO-1:
+        url: https://github.com/ApolloAutomation/R_PRO-1
+        ref: beta
+        files: [Integrations/ESPHome/R_PRO-1_W.yaml]
+        refresh: 1min
+    ```
+
+=== "TEMP-1"
+
+    ```yaml
+    packages:
+      ApolloAutomation.TEMP-1:
+        url: https://github.com/ApolloAutomation/TEMP-1
+        ref: beta
+        files: [Integrations/ESPHome/TEMP-1_Minimal_R2.yaml]
+        refresh: 1min
+    ```
+
+=== "TEMP-1B"
+
+    ```yaml
+    packages:
+      ApolloAutomation.TEMP-1:
+        url: https://github.com/ApolloAutomation/TEMP-1
+        ref: beta
+        files: [Integrations/ESPHome/TEMP-1B_Minimal_R2.yaml]
+        refresh: 1min
+    ```
 
 ![](/assets/switch-to-beta-pic-4.png)
 
-5\. If you are using a device other than the PLT-1 please edit the names where I have pointed with an arrow in the image below. Please <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">ask for help</a> if you have issues with this!
-
-![](/assets/switch-to-beta-pic-5.png)
-
-6\. Click save then install in the top right.
+5\. Click save then install in the top right.
 
 ![](/assets/switch-to-beta-pic-6.png)
 
-7\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" in the bottom right to exit.
+6\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" in the bottom right to exit.
 
 ![](/assets/switch-to-beta-pic-7.png)
