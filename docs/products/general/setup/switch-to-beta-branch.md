@@ -4,9 +4,9 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
 ---
 # Switching to Beta branch with ESPHome Device Builder
 
-1\. In Home Assistant open the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noopener"><strong>ESPHome Device Builder</strong></a>**.**
+1\. In Home Assistant open the <a href="http://homeassistant.local:8123/5c53de3b_esphome" target="_blank" rel="noopener"><strong>ESPHome Device Builder</strong></a>.
 
-[![](/assets/esphome-addon-image.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&amp;repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=ESPHome+Device+Builder&repository_url=http%3A%2F%2Fhomeassistant.local%3A8123%2F5c53de3b_esphome)
 
 !!! tip "Make sure you are running the latest version of ESPHome"
 
@@ -155,11 +155,15 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
+!!! warning "Do not change the name or friendly_name!"
+
+    Changing these fields will rename the device in Home Assistant and may break automations. If you want to rename your device, [follow this guide](https://wiki.apolloautomation.com/products/general/setup/renaming-apollo-devices/) instead.
+
 ![](/assets/switch-to-beta-pic-4.png)
 
-5\. Click save then install in the top right.
+5\. Click save then install in the top right and click **Wirelessly** when prompted.
 
-![](/assets/switch-to-beta-pic-6.png)
+![](/assets/click-save-then-install-gif.gif)
 
 6\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" in the bottom right to exit.
 
