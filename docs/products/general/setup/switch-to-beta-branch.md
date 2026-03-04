@@ -157,7 +157,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
 
 !!! warning "Do not change the name or friendly_name!"
 
-    Changing these fields will rename the device in Home Assistant and may break automations. If you want to rename your device, [follow this guide](https://wiki.apolloautomation.com/products/general/setup/renaming-apollo-devices/) instead.
+    Changing the name can cause the install to fail due to mDNS issues. If you want to rename your device, [follow this guide](https://wiki.apolloautomation.com/products/general/setup/renaming-apollo-devices/) instead.
 
 ![](/assets/switch-to-beta-pic-4.png)
 
