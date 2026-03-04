@@ -135,3 +135,8 @@ article.md-typeset img {
   -webkit-mask-image: var(--md-admonition-icon--song-purple);
   mask-image: var(--md-admonition-icon--song-purple);
 }
+
+/* Fit code blocks to content width inside content tabs */
+.tabbed-content .highlight {
+  width: fit-content;
+}
