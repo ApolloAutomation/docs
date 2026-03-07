@@ -26,6 +26,10 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     * This is the temperature of the internal microcontroller. Think of it like your measured CPU temp on your PC. (disabled by default)
 
+    **Combined Presence**
+
+    * Combined occupancy sensor. Displays `Detected` when either the LD2450 or LD2412 radar detects a target, and `Clear` when neither radar detects a target. Use this entity for automations and dashboards instead of the individual radar presence sensors.
+
     **LD2412 Moving Target**
 
     * Displays a status of "Detected" or "Clear" determined by whether the sensor identifies only a moving target.
