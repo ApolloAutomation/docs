@@ -28,7 +28,7 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **Presence**
 
-    * Combined occupancy sensor that reports `on` when either the LD2450 or LD2412 radar detects a target. Use this entity for automations and dashboards instead of the individual radar presence sensors.
+    * Combined occupancy sensor. Displays `Detected` when either the LD2450 or LD2412 radar detects a target, and `Clear` when neither radar detects a target. Use this entity for automations and dashboards instead of the individual radar presence sensors.
 
     **LD2412 Moving Target**
 
