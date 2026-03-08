@@ -1,14 +1,14 @@
 ---
-title: How to minimize logbook spam
-description: How to minimize the logbook spam on your Apollo mmWave sensors
+title: How to minimize activity spam
+description: How to minimize the activity spam on your Apollo mmWave sensors
 ---
-# Minimize Logbook Spam
+# Minimize Activity Spam
 
-Apollo mmWave sensors report frequently by design, which can cause internal radar entities like target direction, target count, and zone occupancy to flood your Home Assistant logbook. Adding a `logbook.exclude` block to your `configuration.yaml` tells Home Assistant to stop recording those entities.
+Apollo mmWave sensors report frequently by design, which can cause internal radar entities like target direction, target count, and zone occupancy to flood your Home Assistant Activity log. Adding a `logbook.exclude` block to your `configuration.yaml` tells Home Assistant to stop recording those entities.
 
-!!! info "Home Assistant Logbook Documentation"
+!!! info "Home Assistant Activity Documentation"
 
-    For more details on logbook filtering, see the [Home Assistant Logbook integration docs](https://www.home-assistant.io/integrations/logbook/).
+    For more details on activity filtering, see the [Home Assistant Logbook integration docs](https://www.home-assistant.io/integrations/logbook/).
 
 1\. Open your Home Assistant `configuration.yaml` file.
 
@@ -58,4 +58,4 @@ Apollo mmWave sensors report frequently by design, which can cause internal rada
 
 3\. Save `configuration.yaml` and restart Home Assistant (**Settings → System → Restart**).
 
-4\. Open the **Logbook** in Home Assistant to confirm the noisy entities no longer appear.
+4\. Open **Activity** in Home Assistant to confirm the noisy entities no longer appear.

@@ -154,7 +154,7 @@ nav:
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
             - Change Update Frequency: products/general/setup/change-the-update-frequency-of-sensors.md
             - Change Lux Update Interval: products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval.md
-            - Minimize mmWave Logbook Spam: products/general/tutorials/minimize-mmwave-logbook-spam.md
+            - Minimize mmWave Activity Spam: products/general/tutorials/minimize-mmwave-activity-spam.md
             - Adding SCD40 Temp/Hum: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
             - Adjusting WiFi Power: products/general/setup/adjusting-wifi-power.md
             - Hidden WiFi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
