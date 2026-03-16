@@ -31,4 +31,4 @@ For additional customization, you will need to <a href="https://wiki.apolloautom
 
 Hang the H-2 on your tree, place it on a mantel, or incorporate it into any holiday setup for added joy. Your Apollo H-2 is now ready to spread holiday cheer! Enjoy the festive tunes and LED effects, and feel free to share your unique setup with us in the community!
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                  .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){                  .md-button }

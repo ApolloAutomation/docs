@@ -276,4 +276,4 @@ description: These are all of the entities exposed by the MTR-1 to automate on!
 
     * Displays the Wi-Fi signal strength.
 
-[Join our Discord if you need more help! :simple-discord:](https://dsc.gg/apolloautomation){                      .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){                      .md-button }

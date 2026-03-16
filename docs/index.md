@@ -6,7 +6,7 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 
 !!! info "Welcome to Apollo Automation Docs!"
 
-    Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://dsc.gg/apolloautomation), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
+    Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
 ### Which mmWave Sensor Should I Buy?
 
@@ -61,7 +61,7 @@ flowchart LR
 
 <h3>Community</h3>
 
-* [Discord - Support, community, updates, live streams](https://discord.gg/F3RZGPcuzV)
+* [Discord - Support, community, updates, live streams](https://link.apolloautomation.com/discord)
 * [YouTube - Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
 
 <h3>What is Apollo Automation?</h3>

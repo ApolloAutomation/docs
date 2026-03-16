@@ -10,7 +10,7 @@
 
     Join our community for live support, updates, and monthly live streams with the team!
 
-    [:octicons-arrow-right-24: Join our Discord](https://dsc.gg/apolloautomation){ target=_blank }
+    [:octicons-arrow-right-24: Join our Discord](https://link.apolloautomation.com/discord){ target=_blank }
 
 ---
 
