@@ -1,6 +1,6 @@
 # Getting Started
 
-This will walk you through the process of connecting your new Apollo Automation sensor to Homey. If at any point you get stuck, join our <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noopener">Discord</a> for some help.
+This will walk you through the process of connecting your new Apollo Automation sensor to Homey. If at any point you get stuck, join our <a href="https://link.apolloautomation.com/discord" target="_blank" rel="noopener">Discord</a> for some help.
 
 ### Connecting Through Hotspot:
 
@@ -64,4 +64,4 @@ If this does not automatically open the dashboard, please open your web browser 
 
 7\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
-[Click here to join our Discord for fast support! :simple-discord:](https://dsc.gg/apolloautomation){                                     .md-button .md-button--primary }
+[Click here to join our Discord for fast support! :simple-discord:](https://link.apolloautomation.com/discord){                                     .md-button .md-button--primary }

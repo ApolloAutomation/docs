@@ -81,7 +81,7 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@ApolloAutomation
     - icon: fontawesome/brands/discord
-      link: https://dsc.gg/apolloautomation
+      link: https://link.apolloautomation.com/discord
 
 markdown_extensions:
   - pymdownx.highlight:

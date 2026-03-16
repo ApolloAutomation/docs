@@ -124,6 +124,6 @@
 
 30\. **How do I get support for the MSR-1?**
 
-* You can get support through our <a href="https://dsc.gg/apolloautomation" target="_blank" rel="noreferrer nofollow noopener">Discord community</a>, where you can ask questions and share your experiences with other users and the Apollo Automation team. We also provide extensive documentation on our GitHub and wiki pages.
+* You can get support through our <a href="https://link.apolloautomation.com/discord" target="_blank" rel="noreferrer nofollow noopener">Discord community</a>, where you can ask questions and share your experiences with other users and the Apollo Automation team. We also provide extensive documentation on our GitHub and wiki pages.
 
 &nbsp;
