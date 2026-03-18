@@ -32,7 +32,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **DPS310 Pressure**
 
-    * Measures the air pressure in the environment.
+    * Measures the air pressure in the environment. Note: A small subset of devices do not include a DPS310 sensor — if you do not see this reading, your device may be one of these units.
 
     **DPS310 Temperature**
 
