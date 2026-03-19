@@ -118,7 +118,7 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
 * **SEN55 Humidity Offset**
   * Allows you to calibrate the SEN55 humidity. Please refer to our [calibration guide](https://wiki.apolloautomation.com/products/general/temp-hum-calibration/ "MSR-1 Temperature &amp; Humidity Offsets").
 * **DPS310 Pressure Offset**
-  * Allows you to apply a calibration offset (in hPa) to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default (0.0 hPa offset). Note: A small subset of devices do not include a DPS310 sensor — if you do not see this option, your device may be one of these units.
+  * Allows you to apply a calibration offset (in hPa) to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default (0.0 hPa offset). Note: A small subset of devices do not include a DPS310 sensor. If this option is unknown, your device may be one of these units.
 
 ![AIR-1 Sensor Data.jpg](/assets/air-1-device-page-pic-1.png)
 
@@ -142,7 +142,7 @@ Detects volatile organic compounds (VOC Index), which are emitted from paints, c
 
 **DPS310 Pressure Offset**
 
-* Allows you to apply a calibration offset (in hPa) to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default (0.0 hPa offset). Note: A small subset of devices do not include a DPS310 sensor — if you do not see this option, your device may be one of these units.
+* Allows you to apply a calibration offset (in hPa) to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default (0.0 hPa offset). Note: A small subset of devices do not include a DPS310 sensor. If this option is unknown, your device may be one of these units.
 
 #### Diagnostic:
 
