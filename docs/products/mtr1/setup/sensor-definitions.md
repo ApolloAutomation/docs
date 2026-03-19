@@ -26,11 +26,11 @@ description: These are all of the entities exposed by the MTR-1 to automate on!
 
     **DPS310 Pressure**
 
-    * Measures the air pressure in the environment. Note: A small subset of devices do not include a DPS310 sensor — if you do not see this reading, your device may be one of these units.
+    * Measures the air pressure in the environment. Note: A small subset of devices do not include a DPS310 sensor. If this sensor is unknown, your device may be one of these units.
 
     **DPS310 Temperature**
 
-    * Measures the ambient air temperature using the DPS310 sensor.
+    * Measures the ambient air temperature using the DPS310 sensor. Note: A small subset of devices do not include a DPS310 sensor. If this sensor is unknown, your device may be one of these units.
 
     **LTR390 Light**
 
