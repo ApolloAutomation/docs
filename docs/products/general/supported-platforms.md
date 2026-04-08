@@ -41,6 +41,11 @@ At Apollo, we are actively working on adding support for every smart home ecosys
 * **Integration:** Fully supported via this [unofficial adapter](https://github.com/DrozmotiX/ioBroker.esphome).
 * **Support:** We do not provide support for this platform but if enough users want it that could change. We of course always support the hardware of our products though!
 
+## Samsung SmartThings
+
+* **Integration:** Supported via direct OAuth2 from your Apollo ESPHome device — no hub or Home Assistant required. See our [SmartThings Direct Control tutorial](tutorials/smartthings-direct-control.md) for full setup instructions including zone-based presence detection and autonomous token renewal.
+* **Support:** We do not provide official support for this platform, but the community tutorial covers the full setup including token renewal and troubleshooting.
+
 ## MQTT
 
 * **Integration:** Fully supported via a custom yaml edit for your device where you fill in the server IP/hostname, mqtt username, and mqtt password.
