@@ -1,0 +1,11 @@
+# Treat image files as binary — prevents CRLF mangling on Windows
+*.png binary
+*.PNG binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+
+# SVG is XML/text — normalize line endings to LF
+*.svg text eol=lf
