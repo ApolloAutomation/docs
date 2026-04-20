@@ -12,11 +12,20 @@ description: PLT-1B FAQ.
 
 3\. **How is the PLT-1B powered?**
 
-* The PLT-1B operates with a **rechargeable** 18650 Flat Top battery (not included), giving it portability for plant monitoring without being tied to an outlet. Example battery to use: [https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery](https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery).
+* The PLT-1B operates on a user-supplied **rechargeable 18650 Flat Top Li-ion battery** (not included). A separate 18650 charger is also required (see Q4), as the device does not charge the cell over USB.
+* **Required cell specifications:**
+    * Chemistry: Lithium-ion (Li-ion), rechargeable
+    * Nominal voltage: 3.6V or 3.7V
+    * Capacity: 2,500 to 3,500 mAh (typical for reputable cells)
+    * Terminal style: **Flat top** (no raised positive terminal)
+    * Protection circuit: **Unprotected**. Protected cells include a small PCB that adds length (roughly 68 to 70mm total) and will not fit the compartment.
+    * Dimensions: approximately **18.8mm diameter × 65.25mm length**
+* **Recommended cell:** [Samsung 30Q 18650 3000mAh](https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery) (18.8mm × 65.25mm).
+* **Reputable brands:** Samsung, LG, Sony/Murata, Panasonic, Molicel. Avoid cells advertising capacities above 5,000 mAh, as these are almost always counterfeit.
 
 4\. **Can you charge the battery by plugging in the device?**
 
-* No, you cannot charge the battery through the USB port. You need an external 18650 charger such as a <a href="https://imrbatteries.com/products/nitecore-sc2-2-channel-battery-charger" target="_blank" rel="noreferrer nofollow noopener">nitecore 2 or 4 bay</a>.
+* No, you cannot charge the battery through the USB port. You will need a separate user-supplied 18650 charger such as a <a href="https://imrbatteries.com/products/nitecore-sc2-2-channel-battery-charger" target="_blank" rel="noreferrer nofollow noopener">nitecore 2 or 4 bay</a>.
 
 5\. **How long does the battery last in the PLT-1B?**
 
