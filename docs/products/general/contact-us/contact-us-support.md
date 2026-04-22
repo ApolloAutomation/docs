@@ -12,6 +12,12 @@
 
     [:octicons-arrow-right-24: Join our Discord](https://link.apolloautomation.com/discord){ target=_blank }
 
+!!! question ":fontawesome-brands-discourse: Community Forum"
+
+    Ask questions, share tips, and browse discussions with other Apollo users.
+
+    [:octicons-arrow-right-24: Visit the Forum](https://forum.apolloautomation.com/){ target=_blank }
+
 ---
 
 [:octicons-people-24: Meet Our Team](https://apolloautomation.com/pages/our-team){ target=_blank }

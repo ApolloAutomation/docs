@@ -6,7 +6,7 @@ description: Guide to integrating Apollo Automation devices with the Homey smart
 
 !!! info "Welcome to Apollo Automation Docs!"
 
-    Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
+    Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), post on our [Community Forum](https://forum.apolloautomation.com/), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
     **This Homey Wiki is actively being updated with new Homey articles to replace old Home Assistant placeholder wiki articles!**
 
