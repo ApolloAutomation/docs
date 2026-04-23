@@ -73,6 +73,32 @@ plugins:
         color: "#daa520"
         font_family: Figtree
   - meta
+  - redirects:
+      redirect_maps:
+        # PR #733: R-PRO-1 calibrating-and-updating -> setup
+        'products/rpro1/calibrating-and-updating/zones-ha.md': 'products/rpro1/setup/zones-ha.md'
+        'products/rpro1/calibrating-and-updating/zones-hlk.md': 'products/rpro1/setup/zones-hlk.md'
+        'products/rpro1/calibrating-and-updating/zones-ha-new.md': 'products/rpro1/setup/zones-ha-new.md'
+        'homey/products/rpro1/calibrating-and-updating/zones-hlk.md': 'homey/products/rpro1/setup/zones-hlk.md'
+        'homey/products/rpro1/calibrating-and-updating/zones-ha.md': 'homey/products/rpro1/setup/zones-hlk.md'
+        'homey/products/rpro1/calibrating-and-updating/zones-ha-new.md': 'homey/products/rpro1/setup/zones-hlk.md'
+        # MSR-1 calibrating-and-updating -> setup
+        'products/msr1/calibrating-and-updating/co2-calibration-for-msr-1.md': 'products/msr1/setup/co2-calibration-for-msr-1.md'
+        'products/msr1/calibrating-and-updating/mmwave-videos.md': 'products/msr1/setup/mmwave-videos.md'
+        'products/msr1/calibrating-and-updating/updating-msr-1-firmware.md': 'products/msr1/setup/updating-msr-1-firmware.md'
+        'products/msr1/calibrating-and-updating/zones-ha.md': 'products/msr1/setup/zones-ha.md'
+        'products/msr1/calibrating-and-updating/zones-hlk.md': 'products/msr1/setup/zones-hlk.md'
+        # MSR-2 calibrating-and-updating -> setup
+        'products/msr2/calibrating-and-updating/mmwave-videos.md': 'products/msr2/setup/mmwave-videos.md'
+        'products/msr2/calibrating-and-updating/msr2-tuning-dashboard.md': 'products/msr2/setup/msr2-tuning-dashboard.md'
+        'products/msr2/calibrating-and-updating/zones-ha.md': 'products/msr2/setup/zones-ha.md'
+        'products/msr2/calibrating-and-updating/zones-hlk.md': 'products/msr2/setup/zones-hlk.md'
+        # Homey MSR-2 calibrating-and-updating -> setup
+        'homey/products/msr2/calibrating-and-updating/co2-calibration-for-msr-2.md': 'homey/products/msr2/setup/co2-calibration-for-msr-2.md'
+        'homey/products/msr2/calibrating-and-updating/mmwave-videos.md': 'homey/products/msr2/setup/mmwave-videos.md'
+        'homey/products/msr2/calibrating-and-updating/updating-msr-2-firmware.md': 'homey/products/msr2/setup/updating-msr-2-firmware.md'
+        'homey/products/msr2/calibrating-and-updating/zones-ha.md': 'homey/products/msr2/setup/zones-ha.md'
+        'homey/products/msr2/calibrating-and-updating/zones-hlk.md': 'homey/products/msr2/setup/zones-hlk.md'
 
 extra:
   social:
@@ -186,10 +212,10 @@ nav:
               - FAQ: products/msr2/faq.md
               - Getting Started: products/general/setup/getting-started-msr2.md
               - Radar Tuning:
-                - MSR-2 Tuning Dashboard: products/msr2/calibrating-and-updating/msr2-tuning-dashboard.md
-                - Home Assistant: products/msr2/calibrating-and-updating/zones-ha.md
-                - HLK Radar Tool App: products/msr2/calibrating-and-updating/zones-hlk.md
-                - mmWave Tuning Videos: products/msr2/calibrating-and-updating/mmwave-videos.md
+                - MSR-2 Tuning Dashboard: products/msr2/setup/msr2-tuning-dashboard.md
+                - Home Assistant: products/msr2/setup/zones-ha.md
+                - HLK Radar Tool App: products/msr2/setup/zones-hlk.md
+                - mmWave Tuning Videos: products/msr2/setup/mmwave-videos.md
               - Additional Info:
                 - General Tips: products/msr2/setup/msr2-general-tips.md
                 - Sensor Definitions: products/msr2/setup/msr2-sensor-definitions.md
@@ -264,9 +290,9 @@ nav:
                 - General Tips: products/msr1/setup/general-tips.md
                 - Sensor Definitions: products/msr1/setup/sensor-definitions.md
                 - Radar Tuning:
-                  - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
-                  - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
-                  - mmWave Tuning Videos: products/msr1/calibrating-and-updating/mmwave-videos.md
+                  - Home Assistant: products/msr1/setup/zones-ha.md
+                  - HLK Radar Tool App: products/msr1/setup/zones-hlk.md
+                  - mmWave Tuning Videos: products/msr1/setup/mmwave-videos.md
                 - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
               - Addons: products/msr1/addons/adding-co2-to-msr-1.md
               - Examples:
@@ -536,9 +562,9 @@ nav:
                 - General Tips: homey/products/msr2/setup/msr2-general-tips.md
                 - Sensor Definitions: homey/products/msr2/setup/msr2-sensor-definitions.md
                 - Radar Tuning:
-                  - Home Assistant: homey/products/msr2/calibrating-and-updating/zones-ha.md
-                  - HLK Radar Tool App: homey/products/msr2/calibrating-and-updating/zones-hlk.md
-                  - mmWave Tuning Videos: homey/products/msr2/calibrating-and-updating/mmwave-videos.md
+                  - Home Assistant: homey/products/msr2/setup/zones-ha.md
+                  - HLK Radar Tool App: homey/products/msr2/setup/zones-hlk.md
+                  - mmWave Tuning Videos: homey/products/msr2/setup/mmwave-videos.md
               - Addons:
                 - Articulating Stand: homey/products/msr2/addons/adding-articulating-stand-to-msr-2.md
                 - CO<sub>2</sub> Addon: homey/products/msr2/addons/adding-co2-to-msr-2.md

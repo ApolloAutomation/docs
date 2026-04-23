@@ -98,11 +98,11 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **g0-g8 Move & Still Threshold**
 
-    * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/)
+    * Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.com/products/msr2/setup/zones-ha/)
 
     **ld2410 Bluetooth**
 
-    * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/).
+    * This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/).
 
     **Radar Zone 1 Start**
 
@@ -140,7 +140,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Radar Engineering Mode**
 
-    * Used to enable g0-g8 threshold sliders for <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/" target="_blank" rel="noopener">mmWave tuning</a>.
+    * Used to enable g0-g8 threshold sliders for <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-ha/" target="_blank" rel="noopener">mmWave tuning</a>.
 
     **Radar Timeout**
 
