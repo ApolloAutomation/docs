@@ -192,7 +192,7 @@ nav:
                 - mmWave Tuning Videos: products/msr2/calibrating-and-updating/mmwave-videos.md
               - Additional Info:
                 - General Tips: products/msr2/setup/msr2-general-tips.md
-                - Sensor Definitons: products/msr2/setup/msr2-sensor-definitions.md
+                - Sensor Definitions: products/msr2/setup/msr2-sensor-definitions.md
               - Addons:
                 - Articulating Stand: products/msr2/addons/adding-articulating-stand-to-msr-2.md
                 - CO<sub>2</sub> Addon: products/msr2/addons/adding-co2-to-msr-2.md
@@ -218,7 +218,7 @@ nav:
                 - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
               - Additional Info:
                 - General Tips: products/mtr1/setup/general-tips.md
-                - Sensor Definitons: products/mtr1/setup/sensor-definitions.md
+                - Sensor Definitions: products/mtr1/setup/sensor-definitions.md
               - Addons:
                 - Articulating Stand: products/mtr1/addons/adding-articulating-stand-to-mtr-1.md
                 - CO<sub>2</sub> Addon: products/mtr1/addons/adding-co2-to-mtr-1.md
@@ -238,13 +238,13 @@ nav:
               - Introduction: products/rpro1/introduction.md
               - FAQ: products/rpro1/faq.md
               - Getting Started: products/general/setup/getting-started-rpro1.md
-              - Radar Tuning:
-                - Home Assistant: products/rpro1/calibrating-and-updating/zones-ha.md
-                - HLK Radar Tool App: products/rpro1/calibrating-and-updating/zones-hlk.md
+              - Zone Configuration:
+                - Home Assistant: products/rpro1/setup/zones-ha.md
+                - HLK Radar Tool App: products/rpro1/setup/zones-hlk.md
               - Additional Info:
                 - Switch Firmware: products/rpro1/setup/rpro1-switch-firmware.md
                 - General Tips: products/rpro1/setup/rpro1-general-tips.md
-                - Sensor Definitons: products/rpro1/setup/rpro1-sensor-definitions.md
+                - Sensor Definitions: products/rpro1/setup/rpro1-sensor-definitions.md
               - Addons:
                 - CO<sub>2</sub> Addon: products/rpro1/addons/adding-co2-to-r-pro-1.md
                 - 1-Gang Box Mount: products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
@@ -262,7 +262,7 @@ nav:
               - Getting Started: products/general/setup/getting-started-msr1.md
               - Additional Info:
                 - General Tips: products/msr1/setup/general-tips.md
-                - Sensor Definitons: products/msr1/setup/sensor-definitions.md
+                - Sensor Definitions: products/msr1/setup/sensor-definitions.md
                 - Radar Tuning:
                   - Home Assistant: products/msr1/calibrating-and-updating/zones-ha.md
                   - HLK Radar Tool App: products/msr1/calibrating-and-updating/zones-hlk.md
@@ -285,7 +285,7 @@ nav:
               - Getting Started: products/general/setup/getting-started-air1.md
               - Additional Info:
                 - General Tips: products/air1/setup/general-tips.md
-                - Sensor Definitons: products/air1/setup/sensor-definitions.md
+                - Sensor Definitions: products/air1/setup/sensor-definitions.md
                 - Prevent Sleep: products/air1/additional-info/prevent-sleep.md
               - Addons:
                 - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
@@ -307,7 +307,7 @@ nav:
               - Getting Started: products/general/setup/getting-started-temp1.md
               - Additional Info:
                 - General Tips: products/temp1/setup/temp1-general-tips.md
-                - Sensor Definitons: products/temp1/setup/temp1-sensor-definitions.md
+                - Sensor Definitions: products/temp1/setup/temp1-sensor-definitions.md
                 - Prevent Sleep: products/temp1/additional-info/prevent-sleep.md
                 - How To Wake Up Your Sensor: products/temp1/battery-sensors/wake-up-battery-sensor.md
                 - Keep Your Sensor Awake With HA Helper: products/temp1/battery-sensors/awake-ha-helper.md
@@ -333,7 +333,7 @@ nav:
               - Getting Started: products/temp1b/setup/getting-started-temp1.md
               - Additional Info:
                 - General Tips: products/temp1b/setup/temp1-general-tips.md
-                - Sensor Definitons: products/temp1b/setup/temp1b-sensor-definitions.md
+                - Sensor Definitions: products/temp1b/setup/temp1b-sensor-definitions.md
                 - Prevent Sleep: products/temp1b/additional-info/prevent-sleep.md
                 - How To Wake Up Your Sensor: products/temp1b/battery-sensors/wake-up-battery-sensor.md
                 - Keep Your Sensor Awake With HA Helper: products/temp1b/battery-sensors/awake-ha-helper.md
@@ -361,7 +361,7 @@ nav:
               - Getting Started: products/general/setup/getting-started-plt1.md
               - Additional Info:
                 - General Tips: products/plt1/general-tips.md
-                - Sensor Definitons: products/plt1/setup/plt1-sensor-definitions.md
+                - Sensor Definitions: products/plt1/setup/plt1-sensor-definitions.md
                 - Calibrating Soil Moisture: products/plt1/calibrate-plt1.md
                 - Prevent Sleep: products/plt1/additional-info/prevent-sleep.md
               - Examples:
@@ -379,7 +379,7 @@ nav:
               - Getting Started: products/plt1b/setup/getting-started-plt1.md
               - Additional Info:
                 - General Tips: products/plt1b/general-tips.md
-                - Sensor Definitons: products/plt1b/setup/plt1b-sensor-definitions.md
+                - Sensor Definitions: products/plt1b/setup/plt1b-sensor-definitions.md
                 - Calibrating Soil Moisture: products/plt1b/calibrate-plt1.md
                 - Prevent Sleep: products/plt1b/additional-info/prevent-sleep.md
                 - How To Wake Up Your Sensor: products/plt1b/battery-sensors/wake-up-battery-sensor.md
@@ -439,7 +439,7 @@ nav:
           - Getting Started: products/general/setup/getting-started-pump1.md
           - Additional Info:
             - General Tips: products/pump1/setup/pump1-general-tips.md
-            - Sensor Definitons: products/pump1/setup/pump1-sensor-definitions.md
+            - Sensor Definitions: products/pump1/setup/pump1-sensor-definitions.md
           - Addons:
             - Bottle Addon: products/pump1/addons/attaching-bottle-to-pump-1.md
             - Inlet and Outlet Tube Addons: products/pump1/addons/attaching-tubes-to-pump-1.md
@@ -455,7 +455,7 @@ nav:
           - Getting Started: products/btn1/setup/getting-started.md
           - Additional Info:
             - General Tips: products/btn1/setup/general-tips.md
-            - Sensor Definitons: products/btn1/setup/sensor-definitions.md
+            - Sensor Definitions: products/btn1/setup/sensor-definitions.md
             - Prevent Sleep: products/btn1/additional-info/prevent-sleep.md
           - Examples:
             - Blueprint: products/btn1/examples/blueprint.md
@@ -534,7 +534,7 @@ nav:
               - Getting Started: homey/products/general/setup/getting-started-msr2.md
               - Additional Info:
                 - General Tips: homey/products/msr2/setup/msr2-general-tips.md
-                - Sensor Definitons: homey/products/msr2/setup/msr2-sensor-definitions.md
+                - Sensor Definitions: homey/products/msr2/setup/msr2-sensor-definitions.md
                 - Radar Tuning:
                   - Home Assistant: homey/products/msr2/calibrating-and-updating/zones-ha.md
                   - HLK Radar Tool App: homey/products/msr2/calibrating-and-updating/zones-hlk.md
@@ -562,10 +562,8 @@ nav:
               - Getting Started: homey/products/general/setup/getting-started-mtr1.md
               - Additional Info:
                 - General Tips: homey/products/mtr1/setup/general-tips.md
-                - Sensor Definitons: homey/products/mtr1/setup/sensor-definitions.md
-                - Zone Configuration:
-                  - Home Assistant: homey/products/mtr1/setup/zones-ha.md
-                  - HLK Radar Tool App: homey/products/mtr1/setup/zones-hlk.md
+                - Sensor Definitions: homey/products/mtr1/setup/sensor-definitions.md
+                - Zone Configuration: homey/products/mtr1/setup/zones-hlk.md
               - Addons:
                 - Articulating Stand: homey/products/mtr1/addons/adding-articulating-stand-to-mtr-1.md
                 - CO<sub>2</sub> Addon: homey/products/mtr1/addons/adding-co2-to-mtr-1.md
@@ -584,13 +582,11 @@ nav:
           - R-PRO-1:
               - Introduction: homey/products/rpro1/introduction.md
               - FAQ: homey/products/rpro1/faq.md
-              - Radar Tuning:
-                - Home Assistant: homey/products/rpro1/calibrating-and-updating/zones-ha.md
-                - HLK Radar Tool App: homey/products/rpro1/calibrating-and-updating/zones-hlk.md
+              - Zone Configuration: homey/products/rpro1/setup/zones-hlk.md
               - Additional Info:
                 - Switch Firmware: homey/products/rpro1/setup/rpro1-switch-firmware.md
                 - General Tips: homey/products/rpro1/setup/rpro1-general-tips.md
-                - Sensor Definitons: homey/products/rpro1/setup/rpro1-sensor-definitions.md
+                - Sensor Definitions: homey/products/rpro1/setup/rpro1-sensor-definitions.md
               - Addons:
                 - CO<sub>2</sub> Addon: homey/products/rpro1/addons/adding-co2-to-r-pro-1.md
                 - 1-Gang Box Mount: homey/products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
@@ -609,7 +605,7 @@ nav:
               - Getting Started: homey/products/general/setup/getting-started-air1.md
               - Additional Info:
                 - General Tips: homey/products/air1/setup/general-tips.md
-                - Sensor Definitons: homey/products/air1/setup/sensor-definitions.md
+                - Sensor Definitions: homey/products/air1/setup/sensor-definitions.md
                 - Prevent Sleep: homey/products/air1/setup/prevent-sleep.md
               - Addons:
                 - CO<sub>2</sub> Addon: homey/products/air1/addons/adding-co2-to-air-1.md
@@ -628,7 +624,7 @@ nav:
               - FAQ: homey/products/temp1/faq.md
               - Getting Started: homey/products/temp1/setup/getting-started-temp1.md
               - Additional Info:
-                - Sensor Definitons: homey/products/temp1/setup/temp1-sensor-definitions.md
+                - Sensor Definitions: homey/products/temp1/setup/temp1-sensor-definitions.md
                 - Prevent Sleep: homey/products/temp1/setup/prevent-sleep.md
                 - How To Wake Up Your Sensor: homey/products/temp1/battery-sensors/wake-up-battery-sensor.md
                 - Sensor Connection Check: homey/products/temp1/battery-sensors/sensor-connection-check.md
@@ -652,7 +648,7 @@ nav:
               - FAQ: homey/products/temp1b/faq.md
               - Getting Started: homey/products/temp1b/setup/getting-started-temp1.md
               - Additional Info:
-                - Sensor Definitons: homey/products/temp1b/setup/temp1b-sensor-definitions.md
+                - Sensor Definitions: homey/products/temp1b/setup/temp1b-sensor-definitions.md
                 - Prevent Sleep: homey/products/temp1b/setup/prevent-sleep.md
                 - How To Wake Up Your Sensor: homey/products/temp1b/battery-sensors/wake-up-battery-sensor.md
                 - Insert Battery: homey/products/temp1b/setup/insert-battery.md
@@ -679,7 +675,7 @@ nav:
               - Getting Started: homey/products/general/setup/getting-started-plt1.md
               - Additional Info:
                 - General Tips: homey/products/plt1/general-tips.md
-                - Sensor Definitons: homey/products/plt1/setup/plt1-sensor-definitions.md
+                - Sensor Definitions: homey/products/plt1/setup/plt1-sensor-definitions.md
                 - Calibrating Soil Moisture: homey/products/plt1/calibrate-plt1.md
                 - Prevent Sleep: homey/products/plt1/setup/prevent-sleep.md
               - Reviews: homey/products/plt1/reviews.md
@@ -696,7 +692,7 @@ nav:
               - Getting Started: homey/products/plt1b/setup/getting-started-plt1.md
               - Additional Info:
                 - General Tips: homey/products/plt1b/general-tips.md
-                - Sensor Definitons: homey/products/plt1b/setup/plt1b-sensor-definitions.md
+                - Sensor Definitions: homey/products/plt1b/setup/plt1b-sensor-definitions.md
                 - Calibrating Soil Moisture: homey/products/plt1b/calibrate-plt1.md
                 - Prevent Sleep: homey/products/plt1b/setup/prevent-sleep.md
                 - How To Wake Up Your Sensor: homey/products/plt1b/battery-sensors/wake-up-battery-sensor.md
@@ -756,7 +752,7 @@ nav:
           - FAQ: homey/products/pump1/faq.md
           - Additional Info:
             - General Tips: homey/products/pump1/setup/pump1-general-tips.md
-            - Sensor Definitons: homey/products/pump1/setup/pump1-sensor-definitions.md
+            - Sensor Definitions: homey/products/pump1/setup/pump1-sensor-definitions.md
           - Addons:
             - Bottle Addon: homey/products/pump1/addons/attaching-bottle-to-pump-1.md
             - Inlet and Outlet Tube Addons: homey/products/pump1/addons/attaching-tubes-to-pump-1.md
@@ -773,7 +769,7 @@ nav:
           - Getting Started: homey/products/btn1/setup/getting-started.md
           - Additional Info:
             - General Tips: homey/products/btn1/setup/general-tips.md
-            - Sensor Definitons: homey/products/btn1/setup/sensor-definitions.md
+            - Sensor Definitions: homey/products/btn1/setup/sensor-definitions.md
             - Prevent Sleep: homey/products/btn1/additional-info/prevent-sleep.md
           - Addons:
             - BTN-1 Addon: homey/products/btn1/addons/btn1-addon.md
