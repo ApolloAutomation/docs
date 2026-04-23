@@ -44,7 +44,7 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 
 10\. **How do I adjust the sensitivity of the presence detection?**
 
-* Sensitivity adjustments can be made through the device's webserver which you can reach from its ip address or hostname.local in a browser, or <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant Device Page</a>, or <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">HLK Radar Tool app </a>allowing you to fine-tune the radar to avoid false positives or to increase its sensitivity for more precise detections.
+* Sensitivity adjustments can be made through the device's webserver which you can reach from its ip address or hostname.local in a browser, or <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-ha/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant Device Page</a>, or <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">HLK Radar Tool app </a>allowing you to fine-tune the radar to avoid false positives or to increase its sensitivity for more precise detections.
 
 11\. **Does the mmWave sensor detect through walls?**
 
@@ -56,7 +56,7 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 
 13\. **Can the R-PRO-1 track the exact location of people in a room?**
 
-* Yes with the LD2450 mmWave sensor, it is able to reliably detect people in x/y coordinate 'zones' that you setup <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">here</a>.
+* Yes with the LD2450 mmWave sensor, it is able to reliably detect people in x/y coordinate 'zones' that you setup <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">here</a>.
 * Yes, the R-PRO-1 uses multi-zone mmWave radar technology to track the approximate location of people within a room. It can determine whether someone is sitting, walking, or standing in different areas of the space.
 
 14\. **What kind of power supply is required for the R-PRO-1?**

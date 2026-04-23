@@ -230,7 +230,7 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **LD2412 Bluetooth**
 
-    * This allows you to turn on the LD2412 Bluetooth module. This allows you to connect to the HLK Radar Tool phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/).
+    * This allows you to turn on the LD2412 Bluetooth module. This allows you to connect to the HLK Radar Tool phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/).
 
     **LD2412 Factory Reset**
 
@@ -258,7 +258,7 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **LD2450 Bluetooth**
 
-    * This allows you to turn on the LD2450 Bluetooth module. This allows you to connect to the HLK Radar Tool phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/).
+    * This allows you to turn on the LD2450 Bluetooth module. This allows you to connect to the HLK Radar Tool phone app [used for tuning](https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/).
 
     **LD2450 Factory Reset**
 
@@ -354,7 +354,7 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **Radar Engineering Mode**
 
-    * Used to enable g0-g13 threshold sliders for <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/" target="_blank" rel="noopener">mmWave tuning</a>.
+    * Used to enable g0-g13 threshold sliders for <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-ha/" target="_blank" rel="noopener">mmWave tuning</a>.
 
     ???+ info "Radar Gate Distance Tuning and Timeout"
 

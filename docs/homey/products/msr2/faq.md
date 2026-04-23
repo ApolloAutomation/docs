@@ -36,7 +36,7 @@
 
 10\. **How do I adjust the sensitivity of the presence detection?**
 
-* Sensitivity adjustments can be made through the <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-ha/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant Device Page</a> or <a href="https://wiki.apolloautomation.com/products/msr2/calibrating-and-updating/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">HLK Radar Tool app </a>allowing you to fine-tune the radar to avoid false positives or to increase its sensitivity for more precise detections.
+* Sensitivity adjustments can be made through the <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-ha/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant Device Page</a> or <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">HLK Radar Tool app </a>allowing you to fine-tune the radar to avoid false positives or to increase its sensitivity for more precise detections.
 
 11\. **Does the mmWave sensor detect through walls?**
 
