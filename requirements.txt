@@ -1,0 +1,6 @@
+mkdocs
+mkdocs-material[imaging]
+mkdocs-glightbox
+mkdocs-redirects
+pillow
+cairosvg
