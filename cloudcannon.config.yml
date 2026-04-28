@@ -23,6 +23,8 @@ collections_config:
       exclude:
         - /schema
         - /schema.json
+        - /assets
+        - /stylesheets
     name: Documentation
     icon: notes
     disable_add: false
