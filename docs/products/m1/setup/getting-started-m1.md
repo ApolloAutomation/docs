@@ -12,58 +12,108 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
 ![](/assets/m1-matrix-attach-controller.webp)
 
-#### Connect to Wi-Fi
+#### Choose Your Firmware
 
-Your device is ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
+The M-1 ships with [WLED-MM](https://github.com/MoonModules/WLED) (WLED MoonModules) pre-flashed and ready to go. If you'd rather run [hub75-studio](https://github.com/pavlov-net/hub75-studio), an ESPHome firmware tailored for the M-1, switch to the **ESPHome** tab below for the alternative setup walkthrough.
 
-1\. Plug in the USB-C power in and the M-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select Apollo M-1. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> or <a href="http://wled.me" target="_blank" rel="noreferrer nofollow noopener">http://wled.me</a> and you should be prompted with the same image seen below.
+=== "WLED-MM"
 
-![](/assets/m-1-getting-started.png)
+    ##### Connect to Wi-Fi
 
-2\. Tap on **WI-FI Settings** then input your Wi-Fi SSID where it shows **Your\_Network** and input your Wi-Fi password directly below it and then click **Save and Connect**.
+    Your device is ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
 
-!!! tip "You can also set your hostname here such as apollo-led-matrix"
+    1\. Plug in the USB-C power in and the M-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select Apollo M-1. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> or <a href="http://wled.me" target="_blank" rel="noreferrer nofollow noopener">http://wled.me</a> and you should be prompted with the same image seen below.
 
-    Later, you can use this to access your device at http://apollo-led-matrix.local in a browser instead of using the IP address!
+    ![](/assets/m-1-getting-started.png)
 
-#### Post-Connect Setup
+    2\. Tap on **WI-FI Settings** then input your Wi-Fi SSID where it shows **Your\_Network** and input your Wi-Fi password directly below it and then click **Save and Connect**.
 
-!!! warning "Please complete setup by changing a few settings!"
+    !!! tip "You can also set your hostname here such as apollo-led-matrix"
 
-    The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please follow the two steps below to finish setting up your device!
+        Later, you can use this to access your device at http://apollo-led-matrix.local in a browser instead of using the IP address!
 
-1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**. Make sure to select **Hub75Matrix** is set to **64x64**.
+    ##### Post-Connect Setup
 
-![](/assets/m-1-led-settings.gif)
+    !!! warning "Please complete setup by changing a few settings!"
 
-2\. Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel Dimensions** to **64 x 64** and click **Save**.
+        The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please follow the two steps below to finish setting up your device!
 
-![](/assets/m-1-2d-settings.gif)
+    1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**. Make sure to select **Hub75Matrix** is set to **64x64**.
 
-#### Join to Home Assistant
+    ![](/assets/m-1-led-settings.gif)
 
-!!! tip "Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!"
+    2\. Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel Dimensions** to **64 x 64** and click **Save**.
 
-    Please follow the steps below to get your device added to Home Assistant!
+    ![](/assets/m-1-2d-settings.gif)
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and it will automatically be discovered.
+    ##### Join to Home Assistant
 
-![](/assets/m-1-setup-wled-integration-add-device.png)
+    !!! tip "Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!"
 
-2\. Click Add and then Click Submit.
+        Please follow the steps below to get your device added to Home Assistant!
 
-![](/assets/m-1-setup-wled-integration-click-submit.png)
+    1\. Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and it will automatically be discovered.
 
-3\. Give it a name and a location and then click Skip and Finish.
+    ![](/assets/m-1-setup-wled-integration-add-device.png)
 
-![](/assets/m-1-setup-wled-integration-name-location-finish.png)
+    2\. Click Add and then Click Submit.
 
-4\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/wled" target="_blank" rel="noreferrer nofollow noopener">WLED Integrations page</a> and click on Apollo M-1 below your M-1 LED Matrix.
+    ![](/assets/m-1-setup-wled-integration-click-submit.png)
 
-![](/assets/m-1-setup-wled-integration-click-device-2.png)
+    3\. Give it a name and a location and then click Skip and Finish.
 
-5\. From here you can control your M-1 LED Matrix by changing the color, selecting presets, and more!
+    ![](/assets/m-1-setup-wled-integration-name-location-finish.png)
 
-![](/assets/m-1-setup-wled-integration-test-device.png)
+    4\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/wled" target="_blank" rel="noreferrer nofollow noopener">WLED Integrations page</a> and click on Apollo M-1 below your M-1 LED Matrix.
 
-[Click here to learn how to add custom GIFs to your M-1!](https://wiki.apolloautomation.com/products/m1/examples/add-gifs-to-wled/){                  .md-button .md-button--primary }
+    ![](/assets/m-1-setup-wled-integration-click-device-2.png)
+
+    5\. From here you can control your M-1 LED Matrix by changing the color, selecting presets, and more!
+
+    ![](/assets/m-1-setup-wled-integration-test-device.png)
+
+=== "ESPHome"
+
+    ##### Flash the firmware
+
+    !!! success "Use the Rev6 build"
+
+        All M-1 units currently being sold are Rev6. On the <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">hub75-studio installer</a>, select the **Rev6** firmware before clicking **Connect**.
+
+    1\. Open <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">https://pavlov-net.github.io/hub75-studio/</a> in Chrome, Edge, or another Chromium-based browser.
+
+    2\. Pick the **Rev6** firmware, click **Connect**, select the M-1's COM port, and follow the installer prompts to flash.
+
+    ![](/assets/m-1-esphome-flash.gif)
+
+    ##### Confirm the M-1 BIOS screen
+
+    Once the firmware finishes installing, the panel displays the **M-1 BIOS** splash showing the CPU, RAM, and the last 6 characters of the controller's MAC address. Seeing this screen confirms the firmware booted successfully. Take note of those 6 characters, you'll need them in the next step.
+
+    ![](/assets/m-1-esphome-bios-screen.png)
+
+    ##### Connect to Wi-Fi
+
+    1\. On your phone, open Wi-Fi settings and join the network **apollo-m1-r6-XXXXXX**, where the last 6 characters match the MAC suffix shown on the BIOS screen.
+
+    2\. The captive portal opens automatically. Either pick your home network from the scanned list and enter the password, or scroll down and type your SSID and password manually.
+
+    3\. Tap **Save**. The M-1 reboots and joins your home network.
+
+    ![](/assets/m-1-esphome-captive-portal.png)
+
+    ##### Join to Home Assistant
+
+    !!! tip "Your device should be auto-discovered by Home Assistant using the ESPHome Integration as shown below!"
+
+        Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and accept the discovery prompt for your M-1.
+
+    ![](/assets/m-1-esphome-ha-discovery.gif)
+
+    ##### Optional: Adopt into ESPHome Device Builder
+
+    !!! tip "Advanced, only needed if you want to edit YAML"
+
+        You can adopt the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on to customize its YAML configuration (custom effects, additional sensors, etc.). This is **not required** for normal use, skip this section unless you specifically want to edit the firmware configuration.
+
+[Click here to learn how to add custom GIFs to your M-1!](https://wiki.apolloautomation.com/products/m1/examples/add-gifs-to-wled/){: .md-button .md-button--primary }
