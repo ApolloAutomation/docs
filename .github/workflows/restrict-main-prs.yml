@@ -1,0 +1,14 @@
+name: Restrict PRs to main
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  check-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify source is dev
+        run: |
+          if [ "${{ github.head_ref }}" != "dev" ]; then
+            echo "::error::PRs to main must come from 'dev'. Got: ${{ github.head_ref }}"
+            exit 1
+          fi
