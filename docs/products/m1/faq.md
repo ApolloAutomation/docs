@@ -12,7 +12,7 @@ description: Frequently asked questions about the M-1 controller.
 
 3\. **What is the maximum power output of the M-1?**
 
-* The LED-1 is able to safely offer 3 Amps of power using 5 Volts when using the usb-c cable and stock power supply.
+* The M-1 is able to safely offer 3 Amps of power using 5 Volts when using the usb-c cable and stock power supply.
 
 4\. **Scrolling Text does not show as an effect, what am I doing wrong?**
 
