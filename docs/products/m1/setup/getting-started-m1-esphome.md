@@ -42,7 +42,7 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 
 ![](../../../assets/m-1-esphome-firmware-connect-wifi.webp)
 
-3\. Tap **Save**. The M-1 reboots and joins your home network.
+3\. Tap **Save**. The M-1 reboots and joins your home network. Once you see the screen with the clock move on to the next section to join to Home Assistant via the ESPHome integration!
 
 ![](../../../assets/m-1-esphome-firmware-wifi-connected.jpg)
 
@@ -52,6 +52,10 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 
     Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and accept the discovery prompt for your M-1.
 
+Your device should be auto-discovered by Home Assistant using the ESPHome Integration as shown below!
+
+Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and accept the discovery prompt for your M-1.
+
 ![](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
 
 #### Optional: Adopt into ESPHome Device Builder
@@ -59,3 +63,7 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 !!! tip "Advanced, only needed if you want to edit YAML"
 
     You can adopt the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on to customize its YAML configuration (custom effects, additional sensors, etc.). This is **not required** for normal use, skip this section unless you specifically want to edit the firmware configuration.
+
+You can adopt the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on to customize its YAML configuration (custom effects, additional sensors, etc.). This is **not required** for normal use, skip this section unless you specifically want to edit the firmware configuration.
+
+&nbsp;
