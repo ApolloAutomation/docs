@@ -138,7 +138,9 @@ markdown_extensions:
       alternate_style: true
 #brandon added this 4/27/25 - allows for content tabs like iphone vs android
       # use a slugifier so IDs come from your tab titles
-      slugify: !!python/name:pymdownx.slugs.uslugify
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
       # word separator (defaults to "-")
       separator: "-"
       # whether to prefix with the parent header’s slug (optional)
