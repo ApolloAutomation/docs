@@ -18,7 +18,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
 #### Flash the firmware
 
-!!! success "Use the Rev6 build"
+!!! success "Use the Rev6 build unless you have an older M-1 Controller!"
 
     All M-1 units currently being sold are Rev6. On the <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">hub75-studio installer</a>, select the **Rev6** firmware before clicking **Connect**.
 
@@ -26,13 +26,13 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
 2\. Pick the **Rev6** firmware, click **Connect**, select the M-1's COM port, and follow the installer prompts to flash.
 
-![](/assets/m-1-esphome-flash.gif)
+![](../../../assets/m-1-esphome-install-firmware.gif)
 
-#### Confirm the M-1 BIOS screen
+3\. Confirm the M-1 BIOS screen
 
-Once the firmware finishes installing, the panel displays the **M-1 BIOS** splash showing the CPU, RAM, and the last 6 characters of the controller's MAC address. Seeing this screen confirms the firmware booted successfully. Take note of those 6 characters, you'll need them in the next step.
+Once the firmware finishes installing, the panel displays the **M-1 BIOS** splash showing the CPU, RAM, and the last 6 characters of the controller's MAC address. Seeing this screen confirms the firmware installed successfully.
 
-![](/assets/m-1-esphome-bios-screen.png)
+![](../../../assets/m-1-esphome-firmware-installed-no-wifi.jpg)
 
 #### Connect to Wi-Fi
 
@@ -40,9 +40,11 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 
 2\. The captive portal opens automatically. Either pick your home network from the scanned list and enter the password, or scroll down and type your SSID and password manually.
 
+![](../../../assets/m-1-esphome-firmware-connect-wifi.webp)
+
 3\. Tap **Save**. The M-1 reboots and joins your home network.
 
-![](/assets/m-1-esphome-captive-portal.png)
+![](../../../assets/m-1-esphome-firmware-wifi-connected.jpg)
 
 #### Join to Home Assistant
 
@@ -50,7 +52,7 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 
     Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and accept the discovery prompt for your M-1.
 
-![](/assets/m-1-esphome-ha-discovery.gif)
+![](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
 
 #### Optional: Adopt into ESPHome Device Builder
 
