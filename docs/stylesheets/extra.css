@@ -39,6 +39,21 @@ article.md-typeset img {
   }
 }
 
+/* Responsive video embeds: scale to viewport, hold 16:9, cap at the
+   intrinsic 560px on wide screens. Authors keep using the existing
+   <div class="cms-embed"><iframe ...></iframe></div> markup. */
+article.md-typeset .cms-embed {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+}
+
+article.md-typeset .cms-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Custom song admonitions - rainbow colors with music note icon */
 :root {
   --md-admonition-icon--song-red: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');
