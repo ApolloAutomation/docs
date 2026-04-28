@@ -1,10 +1,14 @@
 ---
-title: Getting Started
-description: Getting started with your new M-1!
+title: Getting Started (WLED-MM)
+description: Getting started with your new M-1 running the stock WLED-MM firmware
 ---
-# Getting Started
+# Getting Started (WLED-MM)
 
-Congrats on your new M-1! Below we will go through steps to get you up and running in no time.
+!!! tip "Running ESPHome instead?"
+
+    If you flashed the [hub75-studio](https://github.com/pavlov-net/hub75-studio) ESPHome firmware, head to the [ESPHome Getting Started page](../getting-started-m1-esphome/) instead.
+
+Congrats on your new M-1! Below we will go through steps to get you up and running in no time on the stock WLED-MM firmware.
 
 #### Attach M-1 LED Controller
 
@@ -12,108 +16,58 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
 ![](/assets/m1-matrix-attach-controller.webp)
 
-#### Choose Your Firmware
+#### Connect to Wi-Fi
 
-The M-1 ships with [WLED-MM](https://github.com/MoonModules/WLED) (WLED MoonModules) pre-flashed and ready to go. If you'd rather run [hub75-studio](https://github.com/pavlov-net/hub75-studio), an ESPHome firmware tailored for the M-1, switch to the **ESPHome** tab below for the alternative setup walkthrough.
+Your device is ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
 
-=== "WLED-MM"
+1\. Plug in the USB-C power in and the M-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select Apollo M-1. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> or <a href="http://wled.me" target="_blank" rel="noreferrer nofollow noopener">http://wled.me</a> and you should be prompted with the same image seen below.
 
-    ##### Connect to Wi-Fi
+![](/assets/m-1-getting-started.png)
 
-    Your device is ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
+2\. Tap on **WI-FI Settings** then input your Wi-Fi SSID where it shows **Your\_Network** and input your Wi-Fi password directly below it and then click **Save and Connect**.
 
-    1\. Plug in the USB-C power in and the M-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select Apollo M-1. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> or <a href="http://wled.me" target="_blank" rel="noreferrer nofollow noopener">http://wled.me</a> and you should be prompted with the same image seen below.
+!!! tip "You can also set your hostname here such as apollo-led-matrix"
 
-    ![](/assets/m-1-getting-started.png)
+    Later, you can use this to access your device at http://apollo-led-matrix.local in a browser instead of using the IP address!
 
-    2\. Tap on **WI-FI Settings** then input your Wi-Fi SSID where it shows **Your\_Network** and input your Wi-Fi password directly below it and then click **Save and Connect**.
+#### Post-Connect Setup
 
-    !!! tip "You can also set your hostname here such as apollo-led-matrix"
+!!! warning "Please complete setup by changing a few settings!"
 
-        Later, you can use this to access your device at http://apollo-led-matrix.local in a browser instead of using the IP address!
+    The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please follow the two steps below to finish setting up your device!
 
-    ##### Post-Connect Setup
+1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**. Make sure to select **Hub75Matrix** is set to **64x64**.
 
-    !!! warning "Please complete setup by changing a few settings!"
+![](/assets/m-1-led-settings.gif)
 
-        The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please follow the two steps below to finish setting up your device!
+2\. Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel Dimensions** to **64 x 64** and click **Save**.
 
-    1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**. Make sure to select **Hub75Matrix** is set to **64x64**.
+![](/assets/m-1-2d-settings.gif)
 
-    ![](/assets/m-1-led-settings.gif)
+#### Join to Home Assistant
 
-    2\. Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel Dimensions** to **64 x 64** and click **Save**.
+!!! tip "Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!"
 
-    ![](/assets/m-1-2d-settings.gif)
+    Please follow the steps below to get your device added to Home Assistant!
 
-    ##### Join to Home Assistant
+1\. Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and it will automatically be discovered.
 
-    !!! tip "Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!"
+![](/assets/m-1-setup-wled-integration-add-device.png)
 
-        Please follow the steps below to get your device added to Home Assistant!
+2\. Click Add and then Click Submit.
 
-    1\. Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and it will automatically be discovered.
+![](/assets/m-1-setup-wled-integration-click-submit.png)
 
-    ![](/assets/m-1-setup-wled-integration-add-device.png)
+3\. Give it a name and a location and then click Skip and Finish.
 
-    2\. Click Add and then Click Submit.
+![](/assets/m-1-setup-wled-integration-name-location-finish.png)
 
-    ![](/assets/m-1-setup-wled-integration-click-submit.png)
+4\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/wled" target="_blank" rel="noreferrer nofollow noopener">WLED Integrations page</a> and click on Apollo M-1 below your M-1 LED Matrix.
 
-    3\. Give it a name and a location and then click Skip and Finish.
+![](/assets/m-1-setup-wled-integration-click-device-2.png)
 
-    ![](/assets/m-1-setup-wled-integration-name-location-finish.png)
+5\. From here you can control your M-1 LED Matrix by changing the color, selecting presets, and more!
 
-    4\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/wled" target="_blank" rel="noreferrer nofollow noopener">WLED Integrations page</a> and click on Apollo M-1 below your M-1 LED Matrix.
-
-    ![](/assets/m-1-setup-wled-integration-click-device-2.png)
-
-    5\. From here you can control your M-1 LED Matrix by changing the color, selecting presets, and more!
-
-    ![](/assets/m-1-setup-wled-integration-test-device.png)
-
-=== "ESPHome"
-
-    ##### Flash the firmware
-
-    !!! success "Use the Rev6 build"
-
-        All M-1 units currently being sold are Rev6. On the <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">hub75-studio installer</a>, select the **Rev6** firmware before clicking **Connect**.
-
-    1\. Open <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">https://pavlov-net.github.io/hub75-studio/</a> in Chrome, Edge, or another Chromium-based browser.
-
-    2\. Pick the **Rev6** firmware, click **Connect**, select the M-1's COM port, and follow the installer prompts to flash.
-
-    ![](/assets/m-1-esphome-flash.gif)
-
-    ##### Confirm the M-1 BIOS screen
-
-    Once the firmware finishes installing, the panel displays the **M-1 BIOS** splash showing the CPU, RAM, and the last 6 characters of the controller's MAC address. Seeing this screen confirms the firmware booted successfully. Take note of those 6 characters, you'll need them in the next step.
-
-    ![](/assets/m-1-esphome-bios-screen.png)
-
-    ##### Connect to Wi-Fi
-
-    1\. On your phone, open Wi-Fi settings and join the network **apollo-m1-r6-XXXXXX**, where the last 6 characters match the MAC suffix shown on the BIOS screen.
-
-    2\. The captive portal opens automatically. Either pick your home network from the scanned list and enter the password, or scroll down and type your SSID and password manually.
-
-    3\. Tap **Save**. The M-1 reboots and joins your home network.
-
-    ![](/assets/m-1-esphome-captive-portal.png)
-
-    ##### Join to Home Assistant
-
-    !!! tip "Your device should be auto-discovered by Home Assistant using the ESPHome Integration as shown below!"
-
-        Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and accept the discovery prompt for your M-1.
-
-    ![](/assets/m-1-esphome-ha-discovery.gif)
-
-    ##### Optional: Adopt into ESPHome Device Builder
-
-    !!! tip "Advanced, only needed if you want to edit YAML"
-
-        You can adopt the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on to customize its YAML configuration (custom effects, additional sensors, etc.). This is **not required** for normal use, skip this section unless you specifically want to edit the firmware configuration.
+![](/assets/m-1-setup-wled-integration-test-device.png)
 
 [Click here to learn how to add custom GIFs to your M-1!](https://wiki.apolloautomation.com/products/m1/examples/add-gifs-to-wled/){: .md-button .md-button--primary }
