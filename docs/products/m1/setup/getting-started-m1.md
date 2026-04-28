@@ -116,4 +116,4 @@ The M-1 ships with [WLED-MM](https://github.com/MoonModules/WLED) (WLED MoonModu
 
         You can adopt the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on to customize its YAML configuration (custom effects, additional sensors, etc.). This is **not required** for normal use, skip this section unless you specifically want to edit the firmware configuration.
 
-[Click here to learn how to add custom GIFs to your M-1!](https://wiki.apolloautomation.com/products/m1/examples/add-gifs-to-wled/){                  .md-button .md-button--primary }
+[Click here to learn how to add custom GIFs to your M-1!](https://wiki.apolloautomation.com/products/m1/examples/add-gifs-to-wled/){: .md-button .md-button--primary }
