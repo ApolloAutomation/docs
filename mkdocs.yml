@@ -156,6 +156,9 @@ markdown_extensions:
 #brandon added this 3/26/25
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 copyright: |
   &copy; 2026 <a href="https://github.com/ApolloAutomation"  target="_blank" rel="noopener">Apollo Automation LLC</a>
