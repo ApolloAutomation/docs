@@ -114,4 +114,6 @@ The <a href="https://github.com/stuartparmenter/media-proxy" target="_blank" rel
 
 ![](../../../assets/m-1-esphome-media-proxy-confirm-working.gif)
 
+![](../../../assets/matrix-gif-example.gif)
+
 [Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){ .md-button .md-button--primary }
