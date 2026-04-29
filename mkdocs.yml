@@ -466,6 +466,7 @@ nav:
             - Getting Started: products/m1/setup/getting-started-m1-esphome.md
             - Reflash: products/m1/troubleshooting/m1-reflash-esphome.md
             - Examples:
+              - Media Proxy: products/m1/examples/media-proxy.md
               - SendSpin: products/m1/examples/sendspin.md
           - Reviews: products/m1/m1-reviews.md
       - PUMP-1:
