@@ -64,6 +64,32 @@ Head to the <a href="http://homeassistant.local:8123/config/integrations" target
 
     You can adopt the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on to customize its YAML configuration (custom effects, additional sensors, etc.). This is **not required** for normal use, skip this section unless you specifically want to edit the firmware configuration.
 
-You can adopt the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on to customize its YAML configuration (custom effects, additional sensors, etc.). This is **not required** for normal use, skip this section unless you specifically want to edit the firmware configuration.
+1\. Install the ESPHome Device Builder inside Home Assistant OS by clicking the button below. Make sure to toggle on start on Boot, Watchdog, and Show in sidebar.
+
+2\. Navigate to the ESPHome Device Builder addon by clicking the Open Web UI button on the far right.
+
+![](../../../assets/m-1-esphome-device-builder-open.gif)
+
+3\. Click the Secrets button in the top right and confirm your Wi-Fi SSID and password are configured as shown below. Click Save in the top right once finished.
+
+![](../../../assets/esphome-device-builder-click-secrets.gif)
+
+```yaml
+# Your Wi-Fi SSID and password
+wifi_ssid: "your-wifi-ssid-here"
+wifi_password: "your-wifi-password-here"
+```
+
+3\. Notice the Discovered 1 device banner at the top and click the SHOW button in the far top right to show your newly discovered device.
+
+![](../../../assets/m-1-esphome-device-builder-show-discovered.gif)
+
+4\. Click Take Control and leave the name as is and click Take Control again. Finally, click Install to begin the installation process. This will take some time depending on how fast your device running Home Assistant is. Raspberry pi, HA Green, etc will take much longer than a mini pc.
+
+![](../../../assets/esphome-device-builder-take-control.gif)
+
+5\. Once you see INFO OTA successful you can click stop in the bottom right and you're finished!
+
+![](../../../assets/esphome-device-builder-finished-installing.gif)
 
 &nbsp;
