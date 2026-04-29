@@ -58,7 +58,9 @@ Head to the <a href="http://homeassistant.local:8123/config/integrations" target
 
 ![](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
 
-#### Optional: Adopt into ESPHome Device Builder
+#### Optional Features
+
+###### Adopt into ESPHome Device Builder
 
 !!! tip "Advanced, only needed if you want to edit YAML"
 
@@ -92,4 +94,24 @@ wifi_password: "your-wifi-password-here"
 
 ![](../../../assets/esphome-device-builder-finished-installing.gif)
 
-&nbsp;
+###### Media Proxy
+
+The <a href="https://github.com/stuartparmenter/media-proxy" target="_blank" rel="noreferrer nofollow noopener">Media Proxy app</a> allows you to view gifs, still images, youtube videos, and even use <a href="https://wiki.apolloautomation.com/products/m1/examples/sendspin/" target="_blank" rel="noreferrer nofollow noopener">Sendspin</a> with album art when using <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>!
+
+1\. Head to <a href="http://homeassistant.local:8123/config/apps/repositories" target="_blank" rel="noreferrer nofollow noopener">settings -&gt; Apps -&gt; Click Install App -&gt; 3 dots -&gt; click repositories</a> -&gt; click Add -&gt; paste in https://github.com/stuartparmenter/homeassistant-addons
+
+![](../../../assets/add-media-proxy-custom-repo.gif)
+
+2\. Click the back button then search Media Proxy and click on it. Click Install and let it install.
+
+![](../../../assets/install-media-proxy-app.gif)
+
+3\. Check off Watchdog and Auto Update then click Start
+
+![](../../../assets/media-proxy-start.gif)
+
+4\. To test that it's working, head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome integration page</a> then select your M-1 device from the list. <a href="https://media1.tenor.com/m/cOxR1hF63Y0AAAAd/matrix-film.gif" target="_blank" rel="noreferrer nofollow noopener">Copy this url</a> and paste it into the Media Source box. It should automatically start playing the gif!
+
+![](../../../assets/m-1-esphome-media-proxy-confirm-working.gif)
+
+[Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){ .md-button .md-button--primary }
