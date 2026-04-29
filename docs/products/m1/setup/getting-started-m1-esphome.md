@@ -62,9 +62,9 @@ Head to the <a href="http://homeassistant.local:8123/config/integrations" target
 
 ###### Adopt into ESPHome Device Builder
 
-!!! tip "Advanced, only needed if you want to edit YAML"
+!!! tip "Required for advanced customization"
 
-    You can adopt the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on to customize its YAML configuration (custom effects, additional sensors, etc.). This is **not required** for normal use, skip this section unless you specifically want to edit the firmware configuration.
+    Adopting the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on lets you edit its YAML configuration. This is needed if you want to enable optional pages (Team Tracker, QR Codes, MSR-2 Radar, additional Now Playing instances), drive multiple chained panels, or change which pages the WizMote scene buttons map to. See the <a href="https://github.com/pavlov-net/hub75-studio/wiki/Customization" target="_blank" rel="noreferrer nofollow noopener">hub75-studio Customization wiki</a> for the full list. **Skip this section if the default firmware already does everything you need.**
 
 1\. Install the ESPHome Device Builder inside Home Assistant OS by clicking the button below. Make sure to toggle on start on Boot, Watchdog, and Show in sidebar.
 
@@ -96,7 +96,7 @@ wifi_password: "your-wifi-password-here"
 
 ###### Media Proxy
 
-The <a href="https://github.com/stuartparmenter/media-proxy" target="_blank" rel="noreferrer nofollow noopener">Media Proxy app</a> allows you to view gifs, still images, youtube videos, and even use <a href="https://wiki.apolloautomation.com/products/m1/examples/sendspin/" target="_blank" rel="noreferrer nofollow noopener">Sendspin</a> with album art when using <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>!
+The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="noreferrer nofollow noopener">Media Proxy app</a> allows you to view gifs, still images, youtube videos, and even use <a href="https://wiki.apolloautomation.com/products/m1/examples/sendspin/" target="_blank" rel="noreferrer nofollow noopener">Sendspin</a> with album art when using <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>!
 
 1\. Head to <a href="http://homeassistant.local:8123/config/apps/repositories" target="_blank" rel="noreferrer nofollow noopener">settings -&gt; Apps -&gt; Click Install App -&gt; 3 dots -&gt; click repositories</a> -&gt; click Add -&gt; paste in https://github.com/stuartparmenter/homeassistant-addons
 
@@ -117,3 +117,21 @@ The <a href="https://github.com/stuartparmenter/media-proxy" target="_blank" rel
 ![](../../../assets/matrix-gif-example.gif)
 
 [Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){ .md-button .md-button--primary }
+
+###### WizMote Remote
+
+The M-1 ESPHome firmware has built-in support for the <a href="https://www.wizconnected.com/en-us/p/accessory-wizmote/8718699788209" target="_blank" rel="noreferrer nofollow noopener">WiZ WizMote</a> remote, so you can change pages, dim the panel, and toggle it on/off without your phone.
+
+1\. In Home Assistant, open the M-1 device on the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome integration page</a>.
+
+2\. Find the **WizMote Auto-Discovery** switch and turn it on.
+
+3\. Press any button on your WizMote. The M-1 picks up the WizMote's MAC and pairs automatically.
+
+4\. Confirm pairing by checking the **WizMote Status** entity. It should read **Paired** along with the WizMote's MAC address.
+
+!!! example "Default button mapping"
+
+    - **On / Off / Night**: turn the panel on, off, or drop to a minimum night-mode brightness.
+    - **Brightness Up / Down**: adjust panel brightness in steps.
+    - **Scene buttons 1-4**: jump to **Clock**, **Visual Effects**, **Pong**, and **Media Stream**, in that order.
