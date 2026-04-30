@@ -501,7 +501,7 @@ nav:
             - Teardown and Reassembly Of BTN-1: products/btn1/troubleshooting/btn1-teardown.md
             - Reset Wi-Fi Credentials: products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
       - ESPHome Starter Kit:
-          - Button Getting Started: products/esk1/buttongettingstarted.md
+          - Button Getting Started: products/ESPHome-Starter-Kit/buttongettingstarted.md
       - Holiday Ornaments:
           - H-1:
               - Introduction: products/h1/introduction.md

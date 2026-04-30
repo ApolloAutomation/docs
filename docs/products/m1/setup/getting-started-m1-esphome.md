@@ -6,7 +6,7 @@ description: Getting started with your new M-1 running the hub75-studio ESPHome 
 
 !!! tip "Running WLED-MM instead?"
 
-    If you're using the stock WLED-MoonModules firmware that ships pre-flashed, head to the [WLED-MM Getting Started page](../getting-started-m1/) instead.
+    If you're using the stock WLED-MoonModules firmware that ships pre-flashed, head to the [WLED-MM Getting Started page](getting-started-m1.md) instead.
 
 This guide walks you through replacing the stock WLED-MM firmware with [hub75-studio](https://github.com/pavlov-net/hub75-studio), an ESPHome firmware tailored for the M-1, and getting it onto your home network and into Home Assistant.
 
