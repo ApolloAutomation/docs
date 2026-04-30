@@ -4,15 +4,15 @@ description: Tutorial to Removing Device From Home Assistant.
 ---
 # Removing Device From Home Assistant
 
-##### ESPHome addon
+##### ESPHome app
 
 This will cover how to remove an Apollo device from Home Assistant
 
-!!! tip "Skip this step unless you took control of your device with the ESPHome Device Builder addon!"
+!!! tip "Skip this step unless you took control of your device with the ESPHome Device Builder app!"
 
     This step is only necessary for advanced users who added the device to the ESPHome device builder to edit the yaml and customize the device. Please skip to the next step if you are only using the ESPHome or Apollo Automation integration!
 
-1\. Navigate to Home Assistant and <a href="http://homeassistant.local:8123/5c53de3b_esphome/ingress" target="_blank" rel="noreferrer nofollow noopener">open your ESPHome Device Builder</a> addon.
+1\. Navigate to Home Assistant and <a href="http://homeassistant.local:8123/5c53de3b_esphome/ingress" target="_blank" rel="noreferrer nofollow noopener">open your ESPHome Device Builder</a> app.
 
 ![image.png](/assets/esphome-device-builder-addon-image.png)
 

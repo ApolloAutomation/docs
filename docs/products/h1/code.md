@@ -25,7 +25,7 @@ If no device shows, click cancel and then install the recommended driver that sh
 6\. VERY IMPORTANT - you need to unplug your device and plug it back in to leave boot mode!
 
 1. After finishing, check for the Apollo hotspot and connect. This might not show if you previously had the MTR-1 connected to your wifi
-2. Log into Home Assistant and go to the ESPHome addon check to see if you can adopt the device.
+2. Log into Home Assistant and go to the ESPHome app check to see if you can adopt the device.
 
 If you encounter the below error, please complete the [Putting H-1 In Boot Mode Document](https://wiki.apolloautomation.com/products/h1/boot-mode/) and go back to step 3.
 

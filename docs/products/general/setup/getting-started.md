@@ -68,7 +68,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
     Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!")unless you need to rename your sensor or do manual edits to the yaml
 
-You can add the ESPHome Device Builder addon in Home Assistant to easily update your device or edit the yaml. If you don't have ESPHome Device Builder addon installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder").
+You can add the ESPHome Device Builder app in Home Assistant to easily update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder").
 
 Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
 
