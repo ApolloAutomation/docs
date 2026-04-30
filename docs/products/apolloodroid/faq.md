@@ -39,7 +39,7 @@ The Apollo Odroid comes equipped with:
 
 7\. **Can I customize the Home Assistant installation on the Apollo Odroid?**
 
-* Absolutely! The Apollo Odroid runs Home Assistant OS, which is fully customizable. You can add integrations, automations, and even custom add-ons to tailor the system to your smart home needs.
+* Absolutely! The Apollo Odroid runs Home Assistant OS, which is fully customizable. You can add integrations, automations, and even custom apps to tailor the system to your smart home needs.
 
 8\. **Do I need any special software to configure the Apollo Odroid?**
 

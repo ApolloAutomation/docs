@@ -64,13 +64,13 @@ Head to the <a href="http://homeassistant.local:8123/config/integrations" target
 
 !!! tip "Required for advanced customization"
 
-    Adopting the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> add-on lets you edit its YAML configuration. This is needed if you want to enable optional pages (Team Tracker, QR Codes, MSR-2 Radar, additional Now Playing instances), drive multiple chained panels, or change which pages the WizMote scene buttons map to. See the <a href="https://github.com/pavlov-net/hub75-studio/wiki/Customization" target="_blank" rel="noreferrer nofollow noopener">hub75-studio Customization wiki</a> for the full list. **Skip this section if the default firmware already does everything you need.**
+    Adopting the M-1 into the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder</a> app lets you edit its YAML configuration. This is needed if you want to enable optional pages (Team Tracker, QR Codes, MSR-2 Radar, additional Now Playing instances), drive multiple chained panels, or change which pages the WizMote scene buttons map to. See the <a href="https://github.com/pavlov-net/hub75-studio/wiki/Customization" target="_blank" rel="noreferrer nofollow noopener">hub75-studio Customization wiki</a> for the full list. **Skip this section if the default firmware already does everything you need.**
 
 1\. Install the ESPHome Device Builder inside Home Assistant OS by clicking the button below. Make sure to toggle on Start on Boot, Watchdog, and Show in sidebar.
 
 [![Open your Home Assistant instance and show the add-on store with a specific add-on pre-selected.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
-2\. Navigate to the ESPHome Device Builder addon by clicking the Open Web UI button on the far right.
+2\. Navigate to the ESPHome Device Builder app by clicking the Open Web UI button on the far right.
 
 ![](../../../assets/m-1-esphome-device-builder-open.gif)
 
