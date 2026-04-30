@@ -10,7 +10,7 @@
 
 # Setting Up ESPHome Device Builder
 1. Connect to HA ( link to HA getting started )
-2. Install addon here
+2. Install app here
 3. Install driver?
 4. View it here
 5. Creating secrets file for wifi

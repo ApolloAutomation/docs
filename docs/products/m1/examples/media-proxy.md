@@ -4,11 +4,11 @@ description: Stream GIFs, YouTube videos, still images, and album art to your M-
 ---
 # Media Proxy
 
-The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="noreferrer nofollow noopener">Media Proxy</a> is a Home Assistant add-on that takes almost any media URL, resizes and decodes it for your panel, and streams the result to the M-1 over the network. It's how the M-1 ESPHome firmware plays animated GIFs, YouTube videos, still images, and album art on a 64x64 panel without you having to convert anything by hand.
+The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="noreferrer nofollow noopener">Media Proxy</a> is a Home Assistant app that takes almost any media URL, resizes and decodes it for your panel, and streams the result to the M-1 over the network. It's how the M-1 ESPHome firmware plays animated GIFs, YouTube videos, still images, and album art on a 64x64 panel without you having to convert anything by hand.
 
 !!! tip "Need to install it first?"
 
-    Head to the **Media Proxy** section of the <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1-esphome/#media-proxy" target="_blank" rel="noreferrer nofollow noopener">M-1 ESPHome Getting Started</a> page to install the add-on, then come back here.
+    Head to the **Media Proxy** section of the <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1-esphome/#media-proxy" target="_blank" rel="noreferrer nofollow noopener">M-1 ESPHome Getting Started</a> page to install the app, then come back here.
 
 ## What you can do
 
@@ -54,5 +54,5 @@ Once Media Proxy is installed and running, all of these things are driven from a
 ## Going further
 
 - The <a href="https://github.com/pavlov-net/media-proxy/blob/main/README.md" target="_blank" rel="noreferrer nofollow noopener">Media Proxy README</a> covers fit modes, autocrop tuning, hardware acceleration setup, and the YAML config file if you want to tweak how content gets resized or decoded.
-- The <a href="https://github.com/stuartparmenter/homeassistant-addons" target="_blank" rel="noreferrer nofollow noopener">homeassistant-addons repo</a> is the home of the Media Proxy add-on itself, including release notes and install troubleshooting.
+- The <a href="https://github.com/stuartparmenter/homeassistant-addons" target="_blank" rel="noreferrer nofollow noopener">homeassistant-addons repo</a> is the home of the Media Proxy app itself, including release notes and install troubleshooting.
 - If you need to (re)install Media Proxy, the steps live on the <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1-esphome/#media-proxy" target="_blank" rel="noreferrer nofollow noopener">M-1 ESPHome Getting Started</a> page.

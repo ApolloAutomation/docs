@@ -24,7 +24,7 @@ wifi:
   power_save_mode: none
 ```
 
-1\. Select the ESPHome add on and then select Edit under your desired device.
+1\. Select the ESPHome app and then select Edit under your desired device.
 
 ![](/assets/screenshot-2024-10-25-at-5-14-48-pm.png)
 

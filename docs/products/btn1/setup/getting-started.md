@@ -80,7 +80,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
     Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!") unless you need to rename your sensor or do manual edits to the yaml
 
-You can add the ESPHome Device Builder addon in Home Assistant to easily update your device or edit the yaml. If you don't have ESPHome Device Builder addon installed you can <a href="http://homeassistant.local:8123/hassio/store" target="_blank" rel="noreferrer nofollow noopener">search esphome device builder on the addon store</a> and install it.
+You can add the ESPHome Device Builder app in Home Assistant to easily update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can <a href="http://homeassistant.local:8123/hassio/store" target="_blank" rel="noreferrer nofollow noopener">search esphome device builder in the app store</a> and install it.
 
 Make sure to fill out your Wi-Fi details in the **secrets** section by clicking on the **secrets** button.
 

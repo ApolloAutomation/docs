@@ -14,7 +14,7 @@ description: >-
 
 The <a href="https://www.home-assistant.io/integrations/wled/" target="_blank" rel="noreferrer nofollow noopener">WLED integration for Home Assistant</a> does not support sending data from our devices directly to the M-1 LED Matrix, however, we are still able to do so using the <a href="https://mm.kno.wled.ge/interfaces/json-api/" target="_blank" rel="noreferrer nofollow noopener">WLED JSON API</a>. This is an advanced tutorial but if you follow each step closely you should be able to follow along!
 
-1\. Install "Studio Code Server" <a href="https://github.com/hassio-addons/addon-vscode" target="_blank" rel="noreferrer nofollow noopener">from the addon store</a> in Home Assistant OS. Click Open Webui and navigate to your configuration.yaml file.
+1\. Install "Studio Code Server" <a href="https://github.com/hassio-addons/addon-vscode" target="_blank" rel="noreferrer nofollow noopener">from the app store</a> in Home Assistant OS. Click Open Webui and navigate to your configuration.yaml file.
 
 ![](/assets/m1-navigate-to-configuration-yaml.gif)
 
