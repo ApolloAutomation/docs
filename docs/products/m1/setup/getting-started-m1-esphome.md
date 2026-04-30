@@ -116,11 +116,11 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 ![](../../../assets/matrix-gif-example.gif)
 
-[Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){ .md-button .md-button--primary }
+[Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){  .md-button .md-button--primary }
 
 ###### WizMote Remote
 
-The M-1 ESPHome firmware has built-in support for the <a href="https://www.wizconnected.com/en-us/p/accessory-wizmote/8718699788209" target="_blank" rel="noreferrer nofollow noopener">WiZ WizMote</a> remote, so you can change pages, dim the panel, and toggle it on/off without your phone.
+The M-1 ESPHome firmware has built-in support for the <a href="https://www.amazon.com/WiZ-Remote-Compatible-Lights-Assistant/dp/B091TGDS6F" target="_blank" rel="noreferrer nofollow noopener">WiZ WizMote</a> remote, so you can change pages, dim the panel, and toggle it on/off without your phone.
 
 1\. In Home Assistant, open the M-1 device on the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome integration page</a>.
 
@@ -128,10 +128,16 @@ The M-1 ESPHome firmware has built-in support for the <a href="https://www.wizco
 
 3\. Press any button on your WizMote. The M-1 picks up the WizMote's MAC and pairs automatically.
 
+![](../../../assets/wizmote-pairing-example.gif)
+
 4\. Confirm pairing by checking the **WizMote Status** entity. It should read **Paired** along with the WizMote's MAC address.
 
-!!! example "Default button mapping"
+![](../../../assets/wizmote-pair-successful.png)
 
-    - **On / Off / Night**: turn the panel on, off, or drop to a minimum night-mode brightness.
-    - **Brightness Up / Down**: adjust panel brightness in steps.
-    - **Scene buttons 1-4**: jump to **Clock**, **Visual Effects**, **Pong**, and **Media Stream**, in that order.
+!!! tip "Default button mapping"
+
+    * **On / Off / Night**: turn the panel on, off, or drop to a minimum night-mode brightness.
+    * **Brightness Up / Down**: adjust panel brightness in steps.
+    * **Scene buttons 1-4**: jump to **Clock**, **Visual Effects**, **Pong**, and **Media Stream**, in that order.
+
+    <a href="https://github.com/pavlov-net/hub75-studio/wiki/Customization#configuring-page-navigation" target="_blank" rel="noreferrer nofollow noopener">Visit the documentation page</a> to learn how to configure the buttons to do anything you want!
