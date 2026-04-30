@@ -6,7 +6,7 @@ description: Getting started with your new M-1 running the stock WLED-MM firmwar
 
 !!! tip "Running ESPHome instead?"
 
-    If you flashed the [hub75-studio](https://github.com/pavlov-net/hub75-studio) ESPHome firmware, head to the [ESPHome Getting Started page](../getting-started-m1-esphome/) instead.
+    If you flashed the [hub75-studio](https://github.com/pavlov-net/hub75-studio) ESPHome firmware, head to the [ESPHome Getting Started page](getting-started-m1-esphome.md) instead.
 
 Congrats on your new M-1! Below we will go through steps to get you up and running in no time on the stock WLED-MM firmware.
 
