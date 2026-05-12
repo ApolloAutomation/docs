@@ -4,65 +4,21 @@ description: Step by step guide for getting started with the ESPHome Starter Kit
 ---
 # ESPHome Starter Kit - Getting Started
 
-This guide walks you through installing the ESPHome Device Builder app, and writing your first ESPHome YAML configuration from scratch.
+This guide walks you through connecting the hardware in your kit, installing the ESPHome Device Builder app, and writing your first ESPHome YAML configuration from scratch.
 
 By the end you'll have your ESPHome Starter Kit flashed with a working configuration and showing up in Home Assistant and with a working web server accessible at its IP address or hostname.local in a browser.
 
 ---
 
-## 1\. Setting up ESPHome Device Builder
+### 1\. Connecting Modules to your ESPHome Starter Kit
 
-ESPHome Device Builder is a standalone program that gives you a user interface for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
+The ESP32-C6 is the main board in your kit. It is the small module with the USB-C port on one edge and a row of pin headers along the side. Every project you build with the kit starts here.
 
-Think of it like telling the starter kit about what devices it has connected and how to use them!
+### Plug a module into the C6
 
-1\. <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_x64-setup.exe" title="Download the ESPHome Device Builder for Windows" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a> the ESPHome Device builder. If you're using MAC, Linux, or Home Assistant OS then select the toggle above for those specific instructions
-
-!!! ! end tip "If a blue warning box appears it's okay!"
-
-    If you get a blue box popup warning, make sure to click More Info then Run Anyways to run the program!
+For your first project, we will attach the ESPHome Casita with the RGB Buzzer and 10 LEDs to the ESP32-C6 module of your device using the FPC connector and ribbon cable. You can connect to the top or bottom FPC connector - in this example we will connect it to the top!
 
 &nbsp;
-
-2\. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then Click **Finish** to complete the installation!
-
-![](../../../assets/esphome-builder-install-windows.gif)
-
-3\. Once installed, a web browser should launch and navigate to this link: <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a> Once you see this in your browser your ESPHome Device Builder installation is completed
-
-!!! ! success "You must use a chromium based browser such as chrome or edge at this time!"
-
-    If you are using Firefox as your default browser, it will default to launching the ESPHome Device Builder in your default browser. Unfortunately, at this time Firefox does not support WebSerial so it cannot be used for the initial flashing of the device via USB. Please copy the URL <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a> and paste it in a chromium based browser such as chrome or edge. We have heard Firefox is going to support this soonTM so this problem will eventually go away!
-
-4\. Once installed, navigate to the system tray (bottom right of your windows device). Hover over Backend and switch from Classic to the ESPHome Builder Beta with the new layout and features!
-
-![](../../../assets/esphome-builder-backend-switch-to-beta.gif)
-
-5\. Wait for 30+ seconds then refresh your browser (hit F5) and you should see the new ESPHome Device Builder Preview!
-
-![](../../../assets/esphome-device-builder-preview-image.png)
-
-### Fill in your Wi-Fi secrets
-
-ESPHome keeps your Wi-Fi credentials in a separate `secrets.yaml` file so they aren't pasted into every device config.
-
-1. In the ESPHome Device Builder dashboard, click **Secrets** in the top right.
-2. Add your Wi-Fi name and password:
-
-```yaml
-# Replace the values inside the quotes with your own Wi-Fi name and password.
-wifi_ssid: "your-wifi-ssid-here"
-wifi_password: "your-wifi-password-here"
-```
-
-1. Click **Save**.
-
-### Add a new device
-
-1. Click **\+ New Device** in the bottom right of the ESPHome Device Builder dashboard.
-2. Give your device a name (for example `esphome-starter-kit`).
-3. When asked for the device type, choose **ESP32-C6**.
-4. ESPHome Device Builder will scaffold a starter YAML for you. Don't flash it yet, you're going to replace it in the next section.
 
 ### Connect the C6 to your computer
 
