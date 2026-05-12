@@ -155,6 +155,7 @@ markdown_extensions:
 #brandon added this 3/26/25
   - toc:
       permalink: true
+      toc_depth: 2
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
