@@ -45,10 +45,22 @@ mkdocs serve
 6. Use PR title format: `<type>: <description>` (types: `docs`, `fix`, `feat`, `chore`)
 
 ## Doc Standards
+
+The full writing and formatting rules live in [STYLE_GUIDE.md](STYLE_GUIDE.md). Read it before opening a non-trivial PR. The highlights:
+
+- **Tone**: respectful, confident, direct, empowering. Avoid corporate filler ("powerful", "seamlessly", "simply").
+- **Voice**: second person, imperative. "Click **Save**", not "you should click save".
+- **Product naming**: `AIR-1`, `MTR-1`, `MSR-2`, etc. uppercase with hyphen, always.
+- **Terminology**: Apollo hardware **addons** and Home Assistant software **apps** are different things; use each in its own context.
+- **ESPHome** is the only correct casing.
+- **No em dashes** anywhere in user-facing copy.
+
+Mechanical conventions:
 - MkDocs Material: see https://squidfunk.github.io/mkdocs-material/ for admonitions, tabs, and content tabs syntax
 - Snippets: when including parts of a file with `--8<-- "file.md:N:"`, start at line 5 to skip YAML front matter
 - Images: place in `docs/assets/`, keep under 750px wide where possible (CI auto-resizes, but smaller source files render faster)
 - Internal links: use site-relative paths so they work in the published site
+- Front matter: every page needs at least `title:` and `description:`
 
 ## Contact & Support
 - **Issues**: GitHub Issues for bugs and improvement requests
