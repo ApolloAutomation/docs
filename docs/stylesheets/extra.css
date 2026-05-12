@@ -161,9 +161,12 @@ article.md-typeset .cms-embed iframe {
 
 /* Inline icon inside .md-button (e.g. ESPHome logo next to button label).
    Lives in CSS rather than per-page `style="..."` so CloudCannon's WYSIWYG
-   does not strip the sizing when the page is round-tripped. */
-.md-button img {
+   does not strip the sizing when the page is round-tripped.
+   Selector qualified with `article.md-typeset` so it outranks the global
+   `article.md-typeset img { max-width: 500px; height: auto; }` rule. */
+article.md-typeset .md-button img {
   height: 1.2em;
+  width: auto;
   vertical-align: -0.2em;
   margin-right: 0.4em;
 }
