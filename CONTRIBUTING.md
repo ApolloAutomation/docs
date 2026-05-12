@@ -62,6 +62,8 @@ Mechanical conventions:
 - Internal links: use site-relative paths so they work in the published site
 - Front matter: every page needs at least `title:` and `description:`
 
+If your PR establishes a new convention that isn't in [STYLE_GUIDE.md](STYLE_GUIDE.md) (a new product name, a new formatting pattern you'll want others to follow, a clarification of an ambiguous rule), update the style guide in the same PR. Keeping the guide ahead of the docs is how it stays useful.
+
 ## Contact & Support
 - **Issues**: GitHub Issues for bugs and improvement requests
 - **Email**: support@apolloautomation.com

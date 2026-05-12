@@ -26,3 +26,24 @@ get wrong most often:
   with framing copy (what the reader unlocks, what success looks like).
 
 Read the full guide before making non-trivial changes.
+
+## Keep the style guide current
+
+If you notice a recurring pattern that should be standardized but isn't
+in `STYLE_GUIDE.md`, surface it to the user before applying it in the
+current edit. Examples:
+
+- A new product name or capitalization that isn't covered by the
+  naming rules.
+- A formatting convention you're about to use repeatedly (a new
+  admonition type, a new way of showing CLI output) that future
+  contributors should follow.
+- A drift between pages where the guide is ambiguous about which
+  pattern wins.
+
+Propose the addition to `STYLE_GUIDE.md` in the same PR (or a separate
+follow-up if it's substantial). The goal is for the guide to stay ahead
+of the docs, not behind them.
+
+One-off stylistic choices on a single page don't need a suggestion.
+This is about patterns that will repeat.
