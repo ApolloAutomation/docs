@@ -6,7 +6,7 @@ description: Tutorial for how to turn your Apollo device into a BLE proxy!
 
 This guide shows you how to make your Apollo device act as a "BLE Proxy" which lets Bluetooth devices talk back to home assistant using Apollo devices as the "next hop"!
 
-#### Method 1: Switch to \_BLE.yaml fork
+### Method 1: Switch to \_BLE.yaml fork
 
 1\. Open the Esphome Device Builder.
 
@@ -57,7 +57,7 @@ packages:
 
 ---
 
-#### Method 2: Manually enter the BLE proxy yaml
+### Method 2: Manually enter the BLE proxy yaml
 
 1\. Open the Esphome Device Builder.
 
