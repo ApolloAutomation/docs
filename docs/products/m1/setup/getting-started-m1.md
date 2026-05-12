@@ -10,13 +10,13 @@ description: Getting started with your new M-1 running the stock WLED-MM firmwar
 
 Congrats on your new M-1! Below we will go through steps to get you up and running in no time on the stock WLED-MM firmware.
 
-#### Attach M-1 LED Controller
+### Attach M-1 LED Controller
 
 Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damage in shipping. Gently attach the controller to the back of the M-1 LED Matrix panel as shown in the GIF below.
 
 ![](/assets/m1-matrix-attach-controller.webp)
 
-#### Connect to Wi-Fi
+### Connect to Wi-Fi
 
 Your device is ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
 
@@ -30,7 +30,7 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
     Later, you can use this to access your device at http://apollo-led-matrix.local in a browser instead of using the IP address!
 
-#### Post-Connect Setup
+### Post-Connect Setup
 
 !!! warning "Please complete setup by changing a few settings!"
 
@@ -44,7 +44,7 @@ Your device is ready to connect to your Wi-Fi and begin controlling via Home Ass
 
 ![](/assets/m-1-2d-settings.gif)
 
-#### Join to Home Assistant
+### Join to Home Assistant
 
 !!! tip "Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!"
 

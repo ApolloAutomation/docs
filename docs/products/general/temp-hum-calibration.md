@@ -4,7 +4,7 @@ description: Temp and Humidity Calibration and Offset Examples.
 ---
 # Simple and Advanced Examples of Temperature & Humidity Offsets
 
-#### **Simple Offsets for Temperature and Humidity:**
+### **Simple Offsets for Temperature and Humidity:**
 
 **Please add these to the bottom of your esphome yaml for your device then click save and install. Once you are finished, you will have two new boxes inside the home assistant esphome integration device page for your device where you can fill in an offset. Give them up to 1minute to take effect!**
 
@@ -49,11 +49,11 @@ number:
     mode: box
 ```
 
-#### **BME280 & SCD40 Sensors: Overcoming Temperature & Humidity Reading Challenges**
+### **BME280 & SCD40 Sensors: Overcoming Temperature & Humidity Reading Challenges**
 
 The BME280 and SCD40 sensors are known for their precision in measuring temperature and humidity. However, like all sensor systems, they can sometimes provide inaccurate readings due to various factors. In the case of the BME280 and SCD40 sensors, one significant challenge arises from the heat produced by the ESP chip, which can alter the environment inside its enclosure, thereby skewing the readings.
 
-#### **Adjusting the BME280 and SCD40 Temperature Offset**
+### **Adjusting the BME280 and SCD40 Temperature Offset**
 
 For users who want to fine-tune their sensors, the BME280 and SCD40 Temperature Offset entities can be manually adjusted to match the conditions in their home. The offset values are subtracted from the raw temperature & humidity readings in the firmware to update the sensor readings in the home assistant entity. For example: scd40\_temperature entity = raw scd40 temperature reading - scd40\_offset.   
   
@@ -61,7 +61,7 @@ By default, these offsets are preset to values based on our NIST certified therm
   
 Users will also notice the `bme280_humidity_calibrated`, `scd40_humidity_calibrated`, `bme280_temperature_calibrated`, and `scd40_temperature_calibrated`entities. These values utilize the linear filter in the ESPHome firmware to adjust the readings based on our collected data. Again, due to environmental differences, these might not always be precise.
 
-#### **Modeling the Relationship Between Sensors**
+### **Modeling the Relationship Between Sensors**
 
 Another approach to getting accurate readings is to model the relationship between the ESP temperature and the other sensors compared against a reference temperature. This can be achieved by creating a template sensor in Home Assistant that employs a decision tree or our regression coefficients.
 
@@ -134,10 +134,10 @@ notify:
 ```
 
 
-#### **The Interrelation of Temperature and Humidity**
+### **The Interrelation of Temperature and Humidity**
 
 It's important to understand that temperature and humidity share an interdependent relationship. When the air temperature rises, its capacity to hold moisture increases, which can decrease relative humidity levels. Conversely, when the temperature falls, the air's capacity to hold moisture decreases, leading to increased humidity. This relationship plays a significant role in how sensors detect and interpret readings, making it even more crucial to ensure accuracy.
 
-#### **Advanced Accuracy with GPIO**
+### **Advanced Accuracy with GPIO**
 
 For those seeking the highest accuracy, an advanced solution is available. The exposed mezzanine connector on the back of our Apollo boards can be utilized to connect a temperature/humidity sensor. This modification can dramatically improve both temperature and humidity readings, providing data that's as accurate as possible.

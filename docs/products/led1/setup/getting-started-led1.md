@@ -6,7 +6,7 @@ description: Getting started with your new LED-1!
 
 Congrats on your new LED-1! Below we will go through steps to get you up and running in no time.
 
-#### Choose how to power it
+### Choose how to power it
 
 The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V or 12V up to 3 amps) or a dedicated power supply using either 5V, 12V, or 24V.
 
@@ -40,7 +40,7 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
         Before proceeding to the next steps, make sure to unplug your device!
 
-#### Wire up LEDs
+### Wire up LEDs
 
 !!! danger "Before proceeding, consider double checking your power supply and leds use the same voltage!"
 
@@ -54,7 +54,7 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
 3\. Repeat step 2 for a second led strip using Output 2 if you have a second led strip!
 
-#### Connect to Wi-Fi
+### Connect to Wi-Fi
 
 Your device is now ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
 
@@ -62,7 +62,7 @@ Your device is now ready to connect to your Wi-Fi and begin controlling via Home
 
 ![](/assets/led-1-getting-started-pic-1.png)
 
-#### Join to Home Assistant
+### Join to Home Assistant
 
 1\. Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!
 
