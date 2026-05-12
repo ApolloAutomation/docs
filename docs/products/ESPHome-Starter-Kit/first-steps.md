@@ -13,7 +13,7 @@ By the end of this wiki you'll know how to:
 
 ## What's in the kit
 
-Your kit arrives as a single snap-apart panel that contains the ESP32-C6 main board and a set of modules you can mix and match.
+Your kit arrives as a single snap-apart panel that includes the ESP32-C6 main board along with a selection of interchangeable modules. The kit also includes three ribbon cables used to connect the modules together.
 
 ![](../../assets/starter-kit-graphic.png)
 
@@ -27,10 +27,9 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 
 1. Hold the panel flat on a table with one hand on the module you want to remove.
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
-3. If a tab leaves a small nub on the module, you can file or sand it smooth. It will not affect how the module works.
 
 <video autoplay="" loop="" muted="" playsinline="" width="100%">
-  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p>
+  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p>
   Your browser does not support embedded video.
 </video>
 
@@ -41,7 +40,7 @@ The kit includes:
 * **ESP32-C6 main board.** The brain of every project you'll build with the kit. It handles Wi-Fi and Bluetooth, runs your ESPHome config, and exposes the GPIO pins the modules plug into.
 * **Motion module.** Detects movement in a room and a great way to get started automating your home. Comes with a separate 3 pin header and PIR motion sensor.
 * **Button module.** Premium feel button perfect to trigger automations for lights and more.
-* **Temperature and Humidity module.** Temperature and humidity module shipped with the starter kit. Extremely accurate temp and humidity sensor trustworthy enough to track a room comfort level with ease!
+* **Temperature and Humidity module.** Extremely accurate temp and humidity sensor trustworthy enough to track a room comfort level with ease!
 
 Each module connects to the ESP32-C6 board through the FPC connectors which are the thin white ribbon cables.
 
