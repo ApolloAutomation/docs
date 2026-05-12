@@ -18,13 +18,9 @@ Think of it like telling the starter kit about what devices it has connected and
 
 1\. <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_x64-setup.exe" title="Download the ESPHome Device Builder for Windows" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a> the ESPHome Device builder. If you're using MAC, Linux, or Home Assistant OS then select the toggle above for those specific instructions
 
-!!! ! end tip "If a blue warning box appears it's okay!"
+2\. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation!
 
-    If you get a blue box popup warning, make sure to click More Info then Run Anyways to run the program!
-
-&nbsp;
-
-2\. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then Click **Finish** to complete the installation!
+\- If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
 
 ![](../../../assets/esphome-builder-install-windows.gif)
 
@@ -59,10 +55,13 @@ wifi_password: "your-wifi-password-here"
 
 ### Add a new device
 
-1. Click **\+ New Device** in the bottom right of the ESPHome Device Builder dashboard.
-2. Give your device a name (for example `esphome-starter-kit`).
-3. When asked for the device type, choose **ESP32-C6**.
-4. ESPHome Device Builder will scaffold a starter YAML for you. Don't flash it yet, you're going to replace it in the next section.
+1\. Click **Add new device** then click Create new project
+
+![](../../../assets/device-builder-add-new-device.gif)
+
+2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit then click **Finish Setup**.
+
+![](../../../assets/device-builder-select-esk-name-it.gif)
 
 ### Connect the C6 to your computer
 
@@ -70,7 +69,7 @@ Plug the ESP32-C6 into your computer using a USB-C cable.
 
 !!! tip "First-time flashing"
 
-    The very first time you flash an ESP32-C6, you may need to put it into bootloader mode manually:
+    The very first time you flash an ESP32-C6, you need to put it into bootloader mode manually:
 
     1. Hold down the **BOOT** button on the C6.
     2. While still holding **BOOT**, press and release the **RESET** button.
@@ -78,222 +77,9 @@ Plug the ESP32-C6 into your computer using a USB-C cable.
 
     The board will now stay in bootloader mode until you flash it. After the first flash you usually won't need to do this again.
 
-!!! success "Use a quality USB-C cable and power source"
+!!! info "Use a quality USB-C cable and power source"
 
     ESP32 boards are sensitive to power. If your device keeps restarting, won't be detected, or won't broadcast its hotspot, try a different USB-C cable or a different USB port. A 5V 1A supply is plenty.
-
----
-
-## 2\. Setting up ESPHome Device Builder
-
-ESPHome Device Builder is a Home Assistant add-on that gives you a web UI for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
-
-### Install the add-on
-
-1. In Home Assistant, open **Settings → Add-ons → Add-on Store**.
-2. Search for **ESPHome Device Builder** and install it.
-3. Once installed, click **Start**, then **Open Web UI**.
-
-If you don't have Home Assistant set up yet, follow the official Home Assistant installation guide first, then come back here.
-
-### Fill in your Wi-Fi secrets
-
-ESPHome keeps your Wi-Fi credentials in a separate `secrets.yaml` file so they aren't pasted into every device config.
-
-1. In the ESPHome Device Builder dashboard, click **Secrets** in the top right.
-2. Add your Wi-Fi name and password:
-
-```yaml
-# Replace the values inside the quotes with your own Wi-Fi name and password.
-wifi_ssid: "your-wifi-ssid-here"
-wifi_password: "your-wifi-password-here"
-```
-
-1. Click **Save**.
-
-### Add a new device
-
-1. Click **\+ New Device** in the bottom right of the ESPHome Device Builder dashboard.
-2. Give your device a name (for example `apollo-esk-1`).
-3. When asked for the device type, choose **ESP32-C6**.
-4. ESPHome Device Builder will scaffold a starter YAML for you. Don't flash it yet, you're going to replace it in the next section.
-
----
-
-## 3\. Writing your first ESPHome configuration
-
-ESPHome configs are YAML files. Each top-level block configures a different part of the device. Here's a complete starting config for the kit, broken down section by section. Paste each block into your device's YAML in ESPHome Device Builder as you go, or jump to the [complete config](#complete-configuration) at the bottom and paste the whole thing at once.
-
-!!! note "YAML basics"
-
-    YAML uses indentation (spaces, not tabs) to define structure. Two spaces per level is the convention used throughout these examples.
-
-### Substitutions
-
-Substitutions are reusable variables. Define them once at the top of the file and reference them anywhere with `${name}`.
-
-```yaml
-substitutions:
-  name: apollo-esk-1
-  version: "25.5.5.1"
-  device_description: ${name} made by Apollo Automation - version ${version}.
-```
-
-\| Variable \| Purpose \| \|----------\|---------\| \| `name` \| Device identifier used in ESPHome and Home Assistant. \| \| `version` \| Track your firmware version. The convention used here is Year.Month.Day.Build. \| \| `device_description` \| Human-readable description. Notice it references other substitutions with `${}`. \|
-
-### Core ESPHome configuration
-
-This block tells ESPHome how the device should appear in the dashboard and in Home Assistant.
-
-```yaml
-esphome:
-  name: "${name}"
-  friendly_name: Apollo ESPHome Starter Kit
-  comment: ${device_description}
-  name_add_mac_suffix: true
-  platformio_options:
-    board_build.flash_mode: dio
-  project:
-    name: "ApolloAutomation.ESK-1"
-    version: "${version}"
-  min_version: 2024.6.0
-```
-
-\| Option \| Description \| \|--------\|-------------\| \| `name` \| Internal device name, pulled from substitutions. \| \| `friendly_name` \| The name shown in Home Assistant's UI. \| \| `name_add_mac_suffix` \| Appends part of the MAC address to the name, useful when you flash more than one device. \| \| `platformio_options` \| Low-level build settings. `dio` flash mode is what the ESP32-C6 expects. \| \| `project` \| Identifies this as an Apollo Automation project. \| \| `min_version` \| Refuses to compile on ESPHome versions older than this. \|
-
-### ESP32 board
-
-Tell ESPHome which chip you're targeting.
-
-```yaml
-esp32:
-  board: esp32-c6-devkitm-1
-  variant: esp32c6
-  flash_size: 8MB
-  framework:
-    type: esp-idf
-```
-
-!!! warning "ESP32-C6 needs the ESP-IDF framework"
-
-    The older Arduino framework does not fully support the C6. Stick with `esp-idf` here.
-
-### Home Assistant API
-
-One line enables the native Home Assistant API connection. ESPHome handles the encryption and discovery for you.
-
-```yaml
-api:
-```
-
-### Wi-Fi
-
-This block uses the secrets you saved earlier and sets up a fallback hotspot in case the device can't reach your Wi-Fi.
-
-```yaml
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-
-  ap:
-    ssid: "Apollo ESK-1 Hotspot"
-```
-
-If the device can't connect to your Wi-Fi at boot, it will broadcast its own network called **Apollo ESK-1 Hotspot**. You can join that network from your phone or laptop to fix the credentials.
-
-### Captive portal
-
-Pairs with the fallback hotspot to give you a web page for entering Wi-Fi details when you connect to the hotspot.
-
-```yaml
-captive_portal:
-```
-
-### Logger
-
-Enables ESPHome's logging output. You'll see these logs in the ESPHome Device Builder dashboard when viewing the device, and they're invaluable for debugging.
-
-```yaml
-logger:
-```
-
-### Binary sensors
-
-Binary sensors report on/off state. The first one tracks whether the device is connected to Home Assistant. The second exposes a GPIO pin so you can wire up the button module or any other digital input.
-
-```yaml
-binary_sensor:
-  - platform: status
-    name: Online
-    id: ha_connected
-
-  - platform: gpio
-    pin:
-      number: GPIO9
-      inverted: true
-      mode:
-        input: true
-        pullup: true
-    id: my_button
-    name: "Button"
-```
-
-\| Option \| Description \| \|--------\|-------------\| \| `platform: status` \| Reports the HA connection state. Useful for automations that check device availability. \| \| `platform: gpio` \| A simple digital input. \| \| `number: GPIO9` \| The physical pin you've wired the input to. \| \| `inverted: true` \| The pin reads LOW when the button is pressed (active-low). \| \| `pullup: true` \| Enables the C6's internal pull-up resistor so the pin doesn't float. \|
-
-### Complete configuration
-
-```yaml
-substitutions:
-  name: apollo-esk-1
-  version: "25.5.5.1"
-  device_description: ${name} made by Apollo Automation - version ${version}.
-
-esphome:
-  name: "${name}"
-  friendly_name: Apollo ESPHome Starter Kit
-  comment: ${device_description}
-  name_add_mac_suffix: true
-  platformio_options:
-    board_build.flash_mode: dio
-  project:
-    name: "ApolloAutomation.ESK-1"
-    version: "${version}"
-  min_version: 2024.6.0
-
-esp32:
-  board: esp32-c6-devkitm-1
-  variant: esp32c6
-  flash_size: 8MB
-  framework:
-    type: esp-idf
-
-api:
-
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  ap:
-    ssid: "Apollo ESK-1 Hotspot"
-
-captive_portal:
-
-logger:
-
-binary_sensor:
-  - platform: status
-    name: Online
-    id: ha_connected
-
-  - platform: gpio
-    pin:
-      number: GPIO9
-      inverted: true
-      mode:
-        input: true
-        pullup: true
-    id: my_button
-    name: "Button"
-```
 
 ---
 
