@@ -12,31 +12,96 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 ## 1\. Setting up ESPHome Device Builder
 
-ESPHome Device Builder is a standalone program that gives you a user interface for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
+ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
 
 Think of it like telling the starter kit about what devices it has connected and how to use them!
 
-1\. <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_x64-setup.exe" title="Download the ESPHome Device Builder for Windows" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a> the ESPHome Device builder. If you're using MAC, Linux, or Home Assistant OS then select the toggle above for those specific instructions
+Pick the platform you'll be running ESPHome Device Builder on:
 
-2\. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation!
+=== "Home Assistant App"
 
-\- If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
+    The ESPHome Device Builder runs as a Home Assistant app served right inside your existing HA dashboard. This is the easiest option if you already run Home Assistant OS or a supervised install.
 
-![](../../../assets/esphome-builder-install-windows.gif)
+    1. In Home Assistant, open **Settings → Apps → App Store**.
+    2. Search for **ESPHome Device Builder** and click **Install**.
+    3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
 
-3\. Once installed, a web browser should launch and navigate to this link: <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a> Once you see this in your browser your ESPHome Device Builder installation is completed
+    <!-- TODO: confirm the exact app name shown in the HA App Store (e.g. "ESPHome Device Builder" vs "ESPHome Builder Beta") and add a screenshot of the install flow. -->
 
-!!! ! success "You must use a chromium based browser such as chrome or edge at this time!"
+    !!! info "Already on the new layout"
 
-    If you are using Firefox as your default browser, it will default to launching the ESPHome Device Builder in your default browser. Unfortunately, at this time Firefox does not support WebSerial so it cannot be used for the initial flashing of the device via USB. Please copy the URL <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a> and paste it in a chromium based browser such as chrome or edge. We have heard Firefox is going to support this soonTM so this problem will eventually go away!
+        The HA app version of Device Builder is already the new beta backend, so you can skip the backend toggle and browser refresh shown in the desktop tabs.
 
-4\. Once installed, navigate to the system tray (bottom right of your windows device). Hover over Backend and switch from Classic to the ESPHome Builder Beta with the new layout and features!
+=== "Windows"
 
-![](../../../assets/esphome-builder-backend-switch-to-beta.gif)
+    1. <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_x64-setup.exe" title="Download the ESPHome Device Builder for Windows" target="_blank" rel="noreferrer nofollow noopener">Download the ESPHome Device Builder for Windows</a>.
 
-5\. Wait for 30+ seconds then refresh your browser (hit F5) and you should see the new ESPHome Device Builder Preview!
+    2. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation.
 
-![](../../../assets/esphome-device-builder-preview-image.png)
+        - If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
+
+    ![](../../../assets/esphome-builder-install-windows.gif)
+
+    3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
+
+        - Use a Chromium-based browser such as Chrome or Edge. Firefox does not yet support WebSerial, which is required for the initial flashing of the device over USB. If Firefox is your default, copy the URL into Chrome or Edge instead.
+
+    4. Navigate to the **system tray** (bottom right of your Windows taskbar). Hover over **Backend** and switch from Classic to the ESPHome Builder Beta with the new layout and features.
+
+    ![](../../../assets/esphome-builder-backend-switch-to-beta.gif)
+
+    5. Wait 30+ seconds, then refresh your browser (F5). You should now see the new ESPHome Device Builder Preview.
+
+    ![](../../../assets/esphome-device-builder-preview-image.png)
+
+=== "Mac"
+
+    1. Download the ESPHome Device Builder for Mac. Pick the build that matches your chip:
+
+        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_aarch64.dmg" target="_blank" rel="noreferrer nofollow noopener">Apple Silicon (M1, M2, M3, M4)</a>
+        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_x64.dmg" target="_blank" rel="noreferrer nofollow noopener">Intel Mac</a>
+
+    2. Open the `.dmg` and drag **ESPHome Builder** into your Applications folder. Launch it from Applications or Spotlight.
+
+        - On first launch, macOS may block the app with a Gatekeeper warning. If that happens, right-click the app in Applications and choose **Open**, then click **Open** in the confirmation dialog. After the first launch, double-click will work normally.
+
+    <!-- TODO: add a Mac installer gif/screenshot if available. -->
+
+    3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
+
+        - Use a Chromium-based browser such as Chrome or Edge. Safari and Firefox do not currently support WebSerial, which is required for the initial USB flash.
+
+    4. Find the **ESPHome Builder** icon in the menu bar (top right of your Mac's screen). Click it, hover over **Backend**, and switch from Classic to the ESPHome Builder Beta.
+
+    <!-- TODO: confirm the exact menu bar wording on Mac and add a screenshot. -->
+
+    5. Wait 30+ seconds, then refresh your browser. You should now see the new ESPHome Device Builder Preview.
+
+=== "Linux"
+
+    1. Download the ESPHome Device Builder for Linux. Pick the package that fits your distro:
+
+        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_amd64.AppImage" target="_blank" rel="noreferrer nofollow noopener">AppImage (works on any distro)</a>
+        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_amd64.deb" target="_blank" rel="noreferrer nofollow noopener">.deb (Debian / Ubuntu)</a>
+        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder-0.7.0-1.x86_64.rpm" target="_blank" rel="noreferrer nofollow noopener">.rpm (Fedora / RHEL)</a>
+
+    2. Install or run the file you downloaded:
+
+        - **AppImage:** `chmod +x ESPHome.Builder_0.7.0_amd64.AppImage` then double-click the file, or run it from a terminal.
+        - **.deb:** `sudo apt install ./ESPHome.Builder_0.7.0_amd64.deb`
+        - **.rpm:** `sudo dnf install ./ESPHome.Builder-0.7.0-1.x86_64.rpm`
+
+    <!-- TODO: add a Linux installer screenshot if available. -->
+
+    3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
+
+        - Use a Chromium-based browser such as Chrome or Edge. Firefox does not currently support WebSerial, which is required for the initial USB flash.
+
+    4. Look for the **ESPHome Builder** icon in your system tray or notification area. Its exact location depends on your desktop environment (top bar on GNOME, system tray on KDE, XFCE, or Cinnamon). Click it, hover over **Backend**, and switch from Classic to the ESPHome Builder Beta.
+
+    <!-- TODO: confirm the system tray wording on Linux. -->
+
+    5. Wait 30+ seconds, then refresh your browser. You should now see the new ESPHome Device Builder Preview.
 
 ### Fill in your Wi-Fi secrets
 
