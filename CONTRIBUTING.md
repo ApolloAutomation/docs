@@ -44,6 +44,30 @@ mkdocs serve
 5. Fill out the PR template and link any related issues.
 6. Use PR title format: `<type>: <description>` (types: `docs`, `fix`, `feat`, `chore`)
 
+## Key files and folders
+
+If you're new to the repo, these are the places that matter:
+
+- **`mkdocs.yml`** — site config, navigation, theme, plugins (including
+  redirects). If you add a new page, you also add it here. If you move
+  a page, you add a `redirects` entry here.
+- **`docs/products/`** — the Home Assistant tree. One subdirectory per
+  product (`air1/`, `mtr1/`, etc.), each with its own `setup/`,
+  `addons/`, `troubleshooting/`, `faq/` sections.
+- **`docs/homey/products/`** — the Homey mirror of the same structure.
+  When you edit a page in `docs/products/`, check whether the matching
+  page in `docs/homey/products/` needs the same update.
+- **`docs/assets/`** — images, screenshots, and other static files.
+  Keep filenames kebab-case (`air1-boot-button.jpg`) and source images
+  under 750px wide where possible.
+- **`STYLE_GUIDE.md`** — the writing and formatting rules. Read before
+  any non-trivial edit.
+- **`AGENTS.md`** — instructions for AI tools editing the repo
+  (Claude, Cursor, Codex, Copilot). `CLAUDE.md` is a pointer to this
+  file.
+- **`.github/PULL_REQUEST_TEMPLATE.md`** — the PR template. Fill it out
+  completely, don't delete sections.
+
 ## Doc Standards
 
 The full writing and formatting rules live in [STYLE_GUIDE.md](STYLE_GUIDE.md). Read it before opening a non-trivial PR. The highlights:
