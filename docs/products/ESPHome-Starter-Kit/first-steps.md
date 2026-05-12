@@ -33,7 +33,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 3. If a tab leaves a small nub on the module, you can file or sand it smooth. It will not affect how the module works.
 
 <video autoplay loop muted playsinline width="100%">
-  <source src="../../assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4">
+  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4">
   Your browser does not support embedded video.
 </video>
 
@@ -52,4 +52,7 @@ Each module connects to the ESP32-C6 board through the FPC connectors which are 
 
 Once you've identified your modules and snapped them off the panel, the next step is to connect the ESP32-C6 to your computer and walk through your first ESPHome configuration.
 
-<a href="../setup/getting-started/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" />   Open ESPHome Getting Started </a>
+<a href="../setup/getting-started/" class="md-button md-button--primary">
+  <img src="/assets/esphome-logo.svg" alt="">
+  Open ESPHome Getting Started
+</a>

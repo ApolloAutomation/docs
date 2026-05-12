@@ -158,3 +158,12 @@ article.md-typeset .cms-embed iframe {
 .tabbed-content .highlight {
   width: fit-content;
 }
+
+/* Inline icon inside .md-button (e.g. ESPHome logo next to button label).
+   Lives in CSS rather than per-page `style="..."` so CloudCannon's WYSIWYG
+   does not strip the sizing when the page is round-tripped. */
+.md-button img {
+  height: 1.2em;
+  vertical-align: -0.2em;
+  margin-right: 0.4em;
+}
