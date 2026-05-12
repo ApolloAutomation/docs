@@ -6,7 +6,7 @@ description: Step by step guide for getting started with the ESPHome Starter Kit
 
 This guide walks you through installing the ESPHome Device Builder app, and writing your first ESPHome YAML configuration from scratch.
 
-By the end you'll have your ESPHome Starter Kit flashed with a working configuration and showing up in Home Assistant and with a working web server accessible at its IP address or hostname.local in a browser.
+By the end you'll have your ESPHome Starter Kit flashed with a working configuration and showing up in Home Assistant and with a working web server accessible at its IP address or esphome-starter-kit.local in a browser.
 
 ---
 
@@ -18,34 +18,16 @@ Think of it like telling the starter kit about what devices it has connected and
 
 Pick the platform you'll be running ESPHome Device Builder on:
 
-=== "Home Assistant App"
-
-    The ESPHome Device Builder runs as a Home Assistant app served right inside your existing HA dashboard. This is the easiest option if you already run Home Assistant OS or a supervised install.
-
-    1. In Home Assistant, open **Settings → Apps → App Store**.
-    2. Search for **ESPHome Device Builder** and click **Install**.
-    3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
-
-    <!-- TODO: confirm the exact app name shown in the HA App Store (e.g. "ESPHome Device Builder" vs "ESPHome Builder Beta") and add a screenshot of the install flow. -->
-
-    !!! info "Already on the new layout"
-
-        The HA app version of Device Builder is already the new beta backend, so you can skip the backend toggle and browser refresh shown in the desktop tabs.
-
 === "Windows"
 
     1. <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_x64-setup.exe" title="Download the ESPHome Device Builder for Windows" target="_blank" rel="noreferrer nofollow noopener">Download the ESPHome Device Builder for Windows</a>.
-
     2. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation.
-
-        - If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
+       * If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
 
     ![](../../../assets/esphome-builder-install-windows.gif)
 
     3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
-
-        - Use a Chromium-based browser such as Chrome or Edge. Firefox does not yet support WebSerial, which is required for the initial flashing of the device over USB. If Firefox is your default, copy the URL into Chrome or Edge instead.
-
+       * Use a Chromium-based browser such as Chrome or Edge. Firefox does not yet support WebSerial, which is required for the initial flashing of the device over USB. If Firefox is your default, copy the URL into Chrome or Edge instead.
     4. Navigate to the **system tray** (bottom right of your Windows taskbar). Hover over **Backend** and switch from Classic to the ESPHome Builder Beta with the new layout and features.
 
     ![](../../../assets/esphome-builder-backend-switch-to-beta.gif)
@@ -77,6 +59,20 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     5. Wait 30+ seconds, then refresh your browser. You should now see the new ESPHome Device Builder Preview.
 
+=== "Home Assistant App"
+
+    The ESPHome Device Builder runs as a Home Assistant app served right inside your existing HA dashboard. This is the easiest option if you already run Home Assistant OS or a supervised install.
+
+    1. In Home Assistant, open **Settings → Apps → App Store**.
+    2. Search for **ESPHome Device Builder** and click **Install**.
+    3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
+
+    <!-- TODO: confirm the exact app name shown in the HA App Store (e.g. "ESPHome Device Builder" vs "ESPHome Builder Beta") and add a screenshot of the install flow. -->
+
+    !!! info "Already on the new layout"
+
+        The HA app version of Device Builder is already the new beta backend, so you can skip the backend toggle and browser refresh shown in the desktop tabs.
+
 === "Linux"
 
     1. Download the ESPHome Device Builder for Linux. Pick the package that fits your distro:
@@ -103,20 +99,17 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     5. Wait 30+ seconds, then refresh your browser. You should now see the new ESPHome Device Builder Preview.
 
-### Fill in your Wi-Fi secrets
+### Set up Wi-Fi Credentials
 
-ESPHome keeps your Wi-Fi credentials in a separate `secrets.yaml` file so they aren't pasted into every device config.
+1\. Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials.
 
-1. In the ESPHome Device Builder dashboard, click **Secrets** in the top right.
-2. Add your Wi-Fi name and password:
+![](../../../assets/esphome-builder-enter-wifi-credentials.gif)
 
-```yaml
-# Replace the values inside the quotes with your own Wi-Fi name and password.
-wifi_ssid: "your-wifi-ssid-here"
-wifi_password: "your-wifi-password-here"
-```
+2\. If you make a mistake or want to change this later, click the 3 dots menu in the top right then select Secrets. Click the Eye icon to unhide the Wi-Fi SSID and password and change them then click Save in the bottom right.
 
-1. Click **Save**.
+!!! tip "Protip: You can put all kinds of credentials here that you want kept secret!"
+
+    One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets.md" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
 
 ### Add a new device
 
