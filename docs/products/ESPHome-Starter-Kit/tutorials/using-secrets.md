@@ -21,7 +21,7 @@ secrets.yaml lives inside ESPHome Device Builder, so the same secrets are availa
 
 ---
 
-### 1\. Navigating to Secrets
+### Open Secrets
 
 In the ESPHome Device Builder dashboard, click the 3 dots menu in the top right then **Secrets.**
 
@@ -33,7 +33,7 @@ You'll see a YAML file with one key per line. If you followed Getting Started yo
 
 ---
 
-### 2\. The syntax
+### Syntax
 
 Each entry is a `key: "value"` pair:
 
@@ -55,7 +55,7 @@ When the device compiles, ESPHome substitutes the value from secrets.yaml in pla
 
 ---
 
-### 3\. What to put in Secrets
+### What to store
 
 Each section below shows the line you add to secrets.yaml and the line in your device YAML that references it.
 
@@ -183,7 +183,7 @@ mqtt:
 
 ---
 
-### 4\. A complete Secrets example
+### Complete Example
 
 Putting it all together, a fully loaded secrets.yaml looks like this:
 
