@@ -10,7 +10,7 @@ In [Getting Started](../setup/getting-started.md) you saved your Wi-Fi name and 
 
 ---
 
-### What secrets.yaml is
+#### What secrets.yaml is
 
 secrets.yaml is a single file in ESPHome Device Builder that stores values you don't want pasted into every device config. Two reasons to use it:
 
@@ -213,7 +213,7 @@ You don't have to include every entry. If a device doesn't use MQTT, leave those
 
 ---
 
-### Good practice
+#### Good practice
 
 !!! info "Treat secrets.yaml like a password manager"
 
