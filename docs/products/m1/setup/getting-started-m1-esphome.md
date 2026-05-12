@@ -10,13 +10,13 @@ description: Getting started with your new M-1 running the hub75-studio ESPHome 
 
 This guide walks you through replacing the stock WLED-MM firmware with [hub75-studio](https://github.com/pavlov-net/hub75-studio), an ESPHome firmware tailored for the M-1, and getting it onto your home network and into Home Assistant.
 
-#### Attach M-1 LED Controller
+### Attach M-1 LED Controller
 
 Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damage in shipping. Gently attach the controller to the back of the M-1 LED Matrix panel as shown in the GIF below.
 
 ![](/assets/m1-matrix-attach-controller.webp)
 
-#### Flash the firmware
+### Flash the firmware
 
 !!! success "Use the Rev6 build unless you have an older M-1 Controller!"
 
@@ -34,7 +34,7 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 
 ![](../../../assets/m-1-esphome-firmware-installed-no-wifi.jpg)
 
-#### Connect to Wi-Fi
+### Connect to Wi-Fi
 
 1\. On your phone, open Wi-Fi settings and join the network **apollo-m1-r6-XXXXXX**, where the last 6 characters match the MAC suffix shown on the BIOS screen.
 
@@ -46,7 +46,7 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 
 ![](../../../assets/m-1-esphome-firmware-wifi-connected.jpg)
 
-#### Join to Home Assistant
+### Join to Home Assistant
 
 !!! tip "Your device should be auto-discovered by Home Assistant using the ESPHome Integration as shown below!"
 
@@ -58,9 +58,9 @@ Head to the <a href="http://homeassistant.local:8123/config/integrations" target
 
 ![](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
 
-#### Optional Features
+### Optional Features
 
-###### Adopt into ESPHome Device Builder
+#### Adopt into ESPHome Device Builder
 
 !!! tip "Required for advanced customization"
 
@@ -96,7 +96,7 @@ wifi_password: "your-wifi-password-here"
 
 ![](../../../assets/esphome-device-builder-finished-installing.gif)
 
-###### Media Proxy
+#### Media Proxy
 
 The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="noreferrer nofollow noopener">Media Proxy app</a> allows you to view gifs, still images, youtube videos, and even use <a href="https://wiki.apolloautomation.com/products/m1/examples/sendspin/" target="_blank" rel="noreferrer nofollow noopener">Sendspin</a> with album art when using <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>!
 
@@ -120,7 +120,7 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 [Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){    .md-button .md-button--primary }
 
-###### WizMote Remote
+#### WizMote Remote
 
 The M-1 ESPHome firmware has built-in support for the <a href="https://www.amazon.com/WiZ-Remote-Compatible-Lights-Assistant/dp/B091TGDS6F" target="_blank" rel="noreferrer nofollow noopener">WiZ WizMote</a> remote, so you can change pages, dim the panel, and toggle it on/off without your phone.
 
