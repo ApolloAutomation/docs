@@ -22,7 +22,7 @@ Your kit arrives as a single snap-apart panel that contains the ESP32-C6 main bo
 
 Each module is connected to the panel by small breakaway tabs. Follow the steps below to separate them
 
-!!! ! success "Take it slow"
+!!! success "Take it slow"
 
     Bend the panel a little at a time rather than forcing it. The PCB is rigid but the components on the modules can be damaged by sharp impacts or twisting.
 
@@ -33,7 +33,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 3. If a tab leaves a small nub on the module, you can file or sand it smooth. It will not affect how the module works.
 
 <video autoplay loop muted playsinline width="100%">
-  <source src="assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4">
+  <source src="../../assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4">
   Your browser does not support embedded video.
 </video>
 
