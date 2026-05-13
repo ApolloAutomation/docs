@@ -10,9 +10,9 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 ---
 
-<a href="../first-steps/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" /> Click Here for the First Steps </a>
+<a href="../../first-steps/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" /> Click Here for the First Steps </a>
 
-### Set up ESPHome Device Builder
+### ESPHome Device Builder
 
 ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
 
@@ -103,11 +103,11 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 #### Set up Wi-Fi Credentials
 
-1\. Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials.
+Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials.
 
 ![](../../../assets/esphome-builder-enter-wifi-credentials.gif)
 
-2\. If you make a mistake or want to change this later, click the 3 dots menu in the top right then select Secrets. Click the Eye icon to unhide the Wi-Fi SSID and password and change them then click Save in the bottom right.
+If you make a mistake or want to change this later, click the 3 dots menu in the top right then select Secrets. Click the Eye icon to unhide the Wi-Fi SSID and password and change them then click Save in the bottom right.
 
 !!! tip "Protip: You can put all kinds of credentials here that you want kept secret!"
 
@@ -115,7 +115,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 #### Add a new device
 
-1\. Click **Add new device** then click Create new project
+1\. Navigate back to the ESPHome Device Builder and click **Add new device** then click Create new project.
 
 ![](../../../assets/device-builder-add-new-device.gif)
 
@@ -123,20 +123,45 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 ![](../../../assets/device-builder-select-esk-name-it.gif)
 
-### Boot Mode
+### Configure Components
 
-!!! info "Use a quality USB-C cable and power source"
+When you install ESPHome Device builder, you will see a list of components under **Core Configuration**. We will add two more components for our tutorial below.
+
+###### Web Server Component
+
+The <a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener">Web Server</a> is used to broadcast a local website using your device. This allows you to navigate to the IP address of your device or hostname such as <a href="esphome-starter-kit.local" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> to easily control your new device!
+
+Make sure you're under the Core configuration section. Click the **Add configuration** button then search **Web Server** and click Add then click Add again.
+
+![](../../../assets/device-builder-add-web-server-component.gif)
+
+###### Onboard RGB LED
+
+Make sure you're under the Components section. Click the **Add component** button then scroll down and click **Add** for the **Onboard RGB LED** then click Add again. You can change the Name if you would like!
+
+1. In the ESPHome Device Builder, navigate to the **Components** section.
+2. Click **Add component**.
+3. Scroll to **Onboard RGB LED** and click **Add**.
+4. Click **Add** once more to confirm.
+
+![](../../../assets/device-builder-add-onboard-rgb-led-component.gif)
+
+!!! tip You can rename the component at this step if you'd like a friendlier name in Home Assistant. &nbsp; ### Boot Mode !!! info "Use a quality USB-C cable and power source"
 
     ESP32 boards are sensitive to power. If your device keeps restarting, won't be detected, or won't broadcast its hotspot, try a different USB-C cable or a different USB port. A 5V 1A supply is plenty.
 
-1\. Hold the sides of the ESP32-C6 and gently push the USB-C cable firmly into the USB-C port. Plug in the other side of the USB-C cable into your computer.
+1\. Hold the sides of the ESP32-C6 and gently push the USB-C cable firmly into the USB-C port. Plug in the other side of the USB-C cable into your computer. Please be careful not to snap or damage the FPC ribbon cable connectors located on the sides of the device.
 
 ![](../../../assets/esphome-starter-kit-plug-in-usb-c.webp)
 
-2\. Hold down the boot button. While still holding the boot button, press and release the reset button, then release the boot button. Please be careful not to snap or damage the FPC ribbon cable connectors located on the sides of the device.
+2\. Hold down the boot button. While still holding the boot button, press and release the reset button, then release the boot button.
 
 ![](../../../assets/esphome-starter-kit-boot-mode.webp)
 
 3\. Your device is now in boot mode - The board will now stay in bootloader mode until you flash it.
 
----
+Configuring ESPHome Device Builder
+
+&nbsp;
+
+&nbsp;
