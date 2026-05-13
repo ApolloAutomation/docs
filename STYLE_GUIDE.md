@@ -1,13 +1,28 @@
 # Apollo Docs Style Guide
 
+## 1. About this guide
+
 This guide governs the writing and formatting of pages on
 [wiki.apolloautomation.com](https://wiki.apolloautomation.com). It is the
 single source of truth for tone, language, and structural conventions.
-Contributors, maintainers, and AI tools (Claude, Copilot, etc.) all read
-from this file.
+Contributors, maintainers, and AI tools (Claude, Copilot, Cursor, and
+others) all read from this file.
 
-For workflow (how to fork, branch, preview, and open a PR), see
-[CONTRIBUTING.md](CONTRIBUTING.md).
+**Who the wiki is for.** Smart-home owners and tinkerers who want to
+know what an Apollo device does, how to set it up, and how to make it
+work inside their Home Assistant or Homey setup. They range from
+first-time Home Assistant users to ESPHome contributors. The docs need
+to land for both ends without patronising the first or boring the
+second.
+
+**Why these rules exist.** Without them, every contributor (human or
+AI) reinvents tone, terminology, and structure on every page. Readers
+feel the inconsistency even when they can't name it. The rules below
+are the result of decisions already made across the existing pages,
+codified so the next contributor doesn't have to make them again.
+
+For workflow (how to fork, branch, preview, and open a PR), and for the
+file layout of the repo, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > **A note for contributors:** this guide gives prescriptive rules to keep
 > the docs consistent. The "avoid" lists below apply to **user-facing
@@ -17,7 +32,7 @@ For workflow (how to fork, branch, preview, and open a PR), see
 
 ---
 
-## Tone of voice
+## 2. Tone of voice
 
 | Aim for | Avoid |
 | --- | --- |
@@ -33,7 +48,7 @@ of imperatives reads as bossy. Wrap procedures with framing copy that
 explains what the reader is about to unlock (see
 [Numbered steps and framing](#numbered-steps-and-framing) below).
 
-## Language to use
+## 3. Language to use
 
 Use these phrases consistently. They are part of the Apollo voice.
 
@@ -57,7 +72,7 @@ across the wiki reinforces the message.
 - **Open standards**: Apollo builds on public protocols like ESPHome
   and OpenThread, so your kit is never locked to one vendor.
 
-## Language to avoid
+## 4. Language to avoid
 
 | Don't say | Why | Use instead |
 | --- | --- | --- |
@@ -72,7 +87,7 @@ across the wiki reinforces the message.
 
 ---
 
-## Product and terminology
+## 5. Product and terminology
 
 ### Product IDs
 
@@ -126,7 +141,7 @@ Avoid **burn** and **load**.
 
 ---
 
-## Voice and structure
+## 6. Voice and structure
 
 ### Second person, imperative
 
@@ -227,7 +242,7 @@ description: Step-by-step guide to installing the CO2 sensor module and seeing r
 
 ---
 
-## Formatting conventions
+## 7. Formatting conventions
 
 ### UI labels
 
@@ -302,7 +317,7 @@ let mkdocs catch broken targets at build time. Links to external sites
 
 ---
 
-## Punctuation
+## 8. Punctuation
 
 ### Oxford comma
 
@@ -340,7 +355,7 @@ Setup steps:
 
 ---
 
-## Files and folders
+## 9. Files and folders
 
 ### Filenames
 
@@ -370,9 +385,21 @@ When a topic exists on both Home Assistant and Homey, use the **same
 filename** in both trees. This makes cross-platform consistency obvious
 to anyone editing the docs.
 
+**When you edit a page in one tree, check the mirror in the other tree
+and update it too if the change applies.** Cross-tree drift, where the
+HA version of a page describes the current product behaviour and the
+Homey version still describes how it worked a year ago, is the biggest
+source of stale content on the wiki. If a change is platform-specific
+and genuinely doesn't apply to the other tree, leave a one-line note in
+the PR description explaining why so reviewers don't flag it.
+
+For the full repo layout (where `mkdocs.yml` lives, where redirects go,
+how `docs/assets/` is organised), see
+[CONTRIBUTING.md](CONTRIBUTING.md#key-files-and-folders).
+
 ---
 
-## When in doubt
+## 10. When in doubt
 
 If a rule above conflicts with clarity for the reader, clarity wins.
 Open an issue or PR proposing the rule change so the guide stays
