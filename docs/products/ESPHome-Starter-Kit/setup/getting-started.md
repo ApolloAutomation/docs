@@ -127,7 +127,7 @@ If you make a mistake or want to change this later, click the 3 dots menu in the
 
 When you install ESPHome Device builder, you will see a list of components under **Core Configuration**. We will add two more components for our tutorial below.
 
-###### Web Server Component
+#### Web Server Component
 
 The <a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener">Web Server</a> is used to broadcast a local website using your device. This allows you to navigate to the IP address of your device or hostname such as <a href="esphome-starter-kit.local" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> to easily control your new device!
 
@@ -135,7 +135,7 @@ Make sure you're under the Core configuration section. Click the **Add configura
 
 ![](../../../assets/device-builder-add-web-server-component.gif)
 
-###### Onboard RGB LED
+#### Onboard RGB LED
 
 Make sure you're under the Components section. Click the **Add component** button then scroll down and click **Add** for the **Onboard RGB LED** then click Add again. You can change the Name if you would like!
 
@@ -145,6 +145,10 @@ Make sure you're under the Components section. Click the **Add component** butto
 4. Click **Add** once more to confirm.
 
 ![](../../../assets/device-builder-add-onboard-rgb-led-component.gif)
+
+### Boot Mode
+
+The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again!
 
 !!! tip You can rename the component at this step if you'd like a friendlier name in Home Assistant. &nbsp; ### Boot Mode !!! info "Use a quality USB-C cable and power source"
 
@@ -160,8 +164,8 @@ Make sure you're under the Components section. Click the **Add component** butto
 
 3\. Your device is now in boot mode - The board will now stay in bootloader mode until you flash it.
 
-Configuring ESPHome Device Builder
+#### Installing Firmware
 
-&nbsp;
+Before we continue, confirm that you installed the esphome device builder, configured your components, and put your device in boot mode.
 
 &nbsp;
