@@ -10,7 +10,9 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 ---
 
-## 1\. Setting up ESPHome Device Builder
+<a href="../first-steps/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" /> Click Here for the First Steps </a>
+
+### Set up ESPHome Device Builder
 
 ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
 
@@ -99,7 +101,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     5. Wait 30+ seconds, then refresh your browser. You should now see the new ESPHome Device Builder Preview.
 
-### Set up Wi-Fi Credentials
+#### Set up Wi-Fi Credentials
 
 1\. Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials.
 
@@ -111,7 +113,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets.md" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
 
-### Add a new device
+#### Add a new device
 
 1\. Click **Add new device** then click Create new project
 
@@ -121,40 +123,20 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 ![](../../../assets/device-builder-select-esk-name-it.gif)
 
-### Connect the C6 to your computer
-
-Plug the ESP32-C6 into your computer using a USB-C cable.
-
-!!! tip "First-time flashing"
-
-    The very first time you flash an ESP32-C6, you need to put it into bootloader mode manually:
-
-    1. Hold down the **BOOT** button on the C6.
-    2. While still holding **BOOT**, press and release the **RESET** button.
-    3. Release the **BOOT** button.
-
-    The board will now stay in bootloader mode until you flash it. After the first flash you usually won't need to do this again.
+### Boot Mode
 
 !!! info "Use a quality USB-C cable and power source"
 
     ESP32 boards are sensitive to power. If your device keeps restarting, won't be detected, or won't broadcast its hotspot, try a different USB-C cable or a different USB port. A 5V 1A supply is plenty.
 
+1\. Hold the sides of the ESP32-C6 and gently push the USB-C cable firmly into the USB-C port. Plug in the other side of the USB-C cable into your computer.
+
+![](../../../assets/esphome-starter-kit-plug-in-usb-c.webp)
+
+2\. Hold down the boot button. While still holding the boot button, press and release the reset button, then release the boot button. Please be careful not to snap or damage the FPC ribbon cable connectors located on the sides of the device.
+
+![](../../../assets/esphome-starter-kit-boot-mode.webp)
+
+3\. Your device is now in boot mode - The board will now stay in bootloader mode until you flash it.
+
 ---
-
-## 4\. Flash and add to Home Assistant
-
-1. In ESPHome Device Builder, click **Install** on your device.
-2. Choose **Plug into the computer running ESPHome Dashboard** (or **Wirelessly** if you're updating an already-flashed device).
-3. Wait for the compile and flash to finish. The first compile can take several minutes.
-4. Once it's done, the device will reboot and connect to your Wi-Fi.
-5. In Home Assistant, go to **Settings → Devices & Services**. Your new device should appear under **Discovered**. Click **Add**, pick an area, and finish.
-
-!!! success "You did it!"
-
-    Your ESP32-C6 is now running ESPHome and showing up in Home Assistant. You've written your first ESPHome configuration from scratch.
-
-## Next steps
-
-* Add more sensors and modules to your YAML and re-flash to expand the device.
-* Browse [Apollo's other product wikis](https://wiki.apolloautomation.com) for more advanced ESPHome examples.
-* Join the [Apollo Discord](https://link.apolloautomation.com/discord) to share what you build.
