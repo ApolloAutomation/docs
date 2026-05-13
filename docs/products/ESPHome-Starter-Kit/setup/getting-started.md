@@ -150,11 +150,9 @@ Make sure you're under the Components section. Click the **Add component** butto
 
 The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again
 
-!!! ! tip You can rename the component at this step if you'd like a friendlier name in Home Assistant. &nbsp; ### Boot Mode !!! info "Use a quality USB-C cable and power source"
+!!! tip "Use a quality USB-C cable and power source"
 
     ESP32 boards are sensitive to power. If your device keeps restarting, won't be detected, or won't broadcast its hotspot, try a different USB-C cable or a different USB port. A 5V 1A supply is plenty.
-
-&nbsp;
 
 1\. Hold the sides of the ESP32-C6 and gently push the USB-C cable firmly into the USB-C port. Plug in the other side of the USB-C cable into your computer. Please be careful not to snap or damage the FPC ribbon cable connectors located on the sides of the device.
 
