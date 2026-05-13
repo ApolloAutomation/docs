@@ -148,11 +148,13 @@ Make sure you're under the Components section. Click the **Add component** butto
 
 ### Boot Mode
 
-The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again!
+The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again
 
-!!! tip You can rename the component at this step if you'd like a friendlier name in Home Assistant. &nbsp; ### Boot Mode !!! info "Use a quality USB-C cable and power source"
+!!! ! tip You can rename the component at this step if you'd like a friendlier name in Home Assistant. &nbsp; ### Boot Mode !!! info "Use a quality USB-C cable and power source"
 
     ESP32 boards are sensitive to power. If your device keeps restarting, won't be detected, or won't broadcast its hotspot, try a different USB-C cable or a different USB port. A 5V 1A supply is plenty.
+
+&nbsp;
 
 1\. Hold the sides of the ESP32-C6 and gently push the USB-C cable firmly into the USB-C port. Plug in the other side of the USB-C cable into your computer. Please be careful not to snap or damage the FPC ribbon cable connectors located on the sides of the device.
 
@@ -164,8 +166,26 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 3\. Your device is now in boot mode - The board will now stay in bootloader mode until you flash it.
 
-#### Installing Firmware
+### Installing Firmware
 
-Before we continue, confirm that you installed the esphome device builder, configured your components, and put your device in boot mode.
+Before we continue, confirm that you installed the ESPHome Device Builder, configured your components, and put your device in boot mode.
 
-&nbsp;
+1. Click **Install** in the bottom right.
+2. Click **Plug into this computer**.
+3. Select the COM port, then click **Connect** to connect to the ESP32-C6 module.
+4. Wait for the firmware to compile and install. This usually takes two to five minutes.
+5. Once it completes, click **Stop**, then press the **Reset** button on your device. Your device will reboot and it's now ready to test out!
+
+![](../../../assets/device-builder-initial-firmware-install.gif)
+
+!!! tip "Click Show details during the install to watch the compile and flash process"
+
+    It's a great way to see what's happening under the hood.
+
+### Test your LED
+
+Above we installed the web\_server component which allows us to navigate to the ip address of our device or the hostname.local such as <a href="esphome-starter-kit.local" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a>
+
+If you gave yours a different name at the beginning, change the link to the-name-you-chose.local and paste that into a browser. It should load your new device and show you the Onboard RGB LED. We can click the toggle button to make sure the RGB LED turns on and off on our device!
+
+![](../../../assets/device-builder-test-onboard-rgb.gif)
