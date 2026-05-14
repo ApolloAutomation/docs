@@ -146,8 +146,10 @@ The <a href="https://esphome.io/components/web_server/" target="_blank" rel="nor
 2. Click **Add component**.
 3. Scroll to **Web Server** and click **Add**.
 4. Click **Add** once more to confirm.
+5. Toggle **Show advanced settings**.
+6. Scroll down to **Version** and select **3** from the dropdown.
 
-![](../../../assets/device-builder-add-web-server-component.gif)
+![](../../../assets/device-builder-install-web-server-v3.gif)
 
 #### Onboard RGB LED
 
@@ -182,11 +184,12 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 Before we continue, confirm that you installed the ESPHome Device Builder, configured your components, and put your device in boot mode.
 
-1. Click **Install** in the bottom right.
-2. Click **Plug into this computer**.
-3. Select the COM port, then click **Connect** to connect to the ESP32-C6 module.
-4. Wait for the firmware to compile and install. This usually takes two to five minutes.
-5. Once it completes, click **Stop**, then press the **Reset** button on your device. Your device will reboot and it's now ready to test out!
+1. Click **Save** in the bottom right which will then show an **Install** button.
+2. Click **Install** in the bottom right.
+3. Click **Plug into this computer**.
+4. Select the COM port, then click **Connect** to connect to the ESP32-C6 module.
+5. Wait for the firmware to compile and install. This usually takes two to five minutes.
+6. Once it completes, click **Stop**, then press the **Reset** button on your device. Your device will reboot and it's now ready to test out!
 
 ![](../../../assets/device-builder-initial-firmware-install.gif)
 
@@ -196,10 +199,12 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 
 ### Test your LED
 
-&nbsp;
-
 Above we installed the web\_server component which allows us to navigate to the ip address of our device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a>
 
 It should load your new device and show you the Onboard RGB LED. We can click the toggle button to make sure the RGB LED turns on and off on our device!
 
-![](../../../assets/device-builder-test-onboard-rgb.gif)
+![](../../../assets/device-builder-web-server-v3.gif)
+
+Example of the light changing colors below!
+
+![](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
