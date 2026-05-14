@@ -506,6 +506,9 @@ nav:
           - Getting Started: products/ESPHome-Starter-Kit/setup/getting-started.md
           - Modules: 
               - Button Module: products/ESPHome-Starter-Kit/modules/button-module.md
+              - Motion Module: products/ESPHome-Starter-Kit/modules/pir-module.md
+              - Temp & Humidity Module: products/ESPHome-Starter-Kit/modules/temperature-humidity-module.md
+              - LED & Buzzer Module: products/ESPHome-Starter-Kit/modules/casita-module.md
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
       - Holiday Ornaments:
