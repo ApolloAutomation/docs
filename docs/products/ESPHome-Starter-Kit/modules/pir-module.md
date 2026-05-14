@@ -1,5 +1,5 @@
 ---
-title: Adding the button module
+title: Adding the motion module
 description: >-
   Wire up the ESPHome Starter Kit button module, add it through ESPHome Device
   Builder, and verify presses in the web server.
