@@ -504,9 +504,10 @@ nav:
       - ESPHome Starter Kit:
           - First Steps: products/ESPHome-Starter-Kit/first-steps.md
           - Getting Started: products/ESPHome-Starter-Kit/setup/getting-started.md
+          - Modules: 
+              - Adding the Button Module: products/ESPHome-Starter-Kit/modules/button-module.md
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
-              - Adding the Button Module: products/ESPHome-Starter-Kit/modules/button-module.md
       - Holiday Ornaments:
           - H-1:
               - Introduction: products/h1/introduction.md
