@@ -24,7 +24,7 @@ The starter kit project template gets you online, but it doesn't enable the web 
 
 3. Click **Save**. Don't install yet, the button gets added in the next section.
 
-## COMMON WEBSERVER GIF
+![](../../../assets/webserver.gif)
 
 ---
 
@@ -37,9 +37,7 @@ Connect the button module to the ESP32-C6 using one of the FPC ribbon cables tha
 3. Slide one end of the ribbon cable into each connector with the contacts facing the board, then press each latch back down to lock the cable in.
 4. Plug the C6 back into your computer.
 
-## GIF PLACEHOLDER
-
-![Ribbon cable connecting the button module to the ESP32-C6](../../../assets/esk-button-module-connect.gif)
+** GIF PLACEHOLDER **
 
 !!! success "Handle the FPC connectors gently"
 
@@ -56,9 +54,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 3. Search for **Button** and select the Apollo Starter Kit button component.
 4. Click **Add**. Device Builder inserts the button's binary sensor block into your YAML.
 
-### GIF PLACEHOLDER
-
-![Add Component dialog in ESPHome Device Builder with the button component selected](../../../assets/esphome-device-builder-add-button-component.gif)
+![](../../../assets/button_component.gif)
 
 ---
 
