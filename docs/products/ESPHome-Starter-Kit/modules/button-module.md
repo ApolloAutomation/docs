@@ -12,8 +12,8 @@ The button module is the first input your starter kit gets, and the fastest way 
 
     Work through the two prerequisites first:
 
-    * [Start Here](../start-here/) to snap the button module off the panel.
-    * [First Steps](../setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
+    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the button module off the panel.
+    * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
 
 #### Prerequisite
 
