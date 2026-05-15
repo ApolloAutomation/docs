@@ -1,5 +1,5 @@
 ---
-title: ESPHome Starter Kit - Introduction
+title: ESPHome Starter Kit - Start Here
 description: Landing page of the ESPHome Starter Kit QR Code.
 ---
 # Welcome to the ESPHome Starter Kit!
@@ -31,7 +31,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
 
 <video autoplay="" loop="" muted="" playsinline="" width="100%">
-  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p>
+  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
   Your browser does not support embedded video.
 </video>
 
