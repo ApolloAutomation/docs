@@ -63,9 +63,15 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     The ESPHome Device Builder runs as a Home Assistant app served right inside your existing HA dashboard. This is the easiest option if you already run Home Assistant OS or a supervised install.
 
+    **<u>Method 1</u>**
+
     1. In Home Assistant, open **Settings → Apps → App Store**.
     2. Search for **ESPHome Device Builder** and click **Install**.
     3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
+
+    **<u>Method 2</u>**
+
+    To add the **ESPHome Device Builder** to your Home Assistant instance, use this My button:
 
     [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=esphome)
 
