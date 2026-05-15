@@ -1,6 +1,9 @@
 ---
 title: Adding the Temperature and Humidity Module
-description: Wire up the ESPHome Starter Kit Temperature and Humidity module. This is a trustworthy aht20 great for accurate temp and humidity measurements in any room!
+description: >-
+  Wire up the ESPHome Starter Kit Temperature and Humidity module. This is a
+  trustworthy aht20 great for accurate temp and humidity measurements in any
+  room!
 ---
 # Adding the Temperature and Humidity Module
 
@@ -26,27 +29,41 @@ The <a href="https://esphome.io/components/web_server/" target="_blank" rel="nor
 
 ![](../../../assets/device-builder-install-web-server-v3.gif)
 
-## Plug in the temperature and humidity module
+## Attach Temp and Humidity module
 
-Connect the temperature and humidity module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the C6 works, top or bottom.
+Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the C6 works, top or bottom.
 
-1. Unplug the USB-C cable from the ESP32-C6 so the board is powered off.
-2. Flip up the latch on the FPC connector on both the C6 and the temperature and humidity module.
-3. Slide one end of the ribbon cable into each connector with the contacts facing the board, then press each latch back down to lock the cable in.
-4. Plug the C6 back into your computer.
+1\. Unplug the USB-C cable from the ESP32-C6 so the board is powered off.
 
-**GIF PLACEHOLDER**
+![](../../../assets/esphome-starter-kit-remove-usb.webp)
 
-!!! warning "Handle the FPC connectors gently" The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
+2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector. Gently press the latch down to lock it in place.
 
-## Add the temperature and humidity component in ESPHome Device Builder
+![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
-ESPHome Device Builder ships an Add Component flow that knows the pin layout for every Apollo Starter Kit module. Use it instead of writing the I2C bus and sensor block by hand, and you'll get the right pins, address, and variant on the first try.
+3\. Slide the ribbon cable into the button module with the blue side facing upwards then press the latch down to lock it in place.
+
+![](../../../assets/esphome-starter-kit-attach-fpc-to-temp-hum-module.webp)
+
+4\. Plug the C6 back into your computer.
+
+!!! warning "Handle the FPC connectors gently"
+
+    The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
+
+## Add to ESPHome Device Builder
+
+ESPHome Device Builder ships an **Add Component** flow that knows the pin layout for every Apollo Starter Kit module. Use it instead of writing the I2C bus and sensor block by hand, and you'll get the right pins, address, and variant on the first try.
 
 1. Open your starter kit device in Device Builder and click **Edit**.
-2. Click **Add Component** in the editor toolbar.
-3. Search for **Temperature and Humidity** and select the Apollo Starter Kit temperature and humidity component.
-4. Click **Add**. Device Builder inserts the I2C bus and the AHT20F sensor block into your YAML.
+2. In the ESPHome Device Builder, navigate to the **Components** section.
+3. Click **Add Component** in the editor toolbar.
+4. Search for **Temperature and Humidity** and select the Apollo Starter Kit temperature and humidity component.
+5. Click **Add**. Device Builder inserts I2C bus into your YAML.
+6. Search for **Temperature and Humidity** and select the Apollo Starter Kit temperature and humidity component.
+7. Click **Add**. Device Builder inserts the AHT20F sensor block into your YAML.
+
+![](../../../assets/esphome-device-builder-add-i2c-temp-hum-component.gif)
 
 ??? note "What the temperature and humidity YAML does"
 
@@ -88,22 +105,24 @@ ESPHome Device Builder ships an Add Component flow that knows the pin layout for
 Flash the device so the new web server and the temperature and humidity entities go live.
 
 1. Click **Install** on your device card in ESPHome Device Builder.
-2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **Wirelessly** if the device is already on your Wi-Fi.
+2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
-**GIF PLACEHOLDER**
+![](../../../assets/esphome-device-builder-install-temp-hum-component.gif)
 
-## Test it in the web server
+## Test the Temp and Humidity
 
-With the device back online, the temperature and humidity entities are live on the web server. Open it in a browser on the same network and watch the values come in.
+With the device back online, the temperature and humidity entities are live on the web server. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and watch it react in real time.
 
 1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
 2. Find the **Temperature** and **Humidity** entities in the sensor list.
 3. Watch the values update on the interval you set. Cup your hand over the sensor or breathe on it, the humidity reading will respond within a few cycles.
 
+![](../../../assets/esphome-device-builder-test-temp-humidity.gif)
+
 > Web server page showing the Temperature and Humidity sensors with live readings.
 
-**GIF PLACEHOLDER**
+!!! success "Your Temperature and Humidity module is wired up"
 
-!!! success "Your temperature and humidity module is wired up"
+    You now have a trustworthy temp and humidity sensor to place anywhere in your home!
