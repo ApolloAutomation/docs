@@ -63,11 +63,17 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     The ESPHome Device Builder runs as a Home Assistant app served right inside your existing HA dashboard. This is the easiest option if you already run Home Assistant OS or a supervised install.
 
+    **<u>Method 1</u>**
+
+    To add the **ESPHome Device Builder** to your Home Assistant instance, use this My button:
+
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=esphome)
+
+    **<u>Method 2</u>**
+
     1. In Home Assistant, open **Settings → Apps → App Store**.
     2. Search for **ESPHome Device Builder** and click **Install**.
     3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
-
-    <!-- TODO: confirm the exact app name shown in the HA App Store (e.g. "ESPHome Device Builder" vs "ESPHome Builder Beta") and add a screenshot of the install flow. -->
 
     !!! info "Already on the new layout"
 
@@ -101,15 +107,19 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 #### Set up Wi-Fi Credentials
 
-Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials. The password is case sensitive so be careful when
+Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials. *The password is case sensitive so be careful when entering your password.*
+
+!!! tip "Secrets Folder"
+
+    One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets.md" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
 
 ![](../../../assets/esphome-builder-enter-wifi-credentials.gif)
 
 If you make a mistake or want to change this later, click the 3 dots menu in the top right then select Secrets. Click the Eye icon to unhide the Wi-Fi SSID and password and change them then click Save in the bottom right.
 
-!!! tip "Protip: You can put all kinds of credentials here that you want kept secret!"
+!!! tip "Get busy!"
 
-    One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets.md" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
+    You are done with the install guide and can now use the kit!
 
 #### Add a new device
 
