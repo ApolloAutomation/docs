@@ -502,13 +502,13 @@ nav:
             - Teardown and Reassembly Of BTN-1: products/btn1/troubleshooting/btn1-teardown.md
             - Reset Wi-Fi Credentials: products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
       - ESPHome Starter Kit:
-          - First Steps: products/ESPHome-Starter-Kit/first-steps.md
-          - Getting Started: products/ESPHome-Starter-Kit/setup/getting-started.md
+          - Start Here: products/ESPHome-Starter-Kit/start-here.md
+          - First Steps: products/ESPHome-Starter-Kit/setup/first-steps.md
           - Modules: 
-              - Button Module: products/ESPHome-Starter-Kit/modules/button-module.md
-              - Motion Module: products/ESPHome-Starter-Kit/modules/pir-module.md
-              - Temp & Humidity Module: products/ESPHome-Starter-Kit/modules/temperature-humidity-module.md
-              - LED & Buzzer Module: products/ESPHome-Starter-Kit/modules/casita-module.md
+              - Button: products/ESPHome-Starter-Kit/modules/button-module.md
+              - Motion: products/ESPHome-Starter-Kit/modules/motion-module.md
+              - Temp & Humidity: products/ESPHome-Starter-Kit/modules/temperature-humidity-module.md
+              - LED & Buzzer: products/ESPHome-Starter-Kit/modules/casita-module.md
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
       - Holiday Ornaments:

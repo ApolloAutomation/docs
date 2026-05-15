@@ -1,10 +1,8 @@
 ---
-title: Adding the button module
-description: >-
-  Wire up the ESPHome Starter Kit button module, add it through ESPHome Device
-  Builder, and verify presses in the web server.
+title: Adding the Temperature and Humidity Module
+description: Wire up the ESPHome Starter Kit Temperature and Humidity module. This is a trustworthy aht20 great for accurate temp and humidity measurements in any room!
 ---
-# Adding the temperature and humidity module
+# Adding the Temperature and Humidity Module
 
 The temperature and humidity module is your starter kit's first environmental sensor, reading the air around it on whatever interval you choose. By the end of this tutorial you'll have an AHT20F wired to your ESP32-C6, surfaced as two sensors in your YAML, and updating live in the web server.
 
@@ -12,18 +10,21 @@ The temperature and humidity module is your starter kit's first environmental se
 
     Work through the two prerequisites first:
 
-    - [First Steps](../first-steps/) to snap the temperature and humidity module off the panel.
-    - [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
+    * [Start Here](../start-here/) to snap the button module off the panel.
+    * [First Steps](../setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
 
-## Start with your base config
+#### Prerequisite
 
-The starter kit project template gets you online, but it doesn't enable the web server yet. Add it now so you have a live page to test the sensor against after flashing.
+The <a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener">Web Server</a> is used to broadcast a local website using your device. This allows you to navigate to the IP address of your device or hostname such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> to easily control your new device!
 
-1. In ESPHome Device Builder, open your starter kit device and click **Edit**.
-2. Add the `web_server` component, making sure to select version 3.
-3. Click **Save**. Don't install yet, the sensor gets added in the next section.
+1. In the ESPHome Device Builder, navigate to the **Core configuration** section.
+2. Click **Add component**.
+3. Scroll to **Web Server** and click **Add**.
+4. Click **Add** once more to confirm.
+5. Toggle **Show advanced settings**.
+6. Scroll down to **Version** and select **3** from the dropdown.
 
-![](../../../assets/webserver.gif)
+![](../../../assets/device-builder-install-web-server-v3.gif)
 
 ## Plug in the temperature and humidity module
 
