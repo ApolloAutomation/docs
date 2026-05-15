@@ -25,13 +25,13 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 
 !!! success "Take it slow"
 
-    Bend the panel a little at a time rather than forcing it. The PCB is rigid but the components on the modules can be damaged by sharp impacts or twisting.
+    Bend the panel gradually, not all at once. The PCB is sturdy, but the components on the modules prefer a gentle snap.
 
 1. Hold the panel flat on a table with one hand on the module you want to remove.
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
 
 <video autoplay="" loop="" muted="" playsinline="" width="100%">
-  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p>
+  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p>
   Your browser does not support embedded video.
 </video>
 
