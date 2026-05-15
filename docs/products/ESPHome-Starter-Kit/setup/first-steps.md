@@ -1,8 +1,8 @@
 ---
-title: Getting Started with the ESPHome Starter Kit
+title: First Steps with the ESPHome Starter Kit
 description: Step by step guide for getting started with the ESPHome Starter Kit
 ---
-# ESPHome Starter Kit - Getting Started
+# ESPHome Starter Kit - First Steps
 
 This guide walks you through installing the ESPHome Device Builder app, and writing your first ESPHome YAML configuration from scratch.
 
