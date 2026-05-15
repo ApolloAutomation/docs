@@ -107,15 +107,19 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 #### Set up Wi-Fi Credentials
 
-Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials. The password is case sensitive so be careful when
+Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials. *The password is case sensitive so be careful when entering your password.*
+
+!!! tip "Protip: You can put all kinds of credentials here that you want kept secret!"
+
+    One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets.md" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
 
 ![](../../../assets/esphome-builder-enter-wifi-credentials.gif)
 
 If you make a mistake or want to change this later, click the 3 dots menu in the top right then select Secrets. Click the Eye icon to unhide the Wi-Fi SSID and password and change them then click Save in the bottom right.
 
-!!! tip "Protip: You can put all kinds of credentials here that you want kept secret!"
+!!! tip "Get busy!"
 
-    One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets.md" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
+    You are done with the install guide and can now use the kit!
 
 #### Add a new device
 
