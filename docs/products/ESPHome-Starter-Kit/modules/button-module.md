@@ -50,14 +50,15 @@ Connect the button module to the ESP32-C6 using one of the FPC ribbon cables tha
 
     The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
-## Add Component to ESPHome Device Builder
+## Add to ESPHome Device Builder
 
 ESPHome Device Builder ships an **Add Component** flow that knows the pin layout for every Apollo Starter Kit module. Use it instead of writing the binary sensor by hand, and you'll get the right GPIO and inversion settings on the first try.
 
 1. Open your starter kit device in Device Builder and click **Edit**.
-2. Click **Add Component** in the editor toolbar.
-3. Search for **Button** and select the **Button Module**.
-4. Click **Add**. Device Builder inserts the button's binary sensor block into your YAML.
+2. In the ESPHome Device Builder, navigate to the **Components** section.
+3. Click **Add Component** in the editor toolbar.
+4. Search for **Button** and select the **Button Module**.
+5. Click **Add**. Device Builder inserts the button's binary sensor block into your YAML.
 
 ![](../../../assets/esphome-device-builder-add-button-module.gif)
 
@@ -103,7 +104,7 @@ Flash the device so the new web server and button entity go live.
 
 ## Test the Button
 
-With the device back online, the button entity is live on the web server. Open it in a browser on the same network and watch it react in real time.
+With the device back online, the button entity is live on the web server. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and watch it react in real time.
 
 ![](../../../assets/esphome-device-builder-launch-webserver-from-visit-button.gif)
 

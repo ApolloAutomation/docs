@@ -4,17 +4,15 @@ description: Step by step guide for getting started with the ESPHome Starter Kit
 ---
 # ESPHome Starter Kit - First Steps
 
-This guide walks you through installing the ESPHome Device Builder app, and writing your first ESPHome YAML configuration from scratch.
+This guide walks you through installing the ESPHome Device Builder app, and making your first ESPHome YAML configuration from scratch.
 
 By the end you'll have your ESPHome Starter Kit flashed with a working configuration and showing up in Home Assistant and with a working web server accessible at its IP address or esphome-starter-kit.local in a browser.
 
 ---
 
-<a href="../../first-steps/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" /> Click Here for the First Steps </a>
-
 ### ESPHome Device Builder
 
-ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
+ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome YAML configurations. You'll use it to build the firmware for your kit.
 
 Think of it like telling the starter kit about what devices it has connected and how to use them!
 
@@ -103,7 +101,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 #### Set up Wi-Fi Credentials
 
-Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials.
+Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials. The password is case sensitive so be careful when
 
 ![](../../../assets/esphome-builder-enter-wifi-credentials.gif)
 
@@ -208,3 +206,5 @@ It should load your new device and show you the Onboard RGB LED. We can click th
 Example of the light changing colors below!
 
 ![](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
+
+<a href="../setup/start-here/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - Start Here</a> <a href="../setup/button-module/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Add Button Module</a>
