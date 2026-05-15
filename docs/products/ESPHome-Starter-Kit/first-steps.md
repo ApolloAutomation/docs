@@ -2,7 +2,7 @@
 title: ESPHome Starter Kit - Introduction
 description: Landing page of the ESPHome Starter Kit QR Code.
 ---
-# Welcome to the ESPHome Starter Kit
+# Welcome to the ESPHome Starter Kit!
 
 Welcome to the start of your ESPHome journey with the all-new **ESPHome Starter Kit**!
 
@@ -67,6 +67,6 @@ The kit includes:
 
 ## Next: bring it online
 
-Once you've identified your modules and snapped them off the panel, the next step is to connect the ESP32-C6 to your computer and walk through your first ESPHome configuration.
+Once you've identified your modules and snapped them off the panel, the next step is to connect the main board to your computer and walk through your first ESPHome configuration.
 
 <a href="../setup/getting-started/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" />   Open ESPHome Getting Started </a>
