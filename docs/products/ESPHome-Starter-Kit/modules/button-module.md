@@ -23,20 +23,29 @@ The starter kit project template gets you online, but it doesn't enable the web 
 2. Add the `web_server` component, making sure to select version 3.
 3. Click **Save**. Don't install yet, the button gets added in the next section.
 
-![](../../../assets/webserver.gif)
+![](../../../assets/device-builder-install-web-server-v3.gif)
 
 ## Plug in the button module
 
 Connect the button module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the C6 works, top or bottom.
 
-1. Unplug the USB-C cable from the ESP32-C6 so the board is powered off.
-2. Flip up the latch on the FPC connector on both the C6 and the button module.
-3. Slide one end of the ribbon cable into each connector with the contacts facing the board, then press each latch back down to lock the cable in.
-4. Plug the C6 back into your computer.
+1\. Unplug the USB-C cable from the ESP32-C6 so the board is powered off.
 
-**GIF PLACEHOLDER**
+![](../../../assets/esphome-starter-kit-remove-usb.webp)
 
-!!! warning "Handle the FPC connectors gently" The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
+2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector. Gently press the latch down to lock it in place
+
+![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
+
+3\. Slide the ribbon cable into the button module with the blue side facing upwards then press the latch down to lock it in place.
+
+![](../../../assets/esphome-starter-kit-attach-fpc-to-button-module.webp)
+
+4\. Plug the C6 back into your computer.
+
+!!! warning "Handle the FPC connectors gently"
+
+    The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
 ## Add the button component in ESPHome Device Builder
 
