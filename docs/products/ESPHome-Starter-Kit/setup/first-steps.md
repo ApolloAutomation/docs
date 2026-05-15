@@ -10,8 +10,6 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 ---
 
-<a href="../../first-steps/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" /> Click Here for the First Steps </a>
-
 ### ESPHome Device Builder
 
 ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
@@ -103,7 +101,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 #### Set up Wi-Fi Credentials
 
-Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials.
+Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials. The password is case sensitive so be careful when
 
 ![](../../../assets/esphome-builder-enter-wifi-credentials.gif)
 
@@ -208,3 +206,5 @@ It should load your new device and show you the Onboard RGB LED. We can click th
 Example of the light changing colors below!
 
 ![](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
+
+&nbsp;

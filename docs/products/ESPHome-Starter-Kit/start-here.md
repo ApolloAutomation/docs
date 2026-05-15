@@ -31,7 +31,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
 
 <video autoplay="" loop="" muted="" playsinline="" width="100%">
-  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
   Your browser does not support embedded video.
 </video>
 
@@ -87,4 +87,4 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 
 Once you've identified your modules and snapped them off the panel, the next step is to connect the main board to your computer and walk through your first ESPHome configuration.
 
-<a href="../setup/getting-started/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" />   Next - First Steps </a>
+<a href="../setup/first-steps/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" />   Next - First Steps </a>
