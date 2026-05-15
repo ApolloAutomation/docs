@@ -11,9 +11,9 @@ The button module is the first input your starter kit gets, and the fastest way 
 !!! note "Before you start"
 
     Work through the two prerequisites first:
-
-    - [First Steps](../first-steps/) to snap the button module off the panel.
-    - [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
+https://active-lyrebird.cloudvent.net/products/ESPHome-Starter-Kit/setup/getting-started/
+    - [First Steps](https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/first-steps/) to snap the button module off the panel.
+    - [Getting Started](https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
 
 ## Start with your base config
 
@@ -23,7 +23,7 @@ The starter kit project template gets you online, but it doesn't enable the web 
 2. Add the `web_server` component, making sure to select version 3.
 3. Click **Save**. Don't install yet, the button gets added in the next section.
 
-![](../../../assets/webserver.gif)
+![](/assets/webserver.gif)
 
 ## Plug in the button module
 
@@ -47,7 +47,7 @@ ESPHome Device Builder ships an Add Component flow that knows the pin layout for
 3. Search for **Button** and select the Apollo Starter Kit button component.
 4. Click **Add**. Device Builder inserts the button's binary sensor block into your YAML.
 
-![](../../../assets/button_component.gif)
+![](/assets/button_component.gif)
 
 ??? note "What the button YAML does"
 

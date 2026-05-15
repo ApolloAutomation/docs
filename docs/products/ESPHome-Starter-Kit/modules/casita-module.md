@@ -12,8 +12,8 @@ The Casita is the starter kit's notification module, a strip of ten addressable 
 
     Work through the two prerequisites first:
 
-    - [First Steps](../first-steps/) to snap the Casita module off the panel.
-    - [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
+    - [First Steps](https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/first-steps/) to snap the Casita module off the panel.
+    - [Getting Started](https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
 
 ## Start with your base config
 
@@ -23,7 +23,7 @@ The starter kit project template gets you online, but it doesn't enable the web 
 2. Add the `web_server` component, making sure to select version 3.
 3. Click **Save**. Don't install yet, the Casita gets added in the next section.
 
-![](../../../assets/webserver.gif)
+![](/assets/webserver.gif)
 
 ## Plug in the Casita module
 
