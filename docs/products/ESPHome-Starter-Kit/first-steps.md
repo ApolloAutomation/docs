@@ -45,7 +45,7 @@ The kit includes:
 
 ![](../../assets/esphome-starter-kit-main-board-only.jpg)
 
-* **Casita LED and Buzzer module.** The starter kit's notification module, a strip of ten addressable RGB LEDs and a small piezo buzzer behind the ESPHome logo silkscreen. Use the included stand to show it off!
+* **Casita LED and Buzzer module.** The starter kit's notification module, a strip of ten addressable RGB LEDs and a small piezo buzzer behind the ESPHome logo silkscreen. *Use the included stand to show it off!*
 
 ![](../../assets/esphome-starter-kit-casita-module-only.jpg)
 
