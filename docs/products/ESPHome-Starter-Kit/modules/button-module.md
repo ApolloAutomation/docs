@@ -8,12 +8,12 @@ description: >-
 
 The button module is the first input your starter kit gets, and the fastest way to feel ESPHome respond to a physical action. By the end of this tutorial you'll have the button wired to your ESP32-C6, surfaced as a binary sensor in your YAML, and toggling live in the web server when you press it.
 
-!!! note "Before you start" Work through the two prerequisites first:
+!!! note "Before you start"
 
-```
-- [First Steps](../first-steps/) to snap the button module off the panel.
-- [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
-```
+    Work through the two prerequisites first:
+
+    - [First Steps](../first-steps/) to snap the button module off the panel.
+    - [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
 
 ## Start with your base config
 
