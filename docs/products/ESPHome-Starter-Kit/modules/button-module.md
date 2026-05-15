@@ -4,7 +4,7 @@ description: >-
   Wire up the ESPHome Starter Kit button module, add it through ESPHome Device
   Builder, and verify presses in the web server.
 ---
-# Adding the button module
+# Adding the Button Module
 
 The button module is the first input your starter kit gets, and the fastest way to feel ESPHome respond to a physical action. By the end of this tutorial you'll have the button wired to your ESP32-C6, surfaced as a binary sensor in your YAML, and toggling live in the web server when you press it.
 
@@ -12,20 +12,23 @@ The button module is the first input your starter kit gets, and the fastest way 
 
     Work through the two prerequisites first:
 
-    - [First Steps](../first-steps/) to snap the button module off the panel.
-    - [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
+    * [Start Here](../start-here/) to snap the button module off the panel.
+    * [First Steps](../setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
 
-## Start with your base config
+#### Prerequisite
 
-The starter kit project template gets you online, but it doesn't enable the web server yet. Add it now so you have a live page to test the button against after flashing.
+The <a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener">Web Server</a> is used to broadcast a local website using your device. This allows you to navigate to the IP address of your device or hostname such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> to easily control your new device!
 
-1. In ESPHome Device Builder, open your starter kit device and click **Edit**.
-2. Add the `web_server` component, making sure to select version 3.
-3. Click **Save**. Don't install yet, the button gets added in the next section.
+1. In the ESPHome Device Builder, navigate to the **Core configuration** section.
+2. Click **Add component**.
+3. Scroll to **Web Server** and click **Add**.
+4. Click **Add** once more to confirm.
+5. Toggle **Show advanced settings**.
+6. Scroll down to **Version** and select **3** from the dropdown.
 
 ![](../../../assets/device-builder-install-web-server-v3.gif)
 
-## Plug in the button module
+## Attach Button module
 
 Connect the button module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the C6 works, top or bottom.
 
@@ -47,16 +50,16 @@ Connect the button module to the ESP32-C6 using one of the FPC ribbon cables tha
 
     The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
-## Add the button component in ESPHome Device Builder
+## Add Component to ESPHome Device Builder
 
-ESPHome Device Builder ships an Add Component flow that knows the pin layout for every Apollo Starter Kit module. Use it instead of writing the binary sensor by hand, and you'll get the right GPIO and inversion settings on the first try.
+ESPHome Device Builder ships an **Add Component** flow that knows the pin layout for every Apollo Starter Kit module. Use it instead of writing the binary sensor by hand, and you'll get the right GPIO and inversion settings on the first try.
 
 1. Open your starter kit device in Device Builder and click **Edit**.
 2. Click **Add Component** in the editor toolbar.
-3. Search for **Button** and select the Apollo Starter Kit button component.
+3. Search for **Button** and select the **Button Module**.
 4. Click **Add**. Device Builder inserts the button's binary sensor block into your YAML.
 
-![](../../../assets/button_component.gif)
+![](../../../assets/esphome-device-builder-add-button-module.gif)
 
 ??? note "What the button YAML does"
 
@@ -92,15 +95,17 @@ ESPHome Device Builder ships an Add Component flow that knows the pin layout for
 Flash the device so the new web server and button entity go live.
 
 1. Click **Install** on your device card in ESPHome Device Builder.
-2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **Wirelessly** if the device is already on your Wi-Fi.
+2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
-**GIF PLACEHOLDER**
+![](../../../assets/esphome-device-builder-install-button-component.gif)
 
-## Test it in the web server
+## Test the Button
 
 With the device back online, the button entity is live on the web server. Open it in a browser on the same network and watch it react in real time.
+
+![](../../../assets/esphome-device-builder-launch-webserver-from-visit-button.gif)
 
 1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
 2. Find the **Button** entity in the binary sensor list.
@@ -108,6 +113,8 @@ With the device back online, the button entity is live on the web server. Open i
 
 > Web server page showing the Button binary sensor toggling between ON and OFF as the button is pressed.
 
-**GIF PLACEHOLDER**
+![](../../../assets/esphome-device-builder-test-button-events.gif)
 
-!!! success "Your button module is wired up"
+!!! success "Your button module is now ready for you to use in automations!"
+
+    Your Button Module is now ready for some fun tasks.. like toggling lights on and off in your room, watering your plants, and more!
