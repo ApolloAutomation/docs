@@ -10,18 +10,18 @@ Welcome to the start of your ESPHome journey with the all-new **ESPHome Starter 
 
 By the end of this wiki you'll know how to:
 
+* Remove the modules off the panel safely
 * Identify each part of your kit
-* Snap the modules off the panel safely
 
 ## What's in the kit
 
-Your kit arrives as a single snap-apart panel that includes the ESP32-C6 main board along with a selection of interchangeable modules. The kit also includes three ribbon cables used to connect the modules together.
+Your kit arrives as a single snap-apart panel that includes the ESP32-C6 main board along with a selection of interchangeable modules. The kit also includes three ribbon cables used to connect the modules together, and a stand for the Casita module.
 
 ![](../../assets/esphome-starter-kit-whats-in-the-box.png)
 
 ## Snapping the panel apart
 
-Each module is connected to the panel by small breakaway tabs. Follow the steps below to separate them
+Each module is connected to the panel by small breakaway tabs. Follow the steps below to separate them.
 
 !!! success "Take it slow"
 
@@ -31,7 +31,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
 
 <video autoplay="" loop="" muted="" playsinline="" width="100%">
-  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
   Your browser does not support embedded video.
 </video>
 
