@@ -37,31 +37,37 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 
 ## Meet the modules
 
-The kit includes:
-
-![](../../assets/sotoh-graphic-detailed.jpg)
-
-* **ESP32-C6 main board.** The brain of every project you'll build with the kit. It handles Wi-Fi and Bluetooth, runs your ESPHome config, and exposes the GPIO pins the modules plug into.
+**ESP32-C6 main board.** The brain of every project you'll build with the kit. It handles Wi-Fi and Bluetooth, runs your ESPHome config, and exposes the GPIO pins the modules plug into.
 
 ![](../../assets/esphome-starter-kit-main-board-only.jpg)
 
-* **Casita LED and Buzzer module.** The starter kit's notification module, a strip of ten addressable RGB LEDs and a small piezo buzzer behind the ESPHome logo silkscreen. *Use the included stand to show it off!*
+---
+
+**Casita LED and Buzzer module.** The starter kit's notification module, a strip of ten addressable RGB LEDs and a small piezo buzzer behind the ESPHome logo silkscreen. *Use the included stand to show it off!*
 
 ![](../../assets/esphome-starter-kit-casita-module-only.jpg)
 
-* **Motion module.** Detects movement in a room and a great way to get started automating your home. It comes in two parts, and the PIR sensor easily plugs into the PIR module board.
+---
+
+**Motion module.** Detects movement in a room and a great way to get started automating your home. It comes in two parts, and the PIR sensor easily plugs into the PIR module board.
 
 ![](../../assets/esphome-starter-kit-pir-module-only.jpg)
 
-* **Button module.** Premium feel button perfect to trigger automations for lights and more.
+---
+
+**Button module.** Premium feel button perfect to trigger automations for lights and more.
 
 ![](../../assets/esphome-starter-kit-button-module-only.jpg)
 
-* **Temperature and Humidity module.** Extremely accurate temp and humidity sensor trustworthy enough to track a room comfort level with ease!
+---
+
+**Temperature and Humidity module.** Extremely accurate temp and humidity sensor trustworthy enough to track a room comfort level with ease!
 
 ![](../../assets/esphome-starter-kit-temp-hum-module-only-1.jpg)
 
-* **FPC cables.** Each module connects to the main board through the FPC connector using one of the three provided cables. *Tear the brown paper bag open from one of the ends. Please DO NOT use scissors as you could accidentally cut the cables!*
+---
+
+**FPC cables.** Each module connects to the main board through the FPC connector using one of the three provided cables. *Tear the brown paper bag open from one of the ends. Please DO NOT use scissors as you could accidentally cut the cables!*
 
 ![](../../assets/esphome-starter-kit-fpc-cables-only.jpg)
 
@@ -69,4 +75,4 @@ The kit includes:
 
 Once you've identified your modules and snapped them off the panel, the next step is to connect the main board to your computer and walk through your first ESPHome configuration.
 
-<a href="../setup/getting-started/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" />   Open ESPHome Getting Started </a>
+<a href="../setup/getting-started/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" />   Next - First Steps </a>
