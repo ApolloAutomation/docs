@@ -4,7 +4,7 @@ description: Step by step guide for getting started with the ESPHome Starter Kit
 ---
 # ESPHome Starter Kit - First Steps
 
-This guide walks you through installing the ESPHome Device Builder app, and writing your first ESPHome YAML configuration from scratch.
+This guide walks you through installing the ESPHome Device Builder app, and making your first ESPHome YAML configuration from scratch.
 
 By the end you'll have your ESPHome Starter Kit flashed with a working configuration and showing up in Home Assistant and with a working web server accessible at its IP address or esphome-starter-kit.local in a browser.
 
@@ -12,7 +12,7 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 ### ESPHome Device Builder
 
-ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome configurations. You'll use it to build the firmware for your kit.
+ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome YAML configurations. You'll use it to build the firmware for your kit.
 
 Think of it like telling the starter kit about what devices it has connected and how to use them!
 
