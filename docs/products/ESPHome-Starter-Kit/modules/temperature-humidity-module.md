@@ -23,6 +23,8 @@ The starter kit project template gets you online, but it doesn't enable the web 
 2. Add the `web_server` component, making sure to select version 3.
 3. Click **Save**. Don't install yet, the sensor gets added in the next section.
 
+![](../../../assets/webserver.gif)
+
 ## Plug in the temperature and humidity module
 
 Connect the temperature and humidity module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the C6 works, top or bottom.

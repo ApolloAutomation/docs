@@ -23,6 +23,8 @@ The starter kit project template gets you online, but it doesn't enable the web 
 2. Add the `web_server` component, making sure to select version 3.
 3. Click **Save**. Don't install yet, the sensor gets added in the next section.
 
+![](../../../assets/webserver.gif)
+
 ## Install the PIR sensor into the module
 
 The PIR sensor (the small white dome on a tiny PCB) ships separately from the PIR module board so it can be packed safely. Install it onto the module before plugging anything into the C6.
