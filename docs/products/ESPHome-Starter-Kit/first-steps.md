@@ -61,7 +61,7 @@ The kit includes:
 
 ![](../../assets/esphome-starter-kit-temp-hum-module-only-1.jpg)
 
-* **FPC cables.** Each module connects to the main board through the FPC connector using one of the three provided cables. *Tear the bag open from one of the ends. Please DO NOT use scissors as you could accidentally cut the cables!*
+* **FPC cables.** Each module connects to the main board through the FPC connector using one of the three provided cables. *Tear the brown paper bag open from one of the ends. Please DO NOT use scissors as you could accidentally cut the cables!*
 
 ![](../../assets/esphome-starter-kit-fpc-cables-only.jpg)
 
