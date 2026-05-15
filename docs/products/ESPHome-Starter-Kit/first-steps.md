@@ -49,7 +49,7 @@ The kit includes:
 
 ![](../../assets/esphome-starter-kit-casita-module-only.jpg)
 
-* **Motion module.** Detects movement in a room and a great way to get started automating your home. Comes with a separate 3 pin header and PIR motion sensor.
+* **Motion module.** Detects movement in a room and a great way to get started automating your home. It comes in two parts, and the PIR sensor easily plugs into the PIR module board.
 
 ![](../../assets/esphome-starter-kit-pir-module-only.jpg)
 
@@ -61,7 +61,9 @@ The kit includes:
 
 ![](../../assets/esphome-starter-kit-temp-hum-module-only-1.jpg)
 
-* Each module connects to the ESP32-C6 board through the FPC connectors which are the thin white ribbon cables in the images above.
+* **FPC cables.** Each module connects to the main board through the FPC connector using one of the three provided cables. *Tear the bag open from one of the ends. Please DO NOT use scissors as you could accidentally cut the cables!*
+
+![](../../assets/esphome-starter-kit-fpc-cables-only.jpg)
 
 ## Next: bring it online
 
