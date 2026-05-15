@@ -6,6 +6,8 @@ description: Landing page of the ESPHome Starter Kit QR Code.
 
 Welcome to the start of your ESPHome journey with the all-new **ESPHome Starter Kit**!
 
+![](../../assets/esphome-starter-kit-exploded-with-box-1.png)
+
 By the end of this wiki you'll know how to:
 
 * Identify each part of your kit
@@ -15,7 +17,7 @@ By the end of this wiki you'll know how to:
 
 Your kit arrives as a single snap-apart panel that includes the ESP32-C6 main board along with a selection of interchangeable modules. The kit also includes three ribbon cables used to connect the modules together.
 
-![](../../assets/sotoh-graphic-detailed.jpg)
+![](../../assets/esphome-starter-kit-module-board.png)
 
 ## Snapping the panel apart
 
@@ -29,13 +31,15 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
 
 <video autoplay="" loop="" muted="" playsinline="" width="100%">
-  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p>
+  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p>
   Your browser does not support embedded video.
 </video>
 
 ## Meet the modules
 
 The kit includes:
+
+![](../../assets/sotoh-graphic-detailed.jpg)
 
 * **ESP32-C6 main board.** The brain of every project you'll build with the kit. It handles Wi-Fi and Bluetooth, runs your ESPHome config, and exposes the GPIO pins the modules plug into.
 
