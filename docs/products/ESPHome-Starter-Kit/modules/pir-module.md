@@ -1,5 +1,5 @@
 ---
-title: Adding the button module
+title: Adding the motion module
 description: >-
   Wire up the ESPHome Starter Kit button module, add it through ESPHome Device
   Builder, and verify presses in the web server.
@@ -8,12 +8,12 @@ description: >-
 
 The PIR motion module turns your starter kit into a motion sensor. By the end of this tutorial you'll have an MH-SR602 wired to your ESP32-C6, surfaced as a binary sensor in your YAML, and flipping live in the web server whenever something moves in front of it.
 
-!!! note "Before you start" Work through the two prerequisites first:
+!!! note "Before you start"
 
-```
-- [First Steps](../first-steps/) to snap the PIR motion module off the panel.
-- [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
-```
+    Work through the two prerequisites first:
+
+    - [First Steps](../first-steps/) to snap the PIR motion module off the panel.
+    - [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
 
 ## Start with your base config
 
@@ -22,6 +22,8 @@ The starter kit project template gets you online, but it doesn't enable the web 
 1. In ESPHome Device Builder, open your starter kit device and click **Edit**.
 2. Add the `web_server` component, making sure to select version 3.
 3. Click **Save**. Don't install yet, the sensor gets added in the next section.
+
+![](../../../assets/webserver.gif)
 
 ## Install the PIR sensor into the module
 
@@ -55,26 +57,34 @@ ESPHome Device Builder ships an Add Component flow that knows the pin layout for
 3. Search for **PIR** and select the Apollo Starter Kit PIR motion component.
 4. Click **Add**. Device Builder inserts the PIR's binary sensor block into your YAML.
 
-## What the PIR YAML does
+??? note "What the PIR YAML does"
 
-The block Add Component drops into your config looks like this:
+    The block Add Component drops into your config looks like this:
 
-```yaml
-binary_sensor:
-  - platform: gpio
-    pin:
-      number: GPIO3
-      mode:
-        input: true
-        pulldown: false
-    id: io_pir
-    name: "PIR"
-    device_class: motion
-```
+    ```yaml
+    binary_sensor:
+      - platform: gpio
+        pin:
+          number: GPIO3
+          mode:
+            input: true
+            pulldown: false
+        id: io_pir
+        name: "PIR"
+        device_class: motion
+    ```
 
-Each option does something specific:
+    Each option does something specific:
 
-<table><thead><tr><th><p>Option</p></th><th><p>What it does</p></th></tr></thead><tbody><tr><td><p><code>platform: gpio</code></p></td><td><p>Reads a digital input on a GPIO pin.</p></td></tr><tr><td><p><code>number: GPIO3</code></p></td><td><p>The pin the PIR module's FPC connector wires to on the ESP32-C6.</p></td></tr><tr><td><p><code>mode.input: true</code></p></td><td><p>Configures the pin as an input.</p></td></tr><tr><td><p><code>mode.pulldown: false</code></p></td><td><p>The MH-SR602 drives its output both high and low on its own, so no internal pulldown is needed.</p></td></tr><tr><td><p><code>id: io_pir</code></p></td><td><p>Internal handle you can reference from automations and lambdas elsewhere in the config.</p></td></tr><tr><td><p><code>name: "PIR"</code></p></td><td><p>The friendly name shown in Home Assistant and the web server.</p></td></tr><tr><td><p><code>device_class: motion</code></p></td><td><p>Tells Home Assistant this is a motion sensor, so it shows the right icon and works in motion-related templates and blueprints.</p></td></tr></tbody></table>
+    | Option | What it does |
+    | --- | --- |
+    | `platform: gpio` | Reads a digital input on a GPIO pin. |
+    | `number: GPIO3` | The pin the PIR module's FPC connector wires to on the ESP32-C6. |
+    | `mode.input: true` | Configures the pin as an input. |
+    | `mode.pulldown: false` | The MH-SR602 drives its output both high and low on its own, so no internal pulldown is needed. |
+    | `id: io_pir` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
+    | `name: "PIR"` | The friendly name shown in Home Assistant and the web server. |
+    | `device_class: motion` | Tells Home Assistant this is a motion sensor, so it shows the right icon and works in motion-related templates and blueprints. |
 
 ## Install the firmware
 

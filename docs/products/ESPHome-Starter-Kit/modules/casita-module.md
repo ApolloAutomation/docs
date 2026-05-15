@@ -8,12 +8,12 @@ description: >-
 
 The Casita is the starter kit's notification module, a strip of ten addressable RGB LEDs and a small piezo buzzer behind the ESPHome logo silkscreen. By the end of this tutorial you'll have the lights and buzzer wired to your ESP32-C6, surfaced in your YAML, and ready to flash, animate, or sing in response to anything else you build.
 
-!!! note "Before you start" Work through the two prerequisites first:
+!!! note "Before you start"
 
-```
-- [First Steps](../first-steps/) to snap the Casita module off the panel.
-- [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
-```
+    Work through the two prerequisites first:
+
+    - [First Steps](../first-steps/) to snap the Casita module off the panel.
+    - [Getting Started](../setup/getting-started/) to install ESPHome Device Builder and create your starter kit device.
 
 ## Start with your base config
 
@@ -22,6 +22,8 @@ The starter kit project template gets you online, but it doesn't enable the web 
 1. In ESPHome Device Builder, open your starter kit device and click **Edit**.
 2. Add the `web_server` component, making sure to select version 3.
 3. Click **Save**. Don't install yet, the Casita gets added in the next section.
+
+![](../../../assets/webserver.gif)
 
 ## Plug in the Casita module
 
@@ -45,40 +47,55 @@ ESPHome Device Builder ships an Add Component flow that knows the pin layout for
 3. Search for **Casita** and select the Apollo Starter Kit Casita notification component.
 4. Click **Add**. Device Builder inserts the light, output, and rtttl blocks into your YAML.
 
-## What the Casita YAML does
+??? note "What the Casita YAML does"
 
-The blocks Add Component drops into your config look like this:
+    The blocks Add Component drops into your config look like this:
 
-```yaml
-light:
-  - platform: esp32_rmt_led_strip
-    id: rgb_module
-    name: "RGB Module Light"
-    pin: GPIO14
-    chipset: WS2812
-    num_leds: 10
-    rmt_symbols: 48
-    rgb_order: grb
-    default_transition_length: 0s
-    effects:
-      - addressable_rainbow:
-          name: "Rainbow"
-      - addressable_twinkle:
-          name: "Twinkle"
+    ```yaml
+    light:
+      - platform: esp32_rmt_led_strip
+        id: rgb_module
+        name: "RGB Module Light"
+        pin: GPIO14
+        chipset: WS2812
+        num_leds: 10
+        rmt_symbols: 48
+        rgb_order: grb
+        default_transition_length: 0s
+        effects:
+          - addressable_rainbow:
+              name: "Rainbow"
+          - addressable_twinkle:
+              name: "Twinkle"
 
-output:
-  - platform: ledc
-    pin: GPIO18
-    id: buzzer
+    output:
+      - platform: ledc
+        pin: GPIO18
+        id: buzzer
 
-rtttl:
-  id: rtttl_buzzer
-  output: buzzer
-```
+    rtttl:
+      id: rtttl_buzzer
+      output: buzzer
+    ```
 
-Each option does something specific:
+    Each option does something specific:
 
-<table><thead><tr><th><p>Option</p></th><th><p>What it does</p></th></tr></thead><tbody><tr><td><p><strong>LED strip</strong></p></td><td><p></p></td></tr><tr><td><p><code>light.platform: esp32_rmt_led_strip</code></p></td><td><p>Uses the ESP32's RMT peripheral to drive addressable LEDs with precise timing.</p></td></tr><tr><td><p><code>light.pin: GPIO14</code></p></td><td><p>The data line going to the first LED on the Casita.</p></td></tr><tr><td><p><code>light.chipset: WS2812</code></p></td><td><p>Which addressable LED protocol to use. WS2812 is the most common, sometimes also called NeoPixel.</p></td></tr><tr><td><p><code>light.num_leds: 10</code></p></td><td><p>The number of LEDs on the Casita module.</p></td></tr><tr><td><p><code>light.rgb_order: grb</code></p></td><td><p>Color channel order. WS2812 LEDs receive color data in green-red-blue order, so this makes sure red looks red and not green.</p></td></tr><tr><td><p><code>light.rmt_symbols: 48</code></p></td><td><p>Low-level RMT setting needed on the ESP32-C6. Leave it at 48.</p></td></tr><tr><td><p><code>light.effects</code></p></td><td><p>Pre-loaded animations you can select from the web server or trigger from Home Assistant.</p></td></tr><tr><td><p><strong>Piezo buzzer</strong></p></td><td><p></p></td></tr><tr><td><p><code>output.platform: ledc</code></p></td><td><p>PWM output for driving the buzzer. PWM is how digital pins create audio tones on a piezo.</p></td></tr><tr><td><p><code>output.pin: GPIO18</code></p></td><td><p>The pin the buzzer is wired to.</p></td></tr><tr><td><p><code>output.id: buzzer</code></p></td><td><p>Internal handle the rtttl component uses to send tones to this output.</p></td></tr><tr><td><p><code>rtttl.id: rtttl_buzzer</code></p></td><td><p>Internal handle for triggering tunes from automations and lambdas.</p></td></tr><tr><td><p><code>rtttl.output: buzzer</code></p></td><td><p>Tells rtttl to use the buzzer output for playback.</p></td></tr></tbody></table>
+    | Option | What it does |
+    | --- | --- |
+    | **LED strip** | |
+    | `light.platform: esp32_rmt_led_strip` | Uses the ESP32's RMT peripheral to drive addressable LEDs with precise timing. |
+    | `light.pin: GPIO14` | The data line going to the first LED on the Casita. |
+    | `light.chipset: WS2812` | Which addressable LED protocol to use. WS2812 is the most common, sometimes also called NeoPixel. |
+    | `light.num_leds: 10` | The number of LEDs on the Casita module. |
+    | `light.rgb_order: grb` | Color channel order. WS2812 LEDs receive color data in green-red-blue order, so this makes sure red looks red and not green. |
+    | `light.rmt_symbols: 48` | Low-level RMT setting needed on the ESP32-C6. Leave it at 48. |
+    | `light.effects` | Pre-loaded animations you can select from the web server or trigger from Home Assistant. |
+    | **Piezo buzzer** | |
+    | `output.platform: ledc` | PWM output for driving the buzzer. PWM is how digital pins create audio tones on a piezo. |
+    | `output.pin: GPIO18` | The pin the buzzer is wired to. |
+    | `output.id: buzzer` | Internal handle the rtttl component uses to send tones to this output. |
+    | `rtttl.id: rtttl_buzzer` | Internal handle for triggering tunes from automations and lambdas. |
+    | `rtttl.output: buzzer` | Tells rtttl to use the buzzer output for playback. |
 
 ## Install the firmware
 
