@@ -36,7 +36,7 @@ Connect the button module to the ESP32-C6 using one of the FPC ribbon cables tha
 
 ![](../../../assets/esphome-starter-kit-remove-usb.webp)
 
-2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector. Gently press the latch down to lock it in place
+2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector. Gently press the latch down to lock it in place.
 
 ![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
@@ -112,9 +112,9 @@ With the device back online, the button entity is live on the web server. <a hre
 2. Find the **Button** entity in the binary sensor list.
 3. Press the button on the module. The entity flips from **OFF** to **ON** while the button is held, then back to **OFF** when you release it.
 
-> Web server page showing the Button binary sensor toggling between ON and OFF as the button is pressed.
-
 ![](../../../assets/esphome-device-builder-test-button-events.gif)
+
+> Web server page showing the Button binary sensor toggling between ON and OFF as the button is pressed.
 
 !!! success "Your button module is now ready for you to use in automations!"
 
