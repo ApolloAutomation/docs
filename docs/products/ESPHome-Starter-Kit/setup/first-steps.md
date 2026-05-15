@@ -67,7 +67,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
     2. Search for **ESPHome Device Builder** and click **Install**.
     3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
 
-    [ADD INTEGRATION TO ::](https://my.home-assistant.io/redirect/config_flow_start/?domain=esphome){ .md-button .md-button--primary }
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=esphome)
 
     !!! info "Already on the new layout"
 
