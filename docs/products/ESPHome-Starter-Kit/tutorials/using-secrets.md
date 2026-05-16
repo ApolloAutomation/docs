@@ -6,7 +6,7 @@ description: >-
 ---
 # Using Secrets
 
-In [Getting Started](../setup/getting-started.md) you saved your Wi-Fi name and password in secrets.yaml. That same file can hold every other sensitive value your device needs, from your Home Assistant API key to your MQTT password. This tutorial walks through what to put in there and how to reference it from your device YAML.
+In [First Steps](../setup/first-steps.md) you saved your Wi-Fi name and password in secrets.yaml. That same file can hold every other sensitive value your device needs, from your Home Assistant API key to your MQTT password. This tutorial walks through what to put in there and how to reference it from your device YAML.
 
 ---
 
@@ -27,7 +27,7 @@ In the ESPHome Device Builder dashboard, click the 3 dots menu in the top right 
 
 ![](../../../assets/esphome-device-builder-click-secrets.gif)
 
-You'll see a YAML file with one key per line. If you followed Getting Started you should already see `wifi_ssid` and `wifi_password` here.
+You'll see a YAML file with one key per line. If you followed First Steps you should already see `wifi_ssid` and `wifi_password` here.
 
 ![](../../../assets/esphome-device-builder-secrets.png)
 
@@ -61,7 +61,7 @@ Each section below shows the line you add to secrets.yaml and the line in your d
 
 #### Wi-Fi credentials
 
-You set these up in [Getting Started](../setup/getting-started.md). They're the baseline every device needs.
+You set these up in [First Steps](../setup/first-steps.md). They're the baseline every device needs.
 
 In secrets.yaml:
 

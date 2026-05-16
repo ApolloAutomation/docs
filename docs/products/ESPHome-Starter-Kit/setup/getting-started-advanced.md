@@ -16,7 +16,7 @@ The ESP32-C6 is the main board in your kit. It is the small module with the USB-
 
 ### Plug a module into the C6
 
-For your first project, we will attach the ESPHome Casita with the RGB Buzzer and 10 LEDs to the ESP32-C6 module of your device using the FPC connector and ribbon cable. You can connect to the top or bottom FPC connector - in this example we will connect it to the top!
+For your first project, we will attach the LED & Buzzer module (ten RGB LEDs and a piezo buzzer) to the ESP32-C6 module of your device using the FPC connector and ribbon cable. You can connect to the top or bottom FPC connector - in this example we will connect it to the top!
 
 &nbsp;
 
