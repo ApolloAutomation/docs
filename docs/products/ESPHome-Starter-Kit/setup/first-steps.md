@@ -217,4 +217,4 @@ Example of the light changing colors below!
 
 ![](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
 
-<a href="../setup/start-here/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - Start Here</a> <a href="../setup/button-module/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Add Button Module</a>
+<a href="../start-here/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - Start Here</a> <a href="../modules/button-module/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Add Button Module</a>
