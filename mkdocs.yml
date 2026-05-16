@@ -508,7 +508,7 @@ nav:
               - Button: products/ESPHome-Starter-Kit/modules/button-module.md
               - Motion: products/ESPHome-Starter-Kit/modules/motion-module.md
               - Temp & Humidity: products/ESPHome-Starter-Kit/modules/temperature-humidity-module.md
-              - LED & Buzzer: products/ESPHome-Starter-Kit/modules/casita-module.md
+              - LED & Buzzer: products/ESPHome-Starter-Kit/modules/rgb-buzzer-module.md
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
       - Holiday Ornaments:
