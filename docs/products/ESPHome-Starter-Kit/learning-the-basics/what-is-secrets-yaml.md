@@ -37,4 +37,4 @@ Treat secrets.yaml like a password manager entry:
 
 Ready to put this into practice? The Using Secrets tutorial walks through opening secrets.yaml in the Device Builder, the `!secret` syntax, and what to store for every common case (Wi-Fi, Home Assistant API, OTA, web server auth, MQTT).
 
-<a href="../../tutorials/using-secrets/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Using Secrets tutorial</a> <a href="../../setup/first-steps/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back to First Steps</a>
+<a href="../../tutorials/using-secrets/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Using Secrets tutorial</a>
