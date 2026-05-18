@@ -23,7 +23,7 @@ platform: ESP32
 
 #### Indentation groups things together
 
-Indentation, always with spaces and never tabs, shows which settings belong to which item:
+Indentation shows which settings belong to which item:
 
 ```yaml
 wifi:
@@ -66,15 +66,41 @@ Most text values do not need quotes. You only need quotes if your value contains
 wifi_password: "my-password-with-spaces and symbols!"
 ```
 
-#### Common gotchas
+## Spacing matters
 
-A few small things trip people up when they start hand-editing YAML. Each of these will cause the Device Builder to refuse to save or compile, so spotting them early saves frustration.
+YAML uses indentation to figure out which settings belong to which item. Get the spacing wrong and the Device Builder will refuse to save or compile. Three rules cover almost every mistake.
 
-- **Indentation must be spaces, not tabs.** Most editors handle this, but if you paste from somewhere else and get errors, this is the first thing to check.
-- **Be consistent with your indent size.** Two spaces per level is the convention used throughout ESPHome examples.
-- **The colon after a key needs a space.** `name: esphome-starter-kit` works; `name:esphome-starter-kit` does not.
+**Use spaces, never tabs.** Tabs and spaces look the same on screen, but a YAML parser treats them differently. Most editors handle this for you, but if you paste YAML from somewhere else and get errors, tabs are the first thing to check for.
 
-## What this looks like in ESPHome
+**Two spaces per level, consistently.** Every level of nesting is two more spaces than the parent. The number doesn't strictly have to be two, but it has to stay the same across the whole file. Mixing two-space and four-space indents in one file will fail.
+
+**A space after every colon.** `name: esphome-starter-kit` works. `name:esphome-starter-kit` does not. The parser uses the colon-plus-space to separate keys from values.
+
+A correct example, with the indent levels visible:
+
+```yaml
+wifi:                    # top level
+  ssid: my-network       # two spaces in, belongs to wifi
+  password: my-pass      # two spaces in, belongs to wifi
+  ap:                    # two spaces in, belongs to wifi
+    ssid: Fallback       # four spaces in, belongs to ap
+```
+
+And the same content with broken indentation, which will fail to compile:
+
+```yaml
+wifi:
+ssid: my-network         # no indent, no longer part of wifi
+  password: my-pass
+   ap:                   # three spaces, doesn't match siblings
+    ssid: Fallback
+```
+
+!!! tip "Back up before you edit"
+
+    Before hand-editing YAML in the Device Builder, copy the current contents into a notepad or text file as a safety net. If a misplaced indent breaks the build, you can paste the original back and start over.
+
+## ESPHome example
 
 When you add the Onboard RGB LED component in the Device Builder, the YAML view shows something like this:
 
@@ -91,4 +117,4 @@ You did not type any of that. The Builder wrote it when you clicked **Add**. Onc
 
 The official YAML site has the full specification, and the ESPHome docs walk through YAML in the context of ESPHome specifically.
 
-<a href="https://yaml.org/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary">YAML official site</a> <a href="https://esphome.io/guides/configuration-types.html" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> ESPHome YAML guide</a> <a href="../../setup/first-steps/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back to First Steps</a>
+<a href="https://yaml.org/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary">YAML official site</a> <a href="https://esphome.io/guides/configuration-types.html" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> ESPHome YAML guide</a>
