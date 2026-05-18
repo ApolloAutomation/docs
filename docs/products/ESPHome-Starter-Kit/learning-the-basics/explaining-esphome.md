@@ -27,7 +27,7 @@ ESPHome's built-in **Web Server** component (the Starter Kit's First Steps walks
 
 #### From Home Assistant
 
-Home Assistant discovers your device automatically through the **ESPHome integration**. This surfaces your device's sensors, switches, and lights as entities you can use in dashboards and automations.
+Home Assistant discovers your device automatically through the **ESPHome integration**. Each of your device's sensors, switches, and lights then appears in Home Assistant as an entity you can use in dashboards and automations.
 
 A typical flow looks like this:
 
