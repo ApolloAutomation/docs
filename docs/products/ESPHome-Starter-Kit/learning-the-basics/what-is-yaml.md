@@ -74,7 +74,7 @@ A few small things trip people up when they start hand-editing YAML. Each of the
 - **Be consistent with your indent size.** Two spaces per level is the convention used throughout ESPHome examples.
 - **The colon after a key needs a space.** `name: esphome-starter-kit` works; `name:esphome-starter-kit` does not.
 
-## What this looks like in ESPHome
+## ESPHome example
 
 When you add the Onboard RGB LED component in the Device Builder, the YAML view shows something like this:
 

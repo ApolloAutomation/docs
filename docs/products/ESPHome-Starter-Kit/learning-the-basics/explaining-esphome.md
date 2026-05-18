@@ -8,7 +8,7 @@ ESPHome is the open-source firmware project that powers your Apollo ESPHome Star
 
 You do not need to write any code to use it. For the Starter Kit, the **ESPHome Device Builder** app does the work for you.
 
-## ESPHome vs ESPHome Device Builder
+## ESPHome vs Device Builder
 
 These two names get used interchangeably, but they are different pieces:
 
@@ -17,7 +17,7 @@ These two names get used interchangeably, but they are different pieces:
 
 For the Starter Kit, you will spend almost all your time in the Device Builder.
 
-## How you talk to your device
+## Controlling your device
 
 Once your device is flashed, there are two ways to interact with it.
 
@@ -37,7 +37,7 @@ A typical flow looks like this:
 
 If you ever want to fine-tune something the GUI does not expose, the YAML view is always available. It is an option, not a requirement.
 
-## Why the Starter Kit is built on ESPHome
+## Why ESPHome
 
 ESPHome is part of the **ESPHome ecosystem**, an open-source project with a large community of contributors and direct first-class support in Home Assistant. Apollo builds on **open standards**: public protocols like ESPHome and OpenThread, so your kit is never locked to one vendor. Everything you set up runs under **local control**: your home runs on your own network, and your devices keep working even if your internet goes down or Apollo goes away.
 
