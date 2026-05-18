@@ -159,8 +159,10 @@ Avoid:
 
 ### Headings
 
-Every page has exactly one H1, which is taken from the page's front
-matter `title`. Markdown body content starts at H2.
+Every page has exactly one H1, written as the first line of the body
+(`# Adding the button module`). mkdocs-material renders this as the
+page heading. The front matter `title:` is used by the nav, browser
+tab, and search snippets, and should match the H1.
 
 All headings use sentence case. The first word is capitalised, and
 proper nouns are capitalised. Everything else is lowercase.
@@ -177,8 +179,8 @@ mkdocs-material integrates each page's TOC into the left sidebar, and
 `toc_depth` is set to `3` in `mkdocs.yml`. That means **only H2 and H3
 headings appear in the sidebar**. Plan your headings with that in mind:
 
-- **H1**: the page title, taken from the front matter `title`. Exactly
-  one per page, and the body never starts with another H1.
+- **H1**: the page title, written as the first line of the body and
+  mirrored in the front matter `title:`. Exactly one per page.
 - **H2**: major sections. Each H2 becomes a sidebar entry, so use them
   for things a reader might jump to ("Connecting through hotspot",
   "Troubleshooting").
@@ -304,16 +306,16 @@ homeassistant:
 
 ### Internal links
 
-Internal links use site-relative paths, not absolute
+Internal links use site-relative paths in wiki-URL form (trailing
+slash, no `.md` extension), not absolute
 `https://wiki.apolloautomation.com/...` URLs:
 
 ```markdown
-See [getting started](../setup/getting-started.md) for first-boot setup.
+See [getting started](../setup/getting-started/) for first-boot setup.
 ```
 
-Relative links work in PR previews, survive a future domain change, and
-let mkdocs catch broken targets at build time. Links to external sites
-(home-assistant.io, esphome.io) stay absolute.
+Relative links work in PR previews and survive a future domain change.
+Links to external sites (home-assistant.io, esphome.io) stay absolute.
 
 ---
 
