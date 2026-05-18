@@ -96,6 +96,10 @@ ssid: my-network         # no indent, no longer part of wifi
     ssid: Fallback
 ```
 
+!!! tip "Back up before you edit"
+
+    Before hand-editing YAML in the Device Builder, copy the current contents into a notepad or text file as a safety net. If a misplaced indent breaks the build, you can paste the original back and start over.
+
 ## ESPHome example
 
 When you add the Onboard RGB LED component in the Device Builder, the YAML view shows something like this:
