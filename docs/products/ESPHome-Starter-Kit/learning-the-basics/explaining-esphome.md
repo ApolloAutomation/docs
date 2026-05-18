@@ -1,0 +1,48 @@
+---
+title: Explaining ESPHome
+description: A short overview of what ESPHome is, how the Device Builder app fits in, and why the ESPHome Starter Kit is built on it.
+---
+# Explaining ESPHome
+
+ESPHome is the open-source firmware project that powers your Apollo ESPHome Starter Kit. You describe what is connected to your board (a button, a sensor, an LED) and ESPHome runs on the device, exposes those parts to Home Assistant, and accepts updates over the network.
+
+You do not need to write any code to use it. For the Starter Kit, the **ESPHome Device Builder** app does the work for you.
+
+## ESPHome vs ESPHome Device Builder
+
+These two names get used interchangeably, but they are different pieces:
+
+- **ESPHome** is the software that runs on your device after it has been flashed. It is what makes your board talk to Home Assistant, expose its sensors and controls, and accept wireless updates.
+- **ESPHome Device Builder** is the app you set everything up in. You pick the components you want (button, LED, sensor, etc.), click **Install**, and the Builder compiles the firmware and flashes it to your device for you. You can run it as a desktop app on Windows, Mac, or Linux, or install it as a Home Assistant app.
+
+For the Starter Kit, you will spend almost all your time in the Device Builder.
+
+## How you talk to your device
+
+Once your device is flashed, there are two ways to interact with it.
+
+#### From any web browser
+
+ESPHome's built-in **Web Server** component (the Starter Kit's First Steps walks you through adding it) makes your device serve its own local web page. Open `esphome-starter-kit.local` or its IP address in any browser on your network, on a phone or PC, and you can toggle the LED, view sensor readings, and control everything directly. No Home Assistant required.
+
+#### From Home Assistant
+
+Home Assistant discovers your device automatically through the **ESPHome integration**. This surfaces your device's sensors, switches, and lights as entities you can use in dashboards and automations.
+
+A typical flow looks like this:
+
+1. In **ESPHome Device Builder**, click **Add component** and pick what is connected to your device. No code or YAML required to get started.
+2. Click **Install** to flash the firmware to the device. USB the first time, then wirelessly after that.
+3. Home Assistant picks up the device through the **ESPHome integration** and shows its sensors, buttons, and lights as entities you can control or automate.
+
+If you ever want to fine-tune something the GUI does not expose, the YAML view is always available. It is an option, not a requirement.
+
+## Why the Starter Kit is built on ESPHome
+
+ESPHome is part of the **ESPHome ecosystem**, an open-source project with a large community of contributors and direct first-class support in Home Assistant. Apollo builds on **open standards**: public protocols like ESPHome and OpenThread, so your kit is never locked to one vendor. Everything you set up runs under **local control**: your home runs on your own network, and your devices keep working even if your internet goes down or Apollo goes away.
+
+You get wireless updates, a built-in web page for controlling your device, and direct Home Assistant integration without writing any code. The skills you build on the Starter Kit carry over to any ESPHome project you take on later.
+
+The official ESPHome documentation covers every component, configuration option, and advanced topic in detail.
+
+<a href="https://esphome.io/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Visit esphome.io</a> <a href="../../setup/first-steps/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back to First Steps</a>

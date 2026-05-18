@@ -8,16 +8,9 @@ description: >-
 
 In [First Steps](../setup/first-steps.md) you saved your Wi-Fi name and password in secrets.yaml. That same file can hold every other sensitive value your device needs, from your Home Assistant API key to your MQTT password. This tutorial walks through what to put in there and how to reference it from your device YAML.
 
----
+!!! info "New to secrets.yaml?"
 
-#### What secrets.yaml is
-
-secrets.yaml is a single file in ESPHome Device Builder that stores values you don't want pasted into every device config. Two reasons to use it:
-
-* **Safety.** You can copy a device YAML to a friend, paste it in a forum, or commit it to a public repo without leaking your Wi-Fi password or API key.
-* **One place to change things.** Rotate a password once in secrets.yaml and every device that references it picks up the new value on the next flash.
-
-secrets.yaml lives inside ESPHome Device Builder, so the same secrets are available to every device you build there.
+    Read [What is secrets.yaml?](../learning-the-basics/what-is-secrets-yaml.md) first for a quick conceptual overview, then come back here when you're ready to set yours up.
 
 ---
 
