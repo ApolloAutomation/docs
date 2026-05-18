@@ -16,6 +16,8 @@ ESPHome Device Builder is the software that gives you a user interface for writi
 
 Think of it like telling the starter kit about what devices it has connected and how to use them!
 
+<a href="../learning-the-basics/explaining-esphome/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn more about ESPHome</a>
+
 Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Windows"
