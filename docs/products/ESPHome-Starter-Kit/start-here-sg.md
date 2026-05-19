@@ -1,8 +1,9 @@
 ---
 title: ESPHome Starter Kit, start here
-description: Unbox the ESPHome Starter Kit, snap the modules off the panel, and meet every part of your kit before you wire it up.
+description: >-
+  Unbox the ESPHome Starter Kit, snap the modules off the panel, and meet every
+  part of your kit before you wire it up.
 ---
-
 Welcome to the start of your ESPHome ecosystem journey with the **Apollo ESPHome Starter Kit**.
 
 ![Apollo ESPHome Starter Kit shown with the panel of modules and the retail box](../../assets/esphome-starter-kit-exploded-with-box-1.png)
@@ -26,10 +27,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 1. Hold the panel flat on a table with one hand on the module you want to remove.
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
 
-<video autoplay="" loop="" muted="" playsinline="" width="100%">
-  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
-  Your browser does not support embedded video.
-</video>
+![](../../assets/esphome-starter-kit-disassembly-final.gif)
 
 Once every module is off the panel, lay them out so you can see what you have before plugging anything in.
 
@@ -45,7 +43,7 @@ The brain of every project you'll build with the kit. It handles Wi-Fi and Bluet
 
 The starter kit's notification module, a strip of ten addressable RGB LEDs and a small piezo buzzer behind the ESPHome logo silkscreen. Use the included stand to show it off on a shelf or desk.
 
-![ESPHome Starter Kit LED & Buzzer module with the ESPHome logo silkscreen](../../assets/esphome-starter-kit-rgb-buzzer-module-only.jpg)
+![ESPHome Starter Kit LED &amp; Buzzer module with the ESPHome logo silkscreen](../../assets/esphome-starter-kit-rgb-buzzer-module-only.jpg)
 
 ### Motion module
 
