@@ -6,24 +6,24 @@ description: A short overview of what ESPHome is, how the Device Builder app fit
 
 ESPHome is the open-source firmware project that powers your Apollo ESPHome Starter Kit. You describe what is connected to your board (a button, a sensor, an LED) and ESPHome runs on the device, exposes those parts to Home Assistant, and accepts updates over the network.
 
-You do not need to write any code to use it. For the Starter Kit, the **ESPHome Device Builder** app does the work for you.
+You do not need to write any code to use it. For the Starter Kit, the **ESPHome Device Builder** app handles it.
 
 ## ESPHome vs Device Builder
 
 These two names get used interchangeably, but they are different pieces:
 
 - **ESPHome** is the software that runs on your device after it has been flashed. It is what makes your board talk to Home Assistant, expose its sensors and controls, and accept wireless updates.
-- **ESPHome Device Builder** is the app you set everything up in. You pick the components you want (button, LED, sensor, etc.), click **Install**, and the Builder compiles the firmware and flashes it to your device for you. You can run it as a desktop app on Windows, Mac, or Linux, or install it as a Home Assistant app.
+- **ESPHome Device Builder** is the app where you set everything up. Pick the components you want (button, LED, sensor, etc.), click **Install**, and the Builder compiles the firmware and flashes it to your device. Run it as a desktop app on Windows, Mac, or Linux, or install it as a Home Assistant app.
 
 For the Starter Kit, you will spend almost all your time in the Device Builder.
 
 ## Controlling your device
 
-Once your device is flashed, there are two ways to interact with it.
+Once your device is flashed, you can control it two ways:
 
 #### From any web browser
 
-ESPHome's built-in **Web Server** component (the Starter Kit's First Steps walks you through adding it) makes your device serve its own local web page. Open `esphome-starter-kit.local` or its IP address in any browser on your network, on a phone or PC, and you can toggle the LED, view sensor readings, and control everything directly. No Home Assistant required.
+ESPHome's built-in **Web Server** component (the Starter Kit's First Steps walks you through adding it) makes your device serve its own local web page. Open `esphome-starter-kit.local` or its IP address in any browser on your network, on a phone or PC, and you can toggle the LED, view sensor readings, and control the device directly. No Home Assistant required.
 
 #### From Home Assistant
 
@@ -31,11 +31,11 @@ Home Assistant discovers your device automatically through the **ESPHome integra
 
 A typical flow looks like this:
 
-1. In **ESPHome Device Builder**, click **Add component** and pick what is connected to your device. No code or YAML required to get started.
-2. Click **Install** to flash the firmware to the device. USB the first time, then wirelessly after that.
+1. Click **Add component** in **ESPHome Device Builder** and pick what is connected to your device. No code or YAML required.
+2. Click **Install** to flash the firmware to the device.
 3. Home Assistant picks up the device through the **ESPHome integration** and shows its sensors, buttons, and lights as entities you can control or automate.
 
-If you ever want to fine-tune something the GUI does not expose, the YAML view is always available. It is an option, not a requirement.
+If you ever want to fine-tune something the GUI does not expose, the YAML view is always available. Most users never need it.
 
 ## Why ESPHome
 
@@ -45,4 +45,4 @@ You get wireless updates, a built-in web page for controlling your device, and d
 
 The official ESPHome documentation covers every component, configuration option, and advanced topic in detail.
 
-<a href="https://esphome.io/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Visit esphome.io</a>
+<a href="../device-builder-tour/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Device Builder Tour</a> <a href="https://esphome.io/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Visit esphome.io</a>
