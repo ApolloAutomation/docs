@@ -30,7 +30,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 1. Hold the panel flat on a table with one hand on the module you want to remove.
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
 
-![](../../assets/esphome-starter-kit-fpc-cable.gif)
+![](../../assets/esphome-starter-kit-disassembly-final.gif)
 
 ## Meet the modules
 
