@@ -6,7 +6,7 @@ description: Step by step guide for getting started with the ESPHome Starter Kit
 
 This guide walks you through installing the ESPHome Device Builder app, and making your first ESPHome YAML configuration from scratch.
 
-By the end you'll have your ESPHome Starter Kit flashed with a working configuration and showing up in Home Assistant and with a working web server accessible at its IP address or esphome-starter-kit.local in a browser.
+By the end you'll have your ESPHome Starter Kit flashed with a working configuration, showing up in Home Assistant, and reachable in a browser at its IP address or esphome-starter-kit.local via its built-in web server.
 
 ---
 
@@ -135,31 +135,9 @@ If you make a mistake or want to change this later, click the 3 dots menu in the
 
 ### Configure Components
 
-When you install ESPHome Device builder, you will see a list of components under **Core Configuration**. We will add three more components for our tutorial below.
+When you create a new ESPHome Starter Kit project in ESPHome Device Builder, the **Web Server** and **Accessory Power Rail** components are already configured for you, so there's nothing extra to do for those. In this tutorial we'll add one more component: the **Onboard RGB LED**.
 
-#### Accessory Power Rail
-
-The <a href="https://esphome.io/components/switch/gpio/" target="_blank" rel="noreferrer nofollow noopener">Accessory Power Rail</a> is used behind the scenes to give power to your optional modules including the Onboard RGB LED.
-
-1. In the ESPHome Device Builder, navigate to the **Components** section.
-2. Click **Add component**.
-3. Scroll to **Accessory Power Rail** and click **Add**.
-4. Click **Add** once more to confirm.
-
-![](../../../assets/device-builder-add-accessory-power-rail.gif)
-
-#### Web Server Component
-
-The <a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener">Web Server</a> is used to broadcast a local website using your device. This allows you to navigate to the IP address of your device or hostname such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> to easily control your new device!
-
-1. In the ESPHome Device Builder, navigate to the **Core configuration** section.
-2. Click **Add component**.
-3. Scroll to **Web Server** and click **Add**.
-4. Click **Add** once more to confirm.
-5. Toggle **Show advanced settings**.
-6. Scroll down to **Version** and select **3** from the dropdown.
-
-![](../../../assets/device-builder-install-web-server-v3.gif)
+<a href="../learning-the-basics/core-components/#web-server" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about the Web Server</a> <a href="../learning-the-basics/core-components/#accessory-power-rail" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about the Accessory Power Rail</a>
 
 #### Onboard RGB LED
 
@@ -209,7 +187,7 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 
 ### Test your LED
 
-Above we installed the web\_server component which allows us to navigate to the ip address of our device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a>
+Your kit's default project includes the web\_server component, which lets you navigate to the IP address of your device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a>
 
 It should load your new device and show you the Onboard RGB LED. We can click the toggle button to make sure the RGB LED turns on and off on our device!
 
