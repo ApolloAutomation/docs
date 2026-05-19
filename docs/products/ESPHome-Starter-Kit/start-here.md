@@ -30,10 +30,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 1. Hold the panel flat on a table with one hand on the module you want to remove.
 2. Gently flex the panel along the tab line until the tab snaps cleanly.
 
-<video autoplay="" loop="" muted="" playsinline="" width="100%">
-  <source src="/assets/ESPHome_Starter_Kit_Break_Apart_Modules.mp4" type="video/mp4" /><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
-  Your browser does not support embedded video.
-</video>
+![](../../assets/esphome-starter-kit-fpc-cable.gif)
 
 ## Meet the modules
 
