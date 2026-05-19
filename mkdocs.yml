@@ -513,6 +513,7 @@ nav:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
           - Learn the Basics:
               - Explaining ESPHome: products/ESPHome-Starter-Kit/learning-the-basics/explaining-esphome.md
+              - Device Builder Tour: products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md
               - What is YAML?: products/ESPHome-Starter-Kit/learning-the-basics/what-is-yaml.md
               - What is secrets.yaml?: products/ESPHome-Starter-Kit/learning-the-basics/what-is-secrets-yaml.md
       - Holiday Ornaments:
