@@ -22,7 +22,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Windows"
 
-    1. <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_x64-setup.exe" title="Download the ESPHome Device Builder for Windows" target="_blank" rel="noreferrer nofollow noopener">Download the ESPHome Device Builder for Windows</a>.
+    1. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a> and click **Download installer** under the **Windows** tab.
     2. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation.
        * If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
 
@@ -40,10 +40,10 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Mac"
 
-    1. Download the ESPHome Device Builder for Mac. Pick the build that matches your chip:
+    1. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. The page detects your OS and shows the macOS downloads. Pick the build that matches your chip:
 
-        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_aarch64.dmg" target="_blank" rel="noreferrer nofollow noopener">Apple Silicon (M1, M2, M3, M4)</a>
-        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_x64.dmg" target="_blank" rel="noreferrer nofollow noopener">Intel Mac</a>
+        - **Apple Silicon** (M1, M2, M3, M4)
+        - **Intel Mac**
 
     2. Open the `.dmg` and drag **ESPHome Builder** into your Applications folder. Launch it from Applications or Spotlight.
 
@@ -83,17 +83,18 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Linux"
 
-    1. Download the ESPHome Device Builder for Linux. Pick the package that fits your distro:
+    1. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. Under the **Linux** tab, pick the package for your distro:
 
-        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_amd64.AppImage" target="_blank" rel="noreferrer nofollow noopener">AppImage (works on any distro)</a>
-        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder_0.7.0_amd64.deb" target="_blank" rel="noreferrer nofollow noopener">.deb (Debian / Ubuntu)</a>
-        - <a href="https://github.com/esphome/esphome-desktop/releases/download/v0.7.0/ESPHome.Builder-0.7.0-1.x86_64.rpm" target="_blank" rel="noreferrer nofollow noopener">.rpm (Fedora / RHEL)</a>
+        - **AppImage** (works on any distro)
+        - **.deb** (Debian / Ubuntu)
+        - **.rpm** (Fedora / RHEL)
+        - **AUR** (Arch Linux)
 
     2. Install or run the file you downloaded:
 
-        - **AppImage:** `chmod +x ESPHome.Builder_0.7.0_amd64.AppImage` then double-click the file, or run it from a terminal.
-        - **.deb:** `sudo apt install ./ESPHome.Builder_0.7.0_amd64.deb`
-        - **.rpm:** `sudo dnf install ./ESPHome.Builder-0.7.0-1.x86_64.rpm`
+        - **AppImage:** `chmod +x ESPHome.Builder_*.AppImage` then double-click the file, or run it from a terminal.
+        - **.deb:** `sudo apt install ./ESPHome.Builder_*.deb`
+        - **.rpm:** `sudo dnf install ./ESPHome.Builder*.rpm`
 
     <!-- TODO: add a Linux installer screenshot if available. -->
 
