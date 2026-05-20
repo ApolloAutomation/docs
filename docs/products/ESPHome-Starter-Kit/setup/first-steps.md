@@ -136,9 +136,11 @@ If you make a mistake or want to change this later, click the 3 dots menu in the
 
 ### Configure Components
 
-When you create a new ESPHome Starter Kit project in ESPHome Device Builder, the **Web Server** and **Accessory Power Rail** components are already configured for you, so there's nothing extra to do for those. In this tutorial we'll add one more component: the **Onboard RGB LED**.
+!!! tip "We're now ready to add your first component and turn your project into a smart device!"
 
-<a href="../learning-the-basics/core-components/#web-server" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about the Web Server</a> <a href="../learning-the-basics/core-components/#accessory-power-rail" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about the Accessory Power Rail</a>
+    Below you will be learning how to add the Onboard RGB LED which will help you learn how to add a Component. You will be using this in the future for the other modules such as the Button and Motion modules!
+
+When you create a new ESPHome Starter Kit project in ESPHome Device Builder, the **Web Server** and **Accessory Power Rail** components are already configured for you, so there's nothing extra to do for those. In this tutorial we'll add one more component: the **Onboard RGB LED**.
 
 #### Onboard RGB LED
 
@@ -185,6 +187,8 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 !!! tip "Click Show details during the install to watch the compile and flash process"
 
     It's a great way to see what's happening under the hood.
+
+<a href="../learning-the-basics/core-components/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about Core Components</a>
 
 ### Test your LED
 
