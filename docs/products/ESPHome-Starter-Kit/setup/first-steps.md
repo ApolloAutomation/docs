@@ -26,7 +26,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
     2. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation.
        * If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
 
-    ![](../../../assets/esphome-builder-install-windows-1.gif)
+    ![](../../../assets/esphome-builder-install-windows.gif)
 
     3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
        * Use a Chromium-based browser such as Chrome or Edge. Firefox does not yet support WebSerial, which is required for the initial flashing of the device over USB. If Firefox is your default, copy the URL into Chrome or Edge instead.
@@ -36,7 +36,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     5. Wait 30+ seconds, then refresh your browser (F5). You should now see the new ESPHome Device Builder Preview.
 
-    ![](../../../assets/esphome-device-builder-preview-image-1.png)
+    ![](../../../assets/esphome-device-builder-preview-image.png)
 
 === "Mac"
 
@@ -142,8 +142,6 @@ If you make a mistake or want to change this later, click the 3 dots menu in the
 
 When you create a new ESPHome Starter Kit project in ESPHome Device Builder, the **Web Server** and **Accessory Power Rail** components are already configured for you, so there's nothing extra to do for those. In this tutorial we'll add one more component: the **Onboard RGB LED**.
 
-<a href="../learning-the-basics/core-components/#web-server" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about the Web Server</a> <a href="../learning-the-basics/core-components/#accessory-power-rail" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about the Accessory Power Rail</a>
-
 #### Onboard RGB LED
 
 The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6 Module. Useful for testing automations and doubles as a status light.
@@ -189,6 +187,8 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 !!! tip "Click Show details during the install to watch the compile and flash process"
 
     It's a great way to see what's happening under the hood.
+
+<a href="../learning-the-basics/core-components/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about Core Components</a>
 
 ### Test your LED
 
