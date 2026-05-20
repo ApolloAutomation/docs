@@ -8,6 +8,10 @@ description: Guide to integrating Apollo Automation devices with the Home Assist
 
     Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), post on our [Community Forum](https://forum.apolloautomation.com/), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
+!!! tip "🚀 New: ESPHome Starter Kit is here!"
+
+    **[→ Click here for the ESPHome Starter Kit setup guide](https://wiki.apolloautomation.com/products/esphome-starter-kit/)**
+
 ### Which mmWave Sensor Should I Buy?
 
 ```mermaid
