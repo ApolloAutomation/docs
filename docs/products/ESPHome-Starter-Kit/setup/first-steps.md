@@ -26,7 +26,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
     2. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation.
        * If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
 
-    ![](../../../assets/esphome-builder-install-windows.gif)
+    ![](../../../assets/esphome-builder-install-windows-1.gif)
 
     3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
        * Use a Chromium-based browser such as Chrome or Edge. Firefox does not yet support WebSerial, which is required for the initial flashing of the device over USB. If Firefox is your default, copy the URL into Chrome or Edge instead.
@@ -36,7 +36,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     5. Wait 30+ seconds, then refresh your browser (F5). You should now see the new ESPHome Device Builder Preview.
 
-    ![](../../../assets/esphome-device-builder-preview-image.png)
+    ![](../../../assets/esphome-device-builder-preview-image-1.png)
 
 === "Mac"
 
