@@ -1,8 +1,10 @@
 ---
 title: Home Assistant Integration
-description: Guide to integrating Apollo Automation devices with the Home Assistant smart home platform.
+description: >-
+  Guide to integrating Apollo Automation devices with the Home Assistant smart
+  home platform.
 ---
-<img src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" height="344" width="900" />
+<img height="344" width="900" src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" />
 
 !!! info "Welcome to Apollo Automation Docs!"
 
@@ -63,15 +65,15 @@ flowchart LR
 * [Setup your new M-1 LED Matrix with Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
 * [3D Print your own case in any color or material](https://wiki.apolloautomation.com/products/general/links/)
 
-<h3>Community</h3>
+### Community
 
 * [Discord - Support, community, updates, live streams](https://link.apolloautomation.com/discord)
 * [YouTube - Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
 
-<h3>What is Apollo Automation?</h3>
+### What is Apollo Automation?
 
 Apollo Automation builds high-quality, affordable, open-source home automation hardware - designed and assembled in Lexington, KY. What started as a side project among friends (named after Trevor's dog, Apollo) grew into a full-fledged business driven by community feedback. We build everything in-house, keep our designs transparent, and host a monthly livestream on Discord and YouTube so you can connect with us directly.
 
-<h3>What do we offer?</h3>
+### What do we offer?
 
 Sensors and devices that solve real problems in home automation - presence detection, air quality monitoring, plant care, and more. Every product ships with ESPHome firmware, full Home Assistant integration, and support from a team that actually uses what we build.
