@@ -61,7 +61,7 @@ The form pane and the YAML editor are always in sync. Edit either side and the o
 When you have finished making changes:
 
 1. Click **Save**. This writes the YAML file. Nothing is sent to the device yet.
-2. Click **Validate** at the bottom right. ESPHome compiles your config and reports any errors with the exact line and reason.
+2. Click **Validate** at the bottom right. ESPHome checks your config and reports any errors with the exact line and reason.
 3. After saving, an **Install** button appears at the bottom right of the editor. If there's also a new ESPHome release available, the button reads **Update** instead. Click it, then pick **On the Network** for OTA, or **Plug into this computer** for USB.
 
 ![](../../../assets/esphome-device-builder-save-validate-install.gif)
