@@ -1,6 +1,8 @@
 ---
 title: Device Builder Tour
-description: A guided tour of every screen in the ESPHome Device Builder, using your Apollo ESPHome Starter Kit as the example device.
+description: >-
+  A guided tour of every screen in the ESPHome Device Builder, using your Apollo
+  ESPHome Starter Kit as the example device.
 ---
 # Device Builder Tour
 
@@ -12,8 +14,7 @@ The **ESPHome Device Builder** is the app you used in [First Steps](../setup/fir
 
 When you open **ESPHome Device Builder**, you see a list of your ESPHome devices.
 
-<!-- TODO: full landing page screenshot. -->
-![ESPHome Device Builder landing page with the Starter Kit card visible](../../../assets/device-builder-tour-landing.png)
+![](../../../assets/esphome-device-builder-dashboard-card-overview.png)
 
 * The blue **Edit** button on your device card opens the [configuration editor](#editor). You'll use this most.
 
@@ -29,26 +30,23 @@ When you open **ESPHome Device Builder**, you see a list of your ESPHome devices
 
 Click **Edit** on your device card and the screen flips into the configuration editor. It has three panes: the **Device navigator** on the left, the **Form pane** in the middle, and the **YAML editor** on the right.
 
-<!-- TODO: full editor screenshot showing all three panes. -->
-![ESPHome Device Builder editor in three-pane mode](../../../assets/device-builder-tour-editor.png)
+![](../../../assets/esphome-device-builder-navigate-to-editor.gif)
 
 #### Device navigator (left)
 
 The left pane is your config's table of contents. It groups everything into three buckets:
 
 * **Core configuration.** Foundational settings like the device name, Wi-Fi, the connection to Home Assistant, OTA updates, and the web server. For the Starter Kit these are all pre-configured. See [Core Components](core-components.md) for details on each.
-* **Components.** The things your device does: switches, sensors, lights. The default Starter Kit has the accessory power switch, the I²C bus, and the AHT10 temperature and humidity sensor. Use **+ Add component** to add more.
+* **Components.** The things your device does: switches, sensors, lights. The default Starter Kit has the accessory power switch, the I²C bus, and the AHT10 temperature and humidity sensor. Use **\+ Add component** to add more.
 * **Automations.** Reactions that run on the device, like "when this button is pressed, turn that switch on". The Starter Kit ships with none by default.
 
-<!-- TODO: screenshot of the navigator expanded, with one item selected. -->
-![Device navigator with one component selected](../../../assets/device-builder-tour-navigator.png)
+![](../../../assets/esphome-device-builder-device-navigator.gif)
 
 #### Form pane (middle)
 
 Click anything in the navigator to see its settings here as a form. Every field has inline help text, and a **Docs** link in the top right takes you to the official ESPHome reference for that component.
 
-<!-- TODO: screenshot of a component's form, e.g. the AHT10 sensor settings. -->
-![A component form in the middle pane](../../../assets/device-builder-tour-form-pane.png)
+![](../../../assets/esphome-device-builder-form-panel.png)
 
 #### YAML editor (right)
 
@@ -56,26 +54,23 @@ The right pane is the raw YAML for your device, colour-coded with line numbers. 
 
 The form pane and the YAML editor are always in sync. Edit either side and the other updates instantly. You can learn [YAML](what-is-yaml.md) by reading what the forms produce.
 
-<!-- TODO: GIF showing form change auto-updating YAML, then YAML edit auto-updating form. -->
-![Form and YAML staying in sync](../../../assets/device-builder-tour-form-yaml-sync.gif)
+![](../../../assets/esphome-device-builder-yaml-editor.png)
 
 ## Publishing Changes
 
 When you have finished making changes:
 
-1. Click **Validate** at the bottom right. ESPHome compiles your config and reports any errors with the exact line and reason.
-2. Click **Save**. This writes the YAML file. Nothing is sent to the device yet.
-3. After saving, an **Install** button appears at the bottom right of the editor. If there's also a new ESPHome release available, the button reads **Update** instead. Click it, then pick **Wirelessly** for day-to-day OTA, or **Plug into this computer** for USB.
+1. Click **Save**. This writes the YAML file. Nothing is sent to the device yet.
+2. Click **Validate** at the bottom right. ESPHome checks your config and reports any errors with the exact line and reason.
+3. After saving, an **Install** button appears at the bottom right of the editor. If there's also a new ESPHome release available, the button reads **Update** instead. Click it, then pick **On the Network** for OTA, or **Plug into this computer** for USB.
 
-<!-- TODO: Install dialog screenshot showing the three options. -->
-![The Install dialog with three install paths](../../../assets/device-builder-tour-install-dialog.png)
+![](../../../assets/esphome-device-builder-save-validate-install.gif)
 
 #### Logs
 
-Click **Logs** from the info panel or the device card's three-dot menu to open a live stream of what the device is reporting.
+Click **Logs** from the info panel or the device card's three-dot menu to open a live stream of what the device is reporting. Click **Stop** when done.
 
-<!-- TODO: Logs view screenshot with a few seconds of live output from the Starter Kit. -->
-![Live logs from the Starter Kit](../../../assets/device-builder-tour-logs.png)
+![](../../../assets/esphome-device-builder-logs-start-stop.gif)
 
 Pop them open when something looks off, or just to watch sensor readings come in.
 
