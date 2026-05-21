@@ -1,12 +1,47 @@
 ---
 title: Home Assistant Integration
-description: Guide to integrating Apollo Automation devices with the Home Assistant smart home platform.
+description: >-
+  Guide to integrating Apollo Automation devices with the Home Assistant smart
+  home platform.
 ---
-<img src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" height="344" width="900" />
+<img height="344" width="900" src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" />
 
 !!! info "Welcome to Apollo Automation Docs!"
 
     Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), post on our [Community Forum](https://forum.apolloautomation.com/), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
+
+<style>
+  @media (max-width: 700px) {
+    .apollo-esk-card { min-height: 0 !important; padding: 24px !important; }
+    .apollo-esk-text { max-width: 100% !important; }
+    .apollo-esk-text h2 { font-size: 22px !important; }
+    .apollo-esk-img {
+      position: static !important;
+      width: 100% !important;
+      height: 200px !important;
+      margin-top: 20px !important;
+      display: block !important;
+    }
+  }
+</style>
+
+<a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/" style="display: block; text-decoration: none; color: inherit; margin: 1.5em 0;">
+  <div class="apollo-esk-card" style="background: #4379AA; border-radius: 12px; padding: 28px 32px; position: relative; min-height: 260px; overflow: hidden;">
+    <div class="apollo-esk-text" style="max-width: calc(100% - 280px);">
+      <div style="display: inline-block; background: #9ABD32; color: #1F425F; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 6px; letter-spacing: 0.3px;">
+        Are you looking for the starter kit guide?
+      </div>
+      <h2 style="color: white; font-size: 28px; font-weight: 600; margin: 14px 0 6px;">ESPHome Starter Kit</h2>
+      <p style="color: #D4E8F8; font-size: 15px; margin: 0 0 20px; line-height: 1.5;">Build, learn, automate. A real product you'll keep using in your home.</p>
+      <span style="display: inline-flex; align-items: center; gap: 8px; background: #9ABD32; color: #1F425F; padding: 11px 22px; border-radius: 8px; font-weight: 600; font-size: 15px;">
+        View the setup guide →
+      </span>
+    </div>
+    <img class="apollo-esk-img" src="assets/esphome-starter-kit-at-sotoh-2026.jpg" alt="ESPHome Starter Kit" style="position: absolute; top: 28px; right: 32px; width: 220px; height: 220px; object-fit: cover; border-radius: 12px;" />
+  </div>
+</a>
+
+&nbsp;
 
 ### Which mmWave Sensor Should I Buy?
 
@@ -59,15 +94,15 @@ flowchart LR
 * [Setup your new M-1 LED Matrix with Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
 * [3D Print your own case in any color or material](https://wiki.apolloautomation.com/products/general/links/)
 
-<h3>Community</h3>
+### Community
 
 * [Discord - Support, community, updates, live streams](https://link.apolloautomation.com/discord)
 * [YouTube - Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
 
-<h3>What is Apollo Automation?</h3>
+### What is Apollo Automation?
 
 Apollo Automation builds high-quality, affordable, open-source home automation hardware - designed and assembled in Lexington, KY. What started as a side project among friends (named after Trevor's dog, Apollo) grew into a full-fledged business driven by community feedback. We build everything in-house, keep our designs transparent, and host a monthly livestream on Discord and YouTube so you can connect with us directly.
 
-<h3>What do we offer?</h3>
+### What do we offer?
 
 Sensors and devices that solve real problems in home automation - presence detection, air quality monitoring, plant care, and more. Every product ships with ESPHome firmware, full Home Assistant integration, and support from a team that actually uses what we build.
