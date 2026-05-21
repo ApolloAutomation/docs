@@ -11,6 +11,18 @@ description: >-
     Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), post on our [Community Forum](https://forum.apolloautomation.com/), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
 <style>
+  .apollo-esk-img {
+    position: absolute !important;
+    top: 50% !important;
+    right: 28px !important;
+    transform: translateY(-50%) !important;
+    width: 280px !important;
+    height: 212px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    display: block !important;
+    max-width: none !important;
+  }
   @media (max-width: 700px) {
     .apollo-esk-card { min-height: 0 !important; padding: 24px !important; }
     .apollo-esk-text { max-width: 100% !important; }
@@ -26,18 +38,18 @@ description: >-
 </style>
 
 <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/" style="display: block; text-decoration: none; color: inherit; margin: 1.5em 0;">
-  <div class="apollo-esk-card" style="background: #4379AA; border-radius: 12px; padding: 28px 32px; position: relative; min-height: 260px; overflow: hidden;">
-    <div class="apollo-esk-text" style="max-width: calc(100% - 280px);">
-      <div style="display: inline-block; background: #9ABD32; color: #1F425F; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 6px; letter-spacing: 0.3px;">
-        Are you looking for the starter kit guide?
+  <div class="apollo-esk-card" style="background: #4379AA; border-radius: 12px; padding: 24px 28px; position: relative; overflow: hidden; min-height: 260px;">
+    <div class="apollo-esk-text" style="max-width: calc(100% - 320px);">
+      <div style="color: #9ABD32; font-size: 13px; font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase;">
+        Spotlight
       </div>
-      <h2 style="color: white; font-size: 28px; font-weight: 600; margin: 14px 0 6px;">ESPHome Starter Kit</h2>
-      <p style="color: #D4E8F8; font-size: 15px; margin: 0 0 20px; line-height: 1.5;">Build, learn, automate. A real product you'll keep using in your home.</p>
+      <h2 style="color: white; font-size: 28px; font-weight: 600; margin: 8px 0 6px;">ESPHome Starter Kit</h2>
+      <p style="color: #D4E8F8; font-size: 15px; margin: 0 0 16px; line-height: 1.5;">Build your first smart sensor from scratch.</p>
       <span style="display: inline-flex; align-items: center; gap: 8px; background: #9ABD32; color: #1F425F; padding: 11px 22px; border-radius: 8px; font-weight: 600; font-size: 15px;">
         View the setup guide →
       </span>
     </div>
-    <img class="apollo-esk-img" src="assets/esphome-starter-kit-at-sotoh-2026.jpg" alt="ESPHome Starter Kit" style="position: absolute; top: 28px; right: 32px; width: 220px; height: 220px; object-fit: cover; border-radius: 12px;" />
+    <img class="apollo-esk-img" src="assets/esphome-starter-kit-at-sotoh-2026.jpg" alt="ESPHome Starter Kit" />
   </div>
 </a>
 
