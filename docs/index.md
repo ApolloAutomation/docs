@@ -10,21 +10,11 @@ description: >-
 
     Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), post on our [Community Forum](https://forum.apolloautomation.com/), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
-<a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/" style="display: block; text-decoration: none; color: inherit; margin: 1.5em 0;">
-  <div style="background: #4379AA; border-radius: 12px; padding: 28px 32px; display: flex; align-items: center; gap: 28px; transition: transform 0.15s ease;">
-    <div style="flex: 1; min-width: 0;">
-      <div style="display: inline-block; background: #9ABD32; color: #1F425F; font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 6px; letter-spacing: 0.3px;">
-        New · ships July 2026
-      </div>
-      <h2 style="color: white; font-size: 28px; font-weight: 600; margin: 14px 0 6px;">ESPHome Starter Kit</h2>
-      <p style="color: #D4E8F8; font-size: 15px; margin: 0 0 20px; line-height: 1.5;">Build, learn, automate. A real product you'll keep using in your home.</p>
-      <span style="display: inline-flex; align-items: center; gap: 8px; background: #9ABD32; color: #1F425F; padding: 11px 22px; border-radius: 8px; font-weight: 600; font-size: 15px;">
-        View the setup guide →
-      </span>
-    </div>
-    <img src="REPLACE_WITH_ESK1_PRODUCT_IMAGE_URL" alt="ESPHome Starter Kit" style="width: 140px; height: 140px; object-fit: contain; flex-shrink: 0;" />
-  </div>
-</a>
+[](https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/)
+
+<div><div><div><p><a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/">         New · ships July 2026       </a></p></div><h2><a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/">ESPHome Starter Kit</a></h2><p><a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/">Build, learn, automate. A real product you'll keep using in your home.</a></p><p><span><a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/">         View the setup guide →       </a></span><a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/">     </a></p></div><p><a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/"><img src="assets/esphome-starter-kit-at-sotoh-2026.jpg" alt="ESPHome Starter Kit" />   </a></p></div>
+
+&nbsp;
 
 ### Which mmWave Sensor Should I Buy?
 
