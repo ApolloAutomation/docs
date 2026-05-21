@@ -10,9 +10,24 @@ description: >-
 
     Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), post on our [Community Forum](https://forum.apolloautomation.com/), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
+<style>
+  @media (max-width: 700px) {
+    .apollo-esk-card { min-height: 0 !important; padding: 24px !important; }
+    .apollo-esk-text { max-width: 100% !important; }
+    .apollo-esk-text h2 { font-size: 22px !important; }
+    .apollo-esk-img {
+      position: static !important;
+      width: 100% !important;
+      height: 200px !important;
+      margin-top: 20px !important;
+      display: block !important;
+    }
+  }
+</style>
+
 <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/" style="display: block; text-decoration: none; color: inherit; margin: 1.5em 0;">
-  <div style="background: #4379AA; border-radius: 12px; padding: 28px 32px; position: relative; min-height: 260px; overflow: hidden;">
-    <div style="max-width: calc(100% - 280px);">
+  <div class="apollo-esk-card" style="background: #4379AA; border-radius: 12px; padding: 28px 32px; position: relative; min-height: 260px; overflow: hidden;">
+    <div class="apollo-esk-text" style="max-width: calc(100% - 280px);">
       <div style="display: inline-block; background: #9ABD32; color: #1F425F; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 6px; letter-spacing: 0.3px;">
         Are you looking for the starter kit guide?
       </div>
@@ -22,7 +37,7 @@ description: >-
         View the setup guide →
       </span>
     </div>
-    <img src="assets/esphome-starter-kit-at-sotoh-2026.jpg" alt="ESPHome Starter Kit" style="position: absolute; top: 28px; right: 32px; width: 220px; height: 220px; object-fit: cover; border-radius: 12px;" />
+    <img class="apollo-esk-img" src="assets/esphome-starter-kit-at-sotoh-2026.jpg" alt="ESPHome Starter Kit" style="position: absolute; top: 28px; right: 32px; width: 220px; height: 220px; object-fit: cover; border-radius: 12px;" />
   </div>
 </a>
 
