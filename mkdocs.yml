@@ -511,12 +511,14 @@ nav:
               - LED & Buzzer: products/ESPHome-Starter-Kit/modules/rgb-buzzer-module.md
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
+              - Connect to Home Assistant: products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md
           - Learn the Basics:
               - Explaining ESPHome: products/ESPHome-Starter-Kit/learning-the-basics/explaining-esphome.md
               - Device Builder Tour: products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md
               - Core Components: products/ESPHome-Starter-Kit/learning-the-basics/core-components.md
               - What is YAML?: products/ESPHome-Starter-Kit/learning-the-basics/what-is-yaml.md
               - What is secrets.yaml?: products/ESPHome-Starter-Kit/learning-the-basics/what-is-secrets-yaml.md
+              - HA Integration: products/ESPHome-Starter-Kit/learning-the-basics/how-esphome-talks-to-home-assistant.md
       - Holiday Ornaments:
           - H-1:
               - Introduction: products/h1/introduction.md
