@@ -1,0 +1,1 @@
+--8<-- "products/plt1b/additional-info/insert-battery.md:5:"
