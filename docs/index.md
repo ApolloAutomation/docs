@@ -11,17 +11,19 @@ description: >-
     Your go-to resource for setup guides, troubleshooting, and tips for every Apollo device. Found an error or need help? [Open a GitHub issue](https://github.com/ApolloAutomation/docs/issues), hop into our [Discord](https://link.apolloautomation.com/discord), post on our [Community Forum](https://forum.apolloautomation.com/), or email [support@apolloautomation.com](mailto:support@apolloautomation.com).
 
 <style>
-  .apollo-esk-img {
-    position: absolute !important;
-    top: 50% !important;
-    right: 28px !important;
-    transform: translateY(-50%) !important;
-    width: 280px !important;
-    height: 212px !important;
-    object-fit: cover !important;
-    border-radius: 12px !important;
-    display: block !important;
-    max-width: none !important;
+  @media (min-width: 701px) {
+    .apollo-esk-img {
+      position: absolute !important;
+      top: 50% !important;
+      right: 28px !important;
+      transform: translateY(-50%) !important;
+      width: 280px !important;
+      height: 212px !important;
+      object-fit: cover !important;
+      border-radius: 12px !important;
+      display: block !important;
+      max-width: none !important;
+    }
   }
   @media (max-width: 700px) {
     .apollo-esk-card { min-height: 0 !important; padding: 24px !important; }
@@ -32,6 +34,9 @@ description: >-
       width: 100% !important;
       height: 200px !important;
       margin-top: 20px !important;
+      transform: none !important;
+      border-radius: 12px !important;
+      object-fit: cover !important;
       display: block !important;
     }
   }
