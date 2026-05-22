@@ -127,6 +127,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
+  - md_in_html
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -512,6 +513,8 @@ nav:
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
               - Connect to Home Assistant: products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md
+          - Automations:
+              - Button Controlled LEDs: products/ESPHome-Starter-Kit/automations/button-controlled-leds.md
           - Learn the Basics:
               - Explaining ESPHome: products/ESPHome-Starter-Kit/learning-the-basics/explaining-esphome.md
               - Device Builder Tour: products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md
