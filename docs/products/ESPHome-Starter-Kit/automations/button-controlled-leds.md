@@ -20,32 +20,35 @@ This tutorial uses the Button module and the RGB & Buzzer module connected to th
 
 ESPHome Device Builder has a new GUI for building <a href="https://esphome.io/automations/" target="_blank" rel="noreferrer nofollow noopener">automations</a>, so you can wire a trigger to an action without hand-writing YAML. The trigger is the *when* of the automation, the thing that makes it fire. The action is the *then do*, what happens when it fires. If you've built automations in Home Assistant, this is the same mental model.
 
-1. Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](/products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour/#editor).
-2. In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
+1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](/products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour/#editor).
+2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
 
-![](../../../assets/esphome-device-builder-add-automation.gif)
+    ![](../../../assets/esphome-device-builder-add-automation.gif)
 
-1. Set up the trigger:
+3.  Set up the trigger:
 
-   <div markdown class="annotate">
+    <div class="annotate" markdown>
 
-          - **What should this automation react to?** → **A configured component**
-          - **Which configured component?** → **Button Module (binary_sensor.gpio)**
-          - **Which trigger?** → **Binary Sensor → On Click** (1)
+    - **What should this automation react to?** → **A configured component**
+    - **Which configured component?** → **Button Module (binary_sensor.gpio)**
+    - **Which trigger?** → **Binary Sensor → On Click** (1)
 
-          </div>
-   1. The trigger dropdown also offers **On Double Click**, **On Multi Click**, **On Press**, **On Release**, **On State**, and **On State Change** for other button gestures. Swap any of these in once you're comfortable with the On Click flow.
-2. Click **Continue**. You land on the **Binary Sensor → On Click** editor with the **Target** already set to your Button module.
-3. Set up the action:
+    </div>
 
-   <div markdown class="annotate">
+    1.  The trigger dropdown also offers **On Double Click**, **On Multi Click**, **On Press**, **On Release**, **On State**, and **On State Change** for other button gestures. Swap any of these in once you're comfortable with the On Click flow.
 
-          - Under **Actions**, click **+ Add action**.
-          - In the **Add action** dialog, stay on the **By target** tab and choose **Light → Toggle** under the RGB LED group.
-          - On the new action, click the **ID** dropdown and select **RGB LEDs**. (1)
+4.  Click **Continue**. You land on the **Binary Sensor → On Click** editor with the **Target** already set to your Button module.
+5.  Set up the action:
 
-          </div>
-   1. The **ID** dropdown only needs changing if your device also has an **Onboard RGB LED** component configured. If **RGB LEDs** is the only light, it's already selected.
+    <div class="annotate" markdown>
+
+    - Under **Actions**, click **+ Add action**.
+    - In the **Add action** dialog, stay on the **By target** tab and choose **Light → Toggle** under the RGB LED group.
+    - On the new action, click the **ID** dropdown and select **RGB LEDs**. (1)
+
+    </div>
+
+    1.  The **ID** dropdown only needs changing if your device also has an **Onboard RGB LED** component configured. If **RGB LEDs** is the only light, it's already selected.
 
 ??? note "What the GUI built in YAML"
 
