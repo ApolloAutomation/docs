@@ -98,6 +98,8 @@ plugins:
         'homey/products/msr2/calibrating-and-updating/updating-msr-2-firmware.md': 'homey/products/msr2/setup/updating-msr-2-firmware.md'
         'homey/products/msr2/calibrating-and-updating/zones-ha.md': 'homey/products/msr2/setup/zones-ha.md'
         'homey/products/msr2/calibrating-and-updating/zones-hlk.md': 'homey/products/msr2/setup/zones-hlk.md'
+        # PLT-1B Insert Battery: setup -> additional-info
+        'products/plt1b/setup/insert-battery.md': 'products/plt1b/additional-info/insert-battery.md'
 
 extra:
   social:
@@ -416,7 +418,7 @@ nav:
                 - Prevent Sleep: products/plt1b/additional-info/prevent-sleep.md
                 - How To Wake Up Your Sensor: products/plt1b/battery-sensors/wake-up-battery-sensor.md
                 - Keep Your Sensor Awake With HA Helper: products/plt1b/battery-sensors/awake-ha-helper.md
-                - Insert Battery: products/plt1b/setup/insert-battery.md
+                - Insert Battery: products/plt1b/additional-info/insert-battery.md
                 - Sensor Connection Check: products/plt1b/battery-sensors/sensor-connection-check.md
               - Examples:
                 - Flower Card: products/plt1b/examples/flower-card.md
