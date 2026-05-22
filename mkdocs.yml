@@ -416,6 +416,7 @@ nav:
                 - Prevent Sleep: products/plt1b/additional-info/prevent-sleep.md
                 - How To Wake Up Your Sensor: products/plt1b/battery-sensors/wake-up-battery-sensor.md
                 - Keep Your Sensor Awake With HA Helper: products/plt1b/battery-sensors/awake-ha-helper.md
+                - Insert Battery: products/plt1b/setup/insert-battery.md
                 - Sensor Connection Check: products/plt1b/battery-sensors/sensor-connection-check.md
               - Examples:
                 - Flower Card: products/plt1b/examples/flower-card.md
@@ -752,6 +753,7 @@ nav:
                 - Calibrating Soil Moisture: homey/products/plt1b/calibrate-plt1.md
                 - Prevent Sleep: homey/products/plt1b/setup/prevent-sleep.md
                 - How To Wake Up Your Sensor: homey/products/plt1b/battery-sensors/wake-up-battery-sensor.md
+                - Insert Battery: homey/products/plt1b/setup/insert-battery.md
                 - Sensor Connection Check: homey/products/plt1b/battery-sensors/sensor-connection-check.md
               - Reviews: homey/products/plt1b/reviews.md
               - Examples:
