@@ -88,3 +88,7 @@ With the device back online, press the button on the Button module. You should h
 !!! success "You've built your first GUI automation!"
 
     The same trigger-then-action pattern works for every automation you'll build in Device Builder. Swap the trigger (motion, temperature crossing a threshold, a schedule) or the action (turn on, dim, play a buzzer tone) and you have a new automation.
+
+#### Next Steps
+
+<a href="../../tutorials/light-effects/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Light Effects</a>

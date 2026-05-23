@@ -514,6 +514,7 @@ nav:
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
               - Connect to Home Assistant: products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md
+              - Light Effects: products/ESPHome-Starter-Kit/tutorials/light-effects.md
           - Automations:
               - Button Controlled LEDs: products/ESPHome-Starter-Kit/automations/button-controlled-leds.md
           - Learn the Basics:
