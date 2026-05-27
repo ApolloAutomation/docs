@@ -496,6 +496,7 @@ nav:
             - General Tips: products/btn1/setup/general-tips.md
             - Sensor Definitions: products/btn1/setup/sensor-definitions.md
             - Prevent Sleep: products/btn1/additional-info/prevent-sleep.md
+            - How To Wake Up Your Sensor: products/btn1/battery-sensors/wake-up-battery-sensor.md
           - Examples:
             - Blueprint: products/btn1/examples/blueprint.md
           - Troubleshooting:
@@ -532,16 +533,20 @@ nav:
               - Introduction: products/h1/introduction.md
               - FAQ: products/h1/faq.md
               - Getting Started: products/h1/getting-started.md
+              - Additional Info:
+                - How To Wake Up Your Sensor: products/h1/battery-sensors/wake-up-battery-sensor.md
               - Reviews: products/h1/reviews.md
               - Examples:
                 - Holiday Songs: products/general/holiday-songs.md
               - Troubleshooting:
                 - H-1 Boot Mode: products/h1/boot-mode.md
-                - Factory Re-Flash H-1: products/h1/code.md
+                - Factory Re-Flash H-1: products/h1/reflash.md
           - H-2:
               - Introduction: products/h2/introduction.md
               - FAQ: products/h2/faq.md
               - Getting Started: products/h2/setup/getting-started.md
+              - Additional Info:
+                - How To Wake Up Your Sensor: products/h2/battery-sensors/wake-up-battery-sensor.md
               - Reviews: products/h2/h2-reviews.md
               - Examples:
                 - Holiday Songs: products/h2/examples/holiday-songs.md
@@ -833,6 +838,7 @@ nav:
             - General Tips: homey/products/btn1/setup/general-tips.md
             - Sensor Definitions: homey/products/btn1/setup/sensor-definitions.md
             - Prevent Sleep: homey/products/btn1/additional-info/prevent-sleep.md
+            - How To Wake Up Your Sensor: homey/products/btn1/battery-sensors/wake-up-battery-sensor.md
           - Addons:
             - BTN-1 Addon: homey/products/btn1/addons/btn1-addon.md
           - Examples:

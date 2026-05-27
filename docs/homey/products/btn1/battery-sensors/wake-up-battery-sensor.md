@@ -1,0 +1,1 @@
+--8<-- "products/general/battery-sensors/wake-up-battery-sensor.md:5:"
