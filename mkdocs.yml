@@ -517,6 +517,7 @@ nav:
               - Light Effects: products/ESPHome-Starter-Kit/tutorials/light-effects.md
           - Automations:
               - Button Controlled LEDs: products/ESPHome-Starter-Kit/automations/button-controlled-leds.md
+              - Play a Tune: products/ESPHome-Starter-Kit/automations/play-a-tune.md
           - Learn the Basics:
               - Explaining ESPHome: products/ESPHome-Starter-Kit/learning-the-basics/explaining-esphome.md
               - Device Builder Tour: products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md
