@@ -1,8 +1,8 @@
 ---
 title: Light Effects
 description: >-
-  Add built-in ESPHome light effects (rainbow, color wipe, and more) to your
-  RGB module by pasting a few lines into the Effects field.
+  Add built-in ESPHome light effects (rainbow, color wipe, and more) to your RGB
+  module by pasting a few lines into the Effects field.
 ---
 # Add Light Effects to Your RGB Module
 
@@ -17,17 +17,20 @@ Out of the box, your RGB module turns on, turns off, and changes color. ESPHome 
 
 ## Add the effects
 
-1.  Open your starter kit device in ESPHome Device Builder and click **Edit**.
-2.  In the editor's left pane, scroll to **Components** and click the RGB light you want to add effects to (either **Onboard RGB LED** or **RGB LEDs**).
-3.  Toggle on **Show advanced settings**, then scroll down to the **Effects** field.
-4.  Paste the following into the **Effects** field:
+1. Open your starter kit device in ESPHome Device Builder and click **Edit**.
+2. In the editor's left pane, scroll to **Components** and click the RGB light you want to add effects to (either **Onboard RGB LED** or **RGB LEDs**).
+3. Click to the right of `rmt_symbols: 48` and hit enter. Hit backspace twice to delete the two leading spaces.
+4. Paste the following YAML on the new line with no spaces in front of it:
 
-    ```yaml
-    - addressable_rainbow:
-    - addressable_color_wipe:
-    ```
+   ```yaml
+       effects:
+         - addressable_rainbow:
+         - addressable_color_wipe:
+   ```
 
-    This adds two effects to the light: a continuously cycling rainbow and a sweeping color wipe.
+![](../../../assets/esphome-device-builder-add-effects-via-yaml.gif)
+
+This adds two effects to the light: a continuously cycling rainbow and a sweeping color wipe.
 
 ??? info "Browse more effects"
 
@@ -39,13 +42,20 @@ Out of the box, your RGB module turns on, turns off, and changes color. ESPHome 
 
 The effects are saved in Device Builder, but the device is still running its old firmware. Compile and install the new code to push the change.
 
-1.  Click **Save** in the bottom right of the editor.
-2.  Click **Install**, then pick **On the Network** to push the new firmware over Wi-Fi.
-3.  Wait for the compile and flash to finish. The device reboots once the install is done.
+1. Click **Save** in the bottom right of the editor.
+2. Click **Install**, then pick **On the Network** to push the new firmware over Wi-Fi.
+
+![](../../../assets/esphome-device-builder-save-install-on-the-network.gif)
+
+3\. Wait for the compile and flash to finish. The device reboots once the install is done.
 
 ## Try the effects
 
 With the device back online, open the local web page at `http://esphome-starter-kit.local/` (or whatever you named your device) in a browser on the same Wi-Fi network. Find the RGB light entity and pick **Rainbow** or **Color Wipe** from the **Effect** dropdown. The LEDs start animating right away.
+
+![](../../../assets/esphome-starter-kit-effects-on-rgb-panel-showcase.webp)
+
+![](../../../assets/esphome-device-builder-test-effects-web-server.gif)
 
 If you've already followed [Connect to Home Assistant](/products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant/), the same **Effect** dropdown shows up on the light entity card in Home Assistant.
 
