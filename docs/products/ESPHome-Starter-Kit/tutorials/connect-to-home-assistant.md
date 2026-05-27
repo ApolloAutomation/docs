@@ -36,7 +36,7 @@ Toggle the **Onboard RGB LED** light entity and confirm the LED responds on the 
 #### The device never appears under Discovered
 
 * Confirm Home Assistant is on the same Wi-Fi network as the device.
-* Some routers and VLAN setups block mDNS broadcasts across subnets. Add the integration manually using the device's IP address. Look the IP up on your router's client list or in the **Device Information** section of the ESPHome Device Builder info panel.
+* Some routers and VLAN setups block mDNS broadcasts across subnets. If you run UniFi, turning on mDNS in your network settings usually fixes this. See the [UniFi mDNS guide](../../general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md). Otherwise, add the integration manually using the device's IP address. Look the IP up on your router's client list or in the **Device Information** section of the ESPHome Device Builder info panel.
 * The device's web page should still load at the hostname or IP. If it does not, the device is not reachable from your computer yet and Home Assistant will not find it either.
 
 #### The encryption key is rejected
@@ -47,4 +47,4 @@ Open `secrets.yaml` in Device Builder, copy the `api_encryption_key` value, and 
 
 Want to understand what just happened under the hood? Read [the Home Assistant integration](../learning-the-basics/how-esphome-talks-to-home-assistant.md).
 
-<a href="../setup/first-steps/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - First Steps</a>
+<a href="../../setup/first-steps/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - First Steps</a>
