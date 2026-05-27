@@ -69,8 +69,8 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
     ```yaml
     light:
       - platform: esp32_rmt_led_strip
-        id: rgb_module
-        name: "RGB Module Light"
+        id: rgb_leds
+        name: "RGB LEDs"
         pin: GPIO14
         chipset: WS2812
         num_leds: 10
