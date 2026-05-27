@@ -16,7 +16,7 @@ ESPHome Device Builder is the software that gives you a user interface for writi
 
 Think of it like telling the starter kit about what devices it has connected and how to use them!
 
-<a href="../learning-the-basics/explaining-esphome/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn more about ESPHome</a>
+<a href="../../learning-the-basics/explaining-esphome/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn more about ESPHome</a>
 
 Pick the platform you'll be running ESPHome Device Builder on:
 
@@ -114,7 +114,7 @@ Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save creden
 
 !!! tip "Secrets Folder"
 
-    One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets.md" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
+    One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets/" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
 
 ![](../../../assets/esphome-builder-enter-wifi-credentials.gif)
 
@@ -188,7 +188,7 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 
     It's a great way to see what's happening under the hood.
 
-<a href="../learning-the-basics/core-components/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about Core Components</a>
+<a href="../../learning-the-basics/core-components/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about Core Components</a>
 
 ### Test your LED
 
@@ -202,4 +202,4 @@ Example of the light changing colors below!
 
 ![](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
 
-<a href="../start-here/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - Start Here</a> <a href="../modules/button-module/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Add More Modules</a> <a href="../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Connect to Home Assistant</a>
+<a href="../../start-here/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - Start Here</a> <a href="../../modules/button-module/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Add More Modules</a> <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Connect to Home Assistant</a>
