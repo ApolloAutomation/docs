@@ -2,29 +2,71 @@
 title: Apollo Battery Devices - wake up battery device.
 description: How to wake up your Apollo device which is currently sleeping.
 ---
-###### Method 1
+There are two ways to wake a sleeping Apollo battery sensor: press the reset button, or hold the boot button. Select your device below for the button locations.
 
-Press the reset button and let go to restart the device<br><a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noreferrer nofollow noopener"><strong>TEMP-1B reset button</strong></a>
+=== "TEMP-1B"
 
-![](/assets/temp-1-reset-button-lid-off.jpg)
+    **Method 1: Reset button.** Press and release the reset button to restart the device.
 
-<br><a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noreferrer nofollow noopener"><strong>PLT-1B reset button</strong></a>
+    ![](/assets/temp-1-reset-button-lid-off.jpg)
 
-![](/assets/plt-boot-mode-pic-6-1.jpg)
+    **Method 2: Boot button.** Quickly press and hold the boot button for 4-5 seconds.
 
-###### Method 2
+    ![](/assets/temp-1b-boot-button-lid-off.jpg)
 
-Quickly press and hold the boot button for 4-5 seconds
+    Button locations: [TEMP-1B boot mode](https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode/).
 
-<a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B boot button</strong></a>
+=== "PLT-1B"
 
-![](/assets/temp-1b-boot-button-lid-off.jpg)
+    **Method 1: Reset button.** Press and release the reset button to restart the device.
 
-<a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noreferrer nofollow noopener"><strong>PLT-1B boot button</strong></a>
+    ![](/assets/plt-boot-mode-pic-6-1.jpg)
 
-![](/assets/plt-boot-mode-pic-2.jpg)
+    **Method 2: Boot button.** Quickly press and hold the boot button for 4-5 seconds.
 
-Your device is now "awake" but it will not stay awake on its own yet. Click the "prevent sleep" button on your device page in Home Assistant or directly on the device web server such as plt-1.local or its IP address.
+    ![](/assets/plt-boot-mode-pic-2.jpg)
+
+    Button locations: [PLT-1B boot mode](https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/).
+
+=== "BTN-1"
+
+    **Method 1: Reset button.** Press and release the reset (left) button to restart the device.
+
+    **Method 2: Boot button.** Quickly press and hold the boot (right) button for 4-5 seconds.
+
+    ![](/assets/btn-1-reset-boot-buttons.png)
+
+    Button locations: [BTN-1 boot mode](https://wiki.apolloautomation.com/products/btn1/troubleshooting/btn1-boot-mode/).
+
+=== "H-1"
+
+    !!! note "Smart firmware only"
+
+        The H-1 only sleeps when running the [smart firmware](https://wiki.apolloautomation.com/products/h1/reflash/). These steps apply when it is running that firmware.
+
+    **Method 1: Reset button.** Press and release the reset button to restart the device.
+
+    **Method 2: Boot button.** Quickly press and hold the boot button for 4-5 seconds.
+
+    ![](/assets/screenshot-2024-11-01-015948.png)
+
+    Button locations: [H-1 boot mode](https://wiki.apolloautomation.com/products/h1/boot-mode/).
+
+=== "H-2"
+
+    !!! note "Smart firmware only"
+
+        The H-2 only sleeps when running the [smart firmware](https://wiki.apolloautomation.com/products/h2/troubleshooting/reflash/). These steps apply when it is running that firmware.
+
+    **Method 1: Reset button.** Press and release the reset (left) button to restart the device.
+
+    **Method 2: Boot button.** Quickly press and hold the boot (right) button for 4-5 seconds.
+
+    ![](/assets/h-2-reset-and-boot-buttons-labeled.png)
+
+    Button locations: [H-2 boot mode](https://wiki.apolloautomation.com/products/h2/troubleshooting/boot-mode/).
+
+Your device is now awake, but it will not stay awake on its own yet. Click the **Prevent Sleep** button on your device page in Home Assistant, or directly on the device web server such as plt-1.local or its IP address.
 
 !!! success "Head to the awake helper wiki article"
 

@@ -24,7 +24,7 @@ Once the ornament is awake, press the gold button (see image below) to play one 
 
 4\. Add to Home Assistant (Optional):
 
-For additional customization, you will need to flash the [smart H-1 firmware](https://wiki.apolloautomation.com/products/h1/code/) and then connect to Home Assistant following the [setup guide](https://wiki.apolloautomation.com/products/general/setup/getting-started/). Through Home Assistant, you can add new songs, change LED effects, and create custom automations.
+For additional customization, you will need to flash the [smart H-1 firmware](https://wiki.apolloautomation.com/products/h1/reflash/) and then connect to Home Assistant following the [setup guide](https://wiki.apolloautomation.com/products/general/setup/getting-started/). Through Home Assistant, you can add new songs, change LED effects, and create custom automations.
 
 5\. Enjoy Your Ornament:
 
