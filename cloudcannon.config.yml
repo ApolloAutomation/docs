@@ -208,36 +208,3 @@ _snippets:
         label: Button Icon
         comment: >
           Search available icons <a href="https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search">here</a>. Remove the colons on each side when pasting.
-#brandon added this for annotations
-  mkdoc_annotation:
-    snippet: "[[annotated_text]] (1)\n{ .annotate }\n\n1.  [[annotation_content]]"
-    preview:
-      text:
-        - key: annotated_text
-        - 'Annotation'
-      subtext:
-        - key: annotation_content
-    picker_preview:
-      text: Annotation
-    params:
-      annotated_text:
-        parser: content
-        options:
-          editor_key: annotated_text
-          style:
-            trim_text: true
-      annotation_content:
-        parser: content
-        options:
-          editor_key: annotation_content
-          style:
-            trim_text: true
-    _inputs:
-      annotated_text:
-        type: text
-        label: Visible text
-        comment: The text the reader sees, with a hover/tap marker after it.
-      annotation_content:
-        type: text
-        label: Annotation content
-        comment: The hidden note revealed when the marker is clicked.
