@@ -68,6 +68,7 @@ flowchart LR
     START{{"Which Apollo mmWave sensor is right for me?"}}
 
     START --> Q1(["Do you need PoE or<br/>Ethernet connectivity?"])
+    START -.-> GUIDE(["Deep dive into each sensor"])
 
     Q1 -->|Yes| RPRO
     Q1 -->|No| Q2(["Do you need to detect and track<br/>multiple people in zones?"])
@@ -85,9 +86,13 @@ flowchart LR
     classDef product fill:#4379AA,stroke:#2d5a8a,color:#fff,font-weight:bold
     class MSR,MTR,RPRO product
 
+    classDef guide fill:#2e7d46,stroke:#1f5630,color:#fff,font-weight:bold
+    class GUIDE guide
+
     click MSR href "https://wiki.apolloautomation.com/products/msr2/introduction/" _blank
     click MTR href "https://wiki.apolloautomation.com/products/mtr1/introduction/" _blank
     click RPRO href "https://wiki.apolloautomation.com/products/rpro1/introduction/" _blank
+    click GUIDE href "https://wiki.apolloautomation.com/products/general/choosing-an-mmwave-sensor/" _blank
 ```
 
 ### Most Popular
