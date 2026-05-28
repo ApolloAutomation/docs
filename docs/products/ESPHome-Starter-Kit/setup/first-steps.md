@@ -207,7 +207,7 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 
 Your kit's default project includes the [**Web Server**](../../learning-the-basics/core-components/#web-server) component, which lets you navigate to the IP address of your device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>
 
-!!! warning "Use http://, not https://"
+!!! warning "Use http:// not https://"
 
     Your kit only speaks `http://`. Some browsers quietly try `https://` first, and the page just won't load. If that happens, click the address bar and add `http://` before the name (so it looks like `http://esphome-starter-kit.local/`).
 
