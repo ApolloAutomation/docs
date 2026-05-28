@@ -209,6 +209,7 @@ nav:
             - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
             - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
           - Source Code and 3D Files: products/general/links.md
+          - Choosing an mmWave Sensor: products/general/choosing-an-mmwave-sensor.md
           - Sensor Comparisons: products/general/comparisons.md
           - Supported Platforms: products/general/supported-platforms.md
           - Resellers: products/general/resellers.md
@@ -590,6 +591,7 @@ nav:
             - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
             - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
           - Source Code and 3D Files: homey/products/general/links.md
+          - Choosing an mmWave Sensor: homey/products/general/choosing-an-mmwave-sensor.md
           - Sensor Comparisons: homey/products/general/comparisons.md
           - Supported Platforms: homey/products/general/supported-platforms.md
           - Resellers: homey/products/general/resellers.md
