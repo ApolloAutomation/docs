@@ -6,7 +6,17 @@ description: Step by step guide for getting started with the ESPHome Starter Kit
 
 This guide walks you through installing the ESPHome Device Builder app, and making your first ESPHome YAML configuration from scratch.
 
-By the end you'll have your ESPHome Starter Kit flashed with a working configuration, showing up in Home Assistant, and reachable in a browser at its IP address or esphome-starter-kit.local via its built-in web server.
+By the end you'll have your ESPHome Starter Kit flashed with a working configuration, showing up in Home Assistant, and reachable in a browser at its IP address or http://esphome-starter-kit.local via its built-in web server.
+
+!!! tip "Click the (+) for extra context"
+
+    <div class="annotate" markdown>
+
+    When you see a small **(+)** icon next to a step or word, give it a click (1). It opens a side note with tips, gotchas, or examples you don't need on first read.
+
+    </div>
+
+    1.  Like this, you just opened your first annotation. Click outside the box to close it.
 
 ---
 
@@ -24,17 +34,20 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     1. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a> and click **Download installer** under the **Windows** tab.
     2. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation.
-       * If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
+
+    !!! warning "You may see Windows prompts during install"
+
+        - If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
+        - If **Windows Security** asks whether to allow public and private networks to access Python, click **Allow**.
+        - If the installer fails or the Device Builder can't compile firmware, install **Git for Windows** from <a href="https://gitforwindows.org/" target="_blank" rel="noreferrer nofollow noopener">gitforwindows.org</a> and try again. Future installer builds will bundle this for you.
 
     ![](../../../assets/esphome-builder-install-windows.gif)
 
-    3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
-       * Use a Chromium-based browser such as Chrome or Edge. Firefox does not yet support WebSerial, which is required for the initial flashing of the device over USB. If Firefox is your default, copy the URL into Chrome or Edge instead.
-    4. Navigate to the **system tray** (bottom right of your Windows taskbar). Hover over **Backend** and switch from Classic to the ESPHome Builder Beta with the new layout and features.
+    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
 
-    ![](../../../assets/esphome-builder-backend-switch-to-beta.gif)
+    !!! info "Browser support"
 
-    5. Wait 30+ seconds, then refresh your browser (F5). You should now see the new ESPHome Device Builder Preview.
+        WebSerial is required for the first USB flash. Chrome, Edge, and the latest version of Firefox all support it. Older Firefox builds do not.
 
     ![](../../../assets/esphome-device-builder-preview-image.png)
 
@@ -42,7 +55,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     1. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. The page detects your OS and shows the macOS downloads. Pick the build that matches your chip:
 
-        - **Apple Silicon** (M1, M2, M3, M4)
+        - **Apple Silicon** (M1, M2, M3, M4, M5)
         - **Intel Mac**
 
     2. Open the `.dmg` and drag **ESPHome Builder** into your Applications folder. Launch it from Applications or Spotlight.
@@ -51,15 +64,13 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     <!-- TODO: add a Mac installer gif/screenshot if available. -->
 
-    3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
+    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
 
-        - Use a Chromium-based browser such as Chrome or Edge. Safari and Firefox do not currently support WebSerial, which is required for the initial USB flash.
+    !!! info "Browser support"
 
-    4. Find the **ESPHome Builder** icon in the menu bar (top right of your Mac's screen). Click it, hover over **Backend**, and switch from Classic to the ESPHome Builder Beta.
+        WebSerial is required for the first USB flash. Chrome, Edge, and the latest version of Firefox all support it. Older Firefox builds do not. Safari does not support WebSerial.
 
-    <!-- TODO: confirm the exact menu bar wording on Mac and add a screenshot. -->
-
-    5. Wait 30+ seconds, then refresh your browser. You should now see the new ESPHome Device Builder Preview.
+    ![](../../../assets/esphome-device-builder-preview-image.png)
 
 === "Home Assistant App"
 
@@ -77,9 +88,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
     2. Search for **ESPHome Device Builder** and click **Install**.
     3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
 
-    !!! info "Already on the new layout"
-
-        The HA app version of Device Builder is already the new beta backend, so you can skip the backend toggle and browser refresh shown in the desktop tabs.
+    ![](../../../assets/esphome-device-builder-preview-image.png)
 
 === "Linux"
 
@@ -98,15 +107,13 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     <!-- TODO: add a Linux installer screenshot if available. -->
 
-    3. Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
+    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
 
-        - Use a Chromium-based browser such as Chrome or Edge. Firefox does not currently support WebSerial, which is required for the initial USB flash.
+    !!! info "Browser support"
 
-    4. Look for the **ESPHome Builder** icon in your system tray or notification area. Its exact location depends on your desktop environment (top bar on GNOME, system tray on KDE, XFCE, or Cinnamon). Click it, hover over **Backend**, and switch from Classic to the ESPHome Builder Beta.
+        WebSerial is required for the first USB flash. Chrome, Edge, and the latest version of Firefox all support it. Older Firefox builds do not.
 
-    <!-- TODO: confirm the system tray wording on Linux. -->
-
-    5. Wait 30+ seconds, then refresh your browser. You should now see the new ESPHome Device Builder Preview.
+    ![](../../../assets/esphome-device-builder-preview-image.png)
 
 #### Set up Wi-Fi Credentials
 
@@ -130,7 +137,13 @@ If you make a mistake or want to change this later, click the 3 dots menu in the
 
 ![](../../../assets/device-builder-add-new-device.gif)
 
-2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit then click **Finish Setup**.
+<div class="annotate" markdown>
+
+2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit then click **Finish Setup**. (1)
+
+</div>
+
+1.  Remember the name you choose. You'll use it later to reach your device's web server at `http://your-name.local` (for example, <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>).
 
 ![](../../../assets/device-builder-select-esk-name-it.gif)
 
@@ -192,7 +205,11 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 
 ### Test your LED
 
-Your kit's default project includes the web\_server component, which lets you navigate to the IP address of your device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a>
+Your kit's default project includes the [**Web Server**](../../learning-the-basics/core-components/#web-server) component, which lets you navigate to the IP address of your device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>
+
+!!! warning "Use http://, not https://"
+
+    Your kit only speaks `http://`. Some browsers quietly try `https://` first, and the page just won't load. If that happens, click the address bar and add `http://` before the name (so it looks like `http://esphome-starter-kit.local/`).
 
 It should load your new device and show you the Onboard RGB LED. We can click the toggle button to make sure the RGB LED turns on and off on our device!
 
