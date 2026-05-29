@@ -20,34 +20,39 @@ This tutorial uses the Motion module and the LED & Buzzer module connected to th
 
 ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automations/" target="_blank" rel="noreferrer nofollow noopener">automations</a>, so you can wire a trigger to an action without hand-writing YAML. The trigger is the *when*, the thing that makes it fire. The action is the *then do*, what happens when it fires.
 
-1. Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
-2. In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
-3. Set up the trigger:
+1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
+2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
 
-   <div markdown class="annotate">
+    ![](../../../assets/esphome-device-builder-add-automation.gif)
 
-                - **What should this automation react to?** → **A configured component**
-                - **Which configured component?** → **Motion Module (binary_sensor.gpio)**
-                - **Which trigger?** → **Binary Sensor → On Click** (1)
+3.  Set up the trigger:
 
-                </div> ![](../../../assets/esphome-device-builder-add-automation.gif)
-   1. **On Click** fires the moment the sensor detects motion. The dropdown also offers **On Release** (the moment motion stops) and **On State** for other occupancy behaviors. You'll use **On Release** in the optional step below to turn the light back off.
-4. Click **Continue**. You land on the **Binary Sensor → On Click** editor with the **Target** already set to your Motion module.
+    <div class="annotate" markdown>
 
-![](../../../assets/esphome-device-builder-motion-sensor-trigger.gif)
+    - **What should this automation react to?** → **A configured component**
+    - **Which configured component?** → **Motion Module (binary_sensor.gpio)**
+    - **Which trigger?** → **Binary Sensor → On Click** (1)
 
-1. Set up the action:
+    </div>
 
-   <div markdown class="annotate">
+    1.  **On Click** fires the moment the sensor detects motion. The dropdown also offers **On Release** (the moment motion stops) and **On State** for other occupancy behaviors. You'll use **On Release** in the optional step below to turn the light back off.
 
-                - Under **Actions**, click **+ Add action**.
-                - In the **Add action** dialog, stay on the **By target** tab and choose **Light → Turn On** under the RGB LED group.
-                - On the new action, click the **ID** dropdown and select **RGB LEDs**. (1)
+    ![](../../../assets/esphome-device-builder-motion-sensor-trigger.gif)
 
-                </div>
-   1. The **ID** dropdown only needs changing if your device also has an **Onboard RGB LED** component configured. If **RGB LEDs** is the only light, it's already selected.
+4.  Click **Continue**. You land on the **Binary Sensor → On Click** editor with the **Target** already set to your Motion module.
+5.  Set up the action:
 
-![](../../../assets/esphome-device-builder-light-turn-on-action.gif)
+    <div class="annotate" markdown>
+
+    - Under **Actions**, click **+ Add action**.
+    - In the **Add action** dialog, stay on the **By target** tab and choose **Light → Turn On** under the RGB LED group.
+    - On the new action, click the **ID** dropdown and select **RGB LEDs**. (1)
+
+    </div>
+
+    1.  The **ID** dropdown only needs changing if your device also has an **Onboard RGB LED** component configured. If **RGB LEDs** is the only light, it's already selected.
+
+    ![](../../../assets/esphome-device-builder-light-turn-on-action.gif)
 
 ??? note "What the GUI built in YAML"
 
@@ -89,15 +94,15 @@ With the device back online, wave your hand in front of the PIR sensor. The RGB 
 
 Right now the light turns on with motion but never turns off. Add a second trigger to the same Motion module so the light switches off once motion clears.
 
-1. Add another automation, this time choosing **Binary Sensor → On Release** as the trigger for the Motion module.
+1.  Add another automation, this time choosing **Binary Sensor → On Release** as the trigger for the Motion module.
 
-![](../../../assets/esphome-device-builder-motion-sensor-on-release.gif)
+    ![](../../../assets/esphome-device-builder-motion-sensor-on-release.gif)
 
-1. Give it a **Light → Turn Off** action targeting **RGB LEDs**.
+2.  Give it a **Light → Turn Off** action targeting **RGB LEDs**.
 
-![](../../../assets/esphome-device-builder-light-turn-off-action.gif)
+    ![](../../../assets/esphome-device-builder-light-turn-off-action.gif)
 
-1. **Save** and **Install** again.
+3.  **Save** and **Install** again.
 
 ??? note "What the GUI built in YAML"
 
