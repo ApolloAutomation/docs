@@ -30,41 +30,43 @@ When you added the LED & Buzzer module, Device Builder created an `rtttl` compon
 
 ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automations/" target="_blank" rel="noreferrer nofollow noopener">automations</a>, so you can wire a trigger to an action without hand-writing YAML. The trigger is the *when*, the thing that makes it fire. The action is the *then do*, what happens when it fires.
 
-1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
-2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
+1. Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
+2. In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
 
-    ![](../../../assets/esphome-device-builder-add-automation.gif)
+   ![](../../../assets/esphome-device-builder-add-automation.gif)
 
-3.  Set up the trigger:
+3. Set up the trigger:
 
-    <div class="annotate" markdown>
+   <div markdown class="annotate">
 
-    - **What should this automation react to?** → **A configured component**
-    - **Which configured component?** → **Button Module (binary_sensor.gpio)**
-    - **Which trigger?** → **Binary Sensor → On Click** (1)
+             - **What should this automation react to?** → **A configured component**
+             - **Which configured component?** → **Button Module (binary_sensor.gpio)**
+             - **Which trigger?** → **Binary Sensor → On Click** (1)
 
-    </div>
+             </div>
+   1. The trigger dropdown also offers **On Double Click**, **On Multi Click**, **On Press**, **On Release**, **On State**, and **On State Change** for other button gestures. Swap any of these in once you're comfortable with the On Click flow.
 
-    1.  The trigger dropdown also offers **On Double Click**, **On Multi Click**, **On Press**, **On Release**, **On State**, and **On State Change** for other button gestures. Swap any of these in once you're comfortable with the On Click flow.
+   ![](../../../assets/esphome-device-builder-add-button-trigger-automation.gif)
 
-4.  Click **Continue**. You land on the **Binary Sensor → On Click** editor with the **Target** already set to your Button module.
-5.  Set up the action:
+4. Click **Continue**. You land on the **Binary Sensor → On Click** editor with the **Target** already set to your Button module.
+5. Set up the action:
 
-    <div class="annotate" markdown>
+   <div markdown class="annotate">
 
-    - Under **Actions**, click **+ Add action**.
-    - In the **Add action** dialog, choose **Rtttl → Play**.
-    - In the **Rtttl** (tune) field, paste an RTTTL string. Copy the one below to get started, or use one of the [examples below](#find-more-tunes). (1)
+             - Under **Actions**, click **+ Add action**.
+             - In the **Add action** dialog, click **By type** then search Rtttl and choose **Rtttl → Play**.
+             - In the **Rtttl** (tune) field, paste an RTTTL string. Copy the one below to get started, or use one of the [examples below](#find-more-tunes). (1)
 
-    </div>
+             </div>
+   1. If your device has more than one `rtttl` component, set the **ID** to **rtttl\_buzzer**. With a single buzzer it's already selected.
 
-    1.  If your device has more than one `rtttl` component, set the **ID** to **rtttl_buzzer**. With a single buzzer it's already selected.
+   Copy this tune and paste it into the **Rtttl** field:
 
-    Copy this tune and paste it into the **Rtttl** field:
+   ```text
+   The Simpsons:d=4,o=5,b=160:c.,e,f#,8a,g.,e,c,8a4,8f#4,8f#4,8f#4,2g4,8p,8p,8f#4,8f#4,8f#4,8g4,a4.,8c,16p,8c,16p,8c,2c
+   ```
 
-    ```text
-    scale_up:d=32,o=5,b=100:c,c#,d,d#,e,f,f#,g,g#,a,a#,b
-    ```
+![](../../../assets/esphome-device-builder-configure-rtttl-play-action.gif)
 
 ??? note "What the GUI built in YAML"
 
@@ -83,7 +85,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
         id: button_module
         on_click:
           then:
-            - rtttl.play: "scale_up:d=32,o=5,b=100:c,c#,d,d#,e,f,f#,g,g#,a,a#,b"
+            - rtttl.play: "The Simpsons:d=4,o=5,b=160:c.,e,f#,8a,g.,e,c,8a4,8f#4,8f#4,8f#4,2g4,8p,8p,8f#4,8f#4,8f#4,8g4,a4.,8c,16p,8c,16p,8c,2c"
     ```
 
     See [Device Builder Tour → YAML editor (right)](../learning-the-basics/device-builder-tour.md#yaml-editor-right) for the full breakdown of the YAML pane.
@@ -134,4 +136,4 @@ Want more? <a href="https://picaxe.com/rtttl-ringtones-for-tune-command/" title=
 
     Same trigger-then-action pattern, new action. Swap the trigger (motion, a temperature threshold, a schedule) or the tune, and you have a new automation.
 
-[Check out these Holiday themed buzzer examples too! :material-music-note:](https://wiki.apolloautomation.com/products/general/holiday-songs/){ .md-button .md-button--primary }
+[Check out these Holiday themed buzzer examples too! :material-music-note:](https://wiki.apolloautomation.com/products/general/holiday-songs/){    .md-button .md-button--primary }
