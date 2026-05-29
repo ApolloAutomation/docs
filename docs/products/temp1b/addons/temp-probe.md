@@ -24,7 +24,7 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 3\. Go to the device page of your TEMP-1B in Home Assistant and choose the Temperature Probe.
 
-![](/assets/temp1b-temp-probe-pic-1-1.png)
+![](/assets/temp-1-select-temp-probe-example.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
