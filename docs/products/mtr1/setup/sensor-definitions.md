@@ -176,7 +176,7 @@ description: These are all of the entities exposed by the MTR-1 to automate on!
 
     **DPS310 Temperature Offset**
 
-    * Offset value of the DPS310 Temperature.
+    * Offset value of the DPS310 Temperature. Note: A small subset of devices do not include a DPS310 sensor. If this option is unknown, your device may be one of these units.
 
     **ESP Reboot**
 

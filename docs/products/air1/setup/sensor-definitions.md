@@ -36,6 +36,10 @@ Once added to Home Assistant you can configure different settings for your senso
 
 * Tracks CO₂ levels in parts per million (ppm), which can indicate poor ventilation and impact overall air quality and cognitive performance. True NDIR CO<sub>2</sub> reading from the SCD40. This will be Unknown if you do not have the CO<sub>2</sub> module. You can <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">re-calibrate the SCD40 CO₂ sensor</a> to <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">outdoor baseline levels.</a>
 
+**DPS310 Pressure**
+
+* Measures the air pressure in the environment. Note: A small subset of devices do not include a DPS310 sensor. If this sensor is unknown, your device may be one of these units.
+
 **Ethanol (C₂H₅OH)**
 
 * Detects ethanol vapors, commonly found in cleaning agents, sanitizers, or alcohol-based products.
