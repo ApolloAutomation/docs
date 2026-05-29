@@ -62,62 +62,66 @@ description: Frequently asked questions about the MTR-1 mmWave sensor.
 
 * The temperature and pressure sensor provides accurate measurements for air temperature and barometric pressure. This data can be used in automations, such as controlling heating/cooling systems or monitoring environmental conditions.
 
-16\. **How is the MTR-1 powered?**
+16\. **My DPS310 Pressure or DPS310 Temperature shows as "unknown" in Home Assistant. Is something wrong?**
+
+* No, your device is fine. A small subset of units shipped without the DPS310 sensor because the part was discontinued by the manufacturer. If you see those entities reporting "unknown," your unit is one of these. Every other sensor on the device works normally.
+
+17\. **How is the MTR-1 powered?**
 
 * The MTR-1 is powered through a USB-C connection and can be plugged into a standard wall outlet using a 5V adapter.
 
-17\. **What is the purpose of the RGB LED and piezo buzzer?**
+18\. **What is the purpose of the RGB LED and piezo buzzer?**
 
 * The RGB LED can display different colors for various events or alerts, such as turning red when air quality is poor or green for general notifications. The piezo buzzer can be used for sound alerts, such as a beep when motion is detected or a CO2 level warning.
 
-18\. **Can I customize the MTR-1’s features?**
+19\. **Can I customize the MTR-1’s features?**
 
 * Yes, the MTR-1 is fully customizable through ESPHome. You can modify sensor settings, change reporting intervals, and create custom automations based on the sensor readings.
 
-19\. **What is the reporting frequency of the MTR-1’s sensors?**
+20\. **What is the reporting frequency of the MTR-1’s sensors?**
 
 * The reporting frequency for each sensor can be adjusted through the ESPHome YAML configuration. You can choose to report data as frequently as every second or extend the intervals to reduce power consumption.
 
-20\. **Can I use multiple MTR-1 sensors in my smart home setup?**
+21\. **Can I use multiple MTR-1 sensors in my smart home setup?**
 
 * Yes, you can integrate multiple MTR-1 sensors into your Home Assistant system. Each will show up as a separate entity, allowing you to monitor multiple rooms or areas in your home simultaneously.
 
-21\. **What’s the difference between the MTR-1 and MSR-2?**
+22\. **What’s the difference between the MTR-1 and MSR-2?**
 
 * The MTR-1 features multi-target radar tracking, allowing it to detect multiple people in a room and track their positions. The MSR-2, on the other hand, is designed more for single-target detection and has a slightly different sensor set, though both sensors offer robust environmental monitoring capabilities.
 
-22\. **What accessories are available for the MTR-1?**
+23\. **What accessories are available for the MTR-1?**
 
 * Accessories for the MTR-1 include mounting brackets, stands, and a variety of expansion options, like additional sensor modules. These allow for greater flexibility in where and how you use the sensor.
 
-23\. **What are the primary advantages of the MTR-1 over other motion sensors?**
+24\. **What are the primary advantages of the MTR-1 over other motion sensors?**
 
 * The MTR-1’s mmWave radar is significantly more advanced than traditional PIR (Passive Infrared) motion sensors. It can detect subtle movements, track multiple targets, and monitor precise locations within a room, making it ideal for sophisticated home automations. Its additional sensors (LUX, UV, temperature, pressure, optional CO2) also provide greater environmental awareness.
 
-24\. **How do I install the MTR-1?**
+25\. **How do I install the MTR-1?**
 
 * Installation is simple. The MTR-1 is powered via USB-C and connects to your WiFi. From there, you configure it through ESPHome and integrate it into your Home Assistant setup. Detailed instructions are available on our documentation wiki, and we offer support via our Discord community.
 
-25\. **How secure is the MTR-1?**
+26\. **How secure is the MTR-1?**
 
 * The MTR-1 operates entirely on your local network, using ESPHome, which means no data is sent to external servers. This ensures that your home automation data remains private and secure.
 
-26\. **Does the MTR-1 require cloud connectivity?**
+27\. **Does the MTR-1 require cloud connectivity?**
 
 * No, the MTR-1 works entirely within your local network through Home Assistant and ESPHome. You don’t need cloud access or a subscription to use the sensor.
 
-27\. **How do I update the firmware on the MTR-1?**
+28\. **How do I update the firmware on the MTR-1?**
 
 * Firmware updates for the MTR-1 can be done directly through ESPHome. When updates are available, you can install them wirelessly over-the-air (OTA), making it simple to keep the sensor up to date.
 
-28\. **What is the warranty on the MTR-1?**
+29\. **What is the warranty on the MTR-1?**
 
 * The MTR-1 comes with a one-year warranty. If you encounter any issues, we provide comprehensive support via email, Discord, or our website to ensure you’re fully satisfied with the product.
 
-29\. **How long does it take to set up the MTR-1?**
+30\. **How long does it take to set up the MTR-1?**
 
 * Setup is quick and easy. Most users report being able to configure and integrate the MTR-1 into their Home Assistant setup within 10-15 minutes.
 
-30\. **What’s in the box?**
+31\. **What’s in the box?**
 
 * Each MTR-1 package includes the assembled board, case, support stand, and a link to documentation, open-source code, and CAD models. Additionally, you’ll receive an Apollo Automation sticker.

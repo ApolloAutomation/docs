@@ -110,7 +110,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **DPS Temperature Offset**
 
-    * Offsets the heat from the ESP chip for a more accurate temperature.
+    * Offsets the heat from the ESP chip for a more accurate temperature. Note: A small subset of devices do not include a DPS310 sensor. If this option is unknown, your device may be one of these units.
 
     **ESP Reboot**
 
