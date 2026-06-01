@@ -521,6 +521,8 @@ nav:
               - Button Controlled LEDs: products/ESPHome-Starter-Kit/automations/button-controlled-leds.md
               - Play a Tune: products/ESPHome-Starter-Kit/automations/play-a-tune.md
               - Motion-Activated Light: products/ESPHome-Starter-Kit/automations/motion-activated-light.md
+              - Temp-Reactive LEDs: products/ESPHome-Starter-Kit/automations/temp-reactive-leds.md
+              - Press to Check Climate: products/ESPHome-Starter-Kit/automations/press-to-check-climate.md
           - Learn the Basics:
               - Explaining ESPHome: products/ESPHome-Starter-Kit/learning-the-basics/explaining-esphome.md
               - Device Builder Tour: products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md
