@@ -8,7 +8,9 @@ Once added to Home Assistant you can configure different settings for your TEMP-
 
 !!! note "How often readings update"
 
-    The **Default Update** column is how often each sensor refreshes while the TEMP-1 is awake. By default **Prevent Sleep** is on, so the device stays awake and reports continuously at these intervals. If you turn **Prevent Sleep** off (for battery use), the TEMP-1 wakes for about 90 seconds, reports, then deep-sleeps for the **Sleep Duration**.
+    The **Default Update** column is how often each sensor refreshes while the TEMP-1 is awake. By default **Prevent Sleep** is on, so the device stays awake and reports continuously at these intervals. Turn **Prevent Sleep** off to let the TEMP-1 deep-sleep between readings for more accurate onboard AHT20 temperature and humidity (the ESP chip's heat skews them while it is awake); it then wakes for about 90 seconds, reports, and sleeps for the **Sleep Duration**.
+
+    To update firmware on a sleeping device, just click **Update** on the **Firmware Update** entity and it installs the next time the device wakes (the firmware keeps itself awake until the update finishes, so you don't need to do anything else). The optional [OTA helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/) is a separate toggle that overrides **Prevent Sleep** to keep a device awake on demand.
 
 === "Controls"
 
@@ -44,7 +46,7 @@ Once added to Home Assistant you can configure different settings for your TEMP-
     | **Probe Temp Difference Threshold** | 0.0 °C | Temperature change that triggers a report when **Notify Only Outside Temp Difference** is on. Disabled by default. |
     | **Notify Only Outside Temp Difference** | Off | Wakes the device to report only when the probe temperature changes by more than the **Probe Temp Difference Threshold**, instead of every wake cycle. Disabled by default. |
     | **Sleep Duration** | 8 min | How long the TEMP-1 stays in deep sleep between wake cycles (only used when **Prevent Sleep** is off). |
-    | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Required for OTA updates and live readings; turn it off to save power on battery. |
+    | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Turn it off to let the TEMP-1 deep-sleep between readings for more accurate onboard AHT20 temperature and humidity. |
     | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
 
 === "Diagnostic"

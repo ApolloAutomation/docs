@@ -8,7 +8,9 @@ Once added to Home Assistant you can configure different settings for your TEMP-
 
 !!! note "How often readings update"
 
-    The **Default Update** column is how often each entity refreshes while the TEMP-1B is awake. The TEMP-1B is a battery deep-sleep device. By default **Prevent Sleep** is on, so it stays awake and reports continuously at these intervals. If you turn **Prevent Sleep** off, the device wakes, reports its values, then deep-sleeps for the **Sleep Duration** before waking again.
+    The **Default Update** column is how often each entity refreshes while the TEMP-1B is awake. The TEMP-1B runs on a battery, and by default **Prevent Sleep** is on, so it stays awake and reports continuously at these intervals (which drains the battery). Turn **Prevent Sleep** off to let it deep-sleep between readings and conserve the battery: it wakes, reports, then sleeps for the **Sleep Duration** before waking again.
+
+    To update firmware on a sleeping device, just click **Update** on the **Firmware Update** entity and it installs the next time the device wakes (the firmware keeps itself awake until the update finishes, so you don't need to do anything else). The optional [OTA helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/) is a separate toggle that overrides **Prevent Sleep** to keep a device awake on demand.
 
 === "Controls"
 

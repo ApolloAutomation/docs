@@ -8,16 +8,15 @@ Once added to Home Assistant you can configure different settings for your PLT-1
 
 ![PLT-1 Sensor Data](/assets/screenshot-2024-10-03-at-4-10-25-pm.png)
 
-!!! note "How the PLT-1 sleeps"
+!!! tip "Automate your plant care"
 
-    The PLT-1 is a battery-powered deep-sleep sensor. By default it wakes, reports its readings, then deep-sleeps for the **Sleep Duration**. When it connects to Home Assistant it waits a few seconds, sends one full set of readings, then sleeps again, unless **Prevent Sleep** is on or the device is in OTA mode. Turn **Prevent Sleep** on to keep the device awake for live readings and OTA updates (this uses much more battery). The **Default Update** column is how often each entity refreshes while the PLT-1 is awake.
+    Want soil-moisture alerts and watering reminders? Import the [PLT-1 Plant Sensor Alerts blueprint](https://wiki.apolloautomation.com/products/plt1/examples/blueprint/) to get low-moisture notifications and automations without building them by hand.
 
 === "Controls"
 
     | Control | What it does |
     |---------|--------------|
     | **RGB Light** | One RGB Neopixel LED. Click the light bulb or color wheel to change the color. Use the toggle to turn it on or off. Useful for visual plant-health alerts (for example, green when fine, red when soil is too dry). |
-    | **Accessory Power** | Controls power delivery to the sensor board. On sends power to the whole device. Off powers only the ESP chip, which also disables the RGB Light. Battery models only. |
 
 === "Sensors"
 
@@ -29,8 +28,6 @@ Once added to Home Assistant you can configure different settings for your PLT-1
     | **Air Humidity** | 60s | Relative humidity of the air around the plant from the AHT20 sensor. Adjusted by the **Air Humidity Offset**. |
     | **LTR390 Light** | 60s* | Ambient light level in lux. *Polls at the **LTR390 Update Interval** (60s by default). |
     | **LTR390 UV Index** | 60s* | UV index measured by the LTR390. *Polls at the **LTR390 Update Interval**. |
-    | **Battery level** | 60s | Battery charge as a percentage, from the MAX17048 fuel gauge. Battery models only. |
-    | **Battery voltage** | 60s | Battery voltage from the MAX17048 fuel gauge. Battery models only. |
     | **Soil ADC** | 5s | Raw soil voltage from the ADC, used to calculate **Soil Moisture**. Diagnostic, disabled by default. |
 
 === "Configuration"
@@ -43,8 +40,8 @@ Once added to Home Assistant you can configure different settings for your PLT-1
     | **Air Temperature Offset** | 0.0 °C | Calibration offset applied to the **Air Temperature** reading. |
     | **Air Humidity Offset** | 0 % | Calibration offset applied to the **Air Humidity** reading. |
     | **LTR390 Update Interval** | 60 s | How often the LTR390 light and UV sensors poll (1 to 300 seconds). |
-    | **Sleep Duration** | 12 h (battery) / 5 min (USB) | How long the PLT-1 deep-sleeps between wake cycles. Battery models default to 12 hours; USB-powered models default to 5 minutes. |
-    | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Required for OTA updates and live readings. Turn it off to save battery. |
+    | **Sleep Duration** | 5 min | How long the PLT-1 deep-sleeps between readings when **Prevent Sleep** is off. |
+    | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Turn it off to let the PLT-1 deep-sleep between readings for more accurate onboard AHT20 temperature and humidity. |
     | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
 
 === "Diagnostic"
@@ -53,7 +50,7 @@ Once added to Home Assistant you can configure different settings for your PLT-1
     |--------|:--------------:|---------------|
     | **Apollo Firmware Version** | on boot | The Apollo firmware build installed on the device (for example, `26.3.2.1`). |
     | **ESPHome Version** | on boot | The ESPHome version the firmware was compiled with. |
-    | **Firmware Update** | — | Shows whether a firmware update is available and lets you update from inside Home Assistant. |
+    | **Firmware Update** | — | Shows whether a firmware update is available. Click **Update** and it installs the next time the device wakes; the optional [OTA helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/) overrides **Prevent Sleep** to keep the device awake on demand. Separate from the **Apollo Firmware Version** and **ESPHome Version** sensors. |
     | **IP Address** | on connect | The device's IP address on your network. |
     | **Online** | on change | Connection status of the device to Home Assistant. |
     | **RSSI** | 60s | Wi-Fi signal strength in dBm. Values closer to 0 are stronger; a weak signal can affect reliability. |

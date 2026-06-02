@@ -10,7 +10,9 @@ Once added to Home Assistant you can configure different settings for your AIR-1
 
 !!! note "How often readings update"
 
-    The **Default Update** column is how often each sensor refreshes while the AIR-1 is awake. By default **Prevent Sleep** is on, so the device stays awake and reports continuously at these intervals. If you turn **Prevent Sleep** off (for battery use), the AIR-1 wakes for about 2 minutes, reports, then deep-sleeps for the **Sleep Duration**.
+    The **Default Update** column is how often each sensor refreshes while the AIR-1 is awake. By default **Prevent Sleep** is on, so the device stays awake and reports continuously at these intervals. Turn **Prevent Sleep** off to let the AIR-1 deep-sleep between readings for more accurate onboard SEN55 temperature and humidity (the ESP chip's heat skews them while it is awake); it then wakes for about 2 minutes, reports, and sleeps for the **Sleep Duration**.
+
+    To update firmware on a sleeping device, just click **Update** on the **Firmware Update** entity and it installs the next time the device wakes (the firmware keeps itself awake until the update finishes, so you don't need to do anything else). The optional [OTA helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/) is a separate toggle that overrides **Prevent Sleep** to keep a device awake on demand.
 
 === "Controls"
 
@@ -65,7 +67,7 @@ Once added to Home Assistant you can configure different settings for your AIR-1
     | **SEN55 Humidity Offset** | 0 % | Calibrates the SEN55 humidity reading to a known value. See the <a href="https://wiki.apolloautomation.com/products/general/temp-hum-calibration/" target="_blank" rel="noopener">temperature &amp; humidity calibration guide</a>. |
     | **DPS310 Pressure Offset** | 0.0 hPa | Applies a calibration offset to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default. A small subset of devices do not include a DPS310 sensor; if this option reads *Unknown*, your device may be one of these units. |
     | **Sleep Duration** | 5 min | How long the AIR-1 stays in deep sleep between wake cycles (only used when **Prevent Sleep** is off). |
-    | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Required for OTA updates and live readings; turn it off to save power on battery. |
+    | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Turn it off to let the AIR-1 deep-sleep between readings for more accurate onboard SEN55 temperature and humidity. |
     | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
 
 === "Diagnostic"
