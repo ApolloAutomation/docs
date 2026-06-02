@@ -1,94 +1,92 @@
+---
+title: MSR-1 Sensor Definitions
+description: Full list of definitions for the MSR-1 and its various sensors.
+---
 # Sensor Definitions
 
-Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
+Once added to Home Assistant you can configure different settings for your MSR-1. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
 
-### Controls
+!!! note "How often readings update"
 
-- **RGB Light**
-    - A RGB Neopixel. Click on the light bulb to change the color. Click on the toggle to turn on or off
+    The **Default Update** column is how often each entity refreshes. Radar entities update in real time as targets move. The **LTR390 Light** and **LTR390 UV Index** sensors use the interval set by the **LTR390 Update Interval** number (60s by default).
 
-### Sensors
+=== "Controls"
 
-- **BME280 Humidity**
-    - Humidity reading from the BME280. This is affected by the configuration variable "BME280 Humidity Offset". Changing the offset allows you to dial in the humidity to a known value.
-- **BME280 Humidity Calibrated ****- Removed In v23.11.01.1**
-    - We calibrated the BME280 against a lab-rated reference sensor. We set the linear offset values in the YAML and this variable is the output.
-- **BME280 Pressure**
-    - Atmospheric pressure reading from BME280
-- **BME280 Temperature**
-    - Temperature reading from BME280. This is affected by the configuration variable "BME280 Temperature Offset". Changing the offset allows you to dial in the temperature to a known value.
-- **BME280 Temperature Calibrated ****- Removed In v23.11.01.1**
-    - We calibrated the BME280 against a lab-rated reference sensor. We set the linear offset values in the YAML and this variable is the output.
-- **CO2**
-    - True CO2 reading from the SCD40. This will be Unknown if you do not have the CO2 module. This can be calibrated following this guide but does come precalibrated: [Here](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration)
-- **ESP Temperature**
-    - This is the temperature of the internal ESP chip. Think of it like your measured CPU temp on your PC
-- **LTR390 Ambient Light ****- Removed. Value wasn't useful**
-    - Light level measured by LTR390
-- **LTR390 Light**
-    - Light level measured in lux by LTR390
-- **LTR390 UV - Removed. Value wasn't useful**
-    - UV level measured by LTR390
-- **LTR390 UV Index**
-    - UV index measured by LTR390
-- **Radar Detection Distance**
-    - The last detected distance by the radar. This will stay at the last known value so sometimes can be misleading
-- **Radar Move Energy**
-    - The amount of movement measured by the LD2410B. Faster movements have higher %
-- **Radar Moving Target**
-    - Does the radar have a moving target it is tracking
-- **Radar Still Distance**
-    - The last measured distance of a still target. It will hold the last value so sometimes can be misleading
-- **Radar Still Energy**
-    - The energy of the current still target
-- **Radar Still Target**
-    - Does the radar have a still target
-- **Radar Target**
-    - Does the radar have a still or moving target. Good for triggering automation.
-- **Radar Zone 1 Occupancy**
-    - This is a configurable zone. Think of zones like distances from the radar unit. Zone 1 might be from 0 cm to 120 cm from the sensor. This is telling you if there is someone in that zone. The zones can be defined in the configuration section with “Radar End Zone 1”
-- **Radar Zone 2 Occupancy**
-    - Same as zone 1 but just the second zone from the sensor
-- **Radar Zone 3 Occupancy**
-    - Same as zone 1 & 2 but with the third zone.
-- **SCD40 Humidity ****- Removed In v23.11.01.1**
-    - This is the humidity reading from the SCD40. Will be unknown if you do not have the CO2 module
-- **SCD40 Temperature ****- Removed In v23.11.01.1**
-    - This is the temperature reading from the SCD40. Will be unknown if you do not have the CO2 module
+    | Control | What it does |
+    |---------|--------------|
+    | **RGB Light** | Three RGB Neopixel LEDs. Click the light bulb or color wheel to change the color. Use the toggle to turn them on or off. |
+    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. |
+    | **Restart Radar** | Restarts the LD2410 radar module without rebooting the whole device. |
 
-### Configuration
+=== "Sensors"
 
-- **BME280 Humidity Offset**
-    - Allows you to adjust the reading of the “BME280 Humidity” sensor to match a known value
-- **BME280 Temperature Offset**
-    - Allows you to adjust the reading of the “BME280 Temperature” sensor to match a known value
-- **CO2 Calibration Number**
-    - See calibrating CO2: [Here](https://wiki.apolloautomation.cloud/books/general/page/co2-calibration)
-- **ESP Reboot**
-    - Performs a restart of the sensor
-- **Factory Reset Radar**
-    - Sets the radar's move thresholds back to their original values from the manufacturer
-- **g0-g8 Move & Still Threshold**
-    - Please refer to the radar tuning guide: [Here](https://wiki.apolloautomation.cloud/books/msr-1/page/how-to-tune-mmwave-using-home-assistant)
-- **Radar Control Bluetooth**
-    - This allows you to turn on the LD2410's Bluetooth. This allows you to connect to the HLK Radar phone app if you wanted to upload new firmware to the radar unit (Not the MSR-1 in general, just the radar chip)
-- **Radar Distance Resolution**
-    - Best to keep on 0.75m in many cases. If you change it to 0.25m the first few gates become very very sensitive and the maximum detection distance shrinks a lot.
-- **Radar Zone 1 Start**
-    - This sets the starting distance for Zone 1 in cm. This is the distance from the sensor to the start of Zone 1
-- **Radar End Zone 1**
-    - This defines “Zone 1” of the radar. It is a distance from the sensor that specifies what “Zone 1” is. It connects to the “Radar Zone 1 Occupancy” sensor. So if this number is set to “10” that means from 0 to 10 centimeters from the sensor is zone 1.
-- **Radar End Zone 2**
-    - Same as Zone 1. This defines where zone 2 ends
-- **Radar End Zone 3**
-    - Like Zone 2, this defines where zone 3 ends
-- **Radar Max Move Distance**
-    - Maximum distance gate for movement detection. Value between 2 and 8 inclusive
-- **Radar Max Still Distance**
-    - Maximum distance gate for still detection. Value between 2 and 8 inclusive. Defaults to 8.
-- **Radar Timeout**
-    - The time in seconds that the radar's presence will stay high after the target is lost.
-- **SCD40 Humidity Offset ****- Removed In v23.11.01.1**
-    - Allows you to adjust the reading of the “SCD40 Humidity” sensor to match a known value.
-- **SCD40 Temperature Offset ****- Removed In v23.11.01.1**
-    - Allows you to adjust the reading of the “SCD40 Temperature” sensor to match a known value
+    #### Air quality &amp; light
+
+    | Sensor | Default Update | Details |
+    |--------|:--------------:|---------|
+    | **CO2** | 60s | True NDIR reading from the SCD40. Shows *Unknown* if you do not have the CO₂ module. You can <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">re-calibrate it to the outdoor baseline</a>. |
+    | **BME280 Temperature** | 60s | Ambient air temperature from the BME280. Adjusted by the **BME280 Temperature Offset**. |
+    | **BME280 Humidity** | 60s | Relative humidity from the BME280. Adjusted by the **BME280 Humidity Offset**. |
+    | **BME280 Pressure** | 60s | Barometric air pressure from the BME280. |
+    | **LTR390 Light** | 60s* | Ambient light level in lux. *Polls at the **LTR390 Update Interval** (60s by default). |
+    | **LTR390 UV Index** | 60s* | UV index measured by the LTR390. *Polls at the **LTR390 Update Interval**. |
+
+    #### Radar (LD2410 mmWave)
+
+    | Sensor | Default Update | Details |
+    |--------|:--------------:|---------|
+    | **Radar Target** | real-time | Whether the radar detects a still or moving target. Good for triggering occupancy automations. |
+    | **Radar Moving Target** | real-time | Whether the radar currently has a moving target it is tracking. |
+    | **Radar Still Target** | real-time | Whether the radar currently has a still target. |
+    | **Radar Moving Distance** | real-time | Distance to the moving target. Holds the last value when no moving target is present, so it can be misleading. |
+    | **Radar Still Distance** | real-time | Distance to the still target. Holds the last value when no still target is present, so it can be misleading. |
+    | **Radar Detection Distance** | real-time | The last detected distance by the radar. Holds the last known value, so it can sometimes be misleading. |
+    | **Radar Move Energy** | real-time | The amount of movement measured by the LD2410. Faster movements report a higher percentage. |
+    | **Radar Still Energy** | real-time | The energy of the current still target. |
+    | **Radar Zone 1 Occupancy** | real-time | Whether someone is in Zone 1, a configurable distance band from the sensor. Defined by **Radar Zone 1 Start** and **Radar End Zone 1**. |
+    | **Radar Zone 2 Occupancy** | real-time | Same as Zone 1, for the second distance band (from **Radar End Zone 1** to **Radar End Zone 2**). |
+    | **Radar Zone 3 Occupancy** | real-time | Same as Zones 1 and 2, for the third distance band (from **Radar End Zone 2** to **Radar End Zone 3**). |
+    | **Radar Zone Occupancy** | real-time | Whether any of the three zones is currently occupied. |
+    | **g0-g8 move energy** | real-time | Live move-energy reading for each distance gate (g0 to g8). Used when tuning the radar. |
+    | **g0-g8 still energy** | real-time | Live still-energy reading for each distance gate (g0 to g8). Used when tuning the radar. |
+
+=== "Configuration"
+
+    | Setting | Default | What it does |
+    |---------|:-------:|--------------|
+    | **ESP Reboot** | — | Restarts the device. Helpful for troubleshooting or refreshing the connection. |
+    | **BME280 Temperature Offset** | 14.54 °C | Calibrates the BME280 temperature reading to a known value. See the <a href="https://wiki.apolloautomation.com/products/general/temp-hum-calibration/" target="_blank" rel="noopener">temperature &amp; humidity calibration guide</a>. |
+    | **BME280 Humidity Offset** | -18.86 % | Calibrates the BME280 humidity reading to a known value. See the <a href="https://wiki.apolloautomation.com/products/general/temp-hum-calibration/" target="_blank" rel="noopener">temperature &amp; humidity calibration guide</a>. |
+    | **LTR390 Update Interval** | 60 s | How often the LTR390 light and UV sensors poll (1 to 300 seconds). Disabled by default. |
+    | **Radar Timeout** | — | The time in seconds that the radar's presence stays detected after the target is lost. |
+    | **Radar Max Move Distance** | — | Maximum distance gate for movement detection. Value between 2 and 8 inclusive. |
+    | **Radar Max Still Distance** | — | Maximum distance gate for still detection. Value between 2 and 8 inclusive. |
+    | **Radar Distance Resolution** | — | Best kept at 0.75 m in most cases. At 0.25 m the first few gates become very sensitive and the maximum detection distance shrinks a lot. Disabled by default. |
+    | **Radar Zone 1 Start** | 0 cm | Starting distance for Zone 1, measured in cm from the sensor. |
+    | **Radar End Zone 1** | 50 cm | Ending distance for Zone 1 in cm. Sets the band reported by **Radar Zone 1 Occupancy** (for example, 0 to 50 cm from the sensor). |
+    | **Radar End Zone 2** | 150 cm | Ending distance for Zone 2 in cm, measured from the sensor. |
+    | **Radar End Zone 3** | 250 cm | Ending distance for Zone 3 in cm, measured from the sensor. |
+    | **g0-g8 move threshold** | from module | Move-detection sensitivity for each distance gate (g0 to g8). See the <a href="https://wiki.apolloautomation.com/products/msr1/setup/zones-ha/" target="_blank" rel="noopener">radar tuning guide</a>. |
+    | **g0-g8 still threshold** | from module | Still-detection sensitivity for each distance gate (g0 to g8). See the <a href="https://wiki.apolloautomation.com/products/msr1/setup/zones-ha/" target="_blank" rel="noopener">radar tuning guide</a>. |
+    | **Radar Control Bluetooth** | Off | Turns on the LD2410's Bluetooth so you can connect with the HLK Radar phone app (for example, to update the radar chip's own firmware, not the MSR-1 in general). |
+    | **Radar Engineering Mode** | — | Enables the radar's engineering mode, which exposes the per-gate energy readings used for tuning. |
+    | **Startup Light Blink** | On | Blinks the RGB LED on startup to show the device's connection status. |
+    | **Reduce DB Reporting** | Off | Filters out small sensor changes so fewer values are logged to your Home Assistant database. |
+    | **query params** | — | Queries the LD2410 for its current parameters. |
+    | **Factory Reset Radar** | — | Sets the radar's move and still thresholds back to the manufacturer's original values. |
+    | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
+
+=== "Diagnostic"
+
+    | Entity | Default Update | What it shows |
+    |--------|:--------------:|---------------|
+    | **Apollo Firmware Version** | on boot | The Apollo firmware build installed on the device (for example, `26.3.2.1`). |
+    | **ESPHome Version** | on boot | The ESPHome version the firmware was compiled with. |
+    | **IP Address** | on connect | The device's IP address on your network. |
+    | **Online** | on change | Connection status of the device to Home Assistant. |
+    | **RSSI** | 60s | Wi-Fi signal strength in dBm. Values closer to 0 are stronger; a weak signal can affect reliability. |
+    | **ESP Temperature** | 60s | Internal temperature of the ESP32 chip. Runs warmer than the room because of the processor and Wi-Fi radio. |
+    | **Uptime** | 60s | How long the device has been running since its last reboot. |
+    | **Radar Firmware Version** | on boot | Firmware version installed on the LD2410 radar module. |
+
+[Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){ .md-button }
