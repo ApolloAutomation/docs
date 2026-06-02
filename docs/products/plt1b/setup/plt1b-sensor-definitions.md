@@ -8,9 +8,11 @@ Once added to Home Assistant you can configure different settings for your PLT-1
 
 ![PLT-1B Sensor Data](/assets/screenshot-2024-10-03-at-4-10-25-pm.png)
 
-!!! note "How often readings update"
+!!! note "How the PLT-1B sleeps"
 
-    The **Default Update** column is how often each sensor refreshes while the PLT-1B is awake. The PLT-1B is the 18650-battery variant, so by default it deep-sleeps to save power. By default **Prevent Sleep** is on, which keeps the device awake and reporting continuously at these intervals. If you turn **Prevent Sleep** off, the PLT-1B wakes for about 90 seconds, reports its readings, then deep-sleeps for the **Sleep Duration** before waking again.
+    The PLT-1B runs on an 18650 battery. By default **Prevent Sleep** is on, so it stays awake and reports continuously at these intervals, which drains the battery. Turn **Prevent Sleep** off to let it deep-sleep between readings for the **Sleep Duration** (12h) and conserve the cell: it wakes for about 90 seconds, reports its readings, then sleeps again. The **Default Update** column is how often each sensor refreshes while it is awake.
+
+    To update firmware on a sleeping device, just click **Update** on the **Firmware Update** entity and it installs the next time the device wakes (the firmware keeps itself awake until the update finishes, so you don't need to do anything else). The optional [OTA helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/) is a separate toggle that overrides **Prevent Sleep** to keep a device awake on demand.
 
 === "Controls"
 
