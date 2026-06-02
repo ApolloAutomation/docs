@@ -120,7 +120,7 @@ The R-PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
 
     | Entity | Default Update | What it shows |
     |--------|:--------------:|---------------|
-    | **Apollo Firmware Version** | on boot | The Apollo firmware build installed on the device (for example, `25.11.20.1`). |
+    | **Apollo Firmware Version** | on boot | The Apollo firmware build installed on the device (for example, `26.3.2.1`). |
     | **ESPHome Version** | on boot | The ESPHome version the firmware was compiled with. |
     | **Firmware Update** | — | Shows whether a firmware update is available and lets you update from inside Home Assistant. |
     | **IP Address** | on connect | The device's IP address on your network (Wi-Fi firmware). |
