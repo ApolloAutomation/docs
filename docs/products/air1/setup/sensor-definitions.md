@@ -74,7 +74,7 @@ Once added to Home Assistant you can configure different settings for your AIR-1
     |--------|:--------------:|---------------|
     | **Apollo Firmware Version** | on boot | The Apollo firmware build installed on the device (for example, `26.3.2.1`). |
     | **ESPHome Version** | on boot | The ESPHome version the firmware was compiled with. |
-    | **Firmware** | — | Shows whether a firmware update is available and lets you update from inside Home Assistant. |
+    | **Firmware Update** | — | Shows whether a firmware update is available and lets you update from inside Home Assistant. Separate from the **Apollo Firmware Version** and **ESPHome Version** sensors above. |
     | **IP Address** | on connect | The device's IP address on your network. |
     | **Online** | on change | Connection status of the device to Home Assistant. |
     | **RSSI** | 60s | Wi-Fi signal strength in dBm. Values closer to 0 are stronger; a weak signal can affect reliability. |
