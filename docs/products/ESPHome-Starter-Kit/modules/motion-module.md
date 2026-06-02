@@ -118,3 +118,12 @@ With the device back online, the Motion entity is live on the web server. <a hre
 !!! success "Your Motion module is now ready to use in automations!"
 
     You're now ready to make automations around occupancy in your home!
+
+## Try it in an automation
+
+Your motion sensor is live. Put it to work:
+
+<a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Motion-Activated Light </a>
+
+[Join our Discord :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--discord }
+[Community Forum :material-forum:](https://forum.apolloautomation.com/){ .md-button .md-button--primary }

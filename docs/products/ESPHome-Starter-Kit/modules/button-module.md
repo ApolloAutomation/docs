@@ -119,3 +119,14 @@ With the device back online, the button entity is live on the web server. <a hre
 !!! success "Your button module is now ready for you to use in automations!"
 
     Your Button Module is now ready for some fun tasks.. like toggling lights on and off in your room, watering your plants, and more!
+
+## Try it in an automation
+
+Your button is live. Now make it trigger something:
+
+<a href="/products/ESPHome-Starter-Kit/automations/button-controlled-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Button Controlled LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/play-a-tune/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Play a Tune </a>
+<a href="/products/ESPHome-Starter-Kit/automations/press-to-check-climate/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Press to Check Climate </a>
+
+[Join our Discord :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--discord }
+[Community Forum :material-forum:](https://forum.apolloautomation.com/){ .md-button .md-button--primary }

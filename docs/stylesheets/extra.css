@@ -170,3 +170,19 @@ article.md-typeset .md-button img {
   vertical-align: -0.2em;
   margin-right: 0.4em;
 }
+
+/* Discord-branded button variant. Discord "blurple" so the Join-our-Discord
+   call to action reads as its own thing next to the accent-colored primary
+   buttons. Class lives here (not an inline style) so CloudCannon's WYSIWYG
+   keeps it when the page is round-tripped. */
+.md-typeset .md-button--discord {
+  background-color: #5865f2;
+  border-color: #5865f2;
+  color: #fff;
+}
+.md-typeset .md-button--discord:focus,
+.md-typeset .md-button--discord:hover {
+  background-color: #4752c4;
+  border-color: #4752c4;
+  color: #fff;
+}
