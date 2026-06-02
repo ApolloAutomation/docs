@@ -128,3 +128,15 @@ The buzzer doesn't have its own web server control, since it's an output rather 
 !!! success "Your LED & Buzzer notification module is wired up!"
 
     Your LED & Buzzer Module is now ready for some fun tasks.. like toggling lights on and off, playing with the colors, or using the buzzer to play fun tunes!
+
+## Try it in an automation
+
+Your notification module is ready. Drive it from any of these automations:
+
+<a href="/products/ESPHome-Starter-Kit/automations/button-controlled-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Button Controlled LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/play-a-tune/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Play a Tune </a>
+<a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Temp-Reactive LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Motion-Activated Light </a>
+
+[Join our Discord :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--discord }
+[Community Forum :material-forum:](https://forum.apolloautomation.com/){ .md-button .md-button--primary }

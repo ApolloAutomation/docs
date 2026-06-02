@@ -126,3 +126,13 @@ With the device back online, the temperature and humidity entities are live on t
 !!! success "Your Temperature and Humidity module is wired up"
 
     You now have a trustworthy temp and humidity sensor to place anywhere in your home!
+
+## Try it in an automation
+
+Your sensor is reporting. Now make it drive something:
+
+<a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Temp-Reactive LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/press-to-check-climate/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Press to Check Climate </a>
+
+[Join our Discord :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--discord }
+[Community Forum :material-forum:](https://forum.apolloautomation.com/){ .md-button .md-button--primary }
