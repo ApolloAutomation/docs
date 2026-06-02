@@ -31,6 +31,12 @@ The R-PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
     | **LTR390 Light** | 60s | Ambient light level in lux from the LTR390. |
     | **LTR390 UV Index** | 60s | UV index measured by the LTR390. |
 
+    #### Combined presence
+
+    | Sensor | Default Update | Details |
+    |--------|:--------------:|---------|
+    | **Combined Presence** | real-time | Combined occupancy: shows **Detected** when either the LD2450 or the LD2412 radar sees a target, and **Clear** when neither does. Use this entity for automations and dashboards instead of the individual radar presence sensors. |
+
     #### Radar presence (LD2412 mmWave)
 
     | Sensor | Default Update | Details |
