@@ -1,111 +1,58 @@
 ---
-title: TEMP Pro-1 Sensor Definitions
-description: >-
-  Full list of definitions for the TEMP Pro-1 and its various sensors and
-  available ports.
+title: TEMP-PRO-1 Sensor Definitions
+description: Full list of definitions for the TEMP-PRO-1 and its various sensors.
 ---
-# TEMP Pro-1 Sensor Definitions
+# Sensor Definitions
 
-Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
+Once added to Home Assistant you can configure different settings for your TEMP-PRO-1. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
 
-???+ info "Controls"
+!!! note "How often readings update"
 
-    **Alarm Outside Humidity Range**
+    The **Default Update** column is how often each sensor refreshes while the TEMP-PRO-1 is awake. By default **Prevent Sleep** is on, so the device stays awake and reports continuously at these intervals. If you turn **Prevent Sleep** off (for battery use), the TEMP-PRO-1 wakes for about 90 seconds, reports, then deep-sleeps for the **Sleep Duration**.
 
-    * Alarm that sounds when the thresholds are met for the sensor.
-    * Click on the toggle to turn on or off. Defaults to OFF.
+=== "Controls"
 
-    **Alarm Outside Temp Range**
+    | Control | What it does |
+    |---------|--------------|
+    | **RGB Light** | Four RGB Neopixel LEDs. Click the light bulb or color wheel to change the color. Use the toggle to turn them on or off. Also used to signal alarm and connection status. |
+    | **Alarm Outside Temp Range** | Sounds the onboard buzzer and pulses the RGB Light red when a temperature reading falls outside the **Min Temperature** to **Max Temperature** range. Defaults to off. |
+    | **Alarm Outside Humidity Range** | Sounds the onboard buzzer and pulses the RGB Light red when a humidity reading falls outside the **Min Humidity** to **Max Humidity** range. Defaults to off. |
 
-    * Alarm that sounds when the thresholds are met for the sensor.
-    * Click on the toggle to turn on or off. Defaults to OFF.
+=== "Sensors"
 
-    **RGB Light**
+    | Sensor | Default Update | Details |
+    |--------|:--------------:|---------|
+    | **SHT Temperature** | 60s | Ambient temperature from the onboard SHT30 sensor. |
+    | **SHT Relative Humidity** | 60s | Relative humidity from the onboard SHT30 sensor. |
+    | **Dallas Temperature Probe** | 60s | Temperature from the attached DS18B20 stainless-steel probe. Reads *Unknown* if no probe is connected. |
+    | **Battery voltage** | 60s | Battery voltage measured by the onboard MAX17048 fuel gauge. |
+    | **Battery level** | 60s | Estimated battery charge percentage from the MAX17048, capped at 100%. |
+    | **Temperature Within Range** | on change | On when every active temperature reading is between **Min Temperature** and **Max Temperature**. Used by the **Alarm Outside Temp Range** control. |
+    | **Humidity Within Range** | on change | On when the humidity reading is between **Min Humidity** and **Max Humidity**. Used by the **Alarm Outside Humidity Range** control. |
+    | **Alarm Active** | on change | On while either alarm condition is met. Turns off the RGB Light when it clears. |
 
-    * <a href="https://esphome.io/components/light/index.html#light-effects" target="_blank" rel="noopener">One RGB Neopixel LED</a>. Click on the light bulb or color wheel to change the color. Click on the toggle to turn on or off.
+=== "Configuration"
 
-???+ info "Sensors"
+    | Setting | Default | What it does |
+    |---------|:-------:|--------------|
+    | **Min Temperature** | -20 °C | Low temperature threshold for the **Alarm Outside Temp Range** control. Range -60 to 100 °C. |
+    | **Max Temperature** | 100 °C | High temperature threshold for the **Alarm Outside Temp Range** control. Range -60 to 100 °C. |
+    | **Min Humidity** | 0 % | Low humidity threshold for the **Alarm Outside Humidity Range** control. Range 0 to 100%. |
+    | **Max Humidity** | 100 % | High humidity threshold for the **Alarm Outside Humidity Range** control. Range 0 to 100%. |
+    | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Required for OTA updates and live readings; turn it off to save power on battery. |
+    | **Sleep Duration** | 12 h | How long the TEMP-PRO-1 stays in deep sleep between wake cycles (only used when **Prevent Sleep** is off). Range 0 to 800 hours. |
+    | **Firmware Type** | WiFi | Selects which firmware build OTA updates pull from: `WiFi` or `Ethernet`. |
+    | **Update Firmware** | — | Checks for and installs the latest firmware over the air. |
+    | **ESP Reboot** | — | Restarts the device. Helpful for troubleshooting or refreshing the connection. |
+    | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
 
-    **Board Humidity**
+=== "Diagnostic"
 
-    * Measures and reports the current humidity level on the board.
+    | Entity | Default Update | What it shows |
+    |--------|:--------------:|---------------|
+    | **Firmware Update** | — | Shows whether a firmware update is available and lets you update from inside Home Assistant. |
+    | **Online** | on change | Connection status of the device to Home Assistant. |
+    | **ESP Temperature** | 60s | Internal temperature of the ESP32 chip. Runs warmer than the room because of the processor and Wi-Fi radio. Disabled by default. |
+    | **Uptime** | 60s | How long the device has been running since its last reboot. |
 
-    **Board Temperature**
-
-    * Measures and reports the current temperature of the board.
-
-    **Food Probe**
-
-    * The stainless steel food-safe probe is designed for accurate temperature monitoring during grilling, baking, and other food-related activities. Its durable, non-corrosive construction ensures safe and reliable use for cooking, providing real-time temperature readings to help achieve perfect results.
-
-    **Temperature Probe**
-
-    * The temperature sensor probe, offered in both long and short options, is ideal for monitoring fridge/freezer temperatures and aquatic environments like fish tanks, hot tubs, and covered pools. Its flat cable prevents interference with fridge seals, and it includes a customizable temperature threshold with an onboard buzzer to alert when the limit is exceeded.
-
-???+ info "Configuration"
-
-    **Board Humidity Offset**
-
-    * Offset for Board Humidity - values between 0-100%
-
-    **Board Temperature Offset**
-
-    * Offset for Board Temperature - values in Celsius.
-
-    **ESP Reboot**
-
-    * Button to press which reboots your TEMP-1.
-
-    **Firmware Update**
-
-    * Indicates whether an update is available or if you are Up-to-date.
-
-    **Food Probe Offset**
-
-    * Offset for the Food Probe's temperature readings. Measured in Celsius.
-
-    **Max Probe Temp**
-
-    * Max Temperature threshold used for the *Alarm Outside Temp Range* toggle.
-
-    **Min Probe Temp**
-
-    * Min Temperature threshold used for the *Alarm Outside Temp Range* toggle.
-
-    **Notify Only Outside Temp Difference**
-
-    * Notify on Outside temperature difference ONLY.
-    * Click on the toggle to turn on or off. Defaults to OFF.
-
-    **Prevent Sleep**
-
-    * Prevents the TEMP-1 from going to sleep. When sleeping, your TEMP-1 will NOT respond to home assistant it is effectively off until it wakes up again.
-    * Click on the toggle to turn on or off. Defaults to ON.
-
-    **Probe Temp Difference Threshold**
-
-    * Max temperature range threshold used for the *Alarm Outside Temp Range* toggle. Measured in Celsius.
-
-    **Sleep Duration**
-
-    * The number of hours the device should remain in sleep mode before waking up. Defaults to 12 hours.
-
-???+ info "Diagnostic"
-
-    **ESP Temperature**
-
-    * Displays the current temperature of the ESP32 chip.
-
-    **Online**
-
-    * Shows the connection status.
-
-    **RSSI**
-
-    * Displays the Wi-Fi signal strength.
-
-    **Uptime**
-
-    * Shows the time since last reboot.
-
-[Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){                .md-button }
+[Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){ .md-button }
