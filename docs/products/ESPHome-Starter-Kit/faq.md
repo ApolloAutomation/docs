@@ -67,3 +67,6 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 * The ESP32-C6 is a modern microcontroller from Espressif that brings Wi-Fi, Bluetooth LE, and Thread support to a single chip. It is the same family of silicon used in commercially certified smart home products, and gives learners a future-ready platform that supports the same open standards used in production smart home devices.
 
 [Click here to join our Discord for fast support! :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--primary }
+
+
+--8<-- "_snippets/community-help.md"

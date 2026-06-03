@@ -55,3 +55,6 @@ For a single device, the on-device web page is often enough. For anything that t
     For UniFi networks specifically, see our [UniFi mDNS troubleshooting guide](../../../general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue/).
 
 <a href="../what-is-secrets-yaml/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - What is secrets.yaml?</a> <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Tutorial - Connect to Home Assistant</a>
+
+
+--8<-- "_snippets/community-help.md"

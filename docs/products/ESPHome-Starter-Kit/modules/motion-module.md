@@ -125,5 +125,4 @@ Your motion sensor is live. Put it to work:
 
 <a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Motion-Activated Light </a>
 
-[Join our Discord :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--discord }
-[Community Forum :material-forum:](https://forum.apolloautomation.com/){ .md-button .md-button--primary }
+--8<-- "_snippets/community-help.md"

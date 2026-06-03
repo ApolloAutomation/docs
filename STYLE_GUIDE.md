@@ -450,7 +450,39 @@ colors on the page.
 
 ---
 
-## 11. When in doubt
+## 11. Community CTA on starter-kit pages
+
+Every page under the **ESPHome Starter Kit** product carries the same
+community call-to-action at the bottom: a friendly note admonition titled
+"New to ESPHome? We're here to help." with links to Discord and the
+Community Forum. The copy and buttons live in a single snippet so the
+CTA stays consistent across the product and only needs one edit to update.
+
+**Source of truth:** `docs/_snippets/community-help.md`
+
+**Where to include it:** at the very bottom of any starter-kit page (after
+any existing "Try it in an automation" buttons, "Next Steps" buttons, or
+closing success admonition). One blank line of separation from the
+content above is enough.
+
+**How to include it:**
+
+```markdown
+--8<-- "_snippets/community-help.md"
+```
+
+**When you add a new starter-kit page**, end it with this include before
+opening the PR. **When you edit the CTA copy** (adding a new channel,
+rewording the prompt, swapping button labels), edit the snippet file
+itself, never the include line on a page.
+
+The snippet uses the standard `note` admonition flavor for visual
+consistency with the kit's other admonitions ("Before you start", tips,
+warnings); don't swap it for `tip` or `info` on a per-page basis.
+
+---
+
+## 12. When in doubt
 
 If a rule above conflicts with clarity for the reader, clarity wins.
 Open an issue or PR proposing the rule change so the guide stays

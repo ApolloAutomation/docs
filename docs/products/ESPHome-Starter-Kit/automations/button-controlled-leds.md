@@ -97,3 +97,5 @@ With the device back online, press the button on the Button module. You should h
 #### Next Steps
 
 <a href="../../tutorials/light-effects/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Light Effects</a>
+
+--8<-- "_snippets/community-help.md"

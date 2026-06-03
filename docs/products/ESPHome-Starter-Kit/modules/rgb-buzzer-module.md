@@ -138,5 +138,4 @@ Your notification module is ready. Drive it from any of these automations:
 <a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Temp-Reactive LEDs </a>
 <a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Motion-Activated Light </a>
 
-[Join our Discord :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--discord }
-[Community Forum :material-forum:](https://forum.apolloautomation.com/){ .md-button .md-button--primary }
+--8<-- "_snippets/community-help.md"

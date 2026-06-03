@@ -141,3 +141,5 @@ Want more? <a href="https://picaxe.com/rtttl-ringtones-for-tune-command/" title=
     Same trigger-then-action pattern, new action. Swap the trigger (motion, a temperature threshold, a schedule) or the tune, and you have a new automation.
 
 [Check out these Holiday themed buzzer examples too! :material-music-note:](https://wiki.apolloautomation.com/products/general/holiday-songs/){ .md-button .md-button--primary }
+
+--8<-- "_snippets/community-help.md"
