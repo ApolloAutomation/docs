@@ -6,6 +6,8 @@ description: >-
 ---
 # Build a Button-Controlled RGB Light
 
+<span class="difficulty lvl-2">Difficulty: Level 2 · Easy</span>
+
 This tutorial uses the Button module and the RGB & Buzzer module connected to the ESP32-C6, all sitting in the starter kit case.
 
 !!! note "Before you start"

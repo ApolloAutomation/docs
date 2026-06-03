@@ -7,6 +7,20 @@ description: >-
 ---
 # Press to Check Climate
 
+<span class="difficulty lvl-3">Difficulty: Level 3 · Moderate</span>
+
+<p class="automation-steps-heading">🌱 New here? Try these first:</p>
+<div class="automation-steps">
+  <div class="step">
+    <a class="step-title" href="../motion-activated-light/">Turn On a Light with Motion</a>
+    <span class="difficulty lvl-1">Difficulty: Level 1 · Starter</span>
+  </div>
+  <div class="step">
+    <a class="step-title" href="../button-controlled-leds/">Build a Button-Controlled RGB Light</a>
+    <span class="difficulty lvl-2">Difficulty: Level 2 · Easy</span>
+  </div>
+</div>
+
 Want a quick read on how the room feels without opening Home Assistant? Press the button and the **Onboard RGB LED** gives you one color for the current temperature, then another for the current humidity.
 
 The Onboard RGB LED on the ESP32-C6 is all you need for this tutorial, so the LED & Buzzer module can sit this one out.
