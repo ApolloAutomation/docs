@@ -128,3 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .DS_Store
+
+# Superpowers brainstorm scratch (should never be committed)
+.superpowers/
