@@ -13,7 +13,7 @@ The temperature and humidity module is your starter kit's first environmental se
 
     Work through the two prerequisites first:
 
-    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the button module off the panel.
+    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the temperature and humidity module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
 
 #### Prerequisite
@@ -41,7 +41,7 @@ Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC
 
 ![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
-3\. Slide the ribbon cable into the button module with the blue side facing upwards then press the latch down to lock it in place.
+3\. Slide the ribbon cable into the temperature and humidity module with the blue side facing upwards then press the latch down to lock it in place.
 
 ![](../../../assets/esphome-starter-kit-attach-fpc-to-temp-hum-module.webp)
 
