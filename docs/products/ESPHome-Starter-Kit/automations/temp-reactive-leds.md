@@ -163,3 +163,6 @@ Open the Comfortable and Hot triggers in the GUI and edit the **Above** / **Belo
 #### Next Steps
 
 <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Connect to Home Assistant</a>
+
+
+--8<-- "_snippets/community-help.md"

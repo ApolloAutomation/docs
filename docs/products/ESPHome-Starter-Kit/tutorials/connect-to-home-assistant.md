@@ -48,3 +48,6 @@ Open `secrets.yaml` in Device Builder, copy the `api_encryption_key` value, and 
 Want to understand what just happened under the hood? Read [the Home Assistant integration](../learning-the-basics/how-esphome-talks-to-home-assistant.md).
 
 <a href="../../setup/first-steps/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - First Steps</a>
+
+
+--8<-- "_snippets/community-help.md"

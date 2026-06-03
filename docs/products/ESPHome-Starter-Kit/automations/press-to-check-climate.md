@@ -644,3 +644,6 @@ With the device back online, press the button on the Button module. The Onboard 
 The same trigger / condition / delay / light pattern works with any sensor and any light on your kit. Swap the temperature sensor for a CO2 reading, the button trigger for a motion event, or the Onboard RGB LED for the LED & Buzzer module's `rgb_leds` strip, and you have a new readout. Then bring it into Home Assistant so you can tune it from anywhere.
 
 <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Connect to Home Assistant</a>
+
+
+--8<-- "_snippets/community-help.md"

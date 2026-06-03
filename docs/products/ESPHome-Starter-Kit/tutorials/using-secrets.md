@@ -213,3 +213,5 @@ You don't have to include every entry. If a device doesn't use MQTT, leave those
     * Don't share or post the file. Share device YAMLs instead, the `!secret` references are safe.
     * Keep a backup somewhere safe (a password manager works well). If you reinstall ESPHome Device Builder you'll need to recreate it.
     * Rotating a credential is a one-line edit here, then re-flash anything that uses it.
+
+--8<-- "_snippets/community-help.md"

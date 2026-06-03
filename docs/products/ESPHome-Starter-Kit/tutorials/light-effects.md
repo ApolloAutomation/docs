@@ -62,3 +62,5 @@ If you've already followed [Connect to Home Assistant](/products/ESPHome-Starter
 !!! success "You just edited YAML!"
 
     Every component you add to your device has a set of advanced fields like this one. Pasting a few lines into the right field is all it takes to unlock more behavior, and the YAML pane on the right of the editor will show you exactly what changed.
+
+--8<-- "_snippets/community-help.md"

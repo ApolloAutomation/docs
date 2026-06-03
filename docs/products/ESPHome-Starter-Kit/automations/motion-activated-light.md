@@ -128,3 +128,5 @@ Right now the light turns on with motion but never turns off. Add a second trigg
 !!! success "You've built a motion-activated light!"
 
     Same trigger-then-action pattern, new trigger. Swap the action (play a buzzer tune, dim the light, send a notification) or the trigger (a button, a temperature threshold, a schedule) and you have a new automation.
+
+--8<-- "_snippets/community-help.md"
