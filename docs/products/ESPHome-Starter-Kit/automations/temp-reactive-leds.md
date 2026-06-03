@@ -6,6 +6,20 @@ description: >-
 ---
 # Temp-Reactive LEDs
 
+<span class="difficulty lvl-3">Difficulty: Level 3 · Moderate</span>
+
+<p class="automation-steps-heading">🌱 New here? Try these first:</p>
+<div class="automation-steps">
+  <div class="step">
+    <a class="step-title" href="../motion-activated-light/">Turn On a Light with Motion</a>
+    <span class="difficulty lvl-1">Difficulty: Level 1 · Starter</span>
+  </div>
+  <div class="step">
+    <a class="step-title" href="../button-controlled-leds/">Build a Button-Controlled RGB Light</a>
+    <span class="difficulty lvl-2">Difficulty: Level 2 · Easy</span>
+  </div>
+</div>
+
 This tutorial uses the Temperature and Humidity module and the LED & Buzzer module connected to the ESP32-C6. As the room temperature drifts across set thresholds, the RGB LEDs change color so you can see the comfort band at a glance. It's the same trigger-then-action pattern as [Button Controlled LEDs](button-controlled-leds.md), swapping the button trigger for a sensor-value trigger and adding one trigger per band.
 
 !!! note "Before you start"

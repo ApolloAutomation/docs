@@ -36,6 +36,12 @@ Read the full style guide, but these are the ones worth checking twice:
   with framing copy (what the reader unlocks, what success looks like).
 - Avoid corporate filler: **simply**, **just**, **easy**, **powerful**,
   **seamlessly**.
+- Automation pages must carry a difficulty pill under the H1
+  (`<span class="difficulty lvl-N">Difficulty: Level N · Word</span>`,
+  Level 1 Starter to Level 5 Pro). On Moderate-and-up pages, add a
+  same-product stepping-stone box linking easier automations. Pill and
+  box styles live in `docs/stylesheets/extra.css`; never inline colors.
+  See [Automation difficulty](STYLE_GUIDE.md#10-automation-difficulty).
 
 ## Keep the style guide current
 
