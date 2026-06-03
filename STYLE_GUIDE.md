@@ -408,27 +408,25 @@ readers can gauge how involved the setup is. The rating is about **setup
 difficulty and skill** (steps, helpers, templating, integrations), not
 runtime load.
 
-| Level | Word | Use it when the automation... |
-| --- | --- | --- |
-| 1 | Starter | is plug-and-play: toggle one entity, no helpers. |
-| 2 | Easy | needs a helper or two and a few guided steps. |
-| 3 | Moderate | combines several entities, conditions, or a template. |
-| 4 | Advanced | needs templating, blueprints, or multi-device logic. |
-| 5 | Pro | is complex multi-device or heavily custom. |
+| Level | Use it when the automation... |
+| --- | --- |
+| 1 | is plug-and-play, or needs only a helper or two and a few guided steps. |
+| 2 | combines several entities, conditions, or a template. |
+| 3 | needs templating, blueprints, multi-device logic, or is heavily custom. |
 
 Add the pill as the first line under the title. The `lvl-N` class sets the
-color (green at 1 to red at 5):
+color (green at 1, amber at 2, red at 3):
 
 ```html
 # Build a Button-Controlled RGB Light
 
-<span class="difficulty lvl-2">Difficulty: Level 2 · Easy</span>
+<span class="difficulty lvl-1">Difficulty: Level 1</span>
 ```
 
 ### Stepping-stone box
 
 On a harder page, point newcomers at one to three easier automations from
-the **same product**. Add it under the pill at your discretion (Moderate
+the **same product**. Add it under the pill at your discretion (Level 2
 and up is a good rule of thumb). Use relative links so previews work:
 
 ```html
@@ -436,11 +434,11 @@ and up is a good rule of thumb). Use relative links so previews work:
 <div class="automation-steps">
   <div class="step">
     <a class="step-title" href="../motion-activated-light/">Turn On a Light with Motion</a>
-    <span class="difficulty lvl-1">Difficulty: Level 1 · Starter</span>
+    <span class="difficulty lvl-1">Difficulty: Level 1</span>
   </div>
   <div class="step">
     <a class="step-title" href="../button-controlled-leds/">Build a Button-Controlled RGB Light</a>
-    <span class="difficulty lvl-2">Difficulty: Level 2 · Easy</span>
+    <span class="difficulty lvl-1">Difficulty: Level 1</span>
   </div>
 </div>
 ```

@@ -6,7 +6,7 @@ description: >-
 ---
 # Play a Tune with the Button
 
-<span class="difficulty lvl-2">Difficulty: Level 2 · Easy</span>
+<span class="difficulty lvl-1">Difficulty: Level 1</span>
 
 This tutorial uses the Button module and the LED & Buzzer module connected to the ESP32-C6. When you click the button, the piezo buzzer plays a short tune. It's the same trigger-then-action pattern as the [Button Controlled LEDs](button-controlled-leds.md) automation, swapping the light action for a buzzer action.
 
