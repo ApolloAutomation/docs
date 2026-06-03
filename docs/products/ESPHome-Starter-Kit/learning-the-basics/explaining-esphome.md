@@ -48,3 +48,6 @@ You get wireless updates, a built-in web page for controlling your device, and d
 The official ESPHome documentation covers every component, configuration option, and advanced topic in detail.
 
 <a href="../device-builder-tour/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Device Builder Tour</a> <a href="https://esphome.io/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Visit esphome.io</a>
+
+
+--8<-- "_snippets/community-help.md"

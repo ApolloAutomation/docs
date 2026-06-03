@@ -68,3 +68,6 @@ If you remove the rail, **the Onboard RGB LED and any plugged-in modules will st
 3. Click **Add** once more to confirm.
 
 <a href="https://esphome.io/components/switch/gpio/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> ESPHome GPIO Switch docs</a>
+
+
+--8<-- "_snippets/community-help.md"
