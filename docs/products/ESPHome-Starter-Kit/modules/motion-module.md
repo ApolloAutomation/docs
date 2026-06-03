@@ -12,7 +12,7 @@ The Motion Module turns your starter kit into a motion sensor. By the end of thi
 
     Work through the two prerequisites first:
 
-    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the button module off the panel.
+    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the motion module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
 
 #### Prerequisite
