@@ -37,10 +37,11 @@ Read the full style guide, but these are the ones worth checking twice:
 - Avoid corporate filler: **simply**, **just**, **easy**, **powerful**,
   **seamlessly**.
 - Automation pages must carry a difficulty pill under the H1
-  (`<span class="difficulty lvl-N">Difficulty: Level N · Word</span>`,
-  Level 1 Starter to Level 5 Pro). On Moderate-and-up pages, add a
-  same-product stepping-stone box linking easier automations. Pill and
-  box styles live in `docs/stylesheets/extra.css`; never inline colors.
+  (`<span class="difficulty lvl-N">Difficulty: Level N</span>`,
+  Level 1 (beginner) to Level 3 (advanced); no descriptor word after
+  the number). On Level 2 and up pages, add a same-product
+  stepping-stone box linking easier automations. Pill and box styles
+  live in `docs/stylesheets/extra.css`; never inline colors.
   See [Automation difficulty](STYLE_GUIDE.md#10-automation-difficulty).
 - Every page under the ESPHome Starter Kit product (modules, tutorials,
   automations, learn-the-basics, FAQ, start-here, first-steps) must end

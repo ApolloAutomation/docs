@@ -206,10 +206,8 @@ article.md-typeset .md-button img {
   background: var(--diff-dot);
 }
 .md-typeset .difficulty.lvl-1 { background:#e8f5e9; color:#2e7d32; border:1px solid #a5d6a7; --diff-dot:#2e7d32; }
-.md-typeset .difficulty.lvl-2 { background:#f1f8e9; color:#558b2f; border:1px solid #c5e1a5; --diff-dot:#7cb342; }
-.md-typeset .difficulty.lvl-3 { background:#fff8e1; color:#a16207; border:1px solid #fde68a; --diff-dot:#f9a825; }
-.md-typeset .difficulty.lvl-4 { background:#fff3e0; color:#e65100; border:1px solid #ffcc80; --diff-dot:#ef6c00; }
-.md-typeset .difficulty.lvl-5 { background:#ffebee; color:#c62828; border:1px solid #ef9a9a; --diff-dot:#d32f2f; }
+.md-typeset .difficulty.lvl-2 { background:#fff8e1; color:#a16207; border:1px solid #fde68a; --diff-dot:#f9a825; }
+.md-typeset .difficulty.lvl-3 { background:#ffebee; color:#c62828; border:1px solid #ef9a9a; --diff-dot:#d32f2f; }
 
 /* ===== "Start easier" stepping-stone box ===== */
 .md-typeset .automation-steps-heading {

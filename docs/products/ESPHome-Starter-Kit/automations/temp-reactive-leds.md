@@ -6,17 +6,17 @@ description: >-
 ---
 # Temp-Reactive LEDs
 
-<span class="difficulty lvl-3">Difficulty: Level 3 · Moderate</span>
+<span class="difficulty lvl-2">Difficulty: Level 2</span>
 
 <p class="automation-steps-heading">🌱 New here? Try these first:</p>
 <div class="automation-steps">
   <div class="step">
     <a class="step-title" href="../motion-activated-light/">Turn On a Light with Motion</a>
-    <span class="difficulty lvl-1">Difficulty: Level 1 · Starter</span>
+    <span class="difficulty lvl-1">Difficulty: Level 1</span>
   </div>
   <div class="step">
     <a class="step-title" href="../button-controlled-leds/">Build a Button-Controlled RGB Light</a>
-    <span class="difficulty lvl-2">Difficulty: Level 2 · Easy</span>
+    <span class="difficulty lvl-1">Difficulty: Level 1</span>
   </div>
 </div>
 
