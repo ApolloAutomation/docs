@@ -182,8 +182,9 @@ nav:
                 - HLK Radar Tool App: products/general/calibrating-and-updating/radar-tuning/zones-hlk.md
                 - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
               - Zone Configuration:
-                - Home Assistant: products/general/calibrating-and-updating/zone-configuration/zones-ha.md
-                - HLK Radar Tool App: products/general/calibrating-and-updating/zone-configuration/zones-hlk.md
+                - (Good) Home Assistant: products/general/calibrating-and-updating/zone-configuration/zones-ha.md
+                - (Better) HLK Radar Tool App: products/general/calibrating-and-updating/zone-configuration/zones-hlk.md
+                - (Best) Zone Mapper Tool: products/general/calibrating-and-updating/zone-configuration/zone-mapper-tool.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
             - Change Update Frequency: products/general/setup/change-the-update-frequency-of-sensors.md
