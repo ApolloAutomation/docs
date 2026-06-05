@@ -6,11 +6,11 @@ description: How to use our Zone Mapper tool for setting up LD2450 mmWave zones.
 
 Both the Zone Mapper and the Zone Mapper Card are required for this to work. Please be sure to complete both installations.
 
-[Zone Mapper: https://github.com/ApolloAutomation/zone-mapper](https://github.com/ApolloAutomation/zone-mapper)
+1\. [Zone Mapper: https://github.com/ApolloAutomation/zone-mapper](https://github.com/ApolloAutomation/zone-mapper)
 
-[Zone Mapper Card: https://github.com/ApolloAutomation/zone-mapper-card](https://github.com/ApolloAutomation/zone-mapper-card)
+2\. [Zone Mapper Card: https://github.com/ApolloAutomation/zone-mapper-card](https://github.com/ApolloAutomation/zone-mapper-card)
 
-# **<u>Zone Mapper</u>**
+# **<u>1. Zone Mapper</u>**
 
 Backend for the Zone Mapper Lovelace card. Persists zone definitions and exposes per‑zone occupancy sensors based on tracked X/Y entities.
 
@@ -190,7 +190,7 @@ data:
 
   &nbsp;
 
-# **<u>Zone Mapper Card</u>**
+# **<u>2. Zone Mapper Card</u>**
 
 A custom Lovelace card for Home Assistant that lets you draw 2D detection zones over a grid and visualize tracked targets (for example, mmWave sensor targets). The card talks to the Zone Mapper backend integration, which persists the zones and exposes per‑zone occupancy sensors you can use in automations.
 
