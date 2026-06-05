@@ -272,8 +272,9 @@ nav:
               - FAQ: products/rpro1/faq.md
               - Getting Started: products/general/setup/getting-started-rpro1.md
               - Zone Configuration:
-                - Home Assistant: products/rpro1/setup/zones-ha.md
-                - HLK Radar Tool App: products/rpro1/setup/zones-hlk.md
+                - (Good) Home Assistant: products/rpro1/setup/zones-ha.md
+                - (Better) HLK Radar Tool App: products/rpro1/setup/zones-hlk.md
+                - (Best) Zone Mapper Tool: products/rpro1/setup/r-pro-1-zone-mapper-tool.md
               - Additional Info:
                 - Switch Firmware: products/rpro1/setup/rpro1-switch-firmware.md
                 - General Tips: products/rpro1/setup/rpro1-general-tips.md
