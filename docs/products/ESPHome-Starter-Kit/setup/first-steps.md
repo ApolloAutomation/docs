@@ -80,7 +80,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     To add the **ESPHome Device Builder** to your Home Assistant instance, use this My button:
 
-    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+    [![Open your Home Assistant instance and start setting up a new app.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
     **<u>Method 2</u>**
 
