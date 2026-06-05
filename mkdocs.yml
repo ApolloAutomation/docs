@@ -247,8 +247,9 @@ nav:
               - FAQ: products/mtr1/faq.md
               - Getting Started: products/general/setup/getting-started-mtr1.md
               - Zone Configuration:
-                - Home Assistant: products/mtr1/setup/zones-ha.md
-                - HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
+                - (Good) Home Assistant: products/mtr1/setup/zones-ha.md
+                - (Better) HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
+                - (Best) Zone Mapper Tool: products/mtr1/setup/mtr-1-zone-mapper-tool.md
               - Additional Info:
                 - General Tips: products/mtr1/setup/general-tips.md
                 - Sensor Definitions: products/mtr1/setup/sensor-definitions.md
