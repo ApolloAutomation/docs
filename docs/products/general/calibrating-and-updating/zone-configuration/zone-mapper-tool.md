@@ -1,4 +1,4 @@
-![](../../../assets/zonemappertool.png)
+![](../../../../assets/zonemappertool.png)
 
 &nbsp;
 

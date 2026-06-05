@@ -10,7 +10,7 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 !!! tip "Click the (+) for extra context"
 
-    <div class="annotate" markdown>
+    <div markdown class="annotate">
 
     When you see a small **(+)** icon next to a step or word, give it a click (1). It opens a side note with tips, gotchas, or examples you don't need on first read.
 
@@ -80,7 +80,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     To add the **ESPHome Device Builder** to your Home Assistant instance, use this My button:
 
-    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=esphome)
+    [![Open your Home Assistant instance and start setting up a new app.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
     **<u>Method 2</u>**
 
@@ -152,13 +152,13 @@ If you make a mistake or want to change this later, click the 3 dots menu in the
 
 ![](../../../assets/device-builder-add-new-device.gif)
 
-<div class="annotate" markdown>
+<div markdown class="annotate">
 
 2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit then click **Finish Setup**. (1)
 
 </div>
 
-1.  Remember the name you choose. You'll use it later to reach your device's web server at `http://your-name.local` (for example, <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>).
+1. Remember the name you choose. You'll use it later to reach your device's web server at `http://your-name.local` (for example, <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>).
 
 ![](../../../assets/device-builder-select-esk-name-it.gif)
 
