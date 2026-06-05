@@ -78,6 +78,8 @@ The full writing and formatting rules live in [STYLE_GUIDE.md](STYLE_GUIDE.md). 
 - **Terminology**: Apollo hardware **addons** and Home Assistant software **apps** are different things; use each in its own context.
 - **ESPHome** is the only correct casing.
 - **No em dashes** anywhere in user-facing copy.
+- **Automation pages** carry a difficulty pill (`Level 1` (beginner) to `Level 3` (advanced)) under the title; harder pages can link easier ones in a stepping-stone box. See [Automation difficulty](STYLE_GUIDE.md#10-automation-difficulty).
+- **Starter-kit pages** end with the community CTA snippet (`--8<-- "_snippets/community-help.md"`). Edit the snippet, not the page, when the CTA copy changes. See [Community CTA on starter-kit pages](STYLE_GUIDE.md#11-community-cta-on-starter-kit-pages).
 
 Mechanical conventions:
 - MkDocs Material: see https://squidfunk.github.io/mkdocs-material/ for admonitions, tabs, and content tabs syntax

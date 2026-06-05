@@ -13,7 +13,7 @@ The temperature and humidity module is your starter kit's first environmental se
 
     Work through the two prerequisites first:
 
-    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the button module off the panel.
+    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the temperature and humidity module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
 
 #### Prerequisite
@@ -41,7 +41,7 @@ Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC
 
 ![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
-3\. Slide the ribbon cable into the button module with the blue side facing upwards then press the latch down to lock it in place.
+3\. Slide the ribbon cable into the temperature and humidity module with the blue side facing upwards then press the latch down to lock it in place.
 
 ![](../../../assets/esphome-starter-kit-attach-fpc-to-temp-hum-module.webp)
 
@@ -126,3 +126,12 @@ With the device back online, the temperature and humidity entities are live on t
 !!! success "Your Temperature and Humidity module is wired up"
 
     You now have a trustworthy temp and humidity sensor to place anywhere in your home!
+
+## Try it in an automation
+
+Your sensor is reporting. Now make it drive something:
+
+<a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Temp-Reactive LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/press-to-check-climate/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Press to Check Climate </a>
+
+--8<-- "_snippets/community-help.md"

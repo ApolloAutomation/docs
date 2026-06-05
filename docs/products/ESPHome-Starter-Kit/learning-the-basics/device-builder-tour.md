@@ -81,3 +81,5 @@ Pop them open when something looks off, or just to watch sensor readings come in
 * Bookmark the [official ESPHome documentation](https://esphome.io) for component reference whenever you click a **Docs** link.
 
 <a href="../explaining-esphome/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - Explaining ESPHome</a> <a href="../what-is-yaml/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - What is YAML?</a>
+
+--8<-- "_snippets/community-help.md"

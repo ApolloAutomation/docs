@@ -6,6 +6,8 @@ description: >-
 ---
 # Turn On a Light with Motion
 
+<span class="difficulty lvl-1">Difficulty: Level 1</span>
+
 This tutorial uses the Motion module and the LED & Buzzer module connected to the ESP32-C6. When the PIR sensor detects movement, the RGB light turns on. It's the same trigger-then-action pattern as the [Button Controlled LEDs](button-controlled-leds.md) automation, swapping the button trigger for a motion trigger.
 
 !!! note "Before you start"
@@ -126,3 +128,5 @@ Right now the light turns on with motion but never turns off. Add a second trigg
 !!! success "You've built a motion-activated light!"
 
     Same trigger-then-action pattern, new trigger. Swap the action (play a buzzer tune, dim the light, send a notification) or the trigger (a button, a temperature threshold, a schedule) and you have a new automation.
+
+--8<-- "_snippets/community-help.md"

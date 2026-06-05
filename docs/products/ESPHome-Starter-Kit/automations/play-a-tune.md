@@ -6,6 +6,8 @@ description: >-
 ---
 # Play a Tune with the Button
 
+<span class="difficulty lvl-1">Difficulty: Level 1</span>
+
 This tutorial uses the Button module and the LED & Buzzer module connected to the ESP32-C6. When you click the button, the piezo buzzer plays a short tune. It's the same trigger-then-action pattern as the [Button Controlled LEDs](button-controlled-leds.md) automation, swapping the light action for a buzzer action.
 
 !!! note "Before you start"
@@ -139,3 +141,5 @@ Want more? <a href="https://picaxe.com/rtttl-ringtones-for-tune-command/" title=
     Same trigger-then-action pattern, new action. Swap the trigger (motion, a temperature threshold, a schedule) or the tune, and you have a new automation.
 
 [Check out these Holiday themed buzzer examples too! :material-music-note:](https://wiki.apolloautomation.com/products/general/holiday-songs/){ .md-button .md-button--primary }
+
+--8<-- "_snippets/community-help.md"

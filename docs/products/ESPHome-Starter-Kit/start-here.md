@@ -15,7 +15,7 @@ By the end of this wiki you'll know how to:
 
 ## What's in the kit
 
-Your kit arrives as a single snap-apart panel that includes the ESP32-C6 main board along with a selection of interchangeable modules. The kit also includes three ribbon cables used to connect the modules together, and a stand for the LED & Buzzer module.
+Your kit arrives as a single snap-apart panel that includes the ESP32-C6 main board along with a selection of interchangeable modules. The kit also includes three ribbon cables for connecting modules to the main board, one more than any project uses at once so you always have a spare, plus a stand for the LED & Buzzer module.
 
 ![](../../assets/esphome-starter-kit-whats-in-the-box.png)
 
@@ -85,3 +85,5 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 Once you've identified your modules and snapped them off the panel, the next step is to connect the main board to your computer and walk through your first ESPHome configuration.
 
 <a href="../setup/first-steps/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" />   Next - First Steps </a>
+
+--8<-- "_snippets/community-help.md"

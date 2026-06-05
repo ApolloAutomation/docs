@@ -170,3 +170,67 @@ article.md-typeset .md-button img {
   vertical-align: -0.2em;
   margin-right: 0.4em;
 }
+
+/* Discord-branded button variant. Discord "blurple" so the Join-our-Discord
+   call to action reads as its own thing next to the accent-colored primary
+   buttons. Class lives here (not an inline style) so CloudCannon's WYSIWYG
+   keeps it when the page is round-tripped. */
+.md-typeset .md-button--discord {
+  background-color: #5865f2;
+  border-color: #5865f2;
+  color: #fff;
+}
+.md-typeset .md-button--discord:focus,
+.md-typeset .md-button--discord:hover {
+  background-color: #4752c4;
+  border-color: #4752c4;
+  color: #fff;
+}
+
+/* ===== Automation difficulty pills ===== */
+.md-typeset .difficulty {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 999px;
+  padding: 5px 13px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.md-typeset .difficulty::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--diff-dot);
+}
+.md-typeset .difficulty.lvl-1 { background:#e8f5e9; color:#2e7d32; border:1px solid #a5d6a7; --diff-dot:#2e7d32; }
+.md-typeset .difficulty.lvl-2 { background:#fff8e1; color:#a16207; border:1px solid #fde68a; --diff-dot:#f9a825; }
+.md-typeset .difficulty.lvl-3 { background:#ffebee; color:#c62828; border:1px solid #ef9a9a; --diff-dot:#d32f2f; }
+
+/* ===== "Start easier" stepping-stone box ===== */
+.md-typeset .automation-steps-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 1em 0 0.25em;
+}
+.md-typeset .automation-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0.5em 0 1em;
+}
+.md-typeset .automation-steps > .step {
+  flex: 1;
+  min-width: 170px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 11px 13px;
+  background: var(--md-code-bg-color);
+}
+.md-typeset .automation-steps .step-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+}

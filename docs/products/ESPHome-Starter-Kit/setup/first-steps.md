@@ -92,20 +92,35 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Linux"
 
-    1. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. Under the **Linux** tab, pick the package for your distro:
+    1.  Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. The page opens on the **Linux** tab and shows **Download .deb** as the default. Click **Download .deb** to grab the Debian / Ubuntu package.
 
-        - **AppImage** (works on any distro)
-        - **.deb** (Debian / Ubuntu)
-        - **.rpm** (Fedora / RHEL)
-        - **AUR** (Arch Linux)
+        If your distro fits a different format, switch to the matching tab on the download page first:
 
-    2. Install or run the file you downloaded:
+        - **Fedora / RHEL** → downloads a `.rpm`
+        - **Arch (AUR)** → opens the AUR package page
+        - **AppImage** → downloads a portable AppImage that runs on any distro
 
-        - **AppImage:** `chmod +x ESPHome.Builder_*.AppImage` then double-click the file, or run it from a terminal.
-        - **.deb:** `sudo apt install ./ESPHome.Builder_*.deb`
-        - **.rpm:** `sudo dnf install ./ESPHome.Builder*.rpm`
+    2.  Install the package. Pick the workflow you're more comfortable with:
 
-    <!-- TODO: add a Linux installer screenshot if available. -->
+        === "GUI"
+
+            Works for the `.deb` download. Skip to the CLI tab if you grabbed a `.rpm`, AUR package, or AppImage.
+
+            1.  Open your **Downloads** folder in your file manager.
+            2.  Right-click the `ESPHome.Builder_*.deb` file and choose **Open with → Archive Manager** (or whichever archive viewer your distro ships).
+            3.  In the archive viewer, click **Extract** and pick a folder you can find again, like `~/esphome-desktop`.
+            4.  Open the extracted folder, then navigate into **`usr`** → **`bin`**.
+            5.  Double-click **`esphome-desktop`** to launch the app.
+
+            ![](../../../assets/esphome-device-builder-linux-install.gif)
+
+        === "CLI"
+
+            From a terminal, run the installer that matches the file you downloaded:
+
+            - **.deb (Debian / Ubuntu):** `sudo apt install ./ESPHome.Builder_*.deb`
+            - **.rpm (Fedora / RHEL):** `sudo dnf install ./ESPHome.Builder*.rpm`
+            - **AppImage (any distro):** `chmod +x ESPHome.Builder_*.AppImage` then double-click the file, or run it from a terminal.
 
     Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
 
@@ -220,3 +235,5 @@ Example of the light changing colors below!
 ![](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
 
 <a href="../../start-here/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - Start Here</a> <a href="../../modules/button-module/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Add More Modules</a> <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Connect to Home Assistant</a>
+
+--8<-- "_snippets/community-help.md"

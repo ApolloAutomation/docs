@@ -2,123 +2,65 @@
 title: PLT-1B Sensor Definitions
 description: Full list of definitions for the PLT-1B and its various sensors.
 ---
-# Sensors
-
-#### <a href="https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf" target="_blank" rel="noopener">LTR390 UV</a>
-
-* **uv\_index** (*Optional*): UV index (UVI). All options from [Sensor](https://esphome.io/components/sensor/#config-sensor).
-* **uv** (*Optional*): Sensor counts for the UV sensor (#). All options from [Sensor](https://esphome.io/components/sensor/#config-sensor).
-* **light** (*Optional*): Lux of ambient light (lx). All options from [Sensor](https://esphome.io/components/sensor/#config-sensor).
-* **ambient\_light** (*Optional*): Sensor counts for the Ambient light sensor (#). All options from [Sensor](https://esphome.io/components/sensor/#config-sensor).
-* **gain** (*Optional*, string): Adjusts the sensitivity of the sensor. A larger value means higher sensitivity. Default is `"X18"`, see table below for options.
-* **resolution** (*Optional*, int): ADC resolution. Higher resolutions require longer sensor integration times. Default is `20`, see table below for options.
-* **window\_correction\_factor** (*Optional*, float): Window correction factor. Use larger values when using under tinted windows. Default is `1.0`, must be `>= 1.0`.
-* **address** (*Optional*, int): Manually specify the I²C address of the sensor. Default is `0x53`.
-* **update\_interval** (*Optional*, [Time](https://esphome.io/guides/configuration-types#config-time)): The interval to check the sensor. Defaults to `60s`. It is recommended that the update interval is at least 1 second since updates can take up to 800ms when using a high resolution value.
-
-#### <a href="https://files.seeedstudio.com/wiki/Grove-AHT20_I2C_Industrial_Grade_Temperature_and_Humidity_Sensor/AHT20-datasheet-2020-4-16.pdf" target="_blank" rel="noopener">AHT20-F</a>
-
-* **variant** (*Optional*, enum): Set the variant of the device in use. Defaults to `AHT10`.
-  * `AHT10` - For AHT10 devices.
-  * `AHT20` - For AHT20 and AHT30 devices.
-* **temperature** (**Required**): The information for the temperature sensor.
-  * All options from [Sensor](https://esphome.io/components/sensor/#config-sensor).
-* **humidity** (**Required**): The information for the humidity sensor
-  * All options from [Sensor](https://esphome.io/components/sensor/#config-sensor).
-* **update\_interval** (*Optional*, [Time](https://esphome.io/guides/configuration-types#config-time)): The interval to check the sensor. Defaults to `60s`.
-
-#### <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf" target="_blank" rel="noopener">DS18B20</a>
-
-* **address** (*Optional*, int): The address of the sensor. Required if there is more than one device on the bus.
-* **resolution** (*Optional*, int): An optional resolution from 9 to 12. Higher means more accurate. Defaults to the maximum for most Dallas temperature sensors: 12.
-* **update\_interval** (*Optional*, [Time](https://esphome.io/guides/configuration-types#config-time)): The interval that the sensors should be checked. Defaults to 60 seconds.
-* **one\_wire\_id** (*Optional*, [1-Wire Bus](https://esphome.io/components/one_wire#one-wire)): The ID of the 1-Wire bus to use. Required if there is more than one bus.
-* All other options from [Sensor](https://esphome.io/components/sensor/#config-sensor).
-
 # Sensor Definitions
 
-![](/assets/screenshot-2024-10-03-at-4-10-25-pm.png)
+Once added to Home Assistant you can configure different settings for your PLT-1B. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
 
-![](/assets/screenshot-2024-10-03-at-2-25-47-pm.png)
+![PLT-1B Sensor Data](/assets/screenshot-2024-10-03-at-4-10-25-pm.png)
 
-#### Controls:
+!!! note "How the PLT-1B sleeps"
 
-##### Accessory Power:
+    The PLT-1B runs on an 18650 battery. By default **Prevent Sleep** is on, so it stays awake and reports continuously at these intervals, which drains the battery. Turn **Prevent Sleep** off to let it deep-sleep between readings for the **Sleep Duration** (12h) and conserve the cell: it wakes for about 90 seconds, reports its readings, then sleeps again. The **Default Update** column is how often each sensor refreshes while it is awake.
 
-* This allows you to control the power delivery to the sensor. Toggled ON sends power to the entire device. Toggled OFF only sends power to the ESP chip. When in the OFF position you will be unable turn on the LED light.
+    To update firmware on a sleeping device, just click **Update** on the **Firmware Update** entity and it installs the next time the device wakes (the firmware keeps itself awake until the update finishes, so you don't need to do anything else). The optional [OTA helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/) is a separate toggle that overrides **Prevent Sleep** to keep a device awake on demand.
 
-##### RGB Light:
+=== "Controls"
 
-* This allows you to control the RGB LED on the PLT-1. You can toggle it on or off directly from the ESPHome dashboard, which can be useful for creating visual alerts or indications related to plant health (e.g., turning green if everything is fine, red if moisture is too low, etc.).
+    | Control | What it does |
+    |---------|--------------|
+    | **RGB Light** | One RGB Neopixel LED. Click the light bulb or color wheel to change the color. Use the toggle to turn it on or off. Useful for visual alerts tied to plant health, such as green when readings are fine and red when moisture is low. |
+    | **Accessory Power** | Controls power delivery to the sensors. On sends power to the whole device. Off powers only the ESP chip, and while off you cannot turn on the RGB Light. |
 
-#### Sensors:
+=== "Sensors"
 
-##### Air Humidity: 48.73%
+    | Sensor | Default Update | Details |
+    |--------|:--------------:|---------|
+    | **Air Temperature** | 60s | Air temperature around the plant, from the AHT20. Adjusted by the **Air Temperature Offset**. |
+    | **Air Humidity** | 60s | Relative humidity of the air around the plant, from the AHT20. Adjusted by the **Air Humidity Offset**. |
+    | **Soil Moisture** | 60s | Water content of the soil as a percentage, calculated from the soil probe voltage using the **100% Water Voltage** and **Dry Voltage** calibration values. |
+    | **Soil Temperature** | 60s | Reading from the optional DS18B20 soil temperature probe. Shows *Unknown* if the probe is not connected. |
+    | **LTR390 Light** | 60s* | Ambient light level in lux. *Polls at the interval set by the **LTR390 Update Interval** number (60s by default). |
+    | **LTR390 UV Index** | 60s* | UV index measured by the LTR390. *Polls at the **LTR390 Update Interval**. |
+    | **Battery level** | on wake | Remaining 18650 battery charge as a percentage, from the MAX17048 fuel gauge. |
+    | **Battery voltage** | on wake | Current 18650 battery voltage, from the MAX17048 fuel gauge. |
 
-* This sensor measures the relative humidity of the air surrounding your plant. Ideal humidity levels are crucial for maintaining optimal growth conditions for indoor plants. The reading here shows 48.73%, which might be within a reasonable range depending on the plant type. Too low or too high humidity can stress the plant and affect its ability to absorb nutrients and water properly.
+=== "Configuration"
 
-##### Air Temperature: 80.58°F
+    | Setting | Default | What it does |
+    |---------|:-------:|--------------|
+    | **ESP Reboot** | — | Restarts the device. Helpful for troubleshooting or refreshing the connection. |
+    | **Air Temperature Offset** | 0.0 °C | Calibrates the AHT20 air temperature reading to a known value. Range is -70 to 70 °C in 0.1 steps. |
+    | **Air Humidity Offset** | 0 % | Calibrates the AHT20 air humidity reading to a known value. Range is -70 to 70 % in 0.1 steps. |
+    | **100% Water Voltage** | 1.55 | Soil probe voltage that corresponds to fully saturated (100% wet) soil. Tune this to calibrate the **Soil Moisture** reading. Range is 0 to 5 V in 0.01 steps. |
+    | **Dry Voltage** | 2.7 | Soil probe voltage that corresponds to completely dry soil. Tune this to calibrate the **Soil Moisture** reading and to trigger low-moisture automations. Range is 0 to 5 V in 0.01 steps. |
+    | **LTR390 Update Interval** | 60 s | How often the LTR390 light and UV sensors poll (1 to 300 seconds). |
+    | **Sleep Duration** | 12 h | How long the PLT-1B stays in deep sleep between wake cycles (only used when **Prevent Sleep** is off). Range is 0 to 800 hours. |
+    | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Required for OTA updates and live readings; turn it off to save battery. |
+    | **Accessory Power** | On | Powers the sensors. Turn off to power only the ESP chip. |
+    | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
 
-* This sensor monitors the air temperature around the plant. The temperature is critical to maintaining a suitable growing environment. This current reading of 80.58°F is quite warm, which might be suitable for tropical or heat-loving plants but could be a bit high for others. The ideal temperature range depends on the plant species, and you can set automations to trigger alerts if the temperature goes beyond a specified range.
+=== "Diagnostic"
 
-##### LTR390 Light: 3.4 lx
+    | Entity | Default Update | What it shows |
+    |--------|:--------------:|---------------|
+    | **Apollo Firmware Version** | on boot | The Apollo firmware build installed on the device (for example, `26.3.2.1`). |
+    | **ESPHome Version** | on boot | The ESPHome version the firmware was compiled with. |
+    | **Firmware Update** | — | Shows whether a firmware update is available and lets you update from inside Home Assistant. |
+    | **IP Address** | on connect | The device's IP address on your network. |
+    | **Online** | on change | Connection status of the device to Home Assistant. |
+    | **RSSI** | 60s | Wi-Fi signal strength in dBm. Values closer to 0 are stronger; a weak signal can affect reliability. |
+    | **ESP Temperature** | 60s | Internal temperature of the ESP32 chip. Runs warmer than the room because of the processor and Wi-Fi radio. |
+    | **Uptime** | 60s | How long the device has been running since its last reboot. |
+    | **Soil ADC** | 5s | Raw soil probe voltage used to calculate **Soil Moisture**. Disabled by default. |
 
-* This is the light intensity sensor, measured in lux (lx). The light sensor helps you track how much light your plant is receiving. 3.4 lux indicates that the plant is currently in low light conditions, which could be fine for shade-loving plants or indicate that it’s not receiving enough light. For sun-loving plants, you may need to increase light exposure.
-
-##### LTR390 UV Index: 0.00043 UVI
-
-* This sensor measures ultraviolet light (UV Index). UV is another aspect of the light spectrum, important for photosynthesis and general plant health. The low UV Index here indicates very minimal UV radiation, which could be acceptable for most indoor plants since they usually do not require strong UV exposure. However, some plants may benefit from higher levels of UV for robust growth.
-
-##### Soil Moisture: 59%
-
-* The soil moisture sensor measures the water content in the soil as a percentage. A reading of 59% means the soil has a moderate amount of moisture, but depending on the plant species, you may need to adjust watering. The ideal moisture level varies by plant; for instance, succulents prefer drier soil, while tropical plants may require consistently moist soil.
-
-##### Soil Temperature: Unknown
-
-* This field represents the reading from the optional soil temperature probe. It currently shows as “Unknown” because the soil temperature probe may not be connected or is not currently returning data. Soil temperature is crucial for root health and affects the plant’s ability to take up water and nutrients. This optional feature can give deeper insights into the root zone environment.
-
-#### Configuration:
-
-##### 100% Water Voltage: 1.5
-
-* This setting defines the voltage that corresponds to 100% soil saturation (completely wet soil). A voltage of 1.5V is being used as the threshold for completely moist soil. This parameter can be tuned based on your plant’s needs, and it’s helpful in creating accurate alerts or automations when soil moisture is low.
-
-##### Dry Voltage: 2.7
-
-* This value represents the voltage at which the soil is considered completely dry. A dry voltage of 2.7V indicates the sensor has defined this threshold for when your plant needs watering. Automations can be created to alert you when the voltage rises to this point, signaling that the soil is too dry.
-
-##### Sleep Duration: 480-720 minutes
-
-* This setting specifies how long the PLT-1 will remain in sleep mode between connection intervals. A 480-720 minute sleep duration is a good balance between battery life and update frequency. You can adjust this depending on how often you want the sensor to wake up and report new data.
-
-##### Sleep After Connecting: Enabled
-
-* This configuration means the PLT-1 will enter sleep mode after it finishes sending data during each connection. Enabling sleep mode helps conserve battery life, making it ideal for a battery-powered setup. This will override the Run Duration setting. Toggling this off will default to the Run Duration setting.
-
-##### Prevent Sleep: Enabled
-
-* With this option enabled, the PLT-1 will not enter sleep mode under certain conditions, ensuring continuous operation. This is useful if you want the sensor to remain active for extended periods, perhaps for monitoring changes in real-time without interruptions.
-
-#### Diagnostic:
-
-##### ESP Temperature: 89.8°F
-
-* The ESP module’s internal temperature is displayed here. An ESP temperature of 89.8°F could be a result of the WiFi module being continuously active. While this might not directly impact plant health, it’s useful to monitor as it can affect the accuracy of nearby temperature sensors.
-
-##### Status: Online
-
-* This confirms that the PLT-1 is currently online and connected to the WiFi network, communicating with Home Assistant.
-
-##### RSSI: -56 dBm
-
-* The Received Signal Strength Indicator (RSSI) shows the strength of the WiFi signal. A reading of -56 dBm is fairly decent, indicating that the PLT-1 has a strong enough connection to the WiFi router. Lower RSSI values (closer to zero) represent better signal strength.
-
-##### Uptime: 13 hours 37 minutes
-
-* This shows how long the PLT-1 has been running continuously since its last reboot or power-up. An uptime of 13 hours and 37 minutes indicates that the device has been stable and working for a decent period without any issues.
-
-## Buttons
-
-When looking at the PLT-1 in the below orientation, the boot button is on the left and the reset is on the right by the USB-C port
-
-![](/assets/plt-1-buttons.png)
+[Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){ .md-button }

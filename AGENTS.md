@@ -36,6 +36,19 @@ Read the full style guide, but these are the ones worth checking twice:
   with framing copy (what the reader unlocks, what success looks like).
 - Avoid corporate filler: **simply**, **just**, **easy**, **powerful**,
   **seamlessly**.
+- Automation pages must carry a difficulty pill under the H1
+  (`<span class="difficulty lvl-N">Difficulty: Level N</span>`,
+  Level 1 (beginner) to Level 3 (advanced); no descriptor word after
+  the number). On Level 2 and up pages, add a same-product
+  stepping-stone box linking easier automations. Pill and box styles
+  live in `docs/stylesheets/extra.css`; never inline colors.
+  See [Automation difficulty](STYLE_GUIDE.md#10-automation-difficulty).
+- Every page under the ESPHome Starter Kit product (modules, tutorials,
+  automations, learn-the-basics, FAQ, start-here, first-steps) must end
+  with the community CTA snippet:
+  `--8<-- "_snippets/community-help.md"`. To change the CTA copy or
+  buttons, edit the snippet file, never the include line on a page.
+  See [Community CTA on starter-kit pages](STYLE_GUIDE.md#11-community-cta-on-starter-kit-pages).
 
 ## Keep the style guide current
 

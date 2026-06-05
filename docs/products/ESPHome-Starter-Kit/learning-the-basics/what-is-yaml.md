@@ -118,3 +118,6 @@ You did not type any of that. The Builder wrote it when you clicked **Add**. Onc
 The official YAML site has the full specification, and the ESPHome docs walk through YAML in the context of ESPHome specifically.
 
 <a href="https://yaml.org/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary">YAML official site</a> <a href="https://esphome.io/guides/configuration-types.html" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> ESPHome YAML guide</a>
+
+
+--8<-- "_snippets/community-help.md"

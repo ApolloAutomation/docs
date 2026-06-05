@@ -12,7 +12,7 @@ The Motion Module turns your starter kit into a motion sensor. By the end of thi
 
     Work through the two prerequisites first:
 
-    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the button module off the panel.
+    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the motion module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
 
 #### Prerequisite
@@ -118,3 +118,11 @@ With the device back online, the Motion entity is live on the web server. <a hre
 !!! success "Your Motion module is now ready to use in automations!"
 
     You're now ready to make automations around occupancy in your home!
+
+## Try it in an automation
+
+Your motion sensor is live. Put it to work:
+
+<a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Motion-Activated Light </a>
+
+--8<-- "_snippets/community-help.md"

@@ -12,7 +12,7 @@ The LED & Buzzer is the starter kit's notification module, a strip of ten addres
 
     Work through the two prerequisites first:
 
-    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the button module off the panel.
+    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the RGB & Buzzer module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
 
 #### Prerequisite
@@ -128,3 +128,14 @@ The buzzer doesn't have its own web server control, since it's an output rather 
 !!! success "Your LED & Buzzer notification module is wired up!"
 
     Your LED & Buzzer Module is now ready for some fun tasks.. like toggling lights on and off, playing with the colors, or using the buzzer to play fun tunes!
+
+## Try it in an automation
+
+Your notification module is ready. Drive it from any of these automations:
+
+<a href="/products/ESPHome-Starter-Kit/automations/button-controlled-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Button Controlled LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/play-a-tune/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Play a Tune </a>
+<a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Temp-Reactive LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Motion-Activated Light </a>
+
+--8<-- "_snippets/community-help.md"

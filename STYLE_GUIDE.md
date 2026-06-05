@@ -401,7 +401,86 @@ how `docs/assets/` is organised), see
 
 ---
 
-## 10. When in doubt
+## 10. Automation difficulty
+
+Every automation page carries a difficulty pill directly under the H1 so
+readers can gauge how involved the setup is. The rating is about **setup
+difficulty and skill** (steps, helpers, templating, integrations), not
+runtime load.
+
+| Level | Use it when the automation... |
+| --- | --- |
+| 1 | is plug-and-play, or needs only a helper or two and a few guided steps. |
+| 2 | combines several entities, conditions, or a template. |
+| 3 | needs templating, blueprints, multi-device logic, or is heavily custom. |
+
+Add the pill as the first line under the title. The `lvl-N` class sets the
+color (green at 1, amber at 2, red at 3):
+
+```html
+# Build a Button-Controlled RGB Light
+
+<span class="difficulty lvl-1">Difficulty: Level 1</span>
+```
+
+### Stepping-stone box
+
+On a harder page, point newcomers at one to three easier automations from
+the **same product**. Add it under the pill at your discretion (Level 2
+and up is a good rule of thumb). Use relative links so previews work:
+
+```html
+<p class="automation-steps-heading">🌱 New here? Try these first:</p>
+<div class="automation-steps">
+  <div class="step">
+    <a class="step-title" href="../motion-activated-light/">Turn On a Light with Motion</a>
+    <span class="difficulty lvl-1">Difficulty: Level 1</span>
+  </div>
+  <div class="step">
+    <a class="step-title" href="../button-controlled-leds/">Build a Button-Controlled RGB Light</a>
+    <span class="difficulty lvl-1">Difficulty: Level 1</span>
+  </div>
+</div>
+```
+
+The pill and box styles live in `docs/stylesheets/extra.css`; never inline
+colors on the page.
+
+---
+
+## 11. Community CTA on starter-kit pages
+
+Every page under the **ESPHome Starter Kit** product carries the same
+community call-to-action at the bottom: a friendly note admonition titled
+"New to ESPHome? We're here to help." with links to Discord and the
+Community Forum. The copy and buttons live in a single snippet so the
+CTA stays consistent across the product and only needs one edit to update.
+
+**Source of truth:** `docs/_snippets/community-help.md`
+
+**Where to include it:** at the very bottom of any starter-kit page (after
+any existing "Try it in an automation" buttons, "Next Steps" buttons, or
+closing success admonition). One blank line of separation from the
+content above is enough.
+
+**How to include it:**
+
+```markdown
+--8<-- "_snippets/community-help.md"
+```
+
+**When you add a new starter-kit page**, end it with this include before
+opening the PR. **When you edit the CTA copy** (adding a new channel,
+rewording the prompt, swapping button labels), edit the snippet file
+itself, never the include line on a page.
+
+The snippet uses the standard `note` admonition flavor for visual
+consistency with the kit's other admonitions ("Before you start", tips,
+warnings); don't swap it for `tip` or `info` on a per-page basis.
+
+---
+
+## 12. When in doubt
 
 If a rule above conflicts with clarity for the reader, clarity wins.
 Open an issue or PR proposing the rule change so the guide stays
