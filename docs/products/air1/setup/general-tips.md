@@ -134,6 +134,12 @@ Per Sensirion,
 
 The optional CO<sub>2</sub> sensor addon is a great way to add the ability to track CO<sub>2</sub>. CO<sub>2</sub> levels in a closed, poorly ventilated bedroom can quickly rise to concentrations that may impair focus or even pose health risks. Notice the CO2 levels dropping in the image below when the HVAC was turned on overnight!
 
+The latest AIR-1 firmware keeps the SCD40 calibrated automatically. The sensor assumes it sees fresh air (about 420 ppm) at least once a week and corrects its baseline to match, so you no longer need to re-calibrate it manually every 1 to 2 years.
+
+!!! warning "Auto calibration needs regular fresh air"
+
+    If your AIR-1 sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), automatic self-calibration will slowly drag the CO<sub>2</sub> readings down. Turn off the **CO2 Auto Calibration** switch on the device page and follow the [manual calibration guide](../../../general/calibrating-and-updating/co2-calibration/) every 1 to 2 years instead.
+
 ![](/assets/co2-levels-drop-after-hvac-on.png)
 
 <a href="https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm" target="_blank" rel="noreferrer nofollow noopener">Wisconsin Department of Health CO<sub>2</sub> Level Chart</a>
