@@ -19,7 +19,7 @@ Once added to Home Assistant you can configure different settings for your MSR-2
     | Control | What it does |
     |---------|--------------|
     | **RGB Light** | Three RGB Neopixel LEDs. Click the light bulb or color wheel to change the color. Use the toggle to turn them on or off. |
-    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. |
+    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. Only needed when **CO2 Auto Calibration** is off. |
 
 === "Sensors"
 
@@ -73,6 +73,7 @@ Once added to Home Assistant you can configure different settings for your MSR-2
     | **LTR390 Update Interval** | 60 s | How often the LTR390 light and UV sensors poll (1 to 300 seconds). Disabled by default. |
     | **DPS310 Pressure Offset** | 0.0 hPa | Calibration offset for the DPS310 pressure reading (-100 to +100 hPa in 0.1 hPa steps). Disabled by default. A small subset of devices do not include a DPS310 sensor; if this reads *Unknown*, your device may be one of these units. |
     | **DPS Temperature Offset** | 14.54 °C | Offsets heat from the ESP chip for a more accurate DPS310 temperature reading. A small subset of devices do not include a DPS310 sensor. |
+    | **CO2 Auto Calibration** | On | Keeps the SCD40 CO₂ sensor calibrated automatically. The sensor assumes it sees fresh air (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>) at least once a week and corrects its baseline to match. Turn it off if the device sits in a space that rarely gets fresh air, then calibrate manually with **Calibrate SCD40 To 420ppm** every 1 to 2 years. |
     | **Reduce DB Reporting** | Off | Applies filters so many entities only report when they cross a threshold, using less Wi-Fi airtime and less Home Assistant database space. |
     | **Startup Light Blink** | On | Blinks the RGB LED during the MSR-2's initial boot. |
 
