@@ -1,8 +1,14 @@
 # CO<sub>2</sub> Calibration
 
-!!! tip "This should be done every 1-2 years."
+!!! info "Your sensor calibrates itself"
 
-    The <a href="https://sensirion.com/products/catalog/SCD40" title="Docmentation on SCD40 CO<sub>2</sub> Sensor!" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO<sub>2</sub> sensor</a> has a long lifetime (<a href="https://sensirion.com/media/documents/48C4B7FB/66E05452/CD_DS_SCD4x_Datasheet_D1.pdf" title="scd10 datasheet showing lifetime over 10 years" target="_blank" rel="noreferrer nofollow noopener">over 10 years</a>) but it requires re-calibration after 1-2 years back to a 420 ppm baseline!
+    The latest Apollo firmware enables the SCD40's automatic self-calibration by default on every device with the CO<sub>2</sub> sensor (AIR-1, R-PRO-1, MSR-2, and MTR-1). As long as the sensor sees fresh air (about 420 ppm) at least once a week, it corrects its own baseline and you never need to calibrate manually. Airing out the room once a week is enough.
+
+    If your device sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), automatic self-calibration will slowly drag the readings down. Turn off the **CO2 Auto Calibration** switch in your device's settings and calibrate manually with the steps below instead.
+
+!!! tip "Calibrate manually every 1 to 2 years when auto calibration is off"
+
+    The <a href="https://sensirion.com/products/catalog/SCD40" title="Documentation on SCD40 CO<sub>2</sub> Sensor!" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO<sub>2</sub> sensor</a> has a long lifetime (<a href="https://sensirion.com/media/documents/48C4B7FB/66E05452/CD_DS_SCD4x_Datasheet_D1.pdf" title="scd10 datasheet showing lifetime over 10 years" target="_blank" rel="noreferrer nofollow noopener">over 10 years</a>), but with automatic self-calibration turned off it needs re-calibration back to the 420 ppm baseline every 1 to 2 years.
 
 ![AIR-1 Shown Outdoors for CO2 Calibration Portrait Image](/assets/air-1-co2-calibration-portrait-image-1.jpg "AIR-1 Shown Outdoors for CO2 Calibration")
 

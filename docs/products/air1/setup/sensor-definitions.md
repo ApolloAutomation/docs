@@ -19,7 +19,7 @@ Once added to Home Assistant you can configure different settings for your AIR-1
     | Control | What it does |
     |---------|--------------|
     | **RGB Light** | Three RGB Neopixel LEDs. Click the light bulb or color wheel to change the color. Use the toggle to turn them on or off. |
-    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. |
+    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. Only needed when **CO2 Auto Calibration** is off. |
     | **Clean SEN55** | Runs the SEN55 fan auto-clean cycle to clear the particulate sensor and refresh its readings. |
 
 === "Sensors"
@@ -66,6 +66,7 @@ Once added to Home Assistant you can configure different settings for your AIR-1
     | **SEN55 Temperature Offset** | 6.0 °C | Calibrates the SEN55 temperature reading to a known value. See the <a href="https://wiki.apolloautomation.com/products/general/temp-hum-calibration/" target="_blank" rel="noopener">temperature &amp; humidity calibration guide</a>. |
     | **SEN55 Humidity Offset** | 0 % | Calibrates the SEN55 humidity reading to a known value. See the <a href="https://wiki.apolloautomation.com/products/general/temp-hum-calibration/" target="_blank" rel="noopener">temperature &amp; humidity calibration guide</a>. |
     | **DPS310 Pressure Offset** | 0.0 hPa | Applies a calibration offset to the DPS310 pressure reading. Range is -100 to +100 hPa in 0.1 hPa steps. Disabled by default. A small subset of devices do not include a DPS310 sensor; if this option reads *Unknown*, your device may be one of these units. |
+    | **CO2 Auto Calibration** | On | Keeps the SCD40 CO₂ sensor calibrated automatically. The sensor assumes it sees fresh air (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>) at least once a week and corrects its baseline to match. Turn it off if the device sits in a space that rarely gets fresh air, then calibrate manually with **Calibrate SCD40 To 420ppm** every 1 to 2 years. |
     | **Sleep Duration** | 5 min | How long the AIR-1 stays in deep sleep between wake cycles (only used when **Prevent Sleep** is off). |
     | **Prevent Sleep** | On | Keeps the device awake instead of deep-sleeping, so it reports continuously. Turn it off to let the AIR-1 deep-sleep between readings for more accurate onboard SEN55 temperature and humidity. |
     | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |

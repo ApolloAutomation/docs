@@ -17,7 +17,7 @@ The R-PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
     | Control | What it does |
     |---------|--------------|
     | **RGB Light** | Four RGB Neopixel LEDs. Click the light bulb or color wheel to change the color. Use the toggle to turn them on or off. |
-    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. |
+    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. Only needed when **CO2 Auto Calibration** is off. |
 
 === "Sensors"
 
@@ -83,7 +83,7 @@ The R-PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
     | **Reduce DB Reporting** | Off | Filters several entities so they only report when a threshold is met, using less Wi-Fi airtime and less Home Assistant database space. |
     | **SCD40 Temperature Offset** | 18.86 °C | Calibration offset for the SCD40 temperature reading. Disabled by default. |
     | **SCD40 Humidity Offset** | 0 % | Calibration offset for the SCD40 humidity reading. Disabled by default. |
-    | **SCD40 Automatic Self Calibration** | On | Lets the SCD40 self-calibrate over time against the lowest CO₂ it sees. Disabled by default. |
+    | **CO2 Auto Calibration** | On | Keeps the SCD40 CO₂ sensor calibrated automatically. The sensor assumes it sees fresh air (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>) at least once a week and corrects its baseline to match. Turn it off if the device sits in a space that rarely gets fresh air, then calibrate manually with **Calibrate SCD40 To 420ppm** every 1 to 2 years. |
 
     #### LD2412 radar
 
