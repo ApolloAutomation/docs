@@ -15,7 +15,7 @@ Once added to Home Assistant you can configure different settings for your MTR-1
     | Control | What it does |
     |---------|--------------|
     | **RGB Light** | One RGB Neopixel LED. Click the light bulb or color wheel to change the color. Use the toggle to turn it on or off. |
-    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. |
+    | **Calibrate SCD40 To 420ppm** | Forces a fresh-air calibration of the SCD40 CO₂ sensor to the <a href="https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/" target="_blank" rel="noopener">outdoor baseline</a> (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>). Run it outdoors or next to an open window. Only needed when **CO2 Auto Calibration** is off. |
 
 === "Sensors"
 
@@ -66,6 +66,7 @@ Once added to Home Assistant you can configure different settings for your MTR-1
     | **DPS310 Temperature Offset** | — | Calibration offset for the DPS310 temperature reading. |
     | **SCD40 Temperature Offset** | — | Calibration offset for the SCD40 temperature reading. Disabled by default. |
     | **SCD40 Humidity Offset** | — | Calibration offset for the SCD40 humidity reading. Disabled by default. |
+    | **CO2 Auto Calibration** | On | Keeps the SCD40 CO₂ sensor calibrated automatically. The sensor assumes it sees fresh air (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>) at least once a week and corrects its baseline to match. Turn it off if the device sits in a space that rarely gets fresh air, then calibrate manually with **Calibrate SCD40 To 420ppm** every 1 to 2 years. |
     | **LTR390 Update Interval** | 60 s | How often the LTR390 light and UV sensors poll (1 to 300 seconds). |
     | **LD2450 Bluetooth** | — | Toggles the LD2450's Bluetooth so you can connect with the HLK Radartool phone app. |
     | **Baud rate** | from module | Serial baud rate for the LD2450 module. |
