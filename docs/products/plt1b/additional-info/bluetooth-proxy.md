@@ -1,4 +1,4 @@
-﻿---
+---
 title: PLT-1B Bluetooth Proxy
 description: Tutorial for how to turn your PLT-1B into a BLE proxy!
 ---
@@ -6,18 +6,12 @@ description: Tutorial for how to turn your PLT-1B into a BLE proxy!
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 
-### Method 1: Switch to PLT-1B\_BLE.yaml fork
+Select a method below. Method 1 switches your PLT-1B to the prebuilt PLT-1B_BLE.yaml firmware. Method 2 adds the BLE proxy yaml to your existing config by hand.
 
---8<-- "_snippets/bluetooth-proxy/method1-steps.md"
+=== "Method 1: PLT-1B_BLE.yaml firmware"
 
-5\. Copy the code inside the codeblock below and paste it directly below the two lines you just commented out.
+    --8<-- "_snippets/bluetooth-proxy/method1-plt-1b.md"
 
---8<-- "_snippets/bluetooth-proxy/plt-1b.md"
+=== "Method 2: Manually enter the BLE proxy yaml"
 
---8<-- "_snippets/bluetooth-proxy/method1-finish.md"
-
----
-
-### Method 2: Manually enter the BLE proxy yaml
-
---8<-- "_snippets/bluetooth-proxy/method2.md"
+    --8<-- "_snippets/bluetooth-proxy/method2.md"

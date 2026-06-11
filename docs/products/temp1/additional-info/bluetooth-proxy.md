@@ -1,4 +1,4 @@
-﻿---
+---
 title: TEMP-1 Bluetooth Proxy
 description: Tutorial for how to turn your TEMP-1 into a BLE proxy!
 ---
@@ -6,18 +6,12 @@ description: Tutorial for how to turn your TEMP-1 into a BLE proxy!
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 
-### Method 1: Switch to TEMP-1\_BLE.yaml fork
+Select a method below. Method 1 switches your TEMP-1 to the prebuilt TEMP-1_BLE.yaml firmware. Method 2 adds the BLE proxy yaml to your existing config by hand.
 
---8<-- "_snippets/bluetooth-proxy/method1-steps.md"
+=== "Method 1: TEMP-1_BLE.yaml firmware"
 
-5\. Copy the code inside the codeblock below and paste it directly below the two lines you just commented out.
+    --8<-- "_snippets/bluetooth-proxy/method1-temp-1.md"
 
---8<-- "_snippets/bluetooth-proxy/temp-1.md"
+=== "Method 2: Manually enter the BLE proxy yaml"
 
---8<-- "_snippets/bluetooth-proxy/method1-finish.md"
-
----
-
-### Method 2: Manually enter the BLE proxy yaml
-
---8<-- "_snippets/bluetooth-proxy/method2.md"
+    --8<-- "_snippets/bluetooth-proxy/method2.md"
