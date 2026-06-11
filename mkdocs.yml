@@ -227,6 +227,7 @@ nav:
               - Additional Info:
                 - General Tips: products/msr2/setup/msr2-general-tips.md
                 - Sensor Definitions: products/msr2/setup/msr2-sensor-definitions.md
+                - Bluetooth Proxy: products/msr2/additional-info/bluetooth-proxy.md
               - Addons:
                 - Articulating Stand: products/msr2/addons/adding-articulating-stand-to-msr-2.md
                 - CO<sub>2</sub> Addon: products/msr2/addons/adding-co2-to-msr-2.md
@@ -254,6 +255,7 @@ nav:
               - Additional Info:
                 - General Tips: products/mtr1/setup/general-tips.md
                 - Sensor Definitions: products/mtr1/setup/sensor-definitions.md
+                - Bluetooth Proxy: products/mtr1/additional-info/bluetooth-proxy.md
               - Addons:
                 - Articulating Stand: products/mtr1/addons/adding-articulating-stand-to-mtr-1.md
                 - CO<sub>2</sub> Addon: products/mtr1/addons/adding-co2-to-mtr-1.md
@@ -304,6 +306,7 @@ nav:
                   - HLK Radar Tool App: products/msr1/setup/zones-hlk.md
                   - mmWave Tuning Videos: products/msr1/setup/mmwave-videos.md
                 - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
+                - Bluetooth Proxy: products/msr1/additional-info/bluetooth-proxy.md
               - Addons: products/msr1/addons/adding-co2-to-msr-1.md
               - Examples:
                 - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
@@ -323,6 +326,7 @@ nav:
                 - General Tips: products/air1/setup/general-tips.md
                 - Sensor Definitions: products/air1/setup/sensor-definitions.md
                 - Prevent Sleep: products/air1/additional-info/prevent-sleep.md
+                - Bluetooth Proxy: products/air1/additional-info/bluetooth-proxy.md
               - Addons:
                 - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
                 - MiCS Addon: products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
@@ -348,6 +352,7 @@ nav:
                 - How To Wake Up Your Sensor: products/temp1/battery-sensors/wake-up-battery-sensor.md
                 - Keep Your Sensor Awake With HA Helper: products/temp1/battery-sensors/awake-ha-helper.md
                 - Sensor Connection Check: products/temp1/battery-sensors/sensor-connection-check.md
+                - Bluetooth Proxy: products/temp1/additional-info/bluetooth-proxy.md
               - Addons:
                 - Magnetic Mount: products/temp1/addons/magnetic-mount.md
                 - Temp Probe: products/temp1/addons/temp-probe.md
@@ -375,6 +380,7 @@ nav:
                 - Keep Your Sensor Awake With HA Helper: products/temp1b/battery-sensors/awake-ha-helper.md
                 - Insert Battery: products/temp1b/setup/insert-battery.md
                 - Sensor Connection Check: products/temp1b/battery-sensors/sensor-connection-check.md
+                - Bluetooth Proxy: products/temp1b/additional-info/bluetooth-proxy.md
               - Addons:
                 - Magnetic Mount: products/temp1b/addons/magnetic-mount.md
                 - Temp Probe: products/temp1b/addons/temp-probe.md
@@ -400,6 +406,7 @@ nav:
                 - Sensor Definitions: products/plt1/setup/plt1-sensor-definitions.md
                 - Calibrating Soil Moisture: products/plt1/calibrate-plt1.md
                 - Prevent Sleep: products/plt1/additional-info/prevent-sleep.md
+                - Bluetooth Proxy: products/plt1/additional-info/bluetooth-proxy.md
               - Examples:
                 - Flower Card: products/plt1/examples/flower-card.md
                 - Blueprint: products/plt1/examples/blueprint.md
@@ -422,6 +429,7 @@ nav:
                 - Keep Your Sensor Awake With HA Helper: products/plt1b/battery-sensors/awake-ha-helper.md
                 - Insert Battery: products/plt1b/additional-info/insert-battery.md
                 - Sensor Connection Check: products/plt1b/battery-sensors/sensor-connection-check.md
+                - Bluetooth Proxy: products/plt1b/additional-info/bluetooth-proxy.md
               - Examples:
                 - Flower Card: products/plt1b/examples/flower-card.md
                 - Blueprint: products/plt1b/examples/blueprint.md
