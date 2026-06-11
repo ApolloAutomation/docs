@@ -283,6 +283,7 @@ nav:
                 - Switch Firmware: products/rpro1/setup/rpro1-switch-firmware.md
                 - General Tips: products/rpro1/setup/rpro1-general-tips.md
                 - Sensor Definitions: products/rpro1/setup/rpro1-sensor-definitions.md
+                - Bluetooth Proxy: products/rpro1/additional-info/bluetooth-proxy.md
               - Addons:
                 - CO<sub>2</sub> Addon: products/rpro1/addons/adding-co2-to-r-pro-1.md
                 - 1-Gang Box Mount: products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
@@ -491,6 +492,7 @@ nav:
           - Additional Info:
             - General Tips: products/pump1/setup/pump1-general-tips.md
             - Sensor Definitions: products/pump1/setup/pump1-sensor-definitions.md
+            - Bluetooth Proxy: products/pump1/additional-info/bluetooth-proxy.md
           - Addons:
             - Bottle Addon: products/pump1/addons/attaching-bottle-to-pump-1.md
             - Inlet and Outlet Tube Addons: products/pump1/addons/attaching-tubes-to-pump-1.md
@@ -507,6 +509,7 @@ nav:
           - Additional Info:
             - General Tips: products/btn1/setup/general-tips.md
             - Sensor Definitions: products/btn1/setup/sensor-definitions.md
+            - Bluetooth Proxy: products/btn1/additional-info/bluetooth-proxy.md
             - Prevent Sleep: products/btn1/additional-info/prevent-sleep.md
             - How To Wake Up Your Sensor: products/btn1/battery-sensors/wake-up-battery-sensor.md
           - Examples:

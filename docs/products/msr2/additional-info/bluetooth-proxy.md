@@ -1,4 +1,4 @@
-﻿---
+---
 title: MSR-2 Bluetooth Proxy
 description: Tutorial for how to turn your MSR-2 into a BLE proxy!
 ---
@@ -6,18 +6,12 @@ description: Tutorial for how to turn your MSR-2 into a BLE proxy!
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 
-### Method 1: Switch to MSR-2\_BLE.yaml fork
+Select a method below. Method 1 switches your MSR-2 to the prebuilt MSR-2_BLE.yaml firmware. Method 2 adds the BLE proxy yaml to your existing config by hand.
 
---8<-- "_snippets/bluetooth-proxy/method1-steps.md"
+=== "Method 1: MSR-2_BLE.yaml firmware"
 
-5\. Copy the code inside the codeblock below and paste it directly below the two lines you just commented out.
+    --8<-- "_snippets/bluetooth-proxy/method1-msr-2.md"
 
---8<-- "_snippets/bluetooth-proxy/msr-2.md"
+=== "Method 2: Manually enter the BLE proxy yaml"
 
---8<-- "_snippets/bluetooth-proxy/method1-finish.md"
-
----
-
-### Method 2: Manually enter the BLE proxy yaml
-
---8<-- "_snippets/bluetooth-proxy/method2.md"
+    --8<-- "_snippets/bluetooth-proxy/method2.md"
