@@ -83,6 +83,16 @@ The card needs to know which X/Y coordinate sensors to track:
 3. For helper entities that aren't tied to a device, leave the device picker on **Select device** and use **Add X/Y Pair** instead.
 4. Click **Apply** to save your selection.
 
+!!! warning "Using the imperial system? Switch your target sensors to millimeters"
+
+    Home Assistant shows the Target X and Y sensors in inches (in) when your system uses US units, while the card reads them in millimeters (mm). When the units don't match, your target dots never appear on the grid. Metric users can skip this; everyone else, convert the sensors before drawing zones:
+
+    1. Open your device's page under **Settings → Devices & services → ESPHome**.
+    2. Under **Sensors**, click **Target 1 X**, open its settings with the gear icon, and change **Unit of Measurement** to **mm**.
+    3. Repeat for the X and Y sensors of all three targets (six entities in total).
+
+    Changing the card's units instead also works, but then you need to adjust the grid distances to match, so converting the sensors is the recommended path.
+
 ### Add zones
 
 1. Click the **Configure** drop-down, then **Zones**.
@@ -153,6 +163,7 @@ actions:
 - **Resource not found**: confirm the resource URL is `/local/zone-mapper-card.js`, the file is under `/config/www`, and clear your browser cache.
 - **Zones don't persist**: check the coordinate sensor's attributes for `shape`, `data`, and `rotation_deg` under **Developer Tools → States**, and confirm the `zone_mapper.update_zone` service is being called.
 - **Coordinate entity not found**: draw a zone once to create the entities for that location.
+- **No target dots appear when you move**: your Target X/Y sensors are most likely reporting in inches while the card reads millimeters. Switch the six target sensors to mm as described under [Set target entities](#set-target-entities).
 - **Presence never turns on**: verify the tracked X/Y entities have numeric states (not `unknown` or `unavailable`) and that the target actually sits inside the drawn zone.
 - **Target dots linger after you leave the room**: a known quirk of many LD2450 sensors running ESPHome, not a Zone Mapper issue.
 
