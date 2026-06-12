@@ -75,7 +75,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
     <div class="annotate" markdown>
 
     - Under **Actions**, click **+ Add action**.
-    - In the **Add action** dialog, stay on the **By target** tab and choose **Light → Turn On** under the RGB LED group.
+    - In the **Add action** dialog, stay on the **By target** tab and scroll down towards the bottom, then choose **Light → Turn On** under the RGB LED group.
     - On the new action, click the **ID** dropdown and select **RGB LEDs**. (1)
     - Toggle on **Red**, **Green**, and **Blue** controls. Set **Red** `0%`, **Green** `0%`, **Blue** `100%`.
 
@@ -159,8 +159,6 @@ Open the Comfortable and Hot triggers in the GUI and edit the **Above** / **Belo
 !!! success "You've built a sensor-reactive light!"
 
     Same trigger-then-action pattern, new trigger type. Next, bring it into Home Assistant so the readings show up alongside the rest of your kit.
-
-#### Next Steps
 
 <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Connect to Home Assistant</a>
 

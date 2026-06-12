@@ -45,7 +45,7 @@ ESPHome Device Builder has a new GUI for building <a href="https://esphome.io/au
     <div class="annotate" markdown>
 
     - Under **Actions**, click **+ Add action**.
-    - In the **Add action** dialog, stay on the **By target** tab and choose **Light → Toggle** under the RGB LED group.
+    - In the **Add action** dialog, stay on the **By target** tab and scroll down towards the bottom, then choose **Light → Toggle** under the RGB LED group.
     - On the new action, click the **ID** dropdown and select **RGB LEDs**. (1)
 
     </div>
@@ -93,8 +93,6 @@ With the device back online, press the button on the Button module. You should h
 !!! success "You've built your first GUI automation!"
 
     The same trigger-then-action pattern works for every automation you'll build in Device Builder. Swap the trigger (motion, temperature crossing a threshold, a schedule) or the action (turn on, dim, play a buzzer tone) and you have a new automation.
-
-#### Next Steps
 
 <a href="../../tutorials/light-effects/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Light Effects</a>
 

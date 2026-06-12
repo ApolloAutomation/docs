@@ -30,11 +30,15 @@ The <a href="https://esphome.io/components/web_server/" target="_blank" rel="nor
 
 ## Attach Button module
 
-Connect the button module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the C6 works, top or bottom.
+Connect the button module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the ESP32-C6 works, top or bottom.
 
-1\. Unplug the USB-C cable from the ESP32-C6 so the board is powered off.
+1\. Unplug the USB-C cable from the ESP32-C6 so it is powered off.
 
 ![](../../../assets/esphome-starter-kit-remove-usb.webp)
+
+!!! warning "Handle the FPC connectors gently"
+
+    The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
 2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector. Gently press the latch down to lock it in place.
 
@@ -44,11 +48,7 @@ Connect the button module to the ESP32-C6 using one of the FPC ribbon cables tha
 
 ![](../../../assets/esphome-starter-kit-attach-fpc-to-button-module.webp)
 
-4\. Plug the C6 back into your computer.
-
-!!! warning "Handle the FPC connectors gently"
-
-    The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
+4\. Plug the ESP32-C6 back into your computer.
 
 ## Add to ESPHome Device Builder
 
@@ -87,7 +87,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
     | `number: GPIO6` | The pin the button module's FPC connector wires to on the ESP32-C6. |
     | `inverted: true` | The pin reads LOW when the button is pressed, so this flips it to an intuitive on/off state. |
     | `mode.input: true` | Configures the pin as an input. |
-    | `mode.pullup: true` | Enables the C6's internal pull-up so the pin doesn't float when the button isn't pressed. |
+    | `mode.pullup: true` | Enables the ESP32-C6's internal pull-up so the pin doesn't float when the button isn't pressed. |
     | `id: my_button` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
     | `name: "Button"` | The friendly name shown in Home Assistant and the web server. |
 

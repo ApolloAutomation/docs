@@ -30,7 +30,7 @@ The <a href="https://esphome.io/components/web_server/" target="_blank" rel="nor
 
 ## Attach PIR
 
-The PIR sensor (the small white dome on a tiny PCB) ships separately from the motion module so it can be packed safely. Install it onto the module before plugging anything into the C6.
+The PIR sensor (the small white dome on a tiny PCB) ships separately from the motion module so it can be packed safely. Install it onto the module before plugging anything into the ESP32-C6.
 
 1. Take the PIR sensor out of the box.
 2. Line up the **Out** name on each side as shown in the gif below.
@@ -40,11 +40,15 @@ The PIR sensor (the small white dome on a tiny PCB) ships separately from the mo
 
 ## Attach Motion module
 
-Connect the motion module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the C6 works, top or bottom.
+Connect the motion module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the ESP32-C6 works, top or bottom.
 
-1\. Unplug the USB-C cable from the ESP32-C6 so the board is powered off.
+1\. Unplug the USB-C cable from the ESP32-C6 so it is powered off.
 
 ![](../../../assets/esphome-starter-kit-remove-usb.webp)
+
+!!! warning "Handle the FPC connectors gently"
+
+    The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
 2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector. Gently press the latch down to lock it in place
 
@@ -54,11 +58,7 @@ Connect the motion module to the ESP32-C6 using one of the FPC ribbon cables tha
 
 ![](../../../assets/esphome-starter-kit-attach-fpc-to-motion-module.webp)
 
-4\. Plug the C6 back into your computer.
-
-!!! warning "Handle the FPC connectors gently"
-
-    The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
+4\. Plug the ESP32-C6 back into your computer.
 
 ## Add to ESPHome Device Builder
 

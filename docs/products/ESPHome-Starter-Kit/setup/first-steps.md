@@ -172,7 +172,7 @@ When you create a new ESPHome Starter Kit project in ESPHome Device Builder, the
 
 #### Onboard RGB LED
 
-The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6 Module. Useful for testing automations and doubles as a status light.
+The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Useful for testing automations and doubles as a status light.
 
 1. In the ESPHome Device Builder, navigate to the **Components** section.
 2. Click **Add component**.
@@ -197,7 +197,7 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 ![](../../../assets/esphome-starter-kit-boot-mode.webp)
 
-3\. Your device is now in boot mode - The board will now stay in bootloader mode until you flash it.
+3\. Your device is now in boot mode - The ESP32-C6 will now stay in bootloader mode until you flash it.
 
 ### Installing Firmware
 
@@ -206,7 +206,7 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 1. Click **Save** in the bottom right which will then show an **Install** button.
 2. Click **Install** in the bottom right.
 3. Click **Plug into this computer**.
-4. Select the COM port, then click **Connect** to connect to the ESP32-C6 module.
+4. Select the COM port, then click **Connect** to connect to the ESP32-C6.
 5. Wait for the firmware to compile and install. This usually takes two to five minutes.
 6. Once it completes, click **Stop**, then press the **Reset** button on your device. Your device will reboot and it's now ready to test out!
 
