@@ -31,11 +31,15 @@ The <a href="https://esphome.io/components/web_server/" target="_blank" rel="nor
 
 ## Attach Temp and Humidity module
 
-Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the C6 works, top or bottom.
+Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the ESP32-C6 works, top or bottom.
 
-1\. Unplug the USB-C cable from the ESP32-C6 so the board is powered off.
+1\. Unplug the USB-C cable from the ESP32-C6 so it is powered off.
 
 ![](../../../assets/esphome-starter-kit-remove-usb.webp)
+
+!!! warning "Handle the FPC connectors gently"
+
+    The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
 2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector. Gently press the latch down to lock it in place.
 
@@ -45,11 +49,7 @@ Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC
 
 ![](../../../assets/esphome-starter-kit-attach-fpc-to-temp-hum-module.webp)
 
-4\. Plug the C6 back into your computer.
-
-!!! warning "Handle the FPC connectors gently"
-
-    The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
+4\. Plug the ESP32-C6 back into your computer.
 
 ## Add to ESPHome Device Builder
 
@@ -93,7 +93,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
     | Option | What it does |
     | --- | --- |
     | `i2c.sda` / `i2c.scl` | The data and clock pins for the I2C bus the AHT20F speaks on. The starter kit wires them to GPIO1 and GPIO0. |
-    | `i2c.scan: true` | Lists every I2C device the board finds at boot, useful for confirming the sensor is connected. |
+    | `i2c.scan: true` | Lists every I2C device the ESP32-C6 finds at boot, useful for confirming the sensor is connected. |
     | `platform: aht10` | The ESPHome platform that drives AHT10, AHT20, and AHT30 sensors. |
     | `variant: AHT20` | Tells the platform which variant of the chip is connected. |
     | `id: aht_20` | Internal handle you can reference from automations and lambdas elsewhere in the config. |

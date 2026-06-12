@@ -28,7 +28,7 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 
 6\. **Can the kit run on battery power?**
 
-* The main board is powered by USB-C today. It also has built-in support for a rechargeable LiPo battery, which is planned as a future module so the kit can be deployed cable-free around the home. The battery is not available yet.
+* The ESP32-C6 is powered by USB-C today. It also has built-in support for a rechargeable LiPo battery, which is planned as a future module so the kit can be deployed cable-free around the home. The battery is not available yet.
 
 7\. **What is the ESPHome Desktop app?**
 
@@ -36,7 +36,7 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 
 8\. **What can I build with it?**
 
-* By the end of the included learning path, you will have built four working devices: a [motion sensor](modules/motion-module.md), an [environment monitor](modules/temperature-humidity-module.md) (temperature and humidity), a [button trigger](modules/button-module.md), and a [notification light](modules/rgb-buzzer-module.md). Two modules can run on the main board at the same time, turning the kit into a multi-purpose sensor for any room. Beyond the lessons, every skill carries straight into the <a href="https://esphome.io/" target="_blank" rel="noreferrer nofollow noopener">wider ESPHome ecosystem</a>.
+* By the end of the included learning path, you will have built four working devices: a [motion sensor](modules/motion-module.md), an [environment monitor](modules/temperature-humidity-module.md) (temperature and humidity), a [button trigger](modules/button-module.md), and a [notification light](modules/rgb-buzzer-module.md). Two modules can run on the ESP32-C6 at the same time, turning the kit into a multi-purpose sensor for any room. Beyond the lessons, every skill carries straight into the <a href="https://esphome.io/" target="_blank" rel="noreferrer nofollow noopener">wider ESPHome ecosystem</a>.
 
 9\. **What happens when I am "done" learning?**
 
@@ -60,7 +60,7 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 
 14\. **Why a ribbon cable instead of a breadboard?**
 
-* Breadboards and jumper wires are the most common source of frustration for new builders: loose connections, wrong pins, wires that pop out. The ESPHome Starter Kit uses a single FPC (flexible printed circuit) ribbon cable that connects each module to the main board in seconds. Every connection is identical, foolproof, and reliable. Components snap together and stay together.
+* Breadboards and jumper wires are the most common source of frustration for new builders: loose connections, wrong pins, wires that pop out. The ESPHome Starter Kit uses a single FPC (flexible printed circuit) ribbon cable that connects each module to the ESP32-C6 in seconds. Every connection is identical, foolproof, and reliable. Components snap together and stay together.
 
 15\. **Why the ESP32-C6 chip?**
 

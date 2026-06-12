@@ -4,7 +4,7 @@ description: A short overview of what ESPHome is, how the Device Builder app fit
 ---
 # Explaining ESPHome
 
-ESPHome is the open-source firmware project that powers your Apollo ESPHome Starter Kit. You describe what is connected to your board (a button, a sensor, an LED) and ESPHome runs on the device, exposes those parts to Home Assistant, and accepts updates over the network.
+ESPHome is the open-source firmware project that powers your Apollo ESPHome Starter Kit. You describe what is connected to your ESP32-C6 (a button, a sensor, an LED) and ESPHome runs on the device, exposes those parts to Home Assistant, and accepts updates over the network.
 
 You do not need to write any code to use it. For the Starter Kit, the **ESPHome Device Builder** app handles it.
 
@@ -12,7 +12,7 @@ You do not need to write any code to use it. For the Starter Kit, the **ESPHome 
 
 These two names get used interchangeably, but they are different pieces:
 
-- **ESPHome** is the software that runs on your device after it has been flashed. It is what makes your board talk to Home Assistant, expose its sensors and controls, and accept wireless updates.
+- **ESPHome** is the software that runs on your device after it has been flashed. It is what makes your ESP32-C6 talk to Home Assistant, expose its sensors and controls, and accept wireless updates.
 - **ESPHome Device Builder** is the app where you set everything up. Pick the components you want (button, LED, sensor, etc.), click **Install**, and the Builder compiles the firmware and flashes it to your device. Run it as a desktop app on Windows, Mac, or Linux, or install it as a Home Assistant app.
 
 For the Starter Kit, you will spend almost all your time in the Device Builder.

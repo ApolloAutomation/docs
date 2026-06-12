@@ -545,6 +545,7 @@ nav:
               - What is YAML?: products/ESPHome-Starter-Kit/learning-the-basics/what-is-yaml.md
               - What is secrets.yaml?: products/ESPHome-Starter-Kit/learning-the-basics/what-is-secrets-yaml.md
               - HA Integration: products/ESPHome-Starter-Kit/learning-the-basics/how-esphome-talks-to-home-assistant.md
+          - Community Corner: products/ESPHome-Starter-Kit/community-corner.md
           - FAQ: products/ESPHome-Starter-Kit/faq.md
       - Holiday Ornaments:
           - H-1:

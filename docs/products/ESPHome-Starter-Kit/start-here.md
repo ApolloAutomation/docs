@@ -15,7 +15,7 @@ By the end of this wiki you'll know how to:
 
 ## What's in the kit
 
-Your kit arrives as a single snap-apart panel that includes the ESP32-C6 main board along with a selection of interchangeable modules. The kit also includes three ribbon cables for connecting modules to the main board, one more than any project uses at once so you always have a spare, plus a stand for the LED & Buzzer module.
+Your kit arrives as a single snap-apart panel that includes the ESP32-C6 along with a selection of interchangeable modules. The kit also includes three ribbon cables for connecting modules to the ESP32-C6, one more than any project uses at once so you always have a spare, plus a stand for the LED & Buzzer module.
 
 ![](../../assets/esphome-starter-kit-whats-in-the-box.png)
 
@@ -34,7 +34,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 
 ## Meet the modules
 
-**ESP32-C6 main board**
+**ESP32-C6**
 
 * The brain of every project you'll build with the kit. It handles Wi-Fi and Bluetooth, runs your ESPHome config, and exposes the GPIO pins the modules plug into.
 
@@ -76,13 +76,13 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 
 **FPC cables**
 
-* Each module connects to the main board through the FPC connector using one of the three provided cables. *Tear the brown paper bag open from one of the ends. Please DO NOT use scissors as you could accidentally cut the cables!*
+* Each module connects to the ESP32-C6 through the FPC connector using one of the three provided cables. *Tear the brown paper bag open from one of the ends. Please DO NOT use scissors as you could accidentally cut the cables!*
 
 ![](../../assets/esphome-starter-kit-fpc-cables-only.jpg)
 
 ## Next: bring it online
 
-Once you've identified your modules and snapped them off the panel, the next step is to connect the main board to your computer and walk through your first ESPHome configuration.
+Once you've identified your modules and snapped them off the panel, the next step is to connect the ESP32-C6 to your computer and walk through your first ESPHome configuration.
 
 <a href="../setup/first-steps/" class="md-button md-button--primary">   <img src="/assets/esphome-logo.svg" />   Next - First Steps </a>
 
