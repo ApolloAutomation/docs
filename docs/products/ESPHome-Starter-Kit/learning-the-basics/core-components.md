@@ -53,7 +53,7 @@ Apollo ships the rail enabled and set to come back on after a reboot, so the kit
 - **Restore mode.** Controls what happens to the rail when the device powers back on after losing power. The Apollo default is **restore the last state, default to on**, so a power blip won't leave your modules dark. Other options like "always on" or "always off" are available if you want a specific boot behavior.
 - **Hide it from Home Assistant.** By default the rail shows up as a controllable switch entity in HA, handy for power-cycling a flaky module from an automation. If you'd rather it not clutter your dashboard, mark it `internal: true` under the advanced settings.
 - **Icon and name.** Cosmetic, but you can rename the entity or change its icon if "Accessory Power Rail" isn't how you want it to appear in HA.
-- **GPIO pin.** Informational, not something you should change. The pin is fixed in hardware on the ESPHome Starter Kit board, so editing it will just stop the rail from working.
+- **GPIO pin.** Informational, not something you should change. The pin is fixed in hardware on the ESP32-C6, so editing it will just stop the rail from working.
 
 #### How It Works
 
