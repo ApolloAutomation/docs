@@ -10,19 +10,19 @@ This will guide you through adding on switches and keycaps to your BTN-1 then ad
 
 ###### Installing Brown Switches
 
-1\. Line up the two gold pins with the holes on your BTN-1, then press down gently. Be careful, as the pins can bend or get damaged if too much force is used.
+Line up the two gold pins with the holes on your BTN-1, then press down gently. Be careful, as the pins can bend or get damaged if too much force is used.
 
 ![](/assets/btn-1-install-switches-gif.webp)
 
 ###### Installing Keycaps
 
-1\. Line up the + on the keycap with the + on the top of the switch you installed. It may require a little pressure, but it should press on smoothly. Once placed, lightly tap to ensure the keycap is fully seated.
+Line up the + on the keycap with the + on the top of the switch you installed. It may require a little pressure, but it should press on smoothly. Once placed, lightly tap to ensure the keycap is fully seated.
 
 ![](/assets/btn-1-getting-started-installing-keycaps-gif.webp)
 
 ###### Flip Power Switch
 
-**1\.** Ensure the power switch is **turned on**. ** ** Because the BTN-1 includes a battery, it must have a physical on/off switch. When the device is on its side, flipping the switch **away from you** turns it **on**, and flipping it **toward you** turns it **off**.
+Only the battery version has a power switch. If yours has one, ensure it's **turned on**. With the device on its side, flipping the switch **away from you** turns it **on**, and flipping it **toward you** turns it **off**.
 
 ![](/assets/btn-1-flip-power-switch-on.webp)
 
@@ -34,7 +34,9 @@ To connect through the sensor's onboard hotspot follow the below:
 
 !!! success "If your sensor is restarting or not broadcasting Wi-Fi try another usb-c cable and power supply!"
 
-    ESP devices are sensitive to power fluctuations and require constant 5v power. Our devices use 1amp or less so most used phone chargers will work - just make sure it's a quality one!
+    The BTN-1 is sensitive to power fluctuations and needs constant 5v power. It draws 1amp or less so most used phone chargers will work, just make sure it's a quality one!
+
+    Still no hotspot? Follow the <a href="https://wiki.apolloautomation.com/products/btn1/troubleshooting/btn1-reset-wi-fi-credentials/" target="_blank" rel="noopener">Reset Wi-Fi Credentials</a> guide to make it broadcast again.
 
 2\. On your phone or PC, open the WiFi settings and connect to "Apollo BTN-1 Hotspot".
 
