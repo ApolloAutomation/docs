@@ -350,6 +350,7 @@ nav:
               - Additional Info:
                 - General Tips: products/temp1/setup/temp1-general-tips.md
                 - Sensor Definitions: products/temp1/setup/temp1-sensor-definitions.md
+                - Change Temp Probe Update Interval: products/temp1/setup/temp1-change-temp-probe-update-interval.md
                 - Prevent Sleep: products/temp1/additional-info/prevent-sleep.md
                 - How To Wake Up Your Sensor: products/temp1/battery-sensors/wake-up-battery-sensor.md
                 - Keep Your Sensor Awake With HA Helper: products/temp1/battery-sensors/awake-ha-helper.md
