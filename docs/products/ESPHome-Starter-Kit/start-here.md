@@ -6,6 +6,8 @@ description: Landing page of the ESPHome Starter Kit QR Code.
 
 Welcome to the start of your ESPHome journey with the all-new **ESPHome Starter Kit**!
 
+[:material-cart: Buy the ESPHome Starter Kit](https://apolloautomation.com/products/esk-1-esphome-starter-kit){ .md-button .md-button--primary }
+
 ![](../../assets/esphome-starter-kit-exploded-with-box-1.png)
 
 By the end of this wiki you'll know how to:
