@@ -42,21 +42,24 @@ description: >-
   }
 </style>
 
-<a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/" style="display: block; text-decoration: none; color: inherit; margin: 1.5em 0;">
-  <div class="apollo-esk-card" style="background: #4379AA; border-radius: 12px; padding: 24px 28px; position: relative; overflow: hidden; min-height: 260px;">
-    <div class="apollo-esk-text" style="max-width: calc(100% - 320px);">
-      <div style="color: #9ABD32; font-size: 13px; font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase;">
-        Spotlight
-      </div>
-      <h2 style="color: white; font-size: 28px; font-weight: 600; margin: 8px 0 6px;">ESPHome Starter Kit</h2>
-      <p style="color: #D4E8F8; font-size: 15px; margin: 0 0 16px; line-height: 1.5;">Build your first smart sensor from scratch.</p>
-      <span style="display: inline-flex; align-items: center; gap: 8px; background: #9ABD32; color: #1F425F; padding: 11px 22px; border-radius: 8px; font-weight: 600; font-size: 15px;">
-        View the setup guide →
-      </span>
+<div class="apollo-esk-card" style="background: #4379AA; border-radius: 12px; padding: 24px 28px; position: relative; overflow: hidden; min-height: 260px; margin: 1.5em 0;">
+  <div class="apollo-esk-text" style="max-width: calc(100% - 320px);">
+    <div style="color: #9ABD32; font-size: 13px; font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase;">
+      Spotlight
     </div>
-    <img class="apollo-esk-img" src="assets/esphome-starter-kit-at-sotoh-2026.jpg" alt="ESPHome Starter Kit" />
+    <h2 style="color: white; font-size: 28px; font-weight: 600; margin: 8px 0 6px;">ESPHome Starter Kit</h2>
+    <p style="color: #D4E8F8; font-size: 15px; margin: 0 0 16px; line-height: 1.5;">Build your first smart sensor from scratch.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 28px;">
+      <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/start-here/" style="display: inline-flex; align-items: center; gap: 8px; background: #9ABD32; color: #1F425F; padding: 11px 22px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none;">
+        View the setup guide →
+      </a>
+      <a href="https://apolloautomation.com/products/esk-1-esphome-starter-kit" style="display: inline-flex; align-items: center; gap: 8px; background: white; color: #1F425F; padding: 11px 22px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none;">
+        Buy now →
+      </a>
+    </div>
   </div>
-</a>
+  <img class="apollo-esk-img" src="assets/esphome-starter-kit-at-sotoh-2026.jpg" alt="ESPHome Starter Kit" />
+</div>
 
 &nbsp;
 
