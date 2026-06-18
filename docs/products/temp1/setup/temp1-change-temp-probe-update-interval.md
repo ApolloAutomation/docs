@@ -37,6 +37,53 @@ sensor:
 
 Your Temperature Probe will now report at the new interval.
 
+## Report only when the temperature changes
+
+A fast interval reacts quickly, but it also writes every single reading to Home Assistant and grows your database fast. If you want a quick response without that flood, read the probe often and only report when the temperature actually moves. ESPHome's `delta` filter does this: it reads on your interval but only sends a value when it differs enough from the last one it reported.
+
+The threshold is in the probe's native unit, Celsius. `0.5` means 0.5°C, which is roughly 0.9°F.
+
+=== "Intermediate: report on a threshold jump"
+
+    This reads the probe every second but only reports when the reading moves at least 0.5°C from the last value it sent. Steady temperatures stay quiet, and a real change shows up within about a second.
+
+    ```yaml
+    sensor:
+      - platform: dallas_temp
+        id: !extend temp_probe
+        update_interval: 1s
+        filters:
+          - delta: 0.5
+    ```
+
+    To think in percentages instead, pass a string with a `%`. The probe then reports when the reading changes by that much from the last value.
+
+    ```yaml
+        filters:
+          - delta: 5%
+    ```
+
+=== "Advanced: threshold jump plus a heartbeat"
+
+    The `delta` filter on its own can stay silent for a long time when the temperature is stable, which can look like the probe stopped working. Wrapping it in `or` with a `heartbeat` guarantees at least one reading on a slower schedule, on top of any threshold reports.
+
+    ```yaml
+    sensor:
+      - platform: dallas_temp
+        id: !extend temp_probe
+        update_interval: 1s
+        filters:
+          - or:
+              - delta: 0.5
+              - heartbeat: 60s
+    ```
+
+    This reports the moment the temperature moves 0.5°C, and otherwise sends a reading once a minute so you always know the probe is alive.
+
+!!! note "1 second is about as fast as the probe can go"
+
+    The DS18B20 probe needs around 750 ms to take a full-resolution reading, so `1s` is close to its limit. If you see missed or blank readings, raise the interval to `2s`.
+
 !!! success "Make sure the right probe is selected"
 
     The Temperature Probe only reads when **Select Probe** is set to `Temperature`. If it is set to `Food`, the probe reports nothing regardless of the update interval.
