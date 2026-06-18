@@ -8,6 +8,8 @@ This guide walks you through installing the ESPHome Device Builder app, and maki
 
 By the end you'll have your ESPHome Starter Kit flashed with a working configuration, showing up in Home Assistant, and reachable in a browser at its IP address or http://esphome-starter-kit.local via its built-in web server.
 
+[:material-cart: Buy the ESPHome Starter Kit](https://apolloautomation.com/products/esk-1-esphome-starter-kit){ .md-button .md-button--primary }
+
 !!! tip "Click the (+) for extra context"
 
     <div markdown class="annotate">
