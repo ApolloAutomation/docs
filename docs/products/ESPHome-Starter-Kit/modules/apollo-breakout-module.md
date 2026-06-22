@@ -1,10 +1,10 @@
 ---
-title: Adding the Apollo Starter Module
+title: Adding the Apollo Breakout Module
 description: >-
-  Wire up the ESPHome Starter Kit Breakout Module, add it through ESPHome Device
-  Builder, and verify it in the web server.
+  Attach the ESPHome Starter Kit Breakout Module to your ESP32-C6 and wire up
+  your own components.
 ---
-# Adding the Apollo Starter Module
+# Adding the Apollo Breakout Module
 
 The Breakout Module gives your starter kit room to grow. It breaks the ESP32-C6's pins out so you can wire up your own parts, the components the kit doesn't include. By the end of this tutorial you'll have it attached to your ESP32-C6 and be ready to build something of your own.
 
