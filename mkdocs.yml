@@ -529,6 +529,7 @@ nav:
               - Motion: products/ESPHome-Starter-Kit/modules/motion-module.md
               - Temp & Humidity: products/ESPHome-Starter-Kit/modules/temperature-humidity-module.md
               - LED & Buzzer: products/ESPHome-Starter-Kit/modules/rgb-buzzer-module.md
+              - Breakout Module: products/ESPHome-Starter-Kit/modules/breakout-module.md
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
               - Connect to Home Assistant: products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md
