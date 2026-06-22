@@ -74,6 +74,8 @@ plugins:
   - meta
   - redirects:
       redirect_maps:
+        # Starter Kit Breakout Module slug rename
+        'products/ESPHome-Starter-Kit/modules/breakout-module.md': 'products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md'
         # PR #733: R-PRO-1 calibrating-and-updating -> setup
         'products/rpro1/calibrating-and-updating/zones-ha.md': 'products/rpro1/setup/zones-ha.md'
         'products/rpro1/calibrating-and-updating/zones-hlk.md': 'products/rpro1/setup/zones-hlk.md'
@@ -529,7 +531,7 @@ nav:
               - Motion: products/ESPHome-Starter-Kit/modules/motion-module.md
               - Temp & Humidity: products/ESPHome-Starter-Kit/modules/temperature-humidity-module.md
               - LED & Buzzer: products/ESPHome-Starter-Kit/modules/rgb-buzzer-module.md
-              - Breakout Module: products/ESPHome-Starter-Kit/modules/breakout-module.md
+              - Breakout Module: products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
               - Connect to Home Assistant: products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md
