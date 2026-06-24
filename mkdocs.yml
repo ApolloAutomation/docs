@@ -545,6 +545,8 @@ nav:
           - Everyday Use:
               - Motion-Activated Room Lights: products/ESPHome-Starter-Kit/everyday-use/motion-activated-room-lights.md
               - Temperature on Your Dashboard: products/ESPHome-Starter-Kit/everyday-use/temperature-on-your-dashboard.md
+              - Button Toggles a Room Light: products/ESPHome-Starter-Kit/everyday-use/button-toggles-room-light.md
+              - Trash Night Reminder: products/ESPHome-Starter-Kit/everyday-use/trash-night-reminder.md
           - Learn the Basics:
               - Explaining ESPHome: products/ESPHome-Starter-Kit/learning-the-basics/explaining-esphome.md
               - Device Builder Tour: products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md
