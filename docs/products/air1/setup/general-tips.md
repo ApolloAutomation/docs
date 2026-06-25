@@ -56,6 +56,18 @@ The **U.S. Environmental Protection Agency (EPA)**<a href="https://www.airnow.go
 
 ---
 
+###### NowCast AQI
+
+<a href="https://esphome.io/components/sensor/aqi/" target="_blank" rel="noreferrer nofollow noopener">NowCast AQI</a> takes your PM2.5 and PM10 readings and converts them into a single 0–500 number using the EPA's formula. That number maps directly to the AQI categories in the table above: bigger = worse.
+
+The AIR-1 calculates this automatically and exposes it as a sensor in Home Assistant.
+
+!!! tip "NowCast AQI is easier to automate and understand than raw PM"
+
+    Instead of comparing µg/m³ values across PM1, PM2.5, PM4, and PM10, you get one number. Set an automation to trigger at 100 (Moderate) or 150 (Unhealthy for Sensitive Groups) and anyone in your household can understand why it fired.
+
+---
+
 ###### Indoor Air Quality Notes
 
 * **PM1** and **PM2.5** are especially important for indoor air monitoring since these smaller particles are more likely to come from cooking, candles, smoking, or inadequate ventilation.
