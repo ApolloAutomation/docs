@@ -8,18 +8,24 @@ The AIR-1's three onboard RGB LEDs can double as an air quality gauge. Pick what
 
 !!! note "Requires firmware 26.6.25.1 or newer"
 
-    The **LED Indicator Source** control ships in AIR-1 firmware 26.6.25.1 and later. If you don't see it, [update your firmware](../../general/calibrating-and-updating/updating-firmware.md) first.
+    The **Air Quality LED Source** control ships in AIR-1 firmware 26.6.25.1 and later. If you don't see it, [update your firmware](../../general/calibrating-and-updating/updating-firmware.md) first.
 
-## Pick what the LEDs track
+## Turn it on
 
-Open the AIR-1 device in Home Assistant and find the **LED Indicator Source** dropdown.
+The indicator is off by default. Open the AIR-1 device in Home Assistant, find the **Air Quality LED Source** dropdown, and pick what you want the LEDs to track.
 
 | Option | LEDs show |
 | --- | --- |
-| **[NowCast AQI](../setup/general-tips.md#nowcast-aqi)** | US EPA Air Quality Index (default) |
+| **Off** | LEDs stay dark (default) |
+| **[NowCast AQI](../setup/general-tips.md#nowcast-aqi)** | US EPA Air Quality Index |
 | **[CO2](../setup/general-tips.md#scd40-co2-sensor)** | Carbon dioxide, in ppm |
 | **[VOC Index](../setup/general-tips.md#voc-index)** | Sensirion VOC Index |
-| **Off** | LEDs stay dark |
+
+Switch back to **Off** any time to turn the indicator off and leave the LEDs free for your own automations.
+
+## Set the brightness
+
+Drag the **Air Quality LED Brightness** slider to dim the LEDs, handy if the AIR-1 sits in a bedroom. It runs from 5% to 100% (default 100%) and applies the moment you change it.
 
 ## Color scale
 
@@ -38,8 +44,8 @@ The VOC bands line up with the **VOC Quality** sensor (Improved, Normal, Abnorma
 
 ## Tips and quirks
 
-- The color refreshes about every 10 seconds. Change the dropdown and it catches up on the next reading.
-- Choose **CO2** and the first color can take up to a minute on a cold start, because the CO₂ sensor reports once a minute. The firmware gives it a nudge at boot, so it's usually quicker than that.
-- A sensor that's still warming up reads as *unknown*. The LEDs wait for a real value rather than flashing a false hazardous color.
+- The color updates whenever the selected sensor reports a fresh reading, so NowCast AQI and VOC refresh every few seconds while CO₂ updates about once a minute.
+- With **CO2** selected, the first color appears once the SCD40 has a reading, up to a minute after boot. That wait is deliberate: the sensor needs a moment to settle, and an early reading would not be trustworthy.
+- A sensor that's still warming up reads as *unknown*. The LEDs stay off until there's a real value rather than flashing a false color.
 
 [Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){ .md-button }
