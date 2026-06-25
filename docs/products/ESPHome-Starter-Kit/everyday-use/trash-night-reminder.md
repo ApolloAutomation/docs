@@ -197,14 +197,6 @@ Add four triggers, one at a time. Each one is a **Calendar** trigger, and each g
     mode: single
     ```
 
-## Test it
-
-Rather than waiting for your next pickup night, add a short test event to confirm everything fires.
-
-1. Open the **Calendar** view and add a new event on the **Trash** calendar starting one minute from now and ending two minutes from now.
-2. Watch the RGB LEDs. They should turn amber at the start time and go off at the end time.
-3. Delete the test event once you're done.
-
 !!! success "Your kit is now a physical reminder for Home Assistant events!"
 
     The same pattern works for any calendar-driven reminder - medication schedules, bin days for a second home, watering days for the garden. Swap the colors, the calendar name, or the action and you have a new reminder with no extra hardware.
