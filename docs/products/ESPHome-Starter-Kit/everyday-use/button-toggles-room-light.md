@@ -80,6 +80,6 @@ Press the button on the Button module. The light you targeted toggles. Press aga
 
     Any light in your home - a bedside lamp, a ceiling group, a smart bulb strip - is one button press away. Swap `light.toggle` for `light.turn_on` with a `brightness_pct` to land on a specific brightness, or target a light group to control a whole room at once.
 
-<a href="trash-night-reminder/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Trash Night Reminder</a>
+<a href="../trash-night-reminder/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Trash Night Reminder</a>
 
 --8<-- "_snippets/community-help.md"
