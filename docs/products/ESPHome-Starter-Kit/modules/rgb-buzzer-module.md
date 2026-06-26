@@ -12,8 +12,8 @@ The LED & Buzzer is the starter kit's notification module, a strip of ten addres
 
     Work through the two prerequisites first:
 
-    * [Start Here](/products/ESPHome-Starter-Kit/start-here/) to snap the RGB & Buzzer module off the panel.
-    * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to install ESPHome Device Builder and create your starter kit device.
+    * [Start Here](/products/ESPHome-Starter-Kit/start-here.md) to snap the RGB & Buzzer module off the panel.
+    * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md) to install ESPHome Device Builder and create your starter kit device.
 
 #### Prerequisite
 

@@ -14,15 +14,15 @@ This tutorial uses the Button module and the RGB & Buzzer module connected to th
 
     Work through these pages first. This tutorial assumes your device is flashed and both modules are connected:
 
-    * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to create your starter kit device in ESPHome Device Builder.
-    * [Adding the Button Module](/products/ESPHome-Starter-Kit/modules/button-module/) to wire up the input.
-    * [Adding the LED & Buzzer Module](/products/ESPHome-Starter-Kit/modules/rgb-buzzer-module/) to wire up the RGB output.
+    * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md) to create your starter kit device in ESPHome Device Builder.
+    * [Adding the Button Module](/products/ESPHome-Starter-Kit/modules/button-module.md) to wire up the input.
+    * [Adding the LED & Buzzer Module](/products/ESPHome-Starter-Kit/modules/rgb-buzzer-module.md) to wire up the RGB output.
 
 ## Build the automation
 
 ESPHome Device Builder has a new GUI for building <a href="https://esphome.io/automations/" target="_blank" rel="noreferrer nofollow noopener">automations</a>, so you can wire a trigger to an action without hand-writing YAML. The trigger is the *when* of the automation, the thing that makes it fire. The action is the *then do*, what happens when it fires. If you've built automations in Home Assistant, this is the same mental model.
 
-1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](/products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour/#editor).
+1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](/products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md#editor).
 2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
 
     ![](../../../assets/esphome-device-builder-add-automation.gif)
@@ -72,7 +72,7 @@ ESPHome Device Builder has a new GUI for building <a href="https://esphome.io/au
             - light.toggle: rgb_leds
     ```
 
-    See [Device Builder Tour → YAML editor (right)](/products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour/#yaml-editor-right) for the full breakdown of the YAML pane.
+    See [Device Builder Tour → YAML editor (right)](/products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md#yaml-editor-right) for the full breakdown of the YAML pane.
 
 ## Install the firmware
 
