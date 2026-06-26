@@ -67,7 +67,7 @@ flowchart LR
 
 For this to react quickly, the probe needs to report faster than its 60 second default. Donovan reports it every 3 seconds and keeps a 60 second heartbeat, so Home Assistant reacts fast while you can still tell at a glance that the probe is alive. Two guards keep the data clean: the `85.0` reading a DS18B20 sends at power-on is dropped, and readings are ignored when the **Select Probe** option is set to `Food`.
 
-For the full walkthrough of overriding probe YAML in the ESPHome Builder, including the simpler delta-plus-heartbeat pattern, see [How To Change The Temperature Probe Update Interval](../setup/temp1-change-temp-probe-update-interval.md).
+For the full walkthrough of overriding probe YAML in the ESPHome Builder, including the simpler delta-plus-heartbeat pattern, see [How To Change The Temperature Probe Update Interval](/products/temp1/setup/temp1-change-temp-probe-update-interval.md).
 
 ```yaml
 sensor:
