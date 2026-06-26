@@ -222,7 +222,7 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 
 ### Test your LED
 
-Your kit's default project includes the [**Web Server**](../../learning-the-basics/core-components/#web-server) component, which lets you navigate to the IP address of your device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>
+Your kit's default project includes the [**Web Server**](../learning-the-basics/core-components.md#web-server) component, which lets you navigate to the IP address of your device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>
 
 !!! warning "Use http:// not https://"
 

@@ -150,7 +150,7 @@ The latest AIR-1 firmware keeps the SCD40 calibrated automatically. The sensor a
 
 !!! warning "Auto calibration needs regular fresh air"
 
-    If your AIR-1 sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), automatic self-calibration will slowly drag the CO<sub>2</sub> readings down. Turn off the **CO2 Auto Calibration** switch on the device page and follow the [manual calibration guide](../../../general/calibrating-and-updating/co2-calibration/) every 1 to 2 years instead.
+    If your AIR-1 sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), automatic self-calibration will slowly drag the CO<sub>2</sub> readings down. Turn off the **CO2 Auto Calibration** switch on the device page and follow the [manual calibration guide](../../general/calibrating-and-updating/co2-calibration.md) every 1 to 2 years instead.
 
 ![](/assets/co2-levels-drop-after-hvac-on.png)
 

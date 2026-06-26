@@ -52,7 +52,7 @@ For a single device, the on-device web page is often enough. For anything that t
 
     Some router setups (notably VLANs and segmented networks) block mDNS broadcasts. If your device never shows up under **Discovered**, add the integration manually using the device's IP address.
 
-    For UniFi networks specifically, see our [UniFi mDNS troubleshooting guide](../../../general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue/).
+    For UniFi networks specifically, see our [UniFi mDNS troubleshooting guide](../../general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md).
 
 <a href="../what-is-secrets-yaml/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - What is secrets.yaml?</a> <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Tutorial - Connect to Home Assistant</a>
 
