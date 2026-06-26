@@ -12,8 +12,8 @@ Out of the box, your RGB module turns on, turns off, and changes color. ESPHome 
 
     Work through these pages first. This tutorial assumes your device is flashed and has an addressable RGB light component already configured (either the **Onboard RGB LED** or the **RGB LEDs** from the LED & Buzzer module):
 
-    * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps/) to create your starter kit device in ESPHome Device Builder.
-    * [Adding the LED & Buzzer Module](/products/ESPHome-Starter-Kit/modules/rgb-buzzer-module/) if you're using the LED & Buzzer module.
+    * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md) to create your starter kit device in ESPHome Device Builder.
+    * [Adding the LED & Buzzer Module](/products/ESPHome-Starter-Kit/modules/rgb-buzzer-module.md) if you're using the LED & Buzzer module.
 
 ## Add the effects
 
@@ -57,7 +57,7 @@ With the device back online, open the local web page at `http://esphome-starter-
 
 ![](../../../assets/esphome-device-builder-test-effects-web-server.gif)
 
-If you've already followed [Connect to Home Assistant](/products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant/), the same **Effect** dropdown shows up on the light entity card in Home Assistant.
+If you've already followed [Connect to Home Assistant](/products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md), the same **Effect** dropdown shows up on the light entity card in Home Assistant.
 
 !!! success "You just edited YAML!"
 

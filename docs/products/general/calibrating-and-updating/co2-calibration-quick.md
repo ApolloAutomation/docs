@@ -6,7 +6,7 @@ description: Step by step guide for re-calibrating your SCD40 CO2 sensor
 
 !!! info "Your sensor calibrates itself"
 
-    The latest Apollo firmware enables the SCD40's automatic self-calibration by default on every device with the CO<sub>2</sub> sensor (AIR-1, R-PRO-1, MSR-2, and MTR-1), so you only need this guide if you turned the **CO2 Auto Calibration** switch off. See the [full calibration guide](../co2-calibration/) for how auto calibration works and when to turn it off.
+    The latest Apollo firmware enables the SCD40's automatic self-calibration by default on every device with the CO<sub>2</sub> sensor (AIR-1, R-PRO-1, MSR-2, and MTR-1), so you only need this guide if you turned the **CO2 Auto Calibration** switch off. See the [full calibration guide](co2-calibration.md) for how auto calibration works and when to turn it off.
 
 !!! tip "Calibrate manually every 1 to 2 years when auto calibration is off"
 

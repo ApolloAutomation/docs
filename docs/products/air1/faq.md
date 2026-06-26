@@ -61,7 +61,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 15\. **How do I calibrate the CO2 sensor?**
 
-* You usually don't need to. The latest AIR-1 firmware enables automatic self-calibration, which keeps the SCD40 accurate as long as the sensor sees fresh air (about 420 ppm) at least once a week. If your AIR-1 sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), turn off the **CO2 Auto Calibration** switch on the device page and follow the [manual calibration guide](../../general/calibrating-and-updating/co2-calibration/) every 1 to 2 years instead.
+* You usually don't need to. The latest AIR-1 firmware enables automatic self-calibration, which keeps the SCD40 accurate as long as the sensor sees fresh air (about 420 ppm) at least once a week. If your AIR-1 sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), turn off the **CO2 Auto Calibration** switch on the device page and follow the [manual calibration guide](../general/calibrating-and-updating/co2-calibration.md) every 1 to 2 years instead.
 
 16\. **Does the AIR-1 work outdoors?**
 
