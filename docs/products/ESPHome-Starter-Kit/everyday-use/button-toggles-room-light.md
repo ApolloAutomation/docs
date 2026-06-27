@@ -8,7 +8,7 @@ description: >-
 
 <span class="difficulty lvl-1">Difficulty: Level 1</span>
 
-The Starter Kit's button already controls the kit's own RGB LEDs in [Button Controlled LEDs](../automations/button-controlled-leds.md). This tutorial takes it further: pressing the button fires a **Home Assistant automation** that toggles any light in your home. Same physical button, but now it reaches across your whole house.
+This is an alternative way to use the Starter Kit's button. Instead of toggling the kit's own RGB LEDs on the device, the button fires a **Home Assistant automation** that toggles any light in your home. Same physical button, but now it can target any entity or fire any script or scene in Home Assistant. It's one or the other, though: if you've already built the on-device [Button Controlled LEDs](../automations/button-controlled-leds.md) automation, remove it in ESPHome Device Builder first, otherwise a single press toggles both the kit's RGB LEDs and your room light.
 
 !!! note "Before you start"
 
@@ -18,42 +18,41 @@ The Starter Kit's button already controls the kit's own RGB LEDs in [Button Cont
     * [Adding the Button Module](../modules/button-module.md) to wire up the input.
     * [Connect to Home Assistant](../tutorials/connect-to-home-assistant.md) to bring the device's entities into HA.
 
-## Find your button entity
-
-The Button module shows up in Home Assistant as a binary sensor. You need its entity ID before building the automation.
-
-1. Open [Settings → Devices & services → ESPHome](https://my.home-assistant.io/redirect/integration/?domain=esphome) in Home Assistant.
-2. Click your Starter Kit device.
-3. Under **Entities**, look for a binary sensor named **Button Module**. Click it to open the entity detail, then note the entity ID shown near the top of the dialog - it will look something like `binary_sensor.esphome_starter_kit_button_module`. Keep that ID handy.
-
 ## Build the automation
 
 1. Open [Settings → Automations & scenes](https://my.home-assistant.io/redirect/automations/) in Home Assistant.
 2. Click **+ Create automation** in the bottom right, then choose **Create new automation**.
-3. Under **Triggers**, click **+ Add trigger** and choose **Entity → State**.
+3. Under **Triggers**, click **+ Add trigger**, type `state`, and choose **State**.
 
     <div class="annotate" markdown>
 
-    - **Entity** → select your button entity (the binary sensor you found above)
+    - In the **Entity** field, type `button module` and select **Button Module**.
     - **To** → `On` (1)
 
     </div>
 
     1.  The button registers as a binary sensor. `On` maps to a pressed state - the moment you push the button down. Home Assistant fires the automation at that instant.
 
-4. Under **Then do**, click **+ Add action** and choose **Perform action** (labeled **Call service** in older versions of Home Assistant).
+    ![](../../../assets/button-toggles-room-light-hass-automation-example.gif)
+
+4. Under **Then do**, click **+ Add action**, type `toggle light`, and select **Light: Toggle**.
 
     <div class="annotate" markdown>
 
-    - Search for and select **light.toggle** (1)
-    - Under **Targets**, click **Choose entity** and pick the light you want to control.
+    - **Light: Toggle** handles both directions: on if the light is off, off if it's on. (1)
+    - Under **Targets**, click **+ Choose entity**, search for your light such as `Brandons Room`, and select it. (2)
 
     </div>
 
-    1.  `light.toggle` turns the light on if it is off, and off if it is on - one action handles both directions. If you want to always turn on or always turn off, use `light.turn_on` or `light.turn_off` instead.
+    1.  If you'd rather it always turn on or always turn off, use **Light: Turn on** or **Light: Turn off** instead.
+    2.  You can also set a **Color**, **Color temperature**, or **Brightness** here for when the light turns on. Toggling it off ignores them.
 
-5. Give the automation a name like `Button toggles room light`.
-6. Click **Save**.
+    ![](../../../assets/button-toggles-room-light-action-example.gif)
+
+5. Click **Save**.
+6. Give the automation a name like `Button toggles room light`, then click **Save** again.
+
+    ![](../../../assets/button-toggles-room-light-name-and-save.gif)
 
 ??? note "What the automation looks like in YAML"
 
@@ -61,14 +60,20 @@ The Button module shows up in Home Assistant as a binary sensor. You need its en
 
     ```yaml
     alias: Button toggles room light
+    description: ""
     triggers:
       - trigger: state
-        entity_id: binary_sensor.esphome_starter_kit_button_module
-        to: "on"
+        entity_id:
+          - binary_sensor.esphome_starter_kit_button_module
+        to:
+          - "on"
+    conditions: []
     actions:
       - action: light.toggle
+        metadata: {}
         target:
-          entity_id: light.your_room_light
+          entity_id: light.brandons_room
+        data: {}
     mode: single
     ```
 
