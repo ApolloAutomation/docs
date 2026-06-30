@@ -6,7 +6,7 @@ description: How a community member uses an Apollo TEMP-1 to drive a hot water r
 
 !!! info "Contributed by Donovan"
 
-    This is a real setup shared by Donovan, an Apollo community member. We will flesh out the Home Assistant side once he shares his automations.
+    Big thanks to Donovan for building this and sharing his whole setup, automations included, so we could package it up as the blueprint below.
 
 There are two normal ways to get hot water at a sink, and each has a catch. A small under-sink tank gives you instant hot water with very little energy, but it runs out after a gallon or two. The main house water heater never runs out, but you either wait while cold water runs down the drain, or you get a cold-water sandwich when the tank water hands off to the line water.
 
@@ -59,7 +59,7 @@ flowchart LR
 | Bosch ES2.5 mini tank (2.5 gal, 120 V) | Instant hot water for small draws |
 | AquaMotion AMH3K-7N circulator pump | Recirculates the loop to pull hot water up from the house heater |
 | US Solid 1/2" 3-way L-type motorized ball valve | Selects the hot source: unpowered feeds the Bosch, powered feeds the house heater |
-| TP-Link Kasa smart power strip | Switches the pump, valve, Bosch, and TEMP-1 outlets, and monitors energy use |
+| Smart plugs with power monitoring (we suggest Zooz Z-Wave, like the ZEN04; Donovan used a TP-Link Kasa strip) | Switch the pump and valve, and report the pump's power so Home Assistant knows when it finishes |
 | Aqara wireless mini switch (Zigbee) | The "I want hot water" button |
 | Alexa speaker | Announces when the line is ready |
 
@@ -92,8 +92,52 @@ sensor:
           - heartbeat: 60s
 ```
 
-## Home Assistant automations
+## Set it up in Home Assistant
 
-!!! note "Work in progress"
+Donovan's whole system is one blueprint. Import it, pick your entities, set your temperatures, and save. There are no helpers to create and no automations to copy and rename.
 
-    The whole cycle is driven by Home Assistant automations. The button press starts the pump, a TEMP-1 threshold flips the valve and triggers the Alexa announcement, and a lower threshold reverts the valve. We'll add Donovan's actual automation YAML here once he shares it.
+!!! info "Before you import"
+
+    Two things need to be in place: your TEMP-1 probe should report quickly (see [TEMP-1 configuration](#temp-1-configuration) above), and your pump and valve should be on smart plugs Home Assistant can switch, with power monitoring on the pump.
+
+### Import the blueprint
+
+1\. Click the button below, then click **Open link**.
+
+<a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FTEMP-1%2Fhot-water-recirculation.yaml" target="_blank" rel="noreferrer noopener"><img alt="Import Blueprint" src="https://my.home-assistant.io/badges/blueprint_import.svg" /></a>
+
+2\. Click **Preview**, then **Import blueprint**.
+
+![](/assets/btn-1-blueprint-auto-import.gif)
+
+3\. Click **Apollo Automation Hot Water Recirculation (TEMP-1)**, create an automation from it, and fill in the inputs below.
+
+### What you'll fill in
+
+| Input | What to pick |
+| --- | --- |
+| **Start trigger** | The press that starts a cycle, like your Aqara button's single click. Pick it from the trigger editor just like any automation. You can add more than one (see the tip below). |
+| **Circulator pump plug** | The smart plug powering the pump. |
+| **Circulator pump power** | That plug's power (W) sensor, how the system knows the pump has finished. |
+| **3-way valve plug** | The smart plug powering the valve. |
+| **Hot line temperature (TEMP-1)** | Your TEMP-1 probe. |
+| **Activate / Return temperature** | When to switch to the house heater, and when to revert. Both default to 90 °F. |
+| **Pump finished below (W)** | The power level that means the pump's thermostat cut the motor. Default 20 W. |
+| **Pump / Valve safety timeout** | Backstops that force the pump and valve off if a signal is missed. Default 5 and 60 minutes. |
+| **Actions when the water is ready** | Optional. Runs the moment the valve opens: announce on a speaker, turn on the shower fan, flash a light. |
+
+!!! tip "Starting by button, voice, or dashboard"
+
+    The blueprint runs a cycle whenever the **Start trigger** fires, so it works with whatever you give it. Add your button's single-press for the physical button. To also start from a dashboard tap or a voice assistant (Donovan uses a Nabu Casa voice command), add a second trigger: your pump plug turning on. Then tapping that plug on a card, or saying "turn on the circulator," kicks off the whole cycle.
+
+### Tuning
+
+Both temperatures default to 90 °F. The probe reads the outside of the angle stop through a zip-tie, so it lags the water by a few degrees. Nudge **Activate** up if the valve flips before the water is genuinely hot, or down if you're left waiting.
+
+**Pump finished below** should sit under the pump's running draw but above its standby. 20 W suits the AquaMotion AMH3K; check yours on the plug's power sensor.
+
+The two safety timeouts are backstops. If a signal is ever missed, the pump and valve still shut themselves off, so the 5 and 60 minute defaults are deliberately generous.
+
+!!! note "Donovan's extras"
+
+    Donovan also flashes the shower lights as a silent "ready" cue, and ties his shower exhaust fan into a Moen Flo that switches it off once the shower's water stops. Both drop straight into the **Actions when the water is ready** slot, alongside (or instead of) the spoken announcement.
