@@ -75,6 +75,8 @@ Add a repeating event to each calendar to match your actual pickup schedule.
 
 6. Click **Save**.
 
+    ![](../../../assets/trash-pickup-recurring-event.gif)
+
 ??? note "Do the same for the Recycle calendar"
 
     Select the day before recycle pickup, click **Add event**, and fill it in:
@@ -84,6 +86,8 @@ Add a repeating event to each calendar to match your actual pickup schedule.
     - Set the **start time** and **end time** to a window that evening, for example 7 PM to 9 PM.
     - Enable **Repeat** and set it to **Weekly** on that day. If recycle goes out more than once a week, scroll down and select the other day too.
     - Click **Save**.
+
+    ![](../../../assets/recycle-pickup-recurring-event.gif)
 
 ## Build the automation
 
