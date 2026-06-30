@@ -30,50 +30,60 @@ Never miss bin night again. Two **Home Assistant Local Calendars** - one for tra
     * [Adding the LED & Buzzer Module](../modules/rgb-buzzer-module.md) to wire up the RGB output.
     * [Connect to Home Assistant](../tutorials/connect-to-home-assistant.md) to bring the device's entities into HA.
 
-## Find your RGB LED entity
-
-The LED & Buzzer module's RGB strip shows up in Home Assistant as a light entity.
-
-1. Open [Settings → Devices & services → ESPHome](https://my.home-assistant.io/redirect/integration/?domain=esphome) in Home Assistant.
-2. Click your Starter Kit device.
-3. Under **Entities**, look for a light entity named **RGB LEDs**. Click it and note the entity ID near the top of the dialog - it will look something like `light.esphome_starter_kit_rgb_leds`. Keep that ID handy.
-
 ## Create the calendars
 
 Home Assistant's **Local Calendar** integration stores events entirely inside Home Assistant - no Google account or external service required.
 
 **Add the Trash calendar**
 
-1. Open [Settings → Devices & services](https://my.home-assistant.io/redirect/integrations/) and click **+ Add integration**.
-2. Search for **Local Calendar** and select it.
-3. Name it `Trash` and click **Submit**. Home Assistant creates a calendar entity called `calendar.trash`.
+1. Click the button below to start adding the **Local Calendar** integration:
+
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=local_calendar)
+
+2. Name it `Trash` and click **Submit**. Home Assistant creates a calendar entity called `calendar.trash`.
+
+    ![](../../../assets/create-trash-calendar.gif)
 
 **Add the Recycle calendar**
 
-4. Click **+ Add integration** again, search for **Local Calendar**, and repeat with the name `Recycle`. This creates `calendar.recycle`.
+3. Click the **Add integration** button below, name this one `Recycle`, and click **Submit**. This creates `calendar.recycle`.
+
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=local_calendar)
+
+    ![](../../../assets/create-recycle-calendar.gif)
 
 **Add recurring events**
 
 Add a repeating event to each calendar to match your actual pickup schedule.
 
-5. Open the **Calendar** view in your Home Assistant sidebar. If you do not see it, go to [Settings → Dashboards](https://my.home-assistant.io/redirect/lovelace_dashboards/) and add the **Calendar** panel.
-6. Click the first day your trash goes out to open the new-event dialog.
+4. Click the button below to open the **Calendar** view:
+
+    [![Open your Home Assistant instance and show your calendar.](https://my.home-assistant.io/badges/calendar.svg)](https://my.home-assistant.io/redirect/calendar/)
+
+5. Select the day before your pickup and click **Add event**.
 
     <div class="annotate" markdown>
 
     - **Calendar** → **Trash**
-    - **Title** → `Trash pickup`
-    - Set the **start time** to the evening before your pickup day (for example, 7 PM the night before). (1)
-    - Set the **end time** to the morning of pickup day (for example, 9 AM). (2)
-    - Enable **Repeat** and set it to **Weekly** on the correct day.
+    - **Title** → `Trash Pickup`
+    - Set the **start time** and **end time** to a window that evening, for example 7 PM to 9 PM. (1)
+    - Enable **Repeat** and set it to **Weekly** on that day. If your trash goes out more than once a week, scroll down and select the other day too.
 
     </div>
 
-    1.  The event start is when the RGB LEDs light up. Setting it to the evening before means the reminder is on while you are home and can act on it.
-    2.  The event end is when the LEDs turn back off. Make sure the end time falls after you would normally get the bins back in.
+    1.  The LEDs turn on at the start time and off at the end time, so this is your reminder window. Keep it to one evening rather than running it into the next day.
 
-7. Click **Save**.
-8. Repeat for the **Recycle** calendar on your recycle pickup day and time.
+6. Click **Save**.
+
+??? note "Do the same for the Recycle calendar"
+
+    Select the day before recycle pickup, click **Add event**, and fill it in:
+
+    - **Calendar** → **Recycle**
+    - **Title** → `Recycle Pickup`
+    - Set the **start time** and **end time** to a window that evening, for example 7 PM to 9 PM.
+    - Enable **Repeat** and set it to **Weekly** on that day. If recycle goes out more than once a week, scroll down and select the other day too.
+    - Click **Save**.
 
 ## Build the automation
 
@@ -81,7 +91,9 @@ One automation handles both calendars. Four triggers - event start and event end
 
 **Create the automation**
 
-1. Open [Settings → Automations & scenes](https://my.home-assistant.io/redirect/automations/) and click **+ Create automation** → **Create new automation**.
+1. Click the button below to open **Settings → Automations & scenes**, then click **+ Create automation** → **Create new automation**:
+
+    [![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
 **Add the triggers**
 
