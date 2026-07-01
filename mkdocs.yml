@@ -540,6 +540,7 @@ nav:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
               - Connect to Home Assistant: products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md
               - Light Effects: products/ESPHome-Starter-Kit/tutorials/light-effects.md
+              - Bluetooth Proxy: products/ESPHome-Starter-Kit/tutorials/bluetooth-proxy.md
           - Automations:
               - Button Controlled LEDs: products/ESPHome-Starter-Kit/automations/button-controlled-leds.md
               - Play a Tune: products/ESPHome-Starter-Kit/automations/play-a-tune.md
