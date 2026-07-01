@@ -32,7 +32,7 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 
 7\. **What is the ESPHome Desktop app?**
 
-* ESPHome Desktop is the free, open source desktop version of the ESPHome Device Builder. It runs on Mac, Windows, and Linux. For the first time, new users no longer need to install Home Assistant first, set up a Raspberry Pi, or run a server to use ESPHome. Download it, plug in the kit, and a guided setup walks you through the rest. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a> to download the latest release for your operating system, then follow [First Steps](setup/first-steps.md) to set up your first device. For a deeper look at how ESPHome and the app fit together, see [Explaining ESPHome](learning-the-basics/explaining-esphome.md).
+* ESPHome Desktop is the free, open source desktop version of the ESPHome Device Builder. It runs on Mac, Windows, and Linux. For the first time, new users no longer need to install Home Assistant first, set up a Raspberry Pi, or run a server to use ESPHome. Download it, plug in the kit, and a guided setup walks you through the rest. Open <a href="https://esphome.io/install" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a> to download the latest release for your operating system, then follow [First Steps](setup/first-steps.md) to set up your first device. For a deeper look at how ESPHome and the app fit together, see [Explaining ESPHome](learning-the-basics/explaining-esphome.md).
 
 8\. **What can I build with it?**
 
