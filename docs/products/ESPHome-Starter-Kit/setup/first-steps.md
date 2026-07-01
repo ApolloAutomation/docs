@@ -20,6 +20,8 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
     1.  Like this, you just opened your first annotation. Click outside the box to close it. Good dog.
 
+    Fun fact: the dog is Apollo Automation's original logo. Both the company name and the logo come from cofounder Trevor's real dog, Apollo.
+
 ---
 
 ### ESPHome Device Builder
