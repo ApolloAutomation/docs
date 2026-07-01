@@ -34,7 +34,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Windows"
 
-    1. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a> and click **Download installer** under the **Windows** tab.
+    1. Open <a href="https://esphome.io/install" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a> and click **Download installer** under the **Windows** tab.
     2. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation.
 
     !!! warning "You may see Windows prompts during install"
@@ -55,7 +55,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Mac"
 
-    1. Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. The page detects your OS and shows the macOS downloads. Pick the build that matches your chip:
+    1. Open <a href="https://esphome.io/install" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a>. The page detects your OS and shows the macOS downloads. Pick the build that matches your chip:
 
         - **Apple Silicon** (M1, M2, M3, M4, M5)
         - **Intel Mac**
@@ -94,7 +94,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Linux"
 
-    1.  Open <a href="https://desktop.esphome.io" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. The page opens on the **Linux** tab and shows **Download .deb** as the default. Click **Download .deb** to grab the Debian / Ubuntu package.
+    1.  Open <a href="https://esphome.io/install" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a>. The page opens on the **Linux** tab and shows **Download .deb** as the default. Click **Download .deb** to grab the Debian / Ubuntu package.
 
         If your distro fits a different format, switch to the matching tab on the download page first:
 
