@@ -10,15 +10,15 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 [:material-cart: Buy the ESPHome Starter Kit](https://apolloautomation.com/products/esk-1-esphome-starter-kit){ .md-button .md-button--primary }
 
-!!! tip "Click the (+) for extra context"
+!!! tip "Click the Apollo dog for extra context"
 
     <div markdown class="annotate">
 
-    When you see a small **(+)** icon next to a step or word, give it a click (1). It opens a side note with tips, gotchas, or examples you don't need on first read.
+    When you see a small Apollo dog peeking over a step or word, give it a click (1). It opens a side note with tips, gotchas, or examples you don't need on first read.
 
     </div>
 
-    1.  Like this, you just opened your first annotation. Click outside the box to close it.
+    1.  Like this, you just opened your first annotation. Click outside the box to close it. Good dog.
 
 ---
 
