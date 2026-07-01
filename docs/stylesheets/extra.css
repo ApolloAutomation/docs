@@ -234,3 +234,42 @@ article.md-typeset .md-button img {
   font-weight: 600;
   margin-bottom: 7px;
 }
+
+/* ===== Code annotation marker: full-color Apollo dog instead of the default (+) ===== */
+/* The theme draws the marker as a single-color CSS mask; drop the mask and
+   draw the colored image directly. Anchored to the bottom of the line so the
+   dog peeks over the text like the logo. */
+.md-annotation__index {
+  width: 3ch;
+  overflow: visible;
+}
+.md-annotation__index::before {
+  display: none; /* the theme's page-color backdrop circle behind the (+) */
+}
+.md-annotation__index::after {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background: url("/assets/apollo-dog-annotation-color.png") center bottom / contain no-repeat;
+  width: 3ch;
+  height: 3.2ch;
+  top: auto;
+  bottom: -0.15ch;
+  transform-origin: bottom center;
+}
+/* Code lines are tighter than prose; cap the dog a bit shorter there so the
+   ears don't cover characters on the line above. */
+code .md-annotation__index {
+  width: 2.6ch;
+}
+code .md-annotation__index::after {
+  height: 2.6ch;
+  bottom: -0.2ch;
+}
+/* The theme tints the marker on hover/open and rotates it 45deg while open;
+   keep the image untinted and upright, and grow it a little instead so it
+   still reacts to the pointer. */
+:hover > .md-annotation__index::after,
+.md-tooltip--active + .md-annotation__index::after {
+  background-color: transparent;
+  transform: scale(1.2);
+}
