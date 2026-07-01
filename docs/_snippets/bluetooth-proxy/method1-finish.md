@@ -1,17 +1,11 @@
-6\. Paste the code as shown below directly below the yaml you just edited above. Make sure the spaces look the same and there are no red lines under any of the code.
+![](/assets/esphome-device-builder-add-ble-proxy-method-1-edit-yaml.gif)
 
-![](/assets/bluetooth-proxy-tutorial-9.png)
+5\. Click **Save** then **Install** in the bottom right. Click **On the network** when prompted.
 
-7\. Click save then Install in the top right.
+![](/assets/esphome-device-builder-add-ble-proxy-save-install.gif)
 
-![](/assets/bluetooth-proxy-tutorial-11.png)
+6\. When you see the purple lines the device has booted successfully and the logs will show the **Bluetooth Proxy** section. Click **Stop** in the bottom right and you're finished!
 
-8\. Click "Wirelessly" and let it finish compiling then installing.
+![](/assets/ble-proxy-install-completed.png)
 
-![](/assets/bluetooth-proxy-tutorial-6.png)
-
-9\. When you see this "OTA Successful" it has finished and you can click "Close" in the bottom right.
-
-![](/assets/bluetooth-proxy-tutorial-7.png)
-
-10\. You are finished and your Apollo device is now acting as a Bluetooth Proxy!
+--8<-- "_snippets/bluetooth-proxy/verify.md"

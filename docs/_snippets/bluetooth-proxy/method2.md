@@ -1,45 +1,27 @@
-1\. Open the Esphome Device Builder.
+The easiest way is to let ESPHome Device Builder add the component for you. You can also paste the single line by hand.
 
-![](/assets/bluetooth-proxy-tutorial-1.png)
+1\. Open ESPHome Device Builder and click **Edit** on your device. The button below opens the app right in your Home Assistant.
 
-2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
+<a href="http://homeassistant.local:8123/5c53de3b_esphome" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Open ESPHome Device Builder</a>
 
-3\. Click "Edit" as shown below.
+Don't have it installed yet? Add it from the App Store with the badge below first.
 
-![](/assets/bluetooth-proxy-tutorial-2.png)
+[![Open your Home Assistant instance and show the dashboard of the ESPHome Device Builder app.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
-4\. Copy the code inside the codeblock below.
+2\. Click **Add Component** in the editor toolbar, search for **Bluetooth Proxy**, and click **Add**.
 
-```yaml
-  power_save_mode: LIGHT
-```
+![](/assets/esphome-device-builder-add-ble-proxy-component.gif)
 
-5\. Paste the code as shown below - make sure the spaces look the same and there are no red lines under any of the code.<br>![](/assets/bluetooth-proxy-tutorial-5.png)
-
-6\. Copy the code inside the codeblock below.
+Device Builder drops a single line into your config:
 
 ```yaml
 bluetooth_proxy:
-  active: true
-esp32_ble_tracker:
-  scan_parameters:
-    active: false
 ```
 
-7\. Paste the code on a new line at the very bottom of the file as shown below.
+That's all it needs. Active connections are on by default, and `bluetooth_proxy` automatically pulls in the <a href="https://esphome.io/components/esp32_ble_tracker/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Tracker</a> it depends on, so there's nothing else to add. Prefer to type it? Paste that one line at the top level of your YAML instead of using **Add Component**.
 
-![](/assets/bluetooth-proxy-tutorial-7-1.png)
+3\. Click **Save**, then **Install**, and choose **On the Network** to flash the new firmware over Wi-Fi.
 
-8\. Click save then Install in the top right.
+![](/assets/esphome-device-builder-add-ble-proxy-save-validate-install.gif)
 
-![](/assets/bluetooth-proxy-tutorial-8.png)
-
-9\. Click "Wirelessly" and let it finish compiling then installing.
-
-![](/assets/bluetooth-proxy-tutorial-6.png)
-
-10\. When you see this "OTA Successful" it has finished and you can click "Close" in the bottom right.
-
-![](/assets/bluetooth-proxy-tutorial-7.png)
-
-11\. You are finished and your Apollo device is now acting as a Bluetooth Proxy!
+--8<-- "_snippets/bluetooth-proxy/verify.md"
