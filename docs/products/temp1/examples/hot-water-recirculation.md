@@ -27,6 +27,10 @@ The TEMP-1 probe is zip-tied to the hot-water angle stop, so it reads the temper
 
 ![Hot water recirculation plumbing: the house heater feeds wall hot and cold lines, a circulator pump recirculates the loop, the TEMP-1 reads the wall hot line, a Bosch mini tank supplies instant hot water, and a 3-way valve selects which source feeds the sinks.](/assets/temp1-hot-water-recirculation.svg)
 
+Here's the real thing under Donovan's sink: the Bosch mini tank with the smart strip on top, the 3-way valve strapped to the wall behind it, and the circulator pump bolted to the floor on the right.
+
+![Under-sink install showing a Bosch mini tank with a smart power strip on top, a 3-way motorized valve on the wall, and a circulator pump bolted to the floor.](/assets/temp1-hot-water-recirculation-under-sink.jpg)
+
 ### Control logic
 
 ```mermaid
@@ -66,6 +70,10 @@ flowchart LR
 ## TEMP-1 configuration
 
 For this to react quickly, the probe needs to report faster than its 60 second default. Donovan reports it every 3 seconds and keeps a 60 second heartbeat, so Home Assistant reacts fast while you can still tell at a glance that the probe is alive. Two guards keep the data clean: the `85.0` reading a DS18B20 sends at power-on is dropped, and readings are ignored when the **Select Probe** option is set to `Food`.
+
+The probe zip-ties straight onto the hot-water angle stop, so it reads the line coming from the house heater.
+
+![An Apollo TEMP-1 zip-tied to the hot-water angle stop under the sink, its probe clamped to the valve.](/assets/temp1-hot-water-recirculation-probe-install.jpg)
 
 For the full walkthrough of overriding probe YAML in the ESPHome Builder, including the simpler delta-plus-heartbeat pattern, see [How To Change The Temperature Probe Update Interval](/products/temp1/setup/temp1-change-temp-probe-update-interval.md).
 
