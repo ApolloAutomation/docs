@@ -63,7 +63,6 @@ Once the device reboots, Home Assistant picks up the proxy on its own.
 
 1. Open your ESPHome device in Home Assistant. If you haven't adopted it yet, follow [Connect to Home Assistant](/products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md) first.
 2. Home Assistant detects the new Bluetooth proxy and offers to set it up. Accept the prompt.
-3. Open your <a href="https://my.home-assistant.io/redirect/navigate/?path=%2Fconfig%2Fbluetooth%2Fadapter-info" target="_blank" rel="noreferrer nofollow noopener">Bluetooth adapters</a> page. Your starter kit shows up in the list, confirming it's now working as a proxy.
-4. Open the <a href="https://my.home-assistant.io/redirect/navigate/?path=%2Fconfig%2Fbluetooth%2Fadvertisement-monitor" target="_blank" rel="noreferrer nofollow noopener">advertisement monitor</a> to watch the BLE devices your starter kit is picking up in real time. Anything in range shows up here, ready to add under **Settings → Devices & Services → Bluetooth** like any other device.
+3. Open the <a href="https://my.home-assistant.io/redirect/bluetooth_advertisement_monitor/" target="_blank" rel="noreferrer nofollow noopener">Bluetooth advertisement monitor</a> to watch the BLE devices your starter kit is picking up in real time. Anything in range shows up here, ready to add under **Settings → Devices & Services → Bluetooth** like any other device.
 
 --8<-- "_snippets/community-help.md"
