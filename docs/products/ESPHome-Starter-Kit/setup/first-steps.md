@@ -47,13 +47,9 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     ![](../../../assets/esphome-builder-install-windows.gif)
 
-    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
+    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. On first launch, ESPHome Device Builder asks how you will use it. Select **Build and manage devices**, then select **New to ESPHome** and click **Finish**.
 
-    !!! info "Browser support"
-
-        WebSerial is required for the first USB flash. Chrome, Edge, and the latest version of Firefox all support it. Older Firefox builds do not.
-
-    ![](../../../assets/esphome-device-builder-preview-image.png)
+    ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 === "Mac"
 
@@ -68,13 +64,9 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     <!-- TODO: add a Mac installer gif/screenshot if available. -->
 
-    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
+    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. On first launch, ESPHome Device Builder asks how you will use it. Select **Build and manage devices**, then select **New to ESPHome** and click **Finish**.
 
-    !!! info "Browser support"
-
-        WebSerial is required for the first USB flash. Chrome, Edge, and the latest version of Firefox all support it. Older Firefox builds do not. Safari does not support WebSerial.
-
-    ![](../../../assets/esphome-device-builder-preview-image.png)
+    ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 === "Home Assistant App"
 
@@ -91,8 +83,6 @@ Pick the platform you'll be running ESPHome Device Builder on:
     1. In Home Assistant, open **Settings → Apps → App Store**.
     2. Search for **ESPHome Device Builder** and click **Install**.
     3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
-
-    ![](../../../assets/esphome-device-builder-preview-image.png)
 
 === "Linux"
 
@@ -126,29 +116,9 @@ Pick the platform you'll be running ESPHome Device Builder on:
             - **.rpm (Fedora / RHEL):** `sudo dnf install ./ESPHome.Builder*.rpm`
             - **AppImage (any distro):** `chmod +x ESPHome.Builder_*.AppImage` then double-click the file, or run it from a terminal.
 
-    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. Once you see this page, your ESPHome Device Builder installation is complete.
+    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. On first launch, ESPHome Device Builder asks how you will use it. Select **Build and manage devices**, then select **New to ESPHome** and click **Finish**.
 
-    !!! info "Browser support"
-
-        WebSerial is required for the first USB flash. Chrome, Edge, and the latest version of Firefox all support it. Older Firefox builds do not.
-
-    ![](../../../assets/esphome-device-builder-preview-image.png)
-
-#### Set up Wi-Fi Credentials
-
-Fill in your Wi-Fi network name (SSID) and Wi-Fi password then click Save credentials. *The password is case sensitive so be careful when entering your password.*
-
-!!! tip "Secrets Folder"
-
-    One popular option is to store your encryption keys here. That way, you can share your full YAML with other users without needing to edit and hide your encryption key. See our <a href="https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/tutorials/using-secrets/" target="_blank" rel="noreferrer nofollow noopener">using secrets wiki for step by step directions</a>!
-
-![](../../../assets/esphome-builder-enter-wifi-credentials.gif)
-
-If you make a mistake or want to change this later, click the 3 dots menu in the top right then select Secrets. Click the Eye icon to unhide the Wi-Fi SSID and password and change them then click Save in the bottom right.
-
-!!! tip "Get busy!"
-
-    You are done with the install guide and can now use the kit!
+    ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 #### Add a new device
 
@@ -158,13 +128,14 @@ If you make a mistake or want to change this later, click the 3 dots menu in the
 
 <div markdown class="annotate">
 
-2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit then click **Finish Setup**. (1)
+2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit, then click **Next**. (1) Type in your Wi-Fi network name (SSID) and Wi-Fi password, then click **Finish Setup**. (2)
 
 </div>
 
 1. Remember the name you choose. You'll use it later to reach your device's web server at `http://your-name.local` (for example, <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>).
+2. The password is case sensitive, so double-check it before you continue.
 
-![](../../../assets/device-builder-select-esk-name-it.gif)
+![](../../../assets/device-builder-select-kit-name-kit-add-wifi.gif)
 
 ### Configure Components
 
@@ -181,7 +152,6 @@ The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Usef
 1. In the ESPHome Device Builder, navigate to the **Components** section.
 2. Click **Add component**.
 3. Scroll to **Onboard RGB LED** and click **Add**.
-4. Click **Add** once more to confirm.
 
 ![](../../../assets/device-builder-add-onboard-rgb-led-component.gif)
 

@@ -6,7 +6,7 @@ description: >-
 ---
 # Using Secrets
 
-In [First Steps](../setup/first-steps.md) you saved your Wi-Fi name and password in secrets.yaml. That same file can hold every other sensitive value your device needs, from your Home Assistant API key to your MQTT password. This tutorial walks through what to put in there and how to reference it from your device YAML.
+When you set up your kit in [First Steps](../setup/first-steps.md), the Device Builder saved the Wi-Fi name and password you typed in to secrets.yaml. That same file can hold every other sensitive value your device needs, from your Home Assistant API key to your MQTT password. This tutorial walks through what to put in there and how to reference it from your device YAML.
 
 !!! info "New to secrets.yaml?"
 
@@ -16,13 +16,15 @@ In [First Steps](../setup/first-steps.md) you saved your Wi-Fi name and password
 
 ### Open Secrets
 
-In the ESPHome Device Builder dashboard, click the 3 dots menu in the top right then **Secrets.**
+<div markdown class="annotate">
+
+In the ESPHome Device Builder dashboard, click the 3 dots menu in the top right then **Secrets.** (1)
+
+</div>
+
+1. You'll see a YAML file with one key per line. If you followed First Steps you should already see `wifi_ssid` and `wifi_password` here.
 
 ![](../../../assets/esphome-device-builder-click-secrets.gif)
-
-You'll see a YAML file with one key per line. If you followed First Steps you should already see `wifi_ssid` and `wifi_password` here.
-
-![](../../../assets/esphome-device-builder-secrets.png)
 
 ---
 
@@ -45,6 +47,26 @@ When the device compiles, ESPHome substitutes the value from secrets.yaml in pla
 !!! warning "The key has to exist"
 
     If you reference `!secret some_name` in a device config but `some_name` isn't defined in `secrets.yaml`, the build will fail. Spelling counts.
+
+---
+
+### Make a Secret in the GUI
+
+<div markdown class="annotate">
+
+The Device Builder can turn a value into a secret for you, no hand editing required. The API encryption key is the perfect first candidate:
+
+1. Open your device in the ESPHome Device Builder and click the **Core configuration** tab.
+2. Click **Native API**. Your device's API key is shown here. Click the eye icon to reveal it.
+3. Click **Use secret**, then select **Make secret esphome_starter_kit__encryption_key**. (1)
+
+</div>
+
+1. The secret is named after your device, so if you named your kit something else, the entry will match that name instead.
+
+The Device Builder moves the key into secrets.yaml and swaps the device YAML over to a `!secret` reference. You can now share your device YAML without exposing the key.
+
+![](../../../assets/device-builder-native-api-show-api-key.gif)
 
 ---
 
@@ -94,7 +116,7 @@ wifi:
 
 #### Home Assistant API encryption key
 
-ESPHome encrypts the connection between your device and Home Assistant. The key is a 32-byte base64 string. The easiest way to get one is to let ESPHome Device Builder generate it for you when you first add the `api:` block, then copy that value into secrets.yaml.
+ESPHome encrypts the connection between your device and Home Assistant. The key is a 32-byte base64 string, and the Device Builder generates one for every new device. The easiest way to make it a secret is the **Use secret** button covered in [Make a Secret in the GUI](#make-a-secret-in-the-gui) above, which names the entry after your device. If you'd rather add it by hand, it looks like this:
 
 In secrets.yaml:
 
