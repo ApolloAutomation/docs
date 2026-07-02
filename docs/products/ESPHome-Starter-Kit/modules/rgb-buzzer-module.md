@@ -89,13 +89,13 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
         id: buzzer
 
     rtttl:
-      id: rtttl_buzzer
+      id: rtttl_player
       output: buzzer
     ```
 
     Each option does something specific:
 
-    \| Option \| What it does \| \| --- \| --- \| \| **LED strip** \| \| \| `light.platform: esp32_rmt_led_strip` \| Uses the ESP32's RMT peripheral to drive addressable LEDs with precise timing. \| \| `light.pin: GPIO14` \| The data line going to the first LED on the PCB. \| \| `light.chipset: WS2812` \| Which addressable LED protocol to use. WS2812 is the most common, sometimes also called NeoPixel. \| \| `light.num_leds: 10` \| The number of LEDs on the RGB & Buzzer module. \| \| `light.rgb_order: grb` \| Color channel order. WS2812 LEDs receive color data in green-red-blue order, so this makes sure red looks red and not green. \| \| `light.rmt_symbols: 48` \| Low-level RMT setting needed on the ESP32-C6. Leave it at 48. \| \| `light.effects` \| Pre-loaded animations you can select from the web server or trigger from Home Assistant. \| \| **Piezo buzzer** \| \| \| `output.platform: ledc` \| PWM output for driving the buzzer. PWM is how digital pins create audio tones on a piezo. \| \| `output.pin: GPIO18` \| The pin the buzzer is wired to. \| \| `output.id: buzzer` \| Internal handle the rtttl component uses to send tones to this output. \| \| `rtttl.id: rtttl_buzzer` \| Internal handle for triggering tunes from automations and lambdas. \| \| `rtttl.output: buzzer` \| Tells rtttl to use the buzzer output for playback. \|
+    \| Option \| What it does \| \| --- \| --- \| \| **LED strip** \| \| \| `light.platform: esp32_rmt_led_strip` \| Uses the ESP32's RMT peripheral to drive addressable LEDs with precise timing. \| \| `light.pin: GPIO14` \| The data line going to the first LED on the PCB. \| \| `light.chipset: WS2812` \| Which addressable LED protocol to use. WS2812 is the most common, sometimes also called NeoPixel. \| \| `light.num_leds: 10` \| The number of LEDs on the RGB & Buzzer module. \| \| `light.rgb_order: grb` \| Color channel order. WS2812 LEDs receive color data in green-red-blue order, so this makes sure red looks red and not green. \| \| `light.rmt_symbols: 48` \| Low-level RMT setting needed on the ESP32-C6. Leave it at 48. \| \| `light.effects` \| Pre-loaded animations you can select from the web server or trigger from Home Assistant. \| \| **Piezo buzzer** \| \| \| `output.platform: ledc` \| PWM output for driving the buzzer. PWM is how digital pins create audio tones on a piezo. \| \| `output.pin: GPIO18` \| The pin the buzzer is wired to. \| \| `output.id: buzzer` \| Internal handle the rtttl component uses to send tones to this output. \| \| `rtttl.id: rtttl_player` \| Internal handle for triggering tunes from automations and lambdas. \| \| `rtttl.output: buzzer` \| Tells rtttl to use the buzzer output for playback. \|
 
 ## Install the firmware
 
@@ -119,7 +119,7 @@ With the device back online, the RGB LED light entity is live on the web server.
 
 !!! tip "For more effects check out this wiki on how to do advanced configurations with your RGB & Buzzer module!"
 
-    There are a lot of advanced things you can do with a light entity. Click here (NEED-TO-LINK-TO-NEW-LIGHT-COMPONENT-WIKI) to learn more about that!
+    There are a lot of advanced things you can do with a light entity. Check out the [ESPHome light strip effects documentation](https://esphome.io/components/light/#strip-animations) to learn more!
 
 The buzzer doesn't have its own web server control, since it's an output rather than a switch. Once you've added the device to Home Assistant, you can trigger tunes with the `rtttl.play` action or by exposing your own service.
 
