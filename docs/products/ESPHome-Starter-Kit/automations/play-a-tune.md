@@ -26,7 +26,7 @@ The buzzer plays songs written in **RTTTL** (Ring Tone Text Transfer Language), 
 scale_up:d=32,o=5,b=100:c,c#,d,d#,e,f,f#,g,g#,a,a#,b
 ```
 
-When you added the LED & Buzzer module, Device Builder created an `rtttl` component with the id `rtttl_buzzer` wired to the buzzer output. The automation below hands that component a tune string to play.
+When you added the LED & Buzzer module, Device Builder created an `rtttl` component with the id `rtttl_player` wired to the buzzer output. The automation below hands that component a tune string to play.
 
 ## Build the automation
 
@@ -62,7 +62,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
     </div>
 
-    1.  If your device has more than one `rtttl` component, set the **ID** to **rtttl_buzzer**. With a single buzzer it's already selected.
+    1.  If your device has more than one `rtttl` component, set the **ID** to **rtttl_player**. With a single buzzer it's already selected.
 
     Copy this tune and paste it into the **Rtttl** field:
 
@@ -139,6 +139,8 @@ Want more? <a href="https://picaxe.com/rtttl-ringtones-for-tune-command/" title=
 !!! success "You've built a button-triggered buzzer!"
 
     Same trigger-then-action pattern, new action. Swap the trigger (motion, a temperature threshold, a schedule) or the tune, and you have a new automation.
+
+The trigger here is a button press on the device. To play tunes from a Home Assistant automation, script, or the Developer Tools page instead, see [Play a Tune from Home Assistant](../everyday-use/play-a-tune-from-home-assistant.md).
 
 [Check out these Holiday themed buzzer examples too! :material-music-note:](https://wiki.apolloautomation.com/products/general/holiday-songs/){ .md-button .md-button--primary }
 
