@@ -8,29 +8,12 @@ description: >-
 
 The Breakout Module gives your starter kit room to grow. It breaks the ESP32-C6's pins out so you can wire up your own parts, the components the kit doesn't include. By the end of this tutorial you'll have it attached to your ESP32-C6 and be ready to build something of your own.
 
-!!! note "More detail coming soon"
-
-    This page covers the basics for getting the Breakout Module attached and online. We'll fill out the module-specific wiring, pinout, and example automations in a follow-up update.
-
 !!! note "Before you start"
 
     Work through the two prerequisites first:
 
     * [Start Here](/products/ESPHome-Starter-Kit/start-here.md) to snap the module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md) to install ESPHome Device Builder and create your starter kit device.
-
-#### Prerequisite
-
-The <a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener">Web Server</a> is used to broadcast a local website using your device. This allows you to navigate to the IP address of your device or hostname such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> to easily control your new device!
-
-1. In the ESPHome Device Builder, navigate to the **Core configuration** section.
-2. Click **Add component**.
-3. Scroll to **Web Server** and click **Add**.
-4. Click **Add** once more to confirm.
-5. Toggle **Show advanced settings**.
-6. Scroll down to **Version** and select **3** from the dropdown.
-
-![](../../../assets/device-builder-install-web-server-v3.gif)
 
 ## Attach Breakout module
 
@@ -50,17 +33,91 @@ Connect the Breakout Module to the ESP32-C6 using one of the FPC ribbon cables t
 
 3\. Slide the ribbon cable into the Breakout Module with the blue side facing upwards then press the latch down to lock it in place.
 
+![](../../../assets/esphome-starter-kit-attach-fpc-to-breakout-module.webp)
+
 4\. Plug the ESP32-C6 back into your computer.
 
-## Wire up your own components
+## Pinout
 
-The Breakout Module is different from the other starter kit modules. Instead of a single fixed sensor with a ready-made component in Device Builder, it breaks the ESP32-C6's pins out to the module so you can wire up your own buttons, sensors, LEDs, and other parts. This is the module for tinkering and building something that isn't in the kit.
+The Breakout Module is covered in connectors, each labeled on the board. Most of them carry the same I2C bus at different voltages, plus a 1Wire port and a GPIO header for everything else.
 
-Because the wiring is up to you, there's no **Add Component** entry to select. You decide what to connect, then add the matching ESPHome component to your YAML by hand. The <a href="https://esphome.io/components/" target="_blank" rel="noreferrer nofollow noopener">ESPHome component index</a> lists every supported sensor, switch, light, and more, along with the config each one needs.
+![](/assets/esphome-starter-kit-breakout-module-pinout.webp)
 
-!!! note "Pinout coming soon"
+=== "I2C"
 
-    We'll add the Breakout Module pinout (which module pin maps to which ESP32-C6 GPIO) and a worked example or two once the module-specific docs are ready. For now, match your wiring to the GPIO numbers in your component's ESPHome config.
+    Five connectors share the I2C bus, so most sensor breakouts plug straight in no matter which ecosystem they come from:
+
+    * **3.5mm jack**, top left, for an optional SHT20 temperature and humidity probe
+    * **STEMMA QT (3.3V)**, middle left of the board
+    * **STEMMA (5V, 4-pin)**, bottom center
+    * **Grove**, bottom left
+    * **SEN6x**, bottom right, a dedicated port for Sensirion SEN6x air quality sensors
+
+    | Signal | ESP32-C6 pin |
+    | --- | --- |
+    | SCL | GPIO0 |
+    | SDA | GPIO1 |
+
+    Each connector also carries power and ground at its labeled voltage, so a single cable powers the sensor and wires up the bus.
+
+=== "1Wire"
+
+    The connector labeled **1Wire** (top right of the board) is for 1-Wire sensors like the <a href="https://cdn-shop.adafruit.com/datasheets/DS18B20.pdf" target="_blank" rel="noreferrer nofollow noopener">DS18B20 temperature probe</a> (1), the same probe our [TEMP-1](/products/temp1/introduction.md) and [TEMP-1B](/products/temp1b/introduction.md) use.
+    { .annotate }
+
+    1.  Probe options:
+
+        <a href="https://apolloautomation.com/products/long-temperature-probe" target="_blank" rel="noreferrer nofollow noopener">**1.5m (~5ft) Waterproof Flat Cable (DS18B20)**</a>: -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
+
+        <a href="https://apolloautomation.com/products/short-temperature-probe" target="_blank" rel="noreferrer nofollow noopener">**20cm (~8in) Waterproof Flat Cable (DS18B20)**</a>: -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
+
+    Data is on **GPIO6**. In your config, the <a href="https://esphome.io/components/one_wire/" target="_blank" rel="noreferrer nofollow noopener">One Wire</a> component sets up the bus on that pin, and the <a href="https://esphome.io/components/sensor/dallas_temp/" target="_blank" rel="noreferrer nofollow noopener">Dallas temperature sensor</a> reads each probe on it.
+
+    Plug the probe's connector into the 1Wire port with the latch side facing up.
+
+    ![](/assets/esphome-starter-kit-attach-onewire-probe.webp)
+
+=== "STEMMA (5V, 3-pin)"
+
+    The 3-pin STEMMA connector on the middle right of the board is a general-purpose 5V port.
+
+    | Pin (left to right) | Signal |
+    | --- | --- |
+    | 1 | GPIO6 (shared with 1Wire) |
+    | 2 | 5V |
+    | 3 | GND |
+
+=== "GPIO header"
+
+    The 2x6 header in the middle of the board breaks out power, the UART, and spare GPIOs for anything else you want to wire up.
+
+    ![](/assets/esphome-starter-kit-breakout-gpio-header-pinout.webp)
+
+    A few of these pins pull double duty:
+
+    * SCL and SDA are the same I2C bus as the connectors (GPIO0 and GPIO1).
+    * IO6 is shared with the 1Wire port and the 3-pin STEMMA.
+    * TX and RX are the ESP32-C6's UART.
+
+??? note "Advanced: keeping 3.3V power on during sleep"
+
+    Out of the box, the module's 3.3V pin runs on the ESP32-C6's controlled power rail (**3vCTRL**). That's the battery-friendly setting: when the ESP sleeps, power to your connected components shuts off too.
+
+    If your project needs 3.3V that stays on through sleep, there's a solder jumper on the back of the board, top right, labeled **J5**. The existing bridge between the center pad and the **3vCTRL** pad looks like an H. Cut that bridge, then solder a new bridge from the center pad to the **3V** pad for always-on power.
+
+    ![](/assets/esphome-starter-kit-breakout-3v-select-jumper.webp)
+
+    This involves cutting a trace and soldering on the board itself, so skip it unless you know you need it. Most projects are fine with the default.
+
+## Add to ESPHome Device Builder
+
+The Breakout Module is different from the other starter kit modules. There's no single **Add Component** entry to select, because the module doesn't have a fixed sensor on it. Instead it breaks the ESP32-C6's pins out so you can wire up your own parts. Pick the component that matches what you connected:
+
+* For I2C devices (most sensor breakouts), add the component for your sensor, set SCL to pin 0 and SDA to pin 1, and turn on the pullup toggle for both pins.
+* For a DS18B20 probe on the 1Wire connector, add the <a href="https://esphome.io/components/one_wire/" target="_blank" rel="noreferrer nofollow noopener">One Wire</a> component on GPIO6, then a <a href="https://esphome.io/components/sensor/dallas_temp/" target="_blank" rel="noreferrer nofollow noopener">Dallas temperature sensor</a>.
+* For anything on the GPIO header, add the matching component and point it at the GPIO you wired.
+
+The <a href="https://esphome.io/components/" target="_blank" rel="noreferrer nofollow noopener">ESPHome component index</a> lists every supported sensor, switch, light, and more, along with the config each one needs.
 
 ## Install the firmware
 
@@ -79,8 +136,6 @@ With the device back online, whatever you wired up shows up on the web server al
 2. Find the entity for the component you added in the list.
 3. Trigger it (press your button, cover your sensor, and so on) and watch the value update.
 
-!!! success "Your Breakout Module is wired up and ready!"
-
-    From here, the Breakout Module is your sandbox. Mix in any ESPHome component and build something that's all your own.
+From here, the Breakout Module is your sandbox. Mix in any ESPHome component and build something that's all your own.
 
 --8<-- "_snippets/community-help.md"
