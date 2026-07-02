@@ -16,19 +16,6 @@ The temperature and humidity module is your starter kit's first environmental se
     * [Start Here](/products/ESPHome-Starter-Kit/start-here.md) to snap the temperature and humidity module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md) to install ESPHome Device Builder and create your starter kit device.
 
-#### Prerequisite
-
-The <a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener">Web Server</a> is used to broadcast a local website using your device. This allows you to navigate to the IP address of your device or hostname such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> to easily control your new device!
-
-1. In the ESPHome Device Builder, navigate to the **Core configuration** section.
-2. Click **Add component**.
-3. Scroll to **Web Server** and click **Add**.
-4. Click **Add** once more to confirm.
-5. Toggle **Show advanced settings**.
-6. Scroll down to **Version** and select **3** from the dropdown.
-
-![](../../../assets/device-builder-install-web-server-v3.gif)
-
 ## Attach Temp and Humidity module
 
 Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the ESP32-C6 works, top or bottom.
@@ -102,7 +89,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 
 ## Install the firmware
 
-Flash the device so the new web server and the temperature and humidity entities go live.
+Flash the device so the new temperature and humidity entities go live.
 
 1. Click **Install** on your device card in ESPHome Device Builder.
 2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
