@@ -40,7 +40,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 
 * The brain of every project you'll build with the kit. It handles Wi-Fi and Bluetooth, runs your ESPHome config, and exposes the GPIO pins the modules plug into.
 
-![](../../assets/esphome-starter-kit-main-board-only.jpg)
+![](../../assets/esphome-starter-kit-main-board-labeled.jpg)
 
 ---
 
