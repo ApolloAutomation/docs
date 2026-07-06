@@ -60,6 +60,10 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     Each connector also carries power and ground at its labeled voltage, so a single cable powers the sensor and wires up the bus.
 
+    Plug your sensor's STEMMA QT (Qwiic) cable into the port. The connector is keyed, so it only fits one way.
+
+    ![](/assets/esphome-starter-kit-breakout-module-stemma-qt.webp)
+
 === "1Wire"
 
     The connector labeled **1Wire** (top right of the board) is for 1-Wire sensors like the <a href="https://cdn-shop.adafruit.com/datasheets/DS18B20.pdf" target="_blank" rel="noreferrer nofollow noopener">DS18B20 temperature probe</a> (1), the same probe our [TEMP-1](/products/temp1/introduction.md) and [TEMP-1B](/products/temp1b/introduction.md) use.
@@ -75,7 +79,7 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     Plug the probe's connector into the 1Wire port with the latch side facing up.
 
-    ![](/assets/esphome-starter-kit-attach-onewire-probe.webp)
+    ![](/assets/esphome-starter-kit-breakout-module-dallas-probe.webp)
 
 === "STEMMA (5V, 3-pin)"
 
@@ -98,6 +102,10 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
     * SCL and SDA are the same I2C bus as the connectors (GPIO0 and GPIO1).
     * IO6 is shared with the 1Wire port and the 3-pin STEMMA.
     * TX and RX are the ESP32-C6's UART.
+
+    Connect your components to the header with standard jumper wires.
+
+    ![](/assets/esphome-starter-kit-breakout-module-gpio-header.webp)
 
 ??? note "Advanced: keeping 3.3V power on during sleep"
 
