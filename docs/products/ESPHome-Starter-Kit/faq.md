@@ -28,7 +28,7 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 
 6\. **Can the kit run on battery power?**
 
-* The ESP32-C6 is powered by USB-C today. It also has built-in support for a rechargeable LiPo battery, which is planned as a future module so the kit can be deployed cable-free around the home. The battery is not available yet.
+* Yes. The ESP32-C6 supports a rechargeable 3.7V LiPo battery that charges over the same USB-C cable, so the kit can be deployed cable-free around the home. See [Adding the Battery](modules/battery.md) for how to connect it.
 
 7\. **What is the ESPHome Desktop app?**
 
