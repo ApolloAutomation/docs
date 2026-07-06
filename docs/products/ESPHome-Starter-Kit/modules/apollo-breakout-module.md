@@ -45,6 +45,8 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
 === "I2C"
 
+    New to I2C? [What is I2C?](/products/ESPHome-Starter-Kit/learning-the-basics/what-is-i2c.md) explains the bus, addresses, and pullups in beginner terms.
+
     Five connectors share the I2C bus, so most sensor breakouts plug straight in no matter which ecosystem they come from:
 
     * **3.5mm jack**, top left, for an optional SHT20 temperature and humidity probe
