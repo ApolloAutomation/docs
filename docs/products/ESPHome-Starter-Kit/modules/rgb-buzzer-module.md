@@ -27,11 +27,11 @@ Connect the LED & Buzzer module to the ESP32-C6 using one of the FPC ribbon cabl
 
     The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
-2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector. Gently press the latch down to lock it in place
+2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
 
 ![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
-3\. Slide the ribbon cable into the button module with the blue side facing upwards then press the latch down to lock it in place.
+3\. Slide the ribbon cable into the LED & buzzer module with the blue side facing upwards then press the latch down to lock it in place.
 
 ![](../../../assets/esphome-starter-kit-attach-fpc-to-rgb-buzzer-module.webp)
 
