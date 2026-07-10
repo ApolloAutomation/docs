@@ -62,14 +62,12 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
     - **What should this automation react to?** → **A configured component**
     - **Which configured component?** → **Temperature (sensor)**
     - **Which trigger?** → **Sensor → On Value Range** (1)
-    - **Below** → `18.0`
-    - Leave **Above** blank.
 
     </div>
 
     1.  **On Value Range** fires whenever a new sensor reading lands inside the band you describe. The dropdown also offers **On Value**, **On Raw Value**, and **On State** for other sensor behaviors.
 
-2.  Click **Continue**. You land on the **Sensor → On Value Range** editor with the **Target** already set to your temperature sensor.
+2.  Click **Continue**. You land on the **Sensor → On Value Range** editor with the **Target** already set to your temperature sensor. Set **Below** to `18.0` and leave **Above** blank.
 3.  Set up the action:
 
     <div class="annotate" markdown>
@@ -77,11 +75,13 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
     - Under **Actions**, click **+ Add action**.
     - In the **Add action** dialog, stay on the **By target** tab and scroll down towards the bottom, then choose **Light → Turn On** under the RGB LED group.
     - On the new action, click the **ID** dropdown and select **RGB LEDs**. (1)
-    - Toggle on **Red**, **Green**, and **Blue** controls. Set **Red** `0%`, **Green** `0%`, **Blue** `100%`.
+    - Toggle on **Show advanced settings** to reveal the color fields, then set **Red** to `0%`, **Green** to `0%`, and **Blue** to `100%`.
 
     </div>
 
     1.  The **ID** dropdown only needs changing if your device also has an **Onboard RGB LED** component configured. If **RGB LEDs** is the only light, it's already selected.
+
+![](../../../assets/esphome-device-builder-temp-reactive-leds-cold-band.gif)
 
 #### Comfortable band: 18 °C to 24 °C → Green
 
@@ -99,37 +99,36 @@ Add a third automation with **Sensor → On Value Range** and **Above** `24.0` (
     sensor:
       - platform: aht10
         variant: AHT20
-        id: aht_20
-        temperature:
-          name: "Temperature"
-          id: aht_temperature
-          on_value_range:
-            - below: 18.0
-              then:
-                - light.turn_on:
-                    id: rgb_leds
-                    red: 0%
-                    green: 0%
-                    blue: 100%
-            - above: 18.0
-              below: 24.0
-              then:
-                - light.turn_on:
-                    id: rgb_leds
-                    red: 0%
-                    green: 100%
-                    blue: 0%
-            - above: 24.0
-              then:
-                - light.turn_on:
-                    id: rgb_leds
-                    red: 100%
-                    green: 0%
-                    blue: 0%
         humidity:
-          name: "Humidity"
-          id: aht_humidity
-        update_interval: 60s
+          id: aht20_humidity
+          name: Humidity
+        temperature:
+          id: aht20_temperature
+          name: Temperature
+          on_value_range:
+            - below: 24
+              above: 18
+              then:
+                - light.turn_on:
+                    id: rgb_leds
+                    green: 100%
+                    red: 0%
+                    blue: 0%
+            - above: 24
+              then:
+                - light.turn_on:
+                    id: rgb_leds
+                    blue: 0%
+                    green: 0%
+                    red: 100%
+            - below: 18
+              then:
+                - light.turn_on:
+                    id: rgb_leds
+                    blue: 100%
+                    green: 0%
+                    red: 0%
+        id: aht20
     ```
 
     See [Device Builder Tour → YAML editor (right)](../learning-the-basics/device-builder-tour.md#yaml-editor-right) for the full breakdown of the YAML pane.
