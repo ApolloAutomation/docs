@@ -56,33 +56,43 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
     ```yaml
     light:
       - platform: esp32_rmt_led_strip
+        name: RGB LEDs
+        pin: 14
         id: rgb_leds
-        name: "RGB LEDs"
-        pin: GPIO14
         chipset: WS2812
         num_leds: 10
+        rgb_order: GRB
         rmt_symbols: 48
-        rgb_order: grb
-        default_transition_length: 0s
-        effects:
-          - addressable_rainbow:
-              name: "Rainbow"
-          - addressable_twinkle:
-              name: "Twinkle"
 
     output:
       - platform: ledc
-        pin: GPIO18
-        id: buzzer
+        pin: 18
+        id: buzzer_output
 
     rtttl:
-      id: rtttl_player
-      output: buzzer
+      - output: buzzer_output
+        id: rtttl_player
     ```
 
     Each option does something specific:
 
-    \| Option \| What it does \| \| --- \| --- \| \| **LED strip** \| \| \| `light.platform: esp32_rmt_led_strip` \| Uses the ESP32's RMT peripheral to drive addressable LEDs with precise timing. \| \| `light.pin: GPIO14` \| The data line going to the first LED on the PCB. \| \| `light.chipset: WS2812` \| Which addressable LED protocol to use. WS2812 is the most common, sometimes also called NeoPixel. \| \| `light.num_leds: 10` \| The number of LEDs on the RGB & Buzzer module. \| \| `light.rgb_order: grb` \| Color channel order. WS2812 LEDs receive color data in green-red-blue order, so this makes sure red looks red and not green. \| \| `light.rmt_symbols: 48` \| Low-level RMT setting needed on the ESP32-C6. Leave it at 48. \| \| `light.effects` \| Pre-loaded animations you can select from the web server or trigger from Home Assistant. \| \| **Piezo buzzer** \| \| \| `output.platform: ledc` \| PWM output for driving the buzzer. PWM is how digital pins create audio tones on a piezo. \| \| `output.pin: GPIO18` \| The pin the buzzer is wired to. \| \| `output.id: buzzer` \| Internal handle the rtttl component uses to send tones to this output. \| \| `rtttl.id: rtttl_player` \| Internal handle for triggering tunes from automations and lambdas. \| \| `rtttl.output: buzzer` \| Tells rtttl to use the buzzer output for playback. \|
+    | Option | What it does |
+    | --- | --- |
+    | **LED strip** | |
+    | `light.platform: esp32_rmt_led_strip` | Uses the ESP32's RMT peripheral to drive addressable LEDs with precise timing. |
+    | `light.name: RGB LEDs` | The friendly name shown in Home Assistant and the web server. |
+    | `light.pin: 14` | The data line (GPIO14) going to the first LED on the PCB. |
+    | `light.id: rgb_leds` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
+    | `light.chipset: WS2812` | Which addressable LED protocol to use. WS2812 is the most common, sometimes also called NeoPixel. |
+    | `light.num_leds: 10` | The number of LEDs on the RGB & Buzzer module. |
+    | `light.rgb_order: GRB` | Color channel order. WS2812 LEDs receive color data in green-red-blue order, so this makes sure red looks red and not green. |
+    | `light.rmt_symbols: 48` | Low-level RMT setting needed on the ESP32-C6. Leave it at 48. |
+    | **Piezo buzzer** | |
+    | `output.platform: ledc` | PWM output for driving the buzzer. PWM is how digital pins create audio tones on a piezo. |
+    | `output.pin: 18` | The pin the buzzer is wired to (GPIO18). |
+    | `output.id: buzzer_output` | Internal handle the rtttl component uses to send tones to this output. |
+    | `rtttl.output: buzzer_output` | Tells rtttl to use the buzzer output for playback. |
+    | `rtttl.id: rtttl_player` | Internal handle for triggering tunes from automations and lambdas. |
 
 ## Install the firmware
 
@@ -99,22 +109,22 @@ Flash the device so the new RGB & Buzzer entities go live.
 
 With the device back online, the RGB LED light entity is live on the web server. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and play with it.
 
+<div class="annotate" markdown>
+
 1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
-2. Toggle the **RGB LEDs** entity and play around with the colors and brightness.
+2. Toggle the **RGB LEDs** entity and play around with the colors and brightness. (1)
+
+</div>
+
+1. There's a lot you can do with a light entity. See the [Light Effects tutorial](/products/ESPHome-Starter-Kit/tutorials/light-effects.md) for advanced configurations, or the [ESPHome light strip effects documentation](https://esphome.io/components/light/#strip-animations) to go deeper.
 
 ![](../../../assets/esphome-device-builder-test-rgb-leds.gif)
 
-!!! tip "For more effects check out this wiki on how to do advanced configurations with your RGB & Buzzer module!"
-
-    There are a lot of advanced things you can do with a light entity. Check out the [ESPHome light strip effects documentation](https://esphome.io/components/light/#strip-animations) to learn more!
-
-The buzzer doesn't have its own web server control, since it's an output rather than a switch. Once you've added the device to Home Assistant, you can trigger tunes with the `rtttl.play` action or by exposing your own service.
-
-> Web server page showing the RGB Light controls on the LED & Buzzer Module.
-
 !!! success "Your LED & Buzzer notification module is wired up!"
 
-    Your LED & Buzzer Module is now ready for some fun tasks.. like toggling lights on and off, playing with the colors, or using the buzzer to play fun tunes!
+    Your LED & Buzzer Module is now ready for some fun tasks, like toggling lights on and off, playing with the colors, or using the buzzer to play fun tunes!
+
+    The buzzer doesn't have its own web server control, since it's an output rather than a switch. Once you've added the device to Home Assistant, you can trigger tunes with the `rtttl.play` action or by exposing your own service. See [Play a Tune from Home Assistant](/products/ESPHome-Starter-Kit/everyday-use/play-a-tune-from-home-assistant.md) to learn how to set it up.
 
 ## Try it in an automation
 

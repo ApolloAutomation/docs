@@ -56,14 +56,14 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
     ```yaml
     binary_sensor:
       - platform: gpio
+        name: Button Module
         pin:
-          number: GPIO6
           inverted: true
           mode:
             input: true
             pullup: true
-        id: my_button
-        name: "Button"
+          number: 6
+        id: button_module
     ```
 
     Each option does something specific:
@@ -71,12 +71,12 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
     | Option | What it does |
     | --- | --- |
     | `platform: gpio` | Reads a digital input on a GPIO pin. |
-    | `number: GPIO6` | The pin the button module's FPC connector wires to on the ESP32-C6. |
+    | `name: Button Module` | The friendly name shown in Home Assistant and the web server. |
     | `inverted: true` | The pin reads LOW when the button is pressed, so this flips it to an intuitive on/off state. |
     | `mode.input: true` | Configures the pin as an input. |
     | `mode.pullup: true` | Enables the ESP32-C6's internal pull-up so the pin doesn't float when the button isn't pressed. |
-    | `id: my_button` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
-    | `name: "Button"` | The friendly name shown in Home Assistant and the web server. |
+    | `number: 6` | The GPIO pin (GPIO6) the button module's FPC connector wires to on the ESP32-C6. |
+    | `id: button_module` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
 
 ## Install the firmware
 
