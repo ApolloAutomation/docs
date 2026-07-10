@@ -45,10 +45,11 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 1. Open your starter kit device in Device Builder and click **Edit**.
 2. In the ESPHome Device Builder, navigate to the **Components** section.
 3. Click **Add Component** in the editor toolbar.
-4. Search for **Temperature and Humidity** and select the Apollo Starter Kit temperature and humidity component.
-5. Click **Add**. Device Builder inserts I2C bus into your YAML.
+4. Select the **I2C** component.
+5. Click **Add**. Device Builder inserts the I2C bus into your YAML.
 6. Search for **Temperature and Humidity** and select the Apollo Starter Kit temperature and humidity component.
-7. Click **Add**. Device Builder inserts the AHT20F sensor block into your YAML.
+7. Toggle the **Humidity** and **Temperature** selections on.
+8. Click **Add**. Device Builder inserts the AHT20F sensor block into your YAML.
 
 ![](../../../assets/esphome-device-builder-add-i2c-temp-hum-component.gif)
 
@@ -58,34 +59,32 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 
     ```yaml
     i2c:
-      sda: GPIO1
-      scl: GPIO0
-      scan: true
+      - scl: 0
+        sda: 1
+        id: i2c_bus
 
     sensor:
       - platform: aht10
         variant: AHT20
-        id: aht_20
-        temperature:
-          name: "Temperature"
-          id: aht_temperature
         humidity:
-          name: "Humidity"
-          id: aht_humidity
-        update_interval: 60s
+          id: aht20_humidity
+          name: Humidity
+        temperature:
+          id: aht20_temperature
+          name: Temperature
+        id: aht20
     ```
 
     Each option does something specific:
 
     | Option | What it does |
     | --- | --- |
-    | `i2c.sda` / `i2c.scl` | The data and clock pins for the I2C bus the AHT20F speaks on. The starter kit wires them to GPIO1 and GPIO0. |
-    | `i2c.scan: true` | Lists every I2C device the ESP32-C6 finds at boot, useful for confirming the sensor is connected. |
+    | `i2c.scl: 0` / `i2c.sda: 1` | The clock (SCL) and data (SDA) pins for the I2C bus the AHT20F speaks on. The starter kit wires them to GPIO0 and GPIO1. |
+    | `i2c.id: i2c_bus` | Internal handle for the I2C bus so other components can share it. |
     | `platform: aht10` | The ESPHome platform that drives AHT10, AHT20, and AHT30 sensors. |
     | `variant: AHT20` | Tells the platform which variant of the chip is connected. |
-    | `id: aht_20` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
     | `temperature` / `humidity` | Two sub-sensors. Each has a `name` shown in Home Assistant and the web server, and an `id` you can reference from automations and lambdas. |
-    | `update_interval: 60s` | How often the sensor reports. 60 seconds is a reasonable default. Lower it for more responsive readings, raise it to cut down on network traffic. |
+    | `id: aht20` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
 
 ## Install the firmware
 

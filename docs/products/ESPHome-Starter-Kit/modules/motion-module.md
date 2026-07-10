@@ -73,7 +73,13 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 
     Each option does something specific:
 
-    \| Option \| What it does \| \| --- \| --- \| \| `platform: gpio` \| Reads a digital input on a GPIO pin. \| \| `number: GPIO3` \| The pin the Motion module's FPC connector wires to on the ESP32-C6. \| \| `mode.input: true` \| Configures the pin as an input. \| \| `mode.pulldown: false` \| The MH-SR602 drives its output both high and low on its own, so no internal pulldown is needed. \| \| `id: motion_module` \| Internal handle you can reference from automations and lambdas elsewhere in the config. \| \| `name: "Motion Module"` \| The friendly name shown in Home Assistant and the web server. \| \| `device_class: motion` \| Tells Home Assistant this is a motion sensor, so it shows the right icon and works in motion-related templates and blueprints. \|
+    | Option | What it does |
+    | --- | --- |
+    | `platform: gpio` | Reads a digital input on a GPIO pin. |
+    | `name: Motion Module` | The friendly name shown in Home Assistant and the web server. |
+    | `pin: 3` | The GPIO pin (GPIO3) the Motion module's FPC connector wires to on the ESP32-C6. |
+    | `device_class: motion` | Tells Home Assistant this is a motion sensor, so it shows the right icon and works in motion-related templates and blueprints. |
+    | `id: motion_module` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
 
 ## Install the firmware
 
