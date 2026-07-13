@@ -62,9 +62,19 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     Each connector also carries power and ground at its labeled voltage, so a single cable powers the sensor and wires up the bus.
 
-    Plug your sensor's STEMMA QT (Qwiic) cable into the port. The connector is keyed, so it only fits one way.
+    === "STEMMA QT (Qwiic)"
 
-    ![](/assets/esphome-starter-kit-breakout-module-stemma-qt.webp)
+        Plug your sensor's STEMMA QT (Qwiic) cable into the port. The connector is keyed, so it only fits one way.
+
+        ![](/assets/esphome-starter-kit-breakout-module-stemma-qt.webp)
+
+    === "SEN6x"
+
+        Sensirion SEN6x air quality sensors, like the SEN65, come with their own ribbon cable. Plug it into the **SEN6x** port at the bottom right, latch side facing up. The connector is keyed, so it only fits one way.
+
+        ![](/assets/esphome-starter-kit-breakout-module-sen6x.webp)
+
+        See the [SEN65 Air Quality Sensor](/products/ESPHome-Starter-Kit/modules/breakout-addons/sen65-air-quality-sensor.md) add-on page for the full walkthrough and what each reading means.
 
 === "1Wire"
 
@@ -82,6 +92,8 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
     Plug the probe's connector into the 1Wire port with the latch side facing up.
 
     ![](/assets/esphome-starter-kit-breakout-module-dallas-probe.webp)
+
+    See the [Temperature Probe](/products/ESPHome-Starter-Kit/modules/breakout-addons/temperature-probe.md) add-on page for the full walkthrough.
 
 === "STEMMA (5V, 3-pin)"
 

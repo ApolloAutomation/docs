@@ -30,6 +30,7 @@ theme:
     - navigation.tabs
 #i think it looks better with sticky off - Brandon
 #    - navigation.tabs.sticky
+    - navigation.indexes
     - navigation.path
     - navigation.instant
     - navigation.instant.progress
@@ -535,7 +536,11 @@ nav:
               - Motion: products/ESPHome-Starter-Kit/modules/motion-module.md
               - Temp & Humidity: products/ESPHome-Starter-Kit/modules/temperature-humidity-module.md
               - LED & Buzzer: products/ESPHome-Starter-Kit/modules/rgb-buzzer-module.md
-              - Breakout Module: products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md
+              - Breakout Module:
+                  - products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md
+                  - Add-ons:
+                      - SEN65 Air Quality Sensor: products/ESPHome-Starter-Kit/modules/breakout-addons/sen65-air-quality-sensor.md
+                      - Temperature Probe: products/ESPHome-Starter-Kit/modules/breakout-addons/temperature-probe.md
               - Battery: products/ESPHome-Starter-Kit/modules/battery.md
           - Tutorials:
               - Using Secrets: products/ESPHome-Starter-Kit/tutorials/using-secrets.md
