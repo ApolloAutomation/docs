@@ -22,22 +22,22 @@ The SEN6x port is on the same I2C bus as the other connectors: **SCL on GPIO0**,
 
 The SEN65 takes two components in your device config: the I2C bus it talks on, and the <a href="https://esphome.io/components/sensor/sen6x/" target="_blank" rel="noreferrer nofollow noopener">SEN6x</a> component that reads it. If another module already added the I2C component, skip steps 3 and 4, the SEN65 shares the same bus.
 
-1. Open your starter kit device in Device Builder and click **Edit**.
-2. Navigate to the **Components** section and click **Add Component**.
-3. Select the **I2C** component. Set **SCL to pin 0** and **SDA to pin 1**, and turn on the pullup toggle for both pins. (1)
-   { .annotate }
+1.  Open your starter kit device in Device Builder and click **Edit**.
+2.  Navigate to the **Components** section and click **Add Component**.
+3.  Select the **I2C** component. Set **SCL to pin 0** and **SDA to pin 1**, and turn on the pullup toggle for both pins. (1)
+    { .annotate }
 
-   1.  New to I2C? [What is I2C?](/products/ESPHome-Starter-Kit/learning-the-basics/what-is-i2c.md) explains the bus, addresses, and pullups in beginner terms.
+    1.  New to I2C? [What is I2C?](/products/ESPHome-Starter-Kit/learning-the-basics/what-is-i2c.md) explains the bus, addresses, and pullups in beginner terms.
 
-4. Click **Add**. Device Builder inserts the I2C bus into your YAML.
-5. Click **Add Component** again and select the SEN6x component. It sits on the I2C bus at address `0x6B`.
-6. Toggle on the SEN65's readings: **Temperature**, **Humidity**, **VOC**, **NOX**, **PM 1 0**, **PM 2 5**, **PM 4 0**, and **PM 10 0**. (1)
-   { .annotate }
+4.  Click **Add**. Device Builder inserts the I2C bus into your YAML.
+5.  Click **Add Component** again and select the SEN6x component. It sits on the I2C bus at address `0x6B`.
+6.  Toggle on the SEN65's readings: **Temperature**, **Humidity**, **VOC**, **NOX**, **PM 1 0**, **PM 2 5**, **PM 4 0**, and **PM 10 0**. (1)
+    { .annotate }
 
-   1.  You'll also see **CO2** and **Formaldehyde** in the list. The SEN65 doesn't measure those, they belong to other SEN6x models, so leave them off. And you don't have to turn everything on, toggle only the readings you want.
+    1.  You'll also see **CO2** and **Formaldehyde** in the list. The SEN65 doesn't measure those, they belong to other SEN6x models, so leave them off. And you don't have to turn everything on, toggle only the readings you want.
 
-7. Expand **VOC** and **NOX** with the arrow next to each and rename them to `VOC Index` and `NOx Index`. Both report a relative index rather than an absolute amount, so the entity names should say so.
-8. Click **Add**, then flash the device. The SEN65's readings show up alongside your other entities.
+7.  Expand **VOC** and **NOX** with the arrow next to each and rename them to `VOC Index` and `NOx Index`. Both report a relative index rather than an absolute amount, so the entity names should say so.
+8.  Click **Add**, then flash the device. The SEN65's readings show up alongside your other entities.
 
 ![](/assets/esphome-device-builder-add-sen6x-component.gif)
 
