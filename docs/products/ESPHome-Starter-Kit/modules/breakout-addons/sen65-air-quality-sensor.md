@@ -41,6 +41,8 @@ The SEN65 takes two components in your device config: the I2C bus it talks on, a
 
 ![](/assets/esphome-device-builder-add-sen6x-component.gif)
 
+Want a single air quality number on top of the individual readings? Add the AQI component too, see [NowCast AQI](#nowcast-aqi) below.
+
 ??? note "What the SEN65 YAML does"
 
     Adding the SEN6x component, plus an AQI sensor for the [NowCast AQI](#nowcast-aqi) below, gives you a config like this:
@@ -135,7 +137,12 @@ The SEN65 takes two components in your device config: the I2C bus it talks on, a
 
 ### NowCast AQI
 
-Comparing µg/m³ values across PM1, PM2.5, PM4, and PM10 gets fiddly. The <a href="https://esphome.io/components/sensor/aqi/" target="_blank" rel="noreferrer nofollow noopener">AQI</a> component folds your PM2.5 and PM10 into a single 0-500 number that maps to the categories in the table above: bigger is worse. Add it in Device Builder pointed at your SEN65's PM2.5 and PM10 sensors.
+Comparing µg/m³ values across PM1, PM2.5, PM4, and PM10 gets fiddly. The <a href="https://esphome.io/components/sensor/aqi/" target="_blank" rel="noreferrer nofollow noopener">AQI</a> component folds your PM2.5 and PM10 into a single 0-500 number that maps to the categories in the table above: bigger is worse.
+
+1.  In Device Builder, click **Add Component** and select the AQI component.
+2.  Set **Calculation Type** to **AQI**, or **CAQI** if you're in Europe.
+3.  Pick your SEN65's PM sensors in the **PM 10 0** and **PM 2 5** dropdowns.
+4.  Enter `NowCast AQI` for the **Name**, then click **Add** and flash the device.
 
 !!! tip "Rename the entity to NowCast AQI"
 
