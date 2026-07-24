@@ -130,3 +130,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 32\. **Can I use the AIR-1 for safety monitoring (e.g., CO2 or gas leaks)?**
 
 * The AIR-1's CO2 and gas sensors are intended for air quality monitoring but **DO NOT MEET** the safety standards for CO2 or gas leak detection as defined by the NBIC, NFPA, or IFC. For safety purposes, dedicated gas or CO2 monitors should be used.
+
+33\. **My NOx (SEN55 NOX Index) reads "unavailable" and the logs mention an SEN54. How do I fix it?**
+
+* A small number of AIR-1 units report their sensor as an SEN54, which has no NOx element, on the model register, even though the NOx-capable SEN55 is actually fitted and working. That left the NOx Index stuck at *unavailable*. The 26.7.23.1 firmware forces the correct SEN55 model, so updating to the latest firmware brings NOx back. Once it updates, give the reading a little time to appear: like the VOC Index, the NOx Index needs a short conditioning period after boot before it reports a value.
