@@ -534,6 +534,8 @@ nav:
           - Additional Info:
             - Sensor Definitions: products/cast1/setup/sensor-definitions.md
             - ESPHome Device Builder: products/cast1/additional-info/esphome-device-builder.md
+          - Examples:
+            - WizMote Control: products/cast1/examples/wizmote-blueprint.md
           - Troubleshooting:
             - CAST-1 Boot Mode: products/cast1/troubleshooting/cast1-boot-mode.md
             - Factory Re-Flash CAST-1: products/cast1/troubleshooting/cast1-reflash.md
