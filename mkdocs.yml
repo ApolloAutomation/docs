@@ -531,6 +531,9 @@ nav:
       - CAST-1:
           - Introduction: products/cast1/introduction.md
           - Getting Started: products/cast1/setup/getting-started.md
+          - Additional Info:
+            - Sensor Definitions: products/cast1/setup/sensor-definitions.md
+            - ESPHome Device Builder: products/cast1/additional-info/esphome-device-builder.md
           - Troubleshooting:
             - CAST-1 Boot Mode: products/cast1/troubleshooting/cast1-boot-mode.md
             - Factory Re-Flash CAST-1: products/cast1/troubleshooting/cast1-reflash.md

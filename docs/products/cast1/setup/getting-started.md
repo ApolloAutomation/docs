@@ -8,128 +8,81 @@ This will guide you through connecting your CAST-1 to your speakers, adding it t
 
 ### Physical Setup
 
-###### Connect Your Speakers
-
-The CAST-1 outputs line-level audio over its 3.5mm port. Run a 3.5mm cable from the CAST-1 into the line-in on your powered speakers, receiver, or active soundbar. (1)
+Run a 3.5mm cable from the CAST-1 into the line-in on your powered speakers, receiver, or active soundbar, then plug the CAST-1 into power with USB-C. A 5V 1A power supply is plenty. (1)
 { .annotate }
 
 1.  The CAST-1 has no amplifier of its own, so it needs powered speakers or an amp. If your speakers use RCA or 6.35mm inputs, use a 3.5mm-to-RCA or 3.5mm-to-6.35mm adapter cable.
 
-![](/assets/cast-1-connect-speakers-gif.webp)
+![](/assets/cast-1-physical-setup.webp)
 
-###### Power It On
+### Connect to Wi-Fi
 
-Plug the CAST-1 in via USB-C. A 5V 1A power supply is plenty.
+There are two ways to get your CAST-1 online. Pick whichever is easier, you only need to do one.
 
-![](/assets/cast-1-power-on.webp)
+- **Hotspot** works on any phone or computer. The CAST-1 broadcasts its own Wi-Fi network, you join it, then enter your Wi-Fi details. No extra hardware needed.
+- **Improv via BLE** sets the CAST-1 up over Bluetooth straight from Home Assistant. It's quick, but it needs Bluetooth on your Home Assistant host or an ESP32 Bluetooth proxy.
 
-### Connecting Through Hotspot
+=== "Hotspot"
 
-To connect through the CAST-1's onboard hotspot follow the below:
+    1\. Plug the CAST-1 in via USB-C. A 5V 1A power supply will work fine.
 
-1\. Plug the CAST-1 in via USB-C. A 5V 1A power supply will work fine.
+    !!! success "If your CAST-1 is restarting or not broadcasting Wi-Fi try another USB-C cable and power supply!"
 
-!!! success "If your CAST-1 is restarting or not broadcasting Wi-Fi try another USB-C cable and power supply!"
+        The CAST-1 is sensitive to power fluctuations and needs constant 5V power. Most quality phone chargers will work fine.
 
-    The CAST-1 is sensitive to power fluctuations and needs constant 5V power. Most quality phone chargers will work fine.
+        Still no hotspot? Follow the <a href="https://wiki.apolloautomation.com/products/cast1/troubleshooting/cast1-reset-wi-fi-credentials/" target="_blank" rel="noopener">Reset Wi-Fi Credentials</a> guide to make it broadcast again.
 
-    Still no hotspot? Follow the <a href="https://wiki.apolloautomation.com/products/cast1/troubleshooting/cast1-reset-wi-fi-credentials/" target="_blank" rel="noopener">Reset Wi-Fi Credentials</a> guide to make it broadcast again.
+    2\. On your phone or PC, open the Wi-Fi settings and connect to "**Apollo CAST 1 Hotspot**". Once connected it should automatically open a dashboard for your CAST-1. If it doesn't, open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
-2\. On your phone or PC, open the Wi-Fi settings and connect to "**Apollo CAST 1 Hotspot**".
+    3\. Select the Wi-Fi network that you would like your CAST-1 to connect to and type in your Wi-Fi password, then click "**Save**".
 
-![](/assets/cast-1-hotspot-wifi-list.png)
+    ![](/assets/cast-1-connect-to-hotspot.webp)
 
-3\. Once connected it should automatically open a dashboard for your CAST-1. If this does not automatically open, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
+    4\. Once connected, the dashboard will automatically close. You've successfully connected your CAST-1 to your Wi-Fi.
 
-4\. Select the Wi-Fi network that you would like your CAST-1 to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
+=== "Improv via BLE"
 
-![](/assets/cast-1-hotspot-enter-wifi.png)
+    !!! note "Pre-requirement: Bluetooth proxy or Bluetooth Home Assistant hardware required"
 
-!!! tip "Tip for Mesh Wi-Fi systems or multiple Access Points"
+        Bluetooth built in such as a Raspberry Pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a> is required to use this to setup your Apollo device.
 
-    If you have multiple access points or a mesh system please manually type in your Wi-Fi network so it will join with the strongest signal!
+    1\. Open your integrations page in Home Assistant.
 
-5\. Once connected, the dashboard will automatically close. You've successfully connected your CAST-1 to your Wi-Fi.
+    <a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
 
-[Click here for next steps!](https://wiki.apolloautomation.com/products/cast1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){ .md-button .md-button--primary }
+    2\. Click the **Add** button on your discovered CAST-1, type in your Wi-Fi SSID and password, then click **Submit**.
 
-### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
+    3\. Click **Submit** again, give it an **Area**, then click **Finish**.
 
-!!! note "Pre-requirement: Bluetooth proxy or Bluetooth Home Assistant hardware required"
+    ![](/assets/cast-1-add-via-improv-ble.gif)
 
-    Bluetooth built in such as a Raspberry Pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a> is required to use this to setup your Apollo device. If you have already followed the "Connecting through Hotspot" please skip this section.
+Once your CAST-1 is on Wi-Fi, add it to Home Assistant below. If you used **Improv via BLE** it's already added, so you can jump straight to [installing Music Assistant](#music-assistant).
 
-1\. Navigate to **Settings -> Devices & Services** then click the "**ADD**" button below your new Apollo device then click **Submit**.
+### Add to Home Assistant
 
-![](/assets/cast-1-improv-ble-add.gif)
+Open the ESPHome Integration, then click **Add** and **Submit**. Edit the name and choose an **Area** then click **Finish**.
 
-2\. Once prompted, type in your Wi-Fi name and password in the two fields then click **Submit**. Click on **Close** once it finishes.
+<a href="https://my.home-assistant.io/redirect/integration/?domain=esphome" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integration.svg" alt="Open your Home Assistant instance and show the ESPHome integration."></a>
 
-![](/assets/cast-1-improv-ble-wifi-setup.gif)
+![](/assets/cast-1-home-assistant-integration.gif)
 
-3\. Click on **Add** then click on **Submit**. Choose an area and then click **Finish**.
-
-![](/assets/cast-1-improv-ble-esphome-integration.gif)
-
-4\. Your device is now added to your Wi-Fi and to the ESPHome Integration in Home Assistant. You're ready to stream to it with Music Assistant below!
-
-### Connecting To ESPHome Device Builder
-
-!!! tip "Skip the ESPHome Device Builder unless..."
-
-    Feel free to skip to the [ESPHome Integration section](https://wiki.apolloautomation.com/products/cast1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration) unless you need to rename your CAST-1 or make manual edits to the YAML.
-
-You can add the ESPHome Device Builder app in Home Assistant to easily update your device or edit the YAML. If you don't have the ESPHome Device Builder app installed you can <a href="http://homeassistant.local:8123/hassio/store" target="_blank" rel="noreferrer nofollow noopener">search ESPHome Device Builder in the App Store</a> and install it.
-
-Make sure to fill out your Wi-Fi details in the **secrets** section by clicking on the **secrets** button.
-
-![](/assets/esphome-device-builder-secrets.png)
-
-```yaml
-# Your Wi-Fi SSID and password - keep the quotes and just replace the name and password between the quotes!
-wifi_ssid: "your-wifi-ssid-here"
-wifi_password: "your-wifi-pass-here"
-```
-
-1\. Open the <a href="http://homeassistant.local:8123/5c53de3b_esphome/ingress" target="_blank" rel="noreferrer nofollow noopener"><strong>ESPHome Device Builder</strong></a> dashboard.
-
-![](/assets/esphome-device-builder-show-discovered-device.png)
-
-2\. Click **Show** in the top right to show your discovered devices then click on **Take Control** then click **Install**. This can take multiple minutes or longer on low-end hardware.
-
-![](/assets/cast-1-take-control-gif.gif)
-
-3\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
-
-![](/assets/cast-1-ota-successful.png)
-
-4\. Your CAST-1 is now adopted into the ESPHome Device Builder and you can move on to the ESPHome Integration below.
-
-### Connecting to Home Assistant via ESPHome Integration
-
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integration</a> then click on **Add** then click **Submit**. When prompted click **Finish**, give it a location, and click **Finish** or **Skip and Finish**.
-
-![](/assets/cast-1-esphome-integration-gif.gif)
-
-2\. Your CAST-1 is now added to Home Assistant via the ESPHome integration. You can find it under **Settings -> Devices & Services -> ESPHome**.
-
-[Now stream to it with Music Assistant! :material-cast-audio:](https://wiki.apolloautomation.com/products/cast1/setup/getting-started/#playing-audio-with-music-assistant){ .md-button .md-button--primary }
-
-### Playing Audio with Music Assistant
+### Music Assistant
 
 The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>. Once Music Assistant is running, your CAST-1 shows up as a player automatically, no extra configuration needed.
 
 ###### Install Music Assistant
 
-1\. Open the <a href="https://my.home-assistant.io/redirect/supervisor_store/" target="_blank" rel="noreferrer nofollow noopener">App Store</a> in Home Assistant (**Settings -> Add-ons -> App Store**).
+1\. Head to the App Store to install Music Assistant.
 
-2\. Search for **Music Assistant Server**, open it, then click **Install**. Once it finishes, click **Start**.
+<a href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=d5369777_music_assistant&repository_url=https%3A%2F%2Fgithub.com%2Fmusic-assistant%2Fhome-assistant-addon" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/supervisor_addon.svg" alt="Open your Home Assistant instance and show the Music Assistant Server add-on."></a>
 
-![](/assets/cast-1-music-assistant-install.png)
+2\. Click **Install**, then click **Start** once it finishes.
 
-3\. Home Assistant will discover the Music Assistant integration automatically. Go to **Settings -> Devices & Services**, find **Music Assistant**, and click **Add** then **Submit**.
+![](/assets/cast-1-start-music-assistant.gif)
 
-![](/assets/cast-1-music-assistant-integration.png)
+3\. Home Assistant discovers the Music Assistant integration automatically. Open your integrations page, find **Music Assistant**, then click **Add** and **Submit**.
+
+<a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
 
 ###### Stream To Your CAST-1
 
