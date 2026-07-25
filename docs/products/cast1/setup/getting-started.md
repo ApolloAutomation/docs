@@ -88,9 +88,7 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 1\. Open **Music Assistant** from the Home Assistant sidebar.
 
-2\. Your CAST-1 appears in the player list as **Apollo CAST-1 Player**. Select it as your player.
-
-![](/assets/cast-1-music-assistant-select-player.gif)
+2\. Your CAST-1 appears in the player list in Music Assistant. Select it as your player.
 
 3\. Pick any song, playlist, or radio station and it plays through the speakers connected to your CAST-1.
 
@@ -101,8 +99,6 @@ Have more than one CAST-1? Group them to play the same music in sync across ever
 1\. In Music Assistant, open the player you're listening on.
 
 2\. Click the group/sync button and select the other CAST-1 players you want to join.
-
-![](/assets/cast-1-music-assistant-multiroom.gif)
 
 3\. All grouped CAST-1 players now play the same audio together. Adjust the volume for the whole group or per player.
 
