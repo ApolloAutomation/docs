@@ -528,6 +528,16 @@ nav:
             - Factory Re-Flash BTN-1: products/btn1/troubleshooting/btn1-reflash.md
             - Teardown and Reassembly Of BTN-1: products/btn1/troubleshooting/btn1-teardown.md
             - Reset Wi-Fi Credentials: products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
+      - CAST-1:
+          - Introduction: products/cast1/introduction.md
+          - Getting Started: products/cast1/setup/getting-started.md
+          - Additional Info:
+            - Sensor Definitions: products/cast1/setup/sensor-definitions.md
+            - ESPHome Device Builder: products/cast1/additional-info/esphome-device-builder.md
+          - Troubleshooting:
+            - CAST-1 Boot Mode: products/cast1/troubleshooting/cast1-boot-mode.md
+            - Factory Re-Flash CAST-1: products/cast1/troubleshooting/cast1-reflash.md
+            - Reset Wi-Fi Credentials: products/cast1/troubleshooting/cast1-reset-wi-fi-credentials.md
       - ESPHome Starter Kit:
           - Start Here: products/ESPHome-Starter-Kit/start-here.md
           - First Steps: products/ESPHome-Starter-Kit/setup/first-steps.md
