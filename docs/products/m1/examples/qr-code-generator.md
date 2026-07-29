@@ -144,4 +144,16 @@ END:VCARD`;
   updateForm();
 </script>
 
-2\. If you are on WLED-MM firmware 14.5.1 or higher, you can convert an image to a gif using an online tool and then upload the "gif" QR code to WLED!
+2\. Now get the QR code onto the matrix.
+
+=== "WLED"
+
+    Drop the downloaded PNG straight into the [Pixel Forge](/products/m1/examples/pixel-forge.md) **Image Tool**, size it to your display, and save. It converts and stores it for you.
+
+=== "WLED-MM"
+
+    Convert the image to a GIF with an online tool first, then [upload it to WLED](/products/m1/examples/add-gifs-to-wled.md).
+
+!!! tip "Keep QR codes chunky"
+
+    A 64x64 panel is not many pixels. Short payloads scan reliably, long ones (a full vCard, a long URL) often will not. Test with your phone before you save it as a preset.

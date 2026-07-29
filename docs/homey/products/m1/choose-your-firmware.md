@@ -1,0 +1,1 @@
+--8<-- "products/m1/choose-your-firmware.md:5:"

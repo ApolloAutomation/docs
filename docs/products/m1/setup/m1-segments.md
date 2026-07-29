@@ -12,6 +12,8 @@ description: >-
 
     Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 1 will control the top 1/4 of the display, Segment 2 will control the second 1/4, Segment 3 will control the third 1/4 and Segment 4 will control the bottom 1/4 of the matrix.
 
+Segments work the same on WLED and WLED-MM. The steps below split a single 64x64 panel into four bands. On a larger layout, use your full width for **Stop X** and divide your height instead, which [Multiple Panels](/products/m1/setup/m1-multiple-panels.md) covers per arrangement.
+
 1\. Navigate to the main page of your WLED instance in a browser or using the WLED-native app and focus on the Segments section.
 
 2\. Since we are only using *one panel*, we will begin by editing **Segment 0** and setting the **Stop Y** to "16".

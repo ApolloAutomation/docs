@@ -1,1 +1,0 @@
---8<-- "products/m1/addons/adding-multiple-matrix-panels-to-m-1.md:5:"

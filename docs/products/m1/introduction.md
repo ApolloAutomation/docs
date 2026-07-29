@@ -6,7 +6,9 @@ description: Documentation for M-1, including setup, usage, and best practices.
 
 The Apollo Automation M-1 LED Matrix is a vibrant, high-performance display featuring 4096 pixels in a HUB75 format. Powered entirely by our new 5V 3Amp controller, it requires no additional power sources, keeping your setup clean and simple. The compact controller hides discreetly behind the matrix for a sleek installation.
 
-Pre-flashed with WLED firmware, the M-1 offers an easy and fun user experience right out of the box. Customize your display with animations, effects, and colors, or use the Pixel Magic tool to create your own unique images and designs. You can also connect up to four of these panels horizontally, though extra power injection will be needed for full the effect.
+Pre-flashed with WLED firmware, the M-1 offers an easy and fun user experience right out of the box. Customize your display with animations, effects, and colors, or use Pixel Forge, built into WLED, to turn your own images and scrolling text into displays without leaving the device. You can also connect up to four panels, either in a row or as a 2x2 square, though extra power injection will be needed for the full effect.
+
+New units ship with WLED 16.0.1. Older units shipped WLED-MM 14.5.1, and the M-1 can also run ESPHome. See [Choose Your Firmware](/products/m1/choose-your-firmware.md) to find the right setup guide.
 
 **Use Cases:**
 

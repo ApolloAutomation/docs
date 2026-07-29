@@ -1,0 +1,1 @@
+--8<-- "products/m1/addons/wizmote-remote.md:5:"
