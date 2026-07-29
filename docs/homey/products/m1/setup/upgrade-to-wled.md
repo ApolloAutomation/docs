@@ -1,0 +1,1 @@
+--8<-- "products/m1/setup/upgrade-to-wled.md:5:"

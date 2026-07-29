@@ -1,1 +1,0 @@
---8<-- "products/m1/examples/create-logo-image.md:5:"

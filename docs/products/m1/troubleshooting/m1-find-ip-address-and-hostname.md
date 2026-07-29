@@ -36,4 +36,4 @@ description: >-
 
 ![](/assets/m-1-wled-native-app-server-description-name-change.png)
 
-[Click here to learn how to add your own image or logo to the M-1](https://wiki.apolloautomation.com/products/m1/examples/create-logo-image/){ .md-button .md-button--primary }
+[Click here to learn how to add your own image or logo to the M-1](https://wiki.apolloautomation.com/products/m1/examples/pixel-forge/){ .md-button .md-button--primary }

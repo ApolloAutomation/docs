@@ -1,0 +1,1 @@
+--8<-- "products/m1/examples/pixel-forge.md:5:"
