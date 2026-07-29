@@ -1,1 +1,0 @@
---8<-- "products/m1/setup/m1-pinout-guide.md:5:"

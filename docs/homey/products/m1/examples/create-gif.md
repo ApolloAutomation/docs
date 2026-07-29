@@ -1,1 +1,0 @@
---8<-- "products/m1/examples/create-gif.md:5:"

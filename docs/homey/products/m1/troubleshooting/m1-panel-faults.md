@@ -1,0 +1,1 @@
+--8<-- "products/m1/troubleshooting/m1-panel-faults.md:5:"

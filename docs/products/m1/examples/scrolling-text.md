@@ -8,6 +8,14 @@ description: Step by step guide to adding a WLED Preset for custom scrolling tex
 
     The WLED firmware on your device will allow you to call these presets in automations or make buttons to control them on your Home Assistant dashboard!
 
+=== "WLED"
+
+    There are two ways to do this. The [Pixel Forge](/products/m1/examples/pixel-forge.md) **Scrolling Text Tool** is quicker and can insert live values like the time or temperature. The manual method below edits the segment directly, which is what you want when you are building presets to call from Home Assistant.
+
+=== "WLED-MM"
+
+    Edit the segment name directly, using the steps below. Pixel Forge is a stock WLED feature and is not in 14.5.1.
+
 1\. Open a web browser and navigate to `http://<your-ip-address>` or `http://<your-device-name>.local`.
 
 ![](/assets/m-1-wled-gui.png)
@@ -24,7 +32,7 @@ description: Step by step guide to adding a WLED Preset for custom scrolling tex
 
 ![](/assets/m-1-wled-scrolling-text-edit-segment-name.png)
 
-5\. Type in anything you want to scroll on the M-1 such as "Apollo Rocks!". Click on the Check button when you're done and it will update the M-1 LED Matrix with your new text.
+5\. Type in anything you want to scroll on the M-1 such as "Apollo Rocks!". Click on the Check button when you're done and it will update the M-1 LED Matrix with your new text. WLED caps this at 32 characters.
 
 ![](/assets/m-1-wled-scrolling-text-check-box-to-save-scrolling-text.png)
 
@@ -40,7 +48,7 @@ description: Step by step guide to adding a WLED Preset for custom scrolling tex
 
 ![](/assets/m-1-wled-scrolling-text-effect-sliders.png)
 
-6\. To customize the text’s Color, Background Color, and Gradient, just click the Fx, Bg, and Gr circles and choose your colors using the color picker!
+6\. To customize the text's Color, Background Color, and Gradient, just click the Fx, Bg, and Gr circles and choose your colors using the color picker!
 
 ![](/assets/m-1-matrix-scrolling-text-example-fx-bg-gr-gif.gif)
 
@@ -51,3 +59,5 @@ description: Step by step guide to adding a WLED Preset for custom scrolling tex
 8\. Here's what your finished product looks like!
 
 ![](/assets/m-1-scrolling-text-finished-example-gif.webp)
+
+Want four lines at once instead of one? Split the display first with [Segments](/products/m1/setup/m1-segments.md), then set text on each one. To drive the text from your house rather than typing it, see [Share Data From Home Assistant](/products/m1/examples/share-data-from-home-assistant.md).
