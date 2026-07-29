@@ -10,7 +10,7 @@ description: Step by step guide to adding a WLED Preset for custom scrolling tex
 
 === "WLED"
 
-    There are two ways to do this. The [Pixel Forge](/products/m1/examples/pixel-forge.md) **Scrolling Text Tool** is quicker and can insert live values like the time or temperature. The manual method below edits the segment directly, which is what you want when you are building presets to call from Home Assistant.
+    There are two ways to do this. The [Pixel Forge](/products/m1/examples/pixel-forge.md) **Scrolling Text** tool is quicker and can insert live values like the time or temperature. The manual method below edits the segment directly, which is what you want when you are building presets to call from Home Assistant.
 
 === "WLED-MM"
 
@@ -32,7 +32,7 @@ description: Step by step guide to adding a WLED Preset for custom scrolling tex
 
 ![](/assets/m-1-wled-scrolling-text-edit-segment-name.png)
 
-5\. Type in anything you want to scroll on the M-1 such as "Apollo Rocks!". Click on the Check button when you're done and it will update the M-1 LED Matrix with your new text. WLED caps this at 32 characters.
+5\. Type in anything you want to scroll on the M-1 such as "Apollo Rocks!". Click on the Check button when you're done and it will update the M-1 LED Matrix with your new text. WLED caps this at 64 characters, and WLED-MM at 32.
 
 ![](/assets/m-1-wled-scrolling-text-check-box-to-save-scrolling-text.png)
 

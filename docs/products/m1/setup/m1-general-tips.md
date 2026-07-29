@@ -18,6 +18,6 @@ description: Multiple helpful tips to use your M-1 LED Matrix to the fullest!
 
 [Segments](/products/m1/setup/m1-segments.md) carve the matrix into areas you can control separately, which is how you get four independent lines of text on one panel. Across [multiple panels](/products/m1/setup/m1-multiple-panels.md) you can dedicate a segment to each physical panel, or run one effect across all of them.
 
-The <a href="https://kno.wled.ge/interfaces/json-api/" target="_blank" rel="noreferrer nofollow noopener">JSON API</a> is how you drive the matrix from elsewhere, such as [pushing Home Assistant sensor values](/products/m1/examples/share-data-from-home-assistant.md) onto the display as scrolling text. Keep to one to three panels for text, since scrolling text tops out at 32 characters.
+The <a href="https://kno.wled.ge/interfaces/json-api/" target="_blank" rel="noreferrer nofollow noopener">JSON API</a> is how you drive the matrix from elsewhere, such as [pushing Home Assistant sensor values](/products/m1/examples/share-data-from-home-assistant.md) onto the display as scrolling text. Scrolling text tops out at 64 characters on WLED and 32 on WLED-MM, so keep to one to three panels for text-heavy displays.
 
 Watch your power. Each 64x64 panel can draw about 3A at 5V, and the controller's onboard rail only covers one of them. Details are on the [Multiple Panels](/products/m1/setup/m1-multiple-panels.md) page.

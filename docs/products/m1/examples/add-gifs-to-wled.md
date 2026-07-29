@@ -13,23 +13,9 @@ Getting it onto the matrix depends on your firmware. WLED converts and resizes o
 
 === "WLED"
 
-    1\. Download the GIF at whatever size it comes in. The resizing happens on the device.
+    [Pixel Forge](/products/m1/examples/pixel-forge.md) handles the whole job on the device. Upload your GIF, frame it, set the size, and it lands in the effects list ready to run. No external resizing and no manual file upload.
 
-    2\. Open your M-1 in a browser at `http://<your-m1-ip>` or `http://<your-device-name>.local`. Not sure which? [Find your IP and hostname](/products/m1/troubleshooting/m1-find-ip-address-and-hostname.md).
-
-    3\. Click the Pixel Forge icon below the color picker, or go to `http://<your-m1-ip>/pixelforge.htm`, and stay on the **Image Tool** tab.
-
-    4\. Choose the segment you want the GIF to play on, then drag your GIF onto the upload area.
-
-    5\. Frame it with the crop box and the zoom slider. Animated GIFs keep their frames through the conversion.
-
-    6\. Set the output size to match your display, 64 x 64 on a single panel, and give it a short filename.
-
-    7\. Save. The GIF is written to the M-1 and appears in the effects list.
-
-    8\. Back on the main page, select your GIF from the effects list. It plays at the frame rate baked into the file.
-
-    [Full Pixel Forge guide](/products/m1/examples/pixel-forge.md){: .md-button }
+    [Add a GIF with Pixel Forge](/products/m1/examples/pixel-forge.md){: .md-button .md-button--primary }
 
 === "WLED-MM"
 
@@ -69,18 +55,16 @@ Getting it onto the matrix depends on your firmware. WLED converts and resizes o
 
     ![](/assets/m-1-create-gifs-enter-gif-name-as-segment-name.gif)
 
-###### Save It as a Preset
+    9\. Click on **\+ Preset** and write in any name you want such as Cat Dance then click **Save**.
 
-1\. Click on **\+ Preset** and write in any name you want such as Cat Dance then click **Save**.
+    ![](/assets/m-1-create-gifs-save-gif-as-preset.gif)
 
-![](/assets/m-1-create-gifs-save-gif-as-preset.gif)
+    10\. To have the M-1 boot straight into this gif, head to **Config** then **LED Preferences** and scroll down until you see **Apply Preset** and put in your preset number for the effect you just made. If this is your first one then put in 1 and then click **Save**.
 
-2\. To have the M-1 boot straight into this gif, head to **Config** then **LED Preferences** and scroll down until you see **Apply Preset** and put in your preset number for the effect you just made. If this is your first one then put in 1 and then click **Save**.
+    ![](/assets/m-1-create-gifs-set-preset-as-boot.gif)
 
-![](/assets/m-1-create-gifs-set-preset-as-boot.gif)
+    !!! warning "Use a browser, not the WLED phone app"
 
-!!! warning "Use a browser, not the WLED phone app"
+        The app's file picker greys out image files, so uploading a GIF from it does not work. That is a bug in the app rather than anything on the M-1. Open the device in any browser instead.
 
-    The app's file picker greys out image files, so uploading a GIF from it does not work. That is a bug in the app rather than anything on the M-1. Open the device in any browser instead.
-
-GIFs live on the M-1 itself and the space is limited. Delete images you are not using from **Config**, then **File System**.
+    GIFs live on the M-1 itself and the space is limited. Delete images you are not using from **Config**, then **File System**.
