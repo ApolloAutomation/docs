@@ -63,7 +63,7 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
     | rows x cols | 1 and 1 |
     | Reversed | unchecked |
 
-    Both boxes are 1 on a single panel. The first is how many panels across and the second is how many down, which only matters once you [add panels](/products/m1/setup/m1-multiple-panels.md).
+    Both boxes are 1 on a single panel. The first is how many panels down and the second is how many across, which only matters once you [add panels](/products/m1/setup/m1-multiple-panels.md).
 
     **Enable automatic brightness limiter** stays unchecked and **Global brightness factor** stays at 100%. **Total LEDs** at the top of the page should read **4096**. Click **Save**.
 
