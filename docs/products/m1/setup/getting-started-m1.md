@@ -18,15 +18,13 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
 === "WLED"
 
-    1\. Plug in USB-C power. The M-1 boots within a couple of seconds and displays a setup card on the panel with a QR code.
+    1\. Plug in USB-C power. The M-1 boots to a picture of Apollo, our mascot, then displays a setup card on the panel.
 
     ![](/assets/wled-16-boot-image-preset.webp)
 
-    2\. Scan the QR code, or join the open Wi-Fi network named **Apollo M-1** from your phone. There is no password.
+    2\. On your phone or computer, look for the new Wi-Fi network called **Apollo M-1** and join it. Once connected, a "Welcome to WLED!" page should pop up, but if it does not that's ok. Either scan the QR code on the LED matrix or go to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser such as Firefox, Chrome, or Safari. The Welcome to WLED page shows up.
 
-    3\. Your phone should pop up "Welcome to WLED!". If it does not, open a browser and go to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a>.
-
-    4\. Tap **WIFI SETTINGS**, enter your network name and password, and tap **Save & Connect**.
+    3\. Tap **WIFI SETTINGS**, enter your network name and password, and tap **Save & Connect**.
 
     !!! tip "Set your mDNS address here too"
 
@@ -64,25 +62,41 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
 ### Join to Home Assistant
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a>. The M-1 is discovered automatically by the WLED integration.
+=== "WLED"
 
-![](/assets/m-1-setup-wled-integration-add-device.png)
+    1\. Open your integrations page in Home Assistant. The M-1 is discovered automatically by the WLED integration. Click **Add**, then **Submit**. Give it a name and an **Area**, then click **Finish**.
 
-2\. Click **Add**, then **Submit**.
+    <a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
 
-![](/assets/m-1-setup-wled-integration-click-submit.png)
+    ![](/assets/m-1-home-assistant-integration-setup.gif)
 
-3\. Give it a name and a location, then click **Skip** and **Finish**.
+    2\. From this page you can control your M-1 in Home Assistant. Change the color, pick effects, run presets, and more.
 
-![](/assets/m-1-setup-wled-integration-name-location-finish.png)
+    ![](/assets/m-1-home-assistant-example-usage.gif)
 
-4\. Open the <a href="http://homeassistant.local:8123/config/integrations/integration/wled" target="_blank" rel="noreferrer nofollow noopener">WLED integration page</a> and click your M-1.
+=== "WLED-MM"
 
-![](/assets/m-1-setup-wled-integration-click-device-2.png)
+    1\. Open your integrations page in Home Assistant. The M-1 is discovered automatically by the WLED integration.
 
-5\. From here you can change the color, pick effects, run presets, and more.
+    <a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
 
-![](/assets/m-1-setup-wled-integration-test-device.png)
+    ![](/assets/m-1-setup-wled-integration-add-device.png)
+
+    2\. Click **Add**, then **Submit**.
+
+    ![](/assets/m-1-setup-wled-integration-click-submit.png)
+
+    3\. Give it a name and a location, then click **Skip** and **Finish**.
+
+    ![](/assets/m-1-setup-wled-integration-name-location-finish.png)
+
+    4\. Open the <a href="https://my.home-assistant.io/redirect/integration/?domain=wled" target="_blank" rel="noreferrer noopener">WLED integration page</a> and click your M-1.
+
+    ![](/assets/m-1-setup-wled-integration-click-device-2.png)
+
+    5\. From here you can change the color, pick effects, run presets, and more.
+
+    ![](/assets/m-1-setup-wled-integration-test-device.png)
 
 #### What Next
 
