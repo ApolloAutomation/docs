@@ -86,15 +86,13 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
     ![](/assets/wled-2x2-matrix-led-setup.png)
 
-    !!! warning "Enter width first"
-
-        The first box is how many panels **across**, the second is how many **down**. Four panels in a row is **4** then **1**. A 2x2 square is **2** then **2**. The label reads rows x cols, but width goes first on both WLED and WLED-MM.
+    **rows x cols** means what it says. The first box is how many panels **down**, the second is how many **across**, so a row of four panels is **1** then **4**.
 
     | Layout | No. of Panels | rows x cols | Total LEDs |
     | --- | --- | --- | --- |
-    | Two panels | 2 | 2 and 1 | 8192 |
-    | Three panels | 3 | 3 and 1 | 12288 |
-    | Four panels in a row | 4 | 4 and 1 | 16384 |
+    | Two panels | 2 | 1 and 2 | 8192 |
+    | Three panels | 3 | 1 and 3 | 12288 |
+    | Four panels in a row | 4 | 1 and 4 | 16384 |
     | 2x2 grid | 4 | 2 and 2 | 16384 |
 
     On a 2x2, do not add a software flip for the upside-down bottom row. The 2 x 2 mapping already assumes the serpentine-with-rotated-bottom-row build described above.
@@ -106,7 +104,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
     ![](/assets/wled-2x2-matrix-2d-setup.png)
 
-    Set **Dimensions (WxH)** to the combined size of your layout. (1)
+    Set **Dimensions (WxH)** to the combined size of your layout. This field is width first, unlike **rows x cols** above. (1)
     { .annotate }
 
     1.  2D Configuration does not follow the HUB75 change automatically, so this is the step people miss.
