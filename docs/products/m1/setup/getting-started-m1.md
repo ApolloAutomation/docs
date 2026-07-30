@@ -24,6 +24,8 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     2\. On your phone or computer, look for the new Wi-Fi network called **Apollo M-1** and join it. Once connected, a "Welcome to WLED!" page should pop up, but if it does not that's ok. Either scan the QR code on the LED matrix or go to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser such as Firefox, Chrome, or Safari. The Welcome to WLED page shows up.
 
+    ![](/assets/m-1-wled-connect-to-wifi.webp)
+
     3\. Tap **WIFI SETTINGS**, enter your network name and password, and tap **Save & Connect**.
 
     !!! tip "Set your mDNS address here too"
