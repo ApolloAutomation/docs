@@ -15,12 +15,13 @@ Run a 3.5mm cable from the CAST-1 into the line-in on your powered speakers, rec
 
 ![](/assets/cast-1-physical-setup.webp)
 
-### Connect to Wi-Fi
+### Connect to Your Network
 
-There are two ways to get your CAST-1 online. Pick whichever is easier, you only need to do one.
+There are three ways to get your CAST-1 online. Pick whichever is easier, you only need to do one.
 
 - **Hotspot** works on any phone or computer. The CAST-1 broadcasts its own Wi-Fi network, you join it, then enter your Wi-Fi details. No extra hardware needed.
 - **Improv via BLE** sets the CAST-1 up over Bluetooth straight from Home Assistant. It's quick, but it needs Bluetooth on your Home Assistant host or an ESP32 Bluetooth proxy.
+- **Ethernet** is for a CAST-1 with the Ethernet add-on module fitted. It connects over a network cable straight to your router or switch.
 
 === "Hotspot"
 
@@ -56,7 +57,23 @@ There are two ways to get your CAST-1 online. Pick whichever is easier, you only
 
     ![](/assets/cast-1-add-via-improv-ble.gif)
 
-Once your CAST-1 is on Wi-Fi, add it to Home Assistant below. If you used **Improv via BLE** it's already added, so you can jump straight to [installing Music Assistant](#music-assistant).
+    Improv adds your CAST-1 to Home Assistant as part of setup, so skip ahead to [installing Music Assistant](#music-assistant).
+
+=== "Ethernet"
+
+    Wired setup needs the <a href="https://wiki.apolloautomation.com/products/cast1/addons/ethernet-module/" target="_blank" rel="noopener">Ethernet module</a> fitted and your CAST-1 running the Ethernet firmware.
+
+    With the CAST-1 unplugged, line the module's pins up with the two rows of female header pins on top of the case, pin side down, and press it straight down until it sits flat.
+
+    ![](/assets/cast-1-connect-ethernet-module.webp)
+
+    1\. Every CAST-1 ships on Wi-Fi firmware, so flash yours over to Ethernet first. Follow the <a href="https://wiki.apolloautomation.com/products/cast1/troubleshooting/cast1-reflash/" target="_blank" rel="noopener">reflashing guide</a> and select **Ethernet** under **Variant**.
+
+    2\. Plug an Ethernet cable into the module, then plug the CAST-1 into power.
+
+    3\. Your CAST-1 picks up an address from your router on its own, so there's nothing to enter.
+
+    4\. Home Assistant discovers your CAST-1 automatically. Add it below, then check the **IP Address** sensor on the device page to confirm the wired connection came up.
 
 ### Add to Home Assistant
 
@@ -92,6 +109,8 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 3\. Pick any song, playlist, or radio station and it plays through the speakers connected to your CAST-1.
 
+![](/assets/cast-1-play-song.gif)
+
 ###### Play In Multiple Rooms
 
 Have more than one CAST-1? Group them to play the same music in sync across every room.
@@ -101,5 +120,7 @@ Have more than one CAST-1? Group them to play the same music in sync across ever
 2\. Click the group/sync button and select the other CAST-1 players you want to join.
 
 3\. All grouped CAST-1 players now play the same audio together. Adjust the volume for the whole group or per player.
+
+![](/assets/cast-1-play-in-multiple-rooms.gif)
 
 [Add a WizMote for physical playback control! :material-remote:](https://wiki.apolloautomation.com/products/cast1/examples/wizmote-blueprint/){ .md-button .md-button--primary }
