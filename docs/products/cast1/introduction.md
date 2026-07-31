@@ -4,6 +4,8 @@ description: Documentation for CAST-1, including setup, usage, and best practice
 ---
 # Introduction
 
+![](/assets/cast-1-intro-image.webp)
+
 **Make Any Speakers Smart:** Plug the CAST-1 into a 3.5mm line-in, add it to Home Assistant, and it shows up in Music Assistant as a player you can stream to.
 
 **Multi-Room Audio:** Group several CAST-1s to play the same music in sync across every room. Streaming runs locally through Music Assistant and Sendspin, so there's no cloud account and no subscription.

@@ -26,12 +26,22 @@ Each dropdown offers the same choices: Nothing, Play, Pause, Play / Pause, Next 
 
 Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
-1\. On your CAST-1 device page, turn on **WizMote Auto-Discovery**.
+1\. Open the ESPHome integration, then click through to your Apollo CAST-1 to open its device page.
 
-2\. Press any button on your WizMote. The CAST-1 pairs with it and **WizMote Status** updates to show the paired remote. (1)
+<a href="https://my.home-assistant.io/redirect/integration/?domain=esphome" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integration.svg" alt="Open your Home Assistant instance and show the ESPHome integration."></a>
+
+2\. Turn on **WizMote Auto-Discovery**.
+
+3\. Press any button on your WizMote. The CAST-1 pairs with it and **WizMote Status** updates to show the paired remote. (1)
 { .annotate }
 
 1.  Pairing a different WizMote later? Use **Clear WizMote Pairing** on the device to unpair, then turn **WizMote Auto-Discovery** back on and press a button on the new remote.
+
+![](/assets/cast-1-pair-wizmote.gif)
+
+!!! note "Pairing takes longer on the Ethernet firmware"
+
+    With no Wi-Fi to follow, your CAST-1 scans radio channels 1 through 13 looking for the WizMote, waiting 30 seconds on each one before moving on. Press a button every few seconds and give it a few minutes to land on the right channel.
 
 ### Import the Blueprint
 
@@ -48,3 +58,5 @@ Before the blueprint can control anything, pair your WizMote with the CAST-1.
 5\. For any button set to **Send HA Event** (Buttons 3 and 4 by default), click **Add Action** below it and choose what it should do, like playing a Music Assistant playlist or toggling a light.
 
 6\. Name your automation something like **Apollo CAST-1 WizMote** and click **Save**. Your WizMote now controls your CAST-1!
+
+![](/assets/cast-1-import-blueprint.gif)

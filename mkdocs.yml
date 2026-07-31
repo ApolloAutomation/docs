@@ -237,11 +237,16 @@ nav:
             - Reset Wi-Fi Credentials: products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
       - CAST-1:
           - Introduction: products/cast1/introduction.md
+          - FAQ: products/cast1/faq.md
           - Getting Started: products/cast1/setup/getting-started.md
           - Additional Info:
             - Sensor Definitions: products/cast1/setup/sensor-definitions.md
+            - Switch Firmware: products/cast1/setup/cast1-switch-firmware.md
             - ESPHome Device Builder: products/cast1/additional-info/esphome-device-builder.md
+          - Addons:
+            - Ethernet Module: products/cast1/addons/ethernet-module.md
           - Examples:
+            - TTS and Announcements: products/cast1/examples/tts-announcements.md
             - WizMote Control: products/cast1/examples/wizmote-blueprint.md
           - Troubleshooting:
             - CAST-1 Boot Mode: products/cast1/troubleshooting/cast1-boot-mode.md
