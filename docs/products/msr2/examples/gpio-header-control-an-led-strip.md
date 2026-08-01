@@ -1,131 +1,126 @@
 ---
-title: How To Use The Apollo GPIO Header To Control An LED Strip
-description: A tutorial for how To Use The Apollo GPIO Header To Control An LED Strip.
+title: Control an LED strip with the GPIO Header
+description: Wire a WS2812B LED strip to the Apollo GPIO Header and control it from Home Assistant.
 ---
-# How To Use The Apollo GPIO Header To Control An LED Strip
+# Control an LED strip with the GPIO Header
 
-This tutorial will guide you through setting up one of our MSR-2 devices (works with any mezzanine port on any Apollo Device) with the optional $4.99 GPIO Header which adds pins for you to easily add functionality to your device! In this tutorial, however, we will be focusing on adding an LED strip to your Apollo device.
+The GPIO Header addon brings the MSR-2's spare pins out to a row of headers, so you can hang your own hardware off the sensor. This guide wires a WS2812B strip to one of those pins and gets it into Home Assistant as its own light entity, color picker and effects included.
 
-**Materials Needed for tutorial:**
+The same steps work on any Apollo device with a mezzanine port, including the MTR-1 and AIR-1. Click any photo to see it full size.
 
-- [Apollo MSR-2](https://apolloautomation.com/products/msr-2), [Apollo MTR-1](https://apolloautomation.com/products/mtr-1), and all other future Apollo Automation products with the mezzanine port.
-- [Apollo GPIO Header](https://apolloautomation.com/products/msr-2-gpio-header)
-- ws2812b aka neopixel RGB led strip or similar. sk6812 RGBW strip will also work.
-- Optional DuPont Cables for GPIO Header but any DuPont cables will do.
-- USB-C cable and power brick to power MSR-2
+## What you need
 
-You are limited to 300mA of power output from the 5v port. You can either attach an external power supply and power the MSR-2 via 5v and gnd pins or work with the limited power output of the port
+- An [Apollo MSR-2](https://apolloautomation.com/products/msr-2), or any Apollo device with a mezzanine port.
+- The [Apollo GPIO Header](https://apolloautomation.com/products/msr-2-gpio-header) addon.
+- A WS2812B (neopixel) RGB strip. SK6812 RGBW strips work too.
+- Three male-to-male DuPont wires. A set comes with the header.
+- A USB-C cable and power brick.
 
-![GPIO Pinout](/assets/air1-cS6XiR5FyO8wvSBi9sW3466gHoUWfT7HhA.png)
+!!! warning "Watch the current draw"
 
-Above is an image of the GPIO Header and its pinouts. We can use ports 2,4,6,7 for our data channel to an LED strip or multiple LED strips. We will also use the top two ports which are ground and 5v for power.
+    The 5V pin supplies up to 300mA. A meter of 60 LEDs at full white draws far more than that, so anything longer than a short strip needs its own 5V supply. You can power the MSR-2 itself from the 5V and GND pins instead of the USB-C port, but use one or the other, never both.
 
-Did you know you can power the esp32 from the 5v and gnd pin? That means you can connect an external power supply and power it without the side USB port being used! This also allows for more power to be given to your LEDs!
+## Choosing a data pin
 
-We cannot use the IO ports 0,1,18, or 19 for LEDs but you can use ports 0 and 1 for i2c sensors.
+IO2, IO4, IO6, and IO7 are free for LED data, and you can drive more than one strip by giving each its own pin. IO18 and IO19 are unavailable, and IO0 and IO1 are reserved for I2C sensors. This guide uses **IO7**, plus the 5V and GND pins at the top of the header for power.
 
+![Pinout diagram of the Apollo GPIO Header showing the 5V, GND, and IO pins](/assets/gpio-header-pinout.webp){ width="480" }
 
+## Attaching the GPIO Header
 
-**Connecting the GPIO Header to the MSR-2**
+1.  Unplug the MSR-2 from power and pull the back plate off.
 
-The first thing we will do is remove our MSR-2 back plate and connect our GPIO Header to our MSR-2 and then put the new GPIO back plate on (blue).
+    ![MSR-2 with the back plate being lifted away](/assets/gpio-led-msr2-backplate-off-1.webp){ width="360" } ![MSR-2 PCB exposed with the back plate removed](/assets/gpio-led-msr2-backplate-off-2.webp){ width="200" }
 
-Step 1. Remove the backplate of the MSR-2
+2.  Line up the X marked on the MSR-2 PCB with the X on the GPIO Header. Both face the same way.
 
-![](/assets/air1-0Jrm5FqWzsc9G2KmWBJWMLEr2J4aYyj4Bg.jpg) ![](/assets/air1-9UJnA9aCGf0TNw1uc3ik2xEFxXlLs95bOw.jpg)
+    ![The X marking on the MSR-2 PCB aligned with the X on the GPIO Header](/assets/gpio-led-msr2-align-x.webp){ width="200" }
 
-Step 2. Line up the Xs shown on the msr-2 and the GPIO Header. They should both be facing in the same direction as shown below.
+3.  Press the header down onto the small black mezzanine connector, then check it sits flat with no gap along either edge.
 
-![](/assets/air1-6uv5liNNA-wHLFfHxiadM56YpIonKQalTg.jpg)
+    ![A thumb pressing the GPIO Header onto the mezzanine connector](/assets/gpio-led-msr2-press-header.webp){ width="200" } ![GPIO Header fully seated flat against the MSR-2 PCB](/assets/gpio-led-msr2-header-seated.webp){ width="200" }
 
-Step 3. Gently push down onto the GPIO Header as shown below:
+4.  Slide the blue GPIO back plate that came with the addon over the sensor and press until it clicks. If it needs more than light pressure, stop and check the orientation rather than forcing it.
 
-![](/assets/air1-a6nANg-L_gqIkPH6ZKQo6mCSSSbacF7FkQ.jpg)
+    ![Blue GPIO back plate being fitted to the MSR-2](/assets/gpio-led-msr2-gpio-backplate.webp){ width="200" }
 
-Step 4. Confirm the GPIO Header is seated properly as shown below.
+## Wiring the strip
 
-![](/assets/air1-P3TZVCVhVSBYXFOWtPc4fZML_8-LQTEHQw.jpg)
+1.  Run three wires from the header to the strip: 5V, GND, and data. Matching the colors to the strip's own wiring saves a lot of squinting later, so use red for 5V, white for GND, and green for data on IO7.
 
-Step 5. Slide the GPIO Header back plate for the MSR-2 over your sensor and gently push down until it clicks into place.
+    ![Red, white, and green DuPont wires laid out next to the GPIO Header](/assets/gpio-led-dupont-wires-1.webp){ width="200" } ![DuPont wires pushed onto the 5V, GND, and IO7 pins](/assets/gpio-led-dupont-wires-2.webp){ width="200" } ![Close-up of the three wires seated on the GPIO Header](/assets/gpio-led-dupont-wires-3.webp){ width="200" }
 
-![](/assets/air1-hbfGA0fIQlpnykuuZOhiEuHlZDW7r3GfoQ.jpg)
+2.  Plug the other end into the strip. Most strips come with a JST-SM pigtail carrying the same three colors, so the wires match up directly. The connector is rated to 3A.
 
-If the back plate does not gently go onto the sensor please investigate and confirm it is in the right orientation.
+    ![JST-SM connector on the end of a WS2812B strip](/assets/gpio-led-strip-jst-1.webp){ width="200" } ![DuPont wires plugged into the strip's JST-SM connector](/assets/gpio-led-strip-jst-2.webp){ width="200" }
 
-**Connecting DuPont pins to proper GPIO ports**
-Now we need to reference the GPIO pinout we looked at above and then connect three wires. You will need three male-to-male DuPont wires included in your kit. I suggest using red for power aka 5v, White for ground aka GND, and green for data aka port IO7. Most LED strips will also have this same color scheme and it's easier to match like colors together.
+3.  Check the direction before you power anything on. Arrows printed along the strip show which way data flows, and they need to point away from the MSR-2.
 
-![](/assets/air1-4OHLuxZVKc1TcCGLfvAEf-1UUl-IzmeHzQ.jpg)
+    ![Direction arrow printed on the LED strip pointing away from the sensor](/assets/gpio-led-strip-arrow-1.webp){ width="200" } ![The wired end of the strip with the arrow running down its length](/assets/gpio-led-strip-arrow-2.webp){ width="200" }
 
-![](/assets/air1-4Er61OH8tF-IaiVvom0cWPeOyfNkRWtibw.jpg)
+A dab of hot glue across the outer shells of the three DuPont connectors stiffens them into a single plug. (1)
+{ .annotate }
 
-![](/assets/air1-oBW2IxCJX5zKaZGj_o4JtXuoulEGI8DH5Q.jpg)
+1.  Keep glue out of the header's female pins. It will ruin the addon.
 
-You can add a bit of hot glue to the Dupont wires to hold them together. DO NOT put hot glue into the GPIO Header's female pins that will ruin the addon. I am only suggesting that you can hot-glue the Dupont pins outer shell themselves together to stiffen them up.
+![Hot glue joining the outer shells of three DuPont connectors](/assets/gpio-led-dupont-hot-glue.webp){ width="200" }
 
-![5QMWMycqBmvOz_mlKdoTbZwkC-4__REi8A.jpg](/assets/5qmwmycqbmvoz-mlkdotbzwkc-4-rei8a.jpg)
+## Adding the strip to your YAML
 
-**Connecting DuPont pins to LED Strip**
+The MSR-2 knows nothing about the strip until you tell it how many LEDs there are and which pin they sit on.
 
-Next, we need to connect the other side of the Dupont pins to the LED strip. Most likely your LED strip will have a JST-SM connector which is a 3amp max connector with three wires connected: red for 5v, green for data, and white for gnd. We will be matching up our red, green, and white wires already attached to the GPIO add-on pins in the MSR-2 (using IO7 as the data pin for this tutorial)
+1.  Open the **ESPHome Device Builder** app, find your MSR-2, and click **Edit**.
 
-![](/assets/air1-Me6P6lhhZUQMhuY--kIQqoFHV6QgrxpO0g.jpg) ![](/assets/air1-LwzqEXM9B89IWUQCIdZtwo_uYIbYVzdT0g.jpg)
+    ![The ESPHome Device Builder editor open on an MSR-2 configuration](/assets/gpio-led-esphome-edit.webp){ width="480" }
 
-Make sure to connect to the correct side of the LED strip. The led strip will have an arrow going down the led strip showing one direction for the data line. you want the data channel going FROM the msr-2 TO the led strip going in a "forward" direction as shown below.
+2.  Add the block below at the bottom of the file, flush with the left margin so `light:` lines up with `packages:` and `wifi:`. Set `num_leds` to the number of LEDs on your strip, and change `pin` if you wired to a different port.
 
-![](/assets/air1-n0MT-JcoqRwPKYfZOaYyBD2RU4K3x_gmOA.jpg) ![](/assets/air1-BDLaEPEomVhYjATCJMSVMltiTS9aoVY9YQ.jpg)
+    ```yaml
+    light:
+      - platform: esp32_rmt_led_strip
+        id: bed_led
+        name: "Bed LED"
+        pin: GPIO7
+        chipset: WS2812
+        rgb_order: grb
+        num_leds: 60
+        default_transition_length: 0s
+        effects:
+          - pulse:
+              name: "Slow Pulse"
+              transition_length: 1000ms
+              update_interval: 1000ms
+              min_brightness: 50%
+              max_brightness: 100%
+          - pulse:
+              name: "Fast Pulse"
+              transition_length: 100ms
+              update_interval: 100ms
+              min_brightness: 50%
+              max_brightness: 100%
+          - addressable_rainbow:
+    ```
 
-**Edit the YAML of your MSR-2 to let it know about your new LED strip**
+3.  Check that the editor shows no red error markers.
 
-Finally, we need to tell the MSR-2 that we connected an LED strip. We need to tell it how many LEDs we have and we need to tell it that it's our second LED since the built-in LED is the first. This tutorial assumes you are comfortable with the ESPHome dashboard.
+    ![The ESPHome editor showing the new light block with no errors flagged](/assets/gpio-led-esphome-no-errors.webp){ width="300" }
 
-Step 1. Open ESPhome Dashboard and click edit to bring up the yaml your sensor is currently using.
+4.  Click **Save**, then **Install**, and pick **Wirelessly**. ESPHome compiles the firmware and sends it to the MSR-2. The first build takes a few minutes.
 
-![](/assets/air1-28MMBJEeIQOmwUGtP9L3cx0PtCaTL0HX_Q.png)
+Older versions of this guide set `rmt_channel: 1` on the light. ESPHome dropped that option, and leaving it in now fails validation, so the block above does not use it.
 
-You will see some YAML code here and you do NOT want to touch anything above line 20. If you need to, click your cursor at the end of wifi\_password and hit enter to create a new line then make sure you backspace until you are "flush" with the line numbers like how wifi: is.
+The [ESPHome light effects reference](https://esphome.io/components/light/index.html#light-effects) covers everything else you can add under `effects:`, including `addressable_scan`.
 
-Step 2. Copy the code below and paste it to line 20 in your ESPHome yaml for this device.
+## Controlling it from Home Assistant
 
-```generic
-light:
-  - platform: esp32_rmt_led_strip
-    id: bed_led
-    name: "Bed LED"
-    pin: GPIO7
-    rmt_channel: 1
-    default_transition_length: 0s
-    chipset: WS2812
-    num_leds: 60
-    rgb_order: grb
-    effects:
-      - pulse:
-          name: "Slow Pulse"
-          transition_length: 1000ms
-          update_interval: 1000ms
-          min_brightness: 50%
-          max_brightness: 100%
-      - pulse:
-          name: "Fast Pulse"
-          transition_length: 100ms
-          update_interval: 100ms
-          min_brightness: 50%
-          max_brightness: 100%
-      - addressable_rainbow:
-```
+Once the install finishes, the MSR-2 exposes a new light entity called **Bed LED**.
 
+![The Bed LED entity listed on the MSR-2 device page in Home Assistant](/assets/gpio-led-ha-entity.webp){ width="500" }
 
-This is where you can change your number of LEDs as well as the GPIO pin used for the LED data!  
-Make sure to check out [https://esphome.io/components/light/index.html#light-effects](https://esphome.io/components/light/index.html#light-effects) for all the effects supported such as addressable scan effect!Step 3. Confirm you do not have any red lines showing errors in your code![](/assets/air1-EQdHu-pdF_2D7T6GJkjdqSQYZptmHk-cmw.png)
-You change the rmt\_channel to 1 because 0 is being used by the built-in LED of the MSR-2.
-Step 4. Hit save and then install in the top right. It should have a popup where you select "wirelessly" then it will begin compiling the firmware and finally installing the compiled firmware to your MSR-2.Step 5. Go into home assistant and confirm you now have a new light entity called Bed LED
+Click the entity name to open the light card. The color wheel covers the full range, and the effects list holds the two pulses and the rainbow from the YAML above.
 
-![](/assets/air1-YfpAVN1FtpsODgbFgZg8qEVBNjl3NgaAvQ.png)
+![Home Assistant light card for Bed LED](/assets/gpio-led-ha-color-picker.webp){ width="190" } ![Color wheel open on the Bed LED card](/assets/gpio-led-ha-color-wheel.webp){ width="195" } ![Effect list showing Slow Pulse, Fast Pulse, and rainbow](/assets/gpio-led-ha-effect-list.webp){ width="190" }
 
-Step 6. Click on the name "Bed LED" circled and it will pop up a color picker. You can then choose the color wheel option to pick any color of the rainbow, or select "effect" and choose an effect.
+![WS2812B strip lit up in color behind a bed, driven by the MSR-2](/assets/gpio-led-strip-lit.webp){ width="260" }
 
-![](/assets/air1-GublKQEhWUdU-OxJiA948P3_HGiwxTpn4w.png) ![](/assets/air1-ObY0NPGDBIBaXPuhUVzo80fr1fToBm5ekg.png) ![](/assets/air1-1OhdBudlNh2Rk8SoytNKdoUHqknn8KA8sQ.png)
-
-![](/assets/air1-JI4fSugUQvhRpK1FauJEEPoj3Vwe-QD02Q.jpg)
-
-That's all folks! Thanks to Smart Home Sellout for putting this tutorial together!
+That's all folks! Thanks to Smart Home Sellout for putting this tutorial together.
