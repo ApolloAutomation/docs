@@ -39,9 +39,9 @@ Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
 ![](/assets/cast-1-pair-wizmote.gif)
 
-!!! note "Pairing takes longer on the Ethernet firmware"
+!!! note "Pairing works a little differently on the Ethernet firmware"
 
-    With no Wi-Fi to follow, your CAST-1 scans radio channels 1 through 13 looking for the WizMote, waiting 30 seconds on each one before moving on. Press a button every few seconds and give it a few minutes to land on the right channel.
+    With no Wi-Fi to follow, your CAST-1 hops through radio channels 1 through 13 hunting for the WizMote, moving on every couple of seconds until it hears one. Keep pressing a button and it should pair within a minute.
 
 ### Import the Blueprint
 
