@@ -86,11 +86,15 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
     | `temperature` / `humidity` | Two sub-sensors. Each has a `name` shown in Home Assistant and the web server, and an `id` you can reference from automations and lambdas. |
     | `id: aht20` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
 
-## Install the firmware
+## Install the software
 
 Flash the device so the new temperature and humidity entities go live.
 
-1. Click **Install** on your device card in ESPHome Device Builder.
+1.  Click **Install** on your device card in ESPHome Device Builder. (1)
+    { .annotate }
+
+    1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
+
 2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.

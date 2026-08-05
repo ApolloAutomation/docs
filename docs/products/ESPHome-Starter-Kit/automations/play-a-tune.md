@@ -94,13 +94,17 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
     See [Device Builder Tour → YAML editor (right)](../learning-the-basics/device-builder-tour.md#yaml-editor-right) for the full breakdown of the YAML pane.
 
-## Install the firmware
+## Install the software
 
-Your automation is saved in Device Builder, but the device is still running its old firmware. Compile and install the new code to push the change.
+Your automation is saved in Device Builder, but the device is still running its old software. Compile and install the new code to push the change.
 
-1. Click **Save** in the bottom right of the editor.
-2. Click **Install**, then pick **On the Network** to push the new firmware over Wi-Fi.
-3. Wait for the compile and flash to finish. The device reboots once the install is done.
+1.  Click **Save** in the bottom right of the editor.
+2.  Click **Install**, then pick **On the Network** to push the new software over Wi-Fi. (1)
+    { .annotate }
+
+    1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
+
+3.  Wait for the compile and flash to finish. The device reboots once the install is done.
 
 ![](../../../assets/esphome-device-builder-install-button-component.gif)
 

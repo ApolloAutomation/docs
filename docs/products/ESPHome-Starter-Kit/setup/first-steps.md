@@ -26,7 +26,10 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 ### ESPHome Device Builder
 
-ESPHome Device Builder is the software that gives you a user interface for writing, compiling, and flashing ESPHome YAML configurations. You'll use it to build the firmware for your kit.
+ESPHome Device Builder is the app that gives you a user interface for writing, compiling, and flashing ESPHome YAML configurations. You'll use it to build the software for your kit. (1)
+{ .annotate }
+
+1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 Think of it like telling the starter kit about what devices it has connected and how to use them!
 
@@ -43,7 +46,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
         - If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
         - If **Windows Security** asks whether to allow public and private networks to access Python, click **Allow**.
-        - If the installer fails or the Device Builder can't compile firmware, install **Git for Windows** from <a href="https://gitforwindows.org/" target="_blank" rel="noreferrer nofollow noopener">gitforwindows.org</a> and try again. Future installer builds will bundle this for you.
+        - If the installer fails or the Device Builder can't compile the software, install **Git for Windows** from <a href="https://gitforwindows.org/" target="_blank" rel="noreferrer nofollow noopener">gitforwindows.org</a> and try again. Future installer builds will bundle this for you.
 
     ![](../../../assets/esphome-builder-install-windows.gif)
 
@@ -173,7 +176,7 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 3\. Your device is now in boot mode - The ESP32-C6 will now stay in bootloader mode until you flash it.
 
-### Installing Firmware
+### Installing Software
 
 Before we continue, confirm that you installed the ESPHome Device Builder, configured your components, and put your device in boot mode.
 
@@ -181,7 +184,7 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 2. Click **Install** in the bottom right.
 3. Click **Plug into this computer**.
 4. Select the COM port, then click **Connect** to connect to the ESP32-C6.
-5. Wait for the firmware to compile and install. This usually takes two to five minutes.
+5. Wait for the software to compile and install. This usually takes two to five minutes.
 6. Once it completes, click **Stop**, then press the **Reset** button on your device. Your device will reboot and it's now ready to test out!
 
 ![](../../../assets/device-builder-initial-firmware-install.gif)
