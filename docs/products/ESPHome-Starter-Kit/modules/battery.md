@@ -50,7 +50,7 @@ A few things to know before you rely on it:
 
 ??? example "How the BTN-1 wakes on button press"
 
-    This is the deep sleep block from the <a href="https://github.com/ApolloAutomation/BTN-1/blob/main/Integrations/ESPHome/Core.yaml" target="_blank" rel="noreferrer nofollow noopener">BTN-1 firmware</a>. The `esp32_ext1_wakeup` section tells the ESP32-C6 to wake when any of the button pins goes high:
+    This is the deep sleep block from the <a href="https://github.com/ApolloAutomation/BTN-1/blob/main/Integrations/ESPHome/Core.yaml" target="_blank" rel="noreferrer nofollow noopener">BTN-1 software</a>. The `esp32_ext1_wakeup` section tells the ESP32-C6 to wake when any of the button pins goes high:
 
     ```yaml
     deep_sleep:
@@ -97,7 +97,10 @@ switch:
 
 The `restore_mode: RESTORE_DEFAULT_ON` line means the device stays awake by default. Get everything working and updated first, then flip the switch off in Home Assistant or the web server when you're ready for the sleep cycle to start. Toggle it while the device is awake, a sleeping device can't hear the command until its next wake-up.
 
-Our battery devices also support a Home Assistant helper that holds every Apollo device awake at once for firmware updates. The same pattern works here, see the [Awake HA Helper guide](/products/general/battery-sensors/awake-ha-helper.md) for the walkthrough.
+Our battery devices also support a Home Assistant helper that holds every Apollo device awake at once for software updates. (1) The same pattern works here, see the [Awake HA Helper guide](/products/general/battery-sensors/awake-ha-helper.md) for the walkthrough.
+{ .annotate }
+
+1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 ## Charging
 

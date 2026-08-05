@@ -622,13 +622,17 @@ This tutorial has two versions of the same automation. Both end with the same bu
 
     3.  Save and install. Flip the unit select once each direction to verify the numbers convert as you'd expect.
 
-## Install the firmware
+## Install the software
 
-Your automation is saved in Device Builder, but the device is still running its old firmware. Compile and install the new code to push the change.
+Your automation is saved in Device Builder, but the device is still running its old software. Compile and install the new code to push the change.
 
-1. Click **Save** in the bottom right of the editor.
-2. Click **Install**, then pick **On the Network** to push the new firmware over Wi-Fi.
-3. Wait for the compile and flash to finish. The device reboots once the install is done.
+1.  Click **Save** in the bottom right of the editor.
+2.  Click **Install**, then pick **On the Network** to push the new software over Wi-Fi. (1)
+    { .annotate }
+
+    1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
+
+3.  Wait for the compile and flash to finish. The device reboots once the install is done.
 
 ## Test the automation
 

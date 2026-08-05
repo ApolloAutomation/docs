@@ -4,7 +4,10 @@ description: A short overview of what ESPHome is, how the Device Builder app fit
 ---
 # Explaining ESPHome
 
-ESPHome is the open-source firmware project that powers your Apollo ESPHome Starter Kit. You describe what is connected to your ESP32-C6 (a button, a sensor, an LED) and ESPHome runs on the device, exposes those parts to Home Assistant, and accepts updates over the network.
+ESPHome is the open-source software project that powers your Apollo ESPHome Starter Kit. (1) You describe what is connected to your ESP32-C6 (a button, a sensor, an LED) and ESPHome runs on the device, exposes those parts to Home Assistant, and accepts updates over the network.
+{ .annotate }
+
+1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 You do not need to write any code to use it. For the Starter Kit, the **ESPHome Device Builder** app handles it.
 
@@ -13,7 +16,7 @@ You do not need to write any code to use it. For the Starter Kit, the **ESPHome 
 These two names get used interchangeably, but they are different pieces:
 
 - **ESPHome** is the software that runs on your device after it has been flashed. It is what makes your ESP32-C6 talk to Home Assistant, expose its sensors and controls, and accept wireless updates.
-- **ESPHome Device Builder** is the app where you set everything up. Pick the components you want (button, LED, sensor, etc.), click **Install**, and the Builder compiles the firmware and flashes it to your device. Run it as a desktop app on Windows, Mac, or Linux, or install it as a Home Assistant app.
+- **ESPHome Device Builder** is the app where you set everything up. Pick the components you want (button, LED, sensor, etc.), click **Install**, and the Builder compiles the software and flashes it to your device. Run it as a desktop app on Windows, Mac, or Linux, or install it as a Home Assistant app.
 
 For the Starter Kit, you will spend almost all your time in the Device Builder.
 
@@ -34,7 +37,7 @@ For more on how this works under the hood, see [the Home Assistant integration](
 A typical flow looks like this:
 
 1. Click **Add component** in **ESPHome Device Builder** and pick what is connected to your device. No code or YAML required.
-2. Click **Install** to flash the firmware to the device.
+2. Click **Install** to flash the software to the device.
 3. Home Assistant picks up the device through the **ESPHome integration** and shows its sensors, buttons, and lights as entities you can control or automate.
 
 If you ever want to fine-tune something the GUI does not expose, the YAML view is always available. Most users never need it.

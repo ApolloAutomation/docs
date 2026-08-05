@@ -303,12 +303,16 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
 
     1.  Pressing Play on an empty field logs *"Unable to determine name; missing ':'"* — the field needs a tune first.
 
-## Install the firmware
+## Install the software
 
-Your actions are saved in Device Builder, but the device is still running its old firmware. Compile and install the new code to push them.
+Your actions are saved in Device Builder, but the device is still running its old software. Compile and install the new code to push them.
 
 1.  Click **Save** in the bottom right of the editor.
-2.  Click **Install**, then pick **On the Network** to push the new firmware over Wi-Fi.
+2.  Click **Install**, then pick **On the Network** to push the new software over Wi-Fi. (1)
+    { .annotate }
+
+    1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
+
 3.  Wait for the compile and flash to finish. The device reboots once the install is done.
 
 ![](../../../assets/esphome-device-builder-rtttl-save-validate-install.gif)
