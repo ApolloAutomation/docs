@@ -24,7 +24,10 @@ Apollo ships it on by default so the kit works without Home Assistant. If you on
 - **Version (v2 vs v3).** The Apollo project pins **Version 3**, the newer single-page interface that loads faster, looks cleaner, and shows controls and sensors in a sensible order. v2 is the older multi-page layout. There's almost no reason to switch back.
 - **Port.** Defaults to **80** so plain `esphome-starter-kit.local` works. Change it only if something else on your network is already serving on port 80 and you want to avoid a clash.
 - **Username and password.** Off by default. Set them under **Show advanced settings → Auth** if you want to gate the page so anyone on your Wi-Fi can't toggle your LED. Pair this with `secrets.yaml` so the credentials don't sit in your shared YAML. See <a href="../what-is-secrets-yaml/">What is secrets.yaml?</a> for the pattern.
-- **OTA over the web page.** The v3 web server can accept firmware uploads straight from the browser. Helpful for quick experiments, but turn it off (or behind auth) if your device sits on an untrusted network.
+- **OTA over the web page.** The v3 web server can accept software uploads straight from the browser. (1) Helpful for quick experiments, but turn it off (or behind auth) if your device sits on an untrusted network.
+    { .annotate }
+
+    1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 - **Including/excluding entities.** Advanced setting that lets you hide specific entities from the web page without removing them from Home Assistant. Useful if you have internal helpers you don't want users to see.
 
 #### Add Component

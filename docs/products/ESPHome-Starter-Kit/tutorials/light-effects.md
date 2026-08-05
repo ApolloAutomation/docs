@@ -38,12 +38,15 @@ This adds two effects to the light: a continuously cycling rainbow and a sweepin
 
     The starter kit RGB modules are **addressable** lights (each LED can be controlled individually), so look for effect names that start with `addressable_`. Non-addressable effects like `pulse` or `strobe` will not apply.
 
-## Install the firmware
+## Install the software
 
-The effects are saved in Device Builder, but the device is still running its old firmware. Compile and install the new code to push the change.
+The effects are saved in Device Builder, but the device is still running its old software. Compile and install the new code to push the change.
 
-1. Click **Save** in the bottom right of the editor.
-2. Click **Install**, then pick **On the Network** to push the new firmware over Wi-Fi.
+1.  Click **Save** in the bottom right of the editor.
+2.  Click **Install**, then pick **On the Network** to push the new software over Wi-Fi. (1)
+    { .annotate }
+
+    1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 ![](../../../assets/esphome-device-builder-save-install-on-the-network.gif)
 
