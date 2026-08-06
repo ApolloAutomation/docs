@@ -41,7 +41,10 @@ Toggle the **Onboard RGB LED** light entity and confirm the LED responds on the 
 
 #### The encryption key is rejected
 
-Open `secrets.yaml` in Device Builder, copy the `api_encryption_key` value, and paste it back into the Home Assistant prompt. If the value in Device Builder has changed since you last flashed, install the firmware again so the device knows the new key.
+Open `secrets.yaml` in Device Builder, copy the `api_encryption_key` value, and paste it back into the Home Assistant prompt. If the value in Device Builder has changed since you last flashed, install the software again so the device knows the new key. (1)
+{ .annotate }
+
+1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 ---
 

@@ -138,7 +138,10 @@ api:
 
 #### OTA password
 
-OTA (over-the-air) updates let you re-flash a device wirelessly after the first USB flash. The password protects that endpoint so a stranger on your network can't push firmware to your device.
+OTA (over-the-air) updates let you re-flash a device wirelessly after the first USB flash. The password protects that endpoint so a stranger on your network can't push software to your device. (1)
+{ .annotate }
+
+1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 In secrets.yaml:
 

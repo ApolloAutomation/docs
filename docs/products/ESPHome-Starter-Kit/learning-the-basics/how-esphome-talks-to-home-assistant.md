@@ -22,7 +22,10 @@ The link between your Starter Kit and Home Assistant is encrypted. Both ends use
 
 When Home Assistant configures the device for the first time, it prompts you for that key. If Home Assistant and ESPHome Device Builder run on the same machine, the key is often pre-filled. Otherwise, copy it from `secrets.yaml` in Device Builder and paste it into the Home Assistant prompt.
 
-If the keys do not match, Home Assistant cannot read from or write to the device. The fix is to copy the current `api_encryption_key` value from Device Builder, install firmware to the device, and re-enter the key in Home Assistant.
+If the keys do not match, Home Assistant cannot read from or write to the device. The fix is to copy the current `api_encryption_key` value from Device Builder, install the software to the device, (1) and re-enter the key in Home Assistant.
+{ .annotate }
+
+1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 For more on `secrets.yaml`, see [What is secrets.yaml?](what-is-secrets-yaml.md).
 

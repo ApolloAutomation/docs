@@ -6,7 +6,10 @@ description: >-
 ---
 # Device Builder Tour
 
-The **ESPHome Device Builder** is the app you used in [First Steps](../setup/first-steps.md) to install firmware on your Starter Kit, and it's where you go every time you change something on the device. This page walks through each screen so you know what you're looking at.
+The **ESPHome Device Builder** is the app you used in [First Steps](../setup/first-steps.md) to install software on your Starter Kit, (1) and it's where you go every time you change something on the device. This page walks through each screen so you know what you're looking at.
+{ .annotate }
+
+1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 ---
 

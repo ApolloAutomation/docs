@@ -141,11 +141,15 @@ The Breakout Module is different from the other starter kit modules. There's no 
 
 The <a href="https://esphome.io/components/" target="_blank" rel="noreferrer nofollow noopener">ESPHome component index</a> lists every supported sensor, switch, light, and more, along with the config each one needs.
 
-## Install the firmware
+## Install the software
 
 Once you've added the component for whatever you wired up, flash the device so your changes go live.
 
-1. Click **Install** on your device card in ESPHome Device Builder.
+1.  Click **Install** on your device card in ESPHome Device Builder. (1)
+    { .annotate }
+
+    1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
+
 2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.

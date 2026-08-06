@@ -28,11 +28,11 @@ Once added to Home Assistant you can configure different settings for your CAST-
     |---------|:-------:|--------------|
     | **Firmware Channel** | Stable | Which firmware channel the CAST-1 updates from. **Beta** gets new features earlier but is less tested than **Stable**. |
     | **Firmware Type** | WiFi | Which firmware variant the CAST-1 updates to, **WiFi** or **Ethernet**. Match this to how your CAST-1 is connected. See [Switch Firmware](https://wiki.apolloautomation.com/products/cast1/setup/cast1-switch-firmware/) to move between the two. |
-    | **Firmware Update** | — | Checks for and installs a firmware update for the selected Firmware Type and Channel, straight from Home Assistant. See [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/) for the full walkthrough. |
+    | **Firmware Update** | n/a | Checks for and installs a firmware update for the selected Firmware Type and Channel, straight from Home Assistant. See [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/) for the full walkthrough. |
     | **Bluetooth Proxy** | Off | Lets the CAST-1 act as a Bluetooth proxy for Home Assistant, extending Bluetooth range to nearby devices. |
     | **WizMote Auto-Discovery** | Off | Turn on to pair a WizMote. While it's on, the next WizMote button press links that remote to your CAST-1. |
-    | **Clear WizMote Pairing** | — | Unpairs the current WizMote so you can pair a different one. |
-    | **WizMote MAC Address** | — | MAC address of the paired WizMote. Set automatically during pairing, or type one in manually. |
+    | **Clear WizMote Pairing** | n/a | Unpairs the current WizMote so you can pair a different one. |
+    | **WizMote MAC Address** | n/a | MAC address of the paired WizMote. Set automatically during pairing, or type one in manually. |
     | **WizMote On** | Play | Action the WizMote **On** button runs. Choose from Nothing, Play, Pause, Play / Pause, Next Track, Previous Track, Volume Up, Volume Down, Toggle Light, or Send HA Event. |
     | **WizMote Off** | Pause | Action the WizMote **Off** button runs. |
     | **WizMote Night** | Toggle Light | Action the WizMote **Night** button runs. |
@@ -42,8 +42,8 @@ Once added to Home Assistant you can configure different settings for your CAST-
     | **WizMote Button 2** | Next Track | Action the WizMote **2** button runs. |
     | **WizMote Button 3** | Send HA Event | Action the WizMote **3** button runs. |
     | **WizMote Button 4** | Send HA Event | Action the WizMote **4** button runs. |
-    | **ESP Reboot** | — | Restarts the device. Helpful for troubleshooting or refreshing the connection. |
-    | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
+    | **ESP Reboot** | n/a | Restarts the device. Helpful for troubleshooting or refreshing the connection. |
+    | **Factory Reset ESP** | n/a | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
 
 === "Diagnostic"
 

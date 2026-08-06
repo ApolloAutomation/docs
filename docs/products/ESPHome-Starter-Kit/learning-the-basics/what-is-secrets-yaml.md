@@ -25,7 +25,10 @@ There are two reasons to use secrets.yaml:
 
 ## How it fits in
 
-secrets.yaml lives inside **ESPHome Device Builder**, not on the device itself. The same secrets file is available to every device you build there. A device only ever sees the substituted values baked into its firmware, not the secrets.yaml file.
+secrets.yaml lives inside **ESPHome Device Builder**, not on the device itself. The same secrets file is available to every device you build there. A device only ever sees the substituted values baked into its software, (1) not the secrets.yaml file.
+{ .annotate }
+
+1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
 ## Good practice
 
