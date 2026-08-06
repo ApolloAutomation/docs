@@ -22,19 +22,23 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     ![](/assets/wled-16-boot-image-preset.webp)
 
-    2\. On your phone or computer, look for the new Wi-Fi hotspot called **Apollo M-1** and join it. After connecting to the Wi-Fi hotspot, either scan the QR code on the LED matrix or go to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser such as Firefox, Chrome, or Safari.
+    2\. On your phone or computer, join the new Wi-Fi hotspot called **Apollo M-1**. Once you are connected, scan the QR code on the LED matrix or open <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser such as Firefox, Chrome, or Safari.
 
-    > ***Step 2 Troubleshooting Tip: If a WLED window automatically opens on your phone or PC after joining the Apollo M-1 Wi-Fi Hotspot then please close it. It does not have full functionality. After closing that window, you need to either scan the QR code displayed on the M-1 panel or go to*** <a href="http://4.3.2.1/" target="_blank" rel="noopener"><em><strong>http://4.3.2.1/</strong></em></a> ***in a browser. Then proceed to Step 3.***
+    !!! warning "If a WLED window opens on its own, close it"
 
-    3\. After connecting to the Apollo M-1 Wi-Fi Hotspot and then scanning the QR code or going to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser, you should now see the **Welcome to WLED** page and you can select **To The Controls** to start using your M-1 LED Matrix Display!<br />
+        Some phones and computers pop open a small window right after you join the hotspot. That window does not have full functionality. Close it, then scan the QR code on the panel or open <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser and carry on with Step 3.
 
-    #### **Connecting the Apollo M-1 to your Wi-Fi network<br />**
+    3\. You should now see the **Welcome to WLED** page. Select **To The Controls** and your M-1 LED Matrix is ready to use.
 
-    4\. If you would like to add the M-1 LED Matrix to your Wi-Fi network instead and use it that way, then tap **WIFI SETTINGS**, select **Scan** (it will automatically find nearby networks), select your network, enter your password (case sensitive so be careful here), and tap **Save & Connect**. After a few seconds, please reset the device by unplugging it from power and plugging it back in. On the next boot it should automatically join your Wi-FI network! (If it fails it will rebroadcast it's own **Apollo M-1** Wi-Fi hotspot and you need to follow the same steps making sure you typed in everything correct.)
+    #### Connecting the Apollo M-1 to your Wi-Fi network
 
-    > ***Step 4 Troubleshooting Tip: After joining the Apollo M-1 to your Wi-Fi network it will get a new IP address and you will no longer be able to control it using 4.3.2.1. However, you can use the WLED App (***[***Android***](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid&amp;hl=en_US) ***or*** [***Apple***](https://apps.apple.com/us/app/wled-official-app/id6446207239)***) to find the new IP address. After installing and opening the WLED app, you should see the Apollo M-1 listed with it's new IP address. Now you can access the Apollo M-1 from any device on your network by simply typing in the new IP address in a web browser. Please see the WLED App image below showing where you can find the IP address.***
-    >
-    > ***(Advanced users can find the Apollo M-1's new IP address from their router.)***
+    4\. Prefer to run the M-1 on your home network instead of its own hotspot? From the controls page, tap **WIFI SETTINGS** and:
+
+    - Select **Scan**. Nearby networks are found automatically.
+    - Select your network and enter your password. Passwords are case sensitive, so take your time here.
+    - Tap **Save & Connect**, wait a few seconds, then unplug the device from power and plug it back in.
+
+    On the next boot the M-1 joins your Wi-Fi network. If it cannot connect, it goes back to broadcasting its own **Apollo M-1** hotspot. Run through the steps again and double-check the network name and password.
 
     !!! tip "Set your mDNS address here too"
 
@@ -42,7 +46,15 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     ![](/assets/m-1-wled-connect-to-wifi.webp)
 
-    WLED App New IP Address
+    !!! warning "Your M-1 gets a new address once it joins your network"
+
+        After it joins your Wi-Fi, the M-1 has a new IP address and http://4.3.2.1/ no longer works.
+
+        The quickest way to find the new address is the WLED app ([Android](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid&amp;hl=en_US) or [Apple](https://apps.apple.com/us/app/wled-official-app/id6446207239)). Install it, open it, and the Apollo M-1 is listed with its IP address. Type that address into a browser on any device on your network to get back to the controls. The image below shows where to find it.
+
+        Advanced users can also find the address in their router.
+
+    ![WLED app showing the Apollo M-1 and its IP address](/assets/m-1-wled-app-ip-address.webp)
 
     &nbsp;
 
@@ -118,10 +130,10 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     Draw your own images and scrolling text right on the device with [Pixel Forge](/products/m1/examples/pixel-forge.md), or wire up more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md).
 
-    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){  : .md-button .md-button--primary }
+    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){   : .md-button .md-button--primary }
 
 === "WLED-MM"
 
     Add a custom GIF to your matrix, or add more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md). On a Rev6 controller you can also [move up to WLED](/products/m1/setup/upgrade-to-wled.md) and keep your settings.
 
-    [Add GIFs to your M-1](/products/m1/examples/add-gifs-to-wled.md){  : .md-button .md-button--primary }
+    [Add GIFs to your M-1](/products/m1/examples/add-gifs-to-wled.md){   : .md-button .md-button--primary }
