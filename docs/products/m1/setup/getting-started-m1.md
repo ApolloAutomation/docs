@@ -54,7 +54,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
         Advanced users can also find the address in their router.
 
-    ![WLED app showing the Apollo M-1 and its IP address](/assets/m-1-wled-app-ip-address.webp)
+    ![WLED app showing the Apollo M-1 and its IP address](../../../assets/screenshot-20260806-105946-wled-3-1.jpg)
 
     &nbsp;
 
@@ -130,10 +130,10 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     Draw your own images and scrolling text right on the device with [Pixel Forge](/products/m1/examples/pixel-forge.md), or wire up more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md).
 
-    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){    : .md-button .md-button--primary }
+    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){     : .md-button .md-button--primary }
 
 === "WLED-MM"
 
     Add a custom GIF to your matrix, or add more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md). On a Rev6 controller you can also [move up to WLED](/products/m1/setup/upgrade-to-wled.md) and keep your settings.
 
-    [Add GIFs to your M-1](/products/m1/examples/add-gifs-to-wled.md){    : .md-button .md-button--primary }
+    [Add GIFs to your M-1](/products/m1/examples/add-gifs-to-wled.md){     : .md-button .md-button--primary }
