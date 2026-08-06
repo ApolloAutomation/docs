@@ -2,11 +2,11 @@
 title: Light Effects
 description: >-
   Add built-in ESPHome light effects (rainbow, color wipe, and more) to your RGB
-  module by pasting a few lines into the Effects field.
+  module using the Effects picker in ESPHome Device Builder.
 ---
 # Add Light Effects to Your RGB Module
 
-Out of the box, your RGB module turns on, turns off, and changes color. ESPHome ships a library of built-in <a href="https://esphome.io/components/light/#light-effects" target="_blank" rel="noreferrer nofollow noopener">light effects</a> (rainbow cycles, color wipes, flickers, and more) that you can drop in with a couple of lines of YAML. This tutorial adds two effects to get you started.
+Out of the box, your RGB module turns on, turns off, and changes color. ESPHome ships a library of built-in <a href="https://esphome.io/components/light/#light-effects" target="_blank" rel="noreferrer nofollow noopener">light effects</a> (rainbow cycles, color wipes, flickers, and more), and Device Builder can add them from a dropdown. No typing required. This tutorial adds two effects to get you started.
 
 !!! note "Before you start"
 
@@ -17,26 +17,45 @@ Out of the box, your RGB module turns on, turns off, and changes color. ESPHome 
 
 ## Add the effects
 
-1. Open your starter kit device in ESPHome Device Builder and click **Edit**.
-2. In the editor's left pane, scroll to **Components** and click the RGB light you want to add effects to (either **Onboard RGB LED** or **RGB LEDs**).
-3. Click to the right of `rmt_symbols: 48` and hit enter. Hit backspace twice to delete the two leading spaces.
-4. Paste the following YAML on the new line with no spaces in front of it:
+1.  Open your starter kit device in ESPHome Device Builder and click **Edit**.
+2.  In the editor's left pane, scroll to **Components** and click the RGB light you want to add effects to. (1)
+    { .annotate }
 
-   ```yaml
-       effects:
-         - addressable_rainbow:
-         - addressable_color_wipe:
-   ```
+    1.  Both RGB lights are listed under **LIGHT** as **ESP32 RMT LED Strip**, with the light's name in smaller text underneath. **Onboard RGB LED** is the LED on the board itself, and **RGB LEDs** is the strip on the LED & Buzzer module. Pick whichever one you want the effects on.
 
-![](../../../assets/esphome-device-builder-add-effects-via-yaml.gif)
+3.  Turn on **Show advanced settings** near the bottom of the form. Effects are an advanced option, so the field stays hidden until you do.
+4.  Scroll to **Effects** and click **\+ Add**.
+5.  Pick **Addressable Rainbow** from the dropdown. Its own settings unfold underneath: **Name**, **Speed**, and **Width**. Leave them alone for now, the greyed-out values are the defaults ESPHome uses. (1)
+    { .annotate }
 
-This adds two effects to the light: a continuously cycling rainbow and a sweeping color wipe.
+    1.  Want something other than rainbow? Everything in the dropdown works on your RGB module, and the full library is documented at <a href="https://esphome.io/components/light/#light-effects" target="_blank" rel="noreferrer nofollow noopener">esphome.io/components/light</a>. The entries starting with "Addressable" animate each LED separately, which is what makes a rainbow or a wipe travel along the strip. The rest, like **Pulse**, **Strobe**, and **Flicker**, drive the whole strip as one color at a time.
 
-??? info "Browse more effects"
+6.  Click **\+ Add** a second time and pick **Addressable Color Wipe**.
 
-    ESPHome's full effect library lives at <a href="https://esphome.io/components/light/#light-effects" target="_blank" rel="noreferrer nofollow noopener">esphome.io/components/light</a>. Open it in a new tab and pick anything you want to try.
+![](../../../assets/esphome-device-builder-add-effects.gif)
 
-    The starter kit RGB modules are **addressable** lights (each LED can be controlled individually), so look for effect names that start with `addressable_`. Non-addressable effects like `pulse` or `strobe` will not apply.
+That gives the light two effects: a continuously cycling rainbow and a sweeping color wipe. Add as many as you like the same way, and click the **X** to the right of an effect's dropdown to drop one.
+
+??? note "What the effects YAML does"
+
+    Watch the YAML pane on the right while you add each effect. Device Builder writes this into the light component:
+
+    ```yaml
+    effects:
+      - addressable_rainbow:
+      - addressable_color_wipe:
+    ```
+
+    Two lines, because a field you left at its default never gets written. ESPHome already knows a rainbow runs at speed 10 and answers to the name "Rainbow". Change any of these and the matching line appears:
+
+    | Field | YAML | What it does |
+    | --- | --- | --- |
+    | **Name** | `name` | What the effect is called in the **Effect** dropdown, on the device's web page and in Home Assistant. |
+    | **Speed** (rainbow) | `speed` | How fast the colors cycle. Higher is faster. |
+    | **Width** (rainbow) | `width` | How many LEDs one full rainbow spans. Lower packs more color into the strip. |
+    | **Add LED Interval** (color wipe) | `add_led_interval` | How long before the wipe advances one LED. Lower is faster. |
+    | **Colors** (color wipe) | `colors` | The colors the wipe cycles through. Leave it empty for random colors. |
+    | **Reverse** (color wipe) | `reverse` | Runs the wipe from the far end of the strip back toward the first LED. |
 
 ## Install the software
 
@@ -61,9 +80,5 @@ With the device back online, open the local web page at `http://esphome-starter-
 ![](../../../assets/esphome-device-builder-test-effects-web-server.gif)
 
 If you've already followed [Connect to Home Assistant](/products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md), the same **Effect** dropdown shows up on the light entity card in Home Assistant.
-
-!!! success "You just edited YAML!"
-
-    Every component you add to your device has a set of advanced fields like this one. Pasting a few lines into the right field is all it takes to unlock more behavior, and the YAML pane on the right of the editor will show you exactly what changed.
 
 --8<-- "_snippets/community-help.md"
