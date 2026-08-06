@@ -30,13 +30,13 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     3\. You should now see the **Welcome to WLED** page. Select **To The Controls** and your M-1 LED Matrix is ready to use.
 
-    #### Connecting the Apollo M-1 to your Wi-Fi network
+    ## Connecting the Apollo M-1 to your Wi-Fi network
 
     4\. Prefer to run the M-1 on your home network instead of its own hotspot? From the controls page, tap **WIFI SETTINGS** and:
 
-    - Select **Scan**. Nearby networks are found automatically.
-    - Select your network and enter your password. Passwords are case sensitive, so take your time here.
-    - Tap **Save & Connect**, wait a few seconds, then unplug the device from power and plug it back in.
+    * Select **Scan**. Nearby networks are found automatically.
+    * Select your network and enter your password. Passwords are case sensitive, so take your time here.
+    * Tap **Save & Connect**, wait a few seconds, then unplug the device from power and plug it back in.
 
     On the next boot the M-1 joins your Wi-Fi network. If it cannot connect, it goes back to broadcasting its own **Apollo M-1** hotspot. Run through the steps again and double-check the network name and password.
 
@@ -130,10 +130,10 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     Draw your own images and scrolling text right on the device with [Pixel Forge](/products/m1/examples/pixel-forge.md), or wire up more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md).
 
-    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){   : .md-button .md-button--primary }
+    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){    : .md-button .md-button--primary }
 
 === "WLED-MM"
 
     Add a custom GIF to your matrix, or add more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md). On a Rev6 controller you can also [move up to WLED](/products/m1/setup/upgrade-to-wled.md) and keep your settings.
 
-    [Add GIFs to your M-1](/products/m1/examples/add-gifs-to-wled.md){   : .md-button .md-button--primary }
+    [Add GIFs to your M-1](/products/m1/examples/add-gifs-to-wled.md){    : .md-button .md-button--primary }
