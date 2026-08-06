@@ -23,19 +23,23 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
     ![](/assets/wled-16-boot-image-preset.webp)
 
     2\. On your phone or computer, join the new Wi-Fi hotspot called **Apollo M-1**.
+
+    ![](/assets/wled-16-boot-image-preset.webp)
     
     !!! warning "If a WLED window opens on its own, close it"
 
-        Some phones and computers pop open a small window right after you join the hotspot. That window does not have full functionality. Close it, then scan the QR code on the panel or open <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser and carry on with Step 3.
+        Some phones and computers pop open a small window right after you join the hotspot. That window does not have full functionality. Close it and carry on with Step 3.
 
     3\. Once you are connected, scan the QR code on the LED matrix or open <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser such as Firefox, Chrome, or Safari.
 
-  
-    3\. You should now see the **Welcome to WLED** page. Select **To The Controls** and your M-1 LED Matrix is ready to use.
+    4\. You should now see the **Welcome to WLED** page. Select **To The Controls** and your M-1 LED Matrix is ready to use.
+
+    ![](/assets/wled-16-boot-image-preset.webp)
+
 
     ## Connecting the Apollo M-1 to your Wi-Fi network
 
-    4\. Prefer to run the M-1 on your home network instead of its own hotspot? From the controls page, tap **WIFI SETTINGS** and:
+    Prefer to run the M-1 on your home network instead of its own hotspot? From the controls page, tap **WIFI SETTINGS** and:
 
     * Select **Scan**. Nearby networks are found automatically.
     * Select your network and enter your password. Passwords are case sensitive, so take your time here.
@@ -139,4 +143,4 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     Add a custom GIF to your matrix, or add more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md). On a Rev6 controller you can also [move up to WLED](/products/m1/setup/upgrade-to-wled.md) and keep your settings.
 
-     [Add GIFs to your M-1](/products/m1/examples/add-gifs-to-wled.md{{      : .md-button .md-button--primary}4}
+    [Add GIFs to your M-1](/products/m1/examples/add-gifs-to-wled.md{{      : .md-button .md-button--primary}4}}
