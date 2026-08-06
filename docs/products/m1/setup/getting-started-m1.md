@@ -32,7 +32,11 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     3\. Once you are connected to the Apollo M-1 hotspot, scan the QR code on the LED matrix or open <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> in a browser such as Firefox, Chrome, or Safari.
 
-    4\. You should now see the **Welcome to WLED** page. Select **To The Controls** and your M-1 LED Matrix is ready to use.
+    4\. You should now see the **Welcome to WLED** page.
+
+    ![](/assets/wled-16-boot-image-preset.webp)
+
+    5\. Select **To The Controls** and your M-1 LED Matrix is ready to use.
 
     ![](../../../assets/screenshot-20260806-102337-firefox.jpg)
 
