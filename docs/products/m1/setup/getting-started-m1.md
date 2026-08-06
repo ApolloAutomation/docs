@@ -34,15 +34,15 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     4\. You should now see the **Welcome to WLED** page.
 
-    ![](/assets/wled-16-boot-image-preset.webp)
+    ![](../../../assets/screenshot-20260806-102322-firefox.jpg)
 
-    5\. Select **To The Controls** and your M-1 LED Matrix is ready to use.
+    5\. Select **To The Controls**, and If you see the image below then you are good to go! Have fun!
 
     ![](../../../assets/screenshot-20260806-102337-firefox.jpg)
 
     ## Connecting the Apollo M-1 to your Wi-Fi network
 
-    Prefer to run the M-1 on your home network instead of its own hotspot? From the controls page, tap **WIFI SETTINGS** and:
+    Prefer to run the M-1 on your home network instead of its own hotspot? From the main page or in the settings menu, tap **WIFI SETTINGS** and:
 
     * Select **Scan**. Nearby networks are found automatically.
     * Select your network and enter your password. Passwords are case sensitive, so take your time here.
@@ -54,7 +54,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
         Enter something like **apollo-led-matrix** and you can reach the device at http://apollo-led-matrix.local instead of hunting for its IP.
 
-    ![](/assets/m-1-wled-connect-to-wifi.webp)
+    ![](../../../assets/screenshot-20260806-143131-wled-2.jpg)
 
     !!! warning "Your M-1 gets a new address once it joins your network"
 
@@ -65,8 +65,6 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
         Advanced users can also find the address in their router.
 
     ![WLED app showing the Apollo M-1 and its IP address](../../../assets/screenshot-20260806-105946-wled-3-1.jpg)
-
-    &nbsp;
 
 === "WLED-MM"
 
@@ -140,7 +138,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     Draw your own images and scrolling text right on the device with [Pixel Forge](/products/m1/examples/pixel-forge.md), or wire up more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md).
 
-    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){       : .md-button .md-button--primary }
+    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){        : .md-button .md-button--primary }
 
 === "WLED-MM"
 
