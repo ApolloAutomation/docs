@@ -22,7 +22,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     ![](/assets/wled-16-boot-image-preset.webp)
 
-    2\. On your phone or computer, join the new Wi-Fi hotspot called **Apollo M-1**.
+    2\. On your phone or computer, join the new Wi-Fi hotspot called **Apollo M-1**. If a Wi-Fi connection options box pops up then please select **Always Connect.**
 
     ![](../../../assets/screenshot-20260806-102254-settings-3.jpg)
 
@@ -138,7 +138,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     Draw your own images and scrolling text right on the device with [Pixel Forge](/products/m1/examples/pixel-forge.md), or wire up more panels with [Multiple Panels](/products/m1/setup/m1-multiple-panels.md).
 
-    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){        : .md-button .md-button--primary }
+    [Try Pixel Forge](/products/m1/examples/pixel-forge.md){         : .md-button .md-button--primary }
 
 === "WLED-MM"
 
