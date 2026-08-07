@@ -275,3 +275,8 @@ code .md-annotation__index::after {
   background-color: transparent;
   transform: scale(1.2);
 }
+
+/* YouTube brand colour for the channel icons on review pages. */
+.md-typeset .youtube {
+  color: #ee0f0f;
+}

@@ -146,8 +146,9 @@ markdown_extensions:
           case: lower
       # word separator (defaults to "-")
       separator: "-"
-      # whether to prefix with the parent header’s slug (optional)
-      combine_header_slug: false
+      # prefix tab IDs with the parent header's slug, so repeated tab labels
+      # get readable anchors (#connect-to-wi-fi-wled) instead of #wled_2
+      combine_header_slug: true
 #brandon added this 1/8/25
   - def_list
   - pymdownx.tasklist:
@@ -413,21 +414,6 @@ nav:
               - Troubleshooting:
                 - H-2 Boot Mode: products/h2/troubleshooting/boot-mode.md
                 - Factory Re-Flash H-2: products/h2/troubleshooting/reflash.md
-      - LED-1:
-          - Introduction: products/led1/introduction.md
-          - FAQ: products/led1/faq.md
-          - Getting Started: products/led1/setup/getting-started-led1.md
-          - Additional Info:
-            - General Tips: products/led1/setup/led1-general-tips.md
-            - Pinout Guide: products/led1/setup/led1-pinout-guide.md
-            - How To Replace The Fuse: products/led1/setup/led1-replace-fuse.md
-          - Addons:
-            - Microphone: products/led1/addons/adding-microphone-to-led-1.md
-          - Troubleshooting:
-            - LED-1 Boot Mode: products/led1/troubleshooting/led1-boot-mode.md
-            - Factory Re-Flash LED-1: products/led1/troubleshooting/led1-reflash.md
-            - Find IP and Hostname: products/led1/troubleshooting/led1-find-ip-address-and-hostname.md
-          - Reviews: products/led1/led1-reviews.md
       - M-1 (LED Matrix):
           - Introduction: products/m1/introduction.md
           - FAQ: products/m1/faq.md
@@ -748,23 +734,6 @@ nav:
                 - Factory Re-Flash TEMP-1B: homey/products/temp1b/troubleshooting/temp1b-code.md
                 - Teardown and Reassembly Of TEMP-1B: homey/products/temp1b/troubleshooting/temp1b-teardown.md
                 - Reset Wi-Fi Credentials: homey/products/temp1b/troubleshooting/temp1b-reset-wi-fi-credentials.md
-      - LED-1:
-          - Introduction: homey/products/led1/introduction.md
-          - FAQ: homey/products/led1/faq.md
-          - Getting Started: homey/products/led1/setup/getting-started-led1.md
-          - Additional Info:
-            - General Tips: homey/products/led1/setup/led1-general-tips.md
-            - Pinout Guide: homey/products/led1/setup/led1-pinout-guide.md
-            - How To Replace The Fuse: homey/products/led1/setup/led1-replace-fuse.md
-          - Addons:
-            - Microphone: homey/products/led1/addons/adding-microphone-to-led-1.md
-          - Examples:
-            - LED-1 Controlling Govee Lights: homey/products/led1/examples/led-1-controlling-govee-lights.md
-          - Troubleshooting:
-            - LED-1 Boot Mode: homey/products/led1/troubleshooting/led1-boot-mode.md
-            - Factory Re-Flash LED-1: homey/products/led1/troubleshooting/led1-reflash.md
-            - Find IP and Hostname: homey/products/led1/troubleshooting/led1-find-ip-address-and-hostname.md
-          - Reviews: homey/products/led1/led1-reviews.md
       - M-1 (LED Matrix):
           - Introduction: homey/products/m1/introduction.md
           - FAQ: homey/products/m1/faq.md
