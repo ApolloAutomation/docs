@@ -111,7 +111,7 @@ Leave the wiring until the frames are together, then do it before anything goes 
 
 The Multiple Panels guide covers the ribbon cables, the power modules, and the WLED settings that turn a row or a grid into one display.
 
-[Head to the Multiple Panels guide](/products/m1/setup/m1-multiple-panels/){ .md-button .md-button--primary }
+[Head to the Multiple Panels guide](/products/m1/setup/m1-multiple-panels.md){: .md-button .md-button--primary }
 
 ### Hang your Panels
 
