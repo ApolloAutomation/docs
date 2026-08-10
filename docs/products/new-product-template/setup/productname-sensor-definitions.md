@@ -28,11 +28,11 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **Fluid Input**
 
-    * This ultrasonic sensor is located at the bottom of the PUMP-1 water bottle and monitors the presence of fluid. The state remains **"Wet"** while water is present in the bottle, and changes to **"Dry"** once the bottle is completely empty. It reports a state of either **"Wet"** or **"Dry"**.
+    * This non-contact capacitive sensor seats into the base of the PUMP-1 water bottle and monitors the presence of fluid. The state remains **"Wet"** while water is present in the bottle, and changes to **"Dry"** once the bottle is completely empty. It reports a state of either **"Wet"** or **"Dry"**.
 
     **Fluid Output**
 
-    * This ultrasonic sensor can be mounted on the exterior of any container where you need to detect the presence of water on the other side, such as a Keurig reservoir or fish tank. It can be attached using adhesive tape or other mounting methods. The sensor reports **"Wet"** when the water level is above the sensor and **"Dry"** when the level falls below it. It reports a state of either **"Wet"** or **"Dry"**.
+    * This non-contact capacitive sensor can be mounted on the exterior of any container where you need to detect the presence of water on the other side, such as a Keurig reservoir or fish tank. It can be attached using adhesive tape or other mounting methods. The sensor reports **"Wet"** when the water level is above the sensor and **"Dry"** when the level falls below it. It reports a state of either **"Wet"** or **"Dry"**.
 
 ???+ info "Configuration"
 
@@ -54,11 +54,11 @@ This serves as a list of all sensor definitions to help understand what each ent
 
     **Stop Pump When Input Dry**
 
-    * This will turn the pump off when the ultrasonic sensor at the bottom of the water bottle detects no water.
+    * This will turn the pump off when the sensor in the base of the water bottle detects no water.
 
     **Stop Pump When Output Wet**
 
-    * This turns the pump off when the ultrasonic sensor (mounted on a Keurig tank, fish tank, or similar container) detects that the water level has risen above its monitoring point.
+    * This turns the pump off when the **Fluid Output** sensor (mounted on a Keurig tank, fish tank, or similar container) detects that the water level has risen above its monitoring point.
 
     **Factory Reset ESP**
 

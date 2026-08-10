@@ -8,7 +8,9 @@ description: >-
 
 ###### Fluid Sensor
 
-The fluid level sensor should be securely taped or mounted flat against the surface of your chosen water reservoir. The fluid sensor is rated to go through up to 5mm of plastic but could possibly go further.
+The fluid level sensor is a non-contact capacitive sensor. It detects water through the wall of the container, so it should be securely taped or mounted flat against the outside surface of your chosen water reservoir. The sensor is rated to read through up to 5mm of plastic and often manages more.
+
+Do not submerge the fluid level sensor or place it inside your reservoir. It is not sealed against water, and submerging one can damage both the sensor and the PUMP-1 it is plugged into.
 
 ###### Pump Control
 
