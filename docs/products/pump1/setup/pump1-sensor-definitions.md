@@ -23,8 +23,8 @@ Once added to Home Assistant you can configure different settings for your PUMP-
 
     | Sensor | Default Update | Details |
     |--------|:--------------:|---------|
-    | **Fluid Input** | on change | Ultrasonic sensor at the bottom of the PUMP-1 water bottle that monitors the presence of fluid. Reports **Wet** while water is present and **Dry** once the bottle is empty. |
-    | **Fluid Output** | on change | Ultrasonic sensor you can mount on the exterior of any container to detect water on the other side, such as a Keurig reservoir or fish tank. Reports **Wet** when the water level is above the sensor and **Dry** when it falls below. |
+    | **Fluid Input** | on change | Non-contact capacitive sensor that seats into the base of the PUMP-1 water bottle and reads the fluid through the bottle wall. Reports **Wet** while water is present and **Dry** once the bottle is empty. |
+    | **Fluid Output** | on change | Non-contact capacitive sensor you can mount on the exterior of any container to detect water on the other side, such as a Keurig reservoir or fish tank. Reports **Wet** when the water level is above the sensor and **Dry** when it falls below. |
 
 === "Configuration"
 
@@ -33,7 +33,7 @@ Once added to Home Assistant you can configure different settings for your PUMP-
     | **ESP Reboot** | — | Restarts the device. Helpful for troubleshooting or refreshing the connection. |
     | **Max Safe Run Time** | 60 s | Maximum time the pump will run before shutting off. Range is 5 to 600 seconds. |
     | **Pump Control** | — | Toggles the pump on and off via a switch. Still stopped by **Max Safe Run Time**. Disabled by default. |
-    | **Stop Pump When Input Dry** | Off | Turns the pump off when the ultrasonic sensor at the bottom of the water bottle detects no water. This check is automatically skipped when **Invert Water Logic** is enabled. |
+    | **Stop Pump When Input Dry** | Off | Turns the pump off when the sensor in the base of the water bottle detects no water. This check is automatically skipped when **Invert Water Logic** is enabled. |
     | **Stop Pump When Output Wet** | Off | Turns the pump off when the **Fluid Output** sensor (mounted on a Keurig tank, fish tank, or similar container) detects that the water level has risen above its monitoring point. |
     | **Invert Water Logic** | Off | Flips the meaning of the **Fluid Input** sensor so that **Dry** = destination is low (start pumping) and **Wet** = destination is full (stop pumping). Use this when the Input sensor is placed at the low-water mark inside a destination tank (for example, a CPAP reservoir) rather than at the bottom of a supply bottle. Disabled by default. |
     | **Auto Refill** | Off | When enabled together with **Invert Water Logic**, the pump automatically starts a fill cycle whenever the **Fluid Input** sensor reads **Dry**. The pump stops when the **Fluid Output** sensor reads **Wet** or when **Max Safe Run Time** is reached, whichever comes first. Requires **Invert Water Logic**. Disabled by default. |
