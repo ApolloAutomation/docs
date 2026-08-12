@@ -13,6 +13,14 @@ The **ESPHome Device Builder** is the app you used in [First Steps](../setup/fir
 
 ---
 
+## Guided Tour
+
+ESPHome Device Builder has a tour built in that walks you through creating, configuring, and installing a device. It takes about five minutes. Start it from the menu in the top-right corner, or from **Start guided tour** on the last screen of first-time setup.
+
+![](../../../assets/esphome-device-builder-guided-tour.gif)
+
+The rest of this page covers the same screens in more detail, so you can come back and read whichever one you need.
+
 ## Dashboard
 
 When you open **ESPHome Device Builder**, you see a list of your ESPHome devices.
