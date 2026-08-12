@@ -39,35 +39,55 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Windows"
 
-    1. Open <a href="https://desktop.esphome.io/" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a> and click **Download installer** under the **Windows** tab.
-    2. Open the installer and click **Next** then click **Next** again to start the installation process. Once it shows completed, click **Next** again then **Finish** to complete the installation.
+    1. Open <a href="https://esphome.io/install/" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a> and click **Download installer (.exe)** on the **Windows** tab.
+    2. Open the downloaded `.exe` file. If Windows asks whether to allow the app to make changes, choose **Yes**, then follow the installer prompts.
+    3. On the last screen, leave **Run ESPHome Device Builder** checked and click **Finish**.
+    4. When **Allow network pairing** appears, click **Allow access**. Windows then asks for administrator approval and shows its own firewall prompt for the Python backend. Allow that one too, or other ESPHome dashboards on your network won't be able to reach this computer.
 
-    !!! warning "You may see Windows prompts during install"
+    !!! warning "If Windows blocks the installer"
 
-        - If Windows shows a blue **Windows protected your PC** warning, click **More info → Run anyway** to continue.
-        - If **Windows Security** asks whether to allow public and private networks to access Python, click **Allow**.
-        - If the installer fails or the Device Builder can't compile the software, install **Git for Windows** from <a href="https://gitforwindows.org/" target="_blank" rel="noreferrer nofollow noopener">gitforwindows.org</a> and try again. Future installer builds will bundle this for you.
+        If a blue **Windows protected your PC** warning appears when you open the `.exe`, click **More info → Run anyway** to continue.
 
     ![](../../../assets/esphome-builder-install-windows.gif)
 
-    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. On first launch, ESPHome Device Builder asks how you will use it. Select **Build and manage devices**, then select **New to ESPHome** and click **Finish**.
+    The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your notification area for getting back to it later.
+
+    A short wizard runs the first time:
+
+    1. Click **Continue** on the welcome screen.
+    2. Choose **Installation of the ESPHome Device Builder**, since you're building on this computer.
+    3. Choose **New to ESPHome** for the simpler, guided interface.
+
+    Then take **Start guided tour** for a [five minute walkthrough](../learning-the-basics/device-builder-tour.md), or **Maybe later**.
 
     ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 === "Mac"
 
-    1. Open <a href="https://desktop.esphome.io/" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. The page detects your OS and shows the macOS downloads. Pick the build that matches your chip:
+    1.  Open <a href="https://esphome.io/install/" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a>. The page detects your OS and opens the **macOS** tab. Pick the build that matches your chip:
 
         - **Apple Silicon** (M1, M2, M3, M4, M5)
-        - **Intel Mac**
+        - **Intel**
 
-    2. Open the `.dmg` and drag **ESPHome Builder** into your Applications folder. Launch it from Applications or Spotlight.
+        Not sure which you have? Click the Apple menu → **About This Mac**.
 
-        - On first launch, macOS may block the app with a Gatekeeper warning. If that happens, right-click the app in Applications and choose **Open**, then click **Open** in the confirmation dialog. After the first launch, double-click will work normally.
+    2.  Open the `.dmg` and drag **ESPHome Device Builder** into your Applications folder.
+
+    3.  Open your Applications folder and double-click **ESPHome Device Builder**. The first time you run it, macOS may ask you to confirm. Click **Open**.
+
+        - If macOS blocks it outright with a Gatekeeper warning instead, right-click the app in Applications and choose **Open**, then click **Open** in the confirmation dialog. After that, double-click works normally.
 
     <!-- TODO: add a Mac installer gif/screenshot if available. -->
 
-    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. On first launch, ESPHome Device Builder asks how you will use it. Select **Build and manage devices**, then select **New to ESPHome** and click **Finish**.
+    The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your menu bar for getting back to it later.
+
+    A short wizard runs the first time:
+
+    1. Click **Continue** on the welcome screen.
+    2. Choose **Installation of the ESPHome Device Builder**, since you're building on this computer.
+    3. Choose **New to ESPHome** for the simpler, guided interface.
+
+    Then take **Start guided tour** for a [five minute walkthrough](../learning-the-basics/device-builder-tour.md), or **Maybe later**.
 
     ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
@@ -89,41 +109,39 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Linux"
 
-    1.  Open <a href="https://desktop.esphome.io/" target="_blank" rel="noreferrer nofollow noopener">desktop.esphome.io</a>. The page opens on the **Linux** tab and shows **Download .deb** as the default. Click **Download .deb** to grab the Debian / Ubuntu package.
+    1.  Open <a href="https://esphome.io/install/" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a>. The page opens on the **Linux** tab with **Debian / Ubuntu** selected. Choose the package format your distro uses, then the CPU architecture (**x86_64** for a normal desktop or laptop, **arm64** for a Raspberry Pi or similar board):
 
-        If your distro fits a different format, switch to the matching tab on the download page first:
+        - **Debian / Ubuntu** → downloads a `.deb`
+        - **Fedora / openSUSE** → downloads a `.rpm`
+        - **Arch (AUR)** → installs the `esphome-desktop-bin` package
+        - **AppImage** → a portable build that runs on any distro
 
-        - **Fedora / RHEL** → downloads a `.rpm`
-        - **Arch (AUR)** → opens the AUR package page
-        - **AppImage** → downloads a portable AppImage that runs on any distro
+    2.  Install it. Double-click the downloaded `.deb` or `.rpm` in your file manager, or run the matching command in a terminal:
 
-    2.  Install the package. Pick the workflow you're more comfortable with:
+        - **Debian / Ubuntu:** `sudo apt install ./ESPHome.Device.Builder_*.deb`
+        - **Fedora / openSUSE:** `sudo dnf install ./ESPHome.Device.Builder-*.rpm`
+        - **Arch:** `yay -S esphome-desktop-bin`
+        - **AppImage:** `chmod +x ESPHome.Device.Builder_*.AppImage` then run `./ESPHome.Device.Builder_*.AppImage`
 
-        === "GUI"
+    3.  Launch **ESPHome Device Builder** from your applications menu.
 
-            Works for the `.deb` download. Skip to the CLI tab if you grabbed a `.rpm`, AUR package, or AppImage.
+        If your kit doesn't appear as a serial port later when you flash it, add your user to the `dialout` group with `sudo usermod -a -G dialout $USER`, then log out and back in.
 
-            1.  Open your **Downloads** folder in your file manager.
-            2.  Right-click the `ESPHome.Builder_*.deb` file and choose **Open with → Archive Manager** (or whichever archive viewer your distro ships).
-            3.  In the archive viewer, click **Extract** and pick a folder you can find again, like `~/esphome-desktop`.
-            4.  Open the extracted folder, then navigate into **`usr`** → **`bin`**.
-            5.  Double-click **`esphome-desktop`** to launch the app.
+    The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your system tray for getting back to it later. Some Linux desktops, notably GNOME without a tray extension, don't show tray icons at all. The app still runs, so just use the dashboard in your browser.
 
-            ![](../../../assets/esphome-device-builder-linux-install.gif)
+    A short wizard runs the first time:
 
-        === "CLI"
+    1. Click **Continue** on the welcome screen.
+    2. Choose **Installation of the ESPHome Device Builder**, since you're building on this computer.
+    3. Choose **New to ESPHome** for the simpler, guided interface.
 
-            From a terminal, run the installer that matches the file you downloaded:
-
-            - **.deb (Debian / Ubuntu):** `sudo apt install ./ESPHome.Builder_*.deb`
-            - **.rpm (Fedora / RHEL):** `sudo dnf install ./ESPHome.Builder*.rpm`
-            - **AppImage (any distro):** `chmod +x ESPHome.Builder_*.AppImage` then double-click the file, or run it from a terminal.
-
-    Once installed, a web browser should launch and navigate to <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. On first launch, ESPHome Device Builder asks how you will use it. Select **Build and manage devices**, then select **New to ESPHome** and click **Finish**.
+    Then take **Start guided tour** for a [five minute walkthrough](../learning-the-basics/device-builder-tour.md), or **Maybe later**.
 
     ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 #### Add a new device
+
+With the app installed, it's time to tell it about your kit. If you took the guided tour, these next steps will look familiar.
 
 1\. Navigate back to the ESPHome Device Builder and click **Add new device** then click Create new project.
 
@@ -131,12 +149,11 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 <div markdown class="annotate">
 
-2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit, then click **Next**. (1) Type in your Wi-Fi network name (SSID) and Wi-Fi password, then click **Finish Setup**. (2)
+2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit, then click **Next**. Type in your Wi-Fi network name (SSID) and Wi-Fi password, then click **Finish Setup**. (1)
 
 </div>
 
 1. Remember the name you choose. You'll use it later to reach your device's web server at `http://your-name.local` (for example, <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>).
-2. The password is case sensitive, so double-check it before you continue.
 
 ![](../../../assets/device-builder-select-kit-name-kit-add-wifi.gif)
 
@@ -203,11 +220,11 @@ Your kit's default project includes the [**Web Server**](../learning-the-basics/
 
     Your kit only speaks `http://`. Some browsers quietly try `https://` first, and the page just won't load. If that happens, click the address bar and add `http://` before the name (so it looks like `http://esphome-starter-kit.local/`).
 
-It should load your new device and show you the Onboard RGB LED. We can click the toggle button to make sure the RGB LED turns on and off on our device!
+It should load your new device with the Onboard RGB LED listed. Click its toggle and the LED on your kit turns on and off.
 
 ![](../../../assets/device-builder-web-server-v3.gif)
 
-Example of the light changing colors below!
+The LED on the board, switching on and off.
 
 ![](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
 
