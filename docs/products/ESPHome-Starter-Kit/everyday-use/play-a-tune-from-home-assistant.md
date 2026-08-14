@@ -301,7 +301,7 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
 
     </div>
 
-    1.  Pressing Play on an empty field logs *"Unable to determine name; missing ':'"* — the field needs a tune first.
+    1.  Pressing Play on an empty field logs *"Unable to determine name; missing ':'"*. The field needs a tune first.
 
 ## Install the software
 
@@ -319,24 +319,43 @@ Your actions are saved in Device Builder, but the device is still running its ol
 
 ## Call it from Home Assistant
 
-With the device back online, each action you added shows up in Home Assistant. Test one from Developer Tools before wiring it into anything.
+With the device back online, each action you added shows up in Home Assistant. Test one from Developer Tools before wiring it into anything. Pick the same tab you followed above.
 
-1.  Click the button below to open **Developer Tools → Actions**:
+=== "Level 1 · One song"
 
-    [![Open your Home Assistant instance and show your service developer tools.](https://my.home-assistant.io/badges/developer_services.svg)](https://my.home-assistant.io/redirect/developer_services/)
+    1.  Click the button below to open **Developer Tools → Actions**:
 
-2.  In the **Action** field, search `play_song_1` and pick **ESPHome: esphome-starter-kit play_song_1**.
-3.  Click **Perform action**. The buzzer plays that slot's tune, no extra data needed.
+        [![Open your Home Assistant instance and show your service developer tools.](https://my.home-assistant.io/badges/developer_services.svg)](https://my.home-assistant.io/redirect/developer_services/)
 
-    <!-- TODO(image): gif of Developer Tools > Actions calling play_song_1 and the buzzer playing -->
+    2.  In the **Action** field, search `play_pink_panther` and pick **ESPHome: esphome-starter-kit play_pink_panther**.
+    3.  Click **Perform action**. The buzzer plays the Pink Panther theme, no extra data needed.
 
-<div class="annotate" markdown>
+    <div class="annotate" markdown>
 
-Every other slot is there the same way (`play_song_2`, `play_song_3`, `play_song_4`), plus `play_buzzer` to play any tune you pass in. The same actions work inside any automation. (1)
+    The same action works inside any automation. (1)
 
-</div>
+    </div>
 
-1.  For a slot, pick its action (like `esphome.esphome_starter_kit_play_song_2`) with no extra data. For `esphome.esphome_starter_kit_play_buzzer`, set a **song_str** to any RTTTL string, for example `scale_up:d=32,o=5,b=100:c,c#,d,d#,e,f,f#,g,g#,a,a#,b`. Handy triggers: a doorbell chime, a wash cycle finishing, or a morning wake-up scale.
+    1.  Pick `esphome.esphome_starter_kit_play_pink_panther` with no extra data. Handy triggers: a doorbell chime, a wash cycle finishing, or a morning wake-up. For a second tune, add another API action the same way, or set up a bank of swappable slots with **Level 2 · Song slots** above.
+
+=== "Level 2 · Song slots"
+
+    1.  Click the button below to open **Developer Tools → Actions**:
+
+        [![Open your Home Assistant instance and show your service developer tools.](https://my.home-assistant.io/badges/developer_services.svg)](https://my.home-assistant.io/redirect/developer_services/)
+
+    2.  In the **Action** field, search `play_song_1` and pick **ESPHome: esphome-starter-kit play_song_1**.
+    3.  Click **Perform action**. The buzzer plays that slot's tune, no extra data needed.
+
+        <!-- TODO(image): gif of Developer Tools > Actions calling play_song_1 and the buzzer playing -->
+
+    <div class="annotate" markdown>
+
+    Every other slot is there the same way (`play_song_2`, `play_song_3`, `play_song_4`), plus `play_buzzer` to play any tune you pass in. The same actions work inside any automation. (1)
+
+    </div>
+
+    1.  For a slot, pick its action (like `esphome.esphome_starter_kit_play_song_2`) with no extra data. For `esphome.esphome_starter_kit_play_buzzer`, set a **song_str** to any RTTTL string, for example `scale_up:d=32,o=5,b=100:c,c#,d,d#,e,f,f#,g,g#,a,a#,b`. Handy triggers: a doorbell chime, a wash cycle finishing, or a morning wake-up scale.
 
 ## Find more tunes
 
