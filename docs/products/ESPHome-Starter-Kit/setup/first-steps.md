@@ -95,6 +95,10 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     The ESPHome Device Builder runs as a Home Assistant app served right inside your existing HA dashboard. This is the easiest option if you already run Home Assistant OS or a supervised install.
 
+    !!! tip "Speed up builds on a Green, Yellow, or Pi"
+
+        Those boards take a few minutes per build. Once you're up and running, a [Build Server](/products/ESPHome-Starter-Kit/tutorials/remote-build-server.md) hands the compiling to a Windows PC or Mac and cuts that wait down.
+
     **<u>Method 1</u>**
 
     To add the **ESPHome Device Builder** to your Home Assistant instance, use this My button:
