@@ -10,7 +10,7 @@ This will guide you through how to setup the built in alarm using the temperatur
 
 1\. Place the temperature probe into your freezer (not the entire TEMP-1B, just the probe!) and then wait for it to normalize around 0 degrees F aka -18C.
 
-2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30F so I would want to go slightly above that range. However, <a href="https://www.energy.gov/energysaver/refrigerator-freezer-use-and-temperature-tips" target="_blank" rel="noreferrer nofollow noopener">in most freezers they should NOT reach above 0F</a> so you will likely need to input a lower value than me. my minimums are around -20F.
+2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30F so I would want to go slightly above that range. However, <a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">in most freezers they should NOT reach above 0F</a> so you will likely need to input a lower value than me. my minimums are around -20F.
 
 ![](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
 
