@@ -1,3 +1,6 @@
+---
+description: "Generic getting started article."
+---
 # Getting Started
 
 This will walk you through the process of connecting your new Apollo Automation sensor to Homey. If at any point you get stuck, join our <a href="https://link.apolloautomation.com/discord" target="_blank" rel="noopener">Discord</a> for some help.

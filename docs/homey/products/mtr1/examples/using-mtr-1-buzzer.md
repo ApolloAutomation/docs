@@ -1,3 +1,6 @@
+---
+description: "Trigger the MTR-1 buzzer from developer tools, then reuse the same call in an automation."
+---
 # Using MTR-1 Buzzer
 
 This guide will walk you through using the buzzer on your MTR-1. You can also use the "action" in an automation in Home Assistant.

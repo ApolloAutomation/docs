@@ -1,3 +1,6 @@
+---
+description: "Step by step guide for resetting the Wi-Fi Credentials on your MSR-2."
+---
 # Reset Wi-Fi Credentials on your MSR-2
 
 1\. Plug the device into power.

@@ -1,3 +1,6 @@
+---
+description: "Multiple automation examples with the TEMP-1."
+---
 # Automation Examples using a TEMP-1
 
 ###### Freezer Temperature Probe Example

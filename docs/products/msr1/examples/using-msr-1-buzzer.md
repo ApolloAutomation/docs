@@ -1,3 +1,6 @@
+---
+description: "Trigger the MSR-1 buzzer from Home Assistant developer tools, then reuse the same call in an automation."
+---
 # Using MSR-1 Buzzer
 
 This guide will walk you through using the buzzer on your MSR-1. You can also call the below service through automations in Home Assistant.

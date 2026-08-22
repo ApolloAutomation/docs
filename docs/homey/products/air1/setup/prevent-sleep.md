@@ -1,1 +1,4 @@
---8<-- "products/air1/setup/prevent-sleep.md:5:"
+---
+description: "How to disable Prevent Sleep and allow your Apollo device to sleep!"
+---
+--8<-- "products/general/battery-sensors/prevent-sleep.md:5:"

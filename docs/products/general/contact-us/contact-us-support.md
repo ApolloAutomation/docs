@@ -1,3 +1,6 @@
+---
+description: "How to reach Apollo Automation support, by email, on Discord, or through the community forum."
+---
 # Contact Us / Support
 
 !!! tip ":fontawesome-solid-envelope: Email Support"

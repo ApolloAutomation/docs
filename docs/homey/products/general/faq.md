@@ -1,1 +1,4 @@
+---
+description: "Frequently Asked Questions."
+---
 --8<-- "products/general/faq.md:5:"

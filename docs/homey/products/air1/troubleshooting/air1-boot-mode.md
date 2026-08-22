@@ -1,3 +1,6 @@
+---
+description: "Step by step guide for putting The AIR-1 In Boot Mode."
+---
 
 !!! info "This will cover how to put the AIR-1 into boot mode."
 

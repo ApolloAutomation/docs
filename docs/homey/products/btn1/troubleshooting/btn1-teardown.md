@@ -1,1 +1,4 @@
+---
+description: ">-"
+---
 --8<-- "products/btn1/troubleshooting/btn1-teardown.md:7:"

@@ -1,3 +1,6 @@
+---
+description: "Trigger the MSR-2 buzzer from developer tools, then reuse the same call in an automation."
+---
 # Using MSR-2 Buzzer
 
 This guide will walk you through using the buzzer on your MSR-2. You can also use the "action" in an automation in Home Assistant.

@@ -1,3 +1,6 @@
+---
+description: "Keep the TEMP-1B awake instead of letting it sleep, and what that costs in battery life."
+---
 # Prevent Sleep
 
 !!! tip "Put your sensors to sleep!"
