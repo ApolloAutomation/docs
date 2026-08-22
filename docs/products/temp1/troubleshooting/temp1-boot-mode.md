@@ -22,7 +22,7 @@ If you prefer, please remove the lid by gently prying up on the small slit by th
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your TEMP-1 then let go of the button.
 
-3\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1/troubleshooting/temp1-code/).
+3\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/temp1/troubleshooting/temp1-code/).
 
 ##### Method 2: Boot and Reset Buttons
 
@@ -34,4 +34,4 @@ If you prefer, please remove the lid by gently prying up on the small slit by th
 
 ![](/assets/temp-1-reset-button-lid-off.jpg)
 
-4\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1/troubleshooting/temp1-code/).
+4\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/temp1/troubleshooting/temp1-code/).

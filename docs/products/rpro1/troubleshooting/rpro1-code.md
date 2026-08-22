@@ -10,7 +10,7 @@ description: Step by step guide for re-flashing the R-PRO-1 back to factory firm
 
 If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
-1\. Locate the boot button <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-boot-mode.md" rel="noreferrer nofollow">as shown here</a>. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R-PRO-1 then let go of the button.
+1\. Locate the boot button <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-boot-mode/" rel="noreferrer nofollow">as shown here</a>. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R-PRO-1 then let go of the button.
 
 ![](/assets/r-pro-1-boot-button.jpg)
 

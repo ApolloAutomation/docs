@@ -20,7 +20,7 @@ description: Step by step guide for putting The TEMP Pro-1 In Boot Mode.
 
 3\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your TEMP Pro-1 then let go of the button.
 
-3\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1/troubleshooting/temp1-code/). (needs new link)
+3\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/temppro1/troubleshooting/temp-pro1-code/).
 
 ##### Method 2: Boot and Reset Buttons
 
@@ -32,4 +32,4 @@ description: Step by step guide for putting The TEMP Pro-1 In Boot Mode.
 
 ![](/assets/temp-pro-1-reset-button.jpeg)
 
-4\. Continue with [uploading the firmware document](https://apolloautomation.github.io/docs/products/temp1/troubleshooting/temp1-code/). (needs new link)
+4\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/temppro1/troubleshooting/temp-pro1-code/).
