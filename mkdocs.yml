@@ -7,12 +7,18 @@ extra_css:
   - stylesheets/design.css
   - stylesheets/osano.css
   - stylesheets/pmm.css
-# Fragments pulled into other pages via pymdownx.snippets. Without this they
-# build as standalone pages and land in the sitemap. The snippets extension
-# reads them from disk via its own base_path, so excluding them from the site
-# output does not affect any include.
+# Kept in the repo but never published.
+#
+# _snippets holds fragments that other pages pull in via pymdownx.snippets.
+# The extension reads them from disk through its own base_path, so excluding
+# them from the site output does not affect any include.
+#
+# new-product-template is the starting point for a new product's pages. It
+# currently carries a full copy of the PUMP-1 docs, so publishing it puts
+# duplicates of those pages in the sitemap under productname URLs.
 exclude_docs: |
   _snippets/
+  products/new-product-template/
 site_name: Apollo Docs
 site_description: Setup guides, troubleshooting, and firmware documentation for Apollo Automation sensors.
 #site_url: https://apolloautomation.github.io/
@@ -677,7 +683,6 @@ nav:
             - Factory Re-Flash BTN-1: homey/products/btn1/troubleshooting/btn1-reflash.md
             - Teardown and Reassembly Of BTN-1: homey/products/btn1/troubleshooting/btn1-teardown.md
             - Reset Wi-Fi Credentials: homey/products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
-          - Reviews: homey/products/btn1/btn1-reviews.md
       - Environmental Sensors:
           - AIR-1:
               - Introduction: homey/products/air1/introduction.md
@@ -900,5 +905,4 @@ nav:
             - Factory Re-Flash PUMP-1: homey/products/pump1/troubleshooting/pump1-reflash.md
             - Teardown and Reassembly Of PUMP-1: homey/products/pump1/troubleshooting/pump1-teardown.md
             - Reset Wi-Fi Credentials: homey/products/pump1/troubleshooting/pump1-reset-wi-fi-credentials.md
-          - Reviews: homey/products/pump1/pump1-reviews.md
       - Contact Us / Support: homey/products/general/contact-us/contact-us-support.md
