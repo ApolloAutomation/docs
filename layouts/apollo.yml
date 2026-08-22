@@ -54,10 +54,11 @@ definitions:
   - &site_name >-
     {{ config.site_name }}
 
-  # Page title with site name
-  - &page_title_with_site_name >-
+  # Page title. No site name suffix: `og:site_name` already prints "Apollo
+  # Docs" on its own line directly above the title in an embed.
+  - &page_title >-
     {%- if not page.is_homepage -%}
-      {{ page.meta.get("title", page.title) }} - {{ config.site_name }}
+      {{ page.meta.get("title", page.title) }}
     {%- else -%}
       {{ config.site_name }}
     {%- endif -%}
@@ -83,7 +84,8 @@ tags:
 
   # Open Graph
   og:type: website
-  og:title: *page_title_with_site_name
+  og:site_name: *site_name
+  og:title: *page_title
   og:description: *page_description
   og:image: "{{ image.url }}"
   og:image:type: "{{ image.type }}"
@@ -93,7 +95,7 @@ tags:
 
   # Twitter
   twitter:card: summary
-  twitter:title: *page_title_with_site_name
+  twitter:title: *page_title
   twitter:description: *page_description
   twitter:image: "{{ image.url }}"
 
