@@ -74,7 +74,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 ![](/assets/btn-1-improv-ble-esphome-integration.gif)
 
-4\. Your device is now added to your Wi-Fi and added to the ESPHome Integration in Home Assistant. You should now be ready to <a href="https://wiki.apolloautomation.com/products/btn1/examples/btn-1-blueprint" target="_blank" rel="noreferrer nofollow noopener">setup a blueprint</a> and start using your BTN-1!
+4\. Your device is now added to your Wi-Fi and added to the ESPHome Integration in Home Assistant. You should now be ready to <a href="https://wiki.apolloautomation.com/products/btn1/examples/blueprint/" target="_blank" rel="noreferrer nofollow noopener">setup a blueprint</a> and start using your BTN-1!
 
 ### Connecting To ESPHome Device Builder
 
