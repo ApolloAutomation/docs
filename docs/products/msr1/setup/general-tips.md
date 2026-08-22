@@ -1,3 +1,6 @@
+---
+description: "Placement and mounting tips for the MSR-1, including keeping the light sensor holes clear and stopping the RGB LED from skewing LUX readings."
+---
 # General Tips
 
 ##### **MSR-1**
