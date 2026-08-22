@@ -7,6 +7,12 @@ extra_css:
   - stylesheets/design.css
   - stylesheets/osano.css
   - stylesheets/pmm.css
+# Fragments pulled into other pages via pymdownx.snippets. Without this they
+# build as standalone pages and land in the sitemap. The snippets extension
+# reads them from disk via its own base_path, so excluding them from the site
+# output does not affect any include.
+exclude_docs: |
+  _snippets/
 site_name: Apollo Docs
 site_description: Setup guides, troubleshooting, and firmware documentation for Apollo Automation sensors.
 #site_url: https://apolloautomation.github.io/
