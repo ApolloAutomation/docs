@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  {#-
+    Discord tints the vertical stripe on the left edge of a link embed with
+    this tag. Material does not emit one, because the palette here uses a
+    custom primary rather than a named color. It must be `name=` rather than
+    `property=`, so it cannot come from the social card layout, which emits
+    `property=` for everything.
+  -#}
+  <meta name="theme-color" content="#9ABC31">
+{% endblock %}
