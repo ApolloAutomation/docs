@@ -1,3 +1,6 @@
+---
+description: "Add temperature and humidity offsets to your MTR-1 so its readings match the room it sits in."
+---
 # MTR-1 Temperature & Humidity Offsets
 
 #### **Simple Offsets for Temperature and Humidity:**

@@ -1,1 +1,4 @@
+---
+description: ">-"
+---
 --8<-- "products/m1/examples/share-data-from-home-assistant.md:9:"

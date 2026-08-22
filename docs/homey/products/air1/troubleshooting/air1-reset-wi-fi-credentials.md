@@ -1,3 +1,6 @@
+---
+description: "Step by step guide for resetting the Wi-Fi Credentials on your AIR-1."
+---
 
 1\. Plug the device into power.
 

@@ -1,1 +1,4 @@
+---
+description: ">-"
+---
 --8<-- "products/m1/examples/add-gifs-to-wled.md:7:"

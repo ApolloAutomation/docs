@@ -1,3 +1,6 @@
+---
+description: "Meet the people behind Apollo Automation."
+---
 # Our Team
 
 #####   
