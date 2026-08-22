@@ -12,7 +12,7 @@ The colors will change as severity levels change for each of the sensors below.
 
 ![firstof9-dash-image-full.png](/assets/firstof9-dash-image-full.png)
 
-This guide assumes you already have HACS installed. If you do not, please first [install HACS](https://hacs.xyz/docs/setup/prerequisites "Install HACS").
+This guide assumes you already have HACS installed. If you do not, please first [install HACS](https://hacs.xyz/docs/use/download/prerequisites/ "Install HACS").
 
 First, you need to install apexcharts-card by going to the HACS tab and searching "apexcharts-card".
 
