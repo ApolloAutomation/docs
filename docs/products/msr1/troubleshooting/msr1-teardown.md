@@ -1,1 +1,4 @@
+---
+description: "Video walkthrough of taking an MSR-1 apart."
+---
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/gxVCZyOQjJs?si=ZdwbR0I2jiGiQxgm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>

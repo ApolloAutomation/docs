@@ -79,6 +79,9 @@ plugins:
   - meta
   - redirects:
       redirect_maps:
+        # MSR-1 update-frequency stub removed; only content was a dead link
+        # to the retired wiki.apolloautomation.cloud
+        'products/msr1/setup/how-to-change-the-update-frequency-of-sensors.md': 'products/general/setup/change-the-update-frequency-of-sensors.md'
         # Starter Kit Breakout Module slug rename
         'products/ESPHome-Starter-Kit/modules/breakout-module.md': 'products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md'
         # PR #733: R-PRO-1 calibrating-and-updating -> setup
