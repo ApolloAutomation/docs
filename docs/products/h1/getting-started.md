@@ -4,7 +4,7 @@ description: H-1 Getting Started tutorial.
 ---
 1\. Power Up the H-1:
 
-Insert a (rechargable) [RC-CR123A aka 16340 battery (ideally 2800mAh or higher)](https://www.amazon.com/dp/B0CSKD7N3D) or plug it into a power source using the USB-C port.
+Insert a rechargeable RC-CR123A (16340) battery, preferably an 850 mAh model like <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">the one available in our store</a>, or plug it into a power source using the USB-C port. A normal CR123A will not work!
 
 ![](/assets/h-1-battery-insert.jpg)
 
