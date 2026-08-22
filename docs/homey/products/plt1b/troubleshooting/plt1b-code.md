@@ -10,17 +10,17 @@ If your device has already been connected to Home Assistant please <a href="http
 2. Navigate to our installer page and click connect [\*\* Install Page \*\*](https://apolloautomation.github.io/PLT-1/)
 3. Select your Apollo device, it will show with a similar name to the one below, and click connect. If you aren't sure which device it is, you can unplug the sensor and see which disappears.
 
-[![ComSelection.png](https://apolloautomation.github.io/docs/products/mtr1//assets/comselection.png)](https://apolloautomation.github.io/docs/products/mtr1//assets/comselection.png)
+[![ComSelection.png](/assets/comselection.png)](/assets/comselection.png)
 
 If no device shows, click cancel and then install the recommended driver that shows on the popup. If you have installed the driver, tried different cables, and it still won't work refer [here](https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/) for putting the sensor in boot mode and then retry step 3.
 
 4\. Choose to install the new firmware
 
-[![](https://apolloautomation.github.io/docs/products/mtr1//assets/image-1698806750134.png)](https://apolloautomation.github.io/docs/products/mtr1//assets/image-1698806750134.png)
+[![](/assets/image-1698806750134.png)](/assets/image-1698806750134.png)
 
 5\. Wait for the installer to finish - if you see "ERROR Logger is not configured!" that is totally expected! The logger is disabled to make more room for other components on the microcontroller.
 
-[![](https://apolloautomation.github.io/docs/products/mtr1//assets/image-1698806082666.png)](https://apolloautomation.github.io/docs/products/mtr1//assets/image-1698806082666.png)
+[![](/assets/image-1698806082666.png)](/assets/image-1698806082666.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 
