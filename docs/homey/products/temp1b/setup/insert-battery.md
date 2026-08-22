@@ -2,7 +2,7 @@
 
 !!! info "16340 AKA RC-CR123A and charger required!"
 
-    The TEMP-1B is a very neat sensor but it does *NOT* include a battery nor a charging circuit. You will have to buy your own rechargable RC-CR123A aka 16340 battery and also a separate 16340 charger such as a Nitecore 2 or 4bay model.
+    The TEMP-1B is a very neat sensor but it does *NOT* include a battery nor a charging circuit. You will have to buy your own rechargeable RC-CR123A aka 16340 battery and also a separate 16340 charger such as a Nitecore 2 or 4bay model.
 
 1\. Gently pry open the case lid as shown in the image below.
 
