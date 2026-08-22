@@ -8,6 +8,7 @@ extra_css:
   - stylesheets/osano.css
   - stylesheets/pmm.css
 site_name: Apollo Docs
+site_description: Setup guides, troubleshooting, and firmware documentation for Apollo Automation sensors.
 #site_url: https://apolloautomation.github.io/
 site_url: https://wiki.apolloautomation.com
 repo_url: https://github.com/ApolloAutomation/docs
