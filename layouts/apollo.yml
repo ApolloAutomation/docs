@@ -1,0 +1,137 @@
+# Apollo Docs social card.
+#
+# Two deliberate departures from Material's `default` layout:
+#
+# 1. `twitter:card` is `summary` rather than `summary_large_image`. Discord,
+#    Slack and X read that tag and render a small square thumbnail beside the
+#    title and description instead of a full-width banner, which is roughly a
+#    quarter of the vertical space in a channel.
+# 2. The card carries no page title or description. Both already appear as
+#    embed text next to the image, so painting them into the PNG as well just
+#    prints the same words twice.
+
+# -----------------------------------------------------------------------------
+# Configuration
+# -----------------------------------------------------------------------------
+
+definitions:
+
+  # Background color (Apollo blue)
+  - &background_color >-
+    {%- if layout.background_color -%}
+      {{ layout.background_color }}
+    {%- else -%}
+      #4379AA
+    {%- endif -%}
+
+  # Text color
+  - &color >-
+    {%- if layout.color -%}
+      {{ layout.color }}
+    {%- else -%}
+      #FFFFFF
+    {%- endif -%}
+
+  # Accent color (Apollo green)
+  - &accent_color >-
+    {%- if layout.accent_color -%}
+      {{ layout.accent_color }}
+    {%- else -%}
+      #9ABC31
+    {%- endif -%}
+
+  # Font family
+  - &font_family >-
+    {%- if layout.font_family -%}
+      {{ layout.font_family }}
+    {%- elif config.theme.font is mapping -%}
+      {{ config.theme.font.get("text", "Roboto") }}
+    {%- else -%}
+      Roboto
+    {%- endif -%}
+
+  # Site name
+  - &site_name >-
+    {{ config.site_name }}
+
+  # Page title with site name
+  - &page_title_with_site_name >-
+    {%- if not page.is_homepage -%}
+      {{ page.meta.get("title", page.title) }} - {{ config.site_name }}
+    {%- else -%}
+      {{ config.site_name }}
+    {%- endif -%}
+
+  # Page description
+  - &page_description >-
+    {%- if layout.description -%}
+      {{ layout.description }}
+    {%- else -%}
+      {{ page.meta.get("description", config.site_description) | x }}
+    {%- endif -%}
+
+  # Logo
+  - &logo >-
+    {%- if layout.logo -%}
+      {{ layout.logo }}
+    {%- elif config.theme.logo -%}
+      {{ config.docs_dir }}/{{ config.theme.logo }}
+    {%- endif -%}
+
+# Meta tags
+tags:
+
+  # Open Graph
+  og:type: website
+  og:title: *page_title_with_site_name
+  og:description: *page_description
+  og:image: "{{ image.url }}"
+  og:image:type: "{{ image.type }}"
+  og:image:width: "{{ image.width }}"
+  og:image:height: "{{ image.height }}"
+  og:url: "{{ page.canonical_url }}"
+
+  # Twitter
+  twitter:card: summary
+  twitter:title: *page_title_with_site_name
+  twitter:description: *page_description
+  twitter:image: "{{ image.url }}"
+
+# -----------------------------------------------------------------------------
+# Specification
+# -----------------------------------------------------------------------------
+
+# Card size and layers
+size: { width: 630, height: 630 }
+layers:
+
+  # Background
+  - background:
+      color: *background_color
+
+  # Logo - the mark's own square is the same blue as the background, so only
+  # the white "A" and the green dot read against it
+  - size: { width: 340, height: 340 }
+    offset: { x: 0, y: 96 }
+    origin: center top
+    background:
+      image: *logo
+
+  # Site name
+  - size: { width: 590, height: 72 }
+    offset: { x: 0, y: 450 }
+    origin: center top
+    typography:
+      content: *site_name
+      align: center
+      color: *color
+      font:
+        family: *font_family
+        style: Bold
+
+  # Accent rule
+  - size: { width: 120, height: 8 }
+    offset: { x: 0, y: 542 }
+    origin: center top
+    background:
+      color: *accent_color

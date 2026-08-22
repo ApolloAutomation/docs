@@ -68,9 +68,12 @@ plugins:
       draggable: false
   - search
   - social:
+      cards_layout_dir: layouts
+      cards_layout: apollo
       cards_layout_options:
-        background_color: "#111111"
-        color: "#daa520"
+        background_color: "#4379AA"
+        color: "#FFFFFF"
+        accent_color: "#9ABC31"
         font_family: Figtree
   - meta
   - redirects:
