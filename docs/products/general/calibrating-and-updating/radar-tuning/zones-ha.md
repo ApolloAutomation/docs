@@ -1,1 +1,1 @@
---8<-- "products/msr1/setup/zones-ha.md"
+--8<-- "products/msr1/setup/zones-ha.md:4:"

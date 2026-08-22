@@ -1,3 +1,6 @@
+---
+description: "Example Home Assistant dashboard cards for the MSR-1, including an ApexCharts scatter plot of radar detection distance you can copy and paste."
+---
 # MSR-1 Home Assistant Dashboard Examples
 
 **Radar Scatter Plot With Apex Charts For **[**MSR-1**](https://shop.apolloautomation.cloud/products/multisensor-mk1)

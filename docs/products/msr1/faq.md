@@ -1,3 +1,6 @@
+---
+description: "Common MSR-1 questions answered: which sensors are inside, what the mmWave radar detects, and how the device talks to Home Assistant."
+---
 1\. **What sensors are included in the MSR-1?**
 
 * The MSR-1 includes a mmWave radar sensor (HLK-ld2410b), a LUX and UV sensor (LTR-390UV), and a temperature, humidity, and pressure sensor (BME280). It also has an optional CO2 sensor (SCD40), RGB LED, and piezo buzzer.
