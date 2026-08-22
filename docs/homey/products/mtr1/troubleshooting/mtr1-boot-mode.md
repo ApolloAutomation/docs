@@ -1,3 +1,6 @@
+---
+description: "Step by step guide for putting The MTR-1 In Boot Mode."
+---
 # Putting The MTR-1 In Boot Mode
 
 !!! info "This will cover how to put the MTR-1 into boot mode."

@@ -1,3 +1,6 @@
+---
+description: "Step by step guide for putting The MSR-2 In Boot Mode."
+---
 # Putting The MSR-2 In Boot Mode
 
 !!! info "This will cover how to put the MSR-2 into boot mode."

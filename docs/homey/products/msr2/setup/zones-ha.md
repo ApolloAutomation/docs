@@ -1,3 +1,6 @@
+---
+description: "Tune the MSR-2 mmWave radar using Radar Engineering Mode to find which gates cause false triggers and raise their thresholds."
+---
 # How To Tune mmWave Using Home Assistant
 
 If you're experiencing false triggers, we recommend using Radar Engineering Mode (REM) to monitor the gate energy and adjust the gate threshold to eliminate them.  

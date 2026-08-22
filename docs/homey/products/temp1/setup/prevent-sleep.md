@@ -1,3 +1,6 @@
+---
+description: "Guide for setting up and using the prevent sleep toggle with the TEMP-1."
+---
 # Prevent Sleep
 
 !!! tip "Put your sensors to sleep!"

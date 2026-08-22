@@ -1,1 +1,4 @@
+---
+description: ">-"
+---
 --8<-- "products/btn1/examples/blueprint.md:7:"

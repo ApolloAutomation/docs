@@ -1,3 +1,6 @@
+---
+description: "Multiple helpful images for mounting, lux/rgb, and zone visualization."
+---
 
 ##### **MTR-1 PCB with Sensors**
 

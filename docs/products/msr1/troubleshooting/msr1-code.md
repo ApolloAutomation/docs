@@ -1,3 +1,6 @@
+---
+description: "Reflash the MSR-1 back to factory firmware from a Chromium based browser when it stops responding."
+---
 # Factory Re-Flash MSR-1
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."

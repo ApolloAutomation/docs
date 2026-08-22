@@ -1,3 +1,6 @@
+---
+description: "Put the MSR-1 into boot mode using the boot button, which is needed before reflashing its firmware."
+---
 # Putting The MSR-1 In Boot Mode
 
 !!! info "This will cover how to put the MSR-1 into boot mode."

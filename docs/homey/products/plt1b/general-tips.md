@@ -1,3 +1,6 @@
+---
+description: "Helpful tips to get the most use out of your sensor."
+---
 # General Tips
 
 ## Boot and Reset Buttons

@@ -1,3 +1,6 @@
+---
+description: "Video and written reviews of the Apollo MSR-1 from across the community."
+---
 # [Make It Work Tech MSR-1 Review](https://youtu.be/Kt1FpRM8R18?si=GgMGCjpbSwpSqIsr)
 
 # [Smart Home Scene MSR-1 Review](https://smarthomescene.com/reviews/apollo-msr-1-review-miniature-multi-sensor-for-presence-and-co2-monitoring/)
