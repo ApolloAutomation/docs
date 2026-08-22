@@ -3,7 +3,7 @@ description: "Example Home Assistant dashboard cards for the MSR-1, including an
 ---
 # MSR-1 Home Assistant Dashboard Examples
 
-**Radar Scatter Plot With Apex Charts For **[**MSR-1**](https://shop.apolloautomation.cloud/products/multisensor-mk1)
+**Radar Scatter Plot With Apex Charts For MSR-1**
 
   
 ![JPE Apex Charts 3.png](/assets/jpe-apex-charts-3.png)
