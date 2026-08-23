@@ -29,7 +29,7 @@ action: tts.speak
 target:
   entity_id: tts.piper
 data:
-  media_player_entity_id: media_player.apollo_cast_1_722124_apollo_cast_1_player
+  media_player_entity_id: media_player.apollo_cast_1_722124_player
   message: Testing announcements on the CAST dash one
 ```
 
@@ -48,7 +48,7 @@ Anything you can play can be an announcement, not just speech. A doorbell chime 
 ```yaml
 action: media_player.play_media
 target:
-  entity_id: media_player.apollo_cast_1_722124_apollo_cast_1_player
+  entity_id: media_player.apollo_cast_1_722124_player
 data:
   media_content_id: media-source://media_source/local/doorbell.mp3
   media_content_type: music
@@ -74,7 +74,7 @@ The `announce: true` is what routes it to the announcement pipeline. Leave it ou
         target:
           entity_id: tts.piper
         data:
-          media_player_entity_id: media_player.apollo_cast_1_722124_apollo_cast_1_player
+          media_player_entity_id: media_player.apollo_cast_1_722124_player
           message: The washing machine is finished
     mode: single
     ```
