@@ -134,3 +134,11 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 33\. **My NOx (SEN55 NOX Index) reads "unavailable" and the logs mention an SEN54. How do I fix it?**
 
 * A small number of AIR-1 units report their sensor as an SEN54, which has no NOx element, on the model register, even though the NOx-capable SEN55 is actually fitted and working. That left the NOx Index stuck at *unavailable*. The 26.7.23.1 firmware forces the correct SEN55 model, so updating to the latest firmware brings NOx back. Once it updates, give the reading a little time to appear: like the VOC Index, the NOx Index needs a short conditioning period after boot before it reports a value.
+
+34\. **Is the connection between the AIR-1 and Home Assistant encrypted?**
+
+* Yes. Firmware 26.7.23.1 and later encrypt the API connection between the device and Home Assistant. It's handled for you, so there's nothing to switch on and nothing to change on a device you already own.
+
+35\. **I build the AIR-1 YAML myself and validation fails on a version error. What do I need?**
+
+* Firmware 26.7.23.1 and later need ESPHome 2026.7.2 or newer. Update ESPHome Device Builder and validate again. Devices that update through the **Firmware Update** entity aren't affected, since those builds are compiled for you.
