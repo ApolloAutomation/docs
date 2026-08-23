@@ -30,7 +30,7 @@ description: Frequently asked questions about the CAST-1 audio caster.
 7\. **What can I stream to it?**
 
 * Anything Music Assistant can play, including your local library, streaming services, and radio. Music Assistant handles the sources and sends the audio to your CAST-1.
-* AirPlay and Spotify Connect aren't built into the CAST-1 firmware. Music Assistant's <a href="https://www.music-assistant.io/plugins/airplay-receiver/" target="_blank" rel="noreferrer nofollow noopener">AirPlay Receiver plugin</a> can turn its players into AirPlay targets, though that plugin is early in development and its functionality is limited.
+* AirPlay and Spotify Connect aren't built into the CAST-1 firmware. Music Assistant has a plugin for each: <a href="https://www.music-assistant.io/plugins/airplay-receiver/" target="_blank" rel="noreferrer nofollow noopener">AirPlay Receiver</a> and <a href="https://www.music-assistant.io/plugins/spotify-connect/" target="_blank" rel="noreferrer nofollow noopener">Spotify Connect</a>, which make its players show up as AirPlay or Spotify Connect targets. Both are early in development with limited functionality, and Spotify Connect needs a Spotify Premium account.
 
 8\. **Why are there two media players on my device?**
 
