@@ -21,3 +21,7 @@ description: Use the M-1 with SendSpin audio visualizers
 2\. Head to the <a href="http://homeassistant.local:8123/d5369777_music_assistant" target="_blank" rel="noreferrer nofollow noopener">Music Assistant dashboard</a> and select one of your media players. Then click the players icon then click the players icon again and check off your Apollo M-1 LED Matrix.
 
 ![](../../../assets/sendspin-add-m-1-as-player.gif)
+
+That is it. Play something and the matrix picks up the album art and the track title on its own, switching over every time the song changes.
+
+<video src="/assets/m1-sendspin-album-art.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%; border-radius: 6px;"></video>
