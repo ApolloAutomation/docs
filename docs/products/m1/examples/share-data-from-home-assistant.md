@@ -48,6 +48,10 @@ Each line is capped at **64 characters** on WLED and **32** on WLED-MM, which is
 
 ![](/assets/m-1-matrix-automation-example-action.gif)
 
+Here is the finished board on a two panel setup, four segments each pulling a different entity.
+
+![](/assets/m1-share-data-home-assistant-result.webp)
+
 ###### Tuning It
 
 A minute suits temperatures and forecasts. For something that changes faster, like a countdown timer, drop the time pattern to every ten or thirty seconds. Going much below that gains you little, since the text has to finish scrolling before anyone can read it anyway.
