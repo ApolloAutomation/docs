@@ -113,8 +113,8 @@ Want a single air quality number on top of the individual readings? Add the AQI 
 | **PM &lt;2.5µm** | PM2.5, fine particles from combustion and industrial activity. The most widely tracked for health. |
 | **PM &lt;4µm** | Particles smaller than 4 micrometers. |
 | **PM &lt;10µm** | PM10, includes dust, pollen, and mold. |
-| **Temperature** | Ambient air temperature. Runs a little warm right after power-on while the sensor settles. |
-| **Humidity** | Relative humidity in the air. |
+| **Temperature** | Ambient air temperature. Runs a little warm right after power-on while the sensor settles. If it reads high all the time, add an [offset](#temperature-and-humidity-offsets). |
+| **Humidity** | Relative humidity in the air. Reads low when the temperature reads high, an [offset](#temperature-and-humidity-offsets) fixes both. |
 | **VOC Index** | Volatile organic compounds from paints, cleaning products, and cooking, on a relative scale where 100 is your recent average. <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">How the VOC Index works</a>. |
 | **NOx Index** | Nitrogen oxides from gas stoves and other combustion, on the same kind of relative scale where 1 is the baseline. <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">How the NOx Index works</a>. |
 
@@ -155,5 +155,104 @@ Both are relative scales that behave like your nose, comparing the current air t
 
 1.  Run a fan or send an alert when the VOC Index rises above 100. It reacts to the change in your space rather than an absolute number.
 2.  Kick on the range hood or a fan when the NOx Index climbs past 1, handy while cooking on gas.
+
+## Temperature and Humidity Offsets
+
+If the SEN65's temperature or humidity doesn't agree with another thermometer or hygrometer in the room, the sensor is probably fine. Sensirion calibrates every unit at the factory to a typical accuracy of <a href="https://sensirion.com/products/catalog/SEN65" target="_blank" rel="noreferrer nofollow noopener">±0.45 °C and ±4.5 %RH</a>, but it samples the air right next to a powered ESP32, and that heat pushes the temperature reading up a little. Humidity then reads low, because relative humidity drops as air warms. (1) Every install runs a slightly different amount warm, so Sensirion leaves this correction to the device builder, and in ESPHome that's a one-line offset in your YAML.
+{ .annotate }
+
+1.  Sensirion's <a href="https://sensirion.com/media/documents/C964FCC8/69709EC3/PS_AN_SEN6x_Temperature_Compensation_and_Acceleration_Application_No.pdf" target="_blank" rel="noreferrer nofollow noopener">SEN6x temperature compensation application note</a> explains the self-heating effect and the math behind correcting it.
+
+#### Measure your offsets
+
+Let the kit run in its normal spot for at least half an hour, out of sunlight and away from vents. Put a thermometer you trust next to it and note how far off each reading is. Reading 23.5 °C in a 21.5 °C room means your temperature offset is 2 °C. One caution on the reference: dial-style analog hygrometers are commonly off by ±5 %RH or more, so a disagreement with one of those may say more about the dial than the SEN65.
+
+#### Fixed offsets
+
+Open your device in Device Builder, click **Edit**, and add a `filters:` block under `temperature:` and `humidity:` in the sen6x component:
+
+```yaml
+    temperature:
+      name: "Temperature"
+      filters:
+        - offset: -2.0
+    humidity:
+      name: "Humidity"
+      filters:
+        - offset: 5.0
+```
+
+The `offset` filter adds its value to every reading: a temperature that reads 2 °C high gets `-2.0`, a humidity that reads 5 % low gets `5.0`. Save, install, and the corrected values flow to Home Assistant.
+
+#### Adjustable offsets from Home Assistant
+
+Apollo's [AIR-1](/products/air1/introduction.md) exposes its offsets as number entities instead, so you can dial them in from the device page in Home Assistant without reflashing. The same trick works on the starter kit. (1)
+{ .annotate }
+
+1.  ESPHome's sen6x component doesn't yet expose the on-sensor compensation commands from Sensirion's application note, so filters in YAML are the way to do this today.
+
+??? example "Full SEN65 config with adjustable offsets"
+
+    This is the complete SEN65 block from [earlier on this page](#add-to-esphome-device-builder) with the offsets added. Two things changed: each of `temperature:` and `humidity:` gained a `filters:` block, and a new `number:` section at the bottom creates the two offset boxes. Compare it with your own YAML and copy over those parts, or replace your whole `sensor:` block with this one. If you added the [NowCast AQI](#nowcast-aqi) sensor, keep that entry too.
+
+    ```yaml
+    sensor:
+      - platform: sen6x
+        type: SEN65
+        address: 0x6B
+        update_interval: 60s
+        pm_1_0:
+          name: "PM <1µm"
+        pm_2_5:
+          id: sen65_pm_2_5
+          name: "PM <2.5µm"
+        pm_4_0:
+          name: "PM <4µm"
+        pm_10_0:
+          id: sen65_pm_10_0
+          name: "PM <10µm"
+        temperature:
+          name: "Temperature"
+          filters:
+            - lambda: return x - id(sen65_temperature_offset).state;
+        humidity:
+          name: "Humidity"
+          filters:
+            - lambda: return x - id(sen65_humidity_offset).state;
+        voc:
+          name: "VOC Index"
+        nox:
+          name: "NOx Index"
+
+    number:
+      - platform: template
+        name: "SEN65 Temperature Offset"
+        id: sen65_temperature_offset
+        restore_value: true
+        initial_value: 0.0
+        min_value: -70.0
+        max_value: 70.0
+        entity_category: "CONFIG"
+        unit_of_measurement: "°C"
+        optimistic: true
+        update_interval: never
+        step: 0.1
+        mode: box
+      - platform: template
+        name: "SEN65 Humidity Offset"
+        id: sen65_humidity_offset
+        restore_value: true
+        initial_value: 0.0
+        min_value: -70.0
+        max_value: 70.0
+        entity_category: "CONFIG"
+        unit_of_measurement: "%"
+        optimistic: true
+        update_interval: never
+        step: 0.1
+        mode: box
+    ```
+
+    These offsets are subtracted from the raw reading, so the box holds the amount the sensor reads *high*: reading 2 °C warm, set **SEN65 Temperature Offset** to `2.0`. A humidity that reads 5 % low gets `-5.0`. Both values survive a reboot.
 
 --8<-- "_snippets/community-help.md"
