@@ -73,3 +73,7 @@ description: Frequently asked questions about the TEMP-1B temperature sensor.
 17\. **Can I use the probe in a salt water tank?**
 
 * Yes, however a very high concentration of salt will likely eventually lead to corrosion and should be checked from time to time. The stainless steel used is "SS304" grade.
+
+18\. **What is the wiring for the 3.5mm temp probe?**
+
+* Tip is 3.3V, ring is data, and sleeve is GND. See the [temp probe pinout](/products/temp1b/addons/temp-probe.md#probe-pinout) for a picture.
