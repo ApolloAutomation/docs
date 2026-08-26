@@ -35,3 +35,15 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 ![](/assets/temp1b-temp-probe-freezer-pic-1.jpg)
 
 ![](/assets/temp1b-temp-probe-freezer-pic-2.jpg)
+
+## Probe Pinout
+
+The 1.5m and 20cm DS18B20 temp probes use a standard 3.5mm TRS plug. Wire yours the same way if you're building your own probe or repairing a cut cable.
+
+![](/assets/temp-1-temp-probe-pinout.png)
+
+| Contact | Signal |
+| --- | --- |
+| Tip | 3.3V |
+| Ring | Data |
+| Sleeve | GND |
