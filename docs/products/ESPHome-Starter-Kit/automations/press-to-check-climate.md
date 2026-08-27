@@ -370,7 +370,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
 
     !!! warning "The `°F` in your lambda must match the `°F` in your select"
 
-        The lambda comparisons below check `id(temp_unit).state == "°F"`. That string comparison is byte-exact. If the `°` character in your select options came from a different keyboard layout than the one in the lambda (some layouts produce U+00B0 DEGREE SIGN, others produce U+02DA RING ABOVE, which looks identical), the comparison silently always returns false and °F mode never triggers. Copy-paste the `°` from one place to the other to be safe, or change the select options and the lambda comparisons to plain `"C"` / `"F"`.
+        The lambda comparisons below check `id(temp_unit).current_option() == "°F"`. That string comparison is byte-exact. If the `°` character in your select options came from a different keyboard layout than the one in the lambda (some layouts produce U+00B0 DEGREE SIGN, others produce U+02DA RING ABOVE, which looks identical), the comparison silently always returns false and °F mode never triggers. Copy-paste the `°` from one place to the other to be safe, or change the select options and the lambda comparisons to plain `"C"` / `"F"`.
 
     1.  Expand the **Automations** dropdown, click **Add Automation**.
     2.  Set up the trigger:
@@ -393,7 +393,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
 
         ```cpp
         float t = id(temp_min).state;
-        if (id(temp_unit).state == "°F") t = fahrenheit_to_celsius(t);
+        if (id(temp_unit).current_option() == "°F") t = fahrenheit_to_celsius(t);
         return id(aht_temperature).state < t;
         ```
 
@@ -406,7 +406,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
     4.  Add a second `If`. Lambda condition body:
 
         ```cpp
-        bool is_f = id(temp_unit).state == "°F";
+        bool is_f = id(temp_unit).current_option() == "°F";
         float tmin = is_f ? fahrenheit_to_celsius(id(temp_min).state) : id(temp_min).state;
         float tmax = is_f ? fahrenheit_to_celsius(id(temp_max).state) : id(temp_max).state;
         float t = id(aht_temperature).state;
@@ -419,7 +419,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
 
         ```cpp
         float t = id(temp_max).state;
-        if (id(temp_unit).state == "°F") t = fahrenheit_to_celsius(t);
+        if (id(temp_unit).current_option() == "°F") t = fahrenheit_to_celsius(t);
         return id(aht_temperature).state > t;
         ```
 
@@ -484,7 +484,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                     condition:
                       lambda: |-
                         float t = id(temp_min).state;
-                        if (id(temp_unit).state == "°F") t = fahrenheit_to_celsius(t);
+                        if (id(temp_unit).current_option() == "°F") t = fahrenheit_to_celsius(t);
                         return id(aht_temperature).state < t;
                     then:
                       - light.turn_on:
@@ -496,7 +496,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - if:
                     condition:
                       lambda: |-
-                        bool is_f = id(temp_unit).state == "°F";
+                        bool is_f = id(temp_unit).current_option() == "°F";
                         float tmin = is_f ? fahrenheit_to_celsius(id(temp_min).state) : id(temp_min).state;
                         float tmax = is_f ? fahrenheit_to_celsius(id(temp_max).state) : id(temp_max).state;
                         float t = id(aht_temperature).state;
@@ -512,7 +512,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                     condition:
                       lambda: |-
                         float t = id(temp_max).state;
-                        if (id(temp_unit).state == "°F") t = fahrenheit_to_celsius(t);
+                        if (id(temp_unit).current_option() == "°F") t = fahrenheit_to_celsius(t);
                         return id(aht_temperature).state > t;
                     then:
                       - light.turn_on:
