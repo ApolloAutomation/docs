@@ -61,19 +61,18 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
 === "Ethernet"
 
-    Wired setup needs the <a href="https://wiki.apolloautomation.com/products/cast1/addons/ethernet-module/" target="_blank" rel="noopener">Ethernet module</a> fitted and your CAST-1 running the Ethernet firmware.
-
-    With the CAST-1 unplugged, line the module's pins up with the two rows of female header pins on top of the case, pin side down, and press it straight down until it sits flat.
+    With the CAST-1 unplugged, line the <a href="https://wiki.apolloautomation.com/products/cast1/addons/ethernet-module/" target="_blank" rel="noopener">Ethernet module</a> up with the two rows of female header pins on top of the case, pin side down, and press it straight down until it sits flat.
 
     ![](/assets/cast-1-connect-ethernet-module.webp)
 
-    1\. Every CAST-1 ships on Wi-Fi firmware, so flash yours over to Ethernet first. Follow the <a href="https://wiki.apolloautomation.com/products/cast1/troubleshooting/cast1-reflash/" target="_blank" rel="noopener">reflashing guide</a> and select **Ethernet** under **Variant**.
+    1\. Plug an Ethernet cable into the module, then plug the CAST-1 into power.
 
-    2\. Plug an Ethernet cable into the module, then plug the CAST-1 into power.
+    2\. Your CAST-1 picks up an address from your router on its own, so there's nothing to enter. (1)
+    { .annotate }
 
-    3\. Your CAST-1 picks up an address from your router on its own, so there's nothing to enter.
+    1.  Unplug the cable later and your CAST-1 falls back to Wi-Fi on its own. The [FAQ](https://wiki.apolloautomation.com/products/cast1/faq/) covers how the two connections work together.
 
-    4\. Home Assistant discovers your CAST-1 automatically. Add it below, then check the **IP Address** sensor on the device page to confirm the wired connection came up.
+    3\. Home Assistant discovers your CAST-1 automatically. Add it below, then check the **Network Connection** sensor on the device page to confirm it reads **Ethernet**.
 
 ### Add to Home Assistant
 

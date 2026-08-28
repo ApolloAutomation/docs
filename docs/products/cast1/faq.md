@@ -51,7 +51,10 @@ description: Frequently asked questions about the CAST-1 audio caster.
 
 12\. **Can I connect it with an Ethernet cable instead of Wi-Fi?**
 
-* Yes, with the [Ethernet add-on module](https://wiki.apolloautomation.com/products/cast1/addons/ethernet-module/). It's a header board that presses onto the top of the case, and your CAST-1 then runs the Ethernet firmware.
+* Yes, with the [Ethernet add-on module](https://wiki.apolloautomation.com/products/cast1/addons/ethernet-module/). It's a header board that presses onto the top of the case. There's nothing to flash, one firmware covers both connections.
+* Plug a cable in and your CAST-1 switches over to the wired connection. If it's also joined to your Wi-Fi it keeps both up at once, so Home Assistant doesn't lose the device while you plug or unplug the cable. Take the cable out and it goes back to Wi-Fi on its own.
+* The **Network Connection** sensor on the device page shows which one is in use. It reads **Ethernet**, **WiFi**, **Ethernet + WiFi**, or **Hotspot**.
+* The setup hotspot never broadcasts while an Ethernet cable is connected. Unplug the cable if you need it back.
 
 13\. **Can I pair my phone to the CAST-1 over Bluetooth?**
 
