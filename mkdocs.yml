@@ -261,7 +261,6 @@ nav:
           - Getting Started: products/cast1/setup/getting-started.md
           - Additional Info:
             - Sensor Definitions: products/cast1/setup/sensor-definitions.md
-            - Switch Firmware: products/cast1/setup/cast1-switch-firmware.md
             - ESPHome Device Builder: products/cast1/additional-info/esphome-device-builder.md
           - Addons:
             - Ethernet Module: products/cast1/addons/ethernet-module.md

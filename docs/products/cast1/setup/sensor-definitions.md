@@ -27,8 +27,7 @@ Once added to Home Assistant you can configure different settings for your CAST-
     | Setting | Default | What it does |
     |---------|:-------:|--------------|
     | **Firmware Channel** | Stable | Which firmware channel the CAST-1 updates from. **Beta** gets new features earlier but is less tested than **Stable**. |
-    | **Firmware Type** | WiFi | Which firmware variant the CAST-1 updates to, **WiFi** or **Ethernet**. Match this to how your CAST-1 is connected. See [Switch Firmware](https://wiki.apolloautomation.com/products/cast1/setup/cast1-switch-firmware/) to move between the two. |
-    | **Firmware Update** | n/a | Checks for and installs a firmware update for the selected Firmware Type and Channel, straight from Home Assistant. See [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/) for the full walkthrough. |
+    | **Firmware Update** | n/a | Checks for and installs a firmware update from the selected channel, straight from Home Assistant. See [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/) for the full walkthrough. |
     | **Bluetooth Proxy** | Off | Lets the CAST-1 act as a Bluetooth proxy for Home Assistant, extending Bluetooth range to nearby devices. |
     | **WizMote Auto-Discovery** | Off | Turn on to pair a WizMote. While it's on, the next WizMote button press links that remote to your CAST-1. |
     | **Clear WizMote Pairing** | n/a | Unpairs the current WizMote so you can pair a different one. |
@@ -52,7 +51,9 @@ Once added to Home Assistant you can configure different settings for your CAST-
     | **WizMote Status** | Whether a WizMote is paired. Shows "No WizMote paired", "Discovery mode active", or "Paired:" with the remote's MAC address. |
     | **Apollo Firmware Version** | The Apollo firmware build installed on the device (for example, `26.7.12.1`). |
     | **ESPHome Version** | The ESPHome version the firmware was compiled with. |
-    | **IP Address** | The device's IP address on your network. |
+    | **Network Connection** | Which connection the CAST-1 is using: **Ethernet**, **WiFi**, **Ethernet + WiFi** when it's on both at once, **Hotspot** while it's waiting for Wi-Fi details, or **Connecting**. |
+    | **Ethernet IP Address** | The device's IP address on the wired connection. Needs the [Ethernet module](https://wiki.apolloautomation.com/products/cast1/addons/ethernet-module/) fitted. |
+    | **WiFi IP Address** | The device's IP address on your Wi-Fi network. |
     | **Online** | Connection status of the device to Home Assistant. |
     | **ESP Temperature** | Internal temperature of the ESP32 chip. Runs warmer than the room because of the processor and Wi-Fi radio. Disabled by default. |
     | **Uptime** | How long the device has been running since its last reboot. |

@@ -21,7 +21,7 @@ description: Step by step guide for reflashing The CAST-1.
 
 ![](/assets/cast-1-boot-mode-method-2.webp)
 
-4\. Open the <a href="https://install.apolloautomation.com/#/cast-1" target="_blank" rel="noreferrer nofollow noopener">Apollo CAST-1 Installer</a>. Under **Variant**, select **WiFi** or **Ethernet** to match your CAST-1.
+4\. Open the <a href="https://install.apolloautomation.com/#/cast-1" target="_blank" rel="noreferrer nofollow noopener">Apollo CAST-1 Installer</a>.
 
 5\. Click **Connect & Install**. In the browser popup, select **USB JTAG/serial debug unit** and click **Allow**. When the installer opens, click **Install** to flash the firmware, then click **Install** again to confirm.
 
