@@ -4,9 +4,9 @@ description: Step by step guide for resetting the Wi-Fi Credentials on your CAST
 ---
 # Reset Wi-Fi Credentials on your CAST-1
 
-!!! note "WiFi firmware only"
+!!! note "Using the Ethernet module? Unplug the cable first."
 
-    Only the WiFi firmware broadcasts a hotspot. If your CAST-1 runs the Ethernet firmware it won't broadcast a hotspot, so these steps don't apply.
+    Your CAST-1 doesn't broadcast its hotspot while an Ethernet cable is connected, so take the cable out before you start.
 
 1\. Plug the CAST-1 into power.
 
