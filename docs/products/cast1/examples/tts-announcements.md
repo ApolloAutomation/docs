@@ -10,10 +10,10 @@ You'll need a text-to-speech engine set up in Home Assistant first. The examples
 
 ### Which Player to Use
 
-Your CAST-1 has two media players and only one of them handles announcements.
+Your CAST-1 has two media players and either one handles announcements.
 
-* **Apollo CAST-1 Player** is the one you want. It has the announcement pipeline.
-* **Apollo CAST-1 Sendspin Player** is the Music Assistant streaming target. Send an announcement here and it won't duck your music.
+* **Apollo CAST-1 Player** is the ESPHome media player with the announcement pipeline.
+* **Apollo CAST-1 Sendspin Player** is the Music Assistant streaming target. Announcements sent here get forwarded to the announcement pipeline, so your music still ducks.
 
 ### Send an Announcement
 
