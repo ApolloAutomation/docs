@@ -11,7 +11,7 @@ Once added to Home Assistant you can configure different settings for your CAST-
     | Control | What it does |
     |---------|--------------|
     | **Apollo CAST-1 Player** | The main media player for Home Assistant. Use it to play media, text-to-speech, and announcements to the speakers connected to your CAST-1. Announcements duck the music down, then bring it back when they finish. See [TTS and Announcements](https://wiki.apolloautomation.com/products/cast1/examples/tts-announcements/). |
-    | **Apollo CAST-1 Sendspin Player** | The Music Assistant streaming player. This is the player your CAST-1 exposes to Music Assistant, and it's the one you group with other CAST-1s for synchronized multi-room audio. |
+    | **Apollo CAST-1 Sendspin Player** | The Music Assistant streaming player. This is the player your CAST-1 exposes to Music Assistant, and it's the one you group with other CAST-1s for synchronized multi-room audio. Announcements sent to it forward to the ESPHome player and duck the music the same way. |
     | **RGB Light** | The four onboard RGB LEDs. Click the light bulb or color wheel to change the color, pick a **Slow Pulse** or **Fast Pulse** effect, or use the toggle to turn it on or off. |
 
 === "Sensors"

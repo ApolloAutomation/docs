@@ -34,7 +34,7 @@ description: Frequently asked questions about the CAST-1 audio caster.
 
 8\. **Why are there two media players on my device?**
 
-* **Apollo CAST-1 Sendspin Player** is the player Music Assistant streams to, and the one you group with other CAST-1s for multi-room audio.
+* **Apollo CAST-1 Sendspin Player** is the player Music Assistant streams to, and the one you group with other CAST-1s for multi-room audio. It handles announcements too, forwarding them to the ESPHome player so the music still ducks.
 * **Apollo CAST-1 Player** is the Home Assistant media player. Use it for text-to-speech and announcements, which duck the music down and bring it back when they finish. See [TTS and Announcements](https://wiki.apolloautomation.com/products/cast1/examples/tts-announcements/).
 
 9\. **Can I play the same music in several rooms?**
