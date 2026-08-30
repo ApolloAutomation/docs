@@ -28,7 +28,7 @@ description: >-
 
 !!! success "Each sensor group is disabled by default — enable only what matters!"
 
-    Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. You can also configure an Alert Delay to avoid false alerts from brief fluctuations.
+    Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. Expand **Repeat Alerts** to control how often you are reminded while a condition lasts.
 
 6\. *(Optional)* Expand **RGB LED Indicator** and set **LED Mode** so the sensor's own LED lights up when the soil gets too dry. (1)
 { .annotate }
@@ -57,7 +57,7 @@ description: >-
 
 !!! success "Each sensor group is disabled by default — enable only what matters!"
 
-    Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. You can also configure an Alert Delay to avoid false alerts from brief fluctuations.
+    Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. Expand **Repeat Alerts** to control how often you are reminded while a condition lasts.
 
 5\. *(Optional)* Expand **RGB LED Indicator** and set **LED Mode** so the sensor's own LED lights up when the soil gets too dry. (1)
 { .annotate }
