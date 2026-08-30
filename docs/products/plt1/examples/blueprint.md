@@ -33,7 +33,7 @@ description: >-
 6\. *(Optional)* Expand **RGB LED Indicator** and set **LED Mode** so the sensor's own LED lights up when the soil gets too dry. (1)
 { .annotate }
 
-1.  The LED can only be lit while the sensor is awake. On a battery PLT-1B choose **Flash On Alert**, which lights the LED for a few seconds each time an alert fires. On a wired PLT-1 with [Prevent Sleep](/products/plt1/additional-info/prevent-sleep.md) turned on, **Stay On Until Watered** keeps the LED lit until you water the plant.
+1.  Both the PLT-1 and the PLT-1B ship with [Prevent Sleep](/products/plt1/additional-info/prevent-sleep.md) turned on, so **Stay On Until Watered** works out of the box and holds the LED until you water the plant. If you turn Prevent Sleep off to save battery, the LED goes dark every time the sensor sleeps, so choose **Flash On Alert** instead.
 
 7\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
 
@@ -62,6 +62,6 @@ description: >-
 5\. *(Optional)* Expand **RGB LED Indicator** and set **LED Mode** so the sensor's own LED lights up when the soil gets too dry. (1)
 { .annotate }
 
-1.  The LED can only be lit while the sensor is awake. On a battery PLT-1B choose **Flash On Alert**, which lights the LED for a few seconds each time an alert fires. On a wired PLT-1 with [Prevent Sleep](/products/plt1/additional-info/prevent-sleep.md) turned on, **Stay On Until Watered** keeps the LED lit until you water the plant.
+1.  Both the PLT-1 and the PLT-1B ship with [Prevent Sleep](/products/plt1/additional-info/prevent-sleep.md) turned on, so **Stay On Until Watered** works out of the box and holds the LED until you water the plant. If you turn Prevent Sleep off to save battery, the LED goes dark every time the sensor sleeps, so choose **Flash On Alert** instead.
 
 6\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
