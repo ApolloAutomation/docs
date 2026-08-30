@@ -30,7 +30,12 @@ description: >-
 
     Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. You can also configure an Alert Delay to avoid false alerts from brief fluctuations.
 
-6\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
+6\. *(Optional)* Expand **RGB LED Indicator** and set **LED Mode** so the sensor's own LED lights up when the soil gets too dry. (1)
+{ .annotate }
+
+1.  The LED can only be lit while the sensor is awake. On a battery PLT-1B choose **Flash On Alert**, which lights the LED for a few seconds each time an alert fires. On a wired PLT-1 with [Prevent Sleep](/products/plt1/additional-info/prevent-sleep.md) turned on, **Stay On Until Watered** keeps the LED lit until you water the plant.
+
+7\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
 
 ### Manual Import
 
@@ -54,4 +59,9 @@ description: >-
 
     Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. You can also configure an Alert Delay to avoid false alerts from brief fluctuations.
 
-5\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
+5\. *(Optional)* Expand **RGB LED Indicator** and set **LED Mode** so the sensor's own LED lights up when the soil gets too dry. (1)
+{ .annotate }
+
+1.  The LED can only be lit while the sensor is awake. On a battery PLT-1B choose **Flash On Alert**, which lights the LED for a few seconds each time an alert fires. On a wired PLT-1 with [Prevent Sleep](/products/plt1/additional-info/prevent-sleep.md) turned on, **Stay On Until Watered** keeps the LED lit until you water the plant.
+
+6\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
