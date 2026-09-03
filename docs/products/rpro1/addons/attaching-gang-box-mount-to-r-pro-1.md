@@ -8,11 +8,11 @@ description: Tutorial on adding the gang box mounts to your R-Pro-1.
 
 1\. Unplug your R-PRO-1 from power and remove the back.
 
-![](/assets/rpro-1-add-co2-lift-lid-1.jpg)![](/assets/rpro-1-add-co2-remove-lid.jpg)
+![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
 
 2\. Gently lift the PCB out of the case and set it face up with the USB-C port facing down.
 
-![](/assets/r-pro-1-no-case-mmwave-facing-up.jpg)
+![](/assets/r-pro-1-no-case-mmwave-facing-up.webp)
 
 3\. Take the two gang box mount pieces and identify the one labeled "TOP" and the other piece which is the bottom mount.
 
