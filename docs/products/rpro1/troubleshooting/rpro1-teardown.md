@@ -8,11 +8,11 @@ description: Step by step guide for tearing down your R-PRO-1 to replace parts, 
 
 1\. Unplug your R-PRO-1 from power and remove the back.
 
-![](/assets/rpro-1-add-co2-lift-lid-1.jpg)![](/assets/rpro-1-add-co2-remove-lid.jpg)
+![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
 
 2\. Gently remove the PCB from the case and flip it over.
 
-![](/assets/r-pro-1-no-case-mmwave-facing-up.jpg)
+![](/assets/r-pro-1-no-case-mmwave-facing-up.webp)
 
 3\. Gently remove the LD2412 as shown below.
 
