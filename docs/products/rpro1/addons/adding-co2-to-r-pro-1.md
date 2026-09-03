@@ -6,7 +6,7 @@ description: Tutorial on adding the SCD40 CO2 sensor to your R-Pro-1.
 
 1\. Unplug your R-PRO-1 from power and remove the back.
 
-![](/assets/rpro-1-add-co2-lift-lid-1.jpg)![](/assets/rpro-1-add-co2-remove-lid.jpg)
+![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
 
 2\. With the back removed, identify the bottom left corner where the small black mezzanine connector lives. You will see an "X" indicating which corner needs to be lined up with the SCD40 CO<sub>2</sub> sensor. There is an X on the SCD40 sensor's PCB as well, you can see it in the image below but it is slightly cut off on the PCB itself.
 
