@@ -20,28 +20,33 @@ The SEN6x port is on the same I2C bus as the other connectors: **SCL on GPIO0**,
 
 ## Add to ESPHome Device Builder
 
-The SEN65 needs three components in your device config: the **Accessory Power Rail** that powers the breakout, the I2C bus the sensor talks on, and the <a href="https://esphome.io/components/sensor/sen6x/" target="_blank" rel="noreferrer nofollow noopener">SEN6x</a> component that reads it. If another module already added the I2C component, skip steps 4 and 5, the SEN65 shares the same bus.
+The SEN65 needs three components in your device config: the accessory power switch that powers the breakout, the I2C bus the sensor talks on, and the <a href="https://esphome.io/components/sensor/sen6x/" target="_blank" rel="noreferrer nofollow noopener">SEN6x</a> component that reads it. If another module already added the I2C component, skip steps 5 and 6, the SEN65 shares the same bus.
 
 1.  Open your starter kit device in Device Builder and click **Edit**.
-2.  Navigate to the **Components** section and check that **Accessory Power Rail** is in the list. The breakout and everything plugged into it get their power from that rail, so without it the SEN65 never answers on the I2C bus. (1)
+2.  Navigate to the **Components** section and look for a **GPIO Switch** named **Accessory Power**. The breakout and everything plugged into it get their power from that switch, so without it the SEN65 never answers on the I2C bus. (1)
     { .annotate }
 
-    1.  Projects you created from the Apollo ESPHome Starter Kit board already include the rail. If yours is missing it, [add the Accessory Power Rail](/products/ESPHome-Starter-Kit/learning-the-basics/core-components.md#add-component) first.
+    1.  Projects you created from the Apollo ESPHome Starter Kit board already include it, and the component picker hides it once your device has it. That's why it isn't in the list of components you can add.
 
-3.  Click **Add Component**.
-4.  Select the **I2C** component. Set **SCL to pin 0** and **SDA to pin 1**, and turn on the pullup toggle for both pins. (1)
+3.  If it isn't there, click **Add component**, find the **Accessory Power Rail** card, and click **Add**. (1)
+    { .annotate }
+
+    1.  [Accessory Power Rail](/products/ESPHome-Starter-Kit/learning-the-basics/core-components.md#accessory-power-rail) covers what the switch does and the settings worth knowing about.
+
+4.  Click **Add component**.
+5.  Select the **I2C** component. Set **SCL to pin 0** and **SDA to pin 1**, and turn on the pullup toggle for both pins. (1)
     { .annotate }
 
     1.  New to I2C? [What is I2C?](/products/ESPHome-Starter-Kit/learning-the-basics/what-is-i2c.md) explains the bus, addresses, and pullups in beginner terms.
 
-5.  Click **Add**. Device Builder inserts the I2C bus into your YAML.
-6.  Click **Add Component** again and select the SEN6x component. It sits on the I2C bus at address `0x6B`.
-7.  Toggle on the SEN65's readings: **Temperature**, **Humidity**, **VOC Index**, **NOX Index**, **PM 1 0**, **PM 2 5**, **PM 4 0**, and **PM 10 0**. (1)
+6.  Click **Add**. Device Builder inserts the I2C bus into your YAML.
+7.  Click **Add component** again and select the SEN6x component. It sits on the I2C bus at address `0x6B`.
+8.  Toggle on the SEN65's readings: **Temperature**, **Humidity**, **VOC Index**, **NOX Index**, **PM 1 0**, **PM 2 5**, **PM 4 0**, and **PM 10 0**. (1)
     { .annotate }
 
     1.  You'll also see **CO2** and **Formaldehyde** in the list. The SEN65 doesn't measure those, they belong to other SEN6x models, so leave them off. And you don't have to turn everything on, toggle only the readings you want.
 
-8.  Click **Add**, then flash the device. The SEN65's readings show up alongside your other entities.
+9.  Click **Add**, then flash the device. The SEN65's readings show up alongside your other entities.
 
 ![](/assets/esphome-device-builder-add-sen6x-component.gif)
 
