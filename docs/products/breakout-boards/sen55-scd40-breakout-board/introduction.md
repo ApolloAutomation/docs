@@ -142,7 +142,7 @@ light:
     default_transition_length: 0s
     chipset: WS2812
     num_leds: 1
-    rgb_order: grb
+    channel_colors: GRB
     effects:
       - pulse:
           name: "Slow Pulse"
@@ -235,7 +235,7 @@ sensor:
       filters:
         - lambda: return x - id(sen55_humidity_offset).state;
       accuracy_decimals: 1
-    voc:
+    voc_index:
       name: "SEN55 VOC"
       id: sen55_voc
 
@@ -247,7 +247,7 @@ sensor:
         gating_max_duration_minutes: 180
         std_initial: 50
         gain_factor: 230
-    nox:
+    nox_index:
       name: "SEN55 NOX"
       id: sen55_nox
     acceleration_mode: low

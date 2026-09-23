@@ -82,7 +82,7 @@ The MSR-2 knows nothing about the strip until you tell it how many LEDs there ar
         name: "Bed LED"
         pin: GPIO7
         chipset: WS2812
-        rgb_order: grb
+        channel_colors: GRB
         num_leds: 60
         default_transition_length: 0s
         effects:

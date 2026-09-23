@@ -61,7 +61,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
         id: rgb_leds
         chipset: WS2812
         num_leds: 10
-        rgb_order: GRB
+        channel_colors: GRB
         rmt_symbols: 48
 
     output:
@@ -85,7 +85,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
     | `light.id: rgb_leds` | Internal handle you can reference from automations and lambdas elsewhere in the config. |
     | `light.chipset: WS2812` | Which addressable LED protocol to use. WS2812 is the most common, sometimes also called NeoPixel. |
     | `light.num_leds: 10` | The number of LEDs on the RGB & Buzzer module. |
-    | `light.rgb_order: GRB` | Color channel order. WS2812 LEDs receive color data in green-red-blue order, so this makes sure red looks red and not green. |
+    | `light.channel_colors: GRB` | Color channel order. WS2812 LEDs receive color data in green-red-blue order, so this makes sure red looks red and not green. |
     | `light.rmt_symbols: 48` | Low-level RMT setting needed on the ESP32-C6. Leave it at 48. |
     | **Piezo buzzer** | |
     | `output.platform: ledc` | PWM output for driving the buzzer. PWM is how digital pins create audio tones on a piezo. |
