@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 185" width="290" height="185" role="img" aria-label="Two panels side by side, an End 1xN frame on each, joined by two Joiner Side pieces">
+  <style>
+    .p { fill: #242424; stroke: #fa6831; stroke-width: 3; }
+    .l { fill: #ffffff; font: 600 14px system-ui, -apple-system, "Segoe UI", sans-serif; text-anchor: middle; }
+    .j { fill: #fa6831; }
+    .k { fill: #8a8a8a; font: 400 12px system-ui, -apple-system, "Segoe UI", sans-serif; }
+  </style>
+  <rect class="p" x="20" y="20" width="120" height="120" rx="4"/>
+  <rect class="p" x="150" y="20" width="120" height="120" rx="4"/>
+  <text class="l" x="80" y="85">End 1xN</text>
+  <text class="l" x="210" y="85">End 1xN</text>
+  <circle class="j" cx="145" cy="35" r="8"/>
+  <circle class="j" cx="145" cy="125" r="8"/>
+  <circle class="j" cx="26" cy="166" r="7"/>
+  <text class="k" x="40" y="170">Joiner Side</text>
+</svg>
