@@ -2,7 +2,7 @@
 title: Apollo DEV-2 Introduction
 description: Apollo DEV-2 Introduction.
 ---
-![](../../assets/apollo-dev-2-pinout-1.png)
+![Apollo DEV-2 pinout showing the GPIO number and functions of every header pin](/assets/apollo-dev-2-pinout.webp)
 
 The Apollo DEV-2 is a very small dev board that we use to prototype before creating other new products. It has a built in RGB light (using GPIO3) and can push up to 600mA out of the 3.3v pin however 100-200mA of that will be used by the microcontroller itself. You are able to back-feed power via the 5v and G (ground) pins or use the USB-C port to power it, but NOT both at the same time.
 
@@ -31,15 +31,15 @@ i2c:
   sda: GPIO1
   scl: GPIO0
 
-RX: 30
-TX: 31
+#These are the UART pins
+uart:
+  tx_pin: GPIO16
+  rx_pin: GPIO17
+  baud_rate: 115200 #match the device you connect
 
-ADC Pins: 0,1,2,3,4,5
-```
+#ADC pins: GPIO0, GPIO1, GPIO2, GPIO4, GPIO5, GPIO6
 
-```yaml
-#This is the onboard LED pin
-GPIO3
+#Onboard RGB LED: GPIO3
 ```
 
 **Example ESPHome yaml:**
