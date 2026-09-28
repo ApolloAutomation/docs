@@ -1,0 +1,195 @@
+{
+  "dev-1": {
+    "title": "Apollo DEV-1",
+    "chip": "ESP32-C3",
+    "example": "GPIO21",
+    "photo": "dev1-board.png",
+    "left": {
+      "x": 38,
+      "y0": 172,
+      "pitch": 80.8
+    },
+    "right": {
+      "x": 700,
+      "y0": 172,
+      "pitch": 80.8
+    },
+    "pins": {
+      "left": [
+        [
+          "power:3V3"
+        ],
+        [
+          "ground:GND"
+        ],
+        [
+          "gpio:2",
+          "adc:ADC",
+          "spi:MISO"
+        ],
+        [
+          "gpio:4",
+          "adc:ADC"
+        ],
+        [
+          "gpio:5"
+        ],
+        [
+          "gpio:0",
+          "adc:ADC",
+          "i2c:SCL"
+        ],
+        [
+          "gpio:1",
+          "adc:ADC",
+          "i2c:SDA"
+        ]
+      ],
+      "right": [
+        [
+          "power:5V"
+        ],
+        [
+          "ground:GND"
+        ],
+        [
+          "gpio:10",
+          "spi:CS"
+        ],
+        [
+          "gpio:21",
+          "uart:TX"
+        ],
+        [
+          "gpio:20",
+          "uart:RX"
+        ],
+        [
+          "gpio:7",
+          "spi:MOSI"
+        ],
+        [
+          "gpio:6",
+          "spi:CLK"
+        ]
+      ]
+    },
+    "led": {
+      "x": 688,
+      "y": 45,
+      "tags": [
+        "gpio:3",
+        "led:RGB LED"
+      ]
+    }
+  },
+  "dev-2": {
+    "title": "Apollo DEV-2",
+    "chip": "ESP32-C6",
+    "example": "GPIO16",
+    "photo": "dev2-board.png",
+    "left": {
+      "x": 38,
+      "y0": 145,
+      "pitch": 81.3
+    },
+    "right": {
+      "x": 700,
+      "y0": 145,
+      "pitch": 81.3
+    },
+    "pins": {
+      "left": [
+        [
+          "power:3V3"
+        ],
+        [
+          "ground:GND"
+        ],
+        [
+          "gpio:2",
+          "adc:ADC",
+          "spi:MISO"
+        ],
+        [
+          "gpio:4",
+          "adc:ADC"
+        ],
+        [
+          "gpio:5",
+          "adc:ADC"
+        ],
+        [
+          "gpio:0",
+          "adc:ADC",
+          "i2c:SCL"
+        ],
+        [
+          "gpio:1",
+          "adc:ADC",
+          "i2c:SDA"
+        ],
+        [
+          "gpio:6",
+          "adc:ADC",
+          "spi:CLK"
+        ],
+        [
+          "gpio:7",
+          "spi:MOSI"
+        ],
+        [
+          "gpio:14"
+        ],
+        [
+          "ground:GND"
+        ]
+      ],
+      "right": [
+        [
+          "power:5V"
+        ],
+        [
+          "ground:GND"
+        ],
+        [
+          "gpio:16",
+          "uart:TX"
+        ],
+        [
+          "gpio:17",
+          "uart:RX"
+        ],
+        [
+          "gpio:23"
+        ],
+        [
+          "gpio:22"
+        ],
+        [
+          "gpio:21"
+        ],
+        [
+          "gpio:20"
+        ],
+        [
+          "gpio:19"
+        ],
+        [
+          "gpio:18"
+        ],
+        [
+          "gpio:15"
+        ]
+      ]
+    },
+    "led": {
+      "x": 680,
+      "y": 45,
+      "tags": [
+        "gpio:3",
+        "led:RGB LED"
+      ]
+    }
+  }
+}
