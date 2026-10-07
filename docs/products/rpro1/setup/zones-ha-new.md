@@ -2,11 +2,11 @@
 title: MSR-2 Home Assistant Zone Configuration
 description: Tutorial for R-Pro-1 Home Assistant Zone Configuration.
 ---
-# How To Tune The R-PRO-1 Using Home Assistant
+# How To Tune The R PRO-1 Using Home Assistant
 
-!!! info "Your R-PRO-1 has two unique mmWave sensors that both need to be tuned!"
+!!! info "Your R PRO-1 has two unique mmWave sensors that both need to be tuned!"
 
-    The R-PRO-1 comes with an LD2450 mmwave sensor and an optional secondary LD2412 mmWave sensor.
+    The R PRO-1 comes with an LD2450 mmwave sensor and an optional secondary LD2412 mmWave sensor.
 
     The LD2450 allows for up to three targets tracked in up to three zones but can have issues with "still detection".
 

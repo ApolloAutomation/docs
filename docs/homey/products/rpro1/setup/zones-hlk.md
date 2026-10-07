@@ -5,11 +5,11 @@ description: "Tutorial for R-Pro-1 HLKRadarTool app Zone Configuration."
 
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/-w_GFURyx-A?si=SSRovumabCvHeXwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
-!!! tip "Finding your R-PRO-1's web server address"
+!!! tip "Finding your R PRO-1's web server address"
 
     Some steps below require opening your device's web server in a browser. To find your address:
 
-    1. In Homey, open your R-PRO-1 device and note the last 6 characters of its name — for example, **Apollo R_PRO-1 353fd4** gives you `353fd4`.
+    1. In Homey, open your R PRO-1 device and note the last 6 characters of its name — for example, **Apollo R_PRO-1 353fd4** gives you `353fd4`.
     2. Check whether you set it up over **WiFi** or **Ethernet**.
     3. Build your URL:
         - WiFi: `http://apollo-r-pro-1-w-353fd4.local/`
@@ -23,7 +23,7 @@ description: "Tutorial for R-Pro-1 HLKRadarTool app Zone Configuration."
 
     The newer version of the firmware includes an "auto calibrate" function so you might want to test it out!
 
-The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="noreferrer nofollow noopener">HLK-LD2450</a> mmWave sensor is used in the R-PRO-1. <a href="https://drive.google.com/drive/folders/1aItrdziwnEqI-ovDWf24Lj6ioALaljFA?usp=sharing" target="_blank" rel="noreferrer nofollow noopener">Click Here</a> for the datasheet.
+The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="noreferrer nofollow noopener">HLK-LD2450</a> mmWave sensor is used in the R PRO-1. <a href="https://drive.google.com/drive/folders/1aItrdziwnEqI-ovDWf24Lj6ioALaljFA?usp=sharing" target="_blank" rel="noreferrer nofollow noopener">Click Here</a> for the datasheet.
 
 === "iPhone"
 
@@ -33,7 +33,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-1\. Open your R-PRO-1's web server (see address tip above), scroll down until you see **LD2450 Bluetooth**, and toggle it on.
+1\. Open your R PRO-1's web server (see address tip above), scroll down until you see **LD2450 Bluetooth**, and toggle it on.
 
 ![](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
 
@@ -51,9 +51,9 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit** — you should see a confirmation message: **"Setup successfully."**
 
-!!! tip "There are three ways to use your R-PRO-1!"
+!!! tip "There are three ways to use your R PRO-1!"
 
-    You can use any of these three choices to control your R-PRO-1 differently. The most common option is "Detection" which lets you setup three areas and track three targets within them.<br>**Disabled**: Disable multi-zone area detection and just tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
+    You can use any of these three choices to control your R PRO-1 differently. The most common option is "Detection" which lets you setup three areas and track three targets within them.<br>**Disabled**: Disable multi-zone area detection and just tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
 
     Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
@@ -85,11 +85,11 @@ The same HLKRadarTool app is used for both sensors.
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-1\. Open your R-PRO-1's web server (see address tip above), scroll down until you see **LD2412 Bluetooth**, and toggle it on.
+1\. Open your R PRO-1's web server (see address tip above), scroll down until you see **LD2412 Bluetooth**, and toggle it on.
 
 ![](/assets/r-pro-1-toggle-on-ld2412-bluetooth.gif)
 
-2\. Open the HLKRadarTool app. Your R-PRO-1 should appear in the device list. Tap it to connect.
+2\. Open the HLKRadarTool app. Your R PRO-1 should appear in the device list. Tap it to connect.
 
 !!! success "You need to be close to your device!"
 
@@ -117,7 +117,7 @@ The same HLKRadarTool app is used for both sensors.
 
 ![](/assets/r-pro-1-ld2412-detection-range.gif)
 
-6\. To fine-tune which distances trigger detection, open your R-PRO-1's web server and use the gate sensitivity sliders there.
+6\. To fine-tune which distances trigger detection, open your R PRO-1's web server and use the gate sensitivity sliders there.
 
 - **Raise** a gate's sensitivity to make it harder to trigger at that distance (useful for ignoring a fan, HVAC vent, or a window where cars pass).
 - **Lower** a gate's sensitivity to make it more sensitive at that distance (useful for reliably detecting someone sitting still in a chair).
@@ -126,5 +126,5 @@ The same HLKRadarTool app is used for both sensors.
 
 7\. Tap **Settings** at the top of the app and set the **Unmanned Duration**. This controls how many seconds the sensor waits after it stops detecting before it reports "no one present." The default is 10 seconds — increase it if you're getting false "nobody home" readings in your space. In the Apollo web server, this same setting is called **LD2412 Timeout**.
 
-8\. Head back to your R-PRO-1's web server and toggle **LD2412 Bluetooth** back off. Leaving Bluetooth on increases power consumption and can interfere with nearby Bluetooth devices.
+8\. Head back to your R PRO-1's web server and toggle **LD2412 Bluetooth** back off. Leaving Bluetooth on increases power consumption and can interfere with nearby Bluetooth devices.
 

@@ -96,7 +96,7 @@ plugins:
         'products/msr1/setup/how-to-change-the-update-frequency-of-sensors.md': 'products/general/setup/change-the-update-frequency-of-sensors.md'
         # Starter Kit Breakout Module slug rename
         'products/ESPHome-Starter-Kit/modules/breakout-module.md': 'products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md'
-        # PR #733: R-PRO-1 calibrating-and-updating -> setup
+        # PR #733: R PRO-1 calibrating-and-updating -> setup
         'products/rpro1/calibrating-and-updating/zones-ha.md': 'products/rpro1/setup/zones-ha.md'
         'products/rpro1/calibrating-and-updating/zones-hlk.md': 'products/rpro1/setup/zones-hlk.md'
         'products/rpro1/calibrating-and-updating/zones-ha-new.md': 'products/rpro1/setup/zones-ha-new.md'
@@ -525,7 +525,7 @@ nav:
                 - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
                 - Reset Wi-Fi Credentials: products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
               - Reviews: products/mtr1/mtr1-reviews.md
-          - R-PRO-1:
+          - R PRO-1:
               - Introduction: products/rpro1/introduction.md
               - FAQ: products/rpro1/faq.md
               - Getting Started: products/general/setup/getting-started-rpro1.md
@@ -544,9 +544,9 @@ nav:
                 - Ceiling Mount: products/rpro1/addons/install-ceiling-mount-for-r-pro-1.md
                 - LD2412 Addon: products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md
               - Troubleshooting:
-                - R-PRO-1 Boot Mode: products/rpro1/troubleshooting/rpro1-boot-mode.md
-                - Factory Re-Flash R-PRO-1: products/rpro1/troubleshooting/rpro1-code.md
-                - Teardown and Reassembly Of R-PRO-1: products/rpro1/troubleshooting/rpro1-teardown.md
+                - R PRO-1 Boot Mode: products/rpro1/troubleshooting/rpro1-boot-mode.md
+                - Factory Re-Flash R PRO-1: products/rpro1/troubleshooting/rpro1-code.md
+                - Teardown and Reassembly Of R PRO-1: products/rpro1/troubleshooting/rpro1-teardown.md
                 - Reset Wi-Fi Credentials: products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md
               - Reviews: products/rpro1/rpro1-reviews.md
           - MSR-1:
@@ -816,7 +816,9 @@ nav:
               - Additional Info:
                 - General Tips: homey/products/mtr1/setup/general-tips.md
                 - Sensor Definitions: homey/products/mtr1/setup/sensor-definitions.md
-                - Zone Configuration: homey/products/mtr1/setup/zones-hlk.md
+                - Zone Configuration:
+                  - (Better) HLK Radar Tool App: homey/products/mtr1/setup/zones-hlk.md
+                  - (Best) Zone Mapper Tool: homey/products/mtr1/setup/mtr-1-zone-mapper-tool.md
               - Addons:
                 - Articulating Stand: homey/products/mtr1/addons/adding-articulating-stand-to-mtr-1.md
                 - CO<sub>2</sub> Addon: homey/products/mtr1/addons/adding-co2-to-mtr-1.md
@@ -832,10 +834,12 @@ nav:
                 - Factory Re-Flash MTR-1: homey/products/mtr1/troubleshooting/mtr1-code.md
                 - Teardown and Reassembly Of MTR-1: homey/products/mtr1/troubleshooting/mtr1-teardown.md
                 - Reset Wi-Fi Credentials: homey/products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
-          - R-PRO-1:
+          - R PRO-1:
               - Introduction: homey/products/rpro1/introduction.md
               - FAQ: homey/products/rpro1/faq.md
-              - Zone Configuration: homey/products/rpro1/setup/zones-hlk.md
+              - Zone Configuration:
+                - (Better) HLK Radar Tool App: homey/products/rpro1/setup/zones-hlk.md
+                - (Best) Zone Mapper Tool: homey/products/rpro1/setup/r-pro-1-zone-mapper-tool.md
               - Additional Info:
                 - Switch Firmware: homey/products/rpro1/setup/rpro1-switch-firmware.md
                 - General Tips: homey/products/rpro1/setup/rpro1-general-tips.md
@@ -846,9 +850,9 @@ nav:
                 - Ceiling Mount: homey/products/rpro1/addons/install-ceiling-mount-for-r-pro-1.md
                 - LD2412 Addon: homey/products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md
               - Troubleshooting:
-                - R-PRO-1 Boot Mode: homey/products/rpro1/troubleshooting/rpro1-boot-mode.md
-                - Factory Re-Flash R-PRO-1: homey/products/rpro1/troubleshooting/rpro1-code.md
-                - Teardown and Reassembly Of R-PRO-1: homey/products/rpro1/troubleshooting/rpro1-teardown.md
+                - R PRO-1 Boot Mode: homey/products/rpro1/troubleshooting/rpro1-boot-mode.md
+                - Factory Re-Flash R PRO-1: homey/products/rpro1/troubleshooting/rpro1-code.md
+                - Teardown and Reassembly Of R PRO-1: homey/products/rpro1/troubleshooting/rpro1-teardown.md
                 - Reset Wi-Fi Credentials: homey/products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md
               - Reviews: homey/products/rpro1/rpro1-reviews.md
       - Plant Sensors:

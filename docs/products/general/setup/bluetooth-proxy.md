@@ -26,7 +26,7 @@ Select your product below to see the full walkthrough.
 
     --8<-- "_snippets/bluetooth-proxy/method1-mtr-1.md"
 
-=== "R-PRO-1"
+=== "R PRO-1"
 
     --8<-- "_snippets/bluetooth-proxy/no-ble-fork-tab.md"
 

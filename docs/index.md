@@ -84,7 +84,7 @@ flowchart LR
 
     MSR(("MSR-2<br/>Best still detection · Single person"))
     MTR(("MTR-1<br/>Up to 3 people · Up to 3 zones"))
-    RPRO(("R-PRO-1<br/>PoE · Ethernet · Best of both worlds"))
+    RPRO(("R PRO-1<br/>PoE · Ethernet · Best of both worlds"))
 
     classDef product fill:#4379AA,stroke:#2d5a8a,color:#fff,font-weight:bold
     class MSR,MTR,RPRO product
@@ -109,7 +109,7 @@ flowchart LR
 * [Tuning out false positives with the MSR-2](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on MTR-1 with the HLK app](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)
 * [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) - [Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card)
-* [Tune your new R-PRO-1 PoE mmWave sensor](https://wiki.apolloautomation.com/products/rpro1/setup/zones-ha/)
+* [Tune your new R PRO-1 PoE mmWave sensor](https://wiki.apolloautomation.com/products/rpro1/setup/zones-ha/)
 
 ### Quick References
 

@@ -6,7 +6,7 @@ description: Step by step guide for re-calibrating your SCD40 CO2 sensor
 
 !!! info "Your sensor calibrates itself"
 
-    The latest Apollo firmware enables the SCD40's automatic self-calibration by default on every device with the CO<sub>2</sub> sensor (AIR-1, R-PRO-1, MSR-2, and MTR-1). As long as the sensor sees fresh air (about 420 ppm) at least once a week, it corrects its own baseline and you never need to calibrate manually. Airing out the room once a week is enough.
+    The latest Apollo firmware enables the SCD40's automatic self-calibration by default on every device with the CO<sub>2</sub> sensor (AIR-1, R PRO-1, MSR-2, and MTR-1). As long as the sensor sees fresh air (about 420 ppm) at least once a week, it corrects its own baseline and you never need to calibrate manually. Airing out the room once a week is enough.
 
     If your device sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), automatic self-calibration will slowly drag the readings down. Turn off the **CO2 Auto Calibration** switch on the device page in Home Assistant and calibrate manually with the steps below instead.
 

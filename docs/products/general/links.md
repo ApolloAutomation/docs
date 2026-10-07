@@ -19,7 +19,7 @@ description: Links to our github, printables, and discord!
     * [H-2 Holiday Ornament for Charity](https://www.printables.com/model/1508535-apollo-automation-h-2-holiday-ornament-for-charity){ target=_blank }
     * [BTN-1 Macro Deck](https://www.printables.com/model/1464125-apollo-automation-btn-1-macro-deck){ target=_blank }
     * [M-1 LED Matrix Stand (HUB75)](https://www.printables.com/model/1361828-apollo-automation-m-1-led-matrix-stand-hub75){ target=_blank }
-    * [R-PRO-1 Dual mmWave Multisensor](https://www.printables.com/model/1349017-apollo-automation-r-pro-1-dual-mmwave-multisensor){ target=_blank }
+    * [R PRO-1 Dual mmWave Multisensor](https://www.printables.com/model/1349017-apollo-automation-r-pro-1-dual-mmwave-multisensor){ target=_blank }
     * [TEMP-1 Temperature Sensor](https://www.printables.com/model/1170218-apollo-temp-1-temperature-sensor){ target=_blank }
     * [H-1 Holiday Ornament for Charity](https://www.printables.com/model/1102996-apollo-automation-h-1-holiday-ornament-for-charity){ target=_blank }
     * [PLT-1 Ultimate Plant Sensor](https://www.printables.com/model/1021588-apollo-plt-1-ultimate-plant-sensor){ target=_blank }

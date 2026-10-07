@@ -1,8 +1,8 @@
 ---
-title: Factory Re-Flash R-PRO-1
-description: Step by step guide for re-flashing the R-PRO-1 back to factory firmware.
+title: Factory Re-Flash R PRO-1
+description: Step by step guide for re-flashing the R PRO-1 back to factory firmware.
 ---
-# Factory Re-Flash R-PRO-1
+# Factory Re-Flash R PRO-1
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
@@ -10,11 +10,11 @@ description: Step by step guide for re-flashing the R-PRO-1 back to factory firm
 
 If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
-1\. Locate the boot button <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-boot-mode/" rel="noreferrer nofollow">as shown here</a>. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R-PRO-1 then let go of the button.
+1\. Locate the boot button <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-boot-mode/" rel="noreferrer nofollow">as shown here</a>. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R PRO-1 then let go of the button.
 
 ![](/assets/r-pro-1-boot-button.jpg)
 
-3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo R-PRO-1 Installer</a>.
+3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo R PRO-1 Installer</a>.
 
 3\. Click the big "Connect" button.
 
@@ -24,7 +24,7 @@ If your device has already been connected to Home Assistant please <a href="http
 
 ![](/assets/r-pro-1-reflash-connect-comp-port.png)
 
-4\. Click "Install R-PRO-1".
+4\. Click "Install R PRO-1".
 
 ![](/assets/r-pro-1-reflash-click-install.png)
 

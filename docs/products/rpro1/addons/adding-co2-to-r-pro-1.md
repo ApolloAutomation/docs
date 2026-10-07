@@ -2,9 +2,9 @@
 title: Add the SCD40 CO2 sensor to your R-Pro-1
 description: Tutorial on adding the SCD40 CO2 sensor to your R-Pro-1.
 ---
-# Adding CO<sub>2</sub> To R-PRO-1
+# Adding CO<sub>2</sub> To R PRO-1
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+1\. Unplug your R PRO-1 from power and remove the back.
 
 ![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
 
@@ -19,9 +19,9 @@ description: Tutorial on adding the SCD40 CO2 sensor to your R-Pro-1.
 
 ![](/assets/rpro-1-add-co2-seat-scd40.jpg)![](/assets/rpro-1-add-co2-scd40-installed.jpg)
 
-4\. Slide the case back over the R-PRO-1, making sure that the case has the hole for the USB-C port and the SCD40 facing toward you.
+4\. Slide the case back over the R PRO-1, making sure that the case has the hole for the USB-C port and the SCD40 facing toward you.
 
-5\. Gently press the backplate of the R-PRO-1 case onto the R-PRO-1 until it lightly snaps into place. Please do not force it, if necessary please repeat steps above until it seats in the case without any force required.
+5\. Gently press the backplate of the R PRO-1 case onto the R PRO-1 until it lightly snaps into place. Please do not force it, if necessary please repeat steps above until it seats in the case without any force required.
 
 ![](/assets/r-pro-1-scd40-installed-press-case-down.jpg)
 
