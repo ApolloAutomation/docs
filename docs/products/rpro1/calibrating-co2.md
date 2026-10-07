@@ -4,9 +4,9 @@ description: Step by step guide for re-calibrating your SCD40 CO2 sensor
 ---
 # CO<sub>2</sub> Calibration - The Quick method - Desktop Only not mobile
 
-!!! info "Your R-PRO-1 calibrates itself"
+!!! info "Your R PRO-1 calibrates itself"
 
-    The R-PRO-1 enables the SCD40's automatic self-calibration by default. As long as the sensor sees fresh air (about 420 ppm) at least once a week, it corrects its own baseline and you never need to calibrate manually. You only need this guide if the device sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), where auto calibration slowly drags the readings down. In that case, turn off the **CO2 Auto Calibration** switch on the device page and calibrate manually with the steps below.
+    The R PRO-1 enables the SCD40's automatic self-calibration by default. As long as the sensor sees fresh air (about 420 ppm) at least once a week, it corrects its own baseline and you never need to calibrate manually. You only need this guide if the device sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), where auto calibration slowly drags the readings down. In that case, turn off the **CO2 Auto Calibration** switch on the device page and calibrate manually with the steps below.
 
 !!! tip "Calibrate manually every 1 to 2 years when auto calibration is off"
 

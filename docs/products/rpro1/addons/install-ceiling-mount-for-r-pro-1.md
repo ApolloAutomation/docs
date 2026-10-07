@@ -1,16 +1,16 @@
 ---
 title: Add the ceiling mounts to your R PRO-1
-description: Tutorial on installing the ceiling mount addon for the R-PRO-1.
+description: Tutorial on installing the ceiling mount addon for the R PRO-1.
 ---
-# Install Ceiling Mount for R-PRO-1
+# Install Ceiling Mount for R PRO-1
 
-Watch our step by step video on installing the R-PRO-1 using the Ceiling Mount. We have images showing how to assemble the mount below.
+Watch our step by step video on installing the R PRO-1 using the Ceiling Mount. We have images showing how to assemble the mount below.
 
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/O4OZG3I34E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
 ###### Attaching Mounts
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+1\. Unplug your R PRO-1 from power and remove the back.
 
 ![](/assets/rpro-1-add-co2-lift-lid-1.webp)
 
@@ -24,7 +24,7 @@ Watch our step by step video on installing the R-PRO-1 using the Ceiling Mount. 
 
 !!! danger "Before continuing and sliding the mounts on, please verify you have the pieces oriented as shown in the images below."
 
-    If the mounts are not put on properly the R-PRO-1 could be damaged!
+    If the mounts are not put on properly the R PRO-1 could be damaged!
 
 3\. Gently push the top mount labeled "TOP" into the pcb as shown below. Make sure the orientation is identical to the image below!
 
@@ -52,11 +52,11 @@ The Ceiling Mount needs a 3.5 inch (around 89mm) circular hole in the ceiling. C
 
 ![](/assets/r-pro-1-ceiling-mount-plug-in-eth.webp)
 
-3\. Gently slide R-PRO-1 into the Ceiling Mount.
+3\. Gently slide R PRO-1 into the Ceiling Mount.
 
 ![](/assets/r-pro-1-ceiling-mount-insert-r-pro-1.webp)
 
-4\. Push the R-PRO-1 back 1inch (around 2.5cm) to make sure the lip of the cover fits over the Ceiling Mount.
+4\. Push the R PRO-1 back 1inch (around 2.5cm) to make sure the lip of the cover fits over the Ceiling Mount.
 
 ![](/assets/r-pro-1-ceiling-mount-recess-r-pro-1.webp)
 

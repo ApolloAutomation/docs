@@ -12,7 +12,7 @@ others) all read from this file.
 know what an Apollo device does, how to set it up, and how to make it
 work inside their Home Assistant or Homey setup. They range from
 first-time Home Assistant users to ESPHome contributors. The docs need
-to land for both ends without patronising the first or boring the
+to land for both ends without patronizing the first or boring the
 second.
 
 **Why these rules exist.** Without them, every contributor (human or
@@ -36,7 +36,7 @@ file layout of the repo, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 | Aim for | Avoid |
 | --- | --- |
-| Respectful | Patronising |
+| Respectful | Patronizing |
 | Confident | Boastful |
 | Enthusiastic | Breathless |
 | Direct | Corporate |
@@ -52,8 +52,8 @@ explains what the reader is about to unlock (see
 
 Use these phrases consistently. They are part of the Apollo voice.
 
-- **Build, learn, automate**: the organising framework
-- **Your home, your way**: ownership and personalisation
+- **Build, learn, automate**: the organizing framework
+- **Your home, your way**: ownership and personalization
 - **On your own terms**: independence and choice
 - **Real, working device**: tangible outcome
 - **Just the beginning**: opens up possibility without overpromising
@@ -76,14 +76,21 @@ across the wiki reinforces the message.
 
 | Don't say | Why | Use instead |
 | --- | --- | --- |
-| Beginner, basic | Patronising | "Getting started", "First boot" |
+| Beginner, basic | Patronizing | "Getting started", "First boot" |
 | Easy on its own | Vague | Qualify: "easy if you already have X" |
 | Simply, just | Dismissive | Drop the word entirely |
 | Powerful | Cliché | Describe what it actually does |
-| Seamlessly | Cliché | Describe the specific behaviour |
+| Seamlessly | Cliché | Describe the specific behavior |
 | Genuinely, honestly | Undermines credibility | Drop the word entirely |
 | "Coding without context" | Intimidating | Say what's actually required |
 | Excessive "no" framing | Negative tone | Rephrase positively |
+
+### US English
+
+Write in US English spelling: **color**, **center**, **meter**,
+**behavior**, **organize**, **toward**. Quote an on-screen label
+exactly as the app shows it, and if the app itself uses a non-US
+spelling, flag it so the label can be fixed at the source.
 
 ---
 
@@ -92,11 +99,23 @@ across the wiki reinforces the message.
 ### Product IDs
 
 Product IDs are always uppercase with a hyphen: **AIR-1**, **MTR-1**,
-**MSR-2**, **BTN-1**, **PLT-1**, **R-PRO-1**, **TEMP-1**, **LED-1**,
-**M-1**, **PUMP-1**.
+**MSR-2**, **BTN-1**, **PLT-1**, **TEMP-1**, **LED-1**, **M-1**,
+**PUMP-1**.
 
 Never `Air-1`, `air1`, or `AIR1` in body copy. mkdocs.yml is the source
 of truth for the canonical form.
+
+**R PRO-1** is the one exception: its name has a space after the R, not
+a hyphen. Write **R PRO-1** in titles, headings, nav labels, and body
+copy, never `R-PRO-1`. The hyphenated and underscored forms survive
+only where a space isn't allowed or where you quote the device
+literally, and those must not be changed:
+
+- File and folder names and URLs: `rpro1/`, `r-pro-1-zone-mapper-tool.md`
+- Hostnames: `apollo-r-pro-1-w-xxxxxx.local`
+- The firmware repo and installer: `ApolloAutomation/R_PRO-1`
+- The device name Home Assistant and Homey show: **Apollo R_PRO-1**
+- The setup hotspot: **Apollo R PRO 1 Hotspot**
 
 ### First mention per page
 
@@ -123,7 +142,7 @@ user-facing copy unless quoting upstream documentation.
 
 ### ESPHome
 
-Always capitalised exactly **ESPHome**. Never `esphome`, `ESPhome`,
+Always capitalized exactly **ESPHome**. Never `esphome`, `ESPhome`,
 `Esphome`, or `ESPHOME`. This matches the upstream project's own brand.
 
 When introducing the broader project, prefer **ESPHome ecosystem** over
@@ -136,7 +155,7 @@ When introducing the broader project, prefer **ESPHome ecosystem** over
 > Flash your AIR-1 with the latest firmware.
 
 **Install firmware** is acceptable when "flash" would be confusing
-context (for example, when the audience may not recognise the term).
+context (for example, when the audience may not recognize the term).
 Avoid **burn** and **load**.
 
 ---
@@ -164,8 +183,8 @@ Every page has exactly one H1, written as the first line of the body
 page heading. The front matter `title:` is used by the nav, browser
 tab, and search snippets, and should match the H1.
 
-All headings use sentence case. The first word is capitalised, and
-proper nouns are capitalised. Everything else is lowercase.
+All headings use sentence case. The first word is capitalized, and
+proper nouns are capitalized. Everything else is lowercase.
 
 | Yes | No |
 | --- | --- |
@@ -224,7 +243,7 @@ follow with a quick success check.
 > reading the sensor takes flows into Home Assistant in real time.
 
 Banned softeners inside steps: **simply**, **just**, **easy**. These
-either patronise the reader or pad the sentence.
+either patronize the reader or pad the sentence.
 
 ### Front matter
 
@@ -389,14 +408,14 @@ to anyone editing the docs.
 
 **When you edit a page in one tree, check the mirror in the other tree
 and update it too if the change applies.** Cross-tree drift, where the
-HA version of a page describes the current product behaviour and the
+HA version of a page describes the current product behavior and the
 Homey version still describes how it worked a year ago, is the biggest
 source of stale content on the wiki. If a change is platform-specific
 and genuinely doesn't apply to the other tree, leave a one-line note in
 the PR description explaining why so reviewers don't flag it.
 
 For the full repo layout (where `mkdocs.yml` lives, where redirects go,
-how `docs/assets/` is organised), see
+how `docs/assets/` is organized), see
 [CONTRIBUTING.md](CONTRIBUTING.md#key-files-and-folders).
 
 ---
