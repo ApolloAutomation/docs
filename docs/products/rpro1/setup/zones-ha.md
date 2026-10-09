@@ -1,18 +1,18 @@
 ---
-title: R-PRO-1 Home Assistant Zone Configuration
-description: Tutorial for R-PRO-1 Home Assistant Zone Configuration.
+title: R PRO-1 Home Assistant Zone Configuration
+description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 ---
-# How To Tune The R-PRO-1 Using Home Assistant
+# How To Tune The R PRO-1 Using Home Assistant
 
-!!! info "Your R-PRO-1 has two unique mmWave sensors that both need to be tuned!"
+!!! info "Your R PRO-1 has two unique mmWave sensors that both need to be tuned!"
 
-    The R-PRO-1 comes with an LD2450 mmwave sensor and an optional secondary LD2412 mmWave sensor.
+    The R PRO-1 comes with an LD2450 mmwave sensor and an optional secondary LD2412 mmWave sensor.
 
     The LD2450 allows for up to three targets tracked in up to three zones but can have issues with "still detection".
 
     The optional LD2412 mmWave sensor allows you to have perfect still detection for one target at up to 9 meters so it's a great addition to the sensor.
 
-Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R-PRO-1 LD2450.
+Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R PRO-1 LD2450.
 
 ###### LD2450 Configuration
 
@@ -94,7 +94,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 ###### LD2412 Configuration
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below the Apollo R-PRO-1.
+1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below the Apollo R PRO-1.
 
 ![](/assets/select-r-pro-1-device.png)
 

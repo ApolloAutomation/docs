@@ -38,7 +38,7 @@ Apollo mmWave sensors report frequently by design, which can cause internal rada
           - sensor.*target_count*
     ```
 
-=== "R-PRO-1"
+=== "R PRO-1"
 
     ```yaml
     logbook:

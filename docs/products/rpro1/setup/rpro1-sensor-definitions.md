@@ -1,12 +1,12 @@
 ---
-title: R-PRO-1 Sensor Definitions
-description: These are all of the entities exposed by the R-PRO-1 to automate on!
+title: R PRO-1 Sensor Definitions
+description: These are all of the entities exposed by the R PRO-1 to automate on!
 ---
 # Sensor Definitions
 
-Once added to Home Assistant you can configure different settings for your R-PRO-1. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
+Once added to Home Assistant you can configure different settings for your R PRO-1. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
 
-The R-PRO-1 pairs two radars: an **LD2450** that tracks the position of up to three targets and reports zone occupancy, and an **LD2412** that handles presence and per-gate sensitivity tuning. It also carries an LTR390 light sensor and an optional SCD40 CO₂ module.
+The R PRO-1 pairs two radars: an **LD2450** that tracks the position of up to three targets and reports zone occupancy, and an **LD2412** that handles presence and per-gate sensitivity tuning. It also carries an LTR390 light sensor and an optional SCD40 CO₂ module.
 
 !!! note "How often readings update"
 
@@ -101,7 +101,7 @@ The R-PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
     | **LD2412 Light Function** | — | Selects how the LD2412 uses its light reading. Disabled by default. |
     | **LD2412 Hardware output pin level** | — | Output pin level for the LD2412. Disabled by default. |
     | **LD2412 Distance resolution** | — | Distance resolution for the LD2412. Disabled by default. |
-    | **LD2412 baud rate** | from module | Serial baud rate the LD2412 uses to talk to the R-PRO-1 (default 115200). Disabled by default; no need to change. |
+    | **LD2412 baud rate** | from module | Serial baud rate the LD2412 uses to talk to the R PRO-1 (default 115200). Disabled by default; no need to change. |
 
     #### LD2450 radar
 
@@ -114,7 +114,7 @@ The R-PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
     | **LD2450 Zone-1 / Zone-2 / Zone-3 X1, X2** | — | Start and end X coordinates of the zone in mm (-3000 left to 3000 right). |
     | **LD2450 Zone-1 / Zone-2 / Zone-3 Y1, Y2** | — | Start and end Y coordinates of the zone in mm (0 to 6000). |
     | **LD2450 Factory Reset** | — | Resets the LD2450 radar module to its factory settings. |
-    | **LD2450 Baud rate** | from module | Serial baud rate the LD2450 uses to talk to the R-PRO-1 (default 256000). Disabled by default; no need to change. |
+    | **LD2450 Baud rate** | from module | Serial baud rate the LD2450 uses to talk to the R PRO-1 (default 256000). Disabled by default; no need to change. |
 
 === "Diagnostic"
 

@@ -1,16 +1,16 @@
 ---
-title: Add the LD2412 mmwave sensor to your R-PRO-1
-description: Tutorial on adding the LD2412 mmwave sensor to your R-PRO-1
+title: Add the LD2412 mmwave sensor to your R PRO-1
+description: Tutorial on adding the LD2412 mmwave sensor to your R PRO-1
 ---
-# Install the LD2412 in R-PRO-1
+# Install the LD2412 in R PRO-1
 
 ![](/assets/r-pro-1-ld2412-install.webp)
 
 !!! tip "Check out the gif above or step by step directions below!"
 
-    The gif above shows all the steps needed to take apart and add your ld2412 to the R-PRO-1 or you can follow the step by step tutorial with images below!
+    The gif above shows all the steps needed to take apart and add your ld2412 to the R PRO-1 or you can follow the step by step tutorial with images below!
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+1\. Unplug your R PRO-1 from power and remove the back.
 
 ![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
 

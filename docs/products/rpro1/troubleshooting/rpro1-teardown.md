@@ -1,12 +1,12 @@
 ---
-title: R-PRO-1 Teardown
-description: Step by step guide for tearing down your R-PRO-1 to replace parts, clean it, swap cases, etc.
+title: R PRO-1 Teardown
+description: Step by step guide for tearing down your R PRO-1 to replace parts, clean it, swap cases, etc.
 ---
-# Teardown and Reassembly Of R-PRO-1
+# Teardown and Reassembly Of R PRO-1
 
 ###### Disassembly:
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+1\. Unplug your R PRO-1 from power and remove the back.
 
 ![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
 

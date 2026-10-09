@@ -1,16 +1,16 @@
 ---
-title: Putting The R-PRO-1 In Boot Mode
-description: Step by step guide for putting The R-PRO-1 In Boot Mode.
+title: Putting The R PRO-1 In Boot Mode
+description: Step by step guide for putting The R PRO-1 In Boot Mode.
 ---
-# Putting The R-PRO-1 In Boot Mode
+# Putting The R PRO-1 In Boot Mode
 
-!!! info "This will cover how to put the R-PRO-1 into boot mode."
+!!! info "This will cover how to put the R PRO-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
 ##### Method 1: Boot Button Only
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+1\. Unplug your R PRO-1 from power and remove the back.
 
 ![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
 
@@ -22,13 +22,13 @@ description: Step by step guide for putting The R-PRO-1 In Boot Mode.
 
 ![](/assets/r-pro-1-boot-button.jpg)
 
-4\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R-PRO-1 then let go of the button.
+4\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R PRO-1 then let go of the button.
 
 5\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
 
 ##### Method 2: Boot and Reset Buttons
 
-1\. Unplug your R-PRO-1 from power and remove the back.
+1\. Unplug your R PRO-1 from power and remove the back.
 
 ![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
 
