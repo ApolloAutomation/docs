@@ -1,0 +1,67 @@
+/* Overrides */
+
+:root {
+    --md-primary-fg-color--dark: #4379AA;
+}
+.md-header,
+.md-tabs {
+    background:
+        -o-linear-gradient(
+            340deg,
+            rgba(0,0,0,0.25) 33%,
+            rgba(0,0,0,0.15) 95%
+        ),
+        -o-linear-gradient(
+            340deg,
+            #4379AA 33%,
+            #73a6d6 95%
+        );
+    background:
+        linear-gradient(
+            110deg,
+            rgba(0,0,0,0.25) 33%,
+            rgba(0,0,0,0.15) 95%
+        ),
+        linear-gradient(
+            110deg,
+            #4379AA 33%,
+            #73a6d6 95%
+        );
+}
+@media screen and (max-width: 76.1875em) {
+    .md-nav--primary .md-nav__title[for="__drawer"],
+    .md-nav--primary .md-nav__title {
+        background:
+            -o-linear-gradient(
+                340deg,
+                rgba(0,0,0,0.25) 33%,
+                rgba(0,0,0,0.15) 95%
+            ),
+            -o-linear-gradient(
+                340deg,
+                #4379AA 33%,
+                #73a6d6 95%
+            );
+        background:
+            linear-gradient(
+                110deg,
+                rgba(0,0,0,0.25) 33%,
+                rgba(0,0,0,0.15) 95%
+            ),
+            linear-gradient(
+                110deg,
+                #4379AA 33%,
+                #73a6d6 95%
+            );
+    }
+}
+.superNav,
+.md-nav__source {
+    background-color: #73a6d6;
+    background-image:
+        linear-gradient(
+            110deg,
+            rgba(0,0,0,0.4) 33%,
+            rgba(0,0,0,0.4) 95%
+        );
+}

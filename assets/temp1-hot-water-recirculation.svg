@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-label="Diagram of the hot water recirculation plumbing under the sink: house water heater feeds wall hot and cold lines, a circulator pump recirculates the wall loop, a TEMP-1 probe reads the wall hot line, a Bosch mini tank provides instant hot water, and a 3-way motorized valve selects which source feeds the sinks.">
+  <defs>
+    <marker id="ahHot" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#d64545"/></marker>
+    <marker id="ahCold" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#3f7fd0"/></marker>
+    <marker id="ahRecirc" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#d98324"/></marker>
+    <g id="bolt"><circle r="11" fill="#f4b400" stroke="#7a5c00" stroke-width="1.5"/><path d="M2,-6 L-4,1 L-0.5,1 L-2,6 L4,-1 L0.5,-1 Z" fill="#5a4400"/></g>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="600" rx="16" fill="#f6f8fa"/>
+  <text x="480" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1b2530">Hot Water Recirculation with TEMP-1</text>
+
+  <!-- WALL divider -->
+  <line x1="235" y1="64" x2="235" y2="548" stroke="#c2cad3" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="235" y="566" text-anchor="middle" font-size="12" fill="#7a8694">WALL  (house side ◀ | ▶ under-sink)</text>
+
+  <!-- ===== PIPES (drawn first, under boxes) ===== -->
+  <!-- wall hot lane -->
+  <path d="M180,330 V160 H650 V250" fill="none" stroke="#d64545" stroke-width="6" marker-end="url(#ahHot)"/>
+  <!-- wall cold lane -->
+  <path d="M180,420 V456 H880" fill="none" stroke="#3f7fd0" stroke-width="6"/>
+  <!-- cold up into Bosch -->
+  <path d="M480,456 V480" fill="none" stroke="#3f7fd0" stroke-width="6"/>
+  <!-- cold up to sinks -->
+  <path d="M860,456 V172" fill="none" stroke="#3f7fd0" stroke-width="6" marker-end="url(#ahCold)"/>
+  <!-- Bosch hot out to valve left input -->
+  <path d="M480,350 V300 H590" fill="none" stroke="#d64545" stroke-width="6" marker-end="url(#ahHot)"/>
+  <!-- valve output hot to sinks -->
+  <path d="M710,300 H820 V172" fill="none" stroke="#d64545" stroke-width="6" marker-end="url(#ahHot)"/>
+  <!-- recirculation loop through pump (hot lane -> pump -> cold lane, back to heater) -->
+  <path d="M285,160 V300" fill="none" stroke="#d98324" stroke-width="4" stroke-dasharray="6 5"/>
+  <path d="M285,330 V456" fill="none" stroke="#d98324" stroke-width="4" stroke-dasharray="6 5" marker-end="url(#ahRecirc)"/>
+
+  <!-- ===== COMPONENTS ===== -->
+  <!-- House water heater -->
+  <rect x="30" y="300" width="150" height="160" rx="10" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="105" y="372" text-anchor="middle" font-size="13" font-weight="600" fill="#1b2530">House</text>
+  <text x="105" y="390" text-anchor="middle" font-size="13" font-weight="600" fill="#1b2530">Water Heater</text>
+  <text x="105" y="410" text-anchor="middle" font-size="11" fill="#7a8694">(main, unlimited)</text>
+
+  <!-- Circulator pump -->
+  <rect x="232" y="284" width="106" height="62" rx="9" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="285" y="309" text-anchor="middle" font-size="12" font-weight="600" fill="#1b2530">Circulator</text>
+  <text x="285" y="325" text-anchor="middle" font-size="12" font-weight="600" fill="#1b2530">Pump</text>
+  <use href="#bolt" x="330" y="290"/>
+
+  <!-- TEMP-1 probe -->
+  <line x1="360" y1="160" x2="360" y2="196" stroke="#2e7d46" stroke-width="3"/>
+  <circle cx="360" cy="160" r="5" fill="#2e7d46"/>
+  <rect x="300" y="196" width="128" height="52" rx="9" fill="#eaf5ee" stroke="#2e7d46" stroke-width="2"/>
+  <text x="364" y="217" text-anchor="middle" font-size="12" font-weight="700" fill="#1f5630">Apollo TEMP-1</text>
+  <text x="364" y="234" text-anchor="middle" font-size="10.5" fill="#1f5630">reads wall-hot temp</text>
+  <use href="#bolt" x="420" y="202"/>
+
+  <!-- Bosch mini tank -->
+  <rect x="410" y="350" width="140" height="130" rx="10" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="480" y="408" text-anchor="middle" font-size="13" font-weight="600" fill="#1b2530">Bosch</text>
+  <text x="480" y="426" text-anchor="middle" font-size="12" fill="#1b2530">Mini Tank</text>
+  <text x="480" y="444" text-anchor="middle" font-size="11" fill="#7a8694">2.5 gal, instant</text>
+  <use href="#bolt" x="535" y="360"/>
+
+  <!-- 3-way motorized valve -->
+  <rect x="610" y="260" width="100" height="80" rx="10" fill="#fff4e6" stroke="#d98324" stroke-width="2.5"/>
+  <text x="660" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#8a5310">3-way</text>
+  <text x="660" y="311" text-anchor="middle" font-size="11" fill="#8a5310">motorized</text>
+  <text x="660" y="327" text-anchor="middle" font-size="11" fill="#8a5310">valve</text>
+  <use href="#bolt" x="700" y="266"/>
+
+  <!-- Sinks -->
+  <rect x="800" y="120" width="120" height="50" rx="8" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="860" y="150" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1b2530">Bathroom Sinks</text>
+  <text x="860" y="110" text-anchor="middle" font-size="10.5" fill="#7a8694">hot + cold to taps</text>
+
+  <!-- valve source labels -->
+  <text x="660" y="250" text-anchor="middle" font-size="10" fill="#8a5310">powered → wall · off → Bosch</text>
+
+  <!-- ===== LEGEND ===== -->
+  <g font-size="12" fill="#1b2530">
+    <line x1="40" y1="520" x2="78" y2="520" stroke="#d64545" stroke-width="6"/><text x="84" y="524">Hot</text>
+    <line x1="140" y1="520" x2="178" y2="520" stroke="#3f7fd0" stroke-width="6"/><text x="184" y="524">Cold</text>
+    <line x1="244" y1="520" x2="282" y2="520" stroke="#d98324" stroke-width="4" stroke-dasharray="6 5"/><text x="288" y="524">Recirculation flow</text>
+    <use href="#bolt" x="448" y="520"/><text x="464" y="524">Switched smart-strip outlet</text>
+  </g>
+</svg>
