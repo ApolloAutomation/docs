@@ -353,6 +353,39 @@ ffmpeg -ss 3 -to 26 -i recording.mp4 -an -vf "scale=540:-2,fps=30" -c:v libx264 
 <video class="phone-media" src="/assets/homey-radar-regions-add-widget.mp4" autoplay loop muted playsinline></video>
 ```
 
+### Admonitions and next steps
+
+Readers skim. Put anything they must not miss in an admonition instead
+of burying it in a paragraph, and pick the type by what the box does:
+
+| Type | Use it for | Example title |
+| --- | --- | --- |
+| `note` | Prerequisites at the top of a guide | "Before you start" |
+| `tip` | A shortcut, or why something works the way it does | "Why taps instead of drags" |
+| `warning` | Something that breaks a setup or loses data if ignored | "Install both parts" |
+| `danger` | Risk of damaging hardware | "Unplug before opening" |
+| `success` | The next step once the reader has finished this one | "Next step: build your first region flow" |
+
+Keep each box to one idea and a few sentences. A page where every
+paragraph is a box has no emphasis left; if a section has more than two
+or three, fold the minor ones back into the text.
+
+**Link guides into a progression.** When one guide naturally leads to
+another (draw a zone, then build a flow with it), close the relevant
+section with a `success` box: one sentence on what the reader unlocks
+next, then a primary button to the follow-on guide. The follow-on guide
+links back from its "Before you start" note.
+
+```markdown
+!!! success "Next step: build your first region flow"
+
+    Your regions are drawn. Now make one do something: the step-by-step
+    guide walks you through a flow that turns a light on when someone
+    enters a region.
+
+    [Turn on a light when someone enters a region](../../../general/tutorials/region-light-flow-example/){ .md-button .md-button--primary }
+```
+
 ### Internal links
 
 Internal links use site-relative paths in wiki-URL form (trailing

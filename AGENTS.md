@@ -32,6 +32,10 @@ Read the full style guide, but these are the ones worth checking twice:
   all display text. Keep `rpro1`, `r-pro-1`, and `R_PRO-1` only in file
   names, URLs, hostnames, and literal device names.
 - **US English** spelling: color, center, meter, behavior.
+- Flag must-know info with admonitions (`note` for prerequisites,
+  `tip`, `warning`, `success` for a "Next step" box with a primary
+  button to the follow-on guide). See
+  [Admonitions and next steps](STYLE_GUIDE.md#admonitions-and-next-steps).
 - **Apollo addons** (hardware modules) and **Home Assistant apps**
   (formerly add-ons) are different things and not interchangeable.
 - **ESPHome** is the only correct casing.
