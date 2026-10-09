@@ -1,3 +1,5 @@
+![Radar regions widget in the Homey app with a Server rectangle, a Table circle, and a Fan area drawn on the radar map](/assets/homey-radar-regions-map.png)
+
 In Homey, the Zone Mapper tool is a dashboard widget called **Radar regions**. You draw regions on a live map of the radar's view, and each region becomes its own occupancy tile on the device, with flow cards that fire when someone enters or leaves it.
 
 - The map shows up to three tracked people as moving dots, in real time.
@@ -19,16 +21,24 @@ There is nothing extra to install: the widget ships inside the Apollo Automation
 
 Multi target tracking on the radar is switched on for you the first time the device connects after the app update. If it was turned off later, the widget shows an **Enable** button at the top.
 
+## Video walkthrough
+
+Watch the whole flow on a phone: adding the widget to a new dashboard, drawing a rectangle and a circle, and marking a polygon as an area to ignore.
+
+<video class="phone-media" src="/assets/homey-radar-regions-walkthrough.mp4" poster="/assets/homey-radar-regions-walkthrough-poster.jpg" controls muted playsinline preload="metadata"></video>
+
 ## Open the tool
 
 The **Radar regions** widget lives on a dashboard, not on the device page. Once it is placed, the dashboard becomes your live view of the room and the place you draw regions.
 
-1. In the Homey mobile app, tap **Dashboards** in the bottom bar. Create a dashboard if you have none yet.
-2. Tap **Edit** at the top right of the dashboard.
-3. Tap **Add widget**, scroll to the **Apollo Automation** section, and choose **Radar regions**.
-4. In the widget's settings, pick your MTR-1 or R PRO-1. Only devices with an LD2450 radar are listed, and only once they have connected at least once.
+1. In the Homey mobile app, tap **More** in the bottom bar, then **Dashboards**.
+2. Tap **New Dashboard**, or open an existing dashboard and start editing it.
+3. Tap **Add Widget**, switch to the **Apps** tab, and choose **Radar regions** under **Apollo Automation**.
+4. Tap **Select Device**, pick your MTR-1 or R PRO-1, and tap the check mark at the top right. Only devices with an LD2450 radar are listed, and only once they have connected at least once.
 5. Optionally, set **Map range**: 6 m (the default) shows the radar's whole field of view, 4 or 5 m zooms in for small rooms, and 7.5 m shows the sensor's full reach. Saved regions beyond the range stay in view either way.
-6. Save the dashboard and leave edit mode.
+6. Tap **Add Widget**, then **Done**. A new dashboard asks for a name: enter one and tap **Save**.
+
+<video class="phone-media" src="/assets/homey-radar-regions-add-widget.mp4" autoplay loop muted playsinline></video>
 
 The widget now shows the live map. If you have several radars, add one widget per device. Each widget keeps its own set of regions.
 
@@ -49,7 +59,7 @@ The map does not rotate. Place the sensor so the room is in front of it, and the
 
 Drawing works by tapping, not dragging. Pick a shape, tap its points on the map, and press **Save** when you are done. Nothing reaches the device until you save.
 
-1. Tap **Rectangle**, **Circle**, or **Polygon** above the map. A hint under the toolbar says what to tap next.
+1. Tap **Rectangle**, **Circle**, or **Polygon** in the toolbar above the map. A hint under the toolbar says what to tap next.
 2. Tap the points for your shape:
     - **Rectangle**: tap one corner of the area, then the opposite corner. A crosshair marks the first tap.
     - **Circle**: tap the center, then a point on the edge.
@@ -58,6 +68,8 @@ Drawing works by tapping, not dragging. Pick a shape, tap its points on the map,
 4. Press **Save**, or **Cancel** to throw the unsaved changes away.
 
 Your region now shows on the map, and a matching occupancy tile appears on the device.
+
+<video class="phone-media" src="/assets/homey-radar-regions-draw-rectangle.mp4" autoplay loop muted playsinline></video>
 
 !!! tip "Why taps instead of drags"
 
@@ -68,25 +80,29 @@ A few more drawing tips:
 - A region needs at least a fingertip of size. Two taps too close together are refused with a short message.
 - Draw regions a little larger than the furniture they cover. The radar places a person by their center, and a seated person can read 30 to 50 cm from where you expect.
 - If the dashboard scrolls between your two taps, the first tap is kept. Switching tools drops it.
-- With no shape tool active, swiping on the map scrolls the dashboard as usual, and tapping a region opens its settings.
+- With **Select** active (the default tool), swiping on the map scrolls the dashboard as usual, and tapping a region opens its settings.
 
 ## Region settings
 
-Tap a region with no shape tool active to open its settings. Changes apply when you press **Save**.
+With **Select** active, tap a region to open its settings. Changes apply when you press **Save**.
 
 | Setting | What it does |
 | --- | --- |
 | **Name** | The label on the map, the occupancy tile, and the flow cards. Up to 40 characters. |
-| **Detect** | The region reports occupied while someone is inside it. This is the default. |
-| **Exclude** | Targets inside the region are hidden from every detect region. Use it for a fan, a curtain, a pet bed, or a hallway seen through a doorway. |
-| Arrows | Move the region 10 cm per tap: left, right, away from the sensor, or toward it. |
-| **Bigger**, **Smaller** | Grow or shrink a rectangle or circle by 10 cm on each side, keeping its center. |
+| **Detect people here** | The region reports occupied while someone is inside it. This is the default. |
+| **Ignore this area** | Makes the region an exclusion region, drawn in red. Targets inside it are hidden from every detect region. Use it for a fan, a curtain, a pet bed, or a hallway seen through a doorway. |
+| **Move** arrows | Move the region 10 cm per tap: left, right, away from the sensor, or toward it. |
+| **Size**: **Bigger**, **Smaller** | Grow or shrink a rectangle or circle by 10 cm on each side, keeping its center. |
 | **Hold time** (under **More**) | Seconds the region stays occupied after the last person leaves, 0 to 300, default 5. Set it longer for a sofa or a desk so a short trip to the kitchen keeps the lights on. |
 | **Width**, **Depth**, **Radius**, **Center** (under **More**) | Exact values in centimeters: width and depth for a rectangle, radius for a circle, and center position for every shape. A value past the sensor's limits is pulled back inside. |
-| **Enabled** | Switch a region off without deleting it. A disabled region is drawn dotted and ignored. |
+| **Enabled** | Uncheck it to switch a region off without deleting it. A disabled region is drawn dotted and ignored. |
 | **Delete region** | Removes it. Its occupancy tile disappears on save. |
 
 Regions may overlap. A person inside two detect regions counts for both; a person inside any exclusion region counts for none.
+
+Here a polygon is drawn over a fan and set to **Ignore this area**:
+
+<video class="phone-media" src="/assets/homey-radar-regions-ignore-area.mp4" autoplay loop muted playsinline></video>
 
 ## Use regions in flows
 
@@ -116,7 +132,7 @@ Homey detects occupancy itself from the target positions, so regions work withou
 - The radar's zones are rectangles. A circle or polygon is written as the rectangle around it, and the preview text under the button says so.
 - The preview also lists which regions will be written and which are skipped because the slots are full.
 - **Clear sensor zones** empties all three slots and disables the radar's zone filtering.
-- The **Multi target tracking** switch controls whether the radar reports up to three people or only one. The app turns it on once by itself; if you turn it off, the app leaves it off.
+- The **Multi target tracking** checkbox controls whether the radar reports up to three people or only one. The app turns it on once by itself; if you turn it off, the app leaves it off.
 
 ## Troubleshooting
 
