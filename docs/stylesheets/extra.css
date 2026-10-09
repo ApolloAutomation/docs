@@ -54,6 +54,18 @@ article.md-typeset .cms-embed iframe {
   border: 0;
 }
 
+/* Phone screen recordings and screenshots: portrait media capped at
+   phone width so a tall clip doesn't fill the page. Use
+   class="phone-media" on <video> or <img>. */
+article.md-typeset .phone-media {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 1em auto;
+  border-radius: 12px;
+}
+
 /* Custom song admonitions - rainbow colors with music note icon */
 :root {
   --md-admonition-icon--song-red: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');

@@ -323,6 +323,36 @@ homeassistant:
 ![AIR-1 boot button highlighted on the underside of the case](/assets/air1-boot-button.jpg)
 ```
 
+### Screen recordings and animations
+
+Use short MP4 clips instead of GIFs. A looping MP4 is a fraction of the
+size of the same GIF and stays sharper, so pages load faster. CI only
+shrinks PNGs, so compress video before committing it.
+
+- **Short loops** (a few seconds to about 30) that show one step sit
+  right after that step and play on their own, silently:
+  `autoplay loop muted playsinline`.
+- **A full walkthrough** goes in its own **Video walkthrough** section
+  with `controls` and a `poster` image, and does not autoplay. Long or
+  narrated videos belong on YouTube, embedded with the `cms-embed`
+  markup.
+- **Phone recordings** (portrait) take `class="phone-media"`, which
+  caps them at phone width and centers them. The class lives in
+  `docs/stylesheets/extra.css`; never size media inline.
+- **Trim personal details** (names, email addresses, home names,
+  notifications) out of every recording before it's published.
+- **Compress** with H.264, no audio track, and fast start, scaled to
+  540px wide for clips and 720px for a full phone walkthrough. Aim for
+  under 1 MB per clip and a few MB for a walkthrough:
+
+```bash
+ffmpeg -ss 3 -to 26 -i recording.mp4 -an -vf "scale=540:-2,fps=30" -c:v libx264 -preset slow -crf 23 -pix_fmt yuv420p -movflags +faststart docs/assets/product-step-name.mp4
+```
+
+```html
+<video class="phone-media" src="/assets/homey-radar-regions-add-widget.mp4" autoplay loop muted playsinline></video>
+```
+
 ### Internal links
 
 Internal links use site-relative paths in wiki-URL form (trailing
