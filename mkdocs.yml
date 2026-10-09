@@ -643,6 +643,7 @@ nav:
           - Example Flows:
 #            - Air Quality Notification: homey/products/general/tutorials/air-quality-notification-example.md
             - High CO2 Notification: homey/products/general/tutorials/high-co2-notification-example.md
+            - Region Light: homey/products/general/tutorials/region-light-flow-example.md
           - Additional Info:
             - Calibrating:
               - CO<sub>2</sub>: homey/products/general/calibrating-and-updating/co2-calibration.md

@@ -67,7 +67,7 @@ Drawing works by tapping, not dragging. Pick a shape, tap its points on the map,
 3. Adjust the new region. It appears with a name like Region 1 and its settings open. Use the arrows to move it and **Bigger** or **Smaller** to resize it.
 4. Press **Save**, or **Cancel** to throw the unsaved changes away.
 
-Your region now shows on the map, and a matching occupancy tile appears on the device.
+Your region now shows on the map, and a matching occupancy tile appears on the device. Once your regions are in place, [put one to work in a flow](#use-regions-in-flows).
 
 <video class="phone-media" src="/assets/homey-radar-regions-draw-rectangle.mp4" autoplay loop muted playsinline></video>
 
@@ -107,6 +107,12 @@ Here a polygon is drawn over a fan and set to **Ignore this area**:
 ## Use regions in flows
 
 This is where regions pay off. Every saved detect region is an occupancy tile on the device, named after the region, and the device gets three region flow cards.
+
+!!! success "Next step: build your first region flow"
+
+    Your regions are drawn. Now make one do something: the step-by-step guide walks you through a flow that turns a light on when someone enters a region and off when they leave.
+
+    [Turn on a light when someone enters a region](../../../general/tutorials/region-light-flow-example/){ .md-button .md-button--primary }
 
 | Card | Type | Asks for | Tokens |
 | --- | --- | --- | --- |
