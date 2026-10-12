@@ -1,4 +1,5 @@
 ---
+title: Use Cases for the TEMP-1B
 description: "List of use cases for the TEMP-1B."
 ---
 # Use Cases for the TEMP-1B

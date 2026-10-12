@@ -7,13 +7,13 @@ description: >-
 
 These are the settings that make the HUB75 panel display correctly. You need them if you reflashed your M-1, wiped its settings, or changed the number of panels. Units that ship on WLED arrive already configured for one 64x64 panel.
 
-###### Friendly Name
+## Friendly Name
 
 Click on **Config**, then **User Interface**. In the **Server description** field, enter the name you want your M-1 device to display as in the WLED interface, such as **Apollo LED Matrix**. It ships as **Apollo M-1**, so this is only worth changing if you want something else.
 
-![](/assets/m-1-user-interface-settings.gif)
+![Setting the WLED Server description to Apollo LED Matrix under Config, User Interface, then saving](/assets/m-1-user-interface-settings.gif)
 
-###### Hostname
+## Hostname
 
 Your M-1 already has one. It ships as **apollo-led-matrix-xxxxxx**, with the last six characters unique to your unit, so several M-1s can sit on the same network without clashing.
 
@@ -49,7 +49,7 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
     * Hostnames are **not case sensitive** (`HostName` = `hostname`).
 
-###### LED Settings
+## LED Settings
 
 === "WLED"
 
@@ -73,11 +73,11 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
 === "WLED-MM"
 
-    Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**.
+    Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter" and click **Save**.
 
-    ![](/assets/m-1-led-settings.gif)
+    ![WLED LED Preferences set to Hub75Matrix 64x64 and Chain Length 1, brightness limiter unchecked, then saved](/assets/m-1-led-settings.gif)
 
-###### 2D Settings
+## 2D Settings
 
 === "WLED"
 
@@ -91,9 +91,9 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
     Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel dimensions (WxH)** to **64 x 64** and click **Save**.
 
-    ![](/assets/m-1-2d-settings.gif)
+    ![WLED 2D Configuration set to 2D Matrix with Basic interface and 64 x 64 panel dimensions, then saved](/assets/m-1-2d-settings.gif)
 
-###### AudioReactive Settings
+## AudioReactive Settings
 
 !!! success "The Audioreactive is only available on a rev6 PCB with the optional microphone addon"
 
@@ -111,10 +111,10 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
     For the pins, select **10 digitalmic** for Pin I2s SD, select **12 digitalmic A5** for Pin I2S WS, and select **11 digitalmic** for Pin I2S SCK and click **Save**.
 
-    ![](/assets/m-1-audio-reactive-pin-settings.png)
+    ![WLED AudioReactive settings with Enabled checked, Generic I2S type, and digitalmic pins 10, 12, and 11](/assets/m-1-audio-reactive-pin-settings.png)
 
     Scroll to the bottom of the **AudioReactive** settings and set the **Mode** to **Off** and click **Save**.
 
-    ![](/assets/m-1-audio-reactive-mode-off.png)
+    ![WLED AudioReactive Sync Mode menu with Off selected](/assets/m-1-audio-reactive-mode-off.png)
 
 &nbsp;

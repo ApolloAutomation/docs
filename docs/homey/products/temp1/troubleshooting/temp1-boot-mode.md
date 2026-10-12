@@ -1,4 +1,5 @@
 ---
+title: Putting The TEMP-1 In Boot Mode
 description: "Step by step guide for putting The TEMP-1 In Boot Mode."
 ---
 # Putting The TEMP-1 In Boot Mode
@@ -7,23 +8,23 @@ description: "Step by step guide for putting The TEMP-1 In Boot Mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-##### Method 1: Boot Button Only
+## Method 1: Boot Button Only
 
 1\. Position the TEMP-1 so that the USB-C port is facing you. On the right side of the device, locate a small opening where you can use a paperclip to press the boot button.
 
-![](/assets/temp-1-boot-button-side-view.jpg)
+![Side of the TEMP-1 case with a pointed tool inserted into the opening to press the boot button](/assets/temp-1-boot-button-side-view.jpg)
 
 If you prefer, please remove the lid by gently prying up on the small slit by the top of the case.
 
-![](/assets/temp-1-pry-open.jpg)
+![Flat tool prying the lid off the TEMP-1 case at the slit along the top edge](/assets/temp-1-pry-open.jpg)
 
-![](/assets/temp-1b-boot-button-lid-off.jpg)
+![TEMP-1 board inside the open case with a tool pointing at the BOOT button on the right edge](/assets/temp-1b-boot-button-lid-off.jpg)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your TEMP-1 then let go of the button.
 
 3\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/homey/products/temp1/troubleshooting/temp1-code/).
 
-##### Method 2: Boot and Reset Buttons
+## Method 2: Boot and Reset Buttons
 
 1\. Unplug the device and remove the case as shown in the images above
 

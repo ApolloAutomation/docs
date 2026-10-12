@@ -8,9 +8,9 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 1\. To use your temp probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
-![](/assets/temp-probe-insert-1.jpg)
+![Temp probe plug being inserted into the 3.5mm port on the TEMP-1B](/assets/temp-probe-insert-1.jpg)
 
-![](/assets/temp-probe-fully-inserted.jpg)
+![Temp probe plug fully inserted into the TEMP-1B 3.5mm port](/assets/temp-probe-fully-inserted.jpg)
 
 2\. Once inserted, proceed to step 3 unless you have a battery in it
 
@@ -20,11 +20,11 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 &nbsp;
 
-![](/assets/temp1b-temp-probe-pic-1.jpg)
+![TEMP-1B with the black-cable temperature probe plugged in and coiled](/assets/temp1b-temp-probe-pic-1.jpg)
 
 3\. Go to the device page of your TEMP-1B in Home Assistant and choose the Temperature Probe.
 
-![](/assets/temp-1-select-temp-probe-example.png)
+![Home Assistant Select Probe dropdown with Temperature selected](/assets/temp-1-select-temp-probe-example.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
@@ -32,15 +32,15 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 **Example images of the long temperature probe in a mini freezer:**
 
-![](/assets/temp1b-temp-probe-freezer-pic-1.jpg)
+![Temperature probe cable running into a mini freezer and hanging from the wire shelf](/assets/temp1b-temp-probe-freezer-pic-1.jpg)
 
-![](/assets/temp1b-temp-probe-freezer-pic-2.jpg)
+![Flat probe cable routed over the freezer door frame and out to the side](/assets/temp1b-temp-probe-freezer-pic-2.jpg)
 
 ## Probe Pinout
 
 The 1.5m and 20cm DS18B20 temp probes use a standard 3.5mm TRS plug. Wire yours the same way if you're building your own probe or repairing a cut cable.
 
-![](/assets/temp-1-temp-probe-pinout.png)
+![3.5mm temp probe plug with arrows labeling the sleeve GND, ring Data, and tip 3v](/assets/temp-1-temp-probe-pinout.png)
 
 | Contact | Signal |
 | --- | --- |

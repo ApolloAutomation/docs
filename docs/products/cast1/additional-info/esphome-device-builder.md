@@ -10,7 +10,7 @@ description: Optional. Use ESPHome Device Builder to rename your CAST-1 or edit 
 
 ESPHome Device Builder is the software that gives you a user interface for editing, compiling, and flashing ESPHome YAML. You'll use it to take control of your CAST-1 and edit its configuration.
 
-### Install ESPHome Device Builder
+## Install ESPHome Device Builder
 
 Pick the platform you'll be running ESPHome Device Builder on:
 
@@ -25,7 +25,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
         If a blue **Windows protected your PC** warning appears when you open the `.exe`, click **More info → Run anyway** to continue.
 
-    ![](/assets/esphome-builder-install-windows.gif)
+    ![Downloading the ESPHome Device Builder Windows installer, choosing Run anyway, and running setup](/assets/esphome-builder-install-windows.gif)
 
     The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your notification area for getting back to it later.
 
@@ -37,7 +37,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     Then take **Start guided tour** for a five minute walkthrough, or **Maybe later**.
 
-    ![](/assets/device-builder-first-time-install-pick-your-experience.gif)
+    ![ESPHome Device Builder first-run wizard, choosing local installation and New to ESPHome](/assets/device-builder-first-time-install-pick-your-experience.gif)
 
 === "Mac"
 
@@ -64,7 +64,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     Then take **Start guided tour** for a five minute walkthrough, or **Maybe later**.
 
-    ![](/assets/device-builder-first-time-install-pick-your-experience.gif)
+    ![ESPHome Device Builder first-run wizard, choosing local installation and New to ESPHome](/assets/device-builder-first-time-install-pick-your-experience.gif)
 
 === "Home Assistant App"
 
@@ -112,9 +112,9 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     Then take **Start guided tour** for a five minute walkthrough, or **Maybe later**.
 
-    ![](/assets/device-builder-first-time-install-pick-your-experience.gif)
+    ![ESPHome Device Builder first-run wizard, choosing local installation and New to ESPHome](/assets/device-builder-first-time-install-pick-your-experience.gif)
 
-### Take Control of Your CAST-1
+## Take Control of Your CAST-1
 
 1\. Open the ESPHome Device Builder.
 
@@ -122,14 +122,14 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 2\. Click **Show** next to **Discovered** at the top, then click **Take Control** next to your CAST-1. Change the **Name** and **Friendly Name** if you'd like, or leave them, then click **Take Control** again.
 
-![](/assets/cast-1-esphome-device-builder.gif)
+![Clicking Show, then Take control on the discovered CAST-1 in ESPHome Device Builder](/assets/cast-1-esphome-device-builder.gif)
 
 3\. Click **Install** (the up arrow icon), then click **On the network** and watch it finish installing. (1)
 { .annotate }
 
 1.  This takes 5 to 10 minutes depending on how fast your device is.
 
-![](/assets/cast-1-esphome-device-builder-install.gif)
+![Clicking Install on the CAST-1, choosing On the network, and watching the build log](/assets/cast-1-esphome-device-builder-install.gif)
 
 4\. Once it completes, click **Stop**, then press the **Reset** button on your device. Your CAST-1 will reboot and it's now ready to test out!
 

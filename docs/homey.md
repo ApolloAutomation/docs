@@ -2,7 +2,7 @@
 title: Homey Integration
 description: Guide to integrating Apollo Automation devices with the Homey smart home platform.
 ---
-<img height="344" width="900" src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" />
+<img alt="Apollo Automation Homey docs banner" height="344" width="900" src="https://imagedelivery.net/VXI8oYYsJOyBOIySOviPCQ/4e7161b4-573c-40fa-0465-648a99bafe00/public" />
 
 !!! info "Welcome to Apollo Automation Docs!"
 
@@ -29,7 +29,7 @@ description: Guide to integrating Apollo Automation devices with the Homey smart
 * [Understanding your AIR-1 and the various sensors it exposes](https://wiki.apolloautomation.com/products/air1/setup/general-tips/)
 * [How to re-calibrate your CO<sub>2</sub> sensor](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
 * [Put your Apollo devices to sleep!](https://wiki.apolloautomation.com/products/general/battery-sensors/prevent-sleep/)
-* [Setup your new M-1 LED Matrix with Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
+* [Set up your new M-1 LED Matrix with Multiple Panels](https://wiki.apolloautomation.com/products/m1/setup/m1-multiple-panels/)
 * [3D Print your own case in any color or material](https://wiki.apolloautomation.com/products/general/links/)
 
 <h3>Community</h3>

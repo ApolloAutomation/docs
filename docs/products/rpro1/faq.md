@@ -1,10 +1,10 @@
 ---
-title: R-Pro-1 FAQ
-description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
+title: R PRO-1 FAQ
+description: Frequently asked questions about the R PRO-1 PoE mmWave sensor.
 ---
 1\. **What sensors are included in the R PRO-1?**
 
-* The R PRO-1 includes several built-in sensors such as a LD2450 mmWave radar sensor and optional LD2412 mmWave radar for presence detection, a LUX and UV sensor, and an optional CO<sub>2</sub> sensor.
+* The R PRO-1 includes several built-in sensors such as an LD2450 mmWave radar sensor and optional LD2412 mmWave radar for presence detection, a LUX and UV sensor, and an optional CO<sub>2</sub> sensor.
 
 2\. **How does the mmWave radar sensor work?**
 
@@ -17,7 +17,7 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 
 4\. **Can the R PRO-1 detect multiple people?**
 
-* Yes, the R PRO-1 comes with a LD2450 which can detect 3 people in up to 3 zones. The optional ld2412 addon will only detect one person.
+* Yes, the R PRO-1 comes with an LD2450 which can detect 3 people in up to 3 zones. The optional LD2412 addon will only detect one person.
 
 5\. **What is the benefit of the LUX and UV sensor?**
 
@@ -32,7 +32,7 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 
 7\. **How do I connect the R PRO-1 to Home Assistant?**
 
-* The R PRO-1 connects to your Home Assistant instance through ESPHome using WiFi. Once connected, you can switch to using the ethernet firmware. You can also reflash it to Ethernet firmware <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">here</a>.
+* The R PRO-1 connects to your Home Assistant instance through ESPHome using Wi-Fi. Once connected, you can switch to using the ethernet firmware. You can also reflash it to Ethernet firmware <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">here</a>.
 
 8\. **What kind of automations can I create with the R PRO-1?**
 
@@ -56,7 +56,7 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 
 13\. **Can the R PRO-1 track the exact location of people in a room?**
 
-* Yes with the LD2450 mmWave sensor, it is able to reliably detect people in x/y coordinate 'zones' that you setup <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">here</a>.
+* Yes with the LD2450 mmWave sensor, it is able to reliably detect people in x/y coordinate 'zones' that you set up <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">here</a>.
 * Yes, the R PRO-1 uses multi-zone mmWave radar technology to track the approximate location of people within a room. It can determine whether someone is sitting, walking, or standing in different areas of the space.
 
 14\. **What kind of power supply is required for the R PRO-1?**
@@ -65,7 +65,7 @@ description: Frequently asked questions about the R-Pro-1 PoE mmWave sensor.
 
 15\. **Can I customize the R PRO-1 functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the R PRO-1. Our <a href="https://github.com/ApolloAutomation/R_PRO-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the R PRO-1. Our <a href="https://github.com/ApolloAutomation/R_PRO-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 16\. **How often does the R PRO-1 report sensor data?**
 

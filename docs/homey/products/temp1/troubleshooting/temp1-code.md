@@ -1,4 +1,5 @@
 ---
+title: Factory Re-Flash TEMP-1
 description: "Step by step guide for re-flashing the TEMP-1 back to factory firmware."
 ---
 # Factory Re-Flash TEMP-1
@@ -15,26 +16,26 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Click "Connect" under the Non Battery Firmware option since you are using a TEMP-1.
 
-![](/assets/temp-1-reflash-pic-1.png)
+![Apollo TEMP-1 Installer page with the Connect button under Non Battery Firmware highlighted](/assets/temp-1-reflash-pic-1.png)
 
 3\. Select the open com port then click Connect.
 
-![](/assets/temp-1-reflash-pic-2.png)
+![Browser serial port dialog with the USB JTAG/serial debug unit port selected and the Connect button](/assets/temp-1-reflash-pic-2.png)
 
 4\. Click "Install ApolloAutomation.TEMP-1".
 
-![](/assets/temp-1-reflash-pic-3.png)
+![Device Dashboard dialog with Install ApolloAutomation.TEMP-1 highlighted](/assets/temp-1-reflash-pic-3.png)
 
 5\. Click "INSTALL".
 
-![](/assets/temp-1-reflash-pic-4.png)
+![Install ApolloAutomation.TEMP-1 confirmation dialog with the Install button highlighted](/assets/temp-1-reflash-pic-4.png)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](/assets/temp-1b-reflash-pic-7.png)
+![Web installer dialog showing Installation complete after flashing the TEMP-1, with the Next button](/assets/temp-1b-reflash-pic-7.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-temp1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and setup your sensor as a new device!
+7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-temp1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and set up your sensor as a new device!

@@ -6,17 +6,17 @@ description: How to disable Prevent Sleep and allow your Apollo device to sleep!
 
 !!! tip "Put your sensors to sleep!"
 
-    All of our battery powered device are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
+    All of our battery powered devices are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
 
     The temperature offsets needed will be much lower for your sensors as the microcontroller will not put off as much heat when it is sleeping and then waking for short periods to report the sensor values.
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> and click on the name of your Apollo device.
 
-![](/assets/prevent-sleep-integrations-page-gif.gif)
+![Clicking an Apollo BTN-1 on the ESPHome integration page in Home Assistant to open its device page](/assets/prevent-sleep-integrations-page-gif.gif)
 
 2\. Scroll down until you see **Prevent Sleep** and **Sleep Duration**.
 
-![](/assets/prevent-sleep-and-sleep-duration.png)
+![Home Assistant Configuration card showing the Prevent Sleep toggle and Sleep Duration box](/assets/prevent-sleep-and-sleep-duration.png)
 
 3\. Type in the amount of minutes you want your sensor to sleep in the **Sleep Duration** box. Defaults to 5 minutes for some devices and longer for others. We recommend leaving the default values.
 

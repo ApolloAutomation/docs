@@ -2,7 +2,7 @@
 title: Adding the RGB & Buzzer Module
 description: >-
   Wire up the ESPHome Starter Kit RGB & Buzzer module, add it through ESPHome
-  Device Builder, then turn the lights and off and change colors.
+  Device Builder, then turn the lights on and off and change colors.
 ---
 # Adding the LED & Buzzer Module
 
@@ -21,19 +21,19 @@ Connect the LED & Buzzer module to the ESP32-C6 using one of the FPC ribbon cabl
 
 1\. Unplug the USB-C cable from the ESP32-C6 so it is powered off.
 
-![](../../../assets/esphome-starter-kit-remove-usb.webp)
+![Unplugging the USB-C cable from the ESP32-C6 board](../../../assets/esphome-starter-kit-remove-usb.webp)
 
 !!! warning "Handle the FPC connectors gently"
 
     The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
-2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
+2\. Flip up the latch on the FPC connector then gently slide the ribbon cable into the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
+![Sliding the FPC ribbon cable, blue side up, into the ESP32-C6 connector and closing the latch](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
 3\. Slide the ribbon cable into the LED & buzzer module with the blue side facing upwards then press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-fpc-to-rgb-buzzer-module.webp)
+![Connecting the other end of the FPC ribbon cable to the LED & Buzzer module](../../../assets/esphome-starter-kit-attach-fpc-to-rgb-buzzer-module.webp)
 
 4\. Plug the ESP32-C6 back into your computer.
 
@@ -47,7 +47,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 4. Select the **RGB LED + Buzzer Module Bundle** at the top.
 5. Click **Add** -&gt; Click **Add** -&gt; Click **Add** -&gt; Click **Add**. Each section lets you make changes but we will leave them at defaults for now. Device Builder inserts the light, output, and rtttl blocks into your YAML.
 
-![](../../../assets/esphome-device-builder-add-rgb-buzzer-bundle-module.gif)
+![ESPHome Device Builder adding the RGB LED + Buzzer Module bundle and clicking Add through each step](../../../assets/esphome-device-builder-add-rgb-buzzer-bundle-module.gif)
 
 ??? note "What the LED & Buzzer Module YAML does"
 
@@ -107,7 +107,7 @@ Flash the device so the new RGB & Buzzer entities go live.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
-![](../../../assets/esphome-device-builder-install-rgb-buzzer-component.gif)
+![ESPHome Device Builder clicking Install, choosing On the network, and compiling the LED and buzzer config](../../../assets/esphome-device-builder-install-rgb-buzzer-component.gif)
 
 ## Test the LEDs
 
@@ -122,7 +122,7 @@ With the device back online, the RGB LED light entity is live on the web server.
 
 1. There's a lot you can do with a light entity. See the [Light Effects tutorial](/products/ESPHome-Starter-Kit/tutorials/light-effects.md) for advanced configurations, or the [ESPHome light strip effects documentation](https://esphome.io/components/light/#strip-animations) to go deeper.
 
-![](../../../assets/esphome-device-builder-test-rgb-leds.gif)
+![Starter kit web server turning on the RGB LEDs and picking a new color](../../../assets/esphome-device-builder-test-rgb-leds.gif)
 
 !!! success "Your LED & Buzzer notification module is wired up!"
 
@@ -134,9 +134,9 @@ With the device back online, the RGB LED light entity is live on the web server.
 
 Your notification module is ready. Drive it from any of these automations:
 
-<a href="/products/ESPHome-Starter-Kit/automations/button-controlled-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Button Controlled LEDs </a>
-<a href="/products/ESPHome-Starter-Kit/automations/play-a-tune/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Play a Tune </a>
-<a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Temp-Reactive LEDs </a>
-<a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Motion-Activated Light </a>
+<a href="/products/ESPHome-Starter-Kit/automations/button-controlled-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Button Controlled LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/play-a-tune/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Play a Tune </a>
+<a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Temp-Reactive LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Motion-Activated Light </a>
 
 --8<-- "_snippets/community-help.md"

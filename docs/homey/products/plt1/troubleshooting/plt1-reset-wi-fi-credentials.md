@@ -1,4 +1,5 @@
 ---
+title: Reset Wi-Fi Credentials on your PLT-1
 description: "Step by step guide for resetting the Wi-Fi Credentials on your PLT-1."
 ---
 # Reset Wi-Fi Credentials on your PLT-1
@@ -7,7 +8,7 @@ description: "Step by step guide for resetting the Wi-Fi Credentials on your PLT
 
 2\. Long press the Boot button for 10 seconds
 
-![](/assets/plt-1-boot-button-pic-1.png)
+![Side of the PLT-1 with the boot button opening circled](/assets/plt-1-boot-button-pic-1.png)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

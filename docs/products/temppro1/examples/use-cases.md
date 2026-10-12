@@ -8,4 +8,4 @@ description: List of use cases for the TEMP Pro-1.
 
 2\. Monitoring fish tank, hot tub ( if covered ), pool ( if covered or in sealed box ) with the waterproof probe.
 
-3\. Monitoring an attic by putting the Temp Pro-1 in a waterproof enclosure or just poking a hole to feed a temp probe into an attic or other environment not suitable for the Temp Pro-1 PCB itself.
+3\. Monitoring an attic by putting the TEMP Pro-1 in a waterproof enclosure or just poking a hole to feed a temp probe into an attic or other environment not suitable for the TEMP Pro-1 PCB itself.

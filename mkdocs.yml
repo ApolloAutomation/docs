@@ -197,11 +197,14 @@ nav:
           - FAQ: products/general/faq.md
           - Getting Started: products/general/setup/getting-started.md
           - Additional Info:
+            - Adding SCD40 Temp/Hum: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
+            - Adjusting Wi-Fi Power: products/general/setup/adjusting-wifi-power.md
+            - Bluetooth Proxy: products/general/setup/bluetooth-proxy.md
+            - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
             - Calibrating:
+              - Calibrate PLT-1 Soil Moisture: products/general/calibrating-and-updating/calibrate-plt1.md
               - CO<sub>2</sub>: products/general/calibrating-and-updating/co2-calibration.md
               - CO<sub>2</sub> Quick: products/general/calibrating-and-updating/co2-calibration-quick.md
-              - Temperature and Humidity: products/general/temp-hum-calibration.md
-              - Calibrate PLT-1 Soil Moisture: products/general/calibrating-and-updating/calibrate-plt1.md
               - Radar Tuning:
                 - (Best) Apollo mmWave Dashboard:
                   - Setup: products/general/setup/apollo-mmwave-dashboard-setup.md
@@ -209,36 +212,33 @@ nav:
                 - Home Assistant: products/general/calibrating-and-updating/radar-tuning/zones-ha.md
                 - HLK Radar Tool App: products/general/calibrating-and-updating/radar-tuning/zones-hlk.md
                 - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
+              - Temperature and Humidity: products/general/temp-hum-calibration.md
               - Zone Configuration:
                 - (Best) Apollo mmWave Dashboard: /products/general/setup/apollo-mmwave-dashboard/#draw-zones-on-the-r-pro-1-and-mtr-1
                 - (Good) Home Assistant: products/general/calibrating-and-updating/zone-configuration/zones-ha.md
                 - (Better) HLK Radar Tool App: products/general/calibrating-and-updating/zone-configuration/zones-hlk.md
                 - (Better) Zone Mapper Tool: products/general/calibrating-and-updating/zone-configuration/zone-mapper-tool.md
-            - Updating: products/general/calibrating-and-updating/updating-firmware.md
-            - Renaming Devices: products/general/setup/renaming-apollo-devices.md
-            - Change Update Frequency: products/general/setup/change-the-update-frequency-of-sensors.md
-            - Change Lux Update Interval: products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval.md
             - Change CO<sub>2</sub> Update Interval: products/general/tutorials/change-co2-update-interval.md
+            - Change Lux Update Interval: products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval.md
+            - Change Update Frequency: products/general/setup/change-the-update-frequency-of-sensors.md
+            - Hidden Wi-Fi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
             - Minimize mmWave Activity Spam: products/general/tutorials/minimize-mmwave-activity-spam.md
-            - SmartThings Direct Control: products/general/tutorials/smartthings-direct-control.md
-            - Adding SCD40 Temp/Hum: products/general/setup/how-to-add-temp-and-humidity-from-scd40.md
-            - Adjusting WiFi Power: products/general/setup/adjusting-wifi-power.md
-            - Hidden WiFi Networks: products/general/setup/adding-apollo-devices-to-hidden-networks.md
-            - Bluetooth Proxy: products/general/setup/bluetooth-proxy.md
-            - Bluetooth Tracking: products/general/setup/bluetooth-tracking.md
             - Piezo Buzzer: products/general/piezo.md
+            - Renaming Devices: products/general/setup/renaming-apollo-devices.md
+            - SmartThings Direct Control: products/general/tutorials/smartthings-direct-control.md
             - Switch to Beta: products/general/setup/switch-to-beta-branch.md
+            - Updating: products/general/calibrating-and-updating/updating-firmware.md
           - Troubleshooting:
-            - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
             - Connection Issues: products/general/troubleshooting/connection-issues.md
             - Firmware Updates Not Appearing: products/general/troubleshooting/firmware-updates-not-appearing.md
-            - Unifi Auto Discover Device mDNS Issue: products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
             - OPNsense Auto Discover Device mDNS Issue: products/general/troubleshooting/opnsense-mdns-auto-discover-issue.md
+            - Removing Devices: products/general/troubleshooting/removing-device-from-home-assistant.md
+            - UniFi Auto Discover Device mDNS Issue: products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
           - Battery Sensors:
             - How To Wake Up Your Sensor: products/general/battery-sensors/wake-up-battery-sensor.md
             - Keep Your Sensor Awake With HA Helper: products/general/battery-sensors/awake-ha-helper.md
-            - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
             - Prevent Sleep: products/general/battery-sensors/prevent-sleep.md
+            - Sensor Connection Check: products/general/battery-sensors/sensor-connection-check.md
           - Source Code and 3D Files: products/general/links.md
           - Choosing an mmWave Sensor: products/general/choosing-an-mmwave-sensor.md
           - Sensor Comparisons: products/general/comparisons.md
@@ -252,15 +252,15 @@ nav:
             - General Tips: products/btn1/setup/general-tips.md
             - Sensor Definitions: products/btn1/setup/sensor-definitions.md
             - Bluetooth Proxy: products/btn1/additional-info/bluetooth-proxy.md
-            - Prevent Sleep: products/btn1/additional-info/prevent-sleep.md
             - How To Wake Up Your Sensor: products/btn1/battery-sensors/wake-up-battery-sensor.md
+            - Prevent Sleep: products/btn1/additional-info/prevent-sleep.md
           - Examples:
             - Blueprint: products/btn1/examples/blueprint.md
           - Troubleshooting:
             - BTN-1 Boot Mode: products/btn1/troubleshooting/btn1-boot-mode.md
             - Factory Re-Flash BTN-1: products/btn1/troubleshooting/btn1-reflash.md
-            - Teardown and Reassembly Of BTN-1: products/btn1/troubleshooting/btn1-teardown.md
             - Reset Wi-Fi Credentials: products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
+            - Teardown and Reassembly Of BTN-1: products/btn1/troubleshooting/btn1-teardown.md
       - CAST-1:
           - Introduction: products/cast1/introduction.md
           - FAQ: products/cast1/faq.md
@@ -295,14 +295,14 @@ nav:
               - Additional Info:
                 - General Tips: products/air1/setup/general-tips.md
                 - Sensor Definitions: products/air1/setup/sensor-definitions.md
-                - Prevent Sleep: products/air1/additional-info/prevent-sleep.md
+                - Bluetooth Proxy: products/air1/additional-info/bluetooth-proxy.md
                 - LED Indicator: products/air1/additional-info/led-indicator.md
                 - Predicted Temp & Humidity: products/air1/additional-info/predicted-room-temp-humidity.md
-                - Bluetooth Proxy: products/air1/additional-info/bluetooth-proxy.md
+                - Prevent Sleep: products/air1/additional-info/prevent-sleep.md
               - Addons:
                 - CO<sub>2</sub> Addon: products/air1/addons/adding-co2-to-air-1.md
-                - MiCS Addon: products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
                 - GPIO Addon: products/air1/addons/adding-gpio-header-to-air-1.md
+                - MiCS Addon: products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
               - Examples:
                 - Air Quality Dashboard: products/air1/examples/air1-dashboard-examples.md
                 - Firstof9's Apex Charts: products/air1/examples/firstof9's-apex-charts.md
@@ -310,8 +310,8 @@ nav:
               - Troubleshooting:
                 - AIR-1 Boot Mode: products/air1/troubleshooting/air1-boot-mode.md
                 - Factory Re-Flash AIR-1: products/air1/troubleshooting/air1-code.md
-                - Teardown and Reassembly Of AIR-1: products/air1/troubleshooting/air1-teardown.md
                 - Reset Wi-Fi Credentials: products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of AIR-1: products/air1/troubleshooting/air1-teardown.md
               - Reviews: products/air1/air1-reviews.md
           - TEMP-1:
               - Introduction: products/temp1/introduction.md
@@ -320,27 +320,27 @@ nav:
               - Additional Info:
                 - General Tips: products/temp1/setup/temp1-general-tips.md
                 - Sensor Definitions: products/temp1/setup/temp1-sensor-definitions.md
+                - Bluetooth Proxy: products/temp1/additional-info/bluetooth-proxy.md
                 - Change Temp Probe Update Interval: products/temp1/setup/temp1-change-temp-probe-update-interval.md
-                - Prevent Sleep: products/temp1/additional-info/prevent-sleep.md
                 - How To Wake Up Your Sensor: products/temp1/battery-sensors/wake-up-battery-sensor.md
                 - Keep Your Sensor Awake With HA Helper: products/temp1/battery-sensors/awake-ha-helper.md
+                - Prevent Sleep: products/temp1/additional-info/prevent-sleep.md
                 - Sensor Connection Check: products/temp1/battery-sensors/sensor-connection-check.md
-                - Bluetooth Proxy: products/temp1/additional-info/bluetooth-proxy.md
               - Addons:
-                - Magnetic Mount: products/temp1/addons/magnetic-mount.md
-                - Temp Probe: products/temp1/addons/temp-probe.md
                 - Food Probe: products/temp1/addons/food-probe.md
+                - Magnetic Mount: products/temp1/addons/magnetic-mount.md
                 - Multi-Probe Splitter: products/temp1/addons/multiple-probes.md
+                - Temp Probe: products/temp1/addons/temp-probe.md
               - Examples:
                 - Alert Outside Range: products/temp1/examples/temp1-alert-example.md
-                - Use Cases: products/temp1/examples/use-cases.md
                 - Automations: products/temp1/examples/temp1-automation-examples.md
                 - Hot Water Recirculation: products/temp1/examples/hot-water-recirculation.md
+                - Use Cases: products/temp1/examples/use-cases.md
               - Troubleshooting:
-                - TEMP-1 Boot Mode: products/temp1/troubleshooting/temp1-boot-mode.md
                 - Factory Re-Flash TEMP-1: products/temp1/troubleshooting/temp1-code.md
-                - Teardown and Reassembly Of TEMP-1: products/temp1/troubleshooting/temp1-teardown.md
                 - Reset Wi-Fi Credentials: products/temp1/troubleshooting/temp1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of TEMP-1: products/temp1/troubleshooting/temp1-teardown.md
+                - TEMP-1 Boot Mode: products/temp1/troubleshooting/temp1-boot-mode.md
               - Reviews: products/temp1/reviews.md
           - TEMP-1B:
               - Introduction: products/temp1b/introduction.md
@@ -349,27 +349,27 @@ nav:
               - Additional Info:
                 - General Tips: products/temp1b/setup/temp1-general-tips.md
                 - Sensor Definitions: products/temp1b/setup/temp1b-sensor-definitions.md
-                - Prevent Sleep: products/temp1b/additional-info/prevent-sleep.md
-                - How To Wake Up Your Sensor: products/temp1b/battery-sensors/wake-up-battery-sensor.md
-                - Keep Your Sensor Awake With HA Helper: products/temp1b/battery-sensors/awake-ha-helper.md
-                - Insert Battery: products/temp1b/setup/insert-battery.md
-                - Sensor Connection Check: products/temp1b/battery-sensors/sensor-connection-check.md
                 - Bluetooth Proxy: products/temp1b/additional-info/bluetooth-proxy.md
+                - How To Wake Up Your Sensor: products/temp1b/battery-sensors/wake-up-battery-sensor.md
+                - Insert Battery: products/temp1b/setup/insert-battery.md
+                - Keep Your Sensor Awake With HA Helper: products/temp1b/battery-sensors/awake-ha-helper.md
+                - Prevent Sleep: products/temp1b/additional-info/prevent-sleep.md
+                - Sensor Connection Check: products/temp1b/battery-sensors/sensor-connection-check.md
               - Addons:
-                - Magnetic Mount: products/temp1b/addons/magnetic-mount.md
-                - Temp Probe: products/temp1b/addons/temp-probe.md
                 - Food Probe: products/temp1b/addons/food-probe.md
+                - Magnetic Mount: products/temp1b/addons/magnetic-mount.md
                 - Multi-Probe Splitter: products/temp1b/addons/multiple-probes.md
+                - Temp Probe: products/temp1b/addons/temp-probe.md
               - Examples:
                 - Alert Outside Range: products/temp1b/examples/temp1b-alert-example.md
-                - Use Cases: products/temp1b/examples/use-cases.md
                 - Automations: products/temp1b/examples/temp1b-automation-examples.md
                 - Hot Water Recirculation: products/temp1b/examples/hot-water-recirculation.md
+                - Use Cases: products/temp1b/examples/use-cases.md
               - Troubleshooting:
-                - TEMP-1B Boot Mode: products/temp1b/troubleshooting/temp1b-boot-mode.md
                 - Factory Re-Flash TEMP-1B: products/temp1b/troubleshooting/temp1b-code.md
-                - Teardown and Reassembly Of TEMP-1B: products/temp1b/troubleshooting/temp1b-teardown.md
                 - Reset Wi-Fi Credentials: products/temp1b/troubleshooting/temp1b-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of TEMP-1B: products/temp1b/troubleshooting/temp1b-teardown.md
+                - TEMP-1B Boot Mode: products/temp1b/troubleshooting/temp1b-boot-mode.md
               - Reviews: products/temp1b/reviews.md
       - ESPHome Starter Kit:
           - Start Here: products/ESPHome-Starter-Kit/start-here.md
@@ -421,24 +421,24 @@ nav:
               - Getting Started: products/h1/getting-started.md
               - Additional Info:
                 - How To Wake Up Your Sensor: products/h1/battery-sensors/wake-up-battery-sensor.md
-              - Reviews: products/h1/reviews.md
               - Examples:
                 - Holiday Songs: products/general/holiday-songs.md
               - Troubleshooting:
-                - H-1 Boot Mode: products/h1/boot-mode.md
                 - Factory Re-Flash H-1: products/h1/reflash.md
+                - H-1 Boot Mode: products/h1/boot-mode.md
+              - Reviews: products/h1/reviews.md
           - H-2:
               - Introduction: products/h2/introduction.md
               - FAQ: products/h2/faq.md
               - Getting Started: products/h2/setup/getting-started.md
               - Additional Info:
                 - How To Wake Up Your Sensor: products/h2/battery-sensors/wake-up-battery-sensor.md
-              - Reviews: products/h2/h2-reviews.md
               - Examples:
                 - Holiday Songs: products/h2/examples/holiday-songs.md
               - Troubleshooting:
-                - H-2 Boot Mode: products/h2/troubleshooting/boot-mode.md
                 - Factory Re-Flash H-2: products/h2/troubleshooting/reflash.md
+                - H-2 Boot Mode: products/h2/troubleshooting/boot-mode.md
+              - Reviews: products/h2/h2-reviews.md
       - M-1 (LED Matrix):
           - Introduction: products/m1/introduction.md
           - FAQ: products/m1/faq.md
@@ -450,23 +450,23 @@ nav:
           - Multiple Panels: products/m1/setup/m1-multiple-panels.md
           - Segments: products/m1/setup/m1-segments.md
           - Additional Info:
-            - Wall Mounting your Panels: products/m1/setup/m1-wall-mounting.md
-            - Use Without Wi-Fi: products/m1/setup/use-without-wifi.md
             - General Tips: products/m1/setup/m1-general-tips.md
-          - Examples:
-            - Pixel Forge: products/m1/examples/pixel-forge.md
-            - Add GIFs: products/m1/examples/add-gifs-to-wled.md
-            - Scrolling Text: products/m1/examples/scrolling-text.md
-            - QR Code Generator: products/m1/examples/qr-code-generator.md
-            - Share Data From Home Assistant: products/m1/examples/share-data-from-home-assistant.md
+            - Use Without Wi-Fi: products/m1/setup/use-without-wifi.md
+            - Wall Mounting your Panels: products/m1/setup/m1-wall-mounting.md
           - Addons:
             - Microphone: products/m1/addons/adding-microphone-to-m-1.md
             - WizMote Remote: products/m1/addons/wizmote-remote.md
+          - Examples:
+            - Add GIFs: products/m1/examples/add-gifs-to-wled.md
+            - Pixel Forge: products/m1/examples/pixel-forge.md
+            - QR Code Generator: products/m1/examples/qr-code-generator.md
+            - Scrolling Text: products/m1/examples/scrolling-text.md
+            - Share Data From Home Assistant: products/m1/examples/share-data-from-home-assistant.md
           - Troubleshooting:
-            - Panel Troubleshooting: products/m1/troubleshooting/m1-panel-faults.md
-            - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: products/m1/troubleshooting/m1-reflash.md
             - Find IP and Hostname: products/m1/troubleshooting/m1-find-ip-address-and-hostname.md
+            - M-1 Boot Mode: products/m1/troubleshooting/m1-boot-mode.md
+            - Panel Troubleshooting: products/m1/troubleshooting/m1-panel-faults.md
           - Using ESPHome:
             - Set Up ESPHome: products/m1/setup/getting-started-m1-esphome.md
             - Reflash: products/m1/troubleshooting/m1-reflash-esphome.md
@@ -475,6 +475,32 @@ nav:
               - SendSpin: products/m1/examples/sendspin.md
           - Reviews: products/m1/m1-reviews.md
       - mmWave Sensors:
+          - MSR-1:
+              - Introduction: products/msr1/introduction.md
+              - FAQ: products/msr1/faq.md
+              - Getting Started: products/general/setup/getting-started-msr1.md
+              - Additional Info:
+                - General Tips: products/msr1/setup/general-tips.md
+                - Sensor Definitions: products/msr1/setup/sensor-definitions.md
+                - Bluetooth Proxy: products/msr1/additional-info/bluetooth-proxy.md
+                - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
+                - Radar Tuning:
+                  - (Best) Apollo mmWave Dashboard:
+                    - Setup: products/msr1/setup/apollo-mmwave-dashboard-setup.md
+                    - Calibrate and Tune: products/msr1/setup/apollo-mmwave-dashboard.md
+                  - Home Assistant: products/msr1/setup/zones-ha.md
+                  - HLK Radar Tool App: products/msr1/setup/zones-hlk.md
+                  - mmWave Tuning Videos: products/msr1/setup/mmwave-videos.md
+              - Addons: products/msr1/addons/adding-co2-to-msr-1.md
+              - Examples:
+                - MSR-1 Alarmo: products/msr1/examples/msr1-alarmo.md
+                - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
+              - Troubleshooting:
+                - Factory Re-Flash MSR-1: products/msr1/troubleshooting/msr1-code.md
+                - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
+                - Reset Wi-Fi Credentials: products/msr1/troubleshooting/msr1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of MSR-1: products/msr1/troubleshooting/msr1-teardown.md
+              - Reviews: products/msr1/msr1-reviews.md
           - MSR-2:
               - Introduction: products/msr2/introduction.md
               - FAQ: products/msr2/faq.md
@@ -492,20 +518,20 @@ nav:
                 - Sensor Definitions: products/msr2/setup/msr2-sensor-definitions.md
                 - Bluetooth Proxy: products/msr2/additional-info/bluetooth-proxy.md
               - Addons:
+                - 90 Degree Addon: products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
                 - Articulating Stand: products/msr2/addons/adding-articulating-stand-to-msr-2.md
                 - CO<sub>2</sub> Addon: products/msr2/addons/adding-co2-to-msr-2.md
                 - Female Rear USB-C: products/msr2/addons/adding-rear-female-usb-to-msr-2.md
                 - GPIO Addon: products/msr2/addons/adding-gpio-header-to-msr-2.md
                 - Outlet Mount: products/msr2/addons/msr2-outlet-mount.md
-                - 90 Degree Addon: products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
               - Examples:
-                - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
                 - GPIO Header LED Strip: products/msr2/examples/gpio-header-control-an-led-strip.md
+                - MSR-2 Alarmo: products/msr2/examples/msr2-alarmo.md
               - Troubleshooting:
-                - MSR-2 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
                 - Factory Re-Flash MSR-2: products/msr2/troubleshooting/msr2-code.md
-                - Teardown and Reassembly Of MSR-2: products/msr2/troubleshooting/msr2-teardown.md
+                - MSR-2 Boot Mode: products/msr2/troubleshooting/msr2-boot-mode.md
                 - Reset Wi-Fi Credentials: products/msr2/troubleshooting/msr2-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of MSR-2: products/msr2/troubleshooting/msr2-teardown.md
               - Reviews: products/msr2/msr2-reviews.md
           - MTR-1:
               - Introduction: products/mtr1/introduction.md
@@ -523,19 +549,19 @@ nav:
                 - Sensor Definitions: products/mtr1/setup/sensor-definitions.md
                 - Bluetooth Proxy: products/mtr1/additional-info/bluetooth-proxy.md
               - Addons:
+                - 90 Degree Addon: products/mtr1/addons/adding-90-degree-usb-c-to-mtr-1.md
                 - Articulating Stand: products/mtr1/addons/adding-articulating-stand-to-mtr-1.md
                 - CO<sub>2</sub> Addon: products/mtr1/addons/adding-co2-to-mtr-1.md
-                - Male Rear USB-C: products/mtr1/addons/adding-rear-male-usb-to-mtr-1.md
                 - GPIO Addon: products/mtr1/addons/adding-gpio-header-to-mtr-1.md
-                - 90 Degree Addon: products/mtr1/addons/adding-90-degree-usb-c-to-mtr-1.md
+                - Male Rear USB-C: products/mtr1/addons/adding-rear-male-usb-to-mtr-1.md
               - Examples:
-                - MTR-1 Corner Mount: products/mtr1/examples/crookedtoe-mtr1.md
                 - MTR-1 Alarmo: products/mtr1/examples/mtr1-alarmo.md
+                - MTR-1 Corner Mount: products/mtr1/examples/crookedtoe-mtr1.md
               - Troubleshooting:
-                - MTR-1 Boot Mode: products/mtr1/troubleshooting/mtr1-boot-mode.md
                 - Factory Re-Flash MTR-1: products/mtr1/troubleshooting/mtr1-code.md
-                - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
+                - MTR-1 Boot Mode: products/mtr1/troubleshooting/mtr1-boot-mode.md
                 - Reset Wi-Fi Credentials: products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of MTR-1: products/mtr1/troubleshooting/mtr1-teardown.md
               - Reviews: products/mtr1/mtr1-reviews.md
           - R PRO-1:
               - Introduction: products/rpro1/introduction.md
@@ -549,47 +575,21 @@ nav:
                 - (Better) HLK Radar Tool App: products/rpro1/setup/zones-hlk.md
                 - (Better) Zone Mapper Tool: products/rpro1/setup/r-pro-1-zone-mapper-tool.md
               - Additional Info:
-                - Switch Firmware: products/rpro1/setup/rpro1-switch-firmware.md
                 - General Tips: products/rpro1/setup/rpro1-general-tips.md
                 - Sensor Definitions: products/rpro1/setup/rpro1-sensor-definitions.md
                 - Bluetooth Proxy: products/rpro1/additional-info/bluetooth-proxy.md
+                - Switch Firmware: products/rpro1/setup/rpro1-switch-firmware.md
               - Addons:
-                - CO<sub>2</sub> Addon: products/rpro1/addons/adding-co2-to-r-pro-1.md
                 - 1-Gang Box Mount: products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
                 - Ceiling Mount: products/rpro1/addons/install-ceiling-mount-for-r-pro-1.md
+                - CO<sub>2</sub> Addon: products/rpro1/addons/adding-co2-to-r-pro-1.md
                 - LD2412 Addon: products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md
               - Troubleshooting:
-                - R PRO-1 Boot Mode: products/rpro1/troubleshooting/rpro1-boot-mode.md
                 - Factory Re-Flash R PRO-1: products/rpro1/troubleshooting/rpro1-code.md
-                - Teardown and Reassembly Of R PRO-1: products/rpro1/troubleshooting/rpro1-teardown.md
+                - R PRO-1 Boot Mode: products/rpro1/troubleshooting/rpro1-boot-mode.md
                 - Reset Wi-Fi Credentials: products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of R PRO-1: products/rpro1/troubleshooting/rpro1-teardown.md
               - Reviews: products/rpro1/rpro1-reviews.md
-          - MSR-1:
-              - Introduction: products/msr1/introduction.md
-              - FAQ: products/msr1/faq.md
-              - Getting Started: products/general/setup/getting-started-msr1.md
-              - Additional Info:
-                - General Tips: products/msr1/setup/general-tips.md
-                - Sensor Definitions: products/msr1/setup/sensor-definitions.md
-                - Radar Tuning:
-                  - (Best) Apollo mmWave Dashboard:
-                    - Setup: products/msr1/setup/apollo-mmwave-dashboard-setup.md
-                    - Calibrate and Tune: products/msr1/setup/apollo-mmwave-dashboard.md
-                  - Home Assistant: products/msr1/setup/zones-ha.md
-                  - HLK Radar Tool App: products/msr1/setup/zones-hlk.md
-                  - mmWave Tuning Videos: products/msr1/setup/mmwave-videos.md
-                - Exposed GPIO: products/msr1/additional-info/exposed-gpio.md
-                - Bluetooth Proxy: products/msr1/additional-info/bluetooth-proxy.md
-              - Addons: products/msr1/addons/adding-co2-to-msr-1.md
-              - Examples:
-                - MSR-1 Dashboards: products/msr1/examples/msr1-dashboards.md
-                - MSR-1 Alarmo: products/msr1/examples/msr1-alarmo.md
-              - Troubleshooting:
-                - MSR-1 Boot Mode: products/msr1/troubleshooting/msr1-boot-mode.md
-                - Factory Re-Flash MSR-1: products/msr1/troubleshooting/msr1-code.md
-                - Teardown and Reassembly Of MSR-1: products/msr1/troubleshooting/msr1-teardown.md
-                - Reset Wi-Fi Credentials: products/msr1/troubleshooting/msr1-reset-wi-fi-credentials.md
-              - Reviews: products/msr1/msr1-reviews.md
       - Plant Sensors:
           - PLT-1:
               - Introduction: products/plt1/introduction.md
@@ -598,17 +598,17 @@ nav:
               - Additional Info:
                 - General Tips: products/plt1/general-tips.md
                 - Sensor Definitions: products/plt1/setup/plt1-sensor-definitions.md
+                - Bluetooth Proxy: products/plt1/additional-info/bluetooth-proxy.md
                 - Calibrating Soil Moisture: products/plt1/calibrate-plt1.md
                 - Prevent Sleep: products/plt1/additional-info/prevent-sleep.md
-                - Bluetooth Proxy: products/plt1/additional-info/bluetooth-proxy.md
               - Examples:
-                - Flower Card: products/plt1/examples/flower-card.md
                 - Blueprint: products/plt1/examples/blueprint.md
+                - Flower Card: products/plt1/examples/flower-card.md
               - Troubleshooting:
-                - PLT-1 Boot Mode: products/plt1/troubleshooting/plt1-boot-mode.md
                 - Factory Re-Flash PLT-1: products/plt1/troubleshooting/plt1-code.md
-                - Teardown and Reassembly Of PLT-1: products/plt1/troubleshooting/plt1-teardown.md
+                - PLT-1 Boot Mode: products/plt1/troubleshooting/plt1-boot-mode.md
                 - Reset Wi-Fi Credentials: products/plt1/troubleshooting/plt1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of PLT-1: products/plt1/troubleshooting/plt1-teardown.md
               - Reviews: products/plt1/reviews.md
           - PLT-1B:
               - Introduction: products/plt1b/introduction.md
@@ -617,21 +617,21 @@ nav:
               - Additional Info:
                 - General Tips: products/plt1b/general-tips.md
                 - Sensor Definitions: products/plt1b/setup/plt1b-sensor-definitions.md
-                - Calibrating Soil Moisture: products/plt1b/calibrate-plt1.md
-                - Prevent Sleep: products/plt1b/additional-info/prevent-sleep.md
-                - How To Wake Up Your Sensor: products/plt1b/battery-sensors/wake-up-battery-sensor.md
-                - Keep Your Sensor Awake With HA Helper: products/plt1b/battery-sensors/awake-ha-helper.md
-                - Insert Battery: products/plt1b/additional-info/insert-battery.md
-                - Sensor Connection Check: products/plt1b/battery-sensors/sensor-connection-check.md
                 - Bluetooth Proxy: products/plt1b/additional-info/bluetooth-proxy.md
+                - Calibrating Soil Moisture: products/plt1b/calibrate-plt1.md
+                - How To Wake Up Your Sensor: products/plt1b/battery-sensors/wake-up-battery-sensor.md
+                - Insert Battery: products/plt1b/additional-info/insert-battery.md
+                - Keep Your Sensor Awake With HA Helper: products/plt1b/battery-sensors/awake-ha-helper.md
+                - Prevent Sleep: products/plt1b/additional-info/prevent-sleep.md
+                - Sensor Connection Check: products/plt1b/battery-sensors/sensor-connection-check.md
               - Examples:
-                - Flower Card: products/plt1b/examples/flower-card.md
                 - Blueprint: products/plt1b/examples/blueprint.md
+                - Flower Card: products/plt1b/examples/flower-card.md
               - Troubleshooting:
-                - PLT-1 Boot Mode: products/plt1b/troubleshooting/plt1b-boot-mode.md
-                - Factory Re-Flash PLT-1: products/plt1b/troubleshooting/plt1b-code.md
-                - Teardown and Reassembly Of PLT-1: products/plt1b/troubleshooting/plt1b-teardown.md
+                - Factory Re-Flash PLT-1B: products/plt1b/troubleshooting/plt1b-code.md
+                - PLT-1B Boot Mode: products/plt1b/troubleshooting/plt1b-boot-mode.md
                 - Reset Wi-Fi Credentials: products/plt1b/troubleshooting/plt1b-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of PLT-1B: products/plt1b/troubleshooting/plt1b-teardown.md
               - Reviews: products/plt1b/reviews.md
       - PUMP-1:
           - Introduction: products/pump1/introduction.md
@@ -643,13 +643,13 @@ nav:
             - Bluetooth Proxy: products/pump1/additional-info/bluetooth-proxy.md
           - Addons:
             - Bottle Addon: products/pump1/addons/attaching-bottle-to-pump-1.md
-            - Inlet and Outlet Tube Addons: products/pump1/addons/attaching-tubes-to-pump-1.md
             - Fluid Sensor Addons: products/pump1/addons/attaching-fluid-level-sensors-pump-1.md
+            - Inlet and Outlet Tube Addons: products/pump1/addons/attaching-tubes-to-pump-1.md
           - Troubleshooting:
-            - PUMP-1 Boot Mode: products/pump1/troubleshooting/pump1-boot-mode.md
             - Factory Re-Flash PUMP-1: products/pump1/troubleshooting/pump1-reflash.md
-            - Teardown and Reassembly Of PUMP-1: products/pump1/troubleshooting/pump1-teardown.md
+            - PUMP-1 Boot Mode: products/pump1/troubleshooting/pump1-boot-mode.md
             - Reset Wi-Fi Credentials: products/pump1/troubleshooting/pump1-reset-wi-fi-credentials.md
+            - Teardown and Reassembly Of PUMP-1: products/pump1/troubleshooting/pump1-teardown.md
       - Contact Us / Support: products/general/contact-us/contact-us-support.md
 #### ***START OF HOMEY SECTION***
   - Homey:
@@ -667,13 +667,13 @@ nav:
               - CO<sub>2</sub>: homey/products/general/calibrating-and-updating/co2-calibration.md
               - Radar Tuning:
                 - mmWave Tuning Videos: homey/products/general/calibrating-and-updating/mmwave-videos.md
-            - Hidden WiFi Networks: homey/products/general/setup/adding-apollo-devices-to-hidden-networks.md
+            - Hidden Wi-Fi Networks: homey/products/general/setup/adding-apollo-devices-to-hidden-networks.md
             - Renaming Devices: homey/products/general/setup/renaming-apollo-devices.md
           - Troubleshooting:
-            - Removing Devices: homey/products/general/troubleshooting/removing-device-from-homey.md
             - Connection Issues: homey/products/general/troubleshooting/connection-issues.md
-            - Unifi Auto Discover Device mDNS Issue: homey/products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
             - OPNsense Auto Discover Device mDNS Issue: homey/products/general/troubleshooting/opnsense-mdns-auto-discover-issue.md
+            - Removing Devices: homey/products/general/troubleshooting/removing-device-from-homey.md
+            - UniFi Auto Discover Device mDNS Issue: homey/products/general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md
           - Battery Sensors:
             - How To Wake Up Your Sensor: homey/products/general/battery-sensors/wake-up-battery-sensor.md
             - Sensor Connection Check: homey/products/general/battery-sensors/sensor-connection-check.md
@@ -689,8 +689,8 @@ nav:
           - Additional Info:
             - General Tips: homey/products/btn1/setup/general-tips.md
             - Sensor Definitions: homey/products/btn1/setup/sensor-definitions.md
-            - Prevent Sleep: homey/products/btn1/additional-info/prevent-sleep.md
             - How To Wake Up Your Sensor: homey/products/btn1/battery-sensors/wake-up-battery-sensor.md
+            - Prevent Sleep: homey/products/btn1/additional-info/prevent-sleep.md
           - Addons:
             - BTN-1 Addon: homey/products/btn1/addons/btn1-addon.md
           - Examples:
@@ -699,8 +699,8 @@ nav:
           - Troubleshooting:
             - BTN-1 Boot Mode: homey/products/btn1/troubleshooting/btn1-boot-mode.md
             - Factory Re-Flash BTN-1: homey/products/btn1/troubleshooting/btn1-reflash.md
-            - Teardown and Reassembly Of BTN-1: homey/products/btn1/troubleshooting/btn1-teardown.md
             - Reset Wi-Fi Credentials: homey/products/btn1/troubleshooting/btn1-reset-wi-fi-credentials.md
+            - Teardown and Reassembly Of BTN-1: homey/products/btn1/troubleshooting/btn1-teardown.md
       - Environmental Sensors:
           - AIR-1:
               - Introduction: homey/products/air1/introduction.md
@@ -712,65 +712,65 @@ nav:
                 - Prevent Sleep: homey/products/air1/setup/prevent-sleep.md
               - Addons:
                 - CO<sub>2</sub> Addon: homey/products/air1/addons/adding-co2-to-air-1.md
-                - MiCS Addon: homey/products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
                 - GPIO Addon: homey/products/air1/addons/adding-gpio-header-to-air-1.md
-              - Reviews: homey/products/air1/air1-reviews.md
+                - MiCS Addon: homey/products/air1/addons/adding-the-mics-4514-gas-sensor-to-the-air-1.md
               - Examples:
                 - Air Quality Dashboard: homey/products/air1/examples/air-quality-notification-example.md
               - Troubleshooting:
                 - AIR-1 Boot Mode: homey/products/air1/troubleshooting/air1-boot-mode.md
                 - Factory Re-Flash AIR-1: homey/products/air1/troubleshooting/air1-code.md
-                - Teardown and Reassembly Of AIR-1: homey/products/air1/troubleshooting/air1-teardown.md
                 - Reset Wi-Fi Credentials: homey/products/air1/troubleshooting/air1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of AIR-1: homey/products/air1/troubleshooting/air1-teardown.md
+              - Reviews: homey/products/air1/air1-reviews.md
           - TEMP-1:
               - Introduction: homey/products/temp1/introduction.md
               - FAQ: homey/products/temp1/faq.md
               - Getting Started: homey/products/temp1/setup/getting-started-temp1.md
               - Additional Info:
                 - Sensor Definitions: homey/products/temp1/setup/temp1-sensor-definitions.md
-                - Prevent Sleep: homey/products/temp1/setup/prevent-sleep.md
                 - How To Wake Up Your Sensor: homey/products/temp1/battery-sensors/wake-up-battery-sensor.md
+                - Prevent Sleep: homey/products/temp1/setup/prevent-sleep.md
                 - Sensor Connection Check: homey/products/temp1/battery-sensors/sensor-connection-check.md
               - Addons:
-                - Magnetic Mount: homey/products/temp1/addons/magnetic-mount.md
-                - Temp Probe: homey/products/temp1/addons/temp-probe.md
                 - Food Probe: homey/products/temp1/addons/food-probe.md
+                - Magnetic Mount: homey/products/temp1/addons/magnetic-mount.md
                 - Multi-Probe Splitter: homey/products/temp1/addons/multiple-probes.md
-              - Reviews: homey/products/temp1/reviews.md
+                - Temp Probe: homey/products/temp1/addons/temp-probe.md
               - Examples:
                 - Alert Outside Range: homey/products/temp1/examples/temp1-alert-example.md
-                - Use Cases: homey/products/temp1/examples/use-cases.md
                 - Automations: homey/products/temp1/examples/temp1-automation-examples.md
+                - Use Cases: homey/products/temp1/examples/use-cases.md
               - Troubleshooting:
-                - TEMP-1 Boot Mode: homey/products/temp1/troubleshooting/temp1-boot-mode.md
                 - Factory Re-Flash TEMP-1: homey/products/temp1/troubleshooting/temp1-code.md
-                - Teardown and Reassembly Of TEMP-1: homey/products/temp1/troubleshooting/temp1-teardown.md
                 - Reset Wi-Fi Credentials: homey/products/temp1/troubleshooting/temp1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of TEMP-1: homey/products/temp1/troubleshooting/temp1-teardown.md
+                - TEMP-1 Boot Mode: homey/products/temp1/troubleshooting/temp1-boot-mode.md
+              - Reviews: homey/products/temp1/reviews.md
           - TEMP-1B:
               - Introduction: homey/products/temp1b/introduction.md
               - FAQ: homey/products/temp1b/faq.md
               - Getting Started: homey/products/temp1b/setup/getting-started-temp1.md
               - Additional Info:
                 - Sensor Definitions: homey/products/temp1b/setup/temp1b-sensor-definitions.md
-                - Prevent Sleep: homey/products/temp1b/setup/prevent-sleep.md
                 - How To Wake Up Your Sensor: homey/products/temp1b/battery-sensors/wake-up-battery-sensor.md
                 - Insert Battery: homey/products/temp1b/setup/insert-battery.md
+                - Prevent Sleep: homey/products/temp1b/setup/prevent-sleep.md
                 - Sensor Connection Check: homey/products/temp1b/battery-sensors/sensor-connection-check.md
               - Addons:
-                - Magnetic Mount: homey/products/temp1b/addons/magnetic-mount.md
-                - Temp Probe: homey/products/temp1b/addons/temp-probe.md
                 - Food Probe: homey/products/temp1b/addons/food-probe.md
+                - Magnetic Mount: homey/products/temp1b/addons/magnetic-mount.md
                 - Multi-Probe Splitter: homey/products/temp1b/addons/multiple-probes.md
-              - Reviews: homey/products/temp1b/reviews.md
+                - Temp Probe: homey/products/temp1b/addons/temp-probe.md
               - Examples:
                 - Alert Outside Range: homey/products/temp1b/examples/temp1b-alert-example.md
-                - Use Cases: homey/products/temp1b/examples/use-cases.md
                 - Automations: homey/products/temp1b/examples/temp1b-automation-examples.md
+                - Use Cases: homey/products/temp1b/examples/use-cases.md
               - Troubleshooting:
-                - TEMP-1B Boot Mode: homey/products/temp1b/troubleshooting/temp1b-boot-mode.md
                 - Factory Re-Flash TEMP-1B: homey/products/temp1b/troubleshooting/temp1b-code.md
-                - Teardown and Reassembly Of TEMP-1B: homey/products/temp1b/troubleshooting/temp1b-teardown.md
                 - Reset Wi-Fi Credentials: homey/products/temp1b/troubleshooting/temp1b-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of TEMP-1B: homey/products/temp1b/troubleshooting/temp1b-teardown.md
+                - TEMP-1B Boot Mode: homey/products/temp1b/troubleshooting/temp1b-boot-mode.md
+              - Reviews: homey/products/temp1b/reviews.md
       - M-1 (LED Matrix):
           - Introduction: homey/products/m1/introduction.md
           - FAQ: homey/products/m1/faq.md
@@ -782,77 +782,77 @@ nav:
           - Multiple Panels: homey/products/m1/setup/m1-multiple-panels.md
           - Segments: homey/products/m1/setup/m1-segments.md
           - Additional Info:
-            - Use Without Wi-Fi: homey/products/m1/setup/use-without-wifi.md
             - General Tips: homey/products/m1/setup/m1-general-tips.md
-          - Examples:
-            - Pixel Forge: homey/products/m1/examples/pixel-forge.md
-            - Add GIFs: homey/products/m1/examples/add-gifs-to-wled.md
-            - Scrolling Text: homey/products/m1/examples/scrolling-text.md
-            - QR Code Generator: homey/products/m1/examples/qr-code-generator.md
-            - Share Data From Home Assistant: homey/products/m1/examples/share-data-from-home-assistant.md
+            - Use Without Wi-Fi: homey/products/m1/setup/use-without-wifi.md
           - Addons:
             - Microphone: homey/products/m1/addons/adding-microphone-to-m-1.md
             - WizMote Remote: homey/products/m1/addons/wizmote-remote.md
+          - Examples:
+            - Add GIFs: homey/products/m1/examples/add-gifs-to-wled.md
+            - Pixel Forge: homey/products/m1/examples/pixel-forge.md
+            - QR Code Generator: homey/products/m1/examples/qr-code-generator.md
+            - Scrolling Text: homey/products/m1/examples/scrolling-text.md
+            - Share Data From Home Assistant: homey/products/m1/examples/share-data-from-home-assistant.md
           - Troubleshooting:
-            - Panel Troubleshooting: homey/products/m1/troubleshooting/m1-panel-faults.md
-            - M-1 Boot Mode: homey/products/m1/troubleshooting/m1-boot-mode.md
             - Factory Re-Flash M-1: homey/products/m1/troubleshooting/m1-reflash.md
             - Find IP and Hostname: homey/products/m1/troubleshooting/m1-find-ip-address-and-hostname.md
+            - M-1 Boot Mode: homey/products/m1/troubleshooting/m1-boot-mode.md
+            - Panel Troubleshooting: homey/products/m1/troubleshooting/m1-panel-faults.md
           - Reviews: homey/products/m1/m1-reviews.md
       - mmWave Sensors:
           - MSR-2:
               - Introduction: homey/products/msr2/introduction.md
               - FAQ: homey/products/msr2/faq.md
               - Getting Started: homey/products/general/setup/getting-started-msr2.md
+              - Radar Tuning:
+                - Home Assistant: homey/products/msr2/setup/zones-ha.md
+                - HLK Radar Tool App: homey/products/msr2/setup/zones-hlk.md
+                - mmWave Tuning Videos: homey/products/msr2/setup/mmwave-videos.md
               - Additional Info:
                 - General Tips: homey/products/msr2/setup/msr2-general-tips.md
                 - Sensor Definitions: homey/products/msr2/setup/msr2-sensor-definitions.md
-                - Radar Tuning:
-                  - Home Assistant: homey/products/msr2/setup/zones-ha.md
-                  - HLK Radar Tool App: homey/products/msr2/setup/zones-hlk.md
-                  - mmWave Tuning Videos: homey/products/msr2/setup/mmwave-videos.md
               - Addons:
+                - 90 Degree Addon: homey/products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
                 - Articulating Stand: homey/products/msr2/addons/adding-articulating-stand-to-msr-2.md
                 - CO<sub>2</sub> Addon: homey/products/msr2/addons/adding-co2-to-msr-2.md
                 - Female Rear USB-C: homey/products/msr2/addons/adding-rear-female-usb-to-msr-2.md
                 - GPIO Addon: homey/products/msr2/addons/adding-gpio-header-to-msr-2.md
                 - Outlet Mount: homey/products/msr2/addons/msr2-outlet-mount.md
-                - 90 Degree Addon: homey/products/msr2/addons/adding-90-degree-usb-c-to-msr-2.md
-              - Reviews: homey/products/msr2/msr2-reviews.md
               - Examples:
-                - MSR-2 Dashboards: homey/products/msr2/examples/msr2-dashboards.md
-                - MSR-2 Alarmo: homey/products/msr2/examples/msr2-alarmo.md
                 - GPIO Header LED Strip: homey/products/msr2/examples/gpio-header-control-an-led-strip.md
+                - MSR-2 Alarmo: homey/products/msr2/examples/msr2-alarmo.md
+                - MSR-2 Dashboards: homey/products/msr2/examples/msr2-dashboards.md
               - Troubleshooting:
-                - MSR-2 Boot Mode: homey/products/msr2/troubleshooting/msr2-boot-mode.md
                 - Factory Re-Flash MSR-2: homey/products/msr2/troubleshooting/msr2-code.md
-                - Teardown and Reassembly Of MSR-2: homey/products/msr2/troubleshooting/msr2-teardown.md
+                - MSR-2 Boot Mode: homey/products/msr2/troubleshooting/msr2-boot-mode.md
                 - Reset Wi-Fi Credentials: homey/products/msr2/troubleshooting/msr2-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of MSR-2: homey/products/msr2/troubleshooting/msr2-teardown.md
+              - Reviews: homey/products/msr2/msr2-reviews.md
           - MTR-1:
               - Introduction: homey/products/mtr1/introduction.md
               - FAQ: homey/products/mtr1/faq.md
               - Getting Started: homey/products/general/setup/getting-started-mtr1.md
+              - Zone Configuration:
+                - (Better) HLK Radar Tool App: homey/products/mtr1/setup/zones-hlk.md
+                - (Best) Zone Mapper Tool: homey/products/mtr1/setup/mtr-1-zone-mapper-tool.md
               - Additional Info:
                 - General Tips: homey/products/mtr1/setup/general-tips.md
                 - Sensor Definitions: homey/products/mtr1/setup/sensor-definitions.md
-                - Zone Configuration:
-                  - (Better) HLK Radar Tool App: homey/products/mtr1/setup/zones-hlk.md
-                  - (Best) Zone Mapper Tool: homey/products/mtr1/setup/mtr-1-zone-mapper-tool.md
               - Addons:
+                - 90 Degree Addon: homey/products/mtr1/addons/adding-90-degree-usb-c-to-mtr-1.md
                 - Articulating Stand: homey/products/mtr1/addons/adding-articulating-stand-to-mtr-1.md
                 - CO<sub>2</sub> Addon: homey/products/mtr1/addons/adding-co2-to-mtr-1.md
-                - Male Rear USB-C: homey/products/mtr1/addons/adding-rear-male-usb-to-mtr-1.md
                 - GPIO Addon: homey/products/mtr1/addons/adding-gpio-header-to-mtr-1.md
-                - 90 Degree Addon: homey/products/mtr1/addons/adding-90-degree-usb-c-to-mtr-1.md
-              - Reviews: homey/products/mtr1/mtr1-reviews.md
+                - Male Rear USB-C: homey/products/mtr1/addons/adding-rear-male-usb-to-mtr-1.md
               - Examples:
-                - MTR-1 Corner Mount: homey/products/mtr1/examples/crookedtoe-mtr1.md
                 - MTR-1 Alarmo: homey/products/mtr1/examples/mtr1-alarmo.md
+                - MTR-1 Corner Mount: homey/products/mtr1/examples/crookedtoe-mtr1.md
               - Troubleshooting:
-                - MTR-1 Boot Mode: homey/products/mtr1/troubleshooting/mtr1-boot-mode.md
                 - Factory Re-Flash MTR-1: homey/products/mtr1/troubleshooting/mtr1-code.md
-                - Teardown and Reassembly Of MTR-1: homey/products/mtr1/troubleshooting/mtr1-teardown.md
+                - MTR-1 Boot Mode: homey/products/mtr1/troubleshooting/mtr1-boot-mode.md
                 - Reset Wi-Fi Credentials: homey/products/mtr1/troubleshooting/mtr1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of MTR-1: homey/products/mtr1/troubleshooting/mtr1-teardown.md
+              - Reviews: homey/products/mtr1/mtr1-reviews.md
           - R PRO-1:
               - Introduction: homey/products/rpro1/introduction.md
               - FAQ: homey/products/rpro1/faq.md
@@ -860,19 +860,19 @@ nav:
                 - (Better) HLK Radar Tool App: homey/products/rpro1/setup/zones-hlk.md
                 - (Best) Zone Mapper Tool: homey/products/rpro1/setup/r-pro-1-zone-mapper-tool.md
               - Additional Info:
-                - Switch Firmware: homey/products/rpro1/setup/rpro1-switch-firmware.md
                 - General Tips: homey/products/rpro1/setup/rpro1-general-tips.md
                 - Sensor Definitions: homey/products/rpro1/setup/rpro1-sensor-definitions.md
+                - Switch Firmware: homey/products/rpro1/setup/rpro1-switch-firmware.md
               - Addons:
-                - CO<sub>2</sub> Addon: homey/products/rpro1/addons/adding-co2-to-r-pro-1.md
                 - 1-Gang Box Mount: homey/products/rpro1/addons/attaching-gang-box-mount-to-r-pro-1.md
                 - Ceiling Mount: homey/products/rpro1/addons/install-ceiling-mount-for-r-pro-1.md
+                - CO<sub>2</sub> Addon: homey/products/rpro1/addons/adding-co2-to-r-pro-1.md
                 - LD2412 Addon: homey/products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md
               - Troubleshooting:
-                - R PRO-1 Boot Mode: homey/products/rpro1/troubleshooting/rpro1-boot-mode.md
                 - Factory Re-Flash R PRO-1: homey/products/rpro1/troubleshooting/rpro1-code.md
-                - Teardown and Reassembly Of R PRO-1: homey/products/rpro1/troubleshooting/rpro1-teardown.md
+                - R PRO-1 Boot Mode: homey/products/rpro1/troubleshooting/rpro1-boot-mode.md
                 - Reset Wi-Fi Credentials: homey/products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of R PRO-1: homey/products/rpro1/troubleshooting/rpro1-teardown.md
               - Reviews: homey/products/rpro1/rpro1-reviews.md
       - Plant Sensors:
           - PLT-1:
@@ -884,14 +884,14 @@ nav:
                 - Sensor Definitions: homey/products/plt1/setup/plt1-sensor-definitions.md
                 - Calibrating Soil Moisture: homey/products/plt1/calibrate-plt1.md
                 - Prevent Sleep: homey/products/plt1/setup/prevent-sleep.md
-              - Reviews: homey/products/plt1/reviews.md
               - Examples:
                 - Flower Card: homey/products/plt1/examples/flower-card.md
               - Troubleshooting:
-                - PLT-1 Boot Mode: homey/products/plt1/troubleshooting/plt1-boot-mode.md
                 - Factory Re-Flash PLT-1: homey/products/plt1/troubleshooting/plt1-code.md
-                - Teardown and Reassembly Of PLT-1: homey/products/plt1/troubleshooting/plt1-teardown.md
+                - PLT-1 Boot Mode: homey/products/plt1/troubleshooting/plt1-boot-mode.md
                 - Reset Wi-Fi Credentials: homey/products/plt1/troubleshooting/plt1-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of PLT-1: homey/products/plt1/troubleshooting/plt1-teardown.md
+              - Reviews: homey/products/plt1/reviews.md
           - PLT-1B:
               - Introduction: homey/products/plt1b/introduction.md
               - FAQ: homey/products/plt1b/faq.md
@@ -900,18 +900,18 @@ nav:
                 - General Tips: homey/products/plt1b/general-tips.md
                 - Sensor Definitions: homey/products/plt1b/setup/plt1b-sensor-definitions.md
                 - Calibrating Soil Moisture: homey/products/plt1b/calibrate-plt1.md
-                - Prevent Sleep: homey/products/plt1b/setup/prevent-sleep.md
                 - How To Wake Up Your Sensor: homey/products/plt1b/battery-sensors/wake-up-battery-sensor.md
                 - Insert Battery: homey/products/plt1b/additional-info/insert-battery.md
+                - Prevent Sleep: homey/products/plt1b/setup/prevent-sleep.md
                 - Sensor Connection Check: homey/products/plt1b/battery-sensors/sensor-connection-check.md
-              - Reviews: homey/products/plt1b/reviews.md
               - Examples:
                 - Flower Card: homey/products/plt1b/examples/flower-card.md
               - Troubleshooting:
-                - PLT-1 Boot Mode: homey/products/plt1b/troubleshooting/plt1b-boot-mode.md
-                - Factory Re-Flash PLT-1: homey/products/plt1b/troubleshooting/plt1b-code.md
-                - Teardown and Reassembly Of PLT-1: homey/products/plt1b/troubleshooting/plt1b-teardown.md
+                - Factory Re-Flash PLT-1B: homey/products/plt1b/troubleshooting/plt1b-code.md
+                - PLT-1B Boot Mode: homey/products/plt1b/troubleshooting/plt1b-boot-mode.md
                 - Reset Wi-Fi Credentials: homey/products/plt1b/troubleshooting/plt1b-reset-wi-fi-credentials.md
+                - Teardown and Reassembly Of PLT-1B: homey/products/plt1b/troubleshooting/plt1b-teardown.md
+              - Reviews: homey/products/plt1b/reviews.md
       - PUMP-1:
           - Introduction: homey/products/pump1/introduction.md
           - FAQ: homey/products/pump1/faq.md
@@ -920,11 +920,11 @@ nav:
             - Sensor Definitions: homey/products/pump1/setup/pump1-sensor-definitions.md
           - Addons:
             - Bottle Addon: homey/products/pump1/addons/attaching-bottle-to-pump-1.md
-            - Inlet and Outlet Tube Addons: homey/products/pump1/addons/attaching-tubes-to-pump-1.md
             - Fluid Sensor Addons: homey/products/pump1/addons/attaching-fluid-level-sensors-pump-1.md
+            - Inlet and Outlet Tube Addons: homey/products/pump1/addons/attaching-tubes-to-pump-1.md
           - Troubleshooting:
-            - PUMP-1 Boot Mode: homey/products/pump1/troubleshooting/pump1-boot-mode.md
             - Factory Re-Flash PUMP-1: homey/products/pump1/troubleshooting/pump1-reflash.md
-            - Teardown and Reassembly Of PUMP-1: homey/products/pump1/troubleshooting/pump1-teardown.md
+            - PUMP-1 Boot Mode: homey/products/pump1/troubleshooting/pump1-boot-mode.md
             - Reset Wi-Fi Credentials: homey/products/pump1/troubleshooting/pump1-reset-wi-fi-credentials.md
+            - Teardown and Reassembly Of PUMP-1: homey/products/pump1/troubleshooting/pump1-teardown.md
       - Contact Us / Support: homey/products/general/contact-us/contact-us-support.md

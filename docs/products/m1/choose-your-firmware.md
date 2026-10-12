@@ -6,7 +6,7 @@ description: Find out which firmware your M-1 runs and what each one gives you.
 
 Most M-1 pages on this wiki have a **WLED** and a **WLED-MM** tab. Pick your firmware once and the rest of the wiki follows it, so this page is only here to help you work out which one you have.
 
-#### Which One Do I Have?
+## Which One Do I Have?
 
 Open your M-1 in a browser and tap **Info**. The version is at the top.
 

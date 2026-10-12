@@ -4,7 +4,7 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 ---
 # ESPHome Starter Kit FAQ
 
-![](../../assets/esphome-starter-kit-exploded-with-box-1.png)
+![ESPHome Starter Kit box with the ESP32-C6 board, LED & Buzzer, Motion, Button, and sensor modules, and ribbon cables](../../assets/esphome-starter-kit-exploded-with-box-1.png)
 
 1\. **What is the ESPHome Starter Kit?**
 

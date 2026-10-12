@@ -14,11 +14,11 @@ This guide will walk you through using the buzzer on your Apollo Device.
 
 2\. Click Actions at the top of the page.
 
-3\. Select your devices buzzer in the Action box by typing in "buzzer" and selecting it.
+3\. Select your device's buzzer in the Action box by typing in "buzzer" and selecting it.
 
-4\. Input an RTTTL tone into the the string box such as one of the examples below.
+4\. Input an RTTTL tone into the string box such as one of the examples below.
 
-![](/assets/buzzer-example-image.png)
+![Home Assistant Developer tools Actions tab with numbered arrows marking the buzzer action steps](/assets/buzzer-example-image.png)
 
 ??? example "Mario"
 

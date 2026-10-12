@@ -4,7 +4,7 @@ description: PLT-1B FAQ.
 ---
 1\. **What sensors are included in the PLT-1B?**
 
-* The PLT-1B comes with sensors to measure soil moisture, air temperature, humidity, LUX, and UV. There is also an optional DS18b20 waterproof soil temperature probe available for measuring soil temperature.
+* The PLT-1B comes with sensors to measure soil moisture, air temperature, humidity, LUX, and UV. There is also an optional DS18B20 waterproof soil temperature probe available for measuring soil temperature.
 
 2\. **How does the capacitive soil moisture sensor work?**
 
@@ -25,7 +25,7 @@ description: PLT-1B FAQ.
 
 4\. **Can you charge the battery by plugging in the device?**
 
-* No, you cannot charge the battery through the USB port. You will need a separate user-supplied 18650 charger such as a <a href="https://imrbatteries.com/products/nitecore-sc2-2-channel-battery-charger" target="_blank" rel="noreferrer nofollow noopener">nitecore 2 or 4 bay</a>.
+* No, you cannot charge the battery through the USB port. You will need a separate user-supplied 18650 charger such as a <a href="https://imrbatteries.com/products/nitecore-sc2-2-channel-battery-charger" target="_blank" rel="noreferrer nofollow noopener">Nitecore 2 or 4 bay</a>.
 
 5\. **How long does the battery last in the PLT-1B?**
 
@@ -33,7 +33,7 @@ description: PLT-1B FAQ.
 
 6\. **How does the optional soil temperature probe work?**
 
-* The optional DS18b20 probe (20 cm / 7.8 inches) measures soil temperature directly, providing critical data for plants that need specific temperature conditions.
+* The optional DS18B20 probe (20 cm / 7.8 inches) measures soil temperature directly, providing critical data for plants that need specific temperature conditions.
 
 7\. **Is the PLT-1B weatherproof? Can I use it outdoors?**
 
@@ -41,7 +41,7 @@ description: PLT-1B FAQ.
 
 8\. **How does the PLT-1B connect to Home Assistant?**
 
-* The PLT-1B connects via WiFi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
+* The PLT-1B connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
 
 9\. **What kind of automations can I set up with the PLT-1B?**
 
@@ -53,7 +53,7 @@ description: PLT-1B FAQ.
 
 11\. **Can I customize the PLT-1B functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1B. Our <a href="https://github.com/ApolloAutomation/PLT-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1B. Our <a href="https://github.com/ApolloAutomation/PLT-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 12\. **What are the RGB LED and piezo buzzer used for?**
 
@@ -89,7 +89,7 @@ description: PLT-1B FAQ.
 
 20\. **What’s the difference between the battery and non-battery versions?**
 
-* The PLT-1B is battery-operated (18650) and slightly larger, while the non-battery (NB) version is compact and requires USB-C power at 5 volts using 1amp or less (5W). They both have all of the same components for measuring soil moisture, air temp/humdity, lux/uv, etc.
+* The PLT-1B is battery-operated (18650) and slightly larger, while the non-battery (NB) version is compact and requires USB-C power at 5 volts using 1amp or less (5W). They both have all of the same components for measuring soil moisture, air temp/humidity, lux/uv, etc.
 
 21\. **Can I use multiple PLT-1B sensors in one Home Assistant setup?**
 

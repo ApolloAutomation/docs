@@ -12,14 +12,14 @@ Install the mDNS Repeater
 
 1\.	Click System -&gt; Click Firmware -&gt; Click Plugins -&gt; Search for "mdns" -&gt; Click the “+” symbol to install os-mdns-repeater.
 
-![](/assets/opnsense-mdns-guide-pic-1.png)
+![OPNsense Firmware Plugins page with numbered steps to search for and install os-mdns-repeater](/assets/opnsense-mdns-guide-pic-1.png)
 
 2\. Confirm that the installation was successful.
 
-![](/assets/opnsense-mdns-guide-pic-2.png)
+![OPNsense Firmware Updates log showing os-mdns-repeater installed successfully](/assets/opnsense-mdns-guide-pic-2.png)
 
 3\. Refresh the page and then go to Services -&gt; mDNS Repeater (if it isn't there after refreshing your screen, verify the plugin install was successful.)-&gt; Check off "enable" -&gt; select your networks containing Home Assistant / ESPHome IoT devices -&gt; click save.
 
-![](/assets/opnsense-mdns-guide-pic-3.png)
+![OPNsense mDNS Repeater page with numbered steps: Enable checked, IOT and LAN interfaces selected, then Save](/assets/opnsense-mdns-guide-pic-3.png)
 
 Now the Home Assistant/ESPHome auto-discover issue should be fixed!

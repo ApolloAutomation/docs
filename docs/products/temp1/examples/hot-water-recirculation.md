@@ -116,7 +116,7 @@ Donovan's whole system is one blueprint. Import it, pick your entities, set your
 
 2\. Click **Preview**, then **Import blueprint**.
 
-![](/assets/btn-1-blueprint-auto-import.gif)
+![Home Assistant Import a blueprint dialog previewing, then importing, an example BTN-1 blueprint](/assets/btn-1-blueprint-auto-import.gif)
 
 3\. Click **Apollo Automation Hot Water Recirculation (TEMP-1)**, create an automation from it, and fill in the inputs below.
 

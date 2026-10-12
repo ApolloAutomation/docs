@@ -14,6 +14,6 @@ The H-3 ships pre-flashed with a basic firmware and six holiday tunes. Press one
 
 Each tune comes with its own LED effect.
 
-You can also integrate it with Home Assistant to unlock more features, such as changing the songs and LED effects, bluetooth proxy, and bluetooth tracking. You will need to <a href="https://wiki.apolloautomation.com/products/h3/troubleshooting/reflash/" target="_blank" rel="noreferrer nofollow noopener">reflash it to the smart firmware</a> first!
+You can also integrate it with Home Assistant to unlock more features, such as changing the songs and LED effects, Bluetooth proxy, and Bluetooth tracking. You will need to <a href="https://wiki.apolloautomation.com/products/h3/troubleshooting/reflash/" target="_blank" rel="noreferrer nofollow noopener">reflash it to the smart firmware</a> first!
 
 **New for 2026:** The H-3 has 37 RGB LEDs split into five zones you can control separately (body, hat, eyes, nose, and mouth), six songs across three buttons, and runs on two AA batteries.

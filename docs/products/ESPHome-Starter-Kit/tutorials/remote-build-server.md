@@ -32,20 +32,20 @@ Start on your Windows PC. This is the machine that will do the compiling.
 
     1.  **Paired senders**, just below the toggle, lists every dashboard allowed to send builds here. It stays empty until you pair one.
 
-![](../../../assets/esphome-device-builder-toggle-on-remote-build.gif)
+![ESPHome Device Builder three-dot menu, Settings, Build server, turning on Enable remote build](../../../assets/esphome-device-builder-toggle-on-remote-build.gif)
 
 ## Pair the Two Dashboards
 
 Pairing goes in one direction: the sending dashboard asks, your PC accepts. Both machines show the same row of emoji partway through, and comparing them by eye is what proves you're pairing with your own PC.
 
-#### Open the Pairing Window on Your PC
+### Open the Pairing Window on Your PC
 
 On your Windows PC, open **Settings → Pairing requests**. It shows **Open** with a countdown beside it. (1)
 { .annotate }
 
 1.  Requests only arrive while that countdown is running. Click **Extend** if it runs out before you've finished.
 
-#### Send the Request From the Other Dashboard
+### Send the Request From the Other Dashboard
 
 1.  Go to **Settings → Send builds**. Your PC appears under **Known dashboards** with its address and ESPHome version. Click **Pair**.
 
@@ -56,9 +56,9 @@ On your Windows PC, open **Settings → Pairing requests**. It shows **Open** wi
 
 3.  **Pair request sent** appears with a row of emoji under **Your fingerprint**. Leave it on screen, you're about to compare it.
 
-![](../../../assets/esphome-device-builder-initiate-build-server-pairing.gif)
+![ESPHome Device Builder Send builds: clicking Pair, sending the pair request, and seeing the emoji fingerprint](../../../assets/esphome-device-builder-initiate-build-server-pairing.gif)
 
-#### Accept It on Your PC
+### Accept It on Your PC
 
 1.  The request shows up under **Pairing requests** with the sender's name and **From IP**. Click **Review**.
 
@@ -69,15 +69,15 @@ On your Windows PC, open **Settings → Pairing requests**. It shows **Open** wi
 
     1.  Accepting gives that dashboard code execution on your PC. Only accept a request you just sent yourself.
 
-![](../../../assets/esphome-device-builder-review-accept-pair-request.gif)
+![ESPHome Device Builder Pairing requests: clicking Review, comparing the emoji fingerprint, and clicking Accept](../../../assets/esphome-device-builder-review-accept-pair-request.gif)
 
 Back on the sending dashboard, your PC now sits under **Paired build servers** marked **Connected**. That's how you know it worked. The row reads **Pending** while it's waiting on you and flips over once you accept.
 
-![](../../../assets/esphome-device-builder-successful-pairing.png)
+![ESPHome Device Builder Send builds settings showing the paired build server marked Connected](../../../assets/esphome-device-builder-successful-pairing.png)
 
 The line underneath tells you which ESPHome version the build server runs, and which one your builds will use. The two don't have to match. Device Builder installs whatever your sending dashboard is on and builds with that.
 
-#### If Your PC Isn't Listed
+### If Your PC Isn't Listed
 
 Device Builder finds other dashboards over mDNS, which doesn't cross subnets or VLANs and which some networks block outright. Enter the address yourself instead.
 
@@ -103,7 +103,7 @@ Plugging a device in over USB still works. Your PC compiles and sends the firmwa
 
 To stop using the build server, turn off the toggle on its row under **Paired build servers**. Builds go back to compiling locally, and the pairing stays in place for when you want it again.
 
-#### Keeping It Working
+### Keeping It Working
 
 * Your PC has to be awake and running Device Builder. If it's asleep, builds queue until it comes back.
 * The two machines don't need the same ESPHome version. If you'd rather they matched, **Settings → Send builds** has a version-match setting to enforce it.

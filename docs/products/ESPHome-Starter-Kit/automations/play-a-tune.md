@@ -35,7 +35,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
 2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
 
-    ![](../../../assets/esphome-device-builder-add-automation.gif)
+    ![Opening the device in ESPHome Device Builder, expanding Automations, and clicking Add automation](../../../assets/esphome-device-builder-add-automation.gif)
 
 3.  Set up the trigger:
 
@@ -49,7 +49,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
     1.  The trigger dropdown also offers **On Double Click**, **On Multi Click**, **On Press**, **On Release**, **On State**, and **On State Change** for other button gestures. Swap any of these in once you're comfortable with the On Click flow.
 
-    ![](../../../assets/esphome-device-builder-add-button-trigger-automation.gif)
+    ![New automation dialog with Button Module selected and Binary Sensor On Click chosen as the trigger](../../../assets/esphome-device-builder-add-button-trigger-automation.gif)
 
 4.  Click **Continue**. You land on the **Binary Sensor → On Click** editor with the **Target** already set to your Button module.
 5.  Set up the action:
@@ -70,7 +70,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
     The Simpsons:d=4,o=5,b=160:c.,e,f#,8a,g.,e,c,8a4,8f#4,8f#4,8f#4,2g4,8p,8p,8f#4,8f#4,8f#4,8g4,a4.,8c,16p,8c,16p,8c,2c
     ```
 
-    ![](../../../assets/esphome-device-builder-configure-rtttl-play-action.gif)
+    ![Adding an Rtttl Play action from the By type tab and pasting the tune into the Rtttl field](../../../assets/esphome-device-builder-configure-rtttl-play-action.gif)
 
 ??? note "What the GUI built in YAML"
 
@@ -106,7 +106,7 @@ Your automation is saved in Device Builder, but the device is still running its 
 
 3.  Wait for the compile and flash to finish. The device reboots once the install is done.
 
-![](../../../assets/esphome-device-builder-install-button-component.gif)
+![Clicking Install in ESPHome Device Builder, choosing On the network, and watching the firmware compile log](../../../assets/esphome-device-builder-install-button-component.gif)
 
 ## Test the automation
 

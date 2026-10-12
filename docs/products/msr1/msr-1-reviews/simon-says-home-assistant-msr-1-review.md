@@ -1,4 +1,5 @@
 ---
+title: Simon Says Home Assistant MSR-1 Review
 description: "Simon Says Home Assistant reviews the Apollo MSR-1."
 ---
 # Simon Says Home Assistant MSR-1 Review

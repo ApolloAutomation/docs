@@ -18,7 +18,7 @@ description: Step by step guide for putting The H-2 In Boot Mode.
 
 3\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your H-2 then let go of the button.
 
-![](/assets/h-2-boot-mode-method-1-boot-button.webp)
+![Holding the boot button on the H-2 while plugging a USB-C cable into it](/assets/h-2-boot-mode-method-1-boot-button.webp)
 
 4\. You are now ready to reflash your device!
 
@@ -28,11 +28,11 @@ description: Step by step guide for putting The H-2 In Boot Mode.
 
 1\. Plug in a USB cable that supports power and data into your computer and connect the other end to your H-2. With the device facing you, locate the reset (left) and boot (right) buttons.
 
-![](/assets/h-2-reset-and-boot-buttons-labeled.png)
+![H-2 board with arrows marking the Reset button on the left and the Boot button on the right](/assets/h-2-reset-and-boot-buttons-labeled.png)
 
 2\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
 
-![](/assets/h-2-boot-mode-method-2-boot-reset-buttons.webp)
+![Holding the H-2 boot button while pressing and releasing the reset button, with USB-C connected](/assets/h-2-boot-mode-method-2-boot-reset-buttons.webp)
 
 3\. You are now ready to reflash your device!
 

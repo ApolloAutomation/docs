@@ -2,7 +2,7 @@
 title: H-1 FAQ
 description: Frequently asked questions about the H-1.
 ---
-![](/assets/apollo-h-1-info.png)
+![H-1 info card with how-to-use steps, contact details, and the charities it supports](/assets/apollo-h-1-info.png)
 
 1\. **What songs are pre-loaded on the Apollo H-1?**
 
@@ -33,7 +33,7 @@ description: Frequently asked questions about the H-1.
 
 7\. **How do I set up the Apollo H-1 with Home Assistant?**
 
-* To integrate the H-1 with Home Assistant, follow getting started guide or reach out to our support team for assistance. Once connected, you can unlock additional functionality and customization.
+* To integrate the H-1 with Home Assistant, follow the getting started guide or reach out to our support team for assistance. Once connected, you can unlock additional functionality and customization.
 
 8\. **Does the ornament require any additional power source?**
 
@@ -43,9 +43,9 @@ description: Frequently asked questions about the H-1.
 
 * Yes, the H-1 makes a wonderful gift! It’s unique, festive, and supports a good cause, making it a great option for holiday gifting.
 
-10\. **My H-1 is draining battery too fast- how do i fix this?**
+10\. **My H-1 is draining battery too fast- how do I fix this?**
 
-* Please make sure if you are on the smart firmware to disable the "prevent sleep" option on the home assistant device page!
+* Please make sure if you are on the smart firmware to disable the "prevent sleep" option on the Home Assistant device page!
 
 11\. **Where can I find more information about the Apollo H-1 and similar products?**
 

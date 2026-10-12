@@ -12,7 +12,7 @@ description: Step by step guide for resetting the Wi-Fi Credentials on your CAST
 
 2\. Long press the **boot** button (on the left) for 10 seconds.
 
-![](/assets/cast-1-boot-reset-buttons.webp)
+![CAST-1 case with labels pointing to the boot button on the left and the reset button on the right](/assets/cast-1-boot-reset-buttons.webp)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

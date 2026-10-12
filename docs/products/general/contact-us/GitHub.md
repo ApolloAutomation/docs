@@ -1,4 +1,5 @@
 ---
+title: GitHub
 description: "Apollo Automation on GitHub, where the firmware and hardware files live."
 ---
 # GitHub

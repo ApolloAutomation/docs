@@ -18,32 +18,32 @@ Segments work the same on WLED and WLED-MM. The steps below split a single 64x64
 
 2\. Since we are only using *one panel*, we will begin by editing **Segment 0** and setting the **Stop Y** to "16".
 
-![](/assets/one-panel-setup-segment-0.gif)
+![Editing WLED Segment 0 to Stop Y 16 on a single M-1 panel](/assets/one-panel-setup-segment-0.gif)
 
 3\. Click on Add segment, give it a name such as **Segment 1** then set the **Start Y** to "16" and the **Stop Y** to "32".
 
-![](/assets/one-panel-setup-segment-1.gif)
+![Adding Segment 1 in WLED with Start Y set to 16 and Stop Y set to 32](/assets/one-panel-setup-segment-1.gif)
 
 4\. Click on Add segment, give it a name such as Segment 2 then set the **Start Y** to "32" and the **Stop Y** to "48".
 
-![](/assets/one-panel-setup-segment-2.gif)
+![Adding Segment 2 in WLED with Start Y set to 32 and Stop Y set to 48](/assets/one-panel-setup-segment-2.gif)
 
 5\. Click on Add segment, give it a name such as Segment 3 then set the **Start Y** to "48" and the **Stop Y** to "64".
 
-![](/assets/one-panel-setup-segment-3.gif)
+![Adding Segment 3 in WLED with Start Y set to 48 and Stop Y set to 64](/assets/one-panel-setup-segment-3.gif)
 
 6\. You should see four equal segments 0-3 at the top of the screen.
 
-![](/assets/two-panels-4x-segments.png)
+![WLED segment preview showing four equal segments numbered 0 to 3 as colored bands](/assets/two-panels-4x-segments.png)
 
 7\. Test it by changing the effect to **Scrolling Text** and editing the name of each segment to be any text you want!
 
-![](/assets/two-panels-example-scrolling-text-setup.gif)
+![Choosing the Scrolling Text effect in WLED and renaming each segment to set its text](/assets/two-panels-example-scrolling-text-setup.gif)
 
 !!! warning "Your segments need to be saved to a Preset or they will disappear when you reboot or run other presets."
 
     You must save your segments as a preset or they will get wiped away after a reboot or when another preset with different segments is used.
 
-8\. Save your segments by creating a new preset. Click on the **\+ Preset** button and typing in a name then clicking **Save** at the bottom.
+8\. Save your segments by creating a new preset. Click on the **\+ Preset** button and type in a name then click **Save** at the bottom.
 
-![](/assets/one-panel-save-preset.gif)
+![Saving the four segments as a new WLED preset with the + Preset button](/assets/one-panel-save-preset.gif)

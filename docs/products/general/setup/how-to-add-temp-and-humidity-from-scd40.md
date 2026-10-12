@@ -6,7 +6,7 @@ description: Tutorial for How To Add Temp And Humidity entities From the SCD40 C
 
 1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to change.
 
-![](/assets/add-temp-hum-scd40-pic-1.png)
+![ESPHome Builder in the Home Assistant sidebar with the Edit button on an AIR-1 card outlined](/assets/add-temp-hum-scd40-pic-1.png)
 
 2\. Copy the YAML below and put it at the bottom on a new line with no spaces before it.
 
@@ -56,14 +56,14 @@ number:
     mode: box
 ```
 
-![](/assets/add-temp-hum-scd40-pic-4.png)
+![AIR-1 YAML in ESPHome Device Builder with the SCD40 sensor and offset number code outlined](/assets/add-temp-hum-scd40-pic-4.png)
 
 3\. In the top right of the same screen click "SAVE" and then "INSTALL".
 
 4\. Once you see "INFO OTA successful" you are done. Click "STOP" to exit.
 
-![](/assets/add-temp-hum-scd40-pic-3.png)
+![ESPHome Device Builder install log with INFO OTA successful and the Stop button circled](/assets/add-temp-hum-scd40-pic-3.png)
 
-5\. Once you are finished, you will have two new boxes inside the Home Assistant ESPHome integration device page for your device where you can fill in an offset. Give them up to 1minute to take effect!
+5\. Once you are finished, you will have two new boxes inside the Home Assistant ESPHome integration device page for your device where you can fill in an offset. Give them up to 1 minute to take effect!
 
-![](/assets/add-temp-hum-scd40-pic-5.png)
+![SCD40 Humidity and SCD40 Temperature offset boxes on the device page in Home Assistant](/assets/add-temp-hum-scd40-pic-5.png)

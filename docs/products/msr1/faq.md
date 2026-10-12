@@ -1,4 +1,5 @@
 ---
+title: FAQ
 description: "Common MSR-1 questions answered: which sensors are inside, what the mmWave radar detects, and how the device talks to Home Assistant."
 ---
 1\. **What sensors are included in the MSR-1?**
@@ -11,7 +12,7 @@ description: "Common MSR-1 questions answered: which sensors are inside, what th
 
 3\. **How does the MSR-1 connect to Home Assistant?**
 
-* The MSR-1 connects to Home Assistant through ESPHome using WiFi. Once connected, you can configure automations, monitor sensor data, and customize settings from Home Assistant.
+* The MSR-1 connects to Home Assistant through ESPHome using Wi-Fi. Once connected, you can configure automations, monitor sensor data, and customize settings from Home Assistant.
 
 4\. **Does the MSR-1 require any cloud service or subscription?**
 

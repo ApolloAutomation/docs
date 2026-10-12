@@ -8,7 +8,7 @@ description: Step by step guide for resetting the Wi-Fi Credentials on your PUMP
 
 2\. Long press the Boot button (the button on the right) for 10 seconds.
 
-![](/assets/pump-1-buttons-labeled-2.jpg)
+![PUMP-1 with red arrows labeling the boot button on the right and the reset button on the left](/assets/pump-1-buttons-labeled-2.jpg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

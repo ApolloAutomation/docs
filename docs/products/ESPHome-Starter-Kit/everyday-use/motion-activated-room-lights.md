@@ -42,7 +42,7 @@ A blueprint is a fill-in-the-blanks automation. Home Assistant ships one called 
 
 1. Open [Settings → Automations & scenes → Blueprints](https://my.home-assistant.io/redirect/blueprints/) and look for **Motion-activated Light**. If it's there, skip to step 3. (1)
 
-    ![](../../../assets/motion-activated-lights-select-blueprint.gif)
+    ![Home Assistant Blueprints list with Motion-activated Light selected, showing its Motion Sensor, Light, and Wait time fields](../../../assets/motion-activated-lights-select-blueprint.gif)
 
 2. If it's missing, click **Import Blueprint** in the bottom right, paste the URL below, then click **Preview** and **Import Blueprint**.
 
@@ -55,7 +55,7 @@ A blueprint is a fill-in-the-blanks automation. Home Assistant ships one called 
     * **Light Target** → the light you want to control.
     * **Wait time** → seconds to leave the light on after the last movement. 120 is a sensible start. (2)
 
-    ![](../../../assets/motion-activated-lights-configure-blueprint.gif)
+    ![Motion-activated Light blueprint with Motion Module as the sensor, Brandons Room as the light, and a 120 second wait](../../../assets/motion-activated-lights-configure-blueprint.gif)
 
 </div>
 
@@ -79,24 +79,24 @@ You could make two automations, one to turn the light on and one to turn it off.
 1. Open [Settings → Automations & scenes](https://my.home-assistant.io/redirect/automations/), click **Create Automation**, then **Create new automation**.
 2. Click **Add Trigger**, search **motion**, and click **Motion detected**. Set its target to your **Motion Module** sensor. Open the trigger's menu (the three dots), choose **Rename**, and set the **Trigger ID** to `Detected`. (1)
 
-    ![](../../../assets/motion-activated-lights-detected.gif)
+    ![Adding a Motion detected trigger in Home Assistant, setting its Trigger ID to Detected, and targeting Motion Module](../../../assets/motion-activated-lights-detected.gif)
 
 3. Add another trigger the same way, this time **Motion cleared** on the same **Motion Module**, with **For** → 2 minutes. Set its **Trigger ID** to `Clear`. (2)
 
-    ![](../../../assets/motion-activated-lights-clear.gif)
+    ![Adding a Motion cleared trigger with Trigger ID Clear, a Motion Module target, and a 2 minute duration](../../../assets/motion-activated-lights-clear.gif)
 
 4. Under **Then do**, add **Building Blocks → Choose**.
 5. In **Option 1**, add a **Triggered by** condition set to `Detected`, then an action of **Light → Turn on** targeting your room light.
 
-    ![](../../../assets/motion-activated-lights-choose-option-1.gif)
+    ![Adding a Choose block whose Option 1 runs Turn on light for Brandons Room when triggered by Detected](../../../assets/motion-activated-lights-choose-option-1.gif)
 
 6. Add **Option 2** with a **Triggered by** condition of `Clear` and a **Light → Turn off** action on the same light.
 
-    ![](../../../assets/motion-activated-lights-choose-option-2.gif)
+    ![Adding Option 2 to the Choose block, which runs Turn off light for Brandons Room when triggered by Clear](../../../assets/motion-activated-lights-choose-option-2.gif)
 
 7. Click the three dots in the top right, choose **Change mode**, select **Restart**, then click **Change mode** to confirm. (3)
 
-    ![](../../../assets/motion-activated-lights-change-mode.gif)
+    ![Home Assistant automation menu open to Change mode, with Restart selected and Change mode clicked](../../../assets/motion-activated-lights-change-mode.gif)
 
 </div>
 
@@ -158,7 +158,7 @@ You could make two automations, one to turn the light on and one to turn it off.
 
 Click **Save**, give the automation a name like `Motion Activated Lights`, and if you like, add a label such as `Lighting` to group it with your other light automations. Click **Save** to finish.
 
-![](../../../assets/motion-activated-lights-name-and-label.gif)
+![Save dialog naming the automation Motion Activated Lights and adding the Lighting label in Home Assistant](../../../assets/motion-activated-lights-name-and-label.gif)
 
 Now walk in. The light comes on, the room goes still, and after the quiet period it turns off. From here you can add a [condition](https://www.home-assistant.io/docs/scripts/conditions/) so it only runs after sunset, or point the `Detected` branch at a whole scene.
 

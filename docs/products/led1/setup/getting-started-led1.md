@@ -6,7 +6,7 @@ description: Getting started with your new LED-1!
 
 Congrats on your new LED-1! Below we will go through steps to get you up and running in no time.
 
-### Choose how to power it
+## Choose how to power it
 
 The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V or 12V up to 3 amps) or a dedicated power supply using either 5V, 12V, or 24V.
 
@@ -40,7 +40,7 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
         Before proceeding to the next steps, make sure to unplug your device!
 
-### Wire up LEDs
+## Wire up LEDs
 
 !!! danger "Before proceeding, consider double checking your power supply and leds use the same voltage!"
 
@@ -48,21 +48,21 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
 1\. Grab a male JST-SM 3 pin connector such as the extra included with your led strips and carefully note the red wire for positive, the green for data, and the white for ground.
 
-![](/assets/jst-sm-power-data-ground-labeled.png)
+![Red, green, and white LED wires labeled Power, Data, and Ground](/assets/jst-sm-power-data-ground-labeled.png)
 
 2\. Inspect the LED-1 and look for the two Wago connectors labeled "Output 1" and "Output 2". Insert the red power wire into the far left terminal of output 1 then the green wire into the middle terminal of Output 1 then the white wire into the third terminal for Output 1.
 
 3\. Repeat step 2 for a second led strip using Output 2 if you have a second led strip!
 
-### Connect to Wi-Fi
+## Connect to Wi-Fi
 
 Your device is now ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
 
-1\. Plug your power supply or usb-c power in and the LED-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select WLED-AP. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to http://4.3.2.1/ and you should be prompted with the same image seen below.
+1\. Plug your power supply or USB-C power in and the LED-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select WLED-AP. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to http://4.3.2.1/ and you should be prompted with the same image seen below.
 
-![](/assets/led-1-getting-started-pic-1.png)
+![WLED Welcome to WLED page with WiFi Settings and To the Controls buttons](/assets/led-1-getting-started-pic-1.png)
 
-### Join to Home Assistant
+## Join to Home Assistant
 
 1\. Your device should be auto-discovered by Home Assistant using the WLED Integration as shown below!
 

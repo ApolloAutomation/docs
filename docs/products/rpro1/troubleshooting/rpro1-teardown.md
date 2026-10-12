@@ -4,38 +4,38 @@ description: Step by step guide for tearing down your R PRO-1 to replace parts, 
 ---
 # Teardown and Reassembly Of R PRO-1
 
-###### Disassembly:
+## Disassembly:
 
 1\. Unplug your R PRO-1 from power and remove the back.
 
-![](/assets/rpro-1-add-co2-lift-lid-1.webp)![](/assets/rpro-1-add-co2-remove-lid.webp)
+![Small tool prying up the R PRO-1 back lid at the seam below the USB-C port](/assets/rpro-1-add-co2-lift-lid-1.webp)![R PRO-1 back lid lifted off by hand, exposing the PCB inside the case](/assets/rpro-1-add-co2-remove-lid.webp)
 
 2\. Gently remove the PCB from the case and flip it over.
 
-![](/assets/r-pro-1-no-case-mmwave-facing-up.webp)
+![R PRO-1 PCB out of its case, face up with the LD2450 and LD2412 mmWave sensors visible](/assets/r-pro-1-no-case-mmwave-facing-up.webp)
 
 3\. Gently remove the LD2412 as shown below.
 
-![](/assets/r-pro-1-teardown-remove-ld2412.jpg)
+![Fingers lifting the LD2412 mmWave module off its pin headers on the R PRO-1 PCB](/assets/r-pro-1-teardown-remove-ld2412.jpg)
 
 4\. Gently remove the LD2450 as shown below.
 
-![](/assets/r-pro-1-teardown-remove-ld2450.jpg)
+![Fingers pulling the LD2450 mmWave module off its pin header on the R PRO-1 PCB](/assets/r-pro-1-teardown-remove-ld2450.jpg)
 
-###### Reassembly
+## Reassembly
 
 1\. Place the LD2450 on the 8 pin header.
 
-![](/assets/r-pro-1-reassembly-install-ld2450.jpg)
+![LD2450 module being pressed onto its pin header on the R PRO-1 PCB](/assets/r-pro-1-reassembly-install-ld2450.jpg)
 
 2\. Place the LD2412 on the 4 and 3 pin headers (only fits one way).
 
-![](/assets/r-pro-1-reassembly-install-ld2412.jpg)
+![LD2412 module being lined up with its pin headers on the R PRO-1 PCB](/assets/r-pro-1-reassembly-install-ld2412.jpg)
 
-3\. Place back into the case with the ethernet module facing up and the usb-c port facing you.
+3\. Place back into the case with the ethernet module facing up and the USB-C port facing you.
 
-![](/assets/r-pro-1-lid-removed.jpg)
+![R PRO-1 PCB back in its case with the Ethernet module facing up and the USB-C port in front](/assets/r-pro-1-lid-removed.jpg)
 
 4\. Snap the lid back into place!
 
-![](/assets/r-pro-1-lid-press-down.jpg)
+![Fingers pressing the lid onto the R PRO-1 case around the Ethernet and USB-C ports](/assets/r-pro-1-lid-press-down.jpg)

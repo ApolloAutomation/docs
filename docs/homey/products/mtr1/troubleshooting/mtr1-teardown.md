@@ -1,4 +1,5 @@
 ---
+title: Teardown and Reassembly of the MTR-1
 description: "Step by step guide for tearing down your MTR-1 to replace parts, clean it, swap cases, etc."
 ---
 # Teardown and Reassembly of the MTR-1

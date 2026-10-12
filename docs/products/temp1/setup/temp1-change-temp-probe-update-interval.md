@@ -12,7 +12,7 @@ By default the TEMP-1 reports its **Temperature Probe** every 60 seconds. You ca
 
 1\. Select the <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">ESPHome Builder</a> in the sidebar then click "EDIT" on your TEMP-1.
 
-![](/assets/temp-1-click-edit-esphome-device-builder.png)
+![ESPHome Device Builder card for the Apollo TEMP-1 with the Edit button clicked](/assets/temp-1-click-edit-esphome-device-builder.png)
 
 2\. Paste this YAML below your device's existing config. The `!extend` keyword edits the probe that is already defined in the firmware, so you only need the lines you want to change.
 
@@ -27,13 +27,13 @@ sensor:
     update_interval: 10s
 ```
 
-![](/assets/temp-1-change-probe-update-interval-yaml-edit.gif)
+![ESPHome Device Builder editing the TEMP-1 YAML, adding the temp probe extend block, then starting the install](/assets/temp-1-change-probe-update-interval-yaml-edit.gif)
 
 3\. In the top right click "SAVE" and then "INSTALL". When the install options appear, choose "On the network".
 
 4\. Once you see the logs showing the new update interval of 10 seconds the flash has succeeded and you can click "STOP" to exit.
 
-![](/assets/temp-1-new-update-interval-shown-in-logs.gif)
+![ESPHome Device Builder logs for the TEMP-1 showing the Temperature Probe reporting every 10 seconds](/assets/temp-1-new-update-interval-shown-in-logs.gif)
 
 Your Temperature Probe will now report at the new interval.
 

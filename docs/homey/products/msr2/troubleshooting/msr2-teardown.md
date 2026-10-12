@@ -1,4 +1,5 @@
 ---
+title: Teardown and Reassembly Of MSR-2
 description: "Step by step guide for tearing down your MSR-2 to replace parts, clean it, swap cases, etc."
 ---
 # Teardown and Reassembly Of MSR-2

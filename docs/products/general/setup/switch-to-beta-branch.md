@@ -1,6 +1,6 @@
 ---
-title: How To Switching to Beta branch with ESPHome Device Builder
-description: Tutorial for How To Switching to Beta branch with ESPHome Device Builder.
+title: How To Switch to Beta branch with ESPHome Device Builder
+description: Tutorial for How To Switch to Beta branch with ESPHome Device Builder.
 ---
 # Switching to Beta branch with ESPHome Device Builder
 
@@ -14,7 +14,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
 
 2\. Find the sensor you want to edit and click the "**EDIT**".
 
-![](/assets/switch-to-beta-pic-1.png)
+![ESPHome Device Builder dashboard with the Edit button on a PLT-1 card outlined in red](/assets/switch-to-beta-pic-1.png)
 
 !!! danger "This is code and requires you to follow the directions carefully."
 
@@ -22,9 +22,9 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
 
 3\. Look for the line that starts with packages and the line below it and put a \# in front of each line as shown in the second image below.
 
-![](/assets/switch-to-beta-pic-2.png)
+![PLT-1 YAML in ESPHome Device Builder with the packages lines outlined in red](/assets/switch-to-beta-pic-2.png)
 
-![](/assets/switch-to-beta-pic-3.png)
+![PLT-1 YAML in ESPHome Device Builder with the two packages lines commented out using #](/assets/switch-to-beta-pic-3.png)
 
 4\. Select your product below, copy the code, and paste it below the two lines you just commented out.
 
@@ -107,7 +107,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-=== "R_PRO-1"
+=== "R PRO-1"
 
     **Ethernet:**
 
@@ -120,7 +120,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-    **WiFi:**
+    **Wi-Fi:**
 
     ```yaml
     packages:
@@ -159,12 +159,12 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
 
     Changing the name can cause the install to fail due to mDNS issues. If you want to rename your device, [follow this guide](https://wiki.apolloautomation.com/products/general/setup/renaming-apollo-devices/) instead.
 
-![](/assets/switch-to-beta-pic-4.png)
+![PLT-1 YAML in ESPHome Device Builder with the new beta packages block pasted below the commented lines](/assets/switch-to-beta-pic-4.png)
 
 5\. Click save then install in the top right and click **Wirelessly** when prompted.
 
-![](/assets/click-save-then-install-gif.gif)
+![Clicking Save, then Install, then Wirelessly in ESPHome Device Builder to start the install](/assets/click-save-then-install-gif.gif)
 
 6\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" in the bottom right to exit.
 
-![](/assets/switch-to-beta-pic-7.png)
+![ESPHome Device Builder install log with INFO OTA successful and the Stop button outlined](/assets/switch-to-beta-pic-7.png)

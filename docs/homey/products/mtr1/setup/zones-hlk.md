@@ -1,8 +1,9 @@
 ---
+title: (Better) HLK Radar Tool App
 description: "Tutorial for MTR-1 HLKRadarTool app Zone Configuration."
 ---
 
-###### Configure Zones
+## Configure Zones
 
 !!! note "Ensure that the LD2450 firmware version is V2.02.23090617 or later for proper integration functionality. "
 
@@ -20,19 +21,19 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your MTR-1 and scroll down until you see LD2450 Bluetooth.
 
-![Screenshot 2024-05-14 at 10.30.31 AM.png](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
+![MTR-1 Configuration card with the LD2450 Bluetooth toggle turned on and highlighted](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
 
 2\. Open the HLKRadarTool App and select your device.
 
 !!! success "You need to be close to your device!"
 
-    The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
+    The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to Bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
 
-![Screenshot_20240514_100155_HLKRadarTool.jpg](/assets/screenshot-20240514-100155-hlkradartool.jpg)
+![HLKRadarTool device list showing the HLK-LD2450 radar found over Bluetooth](/assets/screenshot-20240514-100155-hlkradartool.jpg)
 
 3\. Select Set in the top right.
 
-![Screenshot_20240514_100250_HLKRadarTool.jpg](/assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)
+![HLKRadarTool live radar view of the LD2450 with the Set button circled in the top right](/assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)
 
 4\. Select Detection then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
 
@@ -42,13 +43,13 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
-![Screenshot_20240514_100512_HLKRadarTool.jpg](/assets/screenshot-20240514-100512-hlkradartool.jpg)
+![HLKRadarTool Parameter settings with Area Detection selected, three areas drawn, and a Setup successfully message](/assets/screenshot-20240514-100512-hlkradartool.jpg)
 
 5\. If set up correctly the zones should be saved as different colors. You can double-check that the settings are saved by looking at your HA entities (picture below). You should be all set!
 
-![Screenshot 2024-05-14 at 11.27.17 AM.png](/assets/screenshot-2024-05-14-at-11-27-17-am.png)
+![MTR-1 zone entities showing the Detection zone type and zone 1 to 3 corner coordinates in mm](/assets/screenshot-2024-05-14-at-11-27-17-am.png)
 
-![Screenshot_20240514_102430_HLKRadarTool.jpg](/assets/screenshot-20240514-102430-hlkradartool.jpg)
+![HLKRadarTool radar view showing three saved zones in red, green, and blue with a target in zone 1](/assets/screenshot-20240514-102430-hlkradartool.jpg)
 
 !!! tip "Helpful Hints to understand zones better!"
 
@@ -62,7 +63,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
     * The Plotly chart will still render the rectangles even if the X1/X2 and Y1/Y2 values are reversed.
     * The zones cannot overlap.
 
-###### Dashboard Card Setup
+## Dashboard Card Setup
 
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 
@@ -74,8 +75,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 4\. Head to a dashboard view and click the pencil icon to edit dashboard then click one of the large "+" signs, type in manual, and click on it.
 
-![](/assets/ld2450-add-plotly-graph-gif.gif)
+![Animation of editing a Home Assistant dashboard and adding a Manual card with the Plotly YAML](/assets/ld2450-add-plotly-graph-gif.gif)
 
 5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
-![](/assets/mtr-1-card-working-targets.png)
+![MTR-1 Target Positions Plotly card showing the coverage area and three named zones](/assets/mtr-1-card-working-targets.png)

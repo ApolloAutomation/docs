@@ -20,7 +20,7 @@ Each line is capped at **64 characters** on WLED and **32** on WLED-MM, which is
 
 1\. Install **Studio Code Server** <a href="https://github.com/hassio-addons/addon-vscode" target="_blank" rel="noreferrer nofollow noopener">from the App Store</a> in Home Assistant. Click **Open Web UI** and navigate to your `configuration.yaml`.
 
-![](/assets/m1-navigate-to-configuration-yaml.gif)
+![Opening Studio Code Server from Home Assistant and selecting configuration.yaml](/assets/m1-navigate-to-configuration-yaml.gif)
 
 !!! danger "This file is used by Home Assistant and must be carefully edited."
 
@@ -32,27 +32,27 @@ Each line is capped at **64 characters** on WLED and **32** on WLED-MM, which is
 
 3\. Back in `configuration.yaml`, paste the generated YAML on a new line at the bottom of the file and save.
 
-![](/assets/m-1-matrix-automation-example-yaml.png)
+![configuration.yaml with a rest_command block sending four segment texts to the M-1](/assets/m-1-matrix-automation-example-yaml.png)
 
 4\. Open **Developer Tools** and run **Check Configuration**. A green response means you are clear to continue. Then reload your new command from the **YAML** tab by clicking **RESTful Commands**, or restart Home Assistant. Until you do, the command will not show up in the next step.
 
 5\. Still in **Developer Tools**, scroll down to **Restful Command**, click **Actions** at the top, type "matrix", select the command you just created, and click **Perform Action**. Your text should appear on the matrix straight away.
 
-![](/assets/m1-config-check-restful-actions-gif.gif)
+![Developer Tools: Check Configuration, reloading RESTful commands, then running matrix_all_segments](/assets/m1-config-check-restful-actions-gif.gif)
 
 6\. Create an **Automation** with a time pattern trigger that fires every minute.
 
-![](/assets/m-1-matrix-automation-example-trigger.gif)
+![Creating a new automation with a time pattern trigger that fires every minute](/assets/m-1-matrix-automation-example-trigger.gif)
 
 7\. Add an action, type *matrix*, and pick **RESTful command: matrix\_all\_segments**. Save and name the automation. The matrix now refreshes every minute.
 
-![](/assets/m-1-matrix-automation-example-action.gif)
+![Adding the RESTful command matrix_all_segments action and saving the automation](/assets/m-1-matrix-automation-example-action.gif)
 
 Here is the finished board on a two panel setup, four segments each pulling a different entity.
 
-![](/assets/m1-share-data-home-assistant-result.webp)
+![Two-panel M-1 showing weather, front door lock, CO2, and ping status lines in different colors](/assets/m1-share-data-home-assistant-result.webp)
 
-###### Tuning It
+## Tuning It
 
 A minute suits temperatures and forecasts. For something that changes faster, like a countdown timer, drop the time pattern to every ten or thirty seconds. Going much below that gains you little, since the text has to finish scrolling before anyone can read it anyway.
 

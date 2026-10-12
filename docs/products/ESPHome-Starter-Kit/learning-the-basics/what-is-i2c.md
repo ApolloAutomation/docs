@@ -51,7 +51,7 @@ If you plug in a sensor and aren't sure of its address, the scan tells you. If t
 
 Ready to plug something in? The [Breakout Module](/products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md) page covers the connectors, and the ESPHome docs list every supported I2C sensor.
 
-<a href="https://esphome.io/components/i2c/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> ESPHome I2C docs</a>
+<a href="https://esphome.io/components/i2c/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> ESPHome I2C docs</a>
 
 
 --8<-- "_snippets/community-help.md"

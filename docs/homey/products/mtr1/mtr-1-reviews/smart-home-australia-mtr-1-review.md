@@ -1,4 +1,5 @@
 ---
+title: Smart Home Australia MTR-1 Review
 description: "Smart Home Australia reviews the Apollo MTR-1, from installation through dashboards."
 ---
 # Smart Home Australia MTR-1 Review
