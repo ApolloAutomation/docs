@@ -28,7 +28,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
 2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
 
-    ![](../../../assets/esphome-device-builder-add-automation.gif)
+    ![Opening the device in ESPHome Device Builder, expanding Automations, and clicking Add automation](../../../assets/esphome-device-builder-add-automation.gif)
 
 3.  Set up the trigger:
 
@@ -42,7 +42,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
     1.  **On Press** fires the moment the sensor detects motion. The dropdown also offers **On Release** (the moment motion stops) and **On State** for other occupancy behaviors. You'll use **On Release** in the next section to turn the lights back off.
 
-    ![](../../../assets/esphome-device-builder-motion-sensor-trigger.gif)
+    ![New automation dialog with Motion Module selected as the component and Binary Sensor On Press as the trigger](../../../assets/esphome-device-builder-motion-sensor-trigger.gif)
 
 4.  Click **Continue**. You land on the **Binary Sensor → On Press** editor with the **Target** already set to your Motion module.
 5.  Set up the action:
@@ -57,7 +57,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
     1.  The **ID** dropdown only needs changing if your device also has an **Onboard RGB LED** component configured. If **RGB LEDs** is the only light, it's already selected.
 
-    ![](../../../assets/esphome-device-builder-light-turn-on-action.gif)
+    ![Adding a Light Turn On action targeting RGB LEDs to the On Press automation in ESPHome Device Builder](../../../assets/esphome-device-builder-light-turn-on-action.gif)
 
 ??? note "What the GUI built in YAML"
 
@@ -87,11 +87,11 @@ Right now the lights turn on with motion but never turn off. Add a second trigge
 
 1.  Add another automation, this time choosing **Binary Sensor → On Release** as the trigger for the Motion module. (1)
 
-    ![](../../../assets/esphome-device-builder-motion-sensor-on-release.gif)
+    ![New automation dialog with Motion Module selected and Binary Sensor On Release chosen as the trigger](../../../assets/esphome-device-builder-motion-sensor-on-release.gif)
 
 2.  Give it a **Light → Turn Off** action targeting **RGB LEDs**. (2)
 
-    ![](../../../assets/esphome-device-builder-light-turn-off-action.gif)
+    ![Adding a Light Turn Off action targeting RGB LEDs to the On Release automation in ESPHome Device Builder](../../../assets/esphome-device-builder-light-turn-off-action.gif)
 
 </div>
 
@@ -132,7 +132,7 @@ Your automation is saved in Device Builder, but the device is still running its 
 
 3.  Wait for the compile and flash to finish. The device reboots once the install is done.
 
-![](../../../assets/esphome-device-builder-install-firmware-motion-sensor.gif)
+![Saving the motion automations, clicking Install, choosing On the network, and the compile log starting](../../../assets/esphome-device-builder-install-firmware-motion-sensor.gif)
 
 ## Test the automations
 
@@ -142,6 +142,6 @@ Your automation is saved in Device Builder, but the device is still running its 
 
 With the device back online, wave your hand in front of the PIR sensor. The RGB light turns on as soon as motion is detected, then turns off shortly after the sensor stops seeing movement. If the light triggers right after boot with nothing moving, give the sensor a moment. PIR sensors need a brief warm-up after powering on, usually 5 to 10 seconds, before their readings stabilize.
 
-<a href="../temp-reactive-leds/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Temp-Reactive LEDs</a>
+<a href="../temp-reactive-leds/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Temp-Reactive LEDs</a>
 
 --8<-- "_snippets/community-help.md"

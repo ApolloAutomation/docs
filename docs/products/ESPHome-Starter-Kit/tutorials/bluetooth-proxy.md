@@ -27,7 +27,7 @@ Device Builder has an **Add Component** flow that drops the proxy into your conf
 3. Search for **Bluetooth Proxy** and select it.
 4. Click **Add**. Device Builder inserts the proxy into your YAML.
 
-![](../../../assets/esphome-device-builder-add-ble-proxy-component.gif)
+![ESPHome Device Builder Add component dialog: searching bluetooth proxy and adding it](../../../assets/esphome-device-builder-add-ble-proxy-component.gif)
 
 ??? note "Prefer to add it by hand? Here's the YAML"
 
@@ -59,7 +59,7 @@ The proxy is saved in Device Builder, but the device is still running its old so
 
 3.  Wait for the compile and flash to finish. The device reboots once the install is done.
 
-![](../../../assets/esphome-device-builder-add-ble-proxy-save-validate-install.gif)
+![ESPHome Device Builder saving, validating, then installing the Bluetooth Proxy On the network](../../../assets/esphome-device-builder-add-ble-proxy-save-validate-install.gif)
 
 ## Verify it works
 

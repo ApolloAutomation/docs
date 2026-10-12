@@ -13,11 +13,11 @@ description: "Keep the PLT-1B awake instead of letting it sleep, and what that c
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](/assets/plt-1b-prevent-sleep-pic-1.png)
+![ESPHome integration entry for an Apollo PLT-1B with the 1 device link highlighted](/assets/plt-1b-prevent-sleep-pic-1.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](/assets/plt-1b-prevent-sleep-pic-2.png)
+![Home Assistant device page with the Prevent Sleep toggle and Sleep Duration setting highlighted](/assets/plt-1b-prevent-sleep-pic-2.png)
 
 4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 12 hours.
 

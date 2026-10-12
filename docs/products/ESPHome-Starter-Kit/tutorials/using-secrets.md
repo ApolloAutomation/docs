@@ -24,7 +24,7 @@ In the ESPHome Device Builder dashboard, click the 3 dots menu in the top right 
 
 1. You'll see a YAML file with one key per line. If you followed First Steps you should already see `wifi_ssid` and `wifi_password` here.
 
-![](../../../assets/esphome-device-builder-click-secrets.gif)
+![ESPHome Device Builder three-dot menu opening Secrets, which lists wifi_ssid, wifi_password, and the API key](../../../assets/esphome-device-builder-click-secrets.gif)
 
 ---
 
@@ -66,7 +66,7 @@ The Device Builder can turn a value into a secret for you, no hand editing requi
 
 The Device Builder moves the key into secrets.yaml and swaps the device YAML over to a `!secret` reference. You can now share your device YAML without exposing the key.
 
-![](../../../assets/device-builder-native-api-show-api-key.gif)
+![Native API settings: revealing the encryption key, then Use secret, then Make secret](../../../assets/device-builder-native-api-show-api-key.gif)
 
 ---
 

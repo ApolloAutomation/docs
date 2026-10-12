@@ -4,7 +4,7 @@ description: Documentation for CAST-1, including setup, usage, and best practice
 ---
 # Introduction
 
-![](/assets/cast-1-intro-image.webp)
+![CAST-1 on a wooden table with a 3.5mm audio cable and USB-C power cable plugged in](/assets/cast-1-intro-image.webp)
 
 **Make Any Speakers Smart:** Plug the CAST-1 into a 3.5mm line-in, add it to Home Assistant, and it shows up in Music Assistant as a player you can stream to.
 

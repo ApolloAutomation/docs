@@ -13,7 +13,7 @@ Run a 3.5mm cable from the CAST-1 into the line-in on your powered speakers, rec
 
 1.  The CAST-1 has no amplifier of its own, so it needs powered speakers or an amp. If your speakers use RCA or 6.35mm inputs, use a 3.5mm-to-RCA or 3.5mm-to-6.35mm adapter cable.
 
-![](/assets/cast-1-physical-setup.webp)
+![Plugging a 3.5mm audio cable and a USB-C power cable into the CAST-1](/assets/cast-1-physical-setup.webp)
 
 ### Connect to Your Network
 
@@ -37,7 +37,7 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
     3\. Select the Wi-Fi network that you would like your CAST-1 to connect to and type in your Wi-Fi password, then click "**Save**".
 
-    ![](/assets/cast-1-connect-to-hotspot.webp)
+    ![Joining the CAST-1 hotspot on a phone and entering Wi-Fi details in the captive portal](/assets/cast-1-connect-to-hotspot.webp)
 
     4\. Once connected, the dashboard will automatically close. You've successfully connected your CAST-1 to your Wi-Fi.
 
@@ -55,7 +55,7 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
     3\. Click **Submit** again, give it an **Area**, then click **Finish**.
 
-    ![](/assets/cast-1-add-via-improv-ble.gif)
+    ![Adding the discovered CAST-1 with Improv via BLE in Home Assistant and entering Wi-Fi credentials](/assets/cast-1-add-via-improv-ble.gif)
 
     Improv adds your CAST-1 to Home Assistant as part of setup, so skip ahead to [installing Music Assistant](#music-assistant).
 
@@ -63,7 +63,7 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
     With the CAST-1 unplugged, line the <a href="https://wiki.apolloautomation.com/products/cast1/addons/ethernet-module/" target="_blank" rel="noopener">Ethernet module</a> up with the two rows of female header pins on top of the case, pin side down, and press it straight down until it sits flat.
 
-    ![](/assets/cast-1-connect-ethernet-module.webp)
+    ![Pressing the Ethernet module onto the two header rows on top of the CAST-1](/assets/cast-1-connect-ethernet-module.webp)
 
     1\. Plug an Ethernet cable into the module, then plug the CAST-1 into power.
 
@@ -80,7 +80,7 @@ Open the ESPHome Integration, then click **Add** and **Submit**. Edit the name a
 
 <a href="https://my.home-assistant.io/redirect/integration/?domain=esphome" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integration.svg" alt="Open your Home Assistant instance and show the ESPHome integration."></a>
 
-![](/assets/cast-1-home-assistant-integration.gif)
+![Adding the discovered CAST-1 in the ESPHome integration, naming it, and choosing an area](/assets/cast-1-home-assistant-integration.gif)
 
 ### Music Assistant
 
@@ -94,7 +94,7 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 2\. Click **Install**, then click **Start** once it finishes.
 
-![](/assets/cast-1-start-music-assistant.gif)
+![Music Assistant app page in Home Assistant, clicking Start until it shows Running](/assets/cast-1-start-music-assistant.gif)
 
 3\. Home Assistant discovers the Music Assistant integration automatically. Open your integrations page, find **Music Assistant**, then click **Add** and **Submit**.
 
@@ -108,7 +108,7 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 3\. Pick any song, playlist, or radio station and it plays through the speakers connected to your CAST-1.
 
-![](/assets/cast-1-play-song.gif)
+![Selecting the CAST-1 player in Music Assistant and playing a song](/assets/cast-1-play-song.gif)
 
 ###### Play In Multiple Rooms
 
@@ -120,6 +120,6 @@ Have more than one CAST-1? Group them to play the same music in sync across ever
 
 3\. All grouped CAST-1 players now play the same audio together. Adjust the volume for the whole group or per player.
 
-![](/assets/cast-1-play-in-multiple-rooms.gif)
+![Grouping the CAST-1 with other players from the Music Assistant players panel](/assets/cast-1-play-in-multiple-rooms.gif)
 
 [Add a WizMote for physical playback control! :material-remote:](https://wiki.apolloautomation.com/products/cast1/examples/wizmote-blueprint/){ .md-button .md-button--primary }

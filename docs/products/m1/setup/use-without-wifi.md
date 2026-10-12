@@ -10,7 +10,7 @@ The M-1 does not need a Wi-Fi network. Out of the box it makes its own, and the 
 
 Plug the M-1 in. The Apollo dog appears for a few seconds, then the panel shows a setup card and keeps showing it until the device is set up. The card has the steps on it along with a QR code.
 
-![](/assets/wled-16-boot-image-preset.webp)
+![M-1 panel showing the setup card to join the Apollo M-1 hotspot, then scan the QR code or go to 4.3.2.1](/assets/wled-16-boot-image-preset.webp)
 
 1\. On your phone or laptop, open the Wi-Fi list and join the open network named **Apollo M-1**. There is no password out of the box, though you should [set one](#put-a-password-on-the-hotspot) once you are up and running. (1)
 { .annotate }

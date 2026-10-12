@@ -6,7 +6,7 @@ description: "Example Home Assistant dashboard cards for the MSR-1, including an
 **Radar Scatter Plot With Apex Charts For MSR-1**
 
   
-![JPE Apex Charts 3.png](/assets/jpe-apex-charts-3.png)
+![ApexCharts scatter plot card of MSR-1 radar detection, moving, and still distances over time](/assets/jpe-apex-charts-3.png)
 
 ```plaintext
 type: custom:apexcharts-card
@@ -46,7 +46,7 @@ series:
 **CO2 Charts**
 Home Assistant Sensor
 
-![CO 2 Graph.png](/assets/co-2-graph.png)
+![Home Assistant sensor card with a Bedroom CO2 line graph reading 1,000 ppm](/assets/co-2-graph.png)
 
 ```plaintext
 graph: line
@@ -59,7 +59,7 @@ hours_to_show: 24
 
 Custom: Plotly Graph Card
 
-![Plotly CO2 Graph.png](/assets/plotly-co2-graph.png)
+![Plotly graph card of Bedroom CO2 in ppm over 24 hours](/assets/plotly-co2-graph.png)
 
 ```plaintext
 type: custom:plotly-graph
@@ -72,7 +72,7 @@ title: Bedroom CO2
 
 Home Assistant Guage
 
-![CO2 Guage.png](/assets/co2-guage.png)
+![Home Assistant gauge card showing MSR-1 CO2 at 1,063 ppm with green, yellow, and red ranges](/assets/co2-guage.png)
 
 ```plaintext
 type: gauge

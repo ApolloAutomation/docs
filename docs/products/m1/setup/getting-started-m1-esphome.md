@@ -14,7 +14,7 @@ This guide walks you through replacing the stock WLED firmware with [hub75-studi
 
 Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damage in shipping. Gently attach the controller to the back of the M-1 LED Matrix panel as shown in the GIF below.
 
-![](/assets/m1-matrix-attach-controller.webp)
+![Hands pressing the M-1 controller onto the back of the M-1 LED Matrix panel](/assets/m1-matrix-attach-controller.webp)
 
 ### Flash the firmware
 
@@ -26,13 +26,13 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
 2\. Pick the **Rev6** firmware, click **Connect**, select the M-1's COM port, and follow the installer prompts to flash.
 
-![](../../../assets/m-1-esphome-install-firmware.gif)
+![HUB75 Studio installer: selecting M-1 Rev6, clicking Connect, choosing the port, and installing](../../../assets/m-1-esphome-install-firmware.gif)
 
 3\. Confirm the M-1 BIOS screen
 
 Once the firmware finishes installing, the panel displays the **M-1 BIOS** splash showing the CPU, RAM, and the last 6 characters of the controller's MAC address. Seeing this screen confirms the firmware installed successfully.
 
-![](../../../assets/m-1-esphome-firmware-installed-no-wifi.jpg)
+![M-1 showing the M-1 BIOS screen with version, CPU, RAM, and ID after flashing](../../../assets/m-1-esphome-firmware-installed-no-wifi.jpg)
 
 ### Connect to Wi-Fi
 
@@ -40,11 +40,11 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 
 2\. The captive portal opens automatically. Either pick your home network from the scanned list and enter the password, or scroll down and type your SSID and password manually.
 
-![](../../../assets/m-1-esphome-firmware-connect-wifi.webp)
+![Phone joining the apollo-m1-r6 hotspot and entering Wi-Fi details in the captive portal](../../../assets/m-1-esphome-firmware-connect-wifi.webp)
 
 3\. Tap **Save**. The M-1 reboots and joins your home network. Once you see the screen with the clock move on to the next section to join to Home Assistant via the ESPHome integration!
 
-![](../../../assets/m-1-esphome-firmware-wifi-connected.jpg)
+![M-1 showing the clock and date after joining Wi-Fi](../../../assets/m-1-esphome-firmware-wifi-connected.jpg)
 
 ### Join to Home Assistant
 
@@ -56,7 +56,7 @@ Your device should be auto-discovered by Home Assistant using the ESPHome Integr
 
 Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and accept the discovery prompt for your M-1.
 
-![](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
+![Home Assistant ESPHome integration: adding the discovered Apollo M-1 and finishing setup](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
 
 ### Optional Features
 
@@ -72,11 +72,11 @@ Head to the <a href="http://homeassistant.local:8123/config/integrations" target
 
 2\. Navigate to the ESPHome Device Builder app by clicking the Open Web UI button on the far right.
 
-![](../../../assets/m-1-esphome-device-builder-open.gif)
+![ESPHome Device Builder app page with Start on boot, Watchdog, and Show in sidebar on, then Open Web UI](../../../assets/m-1-esphome-device-builder-open.gif)
 
 3\. Click the Secrets button in the top right and confirm your Wi-Fi SSID and password are configured as shown below. Click Save in the top right once finished.
 
-![](../../../assets/esphome-device-builder-click-secrets.gif)
+![ESPHome Device Builder: opening Secrets from the top right menu to check wifi_ssid and wifi_password](../../../assets/esphome-device-builder-click-secrets.gif)
 
 ```yaml
 # Your Wi-Fi SSID and password
@@ -86,15 +86,15 @@ wifi_password: "your-wifi-password-here"
 
 3\. Notice the Discovered 1 device banner at the top and click the SHOW button in the far top right to show your newly discovered device.
 
-![](../../../assets/m-1-esphome-device-builder-show-discovered.gif)
+![ESPHome Device Builder Discovered 1 device banner, clicking Show to reveal the Apollo M-1](../../../assets/m-1-esphome-device-builder-show-discovered.gif)
 
 4\. Click Take Control and leave the name as is and click Take Control again. Finally, click Install to begin the installation process. This will take some time depending on how fast your device running Home Assistant is. Raspberry pi, HA Green, etc will take much longer than a mini pc.
 
-![](../../../assets/esphome-device-builder-take-control.gif)
+![Clicking Take Control on the discovered Apollo M-1 in ESPHome Device Builder and confirming](../../../assets/esphome-device-builder-take-control.gif)
 
 5\. Once you see INFO OTA successful you can click stop in the bottom right and you're finished!
 
-![](../../../assets/esphome-device-builder-finished-installing.gif)
+![ESPHome Device Builder install log ending in INFO OTA successful, then the M-1 shown online](../../../assets/esphome-device-builder-finished-installing.gif)
 
 #### Media Proxy
 
@@ -102,21 +102,21 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 1\. Head to <a href="http://homeassistant.local:8123/config/apps/repositories" target="_blank" rel="noreferrer nofollow noopener">settings -&gt; Apps -&gt; Click Install App -&gt; 3 dots -&gt; click repositories</a> -&gt; click Add -&gt; paste in https://github.com/stuartparmenter/homeassistant-addons
 
-![](../../../assets/add-media-proxy-custom-repo.gif)
+![Home Assistant App store menu, Repositories, then adding the Media Proxy repository URL](../../../assets/add-media-proxy-custom-repo.gif)
 
 2\. Click the back button then search Media Proxy and click on it. Click Install and let it install.
 
-![](../../../assets/install-media-proxy-app.gif)
+![Searching the Home Assistant App store for Media Proxy and clicking Install](../../../assets/install-media-proxy-app.gif)
 
 3\. Check off Watchdog and Auto Update then click Start
 
-![](../../../assets/media-proxy-start.gif)
+![Media Proxy app page: turning on Watchdog and Auto update, then clicking Start](../../../assets/media-proxy-start.gif)
 
 4\. To test that it's working, head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome integration page</a> then select your M-1 device from the list. <a href="https://media1.tenor.com/m/cOxR1hF63Y0AAAAd/matrix-film.gif" target="_blank" rel="noreferrer nofollow noopener">Copy this url</a> and paste it into the Media Source box. It should automatically start playing the gif!
 
-![](../../../assets/m-1-esphome-media-proxy-confirm-working.gif)
+![M-1 device page in the ESPHome integration with a GIF URL pasted into Media Source](../../../assets/m-1-esphome-media-proxy-confirm-working.gif)
 
-![](../../../assets/matrix-gif-example.gif)
+![M-1 LED Matrix playing a green-tinted Matrix movie GIF](../../../assets/matrix-gif-example.gif)
 
 [Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){    .md-button .md-button--primary }
 
@@ -130,11 +130,11 @@ The M-1 ESPHome firmware has built-in support for the <a href="https://www.amazo
 
 3\. Press any button on your WizMote. The M-1 picks up the WizMote's MAC and pairs automatically.
 
-![](../../../assets/wizmote-pairing-example.gif)
+![Turning on WizMote Auto-Discovery, then WizMote Status changing to Paired with the remote's MAC](../../../assets/wizmote-pairing-example.gif)
 
 4\. Confirm pairing by checking the **WizMote Status** entity. It should read **Paired** along with the WizMote's MAC address.
 
-![](../../../assets/wizmote-pair-successful.png)
+![WizMote Status entity in the M-1 Diagnostic card reading Paired with the remote's MAC address](../../../assets/wizmote-pair-successful.png)
 
 !!! tip "Default button mapping"
 

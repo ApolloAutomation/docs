@@ -14,11 +14,11 @@ description: Guide for setting up and using the prevent sleep toggle with the TE
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](/assets/prevent-sleep-pic-3.png)
+![Home Assistant ESPHome integration entry for the Apollo TEMP-1B with the 1 device link highlighted](/assets/prevent-sleep-pic-3.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](/assets/prevent-sleep-pic-2.png)
+![Home Assistant device controls with the Prevent Sleep toggle and Sleep Duration box highlighted](/assets/prevent-sleep-pic-2.png)
 
 4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 8 minutes.
 

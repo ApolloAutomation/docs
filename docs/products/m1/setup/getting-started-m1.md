@@ -12,7 +12,7 @@ New units ship with **WLED**. Units shipped earlier came with **WLED-MM**. Open 
 
 Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damage in shipping. Gently attach the M-1 controller by lining up its power and data headers to the back of the LED Matrix panel as shown below.
 
-![](/assets/m1-matrix-attach-controller.webp)
+![Pressing the M-1 controller onto the power and data headers on the back of the LED matrix panel](/assets/m1-matrix-attach-controller.webp)
 
 ### Connect to Wi-Fi
 
@@ -20,7 +20,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     1\. Plug in USB-C power. The M-1 boots to a picture of Apollo, our mascot, then displays a setup card on the panel.
 
-    ![](/assets/wled-16-boot-image-preset.webp)
+    ![M-1 panel showing the setup card to join the Apollo M-1 hotspot, then scan the QR code or go to 4.3.2.1](/assets/wled-16-boot-image-preset.webp)
 
     2\. On your phone or computer, join the new Wi-Fi hotspot called **Apollo M-1**. If a Wi-Fi connection options box pops up then please select **Always Connect.** (1)
     { .annotate }
@@ -66,7 +66,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     1\. Plug in the USB-C power in and the M-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select Apollo M-1. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> or <a href="http://wled.me" target="_blank" rel="noreferrer nofollow noopener">http://wled.me</a> and you should be prompted with the same image seen below.
 
-    ![](/assets/m-1-getting-started.png)
+    ![Welcome to WLED page with the WIFI SETTINGS and TO THE CONTROLS buttons](/assets/m-1-getting-started.png)
 
     2\. Tap on **WI-FI Settings** then input your Wi-Fi SSID where it shows **Your\_Network** and input your Wi-Fi password directly below it and then click **Save and Connect**.
 
@@ -82,11 +82,11 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**. Make sure to select **Hub75Matrix** is set to **64x64**.
 
-    ![](/assets/m-1-led-settings.gif)
+    ![WLED LED Preferences set to Hub75Matrix 64x64 and Chain Length 1, brightness limiter unchecked, then saved](/assets/m-1-led-settings.gif)
 
     2\. Click on **Config**, then **2D Configuration**. Select **2D Matrix**, click the circle next to **Basic**, change the **Panel dimensions (WxH)** to **64 x 64** and click **Save**.
 
-    ![](/assets/m-1-2d-settings.gif)
+    ![WLED 2D Configuration set to 2D Matrix with Basic interface and 64 x 64 panel dimensions, then saved](/assets/m-1-2d-settings.gif)
 
 ### Join to Home Assistant
 
@@ -96,11 +96,11 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     <a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
 
-    ![](/assets/m-1-home-assistant-integration-setup.gif)
+    ![Adding the discovered Apollo M-1 WLED device in Home Assistant, assigning an area, and finishing](/assets/m-1-home-assistant-integration-setup.gif)
 
     2\. From this page you can control your M-1 in Home Assistant. Change the color, pick effects, run presets, and more.
 
-    ![](/assets/m-1-home-assistant-example-usage.gif)
+    ![Changing presets, intensity, and color palette on the M-1 device page in Home Assistant](/assets/m-1-home-assistant-example-usage.gif)
 
 === "WLED-MM"
 
@@ -108,23 +108,23 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     <a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
 
-    ![](/assets/m-1-setup-wled-integration-add-device.png)
+    ![Discovered Apollo LED Matrix WLED device in Home Assistant with the Add button](/assets/m-1-setup-wled-integration-add-device.png)
 
     2\. Click **Add**, then **Submit**.
 
-    ![](/assets/m-1-setup-wled-integration-click-submit.png)
+    ![Discovered WLED device dialog in Home Assistant with the Submit button highlighted](/assets/m-1-setup-wled-integration-click-submit.png)
 
     3\. Give it a name and a location, then click **Skip** and **Finish**.
 
-    ![](/assets/m-1-setup-wled-integration-name-location-finish.png)
+    ![Home Assistant Device created dialog naming the M-1 Apollo Matrix, with an area set and the Skip and Finish button](/assets/m-1-setup-wled-integration-name-location-finish.png)
 
     4\. Open the <a href="https://my.home-assistant.io/redirect/integration/?domain=wled" target="_blank" rel="noreferrer noopener">WLED integration page</a> and click your M-1.
 
-    ![](/assets/m-1-setup-wled-integration-click-device-2.png)
+    ![Selecting the Apollo M-1 device on the WLED integration page in Home Assistant](/assets/m-1-setup-wled-integration-click-device-2.png)
 
     5\. From here you can change the color, pick effects, run presets, and more.
 
-    ![](/assets/m-1-setup-wled-integration-test-device.png)
+    ![M-1 controls in Home Assistant with the power toggle, Playlist, and Preset menu](/assets/m-1-setup-wled-integration-test-device.png)
 
 #### What Next
 

@@ -7,7 +7,7 @@ This guide will walk you through using the buzzer on your MSR-1. You can also ca
 
 1. Open Home Assistant and navigate to developer tools in the bottom left
 
-![Screenshot 2023-11-01 at 10.52.38 PM.png](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
+![Home Assistant sidebar with the Developer tools hammer icon highlighted in orange](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
 
 2\. Click on services
 
@@ -26,4 +26,4 @@ This guide will walk you through using the buzzer on your MSR-1. You can also ca
 
 5\. Click on call service button in bottom right
 
-![Screenshot 2023-11-01 at 10.57.33 PM.png](/assets/screenshot-2023-11-01-at-10-57-33-pm.png)
+![Developer tools Services tab with the MSR-1 play_buzzer service and an RTTTL song_str highlighted](/assets/screenshot-2023-11-01-at-10-57-33-pm.png)

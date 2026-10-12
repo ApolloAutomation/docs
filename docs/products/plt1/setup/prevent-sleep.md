@@ -14,11 +14,11 @@ description: Tutorial for how to enable/disable prevent sleep.
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](/assets/plt-1-prevent-sleep-pic-1.png)
+![ESPHome integration entry for an Apollo PLT-1 with the 1 device link highlighted](/assets/plt-1-prevent-sleep-pic-1.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](/assets/plt-1-prevent-sleep-pic-2.png)
+![Prevent Sleep toggle and Sleep Duration box highlighted on the PLT-1 device page](/assets/plt-1-prevent-sleep-pic-2.png)
 
 4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 5 minutes.
 

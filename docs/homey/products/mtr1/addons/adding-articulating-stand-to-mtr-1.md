@@ -6,18 +6,18 @@ description: Step by step tutorial for adding the Articulating Stand addon to th
 
 1\. Unplug your MTR-1 from power and remove the stand if attached.
 
-![](/assets/mtr-1-add-co2-pic-1.jpg)
+![Back of the MTR-1 with the stand attached and the USB-C port visible](/assets/mtr-1-add-co2-pic-1.jpg)
 
 2\. Remove the backplate of the MTR-1.
 
-![](/assets/mtr-1-add-co2-pic-4.jpg)
+![MTR-1 with the backplate removed, showing the circuit board, backplate, and stand](/assets/mtr-1-add-co2-pic-4.jpg)
 
 3\. Align the new backplate that came with the articulating stand addon and gently push down on two corners near the articulating ball mount then the other two corners until it seats flat.
 
-![](/assets/mtr-1-stand-pic-1-1.jpg)
+![Pressing the articulating stand backplate onto the MTR-1 near the ball mount](/assets/mtr-1-stand-pic-1-1.jpg)
 
-![](/assets/mtr-1-stand-pic-2.jpg)
+![MTR-1 with the articulating stand backplate seated flat](/assets/mtr-1-stand-pic-2.jpg)
 
 4\. Align the ball inside the articulating mount and then push down until it's fully seated.
 
-![](/assets/mtr-1-stand-pic-3.jpg)
+![Pushing the articulating stand ball into the socket on the MTR-1 backplate](/assets/mtr-1-stand-pic-3.jpg)

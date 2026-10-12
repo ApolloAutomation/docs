@@ -12,29 +12,29 @@ If your device has already been connected to Home Assistant please <a href="http
 
 1\. Locate the boot button <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-boot-mode/" rel="noreferrer nofollow">as shown here</a>. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your R PRO-1 then let go of the button.
 
-![](/assets/r-pro-1-boot-button.jpg)
+![Tool pointing to the SW6 boot button at the bottom right of the R PRO-1 PCB](/assets/r-pro-1-boot-button.jpg)
 
 3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo R PRO-1 Installer</a>.
 
 3\. Click the big "Connect" button.
 
-![](/assets/r-pro-1-reflash-connect-button.png)
+![Apollo R PRO-1 Installer page with the Ethernet Firmware CONNECT button highlighted](/assets/r-pro-1-reflash-connect-button.png)
 
 3\. Select the open com port then click Connect.
 
-![](/assets/r-pro-1-reflash-connect-comp-port.png)
+![Browser serial port prompt with the USB JTAG serial debug unit COM port and Connect button](/assets/r-pro-1-reflash-connect-comp-port.png)
 
 4\. Click "Install R PRO-1".
 
-![](/assets/r-pro-1-reflash-click-install.png)
+![Installer Device Dashboard with the install R PRO-1 Ethernet firmware option highlighted](/assets/r-pro-1-reflash-click-install.png)
 
 5\. Click "INSTALL".
 
-![](/assets/r-pro-1-reflash-click-install-to-install.png)
+![Install confirmation dialog for the R PRO-1 Ethernet firmware with the INSTALL button](/assets/r-pro-1-reflash-click-install-to-install.png)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](/assets/r-pro-1-reflash-installation-complete.png)
+![Installer showing Installation complete with the NEXT button highlighted](/assets/r-pro-1-reflash-installation-complete.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 

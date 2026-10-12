@@ -6,7 +6,7 @@ description: "Step by step guide for resetting the Wi-Fi Credentials on your AIR
 
 2\. Press and hold the Boot button for 10 seconds.
 
-![](/assets/air-1-boot-button.jpg)
+![AIR-1 case with a tool pointing at the boot button left of the USB-C port](/assets/air-1-boot-button.jpg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

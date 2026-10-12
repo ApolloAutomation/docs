@@ -7,7 +7,7 @@ This guide will walk you through using the buzzer on your MSR-2. You can also us
 
 1. Open Home Assistant and navigate to developer tools in the bottom left
 
-![Screenshot 2023-11-01 at 10.52.38 PM.png](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
+![Home Assistant sidebar with the Developer tools hammer icon highlighted](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
 
 2\. Click on services
 
@@ -29,4 +29,4 @@ This guide will walk you through using the buzzer on your MSR-2. You can also us
 
 5\. Click on the ACTIONS button in bottom right
 
-![image.png](/assets/HJuimage.png)
+![Home Assistant Developer tools Actions tab with the ESPHome MSR-2 play buzzer action and an RTTTL song entered](/assets/HJuimage.png)

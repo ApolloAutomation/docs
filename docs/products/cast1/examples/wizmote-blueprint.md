@@ -37,7 +37,7 @@ Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
 1.  Pairing a different WizMote later? Use **Clear WizMote Pairing** on the device to unpair, then turn **WizMote Auto-Discovery** back on and press a button on the new remote.
 
-![](/assets/cast-1-pair-wizmote.gif)
+![CAST-1 device page turning on WizMote Auto-Discovery until a WizMote MAC address appears](/assets/cast-1-pair-wizmote.gif)
 
 !!! note "Pairing takes longer on a CAST-1 running Ethernet only"
 
@@ -59,4 +59,4 @@ Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
 6\. Name your automation something like **Apollo CAST-1 WizMote** and click **Save**. Your WizMote now controls your CAST-1!
 
-![](/assets/cast-1-import-blueprint.gif)
+![Importing the Apollo CAST-1 WizMote blueprint and selecting a CAST-1 in Home Assistant](/assets/cast-1-import-blueprint.gif)

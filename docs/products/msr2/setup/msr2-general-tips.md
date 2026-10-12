@@ -6,7 +6,7 @@ description: Multiple helpful images for mounting, lux/rgb, and gate and zone vi
 
 ##### **Light Sensor (LTR-390UV)**
 
-![20240514_123742.jpg](/assets/20240514-123742.jpg)
+![MSR-2 case with the light sensor visible through the center vent outlined in red](/assets/20240514-123742.jpg)
 
 When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy.
 
@@ -18,11 +18,11 @@ When mounting the MSR-2 be sure to position the device so that the two large hol
 
 The MSR-2 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120degree FOV of the mmWave radar.
 
-![ld2410_mounting_hor-1.jpeg](/assets/ld2410-mounting-hor-1.jpeg)
+![HLK-LD2410B manual diagram of wall mounting at 1.5 to 2 m with a polar chart of detection range by angle](/assets/ld2410-mounting-hor-1.jpeg)
 
 The MSR-2 can also be mounted on the ceiling if you can provide power and mount our articulating stand on the ceiling.
 
-![LD2410 Gates.png](/assets/ld2410-gates.png)
+![LD2410 detection arcs for a wall mount at 1.5 to 2 m high and a ceiling mount at 2.6 to 3 m high](/assets/ld2410-gates.png)
 
 !!! tip "These are some useful hints!"
 
@@ -32,8 +32,8 @@ The MSR-2 can also be mounted on the ceiling if you can provide power and mount 
 
 ##### **Gate and FOV Visualization**
 
-**![ld2410 table.png](/assets/ld2410-table.png)![Gate, Zones and RR.png](/assets/gate-zones-and-rr.png)**
+**![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/ld2410-table.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
 
-![MSR-1 radar map.png](/assets/msr-1-radar-map.png)![Radar gates Colored.png](/assets/radar-gates-colored.png)
+![Top-down fan diagram of radar gates G1 to G7 marked in 0.75 m steps out to 5 m](/assets/msr-1-radar-map.png)![Radar gate fan diagram with Zone 1 in red, Zone 2 in blue, and Zone 3 in green](/assets/radar-gates-colored.png)
 
 #####

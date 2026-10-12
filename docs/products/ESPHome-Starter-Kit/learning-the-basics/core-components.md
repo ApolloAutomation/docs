@@ -39,7 +39,7 @@ If you remove the Web Server component, the device still works, but `esphome-sta
 3. Click **Add** once more to confirm.
 4. Toggle **Show advanced settings**, scroll to **Version**, and select **3**.
 
-<a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> ESPHome Web Server docs</a>
+<a href="https://esphome.io/components/web_server/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> ESPHome Web Server docs</a>
 
 ---
 
@@ -70,7 +70,7 @@ If you remove the rail, **the Onboard RGB LED and any plugged-in modules will st
 2. Click **Add component**, scroll to **Accessory Power Rail**, and click **Add**.
 3. Click **Add** once more to confirm.
 
-<a href="https://esphome.io/components/switch/gpio/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> ESPHome GPIO Switch docs</a>
+<a href="https://esphome.io/components/switch/gpio/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> ESPHome GPIO Switch docs</a>
 
 
 --8<-- "_snippets/community-help.md"

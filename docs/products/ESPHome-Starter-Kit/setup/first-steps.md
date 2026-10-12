@@ -33,7 +33,7 @@ ESPHome Device Builder is the app that gives you a user interface for writing, c
 
 Think of it like telling the starter kit about what devices it has connected and how to use them!
 
-<a href="../../learning-the-basics/explaining-esphome/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn more about ESPHome</a>
+<a href="../../learning-the-basics/explaining-esphome/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Learn more about ESPHome</a>
 
 Pick the platform you'll be running ESPHome Device Builder on:
 
@@ -48,7 +48,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
         If a blue **Windows protected your PC** warning appears when you open the `.exe`, click **More info → Run anyway** to continue.
 
-    ![](../../../assets/esphome-builder-install-windows.gif)
+    ![Downloading the Windows installer from esphome.io, clicking Run anyway, and running setup](../../../assets/esphome-builder-install-windows.gif)
 
     The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your notification area for getting back to it later.
 
@@ -60,7 +60,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     Then take **Start guided tour** for a [five minute walkthrough](../learning-the-basics/device-builder-tour.md), or **Maybe later**.
 
-    ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
+    ![ESPHome Device Builder setup wizard: picking Installation, then New to ESPHome, then Start guided tour](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 === "Mac"
 
@@ -89,7 +89,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     Then take **Start guided tour** for a [five minute walkthrough](../learning-the-basics/device-builder-tour.md), or **Maybe later**.
 
-    ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
+    ![ESPHome Device Builder setup wizard: picking Installation, then New to ESPHome, then Start guided tour](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 === "Home Assistant App"
 
@@ -141,7 +141,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     Then take **Start guided tour** for a [five minute walkthrough](../learning-the-basics/device-builder-tour.md), or **Maybe later**.
 
-    ![](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
+    ![ESPHome Device Builder setup wizard: picking Installation, then New to ESPHome, then Start guided tour](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 #### Add a new device
 
@@ -149,7 +149,7 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 1\. Navigate back to the ESPHome Device Builder and click **Add new device** then click Create new project.
 
-![](../../../assets/device-builder-add-new-device.gif)
+![ESPHome Device Builder Add new device card opening Create new project and the board list](../../../assets/device-builder-add-new-device.gif)
 
 <div markdown class="annotate">
 
@@ -159,7 +159,7 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 1. Remember the name you choose. You'll use it later to reach your device's web server at `http://your-name.local` (for example, <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>).
 
-![](../../../assets/device-builder-select-kit-name-kit-add-wifi.gif)
+![Selecting the ESPHome Starter Kit board, naming the device, and entering Wi-Fi details](../../../assets/device-builder-select-kit-name-kit-add-wifi.gif)
 
 ### Configure Components
 
@@ -177,7 +177,7 @@ The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Usef
 2. Click **Add component**.
 3. Scroll to **Onboard RGB LED** and click **Add**.
 
-![](../../../assets/device-builder-add-onboard-rgb-led-component.gif)
+![ESPHome Device Builder Add component dialog adding the Onboard RGB LED with default settings](../../../assets/device-builder-add-onboard-rgb-led-component.gif)
 
 ### Boot Mode
 
@@ -189,11 +189,11 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 1\. Hold the sides of the ESP32-C6 and gently push the USB-C cable firmly into the USB-C port. Plug in the other side of the USB-C cable into your computer. Please be careful not to snap or damage the FPC ribbon cable connectors located on the sides of the device.
 
-![](../../../assets/esphome-starter-kit-plug-in-usb-c.webp)
+![Plugging the USB-C cable into the ESP32-C6 board](../../../assets/esphome-starter-kit-plug-in-usb-c.webp)
 
 2\. Hold down the boot button. While still holding the boot button, press and release the reset button, then release the boot button.
 
-![](../../../assets/esphome-starter-kit-boot-mode.webp)
+![Holding the BOOT button on the ESP32-C6 while pressing and releasing RESET](../../../assets/esphome-starter-kit-boot-mode.webp)
 
 3\. Your device is now in boot mode - The ESP32-C6 will now stay in bootloader mode until you flash it.
 
@@ -208,13 +208,13 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 5. Wait for the software to compile and install. This usually takes two to five minutes.
 6. Once it completes, click **Stop**, then press the **Reset** button on your device. Your device will reboot and it's now ready to test out!
 
-![](../../../assets/device-builder-initial-firmware-install.gif)
+![ESPHome Device Builder installing over USB: picking the serial port, compiling, and flashing](../../../assets/device-builder-initial-firmware-install.gif)
 
 !!! tip "Click Show details during the install to watch the compile and flash process"
 
     It's a great way to see what's happening under the hood.
 
-<a href="../../learning-the-basics/core-components/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Learn about Core Components</a>
+<a href="../../learning-the-basics/core-components/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Learn about Core Components</a>
 
 ### Test your LED
 
@@ -226,12 +226,12 @@ Your kit's default project includes the [**Web Server**](../learning-the-basics/
 
 It should load your new device with the Onboard RGB LED listed. Click its toggle and the LED on your kit turns on and off.
 
-![](../../../assets/device-builder-web-server-v3.gif)
+![Starter kit web server toggling the Onboard RGB LED and moving its brightness slider](../../../assets/device-builder-web-server-v3.gif)
 
 The LED on the board, switching on and off.
 
-![](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
+![Onboard RGB LED next to the RESET button on the ESP32-C6 blinking on and off](../../../assets/esphome-starter-kit-onboard-rgb-led-light-up.webp)
 
-<a href="../../start-here/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Back - Start Here</a> <a href="../../modules/button-module/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Add More Modules</a> <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Connect to Home Assistant</a>
+<a href="../../start-here/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Back - Start Here</a> <a href="../../modules/button-module/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Add More Modules</a> <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Connect to Home Assistant</a>
 
 --8<-- "_snippets/community-help.md"

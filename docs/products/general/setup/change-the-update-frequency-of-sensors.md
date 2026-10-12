@@ -7,7 +7,7 @@ description: Tutorial for How To Change The Update Frequency Of Sensors.
 
 1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to change.
 
-![](/assets/update-frequency-pic-1.png)
+![ESPHome Builder in the Home Assistant sidebar with the Edit button on an AIR-1 card outlined](/assets/update-frequency-pic-1.png)
 
 2\. Insert the YAML for the sensor you want to edit(The example below is for our AIR-1 SEN55 sensor).
 
@@ -26,4 +26,4 @@ sensor:
 
 4\. Once you see "INFO OTA successful" you are done. Click "STOP" to exit.
 
-![](/assets/update-frequency-pic-3.png)
+![ESPHome Device Builder install log with INFO OTA successful and the Stop button circled](/assets/update-frequency-pic-3.png)

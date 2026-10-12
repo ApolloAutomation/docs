@@ -12,11 +12,11 @@ The TEMP-1 comes with an optional [3.5mm Multi-Probe Splitter](https://apolloaut
 
 1\. To use your TEMP-1 Multi-Probe Splitter gently plug it into the 3.5mm port on your device.
 
-![](/assets/temp-1-multi-probe-insert-multi-probe-splitter-gif.webp)
+![Multi-Probe Splitter 3.5mm plug being inserted into the TEMP-1 probe port](/assets/temp-1-multi-probe-insert-multi-probe-splitter-gif.webp)
 
 2\. Plug in your long or short temp probes into the Multi-Probe Splitter.
 
-![](/assets/temp-1-multi-probe-insert-multiple-probes-gif.webp)
+![Temp probe plugs being connected to the Multi-Probe Splitter sockets](/assets/temp-1-multi-probe-insert-multiple-probes-gif.webp)
 
 !!! success "Power on your TEMP-1 after plugging in all of your probes!"
 
@@ -24,19 +24,19 @@ The TEMP-1 comes with an optional [3.5mm Multi-Probe Splitter](https://apolloaut
 
 3\. Go to the device page of your TEMP-1 in Home Assistant and confirm the Temperature Probe is selected from the dropdown.
 
-![](/assets/temp-1-multi-probe-select-temp-dropdown-gif.gif)
+![TEMP-1 Controls card in Home Assistant with Temperature chosen in the Select Probe dropdown](/assets/temp-1-multi-probe-select-temp-dropdown-gif.gif)
 
 4\. Enable the disabled 3rd and 4th temp probe entities if you have more than 2 probes!
 
-![](/assets/temp-1-multi-probe-enable-disabled-probe-entities-gif.gif)
+![TEMP-1 device page in Home Assistant enabling the disabled Temperature Probe 3 and 4 entities](/assets/temp-1-multi-probe-enable-disabled-probe-entities-gif.gif)
 
 5\. Once completed you will see all four probes updating the temperature!
 
-![](/assets/temp-1-multi-probe-see-all-four-probes-once-enabled.png)
+![TEMP-1 sensors in Home Assistant showing readings from all four temperature probes](/assets/temp-1-multi-probe-see-all-four-probes-once-enabled.png)
 
 6\. To rename the probes you can edit each probe and choose a unique name such as "Fridge Probe" and "Freezer Probe" as shown below!
 
-![](/assets/temp-1-multi-probe-rename-entities.gif)
+![Renaming TEMP-1 probe entities to Fridge Probe and Freezer Probe in Home Assistant](/assets/temp-1-multi-probe-rename-entities.gif)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 

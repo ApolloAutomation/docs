@@ -21,7 +21,7 @@ Connect the Breakout Module to the ESP32-C6 using one of the FPC ribbon cables t
 
 1\. Unplug the USB-C cable from the ESP32-C6 so it is powered off.
 
-![](../../../assets/esphome-starter-kit-remove-usb.webp)
+![Unplugging the USB-C cable from the ESP32-C6 board](../../../assets/esphome-starter-kit-remove-usb.webp)
 
 !!! warning "Handle the FPC connectors gently"
 
@@ -29,11 +29,11 @@ Connect the Breakout Module to the ESP32-C6 using one of the FPC ribbon cables t
 
 2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
+![Lifting the FPC connector latch on the ESP32-C6 and sliding in the ribbon cable, blue side up](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
 3\. Slide the ribbon cable into the Breakout Module with the blue side facing upwards then press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-fpc-to-breakout-module.webp)
+![Sliding the ribbon cable into the Breakout Module FPC connector, blue side up, and closing the latch](../../../assets/esphome-starter-kit-attach-fpc-to-breakout-module.webp)
 
 4\. Plug the ESP32-C6 back into your computer.
 
@@ -41,7 +41,7 @@ Connect the Breakout Module to the ESP32-C6 using one of the FPC ribbon cables t
 
 The Breakout Module is covered in connectors, each labeled on the board. Most of them carry the same I2C bus at different voltages, plus a 1Wire port and a GPIO header for everything else.
 
-![](/assets/esphome-starter-kit-breakout-module-pinout.webp)
+![Breakout Module diagram labeling the I2C, FPC, 1Wire, STEMMA 3.3V, GPIO header, STEMMA 5V, Grove, and SEN6x connectors](/assets/esphome-starter-kit-breakout-module-pinout.webp)
 
 === "I2C"
 
@@ -66,13 +66,13 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
         Plug your sensor's STEMMA QT (Qwiic) cable into the port. The connector is keyed, so it only fits one way.
 
-        ![](/assets/esphome-starter-kit-breakout-module-stemma-qt.webp)
+        ![Plugging a sensor's 4-wire STEMMA QT cable into the Breakout Module port labeled VStemma 5V](/assets/esphome-starter-kit-breakout-module-stemma-qt.webp)
 
     === "SEN6x"
 
         Sensirion SEN6x air quality sensors, like the SEN65, come with their own ribbon cable. Plug it into the **SEN6x** port at the bottom right, latch side facing up. The connector is keyed, so it only fits one way.
 
-        ![](/assets/esphome-starter-kit-breakout-module-sen6x.webp)
+        ![Plugging the SEN65 sensor's red cable into the SEN6x port on the Breakout Module](/assets/esphome-starter-kit-breakout-module-sen6x.webp)
 
         See the [SEN65 Air Quality Sensor](/products/ESPHome-Starter-Kit/modules/breakout-addons/sen65-air-quality-sensor.md) add-on page for the full walkthrough and what each reading means.
 
@@ -91,7 +91,7 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     Plug the probe's connector into the 1Wire port with the latch side facing up.
 
-    ![](/assets/esphome-starter-kit-breakout-module-dallas-probe.webp)
+    ![Plugging the DS18B20 temperature probe's 3.5mm plug into the 1Wire jack on the Breakout Module](/assets/esphome-starter-kit-breakout-module-dallas-probe.webp)
 
     See the [Temperature Probe](/products/ESPHome-Starter-Kit/modules/breakout-addons/temperature-probe.md) add-on page for the full walkthrough.
 
@@ -109,7 +109,7 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     The 2x6 header in the middle of the board breaks out power, the UART, and spare GPIOs for anything else you want to wire up.
 
-    ![](/assets/esphome-starter-kit-breakout-gpio-header-pinout.webp)
+    ![Breakout Module 2x6 GPIO header pinout: 5V, TX, RX, IO3, IO6, IO14 on top and 3.3V, SCL, SDA, IO2, IO7, GND below](/assets/esphome-starter-kit-breakout-gpio-header-pinout.webp)
 
     A few of these pins pull double duty:
 
@@ -119,7 +119,7 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     Connect your components to the header with standard jumper wires.
 
-    ![](/assets/esphome-starter-kit-breakout-module-gpio-header.webp)
+    ![Plugging a three-wire jumper cable into the Breakout Module GPIO header](/assets/esphome-starter-kit-breakout-module-gpio-header.webp)
 
 ??? note "Advanced: keeping 3.3V power on during sleep"
 
@@ -127,7 +127,7 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     If your project needs 3.3V that stays on through sleep, there's a solder jumper on the back of the board, top right, labeled **J5**. The existing bridge between the center pad and the **3vCTRL** pad looks like an H. Cut that bridge, then solder a new bridge from the center pad to the **3V** pad for always-on power.
 
-    ![](/assets/esphome-starter-kit-breakout-3v-select-jumper.webp)
+    ![Back of the Breakout Module with solder jumper J5 circled in red between the 3V and 3vCTRL pads](/assets/esphome-starter-kit-breakout-3v-select-jumper.webp)
 
     This involves cutting a trace and soldering on the board itself, so skip it unless you know you need it. Most projects are fine with the default.
 

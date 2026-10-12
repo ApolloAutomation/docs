@@ -7,9 +7,9 @@ description: "Step by step guide for resetting the Wi-Fi Credentials on your AIR
 
 2\. Long press the Boot button (the button on the right) for 10 seconds
 
-![MTR-1 Boot Button.png](/assets/mtr-1-boot-button.jpg)
+![Side of the MTR-1 case with a screwdriver tip on the Boot button through a vent slot](/assets/mtr-1-boot-button.jpg)
 
-![20240501_155316.jpg](/assets/9Rp20240501-155316.jpg)
+![MTR-1 PCB with the RST and Boot buttons circled in red](/assets/9Rp20240501-155316.jpg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again
 

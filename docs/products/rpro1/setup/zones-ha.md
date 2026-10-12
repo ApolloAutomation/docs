@@ -32,17 +32,17 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 4\. Head to a dashboard view and click the pencil icon to edit dashboard then click one of the large "+" signs, type in manual, and click on it.
 
-![](/assets/ld2450-add-plotly-graph-gif.gif)
+![Home Assistant dashboard in edit mode adding a Manual card with the Plotly graph YAML](/assets/ld2450-add-plotly-graph-gif.gif)
 
 5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
-![](/assets/r-pro-1-plotly-graph-image.png)
+![Plotly card showing R PRO-1 target positions, the radar coverage cone, and three zones](/assets/r-pro-1-plotly-graph-image.png)
 
 6\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page")
 
 7\. Click device as shown in the image below
 
-![](/assets/select-r-pro-1-device.png)
+![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 
 8\. Scroll down until you get to the Configuration section and you see the empty boxes for zones 1-3 for both X and Y coordinates.
 
@@ -56,7 +56,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.
 
-![](/assets/ld2450-zone-input.png)
+![Plotly Target Positions chart with arrows marking the X axis and Y axis around three zones](/assets/ld2450-zone-input.png)
 
 !!! tip "Helpful Hints to understand zones better!"
 
@@ -72,23 +72,23 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 10\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 X and Y target values.
 
-![](/assets/r-pro-1-card-change-units-from-inches.png)
+![LD2450 Target-1 X and Y sensors in Home Assistant with their inch values highlighted](/assets/r-pro-1-card-change-units-from-inches.png)
 
 11\. Select the Settings cog in the top right.
 
-![](/assets/r-pro-1-card-change-units-settings.png)
+![LD2450 Target-1 X entity dialog in Home Assistant with the Settings cog selected](/assets/r-pro-1-card-change-units-settings.png)
 
 12\. Change the unit of measurement to mm and select Update.
 
-![](/assets/r-pro-1-card-change-units-select-mm.png)
+![Unit of measurement dropdown for LD2450 Target-1 X with mm being selected](/assets/r-pro-1-card-change-units-select-mm.png)
 
 13\. Your X and Y Targets will now look like this.
 
-![](/assets/r-pro-1-card-change-units-all-changed-to-mm.png)
+![LD2450 Target 1 to 3 X and Y sensors in Home Assistant now showing mm, highlighted](/assets/r-pro-1-card-change-units-all-changed-to-mm.png)
 
 14\. Now you should see targets on the card.
 
-![](/assets/r-pro-1-card-working-targets.png)
+![Plotly Target Positions card for the R PRO-1 showing a live target and three zones](/assets/r-pro-1-card-working-targets.png)
 
 15\. Now we can make zones around the targets where you want to Detect presence or filter them out.
 
@@ -100,7 +100,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below the Apollo R PRO-1.
 
-![](/assets/select-r-pro-1-device.png)
+![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 
 2\. Scroll down until you see "LD2412 Mode" and change it from "Normal" to "Engineering".
 
@@ -112,14 +112,14 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 3\. Scroll down to the Diagnostic section and you will see "LD2412 g00 move energy" through "LD2412 g13 still energy" are showing percentages from 0-100%.
 
-![](/assets/r-pro-1-ld2412-move-still-energy.png)
+![LD2412 g00 to g03 move and still energy percentages in the Home Assistant Diagnostic section](/assets/r-pro-1-ld2412-move-still-energy.png)
 
 4\. Scroll up to the Configuration section and identify the threshold sliders for g0-g13 for both moving and still energy.
 
 Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 
-![](/assets/ld2412-less-sensitive.png)
+![LD2412 g01 move and still threshold sliders moved right to make the gate less sensitive](/assets/ld2412-less-sensitive.png)
 
 Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.
 
-![](/assets/ld2412-more-sensitive.png)
+![LD2412 g01 move and still threshold sliders moved left to make the gate more sensitive](/assets/ld2412-more-sensitive.png)

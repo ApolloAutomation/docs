@@ -28,7 +28,7 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 
 4\. Click **Save**.
 
-![](/assets/wled-16-add-wizmote.gif)
+![WLED ESP-NOW settings: clicking + next to Last device seen to link the WizMote, then Save & Connect](/assets/wled-16-add-wizmote.gif)
 
 ###### Using the Remote
 

@@ -152,11 +152,11 @@ The latest AIR-1 firmware keeps the SCD40 calibrated automatically. The sensor a
 
     If your AIR-1 sits in a space that rarely gets fresh air (a sealed office, a basement, a grow room), automatic self-calibration will slowly drag the CO<sub>2</sub> readings down. Turn off the **CO2 Auto Calibration** switch on the device page and follow the [manual calibration guide](../../general/calibrating-and-updating/co2-calibration.md) every 1 to 2 years instead.
 
-![](/assets/co2-levels-drop-after-hvac-on.png)
+![CO2 chart showing levels dropping overnight after the HVAC turns on](/assets/co2-levels-drop-after-hvac-on.png)
 
 <a href="https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm" target="_blank" rel="noreferrer nofollow noopener">Wisconsin Department of Health CO<sub>2</sub> Level Chart</a>
 
-![CO2 Health Department.png](/assets/air-1-co2-calibration-image-6.jpg)
+![Wisconsin health department list of CO2 levels and health effects from 400 to 40,000 ppm](/assets/air-1-co2-calibration-image-6.jpg)
 
 !!! tip "We suggest triggering alert automations, hvac or a fan turning on, etc when CO<sub>2</sub> is over 1000"
 

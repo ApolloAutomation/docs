@@ -16,23 +16,23 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Click "Connect" under the Non Battery Firmware option since you are using a TEMP-1.
 
-![](/assets/temp-1-reflash-pic-1-1.png)
+![Apollo TEMP-1 Installer with Connect clicked under Non Battery Firmware Revision 2](/assets/temp-1-reflash-pic-1-1.png)
 
 3\. Select the open com port then click Connect.
 
-![](/assets/temp-1-reflash-pic-2.png)
+![Browser serial port dialog with the USB JTAG/serial debug unit port selected, cursor on Connect](/assets/temp-1-reflash-pic-2.png)
 
 4\. Click "Install ApolloAutomation.TEMP-1".
 
-![](/assets/temp-1-reflash-pic-3.png)
+![Device Dashboard with Install ApolloAutomation.TEMP-1 highlighted](/assets/temp-1-reflash-pic-3.png)
 
 5\. Click "INSTALL".
 
-![](/assets/temp-1-reflash-pic-4.png)
+![Install ApolloAutomation.TEMP-1 confirmation dialog with Install highlighted](/assets/temp-1-reflash-pic-4.png)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](/assets/temp-1b-reflash-pic-7.png)
+![Installation complete! message with the Next button](/assets/temp-1b-reflash-pic-7.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 

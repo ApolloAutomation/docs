@@ -7,10 +7,10 @@ description: "Helpful tips to get the most use out of your sensor."
 
 When looking at the PLT-1B in the below orientation, the boot button is on the left and the reset is on the right by the USB-C port.
 
-![](/assets/plt-1b-buttons.png)
+![PLT-1B diagram labeling the reset button on the left and the boot button and USB-C port on the right](/assets/plt-1b-buttons.png)
 
 ## LTR390 UV
 
 For the most accurate UV and LUX readings, be sure to expose the sensor circled in the image below to light.
 
-![](/assets/plt-1b-buttons-1.png)
+![PLT-1B diagram with the LTR390 UV sensor circled in the top left corner](/assets/plt-1b-buttons-1.png)

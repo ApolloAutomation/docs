@@ -22,7 +22,7 @@ Use this route to build the firmware yourself, or if your device has no **Firmwa
 
 1\. In Home Assistant open the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noopener"><strong>ESPHome Device Builder</strong></a>**.**
 
-[![](/assets/esphome-addon-image.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&amp;repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+[![Show add-on on My Home Assistant button for the ESPHome Device Builder](/assets/esphome-addon-image.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&amp;repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 !!! tip "Make sure you are running the latest version of ESPHome"
 
@@ -30,23 +30,23 @@ Use this route to build the firmware yourself, or if your device has no **Firmwa
 
 2\. Find the sensor you want to update and click the three dots on the far right.
 
-![](/assets/updating-firmware-pic-1.png)
+![ESPHome Device Builder in Home Assistant with the three-dot menu on a device card circled](/assets/updating-firmware-pic-1.png)
 
 3\. Select “**Validate**” from the list.
 
-![](/assets/updating-firmware-pic-2.png)
+![ESPHome Device Builder device menu open with the Validate option circled](/assets/updating-firmware-pic-2.png)
 
 4\. Once the validation completes, click “**Install**” in the bottom right.
 
-![](/assets/updating-firmware-pic-3.png)
+![ESPHome Device Builder validation window with the Install button circled](/assets/updating-firmware-pic-3.png)
 
 5\. Click "**Wirelessly**".
 
-![](/assets/updating-firmware-pic-4.png)
+![ESPHome Device Builder install options with Wirelessly outlined in red](/assets/updating-firmware-pic-4.png)
 
 6\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
 
-![](/assets/updating-firmware-pic-5-1.png)
+![ESPHome Device Builder install log with INFO OTA successful and the Stop button circled](/assets/updating-firmware-pic-5-1.png)
 
 ## If no update ever appears
 

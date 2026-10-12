@@ -11,7 +11,7 @@ description: "Step by step guide for putting The PLT-1 In Boot Mode."
 
 1\. Position the PLT-1 as shown in the image below and locate the small opening to press the boot button.
 
-![](/assets/screenshot-2024-10-23-at-12-32-55-pm.png)
+![Side of the PLT-1 with the boot button opening circled](/assets/screenshot-2024-10-23-at-12-32-55-pm.png)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
 
@@ -25,6 +25,6 @@ description: "Step by step guide for putting The PLT-1 In Boot Mode."
 
 3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
 
-![](/assets/screenshot-2024-10-23-at-12-35-01-pm.png)
+![Top of the PLT-1 with the reset button circled next to the plugged in USB-C cable](/assets/screenshot-2024-10-23-at-12-35-01-pm.png)
 
 4\. Continue with <a href="https://wiki.apolloautomation.com/products/plt1/troubleshooting/plt1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.

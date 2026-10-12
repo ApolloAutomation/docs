@@ -6,7 +6,7 @@ description: Multiple helpful images for mounting, lux/rgb, and gate and zone vi
 
 ##### **Light Sensor (LTR-390UV)**
 
-![20240514_123742.jpg](/assets/rpro-ltr-390.jpg)
+![Probe pointing at the LTR-390UV light sensor on the R PRO-1 board next to the RGB LED](/assets/rpro-ltr-390.jpg)
 
 The R PRO-1 doesn't have any slits on the front of the case, so UV rays can't directly reach the sensor for UV detection. However, light can still enter from around the edges or behind the front panel, allowing the lux readings to spike when ambient light is present.
 
@@ -18,13 +18,13 @@ The R PRO-1 doesn't have any slits on the front of the case, so UV rays can't di
 
 The R PRO-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120 degree FOV for the LD2450 and 150 degree FOV for the LD2412.
 
-![ld2410_mounting_hor-1.jpeg](/assets/ld2412-wall-mount-radar-cone.png)
+![LD2412 wall mounting diagram with the radar 1.5 to 2 m high and a 9 m range](/assets/ld2412-wall-mount-radar-cone.png)
 
 ##### **Ceiling Mounting**
 
 The R PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the ceiling using our ceiling mount kit.
 
-![LD2410 Gates.png](/assets/ld2412-ceiling-mount-radar-cone.png)
+![LD2412 ceiling mounting diagram with the radar 2.6 to 3 m high above a person](/assets/ld2412-ceiling-mount-radar-cone.png)
 
 !!! tip "There are actually two sensors in your r-pro-1 if you bought the optional LD2412 addon!"
 
@@ -50,4 +50,4 @@ The R PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the 
 
 ##### **Gate Visualization**
 
-![](/assets/ld2412-gate-visualization.png)
+![LD2412 gate table listing distance in meters and feet with default move and still thresholds](/assets/ld2412-gate-visualization.png)

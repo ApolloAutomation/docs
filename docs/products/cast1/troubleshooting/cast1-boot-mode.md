@@ -12,7 +12,7 @@ description: Step by step guide for putting The CAST-1 In Boot Mode.
 
 1\. With the CAST-1 unplugged, hold down the **boot** button (on the left) while plugging a USB-C data cable into the CAST-1. Once connected, release the button.
 
-![](/assets/cast-1-boot-mode-method-1.webp)
+![Holding the CAST-1 boot button while plugging in a USB-C cable](/assets/cast-1-boot-mode-method-1.webp)
 
 2\. You are now ready to reflash your device!
 
@@ -24,11 +24,11 @@ description: Step by step guide for putting The CAST-1 In Boot Mode.
 
 2\. Locate the boot and reset buttons on the CAST-1.
 
-![](/assets/cast-1-boot-reset-buttons.webp)
+![CAST-1 case with labels pointing to the boot button on the left and the reset button on the right](/assets/cast-1-boot-reset-buttons.webp)
 
 3\. Hold down the **boot** button (on the left), then press and release the **reset** button (on the right) while keeping the boot button pressed. Finally, release the boot button.
 
-![](/assets/cast-1-boot-mode-method-2.webp)
+![Holding the CAST-1 boot button while pressing and releasing the reset button beside it](/assets/cast-1-boot-mode-method-2.webp)
 
 4\. You are now ready to reflash your device!
 

@@ -13,7 +13,7 @@ To get your new Apollo sensor connected to your Wi-Fi, follow the steps below!
 
 2\. On your phone or PC, open the WiFi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the WiFi network to show up.
 
-![](/assets/getting-started-pic-1-1.png)
+![Phone Wi-Fi settings with the Apollo MSR-2 hotspot network highlighted](/assets/getting-started-pic-1-1.png)
 
 3\. Once connected it should automatically open a dashboard for your sensor
 
@@ -21,7 +21,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 4\. Select the WiFi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
 
-![](/assets/getting-started-pic-2.png)
+![Apollo hotspot page at 192.168.4.1 with the SSID and Password fields and Save button highlighted](/assets/getting-started-pic-2.png)
 
 !!! tip "Tip for Mesh Wi-Fi systems or multiple Access Points"
 
@@ -33,9 +33,9 @@ If this does not automatically open the dashboard, please open your web browser 
 
 1\. <a href="https://homey.app/en-us/app/com.apolloautomation/Apollo-Automation/test/" target="_blank" rel="noreferrer nofollow noopener">Navigate to this website</a> and click "Install App". For now this needs to be done from a desktop PC or a browser.
 
-![](/assets/homey-install-app.png)
+![Homey app store page for Apollo Automation with the Install App button highlighted](/assets/homey-install-app.png)
 
-![](/assets/homey-install-app-confirm.png)
+![Homey install dialog for the Apollo Automation app with Install App highlighted](/assets/homey-install-app-confirm.png)
 
 2\. Select the Homey device you want to install it on and then click "Install App" again!
 
@@ -45,25 +45,25 @@ If this does not automatically open the dashboard, please open your web browser 
 
 1\. Open the Homey App on your phone and navigate to the Devices tab at the bottom then select the (+) icon in the top right and choose "**New Device**". Choose "Allow" if it pops up asking to find Bluetooth devices, or you can change this later in settings.
 
-![](/assets/homey-getting-started-pic-2-1.png)
+![Homey app Devices tab with the plus menu open and New Device highlighted](/assets/homey-getting-started-pic-2-1.png)
 
 2\. Select Apollo Automation under Brands in the bottom left then choose "Every Apollo Sensor". When prompted, click "Connect".
 
-![](/assets/homey-getting-started-pic-3.png)![](/assets/homey-getting-started-pic-4.png)
+![Homey Apollo Automation brand page showing the Every Apollo sensor option](/assets/homey-getting-started-pic-3.png)![Homey Every Apollo sensor screen with the Connect button](/assets/homey-getting-started-pic-4.png)
 
 3\. Your Apollo devices will automatically show up and if not, please first <a href="https://wiki.apolloautomation.com/homey/products/general/setup/getting-started/#connecting-through-hotspot" target="_blank" rel="noreferrer nofollow noopener">connect it to your Wi-Fi following the steps outlined here</a>.
 
 4\. Select the device you want to add, in this case an Apollo MTR-1 and click Continue at the bottom.
 
-![](/assets/homey-getting-started-pic-5.png)
+![Homey New Devices Found screen with an Apollo MTR-1 selected](/assets/homey-getting-started-pic-5.png)
 
 5\. Click Continue Setup and choose a Zone to place your device in. If you are new to Homey you can choose Home and move it to another Zone later after you create more zones!
 
-![](/assets/homey-getting-started-pic-6.png)
+![Homey Device Connected screen for the Apollo MTR-1 with the Continue Setup button](/assets/homey-getting-started-pic-6.png)
 
 6\. Change any other default settings like the Name, icon, etc or just click Finish in the bottom right.
 
-![](/assets/homey-getting-started-pic-7.png)
+![Homey Make It Your Own screen for the MTR-1 with name, zone, and Finish button](/assets/homey-getting-started-pic-7.png)
 
 7\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 

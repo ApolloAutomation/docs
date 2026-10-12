@@ -32,7 +32,7 @@ Start on your Windows PC. This is the machine that will do the compiling.
 
     1.  **Paired senders**, just below the toggle, lists every dashboard allowed to send builds here. It stays empty until you pair one.
 
-![](../../../assets/esphome-device-builder-toggle-on-remote-build.gif)
+![ESPHome Device Builder three-dot menu, Settings, Build server, turning on Enable remote build](../../../assets/esphome-device-builder-toggle-on-remote-build.gif)
 
 ## Pair the Two Dashboards
 
@@ -56,7 +56,7 @@ On your Windows PC, open **Settings → Pairing requests**. It shows **Open** wi
 
 3.  **Pair request sent** appears with a row of emoji under **Your fingerprint**. Leave it on screen, you're about to compare it.
 
-![](../../../assets/esphome-device-builder-initiate-build-server-pairing.gif)
+![ESPHome Device Builder Send builds: clicking Pair, sending the pair request, and seeing the emoji fingerprint](../../../assets/esphome-device-builder-initiate-build-server-pairing.gif)
 
 #### Accept It on Your PC
 
@@ -69,11 +69,11 @@ On your Windows PC, open **Settings → Pairing requests**. It shows **Open** wi
 
     1.  Accepting gives that dashboard code execution on your PC. Only accept a request you just sent yourself.
 
-![](../../../assets/esphome-device-builder-review-accept-pair-request.gif)
+![ESPHome Device Builder Pairing requests: clicking Review, comparing the emoji fingerprint, and clicking Accept](../../../assets/esphome-device-builder-review-accept-pair-request.gif)
 
 Back on the sending dashboard, your PC now sits under **Paired build servers** marked **Connected**. That's how you know it worked. The row reads **Pending** while it's waiting on you and flips over once you accept.
 
-![](../../../assets/esphome-device-builder-successful-pairing.png)
+![ESPHome Device Builder Send builds settings showing the paired build server marked Connected](../../../assets/esphome-device-builder-successful-pairing.png)
 
 The line underneath tells you which ESPHome version the build server runs, and which one your builds will use. The two don't have to match. Device Builder installs whatever your sending dashboard is on and builds with that.
 

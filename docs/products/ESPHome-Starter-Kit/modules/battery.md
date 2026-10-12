@@ -24,7 +24,7 @@ The battery connector only fits one way, but check the wire colors before you pu
 
 Push the connector into the battery port until it seats fully.
 
-![](/assets/esphome-starter-kit-attach-battery.webp)
+![Plugging the flat battery's red and black wire connector into the battery port on the ESP32-C6](/assets/esphome-starter-kit-attach-battery.webp)
 
 ## Monitor the battery
 

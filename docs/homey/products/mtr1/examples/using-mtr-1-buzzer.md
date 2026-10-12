@@ -7,7 +7,7 @@ This guide will walk you through using the buzzer on your MTR-1. You can also us
 
 1. Open Home Assistant and navigate to developer tools in the bottom left
 
-![Screenshot 2023-11-01 at 10.52.38 PM.png](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
+![Developer tools hammer icon highlighted in the Home Assistant sidebar](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
 
 2\. Click on services
 
@@ -29,4 +29,4 @@ This guide will walk you through using the buzzer on your MTR-1. You can also us
 
 5\. Click on the ACTIONS button in bottom right
 
-![image.png](/assets/HJuimage.png)
+![Home Assistant Developer tools with the Actions tab circled and the ESPHome play_buzzer action filled in](/assets/HJuimage.png)

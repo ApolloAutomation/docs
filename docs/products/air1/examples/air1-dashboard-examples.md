@@ -6,7 +6,7 @@ description: AIR-1 Home Assistant Dashboard Examples
 
 Really neat dashboard for your AIR-1 by user "keex"!
 
-![](/assets/air-1-keex-dashboard-image-1-1.png)
+![Home Assistant dashboard by keex with AIR-1 particulate matter and air quality charts for two rooms](/assets/air-1-keex-dashboard-image-1-1.png)
 
 [https://community.home-assistant.io/t/apollo-air-1-dashboard/785311](https://community.home-assistant.io/t/apollo-air-1-dashboard/785311)
 
@@ -14,7 +14,7 @@ Really neat dashboard for your AIR-1 by user "keex"!
 
 ##### Home Assistant Sensor
 
-![CO 2 Graph.png](/assets/co-2-graph.png)
+![Home Assistant sensor card showing a 24-hour Bedroom CO2 line graph at 1,000 ppm](/assets/co-2-graph.png)
 
 ```yaml
 graph: line
@@ -27,7 +27,7 @@ hours_to_show: 24
 
 #### Custom: Apexcharts Card
 
-![](/assets/air-1-suggestions-co2-smarthomesellout.png)
+![ApexCharts card showing 10-minute average CO2 levels for five rooms in Home Assistant](/assets/air-1-suggestions-co2-smarthomesellout.png)
 
 ```yaml
 type: custom:apexcharts-card
@@ -159,7 +159,7 @@ series:
 
 ##### Custom: Plotly Graph Card
 
-![Plotly CO2 Graph.png](/assets/plotly-co2-graph.png)
+![Plotly Graph card showing 24 hours of Bedroom CO2 readings in ppm](/assets/plotly-co2-graph.png)
 
 ```plaintext
 type: custom:plotly-graph
@@ -172,7 +172,7 @@ title: Bedroom CO2
 
 ##### Home Assistant Guage
 
-![CO2 Guage.png](/assets/co2-guage.png)
+![Home Assistant needle gauge card showing MSR-1 CO2 at 1,063 ppm with green, yellow, and red ranges](/assets/co2-guage.png)
 
 ```plaintext
 type: gauge
@@ -191,7 +191,7 @@ severity:
 
 ##### Home Assistant Sensor
 
-![AIR-1 VOC HA Sensor.png](/assets/air-1-voc-ha-sensor.png)
+![Home Assistant sensor card showing an AIR-1 SEN55 VOC line graph at 446](/assets/air-1-voc-ha-sensor.png)
 
 ```
 graph: line
@@ -204,7 +204,7 @@ name: Basement VOC
 
 ##### Custom: Plotly Graph Card
 
-![AIR-1 VOC Plotly.png](/assets/air-1-voc-plotly.png)
+![Plotly Graph card showing 24 hours of Basement VOC readings from the AIR-1](/assets/air-1-voc-plotly.png)
 
 ```
 type: custom:plotly-graph
@@ -217,7 +217,7 @@ title: Basement VOC
 
 ##### Home Assistant Guage
 
-![AIR-1 VOC HA Guage.png](/assets/air-1-voc-ha-guage.png)
+![Home Assistant needle gauge card showing a Basement VOC reading of 457](/assets/air-1-voc-ha-guage.png)
 
 ```
 type: gauge

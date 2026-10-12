@@ -42,7 +42,7 @@ Home Assistant's **Local Calendar** integration stores events entirely inside Ho
 
 2. Name it `Trash` and click **Submit**. Home Assistant creates a calendar entity called `calendar.trash`.
 
-    ![](../../../assets/create-trash-calendar.gif)
+    ![Setting up Local Calendar in Home Assistant, naming the calendar Trash, and clicking Submit and Finish](../../../assets/create-trash-calendar.gif)
 
 **Add the Recycle calendar**
 
@@ -50,7 +50,7 @@ Home Assistant's **Local Calendar** integration stores events entirely inside Ho
 
     [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=local_calendar)
 
-    ![](../../../assets/create-recycle-calendar.gif)
+    ![Setting up a second Local Calendar named Recycle and clicking Submit and Finish](../../../assets/create-recycle-calendar.gif)
 
 **Add recurring events**
 
@@ -75,7 +75,7 @@ Add a repeating event to each calendar to match your actual pickup schedule.
 
 6. Click **Save**.
 
-    ![](../../../assets/trash-pickup-recurring-event.gif)
+    ![Adding a Trash Pickup event on the Trash calendar from 7 to 9 PM that repeats weekly](../../../assets/trash-pickup-recurring-event.gif)
 
 ??? note "Do the same for the Recycle calendar"
 
@@ -87,7 +87,7 @@ Add a repeating event to each calendar to match your actual pickup schedule.
     - Enable **Repeat** and set it to **Weekly** on that day. If recycle goes out more than once a week, scroll down and select the other day too.
     - Click **Save**.
 
-    ![](../../../assets/recycle-pickup-recurring-event.gif)
+    ![Adding a Recycle Pickup event on the Recycle calendar from 7 to 9 PM that repeats weekly](../../../assets/recycle-pickup-recurring-event.gif)
 
 ## Build the automation
 

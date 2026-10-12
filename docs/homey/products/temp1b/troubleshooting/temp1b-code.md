@@ -19,19 +19,19 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Select the open com port then click Connect.
 
-![](/assets/temp-1b-reflash-pic-2-1.png)
+![Browser serial port dialog with the USB JTAG/serial debug unit port selected and the Connect button](/assets/temp-1b-reflash-pic-2-1.png)
 
 4\. Click "Install ApolloAutomation.TEMP-1B".
 
-![](/assets/temp-1b-reflash-pic-3.png)
+![Device Dashboard dialog with Install ApolloAutomation.TEMP-1B selected](/assets/temp-1b-reflash-pic-3.png)
 
 5\. Click "INSTALL".
 
-![](/assets/temp-1b-reflash-pic-4.png)
+![Install ApolloAutomation.TEMP-1B confirmation dialog with the cursor on the Install button](/assets/temp-1b-reflash-pic-4.png)
 
 6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
-![](/assets/temp-1b-reflash-pic-7.png)
+![Web installer dialog showing Installation complete after flashing the TEMP-1B, with the Next button](/assets/temp-1b-reflash-pic-7.png)
 
 !!! warning "Power cycle your device before doing anything else!"
 

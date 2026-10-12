@@ -6,7 +6,7 @@ description: H-1 Getting Started tutorial.
 
 Insert a rechargeable RC-CR123A (16340) battery, preferably an 850 mAh model like <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">the one available in our store</a>, or plug it into a power source using the USB-C port. A normal CR123A will not work!
 
-![](/assets/h-1-battery-insert.jpg)
+![Hand placing a rechargeable 16340 battery into the H-1 battery holder](/assets/h-1-battery-insert.jpg)
 
 2\. Turn on the Ornament:
 
@@ -20,7 +20,7 @@ Once the ornament is awake, press the gold button (see image below) to play one 
 * 2 Presses: Rudolph the Red-Nosed Reindeer
 * Long press: Let it Snow
 
-![](/assets/screenshot-2024-11-01-015948-1.png)
+![Back of the H-1 board with the gold button at lower left, the Boot button, and the Reset button circled in red](/assets/screenshot-2024-11-01-015948-1.png)
 
 4\. Add to Home Assistant (Optional):
 

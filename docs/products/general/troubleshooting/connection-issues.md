@@ -26,7 +26,7 @@ wifi:
 
 1\. Select the ESPHome app and then select Edit under your desired device.
 
-![](/assets/screenshot-2024-10-25-at-5-14-48-pm.png)
+![ESPHome in the Home Assistant sidebar and the Edit button on an MSR-2 card circled](/assets/screenshot-2024-10-25-at-5-14-48-pm.png)
 
 2\.  Add the code below to your devices yaml file. Then select Save and press Install.
 
@@ -34,6 +34,6 @@ wifi:
 power_save_mode: none
 ```
 
-![](/assets/screenshot-2024-10-25-at-5-25-10-pm.png)
+![MSR-2 YAML with power_save_mode: none added under wifi and the Save and Install buttons circled](/assets/screenshot-2024-10-25-at-5-25-10-pm.png)
 
 3\. Now your device should have a stronger connection. (This will cause the sensors internal temperature to increase.)

@@ -14,15 +14,15 @@ description: >-
 
 1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below your Apollo R PRO-1.
 
-![](/assets/select-r-pro-1-device.png)
+![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 
 2\. Scroll down until you see the "Firmware Type" dropdown and select "Ethernet".
 
-![](/assets/r-pro-1-select-ethernet-2.png)
+![Firmware Type dropdown set to Ethernet in the R PRO-1 Configuration card in Home Assistant](/assets/r-pro-1-select-ethernet-2.png)
 
 3\. Locate the Firmware Update entity and click on "PRESS".
 
-![](/assets/r-pro-1-click-press-on-firmware-update-button.png)
+![R PRO-1 Configuration card in Home Assistant with the Firmware Update PRESS button highlighted](/assets/r-pro-1-click-press-on-firmware-update-button.png)
 
 4\. Wait a few minutes - this will download the new firmware file from our github repo and then install the image.
 
@@ -32,15 +32,15 @@ description: >-
 
 1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below your Apollo R PRO-1.
 
-![](/assets/select-r-pro-1-device.png)
+![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 
 2\. Scroll down until you see the "Firmware Type" dropdown and select "WiFi".
 
-![](/assets/r-pro-1-select-wifi.png)
+![Firmware Type dropdown open in Home Assistant with the WiFi option selected for the R PRO-1](/assets/r-pro-1-select-wifi.png)
 
 3\. Locate the Firmware Update entity and click on "PRESS".
 
-![](/assets/r-pro-1-click-press-on-firmware-update-button.png)
+![R PRO-1 Configuration card in Home Assistant with the Firmware Update PRESS button highlighted](/assets/r-pro-1-click-press-on-firmware-update-button.png)
 
 4\. Wait a few minutes - this will download the new firmware file from our github repo and then install the image.
 

@@ -23,7 +23,7 @@ The PIR sensor (the small white dome on a tiny PCB) ships separately from the mo
 2. Line up the **Out** name on each side as shown in the gif below.
 3. Press it down firmly until the pins are fully seated.
 
-![](../../../assets/esphome-starter-kit-attach-pir-to-motion-module.webp)
+![Pressing the PIR sensor onto the motion module pins with the Out labels lined up](../../../assets/esphome-starter-kit-attach-pir-to-motion-module.webp)
 
 ## Attach Motion module
 
@@ -31,7 +31,7 @@ Connect the motion module to the ESP32-C6 using one of the FPC ribbon cables tha
 
 1\. Unplug the USB-C cable from the ESP32-C6 so it is powered off.
 
-![](../../../assets/esphome-starter-kit-remove-usb.webp)
+![Unplugging the USB-C cable from the ESP32-C6 board](../../../assets/esphome-starter-kit-remove-usb.webp)
 
 !!! warning "Handle the FPC connectors gently"
 
@@ -39,11 +39,11 @@ Connect the motion module to the ESP32-C6 using one of the FPC ribbon cables tha
 
 2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
+![Sliding the FPC ribbon cable, blue side up, into the ESP32-C6 connector and closing the latch](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
 3\. Slide the ribbon cable into the motion module with the blue side facing upwards then press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-fpc-to-motion-module.webp)
+![Connecting the other end of the FPC ribbon cable to the motion module](../../../assets/esphome-starter-kit-attach-fpc-to-motion-module.webp)
 
 4\. Plug the ESP32-C6 back into your computer.
 
@@ -56,7 +56,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 3. Search for **Motion** and select the Apollo Starter Kit PIR motion component.
 4. Click **Add**. Device Builder inserts the PIR's binary sensor block into your YAML.
 
-![](../../../assets/esphome-device-builder-add-motion-component.gif)
+![ESPHome Device Builder Add component dialog: searching motion and adding the Motion Module](../../../assets/esphome-device-builder-add-motion-component.gif)
 
 ??? note "What the Motion YAML does"
 
@@ -94,7 +94,7 @@ Flash the device so the new motion entity goes live.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
-![](../../../assets/esphome-device-builder-install-motion-component.gif)
+![ESPHome Device Builder clicking Install, choosing On the network, and compiling the motion config](../../../assets/esphome-device-builder-install-motion-component.gif)
 
 ## Test Motion
 
@@ -108,7 +108,7 @@ With the device back online, the Motion entity is live on the web server. <a hre
 
     PIR sensors need a brief warm-up after powering on, usually 5 to 10 seconds, before their readings stabilize. If the sensor reports motion right after boot even when nothing is moving, give it a moment.
 
-![](../../../assets/esphome-device-builder-test-motion-occupancy.gif)
+![Starter kit web server with the Motion Module sensor toggling as motion is detected](../../../assets/esphome-device-builder-test-motion-occupancy.gif)
 
 > Web server page showing the Motion binary sensor toggling between ON and OFF as motion is detected.
 
@@ -120,6 +120,6 @@ With the device back online, the Motion entity is live on the web server. <a hre
 
 Your motion sensor is live. Put it to work:
 
-<a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Motion-Activated Light </a>
+<a href="/products/ESPHome-Starter-Kit/automations/motion-activated-light/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Motion-Activated Light </a>
 
 --8<-- "_snippets/community-help.md"

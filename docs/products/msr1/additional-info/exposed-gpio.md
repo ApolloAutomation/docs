@@ -3,7 +3,7 @@ description: "What each exposed GPIO pad on the back of the MSR-1 does, includin
 ---
 # Exposed GPIO
 
-![Screenshot 2023-11-18 at 6.33.00 PM.png](/assets/screenshot-2023-11-18-at-6-33-00-pm.png)
+![Back of the MSR-1 Rev 8 board with six GPIO pads labeled SLC, IO 5, 5V, GND, 3V3, and SDA](/assets/screenshot-2023-11-18-at-6-33-00-pm.png)
 
 The back of the Apollo MSR-1 has exposed GPIO for a variety of uses.
 

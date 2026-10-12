@@ -11,7 +11,7 @@ description: "Put the MSR-1 into boot mode using the boot button, which is neede
 
 1\. Position the MSR-1 as shown in the image below and locate the small opening to press the boot button (the right button).
 
-![](/assets/msr-1-top-shot-boot-button.jpg)
+![MSR-1 case with the boot button opening highlighted in red among the top vents](/assets/msr-1-top-shot-boot-button.jpg)
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
 
@@ -25,6 +25,6 @@ description: "Put the MSR-1 into boot mode using the boot button, which is neede
 
 3\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
 
-![](/assets/msr-1-buttons.jpg)
+![Bare MSR-1 board with arrows marking the Boot and Reset buttons along the top edge](/assets/msr-1-buttons.jpg)
 
 4\. Continue with <a href="https://wiki.apolloautomation.com/products/msr1/troubleshooting/msr1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.

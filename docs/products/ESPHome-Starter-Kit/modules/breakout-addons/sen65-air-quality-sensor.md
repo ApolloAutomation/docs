@@ -14,7 +14,7 @@ It's part of Sensirion's SEN6x family. The SEN65 does not read CO₂ or formalde
 
 The SEN65 comes with its own ribbon cable. Plug it into the **SEN6x** port at the bottom right of the [Breakout Module](/products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md#pinout), latch side facing up. The connector is keyed, so it only fits one way.
 
-![](/assets/esphome-starter-kit-breakout-module-sen6x.webp)
+![Plugging the SEN65 sensor's red cable into the SEN6x port on the Breakout Module](/assets/esphome-starter-kit-breakout-module-sen6x.webp)
 
 The SEN6x port is on the same I2C bus as the other connectors: **SCL on GPIO0**, **SDA on GPIO1**.
 
@@ -48,7 +48,7 @@ The SEN65 needs three components in your device config: the accessory power swit
 
 9.  Click **Add**, then flash the device. The SEN65's readings show up alongside your other entities.
 
-![](/assets/esphome-device-builder-add-sen6x-component.gif)
+![Adding the I2C Bus component, then the SEN6x component with its SEN65 readings toggled on in ESPHome Device Builder](/assets/esphome-device-builder-add-sen6x-component.gif)
 
 Want a single air quality number on top of the individual readings? Add the AQI component too, see [NowCast AQI](#nowcast-aqi) below.
 
