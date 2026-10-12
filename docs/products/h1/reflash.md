@@ -6,7 +6,7 @@ If your device becomes unresponsive and you've exhausted the other troubleshooti
 
 If your device has already been connected to Home Assistant previously please refer to Removing Device From Home Assistant first before proceeding
 
-1. Hold the boot button then plug your sensor into your computer with a quality USB-C cable that supports data transfer. Let go of the boot button once you plug the usb cable in!
+1. Hold the boot button then plug your sensor into your computer with a quality USB-C cable that supports data transfer. Let go of the boot button once you plug the USB cable in!
 2. Navigate to our installer page and click connect [\*\* Install Page \*\*](https://apolloautomation.github.io/H-1/)
 3. Select your Apollo device, it will show with a similar name to the one below, and click connect. If you aren't sure which device it is, you can unplug the sensor and see which disappears.
 
@@ -24,7 +24,7 @@ If no device shows, click cancel and then install the recommended driver that sh
 
 6\. VERY IMPORTANT - you need to unplug your device and plug it back in to leave boot mode!
 
-1. After finishing, check for the Apollo hotspot and connect. This might not show if you previously had the H-1 connected to your wifi
+1. After finishing, check for the Apollo hotspot and connect. This might not show if you previously had the H-1 connected to your Wi-Fi
 2. Log into Home Assistant and go to the ESPHome app check to see if you can adopt the device.
 
 If you encounter the below error, please complete the [Putting H-1 In Boot Mode Document](https://wiki.apolloautomation.com/products/h1/boot-mode/) and go back to step 3.

@@ -18,7 +18,7 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 
 !!! success "It's okay if there are some entities that cannot be regenerated!"
 
-    You will likely run into a popup showning that 2 entity IDs cannot be regenerated because they are not available. This is fine, we can manually fix these later or just ignore them as they are disabled entities and not expected to be used.
+    You will likely run into a popup showing that 2 entity IDs cannot be regenerated because they are not available. This is fine, we can manually fix these later or just ignore them as they are disabled entities and not expected to be used.
 
 ![Selecting Recreate entity IDs from the three-dot menu on a BTN-1 device page, then Update](/assets/esphome-integration-recreate-entity-ids-gif.gif)
 
@@ -52,13 +52,13 @@ This section only changes the device name shown in the ESPHome integration page.
 
 !!! null "We are now ready to rename the friendly_name to a new name such as Smart Keys"
 
-    This can have spaces and capital letters and will be the same name home assistant will give the device and all entity names!
+    This can have spaces and capital letters and will be the same name Home Assistant will give the device and all entity names!
 
 3\. Click **Edit** then replace the text after friendly\_name with your new name such as Smart Keys. Click Save and Install in the top right once you are done with the rename and it will save and install. Once it finishes it will say OTA successful and you can click close to get back to the main dashboard.
 
 ![Editing friendly_name to Smart Keys in ESPHome Device Builder, then installing wirelessly](/assets/rename-friendiy-name-esphome-device-builder-gif.gif)
 
-4\. Finally we should delete the device from the ESPHome Integration in home assistant and then add it back! Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>. Next to the device you would like to remove, click the three dots and then **Delete**.
+4\. Finally we should delete the device from the ESPHome Integration in Home Assistant and then add it back! Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>. Next to the device you would like to remove, click the three dots and then **Delete**.
 
 ![Deleting the renamed BTN-1 from the ESPHome integration page using the three-dot menu](/assets/delete-device-from-esphome-device-builder-gif2.gif)
 

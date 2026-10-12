@@ -5,7 +5,7 @@ description: "Add temperature and humidity offsets to your MTR-1 so its readings
 
 #### **Simple Offsets for Temperature and Humidity:**
 
-**Please add these to the bottom of your esphome yaml for your device then click save and install. Once you are finished, you will have two new boxes inside the home assistant esphome integration device page for your device where you can fill in an offset. Give them up to 1minute to take effect!**
+**Please add these to the bottom of your ESPHome yaml for your device then click save and install. Once you are finished, you will have two new boxes inside the Home Assistant ESPHome integration device page for your device where you can fill in an offset. Give them up to 1minute to take effect!**
 
 ```yaml
 sensor:
@@ -54,11 +54,11 @@ The DPS310 and SCD40 sensors are known for their precision in measuring temperat
 
 #### **Adjusting the DPS310 and SCD40 Temperature Offset**
 
-For users who want to fine-tune their sensors, the DPS310 and SCD40 Temperature Offset entities can be manually adjusted to match the conditions in their home. The offset values are subtracted from the raw temperature & humidity readings in the firmware to update the sensor readings in the home assistant entity. For example: scd40\_temperature entity = raw scd40 temperature reading - scd40\_offset.   
+For users who want to fine-tune their sensors, the DPS310 and SCD40 Temperature Offset entities can be manually adjusted to match the conditions in their home. The offset values are subtracted from the raw temperature & humidity readings in the firmware to update the sensor readings in the Home Assistant entity. For example: scd40\_temperature entity = raw scd40 temperature reading - scd40\_offset.   
   
 By default, these offsets are preset to values based on our NIST certified thermometer, it's important to note that these values are calibrated for our environment. They might not be accurate for all settings. Therefore, by using a reference thermometer, users can adjust the difference between the readings to get a more accurate representation.   
   
-Users will also notice the `dps310_temperature_calibrated`, `scd40_humidity_calibrated`, and `scd40_temperature_calibrated`entities. These values utilize the linear filter in the ESPHome firmware to adjust the readings based on our collected data. Again, due to environmental differences, these might not always be precise.
+Users will also notice the `dps310_temperature_calibrated`, `scd40_humidity_calibrated`, and `scd40_temperature_calibrated` entities. These values utilize the linear filter in the ESPHome firmware to adjust the readings based on our collected data. Again, due to environmental differences, these might not always be precise.
 
 #### **Modeling the Relationship Between Sensors**
 

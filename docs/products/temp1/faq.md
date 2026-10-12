@@ -6,7 +6,7 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 
 1\. **How is the TEMP-1 powered?**
 
-* The TEMP-1 operates with USB-C at 5volts using less than 1 amp of power.
+* The TEMP-1 operates with USB-C at 5 volts using less than 1 amp of power.
 
 2\. **What are the Optional Probe Addons?**
 
@@ -20,15 +20,15 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 
 4\. **How does the TEMP-1 connect to Home Assistant?**
 
-* The TEMP-1 connects via WiFi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
+* The TEMP-1 connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
 
 5\. **How often does the TEMP-1 send sensor data?**
 
-* The TEMP-1’s reporting frequency is adjustable in ESPHome but most things default to 60seconds. You can set it for frequent updates or extend intervals to conserve battery life.
+* The TEMP-1’s reporting frequency is adjustable in ESPHome but most things default to 60 seconds. You can set it for frequent updates or extend intervals to conserve battery life.
 
 6\. **Can I customize the TEMP-1 functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP-1. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP-1. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 7\. **What are the RGB LED and piezo buzzer used for?**
 
@@ -56,7 +56,7 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 
 13\. **Can I use an extender to make the TEMP-1 temp probe cable longer?**
 
-* Yes, you can, however at some point you will begin getting "voltage drop" and likely run into issues with bad data from the probe. We suggest 1.5meters or less!
+* Yes, you can, however at some point you will begin getting "voltage drop" and likely run into issues with bad data from the probe. We suggest 1.5 meters or less!
 
 14\. **Can I use the probe in a salt water tank?**
 

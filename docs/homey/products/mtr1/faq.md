@@ -35,7 +35,7 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 9\. **How do I connect the MTR-1 to Home Assistant?**
 
-* The MTR-1 connects to Home Assistant through ESPHome using WiFi. Once connected, you can access data from all the sensors and create automations based on the sensor readings.
+* The MTR-1 connects to Home Assistant through ESPHome using Wi-Fi. Once connected, you can access data from all the sensors and create automations based on the sensor readings.
 
 10\. **What kind of automations can I set up with the MTR-1?**
 
@@ -95,7 +95,7 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 24\. **How do I install the MTR-1?**
 
-* Installation is simple. The MTR-1 is powered via USB-C and connects to your WiFi. From there, you configure it through ESPHome and integrate it into your Home Assistant setup. Detailed instructions are available on our documentation wiki, and we offer support via our Discord community.
+* Installation is simple. The MTR-1 is powered via USB-C and connects to your Wi-Fi. From there, you configure it through ESPHome and integrate it into your Home Assistant setup. Detailed instructions are available on our documentation wiki, and we offer support via our Discord community.
 
 25\. **How secure is the MTR-1?**
 

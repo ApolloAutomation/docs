@@ -32,7 +32,7 @@ description: Step by step guide for tearing down your R PRO-1 to replace parts, 
 
 ![LD2412 module being lined up with its pin headers on the R PRO-1 PCB](/assets/r-pro-1-reassembly-install-ld2412.jpg)
 
-3\. Place back into the case with the ethernet module facing up and the usb-c port facing you.
+3\. Place back into the case with the ethernet module facing up and the USB-C port facing you.
 
 ![R PRO-1 PCB back in its case with the Ethernet module facing up and the USB-C port in front](/assets/r-pro-1-lid-removed.jpg)
 

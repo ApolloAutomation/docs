@@ -64,6 +64,6 @@ number:
 
 ![ESPHome Device Builder install log with INFO OTA successful and the Stop button circled](/assets/add-temp-hum-scd40-pic-3.png)
 
-5\. Once you are finished, you will have two new boxes inside the Home Assistant ESPHome integration device page for your device where you can fill in an offset. Give them up to 1minute to take effect!
+5\. Once you are finished, you will have two new boxes inside the Home Assistant ESPHome integration device page for your device where you can fill in an offset. Give them up to 1 minute to take effect!
 
 ![SCD40 Humidity and SCD40 Temperature offset boxes on the device page in Home Assistant](/assets/add-temp-hum-scd40-pic-5.png)

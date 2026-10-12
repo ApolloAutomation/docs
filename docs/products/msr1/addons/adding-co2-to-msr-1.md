@@ -7,7 +7,7 @@ description: "Fit the CO2 module to your MSR-1, with photos showing the connecto
 
 ![MSR-1 in its open case next to the removed back cover](/assets/img-3784.jpeg)
 
-2\. Remove the board from the case and orientate it like the below image. In the bottom right there is a black connector. There is a x in the lower right corner of the connector
+2\. Remove the board from the case and orientate it like the below image. In the bottom right there is a black connector. There is an x in the lower right corner of the connector
 
 ![MSR-1 board out of the case with the CN3 CO2 connector and its x marking at lower right](/assets/img-3788.jpeg)
 

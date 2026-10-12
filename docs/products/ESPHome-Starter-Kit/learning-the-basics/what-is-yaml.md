@@ -6,7 +6,7 @@ description: A short primer on YAML, the configuration format ESPHome uses, with
 
 YAML is a plain-text format used to describe configuration in a way that is readable for both people and computers. ESPHome uses YAML to describe what your device is and what it should do.
 
-You do not have to write YAML yourself when using the **ESPHome Device Builder**. The Builder generates it for you as you click around. Recognising what you are looking at when you peek at the YAML view helps you understand what your device is doing, and a little YAML opens up advanced settings the GUI does not expose.
+You do not have to write YAML yourself when using the **ESPHome Device Builder**. The Builder generates it for you as you click around. Recognizing what you are looking at when you peek at the YAML view helps you understand what your device is doing, and a little YAML opens up advanced settings the GUI does not expose.
 
 ## The basics
 

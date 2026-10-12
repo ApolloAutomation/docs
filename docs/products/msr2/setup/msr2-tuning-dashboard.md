@@ -8,9 +8,9 @@ description: Tutorial on creating an MSR-2 tuning dashboard.
 
     The Apollo mmWave integration now builds this dashboard for you automatically, with nothing to paste. It also adds auto-calibration, which sets your gate thresholds from a one-minute listen to the empty room and saves your previous values so you can undo it. Follow the [Apollo mmWave dashboard setup guide](/products/msr2/setup/apollo-mmwave-dashboard-setup.md) to get started. The steps below still work if you'd rather keep the YAML version.
 
-!!! note "Huge shoutout to discord user MirkoP for creating this!"
+!!! note "Huge shoutout to Discord user MirkoP for creating this!"
 
-    We all owe a huge thanks to MirkoP from discord/github for creating and sharing this with everyone! <a href="https://github.com/mirkop/apollo-home-assistant/blob/master/streamline_cards/ld2410/README.md" target="_blank" rel="noreferrer nofollow noopener">Source here</a>.
+    We all owe a huge thanks to MirkoP from Discord/GitHub for creating and sharing this with everyone! <a href="https://github.com/mirkop/apollo-home-assistant/blob/master/streamline_cards/ld2410/README.md" target="_blank" rel="noreferrer nofollow noopener">Source here</a>.
 
 This guide will create a beautiful and helpful dashboard to simplify configuration of your MSR-2 sensor. You can easily view the current gate and zone thresholds which will help tune your sensor for your environment!
 

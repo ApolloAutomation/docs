@@ -73,7 +73,7 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
 === "WLED-MM"
 
-    Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**.
+    Click on **Config**, then **LED Preferences**. Select **Hub75Matrix 64x64** and set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter" and click **Save**.
 
     ![WLED LED Preferences set to Hub75Matrix 64x64 and Chain Length 1, brightness limiter unchecked, then saved](/assets/m-1-led-settings.gif)
 

@@ -6,7 +6,7 @@ description: Frequently Asked Questions.
 
 ### 1\. How much power do your sensors use?
 
-* All apollo sensors use 1amp or less, some of them 350-500mA.
+* All Apollo sensors use 1amp or less, some of them 350-500mA.
 
 ---
 
@@ -30,13 +30,13 @@ description: Frequently Asked Questions.
 
 ### **4\. My lux sensor doesn't seem to be working how do I fix it?**
 
-* The default update\_interval is 60 seconds which isnt great for automations revolving around measuring lux values. [Please follow this short guide](https://wiki.apolloautomation.com/products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval/ "How to Edit your lux sensor update interval") to edit the lux update\_interval down to a more responsive 3-5seconds.
+* The default update\_interval is 60 seconds which isn't great for automations revolving around measuring lux values. [Please follow this short guide](https://wiki.apolloautomation.com/products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval/ "How to Edit your lux sensor update interval") to edit the lux update\_interval down to a more responsive 3-5 seconds.
 
 ---
 
-### **5\. Do I need to push the "Clean" button for my Air-1 or setup an automation for it?**
+### **5\. Do I need to push the "Clean" button for my AIR-1 or set up an automation for it?**
 
-* No, your Air-1 will self-clean once a week per this [recommended documentation from the manufacturer.](https://sensirion.com/media/documents/6791EFA0/62A1F68F/Sensirion_Datasheet_Environmental_Node_SEN5x.pdf)
+* No, your AIR-1 will self-clean once a week per this [recommended documentation from the manufacturer.](https://sensirion.com/media/documents/6791EFA0/62A1F68F/Sensirion_Datasheet_Environmental_Node_SEN5x.pdf)
 
 ---
 

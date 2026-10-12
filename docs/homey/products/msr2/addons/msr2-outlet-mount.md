@@ -4,7 +4,7 @@ description: Tutorial for using the MSR-2 Outlet Mount.
 ---
 # MSR-2 Outlet Mount
 
-1\. Gather a top facing usb-c plug, an MSR-2, and our MSR-2 Outlet Mount.
+1\. Gather a top facing USB-C plug, an MSR-2, and our MSR-2 Outlet Mount.
 
 ![USB-C wall plug, L-shaped MSR-2 Outlet Mount, and MSR-2 laid out on a table](/assets/msr-2-outlet-mount-pic-1.jpg)
 
@@ -12,7 +12,7 @@ description: Tutorial for using the MSR-2 Outlet Mount.
 
 ![MSR-2 Outlet Mount lined up with the MSR-2 USB-C port facing left](/assets/msr-2-outlet-mount-pic-2.jpg)
 
-3\. Push the MSR-2 Outlet Mount into the usb-c port until it's fully seated. Do not push hard, it will go in very smoothly.
+3\. Push the MSR-2 Outlet Mount into the USB-C port until it's fully seated. Do not push hard, it will go in very smoothly.
 
 ![MSR-2 Outlet Mount fully seated in the MSR-2 USB-C port](/assets/msr-2-outlet-mount-pic-3.jpg)
 

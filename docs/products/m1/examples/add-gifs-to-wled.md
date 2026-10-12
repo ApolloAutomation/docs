@@ -39,9 +39,9 @@ Getting it onto the matrix depends on your firmware. WLED converts and resizes o
 
     5\. Open a web browser and navigate to `http://<your-m1-ip-address>` or `http://<your-device-name>.local`.
 
-    !!! null "If you need help figuring out your hostname you can edit it from the wled wifi settings"
+    !!! null "If you need help figuring out your hostname you can edit it from the WLED Wi-Fi settings"
 
-        You can use an app like "wled-native" on iOS to auto-discover your WLED devices and then go into wifi settings to see your IP and hostname! <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Here's a step-by-step guide</a>.
+        You can use an app like "wled-native" on iOS to auto-discover your WLED devices and then go into Wi-Fi settings to see your IP and hostname! <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Here's a step-by-step guide</a>.
 
     6\. Click **Config**, then scroll down and click **File System** then click **Browse** and select the resized and renamed gif we just created then click **Save**.
 
@@ -65,6 +65,6 @@ Getting it onto the matrix depends on your firmware. WLED converts and resizes o
 
     !!! warning "Use a browser, not the WLED phone app"
 
-        The app's file picker greys out image files, so uploading a GIF from it does not work. That is a bug in the app rather than anything on the M-1. Open the device in any browser instead.
+        The app's file picker grays out image files, so uploading a GIF from it does not work. That is a bug in the app rather than anything on the M-1. Open the device in any browser instead.
 
     GIFs live on the M-1 itself and the space is limited. Delete images you are not using from **Config**, then **File System**.

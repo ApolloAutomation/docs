@@ -24,7 +24,7 @@ My grandmother wanted a security system that would alert her when there was move
   
 ![Alarmo notification settings with the Movement Detected title, alarm message, and notification name](/assets/alarmo-4.png)  
   
-6\. After saving that action we can add another one that will turn on our sensor lights and/or make the onboard piezo buzzers play an alarm sound. Uner Entity select your sensors RGB light.  
+6\. After saving that action we can add another one that will turn on our sensor lights and/or make the onboard piezo buzzers play an alarm sound. Under Entity select your sensors RGB light.  
   
 ![Alarmo Configure action screen with the Alarm is triggered event and AIR-1 and MSR-1 RGB lights selected](/assets/alarmo-5.png)  
   

@@ -23,4 +23,4 @@ description: "Step by step guide for re-flashing the H-3 back to factory firmwar
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-[Head to the Getting Started article to setup your H-3 as a new device!](https://wiki.apolloautomation.com/products/h3/setup/getting-started/){                .md-button .md-button--primary }
+[Head to the Getting Started article to set up your H-3 as a new device!](https://wiki.apolloautomation.com/products/h3/setup/getting-started/){                .md-button .md-button--primary }

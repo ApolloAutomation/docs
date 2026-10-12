@@ -6,7 +6,7 @@ description: Tutorial for how to enable/disable prevent sleep.
 
 !!! tip "Put your sensors to sleep!"
 
-    All of our battery powered device are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
+    All of our battery powered devices are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
 
     The temperature offsets needed will be much lower for your sensors as the microcontroller will not put off as much heat when it is sleeping and then waking for short periods to report the sensor values.
 

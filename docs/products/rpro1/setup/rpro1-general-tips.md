@@ -26,7 +26,7 @@ The R PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the 
 
 ![LD2412 ceiling mounting diagram with the radar 2.6 to 3 m high above a person](/assets/ld2412-ceiling-mount-radar-cone.png)
 
-!!! tip "There are actually two sensors in your r-pro-1 if you bought the optional LD2412 addon!"
+!!! tip "There are actually two sensors in your R PRO-1 if you bought the optional LD2412 addon!"
 
     **The multi-target LD2450:**
 

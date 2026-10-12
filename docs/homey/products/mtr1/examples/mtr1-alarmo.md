@@ -24,7 +24,7 @@ My grandmother wanted a security system that would alert her when there was move
   
 ![Alarmo notification Title, Message, and Name fields filled in for the alarm alert](/assets/alarmo-4.png)  
   
-6\. After saving that action we can add another one that will turn on our sensor lights and/or make the onboard piezo buzzers play an alarm sound. Uner Entity select your sensors RGB light.  
+6\. After saving that action we can add another one that will turn on our sensor lights and/or make the onboard piezo buzzers play an alarm sound. Under Entity select your sensors RGB light.  
   
 ![Alarmo action for Alarm is triggered with Apollo sensor RGB light entities selected](/assets/alarmo-5.png)  
   

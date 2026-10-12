@@ -32,7 +32,7 @@ description: How to keep your sensor awake using the Home Assistant Helper.
 
 7\. Now when you reboot your Apollo device or when it wakes up on its wake timer, it will no longer go back to sleep.
 
-!!! null "Warning: This will keep ALL of your apollo devices from sleeping."
+!!! null "Warning: This will keep ALL of your Apollo devices from sleeping."
 
     Please keep reading to create an automation to turn this helper off after one hour of it being on.
 
@@ -42,7 +42,7 @@ description: How to keep your sensor awake using the Home Assistant Helper.
 
 ![Entity trigger list with the State option circled in red](/assets/toggle-ota-mode-automation-2.png)
 
-9\. Type in "apollo\_ota\_mode" in the box for entity and then select "On" and finally put a 1 in the hours box under "For". This is telling home assistant if the apollo\_ota\_mode is on for one hour then this trigger will fire (trigger).
+9\. Type in "apollo\_ota\_mode" in the box for entity and then select "On" and finally put a 1 in the hours box under "For". This is telling Home Assistant if the apollo\_ota\_mode is on for one hour then this trigger will fire (trigger).
 
 ![State trigger set to apollo_ota_mode, To On, and For 1 hour, circled in red](/assets/toggle-ota-mode-automation-3.png)
 

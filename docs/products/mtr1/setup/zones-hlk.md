@@ -28,7 +28,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 !!! success "You need to be close to your device!"
 
-    The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
+    The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to Bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
 
 ![HLKRadarTool Device list showing the HLK-LD2450 radar found over Bluetooth](/assets/screenshot-20240514-100155-hlkradartool.jpg)
 
@@ -40,7 +40,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 !!! tip "There are three ways to use your MTR-1!"
 
-    You can use any of these three choices to control your MTR-1 differently. The most common option is "Detection" which lets you setup three areas and track three targets within them.<br>**Disabled**: Disable zone area detection<br>**Detection**: Only detects targets in the specified zone<br>**Filter**: Excludes a zone from detection
+    You can use any of these three choices to control your MTR-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disable zone area detection<br>**Detection**: Only detects targets in the specified zone<br>**Filter**: Excludes a zone from detection
 
     Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 

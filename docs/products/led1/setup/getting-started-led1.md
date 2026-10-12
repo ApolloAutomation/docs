@@ -58,7 +58,7 @@ The LED-1 can be powered via USB (5V up to 3 amps) or via USB Power Delivery (5V
 
 Your device is now ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
 
-1\. Plug your power supply or usb-c power in and the LED-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select WLED-AP. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to http://4.3.2.1/ and you should be prompted with the same image seen below.
+1\. Plug your power supply or USB-C power in and the LED-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select WLED-AP. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to http://4.3.2.1/ and you should be prompted with the same image seen below.
 
 ![WLED Welcome to WLED page with WiFi Settings and To the Controls buttons](/assets/led-1-getting-started-pic-1.png)
 

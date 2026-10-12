@@ -1,6 +1,6 @@
 ---
-title: Add the LD2412 mmwave sensor to your R PRO-1
-description: Tutorial on adding the LD2412 mmwave sensor to your R PRO-1
+title: Add the LD2412 mmWave sensor to your R PRO-1
+description: Tutorial on adding the LD2412 mmWave sensor to your R PRO-1
 ---
 # Install the LD2412 in R PRO-1
 
@@ -8,7 +8,7 @@ description: Tutorial on adding the LD2412 mmwave sensor to your R PRO-1
 
 !!! tip "Check out the gif above or step by step directions below!"
 
-    The gif above shows all the steps needed to take apart and add your ld2412 to the R PRO-1 or you can follow the step by step tutorial with images below!
+    The gif above shows all the steps needed to take apart and add your LD2412 to the R PRO-1 or you can follow the step by step tutorial with images below!
 
 1\. Unplug your R PRO-1 from power and remove the back.
 
@@ -22,7 +22,7 @@ description: Tutorial on adding the LD2412 mmwave sensor to your R PRO-1
 
 ![Lowering the LD2412 module onto its pin headers on the R PRO-1 board](/assets/r-pro-1-reassembly-install-ld2412.jpg)
 
-4\. Place back into the case with the ethernet module facing up and the usb-c port facing you.
+4\. Place back into the case with the ethernet module facing up and the USB-C port facing you.
 
 ![R PRO-1 board seated in its case with the Ethernet port up and the USB-C port facing you](/assets/r-pro-1-lid-removed.jpg)
 

@@ -6,11 +6,11 @@ description: Multiple automation examples with the TEMP-1.
 
 ###### Freezer Temperature Probe Example
 
-This will guide you through how to setup an automation in Home Assistant using the temperature probe in your freezer! At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
+This will guide you through how to set up an automation in Home Assistant using the temperature probe in your freezer! At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
 
 1\. Place the temperature probe into your freezer and then wait for it to normalize around 0°F (-18°C). Make sure your TEMP-1 is in a cool dry place - only the temp probe and wire can withstand the temperatures in the fridge, freezer, etc.
 
-2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30°F so I would want to go slightly above that range. However, <a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">in most freezers, they should NOT reach above 0</a>°<a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">F</a> so you will likely need to input a lower value than me. my minimums are around -20°F.
+2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30°F so I would want to go slightly above that range. However, <a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">in most freezers, they should NOT reach above 0</a>°<a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">F</a> so you will likely need to input a lower value than me. My minimums are around -20°F.
 
 ![Home Assistant history graph of the TEMP-1 temperature probe, arrows at freezer highs and lows](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
 
@@ -22,11 +22,11 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-6\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users skip to step 10.
+6\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users skip to step 10.
 
 ![Home Assistant numeric state trigger on Apollo TEMP-1 Max Probe Temp with Above set to 30](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
 
-7\. Click Add Action then type in "iPhone" and select your phone. if you do not see your phone or have an Android, try typing in "notify" instead and scrolling down until you find your phone listed.
+7\. Click Add Action then type in "iPhone" and select your phone. If you do not see your phone or have an Android, try typing in "notify" instead and scrolling down until you find your phone listed.
 
 ![Home Assistant Add action search for iphone with the phone notification action highlighted](/assets/temp-1-temp-probe-ex-automation-pic-4.png)
 
@@ -68,7 +68,7 @@ mode: single
 
 ###### Food Probe Example
 
-This will guide you through how to setup an automation in Home Assistant using the food probe with Chicken(or anything) cooking to 165°F(73.9C). At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
+This will guide you through how to set up an automation in Home Assistant using the food probe with Chicken (or anything) cooking to 165°F(73.9C). At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
 
 1\. Set your Max Probe Temp to 73.9°C. The offsets MUST be in Celsius even if you are using F in the automation below.
 
@@ -78,11 +78,11 @@ This will guide you through how to setup an automation in Home Assistant using t
 
 3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left. <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-4\. Click Add Trigger then Entity then Numeric state and search for your temp-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Advanced users skip to step 8.
+4\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Advanced users skip to step 8.
 
 ![Numeric state trigger on Apollo TEMP-1 Max Probe Temp with Above set to 165](/assets/temp-1-food-probe-ex-automation-pic-3.png)
 
-5\. Click Add Action then type in "iPhone" and select your phone. if you do not see your phone or have an Android, try typing in "notify" instead and scrolling down until you find your phone listed.
+5\. Click Add Action then type in "iPhone" and select your phone. If you do not see your phone or have an Android, try typing in "notify" instead and scrolling down until you find your phone listed.
 
 ![Home Assistant Add action search for iphone with the phone notification action highlighted](/assets/temp-1-temp-probe-ex-automation-pic-4.png)
 
@@ -147,7 +147,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Chicken Monitor state trigger set to Off with Trigger ID Chicken Monitor Off](/assets/temp-1-cook-chicken-example-pic-21.png)
 
-7\. Click Add Trigger then Entity then Numeric state and search for your temp-1 food probe entity such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 160°F(71.1C) because the Chicken will rest and reach 165°F once removed from the oven/grill.
+7\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 food probe entity such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 160°F(71.1C) because the Chicken will rest and reach 165°F once removed from the oven/grill.
 
 ![Numeric state trigger on Apollo TEMP-1 Food Probe with Above set to 160](/assets/temp-1-cook-chicken-example-pic-7.png)
 
@@ -183,7 +183,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Add action search for mobile with the iPhone notification action highlighted](/assets/temp-1-cook-chicken-example-pic-15.png)
 
-16\. Write in a custom title and or message- the message is required but the title is not.
+16\. Write in a custom title and/or message- the message is required but the title is not.
 
 ![Notification action titled Chicken Monitoring Started with a TEMP-1 message](/assets/temp-1-cook-chicken-example-pic-16.png)
 
@@ -215,7 +215,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Repeat until block with its inner Add Action button highlighted](/assets/temp-1-cook-chicken-example-pic-27.png)
 
-24\. Search "light toggle" in the search bar shown then select "Choose entity" and select your the rgb led for your device
+24\. Search "light toggle" in the search bar shown then select "Choose entity" and select the rgb led for your device
 
 ![Add action dialog searching light toggle, with Light: Toggle selected](/assets/temp-1-cook-chicken-example-pic-28.png)
 
@@ -223,7 +223,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Option 2 notification titled Time to check the Chicken! with a 160F message](/assets/temp-1-cook-chicken-example-pic-29.png)
 
-26\. Optionally add another action here for speaking out loud on your smart speakers such as Homepods. Click add Action then search "TTS". This requires you to have piper and a few other things already setup.
+26\. Optionally add another action here for speaking out loud on your smart speakers such as Homepods. Click add Action then search "TTS". This requires you to have piper and a few other things already set up.
 
 ![Add action dialog searching tts, with Text-to-speech (TTS): Speak selected](/assets/temp-1-cook-chicken-example-pic-30.png)![TTS Speak action on piper targeting Homepods with The Chicken is almost ready! message](/assets/temp-1-cook-chicken-example-pic-31.png)
 
@@ -245,4 +245,4 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Save dialog naming the TEMP-1 Chicken Automation in the Food category](/assets/temp-1-cook-chicken-example-pic-34.png)
 
-32\. You now have one automation which unifies the button you created in the dashboard and alerts you when your chicken is almost done via a phone notification, a blinking green led, and an optional TTS notification to your smart speakers! Thanks again to discord user RalphP for this example!
+32\. You now have one automation which unifies the button you created in the dashboard and alerts you when your chicken is almost done via a phone notification, a blinking green led, and an optional TTS notification to your smart speakers! Thanks again to Discord user RalphP for this example!

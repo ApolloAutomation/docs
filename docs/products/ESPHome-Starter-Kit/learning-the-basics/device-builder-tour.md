@@ -61,7 +61,7 @@ Click anything in the navigator to see its settings here as a form. Every field 
 
 #### YAML editor (right)
 
-The right pane is the raw YAML for your device, colour-coded with line numbers. You can read it, scroll it, and edit it directly.
+The right pane is the raw YAML for your device, color-coded with line numbers. You can read it, scroll it, and edit it directly.
 
 The form pane and the YAML editor are always in sync. Edit either side and the other updates instantly. You can learn [YAML](what-is-yaml.md) by reading what the forms produce.
 

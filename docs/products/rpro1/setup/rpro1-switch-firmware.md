@@ -12,7 +12,7 @@ description: >-
 
 ###### Switch to Ethernet
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below your Apollo R PRO-1.
+1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on "1 device" below your Apollo R PRO-1.
 
 ![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 
@@ -24,13 +24,13 @@ description: >-
 
 ![R PRO-1 Configuration card in Home Assistant with the Firmware Update PRESS button highlighted](/assets/r-pro-1-click-press-on-firmware-update-button.png)
 
-4\. Wait a few minutes - this will download the new firmware file from our github repo and then install the image.
+4\. Wait a few minutes - this will download the new firmware file from our GitHub repo and then install the image.
 
 5\. Your device is now on the Ethernet firmware and is ready to configure!
 
 ###### Switch to Wi-Fi
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below your Apollo R PRO-1.
+1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on "1 device" below your Apollo R PRO-1.
 
 ![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 
@@ -42,6 +42,6 @@ description: >-
 
 ![R PRO-1 Configuration card in Home Assistant with the Firmware Update PRESS button highlighted](/assets/r-pro-1-click-press-on-firmware-update-button.png)
 
-4\. Wait a few minutes - this will download the new firmware file from our github repo and then install the image.
+4\. Wait a few minutes - this will download the new firmware file from our GitHub repo and then install the image.
 
 [Head to the getting started docs to get your sensor integrated with Home Assistant!](https://wiki.apolloautomation.com/products/general/setup/getting-started-rpro1/#connecting-through-hotspot){  .md-button .md-button--primary }

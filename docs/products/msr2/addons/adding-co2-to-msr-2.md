@@ -28,4 +28,4 @@ description: Tutorial on adding the SCD40 CO2 sensor to your MSR-2.
 
 ![Pressing the backplate onto the MSR-2 case until it snaps into place](/assets/msr-2-add-co2-pic-15.jpg)
 
-7\. Please refer to our [CO<sub>2</sub> calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).
+7\. Please refer to our [CO<sub>2</sub> calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to add on to an existing Apollo device).

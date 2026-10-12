@@ -29,7 +29,7 @@ description: "Step by step guide for re-calibrating your SCD40 CO2 sensor"
 
 It might take several attempts clicking the "Press" button for it to equalize correctly. If you don't see the SCD40 reporting 400-500 ppm then click the button again.
 
-5\. Now your CO<sub>2</sub> sensor should be calibrated! Be sure to setup some nice flows and check out the insights so you can monitor the CO<sub>2</sub> levels.
+5\. Now your CO<sub>2</sub> sensor should be calibrated! Be sure to set up some nice flows and check out the insights so you can monitor the CO<sub>2</sub> levels.
 
 ![Homey CO2 graph for the Apollo AIR-1 with readings between 550 and 700 ppm](/assets/co2-calibration-homey-pic-3.png)
 

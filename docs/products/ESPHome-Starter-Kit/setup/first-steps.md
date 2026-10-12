@@ -181,7 +181,7 @@ The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Usef
 
 ### Boot Mode
 
-The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again
+The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again.
 
 !!! tip "Use a quality USB-C cable and power source"
 

@@ -1,5 +1,5 @@
 ---
-description: "Youtuber reviews and feedback about the MTR-1 sensor from Apollo Automation."
+description: "YouTuber reviews and feedback about the MTR-1 sensor from Apollo Automation."
 ---
 # [Home Tech Innovations MTR-1 Review](https://youtu.be/q5GejbxnByA?si=PMgK4ro6U8Q7idCm)
 

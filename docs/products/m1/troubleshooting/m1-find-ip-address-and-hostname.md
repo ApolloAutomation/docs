@@ -16,7 +16,7 @@ description: >-
 
     <a href="https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-2\. Make sure you have already connected it to the same Wi-Fi network that your pc and phone are on <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/#connect-to-wi-fi" target="_blank" rel="noreferrer nofollow noopener">as shown here</a>.
+2\. Make sure you have already connected it to the same Wi-Fi network that your PC and phone are on <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/#connect-to-wi-fi" target="_blank" rel="noreferrer nofollow noopener">as shown here</a>.
 
 3\. The M-1 LED Matrix should be detected automatically. Select it, then click the **Config** tab in the top right corner.
 

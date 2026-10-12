@@ -2,7 +2,7 @@
 title: M-1 LED Matrix Setting up scrolling text
 description: Step by step guide to adding a WLED Preset for custom scrolling text on the M-1 LED Matrix!
 ---
-# Setup Scrolling Text for the M-1
+# Set Up Scrolling Text for the M-1
 
 !!! tip "You can set multiple different custom scrolling text as presets in WLED."
 

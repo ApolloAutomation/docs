@@ -21,7 +21,7 @@ When mounting the MSR-1 be sure to position the device so that the two large hol
 
 ##### **Mounting**
 
-The MSR-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120degree FOV of the mmWave radar.
+The MSR-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120-degree FOV of the mmWave radar.
 
 ![LD2410 detection arcs for a wall mount at 1.5 to 2 m high and a ceiling mount at 2.6 to 3 m high](/assets/ld2410-gates.png)![Side-view diagram of radar coverage cones from a wall mount and a ceiling mount](/assets/ld2410-zone-map.png)
 

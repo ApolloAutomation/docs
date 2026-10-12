@@ -1,6 +1,6 @@
 ---
 title: Removing Device From Home Assistant
-description: Tutorial to Removing Device From Home Assistant.
+description: Tutorial for Removing Device From Home Assistant.
 ---
 # Removing Device From Home Assistant
 

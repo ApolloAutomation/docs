@@ -170,7 +170,7 @@ refresh_interval: 10
 title: Bedroom CO2
 ```
 
-##### Home Assistant Guage
+##### Home Assistant Gauge
 
 ![Home Assistant needle gauge card showing MSR-1 CO2 at 1,063 ppm with green, yellow, and red ranges](/assets/co2-guage.png)
 
@@ -215,7 +215,7 @@ refresh_interval: 10
 title: Basement VOC
 ```
 
-##### Home Assistant Guage
+##### Home Assistant Gauge
 
 ![Home Assistant needle gauge card showing a Basement VOC reading of 457](/assets/air-1-voc-ha-guage.png)
 

@@ -8,13 +8,13 @@ This guide will show you how to edit the lux updates down to 5 seconds.
 
 !!! tip "Your sensor is defaulting to 60 seconds for updates to the state of the lux sensor."
 
-    This is the default for all esphome devices using lux because it uses less Wi-Fi airtime fairness and writes less to your Home Assistant Database. Suggested not to go below 5 seconds.
+    This is the default for all ESPHome devices using lux because it uses less Wi-Fi airtime fairness and writes less to your Home Assistant Database. Suggested not to go below 5 seconds.
 
 1\. Select the <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">ESPHome Builder</a> in the sidebar then click "EDIT" on the device you want to change.
 
 ![ESPHome Builder in the Home Assistant sidebar with the Edit button on an AIR-1 card outlined](/assets/update-frequency-pic-1.png)
 
-2\. Copy this code and enter it just like shown in the next step. Make sure there are no extra spaces or any other characters it needs to look just like the example in the next step.
+2\. Copy this code and enter it just like shown in the next step. Make sure there are no extra spaces or any other characters. It needs to look just like the example in the next step.
 
 ```yaml
 #LUX sensor update interval

@@ -1,6 +1,6 @@
 ---
-title: Add the rear female usb-c port to your MSR-2
-description: Tutorial on adding the rear female usb-c port to your MSR-2.
+title: Add the rear female USB-C port to your MSR-2
+description: Tutorial on adding the rear female USB-C port to your MSR-2.
 ---
 # Adding Articulating Stand To MSR-2
 

@@ -25,7 +25,7 @@ Out of the box, your RGB module turns on, turns off, and changes color. ESPHome 
 
 3.  Turn on **Show advanced settings** near the bottom of the form. Effects are an advanced option, so the field stays hidden until you do.
 4.  Scroll to **Effects** and click **\+ Add**.
-5.  Pick **Addressable Rainbow** from the dropdown. Its own settings unfold underneath: **Name**, **Speed**, and **Width**. Leave them alone for now, the greyed-out values are the defaults ESPHome uses. (1)
+5.  Pick **Addressable Rainbow** from the dropdown. Its own settings unfold underneath: **Name**, **Speed**, and **Width**. Leave them alone for now, the grayed-out values are the defaults ESPHome uses. (1)
     { .annotate }
 
     1.  Want something other than rainbow? Everything in the dropdown works on your RGB module, and the full library is documented at <a href="https://esphome.io/components/light/#light-effects" target="_blank" rel="noreferrer nofollow noopener">esphome.io/components/light</a>. The entries starting with "Addressable" animate each LED separately, which is what makes a rainbow or a wipe travel along the strip. The rest, like **Pulse**, **Strobe**, and **Flicker**, drive the whole strip as one color at a time.

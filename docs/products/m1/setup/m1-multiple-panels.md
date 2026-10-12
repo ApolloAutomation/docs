@@ -6,7 +6,7 @@ description: Tutorial for wiring and configuring multiple panels with your M-1 L
 
 !!! info "Prerequisites needed for multiple panels"
 
-    To use multiple panels you will need one M-1 LED Matrix Controller, at least two M-1 Matrix panels with a maximum of four, at least one of the data cables with a max of three, and at least one of the Power Modules (with a max of three). You will also need up to four usb-c cables to power each panel including the usb-c of the m-1 led matrix which will power the panel it is connected to.
+    To use multiple panels you will need one M-1 LED Matrix Controller, at least two M-1 Matrix panels with a maximum of four, at least one of the data cables with a max of three, and at least one of the Power Modules (with a max of three). You will also need up to four USB-C cables to power each panel including the USB-C of the M-1 LED Matrix which will power the panel it is connected to.
 
 Using panels you sourced yourself rather than Apollo ones? They need to match the M-1's own: **64x64 half scan**, sometimes written 1/32. Indoor P2.5 and P3 64x64 panels usually qualify. Quarter-scan panels, often sold as outdoor, do not work.
 
@@ -124,7 +124,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
         1\. Navigate to your WLED instance in a browser or using the WLED-native app on your phone. You can use http://your-hostname-here.local or its IP address. <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Click here if you need to find your IP or hostname</a>.
 
-        2\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **2** then **Save**.
+        2\. Click on **Config**, then **LED Preferences**. Set **Chain Length** to **2** then **Save**.
 
         ![WLED-MM LED Preferences with Chain Length set to 2, then saved](/assets/chain-length-2-gif.gif)
 
@@ -142,7 +142,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
         1\. Navigate to your WLED instance in a browser or using the WLED-native app on your phone. You can use http://your-hostname-here.local or its IP address. <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Click here if you need to find your IP or hostname</a>.
 
-        2\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **3** then **Save**.
+        2\. Click on **Config**, then **LED Preferences**. Set **Chain Length** to **3** then **Save**.
 
         ![WLED-MM LED Preferences with Chain Length set to 3, then saved](/assets/chain-length-3-gif.gif)
 
@@ -160,7 +160,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
         1\. Navigate to your WLED instance in a browser or using the WLED-native app on your phone. You can use http://your-hostname-here.local or its IP address. <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Click here if you need to find your IP or hostname</a>.
 
-        2\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **4** then **Save**.
+        2\. Click on **Config**, then **LED Preferences**. Set **Chain Length** to **4** then **Save**.
 
         ![WLED-MM LED Preferences with Chain Length set to 4, then saved](/assets/chain-length-4-gif.gif)
 
@@ -178,19 +178,19 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
 !!! success "WLED works using segments and your device now has different stop and end pixels for each segment since you have added more LEDs with each additional panel"
 
-    Below we will create multiple Segments in WLED which we will then edit until they are setup to show the correct number of pixels for your number of panels.
+    Below we will create multiple Segments in WLED which we will then edit until they are set up to show the correct number of pixels for your number of panels.
 
-    Think of segments like taking one big set of leds and cutting them into smaller chunks to then individually control. Segment 1 will control the top 1/4 of the display, Segment 2 will control the second 1/4, Segment 3 will control the third 1/4 and Segment 4 will control the bottom 1/4 of the matrix.
+    Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 1 will control the top 1/4 of the display, Segment 2 will control the second 1/4, Segment 3 will control the third 1/4 and Segment 4 will control the bottom 1/4 of the matrix.
 
-    You can go back later and change these to your own layout - for example maybe you want to control all of the first led matrix with Segment 0 and the second matrix with Segment 1 you can definitely do that!
+    You can go back later and change these to your own layout - for example maybe you want to control all of the first LED matrix with Segment 0 and the second matrix with Segment 1 you can definitely do that!
 
 If you grew an existing setup rather than starting fresh, the default segment keeps its old bounds and your new pixels stay dark. Set **Stop X** and **Stop Y** to your new dimensions before adding any more segments.
 
 === "Two Panels"
 
-    1\. Navigate to the main page of your wled instance in a browser or using the WLED-native app and focus on the Segments section.
+    1\. Navigate to the main page of your WLED instance in a browser or using the WLED-native app and focus on the Segments section.
 
-    2\. Since we are using two panels, we will begin by editing Segment 0 and setting the Stop X to "128" and the Stop Y to "16"
+    2\. Since we are using two panels, we will begin by editing Segment 0 and setting the Stop X to "128" and the Stop Y to "16".
 
     ![Editing WLED Segment 0 to Stop X 128 and Stop Y 16 for two M-1 panels](/assets/two-panels-setup-segment-0.gif)
 
@@ -218,13 +218,13 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
         You must save your segments as a preset or they will get wiped away after a reboot or when another preset with different segments is used.
 
-    8\. Save your segments by creating a new preset. Click on the + Preset button and typing in a name then clicking Save at the bottom.
+    8\. Save your segments by creating a new preset. Click on the + Preset button and type in a name then click Save at the bottom.
 
     ![Saving the segments as a new WLED preset named Four Segments 2 Panels](/assets/two-panels-save-preset.gif)
 
 === "Three Panels"
 
-    1\. Navigate to the main page of your wled instance in a browser or using the WLED-native app and focus on the Segments section.
+    1\. Navigate to the main page of your WLED instance in a browser or using the WLED-native app and focus on the Segments section.
 
     2\. Since we are using three panels, we will begin by editing Segment 0 and setting the Stop X to "192" and the Stop Y to "16".
 
@@ -254,13 +254,13 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
         You must save your segments as a preset or they will get wiped away after a reboot or when another preset with different segments is used.
 
-    8\. Save your segments by creating a new preset. Click on the + Preset button and typing in a name then clicking Save at the bottom.
+    8\. Save your segments by creating a new preset. Click on the + Preset button and type in a name then click Save at the bottom.
 
     ![Saving the segments as a new WLED preset named Four Segments 3 Panels](/assets/three-panels-save-preset.gif)
 
 === "Four Panels"
 
-    1\. Navigate to the main page of your wled instance in a browser or using the WLED-native app and focus on the Segments section.
+    1\. Navigate to the main page of your WLED instance in a browser or using the WLED-native app and focus on the Segments section.
 
     2\. Since we are using four panels, we will begin by editing Segment 0 and setting the Stop X to "256" and the Stop Y to "16".
 
@@ -290,7 +290,7 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
         You must save your segments as a preset or they will get wiped away after a reboot or when another preset with different segments is used.
 
-    8\. Save your segments by creating a new preset. Click on the + Preset button and typing in a name then clicking Save at the bottom.
+    8\. Save your segments by creating a new preset. Click on the + Preset button and type in a name then click Save at the bottom.
 
     ![Saving the segments as a new WLED preset named Four Segments 4 Panels](/assets/four-panels-save-preset.gif)
 

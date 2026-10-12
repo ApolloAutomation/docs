@@ -64,7 +64,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     Your device is ready to connect to your Wi-Fi and begin controlling via Home Assistant, the WLED app for iPhone and Android, or via a web browser!
 
-    1\. Plug in the USB-C power in and the M-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select Apollo M-1. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> or <a href="http://wled.me" target="_blank" rel="noreferrer nofollow noopener">http://wled.me</a> and you should be prompted with the same image seen below.
+    1\. Plug in the USB-C power and the M-1 device will boot within a couple seconds. Head to the available Wi-Fi networks on your phone and select Apollo M-1. It should pop up saying "Welcome to WLED!". If this popup does not occur, please open a web browser and navigate to <a href="http://4.3.2.1/" target="_blank" rel="noopener">http://4.3.2.1/</a> or <a href="http://wled.me" target="_blank" rel="noreferrer nofollow noopener">http://wled.me</a> and you should be prompted with the same image seen below.
 
     ![Welcome to WLED page with the WIFI SETTINGS and TO THE CONTROLS buttons](/assets/m-1-getting-started.png)
 
@@ -80,7 +80,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
         The firmware we use currently does not support us pre-configuring a few settings but they are required to be set for you to use the M-1 LED Matrix successfully. Please follow the two steps below to finish setting up your device!
 
-    1\. Click on **Config**, then **LED Preferences**. set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter and click **Save**. Make sure to select **Hub75Matrix** is set to **64x64**.
+    1\. Click on **Config**, then **LED Preferences**. Set **Chain Length** to **1** then uncheck the "enable automatic brightness limiter" and click **Save**. Make sure to select **Hub75Matrix** is set to **64x64**.
 
     ![WLED LED Preferences set to Hub75Matrix 64x64 and Chain Length 1, brightness limiter unchecked, then saved](/assets/m-1-led-settings.gif)
 

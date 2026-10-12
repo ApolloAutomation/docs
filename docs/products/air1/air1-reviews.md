@@ -1,6 +1,6 @@
 ---
 title: AIR-1 Reviews
-description: Youtuber reviews and feedback about the AIR-1 sensor from Apollo Automation.
+description: YouTuber reviews and feedback about the AIR-1 sensor from Apollo Automation.
 ---
 
 # [The Bearded Tech Guy AIR-1 Review](https://youtu.be/k0SDJ6_SBqk?si=3uLfXC3GUDaYJNEs)

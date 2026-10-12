@@ -1,5 +1,5 @@
 ---
-title: add SCD40 CO₂ Sensor
+title: Add SCD40 CO₂ Sensor
 description: Adding The SCD40 CO₂ Sensor from Sensirion To The AIR-1.
 ---
 # Adding CO<sub>2</sub> to AIR-1

@@ -14,7 +14,7 @@ description: Step by step guide for putting The TEMP Pro-1 In Boot Mode.
 
 ![Prying up the TEMP Pro-1 lid at the slit above the USB-C port](/assets/temp-pro-1-boot-button-lift-lid-jpg.jpeg)
 
-2\. Locate the boot button as show in the image below.
+2\. Locate the boot button as shown in the image below.
 
 ![Tool pointing at the BOOT button on the TEMP Pro-1 board](/assets/temp-pro-1-boot-button.jpeg)
 

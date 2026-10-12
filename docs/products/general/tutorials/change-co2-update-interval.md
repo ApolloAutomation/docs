@@ -8,7 +8,7 @@ This guide will show you how to edit the CO<sub>2</sub> updates down to 5 second
 
 !!! tip "Your sensor is defaulting to 60 seconds for updates to the state of the CO<sub>2</sub> sensor."
 
-    This is the default for all esphome devices using the SCD40 because it uses less Wi-Fi airtime fairness and writes less to your Home Assistant Database. 5 seconds is the minimum. The SCD40 hardware cannot produce a new reading faster than that.
+    This is the default for all ESPHome devices using the SCD40 because it uses less Wi-Fi airtime fairness and writes less to your Home Assistant Database. 5 seconds is the minimum. The SCD40 hardware cannot produce a new reading faster than that.
 
 !!! note "Sensor response time"
 

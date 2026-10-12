@@ -1,6 +1,6 @@
 ---
 title: How To use the MSR-2 with Alarmo
-description: A tutorial for how To use the MSR-2 with Alarmo for an advanced DIY alarm system.
+description: A tutorial for how to use the MSR-2 with Alarmo for an advanced DIY alarm system.
 ---
 # MSR-2 + Alarmo Home Security Install
 
@@ -25,7 +25,7 @@ My grandmother wanted a security system that would alert her when there was move
   
 ![Alarmo notification settings showing the Title, Message, and Name fields filled in](/assets/alarmo-4.png)  
   
-6\. After saving that action we can add another one that will turn on our sensor lights and/or make the onboard piezo buzzers play an alarm sound. Uner Entity select your sensors RGB light.  
+6\. After saving that action we can add another one that will turn on our sensor lights and/or make the onboard piezo buzzers play an alarm sound. Under Entity select your sensors RGB light.  
   
 ![Alarmo action set to Alarm is triggered with AIR-1 and MSR-1 RGB light entities selected](/assets/alarmo-5.png)  
   

@@ -30,7 +30,7 @@ description: Step by step guide for re-calibrating your SCD40 CO2 sensor
 
 It might take several attempts clicking the "Press" button for it to equalize correctly. If you don't see the SCD40 reporting 400-500 ppm then click the button again.
 
-5\. Now your CO<sub>2</sub> sensor should be calibrated! Be sure to setup some nice cards on your dashboard so you can monitor the CO<sub>2</sub> levels.
+5\. Now your CO<sub>2</sub> sensor should be calibrated! Be sure to set up some nice cards on your dashboard so you can monitor the CO<sub>2</sub> levels.
 
 ![Home Assistant CO2 10-minute average graph comparing readings from several rooms over a day](/assets/air-1-co2-calibration-image-4.jpg)
 

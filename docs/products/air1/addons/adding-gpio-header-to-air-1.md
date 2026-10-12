@@ -20,7 +20,7 @@ description: Adding Optional GPIO Header to AIR-1.
 
 ![Starting to slide the AIR-1 PCB to the left out of the lid](/assets/air-1-add-co2-pic-6.jpg)![AIR-1 PCB sliding further out of the lid, still cabled to the SEN55](/assets/air-1-add-co2-pic-7.jpg)
 
-5\. Flip the PCB over and identify the Top Right corner where the small black mezzanine connector lives. You will see an "X" indicating which corner needs to be lined up with the PCB of the GPIO Header. There is an X on the GPIO Header's PCB as well, you can see it in the images below
+5\. Flip the PCB over and identify the Top Right corner where the small black mezzanine connector lives. You will see an "X" indicating which corner needs to be lined up with the PCB of the GPIO Header. There is an X on the GPIO Header's PCB as well, you can see it in the images below.
 
 ![AIR-1 PCB in the case with a probe pointing at the X beside the mezzanine connector](/assets/air-1-gpio-header-wiki-pic-1.webp)![GPIO Header add-on board with a probe pointing at its X marking](/assets/air-1-gpio-header-wiki-pic-2.webp)
 

@@ -24,7 +24,7 @@ description: >-
 
 ![Hobby knife cutting a slit in a rubber grommet removed from the project box](/assets/led-1-govee-grommets.jpg)
 
-4\. Connect the barrel plug to the WAGO connector. It is the large white compnent on the bottom left of the board below the USB-C port. Connect the RED (+) wire to the top terminal and the BLACK (-) wire to the bottom terminal. You can use the tweezers to depress the top of the WAGO connector, insert the wire, and then release to lock it in place.
+4\. Connect the barrel plug to the WAGO connector. It is the large white component on the bottom left of the board below the USB-C port. Connect the RED (+) wire to the top terminal and the BLACK (-) wire to the bottom terminal. You can use the tweezers to depress the top of the WAGO connector, insert the wire, and then release to lock it in place.
 
 ![Tweezers pressing the WAGO lever on the LED-1 to insert the red and black barrel plug wires](/assets/led-1-govee-barrel-2.jpg)
 

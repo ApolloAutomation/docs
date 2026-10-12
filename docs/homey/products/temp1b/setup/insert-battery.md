@@ -45,7 +45,7 @@ description: "How to Insert Battery on TEMP-1B."
 
 ![TEMP-1B lid sliding into place, with a tool pointing at the lid hole that lines up with the RGB LED](/assets/temp-1b-battery-insert-align-rgb.jpg)
 
-8\. Gently press down until it the lid seats.
+8\. Gently press down until the lid seats.
 
 ![Thumb pressing the lid down onto the TEMP-1B case until it seats](/assets/temp-1b-battery-insert-press-case.jpg)
 

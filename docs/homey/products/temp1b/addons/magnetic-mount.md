@@ -21,7 +21,7 @@ The TEMP-1B comes with an optional magnetic mount which can be used to secure th
 
 ![TEMP-1B standing on end with the magnetic mount sitting flush against the case](/assets/temp1b-magnetic-mount-installed-pic-3-1.jpg)
 
-4\. Affix your TEMP-1B to the outside of fridge or a safe cool place on the grill.
+4\. Affix your TEMP-1B to the outside of a fridge or a safe cool place on the grill.
 
 ![TEMP-1B in its magnetic mount attached to the outside of a fridge](/assets/temp1b-magnetic-mount-safe-outside-fridge-mounting.jpg)
 

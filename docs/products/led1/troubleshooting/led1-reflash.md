@@ -14,7 +14,7 @@ description: Step by step guide for re-flashing the LED-1 back to factory firmwa
 
 4\. Download <a href="https://wiki.apolloautomation.com/static/ESP-Flasher.exe" title="Click here to download the ESP-Flasher Tool" target="_blank" rel="noreferrer nofollow noopener">ESP Flasher (Windows EXE)</a> and open it.
 
-5\. Click the **Serial Port** dropdown and choose the available COM port..
+5\. Click the **Serial Port** dropdown and choose the available COM port.
 
 ![ESP Flasher window with COM12 selected in the Serial port dropdown](/assets/m-1-select-open-com-port.png)
 
@@ -28,4 +28,4 @@ description: Step by step guide for re-flashing the LED-1 back to factory firmwa
 
 8\. The device is still in **boot mode** and needs to be power cycled. To reboot it, either unplug the power cable or press the **reset button** on the back of the device (the button on the right).
 
-[Head to the Getting Started article to setup your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){    .md-button .md-button--primary }
+[Head to the Getting Started article to set up your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){    .md-button .md-button--primary }

@@ -10,9 +10,9 @@ description: Suggestions for Connection Issues
 
 4\. Disable [power save mode](https://esphome.io/components/wifi.html#power-save-mode) in ESPHome. (See directions below)
 
-# WiFi Power Save Mode
+# Wi-Fi Power Save Mode
 
-The WiFi interface of all ESPs offer three power save modes to reduce the      amount of power spent on WiFi. While some options *can* reduce the power usage of the ESP, they generally also decrease the reliability of the WiFi connection, with frequent disconnections from the router in the highest power saving mode.
+The Wi-Fi interface of all ESPs offers three power save modes to reduce the amount of power spent on Wi-Fi. While some options *can* reduce the power usage of the ESP, they generally also decrease the reliability of the Wi-Fi connection, with frequent disconnections from the router in the highest power saving mode.
 
 * `NONE` (least power saving, Default for ESP8266)
 * `LIGHT` (Default for ESP32)
@@ -28,7 +28,7 @@ wifi:
 
 ![ESPHome in the Home Assistant sidebar and the Edit button on an MSR-2 card circled](/assets/screenshot-2024-10-25-at-5-14-48-pm.png)
 
-2\.  Add the code below to your devices yaml file. Then select Save and press Install.
+2\.  Add the code below to your device's yaml file. Then select Save and press Install.
 
 ```yaml
 power_save_mode: none
@@ -36,4 +36,4 @@ power_save_mode: none
 
 ![MSR-2 YAML with power_save_mode: none added under wifi and the Save and Install buttons circled](/assets/screenshot-2024-10-25-at-5-25-10-pm.png)
 
-3\. Now your device should have a stronger connection. (This will cause the sensors internal temperature to increase.)
+3\. Now your device should have a stronger connection. (This will cause the sensor's internal temperature to increase.)

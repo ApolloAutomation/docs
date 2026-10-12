@@ -35,7 +35,7 @@ The Apollo Odroid comes equipped with:
 
 6\. **Does the Apollo Odroid support wireless connectivity?**
 
-* Yes, the ODROID-M1S platform supports both WiFi and Ethernet connections, giving you flexible options for integrating it into your network.
+* Yes, the ODROID-M1S platform supports both Wi-Fi and Ethernet connections, giving you flexible options for integrating it into your network.
 
 7\. **Can I customize the Home Assistant installation on the Apollo Odroid?**
 

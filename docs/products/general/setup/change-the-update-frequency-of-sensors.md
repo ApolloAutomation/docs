@@ -9,7 +9,7 @@ description: Tutorial for How To Change The Update Frequency Of Sensors.
 
 ![ESPHome Builder in the Home Assistant sidebar with the Edit button on an AIR-1 card outlined](/assets/update-frequency-pic-1.png)
 
-2\. Insert the YAML for the sensor you want to edit(The example below is for our AIR-1 SEN55 sensor).
+2\. Insert the YAML for the sensor you want to edit (The example below is for our AIR-1 SEN55 sensor).
 
 ```yaml
 sensor:

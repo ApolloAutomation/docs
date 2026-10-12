@@ -44,4 +44,4 @@ description: Step by step guide for reflashing The PUMP-1.
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-[Head to the Getting Started article to setup your PUMP-1 as a new device!](https://wiki.apolloautomation.com/products/general/setup/getting-started-pump1/){      .md-button .md-button--primary }
+[Head to the Getting Started article to set up your PUMP-1 as a new device!](https://wiki.apolloautomation.com/products/general/setup/getting-started-pump1/){      .md-button .md-button--primary }

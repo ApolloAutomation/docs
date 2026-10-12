@@ -19,7 +19,7 @@ description: "Step by step guide for tearing down your TEMP-1 to replace parts, 
 
 ![TEMP-1 lid sliding onto the case, with the RGB LED visible in the bottom left corner](/assets/temp-1-align-lid.jpg)
 
-4\. Make sure during reassembly that the RGB LED is in the bottom left as shown in image below then press on the lid as shown below until it snaps into place!
+4\. Make sure during reassembly that the RGB LED is in the bottom left as shown in the image below then press on the lid as shown below until it snaps into place!
 
 ![Finger pressing the lid onto the TEMP-1 case until it snaps into place](/assets/temp-1-press-on-lid.jpg)
 

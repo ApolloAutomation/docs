@@ -12,7 +12,7 @@ description: Frequently asked questions about the M-1 controller.
 
 3\. **What is the maximum power output of the M-1?**
 
-* The M-1 is able to safely offer 3 Amps of power using 5 Volts when using the usb-c cable and stock power supply. That covers one 64x64 panel, so every extra panel needs its own <a href="https://apolloautomation.com/products/m-1-led-matrix-power-module" target="_blank" rel="noreferrer nofollow noopener">power module</a>.
+* The M-1 is able to safely offer 3 Amps of power using 5 Volts when using the USB-C cable and stock power supply. That covers one 64x64 panel, so every extra panel needs its own <a href="https://apolloautomation.com/products/m-1-led-matrix-power-module" target="_blank" rel="noreferrer nofollow noopener">power module</a>.
 
 4\. **Scrolling Text does not show as an effect, what am I doing wrong?**
 
@@ -48,7 +48,7 @@ description: Frequently asked questions about the M-1 controller.
 
 12\. **Why can't I upload a GIF from the WLED phone app?**
 
-* The app's file picker greys out image files, which is a bug in the app rather than anything on the M-1. Open the device in any browser instead and use <a href="https://wiki.apolloautomation.com/products/m1/examples/pixel-forge/" target="_blank" rel="noreferrer nofollow noopener">Pixel Forge</a>.
+* The app's file picker grays out image files, which is a bug in the app rather than anything on the M-1. Open the device in any browser instead and use <a href="https://wiki.apolloautomation.com/products/m1/examples/pixel-forge/" target="_blank" rel="noreferrer nofollow noopener">Pixel Forge</a>.
 
 13\. **Part of my panel is dark or the colors look wrong.**
 

@@ -34,7 +34,7 @@ How to tune the mmWave sensor using radar engineering mode.
 
 ![Home Assistant MSR-2 Diagnostic section listing move and still energy percentages for gates g0 to g4](/assets/msr-2-gate-energies.png)
 
-The gates are 0.75meter increments from the sensor - allowing you to "tune" each 0.75 meter section until your sensor works as intended!
+The gates are 0.75 meter increments from the sensor - allowing you to "tune" each 0.75 meter section until your sensor works as intended!
 
 ![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/msr-2-ld2410-gate-table.png)
 

@@ -22,7 +22,7 @@ This article will guide you through a simple calibration of your CO<sub>2</sub> 
 
 !!! tip "Hint"
 
-    If you cannot get this menu to pop-up, click somewhere on the <a href="https://www.home-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant</a> dashboard then press your "e" key.
+    If you cannot get this menu to pop up, click somewhere on the <a href="https://www.home-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant</a> dashboard then press your "e" key.
 
 ![Home Assistant entity search for Calibrate CO2 with the AIR-1 Calibrate SCD40 To 420ppm button circled](/assets/co2-calibration-quick-pic-1.png)
 

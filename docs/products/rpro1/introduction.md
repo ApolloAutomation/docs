@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Documentation for R-Pro-1, including setup, usage, and best practices.
+description: Documentation for R PRO-1, including setup, usage, and best practices.
 ---
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/u_geSKmX_-U?si=Hq2hkHuNd4BPTTkb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 

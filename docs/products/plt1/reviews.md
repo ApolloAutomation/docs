@@ -1,6 +1,6 @@
 ---
 title: PLT-1 Reviews
-description: Youtuber reviews and feedback about the PLT-1 sensor from Apollo Automation.
+description: YouTuber reviews and feedback about the PLT-1 sensor from Apollo Automation.
 ---
 # [Simon Says Home Assistant PLT-1 Review](https://youtu.be/hocliw98_Gk?si=8TMFLD7xiYah1RmJ)
 

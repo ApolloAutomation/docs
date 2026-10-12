@@ -30,6 +30,6 @@ description: >-
 
 ![Pushing the inlet and outlet tubes onto the fittings of the open PUMP-1](/assets/pump-1-install-tubes-webp.webp)
 
-2\. Insert the JST connector coming from your bottle's sensor into the **right-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. The small bump on top of the white connector must be facing **upwards** when inserting it. This ensures proper alignment and a secure connection. Follow up by inserting the second JST connector from the optional fluid output sensor into the **left-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. Finally, place the lid on top of the pump-1 case and gently snap it in place.
+2\. Insert the JST connector coming from your bottle's sensor into the **right-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. The small bump on top of the white connector must be facing **upwards** when inserting it. This ensures proper alignment and a secure connection. Follow up by inserting the second JST connector from the optional fluid output sensor into the **left-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. Finally, place the lid on top of the PUMP-1 case and gently snap it in place.
 
 ![Plugging both fluid sensor JST connectors into the PUMP-1 and snapping the lid back on](/assets/pump-1-install-jst-sensor-connectors-and-lid-webp.webp)

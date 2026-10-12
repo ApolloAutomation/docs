@@ -79,7 +79,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Prevent Sleep**
 
-    * Prevents the TEMP-1 from going to sleep. When sleeping, your TEMP-1 will NOT respond to home assistant it is effectively off until it wakes up again.
+    * Prevents the TEMP-1 from going to sleep. When sleeping, your TEMP-1 will NOT respond to Home Assistant it is effectively off until it wakes up again.
     * Click on the toggle to turn on or off. Defaults to ON.
 
     **Probe Temp Difference Threshold**

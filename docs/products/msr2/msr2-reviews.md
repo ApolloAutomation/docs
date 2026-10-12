@@ -1,6 +1,6 @@
 ---
 title: MSR-2 Reviews
-description: Youtuber reviews and feedback about the MSR-2 sensor from Apollo Automation.
+description: YouTuber reviews and feedback about the MSR-2 sensor from Apollo Automation.
 ---
 # [Simon Says Home Assistant MSR-2 Review](https://www.youtube.com/watch?v=U4qUhFSAxbk)
 

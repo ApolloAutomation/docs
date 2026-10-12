@@ -25,11 +25,11 @@ My grandmother wanted a security system that would alert her when there was move
   
 ![Alarmo notification settings with the Title, Message, and Name fields filled in](/assets/alarmo-4.png)  
   
-6\. After saving that action we can add another one that will turn on our sensor lights and/or make the onboard piezo buzzers play an alarm sound. Uner Entity select your sensors RGB light.  
+6\. After saving that action we can add another one that will turn on our sensor lights and/or make the onboard piezo buzzers play an alarm sound. Under Entity select your sensors' RGB light.  
   
 ![Alarmo Configure action with Alarm is triggered and AIR-1 and MSR-1 RGB light entities selected](/assets/alarmo-5.png)  
   
-7\. Under Action select Turn On and now your sensors RGB lights will turn on when the alarm is triggered.  
+7\. Under Action select Turn On and now your sensors' RGB lights will turn on when the alarm is triggered.  
   
 ![Alarmo action Task with Turn On selected for the RGB lights and the action named](/assets/alarmo-6.png)  
   

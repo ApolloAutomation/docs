@@ -6,11 +6,11 @@ description: Step by step guide for alerting outside the set range with the TEMP
 
 ######
 
-This will guide you through how to setup the built in alarm using the temperature probe in your freezer!
+This will guide you through how to set up the built in alarm using the temperature probe in your freezer!
 
 1\. Place the temperature probe into your freezer (not the entire TEMP-1, just the probe!) and then wait for it to normalize around 0 degrees F aka -18C.
 
-2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30F so I would want to go slightly above that range. However, <a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">in most freezers they should NOT reach above 0F</a> so you will likely need to input a lower value than me. my minimums are around -20F.
+2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30F so I would want to go slightly above that range. However, <a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">in most freezers they should NOT reach above 0F</a> so you will likely need to input a lower value than me. My minimums are around -20F.
 
 ![Home Assistant history graph of the TEMP-1 temperature probe, arrows at freezer highs and lows](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
 
@@ -18,6 +18,6 @@ This will guide you through how to setup the built in alarm using the temperatur
 
 ![TEMP-1 Max Probe Temp set to 2.0 °C and Min Probe Temp set to -30.0 °C](/assets/temp-1-temp-probe-ex-automation-pic-2.png)
 
-4\. Enable the "Alarm Outside Temp Range" toggle and now your TEMP-1 will play an audible alert with it's buzzer when the temp thresholds are reached. If the temp goes under the min or over the max the alarm will go off
+4\. Enable the "Alarm Outside Temp Range" toggle and now your TEMP-1 will play an audible alert with its buzzer when the temp thresholds are reached. If the temp goes under the min or over the max the alarm will go off
 
 ![Alarm Outside Temp Range toggle switched on in the TEMP-1 Controls card](/assets/temp-1-alarm-outside-range-pic-1.png)

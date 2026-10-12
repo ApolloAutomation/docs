@@ -1,20 +1,20 @@
 ---
-title: Adjusting Wifi Power Save
-description: Tutorial for how to Adjusting Wifi Power Save.
+title: Adjusting Wi-Fi Power Save
+description: Tutorial for how to adjust Wi-Fi Power Save.
 ---
-# Adjusting Wifi Power Save
+# Adjusting Wi-Fi Power Save
 
-The ESP chips produce a significant amount of energy (heat) constantly using Wi-Fi. This guide explains how to <a href="https://esphome.io/components/wifi.html#power-save-mode" target="_blank" rel="noreferrer nofollow noopener">adjust the wifi power save mode to high</a> to combat this.
+The ESP chips produce a significant amount of energy (heat) constantly using Wi-Fi. This guide explains how to <a href="https://esphome.io/components/wifi.html#power-save-mode" target="_blank" rel="noreferrer nofollow noopener">adjust the Wi-Fi power save mode to high</a> to combat this.
 
-!!! warning "This will negatively effect your Wi-Fi performance!"
+!!! warning "This will negatively affect your Wi-Fi performance!"
 
-    While some options *can* reduce the power usage of the ESP, they generally also decrease the reliability of the WiFi connection, with frequent disconnections from the router in the highest power saving mode.
+    While some options *can* reduce the power usage of the ESP, they generally also decrease the reliability of the Wi-Fi connection, with frequent disconnections from the router in the highest power saving mode.
 
 1\. Open the ESPHome Device Builder.
 
 ![ESPHome Device Builder dashboard showing cards for several Apollo devices](/assets/power-save-tutorial-1.png)
 
-2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
+2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install ESPHome Device Builder.") and then move on to step 3.
 
 3\. Click "Edit" as shown below.
 

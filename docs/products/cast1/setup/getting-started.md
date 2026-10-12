@@ -45,7 +45,7 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
     !!! note "Pre-requirement: Bluetooth proxy or Bluetooth Home Assistant hardware required"
 
-        Bluetooth built in such as a Raspberry Pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a> is required to use this to setup your Apollo device.
+        Bluetooth built in such as a Raspberry Pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a> is required to use this to set up your Apollo device.
 
     1\. Open your integrations page in Home Assistant.
 

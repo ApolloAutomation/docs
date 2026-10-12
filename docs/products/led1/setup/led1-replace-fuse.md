@@ -8,7 +8,7 @@ description: Tutorial showing how to replace the 10 A Fuse on the LED-1.
 
 ![Tweezers prying the lid off the blue LED-1 case](/assets/led-1-pry-open-lid.jpg)![LED-1 board in the blue case with the lid removed and set aside](/assets/led-1-case-with-lid-off.jpg)
 
-2\. Gently lift the LED-1 PCB out of the case - be careful not use a lot of force this could break components
+2\. Gently lift the LED-1 PCB out of the case - be careful not to use a lot of force this could break components
 
 ![Fingers lifting the LED-1 board out of its blue case](/assets/led-1-lift-out-of-case.jpg)
 

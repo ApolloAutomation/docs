@@ -44,6 +44,6 @@ Segments work the same on WLED and WLED-MM. The steps below split a single 64x64
 
     You must save your segments as a preset or they will get wiped away after a reboot or when another preset with different segments is used.
 
-8\. Save your segments by creating a new preset. Click on the **\+ Preset** button and typing in a name then clicking **Save** at the bottom.
+8\. Save your segments by creating a new preset. Click on the **\+ Preset** button and type in a name then click **Save** at the bottom.
 
 ![Saving the four segments as a new WLED preset with the + Preset button](/assets/one-panel-save-preset.gif)

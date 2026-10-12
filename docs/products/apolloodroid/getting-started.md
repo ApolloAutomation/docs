@@ -13,7 +13,7 @@ This guide will walk you through setting up your Apollo Home Assistant hub aka t
 
 3\.From a phone or computer connected to your home's internet open your web browser and navigate to <a href="http://homeassistant.local:8123" target="_blank" rel="noreferrer nofollow noopener">http://homeassistant.local:8123</a>.
 
-!!! tip "You can also access your device from it's IP address instead of the default hostname of homeassistant.local"
+!!! tip "You can also access your device from its IP address instead of the default hostname of homeassistant.local"
 
     If you'd prefer, you can go into your router and find the IP address that your Odroid received and use the IP address with port 8123 at the end such as: <a href="http://192.168.1.30:8123" title="Change yours to the correct IP address on your subnet!" target="_blank" rel="noreferrer nofollow noopener">http://192.168.1.30:8123</a>
 

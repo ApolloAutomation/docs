@@ -5,11 +5,11 @@ description: Tutorial for how to add Apollo Devices To Hidden Networks.
 
 # Adding Apollo Devices To Hidden Networks
 
-1\. Open the Esphome Device Builder.
+1\. Open the ESPHome Device Builder.
 
 ![ESPHome Device Builder dashboard showing cards for several Apollo devices](/assets/bluetooth-proxy-tutorial-1.png)
 
-2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
+2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install ESPHome Device Builder.") and then move on to step 3.
 
 3\. Click "Edit" as shown below.
 

@@ -12,7 +12,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 1\. Plug the sensor into a quality power brick. They require 5v and under an amp so most phone chargers will be fine. ESP devices are sensitive to power fluctuations and users have had some issues with really cheap power bricks. If your device is restarting or unavailable please try a different power brick.
 
-2\. On your phone or PC, open the WiFi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the WiFi network to show up.
+2\. On your phone or PC, open the Wi-Fi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the Wi-Fi network to show up.
 
 ![Phone Wi-Fi settings with the Apollo MSR-2 hotspot network outlined in red](/assets/getting-started-pic-1-1.png)
 
@@ -20,7 +20,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
-4\. Select the WiFi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
+4\. Select the Wi-Fi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
 
 ![Sensor hotspot page at 192.168.4.1 with the SSID and Password fields and Save button marked](/assets/getting-started-pic-2.png)
 
@@ -36,13 +36,13 @@ If this does not automatically open the dashboard, please open your web browser 
 
 !!! note "Pre-requirement:"
 
-    Bluetooth built in such as a raspberry pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a>. If you have already followed the "Connecting through Hotspot" please skip this section.
+    Bluetooth built in such as a Raspberry Pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a>. If you have already followed the "Connecting through Hotspot" please skip this section.
 
 1\. Navigate to settings -&gt; integrations then click the "**ADD**" button below your new Apollo device!
 
 ![Discovered PLT-1B card in Home Assistant labeled Improv via BLE with an Add button](/assets/improv-ble-pic-1.png)
 
-2\. Click submit when it asks if you want to setup your new device and shows you the hostname of your device.
+2\. Click submit when it asks if you want to set up your new device and shows you the hostname of your device.
 
 ![Home Assistant setup prompt for an Apollo TEMP-1 with the Submit button outlined in red](/assets/temp1b-improv-ble-4.png)
 
@@ -66,7 +66,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 !!! tip "Skip the ESPHome Device Builder unless..."
 
-    Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!")unless you need to rename your sensor or do manual edits to the yaml
+    Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!") unless you need to rename your sensor or do manual edits to the yaml
 
 You can add the ESPHome Device Builder app in Home Assistant to easily update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder").
 
@@ -112,11 +112,11 @@ wifi_password: "your-wifi-pass-here"
 
 ![Home Assistant New devices discovered notification with the Check it out link outlined](/assets/getting-started-pic-7.png)
 
-3\. Click "**ADD**" to begin adding the device to home assistant.
+3\. Click "**ADD**" to begin adding the device to Home Assistant.
 
 ![Discovered MSR-2 card in Home Assistant with the Add button outlined in red](/assets/getting-started-pic-6-1.png)
 
-4\. Click "**SUBMIT**" to confirm you want to add your new Apollo device to home assistant.
+4\. Click "**SUBMIT**" to confirm you want to add your new Apollo device to Home Assistant.
 
 ![Home Assistant Discovered ESPHome node dialog for an MSR-2 with Submit outlined](/assets/getting-started-pic-8.png)
 
@@ -124,6 +124,6 @@ wifi_password: "your-wifi-pass-here"
 
 ![Home Assistant Success dialog for an MSR-2 with the Area field and Finish button marked](/assets/getting-started-pic-9.png)
 
-6\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
+6\. Your device is now added to Home Assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
 [Click here to join our Discord for fast support! :simple-discord:](https://link.apolloautomation.com/discord){                                .md-button .md-button--primary }

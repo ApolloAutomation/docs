@@ -26,7 +26,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 !!! success "You need to be close to your device!"
 
-    The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
+    The LD2450 mmWave sensor is a very tiny sensor with no external antenna, which means it cannot connect to Bluetooth devices unless they are very close. Sometimes this means you need to be within a few feet of the sensor to connect directly to it!
 
 ![HLKRadarTool device list showing the HLK-LD2450 radar found over Bluetooth](/assets/screenshot-20240514-100155-hlkradartool.jpg)
 

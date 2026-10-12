@@ -1,5 +1,5 @@
 ---
-description: "Two short videos and a quick sumamry on how to best tune the LD2410B in the MSR-2!"
+description: "Two short videos and a quick summary on how to best tune the LD2410B in the MSR-2!"
 ---
 # This needs to be redone for Homey if it can be duplicated.
 
@@ -21,7 +21,7 @@ How to tune the mmWave sensor using radar engineering mode.
   </iframe>
 </div>
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
+1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
 2\. Scroll down to the Configuration section.
 
@@ -45,7 +45,7 @@ How to tune the mmWave sensor using radar engineering mode.
 
 ![Home Assistant g4 move threshold slider moved toward the left and circled](/assets/mmwave-tuning-pic-4.png)
 
-!!! quote "Quote from popular Youtuber Make It Work Tech"
+!!! quote "Quote from popular YouTuber Make It Work Tech"
 
     I ended up maxing out the sliders on all gates and then bringing them down just enough to pick up human presence. Definitely easier than using the LD2410B app. - <a href="https://www.youtube.com/@makeitworktech" title="Make it Work" target="_blank" rel="noreferrer nofollow noopener">MakeItWorkTech</a>
 

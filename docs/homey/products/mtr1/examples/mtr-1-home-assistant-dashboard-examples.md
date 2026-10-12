@@ -70,7 +70,7 @@ refresh_interval: 10
 title: Bedroom CO2
 ```
 
-Home Assistant Guage
+Home Assistant Gauge
 
 ![Home Assistant gauge card reading 1,063 ppm CO2 with green, yellow, and red severity bands](/assets/co2-guage.png)
 

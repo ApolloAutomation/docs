@@ -1,7 +1,7 @@
 ---
 title: Firstof9's AIR-1 Apex Charts Dashboard
 description: >-
-  A custom dashboard made by discord/github user Firstof9 using Apex Charts for
+  A custom dashboard made by Discord/GitHub user Firstof9 using Apex Charts for
   a really neat AIR-1 dashboard.
 ---
 # Firstof9's AIR-1 Apex Charts Dashboard
@@ -40,7 +40,7 @@ Now you need to be VERY careful. You are editing all of your dashboards but we c
 
 ![ESPHome Device Builder AIR-1 YAML with the device name line circled](/assets/air-1-id.png)
 
-The easiest way to change all of the entity IDs in the code is by using AI (ChatGPT etc.) or by using a code editor like Visual Studio Code (VSC). In VSC you can Find (ctrl+f) the old ID and Replace (select the small arrow to toggle open the Replace box) it with your ID. Now you are ready to copy the code into the Raw configurator editor. (See code below)
+The easiest way to change all of the entity IDs in the code is by using AI (ChatGPT etc.) or by using a code editor like Visual Studio Code (VSC). In VSC you can Find (ctrl+f) the old ID and Replace (select the small arrow to toggle open the Replace box) it with your ID. Now you are ready to copy the code into the Raw configuration editor. (See code below)
 
 VSC Find/Replace
 

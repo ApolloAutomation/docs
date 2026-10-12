@@ -9,7 +9,7 @@ description: "Step by step guide for tearing down your TEMP-1B to replace parts,
 
 ![TEMP-1B case with the lid removed, showing the circuit board inside](/assets/temp-1b-lid-off.jpg)
 
-2\. Once the lid is removed either lift the PCB out or gently dump the pcb out by turning it upside down.
+2\. Once the lid is removed either lift the PCB out or gently dump the PCB out by turning it upside down.
 
 ![Lifting the TEMP-1B circuit board out of the open case](/assets/temp-1b-lift-pcb-out-1.jpg)
 

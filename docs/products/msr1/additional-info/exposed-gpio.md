@@ -14,7 +14,7 @@ From left to right:
 - IO 5 
     - GPIO 5 of ESP32-C3-Mini
 - 5V 
-    - Used for powering the device, or powering a external sensor
+    - Used for powering the device, or powering an external sensor
 - GND 
     - Ground
 - 3V3 

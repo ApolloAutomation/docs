@@ -1,5 +1,5 @@
 ---
-title: adding 90 degree USB-C to MSR-2
+title: Adding 90 degree USB-C to MSR-2
 description: Step by step tutorial for adding 90 degree USB-C to MSR-2
 ---
 # Adding 90 degree USB-C to MSR-2

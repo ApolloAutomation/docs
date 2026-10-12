@@ -12,7 +12,7 @@ Apollo devices check for new firmware by downloading a small manifest file from 
 
 2\. **Give it a moment after a reboot — or update your firmware.**
 
-* On older firmware the very first update check after a boot can be skipped if WiFi isn't connected yet, and the next check only happens about 6 hours later. Newer firmware checks as soon as the network connects.
+* On older firmware the very first update check after a boot can be skipped if Wi-Fi isn't connected yet, and the next check only happens about 6 hours later. Newer firmware checks as soon as the network connects.
 * If the entity looks stale right after a reboot, either wait, reboot once more while the network is up, or update to the latest firmware release.
 
 3\. **Devices adopted in the ESPHome Device Builder update differently.**

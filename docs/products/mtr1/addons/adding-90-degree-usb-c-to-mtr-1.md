@@ -16,7 +16,7 @@ description: Step by step tutorial for adding 90 degree USB-C to MTR-1.
 
 ![Long end of the 90 degree addon lined up with a top port on the USB-C wall plug](/assets/mtr-1-90-addon-pic-3.jpg)
 
-4\. Gently push the connector into one of the top usb-c ports.
+4\. Gently push the connector into one of the top USB-C ports.
 
 ![90 degree addon pushed into the top USB-C port of the wall plug](/assets/mtr-1-90-addon-pic-4.jpg)
 

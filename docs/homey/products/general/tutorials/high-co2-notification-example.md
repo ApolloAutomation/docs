@@ -31,7 +31,7 @@ description: Example flow for sending alerts when CO₂ levels exceed a defined 
 
 ![AIR-1 CO2 becomes greater than card set to 999 ppm in Homey](/assets/homey-flow-example-pic-7.png)
 
-7\. Duplicate steps 4 and 5 above but this time select "CO2 becomes less than" and place it on your flow canvas.Make sure to fill in your less than ppm value such as 1000.
+7\. Duplicate steps 4 and 5 above but this time select "CO2 becomes less than" and place it on your flow canvas. Make sure to fill in your less than ppm value such as 1000.
 
 ![Homey AIR-1 CO2 cards set to greater than 999 ppm and less than 1000 ppm](/assets/homey-flow-example-pic-5-1.png)
 
@@ -39,7 +39,7 @@ description: Example flow for sending alerts when CO₂ levels exceed a defined 
 
 ![Homey card search for set a color with the AIR-1 option highlighted](/assets/homey-flow-example-pic-6.png)
 
-9\. Draw a line to connect "CO2 becomes greater than 999 ppm. Click the 3 dots and select a color - we have chosen red to indicate a problem.
+9\. Draw a line to connect "CO2 becomes greater than 999 ppm". Click the 3 dots and select a color - we have chosen red to indicate a problem.
 
 ![Homey CO2 greater than 999 ppm card connected to an AIR-1 Set a color card set to red](/assets/homey-flow-example-pic-8.png)
 

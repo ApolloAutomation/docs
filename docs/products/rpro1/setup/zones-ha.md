@@ -6,7 +6,7 @@ description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 
 !!! info "Your R PRO-1 has two unique mmWave sensors that both need to be tuned!"
 
-    The R PRO-1 comes with an LD2450 mmwave sensor and an optional secondary LD2412 mmWave sensor.
+    The R PRO-1 comes with an LD2450 mmWave sensor and an optional secondary LD2412 mmWave sensor.
 
     The LD2450 allows for up to three targets tracked in up to three zones but can have issues with "still detection".
 
@@ -98,7 +98,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 ###### LD2412 Configuration
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on "1 device" below the Apollo R PRO-1.
+1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on "1 device" below the Apollo R PRO-1.
 
 ![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 
@@ -106,7 +106,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 !!! tip "The LD2412 can be tuned using the steps below to work perfectly in your environment!"
 
-    The LD2412 has "gates" at 0.75meter increments starting at g0 and ending at g13. These gates allow you to raise the threshold needed to trigger occupancy in each 0.75meter increment.
+    The LD2412 has "gates" at 0.75 meter increments starting at g0 and ending at g13. These gates allow you to raise the threshold needed to trigger occupancy in each 0.75 meter increment.
 
     This is very useful in scenarios where you want to tune out a fan, a cat sitting on the stairs, etc.
 

@@ -1,6 +1,6 @@
 ---
-title: R-Pro-1 Reviews
-description: Youtuber reviews and feedback about the R-Pro-1 sensor from Apollo Automation.
+title: R PRO-1 Reviews
+description: YouTuber reviews and feedback about the R PRO-1 sensor from Apollo Automation.
 ---
 &nbsp;
 

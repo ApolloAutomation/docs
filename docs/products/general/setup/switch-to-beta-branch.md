@@ -1,6 +1,6 @@
 ---
-title: How To Switching to Beta branch with ESPHome Device Builder
-description: Tutorial for How To Switching to Beta branch with ESPHome Device Builder.
+title: How To Switch to Beta branch with ESPHome Device Builder
+description: Tutorial for How To Switch to Beta branch with ESPHome Device Builder.
 ---
 # Switching to Beta branch with ESPHome Device Builder
 
@@ -107,7 +107,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-=== "R_PRO-1"
+=== "R PRO-1"
 
     **Ethernet:**
 
@@ -120,7 +120,7 @@ description: Tutorial for How To Switching to Beta branch with ESPHome Device Bu
         refresh: 1min
     ```
 
-    **WiFi:**
+    **Wi-Fi:**
 
     ```yaml
     packages:

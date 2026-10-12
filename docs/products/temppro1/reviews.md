@@ -1,6 +1,6 @@
 ---
 title: TEMP Pro-1 Reviews
-description: Youtuber reviews and feedback about the TEMP Pro-1 sensor from Apollo Automation.
+description: YouTuber reviews and feedback about the TEMP Pro-1 sensor from Apollo Automation.
 ---
 
 These Reviews need to be swapped for new ones

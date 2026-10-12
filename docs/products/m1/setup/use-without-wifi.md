@@ -56,4 +56,4 @@ The hotspot stays available as a fallback. If the M-1 ever cannot reach the Wi-F
 
 !!! success "Upload GIFs from a browser, not the WLED phone app"
 
-    The WLED app's file picker greys out image files, so GIF upload from the app does not work. This is a bug in the app itself, not the M-1. Scan the QR code or go to 4.3.2.1 in any browser and use Pixel Forge instead.
+    The WLED app's file picker grays out image files, so GIF upload from the app does not work. This is a bug in the app itself, not the M-1. Scan the QR code or go to 4.3.2.1 in any browser and use Pixel Forge instead.
