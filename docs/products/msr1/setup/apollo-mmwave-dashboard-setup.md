@@ -4,4 +4,5 @@ description: Install the Apollo mmWave integration from HACS and get an auto-bui
 ---
 
 # Set up the Apollo mmWave dashboard for the MSR-1
+
 --8<-- "products/general/setup/apollo-mmwave-dashboard-setup.md:7:"

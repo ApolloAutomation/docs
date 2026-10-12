@@ -4,4 +4,5 @@ description: Draw occupancy zones over the live targets of your Apollo R PRO-1, 
 ---
 
 # Draw R PRO-1 zones and tune the LD2412 addon with the Apollo mmWave dashboard
+
 --8<-- "products/general/setup/apollo-mmwave-dashboard.md:7:"
