@@ -5,7 +5,7 @@ description: Install the Apollo mmWave integration from HACS and get an auto-bui
 
 # Set up the Apollo mmWave dashboard
 
-A new Apollo MSR-2 detects presence out of the box, but every room is different: a ceiling fan or a moving curtain can make it trigger with nobody there, and someone sitting still can be missed. The Apollo mmWave dashboard is where you fix that, starting with one button, **Calibrate with empty room**, which sets the radar's thresholds for your room in about a minute and a half.
+A new Apollo radar sensor detects presence out of the box, but every room is different: a ceiling fan or a moving curtain can make it trigger with nobody there, and someone sitting still can be missed. The Apollo mmWave dashboard is where you fix that. On an Apollo MSR-1, MSR-2, or R PRO-1 with the LD2412 addon, one button, **Calibrate with empty room**, sets the radar's thresholds for your room in about a minute and a half. On an Apollo MTR-1 or R PRO-1, the same dashboard is where you draw zones over the radar's live targets.
 
 The Apollo mmWave integration gives every Apollo radar sensor in your home its own workspace in Home Assistant. Install it once and it adds an **Apollo mmWave** dashboard to your sidebar with one tab per radar, built from the devices Home Assistant already knows about. Add a sensor later and its tab appears on its own; remove one and its tab goes away.
 
@@ -149,7 +149,7 @@ And here's what changes without you doing anything:
 - **Target sensors are found automatically.** The old **Device and Targets** picker is gone; the integration locates each radar's LD2450 target sensors itself.
 - **Zone entities move onto the radar's device page.** Your entity IDs, custom names, and area assignments are kept, and you can rename the entities freely.
 - **Renaming a radar no longer loses its zones**, because zones are stored per device rather than per display name. If you renamed a radar *before* upgrading, its zones are kept but not shown: the card comes up empty and the zone entities read as unavailable. Rename the radar back to its old name and reload the integration to bring them back, or keep the new name and redraw the zones.
-- **Zones from the standalone [Zone Mapper](/products/mtr1/setup/mtr-1-zone-mapper-tool.md) integration are imported** when Apollo mmWave has no zone data of its own yet: on a fresh install, or when upgrading from a version before 1.2.0. The import only reads; nothing belonging to Zone Mapper is renamed or removed. Upgrading from 1.2.0 or later, the import is skipped and your existing Apollo mmWave zones are kept. Redraw any Zone Mapper zones you want on the zone map, then remove the old integration once you're happy with them.
+- **Zones from the standalone [Zone Mapper](/products/general/calibrating-and-updating/zone-configuration/zone-mapper-tool.md) integration are imported** when Apollo mmWave has no zone data of its own yet: on a fresh install, or when upgrading from a version before 1.2.0. The import only reads; nothing belonging to Zone Mapper is renamed or removed. Upgrading from 1.2.0 or later, the import is skipped and your existing Apollo mmWave zones are kept. Redraw any Zone Mapper zones you want on the zone map, then remove the old integration once you're happy with them.
 
 !!! warning "Keep Zone Mapper until your zones have moved over"
 
@@ -196,7 +196,7 @@ If the element named in the error is `zone-mapper-card`, a refresh won't help: t
 
 The card reads **Apollo mmWave is still loading...** right after a restart while the integration starts, and clears on its own. If it changes to **Apollo mmWave is not loaded, so calibration is unavailable.**, check that Apollo mmWave is enabled under **Settings → Devices & services**, then click **Retry** on the card.
 
-!!! success "Next step: calibrate and tune your radar"
+!!! success "Next step: calibrate your radar or draw zones"
 
     Your dashboard is up and every sensor has its tab. Now put it to work: the usage guide walks you through calibrating with an empty room, reading the charts, adjusting thresholds by hand, and drawing zones on the zone map.
 
