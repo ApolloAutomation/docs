@@ -12,7 +12,7 @@ description: Step by step guide for reflashing the M-1 with the hub75-studio ESP
 
 2\. Push and hold the boot button (the left button) on the M-1 controller. While still holding the button, plug the USB-C cable into the M-1, then release the button.
 
-![](/assets/m-1-hold-boot-webp.webp)
+![Holding the boot button on the M-1 controller while plugging in the USB-C cable](/assets/m-1-hold-boot-webp.webp)
 
 3\. Open <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">https://pavlov-net.github.io/hub75-studio/</a> in your Chromium browser.
 

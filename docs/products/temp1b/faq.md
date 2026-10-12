@@ -32,15 +32,15 @@ description: Frequently asked questions about the TEMP-1B temperature sensor.
 
 7\. **How does the TEMP-1B connect to Home Assistant?**
 
-* The TEMP-1B connects via WiFi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
+* The TEMP-1B connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
 
 8\. **How often does the TEMP-1B send sensor data?**
 
-* The TEMP-1B’s reporting frequency is adjustable in ESPHome but most things default to 60seconds. You can set it for frequent updates or extend intervals to conserve battery life.
+* The TEMP-1B’s reporting frequency is adjustable in ESPHome but most things default to 60 seconds. You can set it for frequent updates or extend intervals to conserve battery life.
 
 9\. **Can I customize the TEMP-1B’s functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP-1B. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP-1B. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 10\. **What are the RGB LED and piezo buzzer used for?**
 
@@ -60,7 +60,7 @@ description: Frequently asked questions about the TEMP-1B temperature sensor.
 
 14\. **What’s the difference between the battery and non-battery versions?**
 
-* The TEMP-1B is battery-operated and slightly larger, while the non-battery (NB) version is compact and requires USB-C power at 5 volts using 1amp or less (5W). They both have all of the same components for measuring soil moisture, air temp/humdity, lux/uv, etc.
+* The TEMP-1B is battery-operated and slightly larger, while the non-battery (NB) version is compact and requires USB-C power at 5 volts using 1 amp or less (5W). They both have all of the same components for measuring soil moisture, air temp/humidity, lux/uv, etc.
 
 15\. **Can I use multiple TEMP-1B sensors in one Home Assistant setup?**
 
@@ -68,7 +68,7 @@ description: Frequently asked questions about the TEMP-1B temperature sensor.
 
 16\. **Can I use an extender to make the TEMP-1 temp probe cable longer?**
 
-* Yes, you can, however at some point you will begin getting "voltage drop" and likely run into issues with bad data from the probe. We suggest 1.5meters or less!
+* Yes, you can, however at some point you will begin getting "voltage drop" and likely run into issues with bad data from the probe. We suggest 1.5 meters or less!
 
 17\. **Can I use the probe in a salt water tank?**
 

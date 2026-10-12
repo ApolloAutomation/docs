@@ -16,7 +16,7 @@ description: Frequently asked questions about the BTN-1 Macro Deck
 
 4\. **How do I connect the BTN-1 to Home Assistant?**
 
-* The BTN-1 connects to your Home Assistant instance through the <a href="https://www.home-assistant.io/integrations/esphome/" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integration</a> using WiFi.
+* The BTN-1 connects to your Home Assistant instance through the <a href="https://www.home-assistant.io/integrations/esphome/" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integration</a> using Wi-Fi.
 
 5\. **Does the BTN-1 support Zigbee firmware?**
 

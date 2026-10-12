@@ -24,7 +24,7 @@ The battery connector only fits one way, but check the wire colors before you pu
 
 Push the connector into the battery port until it seats fully.
 
-![](/assets/esphome-starter-kit-attach-battery.webp)
+![Plugging the flat battery's red and black wire connector into the battery port on the ESP32-C6](/assets/esphome-starter-kit-attach-battery.webp)
 
 ## Monitor the battery
 
@@ -118,7 +118,7 @@ A few things to know before you rely on it:
 
     One difference for the starter kit: the Button module's pin reads LOW when pressed (it uses a pull-up), the opposite of the BTN-1's buttons. So on the starter kit you'd wake on `mode: ALL_LOW` with GPIO6 as the only pin.
 
-#### Add a Prevent Sleep switch
+### Add a Prevent Sleep switch
 
 A sleeping device is a hard one to update. Every Apollo battery device ships with a **Prevent Sleep** switch for exactly this reason, and you can build the same thing into your starter kit config. It's a template switch that holds the device awake while it's on:
 

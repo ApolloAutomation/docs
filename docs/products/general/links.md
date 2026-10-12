@@ -1,6 +1,6 @@
 ---
 title: Useful Links
-description: Links to our github, printables, and discord!
+description: Links to our GitHub, Printables, and Discord!
 ---
 # Useful Links
 

@@ -1,6 +1,6 @@
 ---
 title: mmWave Tuning Videos
-description: Two short videos and a quick sumamry on how to best tune the LD2410B in the MSR-2!
+description: Two short videos and a quick summary on how to best tune the LD2410B in the MSR-2!
 ---
 !!! tip "Radar Engineering Mode (REM)"
 
@@ -20,17 +20,17 @@ How to tune the mmWave sensor using radar engineering mode.
   </iframe>
 </div>
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">esphome integration</a> -&gt; click on the name of your new device!
+1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
 2\. Scroll down to the Configuration section.
 
 3\. Turn on Radar Engineering Mode (REM).
 
-![](/assets/mmwave-tuning-pic-1.png)
+![MSR-2 Configuration card in Home Assistant with the Radar Engineering Mode toggle turned on and circled](/assets/mmwave-tuning-pic-1.png)
 
 4\. Scroll down to the Diagnostic section and you will see that REM shows the move and still energy for gates 0-8.
 
-![](/assets/mmwave-tuning-pic-2-1.png)
+![Diagnostic entities in Home Assistant showing gate move and still energy percentages](/assets/mmwave-tuning-pic-2-1.png)
 
 5\. The gates are different distances from the sensor.
 
@@ -38,13 +38,13 @@ How to tune the mmWave sensor using radar engineering mode.
 
 6\. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 
-![](/assets/mmwave-tuning-pic-3.png)
+![MSR-2 gate threshold sliders in Home Assistant with the g6 still threshold slider moved fully right and circled](/assets/mmwave-tuning-pic-3.png)
 
 7\. Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.
 
-![](/assets/mmwave-tuning-pic-4.png)
+![MSR-2 gate threshold sliders in Home Assistant with the g4 move threshold slider moved left and circled](/assets/mmwave-tuning-pic-4.png)
 
-!!! quote "Quote from popular Youtuber Make It Work Tech"
+!!! quote "Quote from popular YouTuber Make It Work Tech"
 
     I ended up maxing out the sliders on all gates and then bringing them down just enough to pick up human presence. Definitely easier than using the LD2410B app. - <a href="https://www.youtube.com/@makeitworktech" title="Make it Work" target="_blank" rel="noreferrer nofollow noopener">MakeItWorkTech</a>
 

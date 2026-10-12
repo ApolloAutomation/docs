@@ -28,22 +28,22 @@ How to tune the mmWave sensor using radar engineering mode.
 
 2\. Scroll down to the Configuration section and turn on "Radar Engineering Mode".
 
-![Configuration.png](/assets/msr-2-toggle-on-rem-1.png)
+![Home Assistant MSR-2 Configuration section with the Radar Engineering Mode toggle being switched on](/assets/msr-2-toggle-on-rem-1.png)
 
 3\. Scroll down to the Diagnostic section and you will see that when REM is enabled, the move and still energy for gates 0-8 are shown.
 
-![Diagnostic.png](/assets/msr-2-gate-energies.png)
+![Home Assistant MSR-2 Diagnostic section listing move and still energy percentages for gates g0 to g4](/assets/msr-2-gate-energies.png)
 
-The gates are 0.75meter increments from the sensor - allowing you to "tune" each 0.75 meter section until your sensor works as intended!
+The gates are 0.75 meter increments from the sensor - allowing you to "tune" each 0.75 meter section until your sensor works as intended!
 
-![](/assets/msr-2-ld2410-gate-table.png)
+![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/msr-2-ld2410-gate-table.png)
 
-![](/assets/msr-2-ld2410-gates-visualized.png)
+![Diagram of the LD2410 detection area split into gates at 0.75 m steps](/assets/msr-2-ld2410-gates-visualized.png)
 
 Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 
-![High Threshold.png](/assets/msr-2-gate-high-threshold-example.png)
+![Gate 0 move and still threshold sliders moved all the way right to 100](/assets/msr-2-gate-high-threshold-example.png)
 
 Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.
 
-![Low Threshold.png](/assets/msr-2-gate-low-threshold-example.png)
+![Gate 0 move and still threshold sliders moved all the way to the left](/assets/msr-2-gate-low-threshold-example.png)

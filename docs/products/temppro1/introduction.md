@@ -8,7 +8,7 @@ description: Documentation for TEMP Pro-1, including setup, usage, and best prac
   <iframe width="560" height="315" src="https://www.youtube.com/embed/WxWEuq2-EDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 </div>
 
-The TEMP Pro-1 can be used with an optional temperature probe which come in two lengths and or dust-proof temp and humidity probe (<a href="https://wiki.dfrobot.com/SHT20_I2C_Temperature_%26_Humidity_Sensor__Waterproof_Probe__SKU__SEN0227" target="_blank" rel="noreferrer nofollow noopener">SHT20</a>). It also features an AHT20-F air temperature and humidity sensor, 4x RGB LEDs, and a piezo buzzer.
+The TEMP Pro-1 can be used with an optional temperature probe which comes in two lengths and/or dust-proof temp and humidity probe (<a href="https://wiki.dfrobot.com/SHT20_I2C_Temperature_%26_Humidity_Sensor__Waterproof_Probe__SKU__SEN0227" target="_blank" rel="noreferrer nofollow noopener">SHT20</a>). It also features an AHT20-F air temperature and humidity sensor, 4x RGB LEDs, and a piezo buzzer.
 
 It includes two mezzanine connectors for our GPIO Header addon, CO2 addon, and any future addons using that port. It also includes a Sen5x/Sen6x port which is used to connect the SEN55 on our AIR-1. It even includes a DFrobot port (MiCS port on AIR-1) and a QWIIC port!
 

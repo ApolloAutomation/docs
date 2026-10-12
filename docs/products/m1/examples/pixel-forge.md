@@ -12,7 +12,7 @@ Pixel Forge ships inside WLED and runs on the M-1 itself. It converts images to 
 
 Open it from the icon below the color picker in the WLED interface, or go straight to `http://<your-m1-ip>/pixelforge.htm`.
 
-![](/assets/wled-16-open-pixel-forge.gif)
+![Clicking the PixelForge icon below the WLED color picker to open the Pixel Forge Image Tool](/assets/wled-16-open-pixel-forge.gif)
 
 Pixel Forge has three of its own tabs: **Image Tool**, **Scrolling Text**, and **Other Tools**.
 
@@ -35,7 +35,7 @@ Turns any image into a GIF the matrix can play.
 
 1.  Pixel Forge shows how much filesystem space is left as you go, which matters because the M-1 stores these images on the device.
 
-![](/assets/wled-16-pixel-forge-image-tool.gif)
+![Pixel Forge Image Tool: uploading a mountain photo, cropping it, setting 128 x 128, and converting](/assets/wled-16-pixel-forge-image-tool.gif)
 
 ## Scrolling Text
 
@@ -47,7 +47,7 @@ Choose your segment under **Target Segment**, type into **Text to show**, and cl
 
 The useful part is **Available Tokens**. Insert date, time, or temperature and the text keeps itself current instead of showing a fixed string. For values that come from elsewhere in your house, [push them from Home Assistant over the JSON API](/products/m1/examples/share-data-from-home-assistant.md) instead.
 
-![](/assets/wled-16-pixel-forge-scrolling-text.gif)
+![Pixel Forge Scrolling Text tab: typing text, checking the preview, and applying it to a segment](/assets/wled-16-pixel-forge-scrolling-text.gif)
 
 ## Other Tools
 
@@ -57,6 +57,6 @@ Downloads extra utilities onto the M-1. Whatever you download stays there until 
 
 Pick your **Target Segment** and canvas size along the top. The color wheel and brush tools run down the left side, with **Size** and **Hard** sliders for the brush, and undo and redo above the canvas. When you are happy, type a **Name** and choose **Save as Preset** or **Save as GIF**.
 
-![](/assets/wled-16-pixel-forge-pixel-paint-hi-mom.gif)
+![Pixel Paint drawing Hi Mom in orange on the canvas, then saving it as a preset named hi-mom](/assets/wled-16-pixel-forge-pixel-paint-hi-mom.gif)
 
 On WLED-MM the equivalent workflow is [resizing a GIF externally and uploading it](/products/m1/examples/add-gifs-to-wled.md).

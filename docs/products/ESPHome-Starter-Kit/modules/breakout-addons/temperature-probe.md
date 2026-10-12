@@ -21,7 +21,7 @@ Both probes read -55°C to 85°C (-67°F to 185°F) with ±0.5°C accuracy. Pick
 
 Plug the probe's connector into the **1Wire** port at the top right of the [Breakout Module](/products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md#pinout) with the latch side facing up.
 
-![](/assets/esphome-starter-kit-breakout-module-dallas-probe.webp)
+![Plugging the DS18B20 temperature probe's 3.5mm plug into the 1Wire jack on the Breakout Module](/assets/esphome-starter-kit-breakout-module-dallas-probe.webp)
 
 The probe's data line is on **GPIO6**.
 

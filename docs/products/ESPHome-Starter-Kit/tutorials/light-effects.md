@@ -25,14 +25,14 @@ Out of the box, your RGB module turns on, turns off, and changes color. ESPHome 
 
 3.  Turn on **Show advanced settings** near the bottom of the form. Effects are an advanced option, so the field stays hidden until you do.
 4.  Scroll to **Effects** and click **\+ Add**.
-5.  Pick **Addressable Rainbow** from the dropdown. Its own settings unfold underneath: **Name**, **Speed**, and **Width**. Leave them alone for now, the greyed-out values are the defaults ESPHome uses. (1)
+5.  Pick **Addressable Rainbow** from the dropdown. Its own settings unfold underneath: **Name**, **Speed**, and **Width**. Leave them alone for now, the grayed-out values are the defaults ESPHome uses. (1)
     { .annotate }
 
     1.  Want something other than rainbow? Everything in the dropdown works on your RGB module, and the full library is documented at <a href="https://esphome.io/components/light/#light-effects" target="_blank" rel="noreferrer nofollow noopener">esphome.io/components/light</a>. The entries starting with "Addressable" animate each LED separately, which is what makes a rainbow or a wipe travel along the strip. The rest, like **Pulse**, **Strobe**, and **Flicker**, drive the whole strip as one color at a time.
 
 6.  Click **\+ Add** a second time and pick **Addressable Color Wipe**.
 
-![](../../../assets/esphome-device-builder-add-effects.gif)
+![ESPHome Device Builder adding Addressable Rainbow and Addressable Color Wipe effects to the light](../../../assets/esphome-device-builder-add-effects.gif)
 
 That gives the light two effects: a continuously cycling rainbow and a sweeping color wipe. Add as many as you like the same way, and click the **X** to the right of an effect's dropdown to drop one.
 
@@ -67,7 +67,7 @@ The effects are saved in Device Builder, but the device is still running its old
 
     1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
-![](../../../assets/esphome-device-builder-save-install-on-the-network.gif)
+![ESPHome Device Builder clicking Save, then Install, choosing On the network, and compiling](../../../assets/esphome-device-builder-save-install-on-the-network.gif)
 
 3\. Wait for the compile and flash to finish. The device reboots once the install is done.
 
@@ -75,9 +75,9 @@ The effects are saved in Device Builder, but the device is still running its old
 
 With the device back online, open the local web page at `http://esphome-starter-kit.local/` (or whatever you named your device) in a browser on the same Wi-Fi network. Find the RGB light entity and pick **Rainbow** or **Color Wipe** from the **Effect** dropdown. The LEDs start animating right away.
 
-![](../../../assets/esphome-starter-kit-effects-on-rgb-panel-showcase.webp)
+![LED & Buzzer module LEDs cycling through colors with an effect running](../../../assets/esphome-starter-kit-effects-on-rgb-panel-showcase.webp)
 
-![](../../../assets/esphome-device-builder-test-effects-web-server.gif)
+![Starter kit web server turning on the RGB LEDs and picking Rainbow, then Color Wipe, from the Effect list](../../../assets/esphome-device-builder-test-effects-web-server.gif)
 
 If you've already followed [Connect to Home Assistant](/products/ESPHome-Starter-Kit/tutorials/connect-to-home-assistant.md), the same **Effect** dropdown shows up on the light entity card in Home Assistant.
 

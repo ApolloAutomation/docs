@@ -1,4 +1,5 @@
 ---
+title: MostlyChris MSR-1 Review
 description: "MostlyChris reviews the Apollo MSR-1."
 ---
 # MostlyChris MSR-1 Review

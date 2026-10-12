@@ -1,4 +1,5 @@
 ---
-description: "Two short videos and a quick sumamry on how to best tune the LD2410B in the MSR-2!"
+title: mmWave Tuning Videos
+description: "Two short videos and a quick summary on how to best tune the LD2410B in the MSR-2!"
 ---
---8<-- "homey/products/general/calibrating-and-updating/mmwave-videos.md"
+--8<-- "homey/products/general/calibrating-and-updating/mmwave-videos.md:5:"

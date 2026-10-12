@@ -1,4 +1,5 @@
 ---
+title: CO₂ Calibration
 description: "Step by step guide for re-calibrating your SCD40 CO2 sensor"
 ---
 # CO<sub>2</sub> Calibration
@@ -21,17 +22,17 @@ description: "Step by step guide for re-calibrating your SCD40 CO2 sensor"
 
 3\. Navigate to your device, such as via the "Favorite Devices" section and right click (or on mobile short hold) then click on Settings.
 
-![](/assets/co2-calibration-homey-pic-1.png)
+![Homey Favorite Devices menu for the Apollo AIR-1 with Settings highlighted](/assets/co2-calibration-homey-pic-1.png)
 
 4\. Scroll down until you see "Maintenance" and select it on mobile, then click on "Calibrate SCD40 to 420ppm" and you should see the CO<sub>2</sub> readings at 420 ppm or near it.
 
-![](/assets/co2-calibration-homey-pic-2.png)
+![Homey AIR-1 settings with Calibrate SCD40 to 420ppm under Maintenance highlighted](/assets/co2-calibration-homey-pic-2.png)
 
 It might take several attempts clicking the "Press" button for it to equalize correctly. If you don't see the SCD40 reporting 400-500 ppm then click the button again.
 
-5\. Now your CO<sub>2</sub> sensor should be calibrated! Be sure to setup some nice flows and check out the insights so you can monitor the CO<sub>2</sub> levels.
+5\. Now your CO<sub>2</sub> sensor should be calibrated! Be sure to set up some nice flows and check out the insights so you can monitor the CO<sub>2</sub> levels.
 
-![Image of CO2ppm on a graph](/assets/co2-calibration-homey-pic-3.png)
+![Homey CO2 graph for the Apollo AIR-1 with readings between 550 and 700 ppm](/assets/co2-calibration-homey-pic-3.png)
 
 !!! danger "Dangerous CO<sub>2</sub> level considerations"
 
@@ -39,14 +40,14 @@ It might take several attempts clicking the "Press" button for it to equalize co
 
 Note the steep decline in CO<sub>2</sub> ppm detected due to the door and window being opened and fan turned on.
 
-![CO2_8.jpg](/assets/air-1-co2-calibration-image-5.jpg)
+![Home Assistant history of MSR-1 CO2 rising to about 2,500 ppm overnight, then dropping steeply](/assets/air-1-co2-calibration-image-5.jpg)
 
 <a href="https://www.dhs.wisconsin.gov/chemical/carbondioxide.htm" target="_blank" rel="noreferrer nofollow noopener">Wisconsin Department of Health CO<sub>2</sub> Level Chart</a>
 
-![CO2 Health Department.png](/assets/air-1-co2-calibration-image-6.jpg)
+![CO2 level chart listing ppm ranges from 400 to 40,000 and their potential health effects](/assets/air-1-co2-calibration-image-6.jpg)
 
 !!! example "CO<sub>2</sub> levels dropping due to HVAC Fan on a schedule"
 
     This could be improved by increasing air exchange to get below 1000 ppm for a safer environment.
 
-![Plotly CO2 Graph.png](/assets/plotly-co2-graph.png)
+![Bedroom CO2 graph rising and falling with the HVAC fan schedule, peaking near 1,500 ppm](/assets/plotly-co2-graph.png)

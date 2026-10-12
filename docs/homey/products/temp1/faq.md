@@ -1,4 +1,5 @@
 ---
+title: TEMP-1 FAQ
 description: "Frequently asked questions about the TEMP-1 temperature sensor."
 ---
 # **TEMP-1 FAQ**
@@ -21,7 +22,7 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 
 4\. **How does the TEMP-1 connect to Home Assistant?**
 
-* The TEMP-1 connects via WiFi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
+* The TEMP-1 connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
 
 5\. **How often does the TEMP-1 send sensor data?**
 
@@ -29,7 +30,7 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 
 6\. **Can I customize the TEMP-1 functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP-1. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP-1. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 7\. **What are the RGB LED and piezo buzzer used for?**
 

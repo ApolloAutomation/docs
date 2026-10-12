@@ -12,7 +12,7 @@ description: Step by step guide for re-flashing the M-1 back to factory firmware
 
 2\. Push and hold the boot button (the left button). While still holding the button down, plug in a USB-C cable into the USB-C port of your M-1 LED Matrix then let go of the button.
 
-![](/assets/m-1-hold-boot-webp.webp)
+![Holding the boot button on the M-1 controller while plugging in the USB-C cable](/assets/m-1-hold-boot-webp.webp)
 
 3\. Open the <a href="https://install.apolloautomation.com/#/m-1" target="_blank" rel="noreferrer nofollow noopener">Apollo M-1 installer</a> and choose your firmware. New units ship with **WLED 16.0.1**, which is the default.
 
@@ -26,7 +26,7 @@ description: Step by step guide for re-flashing the M-1 back to factory firmware
 
 6\. Once you see "Installation complete!" you are finished. Click **Next**, then close the browser window.
 
-![](/assets/wled-16-firmware-reflash.gif)
+![Apollo M-1 installer with WLED 16.0.1 selected, clicking Connect & Install, then Install Apollo M-1 and confirming](/assets/wled-16-firmware-reflash.gif)
 
 !!! warning "Power cycle your device before doing anything else!"
 

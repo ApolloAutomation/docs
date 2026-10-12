@@ -25,7 +25,7 @@ ESPHome Device Builder has a new GUI for building <a href="https://esphome.io/au
 1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](/products/ESPHome-Starter-Kit/learning-the-basics/device-builder-tour.md#editor).
 2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
 
-    ![](../../../assets/esphome-device-builder-add-automation.gif)
+    ![Opening the device in ESPHome Device Builder, expanding Automations, and clicking Add automation](../../../assets/esphome-device-builder-add-automation.gif)
 
 3.  Set up the trigger:
 
@@ -86,18 +86,18 @@ Your automation is saved in Device Builder, but the device is still running its 
 
 3.  Wait for the compile and flash to finish. The device reboots once the install is done.
 
-![](../../../assets/esphome-device-builder-install-button-component.gif)
+![Clicking Install in ESPHome Device Builder, choosing On the network, and watching the firmware compile log](../../../assets/esphome-device-builder-install-button-component.gif)
 
 ## Test the automation
 
 With the device back online, press the button on the Button module. You should hear a soft click, and the RGB LEDs turn on. Press it again and they turn off.
 
-![](../../../assets/esphome-device-builder-example-rgb-button-automation.webp)
+![Pressing the Button module to toggle the white RGB LEDs on the house-shaped LED & Buzzer module on and off](../../../assets/esphome-device-builder-example-rgb-button-automation.webp)
 
 !!! success "You've built your first GUI automation!"
 
     The same trigger-then-action pattern works for every automation you'll build in Device Builder. Swap the trigger (motion, temperature crossing a threshold, a schedule) or the action (turn on, dim, play a buzzer tone) and you have a new automation.
 
-<a href="../../tutorials/light-effects/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Light Effects</a>
+<a href="../../tutorials/light-effects/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Light Effects</a>
 
 --8<-- "_snippets/community-help.md"

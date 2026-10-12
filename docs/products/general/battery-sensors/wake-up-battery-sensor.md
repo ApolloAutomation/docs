@@ -8,11 +8,11 @@ There are two ways to wake a sleeping Apollo battery sensor: press the reset but
 
     **Method 1: Reset button.** Press and release the reset button to restart the device.
 
-    ![](/assets/temp-1-reset-button-lid-off.jpg)
+    ![TEMP-1B with lid off, tweezers pointing at the RST reset button](/assets/temp-1-reset-button-lid-off.jpg)
 
     **Method 2: Boot button.** Quickly press and hold the boot button for 4-5 seconds.
 
-    ![](/assets/temp-1b-boot-button-lid-off.jpg)
+    ![TEMP-1B with lid off, tweezers pointing at the BOOT button](/assets/temp-1b-boot-button-lid-off.jpg)
 
     Button locations: [TEMP-1B boot mode](https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode/).
 
@@ -20,11 +20,11 @@ There are two ways to wake a sleeping Apollo battery sensor: press the reset but
 
     **Method 1: Reset button.** Press and release the reset button to restart the device.
 
-    ![](/assets/plt-boot-mode-pic-6-1.jpg)
+    ![PLT-1B circuit board with tweezers pointing at the reset button](/assets/plt-boot-mode-pic-6-1.jpg)
 
     **Method 2: Boot button.** Quickly press and hold the boot button for 4-5 seconds.
 
-    ![](/assets/plt-boot-mode-pic-2.jpg)
+    ![PLT-1B circuit board with tweezers pointing at the BOOT button next to the USB-C port](/assets/plt-boot-mode-pic-2.jpg)
 
     Button locations: [PLT-1B boot mode](https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/).
 
@@ -34,7 +34,7 @@ There are two ways to wake a sleeping Apollo battery sensor: press the reset but
 
     **Method 2: Boot button.** Quickly press and hold the boot (right) button for 4-5 seconds.
 
-    ![](/assets/btn-1-reset-boot-buttons.png)
+    ![Side of the BTN-1 with arrows marking the Reset button on the left and Boot button on the right](/assets/btn-1-reset-boot-buttons.png)
 
     Button locations: [BTN-1 boot mode](https://wiki.apolloautomation.com/products/btn1/troubleshooting/btn1-boot-mode/).
 
@@ -48,7 +48,7 @@ There are two ways to wake a sleeping Apollo battery sensor: press the reset but
 
     **Method 2: Boot button.** Quickly press and hold the boot button for 4-5 seconds.
 
-    ![](/assets/screenshot-2024-11-01-015948.png)
+    ![H-1 tree-shaped circuit board with the Boot and Reset buttons circled in red](/assets/screenshot-2024-11-01-015948.png)
 
     Button locations: [H-1 boot mode](https://wiki.apolloautomation.com/products/h1/boot-mode/).
 
@@ -62,7 +62,7 @@ There are two ways to wake a sleeping Apollo battery sensor: press the reset but
 
     **Method 2: Boot button.** Quickly press and hold the boot (right) button for 4-5 seconds.
 
-    ![](/assets/h-2-reset-and-boot-buttons-labeled.png)
+    ![H-2 snowflake-shaped circuit board with arrows marking the Reset and Boot buttons](/assets/h-2-reset-and-boot-buttons-labeled.png)
 
     Button locations: [H-2 boot mode](https://wiki.apolloautomation.com/products/h2/troubleshooting/boot-mode/).
 

@@ -6,47 +6,47 @@ description: Step by step guide to getting started with your BTN-1!
 
 This will guide you through adding on switches and keycaps to your BTN-1 then adding it to your Wi-Fi and Home Assistant!
 
-### Physical Setup
+## Physical Setup
 
-###### Installing Brown Switches
+### Installing Brown Switches
 
 Line up the two gold pins with the holes on your BTN-1, then press down gently. Be careful, as the pins can bend or get damaged if too much force is used.
 
-![](/assets/btn-1-install-switches-gif.webp)
+![Pressing brown switches into the four sockets on the BTN-1 circuit board](/assets/btn-1-install-switches-gif.webp)
 
-###### Installing Keycaps
+### Installing Keycaps
 
 Line up the + on the keycap with the + on the top of the switch you installed. It may require a little pressure, but it should press on smoothly. Once placed, lightly tap to ensure the keycap is fully seated.
 
-![](/assets/btn-1-getting-started-installing-keycaps-gif.webp)
+![Pressing white keycaps onto the four switches of the BTN-1](/assets/btn-1-getting-started-installing-keycaps-gif.webp)
 
-###### Flip Power Switch
+### Flip Power Switch
 
 Only the battery version has a power switch. If yours has one, ensure it's **turned on**. With the device on its side, flipping the switch **away from you** turns it **on**, and flipping it **toward you** turns it **off**.
 
-![](/assets/btn-1-flip-power-switch-on.webp)
+![Sliding the BTN-1 power switch on the side of the case to the on position](/assets/btn-1-flip-power-switch-on.webp)
 
-### Connecting Through Hotspot
+## Connecting Through Hotspot
 
 To connect through the sensor's onboard hotspot follow the below:
 
 1\. Plug the BTN-1 in via USB-C. A 5v 1amp power supply will work fine
 
-!!! success "If your sensor is restarting or not broadcasting Wi-Fi try another usb-c cable and power supply!"
+!!! success "If your sensor is restarting or not broadcasting Wi-Fi try another USB-C cable and power supply!"
 
     The BTN-1 is sensitive to power fluctuations and needs constant 5v power. It draws 1amp or less so most used phone chargers will work, just make sure it's a quality one!
 
     Still no hotspot? Follow the <a href="https://wiki.apolloautomation.com/products/btn1/troubleshooting/btn1-reset-wi-fi-credentials/" target="_blank" rel="noopener">Reset Wi-Fi Credentials</a> guide to make it broadcast again.
 
-2\. On your phone or PC, open the WiFi settings and connect to "Apollo BTN-1 Hotspot".
+2\. On your phone or PC, open the Wi-Fi settings and connect to "Apollo BTN-1 Hotspot".
 
-![](/assets/btn-1-reset-wifi-screenshot.png)
+![Phone Wi-Fi settings listing the BTN-1 hotspot network to join](/assets/btn-1-reset-wifi-screenshot.png)
 
 3\. Once connected it should automatically open a dashboard for your sensor. If this does not automatically open the dashboard, please open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
 
 4\. Select the Wi-Fi network that you would like your sensor to connect to or scroll to the bottom and type in your Wi-Fi network then click "**Save**".
 
-![](/assets/btn-1-getting-started-enter-wifi-details-hotspot.png)
+![BTN-1 hotspot page at 192.168.4.1 with the SSID and password fields and Save button highlighted](/assets/btn-1-getting-started-enter-wifi-details-hotspot.png)
 
 !!! tip "Tip for Mesh Wi-Fi systems or multiple Access Points"
 
@@ -56,37 +56,37 @@ To connect through the sensor's onboard hotspot follow the below:
 
 [Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                            .md-button .md-button--primary }
 
-### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
+## Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
 !!! note "Pre-requirement: Bluetooth proxy or Bluetooth Home Assistant hardware required"
 
-    Bluetooth built in such as a raspberry pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a> is required to use this to setup your Apollo device. If you have already followed the "Connecting through Hotspot" please skip this section.
+    Bluetooth built in such as a raspberry pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a> is required to use this to set up your Apollo device. If you have already followed the "Connecting through Hotspot" please skip this section.
 
 1\. Navigate to settings -&gt; integrations then click the "**ADD**" button below your new Apollo device then click **Submit**.
 
-![](/assets/btn-1-improv-ble-add.gif)
+![Adding the discovered BTN-1 with Improv via BLE on the Home Assistant integrations page](/assets/btn-1-improv-ble-add.gif)
 
 2\. Once prompted, type in your Wi-Fi name and password in the two fields then click **Submit**. Click on **Close** once it finishes.
 
-![](/assets/btn-1-improv-ble-wifi-setup.gif)
+![Entering Wi-Fi credentials in the Improv via BLE dialog for the BTN-1 and closing on success](/assets/btn-1-improv-ble-wifi-setup.gif)
 
 3\. Click on **Add** then click on **Submit**. Choose an area and then click **Finish**.
 
-![](/assets/btn-1-improv-ble-esphome-integration.gif)
+![Adding the BTN-1 to the ESPHome integration, choosing an area, and clicking Finish](/assets/btn-1-improv-ble-esphome-integration.gif)
 
-4\. Your device is now added to your Wi-Fi and added to the ESPHome Integration in Home Assistant. You should now be ready to <a href="https://wiki.apolloautomation.com/products/btn1/examples/blueprint/" target="_blank" rel="noreferrer nofollow noopener">setup a blueprint</a> and start using your BTN-1!
+4\. Your device is now added to your Wi-Fi and added to the ESPHome Integration in Home Assistant. You should now be ready to <a href="https://wiki.apolloautomation.com/products/btn1/examples/blueprint/" target="_blank" rel="noreferrer nofollow noopener">set up a blueprint</a> and start using your BTN-1!
 
-### Connecting To ESPHome Device Builder
+## Connecting To ESPHome Device Builder
 
 !!! tip "Skip the ESPHome Device Builder unless..."
 
     Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!") unless you need to rename your sensor or do manual edits to the yaml
 
-You can add the ESPHome Device Builder app in Home Assistant to easily update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can <a href="http://homeassistant.local:8123/hassio/store" target="_blank" rel="noreferrer nofollow noopener">search esphome device builder in the app store</a> and install it.
+You can add the ESPHome Device Builder app in Home Assistant to easily update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can <a href="http://homeassistant.local:8123/hassio/store" target="_blank" rel="noreferrer nofollow noopener">search ESPHome Device Builder in the app store</a> and install it.
 
 Make sure to fill out your Wi-Fi details in the **secrets** section by clicking on the **secrets** button.
 
-![](/assets/esphome-device-builder-secrets.png)
+![ESPHome Device Builder dashboard with the cursor on the Secrets button in the top right](/assets/esphome-device-builder-secrets.png)
 
 ```yaml
 # Your Wi-Fi SSID and password - keep the quotes and just replace the name and password between the quotes!
@@ -96,24 +96,24 @@ wifi_password: "your-wifi-pass-here"
 
 1\. Open the <a href="http://homeassistant.local:8123/5c53de3b_esphome/ingress" target="_blank" rel="noreferrer nofollow noopener"><strong>ESPHome Device Builder</strong></a> dashboard.
 
-![](/assets/esphome-device-builder-show-discovered-device.png)
+![ESPHome Device Builder banner reading Discovered 1 device with the Show button on the right](/assets/esphome-device-builder-show-discovered-device.png)
 
 2\. Click **Show** in the top right to show your discovered devices then click on **Take Control** then click **Install**. This can take multiple minutes or longer on low-end hardware.
 
-![](/assets/btn-1-getting-started-take-control-gif.gif)
+![Clicking Take Control on the discovered BTN-1 in ESPHome Device Builder, then Install](/assets/btn-1-getting-started-take-control-gif.gif)
 
 3\. Once you see "**INFO OTA successful**" you are done. Click "**STOP**" to exit.
 
-![](/assets/btn-1-getting-started-ota-successful.png)
+![ESPHome Device Builder install log for the BTN-1 ending with INFO OTA successful](/assets/btn-1-getting-started-ota-successful.png)
 
 4\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
-### Connecting to Home Assistant via ESPHome Integration:
+## Connecting to Home Assistant via ESPHome Integration:
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integration</a> then click on **Add** then click **Submit**. When prompted click **Finish** then give it a location and click **Finish** or click **Skip and Finish**.
 
-![](/assets/btn-1-getting-started-esphome-integration-gif.gif)
+![Adding the discovered BTN-1 from the ESPHome integration page, setting an area, and opening its device page](/assets/btn-1-getting-started-esphome-integration-gif.gif)
 
-2\. Your device is now added to home assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
+2\. Your device is now added to Home Assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
 
-[Click here to setup a blueprint and easily automate using your BTN-1! :simple-blueprint:](https://wiki.apolloautomation.com/products/btn1/examples/blueprint/){    .md-button .md-button--primary }
+[Click here to set up a blueprint and easily automate using your BTN-1! :simple-blueprint:](https://wiki.apolloautomation.com/products/btn1/examples/blueprint/){    .md-button .md-button--primary }

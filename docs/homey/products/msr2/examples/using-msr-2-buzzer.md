@@ -1,4 +1,5 @@
 ---
+title: Using MSR-2 Buzzer
 description: "Trigger the MSR-2 buzzer from developer tools, then reuse the same call in an automation."
 ---
 # Using MSR-2 Buzzer
@@ -7,13 +8,13 @@ This guide will walk you through using the buzzer on your MSR-2. You can also us
 
 1. Open Home Assistant and navigate to developer tools in the bottom left
 
-![Screenshot 2023-11-01 at 10.52.38 PM.png](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
+![Home Assistant sidebar with the Developer tools hammer icon highlighted](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
 
 2\. Click on services
 
 3\. Choose your MSR-2's buzzer (You can type in buzzer to find it easier)
 
-4\. Put a rtttl tone into the the string box
+4\. Put an rtttl tone into the string box
 
 - - Mario: ```
         smb:d=4,o=5,b=100:16e6,16e6,32p,8e6,16c6,8e6,8g6,8p,8g,8p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b,16p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b,8p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16g#,16a,16c6,16p,16a,16c6,16d6,8p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16c7,16p,16c7,16c7,p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16g#,16a,16c6,16p,16a,16c6,16d6,8p,16d#6,8p,16d6,8p,16c6
@@ -25,8 +26,8 @@ This guide will walk you through using the buzzer on your MSR-2. You can also us
         StarWars/Imp:d=4,o=5,b=112:8d.,16p,8d.,16p,8d.,16p,8a#4,16p,16f,8d.,16p,8a#4,16p,16f,d.,8p,8a.,16p,8a.,16p,8a.,16p,8a#,16p,16f,8c#.,16p,8a#4,16p,16f,d.,8p,8d.6,16p,8d,16p,16d,8d6,8p,8c#6,16p,16c6,16b,16a#,8b,8p,16d#,16p,8g#,8p,8g,16p,16f#,16f,16e,8f,8p,16a#4,16p,2c#
         ```
     - Huge list: [https://picaxe.com/rtttl-ringtones-for-tune-command/](https://picaxe.com/rtttl-ringtones-for-tune-command/)
-    - This is a good site to test rttl tones: [https://adamonsoon.github.io/rtttl-play/](https://adamonsoon.github.io/rtttl-play/)
+    - This is a good site to test rtttl tones: [https://adamonsoon.github.io/rtttl-play/](https://adamonsoon.github.io/rtttl-play/)
 
 5\. Click on the ACTIONS button in bottom right
 
-![image.png](/assets/HJuimage.png)
+![Home Assistant Developer tools Actions tab with the ESPHome MSR-2 play buzzer action and an RTTTL song entered](/assets/HJuimage.png)

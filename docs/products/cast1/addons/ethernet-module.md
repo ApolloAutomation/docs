@@ -15,7 +15,7 @@ The Ethernet add-on gives your CAST-1 a wired network connection. It's a small h
 
 1.  Press evenly on both ends. If the module won't sit flat against the case, lift it off and line the pins up again rather than forcing it.
 
-![](/assets/cast-1-connect-ethernet-module.webp)
+![Pressing the Ethernet module onto the two header rows on top of the CAST-1](/assets/cast-1-connect-ethernet-module.webp)
 
 4\. Plug an Ethernet cable into the module, then plug the CAST-1 back into power.
 

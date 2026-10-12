@@ -13,7 +13,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 3\. **How do I connect the AIR-1 to Home Assistant?**
 
-* The AIR-1 connects via WiFi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
+* The AIR-1 connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
 
 4\. **Does the AIR-1 require cloud connectivity or a subscription?**
 
@@ -101,7 +101,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 25\. **What are the optional add-ons for the AIR-1?**
 
-* The AIR-1 offers two optional add-ons: a <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO2</a> sensor and the <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS gas sensor</a>. These can be added to enhance air quality monitoring with very accurate CO2 measurements and the ability to detect multiple gases with the MiCS gas sensor.
+* The AIR-1 offers two optional add-ons: an <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO2</a> sensor and the <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS gas sensor</a>. These can be added to enhance air quality monitoring with very accurate CO2 measurements and the ability to detect multiple gases with the MiCS gas sensor.
 
 26\. **What's in the box?**
 
@@ -121,7 +121,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 30\. **How long does it take to set up the AIR-1?**
 
-* Setup typically takes around 5-10 minutes. Once powered and connected to WiFi, it can be configured quickly through ESPHome and Home Assistant.
+* Setup typically takes around 5-10 minutes. Once powered and connected to Wi-Fi, it can be configured quickly through ESPHome and Home Assistant.
 
 31\. **How secure is the AIR-1?**
 

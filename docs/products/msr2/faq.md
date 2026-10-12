@@ -28,7 +28,7 @@ description: Frequently asked questions about the MSR-2 mmWave sensor.
 
 7\. **How do I connect the MSR-2 to Home Assistant?**
 
-* The MSR-2 connects to your Home Assistant instance through ESPHome using WiFi. Once connected, you can monitor data from all the sensors and set up automations.
+* The MSR-2 connects to your Home Assistant instance through ESPHome using Wi-Fi. Once connected, you can monitor data from all the sensors and set up automations.
 
 8\. **What kind of automations can I create with the MSR-2?**
 
@@ -72,7 +72,7 @@ description: Frequently asked questions about the MSR-2 mmWave sensor.
 
 18\. **Can I customize the MSR-2 functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the MSR-2. Our <a href="https://github.com/ApolloAutomation/MSR-2" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the MSR-2. Our <a href="https://github.com/ApolloAutomation/MSR-2" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 19\. **How often does the MSR-2 report sensor data?**
 
@@ -96,7 +96,7 @@ description: Frequently asked questions about the MSR-2 mmWave sensor.
 
 24\. **How do I install and configure the MSR-2?**
 
-* Installation is straightforward, with the MSR-2 powered via USB-C and connecting to Home Assistant through WiFi. Configuration is done in ESPHome, where you can set sensor parameters, adjust automations, and more. We provide detailed documentation and support through our Discord community and GitHub.
+* Installation is straightforward, with the MSR-2 powered via USB-C and connecting to Home Assistant through Wi-Fi. Configuration is done in ESPHome, where you can set sensor parameters, adjust automations, and more. We provide detailed documentation and support through our Discord community and GitHub.
 
 25\. **What makes the MSR-2 stand out from other motion sensors?**
 

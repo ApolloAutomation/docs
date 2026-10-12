@@ -21,6 +21,6 @@ A printable housing for the LED & Buzzer module. Print one and give your notific
 
 [Download the .STEP file :material-download:](../../assets/apollo_starterkit_housing_var2.step){ .md-button .md-button--primary }
 
-![](../../assets/rgb-module-case-front.jpeg)
+![3D-printed orange and white case for the LED & Buzzer module with glowing teal LEDs and a USB-C cable plugged in](../../assets/rgb-module-case-front.jpeg)
 
-![](../../assets/rgb-module-case-rear.jpeg)
+![Back of the white 3D-printed LED & Buzzer module case with a ribbon cable running out to another module](../../assets/rgb-module-case-rear.jpeg)

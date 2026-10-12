@@ -17,7 +17,7 @@ The DEV-1 does NOT come pre-flashed with ESPHome or WLED and requires you to fla
 
 Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated API key inside the code block as shown below then paste it in the code below where you see "use-a-randomly-generated-key-here".
 
-![](/assets/apollo-dev-1-image-2.png)
+![ESPHome API docs with a randomly generated encryption key highlighted in a red box](/assets/apollo-dev-1-image-2.png)
 
 **GPIO Pins Listed:**
 

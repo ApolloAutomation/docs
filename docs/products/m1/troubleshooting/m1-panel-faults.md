@@ -15,7 +15,7 @@ Find what you are seeing in the table below and work top to bottom. The first ro
 | Interleaved horizontal bands, or a doubled image | LED type set to the Quarter Scan variant | Under **Config**, **LED Preferences**, set the type back to **HUB75 (Half Scan)** |
 | Colors washed out or pastel | An advanced HUB75 option was changed | Factory reset, or reflash if you are on WLED-MM |
 | Colors bleeding sideways, vertical tearing | Clock phase toggled | Under **Config**, **LED Preferences**, uncheck **Reversed** |
-| Faint smearing or ghosting at high brightness | The panel is running at full brightness | Lower the brightness a step. This is normal panel behaviour at 100% |
+| Faint smearing or ghosting at high brightness | The panel is running at full brightness | Lower the brightness a step. This is normal panel behavior at 100% |
 | Panel went black right after you changed LED settings | HUB75 changes need a restart | Reboot from **Info**, or power cycle the M-1 |
 | Vertical lines or column artifacts | Controller not fully seated on the panel connector | Power off, re-seat the controller on the back of the matrix, power back on |
 
@@ -23,7 +23,7 @@ If the display is wrong on more than one count, or nothing above matches, run th
 
 If the symptom survives a full reinstall, it is worth contacting support with a photo of the panel.
 
-###### Factory Reset
+## Factory Reset
 
 On WLED, holding the button for ten seconds resets the M-1 to factory settings, including the display size, without needing a computer. You will need to reconnect it to Wi-Fi afterward.
 

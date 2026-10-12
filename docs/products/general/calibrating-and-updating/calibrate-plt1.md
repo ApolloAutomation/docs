@@ -10,42 +10,42 @@ This guide will take you through calibrating your PLT-1's moisture sensor. The s
 
 3\. Select Settings and then Devices & Services
 
-![](/assets/5-1.png)
+![Home Assistant Settings menu with Devices & services outlined in red](/assets/5-1.png)
 
 4\. Select the ESPHome Integration
 
-![](/assets/6.png)
+![ESPHome integration tile in Home Assistant outlined in red](/assets/6.png)
 
 5\. Select your PLT-1 device
 
-![](/assets/7.png)
+![ESPHome integration device list with the 1 device link under the PLT-1 outlined in red](/assets/7.png)
 
 6\. Scroll down to the diagnostics section and select entity not shown.
 
-![](/assets/1-5.png)
+![PLT-1 Diagnostic card in Home Assistant with +1 entity not shown outlined in red](/assets/1-5.png)
 
 7\. Select the entity "Soil ADC."
 
-![](/assets/1-6.png)
+![PLT-1 Diagnostic card in Home Assistant with the hidden Soil ADC entity outlined in red](/assets/1-6.png)
 
 8\. Select the gear icon
 
-![](/assets/2-1.png)
+![Disabled Soil ADC entity dialog in Home Assistant with the gear icon outlined in red](/assets/2-1.png)
 
 9\. Select Enable
 
-![](/assets/3.png)
+![Soil ADC entity settings in Home Assistant with the Enable button outlined in red](/assets/3.png)
 
 10\. Give the sensor a minute for this new entity to populate.
 
 11\. Once the Soil ADC value is populated, enter it into the "Dry Voltage" entity.
 
-![](/assets/plt-1-calibration-pic-4.png)
+![PLT-1 Configuration card with the 100% Water Voltage and Dry Voltage boxes outlined in red](/assets/plt-1-calibration-pic-4.png)
 
 12\. Now, place the stake/probe portion of the PLT-1 into a cup of water. Be careful not to submerge the entire sensor—only the exposed PCB below the "Apollo" label and the horizontal line can be exposed to water.
 
 13\. Grab the "Soil ADC" value again and enter it into the "100% Water Voltage" entity.
 
-![](/assets/plt-1-calibration-pic-6.png)
+![PLT-1 Diagnostic card in Home Assistant with the Soil ADC voltage reading outlined in red](/assets/plt-1-calibration-pic-6.png)
 
 14\. You can now return your PLT-1 to your plant. Congratulations, your sensor is calibrated!

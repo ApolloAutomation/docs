@@ -1,4 +1,5 @@
 ---
+title: Home Tech Innovations MSR-2 Review
 description: "Home Tech Innovations sets up the Apollo MSR-2 in three steps."
 ---
 # Home Tech Innovations MSR-2 Review

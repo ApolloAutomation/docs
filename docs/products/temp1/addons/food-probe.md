@@ -6,13 +6,13 @@ description: Step by step guide for installing and using the optional Food Probe
 
 The TEMP-1 comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1 itself needs to stay in a cool environment.
 
-![](/assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
+![Correct TEMP-1 mounting on the grill side shelf versus incorrect mounting on the hot grill lid](/assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
 
 1\. To use your food probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1.
 
-![](/assets/temp-1-food-probe-insert-1.jpg)
+![Food probe 3.5mm plug being inserted into the port on the TEMP-1](/assets/temp-1-food-probe-insert-1.jpg)
 
-![](/assets/temp-1-food-probe-fully-inserted.jpg)
+![Food probe plug fully inserted into the TEMP-1 3.5mm port](/assets/temp-1-food-probe-fully-inserted.jpg)
 
 2\. Once inserted, proceed to step 3 unless you have a battery in it
 
@@ -22,11 +22,11 @@ The TEMP-1 comes with an optional food probe which can be used to monitor food t
 
 &nbsp;
 
-![](/assets/temp-1-food-probe-pic-1.jpg)
+![TEMP-1 with the food probe connected, showing the braided cable and steel probe tip](/assets/temp-1-food-probe-pic-1.jpg)
 
 3\. Go to the device page of your TEMP-1 in Home Assistant and choose probe "Food".
 
-![](/assets/temp1b-food-probe-pic-1-1.png)
+![TEMP-1 Controls card in Home Assistant with Food chosen in the Select Probe dropdown](/assets/temp1b-food-probe-pic-1-1.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 

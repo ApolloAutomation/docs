@@ -8,7 +8,7 @@ description: Step by step guide for resetting the Wi-Fi Credentials on your R PR
 
 2\. Long press the Boot button (the button on the right) for 10 seconds.
 
-![](/assets/r-pro-1-boot-button.jpg)
+![Tool pointing to the SW6 boot button at the bottom right of the R PRO-1 PCB](/assets/r-pro-1-boot-button.jpg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

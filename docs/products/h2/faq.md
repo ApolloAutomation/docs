@@ -32,15 +32,15 @@ description: Frequently asked questions about the H-2.
 
 8\. **Does the ornament require any additional power source?**
 
-* The Apollo H-2 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">16340 rechargeable battery</a>. It can also be powered by the USB-C port. The H-2 USB-C port will not charge the battery you need a dedicated 16340 charger <a href="https://imrbatteries.com/products/nitecore-sc2-2-channel-battery-charger" target="_blank" rel="noreferrer nofollow noopener">such as this nitecore model</a>.
+* The Apollo H-2 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">16340 rechargeable battery</a>. It can also be powered by the USB-C port. The H-2 USB-C port will not charge the battery. You need a dedicated 16340 charger <a href="https://imrbatteries.com/products/nitecore-sc2-2-channel-battery-charger" target="_blank" rel="noreferrer nofollow noopener">such as this nitecore model</a>.
 
 9\. **Can I gift the Apollo H-2 to friends or family?**
 
 * Yes, the H-2 makes a wonderful gift! It’s unique, festive, and supports a good cause, making it a great option for holiday gifting.
 
-10\. **My H-2 is draining battery too fast- how do i fix this?**
+10\. **My H-2 is draining battery too fast- how do I fix this?**
 
-* Please make sure if you are on the smart firmware to disable the "prevent sleep" option on the home assistant device page!
+* Please make sure if you are on the smart firmware to disable the "prevent sleep" option on the Home Assistant device page!
 
 11\. **Where can I find more information about the Apollo H-2 and similar products?**
 

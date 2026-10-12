@@ -6,7 +6,7 @@ description: Guide for setting up and using the prevent sleep toggle with the TE
 
 !!! tip "Put your sensors to sleep!"
 
-    All of our battery powered device are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
+    All of our battery powered devices are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
 
     The temperature offsets needed will be much lower for your sensors as the microcontroller will not put off as much heat when it is sleeping and then waking for short periods to report the sensor values.
 
@@ -14,11 +14,11 @@ description: Guide for setting up and using the prevent sleep toggle with the TE
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](/assets/prevent-sleep-pic-3.png)
+![Home Assistant ESPHome integration entry for the Apollo TEMP-1B with the 1 device link highlighted](/assets/prevent-sleep-pic-3.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](/assets/prevent-sleep-pic-2.png)
+![Home Assistant device controls with the Prevent Sleep toggle and Sleep Duration box highlighted](/assets/prevent-sleep-pic-2.png)
 
 4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 8 minutes.
 

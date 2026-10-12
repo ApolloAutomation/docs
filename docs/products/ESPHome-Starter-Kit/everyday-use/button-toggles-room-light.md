@@ -33,7 +33,7 @@ This is an alternative way to use the Starter Kit's button. Instead of toggling 
 
     1.  The button registers as a binary sensor. `On` maps to a pressed state - the moment you push the button down. Home Assistant fires the automation at that instant.
 
-    ![](../../../assets/button-toggles-room-light-hass-automation-example.gif)
+    ![Home Assistant automation editor adding a State trigger for Button Module with To set to On](../../../assets/button-toggles-room-light-hass-automation-example.gif)
 
 4. Under **Then do**, click **+ Add action**, type `toggle light`, and select **Light: Toggle**.
 
@@ -47,12 +47,12 @@ This is an alternative way to use the Starter Kit's button. Instead of toggling 
     1.  If you'd rather it always turn on or always turn off, use **Light: Turn on** or **Light: Turn off** instead.
     2.  You can also set a **Color**, **Color temperature**, or **Brightness** here for when the light turns on. Toggling it off ignores them.
 
-    ![](../../../assets/button-toggles-room-light-action-example.gif)
+    ![Adding a Toggle light action in Home Assistant and choosing Brandons Room as the target light](../../../assets/button-toggles-room-light-action-example.gif)
 
 5. Click **Save**.
 6. Give the automation a name like `Button toggles room light`, then click **Save** again.
 
-    ![](../../../assets/button-toggles-room-light-name-and-save.gif)
+    ![Home Assistant Save dialog naming the automation Button toggles room light, then clicking Save](../../../assets/button-toggles-room-light-name-and-save.gif)
 
 ??? note "What the automation looks like in YAML"
 
@@ -85,6 +85,6 @@ Press the button on the Button module. The light you targeted toggles. Press aga
 
     Any light in your home - a bedside lamp, a ceiling group, a smart bulb strip - is one button press away. Swap `light.toggle` for `light.turn_on` with a `brightness_pct` to land on a specific brightness, or target a light group to control a whole room at once.
 
-<a href="../trash-night-reminder/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" /> Next - Trash Night Reminder</a>
+<a href="../trash-night-reminder/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Trash Night Reminder</a>
 
 --8<-- "_snippets/community-help.md"

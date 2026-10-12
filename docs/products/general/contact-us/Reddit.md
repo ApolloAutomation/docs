@@ -1,4 +1,5 @@
 ---
+title: Reddit
 description: "The Apollo Automation subreddit."
 ---
 # Reddit

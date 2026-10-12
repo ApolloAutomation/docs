@@ -21,19 +21,19 @@ Connect the button module to the ESP32-C6 using one of the FPC ribbon cables tha
 
 1\. Unplug the USB-C cable from the ESP32-C6 so it is powered off.
 
-![](../../../assets/esphome-starter-kit-remove-usb.webp)
+![Unplugging the USB-C cable from the ESP32-C6 board](../../../assets/esphome-starter-kit-remove-usb.webp)
 
 !!! warning "Handle the FPC connectors gently"
 
     The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
-2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
+2\. Flip up the latch on the FPC connector then gently slide the ribbon cable into the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
+![Lifting the FPC connector latch on the ESP32-C6 and sliding in the ribbon cable, blue side up](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
 3\. Slide the ribbon cable into the button module with the blue side facing upwards then press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-fpc-to-button-module.webp)
+![Sliding the ribbon cable from the ESP32-C6 into the Button module FPC connector and closing the latch](../../../assets/esphome-starter-kit-attach-fpc-to-button-module.webp)
 
 4\. Plug the ESP32-C6 back into your computer.
 
@@ -47,7 +47,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 4. Search for **Button** and select the **Button Module**.
 5. Click **Add**. Device Builder inserts the button's binary sensor block into your YAML.
 
-![](../../../assets/esphome-device-builder-add-button-module.gif)
+![Searching for button in the Add component dialog, choosing Button Module on GPIO6, and clicking Add](../../../assets/esphome-device-builder-add-button-module.gif)
 
 ??? note "What the button YAML does"
 
@@ -91,32 +91,32 @@ Flash the device so the new button entity goes live.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
-![](../../../assets/esphome-device-builder-install-button-component.gif)
+![Clicking Install in ESPHome Device Builder, choosing On the network, and watching the firmware compile log](../../../assets/esphome-device-builder-install-button-component.gif)
 
 ## Test the Button
 
 With the device back online, the button entity is live on the web server. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and watch it react in real time.
 
-![](../../../assets/esphome-device-builder-launch-webserver-from-visit-button.gif)
+![Clicking the Visit icon on the device card to open the esphome-starter-kit web server with Button Module](../../../assets/esphome-device-builder-launch-webserver-from-visit-button.gif)
 
 1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
 2. Find the **Button** entity in the binary sensor list.
 3. Press the button on the module. The entity flips from **OFF** to **ON** while the button is held, then back to **OFF** when you release it.
 
-![](../../../assets/esphome-device-builder-test-button-events.gif)
+![Web server page where the Button Module indicator turns checked while the button is pressed](../../../assets/esphome-device-builder-test-button-events.gif)
 
 > Web server page showing the Button binary sensor toggling between ON and OFF as the button is pressed.
 
 !!! success "Your button module is now ready for you to use in automations!"
 
-    Your Button Module is now ready for some fun tasks.. like toggling lights on and off in your room, watering your plants, and more!
+    Your Button Module is now ready for some fun tasks... like toggling lights on and off in your room, watering your plants, and more!
 
 ## Try it in an automation
 
 Your button is live. Now make it trigger something:
 
-<a href="/products/ESPHome-Starter-Kit/automations/button-controlled-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Button Controlled LEDs </a>
-<a href="/products/ESPHome-Starter-Kit/automations/play-a-tune/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Play a Tune </a>
-<a href="/products/ESPHome-Starter-Kit/automations/press-to-check-climate/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Press to Check Climate </a>
+<a href="/products/ESPHome-Starter-Kit/automations/button-controlled-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Button Controlled LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/play-a-tune/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Play a Tune </a>
+<a href="/products/ESPHome-Starter-Kit/automations/press-to-check-climate/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Press to Check Climate </a>
 
 --8<-- "_snippets/community-help.md"

@@ -1,4 +1,5 @@
 ---
+title: Contact Us / Support
 description: "How to reach Apollo Automation support, by email, on Discord, or through the community forum."
 ---
 # Contact Us / Support

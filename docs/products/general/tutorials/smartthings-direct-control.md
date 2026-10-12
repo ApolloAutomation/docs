@@ -120,7 +120,7 @@ Below is the complete, production-tested YAML. Replace all `YOUR_*` placeholders
 
 !!! tip "Key Design Decisions"
     1. **`wifi: on_connect` instead of `on_boot`** — the ESP-IDF HTTP stack is not ready at boot time. Using `on_connect` with a 15-second delay guarantees the network is fully available before the first token refresh fires.
-    2. **`script: mode: single`** — prevents a second token refresh from being triggered while the first one is still running. This is critical during router reboots or mesh WiFi reconnects where `wifi: on_connect` can fire multiple times in rapid succession.
+    2. **`script: mode: single`** — prevents a second token refresh from being triggered while the first one is still running. This is critical during router reboots or mesh Wi-Fi reconnects where `wifi: on_connect` can fire multiple times in rapid succession.
     3. **`restore_value: yes` on `st_refresh_token`** — saves the latest refresh token to NVS flash after every successful renewal. It survives reboots and power cuts. The `initial_value` in the YAML is only ever used on the very first flash.
     4. **`body: !lambda |-`** — plain string bodies are silently ignored by the ESP-IDF HTTP client. The lambda syntax is required for the POST body to actually be sent.
 
@@ -286,7 +286,7 @@ binary_sensor:
 esphome run your_config.yaml --device 192.168.x.x
 ```
 
-Within 15 seconds of connecting to WiFi, you should see in the logs:
+Within 15 seconds of connecting to Wi-Fi, you should see in the logs:
 
 ```text
 [oauth] >>> WiFi ready, firing token refresh
@@ -323,7 +323,7 @@ After the first flash, the `initial_value` in the YAML is never used again. The 
     The refresh token was invalidated. This can happen if the device was offline for more than 30 days, or if a previous refresh failed mid-way. Re-run the browser OAuth flow from Part 2, update both `initial_value` fields in your YAML, flash once, and the self-sustaining chain resumes from there.
 
 !!! warning "400 `invalid_grant` after router reboot or power outage"
-    This is the trickiest failure mode. It happens when the device reconnects to WiFi multiple times in quick succession (e.g. during a router restart), causing two parallel token refresh calls. Both use the same refresh token — one succeeds, one invalidates it. The broken token then gets saved to NVS flash and survives every reboot.
+    This is the trickiest failure mode. It happens when the device reconnects to Wi-Fi multiple times in quick succession (e.g. during a router restart), causing two parallel token refresh calls. Both use the same refresh token — one succeeds, one invalidates it. The broken token then gets saved to NVS flash and survives every reboot.
 
     `mode: single` on the script prevents this going forward, but if you already have a broken NVS token, here is the recovery procedure (no USB required):
 
@@ -340,7 +340,7 @@ After the first flash, the `initial_value` in the YAML is never used again. The 
 
     If that returns 400 too, use the browser OAuth flow from Part 2 to get a completely fresh pair.
 
-    **Step 2 — Flash 1: add an `on_boot` override** (priority 600 runs after NVS load but before WiFi):
+    **Step 2 — Flash 1: add an `on_boot` override** (priority 600 runs after NVS load but before Wi-Fi):
 
     ```yaml
     esphome:

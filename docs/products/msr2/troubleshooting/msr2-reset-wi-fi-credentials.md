@@ -8,7 +8,7 @@ description: Step by step guide for resetting the Wi-Fi Credentials on your MSR-
 
 2\. Long press the Boot button (the button on the right) for 10 seconds
 
-![](/assets/msr2-boot-button-pic-1.jpg)![](/assets/msr2-boot-button-pic-2.jpg)![](/assets/msr2-boot-button-pic-3.jpg)
+![Tool pressing the MSR-2 boot button through the right opening on the side](/assets/msr2-boot-button-pic-1.jpg)![Close-up of the tool at the MSR-2 boot button opening](/assets/msr2-boot-button-pic-2.jpg)![Open MSR-2 showing the tool lined up with the button labeled Boot on the board](/assets/msr2-boot-button-pic-3.jpg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

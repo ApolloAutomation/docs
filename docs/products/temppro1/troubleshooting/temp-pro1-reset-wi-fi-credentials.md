@@ -8,7 +8,7 @@ description: Step by step guide for resetting the Wi-Fi Credentials on your TEMP
 
 2\. Long press the Boot button for 10 seconds
 
-![](/assets/temp-pro-1-boot-button.jpeg)
+![Tool pointing at the BOOT button on the TEMP Pro-1 board](/assets/temp-pro-1-boot-button.jpeg)
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 

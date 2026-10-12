@@ -1,4 +1,5 @@
 ---
+title: FAQ
 description: "PLT-1B FAQ."
 ---
 1\. **What sensors are included in the PLT-1B?**
@@ -31,7 +32,7 @@ description: "PLT-1B FAQ."
 
 8\. **How does the PLT-1B connect to Home Assistant?**
 
-* The PLT-1B connects via WiFi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
+* The PLT-1B connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
 
 9\. **What kind of automations can I set up with the PLT-1B?**
 
@@ -43,7 +44,7 @@ description: "PLT-1B FAQ."
 
 11\. **Can I customize the PLT-1B functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1B. Our <a href="https://github.com/ApolloAutomation/PLT-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1B. Our <a href="https://github.com/ApolloAutomation/PLT-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 12\. **What are the RGB LED and piezo buzzer used for?**
 
@@ -79,7 +80,7 @@ description: "PLT-1B FAQ."
 
 20\. **What’s the difference between the battery and non-battery versions?**
 
-* The PLT-1B is battery-operated (18650) and slightly larger, while the non-battery (NB) version is compact and requires USB-C power at 5 volts using 1amp or less (5W). They both have all of the same components for measuring soil moisture, air temp/humdity, lux/uv, etc.
+* The PLT-1B is battery-operated (18650) and slightly larger, while the non-battery (NB) version is compact and requires USB-C power at 5 volts using 1amp or less (5W). They both have all of the same components for measuring soil moisture, air temp/humidity, lux/uv, etc.
 
 21\. **Can I use multiple PLT-1B sensors in one Home Assistant setup?**
 

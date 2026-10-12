@@ -48,11 +48,11 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
 
     1.  Open your starter kit device in ESPHome Device Builder and click **Edit**, then open the **Core configuration** tab and select **Native API**.
 
-        ![](../../../assets/esphome-device-builder-navigate-to-native-api-core-config.gif)
+        ![Opening the device in ESPHome Device Builder, expanding Core configuration, and selecting Native API](../../../assets/esphome-device-builder-navigate-to-native-api-core-config.gif)
 
     2.  Click **Add API Action** and enter `play_pink_panther` as the **Action name**. (1)
 
-        ![](../../../assets/esphome-device-builder-add-api-action-rtttl.gif)
+        ![Clicking Add API action on the Native API page and naming the new action play_pink_panther](../../../assets/esphome-device-builder-add-api-action-rtttl.gif)
 
     3.  Click **Add action**, choose **Rtttl → Play** from the top of the list, and paste the Pink Panther theme into the **Rtttl** field:
 
@@ -60,7 +60,7 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
         PinkPanther:d=4,o=5,b=160:8d#,8e,2p,8f#,8g,2p,8d#,8e,16p,8f#,8g,16p,8c6,8b,16p,8d#,8e,16p,8b,2a#,2p,16a,16g,16e,16d,2e
         ```
 
-        ![](../../../assets/esphome-device-builder-rtttl-play-enter-in-tune.gif)
+        ![Adding an Rtttl Play action to the play_pink_panther API action and pasting the Pink Panther tune](../../../assets/esphome-device-builder-rtttl-play-enter-in-tune.gif)
 
     </div>
 
@@ -90,7 +90,7 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
 
     1.  Open your starter kit device in ESPHome Device Builder and click **Edit**, then open the **Core configuration** tab and select **Native API**.
 
-        ![](../../../assets/esphome-device-builder-navigate-to-native-api-core-config.gif)
+        ![Opening the device in ESPHome Device Builder, expanding Core configuration, and selecting Native API](../../../assets/esphome-device-builder-navigate-to-native-api-core-config.gif)
 
     2.  Add a slot for each of the four tunes below. Each slot is its own API action, so **repeat these steps once per song**:
 
@@ -107,7 +107,7 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
 
         The gif shows the first slot; the tunes for all four are below.
 
-        ![](../../../assets/esphome-device-builder-add-song-1.gif)
+        ![Creating the play_song_1 API action with an Rtttl Play action holding the Pink Panther tune](../../../assets/esphome-device-builder-add-song-1.gif)
 
         **`play_song_1`** — Pink Panther
 
@@ -145,7 +145,7 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
 
         1.  Use **λ Lambda**, not **Value**. A plain **Value** treats `song_str` as literal text, a tune named "song_str" that won't play, while the lambda returns the variable's contents. Leave the quotes off `song_str` so it stays the variable and not a string.
 
-        ![](../../../assets/esphome-device-builder-add-play-buzzer-action.gif)
+        ![Creating the play_buzzer API action with a string variable song_str and a lambda that returns song_str](../../../assets/esphome-device-builder-add-play-buzzer-action.gif)
 
     ??? note "What the editor built in YAML"
 
@@ -201,7 +201,7 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
         1.  Lets the field store what you type. Without it the install fails with *"Either optimistic mode must be enabled, or set_action must be set"*.
         2.  The play buttons reference these IDs by name, so they have to match exactly, or the install fails with *"Couldn't find ID 'song_1'"*.
 
-        ![](../../../assets/esphome-device-builder-template-text-song-1.gif)
+        ![Adding a Template Text component named Song 1 with Mode Text, Optimistic on, ID song_1, and Restore value on](../../../assets/esphome-device-builder-template-text-song-1.gif)
 
         Repeat for **Song 2**, **Song 3**, and **Song 4**, giving each the matching **ID** (`song_2`, `song_3`, `song_4`). To have a tune ready to play right away, paste an RTTTL string into each field's **Initial value**; otherwise leave it empty and paste one in from the dashboard before pressing Play.
 
@@ -211,7 +211,7 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
         - Click **Add action** and choose **Rtttl → Play**.
         - Switch the **Rtttl** field to **λ Lambda** and enter `return id(song_1).state;`.
 
-        ![](../../../assets/esphome-device-builder-template-button-song-1.gif)
+        ![Adding a Template Button named Play Song 1 whose On Press action plays the Song 1 text with a lambda](../../../assets/esphome-device-builder-template-button-song-1.gif)
 
         <div class="annotate" markdown>
 
@@ -315,7 +315,7 @@ Your actions are saved in Device Builder, but the device is still running its ol
 
 3.  Wait for the compile and flash to finish. The device reboots once the install is done.
 
-![](../../../assets/esphome-device-builder-rtttl-save-validate-install.gif)
+![Clicking Save and Install in ESPHome Device Builder, choosing On the network, and watching the compile log](../../../assets/esphome-device-builder-rtttl-save-validate-install.gif)
 
 ## Call it from Home Assistant
 

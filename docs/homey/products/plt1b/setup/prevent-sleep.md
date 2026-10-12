@@ -1,11 +1,12 @@
 ---
+title: Prevent Sleep
 description: "Keep the PLT-1B awake instead of letting it sleep, and what that costs in battery life."
 ---
 # Prevent Sleep
 
 !!! tip "Put your sensors to sleep!"
 
-    All of our battery powered device are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
+    All of our battery powered devices are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
 
     The temperature offsets needed will be much lower for your sensors as the microcontroller will not put off as much heat when it is sleeping and then waking for short periods to report the sensor values.
 
@@ -13,11 +14,11 @@ description: "Keep the PLT-1B awake instead of letting it sleep, and what that c
 
 2\. Click on the name "1 device" below your Apollo device's name.
 
-![](/assets/plt-1b-prevent-sleep-pic-1.png)
+![ESPHome integration entry for an Apollo PLT-1B with the 1 device link highlighted](/assets/plt-1b-prevent-sleep-pic-1.png)
 
 3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
 
-![](/assets/plt-1b-prevent-sleep-pic-2.png)
+![Home Assistant device page with the Prevent Sleep toggle and Sleep Duration setting highlighted](/assets/plt-1b-prevent-sleep-pic-2.png)
 
 4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 12 hours.
 

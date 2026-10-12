@@ -27,7 +27,7 @@ A Tile card is the small, modern card you see across most Home Assistant dashboa
 2. Search `starter kit` and check both the **Temperature** and **Humidity** sensors. (1)
 3. Click **Tile** to lay them out as two tiles, then click **Save**.
 
-    ![](../../../assets/temp-on-dashboard-select-temp-hum-tile-cards.gif)
+    ![Adding the starter kit Temperature and Humidity sensors to a Home Assistant dashboard as tile cards](../../../assets/temp-on-dashboard-select-temp-hum-tile-cards.gif)
 
 </div>
 
@@ -48,7 +48,7 @@ A Gauge card shines when a higher reading really does mean worse, and indoor hum
 3. Set **Minimum** to `0` and **Maximum** to `100`, the full percentage range.
 4. Toggle on **Display as needle gauge**, then turn on **Severity** and set green at `0`, yellow at `50`, and red at `60`. (1)
 
-    ![](../../../assets/temp-on-dashboard-humidity-gauge-card.gif)
+    ![Configuring a Home Assistant Gauge card for Kitchen Humidity with a needle and severity colors, then saving](../../../assets/temp-on-dashboard-humidity-gauge-card.gif)
 
 </div>
 

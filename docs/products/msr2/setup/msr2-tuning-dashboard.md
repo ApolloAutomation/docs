@@ -8,9 +8,9 @@ description: Tutorial on creating an MSR-2 tuning dashboard.
 
     The Apollo mmWave integration now builds this dashboard for you automatically, with nothing to paste. It also adds auto-calibration, which sets your gate thresholds from a one-minute listen to the empty room and saves your previous values so you can undo it. Follow the [Apollo mmWave dashboard setup guide](/products/msr2/setup/apollo-mmwave-dashboard-setup.md) to get started. The steps below still work if you'd rather keep the YAML version.
 
-!!! note "Huge shoutout to discord user MirkoP for creating this!"
+!!! note "Huge shoutout to Discord user MirkoP for creating this!"
 
-    We all owe a huge thanks to MirkoP from discord/github for creating and sharing this with everyone! <a href="https://github.com/mirkop/apollo-home-assistant/blob/master/streamline_cards/ld2410/README.md" target="_blank" rel="noreferrer nofollow noopener">Source here</a>.
+    We all owe a huge thanks to MirkoP from Discord/GitHub for creating and sharing this with everyone! <a href="https://github.com/mirkop/apollo-home-assistant/blob/master/streamline_cards/ld2410/README.md" target="_blank" rel="noreferrer nofollow noopener">Source here</a>.
 
 This guide will create a beautiful and helpful dashboard to simplify configuration of your MSR-2 sensor. You can easily view the current gate and zone thresholds which will help tune your sensor for your environment!
 
@@ -22,7 +22,7 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 4\. Head to your <a href="http://homeassistant.local:8123" target="_blank" rel="noreferrer nofollow noopener">Home Assistant dashboard</a> and <a href="https://www.home-assistant.io/getting-started/onboarding_dashboard/#creating-a-new-dashboard-and-edit-cards" target="_blank" rel="noreferrer nofollow noopener"><strong>Take control</strong> of your dashboard</a> by clicking **Edit Dashboard** in the top right then the 3 dots from the **Edit Dashboard** menu and click **Take control**. (this step is only necessary for new Home Assistant users).
 
-![](/assets/home-assistant-take-control-gif.gif)
+![Opening the Home Assistant Edit dashboard 3 dots menu and choosing Take control](/assets/home-assistant-take-control-gif.gif)
 
 5\. Use the YAML generator below and enter in your device name such as apollo\_msr\_2\_m4c4dd and then click **Generate YAML**. It will copy the YAML for you to use in the next step!
 
@@ -39,8 +39,8 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
     Home Assistant depends on this file to function correctly - it is what displays your dashboard "views". Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
 
-![](/assets/msr-2-yaml-generator-copy-paste-raw-gif.gif)
+![Pasting the generated YAML at the bottom of the Home Assistant Raw configuration editor and saving](/assets/msr-2-yaml-generator-copy-paste-raw-gif.gif)
 
 7\. You should now have a new <a href="https://www.home-assistant.io/dashboards/views/" target="_blank" rel="noreferrer nofollow noopener">dashboard view</a> called **MSR-2 Configuration** and you should be ready to configure your sensor!
 
-![](/assets/msr-2-dashboard-example-finished.png)
+![Finished MSR-2 Configuration dashboard with LD2410 controls, gate energy chart, and gate sliders](/assets/msr-2-dashboard-example-finished.png)

@@ -8,17 +8,17 @@ The TEMP-1 comes with an optional temp probe which can be used to monitor a frid
 
 1\. To use your temp probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1.
 
-![](/assets/temp1-temp-probe-insert-1.jpg)
+![Temp probe 3.5mm plug being inserted into the port on the TEMP-1](/assets/temp1-temp-probe-insert-1.jpg)
 
-![](/assets/temp1-probe-fully-inserted.jpg)
+![Temp probe plug fully inserted into the TEMP-1 3.5mm port](/assets/temp1-probe-fully-inserted.jpg)
 
 2\. Once inserted, proceed to step 3.
 
-![](/assets/temp1-temp-probe-pic-1.jpg)
+![TEMP-1 with the long temp probe connected and its cable coiled beside it](/assets/temp1-temp-probe-pic-1.jpg)
 
 3\. Go to the device page of your TEMP-1 in Home Assistant and choose the Temperature Probe.
 
-![](/assets/temp-1-select-temp-probe-example.png)
+![Select Probe dropdown in Home Assistant with Temperature chosen for the TEMP-1](/assets/temp-1-select-temp-probe-example.png)
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
@@ -26,15 +26,15 @@ The TEMP-1 comes with an optional temp probe which can be used to monitor a frid
 
 **Example images of the long temperature probe in a mini freezer:**
 
-![](/assets/temp1b-temp-probe-freezer-pic-1.jpg)
+![Long temp probe cable routed into a mini freezer and hanging from the wire shelf](/assets/temp1b-temp-probe-freezer-pic-1.jpg)
 
-![](/assets/temp1b-temp-probe-freezer-pic-2.jpg)
+![Temp probe cable running out past the mini freezer door seal to the outside](/assets/temp1b-temp-probe-freezer-pic-2.jpg)
 
 ## Probe Pinout
 
 The 1.5m and 20cm DS18B20 temp probes use a standard 3.5mm TRS plug. Wire yours the same way if you're building your own probe or repairing a cut cable.
 
-![](/assets/temp-1-temp-probe-pinout.png)
+![Temp probe 3.5mm TRS plug labeled GND on the sleeve, Data on the ring, and 3V on the tip](/assets/temp-1-temp-probe-pinout.png)
 
 | Contact | Signal |
 | --- | --- |

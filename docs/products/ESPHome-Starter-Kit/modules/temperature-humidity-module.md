@@ -22,19 +22,19 @@ Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC
 
 1\. Unplug the USB-C cable from the ESP32-C6 so it is powered off.
 
-![](../../../assets/esphome-starter-kit-remove-usb.webp)
+![Unplugging the USB-C cable from the ESP32-C6 board](../../../assets/esphome-starter-kit-remove-usb.webp)
 
 !!! warning "Handle the FPC connectors gently"
 
     The latches are small and the ribbon cable is fragile. Lift the latch with a fingernail, slide the cable in, and press the latch down. Never pull on the cable itself.
 
-2\. Flip up the latch on the FPC connector then gently slide the ribbon cable in to the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
+2\. Flip up the latch on the FPC connector then gently slide the ribbon cable into the connector with the blue side facing upwards. Gently press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
+![Sliding the FPC ribbon cable, blue side up, into the ESP32-C6 connector and closing the latch](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
 3\. Slide the ribbon cable into the temperature and humidity module with the blue side facing upwards then press the latch down to lock it in place.
 
-![](../../../assets/esphome-starter-kit-attach-fpc-to-temp-hum-module.webp)
+![Connecting the other end of the FPC ribbon cable to the temperature and humidity module](../../../assets/esphome-starter-kit-attach-fpc-to-temp-hum-module.webp)
 
 4\. Plug the ESP32-C6 back into your computer.
 
@@ -51,7 +51,7 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 7. Toggle the **Humidity** and **Temperature** selections on.
 8. Click **Add**. Device Builder inserts the AHT20F sensor block into your YAML.
 
-![](../../../assets/esphome-device-builder-add-i2c-temp-hum-component.gif)
+![ESPHome Device Builder adding the I2C bus, then the AHT20 module with Humidity and Temperature on](../../../assets/esphome-device-builder-add-i2c-temp-hum-component.gif)
 
 ??? note "What the temperature and humidity YAML does"
 
@@ -99,7 +99,7 @@ Flash the device so the new temperature and humidity entities go live.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
-![](../../../assets/esphome-device-builder-install-temp-hum-component.gif)
+![ESPHome Device Builder clicking Install, choosing On the network, and compiling the sensor config](../../../assets/esphome-device-builder-install-temp-hum-component.gif)
 
 ## Test the Temp and Humidity
 
@@ -109,7 +109,7 @@ With the device back online, the temperature and humidity entities are live on t
 2. Find the **Temperature** and **Humidity** entities in the sensor list.
 3. Watch the values update on the interval you set. Cup your hand over the sensor or breathe on it, the humidity reading will respond within a few cycles.
 
-![](../../../assets/esphome-device-builder-test-temp-humidity.gif)
+![Starter kit web server showing live Humidity and Temperature readings](../../../assets/esphome-device-builder-test-temp-humidity.gif)
 
 > Web server page showing the Temperature and Humidity sensors with live readings.
 
@@ -121,7 +121,7 @@ With the device back online, the temperature and humidity entities are live on t
 
 Your sensor is reporting. Now make it drive something:
 
-<a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Temp-Reactive LEDs </a>
-<a href="/products/ESPHome-Starter-Kit/automations/press-to-check-climate/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" /> Press to Check Climate </a>
+<a href="/products/ESPHome-Starter-Kit/automations/temp-reactive-leds/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Temp-Reactive LEDs </a>
+<a href="/products/ESPHome-Starter-Kit/automations/press-to-check-climate/" class="md-button md-button--primary"> <img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Press to Check Climate </a>
 
 --8<-- "_snippets/community-help.md"

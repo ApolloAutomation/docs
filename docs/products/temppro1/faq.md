@@ -1,13 +1,13 @@
 ---
 title: TEMP Pro-1 FAQ
-description: Frequently asked questions about the TEMP-1 Pro temperature sensor.
+description: Frequently asked questions about the TEMP Pro-1 temperature sensor.
 ---
 # **TEMP Pro-1 FAQ**
 
 1\. **How is the TEMP Pro-1 powered?**
 
 * PoE (IEEE 802.3-compliant) powered or...
-* USB-C at 5volts using less than 1 amp of power.
+* USB-C at 5 volts using less than 1 amp of power.
 
 2\. **What are the Optional Probe Addons?**
 
@@ -25,15 +25,15 @@ description: Frequently asked questions about the TEMP-1 Pro temperature sensor.
 
 4\. **How does the TEMP Pro-1 connect to Home Assistant?**
 
-* The TEMP Pro-1 connects via WiFi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
+* The TEMP Pro-1 connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
 
 5\. **How often does the TEMP Pro-1 send sensor data?**
 
-* The TEMP Pro-1 reporting frequency is adjustable in ESPHome but most things default to 60seconds.
+* The TEMP Pro-1 reporting frequency is adjustable in ESPHome but most things default to 60 seconds.
 
 6\. **Can I customize the TEMP Pro-1 functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP Pro-1. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on Github</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP Pro-1. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 7\. **What are the RGB LED and piezo buzzer used for?**
 

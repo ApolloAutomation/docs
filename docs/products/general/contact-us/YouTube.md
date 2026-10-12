@@ -1,4 +1,5 @@
 ---
+title: YouTube
 description: "The Apollo Automation YouTube channel, with setup guides, reviews, and live streams."
 ---
 # YouTube
