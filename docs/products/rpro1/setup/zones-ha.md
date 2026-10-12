@@ -12,6 +12,10 @@ description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 
     The optional LD2412 mmWave sensor allows you to have perfect still detection for one target at up to 9 meters so it's a great addition to the sensor.
 
+!!! tip "Prefer a guided dashboard?"
+
+    The Apollo mmWave integration gives your R PRO-1 a dashboard tab where you draw LD2450 zones over live targets and tune the LD2412 gates with a **Calibrate with empty room** button. The [Apollo mmWave dashboard guide](/products/rpro1/setup/apollo-mmwave-dashboard.md) walks you through it as a guided alternative to the manual steps below.
+
 Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R PRO-1 LD2450.
 
 ###### LD2450 Configuration
