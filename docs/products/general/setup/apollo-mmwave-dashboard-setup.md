@@ -14,7 +14,7 @@ What each tab holds depends on the radar inside the sensor:
 | Sensor | Radar chip | What its tab shows |
 | --- | --- | --- |
 | Apollo MSR-1, Apollo MSR-2 | LD2410 | Radar tuning: auto-calibration, distance and gate energy charts, thresholds, detection range, and occupancy |
-| Apollo R PRO-1 | LD2412 and LD2450 | The same radar tuning cards for the LD2412, plus a zone map for drawing occupancy zones over the LD2450's live targets |
+| Apollo R PRO-1 | LD2450, plus the optional LD2412 addon | The same radar tuning cards for the LD2412, plus a zone map for drawing occupancy zones over the LD2450's live targets |
 | Apollo MTR-1 | LD2450 | A zone map |
 
 LD2410, LD2412, and LD2450 are the model numbers of the radar chips, and the card titles use them.
@@ -64,7 +64,7 @@ Both sensors use the LD2410 radar chip, so their tabs look the same, and the tun
 
 - **Auto-calibrate** sits at the top, with the **Calibrate with empty room** and **Preview only** buttons. If your sensor still has its factory thresholds and has never been calibrated, the card adds **These look like factory thresholds. Calibrating sets them for your room.**
 - Under it, a help card names your sensor and gives a four-step **Start here** list.
-- The **LD2410 Gate Energy** chart is dimmed behind **Turn on Radar Engineering Mode to see gate energy values**, with a **Turn on Radar Engineering Mode** button below. That's expected: the radar only reports gate energy while **Radar Engineering Mode**, a diagnostic setting, is on. You don't need to press the button before calibrating; the calibration turns the mode on for its listen and off again afterward.
+- The **LD2410 Gate Energy** chart is dimmed behind **Turn on Radar Engineering Mode to see gate energy values**, with a **Turn on Radar Engineering Mode** button below. That's expected: the radar only reports gate energy while **Radar Engineering Mode**, a diagnostic setting, is on. You don't need to press the button before calibrating; the calibration turns the mode on for its listen and puts it back the way it was afterward.
 - The other cards hold the radar's settings and live readings: controls, distances, detection range, occupancy, a threshold for each gate (**G0** to **G8**), and an hour of occupancy history. The [tour of the radar tab](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#a-tour-of-the-radar-tab) explains each one.
 
 ![The LD2410 Gate Energy chart dimmed, with the message Turn on Radar Engineering Mode to see gate energy values and a Turn on Radar Engineering Mode button](/assets/apollo-mmwave-gate-energy-engineering-off.png)
@@ -89,7 +89,7 @@ The R PRO-1 zone map works the same way.
 
 ### What to do first
 
-Your dashboard is working. On an MSR-1, MSR-2, or R PRO-1 tab, the first thing to do is press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to change a setting or turn anything on first. The [tuning guide](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#calibrate-with-an-empty-room) walks you through it. On an MTR-1 tab, go straight to [drawing zones](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#draw-zones-on-the-r-pro-1-and-mtr-1). The rest of this page covers options, upgrading from an older setup, and troubleshooting, so come back to it when you need it.
+Your dashboard is working. On an MSR-1, MSR-2, or R PRO-1 tab, the first thing to do is press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to change a setting or turn anything on first. The [tuning guide](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#calibrate-with-an-empty-room) walks you through it. On an MTR-1 tab, or an R PRO-1 without the LD2412, go straight to [drawing zones](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#draw-zones-on-the-r-pro-1-and-mtr-1). The rest of this page covers options, upgrading from an older setup, and troubleshooting, so come back to it when you need it.
 
 ![The Auto-calibrate card on an MSR-1, ready to run, with the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
 
@@ -184,7 +184,7 @@ Work through these in order:
 
 ### A tab says the sensor is offline
 
-On an MSR-1, MSR-2, or R PRO-1 tab, the help card adds **Offline right now.** and the Auto-calibrate card reads **Radar is offline. Calibration needs the radar online and its gate entities enabled.** with its buttons disabled. An MTR-1 tab has no help card, so it shows no offline note; its zone map shows no targets until the sensor reconnects. The tab stays so the sensor isn't silently missing, and the cards fill in once it reconnects. Check its power and Wi-Fi, and that it shows as online on the ESPHome integration page. If you replaced or reflashed the sensor under a new name, the old device entry is what's showing as offline: delete the old device under **Settings → Devices & services** and its tab goes away.
+On an MSR-1, MSR-2, or R PRO-1 tab, the help card adds **Offline right now.** and the Auto-calibrate card reads **Radar is offline. Calibration needs the radar online and its gate entities enabled.** with its buttons disabled. An MTR-1 tab adds a card with the sensor's name and the same **Offline right now.** note, and its zone map shows no targets until the sensor reconnects. The tab stays so the sensor isn't silently missing, and the cards fill in once it reconnects. Check its power and Wi-Fi, and that it shows as online on the ESPHome integration page. If you replaced or reflashed the sensor under a new name, the old device entry is what's showing as offline: delete the old device under **Settings → Devices & services** and its tab goes away.
 
 ### An Apollo card shows an error after an update
 
