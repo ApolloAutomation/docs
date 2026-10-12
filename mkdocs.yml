@@ -201,6 +201,8 @@ nav:
               - Temperature and Humidity: products/general/temp-hum-calibration.md
               - Calibrate PLT-1 Soil Moisture: products/general/calibrating-and-updating/calibrate-plt1.md
               - Radar Tuning:
+                - Apollo mmWave Dashboard Setup: products/general/setup/apollo-mmwave-dashboard-setup.md
+                - Apollo mmWave Dashboard: products/general/calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard.md
                 - Home Assistant: products/general/calibrating-and-updating/radar-tuning/zones-ha.md
                 - HLK Radar Tool App: products/general/calibrating-and-updating/radar-tuning/zones-hlk.md
                 - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
@@ -474,7 +476,9 @@ nav:
               - FAQ: products/msr2/faq.md
               - Getting Started: products/general/setup/getting-started-msr2.md
               - Radar Tuning:
-                - MSR-2 Tuning Dashboard: products/msr2/setup/msr2-tuning-dashboard.md
+                - Apollo mmWave Dashboard Setup: /products/general/setup/apollo-mmwave-dashboard-setup/
+                - Apollo mmWave Dashboard: /products/general/calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/
+                - Legacy Tuning Dashboard (YAML): products/msr2/setup/msr2-tuning-dashboard.md
                 - Home Assistant: products/msr2/setup/zones-ha.md
                 - HLK Radar Tool App: products/msr2/setup/zones-hlk.md
                 - mmWave Tuning Videos: products/msr2/setup/mmwave-videos.md
@@ -503,6 +507,8 @@ nav:
               - FAQ: products/mtr1/faq.md
               - Getting Started: products/general/setup/getting-started-mtr1.md
               - Zone Configuration:
+                - Apollo mmWave Dashboard Setup: /products/general/setup/apollo-mmwave-dashboard-setup/
+                - Apollo mmWave Dashboard: /products/general/calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/
                 - (Good) Home Assistant: products/mtr1/setup/zones-ha.md
                 - (Better) HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
                 - (Best) Zone Mapper Tool: products/mtr1/setup/mtr-1-zone-mapper-tool.md
@@ -530,6 +536,8 @@ nav:
               - FAQ: products/rpro1/faq.md
               - Getting Started: products/general/setup/getting-started-rpro1.md
               - Zone Configuration:
+                - Apollo mmWave Dashboard Setup: /products/general/setup/apollo-mmwave-dashboard-setup/
+                - Apollo mmWave Dashboard: /products/general/calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/
                 - (Good) Home Assistant: products/rpro1/setup/zones-ha.md
                 - (Better) HLK Radar Tool App: products/rpro1/setup/zones-hlk.md
                 - (Best) Zone Mapper Tool: products/rpro1/setup/r-pro-1-zone-mapper-tool.md
@@ -557,6 +565,8 @@ nav:
                 - General Tips: products/msr1/setup/general-tips.md
                 - Sensor Definitions: products/msr1/setup/sensor-definitions.md
                 - Radar Tuning:
+                  - Apollo mmWave Dashboard Setup: /products/general/setup/apollo-mmwave-dashboard-setup/
+                  - Apollo mmWave Dashboard: /products/general/calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/
                   - Home Assistant: products/msr1/setup/zones-ha.md
                   - HLK Radar Tool App: products/msr1/setup/zones-hlk.md
                   - mmWave Tuning Videos: products/msr1/setup/mmwave-videos.md

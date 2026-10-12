@@ -4,9 +4,11 @@ description: Tutorial for MSR-2 Home Assistant Zone Configuration.
 ---
 # How To Tune the MSR-2 Using Home Assistant
 
-!!! tip "Radar Engineering Mode (REM)"
+!!! tip "Prefer a guided dashboard?"
 
-    If you're experiencing false triggers, we recommend using Radar Engineering Mode (REM) to monitor the gate energy and adjust the gate threshold to eliminate them.
+    The Apollo mmWave integration gives your Apollo MSR-2 a tuning dashboard with a Gate Energy chart and a **Calibrate with empty room** button that sets the gate thresholds for you. The [Apollo mmWave dashboard guide](../../../general/calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/) walks you through it as a guided alternative to the manual steps below.
+
+If you're experiencing false triggers, Radar Engineering Mode (REM) lets you monitor the gate energy and adjust the gate thresholds to eliminate them.
 
 Quick introduction video of the LD2410B gates and zones.
 
