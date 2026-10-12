@@ -156,7 +156,7 @@ Open **Apollo mmWave** from your sidebar and, if you have more than one radar, p
 - **LD2410 Occupancy History**: the last hour of **Detected** (and, on an MSR-1 or MSR-2, **Zone 1** to **Zone 3**), so you can see when the radar thought someone was there.
 - **LD2410 Still Thresholds**: one row per gate for the still thresholds.
 
-On an R PRO-1 the tab continues with a **Zone Map** heading and the zone map for its second radar (see [Draw zones on the R PRO-1 and MTR-1](#draw-zones-on-the-r-pro-1-and-mtr-1)). An MTR-1 tab holds the zone map on its own.
+On an R PRO-1 the tab continues with a **Zone Map** heading and the zone map for its LD2450 radar (see [Draw zones on the R PRO-1 and MTR-1](#draw-zones-on-the-r-pro-1-and-mtr-1)). An MTR-1 tab holds the zone map on its own.
 
 ## R PRO-1 and its LD2412 radar
 
@@ -299,7 +299,7 @@ If the button works but the card answers with a line starting **Calibration fail
 - **Home Assistant could not turn Radar Engineering Mode on within 10 s. Is the radar online?** The radar did not respond to the switch.
 - **No gate energy readings arrived within 20 s of turning Radar Engineering Mode on.** Check that the radar is online and that **Radar Engineering Mode** on the Controls card brings the Gate Energy chart to life.
 - **Radar Engineering Mode turned off during the listen. Nothing was changed.** Someone, or an automation, turned it off during the listen. Leave it on and try again.
-- **The radar has not reported 18 of its threshold values yet.** The radar has not sent its thresholds to Home Assistant since it started, which can happen after it has been running for a long time. Press **Read settings from the radar**: the card asks the radar for its settings, shows **Reading settings from the radar...**, and tries again a few seconds later. If the card can't find the radar's query params button, it says **Open the radar's device page, press its Query Params button in the Diagnostic section, wait a few seconds, then try again.**
+- **The radar has not reported 18 of its threshold values yet.** The radar has not sent its thresholds to Home Assistant since it started, which can happen after it has been running for a long time. Press **Read settings from the radar**: the card asks the radar for its settings, shows **Reading settings from the radar...**, and tries again a few seconds later. If the card can't find the radar's query params button, it says **Open the radar's device page, press its Query Params button in the Diagnostic section, wait a few seconds, then try again.** On an R PRO-1 without the [LD2412 addon](../../../../rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1/), this message is expected: there's no radar to report thresholds, so reading the settings can't fix it. Skip the calibration and use the [zone map](#draw-zones-on-the-r-pro-1-and-mtr-1).
 - **Your Home Assistant user is not allowed to control this radar's entities.** Run the calibration from a Home Assistant user that can control the radar.
 
 ### Radar Engineering Mode was left on

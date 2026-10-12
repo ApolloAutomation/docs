@@ -71,7 +71,7 @@ Both sensors use the LD2410 radar chip, so their tabs look the same, and the tun
 
 ### R PRO-1 tabs
 
-The R PRO-1 tab starts with the same tuning cards, titled **LD2412** instead of **LD2410**, and adds a zone map for its second radar. The differences from an MSR-2 tab:
+The R PRO-1 tab starts with the same tuning cards, titled **LD2412** instead of **LD2410**, for the optional LD2412 radar addon, and adds a zone map for its LD2450 radar. Without the addon, the LD2412 cards still appear but have no radar behind them, so skip to the zone map at the end of the tab. The differences from an MSR-2 tab:
 
 - **LD2412 Controls** adds **Start Dynamic Background Correction** and **Background Correction Running**. The Auto-calibrate card reminds you to run background correction first, with the room empty, and wait for its status to turn off before you calibrate.
 - **LD2412 Detection Range** holds **Radar Timeout**, **Max Gate**, and **Min Gate**, plus **Distance Resolution** if you've enabled that entity (it's hidden on a new sensor).
