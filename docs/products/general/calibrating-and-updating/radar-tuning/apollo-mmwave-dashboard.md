@@ -86,9 +86,9 @@ Gates outside the range the radar is set to use are dimmed, with a note under th
 
 Under the table, the card suggests a walk test:
 
-**Now walk around: the Radar Target row in Target / Occupancy should turn on when you move and off a few seconds after you stop (Radar Timeout).**
+**Now walk around, then sit still for a minute: the Radar Target row in Target / Occupancy should stay on the whole time you are in the room and turn off a few seconds after you leave (Radar Timeout).**
 
-Walk through the room, then sit somewhere you usually sit and stay still for a minute or two. **Radar Target** on the **Target / Occupancy** card should stay on the whole time you are in the room, sitting still included, because it covers still presence as well as movement. It turns off a few seconds after you leave, once **Radar Timeout** runs out; that is what the card's "a few seconds after you stop" means. To watch the gates themselves, press **Turn on Radar Engineering Mode** on the Gate Energy chart: the bars of the gates you are standing in should be outlined, and no gate inside the radar's range should be outlined once you walk out. When you're done, turn **Radar Engineering Mode** off again on the **Controls** card.
+Walk through the room, then sit somewhere you usually sit and stay still for a minute or two. **Radar Target** covers still presence as well as movement, so it should stay on while you sit still, and turn off a few seconds after you leave, once **Radar Timeout** runs out. To watch the gates themselves, press **Turn on Radar Engineering Mode** on the Gate Energy chart: the bars of the gates you are standing in should be outlined, and no gate inside the radar's range should be outlined once you walk out. When you're done, turn **Radar Engineering Mode** off again on the **Controls** card.
 
 Below the walk-test line are three buttons: **Undo (restore 02:31 PM values)**, **Calibrate again** (a fresh calibration with a new countdown and listen), and **Close**. If the radar now misses you, or behaves worse than before, press **Undo (restore 02:31 PM values)**. The button names the time your previous thresholds were saved, in your browser's time format, with the date added when it was not today. The card shows **Restoring saved thresholds... 3 of 16** and then **Restored the thresholds from 02:31 PM.** Undo saves the values it replaces first, so pressing **Undo** again puts the calibrated values back. The saved copy survives a Home Assistant restart.
 
@@ -299,7 +299,7 @@ If Home Assistant restarted during a calibration, or the radar went offline befo
 
 ### The chart says to turn on Radar Engineering Mode
 
-The Gate Energy chart only shows bars while Radar Engineering Mode is on. Press **Turn on Radar Engineering Mode** on the chart itself, or turn on **Radar Engineering Mode** on the **Controls** card. The bars appear within a few seconds, once the radar starts sending energy. If the calibration turned the mode on, it turns it back off when it finishes, so the overlay returning after a calibration is expected.
+If the chart instead reads **Radar unavailable** and **Waiting for the device to reconnect**, the radar is offline and the button is hidden until it comes back: check its power and Wi-Fi. Otherwise, the Gate Energy chart only shows bars while Radar Engineering Mode is on. Press **Turn on Radar Engineering Mode** on the chart itself, or turn on **Radar Engineering Mode** on the **Controls** card. The bars appear within a few seconds, once the radar starts sending energy. If the calibration turned the mode on, it turns it back off when it finishes, so the overlay returning after a calibration is expected.
 
 !!! tip "Prefer the radar maker's app?"
 
