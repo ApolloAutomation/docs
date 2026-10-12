@@ -1,4 +1,5 @@
 ---
+title: Putting The MTR-1 In Boot Mode
 description: "Step by step guide for putting The MTR-1 In Boot Mode."
 ---
 # Putting The MTR-1 In Boot Mode
@@ -7,7 +8,7 @@ description: "Step by step guide for putting The MTR-1 In Boot Mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-##### Method 1: Boot Button Only
+## Method 1: Boot Button Only
 
 1\. Position the MTR-1 as shown in the image below and locate the small opening to press the boot button (the right button).
 
@@ -17,7 +18,7 @@ description: "Step by step guide for putting The MTR-1 In Boot Mode."
 
 3\. Continue with <a href="https://wiki.apolloautomation.com/products/mtr1/troubleshooting/mtr1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
-##### Method 2: Boot and Reset Buttons
+## Method 2: Boot and Reset Buttons
 
 1\. Unplug the device and locate the boot and reset buttons as shown in the image above.
 

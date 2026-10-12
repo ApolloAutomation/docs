@@ -1,4 +1,5 @@
 ---
+title: Adding GPIO Header To MSR-2
 description: "Tutorial on adding the GPIO Header to your MSR-2."
 ---
 # Adding GPIO Header To MSR-2

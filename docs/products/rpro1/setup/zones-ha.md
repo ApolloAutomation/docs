@@ -18,7 +18,7 @@ description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 
 Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R PRO-1 LD2450.
 
-###### LD2450 Configuration
+## LD2450 Configuration
 
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 
@@ -96,7 +96,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
     If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try to toggle on Multi Target Radar. This should wake up the mmWave module and retrieve your saved zones
 
-###### LD2412 Configuration
+## LD2412 Configuration
 
 1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on "1 device" below the Apollo R PRO-1.
 

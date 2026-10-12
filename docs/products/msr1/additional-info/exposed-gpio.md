@@ -1,4 +1,5 @@
 ---
+title: Exposed GPIO
 description: "What each exposed GPIO pad on the back of the MSR-1 does, including the I2C pins."
 ---
 # Exposed GPIO

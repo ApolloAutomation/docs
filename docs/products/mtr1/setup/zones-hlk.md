@@ -4,7 +4,7 @@ description: Tutorial for MTR-1 HLKRadarTool app Zone Configuration.
 ---
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/-w_GFURyx-A?si=SSRovumabCvHeXwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
-###### Configure Zones
+## Configure Zones
 
 !!! note "Ensure that the LD2450 firmware version is V2.02.23090617 or later for proper integration functionality. "
 
@@ -64,7 +64,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
     * The Plotly chart will still render the rectangles even if the X1/X2 and Y1/Y2 values are reversed.
     * The zones cannot overlap.
 
-###### Dashboard Card Setup
+## Dashboard Card Setup
 
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 

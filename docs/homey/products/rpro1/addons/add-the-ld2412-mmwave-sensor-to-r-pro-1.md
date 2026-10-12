@@ -1,4 +1,5 @@
 ---
+title: LD2412 Addon
 description: "Tutorial on adding the LD2412 mmWave sensor to your R PRO-1"
 ---
 --8<-- "products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md:5:"

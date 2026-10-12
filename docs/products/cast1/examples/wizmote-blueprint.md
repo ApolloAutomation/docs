@@ -22,7 +22,7 @@ Every button ships with a sensible default, so your WizMote works the moment you
 
 Each dropdown offers the same choices: Nothing, Play, Pause, Play / Pause, Next Track, Previous Track, Volume Up, Volume Down, Toggle Light, or Send HA Event.
 
-### Pair Your WizMote
+## Pair Your WizMote
 
 Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
@@ -43,7 +43,7 @@ Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
     A CAST-1 that's on Ethernet and not joined to any Wi-Fi network has no channel to follow, so it hops through radio channels 1 through 13 hunting for the WizMote, moving on every couple of seconds until it hears one. Keep pressing a button and it should pair within a minute.
 
-### Import the Blueprint
+## Import the Blueprint
 
 1\. Click the Import Blueprint button below then click **Open link**.
 

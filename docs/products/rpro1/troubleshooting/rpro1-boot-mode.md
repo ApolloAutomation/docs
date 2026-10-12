@@ -8,7 +8,7 @@ description: Step by step guide for putting The R PRO-1 In Boot Mode.
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-##### Method 1: Boot Button Only
+## Method 1: Boot Button Only
 
 1\. Unplug your R PRO-1 from power and remove the back.
 
@@ -26,7 +26,7 @@ description: Step by step guide for putting The R PRO-1 In Boot Mode.
 
 5\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
 
-##### Method 2: Boot and Reset Buttons
+## Method 2: Boot and Reset Buttons
 
 1\. Unplug your R PRO-1 from power and remove the back.
 

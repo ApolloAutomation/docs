@@ -4,7 +4,7 @@ description: Tutorial on adding the gang box mounts to your R PRO-1.
 ---
 # Adding Gang Box Mounts To R PRO-1
 
-###### Attaching Mounts
+## Attaching Mounts
 
 1\. Unplug your R PRO-1 from power and remove the back.
 
@@ -32,7 +32,7 @@ description: Tutorial on adding the gang box mounts to your R PRO-1.
 
 ![R PRO-1 board with the TOP mount on the top edge and the bottom mount on the bottom edge](/assets/r-pro-1-gang-box-mounts-installed.jpg)
 
-###### Install in 1-Gang Box
+## Install in 1-Gang Box
 
 1\. Line up the holes in your 1-gang box (yours will be attached to the wall already).
 

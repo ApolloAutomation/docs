@@ -1,9 +1,10 @@
 ---
+title: Automation Examples using a TEMP-1B
 description: "Multiple automation examples with the TEMP-1B."
 ---
 # Automation Examples using a TEMP-1B
 
-###### Freezer Temperature Probe Example
+## Freezer Temperature Probe Example
 
 This will guide you through how to set up an automation in Home Assistant using the temperature probe in your freezer! At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
 
@@ -65,7 +66,7 @@ actions:
 mode: single
 ```
 
-###### Food Probe Example
+## Food Probe Example
 
 This will guide you through how to set up an automation in Home Assistant using the food probe with Chicken(or anything) cooking to 165°F(73.9C). At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
 
@@ -120,7 +121,7 @@ actions:
 mode: single
 ```
 
-###### Cook Chicken Example
+## Cook Chicken Example
 
 This will guide you through adding a button to your dashboard called "Chicken Monitor" and an automation that runs when the button is pressed! This will turn the RGB LED Green when running, message your phone when it starts and when it finishes, plus when the temperature is reached, then turn the RGB LED off. Thanks to Discord user RalphP for this!
 

@@ -52,7 +52,7 @@ Here is the finished board on a two panel setup, four segments each pulling a di
 
 ![Two-panel M-1 showing weather, front door lock, CO2, and ping status lines in different colors](/assets/m1-share-data-home-assistant-result.webp)
 
-###### Tuning It
+## Tuning It
 
 A minute suits temperatures and forecasts. For something that changes faster, like a countdown timer, drop the time pattern to every ten or thirty seconds. Going much below that gains you little, since the text has to finish scrolling before anyone can read it anyway.
 

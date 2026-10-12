@@ -1,4 +1,5 @@
 ---
+title: Adding CO₂ To MSR-1
 description: "Fit the CO2 module to your MSR-1, with photos showing the connector orientation at each step."
 ---
 # Adding CO<sub>2</sub> To MSR-1

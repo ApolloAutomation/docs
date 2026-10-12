@@ -8,11 +8,11 @@ description: >-
 
 The AIR-1 has multiple different types of sensors and this guide will help you understand which ones you should be concerned with and expected safe or not safe thresholds to alert or automate on.
 
-###### <a href="https://sensirion.com/products/catalog/SEN55" title="SEN55 Documentation" target="_blank" rel="noreferrer nofollow noopener">SEN55 Environmental Sensor</a>
+## <a href="https://sensirion.com/products/catalog/SEN55" title="SEN55 Documentation" target="_blank" rel="noreferrer nofollow noopener">SEN55 Environmental Sensor</a>
 
 The SEN55 is the powerhouse of the AIR-1 with multiple sensors such as particulate matter, volatile organic compounds (VOCs), oxidizing gases, such as nitrogen oxides (NOx), as well as humidity & temperature.
 
-###### Particulate Matter
+## Particulate Matter
 
 <a href="https://www.epa.gov/pm-pollution/particulate-matter-pm-basics" target="_blank" rel="noreferrer nofollow noopener">Per the EPA</a>: particulate matter (also called particle pollution): the term for a mixture of solid particles and liquid droplets found in the air. Some particles, such as dust, dirt, soot, or smoke, are large or dark enough to be seen with the naked eye. Others are so small they can only be detected using an electron microscope. <a href="https://www.epa.gov/indoor-air-quality-iaq/sources-indoor-particulate-matter-pm" target="_blank" rel="noreferrer nofollow noopener">Sources of pm particles here</a>.
 
@@ -26,11 +26,11 @@ The SEN55 is the powerhouse of the AIR-1 with multiple sensors such as particula
 
     <a href="https://www.epa.gov/indoor-air-quality-iaq/sources-indoor-particulate-matter-pm" target="_blank" rel="noreferrer nofollow noopener">This article</a> goes over lots of ways to reduce pm particles in your home!
 
-###### Safe PM Levels
+## Safe PM Levels
 
 Particulate Matter (PM) refers to a mixture of solid particles and liquid droplets found in the air. These are often classified by size, as smaller particles pose greater risks to health due to their ability to penetrate deeper into the lungs.
 
-###### What Do PM1, PM2.5, PM4, and PM10 Mean?
+## What Do PM1, PM2.5, PM4, and PM10 Mean?
 
 <table><thead><tr><th><p><strong>PM Type</strong></p></th><th><p><strong>Size (µm)</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>≤ 1.0</p></td><td><p>Ultrafine particles that can reach deep into the lungs and bloodstream.</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 2.5</p></td><td><p>Fine particles; linked to respiratory and cardiovascular issues.</p></td></tr><tr><td><p>PM4</p></td><td><p>≤ 4.0</p></td><td><p>Less commonly regulated; typically used in industrial settings.</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 10</p></td><td><p>Inhalable particles; may irritate eyes, nose, and throat.</p></td></tr></tbody></table>
 
@@ -40,7 +40,7 @@ Particulate Matter (PM) refers to a mixture of solid particles and liquid drople
 
 ---
 
-###### Recommended Safe Exposure Limits
+## Recommended Safe Exposure Limits
 
 The **World Health Organization (WHO)** <a href="https://www.who.int/publications/i/item/9789240034228" target="_blank" rel="noreferrer nofollow noopener">provides the following exposure limits</a> for particulate matter:
 
@@ -48,7 +48,7 @@ The **World Health Organization (WHO)** <a href="https://www.who.int/publication
 
 ---
 
-###### U.S. EPA Air Quality Index (AQI) – PM2.5
+## U.S. EPA Air Quality Index (AQI) – PM2.5
 
 The **U.S. Environmental Protection Agency (EPA)**<a href="https://www.airnow.gov" target="_blank" rel="noreferrer nofollow noopener"> defines safety thresholds</a> for PM2.5 based on a 24-hour average:
 
@@ -56,7 +56,7 @@ The **U.S. Environmental Protection Agency (EPA)**<a href="https://www.airnow.go
 
 ---
 
-###### NowCast AQI
+## NowCast AQI
 
 <a href="https://esphome.io/components/sensor/aqi/" target="_blank" rel="noreferrer nofollow noopener">NowCast AQI</a> takes your PM2.5 and PM10 readings and converts them into a single 0–500 number using the EPA's formula. That number maps directly to the AQI categories in the table above: bigger = worse.
 
@@ -68,7 +68,7 @@ The AIR-1 calculates this automatically and exposes it as a sensor in Home Assis
 
 ---
 
-###### Indoor Air Quality Notes
+## Indoor Air Quality Notes
 
 * **PM1** and **PM2.5** are especially important for indoor air monitoring since these smaller particles are more likely to come from cooking, candles, smoking, or inadequate ventilation.
 * Use an **air purifier with a HEPA filter** to reduce PM1–PM2.5 concentrations indoors.
@@ -80,7 +80,7 @@ The AIR-1 calculates this automatically and exposes it as a sensor in Home Assis
 
 ---
 
-###### <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC Index</a>
+## <a href="https://sensirion.com/media/documents/02232963/6294E043/Info_Note_VOC_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC Index</a>
 
 Per Sensirion,
 
@@ -102,7 +102,7 @@ Per Sensirion,
     >
     > that there are fewer VOCs compared to the average
 
-###### VOC Quality
+## VOC Quality
 
 This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/Info_Note_Integration_VOC_NOx_Sensor.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index and a scale to output an easier to use variable</a>.
 
@@ -112,7 +112,7 @@ This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/I
 
     This is a very easy way to automate based on the air quality changing over the past 24 hours but you will still want to automate on particulate matter as well!
 
-###### <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">NO<sub>X</sub> Index</a>
+## <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">NO<sub>X</sub> Index</a>
 
 Per Sensirion,
 
@@ -142,7 +142,7 @@ Per Sensirion,
 
 ---
 
-##### <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO<sub>2</sub> sensor</a>
+## <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO<sub>2</sub> sensor</a>
 
 The optional CO<sub>2</sub> sensor addon is a great way to add the ability to track CO<sub>2</sub>. CO<sub>2</sub> levels in a closed, poorly ventilated bedroom can quickly rise to concentrations that may impair focus or even pose health risks. Notice the CO2 levels dropping in the image below when the HVAC was turned on overnight!
 
@@ -164,6 +164,6 @@ The latest AIR-1 firmware keeps the SCD40 calibrated automatically. The sensor a
 
 ---
 
-##### <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS-4514 Gas Sensor</a>
+## <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS-4514 Gas Sensor</a>
 
 The MiCS-4514 is a very unique sensor able to distinguish between multiple gases such as Carbon Monoxide, Nitrogen, Ethanol, Hydrogen, Ammonia, and Methane.

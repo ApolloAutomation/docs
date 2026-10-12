@@ -6,7 +6,7 @@ description: >-
 ---
 # Teardown and Reassembly Of BTN-1
 
-###### Disassembly
+## Disassembly
 
 !!! warning "If you have a BTN-1 with a battery you should flip the power switch to off"
 
@@ -28,7 +28,7 @@ description: >-
 
 ![Unplugging the 2-pin JST battery connector from the BTN-1 circuit board](/assets/btn-1-unplug-jst.webp)
 
-###### Reassembly
+## Reassembly
 
 1\. Re-attach the 2-pin JST connector and place the battery writing side down with the wires on the left side of the case.
 

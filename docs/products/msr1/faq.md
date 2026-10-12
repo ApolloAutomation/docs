@@ -1,4 +1,5 @@
 ---
+title: FAQ
 description: "Common MSR-1 questions answered: which sensors are inside, what the mmWave radar detects, and how the device talks to Home Assistant."
 ---
 1\. **What sensors are included in the MSR-1?**

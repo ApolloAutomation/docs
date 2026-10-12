@@ -1,4 +1,5 @@
 ---
+title: FAQ
 description: "Frequently asked questions about the MTR-1 mmWave sensor."
 ---
 1\. **What sensors are included in the MTR-1?**

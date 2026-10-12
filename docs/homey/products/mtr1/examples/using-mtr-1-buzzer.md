@@ -1,4 +1,5 @@
 ---
+title: Using MTR-1 Buzzer
 description: "Trigger the MTR-1 buzzer from developer tools, then reuse the same call in an automation."
 ---
 # Using MTR-1 Buzzer

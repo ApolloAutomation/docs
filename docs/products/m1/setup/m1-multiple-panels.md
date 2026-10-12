@@ -10,11 +10,11 @@ description: Tutorial for wiring and configuring multiple panels with your M-1 L
 
 Using panels you sourced yourself rather than Apollo ones? They need to match the M-1's own: **64x64 half scan**, sometimes written 1/32. Indoor P2.5 and P3 64x64 panels usually qualify. Quarter-scan panels, often sold as outdoor, do not work.
 
-###### Power
+## Power
 
 A 64x64 panel can pull about 3A at 5V at full white. The M-1's onboard 5V rail passes roughly 3A, which is one panel's worth, so every panel beyond the first needs its own feed from a <a href="https://apolloautomation.com/products/m-1-led-matrix-power-module" target="_blank" rel="noreferrer nofollow noopener">Matrix Power Module</a>. Skipping it gives you dim output, color shifts, and random reboots on bright content.
 
-###### Hardware Setup
+## Hardware Setup
 
 Wiring is the same whichever firmware you run. Choose the number of panels you are using below to get started!
 
@@ -78,7 +78,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
     A 3D printable wall mount system is available on <a href="https://www.printables.com/model/1361828-apollo-automation-m-1-led-matrix-stand-hub75" target="_blank" rel="noreferrer nofollow noopener">Printables</a>.
 
-###### Software Setup
+## Software Setup
 
 === "WLED"
 
@@ -174,7 +174,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
         ![Opening Info in WLED-MM, selecting Reboot WLED, then confirming the reboot](/assets/reboot-wled-gif.gif)
 
-###### Segment Setup
+## Segment Setup
 
 !!! success "WLED works using segments and your device now has different stop and end pixels for each segment since you have added more LEDs with each additional panel"
 
@@ -308,7 +308,7 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
     5\. Save the layout as a preset, or it disappears on the next reboot.
 
-###### What to Expect
+## What to Expect
 
 Driving four panels asks a lot more of the controller than one, and a few things change that are worth knowing before you decide something is broken.
 
@@ -318,7 +318,7 @@ The LED memory gauge on the LED Preferences page reads high with four panels. Th
 
 Ghosting shows up more readily. Four chained panels load the drive lines harder than one, so faint red fringing behind bright content or at a seam appears at a lower brightness than you are used to. It is harmless. Drop the global brightness a step if it bothers you.
 
-###### Going Bigger Than Four Panels
+## Going Bigger Than Four Panels
 
 Four panels per M-1 is the limit, in any arrangement that multiplies to four or fewer. That is a real constraint rather than an artificial cap: the display driver keeps its frame buffer in the fastest part of the chip's memory and four panels already fill most of it, the panel hardware refreshes more slowly as the chain grows, and eight panels of bright content would need something like a 25 amp supply.
 

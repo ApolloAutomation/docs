@@ -1,4 +1,5 @@
 ---
+title: Prevent Sleep
 description: "Keep the PLT-1B awake instead of letting it sleep, and what that costs in battery life."
 ---
 # Prevent Sleep

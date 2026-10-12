@@ -1,4 +1,5 @@
 ---
+title: Factory Re-Flash PLT-1
 description: "Step by step guide for re-flashing the PLT-1 back to factory firmware."
 ---
 # Factory Re-Flash PLT-1

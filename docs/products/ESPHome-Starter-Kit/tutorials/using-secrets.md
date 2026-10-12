@@ -14,7 +14,7 @@ When you set up your kit in [First Steps](../setup/first-steps.md), the Device B
 
 ---
 
-### Open Secrets
+## Open Secrets
 
 <div markdown class="annotate">
 
@@ -28,7 +28,7 @@ In the ESPHome Device Builder dashboard, click the 3 dots menu in the top right 
 
 ---
 
-### Syntax
+## Syntax
 
 Each entry is a `key: "value"` pair:
 
@@ -50,7 +50,7 @@ When the device compiles, ESPHome substitutes the value from secrets.yaml in pla
 
 ---
 
-### Make a Secret in the GUI
+## Make a Secret in the GUI
 
 <div markdown class="annotate">
 
@@ -70,11 +70,11 @@ The Device Builder moves the key into secrets.yaml and swaps the device YAML ove
 
 ---
 
-### What to store
+## What to store
 
 Each section below shows the line you add to secrets.yaml and the line in your device YAML that references it.
 
-#### Wi-Fi credentials
+### Wi-Fi credentials
 
 You set these up in [First Steps](../setup/first-steps.md). They're the baseline every device needs.
 
@@ -93,7 +93,7 @@ wifi:
   password: !secret wifi_password
 ```
 
-#### Fallback hotspot password
+### Fallback hotspot password
 
 If you want the device's fallback hotspot to require a password instead of being open, store that here too.
 
@@ -114,7 +114,7 @@ wifi:
     password: !secret ap_password
 ```
 
-#### Home Assistant API encryption key
+### Home Assistant API encryption key
 
 ESPHome encrypts the connection between your device and Home Assistant. The key is a 32-byte base64 string, and the Device Builder generates one for every new device. The easiest way to make it a secret is the **Use secret** button covered in [Make a Secret in the GUI](#make-a-secret-in-the-gui) above, which names the entry after your device. If you'd rather add it by hand, it looks like this:
 
@@ -136,7 +136,7 @@ api:
 
     Using the same `api_encryption_key` for every Apollo device on your network is fine and keeps your secrets file short. Home Assistant prompts for the key the first time it discovers a device, then remembers it.
 
-#### OTA password
+### OTA password
 
 OTA (over-the-air) updates let you re-flash a device wirelessly after the first USB flash. The password protects that endpoint so a stranger on your network can't push software to your device. (1)
 { .annotate }
@@ -157,7 +157,7 @@ ota:
     password: !secret ota_password
 ```
 
-#### Web server username and password
+### Web server username and password
 
 If you enable the optional `web_server:` component to access your device at `http://device-name.local/`, you can require a login.
 
@@ -178,7 +178,7 @@ web_server:
     password: !secret web_server_password
 ```
 
-#### MQTT broker, username, and password
+### MQTT broker, username, and password
 
 If you publish to an MQTT broker instead of (or in addition to) the Home Assistant API, all three of these belong in secrets.yaml.
 
@@ -201,7 +201,7 @@ mqtt:
 
 ---
 
-### Complete Example
+## Complete Example
 
 Putting it all together, a fully loaded secrets.yaml looks like this:
 
@@ -231,7 +231,7 @@ You don't have to include every entry. If a device doesn't use MQTT, leave those
 
 ---
 
-#### Good practice
+### Good practice
 
 !!! info "Treat secrets.yaml like a password manager"
 

@@ -1,4 +1,5 @@
 ---
+title: FAQ
 description: "PLT-1B FAQ."
 ---
 1\. **What sensors are included in the PLT-1B?**

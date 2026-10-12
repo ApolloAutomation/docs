@@ -4,7 +4,7 @@ description: Multiple helpful images for mounting, lux/rgb, and gate and zone vi
 ---
 # General Tips
 
-##### **Light Sensor (LTR-390UV)**
+## **Light Sensor (LTR-390UV)**
 
 ![MSR-2 case with the light sensor visible through the center vent outlined in red](/assets/20240514-123742.jpg)
 
@@ -14,7 +14,7 @@ When mounting the MSR-2 be sure to position the device so that the two large hol
 
     Make sure that your automations do not interfere with each other. This includes being aware that your onboard LED can trigger the lux reading but not the uv reading of the LTR390 in your device.
 
-##### **Mounting**
+## **Mounting**
 
 The MSR-2 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120-degree FOV of the mmWave radar.
 
@@ -30,7 +30,7 @@ The MSR-2 can also be mounted on the ceiling if you can provide power and mount 
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
     * Zones are user-configurable and are in cm.
 
-##### **Gate and FOV Visualization**
+## **Gate and FOV Visualization**
 
 **![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/ld2410-table.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
 

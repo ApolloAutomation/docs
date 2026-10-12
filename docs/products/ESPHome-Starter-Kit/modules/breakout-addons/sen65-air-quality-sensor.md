@@ -172,11 +172,11 @@ If the SEN65's temperature or humidity doesn't agree with another thermometer or
 
 1.  Sensirion's <a href="https://sensirion.com/media/documents/C964FCC8/69709EC3/PS_AN_SEN6x_Temperature_Compensation_and_Acceleration_Application_No.pdf" target="_blank" rel="noreferrer nofollow noopener">SEN6x temperature compensation application note</a> explains the self-heating effect and the math behind correcting it.
 
-#### Measure your offsets
+### Measure your offsets
 
 Let the kit run in its normal spot for at least half an hour, out of sunlight and away from vents. Put a thermometer you trust next to it and note how far off each reading is. Reading 23.5 °C in a 21.5 °C room means your temperature offset is 2 °C. One caution on the reference: dial-style analog hygrometers are commonly off by ±5 %RH or more, so a disagreement with one of those may say more about the dial than the SEN65.
 
-#### Fixed offsets
+### Fixed offsets
 
 Open your device in Device Builder, click **Edit**, and add a `filters:` block under `temperature:` and `humidity:` in the sen6x component:
 
@@ -193,7 +193,7 @@ Open your device in Device Builder, click **Edit**, and add a `filters:` block u
 
 The `offset` filter adds its value to every reading: a temperature that reads 2 °C high gets `-2.0`, a humidity that reads 5 % low gets `5.0`. Save, install, and the corrected values flow to Home Assistant.
 
-#### Adjustable offsets from Home Assistant
+### Adjustable offsets from Home Assistant
 
 Apollo's [AIR-1](/products/air1/introduction.md) exposes its offsets as number entities instead, so you can dial them in from the device page in Home Assistant without reflashing. The same trick works on the starter kit. (1)
 { .annotate }

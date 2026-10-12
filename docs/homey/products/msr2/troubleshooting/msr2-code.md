@@ -1,4 +1,5 @@
 ---
+title: Factory Re-Flash MSR-2
 description: "Step by step guide for re-flashing the MSR-2 back to factory firmware."
 ---
 # Factory Re-Flash MSR-2

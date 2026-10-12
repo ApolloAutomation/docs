@@ -40,7 +40,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
 - **Beginner** uses hardcoded thresholds (18 °C and 24 °C for temperature, 30% and 60% for humidity) and Device Builder's `Sensor → In Range` condition. No lambda, no extra components.
 - **Advanced** adds four user-editable threshold number entities plus a °C / °F select, with lambda conditions that convert at compare time. Tune from the web server or Home Assistant any time, no re-flash.
 
-#### Color bands
+### Color bands
 
 | Temperature band | Color | | Humidity band | Color |
 | --- | --- | --- | --- | --- |
@@ -638,12 +638,12 @@ Your automation is saved in Device Builder, but the device is still running its 
 
 With the device back online, press the button on the Button module. The Onboard RGB LED runs the full sequence in seven seconds: temperature color for 3 s, dark for 1 s, humidity color for 3 s, dark. Press it again any time you want a quick read.
 
-#### Troubleshooting
+### Troubleshooting
 
 - **The colors don't reflect what I just did to the sensor.** The temp and humidity sensors publish on a schedule (every 60 seconds by default), so the colors show the most recent reading, not a fresh check at the moment of the press. Lower the sensor's `update_interval` while testing for snappier feedback.
 - **First press after boot does nothing.** Right after boot, the sensor hasn't published a reading yet, so the `If` comparisons silently come back false and the LED stays as-is. Wait one publish cycle (60 seconds by default) and try again.
 
-#### Next steps
+### Next steps
 
 The same trigger / condition / delay / light pattern works with any sensor and any light on your kit. Swap the temperature sensor for a CO2 reading, the button trigger for a motion event, or the Onboard RGB LED for the LED & Buzzer module's `rgb_leds` strip, and you have a new readout. Then bring it into Home Assistant so you can tune it from anywhere.
 

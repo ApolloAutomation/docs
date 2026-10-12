@@ -10,7 +10,7 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 
     WizMote support on a HUB75 matrix only exists in WLED 16.0 and above. WLED-MM does not support it at all, so if your M-1 is on 14.5.1 you need to [migrate to WLED](/products/m1/setup/upgrade-to-wled.md) before a remote will work. Tap **Info** on your M-1 to check which version you are running.
 
-###### Turn On ESP-NOW
+## Turn On ESP-NOW
 
 1\. Open your M-1 in a browser and click **Config**, then **WiFi Setup**.
 
@@ -18,7 +18,7 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 
 3\. Click **Save**, then reboot the M-1. Tap **Info**, scroll down, and select **Reboot WLED**.
 
-###### Pair the Remote
+## Pair the Remote
 
 1\. Go back to **Config**, then **WiFi Setup**.
 
@@ -30,14 +30,14 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 
 ![WLED ESP-NOW settings: clicking + next to Last device seen to link the WizMote, then Save & Connect](/assets/wled-16-add-wizmote.gif)
 
-###### Using the Remote
+## Using the Remote
 
 The four numbered buttons run presets 1 through 4, so whatever you save as preset 1 is what button 1 does. Set those up first on the main page and the remote becomes genuinely useful rather than a novelty. Power and brightness work as labeled, and the moon button triggers the night light. (1)
 { .annotate }
 
 1.  Button behavior can be remapped with a custom `remote.json` on the device filesystem. The <a href="https://kno.wled.ge/interfaces/espnow/" target="_blank" rel="noreferrer nofollow noopener">WLED ESP-NOW documentation</a> covers the button codes if you want something other than the defaults.
 
-###### Troubleshooting
+## Troubleshooting
 
 If nothing shows up in **Last device seen**, start with a fresh battery in the WizMote and confirm you saved the page after ticking **Enable ESP-NOW**. When the field stays blank after that, reboot the M-1 and press a button on the remote again.
 

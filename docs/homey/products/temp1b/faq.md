@@ -1,4 +1,5 @@
 ---
+title: TEMP-1B FAQ
 description: "Frequently asked questions about the TEMP-1B temperature sensor."
 ---
 # **TEMP-1B FAQ**

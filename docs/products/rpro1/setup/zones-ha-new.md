@@ -12,7 +12,7 @@ description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 
     The optional LD2412 mmWave sensor allows you to have perfect still detection for one target at up to 9 meters so it's a great addition to the sensor.
 
-###### LD2450 Configuration
+## LD2450 Configuration
 
 Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to tune using the HLK Radartool App and we suggest using that to set up your LD2450 instead.
 
@@ -40,6 +40,6 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 &nbsp;
 
-###### LD2412 Configuration
+## LD2412 Configuration
 
 &nbsp;

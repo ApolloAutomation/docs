@@ -4,7 +4,7 @@ description: Tutorial for MSR-2 HLKRadarTool app Zone Configuration.
 ---
 # How To Tune MSR-2 Using HLKRadarTool
 
-###### **Auto-Calibration**
+## **Auto-Calibration**
 
 1\. Download the HLKRadarTool app.
 
@@ -56,7 +56,7 @@ The default password to connect to the HLKRadarTool is "HiLink".
 
 **![HLKRadarTool Parameter settings with the Intelligent one click setting outlined in red](/assets/intelligent.png)**
 
-###### Manual Calibration
+## Manual Calibration
 
 1\. Repeat steps 1-5 above.
 

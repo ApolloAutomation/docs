@@ -1,4 +1,5 @@
 ---
+title: Calibrating Soil Moisture
 description: "Step by step guide for calibrating the PLT-1B."
 ---
 --8<-- "products/plt1b/calibrate-plt1.md:5:"

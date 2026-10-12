@@ -4,7 +4,7 @@ description: Tutorial for Removing Device From Home Assistant.
 ---
 # Removing Device From Home Assistant
 
-##### ESPHome app
+## ESPHome app
 
 This will cover how to remove an Apollo device from Home Assistant
 
@@ -20,7 +20,7 @@ This will cover how to remove an Apollo device from Home Assistant
 
 ![Deleting an H-1 in ESPHome Device Builder from the three-dot menu and confirming Delete](/assets/delete-device-from-esphome-device-builder-gif.gif)
 
-##### ESPHome Integration
+## ESPHome Integration
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>. Next to the device you would like to remove, click the three dots and then "Delete".
 

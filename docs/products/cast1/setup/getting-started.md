@@ -6,7 +6,7 @@ description: Step by step guide to getting started with your CAST-1!
 
 This will guide you through connecting your CAST-1 to your speakers, adding it to your Wi-Fi and Home Assistant, and streaming to it with Music Assistant.
 
-### Physical Setup
+## Physical Setup
 
 Run a 3.5mm cable from the CAST-1 into the line-in on your powered speakers, receiver, or active soundbar, then plug the CAST-1 into power with USB-C. A 5V 1A power supply is plenty. (1)
 { .annotate }
@@ -15,7 +15,7 @@ Run a 3.5mm cable from the CAST-1 into the line-in on your powered speakers, rec
 
 ![Plugging a 3.5mm audio cable and a USB-C power cable into the CAST-1](/assets/cast-1-physical-setup.webp)
 
-### Connect to Your Network
+## Connect to Your Network
 
 There are three ways to get your CAST-1 online. Pick whichever is easier, you only need to do one.
 
@@ -74,7 +74,7 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
     3\. Home Assistant discovers your CAST-1 automatically. Add it below, then check the **Network Connection** sensor on the device page to confirm it reads **Ethernet**.
 
-### Add to Home Assistant
+## Add to Home Assistant
 
 Open the ESPHome Integration, then click **Add** and **Submit**. Edit the name and choose an **Area** then click **Finish**.
 
@@ -82,11 +82,11 @@ Open the ESPHome Integration, then click **Add** and **Submit**. Edit the name a
 
 ![Adding the discovered CAST-1 in the ESPHome integration, naming it, and choosing an area](/assets/cast-1-home-assistant-integration.gif)
 
-### Music Assistant
+## Music Assistant
 
 The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>. Once Music Assistant is running, your CAST-1 shows up as a player automatically, no extra configuration needed.
 
-###### Install Music Assistant
+### Install Music Assistant
 
 1\. Head to the App Store to install Music Assistant.
 
@@ -100,7 +100,7 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 <a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
 
-###### Stream To Your CAST-1
+### Stream To Your CAST-1
 
 1\. Open **Music Assistant** from the Home Assistant sidebar.
 
@@ -110,7 +110,7 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 ![Selecting the CAST-1 player in Music Assistant and playing a song](/assets/cast-1-play-song.gif)
 
-###### Play In Multiple Rooms
+### Play In Multiple Rooms
 
 Have more than one CAST-1? Group them to play the same music in sync across every room.
 

@@ -1,4 +1,5 @@
 ---
+title: Smart Home Scene MSR-2 Review
 description: "The Smart Home Scene written review of the Apollo MSR-2."
 ---
 # Smart Home Scene MSR-2 Review

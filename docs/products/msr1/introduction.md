@@ -1,4 +1,5 @@
 ---
+title: Introduction
 description: "The Apollo MSR-1 multisensor: mmWave radar, LUX and UV, temperature, humidity, and optional CO2, running ESPHome for Home Assistant."
 ---
 ![Apollo MSR-1 in its white case, with a feature list including mmWave, LUX/UV, CO2, RGB, and buzzer](/assets/productimage.jpg)

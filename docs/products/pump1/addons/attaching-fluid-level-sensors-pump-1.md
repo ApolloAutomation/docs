@@ -4,7 +4,7 @@ description: Tutorial for Attaching The Input and Output Fluid Level Sensors to 
 ---
 # Attaching Fluid Level Sensors to the PUMP-1
 
-##### Installing Fluid Input Sensor
+## Installing Fluid Input Sensor
 
 1\. Begin by placing the small white connector through the hole in the base of the water bottle and gently press the input fluid level sensor into place.
 
@@ -14,13 +14,13 @@ description: Tutorial for Attaching The Input and Output Fluid Level Sensors to 
 
 ![Fitting the input fluid level sensor into the PUMP-1 bottle base, then sliding the bottle in](/assets/pump-1-install-fluid-input-sensor-webp.webp)
 
-##### Connecting Fluid Input Sensor
+## Connecting Fluid Input Sensor
 
 1\. Insert the small white connector into the **right-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. The small bump on top of the white connector must be facing **upwards** when inserting it. This ensures proper alignment and a secure connection.
 
 ![Plugging the input fluid sensor connector into the right-side port of the open PUMP-1](/assets/pump-1-connect-fluid-input-sensor-webp.webp)
 
-##### Connecting Fluid Output Sensor
+## Connecting Fluid Output Sensor
 
 1\. Insert the small white connector into the **left-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. The small bump on top of the white connector must be facing **upwards** when inserting it. This ensures proper alignment and a secure connection.
 

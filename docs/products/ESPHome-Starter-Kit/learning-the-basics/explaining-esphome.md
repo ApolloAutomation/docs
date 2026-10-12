@@ -24,11 +24,11 @@ For the Starter Kit, you will spend almost all your time in the Device Builder.
 
 Once your device is flashed, you can control it two ways:
 
-#### From any web browser
+### From any web browser
 
 ESPHome's built-in **Web Server** component makes your device serve its own local web page. Open <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> (or the device's IP address) in any browser on your network, on a phone or PC, and you can toggle the LED, view sensor readings, and control the device directly. No Home Assistant required. See the [Web Server in Core Components](core-components.md#web-server) for more.
 
-#### From Home Assistant
+### From Home Assistant
 
 Home Assistant discovers your device automatically through the **ESPHome integration**. Each of your device's sensors, switches, and lights then appears in Home Assistant as an entity you can use in dashboards and automations.
 

@@ -1,4 +1,5 @@
 ---
+title: TEMP-1 Food Probe
 description: "Step by step guide for installing and using the optional Food Probe with the TEMP-1."
 ---
 # TEMP-1 Food Probe

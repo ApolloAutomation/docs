@@ -1,4 +1,5 @@
 ---
+title: Adding CO₂ To MSR-2
 description: "Tutorial on adding the SCD40 CO2 sensor to your MSR-2."
 ---
 # Adding CO<sub>2</sub> To MSR-2

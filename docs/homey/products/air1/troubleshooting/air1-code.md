@@ -1,4 +1,5 @@
 ---
+title: Factory Re-Flash AIR-1
 description: "Step by step guide for re-flashing the AIR-1 back to factory firmware."
 ---
 

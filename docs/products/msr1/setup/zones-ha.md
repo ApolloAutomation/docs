@@ -1,4 +1,5 @@
 ---
+title: How To Tune mmWave Using Home Assistant
 description: "Tune the MSR-1 mmWave radar from Home Assistant using Radar Engineering Mode to find which gates cause false triggers and raise their thresholds."
 ---
 # How To Tune mmWave Using Home Assistant

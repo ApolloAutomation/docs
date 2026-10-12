@@ -1,4 +1,5 @@
 ---
+title: FAQ
 description: "Frequently asked questions about the MSR-2 mmWave sensor."
 ---
 1\. **What sensors are included in the MSR-2?**

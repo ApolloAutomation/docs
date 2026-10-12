@@ -8,7 +8,7 @@ Watch our step by step video on installing the R PRO-1 using the Ceiling Mount. 
 
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/O4OZG3I34E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
-###### Attaching Mounts
+## Attaching Mounts
 
 1\. Unplug your R PRO-1 from power and remove the back.
 
@@ -38,11 +38,11 @@ Watch our step by step video on installing the R PRO-1 using the Ceiling Mount. 
 
 ![R PRO-1 PCB with both the TOP and bottom ceiling mount pieces attached](/assets/r-pro-1-ceiling-box-mounts-installed.webp)
 
-###### Cut the Ceiling Hole
+## Cut the Ceiling Hole
 
 The Ceiling Mount needs a 3.5 inch (around 89mm) circular hole in the ceiling. Cut that hole before you install the mount. A [2 in. to 7 in. adjustable hole saw](https://www.homedepot.com/p/Milwaukee-2-in-to-7-in-Black-Oxide-Adjustable-Hole-Saw-Cutter-49-56-0320/205744284) set to 3.5 inches is what we used.
 
-###### Install in Ceiling Mount
+## Install in Ceiling Mount
 
 1\. Remove the cover to expose the inside of the installed Ceiling Mount.
 

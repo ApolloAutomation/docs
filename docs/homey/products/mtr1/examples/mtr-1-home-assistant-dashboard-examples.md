@@ -1,4 +1,5 @@
 ---
+title: MTR-1 Home Assistant Dashboard Examples
 description: "Example dashboard cards for the MTR-1, including an ApexCharts radar scatter plot you can copy and paste."
 ---
 # MTR-1 Home Assistant Dashboard Examples

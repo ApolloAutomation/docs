@@ -1,4 +1,5 @@
 ---
+title: Factory Re-Flash TEMP-1B
 description: "Step by step guide for re-flashing the TEMP-1B back to factory firmware."
 ---
 # Factory Re-Flash TEMP-1B

@@ -6,7 +6,7 @@ description: >-
 ---
 # Blueprint Setup
 
-### Automatic Import
+## Automatic Import
 
 1\. Click the Import Blueprint button below and then click **Open link**.
 
@@ -30,7 +30,7 @@ description: >-
 
 5\. Your blueprint is now live. Click the button 1 button and it should toggle whatever light you selected in the blueprint. This can be anything in Home Assistant such as your light, fan, scene, etc!
 
-### Manual Import
+## Manual Import
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/automation/dashboard" target="_blank" rel="noreferrer nofollow noopener">automations page</a> and click on **Blueprints** in the top right then select **Import Blueprint**.
 

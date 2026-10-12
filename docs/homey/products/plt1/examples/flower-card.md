@@ -1,4 +1,5 @@
 ---
+title: Flower Card
 description: "Show PLT-1 readings with the Flower Card, using the Plant integration and OpenPlantBook."
 ---
 ![Flower Card for a ZZ Plant showing moisture, temperature, light, and humidity bars](/assets/screenshot-2024-09-26-at-10-17-09-am.png)

@@ -6,7 +6,7 @@ description: Generic getting started article.
 
 This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our <a href="https://link.apolloautomation.com/discord" target="_blank" rel="noopener">Discord</a> for some help.
 
-### Connecting Through Hotspot
+## Connecting Through Hotspot
 
 To connect through the sensor's onboard hotspot follow the below:
 
@@ -32,7 +32,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 [Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                              .md-button .md-button--primary }
 
-### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
+## Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
 !!! note "Pre-requirement:"
 
@@ -62,7 +62,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![Home Assistant Success dialog showing the new PLT-1B and an Area field](/assets/improv-ble-pic-6.png)
 
-### Connecting To ESPHome Device Builder
+## Connecting To ESPHome Device Builder
 
 !!! tip "Skip the ESPHome Device Builder unless..."
 
@@ -102,7 +102,7 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
-### Connecting to Home Assistant via ESPHome Integration:
+## Connecting to Home Assistant via ESPHome Integration:
 
 1\. Click the "**Notifications**" Icon in the bottom left.
 

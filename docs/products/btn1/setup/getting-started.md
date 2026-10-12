@@ -6,27 +6,27 @@ description: Step by step guide to getting started with your BTN-1!
 
 This will guide you through adding on switches and keycaps to your BTN-1 then adding it to your Wi-Fi and Home Assistant!
 
-### Physical Setup
+## Physical Setup
 
-###### Installing Brown Switches
+### Installing Brown Switches
 
 Line up the two gold pins with the holes on your BTN-1, then press down gently. Be careful, as the pins can bend or get damaged if too much force is used.
 
 ![Pressing brown switches into the four sockets on the BTN-1 circuit board](/assets/btn-1-install-switches-gif.webp)
 
-###### Installing Keycaps
+### Installing Keycaps
 
 Line up the + on the keycap with the + on the top of the switch you installed. It may require a little pressure, but it should press on smoothly. Once placed, lightly tap to ensure the keycap is fully seated.
 
 ![Pressing white keycaps onto the four switches of the BTN-1](/assets/btn-1-getting-started-installing-keycaps-gif.webp)
 
-###### Flip Power Switch
+### Flip Power Switch
 
 Only the battery version has a power switch. If yours has one, ensure it's **turned on**. With the device on its side, flipping the switch **away from you** turns it **on**, and flipping it **toward you** turns it **off**.
 
 ![Sliding the BTN-1 power switch on the side of the case to the on position](/assets/btn-1-flip-power-switch-on.webp)
 
-### Connecting Through Hotspot
+## Connecting Through Hotspot
 
 To connect through the sensor's onboard hotspot follow the below:
 
@@ -56,7 +56,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 [Click here for next steps!](https://wiki.apolloautomation.com/products/btn1/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                                            .md-button .md-button--primary }
 
-### Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
+## Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
 !!! note "Pre-requirement: Bluetooth proxy or Bluetooth Home Assistant hardware required"
 
@@ -76,7 +76,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
 4\. Your device is now added to your Wi-Fi and added to the ESPHome Integration in Home Assistant. You should now be ready to <a href="https://wiki.apolloautomation.com/products/btn1/examples/blueprint/" target="_blank" rel="noreferrer nofollow noopener">set up a blueprint</a> and start using your BTN-1!
 
-### Connecting To ESPHome Device Builder
+## Connecting To ESPHome Device Builder
 
 !!! tip "Skip the ESPHome Device Builder unless..."
 
@@ -108,7 +108,7 @@ wifi_password: "your-wifi-pass-here"
 
 4\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
-### Connecting to Home Assistant via ESPHome Integration:
+## Connecting to Home Assistant via ESPHome Integration:
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integration</a> then click on **Add** then click **Submit**. When prompted click **Finish** then give it a location and click **Finish** or click **Skip and Finish**.
 

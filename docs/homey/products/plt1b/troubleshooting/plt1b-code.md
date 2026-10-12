@@ -1,4 +1,5 @@
 ---
+title: Factory Re-Flash PLT-1B
 description: "Step by step guide for re-flashing the PLT-1B back to factory firmware."
 ---
 # Factory Re-Flash PLT-1B
@@ -31,7 +32,7 @@ If no device shows, click cancel and then install the recommended driver that sh
 
 6\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-plt1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
 
-# Factory Re-Flash PLT-1B
+## Factory Re-Flash PLT-1B
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the below guide."
 

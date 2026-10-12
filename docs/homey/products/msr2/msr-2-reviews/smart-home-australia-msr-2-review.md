@@ -1,4 +1,5 @@
 ---
+title: Smart Home Australia MSR-2 Review
 description: "Smart Home Australia reviews the Apollo MSR-2 radar motion sensor."
 ---
 # Smart Home Australia MSR-2 Review

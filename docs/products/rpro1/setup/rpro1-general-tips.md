@@ -4,7 +4,7 @@ description: Multiple helpful images for mounting, lux/rgb, and gate and zone vi
 ---
 # General Tips
 
-##### **Light Sensor (LTR-390UV)**
+## **Light Sensor (LTR-390UV)**
 
 ![Probe pointing at the LTR-390UV light sensor on the R PRO-1 board next to the RGB LED](/assets/rpro-ltr-390.jpg)
 
@@ -14,13 +14,13 @@ The R PRO-1 doesn't have any slits on the front of the case, so UV rays can't di
 
     Make sure that your automations do not interfere with each other. This includes being aware that your onboard LED can trigger the lux reading but not the uv reading of the LTR390 in your device.
 
-##### **Wall Mounting**
+## **Wall Mounting**
 
 The R PRO-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120 degree FOV for the LD2450 and 150 degree FOV for the LD2412.
 
 ![LD2412 wall mounting diagram with the radar 1.5 to 2 m high and a 9 m range](/assets/ld2412-wall-mount-radar-cone.png)
 
-##### **Ceiling Mounting**
+## **Ceiling Mounting**
 
 The R PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the ceiling using our ceiling mount kit.
 
@@ -48,6 +48,6 @@ The R PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the 
     * The vertical FOV angle is -35 to 35 degrees - 70 degrees total.
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
 
-##### **Gate Visualization**
+## **Gate Visualization**
 
 ![LD2412 gate table listing distance in meters and feet with default move and still thresholds](/assets/ld2412-gate-visualization.png)

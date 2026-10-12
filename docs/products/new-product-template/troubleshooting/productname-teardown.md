@@ -6,7 +6,7 @@ description: >-
 ---
 # Teardown and Reassembly Of PUMP-1
 
-###### Disassembly
+## Disassembly
 
 !!! danger "Drain all liquid from the PUMP-1 before disassembling!"
 
@@ -24,7 +24,7 @@ description: >-
 
 ![Pinching and twisting to pull the inlet and outlet tubes off the PUMP-1](/assets/pump-1-remove-tubes-webp.webp)
 
-###### Reassembly
+## Reassembly
 
 1\. Attach the two tubes to the pump as shown below. The fluid input tube is the left tube on the same side as the USB-C port and the fluid output tube is the tube on the right on the side of the PUMP-1.
 

@@ -1,4 +1,5 @@
 ---
+title: MSR-2 + Alarmo Home Security Install
 description: "A tutorial for how to use the MSR-2 with Alarmo for an advanced DIY alarm system."
 ---
 # MSR-2 + Alarmo Home Security Install

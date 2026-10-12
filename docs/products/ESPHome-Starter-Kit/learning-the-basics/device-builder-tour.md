@@ -43,7 +43,7 @@ Click **Edit** on your device card and the screen flips into the configuration e
 
 ![Clicking Edit on the device card to open the editor with the Device navigator, form pane, and YAML editor](../../../assets/esphome-device-builder-navigate-to-editor.gif)
 
-#### Device navigator (left)
+### Device navigator (left)
 
 The left pane is your config's table of contents. It groups everything into three buckets:
 
@@ -53,13 +53,13 @@ The left pane is your config's table of contents. It groups everything into thre
 
 ![Device navigator expanding Core configuration, Components, and Automations to show what each section holds](../../../assets/esphome-device-builder-device-navigator.gif)
 
-#### Form pane (middle)
+### Form pane (middle)
 
 Click anything in the navigator to see its settings here as a form. Every field has inline help text, and a **Docs** link in the top right takes you to the official ESPHome reference for that component.
 
 ![Form pane for the Web Server Component with a Docs link, Version set to 3, and Show advanced settings](../../../assets/esphome-device-builder-form-panel.png)
 
-#### YAML editor (right)
+### YAML editor (right)
 
 The right pane is the raw YAML for your device, color-coded with line numbers. You can read it, scroll it, and edit it directly.
 
@@ -77,7 +77,7 @@ When you have finished making changes:
 
 ![Clicking Save, Validate, and Install in the editor, with the Configuration is valid result and install log](../../../assets/esphome-device-builder-save-validate-install.gif)
 
-#### Logs
+### Logs
 
 Click **Logs** from the info panel or the device card's three-dot menu to open a live stream of what the device is reporting. Click **Stop** when done.
 
@@ -85,7 +85,7 @@ Click **Logs** from the info panel or the device card's three-dot menu to open a
 
 Pop them open when something looks off, or just to watch sensor readings come in.
 
-#### Next Steps
+### Next Steps
 
 * Pick a module from the [Modules](../modules/button-module.md) section to add to your Starter Kit and watch the components list update.
 * Read [What is secrets.yaml?](what-is-secrets-yaml.md) to understand how Wi-Fi and encryption keys are stored.

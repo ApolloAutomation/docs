@@ -10,9 +10,9 @@ Really neat dashboard for your AIR-1 by user "keex"!
 
 [https://community.home-assistant.io/t/apollo-air-1-dashboard/785311](https://community.home-assistant.io/t/apollo-air-1-dashboard/785311)
 
-#### **CO2 Charts**
+## **CO2 Charts**
 
-##### Home Assistant Sensor
+### Home Assistant Sensor
 
 ![Home Assistant sensor card showing a 24-hour Bedroom CO2 line graph at 1,000 ppm](/assets/co-2-graph.png)
 
@@ -25,7 +25,7 @@ name: Bedroom CO2
 hours_to_show: 24
 ```
 
-#### Custom: Apexcharts Card
+## Custom: Apexcharts Card
 
 ![ApexCharts card showing 10-minute average CO2 levels for five rooms in Home Assistant](/assets/air-1-suggestions-co2-smarthomesellout.png)
 
@@ -157,7 +157,7 @@ series:
         value: 0
 ```
 
-##### Custom: Plotly Graph Card
+### Custom: Plotly Graph Card
 
 ![Plotly Graph card showing 24 hours of Bedroom CO2 readings in ppm](/assets/plotly-co2-graph.png)
 
@@ -170,7 +170,7 @@ refresh_interval: 10
 title: Bedroom CO2
 ```
 
-##### Home Assistant Gauge
+### Home Assistant Gauge
 
 ![Home Assistant needle gauge card showing MSR-1 CO2 at 1,063 ppm with green, yellow, and red ranges](/assets/co2-guage.png)
 
@@ -187,9 +187,9 @@ severity:
   red: 2000
 ```
 
-#### **VOC Charts**
+## **VOC Charts**
 
-##### Home Assistant Sensor
+### Home Assistant Sensor
 
 ![Home Assistant sensor card showing an AIR-1 SEN55 VOC line graph at 446](/assets/air-1-voc-ha-sensor.png)
 
@@ -202,7 +202,7 @@ hours_to_show: 24
 name: Basement VOC
 ```
 
-##### Custom: Plotly Graph Card
+### Custom: Plotly Graph Card
 
 ![Plotly Graph card showing 24 hours of Basement VOC readings from the AIR-1](/assets/air-1-voc-plotly.png)
 
@@ -215,7 +215,7 @@ refresh_interval: 10
 title: Basement VOC
 ```
 
-##### Home Assistant Gauge
+### Home Assistant Gauge
 
 ![Home Assistant needle gauge card showing a Basement VOC reading of 457](/assets/air-1-voc-ha-guage.png)
 

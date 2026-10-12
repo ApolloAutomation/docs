@@ -1,4 +1,5 @@
 ---
+title: MSR-1 + Alarmo Home Security Install
 description: "Build a home security system from three MSR-1 sensors and Alarmo in Home Assistant, installed through HACS."
 ---
 # MSR-1 + Alarmo Home Security Install

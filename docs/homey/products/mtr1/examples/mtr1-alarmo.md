@@ -1,4 +1,5 @@
 ---
+title: MTR-1 + Alarmo Home Security Install
 description: "MTR-1 Alarmo setup"
 ---
 # MTR-1 + Alarmo Home Security Install

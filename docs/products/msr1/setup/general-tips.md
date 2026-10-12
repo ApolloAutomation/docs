@@ -1,15 +1,16 @@
 ---
+title: General Tips
 description: "Placement and mounting tips for the MSR-1, including keeping the light sensor holes clear and stopping the RGB LED from skewing LUX readings."
 ---
 # General Tips
 
-##### **MSR-1**
+## **MSR-1**
 
 ![MSR-1 circuit board with labeled parts: ESP32-C3 Mini, LD2410B radar, LTR-390UV, BME280, SCD-40, buzzer, and USB-C](/assets/apollo-automation-msr-1-presence-multisensor-pcb-components-layout-1024x768-jpg.webp)
 
 Picture from <a href="https://smarthomescene.com/reviews/apollo-msr-1-review-miniature-multi-sensor-for-presence-and-co2-monitoring/" target="_blank" rel="noreferrer nofollow noopener">Smart Home Scene</a>
 
-##### **Light Sensor (LTR-390UV)**
+## **Light Sensor (LTR-390UV)**
 
 ![3D render of the MSR-1 case with the light sensor holes outlined in red](/assets/UWHlight-holes.png)
 
@@ -19,7 +20,7 @@ When mounting the MSR-1 be sure to position the device so that the two large hol
 
     Make sure that your automations do not interfere with each other. This includes being aware that your onboard LED can trigger the lux reading but not the uv reading of the LTR390 in your device.
 
-##### **Mounting**
+## **Mounting**
 
 The MSR-1 should be mounted 1.5-2 meters off the ground which will then provide a nice even 120-degree FOV of the mmWave radar.
 
@@ -29,7 +30,7 @@ The MSR-1 should be mounted 1.5-2 meters off the ground which will then provide 
 
 The MSR-1 can also be mounted on the ceiling if you can provide power and mount our articulating stand on the ceiling.
 
-##### **Gate and FOV Visualization**
+## **Gate and FOV Visualization**
 
 **![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/ld2410-table_1.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
 

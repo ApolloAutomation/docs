@@ -23,7 +23,7 @@ If the display is wrong on more than one count, or nothing above matches, run th
 
 If the symptom survives a full reinstall, it is worth contacting support with a photo of the panel.
 
-###### Factory Reset
+## Factory Reset
 
 On WLED, holding the button for ten seconds resets the M-1 to factory settings, including the display size, without needing a computer. You will need to reconnect it to Wi-Fi afterward.
 

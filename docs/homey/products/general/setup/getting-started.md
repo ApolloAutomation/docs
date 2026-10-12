@@ -1,11 +1,12 @@
 ---
+title: Getting Started
 description: "Generic getting started article."
 ---
 # Getting Started
 
 This will walk you through the process of connecting your new Apollo Automation sensor to Homey. If at any point you get stuck, join our <a href="https://link.apolloautomation.com/discord" target="_blank" rel="noopener">Discord</a> for some help.
 
-### Connecting Through Hotspot:
+## Connecting Through Hotspot:
 
 To get your new Apollo sensor connected to your Wi-Fi, follow the steps below!
 
@@ -29,7 +30,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 5\. Once connected, the sensor's dashboard will automatically close. You've successfully connected your sensor to your Wi-Fi.
 
-### Adding Apollo Automation App in Homey:
+## Adding Apollo Automation App in Homey:
 
 1\. <a href="https://homey.app/en-us/app/com.apolloautomation/Apollo-Automation/test/" target="_blank" rel="noreferrer nofollow noopener">Navigate to this website</a> and click "Install App". For now this needs to be done from a desktop PC or a browser.
 
@@ -41,7 +42,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 3\. Your device will install the Apollo Automation Homey App then move to the next section.
 
-### Connecting to Homey:
+## Connecting to Homey:
 
 1\. Open the Homey App on your phone and navigate to the Devices tab at the bottom then select the (+) icon in the top right and choose "**New Device**". Choose "Allow" if it pops up asking to find Bluetooth devices, or you can change this later in settings.
 

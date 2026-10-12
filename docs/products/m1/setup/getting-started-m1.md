@@ -8,13 +8,13 @@ Congrats on your new M-1! Pick your firmware below and the rest of the M-1 wiki 
 
 New units ship with **WLED**. Units shipped earlier came with **WLED-MM**. Open your M-1 in a browser and tap **Info** to see which you have: 16.0.1 or newer is WLED, 14.5.1 is WLED-MM. Running ESPHome instead? Head to [Set Up ESPHome](/products/m1/setup/getting-started-m1-esphome.md).
 
-### Attach M-1 LED Controller
+## Attach M-1 LED Controller
 
 Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damage in shipping. Gently attach the M-1 controller by lining up its power and data headers to the back of the LED Matrix panel as shown below.
 
 ![Pressing the M-1 controller onto the power and data headers on the back of the LED matrix panel](/assets/m1-matrix-attach-controller.webp)
 
-### Connect to Wi-Fi
+## Connect to Wi-Fi
 
 === "WLED"
 
@@ -88,7 +88,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     ![WLED 2D Configuration set to 2D Matrix with Basic interface and 64 x 64 panel dimensions, then saved](/assets/m-1-2d-settings.gif)
 
-### Join to Home Assistant
+## Join to Home Assistant
 
 === "WLED"
 
@@ -126,7 +126,7 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     ![M-1 controls in Home Assistant with the power toggle, Playlist, and Preset menu](/assets/m-1-setup-wled-integration-test-device.png)
 
-#### What Next
+### What Next
 
 === "WLED"
 

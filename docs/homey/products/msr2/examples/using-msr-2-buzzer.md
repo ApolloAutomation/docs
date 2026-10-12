@@ -1,4 +1,5 @@
 ---
+title: Using MSR-2 Buzzer
 description: "Trigger the MSR-2 buzzer from developer tools, then reuse the same call in an automation."
 ---
 # Using MSR-2 Buzzer

@@ -1,4 +1,5 @@
 ---
+title: Prevent Sleep
 description: "Tutorial for how to enable/disable prevent sleep."
 ---
 # Prevent Sleep

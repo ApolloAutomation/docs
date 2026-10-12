@@ -6,7 +6,7 @@ description: Tutorial for R PRO-1 HLKRadarTool app Zone Configuration.
 
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/-w_GFURyx-A?si=SSRovumabCvHeXwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
-###### LD2450 Configuration
+## LD2450 Configuration
 
 !!! note "Ensure that the LD2450 firmware version is V2.02.23090617 or later for proper integration functionality. "
 
@@ -60,7 +60,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
     * The Plotly chart will still render the rectangles even if the X1/X2 and Y1/Y2 values are reversed.
     * The zones cannot overlap.
 
-###### Dashboard Card Setup
+## Dashboard Card Setup
 
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 
@@ -80,7 +80,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ![Plotly card showing R PRO-1 target positions, the radar coverage cone, and three zones](/assets/r-pro-1-plotly-graph-image.png)
 
-###### LD2412 Configuration
+## LD2412 Configuration
 
 The LD2412 works differently than the LD2450. Instead of drawing rectangular zones on a 2D map, you work with **distance gates**. Each gate covers 0.75m of radial distance from the sensor, so Gate 0 is 0-0.75m away, Gate 1 is 0.75-1.5m, and so on up to Gate 13 at roughly 9m. You define what the sensor reacts to by setting a sensitivity threshold at each gate distance.
 

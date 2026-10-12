@@ -4,7 +4,7 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 ---
 # Renaming Apollo Devices
 
-##### ESPHome Integration - Part 1
+## ESPHome Integration - Part 1
 
 1\. Click the button below to open the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
 
@@ -26,7 +26,7 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 
 ![Opening each disabled Diagnostic entity on the BTN-1 device page and editing its entity ID](/assets/esphome-integration-manually-rename-disabled-entities-gif.gif)
 
-##### ESPHome Integration - Part 2
+## ESPHome Integration - Part 2
 
 This section only changes the device name shown in the ESPHome integration page. It is safe to skip, but we recommend doing it to keep naming consistent.
 
@@ -42,7 +42,7 @@ This section only changes the device name shown in the ESPHome integration page.
 
     The next section is for ESPHome device builder which is for tinkerers and advanced users to take control of their device and edit the yaml. Please skip the next section if you do not use ESPHome Device Builder!
 
-##### ESPHome Device Builder
+## ESPHome Device Builder
 
 1\. Make sure you are already using the ESPHome Device Builder app as <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">gone over in the getting started wiki articles</a>.
 

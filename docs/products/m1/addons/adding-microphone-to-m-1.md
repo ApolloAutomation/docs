@@ -6,7 +6,7 @@ This will guide you through installing and configuring the microphone on your M-
 
 The microphone addon fits Rev6 and newer controllers. Rev4 boards do not have the connector for it. The revision is printed on the controller board.
 
-###### Install the Hardware
+## Install the Hardware
 
 1\. Unplug your M-1 from power and set the matrix side face down with the M-1 Controller PCB facing you.
 
@@ -14,7 +14,7 @@ The microphone addon fits Rev6 and newer controllers. Rev4 boards do not have th
 
 ![Round microphone addon installed on the M-1 controller with the GND pin at the bottom right](/assets/m-1-microphone-addon-image.jpg)
 
-###### Turn It On
+## Turn It On
 
 === "WLED"
 

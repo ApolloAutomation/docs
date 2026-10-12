@@ -10,7 +10,7 @@ description: Optional. Use ESPHome Device Builder to rename your CAST-1 or edit 
 
 ESPHome Device Builder is the software that gives you a user interface for editing, compiling, and flashing ESPHome YAML. You'll use it to take control of your CAST-1 and edit its configuration.
 
-### Install ESPHome Device Builder
+## Install ESPHome Device Builder
 
 Pick the platform you'll be running ESPHome Device Builder on:
 
@@ -114,7 +114,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     ![ESPHome Device Builder first-run wizard, choosing local installation and New to ESPHome](/assets/device-builder-first-time-install-pick-your-experience.gif)
 
-### Take Control of Your CAST-1
+## Take Control of Your CAST-1
 
 1\. Open the ESPHome Device Builder.
 

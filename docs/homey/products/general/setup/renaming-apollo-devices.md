@@ -1,4 +1,5 @@
 ---
+title: Renaming Apollo Devices
 description: "Rename an Apollo device from the Homey app or the Homey dashboard."
 ---
 # Renaming Apollo Devices

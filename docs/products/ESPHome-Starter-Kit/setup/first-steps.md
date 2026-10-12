@@ -24,7 +24,7 @@ By the end you'll have your ESPHome Starter Kit flashed with a working configura
 
 ---
 
-### ESPHome Device Builder
+## ESPHome Device Builder
 
 ESPHome Device Builder is the app that gives you a user interface for writing, compiling, and flashing ESPHome YAML configurations. You'll use it to build the software for your kit. (1)
 { .annotate }
@@ -143,7 +143,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     ![ESPHome Device Builder setup wizard: picking Installation, then New to ESPHome, then Start guided tour](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
-#### Add a new device
+### Add a new device
 
 With the app installed, it's time to tell it about your kit. If you took the guided tour, these next steps will look familiar.
 
@@ -161,7 +161,7 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 ![Selecting the ESPHome Starter Kit board, naming the device, and entering Wi-Fi details](../../../assets/device-builder-select-kit-name-kit-add-wifi.gif)
 
-### Configure Components
+## Configure Components
 
 !!! tip "We're now ready to add your first component and turn your project into a smart device!"
 
@@ -169,7 +169,7 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 When you create a new ESPHome Starter Kit project in ESPHome Device Builder, the **Web Server** and **Accessory Power Rail** components are already configured for you, so there's nothing extra to do for those. In this tutorial we'll add one more component: the **Onboard RGB LED**.
 
-#### Onboard RGB LED
+### Onboard RGB LED
 
 The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Useful for testing automations and doubles as a status light.
 
@@ -179,7 +179,7 @@ The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Usef
 
 ![ESPHome Device Builder Add component dialog adding the Onboard RGB LED with default settings](../../../assets/device-builder-add-onboard-rgb-led-component.gif)
 
-### Boot Mode
+## Boot Mode
 
 The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again.
 
@@ -197,7 +197,7 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 3\. Your device is now in boot mode - The ESP32-C6 will now stay in bootloader mode until you flash it.
 
-### Installing Software
+## Installing Software
 
 Before we continue, confirm that you installed the ESPHome Device Builder, configured your components, and put your device in boot mode.
 
@@ -216,7 +216,7 @@ Before we continue, confirm that you installed the ESPHome Device Builder, confi
 
 <a href="../../learning-the-basics/core-components/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Learn about Core Components</a>
 
-### Test your LED
+## Test your LED
 
 Your kit's default project includes the [**Web Server**](../learning-the-basics/core-components.md#web-server) component, which lets you navigate to the IP address of your device or the hostname.local such as <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">http://esphome-starter-kit.local/</a>
 

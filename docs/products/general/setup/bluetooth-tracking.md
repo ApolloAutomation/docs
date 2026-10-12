@@ -291,7 +291,6 @@ wifi:
   password: !secret wifi_password
 ```
 
-```
 
 **Android** Helpful links:
 [ESP32 Bluetooth Low Energy Tracker Hub](https://esphome.io/components/esp32_ble_tracker.html)
@@ -343,7 +342,7 @@ wifi:
     ```
 10. Should be all set!
 
-##### Thanks to our Discord user albuquerquefx for the information below!
+## Thanks to our Discord user albuquerquefx for the information below!
 
 
 

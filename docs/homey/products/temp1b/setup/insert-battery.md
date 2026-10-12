@@ -1,4 +1,5 @@
 ---
+title: How to Insert the Battery
 description: "How to Insert Battery on TEMP-1B."
 ---
 # How to Insert the Battery

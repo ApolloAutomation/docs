@@ -23,7 +23,7 @@ This tutorial uses the Motion module and the LED & Buzzer module connected to th
 
 ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automations/" target="_blank" rel="noreferrer nofollow noopener">automations</a>, so you can wire a trigger to an action without hand-writing YAML. The trigger is the *when*, the thing that makes it fire. The action is the *then do*, what happens when it fires. You'll build two automations on the same Motion module: one that turns the lights on when motion is detected, and one that turns them off when motion stops.
 
-#### Turn the lights on
+### Turn the lights on
 
 1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
 2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
@@ -79,7 +79,7 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
     See [Device Builder Tour → YAML editor (right)](../learning-the-basics/device-builder-tour.md#yaml-editor-right) for the full breakdown of the YAML pane.
 
-#### Turn the lights off
+### Turn the lights off
 
 Right now the lights turn on with motion but never turn off. Add a second trigger to the same Motion module so the lights switch off once motion clears.
 

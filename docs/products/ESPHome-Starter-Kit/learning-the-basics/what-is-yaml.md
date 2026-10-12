@@ -12,7 +12,7 @@ You do not have to write YAML yourself when using the **ESPHome Device Builder**
 
 YAML is built from three ideas: key-value pairs, indentation, and lists.
 
-#### Key and value
+### Key and value
 
 Most lines are a name, a colon, then a value:
 
@@ -21,7 +21,7 @@ name: esphome-starter-kit
 platform: ESP32
 ```
 
-#### Indentation groups things together
+### Indentation groups things together
 
 Indentation shows which settings belong to which item:
 
@@ -33,7 +33,7 @@ wifi:
 
 Here, `ssid` and `password` belong to `wifi`. The two spaces in front are what links them.
 
-#### Lists use dashes
+### Lists use dashes
 
 A dash at the start of a line means "this is one item in a list":
 
@@ -47,7 +47,7 @@ sensor:
 
 That is two sensors, each with its own settings.
 
-#### Comments
+### Comments
 
 A `#` starts a comment. Anything after it on that line is ignored, which makes it useful for leaving yourself notes:
 
@@ -58,7 +58,7 @@ light:
     pin: GPIO8
 ```
 
-#### Quoting strings
+### Quoting strings
 
 Most text values do not need quotes. You only need quotes if your value contains special characters, starts with a number, or could be confused for something else (like the word `yes` or `no`). When in doubt, quotes are always safe:
 

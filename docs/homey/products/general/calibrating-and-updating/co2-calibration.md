@@ -1,4 +1,5 @@
 ---
+title: CO₂ Calibration
 description: "Step by step guide for re-calibrating your SCD40 CO2 sensor"
 ---
 # CO<sub>2</sub> Calibration

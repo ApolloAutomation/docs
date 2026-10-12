@@ -1,4 +1,5 @@
 ---
+title: Using MSR-1 Buzzer
 description: "Trigger the MSR-1 buzzer from Home Assistant developer tools, then reuse the same call in an automation."
 ---
 # Using MSR-1 Buzzer

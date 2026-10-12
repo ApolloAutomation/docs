@@ -10,7 +10,7 @@ description: Step by step guide for putting The PLT-1B In Boot Mode.
 
 ![PLT-1B diagram labeling the reset button on the left and the USB-C port and boot button on the right](/assets/plt-1b-buttons-2.png)
 
-##### Method 1: Boot Button Only
+## Method 1: Boot Button Only
 
 1\. Position the PLT-1B as shown in the image below and locate the small opening to press the boot button.
 
@@ -22,7 +22,7 @@ description: Step by step guide for putting The PLT-1B In Boot Mode.
 
 3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-code/)
 
-##### Method 2: Boot and Reset Buttons
+## Method 2: Boot and Reset Buttons
 
 1\. Plug in the device
 

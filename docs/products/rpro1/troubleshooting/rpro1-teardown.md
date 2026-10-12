@@ -4,7 +4,7 @@ description: Step by step guide for tearing down your R PRO-1 to replace parts, 
 ---
 # Teardown and Reassembly Of R PRO-1
 
-###### Disassembly:
+## Disassembly:
 
 1\. Unplug your R PRO-1 from power and remove the back.
 
@@ -22,7 +22,7 @@ description: Step by step guide for tearing down your R PRO-1 to replace parts, 
 
 ![Fingers pulling the LD2450 mmWave module off its pin header on the R PRO-1 PCB](/assets/r-pro-1-teardown-remove-ld2450.jpg)
 
-###### Reassembly
+## Reassembly
 
 1\. Place the LD2450 on the 8 pin header.
 

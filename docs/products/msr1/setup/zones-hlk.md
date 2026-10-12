@@ -1,4 +1,5 @@
 ---
+title: How To Tune mmWave Using HLKRadarTool
 description: "Tune the MSR-1 mmWave radar over Bluetooth with the HLKRadarTool phone app, covering both auto-calibration and manual gate settings."
 ---
 # How To Tune mmWave Using HLKRadarTool

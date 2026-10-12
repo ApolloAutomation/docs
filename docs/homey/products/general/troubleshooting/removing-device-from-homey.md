@@ -1,4 +1,5 @@
 ---
+title: Removing Devices from Homey
 description: "Remove an Apollo device from Homey through the app or the dashboard."
 ---
 # Removing Devices from Homey

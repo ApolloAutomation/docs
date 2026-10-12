@@ -1,4 +1,5 @@
 ---
+title: TEMP-1 Magnetic Mount
 description: "Step by step guide for installing and using the optional Magnetic Mount with the TEMP-1."
 ---
 # TEMP-1 Magnetic Mount

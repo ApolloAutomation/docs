@@ -6,7 +6,7 @@ description: Tutorial for how to turn your Apollo device into a BLE proxy!
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 
-### Method 1: Switch to \_BLE.yaml firmware
+## Method 1: Switch to \_BLE.yaml firmware
 
 Select your product below to see the full walkthrough.
 
@@ -60,7 +60,7 @@ Select your product below to see the full walkthrough.
 
 ---
 
-### Method 2: Manually enter the BLE proxy yaml
+## Method 2: Manually enter the BLE proxy yaml
 
 This method works the same on every product.
 

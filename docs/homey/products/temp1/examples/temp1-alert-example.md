@@ -1,4 +1,5 @@
 ---
+title: TEMP-1 Alert Outside Temp Range Example
 description: "Step by step guide for alerting outside the set range with the TEMP-1."
 ---
 # TEMP-1 Alert Outside Temp Range Example

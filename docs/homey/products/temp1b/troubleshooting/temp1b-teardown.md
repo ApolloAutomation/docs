@@ -1,4 +1,5 @@
 ---
+title: Teardown Of TEMP-1B
 description: "Step by step guide for tearing down your TEMP-1B to replace parts, clean it, swap cases, etc."
 ---
 # Teardown Of TEMP-1B

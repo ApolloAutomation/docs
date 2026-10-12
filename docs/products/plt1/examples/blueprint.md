@@ -6,7 +6,7 @@ description: >-
 ---
 # Blueprint Setup
 
-### Automatic Import
+## Automatic Import
 
 1\. Click the Import Blueprint button below and then click **Open link**.
 
@@ -37,7 +37,7 @@ description: >-
 
 7\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
 
-### Manual Import
+## Manual Import
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/automation/dashboard" target="_blank" rel="noreferrer nofollow noopener">automations page</a> and click on **Blueprints** in the top right then select **Import Blueprint**.
 
