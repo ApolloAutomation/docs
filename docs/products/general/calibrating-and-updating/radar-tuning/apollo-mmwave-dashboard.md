@@ -22,6 +22,8 @@ The radar splits the space in front of it into distance bands called *gates*. G0
 
 Each gate has a *move threshold* and a *still threshold*. When a gate's energy rises above its threshold, that gate detects a target (the radar's word for a person, or anything else it picks up) and the radar reports presence. A lower threshold makes the gate more sensitive (and more likely to trigger on a fan or a curtain); a higher one makes it less sensitive. To see the live energy of every gate, the radar has to be in **Radar Engineering Mode**, a diagnostic setting that streams the per-gate readings to Home Assistant. With it off you still get presence, but the Gate Energy chart has nothing to show. It's safe to turn on and off whenever you like: it changes what the radar reports, not how it detects. The calibration turns it on for you while it listens.
 
+![The LD2410 Gate Energy chart with Radar Engineering Mode on: a purple move bar and a green still bar for each gate from G0 to G8, and triangles marking each gate's move and still thresholds](/assets/apollo-mmwave-gate-energy-live.png)
+
 !!! tip "How far away is each gate?"
 
     Each gate is one step of the radar's gate size. Unless you changed it, that's 0.75 m (about 2.5 ft). The setting is **Gate Size** on an MSR-1 or MSR-2 and **Distance Resolution** on an R PRO-1, and it's hidden on a new sensor: it only shows on the **Detection Range** card after you enable its entity on the sensor's device page. Multiply a gate's number by 0.75 m to find its far edge: G4 covers 2.25 m to 3 m (about 7.4 ft to 9.8 ft) from the sensor. The **Gates** row on the Distances chart draws each gate along the distance axis, so you can read it off the screen. It starts at G1, because G0 is the reading right at the sensor and has no width. On an R PRO-1, a smaller Distance Resolution (0.5 m) gives finer tuning over a shorter range, and a larger one (0.75 m) reaches farther.
@@ -115,6 +117,10 @@ Open **Apollo mmWave** from your sidebar and, if you have more than one radar, p
 - A help card with your radar's name and a **Start here** checklist of four steps: calibrate, set how far the radar should look, set how long presence stays on, then walk the room and watch the Gate Energy chart. It ends with a **Full tuning guide →** link to the manual tuning guide on this wiki: the MSR-2 guide on an MSR-1 or MSR-2, and the LD2412 section of the R PRO-1 guide on an R PRO-1.
 - **LD2410 Controls**: the **Radar Engineering Mode** switch, plus **Bluetooth**, **Restart Radar**, **Factory Reset Radar**, and **ESP Reboot**. On an R PRO-1 the card also has **Start Dynamic Background Correction** and **Background Correction Running** (see [R PRO-1 and its LD2412 radar](#r-pro-1-and-its-ld2412-radar)). **Restart Radar** restarts the radar chip and **ESP Reboot** restarts the whole sensor; neither changes your settings. Leave **Factory Reset Radar** alone unless Apollo support asks you to press it: it puts the radar chip's settings, every threshold included, back to factory values. If you press it by accident, run **Calibrate with empty room** again.
 - **LD2410 Zone Config** (MSR-1 and MSR-2): **Start Zone 1**, **End Zone 1**, **End Zone 2**, and **End Zone 3** split the radar's range into three distance bands, each with its own occupancy sensor (**Radar Zone 1 Occupancy** to **Radar Zone 3 Occupancy**). These are distances from the sensor, not areas you draw like on the R PRO-1 and MTR-1 zone map. They're optional: leave them as they are unless you want separate sensors for, say, the couch and the far end of the room.
+
+![The Start here help card for an MSR-1, with four numbered steps and a Full tuning guide link](/assets/apollo-mmwave-start-here.png)
+
+![The LD2410 Controls card with the Radar Engineering Mode and Bluetooth switches and the Restart Radar, Factory Reset Radar and ESP Reboot buttons](/assets/apollo-mmwave-controls.png)
 
 #### Second column
 
@@ -300,6 +306,8 @@ If Home Assistant restarted during a calibration, or the radar went offline befo
 ### The chart says to turn on Radar Engineering Mode
 
 If the chart instead reads **Radar unavailable** and **Waiting for the device to reconnect**, the radar is offline and the button is hidden until it comes back: check its power and Wi-Fi. Otherwise, the Gate Energy chart only shows bars while Radar Engineering Mode is on. Press **Turn on Radar Engineering Mode** on the chart itself, or turn on **Radar Engineering Mode** on the **Controls** card. The bars appear within a few seconds, once the radar starts sending energy. If the calibration turned the mode on, it turns it back off when it finishes, so the overlay returning after a calibration is expected.
+
+![The Gate Energy chart while Radar Engineering Mode is off: the plot is dimmed behind the message and the Turn on Radar Engineering Mode button](/assets/apollo-mmwave-gate-energy-engineering-off.png)
 
 !!! tip "Prefer the radar maker's app?"
 

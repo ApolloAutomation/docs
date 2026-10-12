@@ -67,6 +67,8 @@ Both sensors use the LD2410 radar chip, so their tabs look the same, and the tun
 - The **LD2410 Gate Energy** chart is dimmed behind **Turn on Radar Engineering Mode to see gate energy values**, with a **Turn on Radar Engineering Mode** button below. That's expected: the radar only reports gate energy while **Radar Engineering Mode**, a diagnostic setting, is on. You don't need to press the button before calibrating; the calibration turns the mode on for its listen and off again afterward.
 - The other cards hold the radar's settings and live readings: controls, distances, detection range, occupancy, a threshold for each gate (**G0** to **G8**), and an hour of occupancy history. The [tour of the radar tab](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#a-tour-of-the-radar-tab) explains each one.
 
+![The LD2410 Gate Energy chart dimmed, with the message Turn on Radar Engineering Mode to see gate energy values and a Turn on Radar Engineering Mode button](/assets/apollo-mmwave-gate-energy-engineering-off.png)
+
 ### R PRO-1 tabs
 
 The R PRO-1 tab starts with the same tuning cards, titled **LD2412** instead of **LD2410**, and adds a zone map for its second radar. The differences from an MSR-2 tab:
@@ -90,6 +92,8 @@ Your dashboard is working. On an MSR-1, MSR-2, or R PRO-1 tab, the first thing t
 ## Change the integration options
 
 The options let you turn the dashboard off, or choose exactly which sensors get a tab. Open **Settings → Devices & services → Apollo mmWave → Configure** to reach the **Apollo mmWave options** dialog. Changes take effect as soon as you click **Submit**, with no restart, and an open dashboard picks up a new device selection without a reload.
+
+![The Apollo mmWave options dialog with the Auto-create the Apollo mmWave dashboard checkbox ticked and an empty Dashboard devices selector](/assets/apollo-mmwave-options.png)
 
 - **Auto-create the Apollo mmWave dashboard** is on by default. Turn it off to remove the dashboard from your sidebar. The cards stay available for your own dashboards: in the card picker they're listed as **Apollo Radar Auto-Calibrate**, **Apollo Radar Distance Chart**, **Apollo Radar Gate Energy Chart**, and **Apollo Zone Map**. The [Apollo mmWave README](https://github.com/ApolloAutomation/apollo-mmwave-main#use-your-own-dashboards-instead) has the YAML for placing them.
 - **Dashboard devices** is empty by default, which shows every Apollo mmWave device Home Assistant knows about, online or not. Select one or more devices to show exactly those and hide the rest; a selected device keeps its tab even while it's offline. Clear the selection to go back to automatic detection. The picker only lists Apollo MSR-1, MSR-2, MTR-1, and R PRO-1 sensors added through ESPHome.
