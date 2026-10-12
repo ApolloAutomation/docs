@@ -85,9 +85,13 @@ An MTR-1 tab holds one card: the zone map, titled with your sensor's name. It sh
 
 The R PRO-1 zone map works the same way.
 
+![The zone map for an R PRO-1: a grid marked in meters, the radar's view cone, two drawn zones, and the zone buttons under the grid](/assets/apollo-mmwave-zone-map.png)
+
 ### What to do first
 
 Your dashboard is working. On an MSR-1, MSR-2, or R PRO-1 tab, the first thing to do is press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to change a setting or turn anything on first. The [tuning guide](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#calibrate-with-an-empty-room) walks you through it. On an MTR-1 tab, go straight to [drawing zones](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#draw-zones-on-the-r-pro-1-and-mtr-1). The rest of this page covers options, upgrading from an older setup, and troubleshooting, so come back to it when you need it.
+
+![The Auto-calibrate card on an MSR-1, ready to run, with the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
 
 ## Change the integration options
 
@@ -95,7 +99,7 @@ The options let you turn the dashboard off, or choose exactly which sensors get 
 
 ![The Apollo mmWave options dialog with the Auto-create the Apollo mmWave dashboard checkbox ticked and an empty Dashboard devices selector](/assets/apollo-mmwave-options.png)
 
-- **Auto-create the Apollo mmWave dashboard** is on by default. Turn it off to remove the dashboard from your sidebar. The cards stay available for your own dashboards: in the card picker they're listed as **Apollo Radar Auto-Calibrate**, **Apollo Radar Distance Chart**, **Apollo Radar Gate Energy Chart**, and **Apollo Zone Map**. The [Apollo mmWave README](https://github.com/ApolloAutomation/apollo-mmwave-main#use-your-own-dashboards-instead) has the YAML for placing them.
+- **Auto-create the Apollo mmWave dashboard** is on by default. Turn it off to remove the dashboard from your sidebar. The cards stay available for your own dashboards: in the card picker they're listed as **Apollo Radar Auto-Calibrate**, **Apollo Radar Distance Chart**, **Apollo Radar Gate Energy Chart**, and **Apollo Zone Map**. The [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#use-your-own-dashboards-instead) has the YAML for placing them.
 - **Dashboard devices** is empty by default, which shows every Apollo mmWave device Home Assistant knows about, online or not. Select one or more devices to show exactly those and hide the rest; a selected device keeps its tab even while it's offline. Clear the selection to go back to automatic detection. The picker only lists Apollo MSR-1, MSR-2, MTR-1, and R PRO-1 sensors added through ESPHome.
 
 The auto-create option is what decides whether the dashboard exists. If you delete the dashboard under **Settings → Dashboards** while the option is on, it comes back the next time the integration loads. To remove it for good, turn the option off.
