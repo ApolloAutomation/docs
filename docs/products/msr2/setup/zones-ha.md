@@ -6,7 +6,7 @@ description: Tutorial for MSR-2 Home Assistant Zone Configuration.
 
 !!! tip "Prefer a guided dashboard?"
 
-    The Apollo mmWave integration gives your Apollo MSR-2 a tuning dashboard with a Gate Energy chart and a **Calibrate with empty room** button that sets the gate thresholds for you. The [Apollo mmWave dashboard guide](../../../general/calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/) walks you through it as a guided alternative to the manual steps below.
+    The Apollo mmWave integration gives your Apollo MSR-2 a tuning dashboard with a Gate Energy chart and a **Calibrate with empty room** button that sets the gate thresholds for you. The [Apollo mmWave dashboard guide](/products/msr2/setup/apollo-mmwave-dashboard.md) walks you through it as a guided alternative to the manual steps below.
 
 If you're experiencing false triggers, Radar Engineering Mode (REM) lets you monitor the gate energy and adjust the gate thresholds to eliminate them.
 

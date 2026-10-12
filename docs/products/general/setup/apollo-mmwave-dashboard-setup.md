@@ -19,13 +19,13 @@ What each tab holds depends on the radar inside the sensor:
 
 LD2410, LD2412, and LD2450 are the model numbers of the radar chips, and the card titles use them.
 
-If you built the [MSR-2 tuning dashboard](../../../msr2/setup/msr2-tuning-dashboard/) by hand, this replaces it. The integration ships its own cards and updates them along with itself, so Streamline Card, Plotly Graph Card, and the YAML generator are no longer needed.
+If you built the [MSR-2 tuning dashboard](/products/msr2/setup/msr2-tuning-dashboard.md) by hand, this replaces it. The integration ships its own cards and updates them along with itself, so Streamline Card, Plotly Graph Card, and the YAML generator are no longer needed.
 
 !!! note "Before you start"
 
     - You're running Home Assistant 2026.8.1 or newer. **Settings → About** shows your version.
     - HACS 2.0.5 or newer is installed and set up. HACS is a community store for Home Assistant that installs and updates custom integrations like this one. If you don't have it yet, follow the [HACS download guide](https://hacs.xyz/docs/use/download/download/) and then the [initial configuration guide](https://hacs.xyz/docs/configuration/basic). Setup asks you to sign in with a free GitHub account.
-    - Your Apollo sensor is already in Home Assistant through the ESPHome integration. If it isn't, work through [getting started](../getting-started/) first.
+    - Your Apollo sensor is already in Home Assistant through the ESPHome integration. If it isn't, work through [getting started](/products/general/setup/getting-started.md) first.
 
 ## Install Apollo mmWave through HACS
 
@@ -65,7 +65,7 @@ Both sensors use the LD2410 radar chip, so their tabs look the same, and the tun
 - **Auto-calibrate** sits at the top, with the **Calibrate with empty room** and **Preview only** buttons. If your sensor still has its factory thresholds and has never been calibrated, the card adds **These look like factory thresholds. Calibrating sets them for your room.**
 - Under it, a help card names your sensor and gives a four-step **Start here** list.
 - The **LD2410 Gate Energy** chart is dimmed behind **Turn on Radar Engineering Mode to see gate energy values**, with a **Turn on Radar Engineering Mode** button below. That's expected: the radar only reports gate energy while **Radar Engineering Mode**, a diagnostic setting, is on. You don't need to press the button before calibrating; the calibration turns the mode on for its listen and puts it back the way it was afterward.
-- The other cards hold the radar's settings and live readings: controls, distances, detection range, occupancy, a threshold for each gate (**G0** to **G8**), and an hour of occupancy history. The [tour of the radar tab](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#a-tour-of-the-radar-tab) explains each one.
+- The other cards hold the radar's settings and live readings: controls, distances, detection range, occupancy, a threshold for each gate (**G0** to **G8**), and an hour of occupancy history. The [tour of the radar tab](apollo-mmwave-dashboard.md#a-tour-of-the-radar-tab) explains each one.
 
 ![The LD2410 Gate Energy chart dimmed, with the message Turn on Radar Engineering Mode to see gate energy values and a Turn on Radar Engineering Mode button](/assets/apollo-mmwave-gate-energy-engineering-off.png)
 
@@ -89,7 +89,7 @@ The R PRO-1 zone map works the same way.
 
 ### What to do first
 
-Your dashboard is working. On an MSR-1, MSR-2, or R PRO-1 tab, the first thing to do is press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to change a setting or turn anything on first. The [tuning guide](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#calibrate-with-an-empty-room) walks you through it. On an MTR-1 tab, or an R PRO-1 without the LD2412, go straight to [drawing zones](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#draw-zones-on-the-r-pro-1-and-mtr-1). The rest of this page covers options, upgrading from an older setup, and troubleshooting, so come back to it when you need it.
+Your dashboard is working. On an MSR-1, MSR-2, or R PRO-1 tab, the first thing to do is press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to change a setting or turn anything on first. The [tuning guide](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room) walks you through it. On an MTR-1 tab, or an R PRO-1 without the LD2412, go straight to [drawing zones](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1). The rest of this page covers options, upgrading from an older setup, and troubleshooting, so come back to it when you need it.
 
 ![The Auto-calibrate card on an MSR-1, ready to run, with the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
 
@@ -108,7 +108,7 @@ Want to rearrange the cards? Click the pencil icon in the upper right corner of 
 
 ## Upgrade from an older setup
 
-If this is your first Apollo dashboard, skip this section and [calibrate your radar](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/#calibrate-with-an-empty-room). [Troubleshooting](#troubleshooting) is at the end of this page if something didn't load.
+If this is your first Apollo dashboard, skip this section and [calibrate your radar](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room). [Troubleshooting](#troubleshooting) is at the end of this page if something didn't load.
 
 ### From the MSR-2 tuning dashboard
 
@@ -149,7 +149,7 @@ And here's what changes without you doing anything:
 - **Target sensors are found automatically.** The old **Device and Targets** picker is gone; the integration locates each radar's LD2450 target sensors itself.
 - **Zone entities move onto the radar's device page.** Your entity IDs, custom names, and area assignments are kept, and you can rename the entities freely.
 - **Renaming a radar no longer loses its zones**, because zones are stored per device rather than per display name. If you renamed a radar *before* upgrading, its zones are kept but not shown: the card comes up empty and the zone entities read as unavailable. Rename the radar back to its old name and reload the integration to bring them back, or keep the new name and redraw the zones.
-- **Zones from the standalone [Zone Mapper](../../../mtr1/setup/mtr-1-zone-mapper-tool/) integration are imported** when Apollo mmWave has no zone data of its own yet: on a fresh install, or when upgrading from a version before 1.2.0. The import only reads; nothing belonging to Zone Mapper is renamed or removed. Upgrading from 1.2.0 or later, the import is skipped and your existing Apollo mmWave zones are kept. Redraw any Zone Mapper zones you want on the zone map, then remove the old integration once you're happy with them.
+- **Zones from the standalone [Zone Mapper](/products/mtr1/setup/mtr-1-zone-mapper-tool.md) integration are imported** when Apollo mmWave has no zone data of its own yet: on a fresh install, or when upgrading from a version before 1.2.0. The import only reads; nothing belonging to Zone Mapper is renamed or removed. Upgrading from 1.2.0 or later, the import is skipped and your existing Apollo mmWave zones are kept. Redraw any Zone Mapper zones you want on the zone map, then remove the old integration once you're happy with them.
 
 !!! warning "Keep Zone Mapper until your zones have moved over"
 
@@ -200,4 +200,4 @@ The card reads **Apollo mmWave is still loading...** right after a restart while
 
     Your dashboard is up and every sensor has its tab. Now put it to work: the usage guide walks you through calibrating with an empty room, reading the charts, adjusting thresholds by hand, and drawing zones on the zone map.
 
-    [Use the Apollo mmWave dashboard](../../calibrating-and-updating/radar-tuning/apollo-mmwave-dashboard/){ .md-button .md-button--primary }
+    [Use the Apollo mmWave dashboard](apollo-mmwave-dashboard.md){ .md-button .md-button--primary }

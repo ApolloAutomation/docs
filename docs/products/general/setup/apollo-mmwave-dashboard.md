@@ -11,7 +11,7 @@ This guide starts with a calibration, since it's the first thing a new MSR-1, MS
 
 !!! note "Before you start"
 
-    - The Apollo mmWave integration is installed and **Apollo mmWave** is in your Home Assistant sidebar. If not, follow the [Apollo mmWave dashboard setup guide](../../../setup/apollo-mmwave-dashboard-setup/).
+    - The Apollo mmWave integration is installed and **Apollo mmWave** is in your Home Assistant sidebar. If not, follow the [Apollo mmWave dashboard setup guide](apollo-mmwave-dashboard-setup.md).
     - Your radar is online in Home Assistant through ESPHome.
     - Your sensor is mounted where it will stay. A calibration describes the room from the sensor's position, so moving the sensor later means calibrating again.
     - A calibration needs the room empty for about a minute and a half: people and pets out, robot vacuum docked.
@@ -299,7 +299,7 @@ If the button works but the card answers with a line starting **Calibration fail
 - **Home Assistant could not turn Radar Engineering Mode on within 10 s. Is the radar online?** The radar did not respond to the switch.
 - **No gate energy readings arrived within 20 s of turning Radar Engineering Mode on.** Check that the radar is online and that **Radar Engineering Mode** on the Controls card brings the Gate Energy chart to life.
 - **Radar Engineering Mode turned off during the listen. Nothing was changed.** Someone, or an automation, turned it off during the listen. Leave it on and try again.
-- **The radar has not reported 18 of its threshold values yet.** The radar has not sent its thresholds to Home Assistant since it started, which can happen after it has been running for a long time. Press **Read settings from the radar**: the card asks the radar for its settings, shows **Reading settings from the radar...**, and tries again a few seconds later. If the card can't find the radar's query params button, it says **Open the radar's device page, press its Query Params button in the Diagnostic section, wait a few seconds, then try again.** On an R PRO-1 without the [LD2412 addon](../../../../rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1/), this message is expected: there's no radar to report thresholds, so reading the settings can't fix it. Skip the calibration and use the [zone map](#draw-zones-on-the-r-pro-1-and-mtr-1).
+- **The radar has not reported 18 of its threshold values yet.** The radar has not sent its thresholds to Home Assistant since it started, which can happen after it has been running for a long time. Press **Read settings from the radar**: the card asks the radar for its settings, shows **Reading settings from the radar...**, and tries again a few seconds later. If the card can't find the radar's query params button, it says **Open the radar's device page, press its Query Params button in the Diagnostic section, wait a few seconds, then try again.** On an R PRO-1 without the [LD2412 addon](/products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md), this message is expected: there's no radar to report thresholds, so reading the settings can't fix it. Skip the calibration and use the [zone map](#draw-zones-on-the-r-pro-1-and-mtr-1).
 - **Your Home Assistant user is not allowed to control this radar's entities.** Run the calibration from a Home Assistant user that can control the radar.
 
 ### Radar Engineering Mode was left on
@@ -340,4 +340,4 @@ If the chart instead reads **Radar unavailable** and **Waiting for the device to
 
 !!! tip "Prefer the radar maker's app?"
 
-    The HLKRadarTool app connects over the radar's Bluetooth (on an MSR-1, MSR-2, or R PRO-1, that's the **Bluetooth** row on the Controls card) and has its own auto-calibration. Each sensor has its own guide: [MSR-1](../../../../msr1/setup/zones-hlk/), [MSR-2](../../../../msr2/setup/zones-hlk/), [R PRO-1](../../../../rpro1/setup/zones-hlk/), and [MTR-1](../../../../mtr1/setup/zones-hlk/).
+    The HLKRadarTool app connects over the radar's Bluetooth (on an MSR-1, MSR-2, or R PRO-1, that's the **Bluetooth** row on the Controls card) and has its own auto-calibration. Each sensor has its own guide: [MSR-1](/products/msr1/setup/zones-hlk.md), [MSR-2](/products/msr2/setup/zones-hlk.md), [R PRO-1](/products/rpro1/setup/zones-hlk.md), and [MTR-1](/products/mtr1/setup/zones-hlk.md).

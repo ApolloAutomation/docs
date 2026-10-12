@@ -6,7 +6,7 @@ description: Tutorial on creating an MSR-2 tuning dashboard.
 
 !!! tip "There is a newer way to do this"
 
-    The Apollo mmWave integration now builds this dashboard for you automatically, with nothing to paste. It also adds auto-calibration, which sets your gate thresholds from a one-minute listen to the empty room and saves your previous values so you can undo it. Follow the [Apollo mmWave dashboard setup guide](../../../general/setup/apollo-mmwave-dashboard-setup/) to get started. The steps below still work if you'd rather keep the YAML version.
+    The Apollo mmWave integration now builds this dashboard for you automatically, with nothing to paste. It also adds auto-calibration, which sets your gate thresholds from a one-minute listen to the empty room and saves your previous values so you can undo it. Follow the [Apollo mmWave dashboard setup guide](/products/msr2/setup/apollo-mmwave-dashboard-setup.md) to get started. The steps below still work if you'd rather keep the YAML version.
 
 !!! note "Huge shoutout to discord user MirkoP for creating this!"
 
