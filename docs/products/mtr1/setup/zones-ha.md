@@ -4,6 +4,10 @@ description: Tutorial for MTR-1 Home Assistant Zone Configuration.
 ---
 # How To Tune The MTR-1 Using Home Assistant
 
+!!! tip "Prefer a guided dashboard?"
+
+    The Apollo mmWave integration gives your Apollo MTR-1 its own dashboard tab with a zone map where you draw zones over the radar's live targets, with no Plotly card or YAML to set up. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) walks you through it as a guided alternative to the manual steps below.
+
 Below are steps to manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your MTR-1.
 
 1\. Install [HACS](https://hacs.xyz/docs/use/).

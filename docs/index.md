@@ -106,6 +106,7 @@ flowchart LR
 
 ### Radar & Zones
 
+* [Set up the Apollo mmWave dashboard](https://wiki.apolloautomation.com/products/general/setup/apollo-mmwave-dashboard-setup/) and [calibrate your radar or draw zones with it](https://wiki.apolloautomation.com/products/general/setup/apollo-mmwave-dashboard/)
 * [Tuning out false positives with the MSR-2](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on MTR-1 with the HLK app](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)
 * [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) - [Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card)
