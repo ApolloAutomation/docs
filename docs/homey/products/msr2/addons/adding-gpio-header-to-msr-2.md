@@ -28,6 +28,12 @@ description: "Tutorial on adding the GPIO Header to your MSR-2."
 
 ![MSR-2 with the GPIO Header backplate fully seated and the header exposed](/assets/msr-2-gpio-header-pic-4.jpg)
 
+## GPIO Header pinout
+
+With the header installed, these are the pins you can wire to. IO18 and IO19 can't be used while you flash the MSR-2, and IO0 and IO1 carry the I2C bus (SDA and SCL).
+
+![MSR-2 GPIO Header pinout. Left: GND, IO18, IO19, IO4, IO2, IO6. Right: 5V, IO7, SDA IO1, SCL IO0, GND, 3V](/assets/gpio-header-pinout.webp)
+
 !!! tip "Make sure to check out our MSR-2 GPIO Header LED Strip Tutorial!"
 
     Brandon AKA SmartHomeSellout made this neat tutorial for how to connect a short LED strip to your MSR-2
