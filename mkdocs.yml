@@ -271,6 +271,7 @@ nav:
           - Addons:
             - Ethernet Module: products/cast1/addons/ethernet-module.md
           - Examples:
+            - LED Strip: products/cast1/examples/led-strip.md
             - TTS and Announcements: products/cast1/examples/tts-announcements.md
             - WizMote Control: products/cast1/examples/wizmote-blueprint.md
           - Troubleshooting:
