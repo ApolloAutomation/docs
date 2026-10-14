@@ -69,4 +69,8 @@ description: Frequently asked questions about the CAST-1 audio caster.
 
 * The four onboard RGB LEDs are exposed as the **RGB Light** entity. Change the color, use the **Slow Pulse** or **Fast Pulse** effect, or turn them off entirely.
 
+16\. **How do I try beta firmware?**
+
+* Set **Firmware Channel** to **Beta** on your CAST-1's device page, then select **Press** next to **Firmware Update**. See [Switch to Beta Firmware](../general/setup/switch-to-beta-branch.md) for a step-by-step guide.
+
 [Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){ .md-button }
