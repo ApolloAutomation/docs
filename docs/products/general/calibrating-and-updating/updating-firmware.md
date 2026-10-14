@@ -14,7 +14,7 @@ On a battery powered device, start the update and it installs the next time the 
 
 Devices with a **Firmware Channel** select decide which firmware the **Firmware Update** entity offers.
 
-**Stable** is the tested release, and it is what a freshly flashed device uses. **Beta** gets new features and fixes earlier, along with the rough edges that implies. You can switch back at any time, and the next update comes from whichever channel is selected.
+**Stable** is the tested release, and it is what a freshly flashed device uses. **Beta** gets new features and fixes earlier, along with the rough edges that implies. You can switch back at any time, and the next update comes from whichever channel is selected. See [Switch to Beta Firmware](../setup/switch-to-beta-branch.md) for the steps.
 
 ## Updating with ESPHome Device Builder
 
