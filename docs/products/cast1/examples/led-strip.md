@@ -8,7 +8,7 @@ Your CAST-1 has three exposed pins, **5V**, **GND** and **IO1**, that can drive 
 
 !!! note "Firmware 26.10.13.1 or newer"
 
-    LED strip support arrived in firmware 26.10.13.1. If your CAST-1 is on an older version, update it from the **Firmware Update** entity on its device page. Until this release reaches the Stable channel, set **Firmware Channel** to **Beta** first.
+    LED strip support arrived in firmware 26.10.13.1. If your CAST-1 is on an older version, update it from the **Firmware Update** entity on its device page. Until this release reaches the Stable channel, [switch to the Beta channel](../../general/setup/switch-to-beta-branch.md) first.
 
 ## What You'll Need
 

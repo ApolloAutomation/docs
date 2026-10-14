@@ -26,7 +26,7 @@ Once added to Home Assistant you can configure different settings for your CAST-
 
     | Setting | Default | What it does |
     |---------|:-------:|--------------|
-    | **Firmware Channel** | Stable | Which firmware channel the CAST-1 updates from. **Beta** gets new features earlier but is less tested than **Stable**. |
+    | **Firmware Channel** | Stable | Which firmware channel the CAST-1 updates from. **Beta** gets new features earlier but is less tested than **Stable**. See [Switch to Beta Firmware](../../general/setup/switch-to-beta-branch.md). |
     | **Firmware Update** | n/a | Checks for and installs a firmware update from the selected channel, straight from Home Assistant. See [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/) for the full walkthrough. |
     | **Bluetooth Proxy** | Off | Lets the CAST-1 act as a Bluetooth proxy for Home Assistant, extending Bluetooth range to nearby devices. |
     | **WizMote Auto-Discovery** | Off | Turn on to pair a WizMote. While it's on, the next WizMote button press links that remote to your CAST-1. |

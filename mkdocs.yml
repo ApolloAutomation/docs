@@ -226,7 +226,7 @@ nav:
             - Piezo Buzzer: products/general/piezo.md
             - Renaming Devices: products/general/setup/renaming-apollo-devices.md
             - SmartThings Direct Control: products/general/tutorials/smartthings-direct-control.md
-            - Switch to Beta: products/general/setup/switch-to-beta-branch.md
+            - Switch to Beta Firmware: products/general/setup/switch-to-beta-branch.md
             - Updating: products/general/calibrating-and-updating/updating-firmware.md
           - Troubleshooting:
             - Connection Issues: products/general/troubleshooting/connection-issues.md

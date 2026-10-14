@@ -1,8 +1,44 @@
 ---
-title: How To Switch to Beta branch with ESPHome Device Builder
-description: Tutorial for How To Switch to Beta branch with ESPHome Device Builder.
+title: Switch to Beta Firmware
+description: How to switch your Apollo device to beta firmware to try new features early, and how to switch back.
 ---
-# Switching to Beta branch with ESPHome Device Builder
+# Switch to Beta Firmware
+
+Beta firmware gets new features and fixes before they reach Stable. It's a great way to help us test, and you can switch back at any time.
+
+## With the Firmware Channel Setting
+
+This is the easy way. Use it if your device has a **Firmware Channel** setting on its device page, like the CAST-1.
+
+<video src="/assets/firmware-channel-walkthrough.mp4" poster="/assets/firmware-channel-walkthrough-poster.jpg" autoplay loop muted playsinline aria-label="Setting Firmware Channel to Beta, pressing Firmware Update, and the update installing until it shows Up-to-date" style="width: 100%; max-width: 100%; border-radius: 6px;"></video>
+
+1\. Open your device in Home Assistant: go to **Settings** > **Devices & services** > **ESPHome** and select it.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
+2\. Under **Configuration**, set **Firmware Channel** to **Beta**.
+
+![Firmware Channel set to Beta in the Configuration card, outlined in red](/assets/firmware-channel-select-beta.webp)
+
+3\. Select **Press** next to **Firmware Update**.
+
+![The Firmware Update row with its Press button outlined in red](/assets/firmware-channel-press-firmware-update.webp)
+
+4\. Wait about a minute while it installs and restarts. It's done when **Firmware Update** shows **Up-to-date**.
+
+![Firmware Update showing Installing, then Up-to-date](/assets/firmware-channel-installing.gif)
+
+!!! tip "Switching back to Stable"
+
+    Set **Firmware Channel** to **Stable** and select **Press** next to **Firmware Update** again. Your device installs the current stable release, even if it's older than the beta.
+
+!!! note "No Press button?"
+
+    Some devices only have the **Firmware Update** entity. Select it and choose **Install** once the beta version shows up.
+
+## With ESPHome Device Builder
+
+Use this if your device doesn't have a **Firmware Channel** setting, or if you build its firmware yourself.
 
 1\. In Home Assistant open the <a href="http://homeassistant.local:8123/5c53de3b_esphome" target="_blank" rel="noopener"><strong>ESPHome Device Builder</strong></a>.
 
