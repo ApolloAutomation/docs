@@ -278,6 +278,10 @@ nav:
             - CAST-1 Boot Mode: products/cast1/troubleshooting/cast1-boot-mode.md
             - Factory Re-Flash CAST-1: products/cast1/troubleshooting/cast1-reflash.md
             - Reset Wi-Fi Credentials: products/cast1/troubleshooting/cast1-reset-wi-fi-credentials.md
+      - CAST PRO-1:
+          - Introduction: products/castpro1/introduction.md
+          - Examples:
+            - LED Strip: products/castpro1/examples/led-strip.md
       - Dev Boards & Breakouts:
           - DEV-1:
               - Introduction: products/dev1/introduction.md
