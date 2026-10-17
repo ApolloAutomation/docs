@@ -1,274 +1,111 @@
 ---
-title: Automation Examples using a TEMP-1B
-description: "Multiple automation examples with the TEMP-1B."
----
-# Automation Examples using a TEMP-1B
-
-## Freezer Temperature Probe Example
-
-This will guide you through how to set up an automation in Home Assistant using the temperature probe in your freezer! At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
-
-1\. Place the temperature probe into your freezer and then wait for it to normalize around 0°F (-18°C). Make sure your TEMP-1B is in a cool dry place - only the temp probe and wire can withstand the temperatures in the fridge, freezer, etc.
-
-2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30°F so I would want to go slightly above that range. However, <a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">in most freezers, they should NOT reach above 0</a>°<a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">F</a> so you will likely need to input a lower value than me. My minimums are around -20°F.
-
-![Home Assistant history graph of the temperature probe in a freezer, with arrows at a high and a low point](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
-
-*Shown on a TEMP-1; the TEMP-1B graph looks the same.*
-
-3\. We now need to convert F to C since the max and min temps are measured in Celsius. My new values I will input are max probe temp 2°C and a min probe temp of -30°C. Reminder, yours will likely be different values, especially your max probe temp.
-
-![Max Probe Temp set to 2.0 and Min Probe Temp set to -30.0 degrees Celsius in Home Assistant](/assets/temp-1-temp-probe-ex-automation-pic-2.png)
-
-4\. The automation is now ready to be created -
-
-5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
-
-6\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B device such as "temp-1b temperature probe" then in the box labeled "Above" type in the maximum temperature you picked in step 2 above. Enter the value in the unit your Home Assistant shows (°F in this example). Advanced users skip to step 10.
-
-![Home Assistant numeric state trigger for Apollo TEMP-1 Max Probe Temp with the Above field set to 30 highlighted](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
-
-*Shown on a TEMP-1; pick your TEMP-1B entity instead.*
-
-7\. Click Add Action then type in "iPhone" and select your phone. If you do not see your phone or have an Android, try typing in "notify" instead and scrolling down until you find your phone listed.
-
-![Home Assistant Add action dialog searching iphone, with the mobile app notification action highlighted](/assets/temp-1-temp-probe-ex-automation-pic-4.png)
-
-!!! tip "If you still do not see your device as shown in step 7 read this!"
-
-    You need the Home Assistant mobile app installed on your phone for this step to work! If you do not have it, try another notification instead of using your phone such as a TTS notification on your speakers. This could be a fun way to announce that dinner is ready!
-
-8\. Type in your preferred message and if you want, check the box for title and type in your title for the message as well. Mine says: "The temperature probe on your TEMP-1B reached its max temperature and your freezer might be having issues." and "Check the freezer!".
-
-![Home Assistant notification action with the message and the Check the freezer title fields highlighted](/assets/temp-1-temp-probe-ex-automation-pic-5.png)
-
-*Shown on a TEMP-1; the TEMP-1B steps are the same.*
-
-9\. Click save in the bottom right and then give it a Name and optionally a Description and a Category as well. You are done!
-
-![Home Assistant Save dialog with name, description, and category filled in and the Save button highlighted](/assets/temp-1-temp-probe-ex-automation-pic-6.png)
-
-*Shown on a TEMP-1; the TEMP-1B steps are the same.*
-
+title: Automation examples using a TEMP-1B
+description: "Homey flows for the TEMP-1B: a push notification when your freezer gets too warm, and a green light plus one notification when the food probe reaches its target temperature."
 ---
 
-10\. YAML for Advanced Users
+# Automation examples using a TEMP-1B
 
-```yaml
-alias: Freezer Over Max Temp Automation
-description: Warning for the freezer when it reaches the max temperature.
-triggers:
-  - trigger: numeric_state
-    entity_id:
-      - sensor.apollo_temp_1b_temperature_probe
-    above: 30
-conditions: []
-actions:
-  - action: notify.mobile_app_brandons_iphone
-    metadata: {}
-    data:
-      title: Check the freezer!
-      message: >-
-        The temperature probe on your TEMP-1B reached its max temperature and
-        your freezer might be having issues.
-mode: single
-```
+<span class="difficulty lvl-2">Difficulty: Level 2</span>
 
-## Food Probe Example
+<p class="automation-steps-heading">🌱 New here? Try these first:</p>
+<div class="automation-steps">
+  <div class="step">
+    <a class="step-title" href="../temp1b-alert-example/">TEMP-1B alert outside a temperature range</a>
+    <span class="difficulty lvl-1">Difficulty: Level 1</span>
+  </div>
+</div>
 
-This will guide you through how to set up an automation in Home Assistant using the food probe with Chicken(or anything) cooking to 165°F(73.9C). At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
+Your Apollo TEMP-1B sends every probe reading to Homey while it's awake, and each new reading can start a flow. This page has two flows to build in the Homey mobile app: a freezer alert, and a food probe flow that lights the TEMP-1B green and messages you when dinner is almost ready.
 
-1\. Set your Max Probe Temp to 73.9°C. Max Probe Temp must be entered in Celsius, even if you use °F in the automation below.
+!!! note "Before you start"
 
-![Home Assistant Max Probe Temp field set to 73.9 degrees Celsius, highlighted](/assets/temp-1-food-probe-ex-automation-pic-1.png)
+    - Add your TEMP-1B to Homey with the Apollo Automation app. See [Getting started](../../setup/getting-started-temp1/).
+    - Install the Homey mobile app on every phone that should get a notification.
+    - For the freezer flow, plug in the [temperature probe](../../addons/temp-probe/). For the food flow, plug in the [food probe](../../addons/food-probe/).
 
-2\. Place the food probe inside your food once it's on the grill. Make sure your TEMP-1B is in a cool dry place. Only the [food probe and its wire can withstand the heat of a grill, oven, and so on](../addons/food-probe.md).
+## How probe readings reach Homey
 
-3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left. <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
+The Apollo Automation app gives each probe its own reading on the TEMP-1B and its own trigger card. Which one reports depends on the **Select probe** setting: open your TEMP-1B's **Settings** and find it under **Probes and offsets for TEMP-1 and TEMP-1B**.
 
-4\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B device such as "temp-1b food probe" then in the box labeled "Above" type in the temperature you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Enter the value in the unit your Home Assistant shows (°F in this example). Advanced users skip to step 8.
+| Probe | Reading in Homey | Trigger card | How often it reports while awake | Set **Select probe** to |
+| --- | --- | --- | --- | --- |
+| Temperature probe | **Temperature Probe** | **Temperature probe changed** | About once a minute | **Temperature** |
+| Food probe | **Food Probe** | **Food probe changed** | Every few seconds | **Food** |
 
-![Home Assistant numeric state trigger for Apollo TEMP-1 Max Probe Temp with Above set to 165](/assets/temp-1-food-probe-ex-automation-pic-3.png)
+Both cards hand the new reading to the flow as a **Temperature** token, always in °C. The probe that isn't selected sends no readings, so its card never runs.
 
-*Shown on a TEMP-1; pick your TEMP-1B entity instead.*
+The cards run each time the reading changes, not only when it crosses your limit. That's why each flow below checks the **Temperature** token in an **And...** condition, and why the food flow adds a second condition so it alerts you once instead of every few seconds.
 
-5\. Click Add Action then type in "iPhone" and select your phone. If you do not see your phone or have an Android, try typing in "notify" instead and scrolling down until you find your phone listed.
+### Readings and sleep
 
-![Home Assistant Add action dialog searching iphone, with the mobile app notification action highlighted](/assets/temp-1-temp-probe-ex-automation-pic-4.png)
+The TEMP-1B only sends readings while it's awake. With **Prevent sleep** on, it stays connected and reports as shown in the table. With **Prevent sleep** off, it reports once each time it wakes, every 12 hours unless you change **Sleep duration** (in hours). Both settings are under **Battery settings (if battery is present)** in your TEMP-1B's **Settings**, and [Prevent sleep](../../setup/prevent-sleep/) walks you through changing them.
 
-!!! tip "If you still do not see your device as shown in step 5, read this!"
+!!! warning "Change settings while the TEMP-1B is awake"
 
-    You need the Home Assistant mobile app installed on your phone for this step to work! If you do not have it, try another notification instead of using your phone such as a TTS notification on your speakers. This could be a fun way to announce that dinner is ready!
+    Homey can only change the TEMP-1B's settings, including **Select probe** and **Prevent sleep**, while it's awake. If Homey shows **The device is asleep. Settings can be changed when it next wakes up.**, wake the sensor and try again. See [How to wake up your sensor](../../battery-sensors/wake-up-battery-sensor/).
 
-6\. Type in your preferred message and if you want, check the box for title and type in your title for the message as well. Mine says: "The temperature probe on your TEMP-1B reached its max temperature and your food is ready." and "Check the food!".
+## Freezer over its maximum temperature
 
-![Home Assistant notification action with the message and the Check the food title fields highlighted](/assets/temp-1-food-probe-ex-automation-pic-5.png)
+This flow sends a push notification whenever the freezer probe reads warmer than your maximum. It is Flow 1 from [TEMP-1B alert outside a temperature range](../temp1b-alert-example/#flow-1-too-warm), which walks through every tap and shows you how to pick a limit and a **Sleep duration** that suit your freezer.
 
-*Shown on a TEMP-1; the TEMP-1B steps are the same.*
+| Column | Card | Set it to |
+| --- | --- | --- |
+| **When...** | **Temperature probe changed**, from **Apollo Automation** for your TEMP-1B | Nothing to set |
+| **And...** | Homey's built-in condition for comparing numbers | **Temperature** token greater than **-10** |
+| **Then...** | **Send Message to User**, from **Push Notifications** | A message such as **Check the freezer!** with the **Temperature** token, sent to **Everyone** |
 
-7\. Click save in the bottom right and then give it a Name and optionally a Description and a Category as well. You are done!
+Once it's saved, any probe reading above -10 °C sends the alert, with a reminder each time the reading changes until the freezer cools down again.
 
-![Home Assistant Save dialog for the Food over Max Temp Automation with the Save button highlighted](/assets/temp-1-food-probe-ex-automation-pic-6.png)
+## Food probe reaches a target temperature
 
----
+Chicken is safe to eat at 74 °C (165 °F), and it keeps rising a few degrees while it rests. This flow fires at 71 °C (160 °F) so you can take it off the heat in time. When the food probe gets there, the TEMP-1B's light turns green and your phone gets one notification.
 
-8\. YAML for Advanced Users
+The light also stops the alert from repeating. The food probe reports every few seconds, so the flow only runs while the light is off; once the flow has turned it green, later readings leave it alone.
 
-```yaml
-alias: Food Over Max Temp Automation
-description: Warning for the food when it reaches the max temperature.
-triggers:
-  - trigger: numeric_state
-    entity_id:
-      - sensor.apollo_temp_1b_food_probe
-    above: 165
-conditions: []
-actions:
-  - action: notify.mobile_app_brandons_iphone
-    metadata: {}
-    data:
-      title: Check the food!
-      message: >-
-        The temperature probe on your TEMP-1B reached its max temperature and your food is ready.
-mode: single
-```
+!!! warning "Keep the TEMP-1B away from the heat"
 
-## Cook Chicken Example
+    Only the food probe and its cable can go on the grill or in the oven. Set the TEMP-1B itself somewhere cool and dry, such as a side shelf.
 
-This will guide you through adding a button to your dashboard called "Chicken Monitor" and an automation that runs when the button is pressed! This will turn the RGB LED Green when running, message your phone when it starts and when it finishes, plus when the temperature is reached, then turn the RGB LED off. Thanks to Discord user RalphP for this!
+Before you build the flow, wake your TEMP-1B, turn on **Prevent sleep** so it reports for the whole cook, and set **Select probe** to **Food**. Check that the **Food Probe** reading on your TEMP-1B changes when you hold the probe tip in your hand.
 
-1\. Create a new toggle helper called "Chicken Monitor". Please <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noreferrer nofollow noopener">click here</a> for step by step directions on creating a toggle helper.
+1. In the Homey mobile app, tap **Flow** in the bottom bar, then tap **+** at the top right (or **Create a Flow** if you have none yet).
+2. Under **When...**, tap **Add Card**. Open **Apollo Automation** under **Apps**, choose your TEMP-1B, and choose **Food probe changed**.
+3. Under **And...**, tap **Add Card** and add Homey's built-in condition for comparing numbers. Set it to check that the **Temperature** token is greater than **71**.
+4. Under **And...**, tap **Add Card** again. Find your TEMP-1B under **Zones & Devices** and choose its condition for whether it is turned on. Turn on **Invert**, so the card checks that the TEMP-1B is turned off. On a TEMP-1B, turned on and off means its RGB light.
+5. Under **Then...**, tap **Add Card**. Find your TEMP-1B under **Zones & Devices** and choose **Turn on**.
+6. Under **Then...**, tap **Add Card** again. Choose **Set a color** for your TEMP-1B, pick green, and tap the check mark.
+7. Under **Then...**, add **Send Message to User** from **Push Notifications**. Type a message such as **Check the food! The food probe reads**, add the **Temperature** token after it, and pick a **User**.
+8. Tap **Next**. Name the flow, for example **Food is ready**, and tap **Save Flow**.
 
-![Home Assistant Create Toggle dialog named Chicken Monitor with a drumstick icon and the Create button highlighted](/assets/temp-1-cook-chicken-example-pic-1.png)
+The flow now shows in **My Flows**. When the food probe passes 71 °C, your TEMP-1B glows green and your phone gets one notification.
 
-2\. Edit your dashboard, add a button card, select Chicken Monitor, and then save.
+### Reset it for the next cook
 
-![Home Assistant Add to dashboard dialog searching button, showing the Button card](/assets/temp-1-cook-chicken-example-pic-3.png)![Home Assistant Button card configuration with the Chicken Monitor entity and the Save button highlighted](/assets/temp-1-cook-chicken-example-pic-2.png)
+When the food is off the heat, open your TEMP-1B in the Homey app and turn it off, which turns its light off. With the light off, the flow is ready to alert you again. The TEMP-1B also turns its light off whenever it goes to sleep.
 
-3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
+Then turn **Prevent sleep** off again if you want to save battery, and switch the flow off in **My Flows** until your next cook.
 
-4\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "On".
+## Test your flows
 
-![Home Assistant state trigger that fires when Chicken Monitor changes to On](/assets/temp-1-cook-chicken-example-pic-4.png)
+To check the alert without cooking anything, wake your TEMP-1B and tap the play button next to the flow in **My Flows**. It runs its **Then** cards once, and a green check mark confirms it ran: the TEMP-1B lights green and the notification arrives. Turn the TEMP-1B's light off afterwards so the flow is ready for the real thing.
 
-5\. Create a Trigger ID for this called "Chicken Monitor On".
+If a flow doesn't run:
 
-![Trigger options menu in the Home Assistant automation editor with Edit ID selected](/assets/temp-1-cook-chicken-example-pic-5.png)![Home Assistant state trigger with the Trigger ID set to Chicken Monitor On](/assets/temp-1-cook-chicken-example-pic-6-1.png)
+- Check that **Select probe** matches the probe the flow uses: **Temperature** for the freezer flow, **Food** for the food flow.
+- Check that the TEMP-1B is awake, or wait for its next wake-up.
+- Check that your limits are in °C.
+- For the food flow, check that the TEMP-1B's light is off before the food reaches its target.
+- Check that the flow is switched on in **My Flows**.
 
-6\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "Off". Create a Trigger ID for this called "Chicken Monitor Off".
+## Take it further
 
-![Home Assistant state trigger for Chicken Monitor changing to Off with the Trigger ID Chicken Monitor Off](/assets/temp-1-cook-chicken-example-pic-21.png)
+- **More probes**: with the [Multi-Probe Splitter](../../addons/multiple-probes/), the extra probes each get their own trigger card: **Temperature probe 2 changed**, **Temperature probe 3 changed**, and **Temperature probe 4 changed**. Build the freezer flow once per probe to watch a fridge and a freezer from one TEMP-1B.
+- **Other targets**: change the number in the food flow's condition for other dishes, and give each one its own message.
 
-7\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B food probe entity such as "temp-1b food probe" then in the box labeled "Above" type in the temperature you want for your food - In this example we will use 160°F(71.1C) because the Chicken will rest and reach 165°F once removed from the oven/grill.
+## Coming from the Home Assistant cook chicken example
 
-![Home Assistant numeric state trigger for Apollo TEMP-1 Food Probe with Above set to 160](/assets/temp-1-cook-chicken-example-pic-7.png)
+The [Home Assistant version of the cook chicken example](../../../../../products/temp1b/examples/temp1b-automation-examples/#cook-chicken-example), shared by Discord user RalphP, does a few things the Homey flow above handles differently or leaves out:
 
-*Shown on a TEMP-1; pick your TEMP-1B food probe instead.*
-
-8\. Create a Trigger ID for this called "Temp Reached".
-
-![Home Assistant food probe trigger with the Trigger ID set to Temp Reached highlighted](/assets/temp-1-cook-chicken-example-pic-8.png)
-
-*Shown on a TEMP-1; the TEMP-1B steps are the same.*
-
-9\. Click Add Action and search "choose" then select it.
-
-![Home Assistant Add action dialog searching choose, with the Choose action shown](/assets/temp-1-cook-chicken-example-pic-12.png)
-
-10\. Under option 1 select "Add Condition" then search "trigger id" and select Triggered by.
-
-![Home Assistant Add condition dialog searching trigger id, with Triggered by shown](/assets/temp-1-cook-chicken-example-pic-13.png)
-
-11\. Check off the option "Chicken Monitor On" that we created in step 5 above.
-
-![Option 1 condition in the Home Assistant choose action with the Button Pressed trigger checked](/assets/temp-1-cook-chicken-example-pic-14.png)
-
-12\. While still under Option 1 in the choose action: Click Add Action and search "light" then select Light: Turn on.
-
-![Home Assistant Add action dialog searching light, with Light: Turn on highlighted](/assets/temp-1-cook-chicken-example-pic-9.png)
-
-13\. Click choose entity then search for your device such as "TEMP-1B RGB Light".
-
-![Home Assistant entity picker listing Apollo TEMP-1 and TEMP-1B RGB Light entities](/assets/temp-1-cook-chicken-example-pic-10.png)
-
-*Shown on a TEMP-1; pick your TEMP-1B RGB Light instead.*
-
-14\. Click "Advanced Options" and then click the check box for Color name then select a color from the dropdown such as Green.
-
-![Home Assistant Advanced options with Color name checked and Green chosen in the color dropdown](/assets/temp-1-cook-chicken-example-pic-11.png)
-
-15\. While still under Option 1 in the choose action: Click Add Action and search "mobile" and then select your phone in the list.
-
-![Home Assistant Add action dialog searching mobile, with the iPhone notification action highlighted](/assets/temp-1-cook-chicken-example-pic-15.png)
-
-16\. Write in a custom title and or message- the message is required but the title is not.
-
-![Home Assistant notification action with the Chicken Monitoring Started title and message filled in](/assets/temp-1-cook-chicken-example-pic-16.png)
-
-*Shown on a TEMP-1; the TEMP-1B steps are the same.*
-
-17\. This is how option 1 will look when you are done with this part:
-
-![Finished Option 1 in the Home Assistant choose action with the RGB light turn on and notification actions](/assets/temp-1-cook-chicken-example-pic-17-1.png)
-
-*Shown on a TEMP-1; the TEMP-1B steps are the same.*
-
-18\. Click "Add Option" at the bottom then under option 2 select "Add Condition" then search "trigger id" and select Triggered by.
-
-![Home Assistant Add condition dialog searching trigger id, with Triggered by shown](/assets/temp-1-cook-chicken-example-pic-13.png)
-
-19\. Check off the option "Temp Reached" that we created in step 8 above.
-
-![Option 2 condition in Home Assistant with the Temp Reached trigger checked](/assets/temp-1-cook-chicken-example-pic-18-1.png)
-
-20\. While still under Option 2 in the choose action: Click Add Action and search "repeat" then select "Until" in the dropdown.
-
-![Home Assistant Add action dialog searching repeat, with the Repeat action shown](/assets/temp-1-cook-chicken-example-pic-22.png)
-
-21\. Under Until Conditions, select "Add condition" then search "state".
-
-![Home Assistant Add condition dialog searching state, with the State condition shown](/assets/temp-1-cook-chicken-example-pic-25.png)
-
-22\. Type in Chicken Monitor and select it, then click "Off" in the dropdown for the state of the sensor.
-
-![Home Assistant repeat until condition with the Chicken Monitor entity and Off state highlighted](/assets/temp-1-cook-chicken-example-pic-26.png)
-
-23\. Click "Add Action" under the "until" condition we created above. Be very careful to select the correct "Add Action" button as shown below.
-
-![Add Action button inside the repeat until block in Home Assistant, highlighted](/assets/temp-1-cook-chicken-example-pic-27.png)
-
-24\. Search "light toggle" in the search bar shown then select "Choose entity" and select the rgb led for your device
-
-![Home Assistant Add action dialog searching light toggle, with Light: Toggle shown](/assets/temp-1-cook-chicken-example-pic-28.png)
-
-25\. Head down to Add Action under Option 2 and search "mobile" then select your phone as you did above in step 15. Give it a message and a title as shown below.
-
-![Home Assistant notification action titled Time to check the Chicken, below the repeat action](/assets/temp-1-cook-chicken-example-pic-29.png)
-
-26\. Optionally add another action here for speaking out loud on your smart speakers such as Homepods. Click add Action then search "TTS". This requires you to have piper and a few other things already set up.
-
-![Home Assistant Add action dialog searching tts, with the Text-to-speech (TTS): Speak action selected](/assets/temp-1-cook-chicken-example-pic-30.png)![Home Assistant TTS Speak action on piper targeting Homepods with the message The Chicken is almost ready](/assets/temp-1-cook-chicken-example-pic-31.png)
-
-27\. Click "Add Option" (this is now Option 3). We will choose add condition then search "triggered by" and then choose the "Chicken Monitor Off" Trigger ID that we created in step 6.
-
-28\. While still under Option 3 in the choose action: Click Add Action and search "light" then select Light: Turn off.
-
-![Home Assistant Add action dialog searching light.turn, with Light: Turn off selected](/assets/temp-1-cook-chicken-example-pic-19.png)
-
-29\. Click choose entity then search for your device such as "TEMP-1B RGB Light".
-
-![Home Assistant Light Turn off action targeting the Apollo TEMP-1 RGB Light](/assets/temp-1-cook-chicken-example-pic-20.png)
-
-*Shown on a TEMP-1; pick your TEMP-1B RGB Light instead.*
-
-30\. Choose "Add Action" and search mobile like we did above and select your mobile phone. Give it an optional title and message as shown below.
-
-![Home Assistant notification action titled Chicken Monitoring Stopped with its message filled in](/assets/temp-1-cook-chicken-example-pic-33.png)
-
-31\. Click save in the bottom right then give it a name and save
-
-![Home Assistant Save dialog for the TEMP-1 Chicken Automation with the Save button](/assets/temp-1-cook-chicken-example-pic-34.png)
-
-*Shown on a TEMP-1; the TEMP-1B steps are the same.*
-
-32\. You now have one automation which unifies the button you created in the dashboard and alerts you when your chicken is almost done via a phone notification, a blinking green led, and an optional TTS notification to your smart speakers! Thanks again to Discord user RalphP for this example!
+- **A dashboard button to start and stop monitoring.** In Homey, switch the flow on in **My Flows** when you start cooking and off when you're done.
+- **A blinking light when the food is ready.** The TEMP-1B has pulse effects for its light, but the Apollo Automation app has no card for them, so in Homey the light stays solid green.
+- **A spoken announcement on smart speakers.** The Home Assistant version uses text-to-speech. This guide doesn't cover speakers.

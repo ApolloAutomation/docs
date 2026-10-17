@@ -708,8 +708,8 @@ nav:
           - Addons:
             - BTN-1 Addon: homey/products/btn1/addons/btn1-addon.md
           - Examples:
-            - Blueprint: homey/products/btn1/examples/blueprint.md
-            - Example Automation: homey/products/btn1/examples/example-automation.md
+            - Turn a Light On and Off: homey/products/btn1/examples/example-automation.md
+            - Use All Four Buttons: homey/products/btn1/examples/blueprint.md
           - Troubleshooting:
             - BTN-1 Boot Mode: homey/products/btn1/troubleshooting/btn1-boot-mode.md
             - Factory Re-Flash BTN-1: homey/products/btn1/troubleshooting/btn1-reflash.md
@@ -819,7 +819,7 @@ nav:
               - FAQ: homey/products/msr2/faq.md
               - Getting Started: homey/products/general/setup/getting-started-msr2.md
               - Radar Tuning:
-                - Home Assistant: homey/products/msr2/setup/zones-ha.md
+                - Built-in Web Page: homey/products/msr2/setup/zones-ha.md
                 - HLK Radar Tool App: homey/products/msr2/setup/zones-hlk.md
                 - mmWave Tuning Videos: homey/products/msr2/setup/mmwave-videos.md
               - Additional Info:

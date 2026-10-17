@@ -1,8 +1,8 @@
 ---
 title: TEMP-1 FAQ
-description: "Frequently asked questions about the TEMP-1 temperature sensor."
+description: "Answers to common questions about the TEMP-1 temperature sensor with Homey: power, probes, connecting to Homey, the out-of-range alarm, and reporting."
 ---
-# **TEMP-1 FAQ**
+# TEMP-1 FAQ
 
 1\. **How is the TEMP-1 powered?**
 
@@ -20,13 +20,19 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 
 * The TEMP-1 is primarily designed for indoor use, but the optional waterproof DS18B20 probes are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
 
-4\. **How does the TEMP-1 connect to Home Assistant?**
+4\. **How does the TEMP-1 connect to Homey?**
 
-* The TEMP-1 connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
+* The TEMP-1 joins your Wi-Fi, and the Apollo Automation app for Homey talks to it directly over your local network through the ESPHome native API, with no cloud account. Once you add it, its readings show up on the device in Homey, ready for flows and Insights. The app runs on Homey Pro; Homey Cloud isn't supported.
+
+!!! success "Next step: add your TEMP-1 to Homey"
+
+    Connect the sensor to your Wi-Fi through its hotspot, then add it with the Apollo Automation app. The getting started guide walks you through both.
+
+    [Get started with Homey](../setup/getting-started-temp1/){ .md-button .md-button--primary }
 
 5\. **How often does the TEMP-1 send sensor data?**
 
-* The TEMP-1’s reporting frequency is adjustable in ESPHome but most things default to 60 seconds. You can set it for more frequent updates or longer intervals.
+* Most TEMP-1 readings, including the temperature probe, update every 60 seconds by default. The interval is set in the sensor's firmware, and Homey has no setting for it, so changing it means editing the firmware with ESPHome.
 
 6\. **Can I customize the TEMP-1 functionality?**
 
@@ -34,24 +40,29 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 
 7\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like a probe temperature going outside the range you set.
+* The RGB LED is the TEMP-1's light in Homey. Turn it on or off, dim it, or change its color from the device or in a flow.
+* The piezo buzzer sounds an alarm on its own when the probe temperature goes outside a range you set. In the device's **Settings** in the Homey app, set **Minimum probe temperature** and **Maximum probe temperature** (in °C), then check **Alarm when temperature outside configured range**. The alarm watches the probe chosen in **Select probe**. Homey flows can't play the buzzer themselves.
+
+!!! tip "The alarm checkbox is listed under TEMP PRO-1"
+
+    **Alarm when temperature outside configured range** sits in the group **Temperature range and alarm settings for TEMP PRO-1**, but it works on the TEMP-1 too. The minimum and maximum are under **Probes and offsets for TEMP-1 and TEMP-1B**. For a full walkthrough, see [TEMP-1 alert outside a temperature range](../examples/temp1-alert-example/).
 
 8\. **Is the TEMP-1 compatible with other smart home platforms?**
 
-* While designed for Home Assistant via ESPHome, it may be compatible with other platforms using the <a href="https://esphome.io/components/api.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome API</a> or MQTT.
+* Yes. Besides Homey (through the Apollo Automation app), the TEMP-1 works with Home Assistant, and it may work with other platforms through the <a href="https://esphome.io/components/api.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome API</a> or MQTT. See [Supported platforms](../../general/supported-platforms/).
 
 9\. **Do I need coding knowledge to use the TEMP-1?**
 
-* Basic knowledge of Home Assistant and ESPHome is helpful, but most users can utilize it out of the box. For advanced customization, YAML knowledge is recommended.
+* No. Adding the TEMP-1 to Homey and building flows takes no code. YAML knowledge only matters if you want to customize the firmware with ESPHome.
 
 10\. **Can I access data from the TEMP-1 remotely?**
 
-* Yes, you can access sensor data remotely via the Home Assistant dashboard if your setup is configured for remote access.
+* Yes. The TEMP-1 reports to your Homey over your local network, and the Homey app shows its readings wherever you are, as long as your Homey is reachable remotely.
 
 11\. **What’s the difference between the battery and non-battery versions?**
 
 * The TEMP-1B is battery-operated and slightly larger, while the non-battery (NB) version is compact and connects directly to a USB-C power source.
 
-12\. **Can I use multiple TEMP-1 sensors in one Home Assistant setup?**
+12\. **Can I use multiple TEMP-1 sensors with one Homey?**
 
-* Yes, you can add multiple TEMP-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple rooms or spaces.
+* Yes. Add each TEMP-1 with the Apollo Automation app. Each one shows up as its own device in Homey, so you can monitor several rooms or spaces at the same time.

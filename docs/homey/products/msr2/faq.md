@@ -1,7 +1,9 @@
 ---
-title: FAQ
-description: "Frequently asked questions about the MSR-2 mmWave sensor."
+title: MSR-2 FAQ
+description: "Answers to common questions about the MSR-2 mmWave sensor with Homey: sensors, radar tuning, distance zones, flows, and reporting."
 ---
+# MSR-2 FAQ
+
 1\. **What sensors are included in the MSR-2?**
 
 * The MSR-2 includes several built-in sensors such as an mmWave radar for motion detection, a LUX and UV sensor, a temperature and pressure sensor, and an optional CO2 sensor.
@@ -26,21 +28,29 @@ description: "Frequently asked questions about the MSR-2 mmWave sensor."
 
 * The optional SCD-40 CO2 sensor provides accurate carbon dioxide measurements and is useful for tracking air quality in enclosed spaces. This sensor can be used to automate HVAC systems, sending alerts when CO2 levels are too high and suggesting when to ventilate the area.
 
-7\. **How do I connect the MSR-2 to Home Assistant?**
+7\. **How do I connect the MSR-2 to Homey?**
 
-* The MSR-2 connects to your Home Assistant instance through ESPHome using Wi-Fi. Once connected, you can monitor data from all the sensors and set up automations.
+* The MSR-2 joins your Wi-Fi, and the Apollo Automation app for Homey talks to it directly over your local network through the ESPHome native API, with no cloud account. Once you add it, every sensor's readings show up on the device in Homey, ready for flows and Insights. The app runs on Homey Pro; Homey Cloud isn't supported.
 
-8\. **What kind of automations can I create with the MSR-2?**
+!!! success "Next step: add your MSR-2 to Homey"
 
-* You can create a variety of automations, such as turning on lights when motion is detected, adjusting ventilation when CO2 levels rise, or triggering alarms based on motion or environmental changes.
+    Connect the sensor to your Wi-Fi through its hotspot, then add it with the Apollo Automation app. The getting started guide walks you through both.
+
+    [Get started with Homey](../../general/setup/getting-started-msr2/){ .md-button .md-button--primary }
+
+8\. **What kind of flows can I create with the MSR-2?**
+
+* Flows can start from presence, from a distance zone, or from any reading. Turn on lights with **Radar target detected**, react to someone near the sensor with **Radar zone 1 becomes occupied**, adjust ventilation when CO2 levels rise (with the CO2 addon), or trigger alarms based on motion or environmental changes.
 
 9\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like detected motion or high UV exposure.
+* The RGB LED is the MSR-2's light in Homey. Turn it on or off, dim it, or change its color from the device or in a flow, for example to show detected motion or high UV exposure.
+* The piezo buzzer is played through an ESPHome action, and the Apollo Automation app has no flow card for it, so Homey can't sound the buzzer. If you also run Home Assistant, it can: see the [piezo buzzer guide](../../../../products/general/piezo/).
 
 10\. **How do I adjust the sensitivity of the presence detection?**
 
-* Sensitivity adjustments can be made through the <a href="https://wiki.apolloautomation.com/homey/products/msr2/setup/zones-ha/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant Device Page</a> or <a href="https://wiki.apolloautomation.com/homey/products/msr2/setup/zones-hlk/" target="_blank" rel="noreferrer nofollow noopener">HLK Radar Tool app </a>allowing you to fine-tune the radar to avoid false positives or to increase its sensitivity for more precise detections.
+* In the device's **Settings** in the Homey app, the **Radar tuning (MSR-1 / MSR-2)** group has **Radar timeout** (how long presence holds after the last detection), **Radar max move distance gate**, and **Radar max still distance gate**. Each gate is 0.75 m, and gate 8 reaches 6 m, so lowering the max gates stops the radar from reacting to motion farther away.
+* Per-gate sensitivity (the move and still thresholds for each gate) isn't in Homey. Tune it with the [HLK Radar Tool app](../setup/zones-hlk/), or on the sensor's own web page: in a browser, open `http://apollo-msr-2-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the device's name in Homey.
 
 11\. **Does the mmWave sensor detect through walls?**
 
@@ -57,10 +67,11 @@ description: "Frequently asked questions about the MSR-2 mmWave sensor."
 14\. **Can the MSR-2 track the exact location of people in a room?**
 
 * No. The MSR-2 tracks a single target and reports how far it is from the sensor and whether it is moving or still. You can set up to three distance-based zones (Radar Zone 1 to 3) to tell roughly how far away someone is. For X/Y positions of up to three people, use the MTR-1 or R PRO-1.
+* In Homey, set where zone 1 starts and where each zone ends under **Radar zones for MSR-2** in the device's **Settings**, and start flows with cards such as **Radar zone 2 becomes occupied** and **Radar zone 2 becomes clear**.
 
 15\. **How does the temperature and pressure sensor work?**
 
-* The DPS310 sensor provides precise readings of air temperature and pressure, which are especially useful when combined with the optional CO2 sensor to improve air quality monitoring. Keep in mind the heat generated by the ESP32 may require a temperature offset adjustment in the configuration.
+* The DPS310 sensor provides precise readings of air temperature and pressure, which are especially useful when combined with the optional CO2 sensor to improve air quality monitoring. Keep in mind the heat generated by the ESP32 may require a temperature offset. Set it with **DPS temperature offset** under **Calibration offsets** in the device's **Settings** in the Homey app.
 
 16\. **What kind of power supply is required for the MSR-2?**
 
@@ -72,15 +83,16 @@ description: "Frequently asked questions about the MSR-2 mmWave sensor."
 
 18\. **How often does the MSR-2 report sensor data?**
 
-* The reporting frequency can be customized through the ESPHome YAML configuration. You can set it to report data as frequently as every second or reduce the frequency to save energy or bandwidth.
+* The radar reports presence as it changes, and most other readings update every 60 seconds by default. These intervals are set in the firmware, and Homey has no setting for them.
+* The light and UV interval is the one you can change without editing the firmware: set **LTR390 Update Interval** (1 to 300 seconds) on the sensor's own web page (see question 10 for the address). The page hides this setting at first, so click **Show All** to list it. Changing the other intervals means editing the firmware with ESPHome.
 
 19\. **Is the MSR-2 compatible with other smart home platforms?**
 
-* The MSR-2 is specifically designed for Home Assistant via ESPHome. While it could be compatible with other platforms through custom integrations, its primary functionality is optimized for Home Assistant.
+* Yes. Besides Homey (through the Apollo Automation app), the MSR-2 works with Home Assistant and with other platforms that support the <a href="https://esphome.io/components/api.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome API</a>. See [Supported platforms](../../general/supported-platforms/).
 
-20\. **Can I use multiple MSR-2 sensors in my Home Assistant setup?**
+20\. **Can I use multiple MSR-2 sensors with one Homey?**
 
-* Yes, you can have multiple MSR-2 sensors connected to the same Home Assistant instance. Each one shows up as its own device with its own set of entities, so you can monitor and automate different rooms or areas in your home.
+* Yes. Add each MSR-2 with the Apollo Automation app. Each one shows up as its own device in Homey with its own readings and settings, so you can monitor and automate different rooms or areas in your home.
 
 21\. **What accessories are available for the MSR-2?**
 
@@ -92,7 +104,7 @@ description: "Frequently asked questions about the MSR-2 mmWave sensor."
 
 23\. **How do I install and configure the MSR-2?**
 
-* Installation is straightforward, with the MSR-2 powered via USB-C and connecting to Home Assistant through Wi-Fi. Configuration is done in ESPHome, where you can set sensor parameters, adjust automations, and more. We provide detailed documentation and support through our Discord community and GitHub.
+* Power the MSR-2 over USB-C, connect it to your Wi-Fi through its hotspot, and add it in Homey with the Apollo Automation app. Radar tuning, distance zones, and calibration offsets are all in the device's **Settings** in Homey. We provide detailed documentation and support through our Discord community and GitHub.
 
 24\. **What makes the MSR-2 stand out from other motion sensors?**
 

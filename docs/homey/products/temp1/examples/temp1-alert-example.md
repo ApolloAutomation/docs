@@ -1,21 +1,90 @@
 ---
-title: TEMP-1 Alert Outside Temp Range Example
-description: "Step by step guide for alerting outside the set range with the TEMP-1."
+title: TEMP-1 alert outside a temperature range
+description: "Build two Homey flows that send a push notification when the TEMP-1 temperature probe reads warmer or colder than the range you pick, and optionally sound the TEMP-1's own buzzer."
 ---
-# TEMP-1 Alert Outside Temp Range Example
 
-This will guide you through how to set up the built in alarm using the temperature probe in your freezer!
+# TEMP-1 alert outside a temperature range
 
-1\. Place the temperature probe into your freezer (not the entire TEMP-1, just the probe!) and then wait for it to normalize around 0 degrees F aka -18C.
+<span class="difficulty lvl-1">Difficulty: Level 1</span>
 
-2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30F so I would want to go slightly above that range. However, <a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">in most freezers they should NOT reach above 0F</a> so you will likely need to input a lower value than me. My minimums are around -20F.
+Your Apollo TEMP-1 sends its temperature probe reading to Homey about once a minute, and every new reading can start a flow. In this guide you build two flows in the Homey mobile app that keep watch on a freezer: the first sends a push notification when the probe gets too warm, the second when it gets too cold.
 
-![Home Assistant history graph of the TEMP-1 temperature probe, with arrows marking the highs and lows](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
+!!! note "Before you start"
 
-3\. We now need to convert F to C since the max and min temps are measured in Celsius. My new values I will input are max probe temp 2C and a min probe temp of -30C. Reminder, yours will likely be different values, especially your max probe temp.
+    - Add your TEMP-1 to Homey with the Apollo Automation app. See [Getting started](../../setup/getting-started-temp1/).
+    - Plug the [temperature probe](../../addons/temp-probe/) into the TEMP-1. Open your TEMP-1's **Settings** and, under **Probes and offsets for TEMP-1 and TEMP-1B**, set **Select probe** to **Temperature**. With **Food** selected, the temperature probe sends no readings.
+    - Install the Homey mobile app on every phone that should get the alert.
 
-![TEMP-1 Max Probe Temp set to 2.0 and Min Probe Temp set to -30.0 degrees Celsius](/assets/temp-1-temp-probe-ex-automation-pic-2.png)
+## Pick your range
 
-4\. Enable the "Alarm Outside Temp Range" toggle and now your TEMP-1 will play an audible alert with its buzzer when the temp thresholds are reached. If the temp goes under the min or over the max the alarm will go off
+Find out what your freezer normally swings between before you set any limits. That way the alert only fires when something is actually wrong.
 
-![TEMP-1 Controls card with the Alarm Outside Temp Range toggle being switched on](/assets/temp-1-alarm-outside-range-pic-1.png)
+1. Place the probe in the freezer and run its flat cable out through the door seal. Keep the TEMP-1 itself outside the freezer, somewhere cool and dry: only the probe and its cable can handle the cold.
+2. Leave it for a few hours so the reading settles. [Most freezers should sit at or below -18 °C (0 °F)](https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety).
+3. In Homey Insights, look at your TEMP-1's **Temperature Probe** history. Note the highest and lowest readings.
+4. Pick a maximum a little above the highest reading and a minimum a little below the lowest. This guide uses -10 °C and -30 °C; yours will likely differ.
+
+You now have a range that covers normal use and flags a real problem.
+
+!!! tip "Enter your limits in degrees Celsius"
+
+    The **Temperature Probe** reading, and the **Temperature** token the flows below compare, are always in °C. If you think in Fahrenheit, convert first: -10 °C is 14 °F, and -30 °C is -22 °F.
+
+## Flow 1: too warm
+
+This flow runs each time the probe reading changes, checks it against your maximum, and sends the alert when the freezer is too warm.
+
+1. In the Homey mobile app, tap **Flow** in the bottom bar, then tap **+** at the top right (or **Create a Flow** if you have none yet).
+2. Under **When...**, tap **Add Card**. Open **Apollo Automation** under **Apps**, and choose your TEMP-1.
+3. Choose the card **Temperature probe changed**. It hands the new reading to the rest of the flow as the **Temperature** token.
+4. Under **And...**, tap **Add Card** and add Homey's built-in condition for comparing numbers. Set it to check that the **Temperature** token is greater than **-10**.
+5. Under **Then...**, tap **Add Card** and choose **Send Message to User** from **Push Notifications**.
+6. Type a message, for example **Check the freezer! The TEMP-1 probe reads**, and add the **Temperature** token after it.
+7. Tap **User** and pick who gets the alert, such as **Everyone**, then tap the check mark at the top right.
+8. Tap **Next**. Name the flow, for example **Freezer too warm**, and tap **Save Flow**.
+
+The flow now shows in **My Flows**. Any probe reading above -10 °C sends the alert to your phone.
+
+## Flow 2: too cold
+
+The second flow mirrors the first. Build it the same way, with these changes:
+
+1. In the **And...** condition, check that the **Temperature** token is less than **-30**.
+2. Change the message, for example to **The freezer is colder than usual. The TEMP-1 probe reads**, followed by the **Temperature** token.
+3. Name the flow **Freezer too cold** and tap **Save Flow**.
+
+Both ends of your range are now covered: you hear about it whether the freezer warms up or runs too cold.
+
+!!! warning "Expect a reminder with each new reading"
+
+    **Temperature probe changed** runs every time the reading changes, not only when it crosses your limit. While the probe stays out of range, every change sends another notification, up to once a minute, until the temperature is back inside your range. To pause the reminders while you deal with the freezer, switch the flow off in **My Flows**, and switch it back on afterwards.
+
+## Test your flows
+
+To check the alert without warming up your freezer, tap the play button next to a flow in **My Flows**. It runs its **Then** cards once, and a green check mark confirms it ran. Your phone gets the notification.
+
+If a flow doesn't run when the freezer is out of range:
+
+- Check that **Select probe** is set to **Temperature** and that the **Temperature Probe** reading keeps updating.
+- Check that your limits are in °C.
+- Check that both flows are switched on in **My Flows**.
+
+## Optional: sound the TEMP-1's buzzer too
+
+The TEMP-1 can also raise the alarm on its own. When you turn this on, the sensor checks every probe reading against a minimum and maximum you store on the device and sounds a short siren from its buzzer when the reading is outside them. It works alongside your flows, so anyone near the freezer hears it even if their phone is on silent.
+
+1. Open your TEMP-1's **Settings**.
+2. Under **Probes and offsets for TEMP-1 and TEMP-1B**, set **Minimum probe temperature** and **Maximum probe temperature** in °C, for example **-30** and **-10**.
+3. Under **Temperature range and alarm settings for TEMP PRO-1**, turn on **Alarm when temperature outside configured range**. The group is named for the TEMP PRO-1, but this setting also switches the TEMP-1's alarm on and off.
+
+The TEMP-1 now sounds the siren with each probe reading outside your range, until the reading is back inside it.
+
+!!! tip "Use the probe settings, not the TEMP PRO-1 ones"
+
+    **Minimum temperature** and **Maximum temperature** in the TEMP PRO-1 group belong to the TEMP PRO-1 and don't change anything on a TEMP-1. Set the range with **Minimum probe temperature** and **Maximum probe temperature** instead.
+
+!!! success "Next step: know when dinner is ready"
+
+    Your freezer is covered. The automation examples put the food probe to work: a flow that lights your TEMP-1 green and sends you one notification when your food reaches its target temperature.
+
+    [Build the food probe flow](../temp1-automation-examples/#food-probe-reaches-a-target-temperature){ .md-button .md-button--primary }
