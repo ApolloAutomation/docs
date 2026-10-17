@@ -1,10 +1,10 @@
 ---
-title: Renaming Apollo Devices
+title: Renaming Apollo devices
 description: Tutorial for How To Rename Apollo Devices in the ESPHome integration and ESPHome Device Builder!
 ---
-# Renaming Apollo Devices
+# Renaming Apollo devices
 
-## ESPHome Integration - Part 1
+## ESPHome integration - part 1
 
 You rename the device in the ESPHome integration, then update its entity IDs to match.
 
@@ -28,7 +28,7 @@ You rename the device in the ESPHome integration, then update its entity IDs to 
 
 ![Opening each disabled Diagnostic entity on the BTN-1 device page and editing its entity ID](/assets/esphome-integration-manually-rename-disabled-entities-gif.gif)
 
-## ESPHome Integration - Part 2
+## ESPHome integration - part 2
 
 This section only changes the device name shown in the ESPHome integration page. It is safe to skip, but we recommend doing it to keep naming consistent.
 

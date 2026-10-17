@@ -1,5 +1,5 @@
 ---
-title: Adding Apollo Devices To Hidden Networks
+title: Adding Apollo devices to hidden networks
 description: Let your Apollo device join a Wi-Fi network with a hidden SSID by adding fast_connect to its YAML in ESPHome Device Builder and reinstalling the firmware.
 ---
 

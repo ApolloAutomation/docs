@@ -1,5 +1,5 @@
 ---
-title: Apollo Battery Devices - Sensor Connection Check
+title: Apollo battery devices - sensor connection check
 description: Restart your Apollo battery device and read its RGB light to see whether it's connected to Wi-Fi, Homey, or nothing.
 ---
 # Sensor connection check

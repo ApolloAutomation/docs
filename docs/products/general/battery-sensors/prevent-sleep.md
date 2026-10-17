@@ -1,5 +1,5 @@
 ---
-title: Apollo Battery Devices - Prevent Sleep
+title: Apollo battery devices - Prevent Sleep
 description: How to disable Prevent Sleep and allow your Apollo device to sleep!
 ---
 # Prevent Sleep

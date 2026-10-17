@@ -1,5 +1,5 @@
 ---
-title: Apollo SCD40 Breakout Board Introduction
+title: Apollo SCD40 Breakout Board introduction
 description: Apollo SCD40 Breakout Board Introduction
 ---
 ![Apollo SCD40 breakout board on a blue PCB with a loose 5-pin header](/assets/scd40-breakout-board.png)

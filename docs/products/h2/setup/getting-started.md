@@ -1,8 +1,8 @@
 ---
-title: H-2 Getting Started
+title: H-2 getting started
 description: H-2 Getting Started tutorial.
 ---
-# Getting Started
+# Getting started
 
 Follow these steps to power up your ornament, play its pre-loaded songs, and optionally add it to Home Assistant.
 

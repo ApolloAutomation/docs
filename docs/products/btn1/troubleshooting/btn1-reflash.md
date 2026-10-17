@@ -1,8 +1,8 @@
 ---
-title: Reflashing The BTN-1.
+title: Reflashing the BTN-1.
 description: Step by step guide for reflashing The BTN-1.
 ---
-# Reflashing The BTN-1
+# Reflashing the BTN-1
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 

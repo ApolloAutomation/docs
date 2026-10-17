@@ -1,5 +1,5 @@
 ---
-title: H-1 Getting Started
+title: H-1 getting started
 description: H-1 Getting Started tutorial.
 ---
 Follow these steps to power up your ornament, play its pre-loaded songs, and optionally add it to Home Assistant.

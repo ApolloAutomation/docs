@@ -1,8 +1,8 @@
 ---
-title: Piezo Buzzer Wiki
+title: Piezo buzzer wiki
 description: Piezo Buzzer tutorial wiki.
 ---
-# Piezo Buzzer
+# Piezo buzzer
 
 This guide will walk you through using the buzzer on your Apollo Device.
 

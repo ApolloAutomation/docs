@@ -1,5 +1,5 @@
 ---
-title: Factory Re-Flash AIR-1
+title: Factory re-flash AIR-1
 description: "Re-flash your AIR-1 back to its factory firmware from a Chromium-based browser, then set it up in Homey again."
 ---
 # Factory re-flash AIR-1

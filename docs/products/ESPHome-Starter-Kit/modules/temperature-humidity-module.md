@@ -1,11 +1,11 @@
 ---
-title: Adding the Temperature and Humidity Module
+title: Adding the temperature and humidity module
 description: >-
   Wire up the ESPHome Starter Kit Temperature and Humidity module. This is a
   trustworthy aht20 great for accurate temp and humidity measurements in any
   room!
 ---
-# Adding the Temperature and Humidity Module
+# Adding the temperature and humidity module
 
 The temperature and humidity module is your starter kit's first environmental sensor, reading the air around it on whatever interval you choose. By the end of this tutorial you'll have an AHT20F wired to your ESP32-C6, surfaced as two sensors in your YAML, and updating live in the web server.
 
@@ -16,7 +16,7 @@ The temperature and humidity module is your starter kit's first environmental se
     * [Start Here](/products/ESPHome-Starter-Kit/start-here.md) to snap the temperature and humidity module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md) to install ESPHome Device Builder and create your starter kit device.
 
-## Attach Temp and Humidity module
+## Attach temp and humidity module
 
 Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the ESP32-C6 works, top or bottom.
 
@@ -101,7 +101,7 @@ Flash the device so the new temperature and humidity entities go live.
 
 ![ESPHome Device Builder clicking Install, choosing On the network, and compiling the sensor config](../../../assets/esphome-device-builder-install-temp-hum-component.gif)
 
-## Test the Temp and Humidity
+## Test the temp and humidity
 
 With the device back online, the temperature and humidity entities are live on the web server. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and watch it react in real time.
 

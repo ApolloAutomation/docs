@@ -1,8 +1,8 @@
 ---
-title: How to edit your Sensor's CO2 update interval
+title: How to edit your sensor's CO2 update interval
 description: How to edit your Sensor's CO2 update interval
 ---
-# How to edit your Sensor's CO2 update interval
+# How to edit your sensor's CO2 update interval
 
 This guide will show you how to edit the CO<sub>2</sub> updates down to 5 seconds, which is the fastest the SCD40 sensor supports. This is useful for use-cases that benefit from smoother graphs or quicker reaction to CO<sub>2</sub> changes, such as grow rooms, offices, or sleep spaces.
 

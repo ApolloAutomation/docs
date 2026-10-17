@@ -1,8 +1,8 @@
 ---
-title: How to Insert Battery on TEMP-1B
+title: How to insert battery on TEMP-1B
 description: How to Insert Battery on TEMP-1B.
 ---
-# How to Insert the Battery
+# How to insert the battery
 
 !!! info "16340 AKA RC-CR123A and charger required!"
 

@@ -1,5 +1,5 @@
 ---
-title: Air Quality Notification Example
+title: Air quality notification example
 description: Build a Homey Advanced Flow that turns your AIR-1's light red and notifies everyone at home when CO2 climbs past your limit, then turns it green when the air clears.
 ---
 # Air quality notification

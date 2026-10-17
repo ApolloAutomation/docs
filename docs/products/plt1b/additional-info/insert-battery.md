@@ -1,8 +1,8 @@
 ---
-title: How to Insert Battery on PLT-1B
+title: How to insert battery on PLT-1B
 description: How to Insert Battery on PLT-1B.
 ---
-# How to Insert the Battery
+# How to insert the battery
 
 !!! info "18650 battery and charger required!"
 

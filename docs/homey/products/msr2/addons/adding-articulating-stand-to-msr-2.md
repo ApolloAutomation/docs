@@ -1,8 +1,8 @@
 ---
-title: Add the Articulating Stand to your MSR-2
+title: Add the articulating stand to your MSR-2
 description: Tutorial on adding the Articulating Stand addon to your MSR-2.
 ---
-# Adding Articulating Stand To MSR-2
+# Adding articulating stand to MSR-2
 
 You'll swap the back of your sensor for the articulating stand backplate, then seat the stand's ball in its mount.
 

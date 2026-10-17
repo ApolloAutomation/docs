@@ -1,5 +1,5 @@
 ---
-title: Home Assistant Integration
+title: Home Assistant integration
 description: >-
   Guide to integrating Apollo Automation devices with the Home Assistant smart
   home platform.
@@ -63,7 +63,7 @@ description: >-
 
 &nbsp;
 
-### Which mmWave Sensor Should I Buy?
+### Which mmWave sensor should I buy?
 
 ```mermaid
 %%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
@@ -98,13 +98,13 @@ flowchart LR
     click GUIDE href "https://wiki.apolloautomation.com/products/general/choosing-an-mmwave-sensor/" _blank
 ```
 
-### Most Popular
+### Most popular
 
 * [Getting started with your brand new Apollo device](https://wiki.apolloautomation.com/products/general/setup/getting-started/)
 * [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/)
 * [Add Bluetooth Proxy functionality to your Apollo device](https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/)
 
-### Radar & Zones
+### Radar & zones
 
 * [Set up the Apollo mmWave dashboard](https://wiki.apolloautomation.com/products/general/setup/apollo-mmwave-dashboard-setup/) and [calibrate your radar or draw zones with it](https://wiki.apolloautomation.com/products/general/setup/apollo-mmwave-dashboard/)
 * [Tuning out false positives with the MSR-2](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
@@ -112,7 +112,7 @@ flowchart LR
 * [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) ([Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card))
 * [Tune your new R PRO-1 PoE mmWave sensor](https://wiki.apolloautomation.com/products/rpro1/setup/zones-ha/)
 
-### Quick References
+### Quick references
 
 * [Understanding your AIR-1 and the various sensors it exposes](https://wiki.apolloautomation.com/products/air1/setup/general-tips/)
 * [How to re-calibrate your CO<sub>2</sub> sensor](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)

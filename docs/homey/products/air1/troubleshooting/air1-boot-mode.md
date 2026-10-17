@@ -1,5 +1,5 @@
 ---
-title: AIR-1 Boot Mode
+title: AIR-1 boot mode
 description: "Step by step guide for putting The AIR-1 In Boot Mode."
 ---
 
@@ -7,7 +7,7 @@ description: "Step by step guide for putting The AIR-1 In Boot Mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-## Method 1: Boot Button Only
+## Method 1: Boot button only
 
 You'll hold the boot button while you plug in the USB-C cable, so the device starts in boot mode.
 
@@ -19,7 +19,7 @@ You'll hold the boot button while you plug in the USB-C cable, so the device sta
 
 3\. Continue with <a href="https://wiki.apolloautomation.com/homey/products/air1/troubleshooting/air1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
-## Method 2: Boot and Reset Buttons
+## Method 2: Boot and reset buttons
 
 You'll use the boot and reset buttons together to put the device into boot mode while it's plugged into your computer.
 

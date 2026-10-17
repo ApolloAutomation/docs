@@ -1,14 +1,14 @@
 ---
-title: Putting The MSR-1 In Boot Mode
+title: Putting the MSR-1 in boot mode
 description: "Put the MSR-1 into boot mode using the boot button, which is needed before reflashing its firmware."
 ---
-# Putting The MSR-1 In Boot Mode
+# Putting the MSR-1 in boot mode
 
 !!! info "This will cover how to put the MSR-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-## Method 1: Boot Button Only
+## Method 1: Boot button only
 
 You'll hold the boot button while you plug in the USB-C cable.
 
@@ -20,7 +20,7 @@ You'll hold the boot button while you plug in the USB-C cable.
 
 3\. Continue with <a href="https://wiki.apolloautomation.com/products/msr1/troubleshooting/msr1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
-## Method 2: Boot and Reset Buttons
+## Method 2: Boot and reset buttons
 
 You'll use the boot and reset buttons together while the device is plugged into your computer.
 

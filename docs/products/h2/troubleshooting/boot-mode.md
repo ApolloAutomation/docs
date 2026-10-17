@@ -1,12 +1,12 @@
 ---
-title: Putting The H-2 In Boot Mode
+title: Putting the H-2 in boot mode
 description: Step by step guide for putting The H-2 In Boot Mode.
 ---
 !!! info "This will cover how to put the H-2 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-## **Boot Button Only**
+## **Boot button only**
 
 You can enter boot mode using only the boot button.
 
@@ -26,7 +26,7 @@ You can enter boot mode using only the boot button.
 
 [Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/h2/troubleshooting/reflash/){  .md-button .md-button--primary }
 
-## **Boot and Reset Buttons**
+## **Boot and reset buttons**
 
 You can also enter boot mode with the boot and reset buttons while the device is plugged in.
 

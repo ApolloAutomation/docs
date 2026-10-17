@@ -1,10 +1,10 @@
 ---
-title: Play a Tune from Home Assistant
+title: Play a tune from Home Assistant
 description: >-
   Build an ESPHome API action in Device Builder so Home Assistant can play tunes
   on the LED & Buzzer module, then call it from Developer Tools or an automation.
 ---
-# Play a Tune from Home Assistant
+# Play a tune from Home Assistant
 
 <p class="automation-steps-heading">🌱 New here? Try these first:</p>
 <div class="automation-steps">

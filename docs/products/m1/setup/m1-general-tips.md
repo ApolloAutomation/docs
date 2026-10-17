@@ -1,8 +1,8 @@
 ---
-title: M-1 LED Matrix General Tips
+title: M-1 LED Matrix general tips
 description: Multiple helpful tips to use your M-1 LED Matrix to the fullest!
 ---
-# General Tips
+# General tips
 
 === "WLED"
 

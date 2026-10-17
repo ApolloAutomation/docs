@@ -1,8 +1,8 @@
 ---
-title: Bluetooth Proxy Setup
+title: Bluetooth proxy setup
 description: Tutorial for how to turn your Apollo device into a BLE proxy!
 ---
-# Bluetooth Proxy
+# Bluetooth proxy
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 
@@ -60,7 +60,7 @@ Select your product below to see the full walkthrough.
 
 ---
 
-## Method 2: Manually enter the BLE proxy yaml
+## Method 2: Manually enter the BLE proxy YAML
 
 This method works the same on every product.
 

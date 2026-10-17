@@ -1,8 +1,8 @@
 ---
-title: adding GPIO Header Addon to MTR-1
+title: Adding GPIO header addon to MTR-1
 description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1.
 ---
-# Adding GPIO Header To MTR-1
+# Adding GPIO header to MTR-1
 
 You'll seat the GPIO Header addon on the mezzanine connector on the back of your sensor, then fit the new back that came with it.
 

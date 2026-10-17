@@ -1,8 +1,8 @@
 ---
-title: Putting The LED-1 In Boot Mode
+title: Putting the LED-1 in boot mode
 description: Step by step guide for putting The LED-1 In Boot Mode.
 ---
-# Putting The LED-1 In Boot Mode
+# Putting the LED-1 in boot mode
 
 !!! info "This will cover how to put the LED-1 into boot mode."
 

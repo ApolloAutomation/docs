@@ -1,8 +1,8 @@
 ---
-title: How To Replace the LED-1 10 A Fuse
+title: How to replace the LED-1 10 A fuse
 description: Tutorial showing how to replace the 10 A Fuse on the LED-1.
 ---
-# How to replace the 10 A Fuse
+# How to replace the 10 A fuse
 
 Follow these steps to open the case, swap in a new fuse, and close the case again.
 

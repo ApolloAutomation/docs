@@ -1,8 +1,8 @@
 ---
-title: MSR-2 Tuning Dashboard Setup
+title: MSR-2 tuning dashboard setup
 description: Tutorial on creating an MSR-2 tuning dashboard.
 ---
-# MSR-2 Tuning Dashboard
+# MSR-2 tuning dashboard
 
 !!! tip "There is a newer way to do this"
 

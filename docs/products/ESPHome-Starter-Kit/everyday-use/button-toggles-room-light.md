@@ -1,10 +1,10 @@
 ---
-title: Button Toggles a Room Light
+title: Button toggles a room light
 description: >-
   Build a Home Assistant automation that uses your ESPHome Starter Kit's
   button to toggle any light in your home.
 ---
-# Button Toggles a Room Light
+# Button toggles a room light
 
 <span class="difficulty lvl-1">Difficulty: Level 1</span>
 

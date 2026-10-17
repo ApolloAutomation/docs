@@ -1,10 +1,10 @@
 ---
-title: PUMP-1 Teardown
+title: PUMP-1 teardown
 description: >-
   Step by step guide for tearing down your PUMP-1 to replace parts, clean it,
   swap cases, etc.
 ---
-# Teardown and Reassembly Of PUMP-1
+# Teardown and reassembly of PUMP-1
 
 ## Disassembly
 

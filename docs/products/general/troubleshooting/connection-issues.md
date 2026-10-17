@@ -1,5 +1,5 @@
 ---
-title: Connection Issues
+title: Connection issues
 description: Checks to work through when your Apollo device drops offline or won't stay connected to Wi-Fi, including how to turn off Wi-Fi power save mode.
 ---
 # Connection issues

@@ -1,5 +1,5 @@
 ---
-title: Bluetooth Tracker Setup
+title: Bluetooth tracker setup
 description: Turn your Apollo device into a Bluetooth (BLE) tracker for your Apple Watch or Android phone in Home Assistant, with an iPhone alternative and an active-scanning Bluetooth proxy setup.
 ---
 # Bluetooth tracking

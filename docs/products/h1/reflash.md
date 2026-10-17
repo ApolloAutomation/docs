@@ -1,5 +1,5 @@
 ---
-title: Factory Re-Flash H-1
+title: Factory re-flash H-1
 description: Step-by-step guide to re-flashing the H-1 back to its factory firmware from Chrome or Edge.
 ---
 # Factory re-flash H-1

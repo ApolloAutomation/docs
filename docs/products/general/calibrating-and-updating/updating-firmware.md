@@ -1,8 +1,8 @@
 ---
-title: Updating Firmware Guide
+title: Updating firmware guide
 description: Step by step guide on how to update the firmware on your Apollo device!
 ---
-# Updating Firmware
+# Updating firmware
 
 ## From Home Assistant
 

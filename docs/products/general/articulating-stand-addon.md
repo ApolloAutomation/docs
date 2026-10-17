@@ -1,8 +1,8 @@
 ---
-title: Articulating Stand Addon Tutorial
+title: Articulating stand addon tutorial
 description: QR Code from the Articulating stand for both MSR-2 and MTR-1 points here
 ---
-# Articulating Stand Addon
+# Articulating stand addon
 
 We have the Articulating Stand Addon for both the MSR-2 and the MTR-1. Choose your specific Apollo sensor below to head to that wiki article!
 

@@ -30,7 +30,7 @@ The card runs your flow every time the BTN-1 reports that button and press type.
 
 The BTN-1 reports a press up to half a second after you let go, once it knows no further click is coming. **Hold** fires when you release the button, not while you are still holding it.
 
-## Flow 1: turn the light on with a click
+## Flow 1: Turn the light on with a click
 
 This flow has one trigger and two actions: it turns your light on and sets Button 1's LED to a color, so the button itself shows that the light is on.
 
@@ -49,7 +49,7 @@ The flow now shows in **My Flows**. Click Button 1 and your light turns on, with
 
     The Apollo Automation app offers **Button pressed**, **Set button light color**, and **Turn off button light** on every Apollo device you have added, but only a BTN-1 has the buttons and LEDs they work with. If a flow never runs, check that each of its Apollo cards points at your BTN-1.
 
-## Flow 2: turn the light off with a hold
+## Flow 2: Turn the light off with a hold
 
 The second flow mirrors the first. Build it the same way, with these changes:
 

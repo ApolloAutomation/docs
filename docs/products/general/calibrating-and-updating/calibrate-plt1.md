@@ -1,5 +1,5 @@
 ---
-title: Calibrating PLT Soil Moisture
+title: Calibrating PLT soil moisture
 description: Step by step guide for calibrating the PLT soil moisture sensor.
 ---
 This guide will take you through calibrating your PLT-1's moisture sensor. The sensors come with a default calibration, so this method is only necessary if you want to make your own adjustments.

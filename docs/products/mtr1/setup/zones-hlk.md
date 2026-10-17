@@ -1,10 +1,10 @@
 ---
-title: MTR-1 HLKRadarTool app Zone Configuration
+title: MTR-1 HLKRadarTool app zone configuration
 description: Tutorial for MTR-1 HLKRadarTool app Zone Configuration.
 ---
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/-w_GFURyx-A?si=SSRovumabCvHeXwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
-## Configure Zones
+## Configure zones
 
 !!! note "Ensure that the LD2450 firmware version is V2.02.23090617 or later for proper integration functionality. "
 
@@ -68,7 +68,7 @@ With the app installed, you'll turn on the radar's Bluetooth, connect to it from
     * The Plotly chart will still render the rectangles even if the X1/X2 and Y1/Y2 values are reversed.
     * The zones cannot overlap.
 
-## Dashboard Card Setup
+## Dashboard card setup
 
 Next, you'll add a Plotly card to a Home Assistant dashboard so you can see your sensor's targets and zones.
 

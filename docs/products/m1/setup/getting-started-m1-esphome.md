@@ -1,8 +1,8 @@
 ---
-title: Getting Started (ESPHome)
+title: Getting started (ESPHome)
 description: Getting started with your new M-1 running the hub75-studio ESPHome firmware
 ---
-# Getting Started (ESPHome)
+# Getting started (ESPHome)
 
 !!! tip "Running WLED instead?"
 
@@ -10,7 +10,7 @@ description: Getting started with your new M-1 running the hub75-studio ESPHome 
 
 This guide walks you through replacing the stock WLED firmware with [hub75-studio](https://github.com/pavlov-net/hub75-studio), an ESPHome firmware tailored for the M-1, and getting it onto your home network and into Home Assistant.
 
-## Attach M-1 LED Controller
+## Attach M-1 LED controller
 
 Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damage in shipping. Gently attach the controller to the back of the M-1 LED Matrix panel as shown in the GIF below.
 
@@ -60,7 +60,7 @@ Head to the Integrations page in Home Assistant (**Settings → Devices & servic
 
 ![Home Assistant ESPHome integration: adding the discovered Apollo M-1 and finishing setup](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
 
-## Optional Features
+## Optional features
 
 ### Adopt into ESPHome Device Builder
 
@@ -126,7 +126,7 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 [Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){    .md-button .md-button--primary }
 
-### WizMote Remote
+### WizMote remote
 
 The M-1 ESPHome firmware has built-in support for the <a href="https://www.amazon.com/WiZ-Remote-Compatible-Lights-Assistant/dp/B091TGDS6F" target="_blank" rel="noreferrer nofollow noopener">WiZ WizMote</a> remote, so you can change pages, dim the panel, and toggle it on/off without your phone.
 

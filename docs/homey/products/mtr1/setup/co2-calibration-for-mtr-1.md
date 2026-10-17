@@ -1,7 +1,7 @@
 ---
-title: CO2 Calibration For MTR-1
+title: CO2 calibration for MTR-1
 description: "CO2 calibration for the MTR-1, covered by the general calibration guide."
 ---
-# CO2 Calibration For MTR-1
+# CO2 calibration for MTR-1
 
-## Please refer to the [General CO2 Calibration](https://wiki.apolloautomation.com/homey/products/general/calibrating-and-updating/co2-calibration/) article
+## Please refer to the [general CO2 calibration](https://wiki.apolloautomation.com/homey/products/general/calibrating-and-updating/co2-calibration/) article

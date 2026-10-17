@@ -1,10 +1,10 @@
 ---
-title: Motion-Activated Room Lights
+title: Motion-activated room lights
 description: >-
   Use your ESPHome Starter Kit's motion sensor to turn the real lights in a room
   on and off through a Home Assistant automation.
 ---
-# Motion-Activated Room Lights
+# Motion-activated room lights
 
 This is where the kit stops being a learning toy and starts earning its keep. Your Starter Kit's motion sensor reports into Home Assistant, so it can switch on the actual lights in a room, a smart bulb, a wall switch, a lamp on a plug, then switch them back off once the room goes quiet.
 

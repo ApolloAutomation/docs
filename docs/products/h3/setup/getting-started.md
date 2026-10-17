@@ -1,8 +1,8 @@
 ---
-title: H-3 Getting Started
+title: H-3 getting started
 description: "H-3 Getting Started tutorial."
 ---
-# Getting Started
+# Getting started
 
 Follow these steps to power up your ornament, play its holiday songs, and optionally add it to Home Assistant.
 

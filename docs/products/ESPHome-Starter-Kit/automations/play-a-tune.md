@@ -1,10 +1,10 @@
 ---
-title: Play a Tune with the Button
+title: Play a tune with the button
 description: >-
   Build a second ESPHome Device Builder automation: pressing the Button module
   plays an RTTTL tune on the LED & Buzzer module, plus where to find more tunes.
 ---
-# Play a Tune with the Button
+# Play a tune with the button
 
 <span class="difficulty lvl-1">Difficulty: Level 1</span>
 

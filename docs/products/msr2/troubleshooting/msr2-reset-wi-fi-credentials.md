@@ -1,8 +1,8 @@
 ---
-title: Reset Wi-Fi Credentials
+title: Reset Wi-Fi credentials
 description: Step by step guide for resetting the Wi-Fi Credentials on your MSR-2.
 ---
-# Reset Wi-Fi Credentials on your MSR-2
+# Reset Wi-Fi credentials on your MSR-2
 
 You'll reset the device's Wi-Fi credentials, then connect it to your new Wi-Fi network through its hotspot.
 

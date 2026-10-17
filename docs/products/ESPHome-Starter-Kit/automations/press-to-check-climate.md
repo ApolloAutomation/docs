@@ -1,11 +1,11 @@
 ---
-title: Press to Check Climate
+title: Press to check climate
 description: >-
   ESPHome Device Builder automation: one button click flashes the Onboard RGB
   LED for the current temperature band, then for humidity. Available in a
   hardcoded-thresholds version and an editable / unit-toggle version.
 ---
-# Press to Check Climate
+# Press to check climate
 
 <span class="difficulty lvl-3">Difficulty: Level 3</span>
 

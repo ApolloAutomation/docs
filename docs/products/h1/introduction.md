@@ -1,5 +1,5 @@
 ---
-title: H-1 Introduction
+title: H-1 introduction
 description: H-1 Introduction.
 ---
 ![Apollo H-1 tree-shaped ornament with red and green LEDs lit and a Made in USA badge](/assets/h-1-usa.png)

@@ -1,8 +1,8 @@
 ---
-title: First Steps with the ESPHome Starter Kit
+title: First steps with the ESPHome Starter Kit
 description: Step by step guide for getting started with the ESPHome Starter Kit
 ---
-# ESPHome Starter Kit - First Steps
+# ESPHome Starter Kit - First steps
 
 This guide walks you through installing the ESPHome Device Builder app, and making your first ESPHome YAML configuration from scratch.
 
@@ -169,7 +169,7 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 ![Selecting the ESPHome Starter Kit board, naming the device, and entering Wi-Fi details](../../../assets/device-builder-select-kit-name-kit-add-wifi.gif)
 
-## Configure Components
+## Configure components
 
 !!! tip "We're now ready to add your first component and turn your project into a smart device!"
 
@@ -187,7 +187,7 @@ The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Usef
 
 ![ESPHome Device Builder Add component dialog adding the Onboard RGB LED with default settings](../../../assets/device-builder-add-onboard-rgb-led-component.gif)
 
-## Boot Mode
+## Boot mode
 
 The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again.
 
@@ -205,7 +205,7 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 3\. Your device is now in boot mode. The ESP32-C6 will now stay in bootloader mode until you flash it.
 
-## Installing Software
+## Installing software
 
 Before we continue, confirm that you installed the ESPHome Device Builder, configured your components, and put your device in boot mode.
 

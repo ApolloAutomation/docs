@@ -1,5 +1,5 @@
 ---
-title: Adding Apollo Devices To Hidden Networks
+title: Adding Apollo devices to hidden networks
 description: Turn on fast_connect in ESPHome Device Builder so your Apollo device can connect to a Wi-Fi network with a hidden SSID.
 ---
 # Adding Apollo devices to hidden networks

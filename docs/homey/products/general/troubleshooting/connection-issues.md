@@ -1,5 +1,5 @@
 ---
-title: Connection Issues
+title: Connection issues
 description: Checks to work through when your Apollo device won't stay connected or Homey can't find it.
 ---
 # Common connection issues

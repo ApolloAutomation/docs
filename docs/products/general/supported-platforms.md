@@ -1,5 +1,5 @@
 ---
-title: Supported Platforms
+title: Supported platforms
 description: A list of platforms compatible with Apollo Automation products.
 ---
 ![Apollo Automation logo in white on a blue background](/assets/apollo-logo.png)

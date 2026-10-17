@@ -1,10 +1,10 @@
 ---
-title: SEN65 Air Quality Sensor
+title: SEN65 air quality sensor
 description: >-
   Add a Sensirion SEN65 air quality sensor to your ESPHome Starter Kit Breakout
   Module, then learn what each reading means and what to automate on.
 ---
-# SEN65 Air Quality Sensor
+# SEN65 air quality sensor
 
 The <a href="https://sensirion.com/products/catalog/SEN65" target="_blank" rel="noreferrer nofollow noopener">Sensirion SEN65</a> is an all-in-one air quality sensor. One module measures particulate matter, temperature, humidity, volatile organic compounds (VOCs), and nitrogen oxides (NOx), and it plugs straight into the Breakout Module's SEN6x port. Grab one from the <a href="https://apolloautomation.com/products/sen65-particulate-matter-sensor" target="_blank" rel="noreferrer nofollow noopener">Apollo store</a>.
 
@@ -165,7 +165,7 @@ Both are relative scales that behave like your nose, comparing the current air t
 1.  Run a fan or send an alert when the VOC Index rises above 100. It reacts to the change in your space rather than an absolute number.
 2.  Kick on the range hood or a fan when the NOx Index climbs past 1, handy while cooking on gas.
 
-## Temperature and Humidity Offsets
+## Temperature and humidity offsets
 
 If the SEN65's temperature or humidity doesn't agree with another thermometer or hygrometer in the room, the sensor is probably fine. Sensirion calibrates every unit at the factory to a typical accuracy of <a href="https://sensirion.com/products/catalog/SEN65" target="_blank" rel="noreferrer nofollow noopener">±0.45 °C and ±4.5 %RH</a>, but it samples the air right next to a powered ESP32, and that heat pushes the temperature reading up a little. Humidity then reads low, because relative humidity drops as air warms. (1) Every install runs a slightly different amount warm, so Sensirion leaves this correction to the device builder, and in ESPHome that's a one-line offset in your YAML.
 { .annotate }

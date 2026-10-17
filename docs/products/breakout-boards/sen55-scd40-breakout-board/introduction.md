@@ -1,5 +1,5 @@
 ---
-title: Apollo SEN55 and SCD40 Breakout Board Introduction
+title: Apollo SEN55 and SCD40 Breakout Board introduction
 description: Apollo SEN55 and SCD40 Breakout Board Introduction
 ---
 ![Apollo SEN55 and SCD40 breakout board wired to a Sensirion SEN55 sensor, with a 5-pin header](/assets/sen55-sdc40-breakout-board.png)

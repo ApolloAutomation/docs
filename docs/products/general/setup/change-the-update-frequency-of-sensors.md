@@ -1,9 +1,9 @@
 ---
-title: How To Change The Update Frequency Of Sensors
+title: How to change the update frequency of sensors
 description: Tutorial for How To Change The Update Frequency Of Sensors.
 ---
 
-# How To Change The Update Frequency Of Sensors
+# How to change the update frequency of sensors
 
 You change how often a sensor updates by adding a few lines of YAML to your device in ESPHome Builder, then installing the update.
 

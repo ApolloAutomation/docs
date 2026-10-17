@@ -1,8 +1,8 @@
 ---
-title: How To Tune mmWave Using HLKRadarTool
+title: How to tune mmWave using HLKRadarTool
 description: "Tutorial for R PRO-1 HLKRadarTool app Zone Configuration."
 ---
-# How To Tune mmWave Using HLKRadarTool
+# How to tune mmWave using HLKRadarTool
 
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/-w_GFURyx-A?si=SSRovumabCvHeXwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
@@ -18,7 +18,7 @@ description: "Tutorial for R PRO-1 HLKRadarTool app Zone Configuration."
 
     If the `.local` address doesn't load, use your router to find the device's IP address and use that instead.
 
-## LD2450 Configuration
+## LD2450 configuration
 
 !!! note "Ensure that the LD2450 firmware version is V2.02.23090617 or later for proper integration functionality. "
 
@@ -75,7 +75,7 @@ Follow these steps to turn on the LD2450's Bluetooth and set up its zones in the
     * The X axis is where you can get tripped up, especially when both values are negative: -3456 is less than -2345.
     * The zones cannot overlap.
 
-## LD2412 Configuration
+## LD2412 configuration
 
 The LD2412 works differently than the LD2450. Instead of drawing rectangular zones on a 2D map, you work with **distance gates**. Each gate covers 0.75m of radial distance from the sensor, so Gate 1 is 0-0.75m away, Gate 2 is 0.75-1.5m, and so on out to Gate 12 at 8.25-9m (see the gate table on the General Tips page). You define what the sensor reacts to by setting a sensitivity threshold at each gate distance.
 

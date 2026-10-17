@@ -1,14 +1,14 @@
 ---
-title: Putting The BTN-1 In Boot Mode
+title: Putting the BTN-1 in boot mode
 description: Step by step guide for putting The BTN-1 In Boot Mode.
 ---
-# Putting The BTN-1 In Boot Mode
+# Putting the BTN-1 in boot mode
 
 !!! info "This will cover how to put the BTN-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-## Method 1: Boot Button Only
+## Method 1: Boot button only
 
 This method puts your device into boot mode using only the boot button.
 
@@ -26,7 +26,7 @@ This method puts your device into boot mode using only the boot button.
 
 [Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/btn1/troubleshooting/btn1-reflash/){       .md-button .md-button--primary }
 
-## Method 2: Boot and Reset Buttons
+## Method 2: Boot and reset buttons
 
 This method uses the boot and reset buttons, and it's the one to use if your device has a battery.
 

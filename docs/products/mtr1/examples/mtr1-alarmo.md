@@ -2,7 +2,7 @@
 title: MTR-1 Alarmo setup
 description: MTR-1 Alarmo setup
 ---
-# MTR-1 + Alarmo Home Security Install
+# MTR-1 + Alarmo home security install
 
 My grandmother wanted a security system that would alert her when there was movement in her home after she had gone to bed. So, I set up three of our Apollo Automation mmWave sensors. These devices, plus the Alarmo integration, quickly allowed me to install a fully local, private, cloud-free, and no monthly subscription security system. She can arm/disarm it with one button on her Home Assistant dashboard, and it makes her feel much safer. This guide assumes you already have a motion/presence sensor installed on HA.
 

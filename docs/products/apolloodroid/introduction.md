@@ -1,5 +1,5 @@
 ---
-title: Apollo Odroid Introduction
+title: Apollo Odroid introduction
 description: The Apollo Odroid is a ready-to-use device designed to kickstart your smart home journey with ease.
 ---
 ![Apollo Odroid in its white ventilated case sitting on a stone tray](/assets/apolloautomation-finals-15.jpg)

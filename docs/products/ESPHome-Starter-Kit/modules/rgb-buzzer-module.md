@@ -1,10 +1,10 @@
 ---
-title: Adding the RGB & Buzzer Module
+title: Adding the RGB & buzzer module
 description: >-
   Wire up the ESPHome Starter Kit RGB & Buzzer module, add it through ESPHome
   Device Builder, then turn the lights on and off and change colors.
 ---
-# Adding the LED & Buzzer Module
+# Adding the LED & Buzzer module
 
 The LED & Buzzer is the starter kit's notification module, a strip of ten addressable RGB LEDs and a small piezo buzzer behind the ESPHome logo silkscreen. By the end of this tutorial you'll have the lights and buzzer wired to your ESP32-C6, surfaced in your YAML, and ready to flash, animate, or sing in response to anything else you build.
 
@@ -31,7 +31,7 @@ Connect the LED & Buzzer module to the ESP32-C6 using one of the FPC ribbon cabl
 
 ![Sliding the FPC ribbon cable, blue side up, into the ESP32-C6 connector and closing the latch](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
-3\. Slide the ribbon cable into the LED & buzzer module with the blue side facing upwards then press the latch down to lock it in place.
+3\. Slide the ribbon cable into the LED & Buzzer module with the blue side facing upwards then press the latch down to lock it in place.
 
 ![Connecting the other end of the FPC ribbon cable to the LED & Buzzer module](../../../assets/esphome-starter-kit-attach-fpc-to-rgb-buzzer-module.webp)
 

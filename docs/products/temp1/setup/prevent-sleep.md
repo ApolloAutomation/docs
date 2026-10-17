@@ -1,5 +1,5 @@
 ---
-title: TEMP-1 Prevent Sleep Guide
+title: TEMP-1 Prevent Sleep guide
 description: Guide for setting up and using the prevent sleep toggle with the TEMP-1.
 ---
 # Prevent Sleep

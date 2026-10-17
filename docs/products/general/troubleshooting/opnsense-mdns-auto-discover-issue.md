@@ -1,8 +1,8 @@
 ---
-title: OPNsense mDNS Auto Discover Issue
+title: OPNsense mDNS auto discover issue
 description: Tutorial to help fix the OPNsense mDNS Auto Discover Issue
 ---
-# OPNsense mDNS Auto Discover Issue
+# OPNsense mDNS auto discover issue
 
 !!! tip "If mDNS is unchecked then Home Assistant and ESPHome will not auto discover new devices"
 

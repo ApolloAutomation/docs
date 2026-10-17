@@ -1,8 +1,8 @@
 ---
-title: Factory Re-Flash LED-1
+title: Factory re-flash LED-1
 description: Step by step guide for re-flashing the LED-1 back to factory firmware.
 ---
-# Factory Re-Flash LED-1
+# Factory re-flash LED-1
 
 Follow these steps to flash your device back to its factory firmware with ESP Flasher on Windows.
 

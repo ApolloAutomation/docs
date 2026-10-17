@@ -1,8 +1,8 @@
 ---
-title: MSR-2 Home Assistant Zone Configuration
+title: MSR-2 Home Assistant zone configuration
 description: Tutorial for MSR-2 Home Assistant Zone Configuration.
 ---
-# How To Tune the MSR-2 Using Home Assistant
+# How to tune the MSR-2 using Home Assistant
 
 !!! tip "Prefer a guided dashboard?"
 

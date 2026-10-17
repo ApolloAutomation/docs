@@ -1,5 +1,5 @@
 ---
-title: mmWave Tuning Videos
+title: mmWave tuning videos
 description: Two short videos and a quick summary on how to best tune the LD2410B in the MSR-2!
 ---
 !!! tip "Radar Engineering Mode (REM)"

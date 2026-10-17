@@ -1,9 +1,9 @@
 ---
-title: M-1 LED Matrix Adding GIFs to WLED
+title: M-1 LED Matrix adding GIFs to WLED
 description: >-
   Step by step guide to adding an animated GIF to the M-1 LED Matrix.
 ---
-# Add GIFs to Your M-1
+# Add GIFs to your M-1
 
 Find a GIF you like first. <a href="https://giphy.com/" target="_blank" rel="noreferrer nofollow noopener">Giphy</a> is a good place to start, and the dancing cat below works as a test.
 

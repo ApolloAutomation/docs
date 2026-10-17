@@ -1,8 +1,8 @@
 ---
-title: Reset Wi-Fi Credentials on your PLT-1B
+title: Reset Wi-Fi credentials on your PLT-1B
 description: "Step by step guide for resetting the Wi-Fi Credentials on your PLT-1B."
 ---
-# Reset Wi-Fi Credentials on your PLT-1B
+# Reset Wi-Fi credentials on your PLT-1B
 
 You can clear the Wi-Fi details saved on your device and connect it to a new Wi-Fi network through its hotspot.
 

@@ -1,5 +1,5 @@
 ---
-title: MSR-2 + Alarmo Home Security Install
+title: MSR-2 + Alarmo home security install
 description: "Use the Alarmo integration in Home Assistant to turn your MSR-2 into a local alarm that notifies your phone and turns on your sensors' RGB lights."
 ---
 # MSR-2 + Alarmo home security install

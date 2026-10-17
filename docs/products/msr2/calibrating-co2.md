@@ -1,8 +1,8 @@
 ---
-title: CO2 Calibration Tutorial (quick)
+title: CO2 calibration tutorial (quick)
 description: Step by step guide for re-calibrating your SCD40 CO2 sensor
 ---
-# CO<sub>2</sub> Calibration - The Quick method - Desktop Only not mobile
+# CO<sub>2</sub> calibration - the quick method - desktop only not mobile
 
 !!! info "Your MSR-2 calibrates itself"
 

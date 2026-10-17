@@ -1,5 +1,5 @@
 ---
-title: LED-1 Controlling Govee Lights
+title: LED-1 controlling Govee lights
 description: >-
   Use the Apollo LED-1 to control Govee or other third-party permanent outdoor
   LED lights fully locally, without a cloud-based app.

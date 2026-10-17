@@ -1,8 +1,8 @@
 ---
-title: Ubiquiti UniFi mDNS Auto Discover Issue
+title: Ubiquiti UniFi mDNS auto discover issue
 description: Tutorial to help fix the Ubiquiti UniFi mDNS Auto Discover Issue.
 ---
-# Ubiquiti UniFi mDNS Auto Discover Issue
+# Ubiquiti UniFi mDNS auto discover issue
 
 !!! tip "If mDNS is unchecked then Home Assistant and ESPHome will not auto discover new devices"
 
@@ -36,7 +36,7 @@ You can turn on Multicast DNS for your Default Network from a browser on your PC
 
 7\. Now the Home Assistant/ESPHome auto-discover issue should be fixed!
 
-## **Method 2: UniFi Mobile App**
+## **Method 2: UniFi mobile app**
 
 You can also turn on Multicast DNS for your Default Network from the UniFi mobile app.
 

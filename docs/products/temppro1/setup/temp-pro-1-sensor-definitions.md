@@ -1,10 +1,10 @@
 ---
-title: TEMP Pro-1 Sensor Definitions
+title: TEMP Pro-1 sensor definitions
 description: >-
   Full list of definitions for the TEMP Pro-1 and its various sensors and
   available ports.
 ---
-# TEMP Pro-1 Sensor Definitions
+# TEMP Pro-1 sensor definitions
 
 Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
 

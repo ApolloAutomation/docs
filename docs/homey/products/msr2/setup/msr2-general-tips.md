@@ -1,10 +1,10 @@
 ---
-title: General Tips
+title: General tips
 description: "Multiple helpful images for mounting, lux/rgb, and gate and zone visualization."
 ---
-# General Tips
+# General tips
 
-## **Light Sensor (LTR-390UV)**
+## **Light sensor (LTR-390UV)**
 
 ![MSR-2 enclosure with the light sensor visible through the vent slots, outlined in red](/assets/20240514-123742.jpg)
 
@@ -30,7 +30,7 @@ The MSR-2 can also be mounted on the ceiling if you can provide power and mount 
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
     * Zones are user-configurable and are in cm.
 
-## **Gate and FOV Visualization**
+## **Gate and FOV visualization**
 
 **![Table of LD2410 gates 0 to 8 with distance ranges in meters and feet and default move and still thresholds](/assets/ld2410-gate-table.png)![Radar Distance Resolution set to 0.75m with Radar End Zone 1, 2, and 3 at 50, 100, and 200 cm](/assets/gate-zones-and-rr.png)**
 

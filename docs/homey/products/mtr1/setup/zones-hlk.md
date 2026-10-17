@@ -1,5 +1,5 @@
 ---
-title: (Better) HLK Radar Tool App
+title: (Better) HLK Radar Tool app
 description: "Tutorial for MTR-1 HLKRadarTool app Zone Configuration."
 ---
 
@@ -12,7 +12,7 @@ description: "Tutorial for MTR-1 HLKRadarTool app Zone Configuration."
 
     If the `.local` address doesn't load, use your router to find the device's IP address and use that instead.
 
-## Configure Zones
+## Configure zones
 
 !!! note "Ensure that the LD2450 firmware version is V2.02.23090617 or later for proper integration functionality. "
 

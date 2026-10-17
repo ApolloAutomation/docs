@@ -1,14 +1,14 @@
 ---
-title: Putting The R PRO-1 In Boot Mode
+title: Putting the R PRO-1 in boot mode
 description: Step by step guide for putting The R PRO-1 In Boot Mode.
 ---
-# Putting The R PRO-1 In Boot Mode
+# Putting the R PRO-1 in boot mode
 
 !!! info "This will cover how to put the R PRO-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-## Method 1: Boot Button Only
+## Method 1: Boot button only
 
 You'll open the case, then hold the boot button while you plug in the USB-C cable.
 
@@ -28,7 +28,7 @@ You'll open the case, then hold the boot button while you plug in the USB-C cabl
 
 5\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.
 
-## Method 2: Boot and Reset Buttons
+## Method 2: Boot and reset buttons
 
 You'll open the case, then use the boot and reset buttons together to put the device into boot mode.
 

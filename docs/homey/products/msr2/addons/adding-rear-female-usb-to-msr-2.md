@@ -1,8 +1,8 @@
 ---
-title: Adding Rear Female USB-C To MSR-2
+title: Adding rear female USB-C to MSR-2
 description: "Tutorial on adding the rear female USB-C port to your MSR-2."
 ---
-# Adding Rear Female USB-C To MSR-2
+# Adding rear female USB-C to MSR-2
 
 You'll seat the Female Rear USB-C addon on the mezzanine connector on the back of your sensor, then fit the new back that came with it.
 

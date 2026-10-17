@@ -1,11 +1,11 @@
 ---
-title: Turn On a Light with Motion
+title: Turn on a light with motion
 description: >-
   Build an ESPHome Device Builder automation: the Motion module turns the LED
   & Buzzer module's RGB light on when it detects movement and off when motion
   stops.
 ---
-# Turn On a Light with Motion
+# Turn on a light with motion
 
 <span class="difficulty lvl-1">Difficulty: Level 1</span>
 

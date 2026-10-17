@@ -191,7 +191,7 @@ Next, you'll create the automation and add its three triggers, each with its own
 
 ![Home Assistant TEMP-1 Food Probe trigger with Trigger ID set to Temp Reached highlighted](/assets/temp-1-cook-chicken-example-pic-8.png)
 
-### Option 1: monitoring starts
+### Option 1: Monitoring starts
 
 Option 1 runs when you turn Chicken Monitor on. It turns the LED green and tells your phone that monitoring has started.
 
@@ -231,7 +231,7 @@ Option 1 runs when you turn Chicken Monitor on. It turns the LED green and tells
 
 ![Home Assistant Option 1 triggered by Chicken Monitor On with light turn on and notification actions](/assets/temp-1-cook-chicken-example-pic-17-1.png)
 
-### Option 2: temperature reached
+### Option 2: Temperature reached
 
 Option 2 runs when the food probe reaches your temperature. It blinks the LED until you turn Chicken Monitor off, and messages your phone.
 
@@ -271,7 +271,7 @@ Option 2 runs when the food probe reaches your temperature. It blinks the LED un
 
 ![Home Assistant Add action dialog with tts searched and the TTS Speak action listed](/assets/temp-1-cook-chicken-example-pic-30.png)![Home Assistant TTS Speak action on piper targeting Homepods with The Chicken is almost ready! message](/assets/temp-1-cook-chicken-example-pic-31.png)
 
-### Option 3: monitoring stops
+### Option 3: Monitoring stops
 
 Option 3 runs when you turn Chicken Monitor off. It turns the LED off and tells your phone that monitoring has stopped.
 

@@ -1,5 +1,5 @@
 ---
-title: Apollo Battery Devices - wake up battery device.
+title: Apollo battery devices - Wake up battery device.
 description: How to wake up your Apollo device which is currently sleeping.
 ---
 To wake a sleeping Apollo battery sensor, press the reset button. A BTN-1 also wakes when you press Button 1, 2, 3, or 4, and an H-1 or H-2 wakes when you press a gold song button. The boot button can't wake a sleeping device. Select your device below for the button locations.

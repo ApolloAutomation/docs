@@ -1,10 +1,10 @@
 ---
-title: R PRO-1 Switch Firmware
+title: R PRO-1 switch firmware
 description: >-
   Step by step guide to switching between Wi-Fi and Ethernet firmware on
   R PRO-1.
 ---
-# Firmware Switching Guide
+# Firmware switching guide
 
 !!! tip "R PRO-1 ships with Wi-Fi firmware because some people might not have ethernet or PoE."
 

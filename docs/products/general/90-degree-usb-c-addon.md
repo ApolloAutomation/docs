@@ -1,8 +1,8 @@
 ---
-title: 90 Degree Male USB-C Addon Tutorial
+title: 90 degree male USB-C addon tutorial
 description: QR Code from the 90 Degree Male USB-C Addon for both MSR-2 and MTR-1 points here
 ---
-# 90 Degree USB-C Addon
+# 90 degree USB-C addon
 
 We have the 90 Degree USB-C Addon for both the MSR-2 and the MTR-1. Choose your specific Apollo sensor below to head to that wiki article!
 

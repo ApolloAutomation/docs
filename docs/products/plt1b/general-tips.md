@@ -1,8 +1,8 @@
 ---
-title: PLT-1B General Tips
+title: PLT-1B general tips
 description: Helpful tips to get the most use out of your sensor.
 ---
-# General Tips
+# General tips
 
 ## LTR390 UV
 

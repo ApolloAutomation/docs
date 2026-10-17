@@ -1,9 +1,9 @@
 ---
-title: Direct SmartThings Integration (No Hub)
+title: Direct SmartThings integration (no hub)
 description: Control SmartThings devices directly from Apollo ESPHome sensors using OAuth2, no Home Assistant or hub required.
 ---
 
-# Apollo Sensors + SmartThings Direct Control
+# Apollo sensors + SmartThings direct control
 
 !!! note "Compatible Devices"
     This works with any Apollo ESPHome device running ESPHome: MTR-1, MSR-2, AIR-1, and others. The OAuth2 token block is fully device-agnostic: swap the `packages:` line for your device.
@@ -20,7 +20,7 @@ This tutorial shows how to make your Apollo MTR-1 control SmartThings lights dir
 - Fully autonomous OAuth2 token renewal every 20 hours
 - Token persistence across power cuts and reboots via NVS flash
 
-## What You Need
+## What you need
 
 - Apollo MTR-1 (the same pattern works for MSR-2, AIR-1, and other Apollo ESPHome devices)
 - A Samsung SmartThings account
@@ -30,7 +30,7 @@ This tutorial shows how to make your Apollo MTR-1 control SmartThings lights dir
 
 ---
 
-## Part 1: Create a SmartThings OAuth2 App
+## Part 1: Create a SmartThings OAuth2 app
 
 This is a one-time setup. You need to register an OAuth2 client in the SmartThings Developer Workspace to get your `client_id` and `client_secret`.
 
@@ -49,7 +49,7 @@ This is a one-time setup. You need to register an OAuth2 client in the SmartThin
 
 ---
 
-## Part 2: Get Your First Token Pair (One-Time via Browser)
+## Part 2: Get your first token pair (one-time via browser)
 
 SmartThings requires a one-time browser-based authorization. After this, the ESP32 renews everything automatically.
 
@@ -98,7 +98,7 @@ Save this Base64 string too.
 
 ---
 
-## Part 3: Create Virtual Switches and Find Device IDs
+## Part 3: Create virtual switches and find device IDs
 
 To map your physical MTR-1 zones to SmartThings routines without a hub, we need Virtual Switches. The MTR-1 will send ON/OFF commands to these virtual switches, which you can then use in SmartThings to trigger your actual lights.
 
@@ -114,7 +114,7 @@ For each light or switch you want to control, you need its Device ID (format: `x
 
 ---
 
-## Part 4: The ESPHome Configuration
+## Part 4: The ESPHome configuration
 
 Below is the complete, production-tested YAML. Replace all `YOUR_*` placeholders with your actual values.
 
@@ -283,7 +283,7 @@ binary_sensor:
 
 ---
 
-## Part 5: Flash and Verify
+## Part 5: Flash and verify
 
 ```
 esphome run your_config.yaml --device 192.168.x.x
@@ -305,7 +305,7 @@ If you see `HTTP Request failed; Code: 401`, the access token has expired. A sim
 
 ---
 
-## How the Token Lifecycle Works
+## How the token lifecycle works
 
 ```text
 First flash:   initial_value token → refresh → new access + refresh → saved to NVS
@@ -370,7 +370,7 @@ After the first flash, the `initial_value` in the YAML is never used again. The 
 
 ---
 
-## Adapting for Other Apollo Devices
+## Adapting for other Apollo devices
 
 The OAuth2 token block (globals, script, wifi on_connect, interval) is completely device-agnostic. Swap the `packages:` line for your device and add your own triggers:
 

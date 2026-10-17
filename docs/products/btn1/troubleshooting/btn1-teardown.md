@@ -1,10 +1,10 @@
 ---
-title: BTN-1 Teardown
+title: BTN-1 teardown
 description: >-
   Step by step guide for tearing down your BTN-1 to replace parts, clean it,
   swap cases, etc.
 ---
-# Teardown and Reassembly Of BTN-1
+# Teardown and reassembly of BTN-1
 
 ## Disassembly
 

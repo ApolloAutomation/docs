@@ -1,8 +1,8 @@
 ---
-title: How To use the MSR-2 with Alarmo
+title: How to use the MSR-2 with Alarmo
 description: A tutorial for how to use the MSR-2 with Alarmo for an advanced DIY alarm system.
 ---
-# MSR-2 + Alarmo Home Security Install
+# MSR-2 + Alarmo home security install
 
 My grandmother wanted a security system that would alert her when there was movement in her home after she had gone to bed. So, I set up three of our Apollo Automation mmWave sensors. These devices, plus the Alarmo integration, quickly allowed me to install a fully local, private, cloud-free, and no monthly subscription security system. She can arm/disarm it with one button on her Home Assistant dashboard, and it makes her feel much safer. This guide assumes you already have a motion/presence sensor installed on HA.
 

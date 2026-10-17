@@ -1,5 +1,5 @@
 ---
-title: MSR-1 Examples From GitHub
+title: MSR-1 examples from GitHub
 description: "Example MSR-1 configurations and automations published in the Apollo GitHub repository."
 ---
 # MSR-1 examples from GitHub

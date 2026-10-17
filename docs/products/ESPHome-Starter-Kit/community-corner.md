@@ -1,19 +1,19 @@
 ---
-title: Community Corner
+title: Community corner
 description: >-
   Creations from the Apollo community for the ESPHome Starter Kit, including
   3D-printable cases, automations, and mods.
 ---
-# Community Corner
+# Community corner
 
 The Community Corner is dedicated to sharing some really great projects created by the community. It could be anything: a 3D-printed case, a clever automation, a cool use case, you name it. Post your build on our forums, Discord, or Reddit and we'll see if it's worthy of being displayed for the masses.
 
 [Join our Discord :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--discord }
 [Community Forum :material-forum:](https://forum.apolloautomation.com/){ .md-button .md-button--primary }
 
-## 3D Prints
+## 3D prints
 
-### LED & Buzzer Module Case
+### LED & Buzzer module case
 
 *Created by @_cadster on Discord*
 

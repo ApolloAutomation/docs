@@ -1,21 +1,21 @@
 ---
-title: CAST-1 TTS and Announcements
+title: CAST-1 TTS and announcements
 description: Send text-to-speech and announcements to your CAST-1, with music ducking automatically.
 ---
-# TTS and Announcements
+# TTS and announcements
 
 Your CAST-1 can speak. Send it a text-to-speech message and it plays over whatever is already going, ducking the music down and bringing it back when it's done. Nothing stops or resumes, the two run at once.
 
 You'll need a text-to-speech engine set up in Home Assistant first. The examples below use <a href="https://www.home-assistant.io/voice_control/voice_remote_local_assistant/" target="_blank" rel="noreferrer nofollow noopener">Piper</a>, which runs locally and sounds good, but any engine works since the CAST-1 plays what Home Assistant sends it.
 
-## Which Player to Use
+## Which player to use
 
 Your CAST-1 has two media players and either one handles announcements.
 
 * **Apollo CAST-1 Player** is the ESPHome media player with the announcement pipeline.
 * **Apollo CAST-1 Sendspin Player** is the Music Assistant streaming target. Announcements sent here get forwarded to the announcement pipeline, so your music still ducks.
 
-## Send an Announcement
+## Send an announcement
 
 You'll send a test announcement from Developer Tools and hear it play over your music.
 
@@ -39,13 +39,13 @@ data:
 
 3\. Run it with music playing and you'll hear the music drop, the message play, then the music come back.
 
-## What Happens During an Announcement
+## What happens during an announcement
 
 The CAST-1 ducks the music by 40 dB the instant an announcement starts, so speech stays clear without the music stopping. The onboard LEDs turn cyan while it's talking. When the message finishes, the music fades back over a second and the LEDs go out.
 
 That LED change is a handy way to tell an announcement from a glitch when you're across the room.
 
-## Announce a Sound Instead of Speech
+## Announce a sound instead of speech
 
 Anything you can play can be an announcement, not just speech. A doorbell chime works the same way, ducking the music and lighting the LEDs:
 
@@ -61,7 +61,7 @@ data:
 
 The `announce: true` is what routes it to the announcement pipeline. Leave it out and the sound replaces your music instead of playing over it.
 
-## Use It in an Automation
+## Use it in an automation
 
 ??? example "Announce when the washing machine finishes"
 

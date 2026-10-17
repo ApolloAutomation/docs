@@ -1,5 +1,5 @@
 ---
-title: H-2 Reviews
+title: H-2 reviews
 description: Video reviews from smart home YouTube creators of the Apollo H-1, the first edition of Apollo's holiday ornament.
 ---
 # H-2 reviews

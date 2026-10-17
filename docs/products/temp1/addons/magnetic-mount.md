@@ -1,8 +1,8 @@
 ---
-title: TEMP-1 Magnetic Mount Guide
+title: TEMP-1 magnetic mount guide
 description: Step by step guide for installing and using the optional Magnetic Mount with the TEMP-1.
 ---
-# TEMP-1 Magnetic Mount
+# TEMP-1 magnetic mount
 
 The TEMP-1 comes with an optional magnetic mount which can be used to secure the TEMP-1 to your fridge or grill as shown below.
 

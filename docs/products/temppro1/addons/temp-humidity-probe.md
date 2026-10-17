@@ -1,10 +1,10 @@
 ---
-title: TEMP Pro-1 Temp and Humidity Probe Guide
+title: TEMP Pro-1 temp and humidity probe guide
 description: >-
   Step by step guide for installing and using the optional Temp and Humidity
   Probe with the TEMP Pro-1.
 ---
-# TEMP Pro-1 Temp and Humidity Probe (SHT20)
+# TEMP Pro-1 temp and humidity probe (SHT20)
 
 The TEMP Pro-1 comes with an optional temp and humidity probe which can be used to monitor an attic, fridge, freezer, fish tank, pool, hot tub, etc. It includes a protected cable but the TEMP Pro-1 itself needs to stay in a cool environment.
 

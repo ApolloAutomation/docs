@@ -1,10 +1,10 @@
 ---
-title: MSR-2 HLKRadarTool app Zone Configuration
+title: MSR-2 HLKRadarTool app zone configuration
 description: Tutorial for MSR-2 HLKRadarTool app Zone Configuration.
 ---
-# How To Tune MSR-2 Using HLKRadarTool
+# How to tune MSR-2 using HLKRadarTool
 
-## **Auto-Calibration**
+## **Auto-calibration**
 
 You'll connect the HLKRadarTool app to your sensor, measure your room's background noise, and pick one of the auto-calibration settings.
 
@@ -60,7 +60,7 @@ The default password to connect to the HLKRadarTool is "HiLink".
 
 **![HLKRadarTool Parameter settings with the Intelligent one click setting outlined in red](/assets/intelligent.png)**
 
-## Manual Calibration
+## Manual calibration
 
 You'll set the motion and static sensitivity values yourself in the app.
 

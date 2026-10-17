@@ -1,14 +1,14 @@
 ---
-title: Putting The PUMP-1 In Boot Mode
+title: Putting the PUMP-1 in boot mode
 description: Step by step guide for putting The PUMP-1 In Boot Mode.
 ---
-# Putting The PUMP-1 In Boot Mode
+# Putting the PUMP-1 in boot mode
 
 !!! info "This will cover how to put the PUMP-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-## Method 1: Boot Button Only
+## Method 1: Boot button only
 
 You'll hold the boot button while you plug in the USB-C cable.
 
@@ -28,7 +28,7 @@ You'll hold the boot button while you plug in the USB-C cable.
 
 [Click here to go to the reflashing guide!](https://wiki.apolloautomation.com/products/pump1/troubleshooting/pump1-reflash/){    .md-button .md-button--primary }
 
-## Method 2: Boot and Reset Buttons
+## Method 2: Boot and reset buttons
 
 You'll use the boot and reset buttons together while the device is plugged into your computer.
 

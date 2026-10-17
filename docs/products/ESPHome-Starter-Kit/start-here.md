@@ -1,5 +1,5 @@
 ---
-title: ESPHome Starter Kit - Start Here
+title: ESPHome Starter Kit - Start here
 description: Landing page of the ESPHome Starter Kit QR Code.
 ---
 # Welcome to the ESPHome Starter Kit!

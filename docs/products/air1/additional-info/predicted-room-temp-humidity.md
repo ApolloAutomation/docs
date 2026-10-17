@@ -1,8 +1,8 @@
 ---
-title: AIR-1 Predicted Room Temperature & Humidity
+title: AIR-1 predicted room temperature & humidity
 description: Get a more accurate room temperature and humidity from the AIR-1 by blending its three sensors and correcting for case self-heating.
 ---
-# AIR-1 Predicted Room Temperature & Humidity
+# AIR-1 predicted room temperature & humidity
 
 The AIR-1's own electronics warm the air inside the case, so the SEN55 and SCD40 read a little warmer and drier than the room around them. The **Predicted Room Temperature** and **Predicted Room Humidity** sensors correct for that. They blend the SEN55, DPS310, and SCD40 readings and apply a physics model to estimate what the room is actually doing.
 

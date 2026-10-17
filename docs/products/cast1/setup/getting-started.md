@@ -1,12 +1,12 @@
 ---
-title: CAST-1 Getting Started Guide
+title: CAST-1 getting started guide
 description: Step by step guide to getting started with your CAST-1!
 ---
-# CAST-1 Getting Started
+# CAST-1 getting started
 
 This will guide you through connecting your CAST-1 to your speakers, adding it to your Wi-Fi and Home Assistant, and streaming to it with Music Assistant.
 
-## Physical Setup
+## Physical setup
 
 Run a 3.5mm cable from the CAST-1 into the line-in on your powered speakers, receiver, or active soundbar, then plug the CAST-1 into power with USB-C. A 5V 1A power supply is plenty. (1)
 { .annotate }
@@ -15,7 +15,7 @@ Run a 3.5mm cable from the CAST-1 into the line-in on your powered speakers, rec
 
 ![Plugging a 3.5mm audio cable and a USB-C power cable into the CAST-1](/assets/cast-1-physical-setup.webp)
 
-## Connect to Your Network
+## Connect to your network
 
 There are three ways to get your CAST-1 online. Pick whichever is easier, you only need to do one.
 
@@ -102,7 +102,7 @@ You'll install the Music Assistant app, then add its integration in Home Assista
 
 [![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
 
-### Stream To Your CAST-1
+### Stream to your CAST-1
 
 With Music Assistant running, you can start playing music through your speakers.
 
@@ -114,7 +114,7 @@ With Music Assistant running, you can start playing music through your speakers.
 
 ![Selecting the CAST-1 player in Music Assistant and playing a song](/assets/cast-1-play-song.gif)
 
-### Play In Multiple Rooms
+### Play in multiple rooms
 
 Have more than one CAST-1? Group them to play the same music in sync across every room.
 

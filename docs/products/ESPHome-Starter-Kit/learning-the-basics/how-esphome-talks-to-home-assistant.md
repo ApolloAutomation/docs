@@ -1,8 +1,8 @@
 ---
-title: HA Integration
+title: HA integration
 description: A conceptual overview of how ESPHome devices announce themselves to Home Assistant, what the encryption key is for, and how device components turn into Home Assistant entities.
 ---
-# HA Integration
+# HA integration
 
 The **ESPHome integration** is what makes your Starter Kit visible to Home Assistant. Once it's set up, every switch, sensor, and light you defined in ESPHome Device Builder appears in Home Assistant as something you can read, control, or automate against. This page explains how that handoff actually works.
 

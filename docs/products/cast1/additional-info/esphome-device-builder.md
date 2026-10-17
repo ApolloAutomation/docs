@@ -116,7 +116,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     ![ESPHome Device Builder first-run wizard, choosing local installation and New to ESPHome](/assets/device-builder-first-time-install-pick-your-experience.gif)
 
-## Take Control of Your CAST-1
+## Take control of your CAST-1
 
 Taking control adopts your device into the ESPHome Device Builder so you can rename it or edit its YAML.
 

@@ -1,8 +1,8 @@
 ---
-title: TEMP-1 Teardown
+title: TEMP-1 teardown
 description: Step by step guide for tearing down your TEMP-1 to replace parts, clean it, swap cases, etc.
 ---
-# Teardown Of TEMP-1
+# Teardown of TEMP-1
 
 Follow these steps to take your sensor apart and put it back together.
 

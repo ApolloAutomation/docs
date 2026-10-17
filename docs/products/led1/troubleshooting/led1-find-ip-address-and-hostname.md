@@ -1,8 +1,8 @@
 ---
-title: How to Find IP address and hostname of your LED-1 device.
+title: How to find IP address and hostname of your LED-1 device.
 description: Step by step guide for finding the IP address and the hostname of your LED-1 device.
 ---
-# How to Find IP address and hostname of your LED-1 device.
+# How to find IP address and hostname of your LED-1 device.
 
 You can find your device's IP address and hostname with the WLED Native app on your phone.
 

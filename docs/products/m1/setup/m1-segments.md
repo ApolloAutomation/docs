@@ -1,5 +1,5 @@
 ---
-title: M-1 LED Matrix Creation of Segments
+title: M-1 LED Matrix creation of segments
 description: >-
   Step by step guide for splitting your M-1 Matrix into multiple segments to
   display more information.

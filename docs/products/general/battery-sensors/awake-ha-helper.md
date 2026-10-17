@@ -1,5 +1,5 @@
 ---
-title: Apollo Battery Devices - Awake HA Helper
+title: Apollo battery devices - Awake HA helper
 description: Create a Home Assistant toggle that keeps your Apollo battery devices awake for updates, plus an automation that turns it off after one hour.
 ---
 # Keep your sensor awake with a Home Assistant helper

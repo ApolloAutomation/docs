@@ -1,10 +1,10 @@
 ---
-title: Device Builder Tour
+title: Device Builder tour
 description: >-
   A guided tour of every screen in the ESPHome Device Builder, using your Apollo
   ESPHome Starter Kit as the example device.
 ---
-# Device Builder Tour
+# Device Builder tour
 
 The **ESPHome Device Builder** is the app you used in [First Steps](../setup/first-steps.md) to install software on your Starter Kit, (1) and it's where you go every time you change something on the device. This page walks through each screen so you know what you're looking at.
 { .annotate }
@@ -13,7 +13,7 @@ The **ESPHome Device Builder** is the app you used in [First Steps](../setup/fir
 
 ---
 
-## Guided Tour
+## Guided tour
 
 ESPHome Device Builder has a tour built in that walks you through creating, configuring, and installing a device. It takes about five minutes. Start it from the menu in the top-right corner, or from **Start guided tour** on the last screen of first-time setup.
 
@@ -67,7 +67,7 @@ The form pane and the YAML editor are always in sync. Edit either side and the o
 
 ![YAML editor showing the aht10 sensor block with humidity and temperature settings and line numbers](../../../assets/esphome-device-builder-yaml-editor.png)
 
-## Publishing Changes
+## Publishing changes
 
 When you have finished making changes:
 
@@ -85,7 +85,7 @@ Click the **Logs** button (the terminal icon) on the device card to open a live 
 
 Pop them open when something looks off, or to watch sensor readings come in.
 
-### Next Steps
+### Next steps
 
 * Pick a module from the [Modules](../modules/button-module.md) section to add to your Starter Kit and watch the components list update.
 * Read [What is secrets.yaml?](what-is-secrets-yaml.md) to understand how Wi-Fi and encryption keys are stored.

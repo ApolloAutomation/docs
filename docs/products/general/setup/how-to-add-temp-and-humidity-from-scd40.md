@@ -1,8 +1,8 @@
 ---
-title: How To Add Temp And Humidity From SCD40
+title: How to add temp and humidity from SCD40
 description: Tutorial for How To Add Temp And Humidity entities From the SCD40 CO2 sensor.
 ---
-# How To Add Temp And Humidity From SCD40
+# How to add temp and humidity from SCD40
 
 You add YAML in ESPHome Builder to get SCD40 temperature and humidity entities, with offsets you can adjust in Home Assistant.
 

@@ -1,10 +1,10 @@
 ---
-title: Button Controlled LEDs
+title: Button controlled LEDs
 description: >-
   Build your first automation in the new ESPHome Device Builder GUI: pressing
   the Button module toggles the RGB module on and off.
 ---
-# Build a Button-Controlled RGB Light
+# Build a button-controlled RGB light
 
 <span class="difficulty lvl-1">Difficulty: Level 1</span>
 

@@ -1,8 +1,8 @@
 ---
-title: TEMP-1 Temp Probe Guide
+title: TEMP-1 temp probe guide
 description: Step by step guide for installing and using the optional Temp Probe with the TEMP-1.
 ---
-# TEMP-1 Temp Probe
+# TEMP-1 temp probe
 
 The TEMP-1 comes with an optional temp probe which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc. It includes a protected cable but the TEMP-1 itself needs to stay in a cool environment.
 
@@ -30,7 +30,7 @@ The TEMP-1 comes with an optional temp probe which can be used to monitor a frid
 
 ![Temp probe cable running out past the mini freezer door seal to the outside](/assets/temp1b-temp-probe-freezer-pic-2.jpg)
 
-## Probe Pinout
+## Probe pinout
 
 The 1.5m and 20cm DS18B20 temp probes use a standard 3.5mm TRS plug. Wire yours the same way if you're building your own probe or repairing a cut cable.
 

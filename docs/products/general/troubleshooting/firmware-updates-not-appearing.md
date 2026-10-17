@@ -1,5 +1,5 @@
 ---
-title: Firmware Updates Not Appearing
+title: Firmware updates not appearing
 description: What to check when the Firmware Update entity never offers an update.
 ---
 Apollo devices check for new firmware by downloading a small manifest file from `apolloautomation.github.io` over HTTPS. If the **Firmware Update** entity in Home Assistant always shows *up to date* even though a newer release exists, work through the list below.

@@ -1,12 +1,12 @@
 ---
-title: Switch to Beta Firmware
+title: Switch to beta firmware
 description: How to switch your Apollo device to beta firmware to try new features early, and how to switch back.
 ---
-# Switch to Beta Firmware
+# Switch to beta firmware
 
 Beta firmware gets new features and fixes before they reach Stable. It's a great way to help us test, and you can switch back at any time.
 
-## With the Firmware Channel Setting
+## With the Firmware Channel setting
 
 This is the simpler way. Use it if your device has a **Firmware Channel** setting on its device page, like the CAST-1.
 

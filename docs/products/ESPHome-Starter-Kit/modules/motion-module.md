@@ -1,10 +1,10 @@
 ---
-title: Adding the Motion Module
+title: Adding the motion module
 description: >-
   Wire up the ESPHome Starter Kit Motion Module which will turn your starter kit
   into an accurate motion sensor!
 ---
-# Adding the Motion Module
+# Adding the motion module
 
 The Motion Module turns your starter kit into a motion sensor. By the end of this tutorial you'll have an MH-SR602 wired to your ESP32-C6, surfaced as a binary sensor in your YAML, and flipping live in the web server whenever something moves in front of it.
 
@@ -25,7 +25,7 @@ The PIR sensor (the small white dome on a tiny PCB) ships separately from the mo
 
 ![Pressing the PIR sensor onto the motion module pins with the Out labels lined up](../../../assets/esphome-starter-kit-attach-pir-to-motion-module.webp)
 
-## Attach Motion module
+## Attach motion module
 
 Connect the motion module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the ESP32-C6 works, top or bottom.
 
@@ -96,7 +96,7 @@ Flash the device so the new motion entity goes live.
 
 ![ESPHome Device Builder clicking Install, choosing On the network, and compiling the motion config](../../../assets/esphome-device-builder-install-motion-component.gif)
 
-## Test Motion
+## Test motion
 
 With the device back online, the Motion entity is live on the web server. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and watch it react in real time.
 

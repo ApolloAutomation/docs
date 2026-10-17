@@ -2,7 +2,7 @@
 title: Apollo Automation FAQ
 description: Frequently Asked Questions.
 ---
-# F.A.Q. ~ Frequently Asked Questions
+# F.A.Q. ~ frequently asked questions
 
 ## 1\. How much power do your sensors use?
 

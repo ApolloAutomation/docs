@@ -1,10 +1,10 @@
 ---
-title: Temperature Probe
+title: Temperature probe
 description: >-
   Add a waterproof DS18B20 temperature probe to your ESPHome Starter Kit
   Breakout Module using the 1Wire port.
 ---
-# Temperature Probe
+# Temperature probe
 
 A waterproof <a href="https://cdn-shop.adafruit.com/datasheets/DS18B20.pdf" target="_blank" rel="noreferrer nofollow noopener">DS18B20</a> temperature probe plugs into the Breakout Module's 1Wire port and reads temperature from wherever you run the cable, a fridge, a freezer, a fish tank, outdoors. It's the same probe our [TEMP-1](/products/temp1/introduction.md) and [TEMP-1B](/products/temp1b/introduction.md) use.
 

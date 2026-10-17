@@ -1,8 +1,8 @@
 ---
-title: Reflashing The CAST-1
+title: Reflashing the CAST-1
 description: Step by step guide for reflashing The CAST-1.
 ---
-# Reflashing The CAST-1
+# Reflashing the CAST-1
 
 !!! info "Use this to put your CAST-1 back on the latest factory firmware."
 

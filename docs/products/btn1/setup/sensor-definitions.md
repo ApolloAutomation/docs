@@ -1,8 +1,8 @@
 ---
-title: BTN-1 Sensor Definitions
+title: BTN-1 sensor definitions
 description: These are all of the entities exposed by the BTN-1 to automate on!
 ---
-# Sensor Definitions
+# Sensor definitions
 
 Once added to Home Assistant you can configure different settings for your BTN-1. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
 

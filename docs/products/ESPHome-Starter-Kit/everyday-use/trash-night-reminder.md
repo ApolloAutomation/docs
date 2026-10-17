@@ -1,10 +1,10 @@
 ---
-title: Trash Night Reminder
+title: Trash night reminder
 description: >-
   Use two Home Assistant Local Calendars and the LED & Buzzer module's RGB
   LEDs to light up your Starter Kit on trash and recycle night.
 ---
-# Trash Night Reminder
+# Trash night reminder
 
 <span class="difficulty lvl-2">Difficulty: Level 2</span>
 

@@ -1,8 +1,8 @@
 ---
-title: Choosing an mmWave Sensor
+title: Choosing an mmWave sensor
 description: Compare the Apollo MSR-2, MTR-1, and R PRO-1 mmWave presence sensors and pick the right one for your space.
 ---
-# Choosing an mmWave Sensor
+# Choosing an mmWave sensor
 
 Apollo mmWave sensors detect the **moving** and **still** energy of people and animals, which makes them excellent for presence detection in a room. They are not meant to detect vehicles, so for a car an ultrasonic sensor is a better fit. This guide compares our three current mmWave sensors so you can pick the right one for your space.
 

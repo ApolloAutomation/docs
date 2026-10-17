@@ -1,5 +1,5 @@
 ---
-title: mmWave Presence Sensor Comparison Chart
+title: mmWave presence sensor comparison chart
 description: Compare the Apollo MSR-2 and MTR-1 with other mmWave presence sensors on price, radar chip, detection range, zones, target tracking, and extra sensors.
 ---
 # mmWave presence sensor comparison

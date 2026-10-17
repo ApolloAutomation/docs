@@ -1,8 +1,8 @@
 ---
-title: Adjusting Wi-Fi Power Save
+title: Adjusting Wi-Fi power save
 description: Tutorial for how to adjust Wi-Fi Power Save.
 ---
-# Adjusting Wi-Fi Power Save
+# Adjusting Wi-Fi power save
 
 The ESP chips produce a significant amount of energy (heat) constantly using Wi-Fi. This guide explains how to <a href="https://esphome.io/components/wifi.html#power-save-mode" target="_blank" rel="noreferrer nofollow noopener">adjust the Wi-Fi power save mode to high</a> to combat this.
 

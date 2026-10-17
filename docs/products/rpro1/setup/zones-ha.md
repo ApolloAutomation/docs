@@ -1,8 +1,8 @@
 ---
-title: R PRO-1 Home Assistant Zone Configuration
+title: R PRO-1 Home Assistant zone configuration
 description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 ---
-# How To Tune The R PRO-1 Using Home Assistant
+# How to tune the R PRO-1 using Home Assistant
 
 !!! info "Your R PRO-1 has two unique mmWave sensors that both need to be tuned!"
 
@@ -18,7 +18,7 @@ description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 
 Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R PRO-1 LD2450.
 
-## LD2450 Configuration
+## LD2450 configuration
 
 Follow these steps to add a Plotly card that shows your LD2450 targets, then set up your zones in Home Assistant.
 
@@ -102,7 +102,7 @@ Follow these steps to add a Plotly card that shows your LD2450 targets, then set
 
     If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try toggling on **LD2450 Multi Target Tracking**. This should wake up the mmWave module and retrieve your saved zones
 
-## LD2412 Configuration
+## LD2412 configuration
 
 Follow these steps to switch the LD2412 to Engineering mode and tune its gates in Home Assistant.
 

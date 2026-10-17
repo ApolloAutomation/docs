@@ -1,12 +1,12 @@
 ---
-title: PLT-1 Plant Sensor Alerts Blueprint
+title: PLT-1 plant sensor alerts blueprint
 description: >-
   Example of how to use the PLT-1 Plant Sensor Alerts Blueprint in
   Home Assistant to receive notifications when your plant needs attention!
 ---
-# Blueprint Setup
+# Blueprint setup
 
-## Automatic Import
+## Automatic import
 
 You'll import the blueprint with the button below, then set it up to send push notifications when your plant needs attention.
 
@@ -33,7 +33,7 @@ You'll import the blueprint with the button below, then set it up to send push n
 
 7\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
 
-## Manual Import
+## Manual import
 
 You can also import the blueprint by pasting its address into Home Assistant yourself.
 

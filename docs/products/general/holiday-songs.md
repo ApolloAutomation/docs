@@ -1,10 +1,10 @@
 ---
-title: Holiday Songs Buzzer List
+title: Holiday songs buzzer list
 description: >-
   List of Holiday Songs to use with the Holiday ornaments or any Apollo device
   with a buzzer.
 ---
-# Holiday Songs Buzzer List
+# Holiday songs buzzer list
 
 [Click here to learn how to use these songs with the buzzer on your Apollo device! :material-music-note:](https://wiki.apolloautomation.com/products/general/piezo/){ .md-button .md-button--primary }
 

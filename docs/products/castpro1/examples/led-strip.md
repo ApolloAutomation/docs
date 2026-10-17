@@ -1,8 +1,8 @@
 ---
-title: Add an LED Strip to CAST PRO-1
+title: Add an LED strip to CAST PRO-1
 description: "Connect an addressable LED strip to your CAST PRO-1 and control it from Home Assistant, including a Music Mode that follows playback."
 ---
-# Add an LED Strip
+# Add an LED strip
 
 Your CAST PRO-1 has LED strip terminals, **5V**, **GND** and **IO1**, for an addressable LED strip. There's no soldering: the strip's wires go straight into the terminals. Once it's connected, the strip shows up in Home Assistant as a light with effects, and it can switch on by itself whenever music is playing.
 
@@ -10,7 +10,7 @@ Your CAST PRO-1 has LED strip terminals, **5V**, **GND** and **IO1**, for an add
 
     LED strip support for the CAST PRO-1 is coming in a firmware update. Once it's available, update your CAST PRO-1 from the **Firmware Update** entity on its device page.
 
-## What You'll Need
+## What you'll need
 
 - **An addressable RGB strip that uses a single data wire.** WS2812B is the most common. WS2812, SK6812 (RGB), WS2811, APA106 and SM16703 also work.
 - A strip with bare wire ends (or wires you can connect to its pads) for the terminals.
@@ -49,7 +49,7 @@ You'll connect the strip's power, ground and data wires to the matching terminal
 
 4\. Plug your CAST PRO-1 back into power.
 
-## Turn On the LED Strip Controls
+## Turn on the LED strip controls
 
 The LED strip controls are hidden until you turn them on, so a CAST PRO-1 without a strip doesn't show extra controls.
 
@@ -68,7 +68,7 @@ The LED strip controls are hidden until you turn them on, so a CAST PRO-1 withou
 
 If the colors come out in the wrong order (for example, green when the test shows red), change **LED Strip Color Order** until they match. GRB is right for most WS2812B strips.
 
-## LED Strip Controls
+## LED strip controls
 
 | Entity | What it does |
 | --- | --- |

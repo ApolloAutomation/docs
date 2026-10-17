@@ -1,8 +1,8 @@
 ---
-title: MSR-2 Outlet Mount
+title: MSR-2 outlet mount
 description: Tutorial for using the MSR-2 Outlet Mount.
 ---
-# MSR-2 Outlet Mount
+# MSR-2 outlet mount
 
 You'll attach your sensor to a top facing USB-C plug with the Outlet Mount.
 

@@ -1,10 +1,10 @@
 ---
-title: General Tips
+title: General tips
 description: "Helpful tips to get the most use out of your sensor."
 ---
-# General Tips
+# General tips
 
-## Boot and Reset Buttons
+## Boot and reset buttons
 
 When looking at the PLT-1B in the below orientation, the reset button is on the left and the boot button is on the right by the USB-C port.
 

@@ -1,13 +1,13 @@
 ---
-title: M-1 LED Matrix Settings
+title: M-1 LED Matrix settings
 description: >-
   Settings needed to get your M-1 LED Matrix driving the HUB75 panel correctly.
 ---
-# M-1 LED Matrix Settings
+# M-1 LED Matrix settings
 
 These are the settings that make the HUB75 panel display correctly. You need them if you reflashed your M-1, wiped its settings, or changed the number of panels. Units that ship on WLED arrive already configured for one 64x64 panel.
 
-## Friendly Name
+## Friendly name
 
 Click on **Config**, then **User Interface**. In the **Server description** field, enter the name you want your M-1 device to display as in the WLED interface, such as **Apollo LED Matrix**. It ships as **Apollo M-1**, so this is only worth changing if you want something else.
 
@@ -49,7 +49,7 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
     * Hostnames are **not case sensitive** (`HostName` = `hostname`).
 
-## LED Settings
+## LED settings
 
 === "WLED"
 
@@ -77,7 +77,7 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
     ![WLED LED Preferences set to Hub75Matrix 64x64 and Chain Length 1, brightness limiter unchecked, then saved](/assets/m-1-led-settings.gif)
 
-## 2D Settings
+## 2D settings
 
 === "WLED"
 
@@ -93,7 +93,7 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
     ![WLED 2D Configuration set to 2D Matrix with Basic interface and 64 x 64 panel dimensions, then saved](/assets/m-1-2d-settings.gif)
 
-## AudioReactive Settings
+## AudioReactive settings
 
 !!! success "The Audioreactive is only available on a rev6 PCB with the optional microphone addon"
 

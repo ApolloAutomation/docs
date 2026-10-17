@@ -1,5 +1,5 @@
 ---
-title: MSR-1 Automation Guide
+title: MSR-1 automation guide
 description: "Where to find MSR-1 automation guides, from an Alarmo security system to the buzzer and the example repository on GitHub."
 ---
 # MSR-1 automation guide

@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Getting started
 description: Power your LED-1, wire up your LED strips, and connect it to Wi-Fi and Home Assistant.
 ---
 # Getting started

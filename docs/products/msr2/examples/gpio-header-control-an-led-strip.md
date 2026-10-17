@@ -1,8 +1,8 @@
 ---
-title: Control an LED strip with the GPIO Header
+title: Control an LED strip with the GPIO header
 description: Wire a WS2812B LED strip to the Apollo GPIO Header and control it from Home Assistant.
 ---
-# Control an LED strip with the GPIO Header
+# Control an LED strip with the GPIO header
 
 The GPIO Header addon brings the MSR-2's spare pins out to a row of headers, so you can hang your own hardware off the sensor. This guide wires a WS2812B strip to one of those pins and gets it into Home Assistant as its own light entity, color picker and effects included.
 
@@ -26,7 +26,7 @@ IO2, IO4, IO6, and IO7 are free for LED data, and you can drive more than one st
 
 ![Pinout diagram of the Apollo GPIO Header showing the 5V, GND, and IO pins](/assets/gpio-header-pinout.webp){ width="480" }
 
-## Attaching the GPIO Header
+## Attaching the GPIO header
 
 You'll seat the GPIO Header on your sensor's mezzanine connector, then fit the blue back plate that came with the addon.
 

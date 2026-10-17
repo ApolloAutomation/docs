@@ -1,5 +1,5 @@
 ---
-title: Apollo Odroid Reviews
+title: Apollo Odroid reviews
 description: The Apollo Odroid Reviews.
 ---
 # Simon Says Home Assistant

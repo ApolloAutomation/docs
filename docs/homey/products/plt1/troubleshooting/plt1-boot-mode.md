@@ -1,14 +1,14 @@
 ---
-title: Putting The PLT-1 In Boot Mode
+title: Putting the PLT-1 in boot mode
 description: "Step by step guide for putting The PLT-1 In Boot Mode."
 ---
-# Putting The PLT-1 In Boot Mode
+# Putting the PLT-1 in boot mode
 
 !!! info "This will cover how to put the PLT-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-## Method 1: Boot Button Only
+## Method 1: Boot button only
 
 You can put your device into boot mode with only the boot button and a USB-C cable.
 
@@ -20,7 +20,7 @@ You can put your device into boot mode with only the boot button and a USB-C cab
 
 3\. Continue with <a href="https://wiki.apolloautomation.com/homey/products/plt1/troubleshooting/plt1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
-## Method 2: Boot and Reset Buttons
+## Method 2: Boot and reset buttons
 
 You can also put your device into boot mode by pressing the reset button while you hold the boot button.
 

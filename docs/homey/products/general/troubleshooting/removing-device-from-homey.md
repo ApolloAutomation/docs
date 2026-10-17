@@ -1,8 +1,8 @@
 ---
-title: Removing Devices from Homey
+title: Removing devices from Homey
 description: "Remove an Apollo device from Homey through the app or the dashboard."
 ---
-# Removing Devices from Homey
+# Removing devices from Homey
 
 1\. Open your Homey app or desktop browser and navigate to the Homey Dashboard.
 

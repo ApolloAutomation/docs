@@ -1,8 +1,8 @@
 ---
-title: How To Change The Temperature Probe Update Interval
+title: How to change the temperature probe update interval
 description: Change how often the TEMP-1 temperature probe reports by overriding its YAML in the ESPHome Builder.
 ---
-# How To Change The Temperature Probe Update Interval
+# How to change the temperature probe update interval
 
 By default the TEMP-1 reports its **Temperature Probe** every 60 seconds. You can make it report faster, such as every 10 seconds, by overriding the sensor's YAML in the ESPHome Builder. This is useful for smoother graphs or quicker reactions when you are watching a fridge, freezer, fish tank, or hot tub.
 

@@ -1,8 +1,8 @@
 ---
-title: Factory Re-Flash MSR-2
+title: Factory re-flash MSR-2
 description: Step by step guide for re-flashing the MSR-2 back to factory firmware.
 ---
-# Factory Re-Flash MSR-2
+# Factory re-flash MSR-2
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 

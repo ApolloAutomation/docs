@@ -1,8 +1,8 @@
 ---
-title: TEMP-1B Alert Outside Temp Range Example
+title: TEMP-1B alert outside temp range example
 description: Step by step guide for alerting outside the set range with the TEMP-1B.
 ---
-# TEMP-1B Alert Outside Temp Range Example
+# TEMP-1B alert outside temp range example
 
 This will guide you through how to set up the built in alarm using the temperature probe in your freezer!
 

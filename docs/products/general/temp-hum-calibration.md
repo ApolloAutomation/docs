@@ -1,5 +1,5 @@
 ---
-title: Temp and Humidity Calibration and Offset Examples
+title: Temp and humidity calibration and offset examples
 description: Learn why Apollo temperature and humidity readings can be off, then correct them with simple offsets or advanced template sensors.
 ---
 # Simple and advanced temperature and humidity offsets

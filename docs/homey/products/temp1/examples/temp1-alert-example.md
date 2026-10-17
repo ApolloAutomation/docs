@@ -30,7 +30,7 @@ You now have a range that covers normal use and flags a real problem.
 
     The **Temperature Probe** reading, and the **Temperature** token the flows below compare, are always in °C. If you think in Fahrenheit, convert first: -10 °C is 14 °F, and -30 °C is -22 °F.
 
-## Flow 1: too warm
+## Flow 1: Too warm
 
 This flow runs each time the probe reading changes, checks it against your maximum, and sends the alert when the freezer is too warm.
 
@@ -45,7 +45,7 @@ This flow runs each time the probe reading changes, checks it against your maxim
 
 The flow now shows in **My Flows**. Any probe reading above -10 °C sends the alert to your phone.
 
-## Flow 2: too cold
+## Flow 2: Too cold
 
 The second flow mirrors the first. Build it the same way, with these changes:
 
