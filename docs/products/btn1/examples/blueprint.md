@@ -32,7 +32,7 @@ description: >-
 
 ## Manual Import
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/automation/dashboard" target="_blank" rel="noreferrer nofollow noopener">automations page</a> and click on **Blueprints** in the top right then select **Import Blueprint**.
+1\. Go to **Settings → Automations & scenes**, click **Blueprints** at the top, then click **Import blueprint**.
 
 ![Opening the Home Assistant Blueprints tab under Automations and scenes and clicking Import blueprint](/assets/btn-1-blueprint-manual-import.gif)
 

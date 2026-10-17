@@ -98,7 +98,7 @@ wifi_password: "your-wifi-password-here"
 
 The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="noreferrer nofollow noopener">Media Proxy app</a> allows you to view gifs, still images, YouTube videos, and even use <a href="https://wiki.apolloautomation.com/products/m1/examples/sendspin/" target="_blank" rel="noreferrer nofollow noopener">Sendspin</a> with album art when using <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>!
 
-1\. Head to settings -&gt; Apps -&gt; Click Install App -&gt; 3 dots -&gt; click repositories -&gt; click Add -&gt; paste in https://github.com/stuartparmenter/homeassistant-addons. Or use the button below: it adds the repository, after Home Assistant asks you to confirm, and opens the Media Proxy app so you can click **Install** in step 2.
+1\. Go to **Settings → Apps** and click **Install app**. Open the three-dot menu in the top right, choose **Repositories**, click **Add**, and paste in `https://github.com/stuartparmenter/homeassistant-addons`. Or use the button below: it adds the repository, after Home Assistant asks you to confirm, and opens the Media Proxy app so you can click **Install** in step 2.
 
 [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=2b3c960e_media_proxy&repository_url=https%3A%2F%2Fgithub.com%2Fstuartparmenter%2Fhomeassistant-addons)
 
