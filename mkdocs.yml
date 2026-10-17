@@ -91,6 +91,13 @@ plugins:
   - meta
   - redirects:
       redirect_maps:
+        # Wiki cleanup round 2: orphan Homey copies of Home Assistant pages and the old contact page
+        'homey/products/msr2/examples/using-msr-2-buzzer.md': 'homey/products/msr2/introduction.md'
+        'homey/products/mtr1/examples/using-mtr-1-buzzer.md': 'homey/products/mtr1/introduction.md'
+        'homey/products/mtr1/examples/mtr-1-home-assistant-dashboard-examples.md': 'homey/products/mtr1/introduction.md'
+        'homey/products/air1/calibrating-and-updating/air-1-temp-calibration.md': 'homey/products/air1/introduction.md'
+        'homey/products/msr2/calibrating-co2.md': 'homey/products/general/calibrating-and-updating/co2-calibration.md'
+        'contact.md': 'products/general/contact-us/contact-us-support.md'
         # MSR-1 update-frequency stub removed; only content was a dead link
         # to the retired wiki.apolloautomation.cloud
         'products/msr1/setup/how-to-change-the-update-frequency-of-sensors.md': 'products/general/setup/change-the-update-frequency-of-sensors.md'
@@ -825,8 +832,6 @@ nav:
                 - Outlet Mount: homey/products/msr2/addons/msr2-outlet-mount.md
               - Examples:
                 - GPIO Header LED Strip: homey/products/msr2/examples/gpio-header-control-an-led-strip.md
-                - MSR-2 Alarmo: homey/products/msr2/examples/msr2-alarmo.md
-                - MSR-2 Dashboards: homey/products/msr2/examples/msr2-dashboards.md
               - Troubleshooting:
                 - Factory Re-Flash MSR-2: homey/products/msr2/troubleshooting/msr2-code.md
                 - MSR-2 Boot Mode: homey/products/msr2/troubleshooting/msr2-boot-mode.md
@@ -850,7 +855,6 @@ nav:
                 - GPIO Addon: homey/products/mtr1/addons/adding-gpio-header-to-mtr-1.md
                 - Male Rear USB-C: homey/products/mtr1/addons/adding-rear-male-usb-to-mtr-1.md
               - Examples:
-                - MTR-1 Alarmo: homey/products/mtr1/examples/mtr1-alarmo.md
                 - MTR-1 Corner Mount: homey/products/mtr1/examples/crookedtoe-mtr1.md
               - Troubleshooting:
                 - Factory Re-Flash MTR-1: homey/products/mtr1/troubleshooting/mtr1-code.md
@@ -889,8 +893,6 @@ nav:
                 - Sensor Definitions: homey/products/plt1/setup/plt1-sensor-definitions.md
                 - Calibrating Soil Moisture: homey/products/plt1/calibrate-plt1.md
                 - Prevent Sleep: homey/products/plt1/setup/prevent-sleep.md
-              - Examples:
-                - Flower Card: homey/products/plt1/examples/flower-card.md
               - Troubleshooting:
                 - Factory Re-Flash PLT-1: homey/products/plt1/troubleshooting/plt1-code.md
                 - PLT-1 Boot Mode: homey/products/plt1/troubleshooting/plt1-boot-mode.md
@@ -909,8 +911,6 @@ nav:
                 - Insert Battery: homey/products/plt1b/additional-info/insert-battery.md
                 - Prevent Sleep: homey/products/plt1b/setup/prevent-sleep.md
                 - Sensor Connection Check: homey/products/plt1b/battery-sensors/sensor-connection-check.md
-              - Examples:
-                - Flower Card: homey/products/plt1b/examples/flower-card.md
               - Troubleshooting:
                 - Factory Re-Flash PLT-1B: homey/products/plt1b/troubleshooting/plt1b-code.md
                 - PLT-1B Boot Mode: homey/products/plt1b/troubleshooting/plt1b-boot-mode.md
