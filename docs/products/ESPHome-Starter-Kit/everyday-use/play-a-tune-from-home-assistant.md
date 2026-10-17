@@ -323,7 +323,7 @@ With the device back online, each action you added shows up in Home Assistant. T
 
 === "Level 1 · One song"
 
-    1.  Click the button below to open **Developer Tools → Actions**:
+    1.  Click the button below to open **Developer Tools → Actions** (**Settings → Tools → Actions** in Home Assistant 2026.8 and newer):
 
         [![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
 
@@ -340,7 +340,7 @@ With the device back online, each action you added shows up in Home Assistant. T
 
 === "Level 2 · Song slots"
 
-    1.  Click the button below to open **Developer Tools → Actions**:
+    1.  Click the button below to open **Developer Tools → Actions** (**Settings → Tools → Actions** in Home Assistant 2026.8 and newer):
 
         [![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
 

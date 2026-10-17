@@ -10,7 +10,7 @@ description: >-
 
 1\. Click each box below to see each song then click the copy button on the far right to copy the song.
 
-2\. Play the song in a Home Assistant script, automation, or directly from the developer tools "Actions" tab.
+2\. Play the song in a Home Assistant script, automation, or directly from the developer tools "Actions" tab (**Settings → Tools → Actions** in Home Assistant 2026.8 and newer).
 
 [![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
 

@@ -174,7 +174,7 @@ actions:
 
 - Click **Apply** and **Save** after setting up the card or making changes. Most "nothing happens" reports come down to a missed **Apply**.
 - **Resource not found**: confirm the resource URL is `/local/zone-mapper-card.js`, the file is under `/config/www`, and clear your browser cache.
-- **Zones don't persist**: check the coordinate sensor's attributes for `shape`, `data`, and `rotation_deg` under **Developer Tools → States**, and confirm the `zone_mapper.update_zone` service is being called.
+- **Zones don't persist**: check the coordinate sensor's attributes for `shape`, `data`, and `rotation_deg` under **Developer Tools → States** (**Settings → Tools → States** in Home Assistant 2026.8 and newer), and confirm the `zone_mapper.update_zone` service is being called.
 
     [![Open your Home Assistant instance and show your state tools.](https://my.home-assistant.io/badges/tools_states.svg)](https://my.home-assistant.io/redirect/tools_states/)
 
