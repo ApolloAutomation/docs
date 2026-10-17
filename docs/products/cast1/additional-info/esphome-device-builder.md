@@ -74,7 +74,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     To add the **ESPHome Device Builder** to your Home Assistant instance, use this My button:
 
-    <a href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/supervisor_addon.svg" alt="Open your Home Assistant instance and start setting up a new app."></a>
+    [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
     **<u>Method 2</u>**
 
@@ -118,7 +118,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 1\. Open the ESPHome Device Builder.
 
-<a href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/supervisor_addon.svg" alt="Open your Home Assistant instance and show the dashboard of a Supervisor add-on."></a>
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 2\. Click **Show** next to **Discovered** at the top, then click **Take Control** next to your CAST-1. Change the **Name** and **Friendly Name** if you'd like, or leave them, then click **Take Control** again.
 

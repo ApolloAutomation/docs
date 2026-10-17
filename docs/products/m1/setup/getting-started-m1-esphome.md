@@ -68,7 +68,7 @@ Head to the <a href="http://homeassistant.local:8123/config/integrations" target
 
 1\. Install the ESPHome Device Builder inside Home Assistant OS by clicking the button below. Make sure to toggle on Start on Boot, Watchdog, and Show in sidebar.
 
-[![Open your Home Assistant instance and show the add-on store with a specific add-on pre-selected.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 2\. Navigate to the ESPHome Device Builder app by clicking the Open Web UI button on the far right.
 

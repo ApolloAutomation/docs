@@ -40,9 +40,9 @@ This is the easy way. Use it if your device has a **Firmware Channel** setting o
 
 Use this if your device doesn't have a **Firmware Channel** setting, or if you build its firmware yourself.
 
-1\. In Home Assistant open the <a href="http://homeassistant.local:8123/5c53de3b_esphome" target="_blank" rel="noopener"><strong>ESPHome Device Builder</strong></a>.
+1\. In Home Assistant open the **ESPHome Device Builder** app.
 
-[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=ESPHome+Device+Builder&repository_url=http%3A%2F%2Fhomeassistant.local%3A8123%2F5c53de3b_esphome)
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 !!! tip "Make sure you are running the latest version of ESPHome"
 

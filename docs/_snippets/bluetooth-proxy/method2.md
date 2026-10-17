@@ -6,7 +6,7 @@ The easiest way is to let ESPHome Device Builder add the component for you. You 
 
 Don't have it installed yet? Add it from the App Store with the badge below first.
 
-[![Open your Home Assistant instance and show the dashboard of the ESPHome Device Builder app.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 2\. Click **Add Component** in the editor toolbar, search for **Bluetooth Proxy**, and click **Add**.
 
