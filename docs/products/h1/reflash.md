@@ -27,6 +27,8 @@ If no device shows, click cancel and then install the recommended driver that sh
 1. After finishing, check for the Apollo hotspot and connect. This might not show if you previously had the H-1 connected to your Wi-Fi
 2. Log into Home Assistant and go to the ESPHome app check to see if you can adopt the device.
 
+    [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+
 If you encounter the below error, please complete the [Putting H-1 In Boot Mode Document](https://wiki.apolloautomation.com/products/h1/boot-mode/) and go back to step 3.
 
 ![Web installer error: Failed to initialize, try holding the BOOT button while clicking Install](/assets/image-1698806793309.png)

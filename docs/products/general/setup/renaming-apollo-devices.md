@@ -46,6 +46,8 @@ This section only changes the device name shown in the ESPHome integration page.
 
 1\. Make sure you are already using the ESPHome Device Builder app as <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">gone over in the getting started wiki articles</a>.
 
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+
 2\. Click the 3 dots next to your new Apollo device and select **Rename hostname** then enter in the new name of your sensor and click **Rename**. This cannot have any spaces or underscores only hyphens, numbers, and lowercase letters such as "**smart-keys**". Once it finishes it will say OTA successful and you can click close to get back to the main dashboard.
 
 ![Using Rename hostname in ESPHome Device Builder to rename a BTN-1 and install the change](/assets/rename-hostname-esphome-device-builder-gif.gif)
@@ -58,7 +60,9 @@ This section only changes the device name shown in the ESPHome integration page.
 
 ![Editing friendly_name to Smart Keys in ESPHome Device Builder, then installing wirelessly](/assets/rename-friendiy-name-esphome-device-builder-gif.gif)
 
-4\. Finally we should delete the device from the ESPHome Integration in Home Assistant and then add it back! Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>. Next to the device you would like to remove, click the three dots and then **Delete**.
+4\. Finally we should delete the device from the ESPHome Integration in Home Assistant and then add it back! Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**). Next to the device you would like to remove, click the three dots and then **Delete**.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![Deleting the renamed BTN-1 from the ESPHome integration page using the three-dot menu](/assets/delete-device-from-esphome-device-builder-gif2.gif)
 

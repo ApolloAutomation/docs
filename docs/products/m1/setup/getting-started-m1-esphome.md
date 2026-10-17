@@ -48,13 +48,11 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 
 ## Join to Home Assistant
 
-!!! tip "Your device should be auto-discovered by Home Assistant using the ESPHome Integration as shown below!"
-
-    Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and accept the discovery prompt for your M-1.
-
 Your device should be auto-discovered by Home Assistant using the ESPHome Integration as shown below!
 
-Head to the <a href="http://homeassistant.local:8123/config/integrations" target="_blank" rel="noreferrer nofollow noopener">Integrations page in Home Assistant</a> and accept the discovery prompt for your M-1.
+Head to the Integrations page in Home Assistant (**Settings → Devices & services**) and accept the discovery prompt for your M-1.
+
+[![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
 
 ![Home Assistant ESPHome integration: adding the discovered Apollo M-1 and finishing setup](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
 
@@ -100,7 +98,9 @@ wifi_password: "your-wifi-password-here"
 
 The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="noreferrer nofollow noopener">Media Proxy app</a> allows you to view gifs, still images, YouTube videos, and even use <a href="https://wiki.apolloautomation.com/products/m1/examples/sendspin/" target="_blank" rel="noreferrer nofollow noopener">Sendspin</a> with album art when using <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>!
 
-1\. Head to <a href="http://homeassistant.local:8123/config/apps/repositories" target="_blank" rel="noreferrer nofollow noopener">settings -&gt; Apps -&gt; Click Install App -&gt; 3 dots -&gt; click repositories</a> -&gt; click Add -&gt; paste in https://github.com/stuartparmenter/homeassistant-addons
+1\. Head to settings -&gt; Apps -&gt; Click Install App -&gt; 3 dots -&gt; click repositories -&gt; click Add -&gt; paste in https://github.com/stuartparmenter/homeassistant-addons. Or use the button below: it adds the repository, after Home Assistant asks you to confirm, and opens the Media Proxy app so you can click **Install** in step 2.
+
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=2b3c960e_media_proxy&repository_url=https%3A%2F%2Fgithub.com%2Fstuartparmenter%2Fhomeassistant-addons)
 
 ![Home Assistant App store menu, Repositories, then adding the Media Proxy repository URL](../../../assets/add-media-proxy-custom-repo.gif)
 
@@ -112,7 +112,9 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 ![Media Proxy app page: turning on Watchdog and Auto update, then clicking Start](../../../assets/media-proxy-start.gif)
 
-4\. To test that it's working, head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome integration page</a> then select your M-1 device from the list. <a href="https://media1.tenor.com/m/cOxR1hF63Y0AAAAd/matrix-film.gif" target="_blank" rel="noreferrer nofollow noopener">Copy this url</a> and paste it into the Media Source box. It should automatically start playing the gif!
+4\. To test that it's working, head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) then select your M-1 device from the list. <a href="https://media1.tenor.com/m/cOxR1hF63Y0AAAAd/matrix-film.gif" target="_blank" rel="noreferrer nofollow noopener">Copy this url</a> and paste it into the Media Source box. It should automatically start playing the gif!
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![M-1 device page in the ESPHome integration with a GIF URL pasted into Media Source](../../../assets/m-1-esphome-media-proxy-confirm-working.gif)
 
@@ -124,7 +126,9 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 The M-1 ESPHome firmware has built-in support for the <a href="https://www.amazon.com/WiZ-Remote-Compatible-Lights-Assistant/dp/B091TGDS6F" target="_blank" rel="noreferrer nofollow noopener">WiZ WizMote</a> remote, so you can change pages, dim the panel, and toggle it on/off without your phone.
 
-1\. In Home Assistant, open the M-1 device on the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome integration page</a>.
+1\. In Home Assistant, open the M-1 device on the **ESPHome** integration page (**Settings → Devices & services → ESPHome**).
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 2\. Find the **WizMote Auto-Discovery** switch and turn it on.
 

@@ -18,7 +18,11 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 2\. Install the Streamline Card in HACS <a href="https://github.com/brunosabot/streamline-card/?tab=readme-ov-file#with-hacs-recommended" target="_blank" rel="noreferrer nofollow noopener">here</a> which is required for the steps below.
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=brunosabot&repository=streamline-card&category=plugin)
+
 3\. Install the Plotly Graph Card in HACS <a href="https://github.com/dbuezas/lovelace-plotly-graph-card" target="_blank" rel="noreferrer nofollow noopener">here</a> which is also required for the steps below.
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
 
 4\. Head to your <a href="http://homeassistant.local:8123" target="_blank" rel="noreferrer nofollow noopener">Home Assistant dashboard</a> and <a href="https://www.home-assistant.io/getting-started/onboarding_dashboard/#creating-a-new-dashboard-and-edit-cards" target="_blank" rel="noreferrer nofollow noopener"><strong>Take control</strong> of your dashboard</a> by clicking **Edit Dashboard** in the top right then the 3 dots from the **Edit Dashboard** menu and click **Take control**. (this step is only necessary for new Home Assistant users).
 
@@ -32,6 +36,8 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 !!! tip "Create backups to restore to before moving forward!"
 
     Back up your Home Assistant instance and back up a copy of the **Raw configuration editor** mentioned below before you make any changes just to be safe!
+
+    [![Open your Home Assistant instance and show an overview of your backups.](https://my.home-assistant.io/badges/backup.svg)](https://my.home-assistant.io/redirect/backup/)
 
 6\. Click **Edit dashboard** in the top right then click the 3 dots from the **Edit Dashboard** menu and click **Raw configuration editor**. Navigate to the end of the document and paste the code from the YAML generator at the very bottom of the **Raw configuration editor**. Click **Save** in the top right.
 

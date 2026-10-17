@@ -6,7 +6,9 @@ description: Step by step guide on how to update the firmware on your Apollo dev
 
 ## From Home Assistant
 
-Most Apollo devices update themselves. Open the device page in Home Assistant and look for the **Firmware Update** entity: it reports when a new version is available and installs it over the air, with no computer and no cable.
+Most Apollo devices update themselves. Open the device page in Home Assistant (**Settings → Devices & services → ESPHome**, then your device) and look for the **Firmware Update** entity: it reports when a new version is available and installs it over the air, with no computer and no cable.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 On a battery powered device, start the update and it installs the next time the device wakes.
 

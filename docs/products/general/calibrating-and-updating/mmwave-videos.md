@@ -20,7 +20,9 @@ How to tune the mmWave sensor using radar engineering mode.
   </iframe>
 </div>
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
+1\. Navigate to the ESPHome integration by going to settings -&gt; ESPHome integration -&gt; click on the name of your new device!
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 2\. Scroll down to the Configuration section.
 

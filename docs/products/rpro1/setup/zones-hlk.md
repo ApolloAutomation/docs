@@ -22,7 +22,9 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your R PRO-1 and scroll down until you see LD2450 Bluetooth.
+1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) then select your R PRO-1 and scroll down until you see LD2450 Bluetooth.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![LD2450 Bluetooth toggle switched on in the Home Assistant Configuration card, highlighted](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
 
@@ -66,6 +68,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
+
 3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. \*\* \*\* Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_r\_pro\_1\_eth\_593904", with six random characters at the end.
 
 <iframe src="/snippets/rpro1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
@@ -94,7 +98,9 @@ The same HLKRadarTool app is used for both sensors.
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your R PRO-1 and scroll down until you see **LD2412 Bluetooth**. Toggle it on.
+1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) then select your R PRO-1 and scroll down until you see **LD2412 Bluetooth**. Toggle it on.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![LD2412 Bluetooth toggle being switched on in the R PRO-1 Configuration card in Home Assistant](/assets/r-pro-1-toggle-on-ld2412-bluetooth.gif)
 

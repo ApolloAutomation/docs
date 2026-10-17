@@ -19,15 +19,23 @@ MostlyChris covers the full setup, from installation to drawing your first zones
 
 HACS is a community store for Home Assistant that handles installing and updating custom integrations and cards. If you don't have it yet, follow the [HACS download guide](https://hacs.xyz/docs/use/download/download/) and [initial configuration guide](https://hacs.xyz/docs/configuration/basic).
 
-With HACS in place, both Zone Mapper parts install in one pass:
+With HACS in place, both Zone Mapper parts install in one pass. The buttons under steps 3 and 4 add each repository for you, after HACS asks you to confirm, and open it so you can click **Download** right there:
 
 1. Open **HACS** from your Home Assistant sidebar.
 2. Click the three-dot menu in the upper right corner and choose **Custom repositories**.
 3. Add `https://github.com/ApolloAutomation/zone-mapper` with type **Integration**.
+
+    [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=zone-mapper&category=integration)
+
 4. Add `https://github.com/ApolloAutomation/zone-mapper-card` with type **Dashboard**.
+
+    [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=zone-mapper-card&category=plugin)
+
 5. Search HACS for **Zone Mapper** and download both the integration and the card.
 6. Restart Home Assistant when prompted.
 7. Go to **Settings → Devices & services → Add integration**, search for **Zone Mapper**, and add it.
+
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=zone_mapper)
 
 The integration adds a "Zone Mapper" view with the card to your default dashboard the first time it is set up, so you don't have to place the card yourself (storage-mode dashboards only; you can opt out in the integration options). Open the new view and you're ready to pick your device and start drawing.
 
@@ -38,6 +46,9 @@ If you'd rather install without HACS:
 1. Copy the contents of the integration's `custom_components` folder to `/config/custom_components/zone_mapper`.
 2. Download `zone-mapper-card.js` from the card repository to `/config/www`.
 3. Add the card as a resource under **Settings → Dashboards → Resources** with URL `/local/zone-mapper-card.js` and type **JavaScript Module**.
+
+    [![Open your Home Assistant instance and show your dashboard resources.](https://my.home-assistant.io/badges/lovelace_resources.svg)](https://my.home-assistant.io/redirect/lovelace_resources/)
+
 4. Restart Home Assistant, then hard-refresh your browser to clear the cached resource list.
 
 ## Configure the card
@@ -88,6 +99,9 @@ The card needs to know which X/Y coordinate sensors to track:
     Home Assistant shows the Target X and Y sensors in inches (in) when your system uses US units, while the card reads them in millimeters (mm). When the units don't match, your target dots never appear on the grid. Metric users can skip this; everyone else, convert the sensors before drawing zones:
 
     1. Open your device's page under **Settings → Devices & services → ESPHome**.
+
+        [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
     2. Under **Sensors**, click **Target 1 X**, open its settings with the gear icon, and change **Unit of Measurement** to **mm**.
     3. Repeat for the X and Y sensors of all three targets (six entities in total).
 
@@ -162,6 +176,9 @@ actions:
 - Click **Apply** and **Save** after setting up the card or making changes. Most "nothing happens" reports come down to a missed **Apply**.
 - **Resource not found**: confirm the resource URL is `/local/zone-mapper-card.js`, the file is under `/config/www`, and clear your browser cache.
 - **Zones don't persist**: check the coordinate sensor's attributes for `shape`, `data`, and `rotation_deg` under **Developer Tools → States**, and confirm the `zone_mapper.update_zone` service is being called.
+
+    [![Open your Home Assistant instance and show your state tools.](https://my.home-assistant.io/badges/tools_states.svg)](https://my.home-assistant.io/redirect/tools_states/)
+
 - **Coordinate entity not found**: draw a zone once to create the entities for that location.
 - **No target dots appear when you move**: your Target X/Y sensors are most likely reporting in inches while the card reads millimeters. Switch the six target sensors to mm as described under [Set target entities](#set-target-entities).
 - **Presence never turns on**: verify the tracked X/Y entities have numeric states (not `unknown` or `unavailable`) and that the target actually sits inside the drawn zone.
