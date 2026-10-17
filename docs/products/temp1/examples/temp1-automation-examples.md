@@ -20,7 +20,9 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 4\. The automation is now ready to be created -
 
-5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
+5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation".
+
+[![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
 6\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users skip to step 10.
 
@@ -76,7 +78,9 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 2\. Place the food probe inside your food once it's on the grill. Make sure your TEMP-1 is in a cool dry place - only the <a href="https://wiki.apolloautomation.com/products/temp1/addons/food-probe/" title="Click me for more info on installation of food probe and usage." target="_blank" rel="noreferrer nofollow noopener">food probe and the wire can withstand temperatures on a grill, in the oven, etc</a>.
 
-3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left. <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
+3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left.
+
+[![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
 4\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Advanced users skip to step 8.
 
@@ -133,7 +137,9 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Add to dashboard dialog with button typed in the card search](/assets/temp-1-cook-chicken-example-pic-3.png)![Home Assistant Button card configuration with the Chicken Monitor entity and Save button highlighted](/assets/temp-1-cook-chicken-example-pic-2.png)
 
-3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
+3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation".
+
+[![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
 4\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "On". Advanced users skip to step 25 for the YAML.
 

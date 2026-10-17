@@ -16,6 +16,8 @@ This guide assumes you already have HACS installed. If you do not, please first 
 
 First, you need to install apexcharts-card by going to the HACS tab and searching "apexcharts-card".
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=RomRider&repository=apexcharts-card&category=plugin)
+
 ![HACS search results showing the apexcharts-card repository](/assets/xpUimage.png)
 
 Once downloaded, it is ready to be used for dashboards!

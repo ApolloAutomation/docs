@@ -19,6 +19,8 @@ Your CAST-1 has two media players and either one handles announcements.
 
 1\. Open **Developer Tools** in Home Assistant and go to the **Actions** tab.
 
+[![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
+
 2\. Switch to YAML mode and paste this: (1)
 { .annotate }
 

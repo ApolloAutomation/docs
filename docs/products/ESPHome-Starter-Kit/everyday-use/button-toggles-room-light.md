@@ -20,7 +20,10 @@ This is an alternative way to use the Starter Kit's button. Instead of toggling 
 
 ## Build the automation
 
-1. Open [Settings → Automations & scenes](https://my.home-assistant.io/redirect/automations/) in Home Assistant.
+1. Open **Settings → Automations & scenes** in Home Assistant.
+
+    [![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
+
 2. Click **+ Create automation** in the bottom right, then choose **Create new automation**.
 3. Under **Triggers**, click **+ Add trigger**, type `state`, and choose **State**.
 

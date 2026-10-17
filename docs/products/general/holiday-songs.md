@@ -12,6 +12,8 @@ description: >-
 
 2\. Play the song in a Home Assistant script, automation, or directly from the developer tools "Actions" tab.
 
+[![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
+
 ???+ song-red "Jingle Bells (Ornate)"
 
     ```

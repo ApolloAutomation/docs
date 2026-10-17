@@ -20,6 +20,8 @@ The predicted sensors and their tuning controls are disabled by default, so they
 
 2\. Select the **ESPHome** integration, then your AIR-1 device.
 
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
 3\. Scroll down and select **entities not shown**.
 
 4\. Pick **Predicted Room Temperature**, select the gear icon, and choose **Enable**.

@@ -55,6 +55,8 @@ For a single device, the on-device web page is often enough. For anything that t
 
     Some router setups (notably VLANs and segmented networks) block mDNS broadcasts. If your device never shows up under **Discovered**, add the integration manually using the device's IP address.
 
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=esphome)
+
     For UniFi networks specifically, see our [UniFi mDNS troubleshooting guide](../../general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md).
 
 <a href="../what-is-secrets-yaml/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Back - What is secrets.yaml?</a> <a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Tutorial - Connect to Home Assistant</a>

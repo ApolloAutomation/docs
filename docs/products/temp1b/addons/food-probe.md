@@ -24,7 +24,9 @@ The TEMP-1B comes with an optional food probe which can be used to monitor food 
 
 ![TEMP-1B with the stainless steel food probe and braided cable plugged in](/assets/food-probe-pic-1.jpg)
 
-3\. Go to the device page of your TEMP-1B in Home Assistant and choose probe "Food".
+3\. Go to the device page of your TEMP-1B in Home Assistant (**Settings → Devices & services → ESPHome**) and choose probe "Food".
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![Home Assistant Controls card with Food selected in the Select Probe dropdown](/assets/temp1b-food-probe-pic-1-1.png)
 
