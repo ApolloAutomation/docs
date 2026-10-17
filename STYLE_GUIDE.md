@@ -335,12 +335,15 @@ screen:
 - **Installing or adding something**: a HACS repository
   (`hacs_repository`), an integration's setup dialog
   (`config_flow_start`), a Home Assistant app (`supervisor_app`), an
-  app repository (`supervisor_add_addon_repository`), or a blueprint
+  app from another repository (`supervisor_app` with `repository_url`,
+  which offers to add the repository), or a blueprint
   (`blueprint_import`).
 - **Opening the screen a step works in**: an integration's page
   (`integration`), a Settings page (`integrations`, `automations`,
-  `helpers`, `lovelace_dashboards`, `logs`, and so on), or Developer
-  Tools (`tools_actions`, `tools_states`).
+  `helpers`, `lovelace_dashboards`, `logs`, and so on), or
+  **Settings → Tools** (`tools_actions`, `tools_states`,
+  `tools_perform_action`). Home Assistant 2026.8 moved these from
+  Developer tools, and the same buttons open them in older versions.
 - **Restarting Home Assistant**: `system_dashboard` opens
   **Settings → System**, where the power icon is.
 
@@ -360,6 +363,9 @@ own paragraph:
   numbering continues. Inside an admonition or a content tab, add 4
   more. Steps written as `1\.` are plain paragraphs, so their buttons
   start at the left margin.
+- **One button for several steps.** When one button replaces several
+  steps, put it under the first of them and say which steps it covers,
+  for example "The button under step 1 covers steps 1 to 5."
 - **Alt text** is "Open your Home Assistant instance and" followed by
   the redirect's description from the
   [redirect list](https://github.com/home-assistant/my.home-assistant.io/blob/main/redirect.json)
@@ -370,7 +376,10 @@ own paragraph:
   version. Build links with the
   [My Home Assistant link creator](https://my.home-assistant.io/create-link/),
   URL-encode parameter values, and skip hidden redirects such as
-  `supervisor_ingress`.
+  `supervisor_ingress`. Confirm the redirect is also in the Home
+  Assistant frontend's list (`src/panels/my/ha-panel-my.ts` in the
+  frontend repository), because a few names in the redirect list are
+  missing there, such as `activity`.
 - **Check every parameter**: the integration domain from its
   `manifest.json`, the HACS owner and repository (category `plugin`
   for a dashboard card), the app slug from its `config.yaml` with the
