@@ -1,52 +1,64 @@
 ---
-title: Firstof9's AIR-1 Apex Charts Dashboard
+title: Firstof9's AIR-1 Apex Charts dashboard
 description: >-
-  A custom dashboard made by Discord/GitHub user Firstof9 using Apex Charts for
-  a really neat AIR-1 dashboard.
+  A responsive, color-coded AIR-1 dashboard built by Discord and GitHub user
+  Firstof9 with the ApexCharts card, and how to add it to Home Assistant.
 ---
-# Firstof9's AIR-1 Apex Charts Dashboard
+# Firstof9's AIR-1 Apex Charts dashboard
 
-Firstof9 has created this beautiful responsive dashboard with [Apexcharts-card](https://github.com/RomRider/apexcharts-card "ApexCharts-card") custom card from [HACS](https://hacs.xyz/ "Home Assistant Community Store")!
-
-The colors will change as severity levels change for each of the sensors below.
+Discord and GitHub user Firstof9 built this responsive dashboard for the Apollo AIR-1 with the [Apexcharts-card](https://github.com/RomRider/apexcharts-card "ApexCharts-card") custom card from [HACS](https://hacs.xyz/ "Home Assistant Community Store"). Each chart changes color as that sensor's severity level changes.
 
 ![Firstof9 AIR-1 dashboard with color-coded CO2, VOC, NOx, PM, and gas history charts](/assets/firstof9-dash-image-full.png)
 
-This guide assumes you already have HACS installed. If you do not, please first [install HACS](https://hacs.xyz/docs/use/download/prerequisites/ "Install HACS").
+This guide walks you through three stages: install the card, adapt Firstof9's code to your AIR-1, and paste it into your dashboard.
 
-First, you need to install apexcharts-card by going to the HACS tab and searching "apexcharts-card".
+!!! note "Before you start"
+
+    This guide assumes you already have HACS installed. If you don't, [install HACS](https://hacs.xyz/docs/use/download/prerequisites/ "Install HACS") first.
+
+## Install the ApexCharts card
+
+Every chart on this dashboard is an apexcharts-card, so install the card from HACS first.
+
+1\. Go to the HACS tab and search for `apexcharts-card`. The button below opens the repository in HACS directly.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=RomRider&repository=apexcharts-card&category=plugin)
 
 ![HACS search results showing the apexcharts-card repository](/assets/xpUimage.png)
 
-Once downloaded, it is ready to be used for dashboards!
+2\. Download apexcharts-card.
 
-Next, you need to edit the dashboards here.
+Once it's downloaded, the card is ready to use in your dashboards.
 
-![Home Assistant dashboard with the pencil edit icon circled in the top right](/assets/fBWimage.png)
+## Prepare the dashboard code
 
-!!! danger "WARNING YOU ARE ABOUT TO BE ABLE TO WIPE OUT ALL YOUR DASHBOARDS PROCEED WITH CAUTION."
+Firstof9's code uses `downstairs_air_sensor` as the prefix in every entity ID (for example `sensor.downstairs_air_sensor_co2`). Before you paste the code into your dashboard, swap that prefix for your own AIR-1's.
 
-    You are entering an area where if you copy/paste to the wrong place you could delete other dashboards so please be careful!
+!!! warning "Change the entity IDs first"
 
-Now choose "raw configuration editor"
+    If the entity IDs in the code don't match your device, the cards won't work.
 
-![Dashboard three-dot menu open with Raw configuration editor highlighted](/assets/EWyimage.png)
+### Find your entity ID prefix
 
-Now you need to be VERY careful. You are editing all of your dashboards but we can avoid issues by scrolling to the very bottom and then copying and pasting the code seen below. (Picture below shows where we will paste the code) (Code below)
+Your prefix comes from the entity IDs Home Assistant gave your AIR-1. Look it up on the CO2 sensor:
 
-![Raw configuration editor scrolled to the empty last line where the code gets pasted](/assets/air-1-dashboard-end.png)
+1\. Go to **Settings → Devices & services → ESPHome** and select your AIR-1.
 
-**Be sure to change the entity IDs to match your device or else the card will not work.** The code below uses `downstairs_air_sensor` as the prefix (for example `sensor.downstairs_air_sensor_co2`). To find yours, go to **Settings → Devices & services → ESPHome**, select your AIR-1, click its CO2 sensor, then the settings cog, and look at the **Entity ID**, for example `sensor.apollo_air_1_ccaac4_co2`. The part between `sensor.` and `_co2` is your prefix. It uses underscores, not the hyphens shown in ESPHome Device Builder.
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
-The easiest way to change all of the entity IDs in the code is by using AI (ChatGPT etc.) or by using a code editor like Visual Studio Code (VSC). In VSC you can Find (ctrl+f) `downstairs_air_sensor` and Replace (select the small arrow to toggle open the Replace box) it with your ID. Now you are ready to copy the code into the Raw configuration editor. (See code below)
+2\. Click its CO2 sensor, then the settings cog.
 
-VSC Find/Replace
+3\. Look at the **Entity ID**, for example `sensor.apollo_air_1_ccaac4_co2`. The part between `sensor.` and `_co2` is your prefix.
+
+Your prefix uses underscores, not the hyphens shown in ESPHome Device Builder.
+
+### Swap in your prefix
+
+The fastest way to change every entity ID in the code is a code editor like Visual Studio Code (VS Code), or an AI assistant like ChatGPT. In VS Code, open Find (Ctrl+F), then select the small arrow to toggle open the Replace box. Find `downstairs_air_sensor` and replace it with your prefix.
 
 ![VS Code Find and Replace box swapping the example AIR-1 entity ID for your own](/assets/OQfair-1-find-and-replace.png)
 
-**This is the code!**
+Here's Firstof9's dashboard code. Copy it into your editor and replace the prefix. Once every entity ID matches your AIR-1, the code is ready to paste.
 
 ```yaml
   - type: sections
@@ -489,16 +501,40 @@ VSC Find/Replace
               grid_rows: 6
 ```
 
-Now click save in the top right and remember to not hit any buttons or make any other edits before saving!
+## Add the dashboard to Home Assistant
+
+With your code ready, add it to the end of your dashboard's raw configuration. This is where the charts go live.
+
+!!! warning "This editor can wipe out your dashboards"
+
+    In the raw configuration editor you're editing all of your dashboards at once. If you copy or paste into the wrong place, you could delete other dashboards. Paste only at the very bottom.
+
+1\. Open your dashboard and click the pencil icon in the top right to edit it.
+
+![Home Assistant dashboard with the pencil edit icon circled in the top right](/assets/fBWimage.png)
+
+2\. Open the three-dot menu and choose **Raw configuration editor**.
+
+![Dashboard three-dot menu open with Raw configuration editor highlighted](/assets/EWyimage.png)
+
+3\. Scroll to the very bottom of the editor and paste your edited code on the empty last line.
+
+![Raw configuration editor scrolled to the empty last line where the code gets pasted](/assets/air-1-dashboard-end.png)
+
+4\. Click **Save** in the top right. Don't click any other buttons or make any other edits before you save.
 
 ![Raw configuration editor with the Save button circled in the top right](/assets/jAwimage.png)
 
-Finally hit "done" in the top right.
+5\. Click **Done** in the top right.
 
 ![Dashboard edit mode with the Done button circled in the top right](/assets/h9Iimage.png)
 
-Hit F5 on your keyboard or refresh your browser and then look for your new "Air Icon" as a new dashboard option and click on it!
+6\. Press F5 or refresh your browser, then look for the new air icon among your dashboard tabs and click it.
 
 ![Home Assistant dashboard tabs with the new air quality dashboard icon circled](/assets/ssaimage.png)
 
-Lastly, we do want to thank [firstof9](https://github.com/firstof9 "Thank firstof9") for creating this dashboard and sharing it.
+Your AIR-1 readings now fill Firstof9's color-coded charts, and each chart changes color as its sensor's severity level changes.
+
+## Thanks
+
+Thanks to [firstof9](https://github.com/firstof9 "Thank firstof9") for creating this dashboard and sharing it.

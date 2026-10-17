@@ -1,12 +1,22 @@
 ---
 title: Temp and Humidity Calibration and Offset Examples
-description: Temp and Humidity Calibration and Offset Examples.
+description: Learn why Apollo temperature and humidity readings can be off, then correct them with simple offsets or advanced template sensors.
 ---
-# Simple and Advanced Examples of Temperature & Humidity Offsets
+# Simple and advanced temperature and humidity offsets
 
-## **Simple Offsets for Temperature and Humidity:**
+Your Apollo device's temperature and humidity readings can differ from the true value. This page explains why, then shows how to correct them: simple offsets you set from the device page, or advanced template sensors that estimate the true values from all of your readings.
 
-**Please add these to the bottom of your ESPHome yaml for your device then click save and install. Once you are finished, you will have two new boxes inside the Home Assistant ESPHome integration device page for your device where you can fill in an offset. Give them up to 1 minute to take effect!**
+## Why readings can be off
+
+The BME280 and SCD40 sensors are known for measuring temperature and humidity precisely. Like any sensor, though, they can sometimes give inaccurate readings. One significant cause is heat from the ESP chip, which warms the air inside the enclosure and skews the readings.
+
+Temperature and humidity are also linked. When the air temperature rises, the air can hold more moisture, which can lower the relative humidity. When the temperature falls, the air can hold less moisture, so the humidity rises. This relationship plays a big part in how the sensors detect and interpret readings, which makes accurate readings even more important.
+
+## Add simple offsets
+
+Add two offset boxes to your device so you can correct its SCD40 temperature and humidity readings from Home Assistant.
+
+1\. In ESPHome Device Builder, open your device's YAML and paste the following at the bottom:
 
 ```yaml
 sensor:
@@ -50,23 +60,25 @@ number:
     mode: box
 ```
 
-## **BME280 & SCD40 Sensors: Overcoming Temperature & Humidity Reading Challenges**
+2\. Click **Save**, then **Install**.
 
-The BME280 and SCD40 sensors are known for their precision in measuring temperature and humidity. However, like all sensor systems, they can sometimes provide inaccurate readings due to various factors. In the case of the BME280 and SCD40 sensors, one significant challenge arises from the heat produced by the ESP chip, which can alter the environment inside its enclosure, thereby skewing the readings.
+3\. In Home Assistant, open your device's page in the ESPHome integration. Fill in your offsets in the two new boxes, **SCD40 Humidity Offset** and **SCD40 Temperature Offset**.
 
-## **Adjusting the BME280 and SCD40 Temperature Offset**
+Give the new offsets up to 1 minute to take effect. The next section explains how to choose the right values.
 
-For users who want to fine-tune their sensors, the BME280 and SCD40 Temperature Offset entities can be manually adjusted to match the conditions in their home. The offset values are subtracted from the raw temperature & humidity readings in the firmware to update the sensor readings in the Home Assistant entity. For example: scd40\_temperature entity = raw scd40 temperature reading - scd40\_offset.   
-  
-By default, these offsets are preset to values based on our NIST certified thermometer, it's important to note that these values are calibrated for our environment. They might not be accurate for all settings. Therefore, by using a reference thermometer, users can adjust the difference between the readings to get a more accurate representation.   
-  
-Users will also notice the `bme280_humidity_calibrated`, `scd40_humidity_calibrated`, `bme280_temperature_calibrated`, and `scd40_temperature_calibrated` entities. These values utilize the linear filter in the ESPHome firmware to adjust the readings based on our collected data. Again, due to environmental differences, these might not always be precise.
+## How the offsets work
 
-## **Modeling the Relationship Between Sensors**
+You can adjust the BME280 and SCD40 Temperature Offset entities by hand to match the conditions in your home. The firmware subtracts each offset from the raw temperature or humidity reading, and the result is what the sensor's entity shows in Home Assistant. For example, the `scd40_temperature` entity equals the raw SCD40 temperature reading minus `scd40_offset`.
 
-Another approach to getting accurate readings is to model the relationship between the ESP temperature and the other sensors compared against a reference temperature. This can be achieved by creating a template sensor in Home Assistant that employs a decision tree or our regression coefficients.
+The default offsets come from our NIST-certified thermometer and are calibrated for our environment, so they might not be accurate in your home. To fine-tune them, compare your sensor with a reference thermometer and adjust the offsets by the difference between the two readings.
 
-Here's an example that can be added to a configuration YAML:
+You may also notice the `bme280_humidity_calibrated`, `scd40_humidity_calibrated`, `bme280_temperature_calibrated`, and `scd40_temperature_calibrated` entities. These use the linear filter in the ESPHome firmware to adjust the readings based on data we collected. Because every home is different, they might not always be precise either.
+
+## Advanced: model the relationship between sensors
+
+Another way to get accurate readings is to model how the ESP chip temperature and the other sensors relate to a reference temperature. A template sensor in Home Assistant does this for you: it combines your sensor's live readings into an estimated true temperature and humidity, using either a decision tree or our regression coefficients (the multipliers in the example below).
+
+Add the example below to your Home Assistant configuration YAML. Its entity IDs belong to one Apollo MSR-1 (`apollo_msr_1_a79e24`), so replace them with your own device's entity IDs.
 
 ```plaintext
 sensor:
@@ -100,8 +112,9 @@ sensor:
           }}
 ```
 
+### Collect your own data
 
-For users who want to gather their own data with a reference sensor and MSR-1 within their home, we recommend logging data to a CSV using the following YAML entries:
+To gather your own data with a reference sensor and an MSR-1 in your home, we recommend logging the readings to a CSV file. The YAML below logs once a minute to match the reference sensor. As its comments show, the `notify` entry goes in `configuration.yaml` and the automation goes in `automations.yaml`.
 
 ```plaintext
 #Configuration.yaml
@@ -134,11 +147,6 @@ notify:
             {{ states('sensor.apollo_msr_1_a79e24_uptime') | default('NA') }}
 ```
 
+## Advanced accuracy with GPIO
 
-## **The Interrelation of Temperature and Humidity**
-
-It's important to understand that temperature and humidity share an interdependent relationship. When the air temperature rises, its capacity to hold moisture increases, which can decrease relative humidity levels. Conversely, when the temperature falls, the air's capacity to hold moisture decreases, leading to increased humidity. This relationship plays a significant role in how sensors detect and interpret readings, making it even more crucial to ensure accuracy.
-
-## **Advanced Accuracy with GPIO**
-
-For those seeking the highest accuracy, an advanced solution is available. The exposed mezzanine connector on the back of our Apollo boards can be utilized to connect a temperature/humidity sensor. This modification can dramatically improve both temperature and humidity readings, providing data that's as accurate as possible.
+For the highest accuracy, connect a temperature and humidity sensor to the exposed mezzanine connector on the back of your Apollo board. This modification can dramatically improve both temperature and humidity readings, giving you data that's as accurate as possible.

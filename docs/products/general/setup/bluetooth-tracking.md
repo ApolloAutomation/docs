@@ -1,29 +1,33 @@
 ---
 title: Bluetooth Tracker Setup
-description: Tutorial for how to turn your Apollo device into a BLE tracker to track an iPhone!
+description: Turn your Apollo device into a Bluetooth (BLE) tracker for your Apple Watch or Android phone in Home Assistant, with an iPhone alternative and an active-scanning Bluetooth proxy setup.
 ---
-# Bluetooth Tracking
+# Bluetooth tracking
 
-**Apple iPhone and Apple Watch**
+Your Apollo device can listen for the Bluetooth Low Energy (BLE) signals that phones and watches send out, so Home Assistant can tell when you're nearby. This page covers three setups: tracking an Apple Watch in ESPHome, detecting an Android phone as an iBeacon, and running your Apollo MSR-1 as a Bluetooth proxy that also scans for iBeacons.
 
-Alternative HACS Integration: [iPhone Detect](https://github.com/mudape/iphonedetect)
+## Apple iPhone and Apple Watch
+
+As an alternative to the ESPHome setup below, you can install the [iPhone Detect](https://github.com/mudape/iphonedetect) integration from HACS.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=mudape&repository=iphonedetect&category=integration)
 
-[https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6](https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6)
+The Home Assistant Community also has a thread on [bringing ESPresense-style tracking to Home Assistant with ESPHome Bluetooth proxies](https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6).
 
-Thanks to user [Jacob Pfeifer](https://discord.com/channels/1126966963206361199/1126966963755819080/1202032228050419732)!<br> Ok, so looks like I've got signal strength tracking working for Apple watches by getting the mac address from the home assistant private ble device integration. Here's a quick write-up if anyone else is interested. The end of the doc has a complete configuration file example.
+### Track an Apple Watch in ESPHome
 
-### Tracking an Apple Watch in ESPHome
-Using esphome on an Apollo msr-1 to track an Apple Watch
+Thanks to community member [Jacob Pfeifer](https://discord.com/channels/1126966963206361199/1126966963755819080/1202032228050419732) for this write-up! It uses ESPHome on an MSR-1 to track an Apple Watch's signal strength (RSSI), by reading the watch's current MAC address from the Home Assistant Private BLE Device integration. Jacob used the [dalehumby/ESPHome-Apple-Watch-detection](https://github.com/dalehumby/ESPHome-Apple-Watch-detection) repository as a starting point. A complete configuration example sits at the end of this section.
 
-#### Acknowledgements:
-The following github repo was used as a starting point for this configuration: https://github.com/dalehumby/ESPHome-Apple-Watch-detection
+#### Track your watch's signal strength
 
-#### RSSI Tracking
-1.) Setup your apple watch in the "Private BLE Device" integration by following the instructions on the integration page: https://www.home-assistant.io/integrations/private_ble_device/
+Set up RSSI tracking first. Step 1 happens in Home Assistant, and steps 2 to 5 each add a block to your MSR-1's ESPHome configuration.
 
-2.) Create a text sensor in the esphome config that grabs the apple watch current mac address from home assistant:
+1\. Set up your Apple Watch in the **Private BLE Device** integration by following the instructions on the [Private BLE Device integration page](https://www.home-assistant.io/integrations/private_ble_device/).
+
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=private_ble_device)
+
+2\. Create a text sensor that reads your Apple Watch's current MAC address from Home Assistant. Replace `device_tracker.your_apple_watch_home_assistant_id` with your watch's entity ID.
+
 ```yaml
 text_sensor:
   - platform: homeassistant
@@ -33,7 +37,7 @@ text_sensor:
     attribute: current_address
 ```
 
-3\.)  Create a template sensor for storing and transmitting the rssi value:
+3\. Create a template sensor that stores and sends the RSSI value:
 
 ```yaml
 sensor:
@@ -49,7 +53,7 @@ sensor:
           send_every: 1
 ```
 
-4\.) Create a custom ble tracker that uses the mac address from home assistant to match the device:
+4\. Create a custom BLE tracker that uses the MAC address from Home Assistant to match your watch:
 
 ```yaml
 esp32_ble_tracker:
@@ -67,18 +71,20 @@ esp32_ble_tracker:
           }
 ```
 
-5. Ensure the power save mode for wifi is set to light (msr-1 defaults to using none which does not work with bluetooth tracking):
+5\. Set the Wi-Fi power save mode to `light`. The MSR-1 defaults to `none`, which doesn't work with Bluetooth tracking.
 
 ```yaml
 wifi:
   power_save_mode: light
 ```
 
-At this point if you install the changes on the device you should be successfully tracking the rssi for your apple watch. If you want you can optionally add some configuration for a basic presence detection sensor by doing the following:
+Install the changes on your device, and your MSR-1 starts tracking your Apple Watch's RSSI.
 
-OPTIONAL PRESENCE DETECTION SECTION
+#### Optional: add presence detection
 
-6. Create configuration values for detection signal strength:
+To turn the RSSI into a basic presence sensor, add these blocks on top of the RSSI tracking setup.
+
+1\. Create settings for the signal strength levels that count as present and absent:
 
 ```yaml
 number:
@@ -108,7 +114,7 @@ number:
     update_interval: never
 ```
 
-7. Create a sensor for storing and filtering the presence value:
+2\. Create a sensor that stores and filters the presence value:
 
 ```yaml
 sensor:
@@ -120,7 +126,7 @@ sensor:
           send_every: 1
 ```
 
-8. Create a sensor for transmitting the filtered presence state:
+3\. Create a binary sensor that sends the filtered presence state to Home Assistant:
 
 ```yaml
 binary_sensor:
@@ -138,7 +144,7 @@ binary_sensor:
       }
 ```
 
-9. Update the rssi value to set the presence value when it receives a new rssi value:
+4\. Replace the `apple_watch_rssi` sensor you created earlier with this version, which updates the presence value each time it receives a new RSSI value. It calls a `presence_timeout` script, which you'll find in the complete configuration below.
 
 ```yaml
 sensor:
@@ -163,11 +169,11 @@ sensor:
         - script.execute: presence_timeout  # Publish 0 if no rssi received
 ```
 
-Now once you install the esphome changes you should be able to go to the device and set db values for the presence detection and also should see a presence sensor state.
+Install the ESPHome changes. On the device's page you can now set the dB levels for presence detection (**RSSI Presence Level** and **RSSI Absence Level**), and you see the presence sensor's state.
 
-COMPLETE CONFIGURATION
+#### Complete configuration
 
-A complete example of a configuration:
+Here is Jacob's complete configuration as an example. It uses his own device name, encryption key, and IDs (such as `jacobs_watch_mac` and `device_tracker.jacob_s_apple_watch`), so replace those with your own.
 
 ```yaml
 substitutions:
@@ -292,37 +298,41 @@ wifi:
   password: !secret wifi_password
 ```
 
+## Android
 
-**Android** Helpful links:
-[ESP32 Bluetooth Low Energy Tracker Hub](https://esphome.io/components/esp32_ble_tracker.html)
-[iBeacon support for ble\_presence](https://github.com/esphome/esphome/pull/1627)
-[ESP32 Bluetooth Low Energy Beacon](https://esphome.io/components/esp32_ble_beacon.html)
-[iBeacon Region](https://owntracks.org/booklet/features/beacons/)
+An Android phone can act as an iBeacon through the BLE Transmitter sensor in the Home Assistant Companion app, and your MSR-1 can detect it. Follow these steps to set it up.
 
-1. Install the iBeacon integration in HA
-    [iBeacon Install Guide](https://www.home-assistant.io/integrations/ibeacon/)
-2. Install the Home Assistant App on your device
-    [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en_US&gl=US&pli=1)
-    [Apple](https://apps.apple.com/us/app/home-assistant/id1099568401)
-3. Navigate to the HA settings
+1. Install the iBeacon integration in Home Assistant. The [iBeacon Install Guide](https://www.home-assistant.io/integrations/ibeacon/) walks you through it.
+
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=ibeacon)
+
+2. Install the Home Assistant Companion app on your phone, for [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en_US&gl=US&pli=1) or [Apple](https://apps.apple.com/us/app/home-assistant/id1099568401).
+
+3. In the app, open **Settings**.
 
     ![Home Assistant app side menu with Settings circled](/assets/screenshot-20231109-235524-photos.jpg)
-4. Select Companion app
+
+4. Select **Companion app**.
 
     ![Home Assistant Settings screen with Companion app circled](/assets/screenshot-20231109-235557-photos.jpg)
-5. Select Manage sensors
+
+5. Select **Manage sensors**.
 
     ![Companion app settings with Manage sensors circled](/assets/screenshot-20231109-235621-photos.jpg)
-6. Turn on the "BLE Transmitter"
+
+6. Open **BLE Transmitter** and turn it on.
 
     ![BLE transmitter sensor page with the Enable sensor toggle circled](/assets/screenshot-20231109-235702-photos.jpg)
-7. After opening BLE transmitter and turning it on, then scroll down to get the iBeacon unique ID
+
+7. Scroll down to find the iBeacon unique ID.
 
     ![BLE transmitter attributes with the iBeacon id field circled](/assets/screenshot-20231109-235757-photos.jpg)
-8. Add it to the ESPHome yaml config for the MSR-1
+
+8. In ESPHome, click **Edit** on your MSR-1 and add the iBeacon unique ID to its YAML configuration. In the example in the next step, the ID goes in `ibeacon_uuid`.
 
     ![ESPHome dashboard with the Edit button highlighted on the MSR-1 card](/assets/esphome-yaml-edit.png)
-9. Be sure to add "power\_save\_mode: LIGHT" to the wifi section
+
+9. Make sure your `wifi` section includes `power_save_mode: LIGHT`, as in this example:
 
     ```
     # Example config.yaml
@@ -341,30 +351,38 @@ wifi:
         name: "Jane's Phone"
 
     ```
-10. Should be all set!
 
-## Thanks to our Discord user albuquerquefx for the information below!
+You should now be all set: your MSR-1 can detect your phone through the `ble_presence` binary sensor.
 
+For more detail, see:
 
+- [ESP32 Bluetooth Low Energy Tracker Hub](https://esphome.io/components/esp32_ble_tracker.html)
+- [iBeacon support for ble\_presence](https://github.com/esphome/esphome/pull/1627)
+- [ESP32 Bluetooth Low Energy Beacon](https://esphome.io/components/esp32_ble_beacon.html)
+- [iBeacon Region](https://owntracks.org/booklet/features/beacons/)
 
-For those interested in using their MSR-1 as a Bluetooth proxy while also actively scanning for BLE devices, you'll need to add the following to your ESP32 YAML file (I'm using a 1.5-second scan interval with a 750ms window for sensing BLE beacons):
+## Bluetooth proxy with active scanning
 
-esp32\_ble\_tracker:
- id: ${name}\_ble\_tracker
- scan\_parameters:
- interval: 1500ms
- window: 750ms
- active: true
+Thanks to Discord user albuquerquefx for this setup!
 
-bluetooth\_proxy:
- active: true
+To use your MSR-1 as a Bluetooth proxy while it also actively scans for BLE devices, add the following to its ESPHome YAML file. This example uses a 1.5-second scan interval with a 750ms window for sensing BLE beacons.
 
-Additionally, you need to include this entry in your existing Wi-Fi section:
+    esp32_ble_tracker:
+      id: ${name}_ble_tracker
+      scan_parameters:
+        interval: 1500ms
+        window: 750ms
+        active: true
 
-power\_save\_mode: light
+    bluetooth_proxy:
+      active: true
 
-Once complete, after a few minutes within the presence of any iBeacon device within listening distance of your MSR-1, Home Assistant should announce the presence of an iBeacon Tracker integration on your settings page. While I didn't capture a screenshot of it, it's now installed and sensing things.
+Also add `power_save_mode: light` to your existing Wi-Fi section.
 
-If you encounter a device with a blank name (e.g., anything Android), you'll need to click "Configure" and enter the UUID manually. This is because Home Assistant does not allow devices with empty names (interestingly, their own companion app permits forcing an Android to become an iBeacon but then doesn't require a name field).
+After a few minutes near any iBeacon device within listening range of your MSR-1, Home Assistant announces a discovered **iBeacon Tracker** integration on your **Settings** page. Once it's installed, it starts sensing nearby devices.
 
-For devices where you don't know the IRK, you may have to wait about 300 seconds for your iBeacon Tracker to process 10 different iterations of the same UUID but with the last four characters randomly changed. Once ten instances have appeared, the iBeacon Tracker integration should recognize they're all the same device and combine them into a single tracker element. Just be patient, though it can be a bit frustrating.
+!!! tip "Devices with a blank name"
+
+    If a device has a blank name (for example, anything Android), click **Configure** and enter its UUID manually. Home Assistant doesn't allow devices with empty names, even though its own Companion app lets you turn an Android phone into an iBeacon without requiring a name.
+
+If you don't know a device's IRK (Identity Resolving Key), you may have to wait about 300 seconds while your iBeacon Tracker processes 10 different versions of the same UUID, each with the last four characters randomly changed. Once ten have appeared, the integration should recognize they're all the same device and combine them into a single tracker element. It can be a bit frustrating, so be patient.

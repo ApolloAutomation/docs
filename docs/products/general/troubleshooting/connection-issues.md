@@ -1,22 +1,28 @@
 ---
 title: Connection Issues
-description: Suggestions for Connection Issues
+description: Checks to work through when your Apollo device drops offline or won't stay connected to Wi-Fi, including how to turn off Wi-Fi power save mode.
 ---
-1\. Try a couple of different power cord and power brick combinations - this matters a lot more than you'd think!
+# Connection issues
 
-2\. Check to see if the sensor's hotspot is showing up. (this means it is not connected to a network)
+If your Apollo device keeps dropping offline or won't stay connected to your Wi-Fi, work through these checks in order.
 
-3\. Check the router's connected devices - the device will show up with the Apollo name and a 6 digit hex value of the end of the mac address.
+1\. Try a few different combinations of power cord and power brick. Power quality matters a lot more than you'd think.
 
-4\. Disable [power save mode](https://esphome.io/components/wifi.html#power-save-mode) in ESPHome. (See directions below)
+2\. On your phone or PC, open your Wi-Fi settings and look for the sensor's hotspot. If the hotspot shows up, the sensor isn't connected to a network. [Connect it to your Wi-Fi through the hotspot](../../setup/getting-started/#connecting-through-hotspot) again.
 
-# Wi-Fi Power Save Mode
+3\. Check your router's list of connected devices. Your device shows up with the Apollo name and a 6-digit hex value taken from the end of its MAC address.
 
-The Wi-Fi interface of all ESPs offers three power save modes to reduce the amount of power spent on Wi-Fi. While some options *can* reduce the power usage of the ESP, they generally also decrease the reliability of the Wi-Fi connection, with frequent disconnections from the router in the highest power saving mode.
+4\. Turn off [power save mode](https://esphome.io/components/wifi.html#power-save-mode) in ESPHome. The steps are in the next section.
 
-* `NONE` (least power saving, Default for ESP8266)
-* `LIGHT` (Default for ESP32)
+## Turn off Wi-Fi power save mode
+
+The Wi-Fi interface of every ESP chip offers three power save modes that cut the power spent on Wi-Fi. Some of them *can* lower the ESP's power use, but they generally make the Wi-Fi connection less reliable. The highest power saving mode causes frequent disconnections from the router.
+
+* `NONE` (least power saving, default for ESP8266)
+* `LIGHT` (default for ESP32)
 * `HIGH` (most power saving)
+
+For the most reliable connection, set the mode to `none`. In your device's YAML file, the setting sits inside the `wifi:` section, where `# ...` stands for the lines already in that section:
 
 ```yaml
 wifi:
@@ -24,13 +30,19 @@ wifi:
   power_save_mode: none
 ```
 
-1\. Select the ESPHome app and then select Edit under your desired device. If it isn't in your sidebar, the button below opens the app.
+!!! note "Your sensor runs warmer"
+
+    Turning off power save mode makes the sensor's internal temperature increase.
+
+Follow these steps to turn power save mode off from the ESPHome app in Home Assistant.
+
+1\. Open the ESPHome app from your Home Assistant sidebar and click **Edit** under the device you want to change. If the app isn't in your sidebar, the button below opens it.
 
 [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 ![ESPHome in the Home Assistant sidebar and the Edit button on an MSR-2 card circled](/assets/screenshot-2024-10-25-at-5-14-48-pm.png)
 
-2\. Add `power_save_mode: none` under the `wifi:` section of your device's YAML file (add a `wifi:` line if your file doesn't have one). Then select Save and press Install.
+2\. Add `power_save_mode: none` under the `wifi:` section of your device's YAML file, indented to line up with the other lines in that section. If your file doesn't have a `wifi:` line, add one. Then click **Save** and **Install**.
 
 ```yaml
 wifi:
@@ -39,4 +51,4 @@ wifi:
 
 ![MSR-2 YAML with power_save_mode: none added under wifi and the Save and Install buttons circled](/assets/screenshot-2024-10-25-at-5-25-10-pm.png)
 
-3\. Now your device should have a stronger connection. (This will cause the sensor's internal temperature to increase.)
+Your device should now have a stronger connection to your Wi-Fi.

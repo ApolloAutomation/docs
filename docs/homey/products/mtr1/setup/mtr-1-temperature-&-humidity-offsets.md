@@ -1,12 +1,38 @@
 ---
-title: "MTR-1 Temperature & Humidity Offsets"
+title: "MTR-1 temperature and humidity offsets"
 description: "Add temperature and humidity offsets to your MTR-1 so its readings match the room it sits in."
 ---
-# MTR-1 Temperature & Humidity Offsets
+# MTR-1 temperature and humidity offsets
 
-## **Simple Offsets for Temperature and Humidity:**
+Heat from the ESP chip inside the Apollo MTR-1 can skew the temperature and humidity readings from the DPS310 and SCD40 sensors. This page explains why, shows you how to add offsets that correct them, and covers advanced options for even better accuracy.
 
-**Please add these to the bottom of your ESPHome yaml for your device then click save and install. Once you are finished, you will have two new boxes inside the Home Assistant ESPHome integration device page for your device where you can fill in an offset. Give them up to 1minute to take effect!**
+!!! note "Before you start"
+
+    This guide uses ESPHome and Home Assistant. You add YAML to your MTR-1's ESPHome configuration, then enter the offsets on the MTR-1's device page in the Home Assistant ESPHome integration. The advanced options also use Home Assistant template sensors and automations.
+
+## Why the readings need offsets
+
+The DPS310 and SCD40 sensors are known for their precision in measuring temperature and humidity. Like any sensor, though, they can sometimes give inaccurate readings. For these two sensors, one significant cause is heat from the ESP chip, which changes the environment inside the enclosure and skews the readings.
+
+Temperature and humidity are also linked. When the air temperature rises, the air can hold more moisture, which can lower the relative humidity. When the temperature falls, the air can hold less moisture, which raises the humidity. This relationship plays a big part in how the sensors detect and interpret readings, which makes accuracy even more important.
+
+## How the offsets work
+
+You can adjust the DPS310 and SCD40 temperature offset entities by hand to match the conditions in your home. The firmware subtracts each offset from the raw temperature or humidity reading, and the result is what the Home Assistant entity shows. For example:
+
+`scd40_temperature` entity = raw SCD40 temperature reading - `scd40_offset`
+
+By default, the offsets are preset to values based on Apollo's NIST-certified thermometer. Those values are calibrated for Apollo's environment, so they might not be accurate in your home. Use a reference thermometer, and adjust the offset by the difference between its reading and the MTR-1's.
+
+You'll also see the `dps310_temperature_calibrated`, `scd40_humidity_calibrated`, and `scd40_temperature_calibrated` entities. These use the linear filter in the ESPHome firmware to adjust the readings based on Apollo's collected data. Because every environment is different, these might not always be precise either.
+
+## Add simple offsets
+
+These steps add two boxes to your MTR-1's device page in Home Assistant, one for a humidity offset and one for a temperature offset.
+
+1\. Open your MTR-1's YAML in ESPHome Device Builder.
+
+2\. Add this YAML to the bottom of the file:
 
 ```yaml
 sensor:
@@ -49,25 +75,23 @@ number:
     mode: box
 ```
 
-## **DPS310 & SCD40 Sensors: Overcoming Temperature & Humidity Reading Challenges**
+3\. Click **Save**, then **Install**.
 
-The DPS310 and SCD40 sensors are known for their precision in measuring temperature and humidity. However, like all sensor systems, they can sometimes provide inaccurate readings due to various factors. In the case of the DPS310 and SCD40 sensors, one significant challenge arises from the heat produced by the ESP chip, which can alter the environment inside its enclosure, thereby skewing the readings.
+4\. Open your MTR-1's device page in the Home Assistant ESPHome integration and fill in the two new offset boxes.
 
-## **Adjusting the DPS310 and SCD40 Temperature Offset**
+5\. Give the new offsets up to 1 minute to take effect.
 
-For users who want to fine-tune their sensors, the DPS310 and SCD40 Temperature Offset entities can be manually adjusted to match the conditions in their home. The offset values are subtracted from the raw temperature & humidity readings in the firmware to update the sensor readings in the Home Assistant entity. For example: scd40\_temperature entity = raw scd40 temperature reading - scd40\_offset.   
-  
-By default, these offsets are preset to values based on our NIST certified thermometer, it's important to note that these values are calibrated for our environment. They might not be accurate for all settings. Therefore, by using a reference thermometer, users can adjust the difference between the readings to get a more accurate representation.   
-  
-Users will also notice the `dps310_temperature_calibrated`, `scd40_humidity_calibrated`, and `scd40_temperature_calibrated` entities. These values utilize the linear filter in the ESPHome firmware to adjust the readings based on our collected data. Again, due to environmental differences, these might not always be precise.
+Your MTR-1's temperature and humidity readings now include your offsets, and you can fine-tune them from the device page at any time.
 
-## **Modeling the Relationship Between Sensors**
+## Advanced options
 
-Another approach to getting accurate readings is to model the relationship between the ESP temperature and the other sensors compared against a reference temperature. This can be achieved by creating a template sensor in Home Assistant that employs a decision tree or our regression coefficients.
+If simple offsets aren't accurate enough, these options go further.
 
-Here's an example that can be added to a configuration YAML:
+### Model the relationship between sensors
 
-Replace xxxxxx with the 6-character suffix of your MTR-1. The coefficients below come from our MSR-1 testing, so treat them as a starting point.
+Another way to get accurate readings is to model how the ESP temperature and the other sensors relate to a reference temperature. You do this with a template sensor in Home Assistant that uses a decision tree or Apollo's regression coefficients.
+
+Add the example below to your Home Assistant configuration YAML. Replace xxxxxx with the 6-character suffix of your MTR-1. The coefficients come from Apollo's MSR-1 testing, so treat them as a starting point.
 
 ```plaintext
 sensor:
@@ -99,8 +123,11 @@ sensor:
           }}
 ```
 
+### Log your own data
 
-For users who want to gather their own data with a reference sensor and MTR-1 within their home, we recommend logging data to a CSV using the following YAML entries:
+To gather your own data with a reference sensor and your MTR-1 at home, Apollo recommends logging the readings to a CSV file. The automation below writes a row every minute to match the reference sensor.
+
+The block has two parts. Add the part under `#Configuration.yaml` to your `configuration.yaml` file, and the part under `#Automations.yaml` to your `automations.yaml` file. Replace xxxxxx with the 6-character suffix of your MTR-1 here too.
 
 ```plaintext
 #Configuration.yaml
@@ -131,11 +158,6 @@ notify:
             {{ states('sensor.apollo_mtr_1_xxxxxx_uptime') | default('NA') }}
 ```
 
+### Connect an external sensor with GPIO
 
-## **The Interrelation of Temperature and Humidity**
-
-It's important to understand that temperature and humidity share an interdependent relationship. When the air temperature rises, its capacity to hold moisture increases, which can decrease relative humidity levels. Conversely, when the temperature falls, the air's capacity to hold moisture decreases, leading to increased humidity. This relationship plays a significant role in how sensors detect and interpret readings, making it even more crucial to ensure accuracy.
-
-## **Advanced Accuracy with GPIO**
-
-For those seeking the highest accuracy, an advanced solution is available. The exposed mezzanine connector on the back of our Apollo boards can be utilized to connect a temperature/humidity sensor. This modification can dramatically improve both temperature and humidity readings, providing data that's as accurate as possible.
+For the highest accuracy, connect a temperature and humidity sensor to the exposed mezzanine connector on the back of the Apollo board. This modification can dramatically improve both temperature and humidity readings, giving you data that's as accurate as possible.

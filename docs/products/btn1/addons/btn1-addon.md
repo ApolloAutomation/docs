@@ -1,11 +1,13 @@
 ---
-title: BTN-1 attaching keys
-description: BTN-1 attaching keys to the BTN-1
+title: Attaching switches and keycaps to your BTN-1
+description: Attach switches and keycaps to your BTN-1, or swap in your own Cherry MX switches.
 ---
-# BTN-1 Attaching Switches and Keys
+# Attaching switches and keycaps to your BTN-1
 
-!!! tip "Protip: You can use your own mx cherry red, brown, blue etc switches!"
+Your Apollo BTN-1 uses mechanical keyboard switches with keycaps on top. The step-by-step instructions for installing both live in the Physical setup section of the BTN-1 getting started guide.
 
-    We sell mx cherry brown switches because they are mostly silent, however, some people prefer a very "clicky" switch. You are able to buy off the shelf mechanical keyboard switches and place them on your BTN-1!
+[Install switches and keycaps](../setup/getting-started.md#physical-setup){ .md-button .md-button--primary }
 
-&nbsp;
+!!! tip "Use your own Cherry MX switches"
+
+    We sell Cherry MX Brown switches because they're mostly silent, but some people prefer a very "clicky" switch. You can buy off-the-shelf mechanical keyboard switches (Cherry MX Red, Brown, Blue, and others) and place them on your BTN-1.

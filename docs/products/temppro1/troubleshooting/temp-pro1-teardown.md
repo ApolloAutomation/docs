@@ -1,13 +1,15 @@
 ---
-title: TEMP Pro-1 Teardown
+title: Teardown of TEMP Pro-1
 description: >-
-  Step by step guide for tearing down your TEMP Pro-1 to replace parts, clean
-  it, swap cases, etc.
+  How to open your TEMP Pro-1 by prying off the case lid, for example to
+  replace parts, clean it, or swap cases.
 ---
-# Teardown Of TEMP Pro-1
+# Teardown of TEMP Pro-1
 
-1\. Gently pry open the case lid as shown in the image below.
+Removing the case lid gives you access to the board inside your Apollo TEMP Pro-1, for example to replace parts, clean it, or swap cases.
+
+1\. Position the TEMP Pro-1 with the USB-C port facing you. Gently pry up the case lid at the small slit above the USB-C port, as shown in the image below.
 
 ![Prying up the TEMP Pro-1 lid at the slit above the USB-C port](/assets/temp-pro-1-boot-button-lift-lid-jpg.jpeg)
 
-2\. The teardown is complete!
+With the lid off, the teardown is complete. Opening the case is also the first step of [putting the TEMP Pro-1 in boot mode](../temp-pro1-boot-mode/).

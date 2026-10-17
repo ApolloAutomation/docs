@@ -1,43 +1,48 @@
 ---
-title: Factory Re-Flash AIR-1
-description: Step by step guide for re-flashing the AIR-1 back to factory firmware.
+title: Factory re-flash AIR-1
+description: Re-flash your AIR-1 with its factory firmware over USB when it becomes unresponsive.
 ---
-# Factory Re-Flash AIR-1
+# Factory re-flash AIR-1
 
-!!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
+If your Apollo AIR-1 becomes unresponsive and you've exhausted the other troubleshooting methods, you can re-flash the factory firmware by following the steps below.
 
-    This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
+!!! note "Before you start"
 
-If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
+    - Do the factory re-flash in Chrome, Edge, or another Chromium-based browser.
+    - If your AIR-1 has already been connected to Home Assistant, <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
-1\. <a href="https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
+## Re-flash the factory firmware
+
+Follow these steps to put the factory firmware back on your AIR-1 from the Apollo AIR-1 Installer.
+
+1\. <a href="https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your AIR-1 in boot mode</a>: hold down the boot button (the right of the two buttons beside the USB-C port), then plug in the USB cable. Let go of the button once the cable is in.
 
 ![Tool pointing to the AIR-1 boot button, the right of two buttons beside the USB-C port](/assets/air-1-boot-button.jpg)
 
 2\. Navigate to the <a href="https://apolloautomation.github.io/AIR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo AIR-1 Installer</a>.
 
-3\. Click the big "Connect" button.
+3\. Click the big **Connect** button on the installer page.
 
 ![Apollo AIR-1 Installer page with the Connect button highlighted](/assets/air-1-reflash-pic-1.png)
 
-4\. Select the open com port then click Connect.
+4\. In the browser pop-up, select your AIR-1's open serial (COM) port, then click **Connect**. In the screenshot below, it's listed as USB JTAG/serial debug unit.
 
 ![Browser serial port dialog with the USB JTAG/serial debug unit port and the Connect button](/assets/air-1-reflash-pic-2-1.png)
 
-5\. Click "Install AIR-1".
+5\. Click **Install AIR-1**.
 
 ![Installer Device Dashboard with the Install AIR-1 option highlighted](/assets/air-1-reflash-pic-3.png)
 
-6\. Click "INSTALL".
+6\. Click **INSTALL**.
 
 ![Install AIR-1 confirmation dialog with the Install button highlighted](/assets/air-1-reflash-pic-4.png)
 
-7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+7\. When you see **Installation complete!**, the factory firmware is installed. Click **Next**, then close the browser window.
 
 ![Installation complete message with the Next button highlighted](/assets/air-1-reflash-pic-5.png)
 
-!!! warning "Power cycle your device before doing anything else!"
+!!! warning "Power cycle your AIR-1 before doing anything else"
 
-    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
+    Your AIR-1 is still in boot mode. Power cycle it (unplug it to remove power, then plug it back in) so it boots in normal mode.
 
-8\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
+8\. <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">Go to the getting started guide</a> and set up your AIR-1 as a new device.

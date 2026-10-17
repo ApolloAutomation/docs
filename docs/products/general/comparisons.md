@@ -1,9 +1,209 @@
 ---
 title: mmWave Presence Sensor Comparison Chart
-description: mmWave Presence Sensor Comparison Chart.
+description: Compare the Apollo MSR-2 and MTR-1 with other mmWave presence sensors on price, radar chip, detection range, zones, target tracking, and extra sensors.
 ---
-<table><caption><h1>mmWave Presence Sensor Comparison</h1></caption><thead><tr><th><p>Apollo Automation</p></th><td><p><strong>Apollo MSR-2</strong></p></td><th><p>Everything Presence One Kit</p></th><th><p>Everything Presence Lite Kit</p></th><th><p>Apollo MTR-1</p></th><td><p><strong>Screek Human Sensor 1U</strong></p></td><td><p><strong>Screek Human Sensor 2A</strong></p></td><td><p><strong>Aqara FP1</strong></p></td><td><p><strong>Aqara FP2</strong></p></td></tr></thead><tbody><tr><td><p>Price (USD)</p></td><td><p>$37.99 ($57.99 with CO2)</p></td><td><p>$64.00</p></td><td><p>$39.00</p></td><td><p>$39.99 ($59.99 with CO2)</p></td><td><p>$25.99</p></td><td><p>$29.99</p></td><td><p>$49.99</p></td><td><p>$82.99</p></td></tr><tr><td><p>mmWave</p></td><td><p>LD2410B</p></td><td><p>SEN0609 (older units: SEN0395)</p></td><td><p>LD2450</p></td><td><p>LD2450</p></td><td><p>LD2410C</p></td><td><p>LD2450</p></td><td><p>BGT60TR13C</p></td><td><p>IWR6843</p></td></tr><tr><td><p>Detection Distance (m)</p></td><td><p>6</p></td><td><p>25 (PIR: 12)</p></td><td><p>5 to 6</p></td><td><p>6</p></td><td><p>5</p></td><td><p>6</p></td><td><p>5</p></td><td><p>8 (wall-mounted)</p></td></tr><tr><td><p>Detection Zones</p></td><td><p>3 distance zones and 9 gates (0.75 m each, adjustable)</p></td><td><p></p></td><td><p>4 zones + 2 exclusion</p></td><td><p>3 zones (detection or filter)</p></td><td><p>9 distance gates (no zones)</p></td><td><p>3 zones + 1 exclusion</p></td><td><p>Up to 10 regions</p></td><td><p>Up to 30 zones</p></td></tr><tr><td><p>Target Tracking</p></td><td><p>1</p></td><td><p>1</p></td><td><p>Up to 3</p></td><td><p>Up to 3</p></td><td><p></p></td><td><p>Up to 3</p></td><td><p>x</p></td><td><p>Up to 5 (best with 3 or fewer)</p></td></tr><tr><td><p>PIR</p></td><td><p></p></td><td><p>Panasonic EKMC1603111/3</p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p>x</p></td><td><p>x</p></td><td><p>x</p></td></tr><tr><td><p>ESP</p></td><td><p>ESP32-C3-MINI</p></td><td><p>ESP32</p></td><td><p>ESP32</p></td><td><p>ESP32-C3-MINI</p></td><td><p>ESP32-S2</p></td><td><p>ESP32-C3</p></td><td><p>None (Zigbee)</p></td><td><p>ESP32-WROOM-32U</p></td></tr><tr><td><p>Country</p></td><td><p>USA</p></td><td><p>UK</p></td><td><p>UK</p></td><td><p>USA</p></td><td><p>China</p></td><td><p>China</p></td><td><p>China</p></td><td><p>China</p></td></tr><tr><td><p>CO2</p></td><td><p>SCD40 (optional, +$20)</p></td><td><p>SCD40 add-on (optional, $30)</p></td><td><p>SCD40 add-on (optional, $30)</p></td><td><p>SCD40 (optional, +$20)</p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td></tr><tr><td><p>UV/LUX</p></td><td><p>LTR390</p></td><td><p>BH1750 (lux only)</p></td><td><p>BH1750 (lux only)</p></td><td><p>LTR390</p></td><td><p>LD2410C light level (no UV)</p></td><td><p>BH1750 (lux only)</p></td><td><p></p></td><td><p>Light sensor (lux only)</p></td></tr><tr><td><p>Buzzer</p></td><td><p>Piezo</p></td><td><p></p></td><td><p></p></td><td><p>Piezo</p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td></tr><tr><td><p>RGB LED</p></td><td><p>WS2812</p></td><td><p></p></td><td><p></p></td><td><p>WS2812</p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td></tr><tr><td><p>GPIO Header</p></td><td><p>$4.99 (optional add-on)</p></td><td><p>Onboard (GPIO18, 19, 21, 22, 5V, GND)</p></td><td><p>Onboard</p></td><td><p>$4.99 (optional add-on)</p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td></tr><tr><td><p>Size (mm)</p></td><td><p>40x24x15</p></td><td><p>65x49x50</p></td><td><p>69x50x50</p></td><td><p>49x32x15</p></td><td><p>36.7x30x13.8</p></td><td><p>56.9x56.9x14.3</p></td><td><p></p></td><td><p>64x64x29.5</p></td></tr><tr><td><p>Stand</p></td><td><p>$4.99 (optional)</p></td><td><p>Not included (case sold separately)</p></td><td><p>Not included (case included)</p></td><td><p>$4.99 (optional)</p></td><td><p>Not included (adhesive pad)</p></td><td><p>$2.85 (optional, magnetic)</p></td><td><p></p></td><td><p>Included (magnetic, adjustable)</p></td></tr><tr><td><p>Product Link</p></td><td><p><a href="https://apolloautomation.com/products/msr-2">Apollo MSR-2</a></p></td><td><p><a href="https://shop.everythingsmart.io/products/everything-presence-one-kit">Everything Presence One Kit</a></p></td><td><p><a href="https://shop.everythingsmart.io/products/everything-presence-lite">Everything Presence Lite Kit</a></p></td><td><p><a href="https://apolloautomation.com/products/mtr-1" target="_blank" rel="noreferrer nofollow noopener">Apollo MTR-1</a></p></td><td><p><a href="https://www.screek.io/1u/">Screek Human Sensor 1U</a></p></td><td><p><a href="https://www.screek.io/2a/">Screek Human Sensor 2A</a></p></td><td><p>Aqara FP1</p></td><td><p><a href="https://www.aqara.com/us/product/presence-sensor-fp2/">Aqara FP2</a></p></td></tr><tr><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td></tr><tr><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td><td><p></p></td></tr></tbody></table>
+# mmWave presence sensor comparison
+
+See how the Apollo MSR-2 and Apollo MTR-1 stack up against other popular mmWave presence sensors, from price and radar chip to detection range, zones, and the extra sensors each one carries.
+
+In the table, a blank cell or an x means the product doesn't have that feature or the manufacturer doesn't list it.
+
+<table>
+  <thead>
+    <tr>
+      <th>Apollo Automation</th>
+      <th>Apollo MSR-2</th>
+      <th>Everything Presence One Kit</th>
+      <th>Everything Presence Lite Kit</th>
+      <th>Apollo MTR-1</th>
+      <th>Screek Human Sensor 1U</th>
+      <th>Screek Human Sensor 2A</th>
+      <th>Aqara FP1</th>
+      <th>Aqara FP2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Price (USD)</td>
+      <td>$37.99 ($57.99 with CO2)</td>
+      <td>$64.00</td>
+      <td>$39.00</td>
+      <td>$39.99 ($59.99 with CO2)</td>
+      <td>$25.99</td>
+      <td>$29.99</td>
+      <td>$49.99</td>
+      <td>$82.99</td>
+    </tr>
+    <tr>
+      <td>mmWave</td>
+      <td>LD2410B</td>
+      <td>SEN0609 (older units: SEN0395)</td>
+      <td>LD2450</td>
+      <td>LD2450</td>
+      <td>LD2410C</td>
+      <td>LD2450</td>
+      <td>BGT60TR13C</td>
+      <td>IWR6843</td>
+    </tr>
+    <tr>
+      <td>Detection Distance (m)</td>
+      <td>6</td>
+      <td>25 (PIR: 12)</td>
+      <td>5 to 6</td>
+      <td>6</td>
+      <td>5</td>
+      <td>6</td>
+      <td>5</td>
+      <td>8 (wall-mounted)</td>
+    </tr>
+    <tr>
+      <td>Detection Zones</td>
+      <td>3 distance zones and 9 gates (0.75 m each, adjustable)</td>
+      <td></td>
+      <td>4 zones + 2 exclusion</td>
+      <td>3 zones (detection or filter)</td>
+      <td>9 distance gates (no zones)</td>
+      <td>3 zones + 1 exclusion</td>
+      <td>Up to 10 regions</td>
+      <td>Up to 30 zones</td>
+    </tr>
+    <tr>
+      <td>Target Tracking</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Up to 3</td>
+      <td>Up to 3</td>
+      <td></td>
+      <td>Up to 3</td>
+      <td>x</td>
+      <td>Up to 5 (best with 3 or fewer)</td>
+    </tr>
+    <tr>
+      <td>PIR</td>
+      <td></td>
+      <td>Panasonic EKMC1603111/3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>ESP</td>
+      <td>ESP32-C3-MINI</td>
+      <td>ESP32</td>
+      <td>ESP32</td>
+      <td>ESP32-C3-MINI</td>
+      <td>ESP32-S2</td>
+      <td>ESP32-C3</td>
+      <td>None (Zigbee)</td>
+      <td>ESP32-WROOM-32U</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>USA</td>
+      <td>UK</td>
+      <td>UK</td>
+      <td>USA</td>
+      <td>China</td>
+      <td>China</td>
+      <td>China</td>
+      <td>China</td>
+    </tr>
+    <tr>
+      <td>CO2</td>
+      <td>SCD40 (optional, +$20)</td>
+      <td>SCD40 add-on (optional, $30)</td>
+      <td>SCD40 add-on (optional, $30)</td>
+      <td>SCD40 (optional, +$20)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UV/LUX</td>
+      <td>LTR390</td>
+      <td>BH1750 (lux only)</td>
+      <td>BH1750 (lux only)</td>
+      <td>LTR390</td>
+      <td>LD2410C light level (no UV)</td>
+      <td>BH1750 (lux only)</td>
+      <td></td>
+      <td>Light sensor (lux only)</td>
+    </tr>
+    <tr>
+      <td>Buzzer</td>
+      <td>Piezo</td>
+      <td></td>
+      <td></td>
+      <td>Piezo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RGB LED</td>
+      <td>WS2812</td>
+      <td></td>
+      <td></td>
+      <td>WS2812</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GPIO Header</td>
+      <td>$4.99 (optional add-on)</td>
+      <td>Onboard (GPIO18, 19, 21, 22, 5V, GND)</td>
+      <td>Onboard</td>
+      <td>$4.99 (optional add-on)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Size (mm)</td>
+      <td>40x24x15</td>
+      <td>65x49x50</td>
+      <td>69x50x50</td>
+      <td>49x32x15</td>
+      <td>36.7x30x13.8</td>
+      <td>56.9x56.9x14.3</td>
+      <td></td>
+      <td>64x64x29.5</td>
+    </tr>
+    <tr>
+      <td>Stand</td>
+      <td>$4.99 (optional)</td>
+      <td>Not included (case sold separately)</td>
+      <td>Not included (case included)</td>
+      <td>$4.99 (optional)</td>
+      <td>Not included (adhesive pad)</td>
+      <td>$2.85 (optional, magnetic)</td>
+      <td></td>
+      <td>Included (magnetic, adjustable)</td>
+    </tr>
+    <tr>
+      <td>Product Link</td>
+      <td><a href="https://apolloautomation.com/products/msr-2">Apollo MSR-2</a></td>
+      <td><a href="https://shop.everythingsmart.io/products/everything-presence-one-kit">Everything Presence One Kit</a></td>
+      <td><a href="https://shop.everythingsmart.io/products/everything-presence-lite">Everything Presence Lite Kit</a></td>
+      <td><a href="https://apolloautomation.com/products/mtr-1" target="_blank" rel="noreferrer nofollow noopener">Apollo MTR-1</a></td>
+      <td><a href="https://www.screek.io/1u/">Screek Human Sensor 1U</a></td>
+      <td><a href="https://www.screek.io/2a/">Screek Human Sensor 2A</a></td>
+      <td>Aqara FP1</td>
+      <td><a href="https://www.aqara.com/us/product/presence-sensor-fp2/">Aqara FP2</a></td>
+    </tr>
+  </tbody>
+</table>
 
 Specs and prices checked in October 2026 against each manufacturer's site, product firmware, and Zigbee2MQTT device data. Prices change often; follow the product links for current pricing.
 
-# [Air Quality Sensor Comparison](https://apolloautomation-my.sharepoint.com/:x:/p/trevor/Ea1--coB6rNKvRX07CGsVHEBUF-zUPuyyFvRED-WdjCC_Q?e=NFjC1Y)
+## Air quality sensor comparison
+
+To compare air quality sensors, open the [Air Quality Sensor Comparison](https://apolloautomation-my.sharepoint.com/:x:/p/trevor/Ea1--coB6rNKvRX07CGsVHEBUF-zUPuyyFvRED-WdjCC_Q?e=NFjC1Y) spreadsheet.

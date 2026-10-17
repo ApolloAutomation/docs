@@ -1,13 +1,27 @@
 ---
-title: Home Tech Innovations MTR-1 Review
-description: "YouTuber reviews and feedback about the MTR-1 sensor from Apollo Automation."
+title: MTR-1 reviews
+description: "Video and written reviews of the Apollo MTR-1 from YouTubers and smart-home sites."
 ---
-# [Home Tech Innovations MTR-1 Review](https://youtu.be/q5GejbxnByA?si=PMgK4ro6U8Q7idCm)
+# MTR-1 reviews
 
-## [Simon Says Home Assistant MTR-1 Review](https://www.youtube.com/watch?v=FFN-vIkDRLk)
+These creators have reviewed the Apollo MTR-1. Each review below is a YouTube video, except Smart Home Scene, which is a written article.
 
-## [Smart Home Australia MTR-1 Review](https://www.youtube.com/watch?v=xyxgk7WGHCY)
+## Home Tech Innovations
 
-## [Smart Home Scene MTR-1 Review](https://smarthomescene.com/reviews/apollo-mtr-1-multi-target-tracking-radar-review/)
+[Watch the Home Tech Innovations review on YouTube](https://youtu.be/q5GejbxnByA?si=PMgK4ro6U8Q7idCm)
 
-## [Michael Leen MTR-1 Review](https://www.youtube.com/watch?v=7qFvqRw1uds)
+## Simon Says Home Assistant
+
+[Watch the Simon Says Home Assistant review on YouTube](https://www.youtube.com/watch?v=FFN-vIkDRLk)
+
+## Smart Home Australia
+
+[Watch the Smart Home Australia review on YouTube](https://www.youtube.com/watch?v=xyxgk7WGHCY)
+
+## Smart Home Scene
+
+[Read the Smart Home Scene review](https://smarthomescene.com/reviews/apollo-mtr-1-multi-target-tracking-radar-review/)
+
+## Michael Leen
+
+[Watch the Michael Leen review on YouTube](https://www.youtube.com/watch?v=7qFvqRw1uds)

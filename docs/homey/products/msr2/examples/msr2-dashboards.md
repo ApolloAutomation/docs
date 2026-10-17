@@ -1,15 +1,20 @@
 ---
-title: MSR-2 Home Assistant Dashboard Examples
-description: "Example dashboard cards for the MSR-2, including an ApexCharts scatter plot of radar distance you can copy and paste."
+title: MSR-2 Home Assistant dashboard examples
+description: "Copy-and-paste Home Assistant dashboard cards for the MSR-2: an ApexCharts radar distance scatter plot and three CO2 charts."
 ---
-# MSR-2 Home Assistant Dashboard Examples
+# MSR-2 Home Assistant dashboard examples
 
-**Radar Scatter Plot With Apex Charts For **[**MSR-2**](https://apolloautomation.com/products/msr-2)
+These example cards put readings from your [Apollo MSR-2](https://apolloautomation.com/products/msr-2) on a Home Assistant dashboard. Each section shows a screenshot of the card, followed by its YAML. Copy the YAML for the card you want and paste it into a new card on your dashboard.
 
-  
+!!! note "Use your own entity IDs"
+
+    The entity IDs in every YAML block on this page contain the placeholder `xxxxxx`. Replace `xxxxxx` with the last six characters of your MSR-2's name.
+
+## Radar scatter plot with ApexCharts (custom card)
+
+This card plots the radar's detection, moving, and still distances as a scatter plot over 24 hours.
+
 ![ApexCharts scatter plot card of MSR-1 radar detection, moving, and still distances over time](/assets/jpe-apex-charts-3.png)
-
-Replace xxxxxx with the last six characters of your MSR-2's name.
 
 ```plaintext
 type: custom:apexcharts-card
@@ -46,8 +51,11 @@ series:
     stroke_width: 1
 ```
 
-**CO2 Charts**
-Home Assistant Sensor
+## CO2 charts
+
+These three cards show readings from the CO2 sensor, so your MSR-2 needs the [CO2 addon](../../addons/adding-co2-to-msr-2/) installed.
+
+### Home Assistant sensor card
 
 ![Home Assistant sensor card with a Bedroom CO2 line graph reading 1,000 ppm](/assets/co-2-graph.png)
 
@@ -60,7 +68,7 @@ name: Bedroom CO2
 hours_to_show: 24
 ```
 
-Custom: Plotly Graph Card
+### Plotly graph card (custom card)
 
 ![Plotly graph card of Bedroom CO2 in ppm over 24 hours](/assets/plotly-co2-graph.png)
 
@@ -73,7 +81,7 @@ refresh_interval: 10
 title: Bedroom CO2
 ```
 
-Home Assistant Gauge
+### Home Assistant gauge card
 
 ![Home Assistant gauge card showing MSR-1 CO2 at 1,063 ppm with green, yellow, and red ranges](/assets/co2-guage.png)
 
