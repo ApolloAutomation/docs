@@ -1,41 +1,43 @@
 ---
-title: Factory Re-Flash TEMP Pro-1
-description: Step by step guide for re-flashing the TEMP Pro-1 back to factory firmware.
+title: Factory re-flash TEMP Pro-1
+description: Step-by-step guide to re-flashing the TEMP Pro-1 back to its factory firmware from Chrome, Edge, or another Chromium-based browser.
 ---
-# Factory Re-Flash TEMP Pro-1
+# Factory re-flash TEMP Pro-1
 
-!!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the below guide."
+If your Apollo TEMP Pro-1 becomes unresponsive and you've exhausted the other troubleshooting methods, you can reflash the factory firmware by following this guide.
 
-    This needs to be done in Chrome, Edge, or another Chromium based browser.
+!!! note "Before you start"
 
-If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
+    - Use Chrome, Edge, or another Chromium-based browser. The installer needs one of them.
+    - If your TEMP Pro-1 has already been connected to Home Assistant, <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
-1\. <a href="https://wiki.apolloautomation.com/products/temp1/troubleshooting/temp1-boot-mode/" target="_blank" rel="noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
+Follow these steps to put your TEMP Pro-1 in boot mode, flash the factory firmware from the installer page, and set it up again.
 
-2\. Navigate to our installer page and click connect under Battery Firmware [Apollo TEMP-1 Installer](https://apolloautomation.github.io/TEMP-1/).
+1\. <a href="https://wiki.apolloautomation.com/products/temppro1/troubleshooting/temp-pro1-boot-mode/" target="_blank" rel="noopener">Put your TEMP Pro-1 in boot mode</a>: hold down the boot button, then plug in the USB cable.
 
-3\. Click "Connect" under the Non Battery Firmware option since you are using a TEMP-1.
+2\. Open the [Apollo TEMP Pro-1 Installer](https://apolloautomation.github.io/TEMP_PRO-1/) page.
 
-![Apollo TEMP-1 Installer with Connect clicked under Non Battery Firmware Revision 2](/assets/temp-1-reflash-pic-1-1.png)
+3\. Pick the firmware that matches how your TEMP Pro-1 connects:
 
-3\. Select the open com port then click Connect.
+* **Wi-Fi:** click **Connect** under **Wifi Firmware**.
+* **Ethernet (PoE):** click **Connect** under **Ethernet Firmware**.
+
+4\. In the browser's serial port pop-up, select the open COM port (**USB JTAG/serial debug unit** in the screenshot below), then click **Connect**.
 
 ![Browser serial port dialog with the USB JTAG/serial debug unit port selected, cursor on Connect](/assets/temp-1-reflash-pic-2.png)
 
-4\. Click "Install ApolloAutomation.TEMP-1".
+5\. Click **Install ApolloAutomation.TEMP_PRO-1-W**. If you picked Ethernet Firmware, click **Install ApolloAutomation.TEMP_PRO-1-ETH** instead.
 
-![Device Dashboard with Install ApolloAutomation.TEMP-1 highlighted](/assets/temp-1-reflash-pic-3.png)
+6\. Click **INSTALL**.
 
-5\. Click "INSTALL".
-
-![Install ApolloAutomation.TEMP-1 confirmation dialog with Install highlighted](/assets/temp-1-reflash-pic-4.png)
-
-6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+7\. When the installer shows **Installation complete!**, the flash is finished. Click **Next**, then close the browser window.
 
 ![Installation complete! message with the Next button](/assets/temp-1b-reflash-pic-7.png)
 
-!!! warning "Power cycle your device before doing anything else!"
+!!! warning "Power cycle your TEMP Pro-1 before doing anything else"
 
-    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
+    Your TEMP Pro-1 is still in boot mode. Remove all power from it, then reconnect the power so it starts in normal mode.
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-temp1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
+8\. <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-temp1/" target="_blank" rel="noopener">Go to the getting started guide</a> and set up your TEMP Pro-1 as a new device.
+
+Once it's set up, your TEMP Pro-1 is back on its factory firmware and ready to use.

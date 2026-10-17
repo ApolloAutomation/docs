@@ -1,10 +1,10 @@
 ---
-title: TEMP Pro-1 Sensor Definitions
+title: TEMP Pro-1 sensor definitions
 description: >-
   Full list of definitions for the TEMP Pro-1 and its various sensors and
   available ports.
 ---
-# TEMP Pro-1 Sensor Definitions
+# TEMP Pro-1 sensor definitions
 
 Once added to Home Assistant you can configure different settings for your sensor. Below is what each setting does.
 
@@ -22,7 +22,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **RGB Light**
 
-    * <a href="https://esphome.io/components/light/index.html#light-effects" target="_blank" rel="noopener">One RGB Neopixel LED</a>. Click on the light bulb or color wheel to change the color. Click on the toggle to turn on or off.
+    * <a href="https://esphome.io/components/light/index.html#light-effects" target="_blank" rel="noopener">Four RGB LEDs</a>. Click on the light bulb or color wheel to change the color. Click on the toggle to turn on or off.
 
 ???+ info "Sensors"
 
@@ -34,10 +34,6 @@ Once added to Home Assistant you can configure different settings for your senso
 
     * Measures and reports the current temperature of the board.
 
-    **Food Probe**
-
-    * The stainless steel food-safe probe is designed for accurate temperature monitoring during grilling, baking, and other food-related activities. Its durable, non-corrosive construction ensures safe and reliable use for cooking, providing real-time temperature readings to help achieve perfect results.
-
     **Temperature Probe**
 
     * The temperature sensor probe, offered in both long and short options, is ideal for monitoring fridge/freezer temperatures and aquatic environments like fish tanks, hot tubs, and covered pools. Its flat cable prevents interference with fridge seals, and it includes a customizable temperature threshold with an onboard buzzer to alert when the limit is exceeded.
@@ -46,23 +42,19 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Board Humidity Offset**
 
-    * Offset for Board Humidity - values between 0-100%
+    * Offset for Board Humidity: values between 0-100%
 
     **Board Temperature Offset**
 
-    * Offset for Board Temperature - values in Celsius.
+    * Offset for Board Temperature: values in Celsius.
 
     **ESP Reboot**
 
-    * Button to press which reboots your TEMP-1.
+    * Button to press which reboots your TEMP Pro-1.
 
     **Firmware Update**
 
     * Indicates whether an update is available or if you are Up-to-date.
-
-    **Food Probe Offset**
-
-    * Offset for the Food Probe's temperature readings. Measured in Celsius.
 
     **Max Probe Temp**
 
@@ -79,7 +71,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Prevent Sleep**
 
-    * Prevents the TEMP-1 from going to sleep. When sleeping, your TEMP-1 will NOT respond to Home Assistant it is effectively off until it wakes up again.
+    * Prevents the TEMP Pro-1 from going to sleep. When sleeping, your TEMP Pro-1 will NOT respond to Home Assistant it is effectively off until it wakes up again.
     * Click on the toggle to turn on or off. Defaults to ON.
 
     **Probe Temp Difference Threshold**

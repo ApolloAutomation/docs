@@ -1,13 +1,13 @@
 ---
-title: R PRO-1 Reviews
+title: R PRO-1 reviews
 description: YouTuber reviews and feedback about the R PRO-1 sensor from Apollo Automation.
 ---
 &nbsp;
 
-# <a href="https://www.youtube.com/watch?v=wBiFkJ_9iYM" target="_blank" rel="noreferrer nofollow noopener">Simon Says Home Assistant R PRO-1 Review</a>
+# <a href="https://www.youtube.com/watch?v=wBiFkJ_9iYM" target="_blank" rel="noreferrer nofollow noopener">Simon Says Home Assistant R PRO-1 review</a>
 
-## [Smart Home Scene R PRO-1 Review](https://smarthomescene.com/reviews/apollo-r-pro-1-review-dual-mmwave-presence-multisensor-with-poe-support/)
+## [Smart Home Scene R PRO-1 review](https://smarthomescene.com/reviews/apollo-r-pro-1-review-dual-mmwave-presence-multisensor-with-poe-support/)
 
-## [MostlyChris R PRO-1 Review](https://www.youtube.com/watch?v=wVgNE8UtsAM)
+## [MostlyChris R PRO-1 review](https://www.youtube.com/watch?v=wVgNE8UtsAM)
 
-## <a href="https://tech.scargill.net/apollo-r-pro-1-mmwave-multisensor/" target="_blank" rel="noreferrer nofollow noopener">Pete Scargill R PRO-1 Review</a>
+## <a href="https://tech.scargill.net/apollo-r-pro-1-mmwave-multisensor/" target="_blank" rel="noreferrer nofollow noopener">Pete Scargill R PRO-1 review</a>

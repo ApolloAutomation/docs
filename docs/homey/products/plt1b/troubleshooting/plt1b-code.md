@@ -1,77 +1,56 @@
 ---
-title: Factory Re-Flash PLT-1B
-description: "Step by step guide for re-flashing the PLT-1B back to factory firmware."
+title: Re-flash the PLT-1B factory firmware
+description: "Re-flash an unresponsive PLT-1B with its factory firmware using the Apollo web installer, then set it up again in Homey."
 ---
-# Factory Re-Flash PLT-1B
+# Re-flash the PLT-1B factory firmware
 
-!!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the below guide."
+If your PLT-1B becomes unresponsive and you've tried the other troubleshooting steps, re-flash its factory firmware. The Apollo web installer does this from your browser while the PLT-1B is plugged into your computer by USB.
 
-    This needs to be done in Chrome, Edge, or another Chromium based browser.
+!!! note "Before you start"
 
-If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
+    - Use Chrome, Edge, or another Chromium-based browser.
+    - If your PLT-1B has already been added to Homey, <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before you continue.
 
-1. Plug your sensor into your computer with a quality USB-C cable that supports data transfer
-2. Navigate to our installer page and click connect [\*\* Install Page \*\*](https://apolloautomation.github.io/PLT-1/)
-3. Select your Apollo device, it will show with a similar name to the one below, and click connect. If you aren't sure which device it is, you can unplug the sensor and see which disappears.
+!!! warning "Remove the battery"
 
-[![Browser serial port prompt listing COM1 and the USB JTAG/serial debug unit on COM30](/assets/comselection.png)](/assets/comselection.png)
+    The re-flash doesn't work properly while the battery is still supplying power to the PLT-1B. If you run into issues during these steps, remove the battery.
 
-If no device shows, click cancel and then install the recommended driver that shows on the popup. If you have installed the driver, tried different cables, and it still won't work refer [here](https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/) for putting the sensor in boot mode and then retry step 3.
+Follow these steps to put your PLT-1B in boot mode and install the factory firmware.
 
-4\. Choose to install the new firmware
+1\. <a href="https://wiki.apolloautomation.com/homey/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your PLT-1B in boot mode</a>: hold down the boot button, then plug in the USB cable.
 
-[![Example installer Device Dashboard with the Install option, shown for an MSR-1](/assets/image-1698806750134.png)](/assets/image-1698806750134.png)
+![Tool inserted into the boot button opening on the side of the closed PLT-1B case](/assets/plt-boot-mode-pic-4.jpg)
 
-5\. Wait for the installer to finish - if you see "ERROR Logger is not configured!" that is totally expected! The logger is disabled to make more room for other components on the microcontroller.
+2\. Open the <a href="https://apolloautomation.github.io/PLT-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1B Installer</a>.
 
-[![Example installer dialog preparing the firmware installation, shown for an MSR-1](/assets/image-1698806082666.png)](/assets/image-1698806082666.png)
-
-!!! warning "Power cycle your device before doing anything else!"
-
-    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
-
-6\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-plt1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
-
-## Factory Re-Flash PLT-1B
-
-!!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the below guide."
-
-    This needs to be done in Chrome, Edge, or another Chromium based browser.
-
-If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
-
-1\. <a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
-
-![Side of the PLT-1 with the boot button opening circled](/assets/screenshot-2024-10-23-at-12-32-55-pm.png)
-
-2\. Navigate to our installer page and click connect under Battery Firmware <a href="https://apolloautomation.github.io/PLT-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1B Installer</a>
-
-!!! failure "Remove the battery!"
-
-    This will not work properly if the battery is still supplying power to the TEMP-1B. Please remove the battery if you are having issues!
-
-3\. Click the big "Connect" button.
+3\. Under **Battery Firmware**, click the big **Connect** button.
 
 ![Apollo PLT-1 Installer page with the Battery Firmware Connect button being clicked](/assets/plt-1b-reflash-pic-1.png)
 
-4\. Select the open com port then click Connect.
+4\. Select the open COM port, then click **Connect**.
 
 ![Browser serial port prompt with the USB JTAG/serial debug unit selected and Connect highlighted](/assets/plt-1b-reflash-pic-2.png)
 
-5\. Click "Install ApolloAutomation.PLT-1B".
+!!! note "No device in the list?"
+
+    If no device shows up, click **Cancel** and install the recommended driver from the pop-up.
+
+5\. Click **Install ApolloAutomation.PLT-1B**.
 
 ![Installer Device Dashboard with the Install ApolloAutomation.PLT-1B option highlighted](/assets/plt-1b-reflash-pic-3.png)
 
-6\. Click "INSTALL".
+6\. Click **INSTALL**.
 
 ![PLT-1B install confirmation dialog with the Install button highlighted](/assets/plt-1b-reflash-pic-4.png)
 
-7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+7\. When you see **Installation complete!**, the install is finished. Click **Next**, then close the browser window.
 
 ![Installer showing Installation complete with the Next button](/assets/plt-1-reflash-pic-5.png)
 
-!!! warning "Power cycle your device before doing anything else!"
+!!! warning "Power cycle your PLT-1B before anything else"
 
-    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
+    Your PLT-1B is still in boot mode. Power cycle it (remove its power, then power it again) so it starts in normal mode.
 
-8\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-plt1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
+8\. Follow the <a href="https://wiki.apolloautomation.com/homey/products/plt1b/setup/getting-started-plt1/" target="_blank" rel="noopener">getting started guide</a> to set up your PLT-1B as a new device.
+
+Once you finish the getting started guide, your PLT-1B is running its factory firmware again and set up as a new device.

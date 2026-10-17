@@ -1,8 +1,8 @@
 ---
-title: TEMP-1B Bluetooth Proxy
+title: TEMP-1B Bluetooth proxy
 description: Tutorial for how to turn your TEMP-1B into a BLE proxy!
 ---
-# TEMP-1B Bluetooth Proxy
+# TEMP-1B Bluetooth proxy
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 

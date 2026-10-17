@@ -16,11 +16,11 @@ description: Tutorial on adding the LD2412 mmWave sensor to your R PRO-1
 
 2\. Gently remove the PCB from the case and flip it over.
 
-![R PRO-1 board out of its case, mmWave side up, with the LD2450 and LD2412 sensors](/assets/r-pro-1-no-case-mmwave-facing-up.webp)
-
 3\. Place the LD2412 on the 4 and 3 pin headers (only fits one way).
 
 ![Lowering the LD2412 module onto its pin headers on the R PRO-1 board](/assets/r-pro-1-reassembly-install-ld2412.jpg)
+
+![R PRO-1 board with the LD2412 seated on its headers below the LD2450](/assets/r-pro-1-no-case-mmwave-facing-up.webp)
 
 4\. Place back into the case with the ethernet module facing up and the USB-C port facing you.
 

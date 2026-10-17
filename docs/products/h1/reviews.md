@@ -1,5 +1,5 @@
 ---
-title: H-1 Reviews
+title: H-1 reviews
 description: H-1 Reviews.
 ---
 # Simon Says Home Assistant

@@ -1,10 +1,10 @@
 ---
-title: R PRO-1 Switch Firmware
+title: R PRO-1 switch firmware
 description: >-
   Step by step guide to switching between Wi-Fi and Ethernet firmware on
   R PRO-1.
 ---
-# Firmware Switching Guide
+# Firmware switching guide
 
 !!! tip "R PRO-1 ships with Wi-Fi firmware because some people might not have ethernet or PoE."
 
@@ -12,23 +12,27 @@ description: >-
 
 ## Switch to Ethernet
 
+Follow these steps to switch your R PRO-1 from the Wi-Fi firmware to the Ethernet firmware.
+
 1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on "1 device" below your Apollo R PRO-1.
 
 ![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 
 2\. Scroll down until you see the "Firmware Type" dropdown and select "Ethernet".
 
-![Firmware Type dropdown set to Ethernet in the R PRO-1 Configuration card in Home Assistant](/assets/r-pro-1-select-ethernet-2.png)
+![Firmware Type dropdown open in Home Assistant with the Ethernet option selected for the R PRO-1](/assets/r-pro-1-select-ethernet.png)
 
 3\. Locate the Firmware Update entity and click on "PRESS".
 
-![R PRO-1 Configuration card in Home Assistant with the Firmware Update PRESS button highlighted](/assets/r-pro-1-click-press-on-firmware-update-button.png)
+![R PRO-1 Configuration card in Home Assistant with Firmware Type set to Ethernet and the cursor on the Firmware Update PRESS button](/assets/r-pro-1-select-ethernet-2.png)
 
-4\. Wait a few minutes - this will download the new firmware file from our GitHub repo and then install the image.
+4\. Wait a few minutes. This will download the new firmware file from our GitHub repo and then install the image.
 
 5\. Your device is now on the Ethernet firmware and is ready to configure!
 
 ## Switch to Wi-Fi
+
+Follow these steps to switch your R PRO-1 from the Ethernet firmware back to the Wi-Fi firmware.
 
 1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on "1 device" below your Apollo R PRO-1.
 
@@ -42,6 +46,6 @@ description: >-
 
 ![R PRO-1 Configuration card in Home Assistant with the Firmware Update PRESS button highlighted](/assets/r-pro-1-click-press-on-firmware-update-button.png)
 
-4\. Wait a few minutes - this will download the new firmware file from our GitHub repo and then install the image.
+4\. Wait a few minutes. This will download the new firmware file from our GitHub repo and then install the image.
 
 [Head to the getting started docs to get your sensor integrated with Home Assistant!](https://wiki.apolloautomation.com/products/general/setup/getting-started-rpro1/#connecting-through-hotspot){  .md-button .md-button--primary }

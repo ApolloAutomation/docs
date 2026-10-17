@@ -1,7 +1,7 @@
 ---
-title: Apollo Automation Shop
+title: Apollo Automation shop
 description: "The Apollo Automation shop, where you can buy sensors, probes, and accessories."
 ---
-# Apollo Automation Shop
+# Apollo Automation shop
 
-## [Apollo Automation Shop](https://apolloautomation.com/)
+## [Apollo Automation shop](https://apolloautomation.com/)

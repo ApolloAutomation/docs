@@ -1,8 +1,10 @@
 ---
-title: Reset Wi-Fi Credentials on your TEMP-1B
+title: Reset Wi-Fi credentials on your TEMP-1B
 description: "Step by step guide for resetting the Wi-Fi Credentials on your TEMP-1B."
 ---
-# Reset Wi-Fi Credentials on your TEMP-1B
+# Reset Wi-Fi credentials on your TEMP-1B
+
+Follow these steps to clear your device's saved Wi-Fi credentials so it broadcasts its hotspot again and you can enter new Wi-Fi details.
 
 1\. Plug the device into power.
 
@@ -12,4 +14,4 @@ description: "Step by step guide for resetting the Wi-Fi Credentials on your TEM
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 
-4\. Connect to the hotspot titled "Apollo TEMP-1 Hotspot" and enter your new Wi-Fi details!
+4\. Connect to the hotspot titled "Apollo TEMP1B Hotspot" and enter your new Wi-Fi details!

@@ -1,8 +1,8 @@
 ---
-title: Getting Started (ESPHome)
+title: Getting started (ESPHome)
 description: Getting started with your new M-1 running the hub75-studio ESPHome firmware
 ---
-# Getting Started (ESPHome)
+# Getting started (ESPHome)
 
 !!! tip "Running WLED instead?"
 
@@ -10,7 +10,7 @@ description: Getting started with your new M-1 running the hub75-studio ESPHome 
 
 This guide walks you through replacing the stock WLED firmware with [hub75-studio](https://github.com/pavlov-net/hub75-studio), an ESPHome firmware tailored for the M-1, and getting it onto your home network and into Home Assistant.
 
-## Attach M-1 LED Controller
+## Attach M-1 LED controller
 
 Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damage in shipping. Gently attach the controller to the back of the M-1 LED Matrix panel as shown in the GIF below.
 
@@ -21,6 +21,8 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 !!! success "Use the Rev6 build unless you have an older M-1 Controller!"
 
     All M-1 units currently being sold are Rev6. On the <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">hub75-studio installer</a>, select the **Rev6** firmware before clicking **Connect**.
+
+You'll flash hub75-studio onto your device from a Chromium-based browser.
 
 1\. Open <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">https://pavlov-net.github.io/hub75-studio/</a> in Chrome, Edge, or another Chromium-based browser.
 
@@ -35,6 +37,8 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 ![M-1 showing the M-1 BIOS screen with version, CPU, RAM, and ID after flashing](../../../assets/m-1-esphome-firmware-installed-no-wifi.jpg)
 
 ## Connect to Wi-Fi
+
+You'll join the device's hotspot from your phone and give it your home Wi-Fi details.
 
 1\. On your phone, open Wi-Fi settings and join the network **apollo-m1-r6-XXXXXX**, where the last 6 characters match the MAC suffix shown on the BIOS screen.
 
@@ -56,7 +60,7 @@ Head to the Integrations page in Home Assistant (**Settings → Devices & servic
 
 ![Home Assistant ESPHome integration: adding the discovered Apollo M-1 and finishing setup](../../../assets/m-1-esphome-firmware-add-to-esphome-integration.gif)
 
-## Optional Features
+## Optional features
 
 ### Adopt into ESPHome Device Builder
 
@@ -72,7 +76,7 @@ Head to the Integrations page in Home Assistant (**Settings → Devices & servic
 
 ![ESPHome Device Builder app page with Start on boot, Watchdog, and Show in sidebar on, then Open Web UI](../../../assets/m-1-esphome-device-builder-open.gif)
 
-3\. Click the Secrets button in the top right and confirm your Wi-Fi SSID and password are configured as shown below. Click Save in the top right once finished.
+3\. Open the three-dot menu in the top right, click **Secrets**, and confirm your Wi-Fi SSID and password are configured as shown below. Click **Save** in the bottom right once finished.
 
 ![ESPHome Device Builder: opening Secrets from the top right menu to check wifi_ssid and wifi_password](../../../assets/esphome-device-builder-click-secrets.gif)
 
@@ -82,15 +86,15 @@ wifi_ssid: "your-wifi-ssid-here"
 wifi_password: "your-wifi-password-here"
 ```
 
-3\. Notice the Discovered 1 device banner at the top and click the SHOW button in the far top right to show your newly discovered device.
+4\. Notice the Discovered 1 device banner at the top and click the SHOW button in the far top right to show your newly discovered device.
 
 ![ESPHome Device Builder Discovered 1 device banner, clicking Show to reveal the Apollo M-1](../../../assets/m-1-esphome-device-builder-show-discovered.gif)
 
-4\. Click Take Control and leave the name as is and click Take Control again. Finally, click Install to begin the installation process. This will take some time depending on how fast your device running Home Assistant is. Raspberry Pi, HA Green, etc. will take much longer than a mini pc.
+5\. Click Take Control and leave the name as is and click Take Control again. Finally, click Install to begin the installation process. This will take some time depending on how fast your device running Home Assistant is. Raspberry Pi, HA Green, etc. will take much longer than a mini pc.
 
 ![Clicking Take Control on the discovered Apollo M-1 in ESPHome Device Builder and confirming](../../../assets/esphome-device-builder-take-control.gif)
 
-5\. Once you see INFO OTA successful you can click stop in the bottom right and you're finished!
+6\. Once you see INFO OTA successful you can click stop in the bottom right and you're finished!
 
 ![ESPHome Device Builder install log ending in INFO OTA successful, then the M-1 shown online](../../../assets/esphome-device-builder-finished-installing.gif)
 
@@ -122,7 +126,7 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 [Click here to learn what all you can do with the Media Proxy!](https://wiki.apolloautomation.com/products/m1/examples/media-proxy/){    .md-button .md-button--primary }
 
-### WizMote Remote
+### WizMote remote
 
 The M-1 ESPHome firmware has built-in support for the <a href="https://www.amazon.com/WiZ-Remote-Compatible-Lights-Assistant/dp/B091TGDS6F" target="_blank" rel="noreferrer nofollow noopener">WiZ WizMote</a> remote, so you can change pages, dim the panel, and toggle it on/off without your phone.
 

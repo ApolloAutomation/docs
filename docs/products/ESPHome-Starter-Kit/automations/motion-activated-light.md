@@ -1,11 +1,11 @@
 ---
-title: Turn On a Light with Motion
+title: Turn on a light with motion
 description: >-
   Build an ESPHome Device Builder automation: the Motion module turns the LED
   & Buzzer module's RGB light on when it detects movement and off when motion
   stops.
 ---
-# Turn On a Light with Motion
+# Turn on a light with motion
 
 <span class="difficulty lvl-1">Difficulty: Level 1</span>
 
@@ -24,6 +24,8 @@ This tutorial uses the Motion module and the LED & Buzzer module connected to th
 ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automations/" target="_blank" rel="noreferrer nofollow noopener">automations</a>, so you can wire a trigger to an action without hand-writing YAML. The trigger is the *when*, the thing that makes it fire. The action is the *then do*, what happens when it fires. You'll build two automations on the same Motion module: one that turns the lights on when motion is detected, and one that turns them off when motion stops.
 
 ### Turn the lights on
+
+Start with the automation that turns the RGB light on when your Motion module detects movement.
 
 1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
 2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
@@ -142,6 +144,6 @@ Your automation is saved in Device Builder, but the device is still running its 
 
 With the device back online, wave your hand in front of the PIR sensor. The RGB light turns on as soon as motion is detected, then turns off shortly after the sensor stops seeing movement. If the light triggers right after boot with nothing moving, give the sensor a moment. PIR sensors need a brief warm-up after powering on, usually 5 to 10 seconds, before their readings stabilize.
 
-<a href="../temp-reactive-leds/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Temp-Reactive LEDs</a>
+<a href="../temp-reactive-leds/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next: Temp-Reactive LEDs</a>
 
 --8<-- "_snippets/community-help.md"

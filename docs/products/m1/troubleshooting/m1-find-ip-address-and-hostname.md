@@ -1,10 +1,12 @@
 ---
-title: How to Find IP address and hostname of your M-1 device.
+title: How to find IP address and hostname of your M-1 device.
 description: >-
   Step by step guide for finding the IP address and the hostname of your M-1
   device.
 ---
-# How to Find IP address and hostname of your M-1 device.
+# How to find IP address and hostname of your M-1 device.
+
+You'll use the WLED Native app to find your device's IP address and hostname.
 
 1\. Download the WLED Native app for iOS and Android.
 

@@ -2,7 +2,7 @@
 title: Apollo Automation FAQ
 description: Frequently Asked Questions.
 ---
-# F.A.Q. ~ Frequently Asked Questions
+# F.A.Q. ~ frequently asked questions
 
 ## 1\. How much power do your sensors use?
 
@@ -18,7 +18,7 @@ description: Frequently Asked Questions.
 
 ## 3\. My MSR-2 is triggering and no one is there.
 
-* We have seen this happen before - please first try to restart your radar, then factory reset your radar, then try a factory firmware flash. We also see success with users re-seating their LD2410B mmWave sensor.
+* We have seen this happen before. Please first try to restart your radar, then factory reset your radar, then try a factory firmware flash. We also see success with users re-seating their LD2410B mmWave sensor.
 
 ---
 
@@ -48,7 +48,7 @@ description: Frequently Asked Questions.
 
 ## **7\. I am getting the error "Failed to import device" in ESPHome Dashboard when trying to adopt my Apollo device.**
 
-* Make sure you have enough free space in Home Assistant - Protip: check for old backups you can delete!
+* Make sure you have enough free space in Home Assistant. Protip: check for old backups you can delete!
 * If your space is not an issue then please reboot or even try reinstalling the ESPHome Device Builder app and see if that helps!
 
 ---

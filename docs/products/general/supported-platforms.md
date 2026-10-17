@@ -1,5 +1,5 @@
 ---
-title: Supported Platforms
+title: Supported platforms
 description: A list of platforms compatible with Apollo Automation products.
 ---
 ![Apollo Automation logo in white on a blue background](/assets/apollo-logo.png)
@@ -23,7 +23,7 @@ At Apollo, we are actively working on adding support for every smart home ecosys
 
 ## **Hubitat**
 
-* **Integration:** Working on support - check back soon!
+* **Integration:** Working on support. Check back soon!
 * **Support:** We do not provide support for this platform but if enough users want it that could change. We of course always support the hardware of our products though!
 
 ## **openHAB**
@@ -43,7 +43,7 @@ At Apollo, we are actively working on adding support for every smart home ecosys
 
 ## Samsung SmartThings
 
-* **Integration:** Supported via direct OAuth2 from your Apollo ESPHome device — no hub or Home Assistant required. See our [SmartThings Direct Control tutorial](tutorials/smartthings-direct-control.md) for full setup instructions including zone-based presence detection and autonomous token renewal.
+* **Integration:** Supported via direct OAuth2 from your Apollo ESPHome device, no hub or Home Assistant required. See our [SmartThings Direct Control tutorial](tutorials/smartthings-direct-control.md) for full setup instructions including zone-based presence detection and autonomous token renewal.
 * **Support:** We do not provide official support for this platform, but the community tutorial covers the full setup including token renewal and troubleshooting.
 
 ## MQTT

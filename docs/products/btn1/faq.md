@@ -8,11 +8,11 @@ description: Frequently asked questions about the BTN-1 Macro Deck
 
 2\. **How long will the BTN-1 last on battery if it's not sleeping?**
 
-* It's expected to last 18 hours on a single charge if you need to take it on the go - great for all <a href="https://esphome.io/components/espnow/" target="_blank" rel="noreferrer nofollow noopener">ESP-NOW</a> projects!
+* It's expected to last 18 hours on a single charge if you need to take it on the go. Great for all <a href="https://esphome.io/components/espnow/" target="_blank" rel="noreferrer nofollow noopener">ESP-NOW</a> projects!
 
 3\. **Why won't my BTN-1 multi presses work? Single press works fine!**
 
-* The device is most likely sleeping - when sleeping, no multi clicks are supported. Only a physical button single press because that wakes the device up.
+* The device is most likely sleeping. When sleeping, no multi clicks are supported. Only a physical button single press because that wakes the device up.
 
 4\. **How do I connect the BTN-1 to Home Assistant?**
 
@@ -20,7 +20,7 @@ description: Frequently asked questions about the BTN-1 Macro Deck
 
 5\. **Does the BTN-1 support Zigbee firmware?**
 
-* The BTN-1 uses an 8MB C6 mini MCU so it technically does support zigbee - we might have official firmware for this in the future!
+* The BTN-1 uses an 8MB C6 mini MCU so it technically does support zigbee. We might have official firmware for this in the future!
 
 6\. **What kind of things can I do with the BTN-1?**
 

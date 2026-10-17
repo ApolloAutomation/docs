@@ -1,10 +1,10 @@
 ---
-title: LED-1 General Tips
+title: LED-1 general tips
 description: Multiple helpful tips to use your LED-1 to the fullest!
 ---
-# General Tips
+# General tips
 
-## Power Supplies
+## Power supplies
 
 Meanwell power supplies are best but most power supplies off Amazon will be sufficient. As a rule of thumb, over 80% usage on a power supply is bad. So if you want to run with 3amps, buy a 4 or 5amp power supply so that the power supply is not running at its maximum potential amperage.
 
@@ -14,7 +14,7 @@ Most power supplies will have a barrel connector only rated for 3 amps on it, so
 
     The LED-1 will protect itself, but not the led strips connected to it. So if you connect a 24 volt power supply to the device, it will send 24v out to the LED strips. Make sure to pair your LEDs and Power supplies with the same voltage!
 
-## LED Strips
+## LED strips
 
 * <a href="https://www.amazon.com/dp/B01CDTEG1O" target="_blank" rel="noreferrer nofollow noopener">WS2812B</a> which are 5V RGB LED strips.
 * <a href="https://www.amazon.com/BTF-LIGHTING-Individually-Addressable-Flexible-Non-waterproof/dp/B01N0MA729" target="_blank" rel="noreferrer nofollow noopener">SK6812</a> which are 5V RGBW LED strips.
@@ -24,13 +24,13 @@ Most power supplies will have a barrel connector only rated for 3 amps on it, so
 
     We suggest buying only BTF Lighting off of amazon or directly from us (we source only BTF Lighting). They also have an Aliexpress store!
 
-## LED Connectors
+## LED connectors
 
 <a href="https://www.amazon.com/BTF-LIGHTING-Connectors-WS2812B-WS2811-WS2812/dp/B01DC0KIT2" target="_blank" rel="noreferrer nofollow noopener">JST-SM 3 pin connectors</a> are helpful to connect multiple led strips or to solder them onto led strips to create multiple smaller sections. These have a maximum rating of 3 amps.
 
 <a href="https://www.amazon.com/BTF-LIGHTING-Transparent-Connector-Solderless-Extension/dp/B0B3LZ59FB" target="_blank" rel="noreferrer nofollow noopener">10mm Width Transparent Connector Kit</a> You might want to use these 24v FCOB connectors for the WS2814 LEDs suggested above. Make sure to choose the same width of led strip + connector (10mm, 12mm, etc).
 
-## Additional Tools
+## Additional tools
 
 <a href="https://www.amazon.com/Compact-Splicing-Connector-Assortment-221-2401/dp/B0CJ5QF3VX" target="_blank" rel="noreferrer nofollow noopener">Wago Connectors</a> are a great option for connecting wires together without soldering.
 

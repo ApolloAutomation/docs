@@ -1,8 +1,8 @@
 ---
-title: AIR-1 Bluetooth Proxy
+title: AIR-1 Bluetooth proxy
 description: Tutorial for how to turn your AIR-1 into a BLE proxy!
 ---
-# AIR-1 Bluetooth Proxy
+# AIR-1 Bluetooth proxy
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 

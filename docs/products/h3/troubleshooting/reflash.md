@@ -1,8 +1,8 @@
 ---
-title: Factory Re-Flash H-3
+title: Factory re-flash H-3
 description: "Step by step guide for re-flashing the H-3 back to factory firmware."
 ---
-# Reflashing The H-3
+# Reflashing the H-3
 
 !!! info "Reflash the H-3 if it stops responding, or to move between the basic and smart firmware."
 

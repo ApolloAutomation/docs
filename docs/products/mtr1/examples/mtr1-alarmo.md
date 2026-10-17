@@ -2,7 +2,7 @@
 title: MTR-1 Alarmo setup
 description: MTR-1 Alarmo setup
 ---
-# MTR-1 + Alarmo Home Security Install
+# MTR-1 + Alarmo home security install
 
 My grandmother wanted a security system that would alert her when there was movement in her home after she had gone to bed. So, I set up three of our Apollo Automation mmWave sensors. These devices, plus the Alarmo integration, quickly allowed me to install a fully local, private, cloud-free, and no monthly subscription security system. She can arm/disarm it with one button on her Home Assistant dashboard, and it makes her feel much safer. This guide assumes you already have a motion/presence sensor installed on HA.
 
@@ -27,6 +27,8 @@ Restart Home Assistant once both are installed, then add the Alarmo integration 
   
 ![Alarmo Sensors tab with MSR-1 radar target entities toggled on for Home arm mode](/assets/alarmo-2.png)  
   
+*Shown with MSR-1 sensors; add your MTR-1 target entities the same way.*
+  
 4\. Now select the Actions tab and under Condition > Event > Select "Alarm is triggered". You can also select the device you would like to receive a notification on under Task > Target > Select Device (Phone, tablet, etc.)  
   
 ![Alarmo Configure notification with the Alarm is triggered event and a phone selected as target](/assets/alarmo-3.png)  
@@ -39,9 +41,13 @@ Restart Home Assistant once both are installed, then add the Alarmo integration 
   
 ![Alarmo Configure action with Alarm is triggered and AIR-1 and MSR-1 RGB light entities selected](/assets/alarmo-5.png)  
   
+*Shown with AIR-1 and MSR-1 lights; pick your MTR-1 RGB light the same way.*
+  
 7\. Under Action select Turn On and now your sensors' RGB lights will turn on when the alarm is triggered.  
   
 ![Alarmo action Task with Turn On selected for the RGB lights and the action named](/assets/alarmo-6.png)  
+  
+*Shown with AIR-1 and MSR-1 lights; the MTR-1 steps are the same.*
   
 8\. And that's it, seriously... Now you can enjoy a free and local security system.  
   

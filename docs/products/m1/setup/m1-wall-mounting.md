@@ -1,9 +1,9 @@
 ---
-title: Wall Mounting your M-1 Panels
+title: Wall mounting your M-1 panels
 description: >-
   How to print the M-1 LED Matrix frames, screw your panels into them, and hang the finished panel on a wall.
 ---
-# Wall Mounting your M-1 Panels
+# Wall mounting your M-1 panels
 
 The printed frames wrap the edges of a panel and screw into the mounting holes on its back. Every panel gets its own frame, and small joiners bridge the seams where panels meet, so a row or a grid ends up as one flat piece you can hang on a wall.
 
@@ -12,7 +12,7 @@ Download the files from the <a href="https://www.printables.com/model/1361828-ap
 
 1.  The other folders hold the combined CAD source files and the older stand brackets.
 
-## Choose your Parts
+## Choose your parts
 
 During testing all parts were printed out of PETG. PLA will likely also work fine!
 
@@ -37,7 +37,7 @@ Make sure to use M3 8mm screws. <a href="https://www.amazon.com/Socket-Screws-Bo
 
     The panel sits directly against the frame posts, so there is very little room behind its mounting holes. Anything longer than 12mm reaches the back of the panel and damages it.
 
-## Assemble your Panels
+## Assemble your panels
 
 Work with the panels face down on a soft surface, LED side against a towel or the foam they shipped in. Set each frame over the back of its panel, line the frame posts up with the panel's mounting holes, and drive the screws in. Snug is enough. Overtightening strips a printed post.
 
@@ -105,7 +105,7 @@ The orange dots in each diagram mark where a joiner goes.
 
     4\. Finish each of the four seams with a Joiner Side at its outside end.
 
-## Wiring your Panels
+## Wiring your panels
 
 Leave the wiring until the frames are together, then do it before anything goes on the wall. It's much easier with the panels flat on a table.
 
@@ -113,7 +113,7 @@ The Multiple Panels guide covers the ribbon cables, the power modules, and the W
 
 [Head to the Multiple Panels guide](/products/m1/setup/m1-multiple-panels.md){: .md-button .md-button--primary }
 
-## Hang your Panels
+## Hang your panels
 
 The printed parts have a mounting hole at each corner. Push a thumb tack through the holes along the outside edge of your finished panel and into the wall. A small nail or a picture hook works the same way.
 

@@ -1,10 +1,10 @@
 ---
-title: Bluetooth Proxy
+title: Bluetooth proxy
 description: >-
   Turn your ESPHome Starter Kit into a Bluetooth proxy so Home Assistant can see
   BLE devices anywhere in your home, using one line of config.
 ---
-# Turn Your Starter Kit into a Bluetooth Proxy
+# Turn your starter kit into a Bluetooth proxy
 
 Home Assistant can talk to Bluetooth devices directly, but only ones close to the machine it runs on. A <a href="https://esphome.io/components/bluetooth_proxy/" target="_blank" rel="noreferrer nofollow noopener">Bluetooth proxy</a> fixes that. Your starter kit's ESP32-C6 listens for nearby BLE devices and relays them back to Home Assistant over Wi-Fi, so a sensor two rooms away shows up as if it were sitting next to your server. Drop a few of these around the house and Home Assistant gets Bluetooth coverage everywhere.
 

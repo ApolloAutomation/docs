@@ -1,8 +1,8 @@
 ---
-title: How To Tune mmWave Using HLKRadarTool
+title: How to tune mmWave using HLKRadarTool
 description: "Tutorial for R PRO-1 HLKRadarTool app Zone Configuration."
 ---
-# How To Tune mmWave Using HLKRadarTool
+# How to tune mmWave using HLKRadarTool
 
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/-w_GFURyx-A?si=SSRovumabCvHeXwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
 
@@ -10,7 +10,7 @@ description: "Tutorial for R PRO-1 HLKRadarTool app Zone Configuration."
 
     Some steps below require opening your device's web server in a browser. To find your address:
 
-    1. In Homey, open your R PRO-1 device and note the last 6 characters of its name — for example, **Apollo R_PRO-1 353fd4** gives you `353fd4`.
+    1. In Homey, open your R PRO-1 device and note the last 6 characters of its name. For example, **Apollo R_PRO-1 353fd4** gives you `353fd4`.
     2. Check whether you set it up over **WiFi** or **Ethernet**.
     3. Build your URL:
         - WiFi: `http://apollo-r-pro-1-w-353fd4.local/`
@@ -18,7 +18,7 @@ description: "Tutorial for R PRO-1 HLKRadarTool app Zone Configuration."
 
     If the `.local` address doesn't load, use your router to find the device's IP address and use that instead.
 
-## LD2450 Configuration
+## LD2450 configuration
 
 !!! note "Ensure that the LD2450 firmware version is V2.02.23090617 or later for proper integration functionality. "
 
@@ -34,9 +34,13 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
+Follow these steps to turn on the LD2450's Bluetooth and set up its zones in the HLKRadarTool app.
+
 1\. Open your R PRO-1's web server (see address tip above), scroll down until you see **LD2450 Bluetooth**, and toggle it on.
 
 ![Device Configuration panel with the LD2450 Bluetooth toggle switched on and highlighted](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
+
+*Shown on an MTR-1; the R PRO-1 has the same LD2450 Bluetooth switch.*
 
 2\. Open the HLKRadarTool App and select your device.
 
@@ -50,13 +54,13 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ![HLKRadarTool app LD2450 zone map with the Set button highlighted in the top right](/assets/r-pro-1-hlk-app-select-set.png)
 
-4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit** — you should see a confirmation message: **"Setup successfully."**
+4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit**. You should see a confirmation message: **"Setup successfully."**
 
 !!! tip "There are three ways to use your R PRO-1!"
 
-    You can use any of these three choices to control your R PRO-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disables multi-zone area detection and just tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
+    You can use any of these three choices to control your R PRO-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disables multi-zone area detection and tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
 
-    Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
+    Disabled allows you to use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
 ![HLKRadarTool app with Area Detection selected, Areas 1, 2, and 3 toggled on, and the Submit button](/assets/r-pro-1-hlk-app-setup-zones.png)
 
@@ -69,12 +73,11 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
       &nbsp;
 
     * The X axis is where you can get tripped up, especially when both values are negative: -3456 is less than -2345.
-    * The Plotly chart will still render the rectangles even if the X1/X2 and Y1/Y2 values are reversed.
     * The zones cannot overlap.
 
-## LD2412 Configuration
+## LD2412 configuration
 
-The LD2412 works differently than the LD2450. Instead of drawing rectangular zones on a 2D map, you work with **distance gates**. Each gate covers 0.75m of radial distance from the sensor, so Gate 0 is 0-0.75m away, Gate 1 is 0.75-1.5m, and so on up to Gate 13 at roughly 9m. You define what the sensor reacts to by setting a sensitivity threshold at each gate distance.
+The LD2412 works differently than the LD2450. Instead of drawing rectangular zones on a 2D map, you work with **distance gates**. Each gate covers 0.75m of radial distance from the sensor, so Gate 1 is 0-0.75m away, Gate 2 is 0.75-1.5m, and so on out to Gate 12 at 8.25-9m (see the gate table on the General Tips page). You define what the sensor reacts to by setting a sensitivity threshold at each gate distance.
 
 The same HLKRadarTool app is used for both sensors.
 
@@ -110,22 +113,22 @@ The same HLKRadarTool app is used for both sensors.
 
 ![Animation of tapping Auto in the HLKRadarTool app to run LD2412 background noise detection](/assets/r-pro-1-ld2412-auto-noise-detection.gif)
 
-5\. Tap **Settings** in the top right and use the **Detection Range** slider to set which gates the sensor monitors. You can set both a start and end gate — for example, Gate 3 to Gate 6 means the sensor only looks between 2.25m and 4.5m from the device. Limiting the range prevents the sensor from picking up movement through walls or in adjacent rooms.
+5\. Tap **Settings** in the top right and use the **Detection Range** slider to set which gates the sensor monitors. You can set both a start and end gate. For example, Gate 3 to Gate 6 means the sensor only looks between 1.5m and 4.5m from the device. Limiting the range prevents the sensor from picking up movement through walls or in adjacent rooms.
 
 !!! tip "Gate to distance reference"
 
-    Each gate is 0.75m. Gate 1 = 0.75m, Gate 2 = 1.5m, Gate 3 = 2.25m, Gate 4 = 3m, Gate 5 = 3.75m, Gate 6 = 4.5m, Gate 7 = 5.25m, Gate 8 = 6m.
+    Each gate covers 0.75m. Gate 1 = 0-0.75m, Gate 2 = 0.75-1.5m, Gate 3 = 1.5-2.25m, Gate 4 = 2.25-3m, Gate 5 = 3-3.75m, Gate 6 = 3.75-4.5m, Gate 7 = 4.5-5.25m, Gate 8 = 5.25-6m.
 
 ![Animation of adjusting the Detection range slider in the HLKRadarTool app LD2412 Settings screen](/assets/r-pro-1-ld2412-detection-range.gif)
 
-6\. To fine-tune which distances trigger detection, open your R PRO-1's web server and use the gate sensitivity sliders there.
+6\. To fine-tune which distances trigger detection, open your R PRO-1's web server and use the gate threshold sliders (LD2412 gNN move threshold and still threshold) there.
 
-- **Raise** a gate's sensitivity to make it harder to trigger at that distance (useful for ignoring a fan, HVAC vent, or a window where cars pass).
-- **Lower** a gate's sensitivity to make it more sensitive at that distance (useful for reliably detecting someone sitting still in a chair).
+- **Raise** a gate's threshold to make it harder to trigger at that distance (useful for ignoring a fan, HVAC vent, or a window where cars pass).
+- **Lower** a gate's threshold to make it easier to trigger at that distance (useful for reliably detecting someone sitting still in a chair).
 
 ![Animation of opening the R PRO-1 web server and scrolling to the LD2412 gate threshold sliders](/assets/r-pro-1-ld2412-gate-sliders-webserver.gif)
 
-7\. Tap **Settings** at the top of the app and set the **Unmanned Duration**. This controls how many seconds the sensor waits after it stops detecting before it reports "no one present." The default is 10 seconds — increase it if you're getting false "nobody home" readings in your space. In the Apollo web server, this same setting is called **LD2412 Timeout**.
+7\. Tap **Settings** at the top of the app and set the **Unmanned Duration**. This controls how many seconds the sensor waits after it stops detecting before it reports "no one present." The default is 10 seconds. Increase it if you're getting false "nobody home" readings in your space. In the Apollo web server, this same setting is called **LD2412 Timeout**.
 
 8\. Head back to your R PRO-1's web server and toggle **LD2412 Bluetooth** back off. Leaving Bluetooth on increases power consumption and can interfere with nearby Bluetooth devices.
 

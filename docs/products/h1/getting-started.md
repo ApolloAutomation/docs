@@ -1,7 +1,9 @@
 ---
-title: H-1 Getting Started
+title: H-1 getting started
 description: H-1 Getting Started tutorial.
 ---
+Follow these steps to power up your ornament, play its pre-loaded songs, and optionally add it to Home Assistant.
+
 1\. Power Up the H-1:
 
 Insert a rechargeable RC-CR123A (16340) battery, preferably an 850 mAh model like <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">the one available in our store</a>, or plug it into a power source using the USB-C port. A normal CR123A will not work!

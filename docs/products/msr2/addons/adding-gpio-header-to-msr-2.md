@@ -1,8 +1,10 @@
 ---
-title: Add the GPIO Header to your MSR-2
+title: Add the GPIO header to your MSR-2
 description: Tutorial on adding the GPIO Header to your MSR-2.
 ---
-# Adding GPIO Header To MSR-2
+# Adding GPIO header to MSR-2
+
+You'll seat the GPIO Header addon on the mezzanine connector on the back of your sensor, then fit the new back that came with it.
 
 1\. Unplug your MSR-2 from power and remove the back.
 
@@ -28,7 +30,7 @@ description: Tutorial on adding the GPIO Header to your MSR-2.
 
 ![MSR-2 with the new back cover fully attached around the GPIO Header](/assets/msr-2-gpio-header-pic-4.jpg)
 
-## GPIO Header pinout
+## GPIO header pinout
 
 With the header installed, these are the pins you can wire to. IO18 and IO19 can't be used while you flash the MSR-2, and IO0 and IO1 carry the I2C bus (SDA and SCL).
 

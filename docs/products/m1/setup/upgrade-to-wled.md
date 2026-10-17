@@ -22,7 +22,7 @@ Take a backup anyway. It takes a minute, and it is the difference between a five
 
 5\. Tap **Info** and confirm the version now reads 16.0.1.
 
-## After the Upgrade
+## After the upgrade
 
 Check **Config** then **LED Preferences**. The HUB75 section in WLED 16 describes panels as a grid rather than a chain length, so an existing multi-panel setup may need its **No. of Panels** and grid values set. [Matrix Settings](/products/m1/setup/m1-matrix-settings.md) covers a single panel and [Multiple Panels](/products/m1/setup/m1-multiple-panels.md) covers the rest.
 

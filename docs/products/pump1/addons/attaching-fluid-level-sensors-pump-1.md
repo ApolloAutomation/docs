@@ -1,10 +1,10 @@
 ---
-title: Attaching Fluid Level Sensors to the PUMP-1
+title: Attaching fluid level sensors to the PUMP-1
 description: Tutorial for Attaching The Input and Output Fluid Level Sensors to the PUMP-1
 ---
-# Attaching Fluid Level Sensors to the PUMP-1
+# Attaching fluid level sensors to the PUMP-1
 
-## Installing Fluid Input Sensor
+## Installing fluid input sensor
 
 1\. Begin by placing the small white connector through the hole in the base of the water bottle and gently press the input fluid level sensor into place.
 
@@ -14,13 +14,13 @@ description: Tutorial for Attaching The Input and Output Fluid Level Sensors to 
 
 ![Fitting the input fluid level sensor into the PUMP-1 bottle base, then sliding the bottle in](/assets/pump-1-install-fluid-input-sensor-webp.webp)
 
-## Connecting Fluid Input Sensor
+## Connecting fluid input sensor
 
 1\. Insert the small white connector into the **right-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. The small bump on top of the white connector must be facing **upwards** when inserting it. This ensures proper alignment and a secure connection.
 
 ![Plugging the input fluid sensor connector into the right-side port of the open PUMP-1](/assets/pump-1-connect-fluid-input-sensor-webp.webp)
 
-## Connecting Fluid Output Sensor
+## Connecting fluid output sensor
 
 1\. Insert the small white connector into the **left-side port** on your PUMP-1 device. Ensure it is fully seated for proper operation. The small bump on top of the white connector must be facing **upwards** when inserting it. This ensures proper alignment and a secure connection.
 
@@ -30,6 +30,6 @@ description: Tutorial for Attaching The Input and Output Fluid Level Sensors to 
 
     They are intended for external placement only.
 
-2\. Attach the fluid output sensor to the **outside** of the water reservoir of your choice. Common examples include Keurig water tanks, fish tanks, or similar containers. This sensor detects whether the water level is **above or below** a specific threshold, providing a reliable indication of fluid presence at that height. You can secure the sensor using **double-sided tape**, a **Command™ strip**, or even a **small dab of hot glue** - whichever method works best for your setup. Just ensure the sensor remains firmly in place and maintains good contact with the surface.
+2\. Attach the fluid output sensor to the **outside** of the water reservoir of your choice. Common examples include Keurig water tanks, fish tanks, or similar containers. This sensor detects whether the water level is **above or below** a specific threshold, providing a reliable indication of fluid presence at that height. You can secure the sensor using **double-sided tape**, a **Command™ strip**, or even a **small dab of hot glue**, whichever method works best for your setup. Ensure the sensor remains firmly in place and maintains good contact with the surface.
 
 ![Taping the PUMP-1 fluid output sensor to the outside of a water reservoir](/assets/pump-1-attach-fluid-output-sensor-to-reservoir-webp.webp)

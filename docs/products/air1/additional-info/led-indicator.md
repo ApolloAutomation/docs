@@ -1,8 +1,8 @@
 ---
-title: AIR-1 LED Indicator
+title: AIR-1 LED indicator
 description: Color the AIR-1's onboard RGB LEDs by air quality, using NowCast AQI, CO₂, or the VOC Index.
 ---
-# AIR-1 LED Indicator
+# AIR-1 LED indicator
 
 The AIR-1's three onboard RGB LEDs can double as an air quality gauge. Pick what they track and they shift from green to red as that reading climbs, so you can read the room from across it.
 

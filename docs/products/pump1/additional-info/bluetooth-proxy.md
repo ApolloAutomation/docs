@@ -1,8 +1,8 @@
 ---
-title: PUMP-1 Bluetooth Proxy
+title: PUMP-1 Bluetooth proxy
 description: Tutorial for how to turn your PUMP-1 into a BLE proxy!
 ---
-# PUMP-1 Bluetooth Proxy
+# PUMP-1 Bluetooth proxy
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 

@@ -1,8 +1,8 @@
 ---
-title: Adding MiCS-4514 Gas Sensor To The AIR-1
+title: Adding MiCS-4514 gas sensor to the AIR-1
 description: Adding Optional MiCS-4514 Gas Sensor To The AIR-1.
 ---
-# Adding The MiCS-4514 Gas Sensor To The AIR-1
+# Adding the MiCS-4514 gas sensor to the AIR-1
 
 !!! tip "Tip"
 

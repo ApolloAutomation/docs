@@ -56,7 +56,7 @@ description: "Common MSR-1 questions answered: which sensors are inside, what th
 
 14\. **What is the mmWave detection range?**
 
-* The mmWave radar sensor can detect movement up to 5 meters (16.4 feet) with a detection angle of about 60 degrees (though in practice, this can be close to 90 degrees). It’s excellent for detecting both large and small movements, making it suitable for automations like turning on lights or detecting presence in a room.
+* The mmWave radar sensor can detect movement up to about 6 meters (19.7 feet) with a detection angle of about 60 degrees (though in practice, this can be close to 90 degrees). It’s excellent for detecting both large and small movements, making it suitable for automations like turning on lights or detecting presence in a room.
 
 15\. **Can the mmWave sensor detect through walls?**
 
@@ -64,11 +64,11 @@ description: "Common MSR-1 questions answered: which sensors are inside, what th
 
 16\. **How do I set up automations with the MSR-1?**
 
-* Automations can be easily configured in Home Assistant using ESPHome. For example, you can automate lights to turn on when motion is detected or trigger a fan when CO2 levels rise. The sensor data can be used in combination with other Home Assistant devices for more complex automations.
+* Automations can be configured in Home Assistant using ESPHome. For example, you can automate lights to turn on when motion is detected or trigger a fan when CO2 levels rise. The sensor data can be used in combination with other Home Assistant devices for more complex automations.
 
 17\. **What is the power source for the MSR-1?**
 
-* The MSR-1 is powered via USB-C. Simply plug it into a standard 5V USB power adapter, and you’re good to go.
+* The MSR-1 is powered via USB-C. Plug it into a standard 5V USB power adapter, and you’re good to go.
 
 18\. **What is the reporting interval for the MSR-1 sensors?**
 
@@ -96,7 +96,7 @@ description: "Common MSR-1 questions answered: which sensors are inside, what th
 
 24\. **How do I calibrate the CO2 sensor?**
 
-* The optional CO2 sensor (SCD40) comes pre-calibrated, so no manual calibration is necessary. However, you can perform recalibration via ESPHome if needed.
+* The optional CO2 sensor (SCD40) is factory calibrated, but the MSR-1 firmware turns its automatic self-calibration off. Calibrate it to fresh air (about 420 ppm) after you install it and every 1 to 2 years after that by pressing **Calibrate SCD40 To 420ppm** outdoors, as described in the [CO2 calibration guide](/products/general/calibrating-and-updating/co2-calibration.md).
 
 25\. **How can I use the MSR-1 for light control?**
 

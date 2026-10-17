@@ -48,6 +48,8 @@ A threshold of 100 means that gate never triggers, so some people set a gate to 
 
 ### Run a calibration
 
+You start the calibration from the card, then stay out of the room for about a minute and a half while it listens.
+
 1. Press **Calibrate with empty room** on the **Auto-calibrate** card. Take your phone with you if you'd like to watch the countdown and the listen from outside the room.
 2. Leave the room while the countdown runs and close the door behind you. Then move away from the door and the walls: the radar can see through drywall and thin doors, so waiting right outside can count as someone in the room. If the room has no door, go to another room, out of the sensor's view.
 3. Come back after about a minute and a half, once the card shows **Thresholds updated**, and read the result.
@@ -217,6 +219,8 @@ The bottom-right corner has a lock toggle that reads **Unlocked** or **Locked**.
 Open **Configure → Zones** and press **Add Zone**. The new zone is named **Zone 1** (then Zone 2, and so on), gets its own button under the grid, and is selected and ready to draw.
 
 ### Draw a zone
+
+You draw each zone on the grid as a rectangle, ellipse, or polygon.
 
 1. Unlock the map and press the zone's button to select it.
 2. Press ✎ (**Drawing modes**) in the bottom-left corner and pick a shape: ▭ (**Rectangle**), ◯ (**Ellipse**), or ⬠ (**Polygon**).

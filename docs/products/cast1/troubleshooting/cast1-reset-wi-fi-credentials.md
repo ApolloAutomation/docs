@@ -1,8 +1,10 @@
 ---
-title: Reset Wi-Fi Credentials
+title: Reset Wi-Fi credentials
 description: Step by step guide for resetting the Wi-Fi Credentials on your CAST-1.
 ---
-# Reset Wi-Fi Credentials on your CAST-1
+# Reset Wi-Fi credentials on your CAST-1
+
+Resetting the Wi-Fi credentials makes your device broadcast its hotspot again so you can enter new Wi-Fi details.
 
 !!! note "Using the Ethernet module? Unplug the cable first."
 

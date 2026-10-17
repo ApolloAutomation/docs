@@ -1,8 +1,8 @@
 ---
-title: MTR-1 Sensor Definitions
+title: MTR-1 sensor definitions
 description: These are all of the entities exposed by the MTR-1 to automate on!
 ---
-# Sensor Definitions
+# Sensor definitions
 
 Once added to Home Assistant you can configure different settings for your MTR-1. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
 
@@ -60,8 +60,8 @@ Once added to Home Assistant you can configure different settings for your MTR-1
     | **Multi Target Tracking** | from module | Turns multi-target tracking on or off. Initial state is read from the LD2450 at boot. |
     | **Timeout** | 5 s | How long presence stays detected after the target is lost. See the <a href="https://esphome.io/components/sensor/ld2450.html#ld2450-binary-sensors" target="_blank" rel="noopener">ESPHome LD2450 docs</a>. |
     | **Zone Type** | Disabled | Zone detection mode: `Disabled`, `Detection` (only detect targets inside the zone), or `Filter` (exclude the zone from detection). |
-    | **Zone-1 / Zone-2 / Zone-3 X1, X2** | — | Start and end X coordinates of the zone in mm (-3000 left to 3000 right). |
-    | **Zone-1 / Zone-2 / Zone-3 Y1, Y2** | — | Start and end Y coordinates of the zone in mm (0 to 6000). |
+    | **Zone-1 / Zone-2 / Zone-3 X1, X2** | — | Start and end X coordinates of the zone in mm (-4860 left to 4860 right). |
+    | **Zone-1 / Zone-2 / Zone-3 Y1, Y2** | — | Start and end Y coordinates of the zone in mm (0 to 7560). |
     | **DPS310 Pressure Offset** | 0.0 hPa | Calibration offset for the DPS310 pressure reading. Disabled by default. |
     | **DPS310 Temperature Offset** | — | Calibration offset for the DPS310 temperature reading. |
     | **SCD40 Temperature Offset** | — | Calibration offset for the SCD40 temperature reading. Disabled by default. |

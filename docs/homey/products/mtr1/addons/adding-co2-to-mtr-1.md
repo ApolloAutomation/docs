@@ -1,9 +1,11 @@
 ---
-title: adding CO2 to MTR-1
+title: Adding CO2 to MTR-1
 description: Step by step tutorial for adding the SCD40 CO2 sensor to the MTR-1.
 ---
 
-# Adding CO<sub>2</sub> To MTR-1
+# Adding CO<sub>2</sub> to MTR-1
+
+You'll slide your sensor out of its case, fit the SCD40 module onto the mezzanine connector, and put the case back together.
 
 1\. Unplug your MTR-1 from power and remove the stand if attached.
 
@@ -37,4 +39,4 @@ description: Step by step tutorial for adding the SCD40 CO2 sensor to the MTR-1.
 
 ![Reassembled MTR-1 with the stand attached](/assets/mtr-1-add-co2-pic-14.jpg)
 
-9\. Please refer to our [CO<sub>2</sub> calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).
+9\. Please refer to our [CO<sub>2</sub> calibration guide](https://wiki.apolloautomation.com/homey/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).

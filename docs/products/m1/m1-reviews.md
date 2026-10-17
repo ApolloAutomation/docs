@@ -1,5 +1,5 @@
 ---
-title: M-1 Reviews
+title: M-1 reviews
 description: YouTube reviews and feedback about the M-1 LED Matrix from Apollo Automation.
 ---
 # Reviews

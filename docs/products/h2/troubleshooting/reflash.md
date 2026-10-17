@@ -1,14 +1,14 @@
 ---
-title: Factory Re-Flash H-2
+title: Factory re-flash H-2
 description: Step by step guide for re-flashing the H-2 back to factory firmware.
 ---
-# Reflashing The H-2
+# Reflashing the H-2
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
     This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
 
-1\. Disconnect your H-2 from power. With the device facing you, locate the boot button - it’s the small black button on the right.
+1\. Disconnect your H-2 from power. With the device facing you, locate the boot button. It’s the small black button on the right.
 
 2\. Plug in a USB cable that supports power and data into your computer.
 

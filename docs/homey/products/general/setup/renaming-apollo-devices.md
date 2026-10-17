@@ -1,8 +1,8 @@
 ---
-title: Renaming Apollo Devices
+title: Renaming Apollo devices
 description: "Rename an Apollo device from the Homey app or the Homey dashboard."
 ---
-# Renaming Apollo Devices
+# Renaming Apollo devices
 
 1\. Open the Homey App or dashboard in a browser and right click a device or short hold and then select "Rename".
 

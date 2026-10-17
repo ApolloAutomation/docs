@@ -1,8 +1,8 @@
 ---
-title: Choosing an mmWave Sensor
+title: Choosing an mmWave sensor
 description: Compare the Apollo MSR-2, MTR-1, and R PRO-1 mmWave presence sensors and pick the right one for your space.
 ---
-# Choosing an mmWave Sensor
+# Choosing an mmWave sensor
 
 Apollo mmWave sensors detect the **moving** and **still** energy of people and animals, which makes them excellent for presence detection in a room. They are not meant to detect vehicles, so for a car an ultrasonic sensor is a better fit. This guide compares our three current mmWave sensors so you can pick the right one for your space.
 
@@ -44,7 +44,7 @@ Apollo mmWave sensors detect the **moving** and **still** energy of people and a
 | **PoE / Ethernet** | :material-minus: | :material-minus: | :material-check: |
 | **Horizontal FoV** | 120° | 120° | 120°<br>150° with LD2412 |
 | **Vertical FoV** | 70° | 70° | 70° |
-| **Power** | USB-C | USB-C | PoE, Ethernet, Wi-Fi, USB-C |
+| **Power** | USB-C | USB-C | PoE (802.3af) or USB-C |
 | **mmWave module** | LD2410B | LD2450 | LD2450, optional LD2412 |
 
 ## Field of view

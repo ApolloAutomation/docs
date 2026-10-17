@@ -1,8 +1,8 @@
 ---
-title: Add the Ethernet Module to CAST-1
+title: Add the Ethernet module to CAST-1
 description: "How to install the Ethernet add-on module on your CAST-1."
 ---
-# Adding the Ethernet Module
+# Adding the Ethernet module
 
 The Ethernet add-on gives your CAST-1 a wired network connection. It's a small header board that presses onto the top of the CAST-1, so there's no case to open and nothing to solder.
 

@@ -1,29 +1,25 @@
 ---
-title: Apollo DEV-2 Introduction
-description: Apollo DEV-2 Introduction.
+title: Apollo DEV-2 introduction
+description: Pinout, power limits, a flashing video, and an example ESPHome YAML for the Apollo DEV-2 dev board.
 ---
+# Apollo DEV-2 introduction
+
+The Apollo DEV-2 is a very small dev board that we use to prototype before creating other new products. It's a great starter device for tinkerers. You can buy it on its own, or with a breadboard and dupont wires (jumper wires) if you need those too.
+
+## Pinout and power
+
 ![Apollo DEV-2 pinout showing the GPIO number and functions of every header pin](/assets/apollo-dev-2-pinout.webp)
 
-The Apollo DEV-2 is a very small dev board that we use to prototype before creating other new products. It has a built in RGB light (using GPIO3) and can push up to 600mA out of the 3.3v pin however 100-200mA of that will be used by the microcontroller itself. You are able to back-feed power via the 5v and G (ground) pins or use the USB-C port to power it, but NOT both at the same time.
+- **Built-in RGB light:** on GPIO3.
+- **3.3V pin:** supplies up to 600mA, but the microcontroller itself uses 100-200mA of that.
 
-!!! tip "New version has 8MB flash but originally sold with 4MB flash"
+!!! warning "Use one power source at a time"
 
-    If you're using an older DEV-2 with 4MB flash change the flash\_size: to say 4MB instead of 8MB.
+    You can power the DEV-2 through the USB-C port or back-feed power through the 5V and G (ground) pins, but **not** both at the same time.
 
-The DEV-2 is a great starter device for tinkerers and can be purchased on its own or with a breadboard and dupont wires (jumper wires) if you need those too.
+### GPIO pins
 
-The DEV-2 does NOT come pre-flashed with ESPHome or WLED and requires you to flash it yourself, however there is a getting started video we've made here on the older DEV-1 board. The information is still the same except you'll be using a slightly different yaml as shared below:
-
-<div class="cms-embed">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/oiKnTH1gg0Q?si=nNFDbHxZBuWIXHyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-  </iframe>
-</div>
-
-Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated API key inside the code block as shown below then paste it in the code below where you see "use-a-randomly-generated-key-here".
-
-![ESPHome API docs with a randomly generated encryption key highlighted in a red box](/assets/apollo-dev-1-image-2.png)
-
-**GPIO Pins Listed:**
+These are the DEV-2's I2C, UART, ADC, and onboard RGB LED pins, written as ESPHome YAML:
 
 ```yaml
 #These are the i2c pins
@@ -42,7 +38,32 @@ uart:
 #Onboard RGB LED: GPIO3
 ```
 
-**Example ESPHome yaml:**
+## Flash your DEV-2
+
+The DEV-2 doesn't come pre-flashed with ESPHome or WLED, so you flash it yourself. We made the getting started video below on the older DEV-1 board. The information is still the same, except you use the DEV-2 YAML further down this page.
+
+<div class="cms-embed">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/oiKnTH1gg0Q?si=nNFDbHxZBuWIXHyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+  </iframe>
+</div>
+
+## Example ESPHome YAML
+
+Use the example configuration below as a starting point for your DEV-2. Before you use it, give it your own API encryption key:
+
+1\. Open the <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">ESPHome API documentation</a> and copy the randomly generated API key from the code block, as shown in the red box below.
+
+![ESPHome API docs with a randomly generated encryption key highlighted in a red box](/assets/apollo-dev-1-image-2.png)
+
+2\. In the YAML below, find the `key:` line under `api:` and replace `your-api-key-here` with the key you copied.
+
+Your configuration now uses its own encryption key.
+
+!!! tip "The DEV-2 now has 8MB flash, but was originally sold with 4MB flash"
+
+    If you're using an older DEV-2 with 4MB flash, change `flash_size: 8MB` to `flash_size: 4MB` in the YAML below.
+
+Here's the full example for the DEV-2:
 
 ```yaml
 #Define Project
@@ -77,7 +98,7 @@ api:
 
 ota:
   - platform: esphome
-    password: "a53d93acd493275512730c776f88722a"
+    password: !secret ota_password
 
 wifi:
   ssid: !secret wifi_ssid

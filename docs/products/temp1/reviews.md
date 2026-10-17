@@ -1,5 +1,5 @@
 ---
-title: TEMP-1 Reviews
+title: TEMP-1 reviews
 description: YouTuber reviews and feedback about the TEMP-1 sensor from Apollo Automation.
 ---
 # [Simon Says Home Assistant](https://youtu.be/95etWGwEJPE?si=gdLCXFiWmuj2JUjD)

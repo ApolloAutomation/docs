@@ -16,7 +16,7 @@ description: Frequently asked questions about the MTR-1 mmWave sensor.
 
 4\. **What is the maximum detection range of the mmWave radar?**
 
-* The mmWave radar sensor in the MTR-1 has a maximum detection range of 6 meters (about 19.6 feet), making it ideal for monitoring large rooms or spaces.
+* The mmWave radar sensor in the MTR-1 has a maximum detection range of 6 meters (about 19.7 feet), making it ideal for monitoring large rooms or spaces.
 
 5\. **Can the MTR-1 be used to track the exact location of people in a room?**
 
@@ -56,7 +56,7 @@ description: Frequently asked questions about the MTR-1 mmWave sensor.
 
 14\. **Does the MTR-1 work with other smart home platforms?**
 
-* The MTR-1 is designed to work seamlessly with Home Assistant via ESPHome. While it could potentially be integrated into other smart home platforms through custom configurations, its primary use case is for Home Assistant.
+* The MTR-1 is designed to work with Home Assistant via ESPHome. While it could potentially be integrated into other smart home platforms through custom configurations, its primary use case is for Home Assistant.
 
 15\. **How does the temperature and pressure sensor work?**
 
@@ -84,7 +84,7 @@ description: Frequently asked questions about the MTR-1 mmWave sensor.
 
 21\. **Can I use multiple MTR-1 sensors in my smart home setup?**
 
-* Yes, you can integrate multiple MTR-1 sensors into your Home Assistant system. Each will show up as a separate entity, allowing you to monitor multiple rooms or areas in your home simultaneously.
+* Yes, you can integrate multiple MTR-1 sensors into your Home Assistant system. Each one shows up as its own device with its own set of entities, so you can monitor multiple rooms or areas in your home at the same time.
 
 22\. **What’s the difference between the MTR-1 and MSR-2?**
 
@@ -120,7 +120,7 @@ description: Frequently asked questions about the MTR-1 mmWave sensor.
 
 30\. **How long does it take to set up the MTR-1?**
 
-* Setup is quick and easy. Most users report being able to configure and integrate the MTR-1 into their Home Assistant setup within 10-15 minutes.
+* Setup is quick. Most users report being able to configure and integrate the MTR-1 into their Home Assistant setup within 10-15 minutes.
 
 31\. **What’s in the box?**
 

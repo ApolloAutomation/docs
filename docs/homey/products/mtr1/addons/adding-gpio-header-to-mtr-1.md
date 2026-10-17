@@ -1,8 +1,10 @@
 ---
-title: adding GPIO Header Addon to MTR-1
+title: Adding GPIO header addon to MTR-1
 description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1.
 ---
-# Adding GPIO Header To MTR-1
+# Adding GPIO header to MTR-1
+
+You'll seat the GPIO Header addon on the mezzanine connector on the back of your sensor, then fit the new back that came with it.
 
 1\. Unplug your MTR-1 from power and remove the stand if attached.
 
@@ -20,11 +22,11 @@ description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1
 
 4\. Keep the "X" aligned on both sides and gently push down until it securely seats in the small mezzanine connector.
 
-![Fingers pressing the GPIO Header addon into place on the back of the MTR-1](/assets/mtr-1-add-gpio-pic-3.jpg)
+![GPIO Header addon seated on the MTR-1 PCB, with the new backplate ready to fit](/assets/mtr-1-add-gpio-pic-4-1.jpg)
 
 5\. Align the new back for your MTR-1 that came with the GPIO Header addon. Push down on the corners closest to the GPIO Header addon first, and then push the back on securely on the other two corners.
 
-![GPIO Header addon seated on the MTR-1 PCB, with the new backplate ready to fit](/assets/mtr-1-add-gpio-pic-4-1.jpg)
+![Fingers pressing the new backplate onto the MTR-1 around the GPIO Header addon](/assets/mtr-1-add-gpio-pic-3.jpg)
 
 6\. The case should sit flush and you're now ready to add functionality to your device!
 
@@ -32,10 +34,10 @@ description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1
 
 ![GPIO Header addon pinout diagram labeling the GND, 5V, 3V, SDA, SCL, and IO pins](/assets/gpio-header-pinout.webp)
 
-!!! ! tip "Make sure to check out our GPIO Header LED Strip Tutorial!"
+!!! tip "Make sure to check out our GPIO Header LED Strip Tutorial!"
 
-    Brandon AKA SmartHomeSellout made this neat tutorial for how to connect a short LED strip to your MSR-2
+    Brandon AKA SmartHomeSellout made this tutorial for connecting a short LED strip through the GPIO Header. It's shown on an MSR-2, but the same steps work on your MTR-1.
 
-    <a href="https://wiki.apolloautomation.com/products/msr2/examples/gpio-header-control-an-led-strip/" target="_blank" rel="noreferrer nofollow noopener">GPIO LED Strip Tutorial</a><br>
+    [GPIO LED Strip Tutorial](../../msr2/examples/gpio-header-control-an-led-strip.md)
 
 &nbsp;

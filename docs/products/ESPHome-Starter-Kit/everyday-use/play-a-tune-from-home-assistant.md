@@ -1,10 +1,10 @@
 ---
-title: Play a Tune from Home Assistant
+title: Play a tune from Home Assistant
 description: >-
   Build an ESPHome API action in Device Builder so Home Assistant can play tunes
   on the LED & Buzzer module, then call it from Developer Tools or an automation.
 ---
-# Play a Tune from Home Assistant
+# Play a tune from Home Assistant
 
 <p class="automation-steps-heading">🌱 New here? Try these first:</p>
 <div class="automation-steps">
@@ -109,25 +109,25 @@ Start with a single named song, or set up a bank of swappable song slots. Pick a
 
         ![Creating the play_song_1 API action with an Rtttl Play action holding the Pink Panther tune](../../../assets/esphome-device-builder-add-song-1.gif)
 
-        **`play_song_1`** — Pink Panther
+        **`play_song_1`**: Pink Panther
 
         ```text
         PinkPanther:d=4,o=5,b=160:8d#,8e,2p,8f#,8g,2p,8d#,8e,16p,8f#,8g,16p,8c6,8b,16p,8d#,8e,16p,8b,2a#,2p,16a,16g,16e,16d,2e
         ```
 
-        **`play_song_2`** — Imperial March
+        **`play_song_2`**: Imperial March
 
         ```text
         StarWars/Imp:d=4,o=5,b=112:8d.,16p,8d.,16p,8d.,16p,8a#4,16p,16f,8d.,16p,8a#4,16p,16f,d.,8p,8a.,16p,8a.,16p,8a.,16p,8a#,16p,16f,8c#.,16p,8a#4,16p,16f,d.,8p,8d.6,16p,8d,16p,16d,8d6,8p,8c#6,16p,16c6,16b,16a#,8b,8p,16d#,16p,8g#,8p,8g,16p,16f#,16f,16e,8f,8p,16a#4,16p,2c#
         ```
 
-        **`play_song_3`** — Cantina
+        **`play_song_3`**: Cantina
 
         ```text
         Cantina:d=4,o=5,b=250:8a,8p,8d6,8p,8a,8p,8d6,8p,8a,8d6,8p,8a,8p,8g#,a,8a,8g#,8a,g,8f#,8g,8f#,f.,8d.,16p,p.,8a,8p,8d6,8p,8a,8p,8d6,8p,8a,8d6,8p,8a,8p,8g#,8a,8p,8g,8p,g.,8f#,8g,8p,8c6,a#,a,g
         ```
 
-        **`play_song_4`** — Simpsons
+        **`play_song_4`**: Simpsons
 
         ```text
         The Simpsons:d=4,o=5,b=160:c.,e,f#,8a,g.,e,c,8a4,8f#4,8f#4,8f#4,2g4,8p,8p,8f#4,8f#4,8f#4,8g4,a4.,8c,16p,8c,16p,8c,2c

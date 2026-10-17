@@ -1,10 +1,10 @@
 ---
-title: Button Controlled LEDs
+title: Button controlled LEDs
 description: >-
   Build your first automation in the new ESPHome Device Builder GUI: pressing
   the Button module toggles the RGB module on and off.
 ---
-# Build a Button-Controlled RGB Light
+# Build a button-controlled RGB light
 
 <span class="difficulty lvl-1">Difficulty: Level 1</span>
 
@@ -98,6 +98,6 @@ With the device back online, press the button on the Button module. You should h
 
     The same trigger-then-action pattern works for every automation you'll build in Device Builder. Swap the trigger (motion, temperature crossing a threshold, a schedule) or the action (turn on, dim, play a buzzer tone) and you have a new automation.
 
-<a href="../../tutorials/light-effects/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Light Effects</a>
+<a href="../../tutorials/light-effects/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next: Light Effects</a>
 
 --8<-- "_snippets/community-help.md"

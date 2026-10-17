@@ -1,5 +1,5 @@
 ---
-title: Add SCD40 CO₂ Sensor
+title: Add the SCD40 CO₂ sensor to your AIR-1
 description: Adding The SCD40 CO₂ Sensor from Sensirion To The AIR-1.
 ---
 # Adding CO<sub>2</sub> to AIR-1
@@ -7,6 +7,8 @@ description: Adding The SCD40 CO₂ Sensor from Sensirion To The AIR-1.
 !!! tip "Tip"
 
     [If you have the Original Design of the AIR-1 please click here](https://wiki.apolloautomation.com/products/air1/addons/adding-co2-to-air-1-mesh-case-design/ "Mesh Case Design for the AIR-1")
+
+You'll open the case, attach the SCD40 sensor to the mezzanine connector on the back of the board, and close the case again.
 
 1\. Unplug your AIR-1 from power and lift the top of the case or "lid".
 
@@ -40,4 +42,4 @@ description: Adding The SCD40 CO₂ Sensor from Sensirion To The AIR-1.
 
 ![AIR-1 lid being lowered back onto the case](/assets/air-1-add-co2-pic-12.jpg)![AIR-1 lid nearly closed with the USB-C port lined up with its opening](/assets/air-1-add-co2-pic-13.jpg)![AIR-1 case fully closed with the lid back in place](/assets/air-1-add-co2-pic-14.jpg)
 
-9\. Please refer to our [CO<sub>2</sub> calibration guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).
+9\. Please refer to our [CO<sub>2</sub> calibration guide](https://wiki.apolloautomation.com/homey/products/general/calibrating-and-updating/co2-calibration/ "CO2 Calibration") to calibrate the CO<sub>2</sub> module after installation. This is required for all CO<sub>2</sub> addons purchased from us separately from a product (such as buying it to addon to an existing Apollo device).

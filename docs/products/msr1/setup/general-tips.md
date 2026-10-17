@@ -1,8 +1,8 @@
 ---
-title: General Tips
+title: General tips
 description: "Placement and mounting tips for the MSR-1, including keeping the light sensor holes clear and stopping the RGB LED from skewing LUX readings."
 ---
-# General Tips
+# General tips
 
 ## **MSR-1**
 
@@ -10,7 +10,7 @@ description: "Placement and mounting tips for the MSR-1, including keeping the l
 
 Picture from <a href="https://smarthomescene.com/reviews/apollo-msr-1-review-miniature-multi-sensor-for-presence-and-co2-monitoring/" target="_blank" rel="noreferrer nofollow noopener">Smart Home Scene</a>
 
-## **Light Sensor (LTR-390UV)**
+## **Light sensor (LTR-390UV)**
 
 ![3D render of the MSR-1 case with the light sensor holes outlined in red](/assets/UWHlight-holes.png)
 
@@ -30,14 +30,16 @@ The MSR-1 should be mounted 1.5-2 meters off the ground which will then provide 
 
 The MSR-1 can also be mounted on the ceiling if you can provide power and mount our articulating stand on the ceiling.
 
-## **Gate and FOV Visualization**
+## **Gate and FOV visualization**
 
-**![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/ld2410-table_1.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
+**![Table of LD2410 gates 0 to 8 with distance ranges in meters and feet and default move and still thresholds](/assets/ld2410-gate-table.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
 
-![Top-down fan diagram of radar gates G1 to G7 marked in 0.75 m steps out to 5 m](/assets/msr-1-radar-map_1.png)![Radar gate fan diagram with Zone 1 in red, Zone 2 in blue, and Zone 3 in green](/assets/radar-gates-colored.png)
+![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)![Radar gate fan diagram with Zone 1 in red, Zone 2 in blue, and Zone 3 in green](/assets/radar-gates-colored.png)
+
+Each gate is 0.75 m deep, so the eight gates reach 6 m (19.69 ft) from the sensor.
 
 !!! tip "These are some useful hints!"
 
-    * The FOV angle is -60 to 60 degrees - 120 degrees total.
+    * The FOV angle is -60 to 60 degrees (120 degrees total).
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
     * Zones are user-configurable and are in cm.

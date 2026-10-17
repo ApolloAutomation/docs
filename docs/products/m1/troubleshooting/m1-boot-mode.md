@@ -1,8 +1,8 @@
 ---
-title: Putting The M-1 In Boot Mode
+title: Putting the M-1 in boot mode
 description: Step by step guide for putting The M-1 In Boot Mode.
 ---
-# Putting The M-1 In Boot Mode
+# Putting the M-1 in boot mode
 
 !!! info "This will cover how to put the M-1 into boot mode."
 

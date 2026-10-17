@@ -1,9 +1,9 @@
 ---
-title: Getting Started With Apollo Odroid
+title: Getting started with Apollo Odroid
 description: Getting Started With Apollo Odroid Flashed With Home Assistant (Odroid M1S).
 ---
 
-# Getting Started With Apollo Odroid Flashed With Home Assistant (Odroid M1S)
+# Getting started with Apollo Odroid flashed with Home Assistant (Odroid M1S)
 
 This guide will walk you through setting up your Apollo Home Assistant hub aka the Apollo Odroid.
 

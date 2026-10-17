@@ -12,7 +12,7 @@ description: Frequently asked questions about the R PRO-1 PoE mmWave sensor.
 
 3\. **What is the maximum detection range of the mmWave radar?**
 
-* The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="noreferrer nofollow noopener">HLK-LD2450</a> mmWave radar sensor has a maximum detection range of about 6 meters (19.6 feet) with multi-target tracking capabilities, making it ideal for room-wide monitoring.
+* The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="noreferrer nofollow noopener">HLK-LD2450</a> mmWave radar sensor has a maximum detection range of about 6 meters (19.7 feet) with multi-target tracking capabilities, making it ideal for room-wide monitoring.
 * The optional <a href="https://www.hlktech.net/index.php?id=1076" target="_blank" rel="noreferrer nofollow noopener">HLK-LD2412</a> mmWave radar sensor has a maximum detection range of about 9 meters (29.5 feet) with single tracking capabilities and ability to tune moving and still energy which is perfect for still targets like sleeping in a bed, laying on a couch, etc.
 
 4\. **Can the R PRO-1 detect multiple people?**
@@ -61,7 +61,7 @@ description: Frequently asked questions about the R PRO-1 PoE mmWave sensor.
 
 14\. **What kind of power supply is required for the R PRO-1?**
 
-* The R PRO-1 is powered via Ethernet (802.3 compliant) or USB-C and can be plugged into a standard wall outlet using a 5V 2A or bigger power supply.
+* The R PRO-1 is powered via PoE (802.3af compliant) or USB-C and can be plugged into a standard wall outlet using a 5V 2A or bigger power supply.
 
 15\. **Can I customize the R PRO-1 functionality?**
 
@@ -89,7 +89,7 @@ description: Frequently asked questions about the R PRO-1 PoE mmWave sensor.
 
 21\. **What makes the R PRO-1 stand out from other motion sensors?**
 
-* The R PRO-1 is the only dual mmWave sensor with PoE and ability to integrate with multiple smart home platforms seamlessly. It combines the MSR-2's ability to detect still detection perfectly and the MTR-1's ability to detect up to three targets in three zones!
+* The R PRO-1 is the only dual mmWave sensor with PoE and ability to integrate with multiple smart home platforms. It combines the MSR-2's ability to detect still detection perfectly and the MTR-1's ability to detect up to three targets in three zones!
 
 22\. **What is the warranty for the R PRO-1?**
 

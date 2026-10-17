@@ -1,8 +1,8 @@
 ---
-title: Factory Re-Flash MSR-1
+title: Factory re-flash MSR-1
 description: "Reflash the MSR-1 back to factory firmware from a Chromium based browser when it stops responding."
 ---
-# Factory Re-Flash MSR-1
+# Factory re-flash MSR-1
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
@@ -16,27 +16,25 @@ If your device has already been connected to Home Assistant please <a href="http
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-1 then let go of the button.
 
-![Pressing the boot button with a pin through the case opening beside the USB-C port](/assets/air-1-boot-button.jpg)
-
 3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/MSR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo MSR-1 Installer</a>.
 
-3\. Click the big "Connect" button.
+4\. Click the big "Connect" button.
 
 ![Apollo MSR-1 Installer page with the Connect button](/assets/msr-1-reflash-pic-1.png)
 
-3\. Select the open com port then click Connect.
+5\. Select the open com port then click Connect.
 
 ![Browser serial port prompt with the USB JTAG/serial debug unit selected and the Connect button](/assets/msr-1-reflash-pic-2.png)
 
-4\. Click "Install MSR-1".
+6\. Click "Install MSR-1".
 
 ![Device Dashboard menu with Install MSR-1 highlighted](/assets/msr-1-reflash-pic-3.png)
 
-5\. Click "INSTALL".
+7\. Click "INSTALL".
 
 ![Install msr-1 confirmation dialog warning that data will be erased, with the Install button](/assets/msr-1-reflash-pic-4.png)
 
-6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+8\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
 ![Installation complete message with the Next button highlighted](/assets/air-1-reflash-pic-5.png)
 
@@ -44,4 +42,4 @@ If your device has already been connected to Home Assistant please <a href="http
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-msr1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
+9\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-msr1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and set up your sensor as a new device!

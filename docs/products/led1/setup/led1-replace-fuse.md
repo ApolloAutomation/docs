@@ -1,14 +1,16 @@
 ---
-title: How To Replace the LED-1 10 A Fuse
+title: How to replace the LED-1 10 A fuse
 description: Tutorial showing how to replace the 10 A Fuse on the LED-1.
 ---
-# How to replace the 10 A Fuse
+# How to replace the 10 A fuse
 
-1\. Gently pry open the lid - this can be a tight fit so you will want to use a small tool not your fingernail. Remove the lid and set aside.
+Follow these steps to open the case, swap in a new fuse, and close the case again.
+
+1\. Gently pry open the lid. This can be a tight fit so you will want to use a small tool not your fingernail. Remove the lid and set aside.
 
 ![Tweezers prying the lid off the blue LED-1 case](/assets/led-1-pry-open-lid.jpg)![LED-1 board in the blue case with the lid removed and set aside](/assets/led-1-case-with-lid-off.jpg)
 
-2\. Gently lift the LED-1 PCB out of the case - be careful not to use a lot of force this could break components
+2\. Gently lift the LED-1 PCB out of the case. Be careful not to use a lot of force this could break components
 
 ![Fingers lifting the LED-1 board out of its blue case](/assets/led-1-lift-out-of-case.jpg)
 
@@ -40,6 +42,6 @@ description: Tutorial showing how to replace the 10 A Fuse on the LED-1.
 
 ![Thumb pressing the blue lid onto the LED-1 case, with RST, BT, and terminal labels](/assets/led-1-secure-lid-to-case.jpg)
 
-10\. You're all done - enjoy your LED-1!
+10\. You're all done. Enjoy your LED-1!
 
 [Click here to head to our general tips wiki for best practices!](https://wiki.apolloautomation.com/products/led1/setup/led1-general-tips/){   .md-button .md-button--primary }

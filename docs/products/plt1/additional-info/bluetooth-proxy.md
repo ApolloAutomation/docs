@@ -1,8 +1,8 @@
 ---
-title: PLT-1 Bluetooth Proxy
+title: PLT-1 Bluetooth proxy
 description: Tutorial for how to turn your PLT-1 into a BLE proxy!
 ---
-# PLT-1 Bluetooth Proxy
+# PLT-1 Bluetooth proxy
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 

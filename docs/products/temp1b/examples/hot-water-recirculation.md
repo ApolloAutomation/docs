@@ -1,8 +1,8 @@
 ---
-title: Hot Water Recirculation with TEMP-1
+title: Hot water recirculation with TEMP-1
 description: How a community member uses an Apollo TEMP-1 to drive a hot water recirculation loop, blending an instant mini tank with the main house heater and wasting no water down the drain.
 ---
-# Hot Water Recirculation with TEMP-1
+# Hot water recirculation with TEMP-1
 
 !!! warning "Running this on a TEMP-1B"
 

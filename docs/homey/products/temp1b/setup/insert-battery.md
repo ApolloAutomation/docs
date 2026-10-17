@@ -1,12 +1,14 @@
 ---
-title: How to Insert the Battery
+title: How to insert the battery
 description: "How to Insert Battery on TEMP-1B."
 ---
-# How to Insert the Battery
+# How to insert the battery
 
 !!! info "16340 AKA RC-CR123A and charger required!"
 
     The TEMP-1B is a very neat sensor but it does *NOT* include a battery nor a charging circuit. You will have to buy your own rechargeable RC-CR123A aka 16340 battery and also a separate 16340 charger such as a Nitecore 2 or 4bay model.
+
+Follow these steps to open the case, insert the battery, and close it again.
 
 1\. Gently pry open the case lid as shown in the image below.
 

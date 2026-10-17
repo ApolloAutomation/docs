@@ -2,7 +2,7 @@
 title: How to minimize activity spam
 description: How to minimize the activity spam on your Apollo mmWave sensors
 ---
-# Minimize Activity Spam
+# Minimize activity spam
 
 Apollo mmWave sensors report frequently by design, which can cause internal radar entities like target direction, target count, and zone occupancy to flood your Home Assistant Activity log. Adding a `logbook.exclude` block to your `configuration.yaml` tells Home Assistant to stop recording those entities.
 

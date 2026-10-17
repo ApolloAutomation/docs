@@ -1,8 +1,8 @@
 ---
-title: CO2 Installation Page with Redirects to all products.
+title: CO2 installation page with redirects to all products.
 description: QR Code for the CO2 addon points here
 ---
-# CO<sub>2</sub> Installation
+# CO<sub>2</sub> installation
 
 We have the CO<sub>2</sub> Addon for the MSR-2, MTR-1, AIR-1, and new R PRO-1. Choose your specific Apollo sensor below to head to that wiki article!
 

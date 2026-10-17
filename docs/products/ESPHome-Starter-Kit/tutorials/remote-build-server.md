@@ -1,10 +1,10 @@
 ---
-title: Build Server
+title: Build server
 description: >-
   Pair a second ESPHome Device Builder with your Windows PC so builds compile on
   the PC instead of the machine you normally build from.
 ---
-# Use Your PC as a Build Server
+# Use your PC as a build server
 
 Compiling is the slow part of ESPHome. Every time you click **Install**, the machine running Device Builder turns your YAML into firmware, and on a Raspberry Pi that can take several minutes. A desktop PC gets through the same build far quicker.
 
@@ -19,7 +19,7 @@ Device Builder can hand the work to another computer on your network. You pair t
     * A second Device Builder to send builds from. This page uses the app in Home Assistant, but any other install works the same way, on a laptop, a Mac, or another server.
     * Both machines on the same network, and the PC awake whenever you want to build.
 
-## Turn On the Build Server
+## Turn on the build server
 
 Start on your Windows PC. This is the machine that will do the compiling.
 
@@ -34,18 +34,20 @@ Start on your Windows PC. This is the machine that will do the compiling.
 
 ![ESPHome Device Builder three-dot menu, Settings, Build server, turning on Enable remote build](../../../assets/esphome-device-builder-toggle-on-remote-build.gif)
 
-## Pair the Two Dashboards
+## Pair the two dashboards
 
 Pairing goes in one direction: the sending dashboard asks, your PC accepts. Both machines show the same row of emoji partway through, and comparing them by eye is what proves you're pairing with your own PC.
 
-### Open the Pairing Window on Your PC
+### Open the pairing window on your PC
 
 On your Windows PC, open **Settings → Pairing requests**. It shows **Open** with a countdown beside it. (1)
 { .annotate }
 
 1.  Requests only arrive while that countdown is running. Click **Extend** if it runs out before you've finished.
 
-### Send the Request From the Other Dashboard
+### Send the request from the other dashboard
+
+On the sending dashboard, you'll ask your PC to pair.
 
 1.  Go to **Settings → Send builds**. Your PC appears under **Known dashboards** with its address and ESPHome version. Click **Pair**.
 
@@ -58,7 +60,9 @@ On your Windows PC, open **Settings → Pairing requests**. It shows **Open** wi
 
 ![ESPHome Device Builder Send builds: clicking Pair, sending the pair request, and seeing the emoji fingerprint](../../../assets/esphome-device-builder-initiate-build-server-pairing.gif)
 
-### Accept It on Your PC
+### Accept it on your PC
+
+Back on your PC, you'll check the emoji fingerprint and accept the request.
 
 1.  The request shows up under **Pairing requests** with the sender's name and **From IP**. Click **Review**.
 
@@ -77,7 +81,7 @@ Back on the sending dashboard, your PC now sits under **Paired build servers** m
 
 The line underneath tells you which ESPHome version the build server runs, and which one your builds will use. The two don't have to match. Device Builder installs whatever your sending dashboard is on and builds with that.
 
-### If Your PC Isn't Listed
+### If your PC isn't listed
 
 Device Builder finds other dashboards over mDNS, which doesn't cross subnets or VLANs and which some networks block outright. Enter the address yourself instead.
 
@@ -92,7 +96,7 @@ Device Builder finds other dashboards over mDNS, which doesn't cross subnets or 
 
 The <a href="https://github.com/esphome/device-builder/blob/main/README.md#manual-entry-no-mdns" target="_blank" rel="noreferrer nofollow noopener">ESPHome Device Builder documentation</a> goes further on setups where the two machines sit on different networks.
 
-## Send Your First Build
+## Send your first build
 
 Nothing changes about how you install. Open your starter kit in the Device Builder you paired from and click **Install**. Your PC does the compiling from here on.
 
@@ -103,7 +107,7 @@ Plugging a device in over USB still works. Your PC compiles and sends the firmwa
 
 To stop using the build server, turn off the toggle on its row under **Paired build servers**. Builds go back to compiling locally, and the pairing stays in place for when you want it again.
 
-### Keeping It Working
+### Keeping it working
 
 * Your PC has to be awake and running Device Builder. If it's asleep, builds queue until it comes back.
 * The two machines don't need the same ESPHome version. If you'd rather they matched, **Settings → Send builds** has a version-match setting to enforce it.

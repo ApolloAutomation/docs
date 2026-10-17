@@ -1,10 +1,10 @@
 ---
-title: Light Effects
+title: Light effects
 description: >-
   Add built-in ESPHome light effects (rainbow, color wipe, and more) to your RGB
   module using the Effects picker in ESPHome Device Builder.
 ---
-# Add Light Effects to Your RGB Module
+# Add light effects to your RGB module
 
 Out of the box, your RGB module turns on, turns off, and changes color. ESPHome ships a library of built-in <a href="https://esphome.io/components/light/#light-effects" target="_blank" rel="noreferrer nofollow noopener">light effects</a> (rainbow cycles, color wipes, flickers, and more), and Device Builder can add them from a dropdown. No typing required. This tutorial adds two effects to get you started.
 
@@ -16,6 +16,8 @@ Out of the box, your RGB module turns on, turns off, and changes color. ESPHome 
     * [Adding the LED & Buzzer Module](/products/ESPHome-Starter-Kit/modules/rgb-buzzer-module.md) if you're using the LED & Buzzer module.
 
 ## Add the effects
+
+You'll add the Addressable Rainbow and Addressable Color Wipe effects to one of your RGB lights.
 
 1.  Open your starter kit device in ESPHome Device Builder and click **Edit**.
 2.  In the editor's left pane, scroll to **Components** and click the RGB light you want to add effects to. (1)

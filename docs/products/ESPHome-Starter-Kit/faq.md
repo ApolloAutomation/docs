@@ -24,7 +24,7 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 
 5\. **Does it require Home Assistant?**
 
-* No. The ESPHome Desktop app runs as a standalone download on Mac, Windows, and Linux, so you can build with the kit without installing Home Assistant or running a server first. The devices then work as standalone ESPHome devices over Wi-Fi, reachable at their `.local` hostname, and integrate seamlessly with Home Assistant whenever you want to add it. Home Assistant finds them automatically over [mDNS](learning-the-basics/how-esphome-talks-to-home-assistant.md#auto-discovery). See [Connect to Home Assistant](tutorials/connect-to-home-assistant.md) when you are ready.
+* No. The ESPHome Desktop app runs as a standalone download on Mac, Windows, and Linux, so you can build with the kit without installing Home Assistant or running a server first. The devices then work as standalone ESPHome devices over Wi-Fi, reachable at their `.local` hostname, and integrate with Home Assistant whenever you want to add it. Home Assistant finds them automatically over [mDNS](learning-the-basics/how-esphome-talks-to-home-assistant.md#auto-discovery). See [Connect to Home Assistant](tutorials/connect-to-home-assistant.md) when you are ready.
 
 6\. **Can the kit run on battery power?**
 

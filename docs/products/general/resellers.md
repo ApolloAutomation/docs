@@ -1,5 +1,5 @@
 ---
-title: List of Resellers
+title: List of resellers
 description: A list of resellers across the globe for Apollo Automation products!
 ---
 # Resellers

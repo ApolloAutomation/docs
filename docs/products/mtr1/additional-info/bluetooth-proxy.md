@@ -1,8 +1,8 @@
 ---
-title: MTR-1 Bluetooth Proxy
+title: MTR-1 Bluetooth proxy
 description: Tutorial for how to turn your MTR-1 into a BLE proxy!
 ---
-# MTR-1 Bluetooth Proxy
+# MTR-1 Bluetooth proxy
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 

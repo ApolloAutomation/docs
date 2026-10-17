@@ -1,8 +1,10 @@
 ---
-title: Reset Wi-Fi Credentials
+title: Reset Wi-Fi credentials
 description: Step by step guide for resetting the Wi-Fi Credentials on your AIR-1.
 ---
-# Reset Wi-Fi Credentials
+# Reset Wi-Fi credentials
+
+Here you clear the saved Wi-Fi credentials so you can enter new Wi-Fi details through the device's hotspot.
 
 1\. Plug the device into power.
 

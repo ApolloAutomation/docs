@@ -1,8 +1,8 @@
 ---
-title: R PRO-1 Sensor Definitions
+title: R PRO-1 sensor definitions
 description: These are all of the entities exposed by the R PRO-1 to automate on!
 ---
-# Sensor Definitions
+# Sensor definitions
 
 Once added to Home Assistant you can configure different settings for your R PRO-1. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
 
@@ -111,8 +111,8 @@ The R PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
     | **LD2450 Multi Target Tracking** | from module | Turns multi-target tracking on or off. Initial state is read from the LD2450 at boot. Disabled by default. |
     | **LD2450 Timeout** | — | Seconds the LD2450 presence stays detected after the target is lost. |
     | **LD2450 Zone Type** | Disabled | Zone detection mode: `Disabled`, `Detection` (only detect targets inside the zone), or `Filter` (exclude the zone from detection). |
-    | **LD2450 Zone-1 / Zone-2 / Zone-3 X1, X2** | — | Start and end X coordinates of the zone in mm (-3000 left to 3000 right). |
-    | **LD2450 Zone-1 / Zone-2 / Zone-3 Y1, Y2** | — | Start and end Y coordinates of the zone in mm (0 to 6000). |
+    | **LD2450 Zone-1 / Zone-2 / Zone-3 X1, X2** | — | Start and end X coordinates of the zone in mm (-4860 left to 4860 right). |
+    | **LD2450 Zone-1 / Zone-2 / Zone-3 Y1, Y2** | — | Start and end Y coordinates of the zone in mm (0 to 7560). |
     | **LD2450 Factory Reset** | — | Resets the LD2450 radar module to its factory settings. |
     | **LD2450 Baud rate** | from module | Serial baud rate the LD2450 uses to talk to the R PRO-1 (default 256000). Disabled by default; no need to change. |
 

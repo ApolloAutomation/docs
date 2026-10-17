@@ -1,5 +1,5 @@
 ---
-title: Putting The H-3 In Boot Mode
+title: Putting the H-3 in boot mode
 description: "Step by step guide for putting the H-3 in boot mode."
 ---
 Boot mode is what lets you reflash the firmware over USB. You need it to move between the basic firmware and the smart firmware, and to recover an ornament that has stopped responding.
