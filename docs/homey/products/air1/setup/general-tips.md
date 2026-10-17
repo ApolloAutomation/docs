@@ -58,7 +58,7 @@ The **U.S. Environmental Protection Agency (EPA)**<a href="https://www.airnow.go
 
 <a href="https://esphome.io/components/sensor/aqi/" target="_blank" rel="noreferrer nofollow noopener">NowCast AQI</a> takes your PM2.5 and PM10 readings and converts them into a single 0–500 number using the EPA's formula. That number maps directly to the AQI categories in the table above: bigger = worse.
 
-The AIR-1 calculates this automatically and exposes it as a sensor in Home Assistant.
+The AIR-1 calculates this automatically, and the Apollo Automation Homey app shows it as NowCast AQI on your AIR-1 device in Homey.
 
 !!! tip "NowCast AQI is easier to automate and understand than raw PM"
 
@@ -164,4 +164,4 @@ The latest AIR-1 firmware keeps the SCD40 calibrated automatically. The sensor a
 
 ## <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS-4514 Gas Sensor</a>
 
-The MiCS-4514 is a very unique sensor able to distinguish between multiple gases such as Carbon Monoxide, Nitrogen, Ethanol, Hydrogen, Ammonia, and Methane.
+The MiCS-4514 is a very unique sensor able to distinguish between multiple gases such as Carbon Monoxide, Nitrogen Dioxide (NO<sub>2</sub>), Ethanol, Hydrogen, Ammonia, and Methane.

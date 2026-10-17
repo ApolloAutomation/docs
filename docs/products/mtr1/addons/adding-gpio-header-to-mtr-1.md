@@ -20,11 +20,11 @@ description: Step by step tutorial for adding the GPIO Header Addon to the MTR-1
 
 4\. Keep the "X" aligned on both sides and gently push down until it securely seats in the small mezzanine connector.
 
-![Pressing the new MTR-1 back down around the installed GPIO Header](/assets/mtr-1-add-gpio-pic-3.jpg)
+![GPIO Header addon seated on the MTR-1 board, with the new back set aside](/assets/mtr-1-add-gpio-pic-4.jpg)
 
 5\. Align the new back for your MTR-1 that came with the GPIO Header addon. Push down on the corners closest to the GPIO Header addon first, and then push the back on securely on the other two corners.
 
-![GPIO Header addon seated on the MTR-1 board, with the new back set aside](/assets/mtr-1-add-gpio-pic-4.jpg)
+![Pressing the new MTR-1 back down around the installed GPIO Header](/assets/mtr-1-add-gpio-pic-3.jpg)
 
 6\. The case should sit flush and you're now ready to add functionality to your device!
 

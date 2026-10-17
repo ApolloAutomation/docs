@@ -38,7 +38,7 @@ To connect through the sensor's onboard hotspot follow the below:
 
     Still no hotspot? Follow the <a href="https://wiki.apolloautomation.com/products/btn1/troubleshooting/btn1-reset-wi-fi-credentials/" target="_blank" rel="noopener">Reset Wi-Fi Credentials</a> guide to make it broadcast again.
 
-2\. On your phone or PC, open the Wi-Fi settings and connect to "Apollo BTN-1 Hotspot".
+2\. On your phone or PC, open the Wi-Fi settings and connect to "Apollo BTN1 Hotspot".
 
 ![Phone Wi-Fi settings listing the BTN-1 hotspot network to join](/assets/btn-1-reset-wifi-screenshot.png)
 

@@ -82,12 +82,12 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 
 Flash the device so the new button entity goes live.
 
-1.  Click **Install** on your device card in ESPHome Device Builder. (1)
+1.  Click **Install** at the bottom right of the editor. (1)
     { .annotate }
 
     1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
-2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
+2. Choose **On the network** if the device is already on your Wi-Fi, or **Plug into this computer** to flash over USB.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
@@ -99,7 +99,7 @@ With the device back online, the button entity is live on the web server. <a hre
 
 ![Clicking the Visit icon on the device card to open the esphome-starter-kit web server with Button Module](../../../assets/esphome-device-builder-launch-webserver-from-visit-button.gif)
 
-1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
+1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md), that's `http://esphome-starter-kit.local/`.
 2. Find the **Button** entity in the binary sensor list.
 3. Press the button on the module. The entity flips from **OFF** to **ON** while the button is held, then back to **OFF** when you release it.
 

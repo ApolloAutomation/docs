@@ -24,7 +24,7 @@ description: "Frequently asked questions about the TEMP-1B temperature sensor."
 
 5\. **Is the TEMP-1B weatherproof? Can I use it outdoors?**
 
-* The TEMP-1B is primarily designed for indoor use, but components like the waterproof soil probe are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
+* The TEMP-1B is primarily designed for indoor use, but the waterproof DS18B20 temperature probes are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
 
 6\. **How does the TEMP-1B connect to Home Assistant?**
 
@@ -40,7 +40,7 @@ description: "Frequently asked questions about the TEMP-1B temperature sensor."
 
 9\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like low moisture levels or high UV exposure.
+* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like a probe temperature going above or below the range you set.
 
 10\. **Is the TEMP-1B compatible with other smart home platforms?**
 
@@ -56,8 +56,8 @@ description: "Frequently asked questions about the TEMP-1B temperature sensor."
 
 13\. **What’s the difference between the battery and non-battery versions?**
 
-* The TEMP-1B is battery-operated and slightly larger, while the non-battery (NB) version is compact and requires USB-C power at 5 volts using 1amp or less (5W). They both have all of the same components for measuring soil moisture, air temp/humidity, lux/uv, etc.
+* The TEMP-1B is battery-operated and slightly larger, while the non-battery (NB) version is compact and requires USB-C power at 5 volts using 1amp or less (5W). They both have the same components: a 3.5mm port for the waterproof temperature probe or the food probe, plus onboard air temperature and humidity.
 
 14\. **Can I use multiple TEMP-1B sensors in one Home Assistant setup?**
 
-* Yes, you can add multiple TEMP-1B sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+* Yes, you can add multiple TEMP-1B sensors, each appearing as a separate device, for comprehensive monitoring across multiple fridges, freezers, rooms, or other spaces.

@@ -22,7 +22,7 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 5\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-6\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B device such as "temp-1b max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users skip to step 10.
+6\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B device such as "temp-1b temperature probe" then in the box labeled "Above" type in the maximum temperature you picked in step 2 above. Enter the value in the unit your Home Assistant shows (°F in this example). Advanced users skip to step 10.
 
 ![Home Assistant numeric state trigger for Apollo TEMP-1 Max Probe Temp with the Above field set to 30 highlighted](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
 
@@ -52,7 +52,7 @@ description: Warning for the freezer when it reaches the max temperature.
 triggers:
   - trigger: numeric_state
     entity_id:
-      - number.apollo_temp_1b_max_probe_temp
+      - sensor.apollo_temp_1b_temperature_probe
     above: 30
 conditions: []
 actions:
@@ -70,15 +70,15 @@ mode: single
 
 This will guide you through how to set up an automation in Home Assistant using the food probe with Chicken(or anything) cooking to 165°F(73.9C). At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
 
-1\. Set your Max Probe Temp to 73.9°C. The offsets MUST be in Celsius even if you are using F in the automation below.
+1\. Set your Max Probe Temp to 73.9°C. Max Probe Temp must be entered in Celsius, even if you use °F in the automation below.
 
 ![Home Assistant Max Probe Temp field set to 73.9 degrees Celsius, highlighted](/assets/temp-1-food-probe-ex-automation-pic-1.png)
 
-2\. Place the food probe inside your food once it's on the grill. Make sure your TEMP-1 is in a cool dry place - only the <a href="https://wiki.apolloautomation.com/products/temp1/addons/food-probe/" title="Click me for more info on installation of food probe and usage." target="_blank" rel="noreferrer nofollow noopener">food probe and the wire can withstand temperatures on a grill, in the oven, etc</a>.
+2\. Place the food probe inside your food once it's on the grill. Make sure your TEMP-1B is in a cool dry place. Only the [food probe and its wire can withstand the heat of a grill, oven, and so on](../addons/food-probe.md).
 
 3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left. <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-4\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B device such as "temp-1b max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Advanced users skip to step 8.
+4\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B device such as "temp-1b food probe" then in the box labeled "Above" type in the temperature you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Enter the value in the unit your Home Assistant shows (°F in this example). Advanced users skip to step 8.
 
 ![Home Assistant numeric state trigger for Apollo TEMP-1 Max Probe Temp with Above set to 165](/assets/temp-1-food-probe-ex-automation-pic-3.png)
 
@@ -86,7 +86,7 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 ![Home Assistant Add action dialog searching iphone, with the mobile app notification action highlighted](/assets/temp-1-temp-probe-ex-automation-pic-4.png)
 
-!!! tip "If you still do not see your device as shown in step 7 read this!"
+!!! tip "If you still do not see your device as shown in step 5, read this!"
 
     You need the Home Assistant mobile app installed on your phone for this step to work! If you do not have it, try another notification instead of using your phone such as a TTS notification on your speakers. This could be a fun way to announce that dinner is ready!
 
@@ -108,7 +108,7 @@ description: Warning for the food when it reaches the max temperature.
 triggers:
   - trigger: numeric_state
     entity_id:
-      - number.apollo_temp_1b_max_probe_temp
+      - sensor.apollo_temp_1b_food_probe
     above: 165
 conditions: []
 actions:
@@ -135,7 +135,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 3\. Click Settings -&gt; Automations & scenes -&gt; click Create Automation in the bottom left then "create new automation". <a href="http://homeassistant.local:8123/config/automation/edit/new" target="_blank" rel="noreferrer nofollow noopener">Click here to go straight there!</a>
 
-4\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "On". Advanced users skip to step 25 for the YAML.
+4\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "On".
 
 ![Home Assistant state trigger that fires when Chicken Monitor changes to On](/assets/temp-1-cook-chicken-example-pic-4.png)
 
@@ -147,7 +147,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant state trigger for Chicken Monitor changing to Off with the Trigger ID Chicken Monitor Off](/assets/temp-1-cook-chicken-example-pic-21.png)
 
-7\. Click Add Trigger then Entity then Numeric state and search for your temp-1 food probe entity such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 160°F(71.1C) because the Chicken will rest and reach 165°F once removed from the oven/grill.
+7\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1B food probe entity such as "temp-1b food probe" then in the box labeled "Above" type in the temperature you want for your food - In this example we will use 160°F(71.1C) because the Chicken will rest and reach 165°F once removed from the oven/grill.
 
 ![Home Assistant numeric state trigger for Apollo TEMP-1 Food Probe with Above set to 160](/assets/temp-1-cook-chicken-example-pic-7.png)
 
@@ -163,7 +163,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Add condition dialog searching trigger id, with Triggered by shown](/assets/temp-1-cook-chicken-example-pic-13.png)
 
-11\. Check off the option "Button Pressed" that we created in step 5 above.
+11\. Check off the option "Chicken Monitor On" that we created in step 5 above.
 
 ![Option 1 condition in the Home Assistant choose action with the Button Pressed trigger checked](/assets/temp-1-cook-chicken-example-pic-14.png)
 
@@ -171,7 +171,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Add action dialog searching light, with Light: Turn on highlighted](/assets/temp-1-cook-chicken-example-pic-9.png)
 
-13\. Click choose entity then search for your device such as "Temp-1 RGB Light".
+13\. Click choose entity then search for your device such as "TEMP-1B RGB Light".
 
 ![Home Assistant entity picker listing Apollo TEMP-1 and TEMP-1B RGB Light entities](/assets/temp-1-cook-chicken-example-pic-10.png)
 
@@ -195,7 +195,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Add condition dialog searching trigger id, with Triggered by shown](/assets/temp-1-cook-chicken-example-pic-13.png)
 
-19\. Check off the option "Temp Reached" that we created in step 7 above.
+19\. Check off the option "Temp Reached" that we created in step 8 above.
 
 ![Option 2 condition in Home Assistant with the Temp Reached trigger checked](/assets/temp-1-cook-chicken-example-pic-18-1.png)
 
@@ -233,7 +233,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Add action dialog searching light.turn, with Light: Turn off selected](/assets/temp-1-cook-chicken-example-pic-19.png)
 
-29\. Click choose entity then search for your device such as "Temp-1 RGB Light".
+29\. Click choose entity then search for your device such as "TEMP-1B RGB Light".
 
 ![Home Assistant Light Turn off action targeting the Apollo TEMP-1 RGB Light](/assets/temp-1-cook-chicken-example-pic-20.png)
 

@@ -16,7 +16,7 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 
 3\. **Is the TEMP-1 weatherproof? Can I use it outdoors?**
 
-* The TEMP-1 is primarily designed for indoor use, but components like the waterproof soil probe are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
+* The TEMP-1 is primarily designed for indoor use, but components like the waterproof temperature probe are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
 
 4\. **How does the TEMP-1 connect to Home Assistant?**
 
@@ -24,7 +24,7 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 
 5\. **How often does the TEMP-1 send sensor data?**
 
-* The TEMP-1’s reporting frequency is adjustable in ESPHome but most things default to 60 seconds. You can set it for frequent updates or extend intervals to conserve battery life.
+* The TEMP-1’s reporting frequency is adjustable in ESPHome but most things default to 60 seconds. You can set it for more frequent updates or longer intervals.
 
 6\. **Can I customize the TEMP-1 functionality?**
 
@@ -32,7 +32,7 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 
 7\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like low moisture levels or high UV exposure.
+* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like the probe temperature going outside the Min/Max Probe Temp range you set (with Alarm Outside Temp Range turned on).
 
 8\. **Is the TEMP-1 compatible with other smart home platforms?**
 
@@ -52,7 +52,7 @@ description: Frequently asked questions about the TEMP-1 temperature sensor.
 
 12\. **Can I use multiple TEMP-1 sensors in one Home Assistant setup?**
 
-* Yes, you can add multiple TEMP-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+* Yes, you can add multiple TEMP-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple fridges, freezers, or spaces.
 
 13\. **Can I use an extender to make the TEMP-1 temp probe cable longer?**
 

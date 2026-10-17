@@ -180,7 +180,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
     Below we will create multiple Segments in WLED which we will then edit until they are set up to show the correct number of pixels for your number of panels.
 
-    Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 1 will control the top 1/4 of the display, Segment 2 will control the second 1/4, Segment 3 will control the third 1/4 and Segment 4 will control the bottom 1/4 of the matrix.
+    Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 0 will control the top 1/4 of the display, Segment 1 will control the second 1/4, Segment 2 will control the third 1/4 and Segment 3 will control the bottom 1/4 of the matrix.
 
     You can go back later and change these to your own layout - for example maybe you want to control all of the first LED matrix with Segment 0 and the second matrix with Segment 1 you can definitely do that!
 
@@ -246,7 +246,7 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
     ![WLED segment preview showing four equal segments numbered 0 to 3 as colored bands](/assets/two-panels-4x-segments.png)
 
-    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! 32 Character maximum limit in WLED.
+    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! Scrolling text tops out at 64 characters on WLED and 32 on WLED-MM.
 
     ![Choosing the Scrolling Text effect in WLED and renaming each segment to set its text](/assets/two-panels-example-scrolling-text-setup.gif)
 
@@ -282,7 +282,7 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
     ![WLED segment preview showing four equal segments numbered 0 to 3 as colored bands](/assets/two-panels-4x-segments.png)
 
-    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! 32 Character maximum limit in WLED.
+    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! Scrolling text tops out at 64 characters on WLED and 32 on WLED-MM.
 
     ![Choosing the Scrolling Text effect in WLED and renaming each segment to set its text](/assets/two-panels-example-scrolling-text-setup.gif)
 

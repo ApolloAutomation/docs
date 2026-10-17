@@ -16,7 +16,7 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 4\. **What is the maximum detection range of the mmWave radar?**
 
-* The mmWave radar sensor in the MTR-1 has a maximum detection range of 6 meters (about 19.6 feet), making it ideal for monitoring large rooms or spaces.
+* The mmWave radar sensor in the MTR-1 has a maximum detection range of 6 meters (about 19.7 feet), making it ideal for monitoring large rooms or spaces.
 
 5\. **Can the MTR-1 be used to track the exact location of people in a room?**
 
@@ -80,7 +80,7 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 20\. **Can I use multiple MTR-1 sensors in my smart home setup?**
 
-* Yes, you can integrate multiple MTR-1 sensors into your Home Assistant system. Each will show up as a separate entity, allowing you to monitor multiple rooms or areas in your home simultaneously.
+* Yes, you can integrate multiple MTR-1 sensors into your Home Assistant system. Each one shows up as its own device with its own set of entities, so you can monitor multiple rooms or areas in your home at the same time.
 
 21\. **What’s the difference between the MTR-1 and MSR-2?**
 

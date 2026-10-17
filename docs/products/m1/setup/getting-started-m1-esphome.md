@@ -72,7 +72,7 @@ Head to the Integrations page in Home Assistant (**Settings → Devices & servic
 
 ![ESPHome Device Builder app page with Start on boot, Watchdog, and Show in sidebar on, then Open Web UI](../../../assets/m-1-esphome-device-builder-open.gif)
 
-3\. Click the Secrets button in the top right and confirm your Wi-Fi SSID and password are configured as shown below. Click Save in the top right once finished.
+3\. Open the three-dot menu in the top right, click **Secrets**, and confirm your Wi-Fi SSID and password are configured as shown below. Click **Save** in the bottom right once finished.
 
 ![ESPHome Device Builder: opening Secrets from the top right menu to check wifi_ssid and wifi_password](../../../assets/esphome-device-builder-click-secrets.gif)
 
@@ -82,15 +82,15 @@ wifi_ssid: "your-wifi-ssid-here"
 wifi_password: "your-wifi-password-here"
 ```
 
-3\. Notice the Discovered 1 device banner at the top and click the SHOW button in the far top right to show your newly discovered device.
+4\. Notice the Discovered 1 device banner at the top and click the SHOW button in the far top right to show your newly discovered device.
 
 ![ESPHome Device Builder Discovered 1 device banner, clicking Show to reveal the Apollo M-1](../../../assets/m-1-esphome-device-builder-show-discovered.gif)
 
-4\. Click Take Control and leave the name as is and click Take Control again. Finally, click Install to begin the installation process. This will take some time depending on how fast your device running Home Assistant is. Raspberry Pi, HA Green, etc. will take much longer than a mini pc.
+5\. Click Take Control and leave the name as is and click Take Control again. Finally, click Install to begin the installation process. This will take some time depending on how fast your device running Home Assistant is. Raspberry Pi, HA Green, etc. will take much longer than a mini pc.
 
 ![Clicking Take Control on the discovered Apollo M-1 in ESPHome Device Builder and confirming](../../../assets/esphome-device-builder-take-control.gif)
 
-5\. Once you see INFO OTA successful you can click stop in the bottom right and you're finished!
+6\. Once you see INFO OTA successful you can click stop in the bottom right and you're finished!
 
 ![ESPHome Device Builder install log ending in INFO OTA successful, then the M-1 shown online](../../../assets/esphome-device-builder-finished-installing.gif)
 

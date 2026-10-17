@@ -4,7 +4,7 @@ description: Step by step guide for installing and using the optional Temp Probe
 ---
 # TEMP-1B Temp Probe
 
-The TEMP-1B comes with an optional temp probe which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc. It includes a protected cable but the TEMP-1 itself needs to stay in a cool environment.
+The TEMP-1B comes with an optional temp probe which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc. It includes a protected cable but the TEMP-1B itself needs to stay in a cool environment.
 
 1\. To use your temp probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
@@ -16,7 +16,7 @@ The TEMP-1B comes with an optional temp probe which can be used to monitor a fri
 
 !!! tip "If you are using it with a battery you need to push the reset button."
 
-    The TEMP-1B looks for the temp probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have a battery in it or power cycle your TEMP-1B to make it reliably use the new food temperature probe.
+    The TEMP-1B looks for the temp probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have a battery in it or power cycle your TEMP-1B to make it reliably use the new temperature probe.
 
 &nbsp;
 

@@ -12,7 +12,7 @@ description: Frequently asked questions about the MSR-2 mmWave sensor.
 
 3\. **What is the maximum detection range of the mmWave radar?**
 
-* The HLK-LD2410B mmWave radar sensor has a maximum detection range of about 6 meters (19.6 feet) with multi-target tracking capabilities, making it ideal for room-wide monitoring.
+* The HLK-LD2410B mmWave radar sensor has a maximum detection range of about 6 meters (19.7 feet), making it ideal for room-wide monitoring.
 
 4\. **Can the MSR-2 detect multiple people?**
 
@@ -36,7 +36,7 @@ description: Frequently asked questions about the MSR-2 mmWave sensor.
 
 9\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like low moisture levels or high UV exposure.
+* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like high CO2 levels or high UV exposure.
 
 10\. **How do I adjust the sensitivity of the presence detection?**
 
@@ -56,7 +56,7 @@ description: Frequently asked questions about the MSR-2 mmWave sensor.
 
 14\. **Can the MSR-2 track the exact location of people in a room?**
 
-* Yes, the MSR-2 uses multi-zone mmWave radar technology to track the approximate location of people within a room. It can determine whether someone is sitting, walking, or standing in different areas of the space.
+* No. The LD2410B reports how far away a moving or still target is, not where it is in the room. The MSR-2 uses that distance to tell you which of three configurable distance zones is occupied, and whether the target is moving or still.
 
 15\. **How does the temperature and pressure sensor work?**
 
@@ -84,7 +84,7 @@ description: Frequently asked questions about the MSR-2 mmWave sensor.
 
 21\. **Can I use multiple MSR-2 sensors in my Home Assistant setup?**
 
-* Yes, you can have multiple MSR-2 sensors connected to the same Home Assistant instance. Each device will show up as a separate entity, allowing you to monitor and automate different rooms or areas in your home.
+* Yes, you can have multiple MSR-2 sensors connected to the same Home Assistant instance. Each one shows up as its own device with its own set of entities, so you can monitor and automate different rooms or areas in your home.
 
 22\. **What accessories are available for the MSR-2?**
 
@@ -100,7 +100,7 @@ description: Frequently asked questions about the MSR-2 mmWave sensor.
 
 25\. **What makes the MSR-2 stand out from other motion sensors?**
 
-* The MSR-2 stands out due to its mmWave radar’s ability to detect still motion (like someone sitting still) and its capability to track multiple targets and zones. Additionally, its compact size, multi-sensor integration (motion, LUX, UV, CO2, temperature, pressure), and the open-source nature of the product make it highly versatile and customizable.
+* The MSR-2 stands out due to its mmWave radar’s ability to detect still motion (like someone sitting still) and its configurable distance zones. Additionally, its compact size, multi-sensor integration (motion, LUX, UV, CO2, temperature, pressure), and the open-source nature of the product make it highly versatile and customizable.
 
 26\. **What is the warranty for the MSR-2?**
 

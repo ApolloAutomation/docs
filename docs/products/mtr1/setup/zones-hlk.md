@@ -38,13 +38,13 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ![HLKRadarTool LD2450 radar view with one target and the Set button circled in red](/assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)
 
-4\. Select Detection then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
+4\. Select **Area Detection**, then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
 
 !!! tip "There are three ways to use your MTR-1!"
 
-    You can use any of these three choices to control your MTR-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disable zone area detection<br>**Detection**: Only detects targets in the specified zone<br>**Filter**: Excludes a zone from detection
+    You can use any of these three choices to control your MTR-1 differently. The most common option is **Area Detection**, which lets you set up three areas and track three targets within them.<br>**Close detection** (Disabled in Home Assistant): zone detection is off<br>**Area Detection** (Detection): only detects targets inside your zones<br>**Area Filtering** (Filter): ignores targets inside your zones
 
-    Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
+    Close detection lets you use the sensor as a basic presence sensor, and Area Filtering lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
 ![HLKRadarTool Parameter settings with Area Detection on, three zones drawn, and Setup successfully shown](/assets/screenshot-20240514-100512-hlkradartool.jpg)
 
@@ -74,7 +74,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
 
-3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to **Settings → Devices & services → ESPHome**, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_r\_mtr\_1\_c64a28", with six random characters at the end.
+3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to **Settings → Devices & services → ESPHome**, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_mtr\_1\_c64a28", with six random characters at the end.
 
 <iframe src="/snippets/mtr1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
 

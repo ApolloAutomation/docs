@@ -153,7 +153,7 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 <div markdown class="annotate">
 
-2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit, then click **Next**. Type in your Wi-Fi network name (SSID) and Wi-Fi password, then click **Finish Setup**. (1)
+2\. Under **Featured**, select **ESPHome Starter Kit By Apollo** and give it a name such as esphome-starter-kit, then click **Next**. Type in your Wi-Fi network name (SSID) and Wi-Fi password, then click **Finish Setup**. (1)
 
 </div>
 

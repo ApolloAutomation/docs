@@ -13,4 +13,4 @@ The PLT-1B (18650 battery) is equipped with a capacitive soil moisture sensor, p
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
-    The PLT-1 should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your PLT-1 if there will be high moisture content in the air or if it is expected to rain.
+    The PLT-1B should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your PLT-1B if there will be high moisture content in the air or if it is expected to rain.

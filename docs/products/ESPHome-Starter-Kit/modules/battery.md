@@ -116,7 +116,7 @@ A few things to know before you rely on it:
             allow_other_uses: true
     ```
 
-    One difference for the starter kit: the Button module's pin reads LOW when pressed (it uses a pull-up), the opposite of the BTN-1's buttons. So on the starter kit you'd wake on `mode: ALL_LOW` with GPIO6 as the only pin.
+    One difference for the starter kit: the Button module's pin reads LOW when pressed (it uses a pull-up), the opposite of the BTN-1's buttons. So on the starter kit you'd wake on `mode: ANY_LOW` with GPIO6 as the only pin (`ALL_LOW` is only supported on the original ESP32).
 
 ### Add a Prevent Sleep switch
 

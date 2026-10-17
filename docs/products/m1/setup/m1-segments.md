@@ -10,7 +10,7 @@ description: >-
 
     The WLED firmware on your device will allow you to split your M-1 LED Matrix (or multiple) into segments to display four or more lines of text on your matrix!
 
-    Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 1 will control the top 1/4 of the display, Segment 2 will control the second 1/4, Segment 3 will control the third 1/4 and Segment 4 will control the bottom 1/4 of the matrix.
+    Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 0 will control the top 1/4 of the display, Segment 1 will control the second 1/4, Segment 2 will control the third 1/4 and Segment 3 will control the bottom 1/4 of the matrix.
 
 Segments work the same on WLED and WLED-MM. The steps below split a single 64x64 panel into four bands. On a larger layout, use your full width for **Stop X** and divide your height instead, which [Multiple Panels](/products/m1/setup/m1-multiple-panels.md) covers per arrangement.
 

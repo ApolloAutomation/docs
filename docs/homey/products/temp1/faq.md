@@ -18,7 +18,7 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 
 3\. **Is the TEMP-1 weatherproof? Can I use it outdoors?**
 
-* The TEMP-1 is primarily designed for indoor use, but components like the waterproof soil probe are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
+* The TEMP-1 is primarily designed for indoor use, but the optional waterproof DS18B20 probes are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
 
 4\. **How does the TEMP-1 connect to Home Assistant?**
 
@@ -26,7 +26,7 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 
 5\. **How often does the TEMP-1 send sensor data?**
 
-* The TEMP-1’s reporting frequency is adjustable in ESPHome but most things default to 60seconds. You can set it for frequent updates or extend intervals to conserve battery life.
+* The TEMP-1’s reporting frequency is adjustable in ESPHome but most things default to 60 seconds. You can set it for more frequent updates or longer intervals.
 
 6\. **Can I customize the TEMP-1 functionality?**
 
@@ -34,7 +34,7 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 
 7\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like low moisture levels or high UV exposure.
+* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like a probe temperature going outside the range you set.
 
 8\. **Is the TEMP-1 compatible with other smart home platforms?**
 
@@ -54,4 +54,4 @@ Sensor Interface: Equipped with a 3.5mm jack for connecting optional external te
 
 12\. **Can I use multiple TEMP-1 sensors in one Home Assistant setup?**
 
-* Yes, you can add multiple TEMP-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+* Yes, you can add multiple TEMP-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple rooms or spaces.

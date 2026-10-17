@@ -56,7 +56,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
 
         The AHT20 sensor publishes its readings in Celsius, so the **Above** and **Below** values you enter for the temperature `If` conditions need to be Celsius numbers. The Fahrenheit equivalents in the table above are for reference only.
 
-    A single **Button → On Click** automation whose action body chains nine steps: three `If` conditions for temperature, a delay and clear, another delay, three `If` conditions for humidity, a final delay and clear.
+    A single **Button → On Click** automation whose action body chains 11 actions: three `If` conditions for temperature, a delay, a turn-off, another delay, three `If` conditions for humidity, then a final delay and turn-off.
 
     1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
     2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
@@ -171,7 +171,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - if:
                     condition:
                       sensor.in_range:
-                        id: aht_temperature
+                        id: aht20_temperature
                         below: 18.0
                     then:
                       - light.turn_on:
@@ -183,7 +183,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - if:
                     condition:
                       sensor.in_range:
-                        id: aht_temperature
+                        id: aht20_temperature
                         above: 18.0
                         below: 24.0
                     then:
@@ -196,7 +196,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - if:
                     condition:
                       sensor.in_range:
-                        id: aht_temperature
+                        id: aht20_temperature
                         above: 24.0
                     then:
                       - light.turn_on:
@@ -211,7 +211,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - if:
                     condition:
                       sensor.in_range:
-                        id: aht_humidity
+                        id: aht20_humidity
                         below: 30.0
                     then:
                       - light.turn_on:
@@ -223,7 +223,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - if:
                     condition:
                       sensor.in_range:
-                        id: aht_humidity
+                        id: aht20_humidity
                         above: 30.0
                         below: 60.0
                     then:
@@ -236,7 +236,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - if:
                     condition:
                       sensor.in_range:
-                        id: aht_humidity
+                        id: aht20_humidity
                         above: 60.0
                     then:
                       - light.turn_on:
@@ -394,7 +394,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
         ```cpp
         float t = id(temp_min).state;
         if (id(temp_unit).current_option() == "°F") t = fahrenheit_to_celsius(t);
-        return id(aht_temperature).state < t;
+        return id(aht20_temperature).state < t;
         ```
 
     3.  Under the `If`'s **Then** branch, click **+ Add action** and pick **Light → Turn On**:
@@ -409,7 +409,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
         bool is_f = id(temp_unit).current_option() == "°F";
         float tmin = is_f ? fahrenheit_to_celsius(id(temp_min).state) : id(temp_min).state;
         float tmax = is_f ? fahrenheit_to_celsius(id(temp_max).state) : id(temp_max).state;
-        float t = id(aht_temperature).state;
+        float t = id(aht20_temperature).state;
         return t >= tmin && t <= tmax;
         ```
 
@@ -420,7 +420,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
         ```cpp
         float t = id(temp_max).state;
         if (id(temp_unit).current_option() == "°F") t = fahrenheit_to_celsius(t);
-        return id(aht_temperature).state > t;
+        return id(aht20_temperature).state > t;
         ```
 
         **Then** → **Light → Turn On** **Onboard RGB LED** with **Brightness** `100%`, **Red** `100%`, **Green** `0%`, **Blue** `0%`.
@@ -438,7 +438,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
     1.  Lambda condition:
 
         ```cpp
-        return id(aht_humidity).state < id(humidity_min).state;
+        return id(aht20_humidity).state < id(humidity_min).state;
         ```
 
         **Then** → **Light → Turn On** **Onboard RGB LED** with **Brightness** `100%`, **Red** `100%`, **Green** `50%`, **Blue** `0%` (orange).
@@ -446,7 +446,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
     2.  Second `If`:
 
         ```cpp
-        float h = id(aht_humidity).state;
+        float h = id(aht20_humidity).state;
         return h >= id(humidity_min).state && h <= id(humidity_max).state;
         ```
 
@@ -455,7 +455,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
     3.  Third `If`:
 
         ```cpp
-        return id(aht_humidity).state > id(humidity_max).state;
+        return id(aht20_humidity).state > id(humidity_max).state;
         ```
 
         **Then** → **Light → Turn On** with **Brightness** `100%`, **Red** `0%`, **Green** `0%`, **Blue** `100%` (blue).
@@ -485,7 +485,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                       lambda: |-
                         float t = id(temp_min).state;
                         if (id(temp_unit).current_option() == "°F") t = fahrenheit_to_celsius(t);
-                        return id(aht_temperature).state < t;
+                        return id(aht20_temperature).state < t;
                     then:
                       - light.turn_on:
                           id: onboard_rgb_led
@@ -499,7 +499,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                         bool is_f = id(temp_unit).current_option() == "°F";
                         float tmin = is_f ? fahrenheit_to_celsius(id(temp_min).state) : id(temp_min).state;
                         float tmax = is_f ? fahrenheit_to_celsius(id(temp_max).state) : id(temp_max).state;
-                        float t = id(aht_temperature).state;
+                        float t = id(aht20_temperature).state;
                         return t >= tmin && t <= tmax;
                     then:
                       - light.turn_on:
@@ -513,7 +513,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                       lambda: |-
                         float t = id(temp_max).state;
                         if (id(temp_unit).current_option() == "°F") t = fahrenheit_to_celsius(t);
-                        return id(aht_temperature).state > t;
+                        return id(aht20_temperature).state > t;
                     then:
                       - light.turn_on:
                           id: onboard_rgb_led
@@ -526,7 +526,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - delay: 1s
                 - if:
                     condition:
-                      lambda: 'return id(aht_humidity).state < id(humidity_min).state;'
+                      lambda: 'return id(aht20_humidity).state < id(humidity_min).state;'
                     then:
                       - light.turn_on:
                           id: onboard_rgb_led
@@ -537,7 +537,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                 - if:
                     condition:
                       lambda: |-
-                        float h = id(aht_humidity).state;
+                        float h = id(aht20_humidity).state;
                         return h >= id(humidity_min).state && h <= id(humidity_max).state;
                     then:
                       - light.turn_on:
@@ -548,7 +548,7 @@ This tutorial has two versions of the same automation. Both end with the same bu
                           blue: 0%
                 - if:
                     condition:
-                      lambda: 'return id(aht_humidity).state > id(humidity_max).state;'
+                      lambda: 'return id(aht20_humidity).state > id(humidity_max).state;'
                     then:
                       - light.turn_on:
                           id: onboard_rgb_led

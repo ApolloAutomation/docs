@@ -5,7 +5,7 @@ description: "Tutorial for MSR-2 HLKRadarTool app Zone Configuration."
 # How To Tune mmWave Using HLKRadarTool
 
 **Auto-Calibration (Average, Maximum, and Intelligent)**   
-1\. Download the HLKRadarTool app for either [Android ](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&hl=en_US≷=US)or [Apple](https://apps.apple.com/us/app/hlkradartool/id1638651152)
+1\. Download the HLKRadarTool app for either [Android ](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&hl=en_US&gl=US)or [Apple](https://apps.apple.com/us/app/hlkradartool/id1638651152)
 
 - The default password to connect to the HLKRadarTool is HiLink
 
@@ -42,7 +42,15 @@ description: "Tutorial for MSR-2 HLKRadarTool app Zone Configuration."
   
 ![HLKRadarTool Parameter settings with the Maximum one click setting button outlined in red](/assets/max.png)  
   
-**Intelligent** - Sets the gate sensitivity equal to or just above the maximum move and still energ**y** **![HLKRadarTool Parameter settings with the Intelligent one click setting button outlined in red](/assets/intelligent.png)** 9. Now your mmWave should be tuned to your environment! **Manual Calibration** 1. Follow steps 1-5 above  
+**Intelligent** - Sets the gate sensitivity equal to or just above the maximum move and still energy
+
+![HLKRadarTool Parameter settings with the Intelligent one click setting button outlined in red](/assets/intelligent.png)
+
+9\. Now your mmWave should be tuned to your environment!
+
+**Manual Calibration**
+
+1\. Follow steps 1-5 above  
   
 2\. Select Motion or Static sensitivity, change it to your desired value, and select Set  
   

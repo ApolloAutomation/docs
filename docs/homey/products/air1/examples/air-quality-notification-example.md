@@ -42,7 +42,7 @@ description: Example flow that sends alerts based on changing indoor air quality
 
 ![Homey flow linking CO2 greater than 999 ppm to an AIR-1 Set a color card set to red](/assets/homey-flow-example-pic-8.png)
 
-10\. Duplicate steps 7 and 8 but this time select green for the color when "CO2 becomes less than 1000 ppm".
+10\. Duplicate steps 8 and 9 but this time select green for the color when "CO2 becomes less than 1000 ppm".
 
 ![Homey flow setting red above 999 ppm CO2 and green below 1000 ppm CO2 on the AIR-1](/assets/homey-flow-example-pic-10.png)
 
@@ -60,22 +60,22 @@ description: Example flow that sends alerts based on changing indoor air quality
 
 ![Homey push notification user list with Everyone who's home highlighted](/assets/homey-flow-example-pic-18.png)
 
-13\. Click "Add" and select "Delay" and then place it on your flow canvas. Change to minutes and input 5 for adding a 5 minute delay then drag a line from "set a color" to the delay.
+14\. Click "Add" and select "Delay" and then place it on your flow canvas. Change to minutes and input 5 for adding a 5 minute delay then drag a line from "set a color" to the delay.
 
 ![Homey flow with the green Set a color card connected to a 5 minute delay](/assets/homey-flow-example-pic-15.png)
 
-14\. Click "Add" and select "Then" and search for "turn off" and choose the AIR-1 device option.
+15\. Click "Add" and select "Then" and search for "turn off" and choose the AIR-1 device option.
 
 ![Homey card search for turn off with the AIR-1 card highlighted](/assets/homey-flow-example-pic-14.png)
 
-15\. Drag a line from the Delay in step 13 to the Turn off card and that's it! Click save at the top and give your flow a name.
+16\. Drag a line from the Delay in step 14 to the Turn off card and that's it! Click save at the top and give your flow a name.
 
 ![Completed Homey Advanced Flow for AIR-1 CO2 alerts with colors, a notification, and turn off](/assets/homey-flow-example-pic-16-1.png)
 
-16\. As a bonus, you can add a note reminding you what this automation does. Click "Add" then click "Note" and type in "CO2 level alert with RGB LEDs" on the note.
+17\. As a bonus, you can add a note reminding you what this automation does. Click "Add" then click "Note" and type in "CO2 level alert with RGB LEDs" on the note.
 
 ![Homey Advanced Flow with a CO2 level alert with RGB LEDs note added](/assets/homey-flow-example-pic-17-1.png)
 
-17\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
+18\. You are done! Your sensor is now ready to create flows and add as a favorite to your dashboard!
 
 [Run into issues? Click here to join our Discord for fast support! :simple-discord:](https://link.apolloautomation.com/discord){                                                .md-button .md-button--primary }

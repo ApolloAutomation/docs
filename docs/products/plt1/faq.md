@@ -74,11 +74,11 @@ description: PLT-1 FAQ.
 
 * Yes, once connected to Home Assistant, you can access your sensor data remotely through your Home Assistant dashboard, provided your setup allows for remote access.
 
-20\. **Can I use multiple PLT-1 sensors in one Home Assistant setup?**
+19\. **Can I use multiple PLT-1 sensors in one Home Assistant setup?**
 
 * Yes, you can add multiple PLT-1B sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
 
-21\. **Optional Probe Addons:**
+20\. **Optional Probe Addons:**
 
 * 1\.5m (~5ft) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
 

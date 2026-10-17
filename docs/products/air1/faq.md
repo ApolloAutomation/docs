@@ -77,7 +77,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 19\. **Can I integrate multiple AIR-1 sensors in my smart home?**
 
-* Yes, you can have multiple AIR-1 sensors in your Home Assistant setup. Each sensor will be recognized as a separate entity, allowing you to monitor air quality across different rooms or spaces simultaneously.
+* Yes, you can have multiple AIR-1 sensors in your Home Assistant setup. Each one shows up as its own device with its own set of entities, so you can monitor air quality across different rooms or spaces at the same time.
 
 20\. **How customizable is the AIR-1?**
 

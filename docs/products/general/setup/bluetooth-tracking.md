@@ -14,14 +14,13 @@ Alternative HACS Integration: [iPhone Detect](https://github.com/mudape/iphonede
 
 Thanks to user [Jacob Pfeifer](https://discord.com/channels/1126966963206361199/1126966963755819080/1202032228050419732)!<br> Ok, so looks like I've got signal strength tracking working for Apple watches by getting the mac address from the home assistant private ble device integration. Here's a quick write-up if anyone else is interested. The end of the doc has a complete configuration file example.
 
-```
-# Tracking an Apple Watch in esphome
+### Tracking an Apple Watch in ESPHome
 Using esphome on an Apollo msr-1 to track an Apple Watch
 
-## Acknowledgements:
+#### Acknowledgements:
 The following github repo was used as a starting point for this configuration: https://github.com/dalehumby/ESPHome-Apple-Watch-detection
 
-## RSSI Tracking
+#### RSSI Tracking
 1.) Setup your apple watch in the "Private BLE Device" integration by following the instructions on the integration page: https://www.home-assistant.io/integrations/private_ble_device/
 
 2.) Create a text sensor in the esphome config that grabs the apple watch current mac address from home assistant:
@@ -303,7 +302,7 @@ wifi:
 1. Install the iBeacon integration in HA
     [iBeacon Install Guide](https://www.home-assistant.io/integrations/ibeacon/)
 2. Install the Home Assistant App on your device
-    [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en_US≷=US&pli=1)
+    [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en_US&gl=US&pli=1)
     [Apple](https://apps.apple.com/us/app/home-assistant/id1099568401)
 3. Navigate to the HA settings
 
@@ -369,4 +368,3 @@ Once complete, after a few minutes within the presence of any iBeacon device wit
 If you encounter a device with a blank name (e.g., anything Android), you'll need to click "Configure" and enter the UUID manually. This is because Home Assistant does not allow devices with empty names (interestingly, their own companion app permits forcing an Android to become an iBeacon but then doesn't require a name field).
 
 For devices where you don't know the IRK, you may have to wait about 300 seconds for your iBeacon Tracker to process 10 different iterations of the same UUID but with the last four characters randomly changed. Once ten instances have appeared, the iBeacon Tracker integration should recognize they're all the same device and combine them into a single tracker element. Just be patient, though it can be a bit frustrating.
-```

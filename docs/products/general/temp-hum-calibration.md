@@ -38,6 +38,7 @@ number:
   - platform: template
     name: SCD40 Temperature Offset
     id: scd40_temperature_offset
+    restore_value: true
     initial_value: 14.54
     min_value: -70.0
     max_value: 70.0

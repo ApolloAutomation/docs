@@ -67,6 +67,8 @@ Another approach to getting accurate readings is to model the relationship betwe
 
 Here's an example that can be added to a configuration YAML:
 
+Replace xxxxxx with the 6-character suffix of your MTR-1. The coefficients below come from our MSR-1 testing, so treat them as a starting point.
+
 ```plaintext
 sensor:
   - platform: template
@@ -76,10 +78,10 @@ sensor:
         unit_of_measurement: '°C'
         value_template: >
           {{
-            0.3228 * states('sensor.apollo_msr_1_a79e24_esp_temperature') | float +
-            0.8702 * states('sensor.apollo_msr_1_a79e24_scd40_temperature') | float +
-            -0.1285 * states('sensor.apollo_msr_1_a79e24_dps310_temperature') | float +
-            -0.0491 * states('sensor.apollo_msr_1_a79e24_scd40_humidity') | float +
+            0.3228 * states('sensor.apollo_mtr_1_xxxxxx_esp_temperature') | float +
+            0.8702 * states('sensor.apollo_mtr_1_xxxxxx_scd40_temperature') | float +
+            -0.1285 * states('sensor.apollo_mtr_1_xxxxxx_dps310_temperature') | float +
+            -0.0491 * states('sensor.apollo_mtr_1_xxxxxx_scd40_humidity') | float +
             0.0851
           }}
 
@@ -89,16 +91,16 @@ sensor:
         unit_of_measurement: '%'
         value_template: >
           {{
-            -1.2468 * states('sensor.apollo_msr_1_a79e24_esp_temperature') | float +
-            -2.1959 * states('sensor.apollo_msr_1_a79e24_scd40_temperature') | float +
-            2.9604 * states('sensor.apollo_msr_1_a79e24_dps310_temperature') | float +
-            0.2380 * states('sensor.apollo_msr_1_a79e24_scd40_humidity') | float +
+            -1.2468 * states('sensor.apollo_mtr_1_xxxxxx_esp_temperature') | float +
+            -2.1959 * states('sensor.apollo_mtr_1_xxxxxx_scd40_temperature') | float +
+            2.9604 * states('sensor.apollo_mtr_1_xxxxxx_dps310_temperature') | float +
+            0.2380 * states('sensor.apollo_mtr_1_xxxxxx_scd40_humidity') | float +
             1.8283
           }}
 ```
 
 
-For users who want to gather their own data with a reference sensor and MSR-2 within their home, we recommend logging data to a CSV using the following YAML entries:
+For users who want to gather their own data with a reference sensor and MTR-1 within their home, we recommend logging data to a CSV using the following YAML entries:
 
 ```plaintext
 #Configuration.yaml
@@ -119,14 +121,14 @@ notify:
         data_template:
           message: >
             {{ now().strftime('%Y-%m-%d %H:%M:%S') }},
-            {{ states('sensor.apollo_msr_1_a79e24_esp_temperature') | default('NA') }},
-            {{ states('sensor.apollo_msr_1_a79e24_scd40_temperature') | default('NA') }},
-            {{ states('sensor.apollo_msr_1_a79e24_dps310_temperature') | default('NA') }},
-            {{ states('sensor.apollo_msr_1_a79e24_scd40_humidity') | default('NA') }},
-            {{ states('number.apollo_msr_1_a79e24_dps310_temperature_offset') | default('NA') }},
-            {{ states('number.apollo_msr_1_a79e24_scd40_humidity_offset') | default('NA') }},
-            {{ states('number.apollo_msr_1_a79e24_scd40_temperature_offset') | default('NA') }},
-            {{ states('sensor.apollo_msr_1_a79e24_uptime') | default('NA') }}
+            {{ states('sensor.apollo_mtr_1_xxxxxx_esp_temperature') | default('NA') }},
+            {{ states('sensor.apollo_mtr_1_xxxxxx_scd40_temperature') | default('NA') }},
+            {{ states('sensor.apollo_mtr_1_xxxxxx_dps310_temperature') | default('NA') }},
+            {{ states('sensor.apollo_mtr_1_xxxxxx_scd40_humidity') | default('NA') }},
+            {{ states('number.apollo_mtr_1_xxxxxx_dps310_temperature_offset') | default('NA') }},
+            {{ states('number.apollo_mtr_1_xxxxxx_scd40_humidity_offset') | default('NA') }},
+            {{ states('number.apollo_mtr_1_xxxxxx_scd40_temperature_offset') | default('NA') }},
+            {{ states('sensor.apollo_mtr_1_xxxxxx_uptime') | default('NA') }}
 ```
 
 

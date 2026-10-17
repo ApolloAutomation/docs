@@ -14,7 +14,7 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 ![Home Assistant history graph of the TEMP-1 temperature probe with arrows at freezer highs and lows](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
 
-3\. We now need to convert F to C since the max and min temps are measured in Celsius. My new values I will input are max probe temp 2°C and a min probe temp of -30°C. Reminder, yours will likely be different values, especially your max probe temp.
+3\. We now need to convert F to C since the max and min temps are measured in Celsius. My new values I will input are max probe temp 2°C and a min probe temp of -30°C. Reminder, yours will likely be different values, especially your max probe temp. These settings control the TEMP-1's built-in buzzer alarm.
 
 ![Home Assistant settings with Max Probe Temp set to 2.0 °C and Min Probe Temp set to -30.0 °C](/assets/temp-1-temp-probe-ex-automation-pic-2.png)
 
@@ -24,7 +24,7 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 [![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
-6\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you found in step 2 above. Advanced users skip to step 10.
+6\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 temperature probe such as "temp-1 temperature probe" then in the box labeled "Above" type in the maximum temperature you found in step 2 above. Advanced users skip to step 10.
 
 ![Home Assistant numeric state trigger on TEMP-1 Max Probe Temp with the Above field set to 30 highlighted](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
 
@@ -54,7 +54,8 @@ description: Warning for the freezer when it reaches the max temperature.
 triggers:
   - trigger: numeric_state
     entity_id:
-      - number.apollo_temp_1_max_probe_temp
+      - sensor.apollo_temp_1_temperature_probe
+    # in the unit Home Assistant shows for the probe (°F here); use your own entity ID
     above: 30
 conditions: []
 actions:
@@ -72,7 +73,7 @@ mode: single
 
 This will guide you through how to set up an automation in Home Assistant using the food probe with Chicken (or anything) cooking to 165°F(73.9C). At the end, you will have an automation that sends your phone a notification when your temp is exceeded.
 
-1\. Set your Max Probe Temp to 73.9°C. The offsets MUST be in Celsius even if you are using F in the automation below.
+1\. Set your Max Probe Temp to 73.9°C. Max Probe Temp is always set in Celsius, even if you use °F in the automation below.
 
 ![Home Assistant setting with Max Probe Temp set to 73.9 °C highlighted](/assets/temp-1-food-probe-ex-automation-pic-1.png)
 
@@ -82,7 +83,7 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 [![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
-4\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 device such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Advanced users skip to step 8.
+4\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 food probe such as "temp-1 food probe" then in the box labeled "Above" type in the temperature you want for your food - In this example we will use 165°F(73.9C) such as the temperature it's safe to cook Chicken to. Advanced users skip to step 8.
 
 ![Home Assistant numeric state trigger with the TEMP-1 Max Probe Temp entity and Above 165 fields highlighted](/assets/temp-1-food-probe-ex-automation-pic-3.png)
 
@@ -90,7 +91,7 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 ![Home Assistant Add action search for iphone with the mobile app notification action highlighted](/assets/temp-1-temp-probe-ex-automation-pic-4.png)
 
-!!! tip "If you still do not see your device as shown in step 7 read this!"
+!!! tip "If you still do not see your device as shown in step 5 read this!"
 
     You need the Home Assistant mobile app installed on your phone for this step to work! If you do not have it, try another notification instead of using your phone such as a TTS notification on your speakers. This could be a fun way to announce that dinner is ready!
 
@@ -112,7 +113,8 @@ description: Warning for the food when it reaches the max temperature.
 triggers:
   - trigger: numeric_state
     entity_id:
-      - number.apollo_temp_1_max_probe_temp
+      - sensor.apollo_temp_1_food_probe
+    # in the unit Home Assistant shows for the probe (°F here); use your own entity ID
     above: 165
 conditions: []
 actions:
@@ -141,7 +143,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 [![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
-4\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "On". Advanced users skip to step 25 for the YAML.
+4\. Click Add Trigger then Entity then State and search for "Chicken Monitor" then in the box labeled "To" select "On".
 
 ![Home Assistant state trigger for Chicken Monitor with the To field set to On](/assets/temp-1-cook-chicken-example-pic-4.png)
 
@@ -153,7 +155,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant state trigger for Chicken Monitor set to Off with Trigger ID Chicken Monitor Off highlighted](/assets/temp-1-cook-chicken-example-pic-21.png)
 
-7\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 food probe entity such as "temp-1 max probe temp" then in the box labeled "Above" type in the max probe temp number you want for your food - In this example we will use 160°F(71.1C) because the Chicken will rest and reach 165°F once removed from the oven/grill.
+7\. Click Add Trigger then Entity then Numeric state and search for your TEMP-1 food probe entity such as "temp-1 food probe" then in the box labeled "Above" type in the temperature you want for your food - In this example we will use 160°F(71.1C) because the Chicken will rest and reach 165°F once removed from the oven/grill.
 
 ![Home Assistant numeric state trigger on TEMP-1 Food Probe with the Above field set to 160](/assets/temp-1-cook-chicken-example-pic-7.png)
 
@@ -169,9 +171,9 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Add condition dialog with trigger id searched and Triggered by listed](/assets/temp-1-cook-chicken-example-pic-13.png)
 
-11\. Check off the option "Button Pressed" that we created in step 5 above.
+11\. Check off the option "Chicken Monitor On" that we created in step 5 above.
 
-![Home Assistant Choose action Option 1 with the Button Pressed trigger checked and highlighted](/assets/temp-1-cook-chicken-example-pic-14.png)
+![Home Assistant Choose action Option 1 with the trigger ID checkbox highlighted](/assets/temp-1-cook-chicken-example-pic-14.png)
 
 12\. While still under Option 1 in the choose action: Click Add Action and search "light" then select Light: Turn on.
 
@@ -201,7 +203,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Add condition dialog with trigger id searched and Triggered by listed](/assets/temp-1-cook-chicken-example-pic-13.png)
 
-19\. Check off the option "Temp Reached" that we created in step 7 above.
+19\. Check off the option "Temp Reached" that we created in step 8 above.
 
 ![Home Assistant Option 2 Triggered by condition with only Temp Reached checked](/assets/temp-1-cook-chicken-example-pic-18-1.png)
 

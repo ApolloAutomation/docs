@@ -14,7 +14,7 @@ The TEMP-1 comes with an optional food probe which can be used to monitor food t
 
 ![Food probe plug fully inserted into the TEMP-1 3.5mm port](/assets/temp-1-food-probe-fully-inserted.jpg)
 
-2\. Once inserted, proceed to step 3 unless you have a battery in it
+2\. Once inserted, press the reset button or power cycle your TEMP-1 so it detects the probe (see the tip below), then continue to step 3.
 
 !!! tip "If you have it plugged into power you need to push the reset button."
 

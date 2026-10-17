@@ -1,8 +1,8 @@
 ---
 title: TEMP Pro-1 Teardown
 description: >-
-  Step by step guide for tearing down your TEMP-1 to replace parts, clean it,
-  swap cases, etc.
+  Step by step guide for tearing down your TEMP Pro-1 to replace parts, clean
+  it, swap cases, etc.
 ---
 # Teardown Of TEMP Pro-1
 

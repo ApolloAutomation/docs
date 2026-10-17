@@ -22,7 +22,7 @@ In the ESPHome Device Builder dashboard, click the 3 dots menu in the top right 
 
 </div>
 
-1. You'll see a YAML file with one key per line. If you followed First Steps you should already see `wifi_ssid` and `wifi_password` here.
+1. You'll see a table of your secrets, one name and value per row, with an **Add secret** button below it. If you followed First Steps you should already see `wifi_ssid` and `wifi_password` here.
 
 ![ESPHome Device Builder three-dot menu opening Secrets, which lists wifi_ssid, wifi_password, and the API key](../../../assets/esphome-device-builder-click-secrets.gif)
 

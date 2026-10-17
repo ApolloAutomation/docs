@@ -4,19 +4,19 @@ description: How to check if your device is connected to Wi-Fi, Home Assistant, 
 ---
 # Sensor Connection Check
 
-1\. Press the reset button and let go to restart the device<br><a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B reset button</strong></a>
+1\. Press the reset button and let go to restart the device<br><a href="https://wiki.apolloautomation.com/homey/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B reset button</strong></a>
 
 ![TEMP-1B board with the lid off and a tool pointing at the reset button](/assets/temp-1-reset-button-lid-off.jpg)
 
-<a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noopener"><strong>PLT-1B reset button</strong></a>
+<a href="https://wiki.apolloautomation.com/homey/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noopener"><strong>PLT-1B reset button</strong></a>
 
 ![PLT-1B board with a tool pointing at the reset button](/assets/plt-boot-mode-pic-6-1.jpg)
 
-2\. Press the boot button and let go<br><a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B boot button</strong></a>
+2\. Press the boot button and let go<br><a href="https://wiki.apolloautomation.com/homey/products/temp1b/troubleshooting/temp1b-boot-mode" target="_blank" rel="noopener"><strong>TEMP-1B boot button</strong></a>
 
 ![TEMP-1B board with the lid off and a tool pointing at the boot button](/assets/temp-1b-boot-button-lid-off.jpg)
 
-<a href="https://wiki.apolloautomation.com/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noopener"><strong>PLT-1B boot button</strong></a>
+<a href="https://wiki.apolloautomation.com/homey/products/plt1b/troubleshooting/plt1b-boot-mode/" target="_blank" rel="noopener"><strong>PLT-1B boot button</strong></a>
 
 ![PLT-1B board with a tool pointing at the boot button near the USB-C port](/assets/plt-boot-mode-pic-2.jpg)
 

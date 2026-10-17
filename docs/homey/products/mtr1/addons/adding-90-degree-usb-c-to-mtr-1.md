@@ -26,4 +26,4 @@ description: Step by step tutorial for adding 90 degree USB-C to MTR-1.
 
 !!! success "You're ready to begin using your device!"
 
-    Make sure to head to our <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-mtr1/" target="_blank" rel="noreferrer nofollow noopener">getting started guide</a> to get your MTR-1 up and running!
+    Make sure to head to our <a href="https://wiki.apolloautomation.com/homey/products/general/setup/getting-started-mtr1/" target="_blank" rel="noreferrer nofollow noopener">getting started guide</a> to get your MTR-1 up and running!

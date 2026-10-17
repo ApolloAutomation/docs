@@ -8,13 +8,13 @@ description: Tutorial for MTR-1 Home Assistant Zone Configuration.
 
     The Apollo mmWave integration gives your Apollo MTR-1 its own dashboard tab with a zone map where you draw zones over the radar's live targets, with no Plotly card or YAML to set up. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) walks you through it as a guided alternative to the manual steps below.
 
-Below are steps to manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your MTR-1.
+Below are steps to manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to [tune using the HLK Radartool App](/products/mtr1/setup/zones-hlk.md) and we suggest using that to set up your MTR-1.
 
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 
 2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
 
-3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_r\_mtr\_1\_c64a28", with six random characters at the end.
+3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_mtr\_1\_c64a28", with six random characters at the end.
 
 <iframe src="/snippets/mtr1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
 
@@ -44,7 +44,7 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
     * Detection: Only detects targets in the specified zone.
     * Filter: Excludes a zone from detection.
 
-9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.
+9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -4860 mm to 4860 mm, and the Y values are 0 mm to 7560 mm.
 
 ![Target Positions chart with arrows marking the X axis and Y axis in millimeters](/assets/ld2450-zone-input.png)
 
@@ -82,6 +82,6 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
 
 15\. Now we can make zones around the targets where you want to Detect presence or filter them out.
 
-!!! tip tip "Tip for zone configuration resetting"
+!!! tip "Tip for zone configuration resetting"
 
-    If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try to toggle on Multi Target Radar. This should wake up the mmWave module and retrieve your saved zones
+    If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try to toggle on Multi Target Tracking. This should wake up the mmWave module and retrieve your saved zones

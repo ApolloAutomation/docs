@@ -32,4 +32,4 @@ description: Guide for setting up and using the prevent sleep toggle with the TE
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
-    The TEMP-1B should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your TEMP-1B if there will be high moisture content in the air or if it is expected to rain.
+    The TEMP-1 should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your TEMP-1 if there will be high moisture content in the air or if it is expected to rain.

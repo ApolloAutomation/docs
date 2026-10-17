@@ -125,7 +125,7 @@ Below is the complete, production-tested YAML. Replace all `YOUR_*` placeholders
     4. **`body: !lambda |-`** — plain string bodies are silently ignored by the ESP-IDF HTTP client. The lambda syntax is required for the POST body to actually be sent.
 
 ```yaml
-substitution:
+substitutions:
   name: "apollo-mtr1"
   friendly_name: "Apollo MTR-1"
 
@@ -353,9 +353,9 @@ After the first flash, the `initial_value` in the YAML is never used again. The 
               ESP_LOGI("oauth", ">>> Boot: token override active");
     ```
 
-    Flash OTA and wait for `HTTP Status: 200` and `Refresh token updated: xxxxxxxx-...` in the logs. Note down the full new refresh token.
+    Flash OTA and wait for `HTTP Status: 200` and `Refresh token updated and saved to NVS` in the logs.
 
-    **Step 3 — Flash 2: remove the override immediately** (while device is still running): Remove the entire `on_boot` block, update `initial_value` for `st_refresh_token` to the token you just noted, keep `restore_value: yes`. Flash OTA again.
+    **Step 3 — Flash 2: remove the override immediately** (while device is still running): Remove the entire `on_boot` block, keep `restore_value: yes`, and flash OTA again. You do not need to change `initial_value`, because the device has already saved the new refresh token to NVS.
 
     The NVS now holds the correct token and the self-sustaining chain resumes.
 

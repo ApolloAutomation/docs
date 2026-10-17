@@ -8,7 +8,7 @@ description: "Step by step guide for re-flashing the MTR-1 back to factory firmw
 
     This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
 
-If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
+If your device has already been added to Homey, please <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before continuing.
 
 1\. Position the MTR-1 as shown in the image below and locate the small opening to press the boot button (the right button).
 
@@ -18,23 +18,23 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/MTR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo MTR-1 Installer</a>.
 
-3\. Click the big "Connect" button.
+4\. Click the big "Connect" button.
 
 ![Apollo MTR-1 Installer page with the Connect button highlighted](/assets/mtr-1-reflash-pic-1.png)
 
-3\. Select the open com port then click Connect.
+5\. Select the open com port then click Connect.
 
 ![Browser serial port prompt with the USB JTAG/serial debug unit selected and Connect clicked](/assets/mtr-1-reflash-pic-2.png)
 
-4\. Click "Install MTR-1".
+6\. Click "Install MTR-1".
 
 ![Installer Device Dashboard with the Install MTR-1 option being clicked](/assets/mtr-1-reflash-pic-3.png)
 
-5\. Click "INSTALL".
+7\. Click "INSTALL".
 
 ![MTR-1 install confirmation dialog with the Install button being clicked](/assets/mtr-1-reflash-pic-4.png)
 
-6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+8\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
 ![Installer showing Installation complete with the Next button highlighted](/assets/air-1-reflash-pic-5.png)
 
@@ -42,4 +42,4 @@ If your device has already been connected to Home Assistant please <a href="http
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and setup your sensor as a new device!
+9\. Please [proceed to the getting started guide](../../general/setup/getting-started-mtr1.md) and set up your sensor as a new device!

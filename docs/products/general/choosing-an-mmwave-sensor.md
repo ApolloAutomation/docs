@@ -44,7 +44,7 @@ Apollo mmWave sensors detect the **moving** and **still** energy of people and a
 | **PoE / Ethernet** | :material-minus: | :material-minus: | :material-check: |
 | **Horizontal FoV** | 120° | 120° | 120°<br>150° with LD2412 |
 | **Vertical FoV** | 70° | 70° | 70° |
-| **Power** | USB-C | USB-C | PoE, Ethernet, Wi-Fi, USB-C |
+| **Power** | USB-C | USB-C | PoE (802.3af) or USB-C |
 | **mmWave module** | LD2410B | LD2450 | LD2450, optional LD2412 |
 
 ## Field of view

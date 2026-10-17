@@ -1,8 +1,6 @@
 ---
-title: PUMP-1 General Tips
-description: >-
-  Multiple helpful images for mounting, lux/rgb, and gate and zone
-  visualization.
+title: PRODUCTNAME General Tips
+description: General tips for using the PRODUCTNAME.
 ---
 # General Tips
 

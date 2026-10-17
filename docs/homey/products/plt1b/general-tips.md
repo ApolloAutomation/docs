@@ -6,7 +6,7 @@ description: "Helpful tips to get the most use out of your sensor."
 
 ## Boot and Reset Buttons
 
-When looking at the PLT-1B in the below orientation, the boot button is on the left and the reset is on the right by the USB-C port.
+When looking at the PLT-1B in the below orientation, the reset button is on the left and the boot button is on the right by the USB-C port.
 
 ![PLT-1B diagram labeling the reset button on the left and the boot button and USB-C port on the right](/assets/plt-1b-buttons.png)
 

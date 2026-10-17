@@ -86,7 +86,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ## LD2412 Configuration
 
-The LD2412 works differently than the LD2450. Instead of drawing rectangular zones on a 2D map, you work with **distance gates**. Each gate covers 0.75m of radial distance from the sensor, so Gate 0 is 0-0.75m away, Gate 1 is 0.75-1.5m, and so on up to Gate 13 at roughly 9m. You define what the sensor reacts to by setting a sensitivity threshold at each gate distance.
+The LD2412 works differently than the LD2450. Instead of drawing rectangular zones on a 2D map, you work with **distance gates**. Each gate covers 0.75m of radial distance from the sensor, so Gate 1 is 0-0.75m away, Gate 2 is 0.75-1.5m, and so on out to Gate 12 at 8.25-9m (see the gate table on the General Tips page). You define what the sensor reacts to by setting a sensitivity threshold at each gate distance.
 
 The same HLKRadarTool app is used for both sensors.
 
@@ -124,18 +124,18 @@ The same HLKRadarTool app is used for both sensors.
 
 ![HLKRadarTool app running Auto noise detection on the LD2412, then showing Detecting](/assets/r-pro-1-ld2412-auto-noise-detection.gif)
 
-5\. Tap **Settings** in the top right and use the **Detection Range** slider to set which gates the sensor monitors. You can set both a start and end gate — for example, Gate 3 to Gate 6 means the sensor only looks between 2.25m and 4.5m from the device. Limiting the range prevents the sensor from picking up movement through walls or in adjacent rooms.
+5\. Tap **Settings** in the top right and use the **Detection Range** slider to set which gates the sensor monitors. You can set both a start and end gate. For example, Gate 3 to Gate 6 means the sensor only looks between 1.5m and 4.5m from the device. Limiting the range prevents the sensor from picking up movement through walls or in adjacent rooms.
 
 !!! tip "Gate to distance reference"
 
-    Each gate is 0.75m. Gate 1 = 0.75m, Gate 2 = 1.5m, Gate 3 = 2.25m, Gate 4 = 3m, Gate 5 = 3.75m, Gate 6 = 4.5m, Gate 7 = 5.25m, Gate 8 = 6m.
+    Each gate covers 0.75m. Gate 1 = 0-0.75m, Gate 2 = 0.75-1.5m, Gate 3 = 1.5-2.25m, Gate 4 = 2.25-3m, Gate 5 = 3-3.75m, Gate 6 = 3.75-4.5m, Gate 7 = 4.5-5.25m, Gate 8 = 5.25-6m.
 
 ![HLKRadarTool Settings screen with the LD2412 Detection range slider set to a start and end gate](/assets/r-pro-1-ld2412-detection-range.gif)
 
-6\. To fine-tune which distances trigger detection, head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**), select your R PRO-1, and use the gate sensitivity sliders on the device page.
+6\. To fine-tune which distances trigger detection, head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**), select your R PRO-1, and use the gate threshold sliders on the device page.
 
-- **Raise** a gate's sensitivity to make it harder to trigger at that distance (useful for ignoring a fan, HVAC vent, or a window where cars pass).
-- **Lower** a gate's sensitivity to make it more sensitive at that distance (useful for reliably detecting someone sitting still in a chair).
+- **Raise** a gate's threshold to make it harder to trigger at that distance (useful for ignoring a fan, HVAC vent, or a window where cars pass).
+- **Lower** a gate's threshold to make it easier to trigger at that distance (useful for reliably detecting someone sitting still in a chair).
 
 ![LD2412 gate threshold sliders being adjusted on the R PRO-1 device page in Home Assistant](/assets/r-pro-1-ld2412-gate-sliders-ha.gif)
 

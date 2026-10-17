@@ -40,12 +40,12 @@ This guide will take you through calibrating your PLT-1's moisture sensor. The s
 
 11\. Once the Soil ADC value is populated, enter it into the "Dry Voltage" entity.
 
+![PLT-1 Diagnostic card in Home Assistant with the dry Soil ADC voltage reading (2.75 V) outlined in red](/assets/plt-1-calibration-pic-6.png)
+
 ![PLT-1 Configuration card with the 100% Water Voltage and Dry Voltage boxes outlined in red](/assets/plt-1-calibration-pic-4.png)
 
 12\. Now, place the stake/probe portion of the PLT-1 into a cup of water. Be careful not to submerge the entire sensor—only the exposed PCB below the "Apollo" label and the horizontal line can be exposed to water.
 
 13\. Grab the "Soil ADC" value again and enter it into the "100% Water Voltage" entity.
-
-![PLT-1 Diagnostic card in Home Assistant with the Soil ADC voltage reading outlined in red](/assets/plt-1-calibration-pic-6.png)
 
 14\. You can now return your PLT-1 to your plant. Congratulations, your sensor is calibrated!

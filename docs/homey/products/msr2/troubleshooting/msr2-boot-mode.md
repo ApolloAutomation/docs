@@ -16,11 +16,11 @@ description: "Step by step guide for putting The MSR-2 In Boot Mode."
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
 
-3\. Continue with <a href="https://wiki.apolloautomation.com/products/msr2/troubleshooting/msr2-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
+3\. Continue with <a href="https://wiki.apolloautomation.com/homey/products/msr2/troubleshooting/msr2-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
 ## Method 2: Boot and Reset Buttons
 
-1\. Unplug the device and locate the boot and reset buttons as shown in the image above.
+1\. Unplug the device and locate the boot button (the right opening, shown in the image above) and the reset button (the left opening, shown in the image below).
 
 2\. Plug it into your computer.
 
@@ -28,4 +28,4 @@ description: "Step by step guide for putting The MSR-2 In Boot Mode."
 
 ![MSR-2 case side with a tool pointing at the left opening for the reset button](/assets/msr-2-reset-button.jpg)
 
-4\. Continue with <a href="https://wiki.apolloautomation.com/products/msr2/troubleshooting/msr2-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
+4\. Continue with <a href="https://wiki.apolloautomation.com/homey/products/msr2/troubleshooting/msr2-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.

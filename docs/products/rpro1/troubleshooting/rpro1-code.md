@@ -14,25 +14,25 @@ If your device has already been connected to Home Assistant please <a href="http
 
 ![Tool pointing to the SW6 boot button at the bottom right of the R PRO-1 PCB](/assets/r-pro-1-boot-button.jpg)
 
-3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo R PRO-1 Installer</a>.
+2\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo R PRO-1 Installer</a>.
 
 3\. Click the big "Connect" button.
 
 ![Apollo R PRO-1 Installer page with the Ethernet Firmware CONNECT button highlighted](/assets/r-pro-1-reflash-connect-button.png)
 
-3\. Select the open com port then click Connect.
+4\. Select the open com port then click Connect.
 
 ![Browser serial port prompt with the USB JTAG serial debug unit COM port and Connect button](/assets/r-pro-1-reflash-connect-comp-port.png)
 
-4\. Click "Install R PRO-1".
+5\. Click "Install R PRO-1".
 
 ![Installer Device Dashboard with the install R PRO-1 Ethernet firmware option highlighted](/assets/r-pro-1-reflash-click-install.png)
 
-5\. Click "INSTALL".
+6\. Click "INSTALL".
 
 ![Install confirmation dialog for the R PRO-1 Ethernet firmware with the INSTALL button](/assets/r-pro-1-reflash-click-install-to-install.png)
 
-6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
 ![Installer showing Installation complete with the NEXT button highlighted](/assets/r-pro-1-reflash-installation-complete.png)
 
@@ -40,4 +40,4 @@ If your device has already been connected to Home Assistant please <a href="http
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-rpro1" rel="noreferrer nofollow">proceed to the getting started guide</a> and set up your sensor as a new device!
+8\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-rpro1" rel="noreferrer nofollow">proceed to the getting started guide</a> and set up your sensor as a new device!

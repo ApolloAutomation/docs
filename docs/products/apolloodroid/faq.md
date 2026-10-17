@@ -35,7 +35,7 @@ The Apollo Odroid comes equipped with:
 
 6\. **Does the Apollo Odroid support wireless connectivity?**
 
-* Yes, the ODROID-M1S platform supports both Wi-Fi and Ethernet connections, giving you flexible options for integrating it into your network.
+* Not built in. The ODROID-M1S has Gigabit Ethernet but no onboard Wi-Fi or Bluetooth. You can add Wi-Fi with a USB adapter such as Hardkernel's WiFi Module 5BK, but we recommend wired Ethernet for a Home Assistant server.
 
 7\. **Can I customize the Home Assistant installation on the Apollo Odroid?**
 

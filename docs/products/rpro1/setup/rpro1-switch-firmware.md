@@ -18,11 +18,11 @@ description: >-
 
 2\. Scroll down until you see the "Firmware Type" dropdown and select "Ethernet".
 
-![Firmware Type dropdown set to Ethernet in the R PRO-1 Configuration card in Home Assistant](/assets/r-pro-1-select-ethernet-2.png)
+![Firmware Type dropdown open in Home Assistant with the Ethernet option selected for the R PRO-1](/assets/r-pro-1-select-ethernet.png)
 
 3\. Locate the Firmware Update entity and click on "PRESS".
 
-![R PRO-1 Configuration card in Home Assistant with the Firmware Update PRESS button highlighted](/assets/r-pro-1-click-press-on-firmware-update-button.png)
+![R PRO-1 Configuration card in Home Assistant with Firmware Type set to Ethernet and the cursor on the Firmware Update PRESS button](/assets/r-pro-1-select-ethernet-2.png)
 
 4\. Wait a few minutes - this will download the new firmware file from our GitHub repo and then install the image.
 

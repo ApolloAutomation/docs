@@ -4,7 +4,7 @@ description: Frequently asked questions about the H-2.
 ---
 1\. **What songs are pre-loaded on the Apollo H-2?**
 
-* The H-2 comes with four classic holiday songs: Sleigh Bells, Rudolph the Red-Nosed Reindeer, Let it Snow, and White Christmas. You can play these songs by pressing the 4 different gold buttons on the back of the ornament. Each song is paired with a unique LED effect for added festive flair.
+* The H-2 comes with four classic holiday songs: Jingle Bells, Rudolph the Red-Nosed Reindeer, Let it Snow, and Blue Christmas. You can play these songs by pressing the 4 different gold buttons on the back of the ornament. Each song is paired with a unique LED effect for added festive flair.
 
 2\. **Can I customize the songs and LED effects?**
 

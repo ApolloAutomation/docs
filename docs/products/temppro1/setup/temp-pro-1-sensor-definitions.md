@@ -22,7 +22,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **RGB Light**
 
-    * <a href="https://esphome.io/components/light/index.html#light-effects" target="_blank" rel="noopener">One RGB Neopixel LED</a>. Click on the light bulb or color wheel to change the color. Click on the toggle to turn on or off.
+    * <a href="https://esphome.io/components/light/index.html#light-effects" target="_blank" rel="noopener">Four RGB LEDs</a>. Click on the light bulb or color wheel to change the color. Click on the toggle to turn on or off.
 
 ???+ info "Sensors"
 
@@ -33,10 +33,6 @@ Once added to Home Assistant you can configure different settings for your senso
     **Board Temperature**
 
     * Measures and reports the current temperature of the board.
-
-    **Food Probe**
-
-    * The stainless steel food-safe probe is designed for accurate temperature monitoring during grilling, baking, and other food-related activities. Its durable, non-corrosive construction ensures safe and reliable use for cooking, providing real-time temperature readings to help achieve perfect results.
 
     **Temperature Probe**
 
@@ -54,15 +50,11 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **ESP Reboot**
 
-    * Button to press which reboots your TEMP-1.
+    * Button to press which reboots your TEMP Pro-1.
 
     **Firmware Update**
 
     * Indicates whether an update is available or if you are Up-to-date.
-
-    **Food Probe Offset**
-
-    * Offset for the Food Probe's temperature readings. Measured in Celsius.
 
     **Max Probe Temp**
 
@@ -79,7 +71,7 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Prevent Sleep**
 
-    * Prevents the TEMP-1 from going to sleep. When sleeping, your TEMP-1 will NOT respond to Home Assistant it is effectively off until it wakes up again.
+    * Prevents the TEMP Pro-1 from going to sleep. When sleeping, your TEMP Pro-1 will NOT respond to Home Assistant it is effectively off until it wakes up again.
     * Click on the toggle to turn on or off. Defaults to ON.
 
     **Probe Temp Difference Threshold**

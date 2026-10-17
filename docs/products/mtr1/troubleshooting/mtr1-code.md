@@ -18,23 +18,23 @@ If your device has already been connected to Home Assistant please <a href="http
 
 3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/MTR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo MTR-1 Installer</a>.
 
-3\. Click the big "Connect" button.
+4\. Click the big "Connect" button.
 
 ![Apollo MTR-1 Installer page with the Connect button outlined in red](/assets/mtr-1-reflash-pic-1.png)
 
-3\. Select the open com port then click Connect.
+5\. Select the open com port then click Connect.
 
 ![Browser serial port prompt with the USB JTAG/serial debug unit selected and Connect clicked](/assets/mtr-1-reflash-pic-2.png)
 
-4\. Click "Install MTR-1".
+6\. Click "Install MTR-1".
 
 ![Device Dashboard menu with the Install MTR-1 option selected](/assets/mtr-1-reflash-pic-3.png)
 
-5\. Click "INSTALL".
+7\. Click "INSTALL".
 
 ![Install MTR-1 confirmation dialog with the Install button selected](/assets/mtr-1-reflash-pic-4.png)
 
-6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+8\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
 ![Installation complete message with the Next button outlined in red](/assets/air-1-reflash-pic-5.png)
 
@@ -42,4 +42,4 @@ If your device has already been connected to Home Assistant please <a href="http
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
+9\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-mtr1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and set up your sensor as a new device!

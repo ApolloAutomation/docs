@@ -19,7 +19,7 @@ The DEV-2 does NOT come pre-flashed with ESPHome or WLED and requires you to fla
   </iframe>
 </div>
 
-Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated API key inside the code block as shown below then paste it in the code below where you see "use-a-randomly-generated-key-here".
+Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated API key inside the code block as shown below then paste it in the code below where you see "your-api-key-here".
 
 ![ESPHome API docs with a randomly generated encryption key highlighted in a red box](/assets/apollo-dev-1-image-2.png)
 
@@ -77,7 +77,7 @@ api:
 
 ota:
   - platform: esphome
-    password: "a53d93acd493275512730c776f88722a"
+    password: !secret ota_password
 
 wifi:
   ssid: !secret wifi_ssid

@@ -10,6 +10,8 @@ Please <a href="https://esphome.io/components/api.html#configuration-variables" 
 
 ![ESPHome API docs page showing a randomly generated encryption key](/assets/api-key-example.png)
 
+The example also reads its OTA password from your secrets.yaml, so add an `ota_password` line there before you install. See [Using Secrets](/products/ESPHome-Starter-Kit/tutorials/using-secrets.md#ota-password) for the format.
+
 **GPIO Pins Listed:**
 
 ```yaml
@@ -72,7 +74,7 @@ api:
 
 ota:
   - platform: esphome
-    password: "a53d93acd493275512730c776f88722a"
+    password: !secret ota_password
 
 wifi:
   ssid: !secret wifi_ssid

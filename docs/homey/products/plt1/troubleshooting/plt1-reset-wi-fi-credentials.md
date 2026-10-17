@@ -12,4 +12,4 @@ description: "Step by step guide for resetting the Wi-Fi Credentials on your PLT
 
 3\. The Wi-Fi credentials should be reset and it will broadcast its hotspot again.
 
-4\. Connect to the hotspot titled "Apollo PLT-1 Hotspot" and enter your new Wi-Fi details!
+4\. Connect to the hotspot titled "Apollo PLT1 Hotspot" and enter your new Wi-Fi details!

@@ -8,7 +8,7 @@ description: Use the M-1 with SendSpin audio visualizers
 
 !!! success "Your device needs to be running the ESPHome firmware to use Sendspin."
 
-    If you have a stock M-1 LED Matrix you will be on the WLED-MM firmware. You will need to <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1-esphome/" target="_blank" rel="noreferrer nofollow noopener">follow this tutorial</a> to switch to the ESPHome firmware!
+    A stock M-1 LED Matrix runs WLED (new units ship with WLED 16.0.1; older units shipped with WLED-MM). You will need to <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1-esphome/" target="_blank" rel="noreferrer nofollow noopener">follow this tutorial</a> to switch to the ESPHome firmware!
 
 1\. You will need to be running <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a> which has Sendspin baked in! Click the button below to install it on your Home Assistant OS setup.
 

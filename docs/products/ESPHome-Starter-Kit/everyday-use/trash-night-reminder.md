@@ -73,7 +73,7 @@ Add a repeating event to each calendar to match your actual pickup schedule.
 
     1.  The LEDs turn on at the start time and off at the end time, so this is your reminder window. Keep it to one evening rather than running it into the next day.
 
-6. Click **Save**.
+6. Click **Add event** at the bottom of the dialog.
 
     ![Adding a Trash Pickup event on the Trash calendar from 7 to 9 PM that repeats weekly](../../../assets/trash-pickup-recurring-event.gif)
 
@@ -85,7 +85,7 @@ Add a repeating event to each calendar to match your actual pickup schedule.
     - **Title** → `Recycle Pickup`
     - Set the **start time** and **end time** to a window that evening, for example 7 PM to 9 PM.
     - Enable **Repeat** and set it to **Weekly** on that day. If recycle goes out more than once a week, scroll down and select the other day too.
-    - Click **Save**.
+    - Click **Add event** at the bottom of the dialog.
 
     ![Adding a Recycle Pickup event on the Recycle calendar from 7 to 9 PM that repeats weekly](../../../assets/recycle-pickup-recurring-event.gif)
 
@@ -107,25 +107,25 @@ Add four triggers, one at a time. Each one is a **Calendar** trigger, and each g
 
     - **Calendar** → `Trash`
     - **Event** → **Start**
-    - Open the trigger's three-dot menu, choose **Rename**, and set the **Trigger ID** to `trash_start`.
+    - Open the trigger's three-dot menu, choose **Edit ID**, and set the **Trigger ID** to `trash_start`.
 
 3. Click **+ Add trigger** and add another **Calendar** trigger.
 
     - **Calendar** → `Trash`
     - **Event** → **End**
-    - Three-dot menu, **Rename**, **Trigger ID** → `trash_end`.
+    - Three-dot menu, **Edit ID**, **Trigger ID** → `trash_end`.
 
 4. Click **+ Add trigger** and add another **Calendar** trigger.
 
     - **Calendar** → `Recycle`
     - **Event** → **Start**
-    - Three-dot menu, **Rename**, **Trigger ID** → `recycle_start`.
+    - Three-dot menu, **Edit ID**, **Trigger ID** → `recycle_start`.
 
 5. Click **+ Add trigger** and add another **Calendar** trigger.
 
     - **Calendar** → `Recycle`
     - **Event** → **End**
-    - Three-dot menu, **Rename**, **Trigger ID** → `recycle_end`.
+    - Three-dot menu, **Edit ID**, **Trigger ID** → `recycle_end`.
 
 **Add the choose action**
 

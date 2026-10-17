@@ -1,8 +1,6 @@
 ---
 title: PUMP-1 General Tips
-description: >-
-  Multiple helpful images for mounting, lux/rgb, and gate and zone
-  visualization.
+description: Tips for placing the PUMP-1 fluid sensor, controlling the pump, and preventing siphoning.
 ---
 # General Tips
 

@@ -58,7 +58,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
     * Detection: Only detects targets in the specified zone.
     * Filter: Excludes a zone from detection.
 
-9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.
+9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -4860 mm to 4860 mm, and the Y values are 0 mm to 7560 mm.
 
 ![Plotly Target Positions chart with arrows marking the X axis and Y axis around three zones](/assets/ld2450-zone-input.png)
 
@@ -96,9 +96,9 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 15\. Now we can make zones around the targets where you want to Detect presence or filter them out.
 
-!!! tip tip "Tip for zone configuration resetting"
+!!! tip "Tip for zone configuration resetting"
 
-    If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try to toggle on Multi Target Radar. This should wake up the mmWave module and retrieve your saved zones
+    If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try toggling on **LD2450 Multi Target Tracking**. This should wake up the mmWave module and retrieve your saved zones
 
 ## LD2412 Configuration
 

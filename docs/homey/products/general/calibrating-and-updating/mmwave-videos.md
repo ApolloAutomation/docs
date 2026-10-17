@@ -1,8 +1,8 @@
 ---
-title: This needs to be redone for Homey if it can be duplicated.
+title: mmWave Tuning Videos
 description: "Two short videos and a quick summary on how to best tune the LD2410B in the MSR-2!"
 ---
-# This needs to be redone for Homey if it can be duplicated.
+# mmWave Tuning Videos
 
 !!! tip "Radar Engineering Mode (REM)"
 

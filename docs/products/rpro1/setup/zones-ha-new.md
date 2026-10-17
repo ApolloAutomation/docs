@@ -1,5 +1,5 @@
 ---
-title: MSR-2 Home Assistant Zone Configuration
+title: R PRO-1 Home Assistant Zone Configuration
 description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 ---
 # How To Tune The R PRO-1 Using Home Assistant
@@ -42,4 +42,4 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 ## LD2412 Configuration
 
-&nbsp;
+See the [LD2412 Configuration](zones-ha.md#ld2412-configuration) steps on the main R PRO-1 Home Assistant zone page.

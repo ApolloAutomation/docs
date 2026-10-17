@@ -28,7 +28,7 @@ description: Step by step guide for reflashing The PUMP-1.
 
 ![Browser serial port prompt with USB JTAG/serial debug unit selected and the cursor on Connect](/assets/pump-1-reflash-com-port.png)
 
-7\.. Click Install PUMP-1.
+6\. Click Install PUMP-1.
 
 ![Device Dashboard menu with the cursor on Install ApolloAutomation.PUMP-1](/assets/pump-1-reflash-click-install.png)
 

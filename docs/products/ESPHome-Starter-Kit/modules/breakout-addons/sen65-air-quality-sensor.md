@@ -20,7 +20,7 @@ The SEN6x port is on the same I2C bus as the other connectors: **SCL on GPIO0**,
 
 ## Add to ESPHome Device Builder
 
-The SEN65 needs three components in your device config: the accessory power switch that powers the breakout, the I2C bus the sensor talks on, and the <a href="https://esphome.io/components/sensor/sen6x/" target="_blank" rel="noreferrer nofollow noopener">SEN6x</a> component that reads it. If another module already added the I2C component, skip steps 5 and 6, the SEN65 shares the same bus.
+The SEN65 needs three components in your device config: the accessory power switch that powers the breakout, the I2C bus the sensor talks on, and the <a href="https://esphome.io/components/sensor/sen6x/" target="_blank" rel="noreferrer nofollow noopener">SEN6x</a> component that reads it. If another module already added the I2C component, skip steps 4 to 6, the SEN65 shares the same bus.
 
 1.  Open your starter kit device in Device Builder and click **Edit**.
 2.  Navigate to the **Components** section and look for a **GPIO Switch** named **Accessory Power**. The breakout and everything plugged into it get their power from that switch, so without it the SEN65 never answers on the I2C bus. (1)
@@ -134,15 +134,15 @@ Want a single air quality number on top of the individual readings? Add the AQI 
 <a href="https://www.epa.gov/pm-pollution/particulate-matter-pm-basics" target="_blank" rel="noreferrer nofollow noopener">Per the EPA</a>, particulate matter is a mix of solid particles and liquid droplets in the air. The smaller the particle, the deeper it reaches into your lungs, so PM1 and PM2.5 matter most indoors where cooking, candles, and poor ventilation are the usual sources. (1)
 { .annotate }
 
-1.  Trigger a fan, air purifier, or HVAC when PM2.5 climbs. Keeping PM2.5 below **12 µg/m³** indoors is a good general target, below **5 µg/m³** for ideal long-term health.
+1.  Trigger a fan, air purifier, or HVAC when PM2.5 climbs. Keeping PM2.5 below **9 µg/m³** indoors is a good general target, below **5 µg/m³** for ideal long-term health.
 
 | PM2.5 (µg/m³) | AQI Category | What it means |
 |---|---|---|
-| 0.0 – 12.0 | Good | Air quality is satisfactory. |
-| 12.1 – 35.4 | Moderate | Acceptable; some risk for sensitive people. |
+| 0.0 – 9.0 | Good | Air quality is satisfactory. |
+| 9.1 – 35.4 | Moderate | Acceptable; some risk for sensitive people. |
 | 35.5 – 55.4 | Unhealthy for Sensitive Groups | Risk for those with heart or lung issues, children, older adults. |
-| 55.5 – 150.4 | Unhealthy | Everyone may start to feel effects. |
-| 150.5+ | Very Unhealthy to Hazardous | Health alert. |
+| 55.5 – 125.4 | Unhealthy | Everyone may start to feel effects. |
+| 125.5+ | Very Unhealthy to Hazardous | Health alert. |
 
 ### NowCast AQI
 

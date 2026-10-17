@@ -8,29 +8,33 @@ description: "Step by step guide for re-flashing the TEMP-1 back to factory firm
 
     This needs to be done in Chrome, Edge, or another Chromium based browser.
 
-If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
+If your device has already been added to Homey, please <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before continuing.
 
-1\. <a href="https://wiki.apolloautomation.com/products/temp1/troubleshooting/temp1-boot-mode/" target="_blank" rel="noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
+1\. <a href="https://wiki.apolloautomation.com/homey/products/temp1/troubleshooting/temp1-boot-mode/" target="_blank" rel="noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
 
-2\. Navigate to our installer page and click connect under Battery Firmware [Apollo TEMP-1 Installer](https://apolloautomation.github.io/TEMP-1/).
+2\. Navigate to the [Apollo TEMP-1 Installer](https://apolloautomation.github.io/TEMP-1/).
 
-3\. Click "Connect" under the Non Battery Firmware option since you are using a TEMP-1.
+3\. Click "Connect" under **Non Battery Firmware Revision 2** since you are using a TEMP-1.
 
-![Apollo TEMP-1 Installer page with the Connect button under Non Battery Firmware highlighted](/assets/temp-1-reflash-pic-1.png)
+!!! tip "Use R2 version unless instructed to use R1 by support!"
 
-3\. Select the open com port then click Connect.
+    R2 is what all of our devices use except a very small batch of TEMP-1 and TEMP-1B
+
+![Apollo TEMP-1 Installer page with the Non Battery Firmware Revision 2 Connect button clicked](/assets/temp-1-reflash-pic-1-1.png)
+
+4\. Select the open com port then click Connect.
 
 ![Browser serial port dialog with the USB JTAG/serial debug unit port selected and the Connect button](/assets/temp-1-reflash-pic-2.png)
 
-4\. Click "Install ApolloAutomation.TEMP-1".
+5\. Click "Install ApolloAutomation.TEMP-1".
 
 ![Device Dashboard dialog with Install ApolloAutomation.TEMP-1 highlighted](/assets/temp-1-reflash-pic-3.png)
 
-5\. Click "INSTALL".
+6\. Click "INSTALL".
 
 ![Install ApolloAutomation.TEMP-1 confirmation dialog with the Install button highlighted](/assets/temp-1-reflash-pic-4.png)
 
-6\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
+7\. Once you see "Installation complete!" you are finished. Click Next then close out of the browser window.
 
 ![Web installer dialog showing Installation complete after flashing the TEMP-1, with the Next button](/assets/temp-1b-reflash-pic-7.png)
 
@@ -38,4 +42,4 @@ If your device has already been connected to Home Assistant please <a href="http
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-7\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-temp1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
+8\. Please <a href="https://wiki.apolloautomation.com/homey/products/temp1/setup/getting-started-temp1/" target="_blank" rel="noopener">proceed to the getting started guide</a> and set up your sensor as a new device!

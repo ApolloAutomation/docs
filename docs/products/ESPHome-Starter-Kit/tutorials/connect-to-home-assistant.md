@@ -36,7 +36,7 @@ Open the **ESPHome** integration in Home Assistant (**Settings → Devices & ser
 
 You should see:
 
-* Every component you added in ESPHome Device Builder as an entity (the **GPIO Switch** for accessory power, the **AHT10** temperature and humidity sensors, the **Onboard RGB LED**).
+* Every component you added in ESPHome Device Builder as an entity, such as the **Accessory Power Rail** switch, the **Onboard RGB LED** light, and, if you added the temperature and humidity module, its **Temperature** and **Humidity** sensors.
 * A green status indicator showing the device is online.
 
 Toggle the **Onboard RGB LED** light entity and confirm the LED responds on the ESP32-C6. That's the round trip working: Home Assistant talks to your device, your device talks back.

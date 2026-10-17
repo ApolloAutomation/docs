@@ -12,9 +12,9 @@ To connect through the sensor's onboard hotspot follow the below:
 
 1\. Plug the sensor into a quality power brick. They require 5v and under an amp so most phone chargers will be fine. ESP devices are sensitive to power fluctuations and users have had some issues with really cheap power bricks. If your device is restarting or unavailable please try a different power brick.
 
-2\. On your phone or PC, open the Wi-Fi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the Wi-Fi network to show up.
+2\. On your phone or PC, open the Wi-Fi settings and connect to the sensor's hotspot, such as "Apollo MSR2 Hotspot". It might take a minute for the Wi-Fi network to show up.
 
-![Phone Wi-Fi settings with the Apollo MSR-2 hotspot network outlined in red](/assets/getting-started-pic-1-1.png)
+![Phone Wi-Fi settings with the Apollo MSR2 Hotspot network outlined in red](/assets/getting-started-pic-1-1.png)
 
 3\. Once connected it should automatically open a dashboard for your sensor
 

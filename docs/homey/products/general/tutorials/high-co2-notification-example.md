@@ -43,7 +43,7 @@ description: Example flow for sending alerts when CO₂ levels exceed a defined 
 
 ![Homey CO2 greater than 999 ppm card connected to an AIR-1 Set a color card set to red](/assets/homey-flow-example-pic-8.png)
 
-10\. Duplicate steps 7 and 8 but this time select green for the color when "CO2 becomes less than 1000 ppm".
+10\. Duplicate steps 8 and 9 but this time select green for the color when "CO2 becomes less than 1000 ppm".
 
 ![Homey flow setting red above 999 ppm and green below 1000 ppm on the AIR-1](/assets/homey-flow-example-pic-10.png)
 

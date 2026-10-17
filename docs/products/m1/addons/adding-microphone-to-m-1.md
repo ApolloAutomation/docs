@@ -28,7 +28,7 @@ The microphone addon fits Rev6 and newer controllers. Rev4 boards do not have th
 
     3\. Click on **Config**, then **AudioReactive**. Check **Enabled** then select **Generic I2S** for the Type.
 
-    4\. Select **10 digitalmic** for Pin I2s SD, select **12 digitalmic A5** for Pin I2S WS, and select **11 digitalmic** for Pin I2S SCK and click **Save**.
+    4\. Select **10 digitalmic** for Pin I2S SD, **12 digitalmic** for Pin I2S WS, and **11 digitalmic** for Pin I2S SCK, then click **Save**.
 
     ![WLED-MM AudioReactive settings with Generic I2S and digitalmic pins 10, 12, and 11 selected](/assets/m-1-audio-reactive-pin-settings.png)
 

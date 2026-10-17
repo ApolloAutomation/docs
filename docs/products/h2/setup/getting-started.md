@@ -18,7 +18,7 @@ If the device is in sleep mode, press one of the gold buttons on the back to wak
 
 After the ornament is awake, press the gold buttons (see image below) to play a pre-loaded song:
 
-* **Button 1:** Sleigh Bells
+* **Button 1:** Jingle Bells
 * **Button 2:** Rudolph the Red-Nosed Reindeer
 * **Button 3:** Let It Snow
 * **Button 4:** Blue Christmas

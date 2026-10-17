@@ -48,7 +48,7 @@ Click **Edit** on your device card and the screen flips into the configuration e
 The left pane is your config's table of contents. It groups everything into three buckets:
 
 * **Core configuration.** Foundational settings like the device name, Wi-Fi, the connection to Home Assistant, OTA updates, and the web server. For the Starter Kit these are all pre-configured. See [Core Components](core-components.md) for details on each.
-* **Components.** The things your device does: switches, sensors, lights. The default Starter Kit has the accessory power switch, the I²C bus, and the AHT10 temperature and humidity sensor. Use **\+ Add component** to add more.
+* **Components.** The things your device does: switches, sensors, lights. The default Starter Kit has the accessory power switch, the I²C bus, and the AHT20 temperature and humidity sensor (Device Builder lists it as **AHT10 Temperature+Humidity Sensor**, the ESPHome platform that drives AHT10, AHT20, and AHT30 chips). Use **\+ Add component** to add more.
 * **Automations.** Reactions that run on the device, like "when this button is pressed, turn that switch on". The Starter Kit ships with none by default.
 
 ![Device navigator expanding Core configuration, Components, and Automations to show what each section holds](../../../assets/esphome-device-builder-device-navigator.gif)
@@ -79,7 +79,7 @@ When you have finished making changes:
 
 ### Logs
 
-Click **Logs** from the info panel or the device card's three-dot menu to open a live stream of what the device is reporting. Click **Stop** when done.
+Click the **Logs** button (the terminal icon) on the device card to open a live stream of what the device is reporting. Click **Stop** when done.
 
 ![Opening the live Logs stream from the device card, then clicking Stop to pause it](../../../assets/esphome-device-builder-logs-start-stop.gif)
 

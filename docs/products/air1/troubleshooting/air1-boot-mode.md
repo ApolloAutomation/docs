@@ -20,7 +20,7 @@ description: Step by step guide for putting The AIR-1 In Boot Mode.
 
 ## Method 2: Boot and Reset Buttons
 
-1\. Unplug the device and locate the boot and reset buttons as shown in the image above.
+1\. Unplug the device and locate the boot and reset buttons as shown in the image below.
 
 2\. Plug it into your computer.
 

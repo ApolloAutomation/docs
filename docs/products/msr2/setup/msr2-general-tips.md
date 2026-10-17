@@ -8,7 +8,7 @@ description: Multiple helpful images for mounting, lux/rgb, and gate and zone vi
 
 ![MSR-2 case with the light sensor visible through the center vent outlined in red](/assets/20240514-123742.jpg)
 
-When mounting the MSR-2 be sure to position the device so that the two large holes are not covered. This allows more light to enter and will ensure better accuracy.
+When mounting the MSR-2, position it so the center vent slots (outlined in red above) are not covered. This lets more light reach the sensor and keeps the readings accurate.
 
 !!! warning "The RGB LED will trigger the Light sensor!"
 

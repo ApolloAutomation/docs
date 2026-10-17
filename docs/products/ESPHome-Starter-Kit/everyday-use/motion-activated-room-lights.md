@@ -84,7 +84,7 @@ You could make two automations, one to turn the light on and one to turn it off.
 
     [![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
-2. Click **Add Trigger**, search **motion**, and click **Motion detected**. Set its target to your **Motion Module** sensor. Open the trigger's menu (the three dots), choose **Rename**, and set the **Trigger ID** to `Detected`. (1)
+2. Click **Add Trigger**, search **motion**, and click **Motion detected**. Set its target to your **Motion Module** sensor. Open the trigger's menu (the three dots), choose **Edit ID**, and set the **Trigger ID** to `Detected`. (1)
 
     ![Adding a Motion detected trigger in Home Assistant, setting its Trigger ID to Detected, and targeting Motion Module](../../../assets/motion-activated-lights-detected.gif)
 

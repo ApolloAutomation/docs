@@ -109,7 +109,7 @@ To change it, click on **Config**, then **WiFi Setup**. In the **mDNS address** 
 
     Click on **Config**, then **AudioReactive**. Check **Enabled** then select **Generic I2S** for the Type.
 
-    For the pins, select **10 digitalmic** for Pin I2s SD, select **12 digitalmic A5** for Pin I2S WS, and select **11 digitalmic** for Pin I2S SCK and click **Save**.
+    For the pins, select **10 digitalmic** for Pin I2S SD, **12 digitalmic** for Pin I2S WS, and **11 digitalmic** for Pin I2S SCK, then click **Save**.
 
     ![WLED AudioReactive settings with Enabled checked, Generic I2S type, and digitalmic pins 10, 12, and 11](/assets/m-1-audio-reactive-pin-settings.png)
 

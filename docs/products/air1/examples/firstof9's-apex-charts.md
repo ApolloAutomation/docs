@@ -38,11 +38,9 @@ Now you need to be VERY careful. You are editing all of your dashboards but we c
 
 ![Raw configuration editor scrolled to the empty last line where the code gets pasted](/assets/air-1-dashboard-end.png)
 
-**Be sure to change the entity ID to match your device or else the card will not work.** You can find your entity ID by going to the ESPHome Device Builder and selecting the Edit option.
+**Be sure to change the entity IDs to match your device or else the card will not work.** The code below uses `downstairs_air_sensor` as the prefix (for example `sensor.downstairs_air_sensor_co2`). To find yours, go to **Settings → Devices & services → ESPHome**, select your AIR-1, click its CO2 sensor, then the settings cog, and look at the **Entity ID**, for example `sensor.apollo_air_1_ccaac4_co2`. The part between `sensor.` and `_co2` is your prefix. It uses underscores, not the hyphens shown in ESPHome Device Builder.
 
-![ESPHome Device Builder AIR-1 YAML with the device name line circled](/assets/air-1-id.png)
-
-The easiest way to change all of the entity IDs in the code is by using AI (ChatGPT etc.) or by using a code editor like Visual Studio Code (VSC). In VSC you can Find (ctrl+f) the old ID and Replace (select the small arrow to toggle open the Replace box) it with your ID. Now you are ready to copy the code into the Raw configuration editor. (See code below)
+The easiest way to change all of the entity IDs in the code is by using AI (ChatGPT etc.) or by using a code editor like Visual Studio Code (VSC). In VSC you can Find (ctrl+f) `downstairs_air_sensor` and Replace (select the small arrow to toggle open the Replace box) it with your ID. Now you are ready to copy the code into the Raw configuration editor. (See code below)
 
 VSC Find/Replace
 

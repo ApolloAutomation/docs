@@ -26,15 +26,15 @@ Watch our step by step video on installing the R PRO-1 using the Ceiling Mount. 
 
     If the mounts are not put on properly the R PRO-1 could be damaged!
 
-3\. Gently push the top mount labeled "TOP" into the pcb as shown below. Make sure the orientation is identical to the image below!
+4\. Gently push the top mount labeled "TOP" into the pcb as shown below. Make sure the orientation is identical to the image below!
 
 ![Ceiling mount piece labeled TOP pushed onto the top edge of the R PRO-1 PCB](/assets/r-pro-1-ceiling-box-top-mount.webp)
 
-4\. Gently push the bottom mount into the pcb as shown below. Make sure the orientation is identical to the image below!
+5\. Gently push the bottom mount into the pcb as shown below. Make sure the orientation is identical to the image below!
 
 ![Bottom ceiling mount piece pushed onto the R PRO-1 PCB edge below the LD2412 sensor](/assets/r-pro-1-ceiling-box-bottom-mount.webp)
 
-5\. The end result should look identical to the image below. You are now ready to install it inside of the ceiling mount.
+6\. The end result should look identical to the image below. You are now ready to install it inside of the ceiling mount.
 
 ![R PRO-1 PCB with both the TOP and bottom ceiling mount pieces attached](/assets/r-pro-1-ceiling-box-mounts-installed.webp)
 

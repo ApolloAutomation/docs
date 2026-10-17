@@ -14,19 +14,17 @@ The TEMP-1 comes with an optional food probe which can be used to monitor food t
 
 ![Food probe plug fully inserted into the 3.5mm port on the TEMP-1](/assets/temp-1-food-probe-fully-inserted.jpg)
 
-2\. Once inserted, proceed to step 3 unless you have a battery in it
+2\. Once inserted, press the reset button or unplug and replug your TEMP-1 so it detects the food probe (see the tip below), then continue to step 3.
 
 !!! tip "If you have it plugged into power you need to push the reset button."
 
-    The TEMP-1 looks for the food probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have it plugged in or power cycle your TEMP-1 to make it reliably use the new food temperature probe.
+    The TEMP-1 looks for the food probe when it boots and if it is not there then the sensor is marked as failed and will not report a temperature. You need to click the reset button if you have it plugged in or power cycle your TEMP-1 to make it reliably use the new food temperature probe.
 
 &nbsp;
 
 ![TEMP-1 with the food probe connected and its braided cable coiled around it](/assets/temp-1-food-probe-pic-1.jpg)
 
-3\. Go to the device page of your TEMP-1 in Home Assistant and choose probe "Food".
-
-![Home Assistant TEMP-1 Controls card with Food being chosen in the Select Probe menu](/assets/temp1b-food-probe-pic-1-1.png)
+3\. In the Homey app, open your TEMP-1's **Settings** and, under **Probes and offsets for TEMP-1 and TEMP-1B**, set **Select probe** to **Food**.
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 

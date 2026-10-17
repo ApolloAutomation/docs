@@ -4,8 +4,6 @@ description: Step by step guide for alerting outside the set range with the TEMP
 ---
 # TEMP-1B Alert Outside Temp Range Example
 
-######
-
 This will guide you through how to set up the built in alarm using the temperature probe in your freezer!
 
 1\. Place the temperature probe into your freezer (not the entire TEMP-1B, just the probe!) and then wait for it to normalize around 0 degrees F aka -18C.

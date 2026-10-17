@@ -18,13 +18,13 @@ description: How to disable Prevent Sleep and allow your Apollo device to sleep!
 
 ![Home Assistant Configuration card showing the Prevent Sleep toggle and Sleep Duration box](/assets/prevent-sleep-and-sleep-duration.png)
 
-3\. Type in the amount of minutes you want your sensor to sleep in the **Sleep Duration** box. Defaults to 5 minutes for some devices and longer for others. We recommend leaving the default values.
+3\. Type in how long you want your sensor to sleep in the **Sleep Duration** box. Check the unit next to the box: it is minutes on the AIR-1 (default 5), PLT-1 (default 5), and TEMP-1 (default 8), and hours on the BTN-1 (default 24), PLT-1B (default 12), and TEMP-1B (default 12). We recommend leaving the default values.
 
 !!! warning "Read this before turning off Prevent Sleep!"
 
     When "Prevent Sleep" is toggled off, your sensor will immediately begin sleeping. Please make sure you are ready to make this sensor sleep before toggling off prevent sleep.
 
-4\. When you are ready, toggle off **Prevent Sleep** and your sensor will go to sleep. It will wake up every 5 minutes, or on the interval you set in step 3. If you need to keep your sensor awake, head to our <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noreferrer nofollow noopener">OTA Awake helper tutorial</a>!
+4\. When you are ready, toggle off **Prevent Sleep** and your sensor will go to sleep. It will wake up on the Sleep Duration interval from step 3. If you need to keep your sensor awake, head to our <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noreferrer nofollow noopener">OTA Awake helper tutorial</a>!
 
 5\. You can wake your sensor by <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/wake-up-battery-sensor/" target="_blank" rel="noreferrer nofollow noopener">following this guide</a> or you can power cycle your device. If there is a battery in it, the battery will need to be removed or the reset button pressed.
 

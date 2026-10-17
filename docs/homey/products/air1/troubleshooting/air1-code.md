@@ -7,13 +7,13 @@ description: "Step by step guide for re-flashing the AIR-1 back to factory firmw
 
     This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
 
-If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
+If your device has already been added to Homey, please <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before continuing.
 
-1\. <a href="https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable. 1. Position the AIR-1 so that the USB-C port is facing you. On the left side of the USB-C port, locate a small opening to press the boot button (the right button).
+1\. <a href="https://wiki.apolloautomation.com/homey/products/air1/troubleshooting/air1-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
 
 ![AIR-1 case with a tool pointing at the boot button left of the USB-C port](/assets/air-1-boot-button.jpg)
 
-2\. Navigate to our installer page and click connect under Battery Firmware <a href="https://apolloautomation.github.io/AIR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo AIR-1 Installer</a>.
+2\. Navigate to our <a href="https://apolloautomation.github.io/AIR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo AIR-1 Installer</a> page.
 
 3\. Click the big "Connect" button.
 
@@ -39,4 +39,4 @@ If your device has already been connected to Home Assistant please <a href="http
 
     Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
 
-8\. Please <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and set up your sensor as a new device!
+8\. Please <a href="https://wiki.apolloautomation.com/homey/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">proceed to the getting started guide</a> and set up your sensor as a new device!

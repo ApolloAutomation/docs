@@ -14,7 +14,7 @@ description: Step by step guide for finding the IP address and the hostname of y
 
     <a href="https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-2\. Make sure you have already connected it to the same Wi-Fi network that your pc and phone are on <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/#connect-to-wi-fi" target="_blank" rel="noreferrer nofollow noopener">as shown here</a>.
+2\. Make sure you have already connected it to the same Wi-Fi network that your pc and phone are on <a href="https://wiki.apolloautomation.com/products/led1/setup/getting-started-led1/#connect-to-wi-fi" target="_blank" rel="noreferrer nofollow noopener">as shown here</a>.
 
 3\. Your LED-1 should be detected automatically. Select it, then click the **Config** tab in the top right corner.
 

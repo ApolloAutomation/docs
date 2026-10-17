@@ -38,4 +38,4 @@ With the header installed, these are the pins you can wire to. IO18 and IO19 can
 
     Brandon AKA SmartHomeSellout made this neat tutorial for how to connect a short LED strip to your MSR-2
 
-    <a href="https://wiki.apolloautomation.com/products/msr2/examples/gpio-header-control-an-led-strip/" target="_blank" rel="noreferrer nofollow noopener">GPIO LED Strip Tutorial</a><br>
+    <a href="https://wiki.apolloautomation.com/homey/products/msr2/examples/gpio-header-control-an-led-strip/" target="_blank" rel="noreferrer nofollow noopener">GPIO LED Strip Tutorial</a><br>

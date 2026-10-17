@@ -19,38 +19,38 @@ description: Frequently asked questions about the TEMP Pro-1 temperature sensor.
 
 * You can add the GPIO header and SCD40 CO2 sensor with the two mezzanine ports. It also includes a Sensirion port for a SEN55 and SEN6x, a QWIIC port and a DfRobot port.
 
-3\. **Is the TEMP Pro-1 weatherproof? Can I use it outdoors?**
+4\. **Is the TEMP Pro-1 weatherproof? Can I use it outdoors?**
 
 * The TEMP Pro-1 is primarily designed for indoor use, but components like the waterproof temp probe are suited for harsh conditions. The main body is not rated for outdoor use without additional protection.
 
-4\. **How does the TEMP Pro-1 connect to Home Assistant?**
+5\. **How does the TEMP Pro-1 connect to Home Assistant?**
 
 * The TEMP Pro-1 connects via Wi-Fi to ESPHome on Home Assistant, enabling data monitoring, automations, and alerts directly within Home Assistant.
 
-5\. **How often does the TEMP Pro-1 send sensor data?**
+6\. **How often does the TEMP Pro-1 send sensor data?**
 
 * The TEMP Pro-1 reporting frequency is adjustable in ESPHome but most things default to 60 seconds.
 
-6\. **Can I customize the TEMP Pro-1 functionality?**
+7\. **Can I customize the TEMP Pro-1 functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP Pro-1. Our <a href="https://github.com/ApolloAutomation/TEMP-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the TEMP Pro-1. Our <a href="https://github.com/ApolloAutomation/TEMP_PRO-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
-7\. **What are the RGB LED and piezo buzzer used for?**
+8\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like low moisture levels or high UV exposure.
+* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like the temperature or humidity going outside the Min/Max range you set (turn on Alarm Outside Temp Range or Alarm Outside Humidity Range).
 
-8\. **Is the TEMP Pro-1 compatible with other smart home platforms?**
+9\. **Is the TEMP Pro-1 compatible with other smart home platforms?**
 
 * While designed for Home Assistant via ESPHome, it may be compatible with other platforms using the <a href="https://esphome.io/components/api.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome API</a> or MQTT.
 
-9\. **Do I need coding knowledge to use the TEMP Pro-1?**
+10\. **Do I need coding knowledge to use the TEMP Pro-1?**
 
 * Basic knowledge of Home Assistant and ESPHome is helpful, but most users can utilize it out of the box. For advanced customization, YAML knowledge is recommended.
 
-10\. **Can I access data from the TEMP Pro-1 remotely?**
+11\. **Can I access data from the TEMP Pro-1 remotely?**
 
 * Yes, you can access sensor data remotely via the Home Assistant dashboard if your setup is configured for remote access.
 
-11\. **Can I use multiple TEMP Pro-1 sensors in one Home Assistant setup?**
+12\. **Can I use multiple TEMP Pro-1 sensors in one Home Assistant setup?**
 
-* Yes, you can add multiple TEMP Pro-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+* Yes, you can add multiple TEMP Pro-1 sensors, each appearing as a separate device, for comprehensive monitoring across multiple rooms, fridges, or spaces.

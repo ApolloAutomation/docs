@@ -30,10 +30,11 @@ wifi:
 
 ![ESPHome in the Home Assistant sidebar and the Edit button on an MSR-2 card circled](/assets/screenshot-2024-10-25-at-5-14-48-pm.png)
 
-2\.  Add the code below to your device's yaml file. Then select Save and press Install.
+2\. Add `power_save_mode: none` under the `wifi:` section of your device's YAML file (add a `wifi:` line if your file doesn't have one). Then select Save and press Install.
 
 ```yaml
-power_save_mode: none
+wifi:
+  power_save_mode: none
 ```
 
 ![MSR-2 YAML with power_save_mode: none added under wifi and the Save and Install buttons circled](/assets/screenshot-2024-10-25-at-5-25-10-pm.png)

@@ -26,6 +26,6 @@ description: Step by step guide for re-flashing the LED-1 back to factory firmwa
 
 ![ESP Flasher console reading Done! Flashing is complete after the write reaches 100 percent](/assets/m-1-reflash-completed.png)
 
-8\. The device is still in **boot mode** and needs to be power cycled. To reboot it, either unplug the power cable or press the **reset button** on the back of the device (the button on the right).
+8\. The device is still in **boot mode** and needs to be power cycled. To reboot it, either unplug the power cable or press the **reset button** labeled **RST** (the left button; the boot button **BT** is on the right).
 
-[Head to the Getting Started article to set up your M-1 as a new device!](https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1/){    .md-button .md-button--primary }
+[Head to the Getting Started article to set up your LED-1 as a new device!](/products/led1/setup/getting-started-led1.md){ .md-button .md-button--primary }
