@@ -43,7 +43,11 @@ description: >-
 
 ![Home Assistant Settings, Automations and scenes, Blueprints tab, then the Import blueprint button](/assets/btn-1-blueprint-manual-import.gif)
 
-2\. Copy <a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FPLT-1%2FPLT-1.yaml" target="_blank" rel="noreferrer nofollow noopener">this link</a> and paste it into the **Blueprint address** box and click **Preview** then click **Import blueprint**.
+2\. Copy the address below, paste it into the **Blueprint address** box, and click **Preview** then click **Import blueprint**.
+
+```text
+https://raw.githubusercontent.com/ApolloAutomation/Blueprints/refs/heads/main/PLT-1/PLT-1.yaml
+```
 
 ![Home Assistant Import a blueprint dialog, clicking Preview then Import blueprint (BTN-1 example shown)](/assets/btn-1-blueprint-auto-import.gif)
 
