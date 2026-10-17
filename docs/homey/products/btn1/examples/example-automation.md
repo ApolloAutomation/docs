@@ -68,7 +68,7 @@ Your BTN-1 can only report a double click, triple click, or hold while it is awa
 
     The BTN-1 ships with **Prevent sleep** on, so it stays connected and reports every press. If you turn it off to save battery, the BTN-1 sleeps between presses. Homey receives the press that wakes it as a **Click** of that button, whatever press type you used, and only after the BTN-1 has reconnected, at least 5 seconds later. It then goes back to sleep.
 
-    To use every press type, open the device in Homey, go to its settings, and turn on **Prevent sleep** under **Battery settings (if battery is present)**. Homey can only change this setting while the BTN-1 is awake, so press its reset button first. [How to wake up your sensor](../../battery-sensors/wake-up-battery-sensor/) shows where the reset button is; skip that page's last step, which uses Home Assistant.
+    To use every press type, open the device in Homey, go to its **Settings**, and check **Prevent sleep** under **Battery settings (if battery is present)**. Homey can only change this setting while the BTN-1 is awake, so wake it first with its reset button. [How to wake up your sensor](../../battery-sensors/wake-up-battery-sensor/) shows where the reset button is and how to keep the BTN-1 awake, and [Prevent sleep](../../additional-info/prevent-sleep/) explains what each sleep setting does on the BTN-1.
 
 ## Test your flows
 
