@@ -92,6 +92,8 @@ plugins:
   - redirects:
       redirect_maps:
         # Wiki cleanup round 2: orphan Homey copies of Home Assistant pages and the old contact page
+        'products/general/mmwave-presence-sensor-comparison.md': 'products/general/comparisons.md'
+        'homey/products/general/mmwave-presence-sensor-comparison.md': 'homey/products/general/comparisons.md'
         'homey/products/msr2/examples/using-msr-2-buzzer.md': 'homey/products/msr2/introduction.md'
         'homey/products/mtr1/examples/using-mtr-1-buzzer.md': 'homey/products/mtr1/introduction.md'
         'homey/products/mtr1/examples/mtr-1-home-assistant-dashboard-examples.md': 'homey/products/mtr1/introduction.md'
