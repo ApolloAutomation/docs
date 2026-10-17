@@ -16,11 +16,11 @@ Credit to Ellude on our Discord, who worked out the model and fitted the numbers
 
 The predicted sensors and their tuning controls are disabled by default, so they stay out of the way for anyone who doesn't need them. To enable one:
 
-1\. Open **Settings** and then **Devices & Services**.
-
-2\. Select the **ESPHome** integration, then your AIR-1 device.
+1\. Go to **Settings → Devices & services** and select the **ESPHome** integration. The button below opens the ESPHome integration directly.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
+2\. Select your AIR-1 device.
 
 3\. Scroll down and select **entities not shown**.
 

@@ -10,11 +10,11 @@ This guide will walk you through using the buzzer on your Apollo Device.
 
     This might still be called a "Service Call" depending on the version of ESPHome firmware your device is using!
 
-1\. Open Home Assistant and navigate to developer tools in the bottom left.
-
-2\. Click Actions at the top of the page.
+1\. Open Home Assistant and navigate to **Developer tools** in the bottom left (**Settings → Tools** in Home Assistant 2026.8 and newer). The button below opens the **Actions** tab in either version, so you can skip step 2.
 
 [![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
+
+2\. Click Actions at the top of the page.
 
 3\. Select your device's buzzer in the Action box by typing in "buzzer" and selecting it.
 
