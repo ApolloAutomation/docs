@@ -10,7 +10,9 @@ By default the TEMP-1 reports its **Temperature Probe** every 60 seconds. You ca
 
     The update interval only changes how often the probe reports while the device is awake. If you turn **Prevent Sleep** off, the TEMP-1 deep-sleeps between wake cycles and reports when it wakes instead. See [Sensor Definitions](temp1-sensor-definitions.md) for how sleep and reporting work together. You can go as low as `1s`, but every reading is written to Home Assistant, so a 1 second interval floods your database and grows it quickly.
 
-1\. Select the <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">ESPHome Builder</a> in the sidebar then click "EDIT" on your TEMP-1.
+1\. Select the <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">ESPHome Builder</a> in the sidebar then click "EDIT" on your TEMP-1. If it isn't in your sidebar, the button below opens the app.
+
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 ![ESPHome Device Builder card for the Apollo TEMP-1 with the Edit button clicked](/assets/temp-1-click-edit-esphome-device-builder.png)
 

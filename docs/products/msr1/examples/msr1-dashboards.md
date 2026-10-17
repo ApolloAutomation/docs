@@ -6,6 +6,10 @@ description: "Example Home Assistant dashboard cards for the MSR-1, including an
 
 **Radar Scatter Plot With Apex Charts For MSR-1**
 
+This card installs from HACS, so add it there first:
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=RomRider&repository=apexcharts-card&category=plugin)
+
   
 ![ApexCharts scatter plot card of MSR-1 radar detection, moving, and still distances over time](/assets/jpe-apex-charts-3.png)
 
@@ -59,6 +63,10 @@ hours_to_show: 24
 ```
 
 Custom: Plotly Graph Card
+
+This card installs from HACS, so add it there first:
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
 
 ![Plotly graph card of Bedroom CO2 in ppm over 24 hours](/assets/plotly-co2-graph.png)
 

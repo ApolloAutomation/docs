@@ -10,7 +10,7 @@ description: >-
 
 1\. Click the Import Blueprint button below and then click **Open link**.
 
-<a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FPLT-1%2FPLT-1.yaml" target="_blank" rel="noreferrer noopener">     <img alt="Import Blueprint" src="https://my.home-assistant.io/badges/blueprint_import.svg" />   </a>
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FPLT-1%2FPLT-1.yaml)
 
 2\. Click **Preview** then click **Import blueprint**.
 
@@ -39,11 +39,17 @@ description: >-
 
 ## Manual Import
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/automation/dashboard" target="_blank" rel="noreferrer nofollow noopener">automations page</a> and click on **Blueprints** in the top right then select **Import Blueprint**.
+1\. Head to the automations page (**Settings → Automations & scenes**) and click on **Blueprints** in the top right then select **Import Blueprint**.
+
+[![Open your Home Assistant instance and show your blueprints.](https://my.home-assistant.io/badges/blueprints.svg)](https://my.home-assistant.io/redirect/blueprints/)
 
 ![Home Assistant Settings, Automations and scenes, Blueprints tab, then the Import blueprint button](/assets/btn-1-blueprint-manual-import.gif)
 
-2\. Copy <a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FPLT-1%2FPLT-1.yaml" target="_blank" rel="noreferrer nofollow noopener">this link</a> and paste it into the **Blueprint address** box and click **Preview** then click **Import blueprint**.
+2\. Copy the address below, paste it into the **Blueprint address** box, and click **Preview** then click **Import blueprint**.
+
+```text
+https://raw.githubusercontent.com/ApolloAutomation/Blueprints/refs/heads/main/PLT-1/PLT-1.yaml
+```
 
 ![Home Assistant Import a blueprint dialog, clicking Preview then Import blueprint (BTN-1 example shown)](/assets/btn-1-blueprint-auto-import.gif)
 

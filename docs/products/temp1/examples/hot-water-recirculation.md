@@ -112,7 +112,7 @@ Donovan's whole system is one blueprint. Import it, pick your entities, set your
 
 1\. Click the button below, then click **Open link**.
 
-<a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FTEMP-1%2Fhot-water-recirculation.yaml" target="_blank" rel="noreferrer noopener"><img alt="Import Blueprint" src="https://my.home-assistant.io/badges/blueprint_import.svg" /></a>
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FTEMP-1%2Fhot-water-recirculation.yaml)
 
 2\. Click **Preview**, then **Import blueprint**.
 

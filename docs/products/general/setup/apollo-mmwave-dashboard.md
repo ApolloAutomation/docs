@@ -275,9 +275,13 @@ actions:
             {{ calibration.changed }} thresholds changed.
 ```
 
-To use it, create a new automation, open the three-dot menu, choose **Edit in YAML**, and paste it in. Then replace `binary_sensor.apollo_msr_2_abc123_radar_target` with your radar's **Radar Target** sensor, and `your_device_id` with your radar. To fill in the device without looking up its ID, switch the action to the visual editor and pick your radar under **Radar Device**. If the action is refused before it starts (the radar is offline, for example), the automation stops with an error at that step instead of sending the notification.
+To use it, create a new automation under **Settings → Automations & scenes**, open the three-dot menu, choose **Edit in YAML**, and paste it in. Then replace `binary_sensor.apollo_msr_2_abc123_radar_target` with your radar's **Radar Target** sensor, and `your_device_id` with your radar. To fill in the device without looking up its ID, switch the action to the visual editor and pick your radar under **Radar Device**. If the action is refused before it starts (the radar is offline, for example), the automation stops with an error at that step instead of sending the notification.
 
-Each call calibrates one radar. Two related actions round it out: `apollo_mmwave.cancel_calibration` stops a running job, and `apollo_mmwave.restore_gate_thresholds` does what **Undo** does. The card offers only the newest saved thresholds, while the action can restore an older set with its `snapshot_id` field. **Developer Tools → Actions** lists every field.
+[![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
+
+Each call calibrates one radar. Two related actions round it out: `apollo_mmwave.cancel_calibration` stops a running job, and `apollo_mmwave.restore_gate_thresholds` does what **Undo** does. The card offers only the newest saved thresholds, while the action can restore an older set with its `snapshot_id` field. **Settings → Tools → Actions** lists every field, and the button below opens it with `apollo_mmwave.calibrate_gates` selected.
+
+[![Open your Home Assistant instance and show your action tools with a specific action selected.](https://my.home-assistant.io/badges/tools_perform_action.svg)](https://my.home-assistant.io/redirect/tools_perform_action/?service=apollo_mmwave.calibrate_gates)
 
 !!! warning "Only automate it for a room you know is empty"
 
@@ -290,8 +294,13 @@ Each call calibrates one radar. Two related actions round it out: `apollo_mmwave
 The **Calibrate with empty room** button is disabled when the card cannot run a calibration. The card says why:
 
 - **Radar is offline. Calibration needs the radar online and its gate entities enabled.** Check that the radar is powered and shows as online under **Settings → Devices & services → ESPHome**. If it is online, open your sensor's device page from that list and check that the **Radar Engineering Mode** switch and the gate threshold and gate energy entities are enabled. A disabled entity is listed under **+ N entities not shown**: select it, open its settings (the cog), turn on **Enabled**, and click **Update**.
+
+    [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
 - **Background correction is running on the LD2412. Wait for its status to turn off.** (R PRO-1) Wait for **Background Correction Running** to turn off.
 - **Apollo mmWave is still loading...** The integration is starting or reloading, and the card keeps trying on its own. If it changes to **Apollo mmWave is not loaded, so calibration is unavailable.**, press **Retry**. If that keeps happening, check **Settings → Devices & services** for an error on the Apollo mmWave integration.
+
+    [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=apollo_mmwave)
 
 If the button works but the card answers with a line starting **Calibration failed:**, the rest of the line says what went wrong, and **Try again** runs it again once you have fixed it. The common ones:
 
@@ -313,6 +322,8 @@ If Home Assistant restarted while thresholds were being written, or the radar we
 !!! tip "Keep Radar Engineering Mode out of your history"
 
     While Radar Engineering Mode is on, the radar updates its 18 (MSR-1 and MSR-2) or 28 (R PRO-1) gate energy sensors about once a second, and Home Assistant's recorder, the part that saves history, stores every update. Turning the mode off when you're done avoids this. If you like to leave it on to watch the chart, add the block below to your `configuration.yaml` (the **File editor** app is one way to open it), then restart Home Assistant. If the file already has a `recorder:` section, add the `exclude:` lines to it instead of adding a second `recorder:` key.
+
+    [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=core_configurator)
 
     ```yaml title="configuration.yaml"
     recorder:

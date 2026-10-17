@@ -8,6 +8,8 @@ description: "Tune the MSR-1 mmWave radar over Bluetooth with the HLKRadarTool p
 1\. Download the HLKRadarTool app for either [Android ](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&hl=en_US≷=US)or [Apple](https://apps.apple.com/us/app/hlkradartool/id1638651152)  
   
 2\. Ensure the mmWave radar you want to tune has Radar Control Bluetooth turned on. Home Assistant > Settings > Devices & services > ESPHome Devices > Select Device > Scroll down and toggle on Radar Control Bluetooth  
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
   
 ![Radar Control Bluetooth switch turned on in the MSR-1 Home Assistant device page, outlined in red](/assets/radar-control-bluetooth.png)  
   

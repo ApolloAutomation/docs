@@ -40,15 +40,19 @@ A blueprint is a fill-in-the-blanks automation. Home Assistant ships one called 
 
 <div class="annotate" markdown>
 
-1. Open [Settings → Automations & scenes → Blueprints](https://my.home-assistant.io/redirect/blueprints/) and look for **Motion-activated Light**. If it's there, skip to step 3. (1)
+1. Open **Settings → Automations & scenes → Blueprints** and look for **Motion-activated Light**. If it's there, skip to step 3. (1)
+
+    [![Open your Home Assistant instance and show your blueprints.](https://my.home-assistant.io/badges/blueprints.svg)](https://my.home-assistant.io/redirect/blueprints/)
 
     ![Home Assistant Blueprints list with Motion-activated Light selected, showing its Motion Sensor, Light, and Wait time fields](../../../assets/motion-activated-lights-select-blueprint.gif)
 
-2. If it's missing, click **Import Blueprint** in the bottom right, paste the URL below, then click **Preview** and **Import Blueprint**.
+2. If it's missing, click **Import Blueprint** in the bottom right, paste the URL below, then click **Preview** and **Import Blueprint**. The button under the URL opens the import dialog with it filled in.
 
     ```text
     https://github.com/home-assistant/core/blob/dev/homeassistant/components/automation/blueprints/motion_light.yaml
     ```
+
+    [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2Fhome-assistant%2Fcore%2Fdev%2Fhomeassistant%2Fcomponents%2Fautomation%2Fblueprints%2Fmotion_light.yaml)
 
 3. Click **Create Automation** on the blueprint, then fill in the three fields:
     * **Motion Sensor** → your kit's **Motion Module** sensor.
@@ -76,7 +80,10 @@ You could make two automations, one to turn the light on and one to turn it off.
 
 <div class="annotate" markdown>
 
-1. Open [Settings → Automations & scenes](https://my.home-assistant.io/redirect/automations/), click **Create Automation**, then **Create new automation**.
+1. Open **Settings → Automations & scenes**, click **Create Automation**, then **Create new automation**.
+
+    [![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
+
 2. Click **Add Trigger**, search **motion**, and click **Motion detected**. Set its target to your **Motion Module** sensor. Open the trigger's menu (the three dots), choose **Rename**, and set the **Trigger ID** to `Detected`. (1)
 
     ![Adding a Motion detected trigger in Home Assistant, setting its Trigger ID to Detected, and targeting Motion Module](../../../assets/motion-activated-lights-detected.gif)

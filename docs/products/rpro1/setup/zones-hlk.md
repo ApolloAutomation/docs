@@ -22,7 +22,9 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your R PRO-1 and scroll down until you see LD2450 Bluetooth.
+1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) then select your R PRO-1 and scroll down until you see LD2450 Bluetooth.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![LD2450 Bluetooth toggle switched on in the Home Assistant Configuration card, highlighted](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
 
@@ -66,7 +68,9 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
 
-3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. \*\* \*\* Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_r\_pro\_1\_eth\_593904", with six random characters at the end.
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
+
+3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. \*\* \*\* Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to **Settings → Devices & services → ESPHome**, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_r\_pro\_1\_eth\_593904", with six random characters at the end.
 
 <iframe src="/snippets/rpro1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
 
@@ -94,7 +98,9 @@ The same HLKRadarTool app is used for both sensors.
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your R PRO-1 and scroll down until you see **LD2412 Bluetooth**. Toggle it on.
+1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) then select your R PRO-1 and scroll down until you see **LD2412 Bluetooth**. Toggle it on.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![LD2412 Bluetooth toggle being switched on in the R PRO-1 Configuration card in Home Assistant](/assets/r-pro-1-toggle-on-ld2412-bluetooth.gif)
 
@@ -126,7 +132,7 @@ The same HLKRadarTool app is used for both sensors.
 
 ![HLKRadarTool Settings screen with the LD2412 Detection range slider set to a start and end gate](/assets/r-pro-1-ld2412-detection-range.gif)
 
-6\. To fine-tune which distances trigger detection, head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>, select your R PRO-1, and use the gate sensitivity sliders on the device page.
+6\. To fine-tune which distances trigger detection, head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**), select your R PRO-1, and use the gate sensitivity sliders on the device page.
 
 - **Raise** a gate's sensitivity to make it harder to trigger at that distance (useful for ignoring a fan, HVAC vent, or a window where cars pass).
 - **Lower** a gate's sensitivity to make it more sensitive at that distance (useful for reliably detecting someone sitting still in a chair).
@@ -135,5 +141,5 @@ The same HLKRadarTool app is used for both sensors.
 
 7\. Tap **Settings** at the top of the app and set the **Unmanned Duration**. This controls how many seconds the sensor waits after it stops detecting before it reports "no one present." The default is 10 seconds — increase it if you're getting false "nobody home" readings in your space. In Home Assistant, this same setting is called **LD2412 Timeout**.
 
-8\. Head back to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>, select your R PRO-1, and toggle **LD2412 Bluetooth** back off. Leaving Bluetooth on increases power consumption and can interfere with nearby Bluetooth devices.
+8\. Head back to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**), select your R PRO-1, and toggle **LD2412 Bluetooth** back off. Leaving Bluetooth on increases power consumption and can interfere with nearby Bluetooth devices.
 

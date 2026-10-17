@@ -58,4 +58,6 @@ Apollo mmWave sensors report frequently by design, which can cause internal rada
 
 3\. Save `configuration.yaml` and restart Home Assistant (**Settings → System → Restart**).
 
+[![Open your Home Assistant instance and show the system dashboard.](https://my.home-assistant.io/badges/system_dashboard.svg)](https://my.home-assistant.io/redirect/system_dashboard/)
+
 4\. Open **Activity** in Home Assistant to confirm the noisy entities no longer appear.

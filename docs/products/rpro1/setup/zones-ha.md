@@ -24,7 +24,9 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
 
-3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_r\_pro\_1\_eth\_593904", with six random characters at the end.
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
+
+3\. Enter your device’s full name and optionally customize the names of the three zones using the tool below. Then click **Generate YAML** and **Copy YAML.**<br>If you're unsure of your device name, go to **Settings → Devices & services → ESPHome**, select your device, and look for the full name. Unless you’ve renamed it, it will likely be something like "apollo\_r\_pro\_1\_eth\_593904", with six random characters at the end.
 
 <iframe src="/snippets/rpro1-plotly-yaml-generator.html" width="100%" height="700" style="border: none;"></iframe>
 
@@ -38,7 +40,9 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 ![Plotly card showing R PRO-1 target positions, the radar coverage cone, and three zones](/assets/r-pro-1-plotly-graph-image.png)
 
-6\. Head to the [ESPHome Integrations page](http://homeassistant.local:8123/config/integrations/integration/esphome "Click me to go to the ESPHome integrations page")
+6\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**).
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 7\. Click device as shown in the image below
 
@@ -98,7 +102,9 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 ## LD2412 Configuration
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on "1 device" below the Apollo R PRO-1.
+1\. Go to **Settings → Devices & services → ESPHome** and click **1 device** below the Apollo R PRO-1.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![Red arrow on the 1 device link under Apollo R PRO-1 in the Home Assistant ESPHome integration](/assets/select-r-pro-1-device.png)
 

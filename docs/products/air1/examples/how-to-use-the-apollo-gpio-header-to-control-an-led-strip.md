@@ -75,6 +75,8 @@ The AIR-1 knows nothing about the strip until you tell it how many LEDs there ar
 
 1.  Open the **ESPHome Device Builder** app, find your AIR-1, and click **Edit**.
 
+    [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+
     ![The ESPHome Device Builder editor open on an Apollo device configuration](/assets/gpio-led-esphome-edit.webp){ width="480" }
 
 2.  Add the block below at the bottom of the file, flush with the left margin so `light:` lines up with `packages:` and `wifi:`. Set `num_leds` to the number of LEDs on your strip, and change `pin` if you wired to a different port.

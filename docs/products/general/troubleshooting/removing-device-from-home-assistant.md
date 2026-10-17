@@ -12,7 +12,9 @@ This will cover how to remove an Apollo device from Home Assistant
 
     This step is only necessary for advanced users who added the device to the ESPHome device builder to edit the yaml and customize the device. Please skip to the next step if you are only using the ESPHome or Apollo Automation integration!
 
-1\. Navigate to Home Assistant and <a href="http://homeassistant.local:8123/5c53de3b_esphome/ingress" target="_blank" rel="noreferrer nofollow noopener">open your ESPHome Device Builder</a> app.
+1\. Navigate to Home Assistant and open your **ESPHome Device Builder** app.
+
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 ![ESPHome Builder selected in the Home Assistant sidebar, showing the ESPHome Device Builder dashboard](/assets/esphome-device-builder-addon-image.png)
 
@@ -22,6 +24,8 @@ This will cover how to remove an Apollo device from Home Assistant
 
 ## ESPHome Integration
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>. Next to the device you would like to remove, click the three dots and then "Delete".
+1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**). Next to the device you would like to remove, click the three dots and then "Delete".
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![Deleting an H-1 from the ESPHome integration page in Home Assistant and confirming Delete](/assets/delete-device-from-esphome-integration-gif.gif)
