@@ -83,7 +83,7 @@ Click the **Logs** button (the terminal icon) on the device card to open a live 
 
 ![Opening the live Logs stream from the device card, then clicking Stop to pause it](../../../assets/esphome-device-builder-logs-start-stop.gif)
 
-Pop them open when something looks off, or just to watch sensor readings come in.
+Pop them open when something looks off, or to watch sensor readings come in.
 
 ### Next Steps
 

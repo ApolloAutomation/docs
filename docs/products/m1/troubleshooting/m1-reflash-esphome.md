@@ -8,6 +8,8 @@ description: Step by step guide for reflashing the M-1 with the hub75-studio ESP
 
     All M-1 units currently being sold are Rev6. On the <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">hub75-studio installer</a>, select the **Rev6** firmware before clicking **Connect**.
 
+You'll put the controller into boot mode and reflash it with the hub75-studio ESPHome firmware from your browser.
+
 1\. Plug a USB-C cable that supports power and data into your computer.
 
 2\. Push and hold the boot button (the left button) on the M-1 controller. While still holding the button, plug the USB-C cable into the M-1, then release the button.

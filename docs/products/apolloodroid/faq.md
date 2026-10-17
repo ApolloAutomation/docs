@@ -5,7 +5,7 @@ description: Apollo Odroid FAQ.
 
 1\. **What is the Apollo Odroid?**
 
-The Apollo Odroid is a plug-and-play device pre-configured with Home Assistant OS. It’s designed to simplify the setup of your smart home by providing an out-of-the-box solution for home automation, running on the powerful ODROID-M1S platform.
+The Apollo Odroid is a plug-and-play device pre-configured with Home Assistant OS. It’s designed to simplify the setup of your smart home by providing an out-of-the-box solution for home automation, running on the ODROID-M1S platform.
 
 2\. **What hardware does the Apollo Odroid include?**
 
@@ -19,11 +19,11 @@ The Apollo Odroid comes equipped with:
 
 •	USB-C power supply (USA plug)
 
-•	Ethernet cable for easy network connection
+•	Ethernet cable for your network connection
 
 3\. **How do I set up the Apollo Odroid?**
 
-* Simply plug in the device using the included USB-C power supply and Ethernet cable. Once powered on, connect it to your local network, access Home Assistant via your web browser, and begin configuring your smart home devices. No flashing or technical setup is required.
+* Plug in the device using the included USB-C power supply and Ethernet cable. Once powered on, connect it to your local network, access Home Assistant via your web browser, and begin configuring your smart home devices. No flashing or technical setup is required.
 
 4\. **Is this device cloud-dependent?**
 
@@ -59,4 +59,4 @@ The Apollo Odroid comes equipped with:
 
 12\. **How does the Apollo Odroid compare to other smart home hubs?**
 
-* The Apollo Odroid is unique because it offers local control, requires no cloud or subscription services, and runs on the powerful Home Assistant platform, providing unmatched flexibility and control over your smart home setup. Plus, it’s completely open-source and can be customized to fit your needs.
+* The Apollo Odroid is unique because it offers local control, requires no cloud or subscription services, and runs on the Home Assistant platform, providing unmatched flexibility and control over your smart home setup. Plus, it’s completely open-source and can be customized to fit your needs.

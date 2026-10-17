@@ -20,7 +20,7 @@ This article will guide you through a simple calibration of your CO<sub>2</sub> 
 
 *Shown with an AIR-1; set your MSR-2 outdoors the same way.*
 
-2\. Go to your Home Assistant dashboard and hit the letter "e" - It will pop up with an entity filter then type in "Calibrate CO<sub>2</sub>" and select the correct device.
+2\. Go to your Home Assistant dashboard and hit the letter "e". It will pop up with an entity filter then type in "Calibrate CO<sub>2</sub>" and select the correct device.
 
 !!! tip "Hint"
 

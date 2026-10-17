@@ -10,6 +10,8 @@ description: Guide for setting up and using the prevent sleep toggle with the TE
 
     The temperature offsets needed will be much lower for your sensors as the microcontroller will not put off as much heat when it is sleeping and then waking for short periods to report the sensor values.
 
+You'll set how long your sensor sleeps, then turn off **Prevent Sleep** so it can start sleeping.
+
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
 
 2\. Click on the name "1 device" below your Apollo device's name.

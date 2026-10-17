@@ -89,7 +89,7 @@ description: Frequently asked questions about the R PRO-1 PoE mmWave sensor.
 
 21\. **What makes the R PRO-1 stand out from other motion sensors?**
 
-* The R PRO-1 is the only dual mmWave sensor with PoE and ability to integrate with multiple smart home platforms seamlessly. It combines the MSR-2's ability to detect still detection perfectly and the MTR-1's ability to detect up to three targets in three zones!
+* The R PRO-1 is the only dual mmWave sensor with PoE and ability to integrate with multiple smart home platforms. It combines the MSR-2's ability to detect still detection perfectly and the MTR-1's ability to detect up to three targets in three zones!
 
 22\. **What is the warranty for the R PRO-1?**
 

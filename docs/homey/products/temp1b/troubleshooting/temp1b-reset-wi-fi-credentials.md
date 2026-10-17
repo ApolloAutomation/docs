@@ -4,6 +4,8 @@ description: "Step by step guide for resetting the Wi-Fi Credentials on your TEM
 ---
 # Reset Wi-Fi Credentials on your TEMP-1B
 
+Follow these steps to clear your device's saved Wi-Fi credentials so it broadcasts its hotspot again and you can enter new Wi-Fi details.
+
 1\. Plug the device into power.
 
 2\. Long press the Boot button for 10 seconds

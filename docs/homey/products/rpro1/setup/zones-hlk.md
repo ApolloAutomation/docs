@@ -10,7 +10,7 @@ description: "Tutorial for R PRO-1 HLKRadarTool app Zone Configuration."
 
     Some steps below require opening your device's web server in a browser. To find your address:
 
-    1. In Homey, open your R PRO-1 device and note the last 6 characters of its name — for example, **Apollo R_PRO-1 353fd4** gives you `353fd4`.
+    1. In Homey, open your R PRO-1 device and note the last 6 characters of its name. For example, **Apollo R_PRO-1 353fd4** gives you `353fd4`.
     2. Check whether you set it up over **WiFi** or **Ethernet**.
     3. Build your URL:
         - WiFi: `http://apollo-r-pro-1-w-353fd4.local/`
@@ -34,6 +34,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
+Follow these steps to turn on the LD2450's Bluetooth and set up its zones in the HLKRadarTool app.
+
 1\. Open your R PRO-1's web server (see address tip above), scroll down until you see **LD2450 Bluetooth**, and toggle it on.
 
 ![Device Configuration panel with the LD2450 Bluetooth toggle switched on and highlighted](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
@@ -52,13 +54,13 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ![HLKRadarTool app LD2450 zone map with the Set button highlighted in the top right](/assets/r-pro-1-hlk-app-select-set.png)
 
-4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit** — you should see a confirmation message: **"Setup successfully."**
+4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit**. You should see a confirmation message: **"Setup successfully."**
 
 !!! tip "There are three ways to use your R PRO-1!"
 
-    You can use any of these three choices to control your R PRO-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disables multi-zone area detection and just tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
+    You can use any of these three choices to control your R PRO-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disables multi-zone area detection and tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
 
-    Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
+    Disabled allows you to use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
 ![HLKRadarTool app with Area Detection selected, Areas 1, 2, and 3 toggled on, and the Submit button](/assets/r-pro-1-hlk-app-setup-zones.png)
 
@@ -126,7 +128,7 @@ The same HLKRadarTool app is used for both sensors.
 
 ![Animation of opening the R PRO-1 web server and scrolling to the LD2412 gate threshold sliders](/assets/r-pro-1-ld2412-gate-sliders-webserver.gif)
 
-7\. Tap **Settings** at the top of the app and set the **Unmanned Duration**. This controls how many seconds the sensor waits after it stops detecting before it reports "no one present." The default is 10 seconds — increase it if you're getting false "nobody home" readings in your space. In the Apollo web server, this same setting is called **LD2412 Timeout**.
+7\. Tap **Settings** at the top of the app and set the **Unmanned Duration**. This controls how many seconds the sensor waits after it stops detecting before it reports "no one present." The default is 10 seconds. Increase it if you're getting false "nobody home" readings in your space. In the Apollo web server, this same setting is called **LD2412 Timeout**.
 
 8\. Head back to your R PRO-1's web server and toggle **LD2412 Bluetooth** back off. Leaving Bluetooth on increases power consumption and can interfere with nearby Bluetooth devices.
 

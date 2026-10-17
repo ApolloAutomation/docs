@@ -4,6 +4,8 @@ description: Step by step tutorial for adding the Articulating Stand addon to th
 ---
 # Adding Articulating Stand To MTR-1
 
+You'll swap the back of your sensor for the articulating stand backplate, then seat the stand's ball in its mount.
+
 1\. Unplug your MTR-1 from power and remove the stand if attached.
 
 ![Back of the MTR-1 with the stand still attached beside the USB-C port](/assets/mtr-1-add-co2-pic-1.jpg)

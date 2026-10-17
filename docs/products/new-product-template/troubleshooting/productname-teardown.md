@@ -8,6 +8,8 @@ description: >-
 
 ## Disassembly
 
+You'll unplug the pump, remove its lid, and detach the sensor connectors and tubes.
+
 !!! danger "Drain all liquid from the PUMP-1 before disassembling!"
 
     Ensure the PUMP-1 is fully drained of liquid before removing any tubes. Failure to do so may result in damage to the unit.
@@ -20,7 +22,7 @@ description: >-
 
 ![Pulling the two JST sensor connectors out of the open PUMP-1 with needle nose pliers](/assets/pump-1-remove-jst-sensor-connectors-webp.webp)
 
-3\. Detach both the inlet and outlet tubes by pinching near the connection point and twisting gently while pulling - this makes removal much easier.
+3\. Detach both the inlet and outlet tubes by pinching near the connection point and twisting gently while pulling. This makes removal much easier.
 
 ![Pinching and twisting to pull the inlet and outlet tubes off the PUMP-1](/assets/pump-1-remove-tubes-webp.webp)
 

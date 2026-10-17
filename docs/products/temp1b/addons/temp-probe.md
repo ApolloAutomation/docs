@@ -6,7 +6,7 @@ description: Step by step guide for installing and using the optional Temp Probe
 
 The TEMP-1B comes with an optional temp probe which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc. It includes a protected cable but the TEMP-1B itself needs to stay in a cool environment.
 
-1\. To use your temp probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
+1\. To use your temp probe, take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
 ![Temp probe plug being inserted into the 3.5mm port on the TEMP-1B](/assets/temp-probe-insert-1.jpg)
 

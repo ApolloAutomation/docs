@@ -64,11 +64,11 @@ description: "Common MSR-1 questions answered: which sensors are inside, what th
 
 16\. **How do I set up automations with the MSR-1?**
 
-* Automations can be easily configured in Home Assistant using ESPHome. For example, you can automate lights to turn on when motion is detected or trigger a fan when CO2 levels rise. The sensor data can be used in combination with other Home Assistant devices for more complex automations.
+* Automations can be configured in Home Assistant using ESPHome. For example, you can automate lights to turn on when motion is detected or trigger a fan when CO2 levels rise. The sensor data can be used in combination with other Home Assistant devices for more complex automations.
 
 17\. **What is the power source for the MSR-1?**
 
-* The MSR-1 is powered via USB-C. Simply plug it into a standard 5V USB power adapter, and you’re good to go.
+* The MSR-1 is powered via USB-C. Plug it into a standard 5V USB power adapter, and you’re good to go.
 
 18\. **What is the reporting interval for the MSR-1 sensors?**
 

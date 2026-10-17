@@ -4,6 +4,8 @@ description: Adding Optional GPIO Header to AIR-1.
 ---
 # Adding GPIO Header to AIR-1
 
+You'll open the case, attach the GPIO Header to the mezzanine connector on the board, and close it up in the new lid that came with the addon.
+
 1\. Unplug your AIR-1 from power and lift the top of the case or "lid".
 
 ![AIR-1 in its white case with the lid on and the USB-C port facing forward](/assets/air-1-add-co2-pic-1.jpg)![Fingers lifting one side of the AIR-1 lid](/assets/air-1-add-co2-pic-2.jpg)![AIR-1 lid lifted, showing the circuit board inside the case](/assets/air-1-add-co2-pic-3.jpg)

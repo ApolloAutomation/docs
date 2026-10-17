@@ -28,6 +28,8 @@ IO2, IO4, IO6, and IO7 are free for LED data, and you can drive more than one st
 
 ## Attaching the GPIO Header
 
+You'll seat the GPIO Header on your sensor's mezzanine connector, then fit the blue back plate that came with the addon.
+
 1.  Unplug the MSR-2 from power and pull the back plate off.
 
     ![MSR-2 with the back plate being lifted away](/assets/gpio-led-msr2-backplate-off-1.webp){ width="360" } ![MSR-2 PCB exposed with the back plate removed](/assets/gpio-led-msr2-backplate-off-2.webp){ width="200" }
@@ -45,6 +47,8 @@ IO2, IO4, IO6, and IO7 are free for LED data, and you can drive more than one st
     ![Blue GPIO back plate being fitted to the MSR-2](/assets/gpio-led-msr2-gpio-backplate.webp){ width="200" }
 
 ## Wiring the strip
+
+You'll run three wires from the header to your strip, then check which way the data flows.
 
 1.  Run three wires from the header to the strip: 5V, GND, and data. Matching the colors to the strip's own wiring saves a lot of squinting later, so use red for 5V, white for GND, and green for data on IO7.
 

@@ -4,6 +4,8 @@ description: Step by step tutorial for adding the Rear Male USB addon to the MTR
 ---
 # Adding Rear male USB-C To MTR-1
 
+You'll seat the Rear Male USB-C addon on the mezzanine connector on the back of your sensor, then fit the new back that came with it.
+
 1\. Unplug your MTR-1 from power and remove the stand if attached.
 
 ![Back of the MTR-1 with the stand still attached beside the USB-C port](/assets/mtr-1-add-co2-pic-1.jpg)

@@ -26,7 +26,7 @@ The MSR-2 can also be mounted on the ceiling if you can provide power and mount 
 
 !!! tip "These are some useful hints!"
 
-    * The FOV angle is -60 to 60 degrees - 120 degrees total.
+    * The FOV angle is -60 to 60 degrees (120 degrees total).
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
     * Zones are user-configurable and are in cm.
 

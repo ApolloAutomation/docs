@@ -34,6 +34,8 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ## Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
 
+You connect your sensor to Wi-Fi from Home Assistant over Bluetooth, then finish adding it through ESPHome.
+
 !!! note "Pre-requirement:"
 
     Bluetooth built in such as a Raspberry Pi or at least one <a href="https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/" target="_blank" rel="noreferrer nofollow noopener">ESP32 BLE Proxy</a>. If you have already followed the "Connecting through Hotspot" please skip this section.
@@ -109,6 +111,8 @@ wifi_password: "your-wifi-pass-here"
 6\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
 ## Connecting to Home Assistant via ESPHome Integration:
+
+Next, you add your new Apollo device to Home Assistant through the ESPHome integration.
 
 1\. Click the "**Notifications**" Icon in the bottom left.
 

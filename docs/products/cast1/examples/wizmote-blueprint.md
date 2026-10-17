@@ -45,6 +45,8 @@ Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
 ## Import the Blueprint
 
+You'll import the blueprint, pick your device, and choose what each WizMote button does.
+
 1\. Click the Import Blueprint button below then click **Open link**.
 
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FCAST-1%2FCAST-1-WizMote.yaml)

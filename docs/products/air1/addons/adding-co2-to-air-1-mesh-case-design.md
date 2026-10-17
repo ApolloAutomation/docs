@@ -4,6 +4,8 @@ description: Adding The SCD40 CO₂ Sensor from Sensirion To The AIR-1.
 ---
 # Adding The SCD40 CO<sub>2</sub> Sensor To The AIR-1 (Original Design)
 
+Here you open the back of the case and seat the SCD40 module on the black connector inside.
+
 1\. Unplug your AIR-1 from power and remove the back
 
 ![AIR-1 with the back removed, showing the empty CO2 connector at the bottom center of the board](/assets/img-3790.jpeg)

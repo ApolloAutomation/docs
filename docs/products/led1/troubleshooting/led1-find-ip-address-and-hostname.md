@@ -4,6 +4,8 @@ description: Step by step guide for finding the IP address and the hostname of y
 ---
 # How to Find IP address and hostname of your LED-1 device.
 
+You can find your device's IP address and hostname with the WLED Native app on your phone.
+
 1\. Download the WLED Native app for iOS and Android.
 
 === "iOS"

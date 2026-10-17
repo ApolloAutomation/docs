@@ -28,7 +28,7 @@ description: Frequently asked questions about the PUMP-1 Fluid Pump Sensor
 
 7\. **Can I use the PUMP-1 to automate watering for plants?**
 
-* Absolutely! It’s designed to integrate seamlessly with our PLT-1 plant sensor for automated watering.
+* Absolutely! It’s designed to integrate with our PLT-1 plant sensor for automated watering.
 
 8\. **Can the pump detect when to stop watering automatically?**
 
@@ -40,7 +40,7 @@ description: Frequently asked questions about the PUMP-1 Fluid Pump Sensor
 
 10\. **How large is the PUMP-1?**
 
-* The pump measures 3.4in x 1.3in x 1.8in (86.4mm x 33mm x 45.7mm), making it compact and easy to install.
+* The pump measures 3.4in x 1.3in x 1.8in (86.4mm x 33mm x 45.7mm), making it compact.
 
 11\. **How do I control the pump?**
 

@@ -40,6 +40,6 @@ Each gate is 0.75 m deep, so the eight gates reach 6 m (19.69 ft) from the senso
 
 !!! tip "These are some useful hints!"
 
-    * The FOV angle is -60 to 60 degrees - 120 degrees total.
+    * The FOV angle is -60 to 60 degrees (120 degrees total).
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
     * Zones are user-configurable and are in cm.

@@ -4,6 +4,8 @@ description: "Step by step guide for tearing down your TEMP-1B to replace parts,
 ---
 # Teardown Of TEMP-1B
 
+Follow these steps to open the case and take out the PCB.
+
 1\. Gently pry open the case lid as shown in the image below.
 
 ![Prying up the TEMP-1B case lid with a thin metal tool held under the edge](/assets/temp-1b-pry-open.jpg)

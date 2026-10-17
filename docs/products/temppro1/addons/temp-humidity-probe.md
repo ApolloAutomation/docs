@@ -8,7 +8,7 @@ description: >-
 
 The TEMP Pro-1 comes with an optional temp and humidity probe which can be used to monitor an attic, fridge, freezer, fish tank, pool, hot tub, etc. It includes a protected cable but the TEMP Pro-1 itself needs to stay in a cool environment.
 
-1\. To use your temp and humidity probe simply take it out of the package and insert it into the right 3.5mm port on your TEMP Pro-1.
+1\. To use your temp and humidity probe, take it out of the package and insert it into the right 3.5mm port on your TEMP Pro-1.
 
 ![Temp and humidity probe plug going into the right 3.5mm port on the TEMP Pro-1](/assets/temp-pro-1-temp-hum-probe-insert-1.jpg)
 

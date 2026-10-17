@@ -6,7 +6,7 @@ description: BTN-1 General Tips
 
 ## Sticky Pads
 
-Your BTN-1 comes with two sets of 4 sticky pads or feet to stick on the bottom of the BTN-1 itself or on the optional BTN-1 Mount addon. These are great for just setting the device on your desk!
+Your BTN-1 comes with two sets of 4 sticky pads or feet to stick on the bottom of the BTN-1 itself or on the optional BTN-1 Mount addon. These are great for setting the device on your desk!
 
 ![Peeling clear sticky pads and pressing them onto the four corners of the BTN-1 bottom](/assets/btn-1-general-tips-sticky-pads.webp)
 

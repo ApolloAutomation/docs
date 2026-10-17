@@ -22,6 +22,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
+Follow these steps to turn on the LD2450's Bluetooth and set up its zones in the HLKRadarTool app.
+
 1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) then select your R PRO-1 and scroll down until you see LD2450 Bluetooth.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
@@ -42,13 +44,13 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ![HLKRadarTool app LD2450 zone map with the Set button highlighted in the top right](/assets/r-pro-1-hlk-app-select-set.png)
 
-4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit** — you should see a confirmation message: **"Setup successfully."**
+4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit**. You should see a confirmation message: **"Setup successfully."**
 
 !!! tip "There are three ways to use your R PRO-1!"
 
-    You can use any of these three choices to control your R PRO-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disable multi-zone area detection and just tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
+    You can use any of these three choices to control your R PRO-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disables multi-zone area detection and tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
 
-    Disabled allows you to just use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
+    Disabled allows you to use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
 ![HLKRadarTool app with Area Detection selected, Areas 1 to 3 toggled on, and a Submit button](/assets/r-pro-1-hlk-app-setup-zones.png)
 
@@ -66,6 +68,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ## Dashboard Card Setup
 
+Follow these steps to add a Plotly card that shows your R PRO-1's targets and zones on a dashboard.
+
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 
 2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
@@ -82,7 +86,7 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ![Home Assistant dashboard in edit mode adding a Manual card with the Plotly graph YAML](/assets/ld2450-add-plotly-graph-gif.gif)
 
-5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
+5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks like the card below!
 
 ![Plotly card showing R PRO-1 target positions, the radar coverage cone, and three zones](/assets/r-pro-1-plotly-graph-image.png)
 
@@ -141,7 +145,7 @@ The same HLKRadarTool app is used for both sensors.
 
 ![LD2412 gate threshold sliders being adjusted on the R PRO-1 device page in Home Assistant](/assets/r-pro-1-ld2412-gate-sliders-ha.gif)
 
-7\. Tap **Settings** at the top of the app and set the **Unmanned Duration**. This controls how many seconds the sensor waits after it stops detecting before it reports "no one present." The default is 10 seconds — increase it if you're getting false "nobody home" readings in your space. In Home Assistant, this same setting is called **LD2412 Timeout**.
+7\. Tap **Settings** at the top of the app and set the **Unmanned Duration**. This controls how many seconds the sensor waits after it stops detecting before it reports "no one present." The default is 10 seconds. Increase it if you're getting false "nobody home" readings in your space. In Home Assistant, this same setting is called **LD2412 Timeout**.
 
 8\. Head back to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**), select your R PRO-1, and toggle **LD2412 Bluetooth** back off. Leaving Bluetooth on increases power consumption and can interfere with nearby Bluetooth devices.
 

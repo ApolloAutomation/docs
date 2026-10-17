@@ -12,6 +12,8 @@ description: "Step by step guide for putting The PLT-1B In Boot Mode."
 
 ## Method 1: Boot Button Only
 
+You can put your device into boot mode with only the boot button and a pin.
+
 1\. Position the PLT-1B as shown in the image below and locate the small opening to press the boot button.
 
 ![Open PLT-1B case with a tool pointing to the boot button on the PCB near the USB-C port](/assets/plt-boot-mode-pic-2.jpg)
@@ -23,6 +25,8 @@ description: "Step by step guide for putting The PLT-1B In Boot Mode."
 3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/homey/products/plt1b/troubleshooting/plt1b-code/)
 
 ## Method 2: Boot and Reset Buttons
+
+You can also put your device into boot mode by pressing the reset button while you hold the boot button.
 
 1\. Plug in the device
 

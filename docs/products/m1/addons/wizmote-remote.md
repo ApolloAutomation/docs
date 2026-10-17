@@ -12,6 +12,8 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 
 ## Turn On ESP-NOW
 
+Before you pair the remote, turn on ESP-NOW on your matrix.
+
 1\. Open your M-1 in a browser and click **Config**, then **WiFi Setup**.
 
 2\. Tick **Enable ESP-NOW**. A **Remote List** appears on the same page once it is on.
@@ -19,6 +21,8 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 3\. Click **Save**, then reboot the M-1. Tap **Info**, scroll down, and select **Reboot WLED**.
 
 ## Pair the Remote
+
+Now you can add the WizMote to the trusted list.
 
 1\. Go back to **Config**, then **WiFi Setup**.
 

@@ -4,6 +4,8 @@ description: Tutorial for using the MSR-2 Outlet Mount.
 ---
 # MSR-2 Outlet Mount
 
+You'll attach your sensor to a top facing USB-C plug with the Outlet Mount.
+
 1\. Gather a top facing USB-C plug, an MSR-2, and our MSR-2 Outlet Mount.
 
 ![Top facing USB-C wall plug, MSR-2 Outlet Mount, and MSR-2 laid out together](/assets/msr-2-outlet-mount-pic-1.jpg)

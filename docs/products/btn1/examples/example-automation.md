@@ -4,6 +4,8 @@ description: Example of how to use the BTN-1 Events to create an automation in H
 ---
 # Examples
 
+Here you'll build an automation that toggles a light when you single-click the first button.
+
 1\. Head to the <a href="http://homeassistant.local:8123/config/automation/dashboard" target="_blank" rel="noreferrer nofollow noopener">automations page</a> and click on **Create Automation** in the bottom right then select **Create new automation**.
 
 2\. Click on **Add trigger** then select **Entity** and then **State**. Then search for your BTN-1 and select the BTN-1 event. Then select the **Event Type** attribute and select **Single Click** in the box labeled **To**.
@@ -18,4 +20,4 @@ description: Example of how to use the BTN-1 Events to create an automation in H
 
 !!! tip "This is a very simple example automation."
 
-    This example will work, however, it will require the attribute such as "Single Click" to change to Double Click or Long Press before it will toggle the light on a Single Click. You can get around this with advanced jinja templating - ChatGPT or Claude is great at helping with this!
+    This example will work, however, it will require the attribute such as "Single Click" to change to Double Click or Long Press before it will toggle the light on a Single Click. You can get around this with advanced jinja templating. ChatGPT or Claude is great at helping with this!

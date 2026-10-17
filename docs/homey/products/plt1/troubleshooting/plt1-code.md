@@ -10,6 +10,8 @@ description: "Step by step guide for re-flashing the PLT-1 back to factory firmw
 
 If your device has already been added to Homey, please <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before continuing.
 
+Follow these steps to put your device in boot mode and install the factory firmware.
+
 1\. <a href="https://wiki.apolloautomation.com/homey/products/plt1/troubleshooting/plt1-boot-mode/" target="_blank" rel="noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
 
 ![Side of the PLT-1 with the boot button opening circled](/assets/screenshot-2024-10-23-at-12-32-55-pm.png)

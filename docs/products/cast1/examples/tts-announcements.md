@@ -6,7 +6,7 @@ description: Send text-to-speech and announcements to your CAST-1, with music du
 
 Your CAST-1 can speak. Send it a text-to-speech message and it plays over whatever is already going, ducking the music down and bringing it back when it's done. Nothing stops or resumes, the two run at once.
 
-You'll need a text-to-speech engine set up in Home Assistant first. The examples below use <a href="https://www.home-assistant.io/voice_control/voice_remote_local_assistant/" target="_blank" rel="noreferrer nofollow noopener">Piper</a>, which runs locally and sounds good, but any engine works since the CAST-1 just plays what Home Assistant sends it.
+You'll need a text-to-speech engine set up in Home Assistant first. The examples below use <a href="https://www.home-assistant.io/voice_control/voice_remote_local_assistant/" target="_blank" rel="noreferrer nofollow noopener">Piper</a>, which runs locally and sounds good, but any engine works since the CAST-1 plays what Home Assistant sends it.
 
 ## Which Player to Use
 
@@ -16,6 +16,8 @@ Your CAST-1 has two media players and either one handles announcements.
 * **Apollo CAST-1 Sendspin Player** is the Music Assistant streaming target. Announcements sent here get forwarded to the announcement pipeline, so your music still ducks.
 
 ## Send an Announcement
+
+You'll send a test announcement from Developer Tools and hear it play over your music.
 
 1\. Open **Developer Tools** in Home Assistant (**Settings → Tools** in Home Assistant 2026.8 and newer) and go to the **Actions** tab.
 

@@ -4,6 +4,8 @@ description: "H-3 Getting Started tutorial."
 ---
 # Getting Started
 
+Follow these steps to power up your ornament, play its holiday songs, and optionally add it to Home Assistant.
+
 **1\. Powering On the H-3**
 
 Insert two AA batteries. We suggest non-rechargeable AAs. You can also run the ornament from the USB-C port instead.

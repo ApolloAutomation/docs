@@ -8,11 +8,11 @@ description: Step by step guide for reflashing The PUMP-1.
 
     This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
 
-1\. Disconnect your PUMP-1 from power. With the device facing you, locate the boot button—it’s the button on the right.
+1\. Disconnect your PUMP-1 from power. With the device facing you, locate the boot button. It’s the button on the right.
 
 !!! danger "Empty the water reservoir and make sure no water is present in the tubes"
 
-    Make sure that there is no water which is able to damage the device. This is a precautionary measure just to be safe!
+    Make sure that there is no water which is able to damage the device. This is a precautionary measure to be safe!
 
 2\. Plug in a USB cable that supports power and data into your computer.
 

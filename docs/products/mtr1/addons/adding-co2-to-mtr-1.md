@@ -5,6 +5,8 @@ description: Step by step tutorial for adding the SCD40 CO2 sensor to the MTR-1.
 
 # Adding CO<sub>2</sub> To MTR-1
 
+You'll slide your sensor out of its case, fit the SCD40 module onto its mezzanine connector, and put the case back together.
+
 1\. Unplug your MTR-1 from power and remove the stand if attached.
 
 ![Back of the MTR-1 with the stand still attached beside the USB-C port](/assets/mtr-1-add-co2-pic-1.jpg)![Back of the MTR-1 with the stand removed](/assets/mtr-1-add-co2-pic-2.jpg)![Pinching the MTR-1 backplate to lift it off the case](/assets/mtr-1-add-co2-pic-3.jpg)![MTR-1 with the backplate removed, showing the circuit board inside the case](/assets/mtr-1-add-co2-pic-4.jpg)

@@ -6,6 +6,8 @@ description: Tutorial for MSR-2 HLKRadarTool app Zone Configuration.
 
 ## **Auto-Calibration**
 
+You'll connect the HLKRadarTool app to your sensor, measure your room's background noise, and pick one of the auto-calibration settings.
+
 1\. Download the HLKRadarTool app.
 
 === "iPhone"
@@ -46,19 +48,21 @@ The default password to connect to the HLKRadarTool is "HiLink".
 
 8\. Select Back to navigate to the Parameter settings. Then select one of the auto-calibration buttons.
 
-**Average** - Sets the gate sensitivity to the average move and still energy
+**Average**: Sets the gate sensitivity to the average move and still energy
 
 ![HLKRadarTool Parameter settings with the Average one click setting outlined in red](/assets/average.png)
 
-**Maximum** - Sets the gate sensitivity to the maximum move and still energy
+**Maximum**: Sets the gate sensitivity to the maximum move and still energy
 
 ![HLKRadarTool Parameter settings with the Maximum one click setting outlined in red](/assets/max.png)
 
-**Intelligent** - Sets the gate sensitivity equal to or just above the maximum move and still energy.
+**Intelligent**: Sets the gate sensitivity equal to or just above the maximum move and still energy.
 
 **![HLKRadarTool Parameter settings with the Intelligent one click setting outlined in red](/assets/intelligent.png)**
 
 ## Manual Calibration
+
+You'll set the motion and static sensitivity values yourself in the app.
 
 1\. Repeat steps 1-5 above.
 

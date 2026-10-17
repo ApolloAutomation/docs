@@ -50,6 +50,8 @@ Opening an AIR-1 takes a few more steps than the other Apollo sensors, because t
 
 ## Wiring the strip
 
+Next, you connect the strip to the header and check that data flows in the right direction.
+
 1.  Run three wires from the header to the strip: 5V, GND, and data. Matching the colors to the strip's own wiring saves a lot of squinting later, so use red for 5V, white for GND, and green for data on IO7.
 
     ![Red, white, and green DuPont wires laid out next to the GPIO Header](/assets/gpio-led-dupont-wires-1.webp){ width="200" } ![DuPont wires pushed onto the 5V, GND, and IO7 pins](/assets/gpio-led-dupont-wires-2.webp){ width="200" } ![Close-up of the three wires seated on the GPIO Header](/assets/gpio-led-dupont-wires-3.webp){ width="200" }

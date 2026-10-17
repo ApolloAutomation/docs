@@ -1,18 +1,18 @@
 ---
 title: Direct SmartThings Integration (No Hub)
-description: Control SmartThings devices directly from Apollo ESPHome sensors using OAuth2 — no Home Assistant or hub required.
+description: Control SmartThings devices directly from Apollo ESPHome sensors using OAuth2, no Home Assistant or hub required.
 ---
 
 # Apollo Sensors + SmartThings Direct Control
 
 !!! note "Compatible Devices"
-    This works with any Apollo ESPHome device running ESPHome: MTR-1, MSR-2, AIR-1, and others. The OAuth2 token block is fully device-agnostic — just swap the `packages:` line for your device.
+    This works with any Apollo ESPHome device running ESPHome: MTR-1, MSR-2, AIR-1, and others. The OAuth2 token block is fully device-agnostic: swap the `packages:` line for your device.
 
 ## Background
 
-Since early 2025, Samsung SmartThings no longer supports permanent Personal Access Tokens (PAT). All API access now requires OAuth2 tokens that expire every 24 hours. This makes direct ESP32 integrations tricky — but not impossible.
+Since early 2025, Samsung SmartThings no longer supports permanent Personal Access Tokens (PAT). All API access now requires OAuth2 tokens that expire every 24 hours. This makes direct ESP32 integrations tricky, but not impossible.
 
-This tutorial shows how to make your Apollo MTR-1 control SmartThings lights directly, with zero external servers, no Home Assistant, and no intermediate hub. The ESP32 handles the full OAuth2 token lifecycle autonomously — including persisting the refresh token across reboots using NVS flash storage. Once set up, it runs forever without any manual intervention.
+This tutorial shows how to make your Apollo MTR-1 control SmartThings lights directly, with zero external servers, no Home Assistant, and no intermediate hub. The ESP32 handles the full OAuth2 token lifecycle autonomously, including persisting the refresh token across reboots using NVS flash storage. Once set up, it runs forever without any manual intervention.
 
 **What you will achieve:**
 
@@ -34,18 +34,18 @@ This tutorial shows how to make your Apollo MTR-1 control SmartThings lights dir
 
 This is a one-time setup. You need to register an OAuth2 client in the SmartThings Developer Workspace to get your `client_id` and `client_secret`.
 
-**Step 1 — Create a project:**
+**Step 1. Create a project:**
 
 1. Go to [https://developer.smartthings.com](https://developer.smartthings.com) and sign in with your Samsung account
 2. Click **"Create Project"** → select **"Automation for SmartThings"**
 3. Give it any name, e.g. "Apollo MTR-1"
 
-**Step 2 — Add an OAuth2 Client:**
+**Step 2. Add an OAuth2 Client:**
 
 1. Inside your project, go to **Automation → OAuth2**
 2. Set the Redirect URI to: `https://oauth.pstmn.io/v1/callback`
 3. Set scopes: `r:devices:*` `w:devices:*` `x:devices:*`
-4. Save — you will receive a **Client ID** and a **Client Secret**. Note both down.
+4. Save. You will receive a **Client ID** and a **Client Secret**. Note both down.
 
 ---
 
@@ -53,7 +53,7 @@ This is a one-time setup. You need to register an OAuth2 client in the SmartThin
 
 SmartThings requires a one-time browser-based authorization. After this, the ESP32 renews everything automatically.
 
-**Step 1 — Open this URL in your browser** (replace `YOUR_CLIENT_ID`):
+**Step 1. Open this URL in your browser** (replace `YOUR_CLIENT_ID`):
 
 ```
 https://api.smartthings.com/oauth/authorize?client_id=YOUR_CLIENT_ID&scope=x:devices:*+w:devices:*+r:devices:*&response_type=code&redirect_uri=https://oauth.pstmn.io/v1/callback
@@ -65,9 +65,9 @@ Log in with your Samsung account and authorize the app. You will be redirected t
 https://oauth.pstmn.io/v1/callback?code=XXXXXX
 ```
 
-Copy the `code` value. **It expires in about 60 seconds — act fast.**
+Copy the `code` value. **It expires in about 60 seconds. Act fast.**
 
-**Step 2 — Exchange the code for tokens (PowerShell on Windows):**
+**Step 2. Exchange the code for tokens (PowerShell on Windows):**
 
 ```powershell
 $b64 = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("YOUR_CLIENT_ID:YOUR_CLIENT_SECRET"))
@@ -102,11 +102,11 @@ Save this Base64 string too.
 
 To map your physical MTR-1 zones to SmartThings routines without a hub, we need Virtual Switches. The MTR-1 will send ON/OFF commands to these virtual switches, which you can then use in SmartThings to trigger your actual lights.
 
-**Step 1 — Create Virtual Switches**
+**Step 1. Create Virtual Switches**
 
 Log into your account @ [my.smartthings.com](https://my.smartthings.com) > advanced > add device > cloud > switch
 
-**Step 2 — Find Your SmartThings Device IDs**
+**Step 2. Find Your SmartThings Device IDs**
 
 In the my.smartthings webapp you can copy your new virtual device IDs.
 
@@ -119,10 +119,10 @@ For each light or switch you want to control, you need its Device ID (format: `x
 Below is the complete, production-tested YAML. Replace all `YOUR_*` placeholders with your actual values.
 
 !!! tip "Key Design Decisions"
-    1. **`wifi: on_connect` instead of `on_boot`** — the ESP-IDF HTTP stack is not ready at boot time. Using `on_connect` with a 15-second delay guarantees the network is fully available before the first token refresh fires.
-    2. **`script: mode: single`** — prevents a second token refresh from being triggered while the first one is still running. This is critical during router reboots or mesh Wi-Fi reconnects where `wifi: on_connect` can fire multiple times in rapid succession.
-    3. **`restore_value: yes` on `st_refresh_token`** — saves the latest refresh token to NVS flash after every successful renewal. It survives reboots and power cuts. The `initial_value` in the YAML is only ever used on the very first flash.
-    4. **`body: !lambda |-`** — plain string bodies are silently ignored by the ESP-IDF HTTP client. The lambda syntax is required for the POST body to actually be sent.
+    1. **`wifi: on_connect` instead of `on_boot`**: the ESP-IDF HTTP stack is not ready at boot time. Using `on_connect` with a 15-second delay guarantees the network is fully available before the first token refresh fires.
+    2. **`script: mode: single`**: prevents a second token refresh from being triggered while the first one is still running. This is critical during router reboots or mesh Wi-Fi reconnects where `wifi: on_connect` can fire multiple times in rapid succession.
+    3. **`restore_value: yes` on `st_refresh_token`**: saves the latest refresh token to NVS flash after every successful renewal. It survives reboots and power cuts. The `initial_value` in the YAML is only ever used on the very first flash.
+    4. **`body: !lambda |-`**: plain string bodies are silently ignored by the ESP-IDF HTTP client. The lambda syntax is required for the POST body to actually be sent.
 
 ```yaml
 substitutions:
@@ -301,7 +301,7 @@ Within 15 seconds of connecting to Wi-Fi, you should see in the logs:
 
 Then walk into one of your defined zones. The SmartThings API response will show `content-type: application/json` (not `text/html`) and your light turns on.
 
-If you see `HTTP Request failed; Code: 401` — the access token has expired. A simple reboot fixes it: the `wifi: on_connect` handler will fetch a fresh token automatically.
+If you see `HTTP Request failed; Code: 401`, the access token has expired. A simple reboot fixes it: the `wifi: on_connect` handler will fetch a fresh token automatically.
 
 ---
 
@@ -320,17 +320,17 @@ After the first flash, the `initial_value` in the YAML is never used again. The 
 ## Troubleshooting
 
 !!! warning "401 on SmartThings API calls"
-    The access token has expired. Reboot the device — the `wifi: on_connect` handler will fetch a fresh pair automatically.
+    The access token has expired. Reboot the device. The `wifi: on_connect` handler will fetch a fresh pair automatically.
 
 !!! warning "400 `invalid_grant` on token refresh"
     The refresh token was invalidated. This can happen if the device was offline for more than 30 days, or if a previous refresh failed mid-way. Re-run the browser OAuth flow from Part 2, update both `initial_value` fields in your YAML, flash once, and the self-sustaining chain resumes from there.
 
 !!! warning "400 `invalid_grant` after router reboot or power outage"
-    This is the trickiest failure mode. It happens when the device reconnects to Wi-Fi multiple times in quick succession (e.g. during a router restart), causing two parallel token refresh calls. Both use the same refresh token — one succeeds, one invalidates it. The broken token then gets saved to NVS flash and survives every reboot.
+    This is the trickiest failure mode. It happens when the device reconnects to Wi-Fi multiple times in quick succession (e.g. during a router restart), causing two parallel token refresh calls. Both use the same refresh token: one succeeds, one invalidates it. The broken token then gets saved to NVS flash and survives every reboot.
 
     `mode: single` on the script prevents this going forward, but if you already have a broken NVS token, here is the recovery procedure (no USB required):
 
-    **Step 1 — Get a fresh refresh token via PowerShell:**
+    **Step 1. Get a fresh refresh token via PowerShell:**
 
     ```powershell
     $b64 = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("YOUR_CLIENT_ID:YOUR_CLIENT_SECRET"))
@@ -343,7 +343,7 @@ After the first flash, the `initial_value` in the YAML is never used again. The 
 
     If that returns 400 too, use the browser OAuth flow from Part 2 to get a completely fresh pair.
 
-    **Step 2 — Flash 1: add an `on_boot` override** (priority 600 runs after NVS load but before Wi-Fi):
+    **Step 2. Flash 1: add an `on_boot` override** (priority 600 runs after NVS load but before Wi-Fi):
 
     ```yaml
     esphome:
@@ -358,7 +358,7 @@ After the first flash, the `initial_value` in the YAML is never used again. The 
 
     Flash OTA and wait for `HTTP Status: 200` and `Refresh token updated and saved to NVS` in the logs.
 
-    **Step 3 — Flash 2: remove the override immediately** (while device is still running): Remove the entire `on_boot` block, keep `restore_value: yes`, and flash OTA again. You do not need to change `initial_value`, because the device has already saved the new refresh token to NVS.
+    **Step 3. Flash 2: remove the override immediately** (while device is still running): Remove the entire `on_boot` block, keep `restore_value: yes`, and flash OTA again. You do not need to change `initial_value`, because the device has already saved the new refresh token to NVS.
 
     The NVS now holds the correct token and the self-sustaining chain resumes.
 
@@ -366,7 +366,7 @@ After the first flash, the `initial_value` in the YAML is never used again. The 
     You are likely triggering the refresh from `on_boot`. The ESP-IDF HTTP stack is not ready at that point. Move to `wifi: on_connect` with a 15-second delay as shown above.
 
 !!! warning "POST body is not being sent"
-    Make sure you use `body: !lambda |- return std::string("...");` — plain YAML string values for `body:` are silently dropped by the ESP-IDF HTTP client.
+    Make sure you use `body: !lambda |- return std::string("...");`. Plain YAML string values for `body:` are silently dropped by the ESP-IDF HTTP client.
 
 ---
 

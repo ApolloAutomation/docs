@@ -10,6 +10,8 @@ description: Step by step guide for putting The TEMP-1B In Boot Mode.
 
 ## Method 1: Boot Button Only
 
+You'll hold the boot button while you plug in the USB-C cable.
+
 1\. Position the TEMP-1B so that the USB-C port is facing you. On the right side of the device, locate a small opening where you can use a paperclip to press the boot button.
 
 ![Tool pointing at the boot button opening on the side of the TEMP-1B case](/assets/temp-1b-boot-button-side-view.jpg)
@@ -25,6 +27,8 @@ If you prefer, please remove the lid by gently prying up on the small slit by th
 3\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-code/).
 
 ## Method 2: Boot and Reset Buttons
+
+You'll open the case and use the boot and reset buttons together while the device is plugged into your computer.
 
 1\. Unplug the device and remove the case as shown in the images above
 

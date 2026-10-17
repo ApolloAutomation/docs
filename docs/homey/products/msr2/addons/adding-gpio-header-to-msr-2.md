@@ -4,6 +4,8 @@ description: "Tutorial on adding the GPIO Header to your MSR-2."
 ---
 # Adding GPIO Header To MSR-2
 
+You'll seat the GPIO Header addon on the mezzanine connector on the back of your sensor, then fit the new back that came with it.
+
 1\. Unplug your MSR-2 from power and remove the back.
 
 ![Back of the MSR-2 with the Apollo lettered backplate in place](/assets/msr-2-add-co2-pic-1.jpg)

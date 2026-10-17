@@ -4,6 +4,8 @@ description: "Step by step guide for resetting the Wi-Fi Credentials on your MTR
 ---
 # Reset Wi-Fi Credentials
 
+You'll reset the device's Wi-Fi credentials, then connect it to your new Wi-Fi network through its hotspot.
+
 1\. Plug the device into power
 
 2\. Long press the Boot button (the button on the right) for 10 seconds

@@ -20,7 +20,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
 === "Two Panels"
 
-    1\. Set both of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel.
+    1\. Set both of your M-1 panels face down. The M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel.
 
     ![Connecting the ribbon data cable from JOUT on the M-1 controller panel to JIN on the second panel](/assets/two-panels-connect-data-cable.webp)
 
@@ -34,7 +34,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
 === "Three Panels"
 
-    1\. Set all three of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third panel.
+    1\. Set all three of your M-1 panels face down. The M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third panel.
 
     ![Connecting ribbon data cables from JOUT to JIN across three M-1 panels in a row](/assets/three-panels-connect-data-cable.webp)
 
@@ -48,7 +48,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
 === "Four Panels"
 
-    1\. Set all four of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third and fourth panel.
+    1\. Set all four of your M-1 panels face down. The M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third and fourth panel.
 
     ![Connecting ribbon data cables from JOUT to JIN across four M-1 panels in a row](/assets/four-panels-connect-data-cable.webp)
 
@@ -120,6 +120,8 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
 === "WLED-MM"
 
+    You'll set the chain length and combined panel dimensions for your number of panels, then reboot WLED.
+
     === "Two Panels"
 
         1\. Navigate to your WLED instance in a browser or using the WLED-native app on your phone. You can use http://your-hostname-here.local or its IP address. <a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-find-ip-address-and-hostname/" target="_blank" rel="noreferrer nofollow noopener">Click here if you need to find your IP or hostname</a>.
@@ -182,7 +184,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
     Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 0 will control the top 1/4 of the display, Segment 1 will control the second 1/4, Segment 2 will control the third 1/4 and Segment 3 will control the bottom 1/4 of the matrix.
 
-    You can go back later and change these to your own layout - for example maybe you want to control all of the first LED matrix with Segment 0 and the second matrix with Segment 1 you can definitely do that!
+    You can go back later and change these to your own layout. For example, maybe you want to control all of the first LED matrix with Segment 0 and the second matrix with Segment 1. You can definitely do that!
 
 If you grew an existing setup rather than starting fresh, the default segment keeps its old bounds and your new pixels stay dark. Set **Stop X** and **Stop Y** to your new dimensions before adding any more segments.
 

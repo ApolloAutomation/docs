@@ -10,6 +10,8 @@ description: "Put the MSR-1 into boot mode using the boot button, which is neede
 
 ## Method 1: Boot Button Only
 
+You'll hold the boot button while you plug in the USB-C cable.
+
 1\. Position the MSR-1 as shown in the image below and locate the small opening to press the boot button (the left button).
 
 ![MSR-1 case with the boot button opening highlighted in red among the top vents](/assets/msr-1-top-shot-boot-button.jpg)
@@ -19,6 +21,8 @@ description: "Put the MSR-1 into boot mode using the boot button, which is neede
 3\. Continue with <a href="https://wiki.apolloautomation.com/products/msr1/troubleshooting/msr1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
 ## Method 2: Boot and Reset Buttons
+
+You'll use the boot and reset buttons together while the device is plugged into your computer.
 
 1\. Unplug the device and locate the boot and reset buttons as shown in the image below.
 

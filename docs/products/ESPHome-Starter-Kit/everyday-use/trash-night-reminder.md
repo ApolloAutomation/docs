@@ -20,7 +20,7 @@ description: >-
   </div>
 </div>
 
-Never miss bin night again. Two **Home Assistant Local Calendars** - one for trash, one for recycle - drive a single automation that lights up the Starter Kit's RGB LEDs in a different color for each pickup. When the event starts the LEDs come on; when the event ends they go off.
+Never miss bin night again. Two **Home Assistant Local Calendars** (one for trash, one for recycle) drive a single automation that lights up the Starter Kit's RGB LEDs in a different color for each pickup. When the event starts the LEDs come on; when the event ends they go off.
 
 !!! note "Before you start"
 
@@ -32,7 +32,7 @@ Never miss bin night again. Two **Home Assistant Local Calendars** - one for tra
 
 ## Create the calendars
 
-Home Assistant's **Local Calendar** integration stores events entirely inside Home Assistant - no Google account or external service required.
+Home Assistant's **Local Calendar** integration stores events entirely inside Home Assistant: no Google account or external service required.
 
 **Add the Trash calendar**
 
@@ -91,7 +91,7 @@ Add a repeating event to each calendar to match your actual pickup schedule.
 
 ## Build the automation
 
-One automation handles both calendars. Four triggers - event start and event end for each calendar - feed into a **Choose** action that picks the right color or turns the LEDs off depending on which trigger fired.
+One automation handles both calendars. Four triggers (event start and event end for each calendar) feed into a **Choose** action that picks the right color or turns the LEDs off depending on which trigger fired.
 
 **Create the automation**
 
@@ -128,6 +128,8 @@ Add four triggers, one at a time. Each one is a **Calendar** trigger, and each g
     - Three-dot menu, **Edit ID**, **Trigger ID** → `recycle_end`.
 
 **Add the choose action**
+
+Now you'll add the **Choose** action that sets the LED color for each pickup and turns the LEDs off when an event ends.
 
 6. Under **Then do**, click **+ Add action** and search for **Choose**.
 
@@ -215,7 +217,7 @@ Add four triggers, one at a time. Each one is a **Calendar** trigger, and each g
 
 !!! success "Your kit is now a physical reminder for Home Assistant events!"
 
-    The same pattern works for any calendar-driven reminder - medication schedules, bin days for a second home, watering days for the garden. Swap the colors, the calendar name, or the action and you have a new reminder with no extra hardware.
+    The same pattern works for any calendar-driven reminder: medication schedules, bin days for a second home, watering days for the garden. Swap the colors, the calendar name, or the action and you have a new reminder with no extra hardware.
 
 ## Tune the colors
 

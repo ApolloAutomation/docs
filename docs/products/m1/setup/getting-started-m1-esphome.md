@@ -22,6 +22,8 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
     All M-1 units currently being sold are Rev6. On the <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">hub75-studio installer</a>, select the **Rev6** firmware before clicking **Connect**.
 
+You'll flash hub75-studio onto your device from a Chromium-based browser.
+
 1\. Open <a href="https://pavlov-net.github.io/hub75-studio/" target="_blank" rel="noreferrer nofollow noopener">https://pavlov-net.github.io/hub75-studio/</a> in Chrome, Edge, or another Chromium-based browser.
 
 2\. Pick the **Rev6** firmware, click **Connect**, select the M-1's COM port, and follow the installer prompts to flash.
@@ -35,6 +37,8 @@ Once the firmware finishes installing, the panel displays the **M-1 BIOS** splas
 ![M-1 showing the M-1 BIOS screen with version, CPU, RAM, and ID after flashing](../../../assets/m-1-esphome-firmware-installed-no-wifi.jpg)
 
 ## Connect to Wi-Fi
+
+You'll join the device's hotspot from your phone and give it your home Wi-Fi details.
 
 1\. On your phone, open Wi-Fi settings and join the network **apollo-m1-r6-XXXXXX**, where the last 6 characters match the MAC suffix shown on the BIOS screen.
 

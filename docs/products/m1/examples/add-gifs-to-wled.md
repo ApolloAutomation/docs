@@ -5,7 +5,7 @@ description: >-
 ---
 # Add GIFs to Your M-1
 
-Find a GIF you like first. <a href="https://giphy.com/" target="_blank" rel="noreferrer nofollow noopener">Giphy</a> is an easy place to start, and the dancing cat below works as a test.
+Find a GIF you like first. <a href="https://giphy.com/" target="_blank" rel="noreferrer nofollow noopener">Giphy</a> is a good place to start, and the dancing cat below works as a test.
 
 ![Animated GIF of a black and white cat standing upright and dancing](/assets/dancing-cat.gif)
 
@@ -19,11 +19,13 @@ Getting it onto the matrix depends on your firmware. WLED converts and resizes o
 
 === "WLED-MM"
 
+    On WLED-MM, you resize the GIF with ezgif.com, upload it to the matrix, and save it as a preset.
+
     !!! null "Make sure you are on version 14.5.1 or newer!"
 
         WLED-MM (WLED MoonModules) firmware version 14.5.1 or higher is required for this! If you need to re-flash your device follow our<a href="https://wiki.apolloautomation.com/products/m1/troubleshooting/m1-reflash/" target="_blank" rel="noreferrer nofollow noopener"> step by step guide here</a>!
 
-    1\. Download your gif - if it is already using a 64x64 width and height then you can skip to step 5. Click on the gif you want and then click **Download**.
+    1\. Download your gif. If it is already using a 64x64 width and height then you can skip to step 5. Click on the gif you want and then click **Download**.
 
     2\. Head to <a href="https://ezgif.com/" target="_blank" rel="noreferrer nofollow noopener">ezgif.com</a> and click **Resize** then click Browse and choose your gif then click Upload!
 

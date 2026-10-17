@@ -17,7 +17,7 @@ You don't have to do anything to turn these on. This page explains what each one
 
 The **Web Server** component runs a small website directly on your ESP32-C6. As soon as your device is on Wi-Fi, you can open <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> (or its IP address) on any phone or PC on the same network and control the device.
 
-Apollo ships it on by default so the kit works without Home Assistant. If you only want a smart LED on your desk, you never have to touch HA, you just visit the device's page in a browser.
+Apollo ships it on by default so the kit works without Home Assistant. If you only want a smart LED on your desk, you never have to touch HA: you visit the device's page in a browser.
 
 ### Common Settings
 
@@ -56,7 +56,7 @@ Apollo ships the rail enabled and set to come back on after a reboot, so the kit
 - **Restore mode.** Controls what happens to the rail when the device powers back on after losing power. The Apollo default is **restore the last state, default to on**, so a power blip won't leave your modules dark. Other options like "always on" or "always off" are available if you want a specific boot behavior.
 - **Hide it from Home Assistant.** By default the rail shows up as a controllable switch entity in HA, handy for power-cycling a flaky module from an automation. If you'd rather it not clutter your dashboard, mark it `internal: true` under the advanced settings.
 - **Icon and name.** Cosmetic, but you can rename the entity or change its icon if "Accessory Power Rail" isn't how you want it to appear in HA.
-- **GPIO pin.** Informational, not something you should change. The pin is fixed in hardware on the ESP32-C6, so editing it will just stop the rail from working.
+- **GPIO pin.** Informational, not something you should change. The pin is fixed in hardware on the ESP32-C6, so editing it will stop the rail from working.
 
 ### How It Works
 

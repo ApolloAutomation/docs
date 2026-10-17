@@ -4,6 +4,8 @@ description: Step by step guide for resetting the Wi-Fi Credentials on your AIR-
 ---
 # Reset Wi-Fi Credentials
 
+Here you clear the saved Wi-Fi credentials so you can enter new Wi-Fi details through the device's hotspot.
+
 1\. Plug the device into power.
 
 2\. Press and hold the Boot button for 10 seconds.

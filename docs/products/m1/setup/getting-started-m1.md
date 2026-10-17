@@ -18,6 +18,8 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
 
 === "WLED"
 
+    You'll power up your device and join its own hotspot to reach the WLED controls.
+
     1\. Plug in USB-C power. The M-1 boots to a picture of Apollo, our mascot, then displays a setup card on the panel.
 
     ![M-1 panel showing the setup card to join the Apollo M-1 hotspot, then scan the QR code or go to 4.3.2.1](/assets/wled-16-boot-image-preset.webp)
@@ -103,6 +105,8 @@ Your M-1 LED Matrix and M-1 controller were shipped separately to minimize damag
     ![Changing presets, intensity, and color palette on the M-1 device page in Home Assistant](/assets/m-1-home-assistant-example-usage.gif)
 
 === "WLED-MM"
+
+    You'll add your device to Home Assistant through the WLED integration, then open its controls.
 
     1\. Open your integrations page in Home Assistant. The M-1 is discovered automatically by the WLED integration.
 

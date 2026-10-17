@@ -42,11 +42,11 @@ Once added to Home Assistant you can configure different settings for your senso
 
     **Board Humidity Offset**
 
-    * Offset for Board Humidity - values between 0-100%
+    * Offset for Board Humidity: values between 0-100%
 
     **Board Temperature Offset**
 
-    * Offset for Board Temperature - values in Celsius.
+    * Offset for Board Temperature: values in Celsius.
 
     **ESP Reboot**
 

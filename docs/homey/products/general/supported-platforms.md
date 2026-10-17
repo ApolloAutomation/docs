@@ -23,7 +23,7 @@ At Apollo, we are actively working on adding support for every smart home ecosys
 
 ## **Hubitat**
 
-* **Integration:** Working on support - check back soon!
+* **Integration:** Working on support. Check back soon!
 * **Support:** We do not provide support for this platform but if enough users want it that could change. We of course always support the hardware of our products though!
 
 ## **openHAB**

@@ -8,9 +8,9 @@ The TEMP-1 can be used with an optional temperature probe which comes in two len
 
 **Optional Probe Addons:**
 
-* 1\.5m (~5ft) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
-* 20cm (~8in) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
-* 1m (~3ft) Stainless Steel Food-Safe Probe (NTC) – Max 350°C (662°F). Perfect for grilling, baking, and food prep (not dishwasher safe).
+* 1\.5m (~5ft) Waterproof Flat Cable (DS18B20): -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
+* 20cm (~8in) Waterproof Flat Cable (DS18B20): -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
+* 1m (~3ft) Stainless Steel Food-Safe Probe (NTC): Max 350°C (662°F). Perfect for grilling, baking, and food prep (not dishwasher safe).
 
 &nbsp;
 

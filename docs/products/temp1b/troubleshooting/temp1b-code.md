@@ -10,6 +10,8 @@ description: Step by step guide for re-flashing the TEMP-1B back to factory firm
 
 If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
+Follow these steps to put your device in boot mode and install the factory firmware.
+
 1\. <a href="https://wiki.apolloautomation.com/products/temp1b/troubleshooting/temp1b-boot-mode/" target="_blank" rel="noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
 
 2\. Navigate to our installer page and click connect under Battery Firmware [Apollo TEMP-1 Installer](https://apolloautomation.github.io/TEMP-1/)

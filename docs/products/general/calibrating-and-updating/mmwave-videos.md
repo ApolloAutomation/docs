@@ -20,6 +20,8 @@ How to tune the mmWave sensor using radar engineering mode.
   </iframe>
 </div>
 
+To tune your sensor, you'll turn on Radar Engineering Mode and adjust the gate thresholds.
+
 1\. Go to **Settings → Devices & services → ESPHome** and click the name of your device.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
@@ -51,6 +53,8 @@ How to tune the mmWave sensor using radar engineering mode.
     I ended up maxing out the sliders on all gates and then bringing them down just enough to pick up human presence. Definitely easier than using the LD2410B app. - <a href="https://www.youtube.com/@makeitworktech" title="Make it Work" target="_blank" rel="noreferrer nofollow noopener">MakeItWorkTech</a>
 
 !!! example "Open-Concept kitchen and living room with MSR-2 to activate the under-cabinet lights only when person in the kitchen"
+
+    Here's how you tune the gates so the kitchen lights only come on when you're in the kitchen.
 
     1. Stand in the desired trigger locations.
     2. Observe the gate energy.

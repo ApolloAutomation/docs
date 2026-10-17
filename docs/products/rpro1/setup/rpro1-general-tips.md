@@ -30,8 +30,8 @@ The R PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the 
 
     **The multi-target LD2450:**
 
-    * The horizontal FOV angle is -60 to 60 degrees - 120 degrees total.
-    * The vertical FOV angle is -35 to 35 degrees - 70 degrees total.
+    * The horizontal FOV angle is -60 to 60 degrees (120 degrees total).
+    * The vertical FOV angle is -35 to 35 degrees (70 degrees total).
     * Zones are X and Y coordinate zones and are user-configurable.
 
     **Helpful hints for LD2450 Zones:**
@@ -44,8 +44,8 @@ The R PRO-1 should be mounted 2.6-3 meters (8-10 feet) high when mounted on the 
 
     **The single-target LD2412:**
 
-    * The horizontal FOV angle is -75 to 75 degrees - 150 degrees total.
-    * The vertical FOV angle is -35 to 35 degrees - 70 degrees total.
+    * The horizontal FOV angle is -75 to 75 degrees (150 degrees total).
+    * The vertical FOV angle is -35 to 35 degrees (70 degrees total).
     * Gates are pre-defined by the radar module and are in 0.75 meter increments.
 
 ## **Gate Visualization**

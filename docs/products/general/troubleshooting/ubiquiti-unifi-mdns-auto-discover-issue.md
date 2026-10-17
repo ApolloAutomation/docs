@@ -10,6 +10,8 @@ description: Tutorial to help fix the Ubiquiti UniFi mDNS Auto Discover Issue.
 
 ## **Method 1: Browser**
 
+You can turn on Multicast DNS for your Default Network from a browser on your PC.
+
 1\. Log into your UniFi network through your default IP address which is usually <a href="http://192.168.1.1" target="_blank" rel="noreferrer nofollow noopener">http://192.168.1.1</a>
 
 2\. Select Network.
@@ -35,6 +37,8 @@ description: Tutorial to help fix the Ubiquiti UniFi mDNS Auto Discover Issue.
 7\. Now the Home Assistant/ESPHome auto-discover issue should be fixed!
 
 ## **Method 2: UniFi Mobile App**
+
+You can also turn on Multicast DNS for your Default Network from the UniFi mobile app.
 
 1\. Open the UniFi app.
 

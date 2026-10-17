@@ -8,6 +8,8 @@ description: >-
 
 ## Automatic Import
 
+You'll import the blueprint with the button below, then set it up to send push notifications when your plant needs attention.
+
 1\. Click the Import Blueprint button below and then click **Open link**.
 
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FPLT-1%2FPLT-1.yaml)
@@ -20,7 +22,7 @@ description: >-
 
 5\. Enable the sensor groups you want to monitor (e.g. Soil Moisture, Air Temperature, Light Intensity) and adjust the thresholds to suit your plant.
 
-!!! success "Each sensor group is disabled by default — enable only what matters!"
+!!! success "Each sensor group is disabled by default. Enable only what matters!"
 
     Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. Expand **Repeat Alerts** to control how often you are reminded while a condition lasts.
 
@@ -32,6 +34,8 @@ description: >-
 7\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
 
 ## Manual Import
+
+You can also import the blueprint by pasting its address into Home Assistant yourself.
 
 1\. Head to the automations page (**Settings → Automations & scenes**) and click on **Blueprints** in the top right then select **Import Blueprint**.
 
@@ -49,7 +53,7 @@ https://raw.githubusercontent.com/ApolloAutomation/Blueprints/refs/heads/main/PL
 
 4\. Enter your **plant's name**, select your **mobile device**, enable the sensor groups you want, and set your thresholds.
 
-!!! success "Each sensor group is disabled by default — enable only what matters!"
+!!! success "Each sensor group is disabled by default. Enable only what matters!"
 
     Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. Expand **Repeat Alerts** to control how often you are reminded while a condition lasts.
 

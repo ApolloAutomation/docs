@@ -28,6 +28,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
+With the app installed, you'll turn on the radar's Bluetooth, connect to it from the HLKRadarTool app, and set up your zones.
+
 1\. Open your MTR-1's web server (see address tip above), scroll down until you see **LD2450 Bluetooth**, and toggle it on.
 
 ![MTR-1 Configuration card with the LD2450 Bluetooth toggle turned on and highlighted](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)

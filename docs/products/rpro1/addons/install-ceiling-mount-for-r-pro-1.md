@@ -10,6 +10,8 @@ Watch our step by step video on installing the R PRO-1 using the Ceiling Mount. 
 
 ## Attaching Mounts
 
+You'll take the PCB out of its case and push both ceiling mount pieces onto it.
+
 1\. Unplug your R PRO-1 from power and remove the back.
 
 ![Small tool prying up the R PRO-1 back lid at the seam below the USB-C port](/assets/rpro-1-add-co2-lift-lid-1.webp)
@@ -43,6 +45,8 @@ Watch our step by step video on installing the R PRO-1 using the Ceiling Mount. 
 The Ceiling Mount needs a 3.5 inch (around 89mm) circular hole in the ceiling. Cut that hole before you install the mount. A [2 in. to 7 in. adjustable hole saw](https://www.homedepot.com/p/Milwaukee-2-in-to-7-in-Black-Oxide-Adjustable-Hole-Saw-Cutter-49-56-0320/205744284) set to 3.5 inches is what we used.
 
 ## Install in Ceiling Mount
+
+Now you'll plug in your sensor and slide it into the installed Ceiling Mount.
 
 1\. Remove the cover to expose the inside of the installed Ceiling Mount.
 

@@ -13,6 +13,8 @@ Once your ESPHome Starter Kit is flashed and on Wi-Fi, Home Assistant sees it au
 
 ## Add your device
 
+You'll accept your Starter Kit into Home Assistant through the ESPHome integration.
+
 1. Open **Settings → Devices & services** in Home Assistant. Look for a card titled **ESPHome** under **Discovered** listing `esphome-starter-kit`.
 
     [![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)

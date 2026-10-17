@@ -259,6 +259,8 @@ This tutorial has two versions of the same automation. Both end with the same bu
 
     **Temperature threshold numbers**
 
+    Start with the two template numbers that hold your cold and hot temperature thresholds.
+
     1.  In Device Builder, click **Edit** on your starter kit device.
     2.  Scroll to **Components** and click **+ Add Component**.
     3.  Search for **Template Number** and click **Add**.
@@ -290,6 +292,8 @@ This tutorial has two versions of the same automation. Both end with the same bu
     2.  **Name** `Humid threshold`, **ID** `humidity_max`, **Initial value** `60`, same min/max/step/mode/optimistic/restore.
 
     **Temperature unit select**
+
+    Add the select you'll use to switch the temperature unit between °C and °F.
 
     1.  Click **+ Add Component**, search for **Template Select**, and click **Add**.
     2.  Fill in the form:
@@ -426,6 +430,8 @@ This tutorial has two versions of the same automation. Both end with the same bu
         **Then** → **Light → Turn On** **Onboard RGB LED** with **Brightness** `100%`, **Red** `100%`, **Green** `0%`, **Blue** `0%`.
 
     **Pause, then clear the LED**
+
+    Hold the temperature band's color, then turn the LED off briefly so you can tell the next color is humidity, not temperature.
 
     1.  Add a **Control flow → Delay** of `3s`.
     2.  Add **Light → Turn Off** on **Onboard RGB LED**.
@@ -647,7 +653,7 @@ With the device back online, press the button on the Button module. The Onboard 
 
 The same trigger / condition / delay / light pattern works with any sensor and any light on your kit. Swap the temperature sensor for a CO2 reading, the button trigger for a motion event, or the Onboard RGB LED for the LED & Buzzer module's `rgb_leds` strip, and you have a new readout. Then bring it into Home Assistant so you can tune it from anywhere.
 
-<a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Connect to Home Assistant</a>
+<a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next: Connect to Home Assistant</a>
 
 
 --8<-- "_snippets/community-help.md"

@@ -88,6 +88,8 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 ### Install Music Assistant
 
+You'll install the Music Assistant app, then add its integration in Home Assistant.
+
 1\. Head to the App Store to install Music Assistant.
 
 [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=d5369777_music_assistant&repository_url=https%3A%2F%2Fgithub.com%2Fmusic-assistant%2Fhome-assistant-addon)
@@ -101,6 +103,8 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 [![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
 
 ### Stream To Your CAST-1
+
+With Music Assistant running, you can start playing music through your speakers.
 
 1\. Open **Music Assistant** from the Home Assistant sidebar.
 

@@ -8,6 +8,8 @@ description: Adding The SCD40 CO₂ Sensor from Sensirion To The AIR-1.
 
     [If you have the Original Design of the AIR-1 please click here](https://wiki.apolloautomation.com/products/air1/addons/adding-co2-to-air-1-mesh-case-design/ "Mesh Case Design for the AIR-1")
 
+Here you open the case, slide out the PCB, and seat the SCD40 module on its mezzanine connector.
+
 1\. Unplug your AIR-1 from power and lift the top of the case or "lid".
 
 ![Closed AIR-1 case seen from the side before the lid is removed](/assets/air-1-add-co2-pic-1.jpg)![Pulling the top edge of the AIR-1 lid away from the case](/assets/air-1-add-co2-pic-2.jpg)![AIR-1 lid partly lifted away from the case, exposing the PCB](/assets/air-1-add-co2-pic-3.jpg)

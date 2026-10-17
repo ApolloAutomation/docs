@@ -4,6 +4,8 @@ description: Step by step tutorial for adding 90 degree USB-C to MTR-1.
 ---
 # Adding 90 degree USB-C to MTR-1
 
+You'll attach this addon to your sensor and plug it into an outlet.
+
 1\. Gather the MTR-1, 90 degree addon, and optional top facing USB-C Plug.
 
 ![MTR-1, 90 degree USB-C addon, and top facing USB-C wall plug laid out together](/assets/mtr-1-90-addon-pic-1.jpg)

@@ -18,7 +18,7 @@ This guide will show you how to edit the CO<sub>2</sub> updates down to 5 second
 
 ![ESPHome Builder in the Home Assistant sidebar with the Edit button on an AIR-1 card outlined](/assets/update-frequency-pic-1.png)
 
-2\. Copy this code and enter it just like shown in the next step. Make sure there are no extra spaces or any other characters. It needs to look just like the example in the next step.
+2\. Copy this code and enter it exactly as shown in the next step. Make sure there are no extra spaces or any other characters. It needs to look exactly like the example in the next step.
 
 ```yaml
 #CO2 sensor update interval

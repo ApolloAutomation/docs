@@ -32,6 +32,8 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ## Adding Apollo Automation App in Homey:
 
+You'll install the Apollo Automation app on your Homey from a desktop PC or a browser.
+
 1\. <a href="https://homey.app/en-us/app/com.apolloautomation/Apollo-Automation/test/" target="_blank" rel="noreferrer nofollow noopener">Navigate to this website</a> and click "Install App". For now this needs to be done from a desktop PC or a browser.
 
 ![Homey app store page for Apollo Automation with the Install App button highlighted](/assets/homey-install-app.png)
@@ -43,6 +45,8 @@ If this does not automatically open the dashboard, please open your web browser 
 3\. Your device will install the Apollo Automation Homey App then move to the next section.
 
 ## Connecting to Homey:
+
+Next, you'll add your Apollo sensor to Homey from the Homey app on your phone.
 
 1\. Open the Homey App on your phone and navigate to the Devices tab at the bottom then select the (+) icon in the top right and choose "**New Device**". Choose "Allow" if it pops up asking to find Bluetooth devices, or you can change this later in settings.
 
@@ -62,7 +66,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![Homey Device Connected screen for the Apollo MTR-1 with the Continue Setup button](/assets/homey-getting-started-pic-6.png)
 
-6\. Change any other default settings like the Name, icon, etc or just click Finish in the bottom right.
+6\. Change any other default settings like the Name, icon, etc or click Finish in the bottom right.
 
 ![Homey Make It Your Own screen for the MTR-1 with name, zone, and Finish button](/assets/homey-getting-started-pic-7.png)
 

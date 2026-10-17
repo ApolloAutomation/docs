@@ -6,7 +6,7 @@ description: Optional. Use ESPHome Device Builder to rename your CAST-1 or edit 
 
 !!! tip "Most people don't need this"
 
-    Your CAST-1 ships ready to use. You only need the ESPHome Device Builder if you want to rename it or make manual edits to its YAML. To just add your CAST-1 to Home Assistant, follow the [Getting Started guide](https://wiki.apolloautomation.com/products/cast1/setup/getting-started/#add-to-home-assistant).
+    Your CAST-1 ships ready to use. You only need the ESPHome Device Builder if you want to rename it or make manual edits to its YAML. To add your CAST-1 to Home Assistant, follow the [Getting Started guide](https://wiki.apolloautomation.com/products/cast1/setup/getting-started/#add-to-home-assistant).
 
 ESPHome Device Builder is the software that gives you a user interface for editing, compiling, and flashing ESPHome YAML. You'll use it to take control of your CAST-1 and edit its configuration.
 
@@ -78,6 +78,8 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     **<u>Method 2</u>**
 
+    You can also install it yourself from the Home Assistant App Store.
+
     1. In Home Assistant, open **Settings → Apps → App Store**.
     2. Search for **ESPHome Device Builder** and click **Install**.
     3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
@@ -102,7 +104,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
         If your CAST-1 doesn't appear as a serial port later, add your user to the `dialout` group with `sudo usermod -a -G dialout $USER`, then log out and back in.
 
-    The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your system tray for getting back to it later. Some Linux desktops, notably GNOME without a tray extension, don't show tray icons at all. The app still runs, so just use the dashboard in your browser.
+    The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your system tray for getting back to it later. Some Linux desktops, notably GNOME without a tray extension, don't show tray icons at all. The app still runs, so use the dashboard in your browser.
 
     A short wizard runs the first time:
 
@@ -115,6 +117,8 @@ Pick the platform you'll be running ESPHome Device Builder on:
     ![ESPHome Device Builder first-run wizard, choosing local installation and New to ESPHome](/assets/device-builder-first-time-install-pick-your-experience.gif)
 
 ## Take Control of Your CAST-1
+
+Taking control adopts your device into the ESPHome Device Builder so you can rename it or edit its YAML.
 
 1\. Open the ESPHome Device Builder.
 

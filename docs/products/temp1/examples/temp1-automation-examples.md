@@ -165,6 +165,8 @@ The automation has three triggers, each with its own trigger ID, and one **Choos
 
 ### Create the automation and its triggers
 
+Next, you'll create the automation and add its three triggers, each with its own trigger ID.
+
 3\. Go to **Settings → Automations & scenes**, click **+ Create automation** in the bottom right, then **Create new automation**.
 
 [![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)

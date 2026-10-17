@@ -8,7 +8,7 @@ description: H-2 Introduction.
 
 The Apollo H-2 is the second edition of our annual holiday ornament! It's our way of saying thank you for your support and giving back to our community.
 
-The H-2 ships pre-flashed with a basic firmware featuring four classic holiday tunes. Simply press any of the four buttons on the back to play: Button 1 for Jingle Bells, Button 2 for Rudolph the Red-Nosed Reindeer, Button 3 for Let it Snow, and Button 4 for Blue Christmas. The LEDs light up with unique effects to match each tune!
+The H-2 ships pre-flashed with a basic firmware featuring four classic holiday tunes. Press any of the four buttons on the back to play: Button 1 for Jingle Bells, Button 2 for Rudolph the Red-Nosed Reindeer, Button 3 for Let it Snow, and Button 4 for Blue Christmas. The LEDs light up with unique effects to match each tune!
 
 You can also integrate it with Home Assistant to unlock more features, such as changing the songs and LED effects, Bluetooth proxy, and Bluetooth tracking. You will need to <a href="https://wiki.apolloautomation.com/products/h2/troubleshooting/reflash/" target="_blank" rel="noreferrer nofollow noopener">reflash it to the smart firmware</a> first!
 

@@ -20,6 +20,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
     <a href="https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&amp;hl=en_US" target="_blank" rel="noreferrer nofollow noopener">Click here to download</a>
 
+With the app installed, you'll turn on the radar's Bluetooth, connect to it from the HLKRadarTool app, and set up your zones.
+
 1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) then select your MTR-1 and scroll down until you see LD2450 Bluetooth.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
@@ -68,6 +70,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ## Dashboard Card Setup
 
+Next, you'll add a Plotly card to a Home Assistant dashboard so you can see your sensor's targets and zones.
+
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 
 2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
@@ -84,6 +88,6 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 *Shown with an R PRO-1 card; the MTR-1 steps are the same.*
 
-5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
+5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks exactly like the card below!
 
 ![Finished MTR-1 Target Positions Plotly card with the coverage area and three zones](/assets/mtr-1-card-working-targets.png)

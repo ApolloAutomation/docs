@@ -20,6 +20,8 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 ## LD2450 Configuration
 
+Follow these steps to add a Plotly card that shows your LD2450 targets, then set up your zones in Home Assistant.
+
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 
 2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
@@ -36,7 +38,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 ![Home Assistant dashboard in edit mode adding a Manual card with the Plotly graph YAML](/assets/ld2450-add-plotly-graph-gif.gif)
 
-5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
+5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks like the card below!
 
 ![Plotly card showing R PRO-1 target positions, the radar coverage cone, and three zones](/assets/r-pro-1-plotly-graph-image.png)
 
@@ -101,6 +103,8 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
     If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try toggling on **LD2450 Multi Target Tracking**. This should wake up the mmWave module and retrieve your saved zones
 
 ## LD2412 Configuration
+
+Follow these steps to switch the LD2412 to Engineering mode and tune its gates in Home Assistant.
 
 1\. Go to **Settings → Devices & services → ESPHome** and click **1 device** below the Apollo R PRO-1.
 

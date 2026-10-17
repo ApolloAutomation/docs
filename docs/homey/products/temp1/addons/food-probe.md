@@ -8,7 +8,7 @@ The TEMP-1 comes with an optional food probe which can be used to monitor food t
 
 ![Correct sensor mounting on the grill side shelf beside an incorrect mounting on the hot grill lid](/assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
 
-1\. To use your food probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1.
+1\. To use your food probe, take it out of the package and insert it into the 3.5mm port on your TEMP-1.
 
 ![Food probe plug being inserted into the 3.5mm port on the TEMP-1](/assets/temp-1-food-probe-insert-1.jpg)
 

@@ -4,6 +4,8 @@ description: H-2 Getting Started tutorial.
 ---
 # Getting Started
 
+Follow these steps to power up your ornament, play its pre-loaded songs, and optionally add it to Home Assistant.
+
 **1\. Powering On the H-2**
 
 Insert a rechargeable RC-CR123A (16340) battery, preferably an 850 mAh model like <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">the one available in our store</a>. A normal CR123A will not work!

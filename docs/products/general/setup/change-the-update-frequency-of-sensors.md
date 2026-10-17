@@ -5,6 +5,8 @@ description: Tutorial for How To Change The Update Frequency Of Sensors.
 
 # How To Change The Update Frequency Of Sensors
 
+You change how often a sensor updates by adding a few lines of YAML to your device in ESPHome Builder, then installing the update.
+
 1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to change. If it isn't in your sidebar, the button below opens the app.
 
 [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)

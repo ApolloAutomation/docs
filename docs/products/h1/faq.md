@@ -37,13 +37,13 @@ description: Frequently asked questions about the H-1.
 
 8\. **Does the ornament require any additional power source?**
 
-* The Apollo H-1 can operate on battery power, making it easy to hang and place wherever you'd like in your holiday decorations. It uses a <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">(rechargeable) RC-CR123A aka 16340 battery (ideally 850mAh)</a>. It can also be powered by the USB-C port. The H-1 USB-C port will NOT charge the battery, you need an external charger.
+* The Apollo H-1 can operate on battery power, so you can hang and place it wherever you'd like in your holiday decorations. It uses a <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">(rechargeable) RC-CR123A aka 16340 battery (ideally 850mAh)</a>. It can also be powered by the USB-C port. The H-1 USB-C port will NOT charge the battery, you need an external charger.
 
 9\. **Can I gift the Apollo H-1 to friends or family?**
 
 * Yes, the H-1 makes a wonderful gift! It’s unique, festive, and supports a good cause, making it a great option for holiday gifting.
 
-10\. **My H-1 is draining battery too fast- how do I fix this?**
+10\. **My H-1 is draining battery too fast. How do I fix this?**
 
 * Please make sure if you are on the smart firmware to disable the "prevent sleep" option on the Home Assistant device page!
 

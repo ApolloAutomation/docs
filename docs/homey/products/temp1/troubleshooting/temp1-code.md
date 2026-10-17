@@ -10,6 +10,8 @@ description: "Step by step guide for re-flashing the TEMP-1 back to factory firm
 
 If your device has already been added to Homey, please <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before continuing.
 
+Follow these steps to put your device in boot mode and install the factory firmware.
+
 1\. <a href="https://wiki.apolloautomation.com/homey/products/temp1/troubleshooting/temp1-boot-mode/" target="_blank" rel="noopener">Put your device in boot mode</a> by holding down the boot button and then plugging in the USB cable.
 
 2\. Navigate to the [Apollo TEMP-1 Installer](https://apolloautomation.github.io/TEMP-1/).

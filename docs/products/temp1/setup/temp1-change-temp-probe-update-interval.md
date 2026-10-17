@@ -20,7 +20,7 @@ By default the TEMP-1 reports its **Temperature Probe** every 60 seconds. You ca
 
 !!! tip "Start on a fresh line with no spaces in front"
 
-    The `sensor:` line has to start at the very beginning of a new line. If you press Enter from the end of the `wifi_password` line, the editor indents your cursor one space, which makes the YAML invalid. The easy fix is to press Enter twice, then Backspace once. That drops you to a fresh line with no leading space.
+    The `sensor:` line has to start at the very beginning of a new line. If you press Enter from the end of the `wifi_password` line, the editor indents your cursor one space, which makes the YAML invalid. The fix is to press Enter twice, then Backspace once. That drops you to a fresh line with no leading space.
 
 ```yaml
 sensor:

@@ -24,6 +24,8 @@ How to tune the mmWave sensor using radar engineering mode.
   </iframe>
 </div>
 
+You'll turn on Radar Engineering Mode to see the move and still energy for each gate.
+
 1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) and select your MSR-2.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
@@ -36,7 +38,7 @@ How to tune the mmWave sensor using radar engineering mode.
 
 ![Home Assistant MSR-2 Diagnostic section listing move and still energy percentages for gates g0 to g4](/assets/msr-2-gate-energies.png)
 
-The gates are 0.75 meter increments from the sensor - allowing you to "tune" each 0.75 meter section until your sensor works as intended!
+The gates are 0.75 meter increments from the sensor, allowing you to "tune" each 0.75 meter section until your sensor works as intended!
 
 | Gate | Distance (m / ft) | Default move threshold | Default still threshold |
 |---|---|---|---|

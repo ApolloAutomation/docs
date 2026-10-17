@@ -107,7 +107,7 @@ You could make two automations, one to turn the light on and one to turn it off.
 
 </div>
 
-1.  The trigger ID is just a name. The **Choose** action reads it to decide which branch to run.
+1.  The trigger ID is a name. The **Choose** action reads it to decide which branch to run.
 2.  The **For** delay means **Clear** only fires after the room has been still for two full minutes, so the light doesn't drop the moment you hold still.
 3.  `restart` makes fresh motion reset the off-timer. The default `single` mode would ignore movement until the run finished.
 

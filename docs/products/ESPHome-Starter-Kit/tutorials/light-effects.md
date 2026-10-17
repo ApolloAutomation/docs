@@ -17,6 +17,8 @@ Out of the box, your RGB module turns on, turns off, and changes color. ESPHome 
 
 ## Add the effects
 
+You'll add the Addressable Rainbow and Addressable Color Wipe effects to one of your RGB lights.
+
 1.  Open your starter kit device in ESPHome Device Builder and click **Edit**.
 2.  In the editor's left pane, scroll to **Components** and click the RGB light you want to add effects to. (1)
     { .annotate }

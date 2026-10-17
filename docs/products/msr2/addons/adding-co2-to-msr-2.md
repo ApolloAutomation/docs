@@ -4,6 +4,8 @@ description: Tutorial on adding the SCD40 CO2 sensor to your MSR-2.
 ---
 # Adding CO<sub>2</sub> To MSR-2
 
+You'll slide your sensor out of its case, fit the SCD40 module onto its mezzanine connector, and put the case back together.
+
 1\. Unplug your MSR-2 from power and remove the back
 
 ![Back of the MSR-2 case with the Apollo logo backplate in place](/assets/msr-2-add-co2-pic-1.jpg)![Pressing on the edge of the MSR-2 backplate to pop it off the case](/assets/msr-2-add-co2-pic-2.jpg)![MSR-2 with the backplate removed, showing the board inside the case](/assets/msr-2-add-co2-pic-3-1.jpg)

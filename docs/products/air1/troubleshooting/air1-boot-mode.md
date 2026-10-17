@@ -10,6 +10,8 @@ description: Step by step guide for putting The AIR-1 In Boot Mode.
 
 ## Method 1: Boot Button Only
 
+With this method, you hold the boot button while you plug in the USB-C cable.
+
 1\. Position the AIR-1 so that the USB-C port is facing you. On the left side of the USB-C port, locate a small opening to press the boot button (the right button).
 
 ![Tool pointing to the AIR-1 boot button, the right of two buttons beside the USB-C port](/assets/air-1-boot-button.jpg)
@@ -19,6 +21,8 @@ description: Step by step guide for putting The AIR-1 In Boot Mode.
 3\. Continue with <a href="https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
 ## Method 2: Boot and Reset Buttons
+
+With this method, you use the boot and reset buttons while the device is plugged into your computer.
 
 1\. Unplug the device and locate the boot and reset buttons as shown in the image below.
 

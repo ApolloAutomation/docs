@@ -55,6 +55,8 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
 ### Cold band: below 18 °C → Blue
 
+Your first automation turns the RGB LEDs blue whenever the temperature reading falls into the cold band.
+
 1.  Set up the trigger:
 
     <div class="annotate" markdown>
@@ -163,7 +165,7 @@ Open the Comfortable and Hot triggers in the GUI and edit the **Above** / **Belo
 
     Same trigger-then-action pattern, new trigger type. Next, bring it into Home Assistant so the readings show up alongside the rest of your kit.
 
-<a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Connect to Home Assistant</a>
+<a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next: Connect to Home Assistant</a>
 
 
 --8<-- "_snippets/community-help.md"

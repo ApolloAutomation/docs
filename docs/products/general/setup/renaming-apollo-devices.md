@@ -6,6 +6,8 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 
 ## ESPHome Integration - Part 1
 
+You rename the device in the ESPHome integration, then update its entity IDs to match.
+
 1\. Click the button below to open the **ESPHome** integration page (**Settings → Devices & services → ESPHome**).
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
@@ -18,7 +20,7 @@ description: Tutorial for How To Rename Apollo Devices in the ESPHome integratio
 
 !!! success "It's okay if there are some entities that cannot be regenerated!"
 
-    You will likely run into a popup showing that 2 entity IDs cannot be regenerated because they are not available. This is fine, we can manually fix these later or just ignore them as they are disabled entities and not expected to be used.
+    You will likely run into a popup showing that 2 entity IDs cannot be regenerated because they are not available. This is fine, we can manually fix these later or ignore them as they are disabled entities and not expected to be used.
 
 ![Selecting Recreate entity IDs from the three-dot menu on a BTN-1 device page, then Update](/assets/esphome-integration-recreate-entity-ids-gif.gif)
 
@@ -43,6 +45,8 @@ This section only changes the device name shown in the ESPHome integration page.
     The next section is for ESPHome device builder which is for tinkerers and advanced users to take control of their device and edit the yaml. Please skip the next section if you do not use ESPHome Device Builder!
 
 ## ESPHome Device Builder
+
+You change the device's hostname and friendly name in ESPHome Device Builder, then re-add it to Home Assistant under the new name.
 
 1\. Make sure you are already using the ESPHome Device Builder app as <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-esphome-device-builder" target="_blank" rel="noreferrer nofollow noopener">gone over in the getting started wiki articles</a>.
 

@@ -25,6 +25,8 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
 ### Turn the lights on
 
+Start with the automation that turns the RGB light on when your Motion module detects movement.
+
 1.  Open your starter kit device in ESPHome Device Builder and click **Edit**. If you need a refresher on the editor, see the [Device Builder Tour](../learning-the-basics/device-builder-tour.md#editor).
 2.  In the editor's left pane, expand the **Automations** dropdown and click **Add Automation**.
 
@@ -142,6 +144,6 @@ Your automation is saved in Device Builder, but the device is still running its 
 
 With the device back online, wave your hand in front of the PIR sensor. The RGB light turns on as soon as motion is detected, then turns off shortly after the sensor stops seeing movement. If the light triggers right after boot with nothing moving, give the sensor a moment. PIR sensors need a brief warm-up after powering on, usually 5 to 10 seconds, before their readings stabilize.
 
-<a href="../temp-reactive-leds/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Temp-Reactive LEDs</a>
+<a href="../temp-reactive-leds/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next: Temp-Reactive LEDs</a>
 
 --8<-- "_snippets/community-help.md"

@@ -49,6 +49,8 @@ Your MSR-2 now detects people where you want it to. To confirm it in Homey, open
 
 !!! example "Open-plan kitchen and living room: light the kitchen only"
 
+    You'll tune the gates so only movement in the kitchen turns on the kitchen lights.
+
     1. Stand in the spots where you want the MSR-2 to trigger, and in the spots where it shouldn't.
     2. Watch which gates rise in each spot.
     3. Move the sliders for the living room gates to the right, so walking past no longer turns on the kitchen lights. Move the still threshold sliders for the kitchen gates to the left, so the lights stay on while you read a recipe or do the dishes.

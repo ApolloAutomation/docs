@@ -10,6 +10,8 @@ description: Step by step guide for putting The TEMP Pro-1 In Boot Mode.
 
 ## Method 1: Boot Button Only
 
+You'll remove the lid, then hold the boot button while you plug in the USB-C cable.
+
 1\. Position the TEMP Pro-1 so that the USB-C port is facing you. Remove the lid by gently prying up on the small slit by the top of the case.
 
 ![Prying up the TEMP Pro-1 lid at the slit above the USB-C port](/assets/temp-pro-1-boot-button-lift-lid-jpg.jpeg)
@@ -23,6 +25,8 @@ description: Step by step guide for putting The TEMP Pro-1 In Boot Mode.
 4\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/products/temppro1/troubleshooting/temp-pro1-code/).
 
 ## Method 2: Boot and Reset Buttons
+
+You'll open the case and use the boot and reset buttons together while the device is plugged into your computer.
 
 1\. Unplug the device and remove the case as shown in the images above
 

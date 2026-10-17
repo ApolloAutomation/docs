@@ -48,7 +48,7 @@ description: Frequently asked questions about the PUMP-1 Fluid Pump Sensor
 
 12\. **How large is the PUMP-1?**
 
-* The pump measures 3.4in x 1.3in x 1.8in (86.4mm x 33mm x 45.7mm), making it compact and easy to install.
+* The pump measures 3.4in x 1.3in x 1.8in (86.4mm x 33mm x 45.7mm), making it compact.
 
 13\. **How do I control the pump?**
 

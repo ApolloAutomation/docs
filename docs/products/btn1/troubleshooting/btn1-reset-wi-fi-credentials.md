@@ -4,6 +4,8 @@ description: Step by step guide for resetting the Wi-Fi Credentials on your BTN-
 ---
 # Reset Wi-Fi Credentials on your BTN-1
 
+Resetting the Wi-Fi credentials makes your device broadcast its hotspot again so you can enter new Wi-Fi details.
+
 1\. Plug the BTN-1 into power.
 
 ![Plugging a USB-C cable into the port on the back of the BTN-1](/assets/btn-1-plug-in-usb-c.webp)

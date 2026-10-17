@@ -18,7 +18,7 @@ The SEN55 is the powerhouse of the AIR-1 with multiple sensors such as particula
 
 **PM<sub>2\.5</sub>** : fine inhalable particles, with diameters that are generally 2.5 micrometers and smaller.
 
-* How small is 2.5 micrometers? Think about a single hair from your head. The average human hair is about 70 micrometers in diameter – making it 30 times larger than the largest fine particle.
+* How small is 2.5 micrometers? Think about a single hair from your head. The average human hair is about 70 micrometers in diameter, making it 30 times larger than the largest fine particle.
 
 !!! tip "We suggest triggering alert automations, hvac or a fan turning on, etc when PM particles are rising"
 
@@ -74,7 +74,7 @@ The AIR-1 calculates this automatically, and the Apollo Automation Homey app sho
 
 ---
 
-<table><thead><tr><th><p><strong>PM Size</strong></p></th><th><p><strong>Safe Range</strong></p></th><th><p><strong>Health Concern</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>No official limit — keep as low as possible</p></td><td><p>Ultrafine particles — most dangerous</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 12 µg/m³ (EPA), ≤ 5 µg/m³ (WHO annual)</p></td><td><p>Penetrates lungs and bloodstream</p></td></tr><tr><td><p>PM4</p></td><td><p>Industrial contexts only — no public health limits</p></td><td><p>Less regulated</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 45 µg/m³ (WHO 24-hour)</p></td><td><p>Triggers upper respiratory irritation</p></td></tr></tbody></table>
+<table><thead><tr><th><p><strong>PM Size</strong></p></th><th><p><strong>Safe Range</strong></p></th><th><p><strong>Health Concern</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>No official limit. Keep as low as possible</p></td><td><p>Ultrafine particles (most dangerous)</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 12 µg/m³ (EPA), ≤ 5 µg/m³ (WHO annual)</p></td><td><p>Penetrates lungs and bloodstream</p></td></tr><tr><td><p>PM4</p></td><td><p>Industrial contexts only (no public health limits)</p></td><td><p>Less regulated</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 45 µg/m³ (WHO 24-hour)</p></td><td><p>Triggers upper respiratory irritation</p></td></tr></tbody></table>
 
 ---
 
@@ -108,7 +108,7 @@ This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/I
 
 !!! tip "We suggest triggering alert automations, hvac or a fan turning on, etc when the VOC Quality changes to Abnormal or Very Abnormal or Extremely Abnormal."
 
-    This is a very easy way to automate based on the air quality changing over the past 24 hours but you will still want to automate on particulate matter as well!
+    This lets you automate based on the air quality changing over the past 24 hours, but you will still want to automate on particulate matter as well!
 
 ## <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">NO<sub>X</sub> Index</a>
 

@@ -20,6 +20,8 @@ description: Step by step guide for putting The CAST-1 In Boot Mode.
 
 ## Method 2: Boot and Reset Buttons
 
+This method puts your device into boot mode with the boot and reset buttons.
+
 1\. Plug a USB-C cable that supports power and data into your computer and connect the other end to your CAST-1.
 
 2\. Locate the boot and reset buttons on the CAST-1.

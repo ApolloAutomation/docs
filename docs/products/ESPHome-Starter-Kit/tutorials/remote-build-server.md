@@ -47,6 +47,8 @@ On your Windows PC, open **Settings → Pairing requests**. It shows **Open** wi
 
 ### Send the Request From the Other Dashboard
 
+On the sending dashboard, you'll ask your PC to pair.
+
 1.  Go to **Settings → Send builds**. Your PC appears under **Known dashboards** with its address and ESPHome version. Click **Pair**.
 
 2.  **Confirm receiver** opens, showing your PC's fingerprint and two name fields. Click **Send pair request**. (1)
@@ -59,6 +61,8 @@ On your Windows PC, open **Settings → Pairing requests**. It shows **Open** wi
 ![ESPHome Device Builder Send builds: clicking Pair, sending the pair request, and seeing the emoji fingerprint](../../../assets/esphome-device-builder-initiate-build-server-pairing.gif)
 
 ### Accept It on Your PC
+
+Back on your PC, you'll check the emoji fingerprint and accept the request.
 
 1.  The request shows up under **Pairing requests** with the sender's name and **From IP**. Click **Review**.
 

@@ -4,6 +4,8 @@ description: "Fit the CO2 module to your MSR-1, with photos showing the connecto
 ---
 # Adding CO<sub>2</sub> To MSR-1
 
+You'll open your sensor, fit the CO2 module onto its board, and close the case back up.
+
 1\. Unplug your MSR-1 from power and remove the back
 
 ![MSR-1 in its open case next to the removed back cover](/assets/img-3784.jpeg)

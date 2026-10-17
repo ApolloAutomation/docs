@@ -10,6 +10,8 @@ description: How to disable Prevent Sleep and allow your Apollo device to sleep!
 
     The temperature offsets needed will be much lower for your sensors as the microcontroller will not put off as much heat when it is sleeping and then waking for short periods to report the sensor values.
 
+You'll set how long your sensor sleeps, then turn off **Prevent Sleep** so it can start sleeping.
+
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> and click on the name of your Apollo device.
 
 ![Clicking an Apollo BTN-1 on the ESPHome integration page in Home Assistant to open its device page](/assets/prevent-sleep-integrations-page-gif.gif)

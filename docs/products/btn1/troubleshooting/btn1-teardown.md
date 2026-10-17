@@ -8,6 +8,8 @@ description: >-
 
 ## Disassembly
 
+You'll remove the lid, lift out the green PCB, and disconnect the battery.
+
 !!! warning "If you have a BTN-1 with a battery you should flip the power switch to off"
 
     The BTN-1 ships with a lithium ion battery, however, this means it needs a master shutoff switch, which is on the left side of your BTN-1
@@ -29,6 +31,8 @@ description: >-
 ![Unplugging the 2-pin JST battery connector from the BTN-1 circuit board](/assets/btn-1-unplug-jst.webp)
 
 ## Reassembly
+
+To put everything back together, you'll reconnect the battery, seat the PCB, and snap the lid back on.
 
 1\. Re-attach the 2-pin JST connector and place the battery writing side down with the wires on the left side of the case.
 

@@ -8,6 +8,8 @@ description: How to Insert Battery on TEMP-1B.
 
     The TEMP-1B is a very neat sensor but it does *NOT* include a battery nor a charging circuit. You will have to buy your own <a href="https://apolloautomation.com/products/16340-rechargeable-battery" target="_blank" rel="noreferrer nofollow noopener">rechargeable RC-CR123A aka 16340 battery </a>and also a separate 16340 charger such as a Nitecore 2 or 4bay model.
 
+You'll open the case, insert the battery with the positive terminal facing the + sign, and close the lid again.
+
 1\. Gently pry open the case lid as shown in the image below.
 
 ![Prying the TEMP-1B case lid open with a flat metal tool](/assets/temp-1b-pry-open.jpg)

@@ -44,7 +44,7 @@ This guide will take you through calibrating your PLT-1's moisture sensor. The s
 
 ![PLT-1 Configuration card with the 100% Water Voltage and Dry Voltage boxes outlined in red](/assets/plt-1-calibration-pic-4.png)
 
-12\. Now, place the stake/probe portion of the PLT-1 into a cup of water. Be careful not to submerge the entire sensor—only the exposed PCB below the "Apollo" label and the horizontal line can be exposed to water.
+12\. Now, place the stake/probe portion of the PLT-1 into a cup of water. Be careful not to submerge the entire sensor. Only the exposed PCB below the "Apollo" label and the horizontal line can be exposed to water.
 
 13\. Grab the "Soil ADC" value again and enter it into the "100% Water Voltage" entity.
 

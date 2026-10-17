@@ -4,6 +4,8 @@ description: Step by step guide for re-flashing the LED-1 back to factory firmwa
 ---
 # Factory Re-Flash LED-1
 
+Follow these steps to flash your device back to its factory firmware with ESP Flasher on Windows.
+
 1\. Plug in a USB cable that supports power and data into your computer.
 
 2\. Push and hold the boot button (the right button). While still holding the button down, plug in a USB-C cable into the USB-C port of your LED-1 then let go of the button.

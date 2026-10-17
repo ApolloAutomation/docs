@@ -8,6 +8,8 @@ description: How to Insert Battery on PLT-1B.
 
     The PLT-1B does *NOT* include a battery nor a charging circuit. You will need to supply your own flat-top, unprotected 18650 Li-ion cell, and a separate 18650 charger. Recommended cell: <a href="https://imrbatteries.com/products/samsung-30q-18650-3000mah-15a-battery" target="_blank" rel="noreferrer nofollow noopener">Samsung 30Q 18650 3000mAh</a>.
 
+Follow these steps to open the case, insert the battery, and close it again.
+
 1\. Gently press your thumb on the case above the stake and the lid should pop off.
 
 ![Pressing on the PLT-1B case lid above the stake until the lid pops off](/assets/plt-1b-remove-case-lid.webp)

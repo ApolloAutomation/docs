@@ -6,6 +6,8 @@ description: >-
 ---
 # How to Find IP address and hostname of your M-1 device.
 
+You'll use the WLED Native app to find your device's IP address and hostname.
+
 1\. Download the WLED Native app for iOS and Android.
 
 === "iOS"

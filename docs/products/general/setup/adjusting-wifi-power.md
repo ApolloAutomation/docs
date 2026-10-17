@@ -28,7 +28,7 @@ The ESP chips produce a significant amount of energy (heat) constantly using Wi-
   power_save_mode: HIGH
 ```
 
-5\. Paste the code as shown below - make sure the spaces look the same and there are no red lines under any of the code.
+5\. Paste the code as shown below. Make sure the spaces look the same and there are no red lines under any of the code.
 
 ![MTR-1 YAML in ESPHome Device Builder with power_save_mode: HIGH added under wifi](/assets/power-save-tutorial-3-1.png)
 

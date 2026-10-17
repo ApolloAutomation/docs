@@ -30,6 +30,8 @@ Every LED draws current. A WS2812B LED pulls up to about 60 mA at full white, so
 
 ## Wiring
 
+You'll connect the strip's power, ground and data wires to the matching pins on your device.
+
 1\. Unplug your CAST-1 from power.
 
 2\. Find the input end of the strip. Its pads are labelled **DIN** or **DI**, and the arrows printed on the strip point away from it. (1)

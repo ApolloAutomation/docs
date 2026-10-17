@@ -8,7 +8,7 @@ Beta firmware gets new features and fixes before they reach Stable. It's a great
 
 ## With the Firmware Channel Setting
 
-This is the easy way. Use it if your device has a **Firmware Channel** setting on its device page, like the CAST-1.
+This is the simpler way. Use it if your device has a **Firmware Channel** setting on its device page, like the CAST-1.
 
 <video src="/assets/firmware-channel-walkthrough.mp4" poster="/assets/firmware-channel-walkthrough-poster.jpg" autoplay loop muted playsinline aria-label="Setting Firmware Channel to Beta, pressing Firmware Update, and the update installing until it shows Up-to-date" style="width: 100%; max-width: 100%; border-radius: 6px;"></video>
 
@@ -54,7 +54,7 @@ Use this if your device doesn't have a **Firmware Channel** setting, or if you b
 
 !!! danger "This is code and requires you to follow the directions carefully."
 
-    Editing the YAML here means even a space matters. Follow the guide just as shown and ask questions if you need help!
+    Editing the YAML here means even a space matters. Follow the guide exactly as shown and ask questions if you need help!
 
 3\. Look for the line that starts with packages and the line below it and put a \# in front of each line as shown in the second image below.
 
