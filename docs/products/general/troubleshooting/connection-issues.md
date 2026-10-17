@@ -24,7 +24,9 @@ wifi:
   power_save_mode: none
 ```
 
-1\. Select the ESPHome app and then select Edit under your desired device.
+1\. Select the ESPHome app and then select Edit under your desired device. If it isn't in your sidebar, the button below opens the app.
+
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 ![ESPHome in the Home Assistant sidebar and the Edit button on an MSR-2 card circled](/assets/screenshot-2024-10-25-at-5-14-48-pm.png)
 

@@ -8,6 +8,8 @@ description: Tutorial for how to turn your Apollo device into a BLE tracker to t
 
 Alternative HACS Integration: [iPhone Detect](https://github.com/mudape/iphonedetect)
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=mudape&repository=iphonedetect&category=integration)
+
 [https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6](https://community.home-assistant.io/t/implement-espresense-fuctionality-in-home-assistant-taking-advantage-of-ble-proxy-of-esphome/524019/6)
 
 Thanks to user [Jacob Pfeifer](https://discord.com/channels/1126966963206361199/1126966963755819080/1202032228050419732)!<br> Ok, so looks like I've got signal strength tracking working for Apple watches by getting the mac address from the home assistant private ble device integration. Here's a quick write-up if anyone else is interested. The end of the doc has a complete configuration file example.

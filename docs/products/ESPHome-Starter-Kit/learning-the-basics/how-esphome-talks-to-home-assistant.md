@@ -47,13 +47,15 @@ You have two ways to control your Starter Kit, and both keep working at the same
 * Open the **on-device web page** at <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">esphome-starter-kit.local</a> to control your device directly from any browser on your network. No Home Assistant required. See the [Web Server in Core Components](core-components.md#web-server) for more.
 * Your Starter Kit appears as a new device under the **ESPHome integration** in Home Assistant. Each switch, sensor, and light becomes an entity you can use in dashboards, automations, voice control, history, and alerts.
 
-    [![Open the ESPHome integration in your Home Assistant.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+    [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 For a single device, the on-device web page is often enough. For anything that ties together with other devices or runs on a schedule, Home Assistant is the place.
 
 !!! info "If auto-discovery doesn't work"
 
     Some router setups (notably VLANs and segmented networks) block mDNS broadcasts. If your device never shows up under **Discovered**, add the integration manually using the device's IP address.
+
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=esphome)
 
     For UniFi networks specifically, see our [UniFi mDNS troubleshooting guide](../../general/troubleshooting/ubiquiti-unifi-mdns-auto-discover-issue.md).
 

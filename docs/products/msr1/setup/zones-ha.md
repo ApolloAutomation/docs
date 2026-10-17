@@ -18,6 +18,9 @@ Here is a video of how to tune the mmWave sensor using radar engineering mode,
 
 1. Open Home Assistant
 2. Navigate to Settings>Devices & services>ESPHome>Select the MSR-1
+
+    [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
 3. Scroll down to the Configuration section
 4. Turn on Radar Engineering Mode (REM)  
     ![MSR-1 Configuration card in Home Assistant with the Radar Engineering Mode toggle turned on and highlighted](/assets/5l4configuration.png)

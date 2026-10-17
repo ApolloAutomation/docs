@@ -323,9 +323,9 @@ With the device back online, each action you added shows up in Home Assistant. T
 
 === "Level 1 · One song"
 
-    1.  Click the button below to open **Developer Tools → Actions**:
+    1.  Click the button below to open **Developer Tools → Actions** (**Settings → Tools → Actions** in Home Assistant 2026.8 and newer):
 
-        [![Open your Home Assistant instance and show your service developer tools.](https://my.home-assistant.io/badges/developer_services.svg)](https://my.home-assistant.io/redirect/developer_services/)
+        [![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
 
     2.  In the **Action** field, search `play_pink_panther` and pick **ESPHome: esphome-starter-kit play_pink_panther**.
     3.  Click **Perform action**. The buzzer plays the Pink Panther theme, no extra data needed.
@@ -340,9 +340,9 @@ With the device back online, each action you added shows up in Home Assistant. T
 
 === "Level 2 · Song slots"
 
-    1.  Click the button below to open **Developer Tools → Actions**:
+    1.  Click the button below to open **Developer Tools → Actions** (**Settings → Tools → Actions** in Home Assistant 2026.8 and newer):
 
-        [![Open your Home Assistant instance and show your service developer tools.](https://my.home-assistant.io/badges/developer_services.svg)](https://my.home-assistant.io/redirect/developer_services/)
+        [![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
 
     2.  In the **Action** field, search `play_song_1` and pick **ESPHome: esphome-starter-kit play_song_1**.
     3.  Click **Perform action**. The buzzer plays that slot's tune, no extra data needed.

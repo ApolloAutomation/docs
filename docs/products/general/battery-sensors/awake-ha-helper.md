@@ -4,7 +4,9 @@ description: How to keep your sensor awake using the Home Assistant Helper.
 ---
 # How to keep your sensor awake using the Home Assistant Helper
 
-1\. Open your Home Assistant dashboard and go to settings then select Devices and services and select helpers in the top right. <a href="http://homeassistant.local:8123/config/helpers" title="Open Helpers Page" target="_blank" rel="noopener">Or click here to go straight there</a>.
+1\. Open your Home Assistant dashboard and go to settings then select Devices and services and select helpers in the top right. Or use the button below to go straight there.
+
+[![Open your Home Assistant instance and show your helper entities.](https://my.home-assistant.io/badges/helpers.svg)](https://my.home-assistant.io/redirect/helpers/)
 
 ![Home Assistant Settings with the cursor on Devices and services](/assets/awake-ha-helper-pic-1.png)
 
@@ -36,7 +38,9 @@ description: How to keep your sensor awake using the Home Assistant Helper.
 
     Please keep reading to create an automation to turn this helper off after one hour of it being on.
 
-8\. Create a new automation and select "add trigger" then select entity then select state.
+8\. Create a new automation (**Settings → Automations & scenes → Create automation**) and select "add trigger" then select entity then select state.
+
+[![Open your Home Assistant instance and show your automations.](https://my.home-assistant.io/badges/automations.svg)](https://my.home-assistant.io/redirect/automations/)
 
 ![New automation with Add trigger and the Entity trigger option circled in red](/assets/toggle-ota-mode-automation-1.png)
 

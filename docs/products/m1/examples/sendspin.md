@@ -12,13 +12,13 @@ description: Use the M-1 with SendSpin audio visualizers
 
 1\. You will need to be running <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a> which has Sendspin baked in! Click the button below to install it on your Home Assistant OS setup.
 
-[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=d5369777_music_assistant&amp;repository_url=https%3A%2F%2Fgithub.com%2Fmusic-assistant%2Fhome-assistant-addon)
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=d5369777_music_assistant&repository_url=https%3A%2F%2Fgithub.com%2Fmusic-assistant%2Fhome-assistant-addon)
 
 !!! success "This tutorial expects you to already have music providers and players set up."
 
     Make sure you have already followed the Music Assistant onboarding and set up a music provider or multiple and added some players to play music on. Your M-1 will already be shown as a Sendspin player if you are running the ESPHome firmware. <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1-esphome/" target="_blank" rel="noreferrer nofollow noopener">Click here</a> to get your M-1 running ESPHome firmware first!
 
-2\. Head to the <a href="http://homeassistant.local:8123/d5369777_music_assistant" target="_blank" rel="noreferrer nofollow noopener">Music Assistant dashboard</a> and select one of your media players. Then click the players icon then click the players icon again and check off your Apollo M-1 LED Matrix.
+2\. Open **Music Assistant** from your Home Assistant sidebar and select one of your media players. Then click the players icon then click the players icon again and check off your Apollo M-1 LED Matrix.
 
 ![Music Assistant players panel with the Apollo M-1 checked to join the playing group](../../../assets/sendspin-add-m-1-as-player.gif)
 

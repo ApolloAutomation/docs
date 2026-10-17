@@ -18,7 +18,9 @@ description: Step by step guide for re-calibrating your SCD40 CO2 sensor
 
 1\. Bring your sensor outside and plug it in. You might need a USB battery bank if you live in an apartment or otherwise cannot get power outside of your building.
 
-2\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
+2\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**).
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 3\. Click device as shown in the image below.
 

@@ -53,6 +53,8 @@ The LED strip controls are hidden until you turn them on, so CAST-1s without a s
 
 1\. In Home Assistant, go to **Settings** > **Devices & services** > **ESPHome** and open your CAST-1.
 
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
 2\. Under **Controls**, **Configuration** and **Diagnostic**, select **+N entities not shown** and turn on each entity whose name starts with **LED Strip**. Home Assistant adds them after about 30 seconds.
 
 3\. Set **LED Strip Count** to the number of LEDs on your strip. (1)

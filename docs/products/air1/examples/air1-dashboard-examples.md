@@ -27,6 +27,10 @@ hours_to_show: 24
 
 ## Custom: Apexcharts Card
 
+This card installs from HACS, so add it there first:
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=RomRider&repository=apexcharts-card&category=plugin)
+
 ![ApexCharts card showing 10-minute average CO2 levels for five rooms in Home Assistant](/assets/air-1-suggestions-co2-smarthomesellout.png)
 
 ```yaml
@@ -158,6 +162,10 @@ series:
 ```
 
 ### Custom: Plotly Graph Card
+
+This card installs from HACS, so add it there first:
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
 
 ![Plotly Graph card showing 24 hours of Bedroom CO2 readings in ppm](/assets/plotly-co2-graph.png)
 

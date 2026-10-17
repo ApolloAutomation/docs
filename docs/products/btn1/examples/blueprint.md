@@ -32,11 +32,15 @@ description: >-
 
 ## Manual Import
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/automation/dashboard" target="_blank" rel="noreferrer nofollow noopener">automations page</a> and click on **Blueprints** in the top right then select **Import Blueprint**.
+1\. Go to **Settings → Automations & scenes**, click **Blueprints** at the top, then click **Import blueprint**.
 
 ![Opening the Home Assistant Blueprints tab under Automations and scenes and clicking Import blueprint](/assets/btn-1-blueprint-manual-import.gif)
 
-2\. Copy <a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FBTN-1%2FBTN-1.yaml" target="_blank" rel="noreferrer nofollow noopener">this link</a> and paste it into the **Blueprint address** box and click **Preview** then click **Import blueprint**.
+2\. Copy the address below, paste it into the **Blueprint address** box, and click **Preview** then click **Import blueprint**.
+
+```text
+https://raw.githubusercontent.com/ApolloAutomation/Blueprints/refs/heads/main/BTN-1/BTN-1.yaml
+```
 
 ![Home Assistant Import a blueprint dialog for the BTN-1 blueprint, clicking Preview then Import blueprint](/assets/btn-1-blueprint-auto-import.gif)
 

@@ -8,7 +8,9 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 !!! tip "Need to install it first?"
 
-    Head to the **Media Proxy** section of the <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1-esphome/#media-proxy" target="_blank" rel="noreferrer nofollow noopener">M-1 ESPHome Getting Started</a> page to install the app, then come back here.
+    Head to the **Media Proxy** section of the <a href="https://wiki.apolloautomation.com/products/m1/setup/getting-started-m1-esphome/#media-proxy" target="_blank" rel="noreferrer nofollow noopener">M-1 ESPHome Getting Started</a> page to install the app, then come back here. Or use the button below, which adds the app repository and opens Media Proxy.
+
+    [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=2b3c960e_media_proxy&repository_url=https%3A%2F%2Fgithub.com%2Fstuartparmenter%2Fhomeassistant-addons)
 
 ## What you can do
 
@@ -23,7 +25,9 @@ The <a href="https://github.com/pavlov-net/media-proxy" target="_blank" rel="nor
 
 Once Media Proxy is installed and running, all of these things are driven from a single text entity on your M-1.
 
-1\. Open the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noreferrer nofollow noopener">ESPHome integration page</a> in Home Assistant and click your M-1 device.
+1\. Open the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) in Home Assistant and click your M-1 device.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 2\. Find the entity named **Media Source** and paste any supported URL into it.
 

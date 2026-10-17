@@ -49,7 +49,7 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
     1\. Open your integrations page in Home Assistant.
 
-    <a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
+    [![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
 
     2\. Click the **Add** button on your discovered CAST-1, type in your Wi-Fi SSID and password, then click **Submit**.
 
@@ -78,7 +78,7 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
 Open the ESPHome Integration, then click **Add** and **Submit**. Edit the name and choose an **Area** then click **Finish**.
 
-<a href="https://my.home-assistant.io/redirect/integration/?domain=esphome" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integration.svg" alt="Open your Home Assistant instance and show the ESPHome integration."></a>
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![Adding the discovered CAST-1 in the ESPHome integration, naming it, and choosing an area](/assets/cast-1-home-assistant-integration.gif)
 
@@ -90,7 +90,7 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 1\. Head to the App Store to install Music Assistant.
 
-<a href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=d5369777_music_assistant&repository_url=https%3A%2F%2Fgithub.com%2Fmusic-assistant%2Fhome-assistant-addon" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/supervisor_addon.svg" alt="Open your Home Assistant instance and show the Music Assistant Server add-on."></a>
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=d5369777_music_assistant&repository_url=https%3A%2F%2Fgithub.com%2Fmusic-assistant%2Fhome-assistant-addon)
 
 2\. Click **Install**, then click **Start** once it finishes.
 
@@ -98,7 +98,7 @@ The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_bl
 
 3\. Home Assistant discovers the Music Assistant integration automatically. Open your integrations page, find **Music Assistant**, then click **Add** and **Submit**.
 
-<a href="https://my.home-assistant.io/redirect/integrations/" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integrations.svg" alt="Open your Home Assistant instance and show your integrations."></a>
+[![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
 
 ### Stream To Your CAST-1
 

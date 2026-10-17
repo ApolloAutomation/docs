@@ -24,14 +24,23 @@ If you built the [MSR-2 tuning dashboard](/products/msr2/setup/msr2-tuning-dashb
 !!! note "Before you start"
 
     - You're running Home Assistant 2026.8.1 or newer. **Settings → About** shows your version.
-    - HACS 2.0.5 or newer is installed and set up. HACS is a community store for Home Assistant that installs and updates custom integrations like this one. If you don't have it yet, follow the [HACS download guide](https://hacs.xyz/docs/use/download/download/) and then the [initial configuration guide](https://hacs.xyz/docs/configuration/basic). Setup asks you to sign in with a free GitHub account.
+
+        [![Open your Home Assistant instance and show your Home Assistant version information.](https://my.home-assistant.io/badges/info.svg)](https://my.home-assistant.io/redirect/info/)
+
+    - HACS 2.0.5 or newer is installed and set up. HACS is a community store for Home Assistant that installs and updates custom integrations like this one. If you don't have it yet, follow the [HACS download guide](https://hacs.xyz/docs/use/download/download/) and then the [initial configuration guide](https://hacs.xyz/docs/configuration/basic). Setup asks you to sign in with a free GitHub account. On Home Assistant OS, the button below opens the **Get HACS** app that the download guide uses.
+
+        [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=cb646a50_get&repository_url=https%3A%2F%2Fgithub.com%2Fhacs%2Faddons)
+
     - Your Apollo sensor is already in Home Assistant through the ESPHome integration. If it isn't, work through [getting started](/products/general/setup/getting-started.md) first.
 
 ## Install Apollo mmWave through HACS
 
-Apollo mmWave installs from its GitHub repository, so you add that repository to HACS once as a custom repository. From then on HACS tracks updates for it like any other integration.
+Apollo mmWave installs from its GitHub repository, so you add that repository to HACS once as a custom repository. From then on HACS tracks updates for it like any other integration. The button under step 1 covers steps 1 to 5: it adds the repository, after HACS asks you to confirm, and opens Apollo mmWave so you can go on at step 6.
 
 1. Open **HACS** from your Home Assistant sidebar.
+
+    [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=apollo-mmwave-main&category=integration)
+
 2. Click the three-dot menu in the upper right corner and choose **Custom repositories**.
 3. Paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **Repository** field.
 4. Set **Type** to **Integration** and click **Add**. The repository shows up in the list; close the dialog.
@@ -39,13 +48,18 @@ Apollo mmWave installs from its GitHub repository, so you add that repository to
 6. Click **Download**, then confirm with **Download** in the dialog that opens.
 7. Restart Home Assistant: go to **Settings → System**, click the power icon in the upper right corner, and choose **Restart Home Assistant**. Wait for it to come back.
 
+    [![Open your Home Assistant instance and show the system dashboard.](https://my.home-assistant.io/badges/system_dashboard.svg)](https://my.home-assistant.io/redirect/system_dashboard/)
+
 Home Assistant only loads a new integration when it starts, so the restart is what makes Apollo mmWave available to add in the next step.
 
 ## Add the integration
 
 This is the step that builds your dashboard. You add Apollo mmWave once and it covers every Apollo radar you own, so there's no need to repeat it per sensor. Adding it a second time stops with **This entry is already configured.**
 
-1. Go to **Settings → Devices & services** and click **Add integration**. You can also [open the setup dialog directly](https://my.home-assistant.io/redirect/config_flow_start/?domain=apollo_mmwave).
+1. Go to **Settings → Devices & services** and click **Add integration**. Or use the button below, which opens the Apollo mmWave setup dialog directly, and skip to step 3.
+
+    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=apollo_mmwave)
+
 2. Search for **Apollo mmWave** and select it. If it isn't in the list, refresh the browser page (your browser may still hold the list from before the restart) and search again.
 3. Leave **Add an 'Apollo mmWave' dashboard to the sidebar** turned on (it's on by default) to get the dashboard this guide describes. The dialog notes that the integration serves its own cards and dashboard, with nothing else to download. Turn the option off only if you'd rather place the cards on your own dashboards; you can change it later in the integration options.
 4. Click **Submit**, then **Finish** on the success message.
@@ -96,6 +110,8 @@ Your dashboard is working. On an MSR-1, MSR-2, or R PRO-1 tab, the first thing t
 ## Change the integration options
 
 The options let you turn the dashboard off, or choose exactly which sensors get a tab. Open **Settings → Devices & services → Apollo mmWave → Configure** to reach the **Apollo mmWave options** dialog. Changes take effect as soon as you click **Submit**, with no restart, and an open dashboard picks up a new device selection without a reload.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=apollo_mmwave)
 
 ![The Apollo mmWave options dialog with the Auto-create the Apollo mmWave dashboard checkbox ticked and an empty Dashboard devices selector](/assets/apollo-mmwave-options.png)
 
@@ -165,13 +181,21 @@ Work through these in order:
 
 - Check that **Auto-create the Apollo mmWave dashboard** is on in the integration options.
 - Look under **Settings → Dashboards**. Apollo mmWave is listed there even when it's hidden. If you find it, check that its **Show in sidebar** setting is on and that you haven't hidden it from your own sidebar in your profile.
+
+    [![Open your Home Assistant instance and show your dashboards.](https://my.home-assistant.io/badges/lovelace_dashboards.svg)](https://my.home-assistant.io/redirect/lovelace_dashboards/)
+
 - If you already had a dashboard of your own at the `apollo-mmwave` address, the integration leaves that one alone and doesn't create its own.
 - Open **Settings → System → Logs** and look for a warning that starts with **Apollo mmWave:**. You'll also see a warning there that `apollo_mmwave` is a custom integration Home Assistant hasn't tested. Every custom integration installed through HACS logs that one, so you can ignore it.
+
+    [![Open your Home Assistant instance and show your Home Assistant logs.](https://my.home-assistant.io/badges/logs.svg)](https://my.home-assistant.io/redirect/logs/)
+
 - If the integration couldn't create the dashboard, add it yourself: go to **Settings → Dashboards**, click **Add dashboard**, and choose **Apollo Radar Tuning** from the community dashboards. A dashboard you add this way always shows every detected device; the **Dashboard devices** option does not apply to it.
 
 ### The dashboard shows no devices
 
 The dashboard starts with **No Apollo mmWave devices found.** It found no radar to build a tab for. Confirm your sensor shows up under **Settings → Devices & services → ESPHome**, and check that **Dashboard devices** in the integration options is empty or lists your current devices.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ### One sensor has no tab
 
@@ -186,15 +210,21 @@ Work through these in order:
 
 On an MSR-1, MSR-2, or R PRO-1 tab, the help card adds **Offline right now.** and the Auto-calibrate card reads **Radar is offline. Calibration needs the radar online and its gate entities enabled.** with its buttons disabled. An MTR-1 tab adds a card with the sensor's name and the same **Offline right now.** note, and its zone map shows no targets until the sensor reconnects. The tab stays so the sensor isn't silently missing, and the cards fill in once it reconnects. Check its power and Wi-Fi, and that it shows as online on the ESPHome integration page. If you replaced or reflashed the sensor under a new name, the old device entry is what's showing as offline: delete the old device under **Settings → Devices & services** and its tab goes away.
 
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
+
 ### An Apollo card shows an error after an update
 
 After you update Apollo mmWave through HACS and restart, a browser that still holds the previous version's files can show the Apollo cards as error boxes that read **Custom element doesn't exist**. Refresh the page. Each release loads its cards under a new versioned address, so a fresh page load picks up the current version. If the error is still there, do a hard refresh with **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac). If that doesn't clear it either, check **Settings → System → Logs** for a warning that starts with **Apollo mmWave:** about Lovelace resources. On a system that manages its dashboard resources in YAML, the warning lists the two resource addresses to add by hand.
+
+[![Open your Home Assistant instance and show your Home Assistant logs.](https://my.home-assistant.io/badges/logs.svg)](https://my.home-assistant.io/redirect/logs/)
 
 If the element named in the error is `zone-mapper-card`, a refresh won't help: that's the old card name, so update the card as described in [From Apollo mmWave 1.x zone mapping](#from-apollo-mmwave-1x-zone-mapping).
 
 ### The Auto-calibrate card is still loading
 
 The card reads **Apollo mmWave is still loading...** right after a restart while the integration starts, and clears on its own. If it changes to **Apollo mmWave is not loaded, so calibration is unavailable.**, check that Apollo mmWave is enabled under **Settings → Devices & services**, then click **Retry** on the card.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=apollo_mmwave)
 
 !!! success "Next step: calibrate your radar or draw zones"
 

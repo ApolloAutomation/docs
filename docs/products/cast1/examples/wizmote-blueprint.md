@@ -28,7 +28,7 @@ Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
 1\. Open the ESPHome integration, then click through to your Apollo CAST-1 to open its device page.
 
-<a href="https://my.home-assistant.io/redirect/integration/?domain=esphome" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/integration.svg" alt="Open your Home Assistant instance and show the ESPHome integration."></a>
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 2\. Turn on **WizMote Auto-Discovery**.
 
@@ -47,7 +47,7 @@ Before the blueprint can control anything, pair your WizMote with the CAST-1.
 
 1\. Click the Import Blueprint button below then click **Open link**.
 
-<a href="https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FApolloAutomation%2FBlueprints%2Fblob%2Fmain%2FCAST-1%2FCAST-1-WizMote.yaml" target="_blank" rel="noreferrer noopener"><img alt="Import Blueprint" src="https://my.home-assistant.io/badges/blueprint_import.svg" /></a>
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FCAST-1%2FCAST-1-WizMote.yaml)
 
 2\. Click **Preview** then click **Import Blueprint**.
 

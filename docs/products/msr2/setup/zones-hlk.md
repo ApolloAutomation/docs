@@ -18,7 +18,9 @@ description: Tutorial for MSR-2 HLKRadarTool app Zone Configuration.
 
 The default password to connect to the HLKRadarTool is "HiLink".
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a> then select your MSR-2 and scroll down until you see LD2410 Bluetooth.
+1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) then select your MSR-2 and scroll down until you see LD2410 Bluetooth.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ![Home Assistant MSR-2 device page with the LD2410 Bluetooth toggle switched on, outlined in red](/assets/msr-2-toggle-on-ld2410-bluetooth.png)
 

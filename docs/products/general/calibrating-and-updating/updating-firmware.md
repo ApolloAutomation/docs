@@ -6,7 +6,9 @@ description: Step by step guide on how to update the firmware on your Apollo dev
 
 ## From Home Assistant
 
-Most Apollo devices update themselves. Open the device page in Home Assistant and look for the **Firmware Update** entity: it reports when a new version is available and installs it over the air, with no computer and no cable.
+Most Apollo devices update themselves. Open the device page in Home Assistant (**Settings → Devices & services → ESPHome**, then your device) and look for the **Firmware Update** entity: it reports when a new version is available and installs it over the air, with no computer and no cable.
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 On a battery powered device, start the update and it installs the next time the device wakes.
 
@@ -22,7 +24,7 @@ Use this route to build the firmware yourself, or if your device has no **Firmwa
 
 1\. In Home Assistant open the <a href="https://esphome.io/guides/getting_started_hassio.html" target="_blank" rel="noopener"><strong>ESPHome Device Builder</strong></a>**.**
 
-[![Show add-on on My Home Assistant button for the ESPHome Device Builder](/assets/esphome-addon-image.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=5c53de3b_esphome&amp;repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 !!! tip "Make sure you are running the latest version of ESPHome"
 

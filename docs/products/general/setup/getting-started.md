@@ -40,6 +40,8 @@ If this does not automatically open the dashboard, please open your web browser 
 
 1\. Navigate to settings -&gt; integrations then click the "**ADD**" button below your new Apollo device!
 
+[![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
+
 ![Discovered PLT-1B card in Home Assistant labeled Improv via BLE with an Add button](/assets/improv-ble-pic-1.png)
 
 2\. Click submit when it asks if you want to set up your new device and shows you the hostname of your device.
@@ -54,7 +56,9 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![Home Assistant dialog saying the device is connecting to the Wi-Fi network](/assets/improv-ble-pic-4.png)
 
-5\. <a href="https://my.home-assistant.io/redirect/config_flow_start?domain=esphome" target="_blank" rel="noopener">Click the link shown in the image below</a> (do not click close).
+5\. Click the link shown in the image below (do not click close). If the dialog is already gone, the button below opens the same ESPHome setup.
+
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=esphome)
 
 ![Home Assistant success message with a My Home Assistant link to finish ESPHome setup](/assets/improv-ble-pic-5-1.png)
 
@@ -68,7 +72,9 @@ If this does not automatically open the dashboard, please open your web browser 
 
     Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!") unless you need to rename your sensor or do manual edits to the yaml
 
-You can add the ESPHome Device Builder app in Home Assistant to easily update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder").
+You can add the ESPHome Device Builder app in Home Assistant to update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder"). The button below opens the app in your Home Assistant.
+
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
 Make sure to fill out your Wi-Fi details in the SECRETS section by clicking on the SECRETS Image below.
 
@@ -110,6 +116,8 @@ wifi_password: "your-wifi-pass-here"
 
 2\. Click "**Check it out**" to go to the integrations page and see the new device that was found.
 
+[![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
+
 ![Home Assistant New devices discovered notification with the Check it out link outlined](/assets/getting-started-pic-7.png)
 
 3\. Click "**ADD**" to begin adding the device to Home Assistant.
@@ -124,6 +132,8 @@ wifi_password: "your-wifi-pass-here"
 
 ![Home Assistant Success dialog for an MSR-2 with the Area field and Finish button marked](/assets/getting-started-pic-9.png)
 
-6\. Your device is now added to Home Assistant via the ESPHome integration, and you can easily navigate to it by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
+6\. Your device is now added to Home Assistant via the ESPHome integration. To find it, go to **Settings → Devices & services → ESPHome** and click the name of your new device!
+
+[![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 [Click here to join our Discord for fast support! :simple-discord:](https://link.apolloautomation.com/discord){                                .md-button .md-button--primary }

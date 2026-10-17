@@ -7,6 +7,8 @@ description: Tutorial for how to add Apollo Devices To Hidden Networks.
 
 1\. Open the ESPHome Device Builder.
 
+[![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
+
 ![ESPHome Device Builder dashboard showing cards for several Apollo devices](/assets/bluetooth-proxy-tutorial-1.png)
 
 2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install ESPHome Device Builder.") and then move on to step 3.
