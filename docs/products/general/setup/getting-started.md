@@ -72,7 +72,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
     Feel free to [skip to the next section by clicking here](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration "Click to jump to the ESPHome Integration steps!") unless you need to rename your sensor or do manual edits to the yaml
 
-You can add the ESPHome Device Builder app in Home Assistant to easily update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder"). The button below opens the app in your Home Assistant.
+You can add the ESPHome Device Builder app in Home Assistant to update your device or edit the yaml. If you don't have the ESPHome Device Builder app installed you can [follow the steps here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Getting Started guide for installing ESPHome Device Builder"). The button below opens the app in your Home Assistant.
 
 [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
