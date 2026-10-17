@@ -1,8 +1,8 @@
 ---
-title: M-1 LED Matrix Setting up scrolling text
+title: M-1 LED Matrix setting up scrolling text
 description: Step by step guide to adding a WLED Preset for custom scrolling text on the M-1 LED Matrix!
 ---
-# Set Up Scrolling Text for the M-1
+# Set up scrolling text for the M-1
 
 !!! tip "You can set multiple different custom scrolling text as presets in WLED."
 
@@ -48,7 +48,7 @@ description: Step by step guide to adding a WLED Preset for custom scrolling tex
 
 ![The four Scrolling Text effect sliders highlighted in red in WLED](/assets/m-1-wled-scrolling-text-effect-sliders.png)
 
-6\. To customize the text's Color, Background Color, and Gradient, just click the Fx, Bg, and Gr circles and choose your colors using the color picker!
+6\. To customize the text's Color, Background Color, and Gradient, click the Fx, Bg, and Gr circles and choose your colors using the color picker!
 
 ![Choosing text, background, and gradient colors with the Fx, Bg, and Gr circles in WLED](/assets/m-1-matrix-scrolling-text-example-fx-bg-gr-gif.gif)
 

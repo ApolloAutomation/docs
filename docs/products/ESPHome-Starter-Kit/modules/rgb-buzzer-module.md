@@ -1,10 +1,10 @@
 ---
-title: Adding the RGB & Buzzer Module
+title: Adding the RGB & buzzer module
 description: >-
   Wire up the ESPHome Starter Kit RGB & Buzzer module, add it through ESPHome
   Device Builder, then turn the lights on and off and change colors.
 ---
-# Adding the LED & Buzzer Module
+# Adding the LED & Buzzer module
 
 The LED & Buzzer is the starter kit's notification module, a strip of ten addressable RGB LEDs and a small piezo buzzer behind the ESPHome logo silkscreen. By the end of this tutorial you'll have the lights and buzzer wired to your ESP32-C6, surfaced in your YAML, and ready to flash, animate, or sing in response to anything else you build.
 
@@ -31,7 +31,7 @@ Connect the LED & Buzzer module to the ESP32-C6 using one of the FPC ribbon cabl
 
 ![Sliding the FPC ribbon cable, blue side up, into the ESP32-C6 connector and closing the latch](../../../assets/esphome-starter-kit-attach-top-fpc-ribbon.webp)
 
-3\. Slide the ribbon cable into the LED & buzzer module with the blue side facing upwards then press the latch down to lock it in place.
+3\. Slide the ribbon cable into the LED & Buzzer module with the blue side facing upwards then press the latch down to lock it in place.
 
 ![Connecting the other end of the FPC ribbon cable to the LED & Buzzer module](../../../assets/esphome-starter-kit-attach-fpc-to-rgb-buzzer-module.webp)
 
@@ -98,12 +98,12 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 
 Flash the device so the new RGB & Buzzer entities go live.
 
-1.  Click **Install** on your device card in ESPHome Device Builder. (1)
+1.  Click **Install** at the bottom right of the editor. (1)
     { .annotate }
 
     1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
-2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
+2. Choose **On the network** if the device is already on your Wi-Fi, or **Plug into this computer** to flash over USB.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
@@ -115,7 +115,7 @@ With the device back online, the RGB LED light entity is live on the web server.
 
 <div class="annotate" markdown>
 
-1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
+1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md), that's `http://esphome-starter-kit.local/`.
 2. Toggle the **RGB LEDs** entity and play around with the colors and brightness. (1)
 
 </div>

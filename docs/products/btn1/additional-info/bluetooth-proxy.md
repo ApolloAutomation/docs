@@ -1,8 +1,8 @@
 ---
-title: BTN-1 Bluetooth Proxy
+title: BTN-1 Bluetooth proxy
 description: Tutorial for how to turn your BTN-1 into a BLE proxy!
 ---
-# BTN-1 Bluetooth Proxy
+# BTN-1 Bluetooth proxy
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 

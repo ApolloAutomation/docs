@@ -1,7 +1,9 @@
 ---
-title: FAQ
-description: "PLT-1 FAQ."
+title: PLT-1 FAQ
+description: "Answers to common questions about the PLT-1 plant sensor with Homey: sensors, power, connecting to Homey, flows, and how often it reports."
 ---
+# PLT-1 FAQ
+
 1\. **What sensors are included in the PLT-1?**
 
 * The PLT-1 comes with sensors to measure soil moisture, air temperature, humidity, LUX, and UV. There is also an optional DS18b20 waterproof soil temperature probe available for measuring soil temperature.
@@ -26,25 +28,32 @@ description: "PLT-1 FAQ."
 
 * The PLT-1 is primarily designed for indoor use. While some components, such as the waterproof soil temperature probe, can withstand harsher environments, the main body of the sensor is not rated for outdoor use unless adequately protected.
 
-7\. **How does the PLT-1 connect to Home Assistant?**
+7\. **How does the PLT-1 connect to Homey?**
 
-* The PLT-1 uses Wi-Fi to connect to your Home Assistant instance through ESPHome. Once connected, you can configure automations, monitor data, and set alerts directly in Home Assistant.
+* The PLT-1 joins your Wi-Fi, and the Apollo Automation app for Homey talks to it directly over your local network through the ESPHome native API, with no cloud account. Once you add it, its readings show up on the device in Homey, ready for flows and Insights. The app runs on Homey Pro; Homey Cloud isn't supported.
 
-8\. **What kind of automations can I set up with the PLT-1?**
+!!! success "Next step: add your PLT-1 to Homey"
 
-* You can create automations for plant care, such as setting notifications when soil moisture is low, turning on lights when LUX readings drop below a certain level, or adjusting your HVAC system based on air temperature and humidity around your plants.
+    Connect the sensor to your Wi-Fi through its hotspot, then add it with the Apollo Automation app. The getting started guide walks you through both.
+
+    [Get started with Homey](../../general/setup/getting-started-plt1/){ .md-button .md-button--primary }
+
+8\. **What kind of flows can I set up with the PLT-1?**
+
+* Any PLT-1 reading can start a flow in Homey. For example, send a notification when soil moisture drops, turn on a grow light when the light level falls, or adjust your heating or cooling based on the air temperature and humidity around your plants.
 
 9\. **How often does the PLT-1 send sensor data?**
 
-* The update intervals for each sensor are configurable in ESPHome. For example, you can have the soil moisture sensor report every second or extend it to save battery power in the battery-powered version.
+* Most readings update every 60 seconds by default. The intervals are set in the sensor's firmware, and Homey has no setting for them. The light and UV interval is the one you can change without editing the firmware: set **LTR390 Update Interval** (1 to 300 seconds) on the sensor's own web page. In a browser, open `http://apollo-plt-1-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the device's name in Homey. Changing the other intervals means editing the firmware with ESPHome.
 
 10\. **Can I customize the PLT-1’s functionality?**
 
-* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1B. Our <a href="https://github.com/ApolloAutomation/PLT-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
+* Absolutely! With ESPHome, users can modify firmware, settings, and even print custom cases for the PLT-1. Our <a href="https://github.com/ApolloAutomation/PLT-1" target="_blank" rel="noreferrer nofollow noopener">YAML is on GitHub</a> and our <a href="https://www.printables.com/@Apollo_1187039" target="_blank" rel="noreferrer nofollow noopener">.STEP and .STL CAD files</a> are available for community use.
 
 11\. **What are the RGB LED and piezo buzzer used for?**
 
-* The RGB LED provides visual alerts, while the <a href="https://wiki.apolloautomation.com/products/general/piezo/" title="Click here to go to the piezo buzzer wiki tutorial" target="_blank" rel="noreferrer nofollow noopener">piezo buzzer offers audio notifications</a> for events like low moisture levels or high UV exposure.
+* The RGB LED is the PLT-1's light in Homey. Turn it on or off, dim it, or change its color from the device or in a flow, for example to glow red when the soil gets dry.
+* The piezo buzzer is played through an ESPHome action, and the Apollo Automation app has no flow card for it, so Homey can't sound the buzzer. If you also run Home Assistant, it can: see the [piezo buzzer guide](../../../../products/general/piezo/).
 
 12\. **What is the benefit of using a conformal coating on the soil moisture sensor?**
 
@@ -52,7 +61,7 @@ description: "PLT-1 FAQ."
 
 13\. **What plants are compatible with the PLT-1?**
 
-* Compatible with various indoor plants, the PLT-1B can apply ideal care conditions (e.g., light, humidity, moisture) using <a href="https://github.com/Olen/home-assistant-openplantbook" target="_blank" rel="noreferrer nofollow noopener">Open Plant Book with Home Assistant</a>.
+* The PLT-1 works with all kinds of indoor plants. Look up the light, humidity, and soil moisture your plant likes, then use those values as thresholds in your Homey flows, so you hear about it when a reading drifts out of range.
 
 14\. **Can I monitor multiple plants with one PLT-1?**
 
@@ -60,25 +69,25 @@ description: "PLT-1 FAQ."
 
 15\. **What makes the PLT-1 better than other plant sensors?**
 
-* The PLT-1B features a durable capacitive soil moisture sensor, real-time data reporting, and tracks various environmental factors—all in one compact device that integrates seamlessly with Home Assistant.
+* The PLT-1 pairs a durable capacitive soil moisture sensor with real-time reporting of several environmental factors, all in one compact device that works with Homey on your local network.
 
 16\. **Is the PLT-1 compatible with other smart home platforms?**
 
-* While designed for Home Assistant via ESPHome, it may be compatible with other platforms using the <a href="https://esphome.io/components/api.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome API</a> or MQTT.
+* Yes. Besides Homey (through the Apollo Automation app), the PLT-1 works with Home Assistant, and it may work with other platforms through the <a href="https://esphome.io/components/api.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome API</a> or MQTT. See [Supported platforms](../../general/supported-platforms/).
 
 17\. **Do I need coding knowledge to use the PLT-1?**
 
-* Basic knowledge of Home Assistant and ESPHome is helpful, but most users can utilize it out of the box. For advanced customization, YAML knowledge is recommended.
+* No. Adding the PLT-1 to Homey and building flows takes no code. YAML knowledge only matters if you want to customize the firmware with ESPHome.
 
 18\. **Can I access data from the PLT-1 remotely?**
 
-* Yes, once connected to Home Assistant, you can access your sensor data remotely through your Home Assistant dashboard, provided your setup allows for remote access.
+* Yes. The PLT-1 reports to your Homey over your local network, and the Homey app shows its readings wherever you are, as long as your Homey is reachable remotely.
 
-20\. **Can I use multiple PLT-1 sensors in one Home Assistant setup?**
+19\. **Can I use multiple PLT-1 sensors with one Homey?**
 
-* Yes, you can add multiple PLT-1B sensors, each appearing as a separate device, for comprehensive monitoring across multiple plants or spaces.
+* Yes. Add each PLT-1 with the Apollo Automation app. Each one shows up as its own device in Homey, so you can monitor several plants or spaces.
 
-21\. **Optional Probe Addons:**
+20\. **Optional Probe Addons:**
 
 * 1\.5m (~5ft) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
 

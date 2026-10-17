@@ -1,10 +1,10 @@
 ---
-title: Apollo SEN55 and SCD40 Breakout Board Introduction
+title: Apollo SEN55 and SCD40 Breakout Board introduction
 description: Apollo SEN55 and SCD40 Breakout Board Introduction
 ---
 ![Apollo SEN55 and SCD40 breakout board wired to a Sensirion SEN55 sensor, with a 5-pin header](/assets/sen55-sdc40-breakout-board.png)
 
-The **SEN55 and SCD40 Breakout Board** is a compact PCB kit featuring the <a href="https://sensirion.com/products/catalog/SEN55/" target="_blank" rel="noreferrer nofollow noopener"><strong>SEN55</strong></a> sensor and an optional <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener"><strong>SCD40</strong></a>, making it easy to add high-quality air monitoring to any new or existing project.
+The **SEN55 and SCD40 Breakout Board** is a compact PCB kit featuring the <a href="https://sensirion.com/products/catalog/SEN55/" target="_blank" rel="noreferrer nofollow noopener"><strong>SEN55</strong></a> sensor and an optional <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener"><strong>SCD40</strong></a>, so you can add high-quality air monitoring to any new or existing project.
 
 Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated API key inside the code block as shown below then paste it in the code below where you see "use-a-randomly-generated-key-here".
 
@@ -79,7 +79,7 @@ api:
 
 ota:
   - platform: esphome
-    password: "a53d93acd493275512730c776f88722a"
+    password: !secret ota_password
 
 wifi:
   ssid: !secret wifi_ssid

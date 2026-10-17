@@ -1,12 +1,12 @@
 ---
-title: Add Microphone to the M-1 LED Matrix
+title: Add microphone to the M-1 LED Matrix
 description: Step by Step directions for adding a microphone to your M-1 LED Matrix
 ---
 This will guide you through installing and configuring the microphone on your M-1 LED Matrix.
 
 The microphone addon fits Rev6 and newer controllers. Rev4 boards do not have the connector for it. The revision is printed on the controller board.
 
-## Install the Hardware
+## Install the hardware
 
 1\. Unplug your M-1 from power and set the matrix side face down with the M-1 Controller PCB facing you.
 
@@ -14,7 +14,7 @@ The microphone addon fits Rev6 and newer controllers. Rev4 boards do not have th
 
 ![Round microphone addon installed on the M-1 controller with the GND pin at the bottom right](/assets/m-1-microphone-addon-image.jpg)
 
-## Turn It On
+## Turn it on
 
 === "WLED"
 
@@ -26,9 +26,11 @@ The microphone addon fits Rev6 and newer controllers. Rev4 boards do not have th
 
 === "WLED-MM"
 
+    On WLED-MM, you turn on AudioReactive and set the microphone pins yourself.
+
     3\. Click on **Config**, then **AudioReactive**. Check **Enabled** then select **Generic I2S** for the Type.
 
-    4\. Select **10 digitalmic** for Pin I2s SD, select **12 digitalmic A5** for Pin I2S WS, and select **11 digitalmic** for Pin I2S SCK and click **Save**.
+    4\. Select **10 digitalmic** for Pin I2S SD, **12 digitalmic** for Pin I2S WS, and **11 digitalmic** for Pin I2S SCK, then click **Save**.
 
     ![WLED-MM AudioReactive settings with Generic I2S and digitalmic pins 10, 12, and 11 selected](/assets/m-1-audio-reactive-pin-settings.png)
 

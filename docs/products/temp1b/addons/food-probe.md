@@ -1,14 +1,14 @@
 ---
-title: TEMP-1B Food Probe Guide
+title: TEMP-1B food probe guide
 description: Step by step guide for installing and using the optional Food Probe with the TEMP-1B.
 ---
-# TEMP-1B Food Probe
+# TEMP-1B food probe
 
-The TEMP-1B comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1 itself needs to stay in a cool environment.
+The TEMP-1B comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1B itself needs to stay in a cool environment.
 
 ![Do this: TEMP-1B on the grill side shelf. Do not do this: TEMP-1B mounted on the hot grill lid](/assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
 
-1\. To use your food probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
+1\. To use your food probe, take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
 ![Food probe plug being inserted into the 3.5mm port on the TEMP-1B](/assets/food-probe-insert-1.jpg)
 

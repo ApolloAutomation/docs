@@ -64,7 +64,11 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     === "STEMMA QT (Qwiic)"
 
-        Plug your sensor's STEMMA QT (Qwiic) cable into the port. The connector is keyed, so it only fits one way.
+        Plug your sensor's STEMMA QT (Qwiic) cable into the **3.3V STEMMA QT** port at the middle left of the board, labeled **Stemma 3V**. The board has two 4-pin STEMMA ports: this 3.3V STEMMA QT port and a 5V STEMMA port at the bottom center, labeled **VStemma 5V**. Use the 5V port only for sensors that need 5V. The connector is keyed, so it only fits one way.
+
+        !!! note "The clip shows the 5V port"
+
+            The clip below plugs the cable into the 5V STEMMA port at the bottom center. For a STEMMA QT (Qwiic) sensor, use the 3.3V port at the middle left instead.
 
         ![Plugging a sensor's 4-wire STEMMA QT cable into the Breakout Module port labeled VStemma 5V](/assets/esphome-starter-kit-breakout-module-stemma-qt.webp)
 
@@ -89,7 +93,7 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     Data is on **GPIO6**. In your config, the <a href="https://esphome.io/components/one_wire/" target="_blank" rel="noreferrer nofollow noopener">One Wire</a> component sets up the bus on that pin, and the <a href="https://esphome.io/components/sensor/dallas_temp/" target="_blank" rel="noreferrer nofollow noopener">Dallas temperature sensor</a> reads each probe on it.
 
-    Plug the probe's connector into the 1Wire port with the latch side facing up.
+    Push the probe's 3.5mm plug all the way into the **1Wire** jack at the top right of the board.
 
     ![Plugging the DS18B20 temperature probe's 3.5mm plug into the 1Wire jack on the Breakout Module](/assets/esphome-starter-kit-breakout-module-dallas-probe.webp)
 
@@ -145,12 +149,12 @@ The <a href="https://esphome.io/components/" target="_blank" rel="noreferrer nof
 
 Once you've added the component for whatever you wired up, flash the device so your changes go live.
 
-1.  Click **Install** on your device card in ESPHome Device Builder. (1)
+1.  Click **Install** at the bottom right of the editor. (1)
     { .annotate }
 
     1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
-2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
+2. Choose **On the network** if the device is already on your Wi-Fi, or **Plug into this computer** to flash over USB.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
@@ -158,7 +162,7 @@ Once you've added the component for whatever you wired up, flash the device so y
 
 With the device back online, whatever you wired up shows up on the web server alongside your other entities. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and watch it react in real time.
 
-1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
+1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md), that's `http://esphome-starter-kit.local/`.
 2. Find the entity for the component you added in the list.
 3. Trigger it (press your button, cover your sensor, and so on) and watch the value update.
 

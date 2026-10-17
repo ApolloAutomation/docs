@@ -1,16 +1,21 @@
 ---
-title: MSR-1 Home Assistant Dashboard Examples
-description: "Example Home Assistant dashboard cards for the MSR-1, including an ApexCharts scatter plot of radar detection distance you can copy and paste."
+title: MSR-1 Home Assistant dashboard examples
+description: "Copy-and-paste Home Assistant dashboard cards for the MSR-1: an ApexCharts scatter plot of radar detection distance, plus CO2 sensor, Plotly graph, and gauge cards."
 ---
-# MSR-1 Home Assistant Dashboard Examples
+# MSR-1 Home Assistant dashboard examples
 
-**Radar Scatter Plot With Apex Charts For MSR-1**
+Each example below is a Home Assistant dashboard card for your Apollo MSR-1, with a screenshot of the result and the YAML that builds it. To use one, install any custom card it needs from HACS (its section has a button), then add a card to your dashboard and paste in the YAML.
 
-This card installs from HACS, so add it there first:
+!!! warning "Change the entity IDs to your own"
+
+    The YAML uses the entity IDs of the MSR-1s these examples were built on. Before you save a card, replace the `a79e14` or `a79e38` part of each entity ID with your own MSR-1's ID, or the card won't find your sensor. You'll find your MSR-1's entities on its device page under **Settings → Devices & services → ESPHome**.
+
+## Radar scatter plot
+
+This ApexCharts card plots your MSR-1's radar detection, moving, and still distances as a scatter plot. The card installs from HACS, so add it there first:
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=RomRider&repository=apexcharts-card&category=plugin)
 
-  
 ![ApexCharts scatter plot card of MSR-1 radar detection, moving, and still distances over time](/assets/jpe-apex-charts-3.png)
 
 ```plaintext
@@ -48,8 +53,13 @@ series:
     stroke_width: 1
 ```
 
-**CO2 Charts**
-Home Assistant Sensor
+## CO2 charts
+
+These cards chart readings from the MSR-1's optional CO2 sensor. If you haven't fitted it yet, see [Adding CO2 to MSR-1](../../addons/adding-co2-to-msr-1/).
+
+### Home Assistant sensor card
+
+This card is built into Home Assistant, so there's nothing to install.
 
 ![Home Assistant sensor card with a Bedroom CO2 line graph reading 1,000 ppm](/assets/co-2-graph.png)
 
@@ -62,7 +72,7 @@ name: Bedroom CO2
 hours_to_show: 24
 ```
 
-Custom: Plotly Graph Card
+### Plotly graph card (custom)
 
 This card installs from HACS, so add it there first:
 
@@ -79,7 +89,9 @@ refresh_interval: 10
 title: Bedroom CO2
 ```
 
-Home Assistant Gauge
+### Home Assistant gauge card
+
+This card is also built into Home Assistant. Its needle points into a green, yellow, or red range depending on the CO2 level.
 
 ![Home Assistant gauge card showing MSR-1 CO2 at 1,063 ppm with green, yellow, and red ranges](/assets/co2-guage.png)
 

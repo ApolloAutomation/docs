@@ -1,35 +1,52 @@
 ---
-title: Prevent Sleep
-description: "Tutorial for how to enable/disable prevent sleep."
+title: Prevent sleep
+description: "Why the USB-powered PLT-1 stays awake in Homey, what its Prevent sleep and Sleep duration settings do, and how to correct the air temperature instead."
 ---
-# Prevent Sleep
+# Prevent sleep
 
-!!! tip "Put your sensors to sleep!"
+Your Apollo PLT-1 runs on USB power, but its firmware can still sleep between readings: it wakes up, reports, and goes back to sleep. Sleeping keeps the board from warming itself up, so the air temperature reads closer to the room. The PLT-1 ships with **Prevent sleep** on, so it stays awake and reports all the time.
 
-    All of our battery powered devices are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
+## Sleep isn't available for the PLT-1 in Homey
 
-    The temperature offsets needed will be much lower for your sensors as the microcontroller will not put off as much heat when it is sleeping and then waking for short periods to report the sensor values.
+In Homey, your PLT-1 stays awake. You'll see **Prevent sleep** and **Sleep duration** in your PLT-1's **Settings** in the Homey app, under **Battery settings (if battery is present)**, but the Apollo Automation app only lets you change **Prevent sleep** on a sensor with a battery. If you uncheck it on the PLT-1, Homey refuses the change and shows **Battery settings are not supported on this device.**
 
-1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
+Staying awake is how Homey expects a USB-powered sensor to work, so there's nothing you need to change here.
 
-2\. Click on the name "1 device" below your Apollo device's name.
+!!! tip "Leave Sleep duration as it is"
 
-![ESPHome integration entry for an Apollo PLT-1 with the 1 device link highlighted](/assets/plt-1-prevent-sleep-pic-1.png)
+    Homey shows **Sleep duration** in hours, but the PLT-1 reads the number as minutes: the default of 5 means 5 minutes. It only applies while Prevent sleep is off, so you don't need to change it in Homey.
 
-3\. Scroll down until you see "Prevent Sleep" and "Sleep Duration".
+!!! tip "Using Home Assistant too?"
 
-![Home Assistant device page with the Prevent Sleep toggle and Sleep Duration setting highlighted](/assets/plt-1-prevent-sleep-pic-2.png)
+    Home Assistant can turn sleep on for the PLT-1. See the [Home Assistant Prevent Sleep guide](../../../../../products/plt1/additional-info/prevent-sleep/). While the PLT-1 sleeps, Homey loses its connection between reports.
 
-4\. Type in the amount of minutes you want your sensor to sleep in the "Sleep Duration" box. Defaults to 5 minutes.
+## Correct the air temperature instead
 
-!!! warning "Read this before turning off Prevent Sleep!"
+If you wanted sleep to stop the board's own warmth from nudging the air temperature up, an offset fixes the reading without it. You need a reference thermometer you trust.
 
-    When "Prevent Sleep" is toggled off, your sensor will immediately begin sleeping. Please make sure you are ready to make this sensor sleep before toggling off prevent sleep.
+1. Put the reference thermometer next to your PLT-1 and give both time to settle.
+2. Compare the PLT-1's air temperature reading in Homey with the reference.
+3. In your PLT-1's **Settings**, under **Calibration offsets**, set **Air temperature offset** to how many degrees Celsius the PLT-1 reads too high, and save. For example, if the PLT-1 shows 23.5 °C and the reference shows 22 °C, enter 1.5.
 
-5\. When you are ready, toggle off "Prevent Sleep" and your sensor will go to sleep. It will wake up every 5 minutes, or on the interval you set in step 4. If you need to keep your sensor awake, head to our <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/" target="_blank" rel="noreferrer nofollow noopener">OTA Awake helper tutorial</a>!
+The PLT-1's air temperature in Homey now matches your reference thermometer. The offset only changes the air reading, not the soil temperature probe.
 
-6\. You can wake your sensor by <a href="https://wiki.apolloautomation.com/products/general/battery-sensors/wake-up-battery-sensor/" target="_blank" rel="noreferrer nofollow noopener">following this guide</a> or you can power cycle your device. If there is a battery in it, the battery will need to be removed or the reset button pressed.
+!!! tip "Homey set to Fahrenheit?"
 
-!!! danger "Do not leave your sensor outside or let it get wet!"
+    The offset is always in degrees Celsius. Divide the difference you see in °F by 1.8: a reading 2.7 °F too high is an offset of 1.5.
 
-    The PLT-1 should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your PLT-1 if there will be high moisture content in the air or if it is expected to rain.
+## If your PLT-1 was set to sleep before
+
+If Prevent sleep was turned off earlier, for example in Home Assistant, the PLT-1 remembers it and keeps sleeping after you add it to Homey, so Homey keeps losing the connection. Homey can't change Prevent sleep on the PLT-1, so turn it back on with the boot button. [Putting the PLT-1 in boot mode](../../troubleshooting/plt1-boot-mode/) shows where the button is.
+
+!!! warning "Don't hold the boot button while you plug in"
+
+    Plugging in with the boot button held puts the PLT-1 in boot mode for flashing firmware instead. Also let go before 10 seconds: holding the boot button that long resets the PLT-1 to factory settings and erases its Wi-Fi.
+
+1. Unplug the PLT-1 and plug it back in to wake it.
+2. Wait a few seconds, then press and hold the boot button for 4 to 5 seconds and let go.
+
+The PLT-1 turns Prevent sleep back on and stays connected to Homey, and **Prevent sleep** shows as checked in its settings. If Homey loses the connection again a few seconds later, the PLT-1 was already on its way back to sleep. It still remembers Prevent sleep, so unplug it and plug it back in once more, and it stays awake this time.
+
+!!! danger "Keep the main body dry"
+
+    The main body of the PLT-1 isn't rated for outdoor use. Don't leave it outside for long periods or let it get wet. If it will sit in damp air or could see rain, put it inside another, protective case.

@@ -73,7 +73,7 @@ description: PLT-1B FAQ.
 
 16\. **What makes the PLT-1B better than other plant sensors?**
 
-* The PLT-1B features a durable capacitive soil moisture sensor, real-time data reporting, and tracks various environmental factors—all in one compact device that integrates seamlessly with Home Assistant.
+* The PLT-1B features a durable capacitive soil moisture sensor, real-time data reporting, and tracks various environmental factors, all in one compact device that integrates with Home Assistant.
 
 17\. **Is the PLT-1B compatible with other smart home platforms?**
 
@@ -97,5 +97,5 @@ description: PLT-1B FAQ.
 
 22\. **Optional Probe Addons:**
 
-* 1\.5m (~5ft) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
-* 20cm (~8in) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
+* 1\.5m (~5ft) Waterproof Flat Cable (DS18B20): -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
+* 20cm (~8in) Waterproof Flat Cable (DS18B20): -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.

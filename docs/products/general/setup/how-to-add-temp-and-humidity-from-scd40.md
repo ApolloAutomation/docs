@@ -1,8 +1,10 @@
 ---
-title: How To Add Temp And Humidity From SCD40
+title: How to add temp and humidity from SCD40
 description: Tutorial for How To Add Temp And Humidity entities From the SCD40 CO2 sensor.
 ---
-# How To Add Temp And Humidity From SCD40
+# How to add temp and humidity from SCD40
+
+You add YAML in ESPHome Builder to get SCD40 temperature and humidity entities, with offsets you can adjust in Home Assistant.
 
 1\. Select the ESPHome Builder in the sidebar then click "EDIT" on the device you want to change. If it isn't in your sidebar, the button below opens the app.
 
@@ -14,7 +16,7 @@ description: Tutorial for How To Add Temp And Humidity entities From the SCD40 C
 
 !!! note "This example is for the AIR-1"
 
-    However this will also work with our MSR-2 and MTR-1 devices too!
+    It also works on the MSR-2 once the CO2 addon is installed. The MTR-1 firmware already includes **SCD40 Temperature** and **SCD40 Humidity** entities with their offsets (disabled by default), so on an MTR-1 with the CO2 addon, enable those entities on the device page instead of adding this YAML.
 
 ```yaml
 sensor:
@@ -34,6 +36,7 @@ number:
   - platform: template
     name: SCD40 Temperature Offset
     id: scd40_temperature_offset
+    restore_value: true
     initial_value: 14.54
     min_value: -70.0
     max_value: 70.0

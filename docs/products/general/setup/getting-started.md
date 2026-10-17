@@ -1,20 +1,20 @@
 ---
-title: Getting Started
+title: Getting started
 description: Generic getting started article.
 ---
-# Getting Started
+# Getting started
 
 This will walk you through the process of connecting your new Apollo Automation sensor to Home Assistant through ESPHome. If at any point you get stuck, join our <a href="https://link.apolloautomation.com/discord" target="_blank" rel="noopener">Discord</a> for some help.
 
-## Connecting Through Hotspot
+## Connecting through hotspot
 
 To connect through the sensor's onboard hotspot follow the below:
 
 1\. Plug the sensor into a quality power brick. They require 5v and under an amp so most phone chargers will be fine. ESP devices are sensitive to power fluctuations and users have had some issues with really cheap power bricks. If your device is restarting or unavailable please try a different power brick.
 
-2\. On your phone or PC, open the Wi-Fi settings and connect to "Apollo MSR-2 Hotspot", it might take a minute for the Wi-Fi network to show up.
+2\. On your phone or PC, open the Wi-Fi settings and connect to the sensor's hotspot, such as "Apollo MSR2 Hotspot". It might take a minute for the Wi-Fi network to show up.
 
-![Phone Wi-Fi settings with the Apollo MSR-2 hotspot network outlined in red](/assets/getting-started-pic-1-1.png)
+![Phone Wi-Fi settings with the Apollo MSR2 Hotspot network outlined in red](/assets/getting-started-pic-1-1.png)
 
 3\. Once connected it should automatically open a dashboard for your sensor
 
@@ -33,6 +33,8 @@ If this does not automatically open the dashboard, please open your web browser 
 [Click here for next steps!](https://wiki.apolloautomation.com/products/general/setup/getting-started/#connecting-to-home-assistant-via-esphome-integration){                              .md-button .md-button--primary }
 
 ## Connecting with <a href="https://www.home-assistant.io/integrations/improv_ble" target="_blank" rel="noopener">Improv via BLE</a>
+
+You connect your sensor to Wi-Fi from Home Assistant over Bluetooth, then finish adding it through ESPHome.
 
 !!! note "Pre-requirement:"
 
@@ -66,7 +68,7 @@ If this does not automatically open the dashboard, please open your web browser 
 
 ![Home Assistant Success dialog showing the new PLT-1B and an Area field](/assets/improv-ble-pic-6.png)
 
-## Connecting To ESPHome Device Builder
+## Connecting to ESPHome Device Builder
 
 !!! tip "Skip the ESPHome Device Builder unless..."
 
@@ -108,7 +110,9 @@ wifi_password: "your-wifi-pass-here"
 
 6\. Your new device is now adopted into the ESPHome Device Builder and you can move on to Integrating with Home Assistant via the ESPHome Integration below!
 
-## Connecting to Home Assistant via ESPHome Integration:
+## Connecting to Home Assistant via ESPHome integration:
+
+Next, you add your new Apollo device to Home Assistant through the ESPHome integration.
 
 1\. Click the "**Notifications**" Icon in the bottom left.
 

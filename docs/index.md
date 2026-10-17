@@ -1,5 +1,5 @@
 ---
-title: Home Assistant Integration
+title: Home Assistant integration
 description: >-
   Guide to integrating Apollo Automation devices with the Home Assistant smart
   home platform.
@@ -63,7 +63,7 @@ description: >-
 
 &nbsp;
 
-### Which mmWave Sensor Should I Buy?
+### Which mmWave sensor should I buy?
 
 ```mermaid
 %%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
@@ -98,21 +98,21 @@ flowchart LR
     click GUIDE href "https://wiki.apolloautomation.com/products/general/choosing-an-mmwave-sensor/" _blank
 ```
 
-### Most Popular
+### Most popular
 
 * [Getting started with your brand new Apollo device](https://wiki.apolloautomation.com/products/general/setup/getting-started/)
 * [Updating Firmware](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/updating-firmware/)
 * [Add Bluetooth Proxy functionality to your Apollo device](https://wiki.apolloautomation.com/products/general/setup/bluetooth-proxy/)
 
-### Radar & Zones
+### Radar & zones
 
 * [Set up the Apollo mmWave dashboard](https://wiki.apolloautomation.com/products/general/setup/apollo-mmwave-dashboard-setup/) and [calibrate your radar or draw zones with it](https://wiki.apolloautomation.com/products/general/setup/apollo-mmwave-dashboard/)
 * [Tuning out false positives with the MSR-2](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on MTR-1 with the HLK app](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)
-* [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) - [Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card)
+* [Beta test our new Zone Mapper tool!](https://github.com/ApolloAutomation/zone-mapper) ([Use this custom card along with Zone Mapper!](https://github.com/ApolloAutomation/zone-mapper-card))
 * [Tune your new R PRO-1 PoE mmWave sensor](https://wiki.apolloautomation.com/products/rpro1/setup/zones-ha/)
 
-### Quick References
+### Quick references
 
 * [Understanding your AIR-1 and the various sensors it exposes](https://wiki.apolloautomation.com/products/air1/setup/general-tips/)
 * [How to re-calibrate your CO<sub>2</sub> sensor](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/co2-calibration/)
@@ -122,13 +122,13 @@ flowchart LR
 
 ### Community
 
-* [Discord - Support, community, updates, live streams](https://link.apolloautomation.com/discord)
-* [YouTube - Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
+* [Discord: Support, community, updates, live streams](https://link.apolloautomation.com/discord)
+* [YouTube: Tutorials and live streams](https://www.youtube.com/@ApolloAutomation)
 
 ### What is Apollo Automation?
 
-Apollo Automation builds high-quality, affordable, open-source home automation hardware - designed and assembled in Lexington, KY. What started as a side project among friends (named after Trevor's dog, Apollo) grew into a full-fledged business driven by community feedback. We build everything in-house, keep our designs transparent, and host a monthly livestream on Discord and YouTube so you can connect with us directly.
+Apollo Automation builds high-quality, affordable, open-source home automation hardware, designed and assembled in Lexington, KY. What started as a side project among friends (named after Trevor's dog, Apollo) grew into a full-fledged business driven by community feedback. We build everything in-house, keep our designs transparent, and host a monthly livestream on Discord and YouTube so you can connect with us directly.
 
 ### What do we offer?
 
-Sensors and devices that solve real problems in home automation - presence detection, air quality monitoring, plant care, and more. Every product ships with ESPHome firmware, full Home Assistant integration, and support from a team that actually uses what we build.
+Sensors and devices that solve real problems in home automation: presence detection, air quality monitoring, plant care, and more. Every product ships with ESPHome firmware, full Home Assistant integration, and support from a team that actually uses what we build.

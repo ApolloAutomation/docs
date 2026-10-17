@@ -1,8 +1,10 @@
 ---
-title: Reset Wi-Fi Credentials
-description: Step by step guide for resetting the Wi-Fi Credentials on your AIR-1.
+title: Reset Wi-Fi credentials
+description: Step by step guide for resetting the Wi-Fi credentials on your MTR-1.
 ---
-# Reset Wi-Fi Credentials
+# Reset Wi-Fi credentials
+
+You'll reset the device's Wi-Fi credentials, then connect it to your new Wi-Fi network through its hotspot.
 
 1\. Plug the device into power
 

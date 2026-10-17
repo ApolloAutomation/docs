@@ -1,11 +1,11 @@
 ---
-title: Adding the Temperature and Humidity Module
+title: Adding the temperature and humidity module
 description: >-
   Wire up the ESPHome Starter Kit Temperature and Humidity module. This is a
   trustworthy aht20 great for accurate temp and humidity measurements in any
   room!
 ---
-# Adding the Temperature and Humidity Module
+# Adding the temperature and humidity module
 
 The temperature and humidity module is your starter kit's first environmental sensor, reading the air around it on whatever interval you choose. By the end of this tutorial you'll have an AHT20F wired to your ESP32-C6, surfaced as two sensors in your YAML, and updating live in the web server.
 
@@ -16,7 +16,7 @@ The temperature and humidity module is your starter kit's first environmental se
     * [Start Here](/products/ESPHome-Starter-Kit/start-here.md) to snap the temperature and humidity module off the panel.
     * [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md) to install ESPHome Device Builder and create your starter kit device.
 
-## Attach Temp and Humidity module
+## Attach temp and humidity module
 
 Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the ESP32-C6 works, top or bottom.
 
@@ -90,22 +90,22 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 
 Flash the device so the new temperature and humidity entities go live.
 
-1.  Click **Install** on your device card in ESPHome Device Builder. (1)
+1.  Click **Install** at the bottom right of the editor. (1)
     { .annotate }
 
     1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
-2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
+2. Choose **On the network** if the device is already on your Wi-Fi, or **Plug into this computer** to flash over USB.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
 ![ESPHome Device Builder clicking Install, choosing On the network, and compiling the sensor config](../../../assets/esphome-device-builder-install-temp-hum-component.gif)
 
-## Test the Temp and Humidity
+## Test the temp and humidity
 
 With the device back online, the temperature and humidity entities are live on the web server. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and watch it react in real time.
 
-1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
+1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md), that's `http://esphome-starter-kit.local/`.
 2. Find the **Temperature** and **Humidity** entities in the sensor list.
 3. Watch the values update on the interval you set. Cup your hand over the sensor or breathe on it, the humidity reading will respond within a few cycles.
 

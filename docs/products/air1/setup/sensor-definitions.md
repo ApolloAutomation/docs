@@ -1,8 +1,8 @@
 ---
-title: AIR-1 Sensor Definitions
+title: AIR-1 sensor definitions
 description: Full list of definitions for the AIR-1 and its various sensors.
 ---
-# Sensor Definitions
+# Sensor definitions
 
 Once added to Home Assistant you can configure different settings for your AIR-1. Use the tabs below to see what each entity does, grouped the same way Home Assistant displays them.
 
@@ -12,7 +12,7 @@ Once added to Home Assistant you can configure different settings for your AIR-1
 
     The **Default Update** column is how often each sensor refreshes while the AIR-1 is awake. By default **Prevent Sleep** is on, so the device stays awake and reports continuously at these intervals. Turn **Prevent Sleep** off to let the AIR-1 deep-sleep between readings for more accurate onboard SEN55 temperature and humidity (the ESP chip's heat skews them while it is awake); it then wakes for about 2 minutes, reports, and sleeps for the **Sleep Duration**.
 
-    To update firmware on a sleeping device, just click **Update** on the **Firmware Update** entity and it installs the next time the device wakes (the firmware keeps itself awake until the update finishes, so you don't need to do anything else). The optional [OTA helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/) is a separate toggle that overrides **Prevent Sleep** to keep a device awake on demand.
+    To update firmware on a sleeping device, click **Update** on the **Firmware Update** entity and it installs the next time the device wakes (the firmware keeps itself awake until the update finishes, so you don't need to do anything else). The optional [OTA helper](https://wiki.apolloautomation.com/products/general/battery-sensors/awake-ha-helper/) is a separate toggle that overrides **Prevent Sleep** to keep a device awake on demand.
 
 === "Controls"
 

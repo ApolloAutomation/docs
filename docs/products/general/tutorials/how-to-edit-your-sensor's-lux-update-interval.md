@@ -1,8 +1,8 @@
 ---
-title: How to edit your Sensor's LUX update interval
+title: How to edit your sensor's lux update interval
 description: How to edit your Sensor's LUX update interval
 ---
-# How to edit your Sensor's LUX update interval
+# How to edit your sensor's lux update interval
 
 This guide will show you how to edit the lux updates down to 5 seconds.
 
@@ -14,7 +14,7 @@ This guide will show you how to edit the lux updates down to 5 seconds.
 
 ![ESPHome Builder in the Home Assistant sidebar with the Edit button on an AIR-1 card outlined](/assets/update-frequency-pic-1.png)
 
-2\. Copy this code and enter it just like shown in the next step. Make sure there are no extra spaces or any other characters. It needs to look just like the example in the next step.
+2\. Copy this code and enter it exactly as shown in the next step. Make sure there are no extra spaces or any other characters. It needs to look exactly like the example in the next step.
 
 ```yaml
 #LUX sensor update interval

@@ -1,8 +1,8 @@
 ---
-title: Add an LED Strip to CAST-1
+title: Add an LED strip to CAST-1
 description: "Wire an addressable LED strip to your CAST-1 and control it from Home Assistant, including a Music Mode that follows playback."
 ---
-# Add an LED Strip
+# Add an LED strip
 
 Your CAST-1 has three exposed pins, **5V**, **GND** and **IO1**, that can drive an addressable LED strip. Once it's wired up, the strip shows up in Home Assistant as a light with effects, and it can switch on by itself whenever music is playing.
 
@@ -10,7 +10,7 @@ Your CAST-1 has three exposed pins, **5V**, **GND** and **IO1**, that can drive 
 
     LED strip support arrived in firmware 26.10.13.1. If your CAST-1 is on an older version, update it from the **Firmware Update** entity on its device page. Until this release reaches the Stable channel, [switch to the Beta channel](../../general/setup/switch-to-beta-branch.md) first.
 
-## What You'll Need
+## What you'll need
 
 - **An addressable RGB strip that uses a single data wire.** WS2812B is the most common. WS2812, SK6812 (RGB), WS2811, APA106 and SM16703 also work.
 - Three wires to connect the strip to the CAST-1.
@@ -30,6 +30,8 @@ Every LED draws current. A WS2812B LED pulls up to about 60 mA at full white, so
 
 ## Wiring
 
+You'll connect the strip's power, ground and data wires to the matching pins on your device.
+
 1\. Unplug your CAST-1 from power.
 
 2\. Find the input end of the strip. Its pads are labelled **DIN** or **DI**, and the arrows printed on the strip point away from it. (1)
@@ -47,7 +49,7 @@ Every LED draws current. A WS2812B LED pulls up to about 60 mA at full white, so
 
 4\. Plug your CAST-1 back into power.
 
-## Turn On the LED Strip Controls
+## Turn on the LED strip controls
 
 The LED strip controls are hidden until you turn them on, so CAST-1s without a strip don't show extra controls.
 
@@ -66,7 +68,7 @@ The LED strip controls are hidden until you turn them on, so CAST-1s without a s
 
 If the colors come out in the wrong order (for example, green when the test shows red), change **LED Strip Color Order** until they match. GRB is right for most WS2812B strips.
 
-## LED Strip Controls
+## LED strip controls
 
 | Entity | What it does |
 | --- | --- |

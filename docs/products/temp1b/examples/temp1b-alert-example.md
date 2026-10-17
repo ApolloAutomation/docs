@@ -1,10 +1,8 @@
 ---
-title: TEMP-1B Alert Outside Temp Range Example
+title: TEMP-1B alert outside temp range example
 description: Step by step guide for alerting outside the set range with the TEMP-1B.
 ---
-# TEMP-1B Alert Outside Temp Range Example
-
-######
+# TEMP-1B alert outside temp range example
 
 This will guide you through how to set up the built in alarm using the temperature probe in your freezer!
 
@@ -13,6 +11,8 @@ This will guide you through how to set up the built in alarm using the temperatu
 2\. Once normalized, look at the graph and determine a good value to set for both the maximum and minimum temperatures. My mini freezer seems to max out at 30F so I would want to go slightly above that range. However, <a href="https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety" target="_blank" rel="noreferrer nofollow noopener">in most freezers they should NOT reach above 0F</a> so you will likely need to input a lower value than me. My minimums are around -20F.
 
 ![Home Assistant history graph of the TEMP-1 temperature probe with arrows at freezer highs and lows](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
+
+*Shown on a TEMP-1; the TEMP-1B graph looks the same.*
 
 3\. We now need to convert F to C since the max and min temps are measured in Celsius. My new values I will input are max probe temp 2C and a min probe temp of -30C. Reminder, yours will likely be different values, especially your max probe temp.
 

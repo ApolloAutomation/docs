@@ -1,5 +1,5 @@
 ---
-title: H-3 Introduction
+title: H-3 introduction
 description: "H-3 Introduction."
 ---
 **Can be powered by USB-C or two AA batteries.** We suggest non-rechargeable AAs.

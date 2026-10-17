@@ -1,8 +1,8 @@
 ---
-title: M-1 LED Matrix Setting up your own QR code for Wi-Fi, link to a website, etc.
+title: M-1 LED Matrix setting up your own QR code for Wi-Fi, link to a website, etc.
 description: Step by step guide to setting up your own QR code for Wi-Fi, link to a website, etc.
 ---
-# 🔧 QR Code Generator (Wi-Fi, Text, URL)
+# 🔧 QR code generator (Wi-Fi, text, URL)
 
 !!! tip "This guide will walk you through creating a QR code which when scanned from a phone will give the option to join to your Wi-Fi."
 

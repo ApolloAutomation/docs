@@ -1,8 +1,8 @@
 ---
-title: M-1 LED Matrix - Multiple Panel Setup
+title: M-1 LED Matrix - multiple panel setup
 description: Tutorial for wiring and configuring multiple panels with your M-1 LED Matrix.
 ---
-# M-1 LED Matrix - Multiple Panels
+# M-1 LED Matrix - multiple panels
 
 !!! info "Prerequisites needed for multiple panels"
 
@@ -14,13 +14,13 @@ Using panels you sourced yourself rather than Apollo ones? They need to match th
 
 A 64x64 panel can pull about 3A at 5V at full white. The M-1's onboard 5V rail passes roughly 3A, which is one panel's worth, so every panel beyond the first needs its own feed from a <a href="https://apolloautomation.com/products/m-1-led-matrix-power-module" target="_blank" rel="noreferrer nofollow noopener">Matrix Power Module</a>. Skipping it gives you dim output, color shifts, and random reboots on bright content.
 
-## Hardware Setup
+## Hardware setup
 
 Wiring is the same whichever firmware you run. Choose the number of panels you are using below to get started!
 
 === "Two Panels"
 
-    1\. Set both of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel.
+    1\. Set both of your M-1 panels face down. The M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel.
 
     ![Connecting the ribbon data cable from JOUT on the M-1 controller panel to JIN on the second panel](/assets/two-panels-connect-data-cable.webp)
 
@@ -34,7 +34,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
 === "Three Panels"
 
-    1\. Set all three of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third panel.
+    1\. Set all three of your M-1 panels face down. The M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third panel.
 
     ![Connecting ribbon data cables from JOUT to JIN across three M-1 panels in a row](/assets/three-panels-connect-data-cable.webp)
 
@@ -48,7 +48,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
 === "Four Panels"
 
-    1\. Set all four of your M-1 panels face down - the M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third and fourth panel.
+    1\. Set all four of your M-1 panels face down. The M-1 controller panel should be on the far left. Start by connecting the data cable (ribbon cable) to the "JOUT" port on the far left panel into the "JIN" port on the second panel. Repeat for connecting the third and fourth panel.
 
     ![Connecting ribbon data cables from JOUT to JIN across four M-1 panels in a row](/assets/four-panels-connect-data-cable.webp)
 
@@ -78,7 +78,7 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
     A 3D printable wall mount system is available on <a href="https://www.printables.com/model/1361828-apollo-automation-m-1-led-matrix-stand-hub75" target="_blank" rel="noreferrer nofollow noopener">Printables</a>.
 
-## Software Setup
+## Software setup
 
 === "WLED"
 
@@ -119,6 +119,8 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
     Finally, tap **Info**, scroll down, select **Reboot WLED**, and confirm. The display stays black until you do.
 
 === "WLED-MM"
+
+    You'll set the chain length and combined panel dimensions for your number of panels, then reboot WLED.
 
     === "Two Panels"
 
@@ -174,15 +176,15 @@ Wiring is the same whichever firmware you run. Choose the number of panels you a
 
         ![Opening Info in WLED-MM, selecting Reboot WLED, then confirming the reboot](/assets/reboot-wled-gif.gif)
 
-## Segment Setup
+## Segment setup
 
 !!! success "WLED works using segments and your device now has different stop and end pixels for each segment since you have added more LEDs with each additional panel"
 
     Below we will create multiple Segments in WLED which we will then edit until they are set up to show the correct number of pixels for your number of panels.
 
-    Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 1 will control the top 1/4 of the display, Segment 2 will control the second 1/4, Segment 3 will control the third 1/4 and Segment 4 will control the bottom 1/4 of the matrix.
+    Think of segments like taking one big set of LEDs and cutting them into smaller chunks to then individually control. Segment 0 will control the top 1/4 of the display, Segment 1 will control the second 1/4, Segment 2 will control the third 1/4 and Segment 3 will control the bottom 1/4 of the matrix.
 
-    You can go back later and change these to your own layout - for example maybe you want to control all of the first LED matrix with Segment 0 and the second matrix with Segment 1 you can definitely do that!
+    You can go back later and change these to your own layout. For example, maybe you want to control all of the first LED matrix with Segment 0 and the second matrix with Segment 1. You can definitely do that!
 
 If you grew an existing setup rather than starting fresh, the default segment keeps its old bounds and your new pixels stay dark. Set **Stop X** and **Stop Y** to your new dimensions before adding any more segments.
 
@@ -246,7 +248,7 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
     ![WLED segment preview showing four equal segments numbered 0 to 3 as colored bands](/assets/two-panels-4x-segments.png)
 
-    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! 32 Character maximum limit in WLED.
+    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! Scrolling text tops out at 64 characters on WLED and 32 on WLED-MM.
 
     ![Choosing the Scrolling Text effect in WLED and renaming each segment to set its text](/assets/two-panels-example-scrolling-text-setup.gif)
 
@@ -282,7 +284,7 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
     ![WLED segment preview showing four equal segments numbered 0 to 3 as colored bands](/assets/two-panels-4x-segments.png)
 
-    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! 32 Character maximum limit in WLED.
+    7\. Test it by changing the effect to "Scrolling Text" and editing the name of each segment to be any text you want! Scrolling text tops out at 64 characters on WLED and 32 on WLED-MM.
 
     ![Choosing the Scrolling Text effect in WLED and renaming each segment to set its text](/assets/two-panels-example-scrolling-text-setup.gif)
 
@@ -308,7 +310,7 @@ If you grew an existing setup rather than starting fresh, the default segment ke
 
     5\. Save the layout as a preset, or it disappears on the next reboot.
 
-## What to Expect
+## What to expect
 
 Driving four panels asks a lot more of the controller than one, and a few things change that are worth knowing before you decide something is broken.
 
@@ -318,7 +320,7 @@ The LED memory gauge on the LED Preferences page reads high with four panels. Th
 
 Ghosting shows up more readily. Four chained panels load the drive lines harder than one, so faint red fringing behind bright content or at a seam appears at a lower brightness than you are used to. It is harmless. Drop the global brightness a step if it bothers you.
 
-## Going Bigger Than Four Panels
+## Going bigger than four panels
 
 Four panels per M-1 is the limit, in any arrangement that multiplies to four or fewer. That is a real constraint rather than an artificial cap: the display driver keeps its frame buffer in the fastest part of the chip's memory and four panels already fill most of it, the panel hardware refreshes more slowly as the chain grows, and eight panels of bright content would need something like a 25 amp supply.
 

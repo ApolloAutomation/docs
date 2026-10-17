@@ -1,5 +1,5 @@
 ---
-title: mmWave Tuning Videos
+title: mmWave tuning videos
 description: Two short videos and a quick summary on how to best tune the LD2410B in the MSR-2!
 ---
 !!! tip "Radar Engineering Mode (REM)"
@@ -19,6 +19,8 @@ How to tune the mmWave sensor using radar engineering mode.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/w_Gq62Edsnc?si=IxNE-pt-3u2FHMzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
   </iframe>
 </div>
+
+To tune your sensor, you'll turn on Radar Engineering Mode and adjust the gate thresholds.
 
 1\. Go to **Settings → Devices & services → ESPHome** and click the name of your device.
 
@@ -51,6 +53,8 @@ How to tune the mmWave sensor using radar engineering mode.
     I ended up maxing out the sliders on all gates and then bringing them down just enough to pick up human presence. Definitely easier than using the LD2410B app. - <a href="https://www.youtube.com/@makeitworktech" title="Make it Work" target="_blank" rel="noreferrer nofollow noopener">MakeItWorkTech</a>
 
 !!! example "Open-Concept kitchen and living room with MSR-2 to activate the under-cabinet lights only when person in the kitchen"
+
+    Here's how you tune the gates so the kitchen lights only come on when you're in the kitchen.
 
     1. Stand in the desired trigger locations.
     2. Observe the gate energy.

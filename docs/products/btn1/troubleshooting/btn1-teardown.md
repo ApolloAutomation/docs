@@ -1,12 +1,14 @@
 ---
-title: BTN-1 Teardown
+title: BTN-1 teardown
 description: >-
   Step by step guide for tearing down your BTN-1 to replace parts, clean it,
   swap cases, etc.
 ---
-# Teardown and Reassembly Of BTN-1
+# Teardown and reassembly of BTN-1
 
 ## Disassembly
+
+You'll remove the lid, lift out the green PCB, and disconnect the battery.
 
 !!! warning "If you have a BTN-1 with a battery you should flip the power switch to off"
 
@@ -29,6 +31,8 @@ description: >-
 ![Unplugging the 2-pin JST battery connector from the BTN-1 circuit board](/assets/btn-1-unplug-jst.webp)
 
 ## Reassembly
+
+To put everything back together, you'll reconnect the battery, seat the PCB, and snap the lid back on.
 
 1\. Re-attach the 2-pin JST connector and place the battery writing side down with the wires on the left side of the case.
 

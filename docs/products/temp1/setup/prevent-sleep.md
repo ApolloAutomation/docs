@@ -1,5 +1,5 @@
 ---
-title: TEMP-1 Prevent Sleep Guide
+title: TEMP-1 Prevent Sleep guide
 description: Guide for setting up and using the prevent sleep toggle with the TEMP-1.
 ---
 # Prevent Sleep
@@ -9,6 +9,8 @@ description: Guide for setting up and using the prevent sleep toggle with the TE
     All of our battery powered devices are able to go to sleep to save battery life. Our non-battery sensor devices like the AIR-1 and PLT-1 can also sleep to get better temperature and humidity measurements.
 
     The temperature offsets needed will be much lower for your sensors as the microcontroller will not put off as much heat when it is sleeping and then waking for short periods to report the sensor values.
+
+You'll set how long your sensor sleeps, then turn off **Prevent Sleep** so it can start sleeping.
 
 1\. Head to the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" title="Click me to go to the ESPHome integrations page" target="_blank" rel="noreferrer nofollow noopener">ESPHome Integrations page</a>.
 
@@ -32,4 +34,4 @@ description: Guide for setting up and using the prevent sleep toggle with the TE
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 
-    The TEMP-1B should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your TEMP-1B if there will be high moisture content in the air or if it is expected to rain.
+    The TEMP-1 should not be left outside for long periods of time or allowed to get wet. You will need to use another case around your TEMP-1 if there will be high moisture content in the air or if it is expected to rain.

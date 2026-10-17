@@ -1,12 +1,12 @@
 ---
-title: Use Your M-1 Without Wi-Fi
+title: Use your M-1 without Wi-Fi
 description: Run and control the M-1 with no network at all, using its own hotspot.
 ---
-# Use Your M-1 Without Wi-Fi
+# Use your M-1 without Wi-Fi
 
 The M-1 does not need a Wi-Fi network. Out of the box it makes its own, and the panel walks you through connecting to it. You get full control with nothing sent anywhere and no internet involved, which is what you want on a boat, in an RV, at a market stall, or anywhere without a network.
 
-## First Power-On
+## First power-on
 
 Plug the M-1 in. The Apollo dog appears for a few seconds, then the panel shows a setup card and keeps showing it until the device is set up. The card has the steps on it along with a QR code.
 
@@ -24,7 +24,7 @@ Plug the M-1 in. The Apollo dog appears for a few seconds, then the panel shows 
 
 From the control page you get everything: presets, effects, scrolling text, Pixel Paint, and GIF upload through [Pixel Forge](/products/m1/examples/pixel-forge.md), all without the M-1 ever touching a network.
 
-## Put a Password on the Hotspot
+## Put a password on the hotspot
 
 The hotspot ships open so that first setup is painless, which also means anyone in range can join it and take over your panel. (1) Set a password once you are up and running, and certainly before the M-1 spends a day anywhere public.
 { .annotate }
@@ -45,7 +45,7 @@ The hotspot ships open so that first setup is painless, which also means anyone 
 
     If you forget the hotspot password while the M-1 is not on a Wi-Fi network you can reach, there is no way back into the settings. Recovering it means a [factory re-flash](/products/m1/troubleshooting/m1-reflash.md), which wipes your presets and images.
 
-## Good to Know
+## Good to know
 
 The setup card only shows while the M-1 has no Wi-Fi configured. Once you connect it to a network it boots straight to the Apollo dog instead, and you reach it at its normal address. (1)
 { .annotate }

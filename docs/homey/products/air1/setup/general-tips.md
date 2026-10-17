@@ -1,16 +1,16 @@
 ---
-title: AIR-1 General Tips
+title: AIR-1 general tips
 description: Guide to help you understand which sensors you should be concerned with and expected safe or not safe thresholds to alert or automate on.
 ---
-# AIR-1 General Tips
+# AIR-1 general tips
 
 The AIR-1 has multiple different types of sensors and this guide will help you understand which ones you should be concerned with and expected safe or not safe thresholds to alert or automate on.
 
-## <a href="https://sensirion.com/products/catalog/SEN55" title="SEN55 Documentation" target="_blank" rel="noreferrer nofollow noopener">SEN55 Environmental Sensor</a>
+## <a href="https://sensirion.com/products/catalog/SEN55" title="SEN55 Documentation" target="_blank" rel="noreferrer nofollow noopener">SEN55 environmental sensor</a>
 
 The SEN55 is the powerhouse of the AIR-1 with multiple sensors such as particulate matter, volatile organic compounds (VOCs), oxidizing gases, such as nitrogen oxides (NOx), as well as humidity & temperature.
 
-## Particulate Matter
+## Particulate matter
 
 <a href="https://www.epa.gov/pm-pollution/particulate-matter-pm-basics" target="_blank" rel="noreferrer nofollow noopener">Per the EPA</a>: particulate matter (also called particle pollution): the term for a mixture of solid particles and liquid droplets found in the air. Some particles, such as dust, dirt, soot, or smoke, are large or dark enough to be seen with the naked eye. Others are so small they can only be detected using an electron microscope. <a href="https://www.epa.gov/indoor-air-quality-iaq/sources-indoor-particulate-matter-pm" target="_blank" rel="noreferrer nofollow noopener">Sources of pm particles here</a>.
 
@@ -18,17 +18,17 @@ The SEN55 is the powerhouse of the AIR-1 with multiple sensors such as particula
 
 **PM<sub>2\.5</sub>** : fine inhalable particles, with diameters that are generally 2.5 micrometers and smaller.
 
-* How small is 2.5 micrometers? Think about a single hair from your head. The average human hair is about 70 micrometers in diameter – making it 30 times larger than the largest fine particle.
+* How small is 2.5 micrometers? Think about a single hair from your head. The average human hair is about 70 micrometers in diameter, making it 30 times larger than the largest fine particle.
 
 !!! tip "We suggest triggering alert automations, hvac or a fan turning on, etc when PM particles are rising"
 
     <a href="https://www.epa.gov/indoor-air-quality-iaq/sources-indoor-particulate-matter-pm" target="_blank" rel="noreferrer nofollow noopener">This article</a> goes over lots of ways to reduce pm particles in your home!
 
-## Safe PM Levels
+## Safe PM levels
 
 Particulate Matter (PM) refers to a mixture of solid particles and liquid droplets found in the air. These are often classified by size, as smaller particles pose greater risks to health due to their ability to penetrate deeper into the lungs.
 
-## What Do PM1, PM2.5, PM4, and PM10 Mean?
+## What do PM1, PM2.5, PM4, and PM10 mean?
 
 <table><thead><tr><th><p><strong>PM Type</strong></p></th><th><p><strong>Size (µm)</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>≤ 1.0</p></td><td><p>Ultrafine particles that can reach deep into the lungs and bloodstream.</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 2.5</p></td><td><p>Fine particles; linked to respiratory and cardiovascular issues.</p></td></tr><tr><td><p>PM4</p></td><td><p>≤ 4.0</p></td><td><p>Less commonly regulated; typically used in industrial settings.</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 10</p></td><td><p>Inhalable particles; may irritate eyes, nose, and throat.</p></td></tr></tbody></table>
 
@@ -38,7 +38,7 @@ Particulate Matter (PM) refers to a mixture of solid particles and liquid drople
 
 ---
 
-## Recommended Safe Exposure Limits
+## Recommended safe exposure limits
 
 The **World Health Organization (WHO)** <a href="https://www.who.int/publications/i/item/9789240034228" target="_blank" rel="noreferrer nofollow noopener">provides the following exposure limits</a> for particulate matter:
 
@@ -58,7 +58,7 @@ The **U.S. Environmental Protection Agency (EPA)**<a href="https://www.airnow.go
 
 <a href="https://esphome.io/components/sensor/aqi/" target="_blank" rel="noreferrer nofollow noopener">NowCast AQI</a> takes your PM2.5 and PM10 readings and converts them into a single 0–500 number using the EPA's formula. That number maps directly to the AQI categories in the table above: bigger = worse.
 
-The AIR-1 calculates this automatically and exposes it as a sensor in Home Assistant.
+The AIR-1 calculates this automatically, and the Apollo Automation Homey app shows it as NowCast AQI on your AIR-1 device in Homey.
 
 !!! tip "NowCast AQI is easier to automate and understand than raw PM"
 
@@ -66,7 +66,7 @@ The AIR-1 calculates this automatically and exposes it as a sensor in Home Assis
 
 ---
 
-## Indoor Air Quality Notes
+## Indoor air quality notes
 
 * **PM1** and **PM2.5** are especially important for indoor air monitoring since these smaller particles are more likely to come from cooking, candles, smoking, or inadequate ventilation.
 * Use an **air purifier with a HEPA filter** to reduce PM1–PM2.5 concentrations indoors.
@@ -74,7 +74,7 @@ The AIR-1 calculates this automatically and exposes it as a sensor in Home Assis
 
 ---
 
-<table><thead><tr><th><p><strong>PM Size</strong></p></th><th><p><strong>Safe Range</strong></p></th><th><p><strong>Health Concern</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>No official limit — keep as low as possible</p></td><td><p>Ultrafine particles — most dangerous</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 12 µg/m³ (EPA), ≤ 5 µg/m³ (WHO annual)</p></td><td><p>Penetrates lungs and bloodstream</p></td></tr><tr><td><p>PM4</p></td><td><p>Industrial contexts only — no public health limits</p></td><td><p>Less regulated</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 45 µg/m³ (WHO 24-hour)</p></td><td><p>Triggers upper respiratory irritation</p></td></tr></tbody></table>
+<table><thead><tr><th><p><strong>PM Size</strong></p></th><th><p><strong>Safe Range</strong></p></th><th><p><strong>Health Concern</strong></p></th></tr></thead><tbody><tr><td><p>PM1</p></td><td><p>No official limit. Keep as low as possible</p></td><td><p>Ultrafine particles (most dangerous)</p></td></tr><tr><td><p>PM2.5</p></td><td><p>≤ 12 µg/m³ (EPA), ≤ 5 µg/m³ (WHO annual)</p></td><td><p>Penetrates lungs and bloodstream</p></td></tr><tr><td><p>PM4</p></td><td><p>Industrial contexts only (no public health limits)</p></td><td><p>Less regulated</p></td></tr><tr><td><p>PM10</p></td><td><p>≤ 45 µg/m³ (WHO 24-hour)</p></td><td><p>Triggers upper respiratory irritation</p></td></tr></tbody></table>
 
 ---
 
@@ -100,7 +100,7 @@ Per Sensirion,
     >
     > that there are fewer VOCs compared to the average
 
-## VOC Quality
+## VOC quality
 
 This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/Info_Note_Integration_VOC_NOx_Sensor.pdf" target="_blank" rel="noreferrer nofollow noopener">VOC index and a scale to output an easier to use variable</a>.
 
@@ -108,7 +108,7 @@ This uses the <a href="https://sensirion.com/media/documents/ACD82D45/6294DFC0/I
 
 !!! tip "We suggest triggering alert automations, hvac or a fan turning on, etc when the VOC Quality changes to Abnormal or Very Abnormal or Extremely Abnormal."
 
-    This is a very easy way to automate based on the air quality changing over the past 24 hours but you will still want to automate on particulate matter as well!
+    This lets you automate based on the air quality changing over the past 24 hours, but you will still want to automate on particulate matter as well!
 
 ## <a href="https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf" target="_blank" rel="noreferrer nofollow noopener">NO<sub>X</sub> Index</a>
 
@@ -162,6 +162,6 @@ The latest AIR-1 firmware keeps the SCD40 calibrated automatically. The sensor a
 
 ---
 
-## <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS-4514 Gas Sensor</a>
+## <a href="https://wiki.dfrobot.com/_SKU_SEN0377_Gravity__MEMS_Gas_Sensor_CO__Alcohol__NO2___NH3___I2C___MiCS_4514" target="_blank" rel="noreferrer nofollow noopener">MiCS-4514 gas sensor</a>
 
-The MiCS-4514 is a very unique sensor able to distinguish between multiple gases such as Carbon Monoxide, Nitrogen, Ethanol, Hydrogen, Ammonia, and Methane.
+The MiCS-4514 is a very unique sensor able to distinguish between multiple gases such as Carbon Monoxide, Nitrogen Dioxide (NO<sub>2</sub>), Ethanol, Hydrogen, Ammonia, and Methane.

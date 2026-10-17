@@ -1,8 +1,8 @@
 ---
-title: Useful Links
+title: Useful links
 description: Links to our GitHub, Printables, and Discord!
 ---
-# Useful Links
+# Useful links
 
 !!! tip ":fontawesome-brands-github: GitHub"
 

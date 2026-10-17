@@ -1,8 +1,8 @@
 ---
-title: TEMP-1 Use Cases
+title: TEMP-1 use cases
 description: List of use cases for the TEMP-1.
 ---
-# Use Cases for the TEMP-1
+# Use cases for the TEMP-1
 
 1\. Monitoring fridge / freezer: There are settings to set the maximum temperature the sensor should reach. It can alert through the onboard buzzer if it rises above that temperature. The cable on the probe is flat to not interfere with fridge seals.
 

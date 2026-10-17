@@ -19,7 +19,7 @@ description: Frequently asked questions about the LED-1 controller.
 
 4\. **How does the microphone work?**
 
-* Audio-reactive WLED is built into the WLED firmware we ship with the LED-1. Just make sure to enable it from the "info" pane and then try using an effect with the little Musical Note Image next to them!
+* Audio-reactive WLED is built into the WLED firmware we ship with the LED-1. Make sure to enable it from the "info" pane and then try using an effect with the little Musical Note Image next to them!
 
 5\. **My LEDs are the wrong color how do I fix it?**
 

@@ -4,6 +4,8 @@ description: Tutorial for Attaching the bottle to the PUMP-1
 ---
 # Attaching the bottle to the PUMP-1
 
+You'll fit the input fluid level sensor into the base, then slide the water bottle into it.
+
 1\. Begin by placing the small white connector through the hole in the base of the water bottle and gently press the input fluid level sensor into place.
 
 !!! tip "Make sure to orient your fluid level sensor correctly as shown in the gif below"

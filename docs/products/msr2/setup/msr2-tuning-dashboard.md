@@ -1,8 +1,8 @@
 ---
-title: MSR-2 Tuning Dashboard Setup
+title: MSR-2 tuning dashboard setup
 description: Tutorial on creating an MSR-2 tuning dashboard.
 ---
-# MSR-2 Tuning Dashboard
+# MSR-2 tuning dashboard
 
 !!! tip "There is a newer way to do this"
 
@@ -12,9 +12,9 @@ description: Tutorial on creating an MSR-2 tuning dashboard.
 
     We all owe a huge thanks to MirkoP from Discord/GitHub for creating and sharing this with everyone! <a href="https://github.com/mirkop/apollo-home-assistant/blob/master/streamline_cards/ld2410/README.md" target="_blank" rel="noreferrer nofollow noopener">Source here</a>.
 
-This guide will create a beautiful and helpful dashboard to simplify configuration of your MSR-2 sensor. You can easily view the current gate and zone thresholds which will help tune your sensor for your environment!
+This guide will create a beautiful and helpful dashboard to simplify configuration of your MSR-2 sensor. You can view the current gate and zone thresholds which will help tune your sensor for your environment!
 
-1\. First make sure you have HACS installed - if not, <a href="https://hacs.xyz/docs/use/download/download/" target="_blank" rel="noreferrer nofollow noopener">download it here</a> and install it.
+1\. First make sure you have HACS installed. If not, <a href="https://hacs.xyz/docs/use/download/download/" target="_blank" rel="noreferrer nofollow noopener">download it here</a> and install it.
 
 2\. Install the Streamline Card in HACS <a href="https://github.com/brunosabot/streamline-card/?tab=readme-ov-file#with-hacs-recommended" target="_blank" rel="noreferrer nofollow noopener">here</a> which is required for the steps below.
 
@@ -35,7 +35,7 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 !!! tip "Create backups to restore to before moving forward!"
 
-    Back up your Home Assistant instance and back up a copy of the **Raw configuration editor** mentioned below before you make any changes just to be safe!
+    Back up your Home Assistant instance and back up a copy of the **Raw configuration editor** mentioned below before you make any changes, to be safe!
 
     [![Open your Home Assistant instance and show an overview of your backups.](https://my.home-assistant.io/badges/backup.svg)](https://my.home-assistant.io/redirect/backup/)
 
@@ -43,7 +43,7 @@ This guide will create a beautiful and helpful dashboard to simplify configurati
 
 !!! danger "This file is used by Home Assistant and must be carefully edited."
 
-    Home Assistant depends on this file to function correctly - it is what displays your dashboard "views". Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
+    Home Assistant depends on this file to function correctly. It is what displays your dashboard "views". Only make the changes exactly as outlined below. Do not add extra spaces or modify anything beyond what is specified in the instructions.
 
 ![Pasting the generated YAML at the bottom of the Home Assistant Raw configuration editor and saving](/assets/msr-2-yaml-generator-copy-paste-raw-gif.gif)
 

@@ -1,12 +1,14 @@
 ---
-title: BTN-1 4 Event Blueprint
+title: BTN-1 4 event blueprint
 description: >-
   Example of how to use the BTN-1 Events with the BTN-1 4 Event Blueprint in
   Home Assistant!
 ---
-# Blueprint Setup
+# Blueprint setup
 
-## Automatic Import
+## Automatic import
+
+You'll import the blueprint with the button below, then choose an action for each button event.
 
 1\. Click the Import Blueprint button below and then click **Open link**.
 
@@ -26,11 +28,13 @@ description: >-
 
 !!! success "You can do this for all four buttons all in one blueprint!"
 
-    This blueprint is packed with features - you can do a Single Click, a Double Click, Three Clicks, or a Hold on each of the four buttons. Just click Add action and set them all up!
+    This blueprint is packed with features: you can do a Single Click, a Double Click, Three Clicks, or a Hold on each of the four buttons. Click Add action and set them all up!
 
 5\. Your blueprint is now live. Click the button 1 button and it should toggle whatever light you selected in the blueprint. This can be anything in Home Assistant such as your light, fan, scene, etc!
 
-## Manual Import
+## Manual import
+
+You can also import the blueprint by pasting its address into Home Assistant yourself.
 
 1\. Go to **Settings → Automations & scenes**, click **Blueprints** at the top, then click **Import blueprint**.
 
@@ -54,6 +58,6 @@ https://raw.githubusercontent.com/ApolloAutomation/Blueprints/refs/heads/main/BT
 
 !!! success "You can do this for all four buttons all in one blueprint!"
 
-    This blueprint is packed with features - you can do a Single Click, a Double Click, Three Clicks, or a Hold on each of the four buttons. Just click Add action and set them all up!
+    This blueprint is packed with features: you can do a Single Click, a Double Click, Three Clicks, or a Hold on each of the four buttons. Click Add action and set them all up!
 
 4\. Your blueprint is now live. Click the button 1 button and it should toggle whatever light you selected in the blueprint. This can be anything in Home Assistant such as your light, fan, scene, etc.

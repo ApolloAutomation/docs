@@ -1,10 +1,10 @@
 ---
-title: Adding the Motion Module
+title: Adding the motion module
 description: >-
   Wire up the ESPHome Starter Kit Motion Module which will turn your starter kit
   into an accurate motion sensor!
 ---
-# Adding the Motion Module
+# Adding the motion module
 
 The Motion Module turns your starter kit into a motion sensor. By the end of this tutorial you'll have an MH-SR602 wired to your ESP32-C6, surfaced as a binary sensor in your YAML, and flipping live in the web server whenever something moves in front of it.
 
@@ -25,7 +25,7 @@ The PIR sensor (the small white dome on a tiny PCB) ships separately from the mo
 
 ![Pressing the PIR sensor onto the motion module pins with the Out labels lined up](../../../assets/esphome-starter-kit-attach-pir-to-motion-module.webp)
 
-## Attach Motion module
+## Attach motion module
 
 Connect the motion module to the ESP32-C6 using one of the FPC ribbon cables that came with the kit. Either FPC connector on the ESP32-C6 works, top or bottom.
 
@@ -85,22 +85,22 @@ ESPHome Device Builder ships an **Add Component** flow that knows the pin layout
 
 Flash the device so the new motion entity goes live.
 
-1.  Click **Install** on your device card in ESPHome Device Builder. (1)
+1.  Click **Install** at the bottom right of the editor. (1)
     { .annotate }
 
     1.  We say software because it's the friendlier word. The technically correct term is firmware: code that runs directly on the chip instead of on a computer. That's the word ESPHome's own docs use.
 
-2. Choose **Plug into the computer running ESPHome Device Builder** for the first flash, or **On The Network** if the device is already on your Wi-Fi.
+2. Choose **On the network** if the device is already on your Wi-Fi, or **Plug into this computer** to flash over USB.
 3. Wait for the compile and flash to finish. First builds can take a few minutes.
 4. The device reboots and reconnects to your Wi-Fi on its own.
 
 ![ESPHome Device Builder clicking Install, choosing On the network, and compiling the motion config](../../../assets/esphome-device-builder-install-motion-component.gif)
 
-## Test Motion
+## Test motion
 
 With the device back online, the Motion entity is live on the web server. <a href="http://esphome-starter-kit.local/" target="_blank" rel="noreferrer nofollow noopener">Open it in a browser</a> on the same network and watch it react in real time.
 
-1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in Getting Started, that's `http://esphome-starter-kit.local/`.
+1. In a browser, open `http://<your-device-name>.local/`. If you used `esphome-starter-kit` as the device name in [First Steps](/products/ESPHome-Starter-Kit/setup/first-steps.md), that's `http://esphome-starter-kit.local/`.
 2. Find the **Motion** entity in the binary sensor list.
 3. Wave your hand in front of the sensor. The entity flips from OFF to ON while motion is detected, then back to OFF a few seconds after motion stops.
 

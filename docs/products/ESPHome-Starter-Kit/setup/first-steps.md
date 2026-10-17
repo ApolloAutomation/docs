@@ -1,8 +1,8 @@
 ---
-title: First Steps with the ESPHome Starter Kit
+title: First steps with the ESPHome Starter Kit
 description: Step by step guide for getting started with the ESPHome Starter Kit
 ---
-# ESPHome Starter Kit - First Steps
+# ESPHome Starter Kit - First steps
 
 This guide walks you through installing the ESPHome Device Builder app, and making your first ESPHome YAML configuration from scratch.
 
@@ -39,6 +39,8 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
 === "Windows"
 
+    You'll download and run the ESPHome Device Builder installer for Windows.
+
     1. Open <a href="https://esphome.io/install/" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a> and click **Download installer (.exe)** on the **Windows** tab.
     2. Open the downloaded `.exe` file. If Windows asks whether to allow the app to make changes, choose **Yes**, then follow the installer prompts.
     3. On the last screen, leave **Run ESPHome Device Builder** checked and click **Finish**.
@@ -63,6 +65,8 @@ Pick the platform you'll be running ESPHome Device Builder on:
     ![ESPHome Device Builder setup wizard: picking Installation, then New to ESPHome, then Start guided tour](../../../assets/device-builder-first-time-install-pick-your-experience.gif)
 
 === "Mac"
+
+    You'll download the macOS build of ESPHome Device Builder and install it in your Applications folder.
 
     1.  Open <a href="https://esphome.io/install/" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a>. The page detects your OS and opens the **macOS** tab. Pick the build that matches your chip:
 
@@ -107,11 +111,15 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
     **<u>Method 2</u>**
 
+    You can also install the Device Builder from the App Store in Home Assistant.
+
     1. In Home Assistant, open **Settings → Apps → App Store**.
     2. Search for **ESPHome Device Builder** and click **Install**.
     3. Once installed, click **Start**, then **Open Web UI**. The Device Builder will open inside your Home Assistant dashboard.
 
 === "Linux"
+
+    You'll download the package for your distro, install it, and launch ESPHome Device Builder.
 
     1.  Open <a href="https://esphome.io/install/" target="_blank" rel="noreferrer nofollow noopener">esphome.io/install</a>. The page opens on the **Linux** tab with **Debian / Ubuntu** selected. Choose the package format your distro uses, then the CPU architecture (**x86_64** for a normal desktop or laptop, **arm64** for a Raspberry Pi or similar board):
 
@@ -131,7 +139,7 @@ Pick the platform you'll be running ESPHome Device Builder on:
 
         If your kit doesn't appear as a serial port later when you flash it, add your user to the `dialout` group with `sudo usermod -a -G dialout $USER`, then log out and back in.
 
-    The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your system tray for getting back to it later. Some Linux desktops, notably GNOME without a tray extension, don't show tray icons at all. The app still runs, so just use the dashboard in your browser.
+    The first launch takes a moment while it sets itself up, then the dashboard opens in your browser at <a href="http://localhost:6052/" target="_blank" rel="noreferrer nofollow noopener">http://localhost:6052/</a>. An ESPHome icon lands in your system tray for getting back to it later. Some Linux desktops, notably GNOME without a tray extension, don't show tray icons at all. The app still runs, so use the dashboard in your browser.
 
     A short wizard runs the first time:
 
@@ -153,7 +161,7 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 <div markdown class="annotate">
 
-2\. Select the Apollo ESPHome Starter Kit and give it a name such as esphome-starter-kit, then click **Next**. Type in your Wi-Fi network name (SSID) and Wi-Fi password, then click **Finish Setup**. (1)
+2\. Under **Featured**, select **ESPHome Starter Kit By Apollo** and give it a name such as esphome-starter-kit, then click **Next**. Type in your Wi-Fi network name (SSID) and Wi-Fi password, then click **Finish Setup**. (1)
 
 </div>
 
@@ -161,7 +169,7 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 ![Selecting the ESPHome Starter Kit board, naming the device, and entering Wi-Fi details](../../../assets/device-builder-select-kit-name-kit-add-wifi.gif)
 
-## Configure Components
+## Configure components
 
 !!! tip "We're now ready to add your first component and turn your project into a smart device!"
 
@@ -179,7 +187,7 @@ The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Usef
 
 ![ESPHome Device Builder Add component dialog adding the Onboard RGB LED with default settings](../../../assets/device-builder-add-onboard-rgb-led-component.gif)
 
-## Boot Mode
+## Boot mode
 
 The device is required to be flashed via USB using the bootloader mode the very first time it is used. Once you flash it once, you do not have to do these steps again.
 
@@ -195,9 +203,9 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 ![Holding the BOOT button on the ESP32-C6 while pressing and releasing RESET](../../../assets/esphome-starter-kit-boot-mode.webp)
 
-3\. Your device is now in boot mode - The ESP32-C6 will now stay in bootloader mode until you flash it.
+3\. Your device is now in boot mode. The ESP32-C6 will now stay in bootloader mode until you flash it.
 
-## Installing Software
+## Installing software
 
 Before we continue, confirm that you installed the ESPHome Device Builder, configured your components, and put your device in boot mode.
 
@@ -222,7 +230,7 @@ Your kit's default project includes the [**Web Server**](../learning-the-basics/
 
 !!! warning "Use http:// not https://"
 
-    Your kit only speaks `http://`. Some browsers quietly try `https://` first, and the page just won't load. If that happens, click the address bar and add `http://` before the name (so it looks like `http://esphome-starter-kit.local/`).
+    Your kit only speaks `http://`. Some browsers quietly try `https://` first, and the page won't load. If that happens, click the address bar and add `http://` before the name (so it looks like `http://esphome-starter-kit.local/`).
 
 It should load your new device with the Onboard RGB LED listed. Click its toggle and the LED on your kit turns on and off.
 

@@ -1,10 +1,10 @@
 ---
-title: Trash Night Reminder
+title: Trash night reminder
 description: >-
   Use two Home Assistant Local Calendars and the LED & Buzzer module's RGB
   LEDs to light up your Starter Kit on trash and recycle night.
 ---
-# Trash Night Reminder
+# Trash night reminder
 
 <span class="difficulty lvl-2">Difficulty: Level 2</span>
 
@@ -20,7 +20,7 @@ description: >-
   </div>
 </div>
 
-Never miss bin night again. Two **Home Assistant Local Calendars** - one for trash, one for recycle - drive a single automation that lights up the Starter Kit's RGB LEDs in a different color for each pickup. When the event starts the LEDs come on; when the event ends they go off.
+Never miss bin night again. Two **Home Assistant Local Calendars** (one for trash, one for recycle) drive a single automation that lights up the Starter Kit's RGB LEDs in a different color for each pickup. When the event starts the LEDs come on; when the event ends they go off.
 
 !!! note "Before you start"
 
@@ -32,7 +32,7 @@ Never miss bin night again. Two **Home Assistant Local Calendars** - one for tra
 
 ## Create the calendars
 
-Home Assistant's **Local Calendar** integration stores events entirely inside Home Assistant - no Google account or external service required.
+Home Assistant's **Local Calendar** integration stores events entirely inside Home Assistant: no Google account or external service required.
 
 **Add the Trash calendar**
 
@@ -73,7 +73,7 @@ Add a repeating event to each calendar to match your actual pickup schedule.
 
     1.  The LEDs turn on at the start time and off at the end time, so this is your reminder window. Keep it to one evening rather than running it into the next day.
 
-6. Click **Save**.
+6. Click **Add event** at the bottom of the dialog.
 
     ![Adding a Trash Pickup event on the Trash calendar from 7 to 9 PM that repeats weekly](../../../assets/trash-pickup-recurring-event.gif)
 
@@ -85,13 +85,13 @@ Add a repeating event to each calendar to match your actual pickup schedule.
     - **Title** → `Recycle Pickup`
     - Set the **start time** and **end time** to a window that evening, for example 7 PM to 9 PM.
     - Enable **Repeat** and set it to **Weekly** on that day. If recycle goes out more than once a week, scroll down and select the other day too.
-    - Click **Save**.
+    - Click **Add event** at the bottom of the dialog.
 
     ![Adding a Recycle Pickup event on the Recycle calendar from 7 to 9 PM that repeats weekly](../../../assets/recycle-pickup-recurring-event.gif)
 
 ## Build the automation
 
-One automation handles both calendars. Four triggers - event start and event end for each calendar - feed into a **Choose** action that picks the right color or turns the LEDs off depending on which trigger fired.
+One automation handles both calendars. Four triggers (event start and event end for each calendar) feed into a **Choose** action that picks the right color or turns the LEDs off depending on which trigger fired.
 
 **Create the automation**
 
@@ -107,27 +107,29 @@ Add four triggers, one at a time. Each one is a **Calendar** trigger, and each g
 
     - **Calendar** → `Trash`
     - **Event** → **Start**
-    - Open the trigger's three-dot menu, choose **Rename**, and set the **Trigger ID** to `trash_start`.
+    - Open the trigger's three-dot menu, choose **Edit ID**, and set the **Trigger ID** to `trash_start`.
 
 3. Click **+ Add trigger** and add another **Calendar** trigger.
 
     - **Calendar** → `Trash`
     - **Event** → **End**
-    - Three-dot menu, **Rename**, **Trigger ID** → `trash_end`.
+    - Three-dot menu, **Edit ID**, **Trigger ID** → `trash_end`.
 
 4. Click **+ Add trigger** and add another **Calendar** trigger.
 
     - **Calendar** → `Recycle`
     - **Event** → **Start**
-    - Three-dot menu, **Rename**, **Trigger ID** → `recycle_start`.
+    - Three-dot menu, **Edit ID**, **Trigger ID** → `recycle_start`.
 
 5. Click **+ Add trigger** and add another **Calendar** trigger.
 
     - **Calendar** → `Recycle`
     - **Event** → **End**
-    - Three-dot menu, **Rename**, **Trigger ID** → `recycle_end`.
+    - Three-dot menu, **Edit ID**, **Trigger ID** → `recycle_end`.
 
 **Add the choose action**
+
+Now you'll add the **Choose** action that sets the LED color for each pickup and turns the LEDs off when an event ends.
 
 6. Under **Then do**, click **+ Add action** and search for **Choose**.
 
@@ -215,7 +217,7 @@ Add four triggers, one at a time. Each one is a **Calendar** trigger, and each g
 
 !!! success "Your kit is now a physical reminder for Home Assistant events!"
 
-    The same pattern works for any calendar-driven reminder - medication schedules, bin days for a second home, watering days for the garden. Swap the colors, the calendar name, or the action and you have a new reminder with no extra hardware.
+    The same pattern works for any calendar-driven reminder: medication schedules, bin days for a second home, watering days for the garden. Swap the colors, the calendar name, or the action and you have a new reminder with no extra hardware.
 
 ## Tune the colors
 

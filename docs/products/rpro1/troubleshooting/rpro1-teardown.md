@@ -1,10 +1,12 @@
 ---
-title: R PRO-1 Teardown
+title: R PRO-1 teardown
 description: Step by step guide for tearing down your R PRO-1 to replace parts, clean it, swap cases, etc.
 ---
-# Teardown and Reassembly Of R PRO-1
+# Teardown and reassembly of R PRO-1
 
 ## Disassembly:
+
+You'll remove the back, take the PCB out of the case, and remove both mmWave sensors.
 
 1\. Unplug your R PRO-1 from power and remove the back.
 
@@ -23,6 +25,8 @@ description: Step by step guide for tearing down your R PRO-1 to replace parts, 
 ![Fingers pulling the LD2450 mmWave module off its pin header on the R PRO-1 PCB](/assets/r-pro-1-teardown-remove-ld2450.jpg)
 
 ## Reassembly
+
+To put everything back together, you'll reinstall both mmWave sensors, place the PCB back in the case, and snap the lid on.
 
 1\. Place the LD2450 on the 8 pin header.
 

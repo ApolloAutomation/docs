@@ -1,10 +1,10 @@
 ---
-title: SEN65 Air Quality Sensor
+title: SEN65 air quality sensor
 description: >-
   Add a Sensirion SEN65 air quality sensor to your ESPHome Starter Kit Breakout
   Module, then learn what each reading means and what to automate on.
 ---
-# SEN65 Air Quality Sensor
+# SEN65 air quality sensor
 
 The <a href="https://sensirion.com/products/catalog/SEN65" target="_blank" rel="noreferrer nofollow noopener">Sensirion SEN65</a> is an all-in-one air quality sensor. One module measures particulate matter, temperature, humidity, volatile organic compounds (VOCs), and nitrogen oxides (NOx), and it plugs straight into the Breakout Module's SEN6x port. Grab one from the <a href="https://apolloautomation.com/products/sen65-particulate-matter-sensor" target="_blank" rel="noreferrer nofollow noopener">Apollo store</a>.
 
@@ -20,7 +20,7 @@ The SEN6x port is on the same I2C bus as the other connectors: **SCL on GPIO0**,
 
 ## Add to ESPHome Device Builder
 
-The SEN65 needs three components in your device config: the accessory power switch that powers the breakout, the I2C bus the sensor talks on, and the <a href="https://esphome.io/components/sensor/sen6x/" target="_blank" rel="noreferrer nofollow noopener">SEN6x</a> component that reads it. If another module already added the I2C component, skip steps 5 and 6, the SEN65 shares the same bus.
+The SEN65 needs three components in your device config: the accessory power switch that powers the breakout, the I2C bus the sensor talks on, and the <a href="https://esphome.io/components/sensor/sen6x/" target="_blank" rel="noreferrer nofollow noopener">SEN6x</a> component that reads it. If another module already added the I2C component, skip steps 4 to 6, the SEN65 shares the same bus.
 
 1.  Open your starter kit device in Device Builder and click **Edit**.
 2.  Navigate to the **Components** section and look for a **GPIO Switch** named **Accessory Power**. The breakout and everything plugged into it get their power from that switch, so without it the SEN65 never answers on the I2C bus. (1)
@@ -134,15 +134,15 @@ Want a single air quality number on top of the individual readings? Add the AQI 
 <a href="https://www.epa.gov/pm-pollution/particulate-matter-pm-basics" target="_blank" rel="noreferrer nofollow noopener">Per the EPA</a>, particulate matter is a mix of solid particles and liquid droplets in the air. The smaller the particle, the deeper it reaches into your lungs, so PM1 and PM2.5 matter most indoors where cooking, candles, and poor ventilation are the usual sources. (1)
 { .annotate }
 
-1.  Trigger a fan, air purifier, or HVAC when PM2.5 climbs. Keeping PM2.5 below **12 µg/m³** indoors is a good general target, below **5 µg/m³** for ideal long-term health.
+1.  Trigger a fan, air purifier, or HVAC when PM2.5 climbs. Keeping PM2.5 below **9 µg/m³** indoors is a good general target, below **5 µg/m³** for ideal long-term health.
 
 | PM2.5 (µg/m³) | AQI Category | What it means |
 |---|---|---|
-| 0.0 – 12.0 | Good | Air quality is satisfactory. |
-| 12.1 – 35.4 | Moderate | Acceptable; some risk for sensitive people. |
+| 0.0 – 9.0 | Good | Air quality is satisfactory. |
+| 9.1 – 35.4 | Moderate | Acceptable; some risk for sensitive people. |
 | 35.5 – 55.4 | Unhealthy for Sensitive Groups | Risk for those with heart or lung issues, children, older adults. |
-| 55.5 – 150.4 | Unhealthy | Everyone may start to feel effects. |
-| 150.5+ | Very Unhealthy to Hazardous | Health alert. |
+| 55.5 – 125.4 | Unhealthy | Everyone may start to feel effects. |
+| 125.5+ | Very Unhealthy to Hazardous | Health alert. |
 
 ### NowCast AQI
 
@@ -165,7 +165,7 @@ Both are relative scales that behave like your nose, comparing the current air t
 1.  Run a fan or send an alert when the VOC Index rises above 100. It reacts to the change in your space rather than an absolute number.
 2.  Kick on the range hood or a fan when the NOx Index climbs past 1, handy while cooking on gas.
 
-## Temperature and Humidity Offsets
+## Temperature and humidity offsets
 
 If the SEN65's temperature or humidity doesn't agree with another thermometer or hygrometer in the room, the sensor is probably fine. Sensirion calibrates every unit at the factory to a typical accuracy of <a href="https://sensirion.com/products/catalog/SEN65" target="_blank" rel="noreferrer nofollow noopener">±0.45 °C and ±4.5 %RH</a>, but it samples the air right next to a powered ESP32, and that heat pushes the temperature reading up a little. Humidity then reads low, because relative humidity drops as air warms. (1) Every install runs a slightly different amount warm, so Sensirion leaves this correction to the device builder, and in ESPHome that's a one-line offset in your YAML.
 { .annotate }

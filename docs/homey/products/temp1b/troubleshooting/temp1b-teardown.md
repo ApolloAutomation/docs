@@ -1,8 +1,10 @@
 ---
-title: Teardown Of TEMP-1B
+title: Teardown of TEMP-1B
 description: "Step by step guide for tearing down your TEMP-1B to replace parts, clean it, swap cases, etc."
 ---
-# Teardown Of TEMP-1B
+# Teardown of TEMP-1B
+
+Follow these steps to open the case and take out the PCB.
 
 1\. Gently pry open the case lid as shown in the image below.
 

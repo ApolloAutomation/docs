@@ -1,8 +1,8 @@
 ---
-title: Our Team
+title: Our team
 description: "Meet the people behind Apollo Automation."
 ---
-# Our Team
+# Our team
 
 ##   
 

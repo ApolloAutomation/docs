@@ -1,63 +1,67 @@
 ---
-title: This needs to be redone for Homey if it can be duplicated.
-description: "Two short videos and a quick summary on how to best tune the LD2410B in the MSR-2!"
+title: mmWave tuning videos
+description: "Two short videos and a quick summary on tuning the LD2410B radar in the MSR-2 from the sensor's built-in web page."
 ---
-# This needs to be redone for Homey if it can be duplicated.
+# mmWave tuning videos
 
 !!! tip "Radar Engineering Mode (REM)"
 
-    If you're experiencing false triggers, we recommend using Radar Engineering Mode (REM) to monitor the gate energy and adjust the gate threshold to eliminate them.
+    If your Apollo MSR-2 reports presence in an empty room, turn on Radar Engineering Mode (REM) to watch the energy in each radar gate, then raise the threshold of any gate that triggers on its own. You do this on the MSR-2's built-in web page, because the Apollo Automation app for Homey doesn't show these controls.
 
-Quick introduction video of the LD2410B gates and zones.
+Both videos are from Apollo and use the MSR-1, which has the same LD2410B radar as your MSR-2. If a video tunes the radar in Home Assistant, follow along on your MSR-2's web page instead, using the quick summary below.
 
-<div class="cms-embed">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/w_Gq62Edsnc?si=IxNE-pt-3u2FHMzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-  </iframe>
-</div>
+## Radar gates and zones
 
-How to tune the mmWave sensor using radar engineering mode.
+A quick introduction to the gates and zones of the LD2410B radar.
 
 <div class="cms-embed">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/6VrTfaFyMPk?si=KI9gcbJB0EgAT3uW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
   </iframe>
 </div>
 
-1\. Navigate to the ESPHome integration by going to settings -&gt; <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a> -&gt; click on the name of your new device!
+## Tuning with Radar Engineering Mode
 
-2\. Scroll down to the Configuration section.
+How to tune the radar with Radar Engineering Mode.
 
-3\. Turn on Radar Engineering Mode (REM).
+<div class="cms-embed">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w_Gq62Edsnc?si=IxNE-pt-3u2FHMzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+  </iframe>
+</div>
 
-![Home Assistant Radar Engineering Mode toggle switched on and circled](/assets/mmwave-tuning-pic-1.png)
+## Quick summary
 
-4\. Scroll down to the Diagnostic section and you will see that REM shows the move and still energy for gates 0-8.
+Here's the whole process in five steps, all on your MSR-2's web page. You need a phone or computer on the same network as the sensor.
 
-![Home Assistant diagnostic sensors showing gate 2 move and still energy and gate 3 move energy](/assets/mmwave-tuning-pic-2-1.png)
+1. Open the web page. Take the last 6 characters of your MSR-2's name in Homey, such as `c64a28` in **Apollo MSR-2 c64a28**, and go to `http://apollo-msr-2-c64a28.local/` with your own characters. If that doesn't load, go to `http://<device IP>` instead.
+2. In the **Configuration** section, turn on **Radar Engineering Mode**.
+3. In the **Diagnostic** section, watch the gate energy readings, **g0 move energy** and **g0 still energy** through **g8 move energy** and **g8 still energy**. Each gate covers 0.75 m, counted out from the sensor.
 
-5\. The gates are different distances from the sensor.
+    ![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)
 
-![mmWave radar diagram of gates G1 to G7 out to 5 m, colored by zones 1 to 3](/assets/radar-gates-colored.png "Radar Gates Colored")
+4. Move a gate's threshold slider, such as **g6 move threshold** or **g6 still threshold**, to the right to make that gate less sensitive, or to the left to make it more sensitive.
+5. Turn **Radar Engineering Mode** back off when you're done.
 
-6\. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
-
-![Home Assistant g6 still threshold slider moved all the way to the right and circled](/assets/mmwave-tuning-pic-3.png)
-
-7\. Moving the gate still and move threshold slider to the left decreases the amount of energy needed to trigger the sensor. Do this if you want the gate to be more sensitive.
-
-![Home Assistant g4 move threshold slider moved toward the left and circled](/assets/mmwave-tuning-pic-4.png)
+Your MSR-2 now detects people where you want it to. To confirm it in Homey, open your MSR-2 and watch **Has Target** as you walk around the room.
 
 !!! quote "Quote from popular YouTuber Make It Work Tech"
 
     I ended up maxing out the sliders on all gates and then bringing them down just enough to pick up human presence. Definitely easier than using the LD2410B app. - <a href="https://www.youtube.com/@makeitworktech" title="Make it Work" target="_blank" rel="noreferrer nofollow noopener">MakeItWorkTech</a>
 
-!!! example "Open-Concept kitchen and living room with MSR-2 to activate the under-cabinet lights only when person in the kitchen"
+!!! example "Open-plan kitchen and living room: light the kitchen only"
 
-    1. Stand in the desired trigger locations.
-    2. Observe the gate energy.
-    3. Adjust the gate threshold slider to the right, increasing the energy required to trigger the mmWave sensor. This ensures that your kitchen lights only come on when you're actually in the kitchen, not just walking by in the living room. Also, you can lower the gate threshold in the kitchen by moving the slider to the left. This makes the mmWave sensor more sensitive, even when standing still. This way, you avoid having the lights go off while reading a recipe or doing the dishes.
+    You'll tune the gates so only movement in the kitchen turns on the kitchen lights.
 
-**<u>References</u>**
+    1. Stand in the spots where you want the MSR-2 to trigger, and in the spots where it shouldn't.
+    2. Watch which gates rise in each spot.
+    3. Move the sliders for the living room gates to the right, so walking past no longer turns on the kitchen lights. Move the still threshold sliders for the kitchen gates to the left, so the lights stay on while you read a recipe or do the dishes.
 
-* [https://youtu.be/dAzHXpP3FcI?t=431](https://youtu.be/dAzHXpP3FcI?t=431)
-* [https://community.home-assistant.io/t/ld2410-esphome-tips/477058/316](https://community.home-assistant.io/t/ld2410-esphome-tips/477058/316)
-* [https://www.youtube.com/watch?v=l212Lvo1R6s](https://www.youtube.com/watch?v=l212Lvo1R6s)
+!!! success "Next step: tune gate by gate"
+
+    The full guide walks you through finding your MSR-2's address, reading the gate energy against each threshold, and the radar settings you can change in Homey itself.
+
+    [Tune the MSR-2 radar from its web page](../../../msr2/setup/zones-ha/){ .md-button .md-button--primary }
+
+## Further reading
+
+- [LD2410 radar presence detector video by Andreas Spiess](https://youtu.be/dAzHXpP3FcI?t=431)
+- [LD2410 ESPHome tips thread on the Home Assistant community forum](https://community.home-assistant.io/t/ld2410-esphome-tips/477058/316)

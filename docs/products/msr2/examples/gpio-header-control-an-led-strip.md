@@ -1,8 +1,8 @@
 ---
-title: Control an LED strip with the GPIO Header
+title: Control an LED strip with the GPIO header
 description: Wire a WS2812B LED strip to the Apollo GPIO Header and control it from Home Assistant.
 ---
-# Control an LED strip with the GPIO Header
+# Control an LED strip with the GPIO header
 
 The GPIO Header addon brings the MSR-2's spare pins out to a row of headers, so you can hang your own hardware off the sensor. This guide wires a WS2812B strip to one of those pins and gets it into Home Assistant as its own light entity, color picker and effects included.
 
@@ -18,7 +18,7 @@ The same steps work on any Apollo device with a mezzanine port, including the MT
 
 !!! warning "Watch the current draw"
 
-    The 5V pin supplies up to 300mA. A meter of 60 LEDs at full white draws far more than that, so anything longer than a short strip needs its own 5V supply. You can power the MSR-2 itself from the 5V and GND pins instead of the USB-C port, but use one or the other, never both.
+    The 5V pin supplies up to 350mA. A meter of 60 LEDs at full white draws far more than that, so anything longer than a short strip needs its own 5V supply. You can power the MSR-2 itself from the 5V and GND pins instead of the USB-C port, but use one or the other, never both.
 
 ## Choosing a data pin
 
@@ -26,7 +26,9 @@ IO2, IO4, IO6, and IO7 are free for LED data, and you can drive more than one st
 
 ![Pinout diagram of the Apollo GPIO Header showing the 5V, GND, and IO pins](/assets/gpio-header-pinout.webp){ width="480" }
 
-## Attaching the GPIO Header
+## Attaching the GPIO header
+
+You'll seat the GPIO Header on your sensor's mezzanine connector, then fit the blue back plate that came with the addon.
 
 1.  Unplug the MSR-2 from power and pull the back plate off.
 
@@ -45,6 +47,8 @@ IO2, IO4, IO6, and IO7 are free for LED data, and you can drive more than one st
     ![Blue GPIO back plate being fitted to the MSR-2](/assets/gpio-led-msr2-gpio-backplate.webp){ width="200" }
 
 ## Wiring the strip
+
+You'll run three wires from the header to your strip, then check which way the data flows.
 
 1.  Run three wires from the header to the strip: 5V, GND, and data. Matching the colors to the strip's own wiring saves a lot of squinting later, so use red for 5V, white for GND, and green for data on IO7.
 

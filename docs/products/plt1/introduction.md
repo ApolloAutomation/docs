@@ -1,5 +1,5 @@
 ---
-title: PLT-1 Introduction
+title: PLT-1 introduction
 description: PLT-1 Introduction.
 ---
 <div class="cms-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/2GC-WnIIdao?si=nTBuONai4REfFTAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></div>
@@ -8,8 +8,8 @@ The PLT-1 is equipped with a capacitive soil moisture sensor, providing enhanced
 
 **Optional Probe Addons:**
 
-* 1\.5m (~5ft) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
-* 20cm (~8in) Waterproof Flat Cable (DS18B20) – -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
+* 1\.5m (~5ft) Waterproof Flat Cable (DS18B20): -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy. Ideal for fridges, freezers, fish tanks etc.
+* 20cm (~8in) Waterproof Flat Cable (DS18B20): -55°C to 85°C (-67°F to 185°F), ±0.5°C accuracy.
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 

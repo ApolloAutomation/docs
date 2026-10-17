@@ -1,8 +1,10 @@
 ---
-title: MSR-2 Outlet Mount
+title: MSR-2 outlet mount
 description: Tutorial for using the MSR-2 Outlet Mount.
 ---
-# MSR-2 Outlet Mount
+# MSR-2 outlet mount
+
+You'll attach your sensor to a top facing USB-C plug with the Outlet Mount.
 
 1\. Gather a top facing USB-C plug, an MSR-2, and our MSR-2 Outlet Mount.
 
@@ -22,4 +24,4 @@ description: Tutorial for using the MSR-2 Outlet Mount.
 
 !!! success "You're ready to plug it in and begin using your device!"
 
-    Make sure to head to our <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-msr2/" target="_blank" rel="noreferrer nofollow noopener">getting started guide</a> to get your MSR-2 up and running!
+    Make sure to head to our <a href="https://wiki.apolloautomation.com/homey/products/general/setup/getting-started-msr2/" target="_blank" rel="noreferrer nofollow noopener">getting started guide</a> to get your MSR-2 up and running!

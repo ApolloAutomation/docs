@@ -1,8 +1,8 @@
 ---
-title: CO2 Calibration Tutorial (quick)
+title: CO2 calibration tutorial (quick)
 description: Step by step guide for re-calibrating your SCD40 CO2 sensor
 ---
-# CO<sub>2</sub> Calibration - The Quick method - Desktop Only not mobile
+# CO<sub>2</sub> calibration - the quick method - desktop only not mobile
 
 !!! info "Your R PRO-1 calibrates itself"
 
@@ -10,7 +10,7 @@ description: Step by step guide for re-calibrating your SCD40 CO2 sensor
 
 !!! tip "Calibrate manually every 1 to 2 years when auto calibration is off"
 
-    The <a href="https://sensirion.com/products/catalog/SCD40" title="Documentation on SCD40 CO<sub>2</sub> Sensor!" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO<sub>2</sub> sensor</a> has a long lifetime (<a href="https://sensirion.com/media/documents/48C4B7FB/67FE0194/CD_DS_SCD4x_Datasheet_D1.pdf" title="scd10 datasheet showing lifetime over 10 years" target="_blank" rel="noreferrer nofollow noopener">over 10 years</a>), but with automatic self-calibration turned off it needs re-calibration back to the 420 ppm baseline every 1 to 2 years.
+    The <a href="https://sensirion.com/products/catalog/SCD40" title="Documentation on SCD40 CO<sub>2</sub> Sensor!" target="_blank" rel="noreferrer nofollow noopener">SCD40 CO<sub>2</sub> sensor</a> has a long lifetime (<a href="https://sensirion.com/media/documents/48C4B7FB/67FE0194/CD_DS_SCD4x_Datasheet_D1.pdf" title="SCD4x datasheet showing lifetime over 10 years" target="_blank" rel="noreferrer nofollow noopener">over 10 years</a>), but with automatic self-calibration turned off it needs re-calibration back to the 420 ppm baseline every 1 to 2 years.
 
 This article will guide you through a simple calibration of your CO<sub>2</sub> sensor for any Apollo Automation device!
 
@@ -18,14 +18,20 @@ This article will guide you through a simple calibration of your CO<sub>2</sub> 
 
 ![Apollo AIR-1 plugged in by USB-C cable outdoors to read fresh air for CO2 calibration](/assets/air-1-co2-calibration-portrait-quick-pic-3.jpg)
 
-2\. Go to your Home Assistant dashboard and hit the letter "e" - It will pop up with an entity filter then type in "Calibrate CO<sub>2</sub>" and select the correct device.
+*Shown with an AIR-1; set your R PRO-1 outdoors the same way.*
+
+2\. Go to your Home Assistant dashboard and press the letter "e". In the entity filter that pops up, type "Calibrate SCD40" and select your R PRO-1's entry (for example **Apollo R_PRO-1 353fd4 Calibrate SCD40 To 420ppm**).
 
 !!! tip "Hint"
 
     If you cannot get this menu to pop up, click somewhere on the <a href="https://www.home-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant</a> dashboard then press your "e" key.
 
-![Home Assistant entity search for Calibrate CO2 with the Calibrate SCD40 To 420ppm entity circled in red](/assets/co2-calibration-quick-pic-1.png)
+![Home Assistant entity search with the AIR-1 Calibrate SCD40 To 420ppm entity circled in red](/assets/co2-calibration-quick-pic-1.png)
+
+*Shown for an AIR-1; your R PRO-1 lists the same Calibrate SCD40 To 420ppm button.*
 
 3\. Click on the button that says "PRESS" and then you are done.
 
 ![AIR-1 Calibrate SCD40 To 420ppm dialog with PRESS circled and an arrow to the new logbook entry](/assets/co2-calibration-quick-pic-2.png)
+
+*Shown for an AIR-1; the R PRO-1 button dialog looks the same.*

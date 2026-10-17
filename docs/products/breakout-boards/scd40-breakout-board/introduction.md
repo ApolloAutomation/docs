@@ -1,14 +1,16 @@
 ---
-title: Apollo SCD40 Breakout Board Introduction
+title: Apollo SCD40 Breakout Board introduction
 description: Apollo SCD40 Breakout Board Introduction
 ---
 ![Apollo SCD40 breakout board on a blue PCB with a loose 5-pin header](/assets/scd40-breakout-board.png)
 
-The **SCD40 Breakout Board** is a compact PCB kit featuring the <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener"><strong>SCD40</strong></a>, making it easy to add CO<sub>2</sub> monitoring to any new or existing project.
+The **SCD40 Breakout Board** is a compact PCB kit featuring the <a href="https://sensirion.com/products/catalog/SCD40" target="_blank" rel="noreferrer nofollow noopener"><strong>SCD40</strong></a>, so you can add CO<sub>2</sub> monitoring to any new or existing project.
 
 Please <a href="https://esphome.io/components/api.html#configuration-variables" target="_blank" rel="noopener">go to this website</a> and copy the randomly generated API key inside the code block as shown below then paste it in the code below where you see "use-a-randomly-generated-key-here".
 
 ![ESPHome API docs page showing a randomly generated encryption key](/assets/api-key-example.png)
+
+The example also reads its OTA password from your secrets.yaml, so add an `ota_password` line there before you install. See [Using Secrets](/products/ESPHome-Starter-Kit/tutorials/using-secrets.md#ota-password) for the format.
 
 **GPIO Pins Listed:**
 
@@ -72,7 +74,7 @@ api:
 
 ota:
   - platform: esphome
-    password: "a53d93acd493275512730c776f88722a"
+    password: !secret ota_password
 
 wifi:
   ssid: !secret wifi_ssid

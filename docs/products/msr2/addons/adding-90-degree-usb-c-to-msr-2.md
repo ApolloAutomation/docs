@@ -4,6 +4,8 @@ description: Step by step tutorial for adding 90 degree USB-C to MSR-2
 ---
 # Adding 90 degree USB-C to MSR-2
 
+You'll attach this addon to your sensor and plug it into a USB-C outlet.
+
 1\. Gather the MSR-2 and 90 degree addon.
 
 ![MSR-2 in its case next to the 90 degree USB-C addon](/assets/msr-2-90-degree-pic-0.jpg)

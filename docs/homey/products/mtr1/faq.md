@@ -1,7 +1,9 @@
 ---
-title: FAQ
-description: "Frequently asked questions about the MTR-1 mmWave sensor."
+title: MTR-1 FAQ
+description: "Answers to common questions about the MTR-1 multi-target mmWave sensor with Homey: sensors, radar regions, flows, reporting, and firmware."
 ---
+# MTR-1 FAQ
+
 1\. **What sensors are included in the MTR-1?**
 
 * The MTR-1 includes a multi-target mmWave radar sensor for detecting motion and positioning, as well as LUX, UV, temperature, and pressure sensors. There’s also an optional CO2 sensor available.
@@ -16,7 +18,7 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 4\. **What is the maximum detection range of the mmWave radar?**
 
-* The mmWave radar sensor in the MTR-1 has a maximum detection range of 6 meters (about 19.6 feet), making it ideal for monitoring large rooms or spaces.
+* The mmWave radar sensor in the MTR-1 has a maximum detection range of 6 meters (about 19.7 feet), making it ideal for monitoring large rooms or spaces.
 
 5\. **Can the MTR-1 be used to track the exact location of people in a room?**
 
@@ -34,21 +36,29 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 * The MTR-1 can be used to automate lights based on people’s presence in a room, trigger alarms or notifications when someone enters a space, and adjust HVAC settings based on CO2 levels. Its precise tracking capabilities also make it great for monitoring multiple zones within a room, such as distinguishing when someone is at the stove versus the sink.
 
-9\. **How do I connect the MTR-1 to Home Assistant?**
+9\. **How do I connect the MTR-1 to Homey?**
 
-* The MTR-1 connects to Home Assistant through ESPHome using Wi-Fi. Once connected, you can access data from all the sensors and create automations based on the sensor readings.
+* The MTR-1 joins your Wi-Fi, and the Apollo Automation app for Homey talks to it directly over your local network through the ESPHome native API, with no cloud account. Once you add it, every sensor's readings show up on the device in Homey, ready for flows and Insights. The app runs on Homey Pro; Homey Cloud isn't supported.
 
-10\. **What kind of automations can I set up with the MTR-1?**
+10\. **What kind of flows can I set up with the MTR-1?**
 
-* You can create automations for turning lights on/off based on motion, adjusting air filtration when CO2 levels rise, and sending notifications when specific zones (like doorways) detect movement. The multi-target tracking allows for even more advanced automations, such as adjusting lights depending on where people are in the room.
+* Flows can start from presence, from a region of the room, or from any reading. Turn lights on and off as people come and go, run an air purifier when CO2 rises (with the CO2 addon), or get a notification when someone walks into a doorway.
+* Draw regions with the **Radar regions** widget, and every detect region works with the region flow cards **A region became occupied**, **A region became empty**, and **A region is occupied**. Because the MTR-1 tracks up to three people, a region can react to someone walking over to the desk even while someone else is on the couch.
+
+!!! success "Next step: build your first region flow"
+
+    Draw a region with the [Zone Mapper tool](../setup/mtr-1-zone-mapper-tool/), then make it do something: the step-by-step guide walks you through a flow that turns a light on when someone enters a region and off when they leave.
+
+    [Turn on a light when someone enters a region](../../general/tutorials/region-light-flow-example/){ .md-button .md-button--primary }
 
 11\. **How do I adjust the sensitivity of the motion detection?**
 
-* Sensitivity can NOT be adjusted via the ESPHome configuration. The MTR-1 LD2450 mmWave sensor cannot be tuned like the MSR-2 can. The MTR-1 can set zones and track multiple users instead.
+* The MTR-1's LD2450 radar has no sensitivity settings to tune, unlike the radar in the MSR-2. Shape detection with regions instead: draw the areas you care about in the **Radar regions** widget, and mark spots that cause false detections, such as a fan or a curtain, as **Ignore this area**. An ignored area hides targets from your detect regions, so build your flows on the regions.
+* To change how long presence holds after someone leaves, set **Timeout** (in seconds) under **Radar tuning (MTR-1 / R PRO-1)** in the device's **Settings** in the Homey app.
 
 12\. **Can the MTR-1 detect motion through walls?**
 
-* Yes, the mmWave radar in the MTR-1 can detect movement through certain materials, such as light walls or thin furniture, though you may need to adjust the zones to prevent false positives from nearby rooms. [Please visit the tuning articles for more info](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)!
+* Yes, the mmWave radar in the MTR-1 can detect movement through certain materials, such as light walls or thin furniture. If a neighboring room triggers it, keep your detect regions inside the room, or draw a region set to **Ignore this area** over the spot. See the [Zone Mapper tool](../setup/mtr-1-zone-mapper-tool/) guide.
 
 13\. **Can the MTR-1 be used outdoors?**
 
@@ -56,7 +66,7 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 14\. **Does the MTR-1 work with other smart home platforms?**
 
-* The MTR-1 is designed to work seamlessly with Home Assistant via ESPHome. While it could potentially be integrated into other smart home platforms through custom configurations, its primary use case is for Home Assistant.
+* Yes. Besides Homey (through the Apollo Automation app), the MTR-1 works with Home Assistant and with other platforms that support the <a href="https://esphome.io/components/api.html" target="_blank" rel="noreferrer nofollow noopener">ESPHome API</a>. See [Supported platforms](../../general/supported-platforms/).
 
 15\. **How does the temperature and pressure sensor work?**
 
@@ -68,7 +78,8 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 17\. **What is the purpose of the RGB LED and piezo buzzer?**
 
-* The RGB LED can display different colors for various events or alerts, such as turning red when air quality is poor or green for general notifications. The piezo buzzer can be used for sound alerts, such as a beep when motion is detected or a CO2 level warning.
+* The RGB LED is the MTR-1's light in Homey. Turn it on or off, dim it, or change its color from the device or in a flow, for example red when CO2 is high or green for a general notification.
+* The piezo buzzer is played through an ESPHome action, and the Apollo Automation app has no flow card for it, so Homey can't sound the buzzer. If you also run Home Assistant, it can: see the [piezo buzzer guide](../../../../products/general/piezo/).
 
 18\. **Can I customize the MTR-1’s features?**
 
@@ -76,11 +87,12 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 19\. **What is the reporting frequency of the MTR-1’s sensors?**
 
-* The reporting frequency for each sensor can be adjusted through the ESPHome YAML configuration. You can choose to report data as frequently as every second or extend the intervals to reduce power consumption.
+* The radar reports as people move. The other sensors report on intervals set in the firmware: by default, CO2 every 60 seconds and pressure and temperature every 30 seconds. Homey has no setting for these intervals.
+* The light and UV interval is the one you can change without editing the firmware: set **LTR390 Update Interval** (1 to 300 seconds, 60 by default) on the sensor's own web page. In a browser, open `http://apollo-mtr-1-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the device's name in Homey. Changing the other intervals means editing the firmware with ESPHome.
 
 20\. **Can I use multiple MTR-1 sensors in my smart home setup?**
 
-* Yes, you can integrate multiple MTR-1 sensors into your Home Assistant system. Each will show up as a separate entity, allowing you to monitor multiple rooms or areas in your home simultaneously.
+* Yes. Add each MTR-1 with the Apollo Automation app. Each one shows up as its own device in Homey with its own readings, so you can monitor several rooms at the same time. The **Radar regions** widget works per device, so add one widget for each MTR-1.
 
 21\. **What’s the difference between the MTR-1 and MSR-2?**
 
@@ -96,7 +108,7 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 24\. **How do I install the MTR-1?**
 
-* Installation is simple. The MTR-1 is powered via USB-C and connects to your Wi-Fi. From there, you configure it through ESPHome and integrate it into your Home Assistant setup. Detailed instructions are available on our documentation wiki, and we offer support via our Discord community.
+* Power the MTR-1 over USB-C, connect it to your Wi-Fi through its hotspot, then add it in Homey with the Apollo Automation app. The [getting started guide](../../general/setup/getting-started-mtr1/) walks you through each step, and we offer support via our Discord community.
 
 25\. **How secure is the MTR-1?**
 
@@ -104,11 +116,12 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 26\. **Does the MTR-1 require cloud connectivity?**
 
-* No, the MTR-1 works entirely within your local network through Home Assistant and ESPHome. You don’t need cloud access or a subscription to use the sensor.
+* No. The MTR-1 talks to Homey directly over your local network through the ESPHome native API. You don’t need cloud access or a subscription to use the sensor.
 
 27\. **How do I update the firmware on the MTR-1?**
 
-* Firmware updates for the MTR-1 can be done directly through ESPHome. When updates are available, you can install them wirelessly over-the-air (OTA), making it simple to keep the sensor up to date.
+* Homey doesn't install firmware updates: the Apollo Automation app reads and controls the MTR-1 but has no update action. To put new firmware on, flash it over USB with the Apollo installer, as described in [Factory re-flash MTR-1](../troubleshooting/mtr1-code/), then add the sensor to Homey again.
+* If you also run Home Assistant, ESPHome can update the MTR-1 over the air instead. See [Updating firmware](../../../../products/general/calibrating-and-updating/updating-firmware/).
 
 28\. **What is the warranty on the MTR-1?**
 
@@ -116,7 +129,7 @@ description: "Frequently asked questions about the MTR-1 mmWave sensor."
 
 29\. **How long does it take to set up the MTR-1?**
 
-* Setup is quick and easy. Most users report being able to configure and integrate the MTR-1 into their Home Assistant setup within 10-15 minutes.
+* Plan on 10 to 15 minutes to connect the MTR-1 to your Wi-Fi and add it to Homey.
 
 30\. **What’s in the box?**
 

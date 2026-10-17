@@ -73,11 +73,11 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 18\. **My AIR-1 CO2 sensors are having a sawtooth pattern, is there any explanation?**
 
-* Some users have noticed the AIR-1 with the "Apollo" side facing up will produce strange behavior with the CO2 sensor readings fluctuating way more than they should. Simply turning the AIR-1 to the other side makes this problem go away!
+* Some users have noticed the AIR-1 with the "Apollo" side facing up will produce strange behavior with the CO2 sensor readings fluctuating way more than they should. Turning the AIR-1 to the other side makes this problem go away!
 
 19\. **Can I integrate multiple AIR-1 sensors in my smart home?**
 
-* Yes, you can have multiple AIR-1 sensors in your Home Assistant setup. Each sensor will be recognized as a separate entity, allowing you to monitor air quality across different rooms or spaces simultaneously.
+* Yes, you can have multiple AIR-1 sensors in your Home Assistant setup. Each one shows up as its own device with its own set of entities, so you can monitor air quality across different rooms or spaces at the same time.
 
 20\. **How customizable is the AIR-1?**
 
@@ -89,7 +89,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 22\. **Does the AIR-1 require specific software?**
 
-* The AIR-1 is designed to work seamlessly with Home Assistant through ESPHome. All configuration, monitoring, and automation setups are done through these platforms.
+* The AIR-1 is designed to work with Home Assistant through ESPHome. All configuration, monitoring, and automation setups are done through these platforms.
 
 23\. **Is the AIR-1 compatible with other smart home platforms?**
 
@@ -109,7 +109,7 @@ description: Frequently asked questions about the AIR-1 environmental sensor, in
 
 27\. **How do I install the AIR-1?**
 
-* Installation is easy. Simply plug the AIR-1 into a wall outlet using the USB-C cable, connect it to your Home Assistant through ESPHome, and configure the settings as desired. <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">Detailed setup instructions are available in our documentation</a>.
+* Plug the AIR-1 into a wall outlet using the USB-C cable, connect it to your Home Assistant through ESPHome, and configure the settings as desired. <a href="https://wiki.apolloautomation.com/products/general/setup/getting-started-air1/" target="_blank" rel="noreferrer nofollow noopener">Detailed setup instructions are available in our documentation</a>.
 
 28\. **What is the warranty on the AIR-1?**
 

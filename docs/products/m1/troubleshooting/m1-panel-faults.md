@@ -1,8 +1,8 @@
 ---
-title: M-1 Panel Troubleshooting
+title: M-1 panel troubleshooting
 description: Match what your M-1 panel is showing to the likely cause and the fix.
 ---
-# M-1 Panel Troubleshooting
+# M-1 panel troubleshooting
 
 Find what you are seeing in the table below and work top to bottom. The first row that matches is usually the cause.
 
@@ -23,7 +23,7 @@ If the display is wrong on more than one count, or nothing above matches, run th
 
 If the symptom survives a full reinstall, it is worth contacting support with a photo of the panel.
 
-## Factory Reset
+## Factory reset
 
 On WLED, holding the button for ten seconds resets the M-1 to factory settings, including the display size, without needing a computer. You will need to reconnect it to Wi-Fi afterward.
 

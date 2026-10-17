@@ -1,8 +1,8 @@
 ---
-title: MSR-1 Bluetooth Proxy
+title: MSR-1 Bluetooth proxy
 description: Tutorial for how to turn your MSR-1 into a BLE proxy!
 ---
-# MSR-1 Bluetooth Proxy
+# MSR-1 Bluetooth proxy
 
 --8<-- "_snippets/bluetooth-proxy/intro.md"
 

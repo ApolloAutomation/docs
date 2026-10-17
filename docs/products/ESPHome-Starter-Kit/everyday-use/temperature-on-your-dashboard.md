@@ -1,10 +1,10 @@
 ---
-title: Temperature on Your Dashboard
+title: Temperature on your dashboard
 description: >-
   Add your ESPHome Starter Kit's temperature and humidity readings to a Home
   Assistant dashboard using built-in Tile and Gauge cards.
 ---
-# Temperature on Your Dashboard
+# Temperature on your dashboard
 
 Your kit reads the temperature and humidity of whatever room it's in. Putting those readings on a Home Assistant dashboard turns it into a glanceable display you'll actually check. Everything here uses cards that ship with Home Assistant, so there's nothing to install.
 

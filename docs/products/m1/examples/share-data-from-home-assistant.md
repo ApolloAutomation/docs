@@ -6,7 +6,7 @@ description: >-
   Step by step guide for custom scrolling text using the states of Home
   Assistant entities!
 ---
-# Share Data From Home Assistant on Your M-1
+# Share data from Home Assistant on your M-1
 
 Turn your matrix into a live status board. Outside temperature on one line, the dryer's remaining time on the next, tomorrow's forecast under that, each line refreshing on its own without you touching anything.
 
@@ -52,7 +52,7 @@ Here is the finished board on a two panel setup, four segments each pulling a di
 
 ![Two-panel M-1 showing weather, front door lock, CO2, and ping status lines in different colors](/assets/m1-share-data-home-assistant-result.webp)
 
-## Tuning It
+## Tuning it
 
 A minute suits temperatures and forecasts. For something that changes faster, like a countdown timer, drop the time pattern to every ten or thirty seconds. Going much below that gains you little, since the text has to finish scrolling before anyone can read it anyway.
 

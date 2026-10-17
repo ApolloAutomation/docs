@@ -1,10 +1,10 @@
 ---
-title: Temp-Reactive LEDs
+title: Temp-reactive LEDs
 description: >-
   Build an ESPHome Device Builder automation that drives the LED & Buzzer
   module to a color band based on the current temperature reading.
 ---
-# Temp-Reactive LEDs
+# Temp-reactive LEDs
 
 <span class="difficulty lvl-2">Difficulty: Level 2</span>
 
@@ -53,7 +53,9 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
     ![Opening the device in ESPHome Device Builder, expanding Automations, and clicking Add automation](../../../assets/esphome-device-builder-add-automation.gif)
 
-### Cold band: below 18 °C → Blue
+### Cold band: below 18 °C → blue
+
+Your first automation turns the RGB LEDs blue whenever the temperature reading falls into the cold band.
 
 1.  Set up the trigger:
 
@@ -83,11 +85,11 @@ ESPHome Device Builder has a GUI for building <a href="https://esphome.io/automa
 
 ![Temperature On Value Range automation with Below set to 18 and a Light Turn On action setting RGB LEDs to blue](../../../assets/esphome-device-builder-temp-reactive-leds-cold-band.gif)
 
-### Comfortable band: 18 °C to 24 °C → Green
+### Comfortable band: 18 °C to 24 °C → green
 
 Add another automation, this time picking **Sensor → On Value Range** with **Above** `18.0` and **Below** `24.0`. The action targets **RGB LEDs** with **Red** `0%`, **Green** `100%`, **Blue** `0%`.
 
-### Hot band: above 24 °C → Red
+### Hot band: above 24 °C → red
 
 Add a third automation with **Sensor → On Value Range** and **Above** `24.0` (leave **Below** blank). The action targets **RGB LEDs** with **Red** `100%`, **Green** `0%`, **Blue** `0%`.
 
@@ -163,7 +165,7 @@ Open the Comfortable and Hot triggers in the GUI and edit the **Above** / **Belo
 
     Same trigger-then-action pattern, new trigger type. Next, bring it into Home Assistant so the readings show up alongside the rest of your kit.
 
-<a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next - Connect to Home Assistant</a>
+<a href="../../tutorials/connect-to-home-assistant/" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> Next: Connect to Home Assistant</a>
 
 
 --8<-- "_snippets/community-help.md"

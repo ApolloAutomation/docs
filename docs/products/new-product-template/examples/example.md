@@ -1,5 +1,5 @@
 ---
-title: Example Title
+title: Example title
 description: Example Description
 ---
 # Examples

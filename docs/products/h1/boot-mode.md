@@ -1,12 +1,14 @@
 ---
-title: Putting The H-1 In Boot Mode
+title: Putting the H-1 in boot mode
 description: Step by step guide for putting The H-1 In Boot Mode.
 ---
 This will cover how to put the H-1 into boot mode. Sometimes, this is needed to upload new firmware if the device is struggling.
 
 ![Back of the H-1 board with the gold button, Boot button, and Reset button circled in red](/assets/screenshot-2024-11-01-015948.png)
 
-## **Boot Button Only**
+## **Boot button only**
+
+You can enter boot mode using only the boot button.
 
 1\. Make sure the device is not powered and see the photo above to help find the boot button
 
@@ -14,7 +16,9 @@ This will cover how to put the H-1 into boot mode. Sometimes, this is needed to 
 
 3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/h1/reflash/)
 
-## **Boot and Reset Buttons**
+## **Boot and reset buttons**
+
+You can also enter boot mode with the boot and reset buttons while the device is plugged in.
 
 1\. Plug in the device
 

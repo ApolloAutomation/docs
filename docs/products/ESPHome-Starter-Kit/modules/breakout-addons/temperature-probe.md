@@ -1,10 +1,10 @@
 ---
-title: Temperature Probe
+title: Temperature probe
 description: >-
   Add a waterproof DS18B20 temperature probe to your ESPHome Starter Kit
   Breakout Module using the 1Wire port.
 ---
-# Temperature Probe
+# Temperature probe
 
 A waterproof <a href="https://cdn-shop.adafruit.com/datasheets/DS18B20.pdf" target="_blank" rel="noreferrer nofollow noopener">DS18B20</a> temperature probe plugs into the Breakout Module's 1Wire port and reads temperature from wherever you run the cable, a fridge, a freezer, a fish tank, outdoors. It's the same probe our [TEMP-1](/products/temp1/introduction.md) and [TEMP-1B](/products/temp1b/introduction.md) use.
 
@@ -19,7 +19,7 @@ Both probes read -55°C to 85°C (-67°F to 185°F) with ±0.5°C accuracy. Pick
 
 ## Attach the probe
 
-Plug the probe's connector into the **1Wire** port at the top right of the [Breakout Module](/products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md#pinout) with the latch side facing up.
+Push the probe's 3.5mm plug all the way into the **1Wire** jack at the top right of the [Breakout Module](/products/ESPHome-Starter-Kit/modules/apollo-breakout-module.md#pinout).
 
 ![Plugging the DS18B20 temperature probe's 3.5mm plug into the 1Wire jack on the Breakout Module](/assets/esphome-starter-kit-breakout-module-dallas-probe.webp)
 

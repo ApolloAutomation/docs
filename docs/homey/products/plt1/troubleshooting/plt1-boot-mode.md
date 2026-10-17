@@ -1,26 +1,30 @@
 ---
-title: Putting The PLT-1 In Boot Mode
+title: Putting the PLT-1 in boot mode
 description: "Step by step guide for putting The PLT-1 In Boot Mode."
 ---
-# Putting The PLT-1 In Boot Mode
+# Putting the PLT-1 in boot mode
 
 !!! info "This will cover how to put the PLT-1 into boot mode."
 
     This is needed to force the device into boot mode to reflash the firmware.
 
-## Method 1: Boot Button Only
+## Method 1: Boot button only
+
+You can put your device into boot mode with only the boot button and a USB-C cable.
 
 1\. Position the PLT-1 as shown in the image below and locate the small opening to press the boot button.
 
 ![Side of the PLT-1 with the boot button opening circled](/assets/screenshot-2024-10-23-at-12-32-55-pm.png)
 
-2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
+2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your PLT-1 then let go of the button.
 
-3\. Continue with <a href="https://wiki.apolloautomation.com/products/plt1/troubleshooting/plt1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
+3\. Continue with <a href="https://wiki.apolloautomation.com/homey/products/plt1/troubleshooting/plt1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
 
-## Method 2: Boot and Reset Buttons
+## Method 2: Boot and reset buttons
 
-1\. Unplug the device and locate the boot and reset buttons as shown in the image above.
+You can also put your device into boot mode by pressing the reset button while you hold the boot button.
+
+1\. Unplug the device and locate the boot button (on the side, shown in the image above) and the reset button (near the USB-C port, shown in the image below).
 
 2\. Plug it into your computer.
 
@@ -28,4 +32,4 @@ description: "Step by step guide for putting The PLT-1 In Boot Mode."
 
 ![Top of the PLT-1 with the reset button circled next to the plugged in USB-C cable](/assets/screenshot-2024-10-23-at-12-35-01-pm.png)
 
-4\. Continue with <a href="https://wiki.apolloautomation.com/products/plt1/troubleshooting/plt1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.
+4\. Continue with <a href="https://wiki.apolloautomation.com/homey/products/plt1/troubleshooting/plt1-code/" target="_blank" rel="noreferrer nofollow noopener">uploading the firmware document</a>.

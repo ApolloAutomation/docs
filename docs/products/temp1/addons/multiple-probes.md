@@ -1,8 +1,8 @@
 ---
-title: TEMP-1 Multi-Probe Splitter Guide
+title: TEMP-1 multi-probe splitter guide
 description: Step by step guide for installing and using the TEMP-1 Multi-Probe Splitter addon.
 ---
-# TEMP-1 Multi-Probe Splitter Guide
+# TEMP-1 multi-probe splitter guide
 
 The TEMP-1 comes with an optional [3.5mm Multi-Probe Splitter](https://apolloautomation.com/products/temp-1-multi-probe-splitter) which can be used to monitor a fridge, freezer, fish tank, pool, hot tub, etc with up to 4 probes.
 
@@ -20,7 +20,7 @@ The TEMP-1 comes with an optional [3.5mm Multi-Probe Splitter](https://apolloaut
 
 !!! success "Power on your TEMP-1 after plugging in all of your probes!"
 
-    The TEMP-1 will look for the probes at boot and mark them failed if you power on and plug in the probes after. Simply power cycle your device and they should show up!
+    The TEMP-1 will look for the probes at boot and mark them failed if you power on and plug in the probes after. Power cycle your device and they should show up!
 
 3\. Go to the device page of your TEMP-1 in Home Assistant and confirm the Temperature Probe is selected from the dropdown.
 

@@ -1,8 +1,8 @@
 ---
-title: PUMP-1 Sensor Definitions
+title: PUMP-1 sensor definitions
 description: These are all of the entities exposed by the PUMP-1 to automate on!
 ---
-# Sensor Definitions
+# Sensor definitions
 
 This serves as a list of all sensor definitions to help understand what each entity does for your new PUMP-1!
 

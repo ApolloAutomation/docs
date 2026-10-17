@@ -1,12 +1,14 @@
 ---
-title: PLT-1 Plant Sensor Alerts Blueprint
+title: PLT-1 plant sensor alerts blueprint
 description: >-
   Example of how to use the PLT-1 Plant Sensor Alerts Blueprint in
   Home Assistant to receive notifications when your plant needs attention!
 ---
-# Blueprint Setup
+# Blueprint setup
 
-## Automatic Import
+## Automatic import
+
+You'll import the blueprint with the button below, then set it up to send push notifications when your plant needs attention.
 
 1\. Click the Import Blueprint button below and then click **Open link**.
 
@@ -14,19 +16,13 @@ description: >-
 
 2\. Click **Preview** then click **Import blueprint**.
 
-![Home Assistant Import a blueprint dialog, clicking Preview then Import blueprint (BTN-1 example shown)](/assets/btn-1-blueprint-auto-import.gif)
-
-3\. Click on **Apollo Automation PLT-1 Blueprint** and click on **Select a device** then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
-
-![Home Assistant blueprint editor, picking an Apollo device from Select a device (BTN-1 example shown)](/assets/btn-1-blueprint-select-btn-1.gif)
+3\. In your blueprints list, click **Apollo Automation PLT-1 Blueprint** to start a new automation from it. Click **Select a device**, then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
 
 4\. Enter your **plant's name** (this appears in notification messages), then select your **mobile device** for push notifications.
 
 5\. Enable the sensor groups you want to monitor (e.g. Soil Moisture, Air Temperature, Light Intensity) and adjust the thresholds to suit your plant.
 
-![Home Assistant blueprint editor adding a light toggle action and saving (BTN-1 example shown)](/assets/btn-1-blueprint-single-click-example.gif)
-
-!!! success "Each sensor group is disabled by default — enable only what matters!"
+!!! success "Each sensor group is disabled by default. Enable only what matters!"
 
     Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. Expand **Repeat Alerts** to control how often you are reminded while a condition lasts.
 
@@ -37,7 +33,9 @@ description: >-
 
 7\. Click **Save**. Your blueprint is now live and will send push notifications whenever your plant needs attention!
 
-## Manual Import
+## Manual import
+
+You can also import the blueprint by pasting its address into Home Assistant yourself.
 
 1\. Head to the automations page (**Settings → Automations & scenes**) and click on **Blueprints** in the top right then select **Import Blueprint**.
 
@@ -51,17 +49,11 @@ description: >-
 https://raw.githubusercontent.com/ApolloAutomation/Blueprints/refs/heads/main/PLT-1/PLT-1.yaml
 ```
 
-![Home Assistant Import a blueprint dialog, clicking Preview then Import blueprint (BTN-1 example shown)](/assets/btn-1-blueprint-auto-import.gif)
-
-3\. Click on **Apollo Automation PLT-1 Blueprint** and click on **Select a device** then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
-
-![Home Assistant blueprint editor, picking an Apollo device from Select a device (BTN-1 example shown)](/assets/btn-1-blueprint-select-btn-1.gif)
+3\. In your blueprints list, click **Apollo Automation PLT-1 Blueprint** to start a new automation from it. Click **Select a device**, then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
 
 4\. Enter your **plant's name**, select your **mobile device**, enable the sensor groups you want, and set your thresholds.
 
-![Home Assistant blueprint editor adding a light toggle action and saving (BTN-1 example shown)](/assets/btn-1-blueprint-single-click-example.gif)
-
-!!! success "Each sensor group is disabled by default — enable only what matters!"
+!!! success "Each sensor group is disabled by default. Enable only what matters!"
 
     Soil Moisture alerts are enabled out of the box. Expand any sensor group, toggle it on, and set your preferred min/max thresholds. Expand **Repeat Alerts** to control how often you are reminded while a condition lasts.
 

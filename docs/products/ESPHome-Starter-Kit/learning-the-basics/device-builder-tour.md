@@ -1,10 +1,10 @@
 ---
-title: Device Builder Tour
+title: Device Builder tour
 description: >-
   A guided tour of every screen in the ESPHome Device Builder, using your Apollo
   ESPHome Starter Kit as the example device.
 ---
-# Device Builder Tour
+# Device Builder tour
 
 The **ESPHome Device Builder** is the app you used in [First Steps](../setup/first-steps.md) to install software on your Starter Kit, (1) and it's where you go every time you change something on the device. This page walks through each screen so you know what you're looking at.
 { .annotate }
@@ -13,7 +13,7 @@ The **ESPHome Device Builder** is the app you used in [First Steps](../setup/fir
 
 ---
 
-## Guided Tour
+## Guided tour
 
 ESPHome Device Builder has a tour built in that walks you through creating, configuring, and installing a device. It takes about five minutes. Start it from the menu in the top-right corner, or from **Start guided tour** on the last screen of first-time setup.
 
@@ -48,7 +48,7 @@ Click **Edit** on your device card and the screen flips into the configuration e
 The left pane is your config's table of contents. It groups everything into three buckets:
 
 * **Core configuration.** Foundational settings like the device name, Wi-Fi, the connection to Home Assistant, OTA updates, and the web server. For the Starter Kit these are all pre-configured. See [Core Components](core-components.md) for details on each.
-* **Components.** The things your device does: switches, sensors, lights. The default Starter Kit has the accessory power switch, the I²C bus, and the AHT10 temperature and humidity sensor. Use **\+ Add component** to add more.
+* **Components.** The things your device does: switches, sensors, lights. The default Starter Kit has the accessory power switch, the I²C bus, and the AHT20 temperature and humidity sensor (Device Builder lists it as **AHT10 Temperature+Humidity Sensor**, the ESPHome platform that drives AHT10, AHT20, and AHT30 chips). Use **\+ Add component** to add more.
 * **Automations.** Reactions that run on the device, like "when this button is pressed, turn that switch on". The Starter Kit ships with none by default.
 
 ![Device navigator expanding Core configuration, Components, and Automations to show what each section holds](../../../assets/esphome-device-builder-device-navigator.gif)
@@ -67,7 +67,7 @@ The form pane and the YAML editor are always in sync. Edit either side and the o
 
 ![YAML editor showing the aht10 sensor block with humidity and temperature settings and line numbers](../../../assets/esphome-device-builder-yaml-editor.png)
 
-## Publishing Changes
+## Publishing changes
 
 When you have finished making changes:
 
@@ -79,13 +79,13 @@ When you have finished making changes:
 
 ### Logs
 
-Click **Logs** from the info panel or the device card's three-dot menu to open a live stream of what the device is reporting. Click **Stop** when done.
+Click the **Logs** button (the terminal icon) on the device card to open a live stream of what the device is reporting. Click **Stop** when done.
 
 ![Opening the live Logs stream from the device card, then clicking Stop to pause it](../../../assets/esphome-device-builder-logs-start-stop.gif)
 
-Pop them open when something looks off, or just to watch sensor readings come in.
+Pop them open when something looks off, or to watch sensor readings come in.
 
-### Next Steps
+### Next steps
 
 * Pick a module from the [Modules](../modules/button-module.md) section to add to your Starter Kit and watch the components list update.
 * Read [What is secrets.yaml?](what-is-secrets-yaml.md) to understand how Wi-Fi and encryption keys are stored.

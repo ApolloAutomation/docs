@@ -1,30 +1,43 @@
 ---
-title: Using MSR-1 Buzzer
-description: "Trigger the MSR-1 buzzer from Home Assistant developer tools, then reuse the same call in an automation."
+title: Using the MSR-1 buzzer
+description: "Play a tune on the MSR-1 buzzer from Home Assistant's action tools, then reuse the same action in an automation."
 ---
-# Using MSR-1 Buzzer
+# Using the MSR-1 buzzer
 
-This guide will walk you through using the buzzer on your MSR-1. You can also call the below service through automations in Home Assistant.
+Your Apollo MSR-1 has an onboard piezo buzzer that can play short tunes. In this guide, you play one from Home Assistant to hear it for yourself. Once it works, you can use the same action in your Home Assistant automations.
 
-1. Open Home Assistant and navigate to developer tools in the bottom left
+1\. Open Home Assistant and go to **Developer tools** in the bottom left of the sidebar (**Settings → Tools** in Home Assistant 2026.8 and newer).
+
+[![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
 
 ![Home Assistant sidebar with the Developer tools hammer icon highlighted in orange](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
 
-2\. Click on services
+2\. Click **Actions** at the top of the page. Older Home Assistant versions call this tab **Services**, as in the screenshot at the end of this guide.
 
-3\. Choose your MSR-1's buzzer (You can type in buzzer to find it easier)
+3\. Choose your MSR-1's buzzer action. Start typing `buzzer` to find it faster.
 
-4\. Put a rtttl tone into the string box
+4\. Paste an RTTTL tune into the `song_str` field. RTTTL is a plain-text ringtone format. Expand one of the two samples below and copy it:
 
-- - Mario: ```
-        smb:d=4,o=5,b=100:16e6,16e6,32p,8e6,16c6,8e6,8g6,8p,8g,8p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b,16p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b,8p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16g#,16a,16c6,16p,16a,16c6,16d6,8p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16c7,16p,16c7,16c7,p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16g#,16a,16c6,16p,16a,16c6,16d6,8p,16d#6,8p,16d6,8p,16c6
-        ```
-    - Cantina: ```
-        Cantina:d=4,o=5,b=250:8a,8p,8d6,8p,8a,8p,8d6,8p,8a,8d6,8p,8a,8p,8g#,a,8a,8g#,8a,g,8f#,8g,8f#,f.,8d.,16p,p.,8a,8p,8d6,8p,8a,8p,8d6,8p,8a,8d6,8p,8a,8p,8g#,8a,8p,8g,8p,g.,8f#,8g,8p,8c6,a#,a,g
-        ```
-    - Huge list: [https://picaxe.com/rtttl-ringtones-for-tune-command/](https://picaxe.com/rtttl-ringtones-for-tune-command/)
-    - This is a good site to test rtttl tones: [https://adamonsoon.github.io/rtttl-play/](https://adamonsoon.github.io/rtttl-play/)
+??? example "Mario"
 
-5\. Click on call service button in bottom right
+    ```
+    smb:d=4,o=5,b=100:16e6,16e6,32p,8e6,16c6,8e6,8g6,8p,8g,8p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b,16p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b,8p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16g#,16a,16c6,16p,16a,16c6,16d6,8p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16c7,16p,16c7,16c7,p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16g#,16a,16c6,16p,16a,16c6,16d6,8p,16d#6,8p,16d6,8p,16c6
+    ```
+
+??? example "Cantina"
+
+    ```
+    Cantina:d=4,o=5,b=250:8a,8p,8d6,8p,8a,8p,8d6,8p,8a,8d6,8p,8a,8p,8g#,a,8a,8g#,8a,g,8f#,8g,8f#,f.,8d.,16p,p.,8a,8p,8d6,8p,8a,8p,8d6,8p,8a,8d6,8p,8a,8p,8g#,8a,8p,8g,8p,g.,8f#,8g,8p,8c6,a#,a,g
+    ```
+
+Find more tunes in <a href="https://picaxe.com/rtttl-ringtones-for-tune-command/">this list of RTTTL ringtones</a>, and test them in <a href="https://adamonsoon.github.io/rtttl-play/">an online RTTTL player</a> before you send them to your MSR-1.
+
+5\. Click the **Perform action** button in the bottom right.
 
 ![Developer tools Services tab with the MSR-1 play_buzzer service and an RTTTL song_str highlighted](/assets/screenshot-2023-11-01-at-10-57-33-pm.png)
+
+Your MSR-1 plays the tune.
+
+!!! tip "Play a tune from an automation"
+
+    The same action works in your Home Assistant automations. When you build an automation, add an action, choose your MSR-1's buzzer action, and paste the tune into the `song_str` field.

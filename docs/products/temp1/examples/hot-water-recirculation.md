@@ -1,8 +1,8 @@
 ---
-title: Hot Water Recirculation with TEMP-1
+title: Hot water recirculation with TEMP-1
 description: How a community member uses an Apollo TEMP-1 to drive a hot water recirculation loop, blending an instant mini tank with the main house heater and wasting no water down the drain.
 ---
-# Hot Water Recirculation with TEMP-1
+# Hot water recirculation with TEMP-1
 
 !!! info "Contributed by Donovan"
 
@@ -124,7 +124,7 @@ Donovan's whole system is one blueprint. Import it, pick your entities, set your
 
 | Input | What to pick |
 | --- | --- |
-| **Start trigger** | The press that starts a cycle, like your Aqara button's single click. Pick it from the trigger editor just like any automation. You can add more than one (see the tip below). |
+| **Start trigger** | The press that starts a cycle, like your Aqara button's single click. Pick it from the trigger editor like any automation. You can add more than one (see the tip below). |
 | **Circulator pump plug** | The smart plug powering the pump. |
 | **Circulator pump power** | That plug's power (W) sensor, how the system knows the pump has finished. |
 | **3-way valve plug** | The smart plug powering the valve. |

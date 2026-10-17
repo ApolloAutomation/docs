@@ -1,8 +1,8 @@
 ---
-title: R PRO-1 Home Assistant Zone Configuration
+title: R PRO-1 Home Assistant zone configuration
 description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 ---
-# How To Tune The R PRO-1 Using Home Assistant
+# How to tune the R PRO-1 using Home Assistant
 
 !!! info "Your R PRO-1 has two unique mmWave sensors that both need to be tuned!"
 
@@ -18,7 +18,9 @@ description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 
 Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R PRO-1 LD2450.
 
-## LD2450 Configuration
+## LD2450 configuration
+
+Follow these steps to add a Plotly card that shows your LD2450 targets, then set up your zones in Home Assistant.
 
 1\. Install [HACS](https://hacs.xyz/docs/use/).
 
@@ -36,7 +38,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 ![Home Assistant dashboard in edit mode adding a Manual card with the Plotly graph YAML](/assets/ld2450-add-plotly-graph-gif.gif)
 
-5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
+5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks like the card below!
 
 ![Plotly card showing R PRO-1 target positions, the radar coverage cone, and three zones](/assets/r-pro-1-plotly-graph-image.png)
 
@@ -58,7 +60,7 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
     * Detection: Only detects targets in the specified zone.
     * Filter: Excludes a zone from detection.
 
-9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -7000 mm to 7000 mm, and the Y values are 0 mm to 7000 mm.
+9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -4860 mm to 4860 mm, and the Y values are 0 mm to 7560 mm.
 
 ![Plotly Target Positions chart with arrows marking the X axis and Y axis around three zones](/assets/ld2450-zone-input.png)
 
@@ -96,11 +98,13 @@ Manually enter in the X and Y coordinates for each zone in Home Assistant or dir
 
 15\. Now we can make zones around the targets where you want to Detect presence or filter them out.
 
-!!! tip tip "Tip for zone configuration resetting"
+!!! tip "Tip for zone configuration resetting"
 
-    If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try to toggle on Multi Target Radar. This should wake up the mmWave module and retrieve your saved zones
+    If your zone configurations are not saved when restarting the device then try turning on the LD2450 Bluetooth for a few seconds and then turning it off again. You can also try toggling on **LD2450 Multi Target Tracking**. This should wake up the mmWave module and retrieve your saved zones
 
-## LD2412 Configuration
+## LD2412 configuration
+
+Follow these steps to switch the LD2412 to Engineering mode and tune its gates in Home Assistant.
 
 1\. Go to **Settings → Devices & services → ESPHome** and click **1 device** below the Apollo R PRO-1.
 

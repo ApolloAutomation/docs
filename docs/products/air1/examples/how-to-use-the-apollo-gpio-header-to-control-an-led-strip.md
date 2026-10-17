@@ -18,7 +18,7 @@ Click any photo to see it full size.
 
 !!! warning "Watch the current draw"
 
-    The 5V pin supplies up to 300mA. A meter of 60 LEDs at full white draws far more than that, so anything longer than a short strip needs its own 5V supply. You can power the AIR-1 itself from the 5V and GND pins instead of the USB-C port, but use one or the other, never both.
+    The 5V pin supplies up to 350mA. A meter of 60 LEDs at full white draws far more than that, so anything longer than a short strip needs its own 5V supply. You can power the AIR-1 itself from the 5V and GND pins instead of the USB-C port, but use one or the other, never both.
 
 ## Choosing a data pin
 
@@ -49,6 +49,8 @@ Opening an AIR-1 takes a few more steps than the other Apollo sensors, because t
     ![AIR-1 case being closed around the new lid](/assets/air-1-gpio-header-wiki-pic-8.webp){ width="200" } ![AIR-1 case closing with the GPIO Header inside](/assets/air-1-gpio-header-wiki-pic-9.webp){ width="200" } ![Reassembled AIR-1 with the GPIO Header pins exposed](/assets/air-1-gpio-header-wiki-pic-10.webp){ width="200" }
 
 ## Wiring the strip
+
+Next, you connect the strip to the header and check that data flows in the right direction.
 
 1.  Run three wires from the header to the strip: 5V, GND, and data. Matching the colors to the strip's own wiring saves a lot of squinting later, so use red for 5V, white for GND, and green for data on IO7.
 

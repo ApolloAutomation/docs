@@ -1,14 +1,14 @@
 ---
-title: TEMP-1B Food Probe
+title: TEMP-1B food probe
 description: "Step by step guide for installing and using the optional Food Probe with the TEMP-1B."
 ---
-# TEMP-1B Food Probe
+# TEMP-1B food probe
 
-The TEMP-1B comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1 itself needs to stay in a cool environment.
+The TEMP-1B comes with an optional food probe which can be used to monitor food temperatures when baking, grilling, etc. It includes a heat-resistant cable but the TEMP-1B itself needs to stay in a cool environment.
 
 ![Correct TEMP-1B mount on a cool grill side shelf next to a crossed-out mount on the hot grill lid](/assets/temp1b-magnetic-mount-proper-mounting-explained-resized.png)
 
-1\. To use your food probe simply take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
+1\. To use your food probe, take it out of the package and insert it into the 3.5mm port on your TEMP-1B.
 
 ![Food probe plug being inserted into the 3.5mm port on the TEMP-1B](/assets/food-probe-insert-1.jpg)
 
@@ -18,15 +18,13 @@ The TEMP-1B comes with an optional food probe which can be used to monitor food 
 
 !!! tip "If you are using it with a battery you need to push the reset button."
 
-    The TEMP-1B looks for the food probe when it boots and if it is not there then the sensor is marked as failed and will not work properly in Home Assistant. You need to click the reset button if you have a battery in it or power cycle your TEMP-1B to make it reliably use the new food temperature probe.
+    The TEMP-1B looks for the food probe when it boots and if it is not there then the sensor is marked as failed and will not report a temperature. You need to click the reset button if you have a battery in it or power cycle your TEMP-1B to make it reliably use the new food temperature probe.
 
 &nbsp;
 
 ![TEMP-1B with the food probe plugged in, showing the braided cable and stainless steel probe](/assets/food-probe-pic-1.jpg)
 
-3\. Go to the device page of your TEMP-1B in Home Assistant and choose probe "Food".
-
-![Home Assistant Controls card with Food chosen in the Select Probe dropdown](/assets/temp1b-food-probe-pic-1-1.png)
+3\. In the Homey app, open your TEMP-1B's **Settings** and, under **Probes and offsets for TEMP-1 and TEMP-1B**, set **Select probe** to **Food**.
 
 !!! danger "Do not leave your sensor outside or let it get wet!"
 

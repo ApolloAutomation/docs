@@ -4,7 +4,7 @@ description: >-
   Store API encryption keys, OTA passwords, MQTT credentials, and more in a
   single secrets.yaml file so they stay out of your device configs.
 ---
-# Using Secrets
+# Using secrets
 
 When you set up your kit in [First Steps](../setup/first-steps.md), the Device Builder saved the Wi-Fi name and password you typed in to secrets.yaml. That same file can hold every other sensitive value your device needs, from your Home Assistant API key to your MQTT password. This tutorial walks through what to put in there and how to reference it from your device YAML.
 
@@ -22,7 +22,7 @@ In the ESPHome Device Builder dashboard, click the 3 dots menu in the top right 
 
 </div>
 
-1. You'll see a YAML file with one key per line. If you followed First Steps you should already see `wifi_ssid` and `wifi_password` here.
+1. You'll see a table of your secrets, one name and value per row, with an **Add secret** button below it. If you followed First Steps you should already see `wifi_ssid` and `wifi_password` here.
 
 ![ESPHome Device Builder three-dot menu opening Secrets, which lists wifi_ssid, wifi_password, and the API key](../../../assets/esphome-device-builder-click-secrets.gif)
 
@@ -50,7 +50,7 @@ When the device compiles, ESPHome substitutes the value from secrets.yaml in pla
 
 ---
 
-## Make a Secret in the GUI
+## Make a secret in the GUI
 
 <div markdown class="annotate">
 
@@ -201,7 +201,7 @@ mqtt:
 
 ---
 
-## Complete Example
+## Complete example
 
 Putting it all together, a fully loaded secrets.yaml looks like this:
 

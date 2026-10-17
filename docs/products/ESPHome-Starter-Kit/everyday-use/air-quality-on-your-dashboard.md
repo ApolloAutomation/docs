@@ -1,11 +1,11 @@
 ---
-title: Air Quality on Your Dashboard
+title: Air quality on your dashboard
 description: >-
   Put your SEN65's air quality readings on a Home Assistant dashboard and get a
   push notification when the air goes bad, all with built-in cards and a native
   automation.
 ---
-# Air Quality on Your Dashboard
+# Air quality on your dashboard
 
 The [SEN65](../modules/breakout-addons/sen65-air-quality-sensor.md) reads particulate matter, VOC, and NOx, and the AQI component turns your PM readings into a single NowCast AQI number. Putting those on a Home Assistant dashboard gives you a live air quality monitor, and one small automation can nudge you when it's time to open a window. Everything here uses cards and triggers that ship with Home Assistant, so there's nothing to install.
 

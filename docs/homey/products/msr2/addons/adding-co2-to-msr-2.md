@@ -1,8 +1,10 @@
 ---
-title: Adding CO₂ To MSR-2
+title: Adding CO₂ to MSR-2
 description: "Tutorial on adding the SCD40 CO2 sensor to your MSR-2."
 ---
-# Adding CO<sub>2</sub> To MSR-2
+# Adding CO<sub>2</sub> to MSR-2
+
+You'll slide your sensor out of its case, fit the SCD40 module onto the mezzanine connector, and put the case back together.
 
 1\. Unplug your MSR-2 from power and remove the back
 

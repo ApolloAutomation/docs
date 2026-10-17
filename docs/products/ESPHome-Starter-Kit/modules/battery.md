@@ -1,10 +1,10 @@
 ---
-title: Adding the Battery
+title: Adding the battery
 description: >-
   Connect the rechargeable LiPo battery to your ESPHome Starter Kit and cut the
   cord on your builds.
 ---
-# Adding the Battery
+# Adding the battery
 
 The battery cuts the cord on your starter kit. It's a rechargeable 3.7V 2800mAh LiPo that plugs into the ESP32-C6 with a 2-pin JST-PH 2.0 connector, so your builds can live anywhere in the home, not just next to a USB port. The ESP32-C6 charges it over the same USB-C cable you've been using all along.
 
@@ -72,7 +72,7 @@ Trust the voltage more than the percentage. (1) Voltage is what the chip actuall
 
 One thing to watch if you add [Deep Sleep](#deep-sleep) below: the gauge doesn't report until a full `update_interval` has gone by. A device that's awake for 30 seconds with a 60 second interval falls asleep before the first reading, and both entities stay empty. Set `update_interval` shorter than your `run_duration` and the readings land every wake-up.
 
-## Deep Sleep
+## Deep sleep
 
 Wi-Fi is hungry. Left running around the clock, the ESP32-C6 will work through the battery quickly. The fix is the <a href="https://esphome.io/components/deep_sleep/" target="_blank" rel="noreferrer nofollow noopener">Deep Sleep</a> component, which powers the device down between readings so it sips power instead of gulping it.
 
@@ -116,7 +116,7 @@ A few things to know before you rely on it:
             allow_other_uses: true
     ```
 
-    One difference for the starter kit: the Button module's pin reads LOW when pressed (it uses a pull-up), the opposite of the BTN-1's buttons. So on the starter kit you'd wake on `mode: ALL_LOW` with GPIO6 as the only pin.
+    One difference for the starter kit: the Button module's pin reads LOW when pressed (it uses a pull-up), the opposite of the BTN-1's buttons. So on the starter kit you'd wake on `mode: ANY_LOW` with GPIO6 as the only pin (`ALL_LOW` is only supported on the original ESP32).
 
 ### Add a Prevent Sleep switch
 

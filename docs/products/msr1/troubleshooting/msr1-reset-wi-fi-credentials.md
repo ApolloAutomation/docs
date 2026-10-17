@@ -1,8 +1,10 @@
 ---
-title: Reset Wi-Fi Credentials
+title: Reset Wi-Fi credentials
 description: "Reset the MSR-1 Wi-Fi credentials with a 10 second press of the Boot button, then reconnect through its hotspot."
 ---
-# Reset Wi-Fi Credentials
+# Reset Wi-Fi credentials
+
+You'll reset the device's Wi-Fi credentials, then connect it to your new Wi-Fi network through its hotspot.
 
 1\. Plug in the device
 

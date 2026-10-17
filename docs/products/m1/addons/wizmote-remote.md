@@ -1,8 +1,8 @@
 ---
-title: Add a WizMote Remote to the M-1
+title: Add a WizMote remote to the M-1
 description: Pair a WizMote remote to your M-1 over ESP-NOW for physical control without Home Assistant.
 ---
-# Add a WizMote Remote to the M-1
+# Add a WizMote remote to the M-1
 
 The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/dp/B091TGDS6F" target="_blank" rel="noreferrer nofollow noopener">WizMote</a> over ESP-NOW. The remote talks straight to the M-1, so it keeps working with Home Assistant down, and it is the easiest way to give someone control of the matrix without handing them a phone.
 
@@ -10,7 +10,9 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 
     WizMote support on a HUB75 matrix only exists in WLED 16.0 and above. WLED-MM does not support it at all, so if your M-1 is on 14.5.1 you need to [migrate to WLED](/products/m1/setup/upgrade-to-wled.md) before a remote will work. Tap **Info** on your M-1 to check which version you are running.
 
-## Turn On ESP-NOW
+## Turn on ESP-NOW
+
+Before you pair the remote, turn on ESP-NOW on your matrix.
 
 1\. Open your M-1 in a browser and click **Config**, then **WiFi Setup**.
 
@@ -18,7 +20,9 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 
 3\. Click **Save**, then reboot the M-1. Tap **Info**, scroll down, and select **Reboot WLED**.
 
-## Pair the Remote
+## Pair the remote
+
+Now you can add the WizMote to the trusted list.
 
 1\. Go back to **Config**, then **WiFi Setup**.
 
@@ -30,7 +34,7 @@ The M-1 has no IR receiver, but it does take a <a href="https://www.amazon.com/d
 
 ![WLED ESP-NOW settings: clicking + next to Last device seen to link the WizMote, then Save & Connect](/assets/wled-16-add-wizmote.gif)
 
-## Using the Remote
+## Using the remote
 
 The four numbered buttons run presets 1 through 4, so whatever you save as preset 1 is what button 1 does. Set those up first on the main page and the remote becomes genuinely useful rather than a novelty. Power and brightness work as labeled, and the moon button triggers the night light. (1)
 { .annotate }

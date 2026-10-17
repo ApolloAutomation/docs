@@ -24,7 +24,7 @@ Every detect region gives your sensor three flow cards: **A region became occupi
 
 The sensor's whole-room card, **The occupancy alarm turned on**, only fires when the room goes from empty to occupied. Pairing it with a **Server is occupied** condition misses the moment someone who is already in the room walks over to the server, so the light stays off.
 
-## Flow 1: turn the light on
+## Flow 1: Turn the light on
 
 This flow has one trigger and one action, so it needs no **And** card.
 
@@ -45,7 +45,7 @@ The flow now shows in **My Flows**. Walk into the region and the light turns on.
 
     The region picker lists your **Detect people here** regions. Areas set to **Ignore this area** never report occupied, so they don't appear.
 
-## Flow 2: turn the light off
+## Flow 2: Turn the light off
 
 The second flow mirrors the first. Build it the same way, with two changes:
 

@@ -1,8 +1,8 @@
 ---
-title: MSR-2 Home Assistant Zone Configuration
+title: MSR-2 Home Assistant zone configuration
 description: Tutorial for MSR-2 Home Assistant Zone Configuration.
 ---
-# How To Tune the MSR-2 Using Home Assistant
+# How to tune the MSR-2 using Home Assistant
 
 !!! tip "Prefer a guided dashboard?"
 
@@ -24,6 +24,8 @@ How to tune the mmWave sensor using radar engineering mode.
   </iframe>
 </div>
 
+You'll turn on Radar Engineering Mode to see the move and still energy for each gate.
+
 1\. Head to the **ESPHome** integration page (**Settings → Devices & services → ESPHome**) and select your MSR-2.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
@@ -36,11 +38,21 @@ How to tune the mmWave sensor using radar engineering mode.
 
 ![Home Assistant MSR-2 Diagnostic section listing move and still energy percentages for gates g0 to g4](/assets/msr-2-gate-energies.png)
 
-The gates are 0.75 meter increments from the sensor - allowing you to "tune" each 0.75 meter section until your sensor works as intended!
+The gates are 0.75 meter increments from the sensor, allowing you to "tune" each 0.75 meter section until your sensor works as intended!
 
-![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/msr-2-ld2410-gate-table.png)
+| Gate | Distance (m / ft) | Default move threshold | Default still threshold |
+|---|---|---|---|
+| 0 | 0 m / 0' | 50 | 0 |
+| 1 | 0 - 0.75 m / 0' - 2.46' | 50 | 0 |
+| 2 | 0.75 - 1.5 m / 2.46' - 4.92' | 40 | 40 |
+| 3 | 1.5 - 2.25 m / 4.92' - 7.38' | 40 | 40 |
+| 4 | 2.25 - 3 m / 7.38' - 9.84' | 40 | 40 |
+| 5 | 3 - 3.75 m / 9.84' - 12.30' | 40 | 40 |
+| 6 | 3.75 - 4.5 m / 12.30' - 14.76' | 30 | 15 |
+| 7 | 4.5 - 5.25 m / 14.76' - 17.22' | 30 | 15 |
+| 8 | 5.25 - 6 m / 17.22' - 19.69' | 30 | 15 |
 
-![Diagram of the LD2410 detection area split into gates at 0.75 m steps](/assets/msr-2-ld2410-gates-visualized.png)
+![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)
 
 Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 

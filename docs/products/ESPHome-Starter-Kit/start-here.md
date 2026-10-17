@@ -1,5 +1,5 @@
 ---
-title: ESPHome Starter Kit - Start Here
+title: ESPHome Starter Kit - Start here
 description: Landing page of the ESPHome Starter Kit QR Code.
 ---
 # Welcome to the ESPHome Starter Kit!
@@ -54,7 +54,7 @@ Each module is connected to the panel by small breakaway tabs. Follow the steps 
 
 **Motion module**
 
-* Detects movement in a room and a great way to get started automating your home. It comes in two parts, and the PIR sensor easily plugs into the PIR module board.
+* Detects movement in a room and a great way to get started automating your home. It comes in two parts, and the PIR sensor plugs into the PIR module board.
 
 ![Motion module with the round PIR sensor plugged into its header](../../assets/esphome-starter-kit-pir-module-only.jpg)
 
