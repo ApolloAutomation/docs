@@ -18,14 +18,20 @@ This article will guide you through a simple calibration of your CO<sub>2</sub> 
 
 ![Apollo AIR-1 plugged in by USB-C cable outdoors to read fresh air for CO2 calibration](/assets/air-1-co2-calibration-portrait-quick-pic-3.jpg)
 
+*Shown with an AIR-1; set your R PRO-1 outdoors the same way.*
+
 2\. Go to your Home Assistant dashboard and press the letter "e". In the entity filter that pops up, type "Calibrate SCD40" and select your R PRO-1's entry (for example **Apollo R_PRO-1 353fd4 Calibrate SCD40 To 420ppm**).
 
 !!! tip "Hint"
 
     If you cannot get this menu to pop up, click somewhere on the <a href="https://www.home-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Home Assistant</a> dashboard then press your "e" key.
 
-![Home Assistant entity search with the Calibrate SCD40 To 420ppm entity circled in red, shown here on an AIR-1; the R PRO-1 button has the same name](/assets/co2-calibration-quick-pic-1.png)
+![Home Assistant entity search with the AIR-1 Calibrate SCD40 To 420ppm entity circled in red](/assets/co2-calibration-quick-pic-1.png)
+
+*Shown for an AIR-1; your R PRO-1 lists the same Calibrate SCD40 To 420ppm button.*
 
 3\. Click on the button that says "PRESS" and then you are done.
 
-![Calibrate SCD40 To 420ppm dialog with PRESS circled and an arrow to the new logbook entry, shown here on an AIR-1; the R PRO-1 button works the same way](/assets/co2-calibration-quick-pic-2.png)
+![AIR-1 Calibrate SCD40 To 420ppm dialog with PRESS circled and an arrow to the new logbook entry](/assets/co2-calibration-quick-pic-2.png)
+
+*Shown for an AIR-1; the R PRO-1 button dialog looks the same.*

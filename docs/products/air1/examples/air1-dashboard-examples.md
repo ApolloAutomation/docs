@@ -182,6 +182,8 @@ title: Bedroom CO2
 
 ![Home Assistant needle gauge card showing MSR-1 CO2 at 1,063 ppm with green, yellow, and red ranges](/assets/co2-guage.png)
 
+*Shown with an MSR-1; the AIR-1 CO2 gauge looks the same.*
+
 ```plaintext
 type: gauge
 entity: sensor.apollo_air_1_a79e38_co2

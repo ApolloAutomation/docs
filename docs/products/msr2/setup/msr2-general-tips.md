@@ -32,8 +32,8 @@ The MSR-2 can also be mounted on the ceiling if you can provide power and mount 
 
 ## **Gate and FOV Visualization**
 
-**![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/ld2410-table.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
+**![Table of LD2410 gates 0 to 8 with distance ranges in meters and feet and default move and still thresholds](/assets/ld2410-gate-table.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
 
-![Top-down fan diagram of radar gates G1 to G7 marked in 0.75 m steps out to 5 m](/assets/msr-1-radar-map.png)![Radar gate fan diagram with Zone 1 in red, Zone 2 in blue, and Zone 3 in green](/assets/radar-gates-colored.png)
+![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)![Radar gate fan diagram with Zone 1 in red, Zone 2 in blue, and Zone 3 in green](/assets/radar-gates-colored.png)
 
 #####

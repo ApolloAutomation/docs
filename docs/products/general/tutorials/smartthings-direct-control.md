@@ -278,6 +278,9 @@ binary_sensor:
           body: '{"commands": [{"component": "main", "capability": "switch", "command": "off"}]}'
 ```
 
+!!! warning "`verify_ssl: false` turns off certificate checking"
+    This setting tells the device to skip certificate checks on every SmartThings API call it makes, including the token refresh. The example does this because the certificate bundle the ESP32 would need to check those certificates is too large to fit comfortably on the device. Anyone who can intercept your network traffic could read your SmartThings token, so keep the device on a trusted network.
+
 ---
 
 ## Part 5: Flash and Verify

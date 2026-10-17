@@ -17,6 +17,8 @@ My grandmother wanted a security system that would alert her when there was move
   
 ![Alarmo Sensors tab with MSR-1 radar target entities toggled on for Home arm mode](/assets/alarmo-2.png)  
   
+*Shown with MSR-1 sensors; add your MSR-2 radar target entities the same way.*
+  
 4\. Now select the Actions tab and under Condition > Event > Select "Alarm is triggered". You can also select the device you would like to receive a notification on under Task > Target > Select Device (Phone, tablet, etc.)  
   
 ![Alarmo notification setup with Event set to Alarm is triggered and Target set to a phone](/assets/alarmo-3.png)  
@@ -29,9 +31,13 @@ My grandmother wanted a security system that would alert her when there was move
   
 ![Alarmo action setup for Alarm is triggered with AIR-1 and MSR-1 RGB light entities selected](/assets/alarmo-5.png)  
   
+*Shown with AIR-1 and MSR-1 lights; pick your MSR-2 RGB light the same way.*
+  
 7\. Under Action select Turn On and now your sensors RGB lights will turn on when the alarm is triggered.  
   
 ![Alarmo action with the RGB light entities selected and Turn On chosen as the action](/assets/alarmo-6.png)  
+  
+*Shown with AIR-1 and MSR-1 lights; the MSR-2 steps are the same.*
   
 8\. And that's it, seriously... Now you can enjoy a free and local security system.  
   

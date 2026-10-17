@@ -14,6 +14,8 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 ![Home Assistant history graph of the TEMP-1 temperature probe with arrows at freezer highs and lows](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
 
+*Shown on a TEMP-1; the TEMP-1B graph looks the same.*
+
 3\. We now need to convert F to C since the max and min temps are measured in Celsius. My new values I will input are max probe temp 2°C and a min probe temp of -30°C. Reminder, yours will likely be different values, especially your max probe temp.
 
 ![Home Assistant settings with Max Probe Temp set to 2.0 °C and Min Probe Temp set to -30.0 °C](/assets/temp-1-temp-probe-ex-automation-pic-2.png)
@@ -28,6 +30,8 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 ![Home Assistant numeric state trigger on TEMP-1 Max Probe Temp with the Above field set to 30 highlighted](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
 
+*Shown on a TEMP-1; pick your TEMP-1B entity instead.*
+
 7\. Click Add Action then type in "iPhone" and select your phone. If you do not see your phone or have an Android, try typing in "notify" instead and scrolling down until you find your phone listed.
 
 ![Home Assistant Add action search for iphone with the mobile app notification action highlighted](/assets/temp-1-temp-probe-ex-automation-pic-4.png)
@@ -40,9 +44,13 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 ![Home Assistant notification action with the message and Check the freezer! title fields highlighted](/assets/temp-1-temp-probe-ex-automation-pic-5.png)
 
+*Shown on a TEMP-1; the TEMP-1B steps are the same.*
+
 9\. Click save in the bottom right and then give it a Name and optionally a Description and a Category as well. You are done!
 
 ![Home Assistant save dialog for Freezer Over Max Temp Automation with name, description, and category filled in](/assets/temp-1-temp-probe-ex-automation-pic-6.png)
+
+*Shown on a TEMP-1; the TEMP-1B steps are the same.*
 
 ---
 
@@ -86,6 +94,8 @@ This will guide you through how to set up an automation in Home Assistant using 
 
 ![Home Assistant numeric state trigger with the TEMP-1 Max Probe Temp entity and Above 165 fields highlighted](/assets/temp-1-food-probe-ex-automation-pic-3.png)
 
+*Shown on a TEMP-1; pick your TEMP-1B entity instead.*
+
 5\. Click Add Action then type in "iPhone" and select your phone. If you do not see your phone or have an Android, try typing in "notify" instead and scrolling down until you find your phone listed.
 
 ![Home Assistant Add action search for iphone with the mobile app notification action highlighted](/assets/temp-1-temp-probe-ex-automation-pic-4.png)
@@ -97,6 +107,8 @@ This will guide you through how to set up an automation in Home Assistant using 
 6\. Type in your preferred message and if you want, check the box for title and type in your title for the message as well. Mine says: "The temperature probe on your TEMP-1B reached its max temperature and your food is ready." and "Check the food!".
 
 ![Home Assistant notification action with the message and Check the food! title fields highlighted](/assets/temp-1-food-probe-ex-automation-pic-5.png)
+
+*Shown on a TEMP-1; the TEMP-1B steps are the same.*
 
 7\. Click save in the bottom right and then give it a Name and optionally a Description and a Category as well. You are done!
 
@@ -157,9 +169,13 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant numeric state trigger on TEMP-1 Food Probe with the Above field set to 160](/assets/temp-1-cook-chicken-example-pic-7.png)
 
+*Shown on a TEMP-1; pick your TEMP-1B food probe instead.*
+
 8\. Create a Trigger ID for this called "Temp Reached".
 
 ![Home Assistant TEMP-1 Food Probe trigger with Trigger ID set to Temp Reached highlighted](/assets/temp-1-cook-chicken-example-pic-8.png)
+
+*Shown on a TEMP-1; the TEMP-1B steps are the same.*
 
 9\. Click Add Action and search "choose" then select it.
 
@@ -181,6 +197,8 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Choose entity search for TEMP-1 with the cursor on the Apollo TEMP-1 RGB Light entity](/assets/temp-1-cook-chicken-example-pic-10.png)
 
+*Shown on a TEMP-1; pick your TEMP-1B RGB Light instead.*
+
 14\. Click "Advanced Options" and then click the check box for Color name then select a color from the dropdown such as Green.
 
 ![Home Assistant light action Advanced options with Color name checked and Green picked from the list](/assets/temp-1-cook-chicken-example-pic-11.png)
@@ -193,9 +211,13 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant notification action with the title Chicken Monitoring Started and a custom message](/assets/temp-1-cook-chicken-example-pic-16.png)
 
+*Shown on a TEMP-1; the TEMP-1B steps are the same.*
+
 17\. This is how option 1 will look when you are done with this part:
 
 ![Home Assistant Option 1 triggered by Chicken Monitor On with light turn on and notification actions](/assets/temp-1-cook-chicken-example-pic-17-1.png)
+
+*Shown on a TEMP-1; the TEMP-1B steps are the same.*
 
 18\. Click "Add Option" at the bottom then under option 2 select "Add Condition" then search "trigger id" and select Triggered by.
 
@@ -243,6 +265,8 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 
 ![Home Assistant Light Turn off action targeting the Apollo TEMP-1 RGB Light](/assets/temp-1-cook-chicken-example-pic-20.png)
 
+*Shown on a TEMP-1; pick your TEMP-1B RGB Light instead.*
+
 30\. Choose "Add Action" and search mobile like we did above and select your mobile phone. Give it an optional title and message as shown below.
 
 ![Home Assistant notification action titled Chicken Monitoring Stopped! with its message](/assets/temp-1-cook-chicken-example-pic-33.png)
@@ -250,5 +274,7 @@ This will guide you through adding a button to your dashboard called "Chicken Mo
 31\. Click save in the bottom right then give it a name and save
 
 ![Home Assistant save dialog for TEMP-1 Chicken Automation in the Food category with Save clicked](/assets/temp-1-cook-chicken-example-pic-34.png)
+
+*Shown on a TEMP-1; the TEMP-1B steps are the same.*
 
 32\. You now have one automation which unifies the button you created in the dashboard and alerts you when your chicken is almost done via a phone notification, a blinking green led, and an optional TTS notification to your smart speakers! Thanks again to Discord user RalphP for this example!

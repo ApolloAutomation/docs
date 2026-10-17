@@ -12,6 +12,8 @@ This will guide you through how to set up the built in alarm using the temperatu
 
 ![Home Assistant history graph of the temperature probe in a freezer, with arrows at a high and a low point](/assets/temp-1-temp-probe-ex-automation-pic-1.png)
 
+*Shown on a TEMP-1; the TEMP-1B graph looks the same.*
+
 3\. We now need to convert F to C since the max and min temps are measured in Celsius. My new values I will input are max probe temp 2C and a min probe temp of -30C. Reminder, yours will likely be different values, especially your max probe temp.
 
 ![Max Probe Temp set to 2.0 and Min Probe Temp set to -30.0 degrees Celsius in Home Assistant](/assets/temp-1-temp-probe-ex-automation-pic-2.png)

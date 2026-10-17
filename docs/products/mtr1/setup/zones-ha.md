@@ -24,6 +24,8 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
 
 ![Adding a Manual card to a Home Assistant dashboard and pasting the Plotly YAML](/assets/ld2450-add-plotly-graph-gif.gif)
 
+*Shown with an R PRO-1 card; the MTR-1 steps are the same.*
+
 5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
 ![Finished MTR-1 Target Positions Plotly card with the coverage area and three zones](/assets/mtr-1-card-working-targets.png)
@@ -62,11 +64,11 @@ Below are steps to manually enter in the X and Y coordinates for each zone in Ho
 
 10\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 X and Y target values.
 
-![LD2450 Target-1 X and Y sensors showing values in inches, outlined in red](/assets/r-pro-1-card-change-units-from-inches.png)
+![MTR-1 Target-1 X and Target-1 Y sensors showing 0.0 in, outlined in red](/assets/mtr1-screenshot-2024-05-13-at-3-59-40-pm.png)
 
 11\. Select the Settings cog in the top right.
 
-![LD2450 Target-1 X sensor dialog with the Settings cog in the top right selected](/assets/r-pro-1-card-change-units-settings.png)
+![Apollo MTR-1 Target-1 X sensor dialog with the Settings cog in the top right outlined in red](/assets/mtr1-screenshot-2024-05-13-at-4-00-59-pm.png)
 
 12\. Change the unit of measurement to mm and select Update.
 

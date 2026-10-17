@@ -82,6 +82,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ![Adding a Manual card to a Home Assistant dashboard and pasting the Plotly YAML](/assets/ld2450-add-plotly-graph-gif.gif)
 
+*Shown with an R PRO-1 card; the MTR-1 steps are the same.*
+
 5\. Delete any text in the custom card then paste the YAML you copied above and click save when finished. You should now have a custom card that looks just like the card below!
 
 ![Finished MTR-1 Target Positions Plotly card with the coverage area and three zones](/assets/mtr-1-card-working-targets.png)

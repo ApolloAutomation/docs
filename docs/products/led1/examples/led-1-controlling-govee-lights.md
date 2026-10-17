@@ -6,6 +6,10 @@ description: >-
 ---
 ![LED-1 with red and black barrel plug wires in the WAGO input connector, tweezers pressing the lever](/assets/led-1-govee-barrel-1.jpg)This is a guide to show you how to use the Apollo LED-1 to control your Govee permanent outdoor lights fully locally and without the need of a cloud based app.
 
+!!! note "This guide is still being written"
+
+    The steps below get the LED-1 connected; more steps are coming.
+
 1\. Items we will need for this project.
 
 ![Project parts laid out: project box, LED-1, tweezers, wire strippers, hobby knife, screwdriver, and cables](/assets/led-1-govee-items.jpg)
@@ -33,29 +37,3 @@ description: >-
 ![Hobby knife cutting the sheathing off the white 3-pin LED connector](/assets/led-1-govee-cable-cut.jpg)
 
 ![White 3-pin LED connector with the sheathing removed, showing three brass pins](/assets/led-1-govee-cable-off.jpg)
-
-6\.
-
-&nbsp;
-
-7\.
-
-&nbsp;
-
-8\.
-
-&nbsp;
-
-9\.
-
-&nbsp;
-
-10\.
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;

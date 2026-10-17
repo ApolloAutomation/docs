@@ -64,7 +64,11 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
     === "STEMMA QT (Qwiic)"
 
-        Plug your sensor's STEMMA QT (Qwiic) cable into the port. The connector is keyed, so it only fits one way.
+        Plug your sensor's STEMMA QT (Qwiic) cable into the **3.3V STEMMA QT** port at the middle left of the board, labeled **Stemma 3V**. The board has two 4-pin STEMMA ports: this 3.3V STEMMA QT port and a 5V STEMMA port at the bottom center, labeled **VStemma 5V**. Use the 5V port only for sensors that need 5V. The connector is keyed, so it only fits one way.
+
+        !!! note "The clip shows the 5V port"
+
+            The clip below plugs the cable into the 5V STEMMA port at the bottom center. For a STEMMA QT (Qwiic) sensor, use the 3.3V port at the middle left instead.
 
         ![Plugging a sensor's 4-wire STEMMA QT cable into the Breakout Module port labeled VStemma 5V](/assets/esphome-starter-kit-breakout-module-stemma-qt.webp)
 

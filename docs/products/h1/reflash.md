@@ -18,9 +18,13 @@ If no device shows, click cancel and then install the recommended driver that sh
 
 ![Web installer Device Dashboard dialog with the Install option and Logs and Console](/assets/image-1698806750134.png)
 
+*Shown with the MSR-1 installer; the H-1 installer looks the same.*
+
 5\. Wait for the installer to finish - if you see "ERROR Logger is not configured!" that is totally expected! The logger is disabled to make more room for other components on the microcontroller.
 
 ![Web installer dialog showing a spinner while preparing the installation](/assets/image-1698806082666.png)
+
+*Shown with the MSR-1 installer; the H-1 installer looks the same.*
 
 6\. VERY IMPORTANT - you need to unplug your device and plug it back in to leave boot mode!
 
@@ -32,3 +36,5 @@ If no device shows, click cancel and then install the recommended driver that sh
 If you encounter the below error, please complete the [Putting H-1 In Boot Mode Document](https://wiki.apolloautomation.com/products/h1/boot-mode/) and go back to step 3.
 
 ![Web installer error: Failed to initialize, try holding the BOOT button while clicking Install](/assets/image-1698806793309.png)
+
+*Shown with the MSR-1 installer; the H-1 shows the same error.*

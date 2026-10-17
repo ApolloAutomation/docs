@@ -44,3 +44,7 @@ wifi:
   # ...
   power_save_mode: none
 ```
+
+!!! note "Changing these settings needs ESPHome Device Builder"
+
+    Homey can't edit your MTR-1's YAML. To change the Wi-Fi power save mode, use the [standalone ESPHome Device Builder](https://esphome.io/guides/installing_esphome/). It runs on a computer, so you don't need Home Assistant. For the edit and install steps, see [Adding Apollo Devices To Hidden Networks](/homey/products/general/setup/adding-apollo-devices-to-hidden-networks.md).

@@ -48,11 +48,9 @@ The gates are 0.75 meter increments from the sensor - allowing you to "tune" eac
 | 5 | 3 - 3.75 m / 9.84' - 12.30' | 40 | 40 |
 | 6 | 3.75 - 4.5 m / 12.30' - 14.76' | 30 | 15 |
 | 7 | 4.5 - 5.25 m / 14.76' - 17.22' | 30 | 15 |
-| 8 | 5.25 - 6 m / 17.22' - 19.68' | 30 | 15 |
+| 8 | 5.25 - 6 m / 17.22' - 19.69' | 30 | 15 |
 
-![Diagram of the LD2410 detection area split into gates at 0.75 m steps](/assets/msr-2-ld2410-gates-visualized.png)
-
-Diagram shows gates 1-7; gate 8 covers 5.25-6 m.
+![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)
 
 Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 

@@ -16,7 +16,11 @@ If the device is in sleep mode, press one of the gold buttons on the back to wak
 
 **3\. Play Holiday Songs**
 
-After the ornament is awake, press the gold buttons (see image below) to play a pre-loaded song:
+After the ornament is awake, press one of the four gold buttons to play a pre-loaded song. The buttons are on the back of the H-2, one at the tip of each side arm.
+
+![Back of the H-2 snowflake with the four gold song buttons near the tips of its four side arms](/assets/h-2-back-buttons.jpg)
+
+Each button plays one of these songs:
 
 * **Button 1:** Jingle Bells
 * **Button 2:** Rudolph the Red-Nosed Reindeer

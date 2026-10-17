@@ -8,9 +8,9 @@ description: Tutorial for how to add Apollo Devices To Hidden Networks.
 
 ![ESPHome Device Builder dashboard listing Apollo devices](/assets/bluetooth-proxy-tutorial-1.png)
 
-2\. If you do not have it installed, [go here](https://esphome.io/guides/getting_started_hassio.html#installing-esphome-device-compiler "Install Esphome Device Builder.") and then move on to step 3.
+2\. If you do not have it installed, [install the standalone ESPHome Device Builder](https://esphome.io/guides/installing_esphome/ "Install ESPHome Device Builder.") and then move on to step 3. It runs on a computer (Windows, macOS, or Linux), so you don't need Home Assistant.
 
-3\. Click "Edit" as shown below.
+3\. Click "Edit" as shown below. If your Apollo device only appears under **Discovered**, click **Take control** on it first.
 
 ![ESPHome Device Builder card for the Apollo MTR-1 with the Edit button circled](/assets/bluetooth-proxy-tutorial-2.png)
 
@@ -24,9 +24,13 @@ description: Tutorial for how to add Apollo Devices To Hidden Networks.
 
 ![MTR-1 YAML in ESPHome Device Builder with fast_connect: True added under wifi](/assets/hidden-ssid-tutorial-1.png)
 
-6 Click save then Install in the top right.
+6\. Click save then Install in the top right.
 
 ![ESPHome Device Builder editor with an arrow pointing to Save and Install in the top right](/assets/hidden-ssid-tutorial-2.png)
+
+!!! warning "Keep Homey connected"
+
+    If ESPHome Device Builder adds an API encryption key to your device, Homey can't connect to the device after the install. Device Builder adds a key when you take control of a device with **Enable encryption** turned on, and that option is on by default in the **Take control** dialog. To reconnect, copy the key with **Show encryption key** in the device's menu in ESPHome Device Builder. Then open the device's settings in Homey, choose **Repair**, and enter the key.
 
 7\. Click "Wirelessly" and let it finish compiling then installing.
 

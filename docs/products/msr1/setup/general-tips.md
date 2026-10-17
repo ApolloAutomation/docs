@@ -32,11 +32,11 @@ The MSR-1 can also be mounted on the ceiling if you can provide power and mount 
 
 ## **Gate and FOV Visualization**
 
-**![Table of LD2410 gates 0 to 8 with distance ranges and default move and still thresholds](/assets/ld2410-table_1.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
+**![Table of LD2410 gates 0 to 8 with distance ranges in meters and feet and default move and still thresholds](/assets/ld2410-gate-table.png)![Home Assistant radar settings with 0.75 m distance resolution and Zone 1, 2, and 3 distances in cm](/assets/gate-zones-and-rr.png)**
 
-![Top-down fan diagram of radar gates G1 to G7 marked in 0.75 m steps out to 5.25 m](/assets/msr-1-radar-map_1.png)![Radar gate fan diagram with Zone 1 in red, Zone 2 in blue, and Zone 3 in green](/assets/radar-gates-colored.png)
+![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)![Radar gate fan diagram with Zone 1 in red, Zone 2 in blue, and Zone 3 in green](/assets/radar-gates-colored.png)
 
-Each gate is 0.75 m deep, so G7 ends at 5.25 m; gate 8 (5.25 to 6 m) is not drawn.
+Each gate is 0.75 m deep, so the eight gates reach 6 m (19.69 ft) from the sensor.
 
 !!! tip "These are some useful hints!"
 

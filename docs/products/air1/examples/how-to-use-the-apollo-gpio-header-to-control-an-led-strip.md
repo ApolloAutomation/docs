@@ -18,7 +18,7 @@ Click any photo to see it full size.
 
 !!! warning "Watch the current draw"
 
-    The 5V pin supplies up to 300mA. A meter of 60 LEDs at full white draws far more than that, so anything longer than a short strip needs its own 5V supply. You can power the AIR-1 itself from the 5V and GND pins instead of the USB-C port, but use one or the other, never both.
+    The 5V pin supplies up to 350mA. A meter of 60 LEDs at full white draws far more than that, so anything longer than a short strip needs its own 5V supply. You can power the AIR-1 itself from the 5V and GND pins instead of the USB-C port, but use one or the other, never both.
 
 ## Choosing a data pin
 

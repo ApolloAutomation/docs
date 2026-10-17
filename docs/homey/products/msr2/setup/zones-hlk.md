@@ -9,9 +9,14 @@ description: "Tutorial for MSR-2 HLKRadarTool app Zone Configuration."
 
 - The default password to connect to the HLKRadarTool is HiLink
 
-2\. Ensure the mmWave radar you want to tune has Radar Control Bluetooth turned on. Home Assistant > Settings > Devices & services > ESPHome Devices > Select Device > Scroll down and toggle on Radar Control Bluetooth  
-  
-![Home Assistant device controls with the Radar Control Bluetooth toggle turned on and outlined in red](/assets/radar-control-bluetooth.png)  
+2\. Turn on the radar's Bluetooth from your MSR-2's built-in web page. In a browser, go to `http://<device IP>` or the device's `.local` address (see the tip below), scroll down to **ld2410 Bluetooth**, and turn it on.  
+
+!!! tip "Finding your MSR-2's web page address"
+
+    1. In Homey, open your MSR-2 device and note the last 6 characters of its name. For example, **Apollo MSR-2 c64a28** gives you `c64a28`.
+    2. Build your URL: `http://apollo-msr-2-c64a28.local/`
+
+    If the `.local` address doesn't load, use your router to find the device's IP address and go to `http://<device IP>` instead.
   
 3\. Open the app and select your device  
   

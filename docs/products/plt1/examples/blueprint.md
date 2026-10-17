@@ -14,17 +14,11 @@ description: >-
 
 2\. Click **Preview** then click **Import blueprint**.
 
-![Home Assistant Import a blueprint dialog, clicking Preview then Import blueprint (BTN-1 example shown)](/assets/btn-1-blueprint-auto-import.gif)
-
-3\. Click on **Apollo Automation PLT-1 Blueprint** and click on **Select a device** then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
-
-![Home Assistant blueprint editor, picking an Apollo device from Select a device (BTN-1 example shown)](/assets/btn-1-blueprint-select-btn-1.gif)
+3\. In your blueprints list, click **Apollo Automation PLT-1 Blueprint** to start a new automation from it. Click **Select a device**, then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
 
 4\. Enter your **plant's name** (this appears in notification messages), then select your **mobile device** for push notifications.
 
 5\. Enable the sensor groups you want to monitor (e.g. Soil Moisture, Air Temperature, Light Intensity) and adjust the thresholds to suit your plant.
-
-![Home Assistant blueprint editor adding a light toggle action and saving (BTN-1 example shown)](/assets/btn-1-blueprint-single-click-example.gif)
 
 !!! success "Each sensor group is disabled by default — enable only what matters!"
 
@@ -51,15 +45,9 @@ description: >-
 https://raw.githubusercontent.com/ApolloAutomation/Blueprints/refs/heads/main/PLT-1/PLT-1.yaml
 ```
 
-![Home Assistant Import a blueprint dialog, clicking Preview then Import blueprint (BTN-1 example shown)](/assets/btn-1-blueprint-auto-import.gif)
-
-3\. Click on **Apollo Automation PLT-1 Blueprint** and click on **Select a device** then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
-
-![Home Assistant blueprint editor, picking an Apollo device from Select a device (BTN-1 example shown)](/assets/btn-1-blueprint-select-btn-1.gif)
+3\. In your blueprints list, click **Apollo Automation PLT-1 Blueprint** to start a new automation from it. Click **Select a device**, then choose your **Apollo PLT-1** or **PLT-1B** from the dropdown menu.
 
 4\. Enter your **plant's name**, select your **mobile device**, enable the sensor groups you want, and set your thresholds.
-
-![Home Assistant blueprint editor adding a light toggle action and saving (BTN-1 example shown)](/assets/btn-1-blueprint-single-click-example.gif)
 
 !!! success "Each sensor group is disabled by default — enable only what matters!"
 

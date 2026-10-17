@@ -28,6 +28,8 @@ The <a href="https://www.hlktech.net/index.php?id=1157" target="_blank" rel="nor
 
 ![LD2450 Bluetooth toggle switched on in the Home Assistant Configuration card, highlighted](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
 
+*Shown on an MTR-1; the R PRO-1 has the same LD2450 Bluetooth switch.*
+
 2\. Open the HLKRadarTool App and select your device.
 
 !!! success "You need to be close to your device!"

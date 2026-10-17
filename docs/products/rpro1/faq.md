@@ -61,7 +61,7 @@ description: Frequently asked questions about the R PRO-1 PoE mmWave sensor.
 
 14\. **What kind of power supply is required for the R PRO-1?**
 
-* The R PRO-1 is powered via Ethernet (802.3 compliant) or USB-C and can be plugged into a standard wall outlet using a 5V 2A or bigger power supply.
+* The R PRO-1 is powered via PoE (802.3af compliant) or USB-C and can be plugged into a standard wall outlet using a 5V 2A or bigger power supply.
 
 15\. **Can I customize the R PRO-1 functionality?**
 

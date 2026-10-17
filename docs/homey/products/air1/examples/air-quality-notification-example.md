@@ -30,7 +30,7 @@ description: Example flow that sends alerts based on changing indoor air quality
 
 ![AIR-1 CO2 becomes greater than 999 ppm card in Homey](/assets/homey-flow-example-pic-7.png)
 
-7\. Duplicate steps 4 and 5 above but this time select "CO2 becomes less than" and place it on your flow canvas. Make sure to fill in your less than ppm value such as 1000.
+7\. Duplicate steps 4 and 5 above but this time select "CO2 becomes less than" and place it on your flow canvas. Make sure to fill in your less than ppm value such as 900 (the screenshot shows 1000; use 900). The gap between 900 and 999 keeps the light from flickering between red and green when CO2 hovers around 1000 ppm.
 
 ![AIR-1 CO2 cards for greater than 999 ppm and less than 1000 ppm in Homey](/assets/homey-flow-example-pic-5-1.png)
 
@@ -42,7 +42,7 @@ description: Example flow that sends alerts based on changing indoor air quality
 
 ![Homey flow linking CO2 greater than 999 ppm to an AIR-1 Set a color card set to red](/assets/homey-flow-example-pic-8.png)
 
-10\. Duplicate steps 8 and 9 but this time select green for the color when "CO2 becomes less than 1000 ppm".
+10\. Duplicate steps 8 and 9 but this time select green for the color when "CO2 becomes less than 900 ppm" (the screenshot shows 1000; use 900).
 
 ![Homey flow setting red above 999 ppm CO2 and green below 1000 ppm CO2 on the AIR-1](/assets/homey-flow-example-pic-10.png)
 
@@ -60,7 +60,7 @@ description: Example flow that sends alerts based on changing indoor air quality
 
 ![Homey push notification user list with Everyone who's home highlighted](/assets/homey-flow-example-pic-18.png)
 
-14\. Click "Add" and select "Delay" and then place it on your flow canvas. Change to minutes and input 5 for adding a 5 minute delay then drag a line from "set a color" to the delay.
+14\. Click "Add" and select "Delay" and then place it on your flow canvas. Change to minutes and input 5 for adding a 5 minute delay then drag a line from "set a color" to the delay (the screenshot shows 1000; use 900).
 
 ![Homey flow with the green Set a color card connected to a 5 minute delay](/assets/homey-flow-example-pic-15.png)
 
@@ -68,11 +68,11 @@ description: Example flow that sends alerts based on changing indoor air quality
 
 ![Homey card search for turn off with the AIR-1 card highlighted](/assets/homey-flow-example-pic-14.png)
 
-16\. Drag a line from the Delay in step 14 to the Turn off card and that's it! Click save at the top and give your flow a name.
+16\. Drag a line from the Delay in step 14 to the Turn off card and that's it! Click save at the top and give your flow a name. Your finished flow should look like this (the screenshot shows 1000; use 900).
 
 ![Completed Homey Advanced Flow for AIR-1 CO2 alerts with colors, a notification, and turn off](/assets/homey-flow-example-pic-16-1.png)
 
-17\. As a bonus, you can add a note reminding you what this automation does. Click "Add" then click "Note" and type in "CO2 level alert with RGB LEDs" on the note.
+17\. As a bonus, you can add a note reminding you what this automation does. Click "Add" then click "Note" and type in "CO2 level alert with RGB LEDs" on the note. Your flow should now look like this (the screenshot shows 1000; use 900).
 
 ![Homey Advanced Flow with a CO2 level alert with RGB LEDs note added](/assets/homey-flow-example-pic-17-1.png)
 

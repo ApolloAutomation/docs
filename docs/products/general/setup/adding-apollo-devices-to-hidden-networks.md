@@ -27,7 +27,7 @@ description: Tutorial for how to add Apollo Devices To Hidden Networks.
 
 ![MTR-1 YAML in ESPHome Device Builder with fast_connect: True added under wifi](/assets/hidden-ssid-tutorial-1.png)
 
-6 Click save then Install in the top right.
+6\. Click save then Install in the top right.
 
 ![ESPHome Device Builder YAML editor with an arrow pointing to the Save and Install buttons](/assets/hidden-ssid-tutorial-2.png)
 

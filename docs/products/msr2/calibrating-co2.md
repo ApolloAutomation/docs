@@ -18,6 +18,8 @@ This article will guide you through a simple calibration of your CO<sub>2</sub> 
 
 ![Apollo AIR-1 plugged in outdoors on concrete to read fresh air CO2 levels](/assets/air-1-co2-calibration-portrait-quick-pic-3.jpg)
 
+*Shown with an AIR-1; set your MSR-2 outdoors the same way.*
+
 2\. Go to your Home Assistant dashboard and hit the letter "e" - It will pop up with an entity filter then type in "Calibrate CO<sub>2</sub>" and select the correct device.
 
 !!! tip "Hint"
@@ -26,6 +28,10 @@ This article will guide you through a simple calibration of your CO<sub>2</sub> 
 
 ![Home Assistant entity search with the Calibrate SCD40 To 420ppm button circled in red](/assets/co2-calibration-quick-pic-1.png)
 
+*Shown for an AIR-1; your MSR-2 lists the same Calibrate SCD40 To 420ppm button.*
+
 3\. Click on the button that says "PRESS" and then you are done.
 
 ![Calibrate SCD40 To 420ppm entity dialog with the Press button circled in red](/assets/co2-calibration-quick-pic-2.png)
+
+*Shown for an AIR-1; the MSR-2 button dialog looks the same.*

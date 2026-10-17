@@ -46,7 +46,9 @@ How to tune the mmWave sensor using radar engineering mode.
     | 5 | 3-3.75 m / 9.84-12.30 ft | 40 | 40 |
     | 6 | 3.75-4.5 m / 12.30-14.76 ft | 30 | 15 |
     | 7 | 4.5-5.25 m / 14.76-17.22 ft | 30 | 15 |
-    | 8 | 5.25-6 m / 17.22-19.68 ft | 30 | 15 |
+    | 8 | 5.25-6 m / 17.22-19.69 ft | 30 | 15 |
+
+    ![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)
 
 7. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.  
     ![g0 move and still threshold sliders moved all the way to the right](/assets/high-threshold.png)
