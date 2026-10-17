@@ -1,10 +1,6 @@
 The easiest way is to let ESPHome Device Builder add the component for you. You can also paste the single line by hand.
 
-1\. Open ESPHome Device Builder and click **Edit** on your device. The button below opens the app right in your Home Assistant.
-
-<a href="http://homeassistant.local:8123/5c53de3b_esphome" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img alt="ESPHome logo" src="/assets/esphome-logo.svg" /> Open ESPHome Device Builder</a>
-
-Don't have it installed yet? Add it from the App Store with the badge below first.
+1\. Open the **ESPHome Device Builder** app from your Home Assistant sidebar and click **Edit** on your device. The button below opens the app's page, or offers to install it if you don't have it yet. Click **Open Web UI** there to reach your devices.
 
 [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=5c53de3b_esphome&repository_url=https%3A%2F%2Fgithub.com%2Fesphome%2Fhome-assistant-addon)
 
