@@ -43,6 +43,7 @@ mkdocs serve
 4. Verify the build is clean (no broken links or missing-plugin errors) via `mkdocs build`.
 5. Fill out the PR template and link any related issues.
 6. Use PR title format: `<type>: <description>` (types: `docs`, `fix`, `feat`, `chore`)
+7. Automated checks run on every PR: front matter, heading levels, image alt text, snippet includes, secrets in text, GPS location data in photos, and broken links or anchors on the built site. Problems appear as comments on the changed lines. See [tools/docs-checks/README.md](tools/docs-checks/README.md) for what each check looks for, how to fix it, and how to run them locally.
 
 ## Key files and folders
 
