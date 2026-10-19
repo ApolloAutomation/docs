@@ -58,6 +58,14 @@ Read the full style guide, but these are the ones worth checking twice:
   buttons, edit the snippet file, never the include line on a page.
   See [Community CTA on starter-kit pages](STYLE_GUIDE.md#11-community-cta-on-starter-kit-pages).
 
+## Automated PR checks
+
+Every pull request runs `tools/docs-checks/` (see its README): front
+matter, heading levels, alt text, snippet includes, secrets, GPS data in
+photos, and links and anchors on the built site. Run them locally before
+opening a PR. They can't read text inside images, so check screenshots
+and recordings for passwords, API keys, and personal details by eye.
+
 ## Keep the style guide current
 
 If you notice a recurring pattern that should be standardized but isn't

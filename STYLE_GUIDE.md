@@ -415,8 +415,16 @@ shrinks PNGs, so compress video before committing it.
 - **Phone recordings** (portrait) take `class="phone-media"`, which
   caps them at phone width and centers them. The class lives in
   `docs/stylesheets/extra.css`; never size media inline.
-- **Trim personal details** (names, email addresses, home names,
-  notifications) out of every recording before it's published.
+- **Trim personal details and secrets** (names, email addresses, home
+  names, notifications, Wi-Fi passwords, API keys) out of every recording
+  and screenshot before it's published. Compile and install logs print
+  the device's full configuration, so end a recording before the log
+  scrolls through it, and check YAML editor shots for an `api:
+  encryption: key:` value.
+- **Strip location data from photos.** Phones save the GPS location in
+  every photo. Remove it before committing:
+  `exiftool -gps:all= -overwrite_original docs/assets/<file>`. The PR
+  checks fail on any photo that still has it.
 - **Compress** with H.264, no audio track, and fast start, scaled to
   540px wide for clips and 720px for a full phone walkthrough. Aim for
   under 1 MB per clip and a few MB for a walkthrough:
