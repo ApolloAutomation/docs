@@ -12,7 +12,7 @@ Your Apollo MSR-1 has an onboard piezo buzzer that can play short tunes. In this
 
 ![Home Assistant sidebar with the Developer tools hammer icon highlighted in orange](/assets/screenshot-2023-11-01-at-10-52-38-pm.png)
 
-2\. Click **Actions** at the top of the page. Older Home Assistant versions call this tab **Services**, as in the screenshot at the end of this guide.
+2\. Click **Actions** at the top of the page. Older Home Assistant versions call this tab **Services**.
 
 3\. Choose your MSR-1's buzzer action. Start typing `buzzer` to find it faster.
 
@@ -34,7 +34,7 @@ Find more tunes in <a href="https://picaxe.com/rtttl-ringtones-for-tune-command/
 
 5\. Click the **Perform action** button in the bottom right.
 
-![Developer tools Services tab with the MSR-1 play_buzzer service and an RTTTL song_str highlighted](/assets/screenshot-2023-11-01-at-10-57-33-pm.png)
+![Home Assistant Actions tab with the MSR-1 play_buzzer action, a Mario RTTTL tune in song_str, and the Perform action button highlighted](/assets/msr-1-play-buzzer-action.png)
 
 Your MSR-1 plays the tune.
 

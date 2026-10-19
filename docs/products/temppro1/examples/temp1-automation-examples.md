@@ -44,7 +44,9 @@ With your thresholds set, the automation is now ready to be created.
 
 5\. Click **Add Trigger**, then **Entity**, then **Numeric state**, and search for your TEMP-1 probe sensor, such as "temp-1 temperature probe". In the box labeled **Above**, type the maximum temperature you picked in step 2. Advanced users can skip to the YAML at the end of this section.
 
-![Home Assistant numeric state trigger on Apollo TEMP-1 Max Probe Temp with Above set to 30](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
+![Home Assistant numeric state trigger on the TEMP-1 Temperature Probe, with the entity and the Above field set to 30 highlighted](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
+
+*Shown on a TEMP-1; pick your TEMP Pro-1 entity instead.*
 
 6\. Click **Add Action**, type "iPhone", and select your phone. If you don't see your phone, or you have an Android phone, type "notify" instead and scroll down until you find your phone in the list.
 
@@ -107,7 +109,9 @@ Set up a Home Assistant automation that uses the food probe while you cook chick
 
 4\. Click **Add Trigger**, then **Entity**, then **Numeric state**, and search for your TEMP-1 food probe sensor, such as "temp-1 food probe". In the box labeled **Above**, type the temperature you want for your food. This example uses 165°F (73.9°C), the temperature it's safe to cook chicken to. Advanced users can skip to the YAML at the end of this section.
 
-![Numeric state trigger on Apollo TEMP-1 Max Probe Temp with Above set to 165](/assets/temp-1-food-probe-ex-automation-pic-3.png)
+![Home Assistant numeric state trigger on the TEMP-1 Food Probe, with the entity and the Above field set to 165 highlighted](/assets/temp-1-food-probe-ex-automation-pic-3.png)
+
+*Shown on a TEMP-1; pick your TEMP Pro-1 entity instead.*
 
 5\. Click **Add Action**, type "iPhone", and select your phone. If you don't see your phone, or you have an Android phone, type "notify" instead and scroll down until you find your phone in the list.
 
@@ -205,7 +209,7 @@ Now add the **Choose** action. Option 1 runs when you turn Chicken Monitor on.
 
 ![Add condition dialog searching trigger id, showing the Triggered by condition](/assets/temp-1-cook-chicken-example-pic-13.png)
 
-11\. Check **Chicken Monitor On**, the trigger ID you created in step 5.
+11\. Check **State changed to on**, the first trigger in the list. It's the trigger you gave the Chicken Monitor On ID in step 5.
 
 12\. While still under **Option 1** in the Choose action, click **Add Action**, search "light", and select **Light: Turn on**.
 
