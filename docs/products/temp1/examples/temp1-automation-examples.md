@@ -32,7 +32,7 @@ Next, create the automation that sends the notification to your phone.
 
 5\. Click **Add trigger → Entity → Numeric state** and search for your TEMP-1 temperature probe, such as "temp-1 temperature probe". In the box labeled **Above**, type the maximum temperature you decided on in step 2. Prefer YAML? Skip ahead to the [freezer automation YAML](#freezer-automation-yaml).
 
-![Home Assistant numeric state trigger on TEMP-1 Max Probe Temp with the Above field set to 30 highlighted](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
+![Home Assistant numeric state trigger on the TEMP-1 Temperature Probe, with the entity and the Above field set to 30 highlighted](/assets/temp-1-temp-probe-ex-automation-pic-3.png)
 
 6\. Click **Add action**, type "iPhone", and select your phone. If you don't see your phone, or you have an Android phone, type "notify" instead and scroll down until you find your phone in the list.
 
@@ -97,7 +97,7 @@ This example walks you through setting up an automation in Home Assistant with t
 
 4\. Click **Add trigger → Entity → Numeric state** and search for your TEMP-1 food probe, such as "temp-1 food probe". In the box labeled **Above**, type the temperature you want for your food. This example uses 165°F (73.9°C), the temperature it's safe to cook chicken to. Prefer YAML? Skip ahead to the [food probe automation YAML](#food-probe-automation-yaml).
 
-![Home Assistant numeric state trigger with the TEMP-1 Max Probe Temp entity and Above 165 fields highlighted](/assets/temp-1-food-probe-ex-automation-pic-3.png)
+![Home Assistant numeric state trigger on the TEMP-1 Food Probe, with the entity and the Above field set to 165 highlighted](/assets/temp-1-food-probe-ex-automation-pic-3.png)
 
 5\. Click **Add action**, type "iPhone", and select your phone. If you don't see your phone, or you have an Android phone, type "notify" instead and scroll down until you find your phone in the list.
 
@@ -203,9 +203,9 @@ Option 1 runs when you turn Chicken Monitor on. It turns the LED green and tells
 
 ![Home Assistant Add condition dialog with trigger id searched and Triggered by listed](/assets/temp-1-cook-chicken-example-pic-13.png)
 
-11\. Check **Chicken Monitor On**, the trigger ID you created in step 5.
+11\. Check **State changed to on**, the first trigger in the list. It's the trigger you gave the Chicken Monitor On ID in step 5.
 
-![Home Assistant Choose action Option 1 with the trigger ID checkbox highlighted](/assets/temp-1-cook-chicken-example-pic-14.png)
+![Home Assistant Triggered by condition with the first trigger, State changed to on, checked and highlighted](/assets/temp-1-cook-chicken-example-pic-14.png)
 
 12\. Still under Option 1 in the Choose action, click **Add action**, search "light", and select **Light: Turn on**.
 
