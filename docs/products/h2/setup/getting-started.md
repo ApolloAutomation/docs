@@ -31,7 +31,7 @@ Each button plays one of these songs:
 
 4\. **Add to Home Assistant** (Optional)
 
-For additional customization, you will need to <a href="https://wiki.apolloautomation.com/products/h2/troubleshooting/boot-mode/" target="_blank" rel="noreferrer nofollow noopener">put the H-2 in boot mode</a> then flash the [smart H-2 firmware](https://apolloautomation.github.io/H-2/) and finally connect to Home Assistant following the [setup guide](https://wiki.apolloautomation.com/products/general/setup/getting-started/). With Home Assistant you can add new songs, change LED effects, and create custom automations.
+For additional customization, you will need to <a href="https://wiki.apolloautomation.com/products/h2/troubleshooting/boot-mode/" target="_blank" rel="noreferrer nofollow noopener">put the H-2 in boot mode</a> then flash the smart firmware from the [Apollo H-2 installer](https://install.apolloautomation.com/#/h-2) (choose **Smart (Wi-Fi)**) and finally connect to Home Assistant following the [setup guide](https://wiki.apolloautomation.com/products/general/setup/getting-started/). With Home Assistant you can add new songs, change LED effects, and create custom automations.
 
 5\. **Enjoy Your Ornament**
 

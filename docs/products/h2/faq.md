@@ -12,7 +12,7 @@ description: Frequently asked questions about the H-2.
 
 3\. **Is the Apollo H-2 “smart” right out of the box?**
 
-* The H-2 is pre-flashed with a simple firmware that operates independently, allowing you to play songs with the gold button without needing any additional setup. For a full “smart” experience, you can <a href="https://apolloautomation.github.io/H-2/" target="_blank" rel="noreferrer nofollow noopener">reflash the H-2 to the smart firmware</a> then join it to Home Assistant, where you can program custom automations, change songs, and adjust LED effects.
+* The H-2 is pre-flashed with a simple firmware that operates independently, allowing you to play songs with the gold button without needing any additional setup. For a full “smart” experience, you can reflash the H-2 to the smart firmware from the <a href="https://install.apolloautomation.com/#/h-2" target="_blank" rel="noreferrer nofollow noopener">Apollo H-2 installer</a> (choose **Smart (Wi-Fi)**), then join it to Home Assistant, where you can program custom automations, change songs, and adjust LED effects.
 
 4\. **How do I activate the pre-loaded songs?**
 
@@ -28,7 +28,7 @@ description: Frequently asked questions about the H-2.
 
 7\. **How do I set up the Apollo H-2 with Home Assistant?**
 
-* To integrate the H-2 with Home Assistant,<a href="https://apolloautomation.github.io/H-2/" target="_blank" rel="noreferrer nofollow noopener"> reflash the sensor with smart firmware</a>.
+* To integrate the H-2 with Home Assistant, reflash it with the smart firmware: open the <a href="https://install.apolloautomation.com/#/h-2" target="_blank" rel="noreferrer nofollow noopener">Apollo H-2 installer</a> and choose **Smart (Wi-Fi)**.
 
 8\. **Does the ornament require any additional power source?**
 

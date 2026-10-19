@@ -1,4 +1,5 @@
 ---
+title: How to wake up your sensor
 description: "How to wake up your Apollo device which is currently sleeping."
 ---
 --8<-- "products/general/battery-sensors/wake-up-battery-sensor.md:5:"

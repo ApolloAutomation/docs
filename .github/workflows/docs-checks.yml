@@ -1,0 +1,50 @@
+name: docs-checks
+# Runs on every pull request into dev or main. Each step reports problems as
+# annotations on the PR's changed lines; later steps still run if an earlier
+# one fails, so one run shows everything. Scripts live in tools/docs-checks/.
+on:
+  pull_request:
+    branches:
+      - dev
+      - main
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: 3.x
+      - run: pip install -r requirements.txt
+      - run: sudo apt-get update && sudo apt-get install -y libimage-exiftool-perl
+      - name: List changed files
+        id: changed
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          if [ -n "$base" ]; then
+            git diff --name-only --diff-filter=AM "$base"...HEAD > changed.txt
+          else
+            : > changed.txt
+          fi
+          echo "Changed files:"; cat changed.txt
+      - name: Markdown (front matter, headings, alt text, includes)
+        run: python tools/docs-checks/check_markdown.py docs
+      - name: No secrets in text
+        if: always()
+        run: python tools/docs-checks/check_secrets.py docs
+      - name: Images (GPS location data, file size)
+        if: always()
+        run: CHANGED_FILES="$(cat changed.txt)" python tools/docs-checks/check_images.py docs/assets
+      - name: Build the site
+        if: always()
+        env:
+          DISABLE_MKDOCS_2_WARNING: "true"
+        run: mkdocs build -d site
+      - name: Links, anchors, and image alt text in the built site
+        if: always()
+        run: python tools/docs-checks/check_links.py site docs

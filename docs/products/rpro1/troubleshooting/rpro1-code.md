@@ -21,17 +21,17 @@ With the board out of the case:
 - While still holding the button down, plug a USB-C cable into the USB-C port of your R PRO-1.
 - Let go of the button.
 
-2\. Open the <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo R PRO-1 Installer</a>.
+2\. Open the <a href="https://install.apolloautomation.com/#/r-pro-1" target="_blank" rel="noreferrer nofollow noopener">Apollo R PRO-1 installer</a>.
 
-3\. Click the big **Connect** button.
+3\. Under **Choose your firmware**, pick **WiFi** if your R PRO-1 connects over Wi-Fi, or **Ethernet** if it connects over PoE or Ethernet. Then click **Connect & Install**.
 
-![Apollo R PRO-1 Installer page with the Ethernet Firmware CONNECT button highlighted](/assets/r-pro-1-reflash-connect-button.png)
+![R PRO-1 page of the Apollo installer with the WiFi variant and the Connect & Install button outlined in red](/assets/installer-r-pro-1-wifi.png)
 
 4\. In the browser pop-up, select the open COM port (the R PRO-1's serial port, shown as USB JTAG/serial debug unit in the example below), then click **Connect**.
 
 ![Browser serial port prompt with the USB JTAG serial debug unit COM port and Connect button](/assets/r-pro-1-reflash-connect-comp-port.png)
 
-5\. Click **Install R PRO-1**.
+5\. Click **Install ApolloAutomation.R-PRO-1-W** if you chose **WiFi**, or **Install ApolloAutomation.R-PRO-1-ETH** if you chose **Ethernet**.
 
 ![Installer Device Dashboard with the install R PRO-1 Ethernet firmware option highlighted](/assets/r-pro-1-reflash-click-install.png)
 

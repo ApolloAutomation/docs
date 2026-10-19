@@ -158,6 +158,20 @@ When introducing the broader project, prefer **ESPHome ecosystem** over
 context (for example, when the audience may not recognize the term).
 Avoid **burn** and **load**.
 
+Link firmware installs to the product's own page on the Apollo
+installer, `https://install.apolloautomation.com/#/<product>` (for
+example `#/air-1` or `#/r-pro-1`), not the older
+`apolloautomation.github.io/<PRODUCT>/` installers. Name buttons the way
+the installer shows them: the variant (**USB Power**, **Battery Power**,
+**WiFi**, **Ethernet**, **Smart (Wi-Fi)**, **Basic (No Wi-Fi)**) and
+then **Connect & Install**, and the firmware option in the next dialog
+exactly as listed (for example **Install ApolloAutomation.AIR-1**). The
+B models use their parent's page with **Battery Power** (TEMP-1B on
+`#/temp-1`, PLT-1B on `#/plt-1`). Keep the older installer link only
+where the Apollo installer has no equivalent: the TEMP Pro-1, and TEMP-1
+Revision 1 firmware. The LED-1 uses the official WLED installer at
+`https://install.wled.me/`.
+
 ---
 
 ## 6. Voice and structure
@@ -415,8 +429,16 @@ shrinks PNGs, so compress video before committing it.
 - **Phone recordings** (portrait) take `class="phone-media"`, which
   caps them at phone width and centers them. The class lives in
   `docs/stylesheets/extra.css`; never size media inline.
-- **Trim personal details** (names, email addresses, home names,
-  notifications) out of every recording before it's published.
+- **Trim personal details and secrets** (names, email addresses, home
+  names, notifications, Wi-Fi passwords, API keys) out of every recording
+  and screenshot before it's published. Compile and install logs print
+  the device's full configuration, so end a recording before the log
+  scrolls through it, and check YAML editor shots for an `api:
+  encryption: key:` value.
+- **Strip location data from photos.** Phones save the GPS location in
+  every photo. Remove it before committing:
+  `exiftool -gps:all= -overwrite_original docs/assets/<file>`. The PR
+  checks fail on any photo that still has it.
 - **Compress** with H.264, no audio track, and fast start, scaled to
   540px wide for clips and 720px for a full phone walkthrough. Aim for
   under 1 MB per clip and a few MB for a walkthrough:

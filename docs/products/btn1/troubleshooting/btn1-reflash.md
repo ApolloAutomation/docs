@@ -20,11 +20,11 @@ description: Step by step guide for reflashing The BTN-1.
 
 ![Holding the BTN-1 boot button while pressing and releasing the reset button](/assets/btn-1-boot-mode-method-2.webp)
 
-4\. Navigate to our installer page using a chromium based browser such as Chrome or Edge and click **connect** under <a href="https://apolloautomation.github.io/BTN-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo BTN-1 Installer</a>. Select the open com port and click **connect**.
+4\. Open the <a href="https://install.apolloautomation.com/#/btn-1" target="_blank" rel="noreferrer nofollow noopener">Apollo BTN-1 installer</a> in a Chromium-based browser such as Chrome or Edge and click **Connect & Install**. Select the open com port and click **Connect**.
 
-![Apollo BTN-1 Installer page, clicking Connect and choosing the USB JTAG serial port](/assets/btn-1-reflash-installer-connect.gif)
+![BTN-1 page of the Apollo installer with the Connect & Install button outlined in red](/assets/installer-btn-1.png)
 
-5\. Click Install **BTN-1** then click **Install** again.
+5\. Click **Install ApolloAutomation.BTN-1**, then click **Install** again.
 
 ![Clicking Install ApolloAutomation.BTN-1 in the Device Dashboard, then Install to confirm](/assets/btn-1-reflash-install.gif)
 

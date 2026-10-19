@@ -38,7 +38,7 @@ To tune your sensor, you'll turn on Radar Engineering Mode and adjust the gate t
 
 5\. The gates are different distances from the sensor.
 
-![Radar Gates Colored](/assets/radar-gates-colored.png "Radar Gates Colored")
+![Fan diagram of LD2410 gates G1 to G8 grouped into example zones: Zone 1 (G1 to G2) in red, Zone 2 (G3 to G5) in blue, and Zone 3 (G6 to G8) in green, reaching 6 m](/assets/radar-gates-colored.png)
 
 6\. Moving the gate still and move threshold slider to the right increases the amount of energy needed to trigger the sensor. Do this if you want the gate to be less sensitive.
 

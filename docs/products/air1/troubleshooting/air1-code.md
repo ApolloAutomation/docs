@@ -13,23 +13,23 @@ If your Apollo AIR-1 becomes unresponsive and you've exhausted the other trouble
 
 ## Re-flash the factory firmware
 
-Follow these steps to put the factory firmware back on your AIR-1 from the Apollo AIR-1 Installer.
+Follow these steps to put the factory firmware back on your AIR-1 from the Apollo AIR-1 installer.
 
 1\. <a href="https://wiki.apolloautomation.com/products/air1/troubleshooting/air1-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your AIR-1 in boot mode</a>: hold down the boot button (the right of the two buttons beside the USB-C port), then plug in the USB cable. Let go of the button once the cable is in.
 
 ![Tool pointing to the AIR-1 boot button, the right of two buttons beside the USB-C port](/assets/air-1-boot-button.jpg)
 
-2\. Navigate to the <a href="https://apolloautomation.github.io/AIR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo AIR-1 Installer</a>.
+2\. Open the <a href="https://install.apolloautomation.com/#/air-1" target="_blank" rel="noreferrer nofollow noopener">Apollo AIR-1 installer</a>.
 
-3\. Click the big **Connect** button on the installer page.
+3\. Click **Connect & Install** on the installer page.
 
-![Apollo AIR-1 Installer page with the Connect button highlighted](/assets/air-1-reflash-pic-1.png)
+![AIR-1 page of the Apollo installer with the Connect & Install button outlined in red](/assets/installer-air-1.png)
 
 4\. In the browser pop-up, select your AIR-1's open serial (COM) port, then click **Connect**. In the screenshot below, it's listed as USB JTAG/serial debug unit.
 
 ![Browser serial port dialog with the USB JTAG/serial debug unit port and the Connect button](/assets/air-1-reflash-pic-2-1.png)
 
-5\. Click **Install AIR-1**.
+5\. Click **Install ApolloAutomation.AIR-1**.
 
 ![Installer Device Dashboard with the Install AIR-1 option highlighted](/assets/air-1-reflash-pic-3.png)
 

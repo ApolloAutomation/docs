@@ -39,6 +39,10 @@ Read the full style guide, but these are the ones worth checking twice:
 - **Apollo addons** (hardware modules) and **Home Assistant apps**
   (formerly add-ons) are different things and not interchangeable.
 - **ESPHome** is the only correct casing.
+- Firmware install links go to the product's page on the Apollo
+  installer (`https://install.apolloautomation.com/#/air-1`), not the
+  old `apolloautomation.github.io/AIR-1/` installers. See
+  [Flashing firmware](STYLE_GUIDE.md#flashing-firmware).
 - **No em dashes** anywhere in user-facing copy.
 - Second person, imperative voice for action copy. Wrap numbered steps
   with framing copy (what the reader unlocks, what success looks like).
@@ -57,6 +61,14 @@ Read the full style guide, but these are the ones worth checking twice:
   `--8<-- "_snippets/community-help.md"`. To change the CTA copy or
   buttons, edit the snippet file, never the include line on a page.
   See [Community CTA on starter-kit pages](STYLE_GUIDE.md#11-community-cta-on-starter-kit-pages).
+
+## Automated PR checks
+
+Every pull request runs `tools/docs-checks/` (see its README): front
+matter, heading levels, alt text, snippet includes, secrets, GPS data in
+photos, and links and anchors on the built site. Run them locally before
+opening a PR. They can't read text inside images, so check screenshots
+and recordings for passwords, API keys, and personal details by eye.
 
 ## Keep the style guide current
 

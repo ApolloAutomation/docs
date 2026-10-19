@@ -15,27 +15,27 @@ Follow these steps to put your TEMP-1 in boot mode, flash the factory firmware f
 
 1\. <a href="https://wiki.apolloautomation.com/products/temp1/troubleshooting/temp1-boot-mode/" target="_blank" rel="noopener">Put your TEMP-1 in boot mode</a>: hold down the boot button, then plug in the USB cable.
 
-2\. Open the [Apollo TEMP-1 Installer](https://apolloautomation.github.io/TEMP-1/) page.
+2\. Open the [Apollo TEMP-1 installer](https://install.apolloautomation.com/#/temp-1) page.
 
-3\. Under the **Non Battery Firmware** option, click **Connect** for Revision 2 (R2). Non Battery Firmware is the right choice because you're using a TEMP-1.
+3\. Choose **USB Power**, then click **Connect & Install**. USB Power is the right choice because you're using a TEMP-1.
 
-![Apollo TEMP-1 Installer page with the Non Battery Firmware Revision 2 Connect button clicked](/assets/temp-1-reflash-pic-1-1.png)
+![TEMP-1 page of the Apollo installer with the USB Power variant and the Connect & Install button outlined in red](/assets/installer-temp-1-usb-power.png)
 
 !!! tip "Use R2 unless support tells you to use R1"
 
-    R2 is what all of our devices use, except a very small batch of TEMP-1 and TEMP-1B boards. Support will tell you if yours needs R1.
+    The Apollo installer installs the Revision 2 (R2) firmware. R2 is what all of our devices use, except a very small batch of TEMP-1 and TEMP-1B boards. Support will tell you if yours needs Revision 1 (R1). If it does, click **Connect** under **Non Battery Firmware Revision 1** on the [classic TEMP-1 installer](https://apolloautomation.github.io/TEMP-1/) instead. In the next steps, the firmware option is named **Install ApolloAutomation.TEMP-1**.
 
 4\. In the browser's serial port pop-up, select the open COM port (**USB JTAG/serial debug unit** in the screenshot below), then click **Connect**.
 
 ![Browser serial port dialog with the USB JTAG/serial debug unit port selected and Connect clicked](/assets/temp-1-reflash-pic-2.png)
 
-5\. Click **Install ApolloAutomation.TEMP-1**.
+5\. Click **Install Apollo.TEMP-1_R2**.
 
-![Device Dashboard dialog with Install ApolloAutomation.TEMP-1 highlighted](/assets/temp-1-reflash-pic-3.png)
+![Device Dashboard dialog with the TEMP-1 firmware install option highlighted](/assets/temp-1-reflash-pic-3.png)
 
 6\. Click **INSTALL**.
 
-![Install ApolloAutomation.TEMP-1 confirmation dialog with the Install button highlighted](/assets/temp-1-reflash-pic-4.png)
+![TEMP-1 firmware install confirmation dialog with the Install button highlighted](/assets/temp-1-reflash-pic-4.png)
 
 7\. When the installer shows **Installation complete!**, the flash is finished. Click **Next**, then close the browser window.
 

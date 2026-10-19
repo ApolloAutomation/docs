@@ -21,11 +21,11 @@ Follow these steps to put your PLT-1B in boot mode and install the factory firmw
 
 ![Tool inserted into the boot button opening on the side of the closed PLT-1B case](/assets/plt-boot-mode-pic-4.jpg)
 
-2\. Open the <a href="https://apolloautomation.github.io/PLT-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1B Installer</a>.
+2\. Open the <a href="https://install.apolloautomation.com/#/plt-1" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1 installer</a>. The PLT-1B uses the same page as the PLT-1.
 
-3\. Under **Battery Firmware**, click the big **Connect** button.
+3\. Choose **Battery Power**, then click **Connect & Install**.
 
-![Apollo PLT-1 Installer page with the Battery Firmware Connect button being clicked](/assets/plt-1b-reflash-pic-1.png)
+![PLT-1 page of the Apollo installer with the Battery Power variant and the Connect & Install button outlined in red](/assets/installer-plt-1-battery-power.png)
 
 4\. Select the open COM port, then click **Connect**.
 

@@ -16,13 +16,13 @@ description: Step by step guide for re-flashing the H-2 back to factory firmware
 
 ![Holding the boot button on the H-2 while plugging a USB-C cable into it](/assets/h-2-boot-mode-method-1-boot-button.webp)
 
-4\. Navigate to our installer page using a chromium based browser such as Chrome or Edge and click **connect** under **H-2 Smart Wi-Fi Firmware** or **H-2 No Wi-Fi Firmware**. Select the open com port and click **connect**.
+4\. Open the Apollo H-2 installer with the button below, using a Chromium-based browser such as Chrome or Edge. Under **Choose your firmware**, click **Smart (Wi-Fi)** to join your Wi-Fi and Home Assistant, or **Basic (No Wi-Fi)** to go back to the firmware the ornament ships with. Then click **Connect & Install**, select the open com port, and click **Connect**.
 
-[Click here to head to the reflashing site!](https://apolloautomation.github.io/H-2/){   .md-button .md-button--primary }
+[Apollo H-2 installer](https://install.apolloautomation.com/#/h-2){   .md-button .md-button--primary }
 
-![Apollo H-2 Installer page: clicking Connect, picking the serial port, and the device menu opening](/assets/h-2-reflash-installer-connect.gif)
+![H-2 page of the Apollo installer with the Smart (Wi-Fi) variant and the Connect & Install button outlined in red](/assets/installer-h-2-smart.png)
 
-5\. Click Install **H-2** then click **Install** again.
+5\. Click **Install ApolloAutomation.H-2** (Smart) or **Install ApolloAutomation.H-2D** (Basic), then click **Install** again.
 
 ![Clicking Install ApolloAutomation.H-2, confirming Install, and the installer erasing the device](/assets/h-2-reflash-install.gif)
 
