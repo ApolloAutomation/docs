@@ -6,11 +6,15 @@ description: Make your room celebrate with the Game Day Scoreboard on your M-1 b
 
 <span class="difficulty lvl-3">Difficulty: Level 3</span>
 
-Your M-1 already throws a splash in your team's color when they score. This automation brings the rest of the room along: every time your team puts points on the board, your lights flash. The opponent's scores, kickoff, halftime, and the final leave the lights alone.
+In football, baseball, hockey, and soccer, your Apollo M-1 already throws a splash in your team's color when they score. This automation brings the rest of the room along: every time your team puts points on the board, your lights flash. The opponent's scores, kickoff, halftime, and the final leave the lights alone.
+
+!!! warning "Not for basketball"
+
+    A basketball game has around a hundred scoring plays, so the panel only celebrates the win, and this automation would flash your lights on almost every basket. Use it for NFL, college football, MLB, NHL, MLS, and Premier League teams.
 
 !!! note "Before you start"
 
-    - Your M-1 runs Game Day Scoreboard and follows your team, in **My team** or **Favorite teams**. See [Getting Started (Game Day Scoreboard)](/products/m1/setup/getting-started-m1-game-day.md).
+    - Your M-1 runs Game Day Scoreboard and follows your team, in **My team** or **Favorite teams**. See [Getting started (Game Day Scoreboard)](/products/m1/setup/getting-started-m1-game-day.md).
     - The scoreboard is added to Home Assistant through the ESPHome integration.
     - A light in Home Assistant that you want to flash.
 
@@ -25,13 +29,15 @@ The scoreboard's **Game Status** entity sums up the game in one line, with the t
 | Halftime | `Halftime | DAL 14, PHI 7` |
 | The final | `Final | DAL 31, PHI 28` |
 
-Game Status changes when a game starts, when someone scores, and when it ends, not on every play. The automation compares the old and new value, and runs only when the game is live and the first score, your team's, went up.
+Game Status changes when a game starts, when someone scores, and when it ends, not on every play. The automation compares the old and new value, and runs only when the same game is still live and the first score, your team's, went up. When the panel switches to a different game, the lights stay off.
 
 !!! tip "Live games mode"
 
-    In **Live games** the panel follows a game picked for you, and the first team listed is whichever side it follows. The automation then flashes for that team.
+    In **Live games** the panel follows a game picked for you, and the first team listed is whichever side it follows, so the automation flashes for that team. The panel moves to another game when that game ends or after **Switch every** minutes; a switch to a different game never flashes the lights.
 
 ## Find your Game Status entity
+
+The automation watches one entity on your scoreboard. Copy its ID now so you can paste it into the automation in the next section.
 
 1. Go to **Settings → Devices & services** and open the **ESPHome** integration.
 
@@ -41,6 +47,8 @@ Game Status changes when a game starts, when someone scores, and when it ends, n
 3. Click the gear icon and copy the **Entity ID**. It ends with `_game_status`.
 
 ## Create the automation
+
+This is where your lights join the celebration. You paste a ready-made automation, then point it at your Game Status entity and the light you want to flash.
 
 1. Go to **Settings → Automations & scenes** and click **Create automation**, then **Create new automation**.
 
@@ -64,10 +72,19 @@ conditions:
     value_template: >-
       {% set before = trigger.from_state.state.split(' | ') if trigger.from_state else [] %}
       {% set after = trigger.to_state.state.split(' | ') if trigger.to_state else [] %}
-      {% if before | length == 2 and after | length == 2
+      {% if before | length >= 2 and after | length >= 2
             and before[0] in ['Live', 'Halftime'] and after[0] in ['Live', 'Halftime'] %}
-        {{ (after[1].split(', ')[0].split(' ') | last | int(0))
-           > (before[1].split(', ')[0].split(' ') | last | int(0)) }}
+        {% set old_line = before[1].split(', ') %}
+        {% set new_line = after[1].split(', ') %}
+        {% if old_line | length == 2 and new_line | length == 2 %}
+          {% set old_team = old_line[0].rsplit(' ', 1) %}
+          {% set new_team = new_line[0].rsplit(' ', 1) %}
+          {{ new_team[0] == old_team[0]
+             and new_line[1].rsplit(' ', 1)[0] == old_line[1].rsplit(' ', 1)[0]
+             and (new_team[-1] | int(0)) > (old_team[-1] | int(0)) }}
+        {% else %}
+          false
+        {% endif %}
       {% else %}
         false
       {% endif %}
