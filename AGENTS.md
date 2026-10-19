@@ -39,6 +39,10 @@ Read the full style guide, but these are the ones worth checking twice:
 - **Apollo addons** (hardware modules) and **Home Assistant apps**
   (formerly add-ons) are different things and not interchangeable.
 - **ESPHome** is the only correct casing.
+- Firmware install links go to the product's page on the Apollo
+  installer (`https://install.apolloautomation.com/#/air-1`), not the
+  old `apolloautomation.github.io/AIR-1/` installers. See
+  [Flashing firmware](STYLE_GUIDE.md#flashing-firmware).
 - **No em dashes** anywhere in user-facing copy.
 - Second person, imperative voice for action copy. Wrap numbered steps
   with framing copy (what the reader unlocks, what success looks like).

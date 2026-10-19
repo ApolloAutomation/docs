@@ -15,11 +15,11 @@ If your Apollo AIR-1 becomes unresponsive and you've exhausted the other trouble
 
 ![AIR-1 case with a tool pointing at the boot button left of the USB-C port](/assets/air-1-boot-button.jpg)
 
-2\. Go to the <a href="https://apolloautomation.github.io/AIR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo AIR-1 Installer</a> page.
+2\. Go to the <a href="https://install.apolloautomation.com/#/air-1" target="_blank" rel="noreferrer nofollow noopener">Apollo AIR-1 installer</a> page.
 
-3\. Click the big **Connect** button.
+3\. Click **Connect & Install**.
 
-![Apollo AIR-1 Installer web page with the Connect button highlighted](/assets/air-1-reflash-pic-1.png)
+![AIR-1 page of the Apollo installer with the Connect & Install button outlined in red](/assets/installer-air-1.png)
 
 4\. Select the open COM port, then click **Connect**.
 

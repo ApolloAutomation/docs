@@ -16,17 +16,17 @@ Follow these steps to put your device in boot mode and install the factory firmw
 
 ![Side of the PLT-1 case with the boot button opening circled in red](/assets/screenshot-2024-10-23-at-12-32-55-pm.png)
 
-2\. Navigate to our installer page and click connect under Non Battery Firmware <a href="https://apolloautomation.github.io/PLT-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1 Installer</a>
+2\. Navigate to the <a href="https://install.apolloautomation.com/#/plt-1" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1 installer</a> and choose **USB Power** since you are using a PLT-1.
 
-3\. Click the big "Connect" button.
+3\. Click **Connect & Install**.
 
-![Apollo PLT-1 Installer with the Non Battery Firmware Connect button highlighted](/assets/plt-1-reflash-pic-1-1.png)
+![PLT-1 page of the Apollo installer with the USB Power variant and the Connect & Install button outlined in red](/assets/installer-plt-1-usb-power.png)
 
 4\. Select the open com port then click Connect.
 
 ![Browser serial port prompt with USB JTAG/serial debug unit selected and the cursor on Connect](/assets/plt-1-reflash-pic-2-1.png)
 
-5\. Click "Install ApolloAutomation.PLT-1".
+5\. Click **Install ApolloAutomation.PLT-1**.
 
 ![Device Dashboard menu with Install ApolloAutomation.PLT-1 highlighted](/assets/plt-1-reflash-pic-3.png)
 

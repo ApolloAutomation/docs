@@ -20,15 +20,15 @@ description: Step by step guide for reflashing The PUMP-1.
 
 ![Holding the PUMP-1 boot button while plugging in the USB-C cable](/assets/pump-1-hold-boot-button-video.webp)
 
-4\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/PUMP-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PUMP-1 Installer</a>.
+4\. Open the <a href="https://install.apolloautomation.com/#/pump-1" target="_blank" rel="noreferrer nofollow noopener">Apollo PUMP-1 installer</a> and click **Connect & Install**.
 
-![Apollo PUMP-1 Installer page with the cursor on the Connect button](/assets/pump-1-reflash-connect-button.png)
+![PUMP-1 page of the Apollo installer with the Connect & Install button outlined in red](/assets/installer-pump-1.png)
 
 5\. Select the open com port then click Connect.
 
 ![Browser serial port prompt with USB JTAG/serial debug unit selected and the cursor on Connect](/assets/pump-1-reflash-com-port.png)
 
-6\. Click Install PUMP-1.
+6\. Click **Install ApolloAutomation.PUMP-1**.
 
 ![Device Dashboard menu with the cursor on Install ApolloAutomation.PUMP-1](/assets/pump-1-reflash-click-install.png)
 
