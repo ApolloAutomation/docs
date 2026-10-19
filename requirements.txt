@@ -6,3 +6,5 @@ markdown-include
 pymdown-extensions
 pillow
 cairosvg
+# selectolax 1.0.1 makes mkdocs-glightbox drop every image from the built site (Oct 2026).
+selectolax<1.0.1
