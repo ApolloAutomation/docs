@@ -34,4 +34,4 @@ The MSR-2 can also be mounted on the ceiling if you can provide power and mount 
 
 **![Table of LD2410 gates 0 to 8 with distance ranges in meters and feet and default move and still thresholds](/assets/ld2410-gate-table.png)![Radar Distance Resolution set to 0.75m with Radar End Zone 1, 2, and 3 at 50, 100, and 200 cm](/assets/gate-zones-and-rr.png)**
 
-![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)![Radar gate diagram with Zones 1, 2, and 3 shaded red, blue, and green over gates G1 to G7](/assets/radar-gates-colored.png)
+![Fan diagram of LD2410 gates G1 to G8, each 0.75 m deep, reaching 6 m (19.69 ft) from the sensor](/assets/ld2410-gate-map.png)![Fan diagram of LD2410 gates G1 to G8 grouped into example zones: Zone 1 (G1 to G2) in red, Zone 2 (G3 to G5) in blue, and Zone 3 (G6 to G8) in green, reaching 6 m](/assets/radar-gates-colored.png)
