@@ -15,7 +15,9 @@ Follow these steps to flash fresh firmware onto your H-1 and find it again in Ho
 
 1\. Hold the boot button, then plug your H-1 into your computer with a quality USB-C cable that supports data transfer. Let go of the boot button once the USB cable is plugged in.
 
-2\. Open our [H-1 install page](https://apolloautomation.github.io/H-1/) and click **Connect**.
+2\. Open the [Apollo H-1 installer](https://install.apolloautomation.com/#/h-1) and click **Connect & Install**. The installer has one firmware for the H-1, the smart Wi-Fi firmware.
+
+![H-1 page of the Apollo installer with the Connect & Install button outlined in red](/assets/installer-h-1.png)
 
 3\. Select your Apollo device and click **Connect**. It shows with a name similar to the one below. If you aren't sure which device it is, unplug the H-1 and see which one disappears.
 

@@ -16,17 +16,17 @@ If your device has already been added to Homey, please <a href="https://wiki.apo
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MSR-2 then let go of the button.
 
-3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/MSR-2/" target="_blank" rel="noreferrer nofollow noopener">Apollo MSR-2 Installer</a>.
+3\. Open the <a href="https://install.apolloautomation.com/#/msr-2" target="_blank" rel="noreferrer nofollow noopener">Apollo MSR-2 installer</a>.
 
-4\. Click the big "Connect" button.
+4\. Click **Connect & Install**.
 
-![Apollo MSR-2 Installer page with the CONNECT button highlighted](/assets/msr-2-reflash-pic-1.png)
+![MSR-2 page of the Apollo installer with the Connect & Install button outlined in red](/assets/installer-msr-2.png)
 
 5\. Select the open com port then click Connect.
 
 ![Browser serial port dialog listing the USB JTAG serial debug unit with the Connect button](/assets/msr-2-reflash-pic-2.png)
 
-6\. Click "Install MSR-2".
+6\. Click **Install ApolloAutomation.MSR-2**.
 
 ![Installer Device Dashboard menu with INSTALL MSR-2 highlighted](/assets/msr-2-reflash-pic-3.png)
 

@@ -38,9 +38,7 @@ Follow these steps to turn on the LD2450's Bluetooth and set up its zones in the
 
 1\. Open your R PRO-1's web server (see address tip above), scroll down until you see **LD2450 Bluetooth**, and toggle it on.
 
-![Device Configuration panel with the LD2450 Bluetooth toggle switched on and highlighted](/assets/mtr-1-toggle-on-ld2450-bluetooth.png)
-
-*Shown on an MTR-1; the R PRO-1 has the same LD2450 Bluetooth switch.*
+![R PRO-1 web page with the LD2450 Bluetooth switch turned on and highlighted](/assets/r-pro-1-toggle-on-ld2450-bluetooth.png)
 
 2\. Open the HLKRadarTool App and select your device.
 

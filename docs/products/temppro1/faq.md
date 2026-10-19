@@ -6,7 +6,7 @@ description: Frequently asked questions about the TEMP Pro-1 temperature sensor.
 
 1\. **How is the TEMP Pro-1 powered?**
 
-* PoE (IEEE 802.3-compliant) powered or...
+* PoE (802.3af compliant) powered or...
 * USB-C at 5 volts using less than 1 amp of power.
 
 2\. **What are the Optional Probe Addons?**

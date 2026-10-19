@@ -18,17 +18,17 @@ Follow these steps to put your device in boot mode and install the factory firmw
 
 2\. Push and hold the boot button. While still holding the button down, plug in a USB-C cable into the USB-C port of your MTR-1 then let go of the button.
 
-3\. Navigate to our installer page and click connect under <a href="https://apolloautomation.github.io/MTR-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo MTR-1 Installer</a>.
+3\. Open the <a href="https://install.apolloautomation.com/#/mtr-1" target="_blank" rel="noreferrer nofollow noopener">Apollo MTR-1 installer</a>.
 
-4\. Click the big "Connect" button.
+4\. Click **Connect & Install**.
 
-![Apollo MTR-1 Installer page with the Connect button outlined in red](/assets/mtr-1-reflash-pic-1.png)
+![MTR-1 page of the Apollo installer with the Connect & Install button outlined in red](/assets/installer-mtr-1.png)
 
 5\. Select the open com port then click Connect.
 
 ![Browser serial port prompt with the USB JTAG/serial debug unit selected and Connect clicked](/assets/mtr-1-reflash-pic-2.png)
 
-6\. Click "Install MTR-1".
+6\. Click **Install ApolloAutomation.MTR-1**.
 
 ![Device Dashboard menu with the Install MTR-1 option selected](/assets/mtr-1-reflash-pic-3.png)
 

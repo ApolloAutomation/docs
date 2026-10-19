@@ -19,11 +19,11 @@ If your Apollo PLT-1B becomes unresponsive and you've exhausted the other troubl
 
 ![Closed PLT-1B case with tweezers inserted into the boot button opening on the side](/assets/plt-boot-mode-pic-4.jpg)
 
-2\. Open the <a href="https://apolloautomation.github.io/PLT-1/" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1B Installer</a>.
+2\. Open the <a href="https://install.apolloautomation.com/#/plt-1" target="_blank" rel="noreferrer nofollow noopener">Apollo PLT-1 installer</a>. The PLT-1B uses the same page as the PLT-1.
 
-3\. Under **Battery Firmware**, click the big **Connect** button.
+3\. Choose **Battery Power**, then click **Connect & Install**.
 
-![Apollo PLT-1 Installer with the cursor on the Battery Firmware Connect button](/assets/plt-1b-reflash-pic-1.png)
+![PLT-1 page of the Apollo installer with the Battery Power variant and the Connect & Install button outlined in red](/assets/installer-plt-1-battery-power.png)
 
 4\. In the browser pop-up, select the open COM port (the PLT-1B's serial port, shown as USB JTAG/serial debug unit in the example below), then click **Connect**.
 

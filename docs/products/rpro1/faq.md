@@ -32,7 +32,7 @@ description: Frequently asked questions about the R PRO-1 PoE mmWave sensor.
 
 7\. **How do I connect the R PRO-1 to Home Assistant?**
 
-* The R PRO-1 connects to your Home Assistant instance through ESPHome using Wi-Fi. Once connected, you can switch to using the ethernet firmware. You can also reflash it to Ethernet firmware <a href="https://apolloautomation.github.io/R_PRO-1/" target="_blank" rel="noreferrer nofollow noopener">here</a>.
+* The R PRO-1 connects to your Home Assistant instance through ESPHome using Wi-Fi. Once connected, you can switch to using the ethernet firmware. You can also reflash it to Ethernet firmware from the <a href="https://install.apolloautomation.com/#/r-pro-1" target="_blank" rel="noreferrer nofollow noopener">Apollo R PRO-1 installer</a> by choosing **Ethernet**.
 
 8\. **What kind of automations can I create with the R PRO-1?**
 
