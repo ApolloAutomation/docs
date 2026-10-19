@@ -22,10 +22,42 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install -r requirements.txt
-      - run: sudo apt update && sudo apt-get install imagemagick pngquant
+      - run: sudo apt update && sudo apt-get install imagemagick pngquant libimage-exiftool-perl
       - run: find . -name '*.png' -execdir bash -c 'mogrify -resize '750x>' "$1"' - {} \;
       - run: find . -name '*.png' -execdir bash -c 'pngquant "$1" --ext .png --force' - {} \;
-      - run: mkdocs gh-deploy --force
+      # Nothing is published unless every check below passes. These are the
+      # pull request checks (tools/docs-checks/), run again right before
+      # publishing, so a package update since the PR (like selectolax 1.0.1,
+      # which dropped every image) can't publish a broken site. The checks all
+      # run even if one fails, so the log shows every problem. A failure stops
+      # the publish step, and Notify on Failure posts to Discord.
+      - name: Markdown (front matter, headings, alt text, includes)
+        run: python tools/docs-checks/check_markdown.py docs
+      - name: No secrets in text
+        if: ${{ !cancelled() }}
+        run: python tools/docs-checks/check_secrets.py docs
+      - name: Photos (GPS location data)
+        if: ${{ !cancelled() }}
+        env:
+          CHANGED_FILES: ""
+        run: python tools/docs-checks/check_images.py docs/assets
+      - name: Build the site
+        if: ${{ !cancelled() }}
+        env:
+          DISABLE_MKDOCS_2_WARNING: "true"
+        run: mkdocs build -d site
+      - name: Links, images, stylesheets, menus, and redirects in the built site
+        if: ${{ !cancelled() }}
+        run: python tools/docs-checks/check_links.py site docs
+      - name: Custom domain file (CNAME) is in the build
+        if: ${{ !cancelled() }}
+        run: test -s docs/CNAME && cmp docs/CNAME site/CNAME
+      # Same as `mkdocs gh-deploy --force`, but publishes the build checked
+      # above instead of building again. Runs only if every step passed.
+      - name: Publish the checked site to GitHub Pages
+        run: |
+          message="Deployed $(git rev-parse --short HEAD) with MkDocs version: $(python -c 'import mkdocs; print(mkdocs.__version__)')"
+          ghp-import --no-jekyll --push --force --message "$message" site
 
   notify:
     name: Notify on Failure

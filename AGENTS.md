@@ -67,8 +67,10 @@ Read the full style guide, but these are the ones worth checking twice:
 Every pull request runs `tools/docs-checks/` (see its README): front
 matter, heading levels, alt text, snippet includes, secrets, GPS data in
 photos, and links and anchors on the built site. Run them locally before
-opening a PR. They can't read text inside images, so check screenshots
-and recordings for passwords, API keys, and personal details by eye.
+opening a PR. The same checks run before every deploy to the live wiki,
+and a failure blocks the deploy. They can't read text inside images, so
+check screenshots and recordings for passwords, API keys, and personal
+details by eye.
 
 ## Keep the style guide current
 
