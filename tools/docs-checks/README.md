@@ -9,7 +9,7 @@ changed lines in the PR. Fix them and push again; the checks re-run.
 | `check_markdown.py` | Missing front matter `title:` or `description:`, heading levels that skip (`##` to `####`), more than one `#` H1, images without alt text, snippet includes that point at a missing file or start inside the included page's front matter | Add the field, use the next heading level, describe the image inside `![...]`, or start the include after the included page's closing `---` |
 | `check_secrets.py` | ESPHome API encryption keys, generated OTA passwords, passwords typed into YAML, and access tokens | Use `!secret` (or a placeholder like `your-wifi-password`). If the value was real, change it on the device or account too |
 | `check_images.py` | Photos with GPS location data (phones add it by default) | `exiftool -gps:all= -overwrite_original docs/assets/<file>` |
-| `check_links.py` | Broken links, links to a missing `#anchor`, filename case mismatches (GitHub Pages is case-sensitive), and images without alt text, checked on the built site | Fix the link target or anchor; match the file name's case exactly |
+| `check_links.py` | Broken links, links to a missing `#anchor`, filename case mismatches (GitHub Pages is case-sensitive), images without alt text, and a built site with far fewer images than the Markdown, checked on the built site | Fix the link target or anchor; match the file name's case exactly. If images went missing, look for a recently updated build package and pin it in `requirements.txt` |
 
 Warnings (shown, but they don't fail the PR): em dashes and the filler words
 the style guide bans, and images or recordings over 1.5 MB that the PR adds

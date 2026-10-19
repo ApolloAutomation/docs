@@ -6,9 +6,11 @@ MkDocs only validates links written as .md files. The wiki uses site-style
 links (../page/, https://wiki.apolloautomation.com/...), so this checks every
 link, #anchor, image, and video in page content against the built site.
 Filename case must match exactly, because GitHub Pages is case-sensitive.
-Fails on any broken link, missing anchor, or image without alt text.
+Fails on any broken link, missing anchor, or image without alt text, and
+when the built site has far fewer images than the Markdown (a plugin
+dropping them, as selectolax 1.0.1 did to mkdocs-glightbox in October 2026).
 """
-import os, sys, posixpath
+import os, re, sys, posixpath
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 
@@ -136,8 +138,17 @@ for a in bad_anchor:
     print(f"::error file={a['page']}::Link to a missing #anchor: {a['ref']}")
 for m in missing_alt:
     print(f"::error file={m['page']}::Image without alt text: {m['src']}")
+md_imgs = 0
+for r, _, fs in os.walk(DOCS):
+    for f in fs:
+        if f.endswith(".md"):
+            md_imgs += len(re.findall(r"!\[[^\]]*\]\(|<img\s", open(os.path.join(r, f), encoding="utf-8", errors="replace").read()))
+built_imgs = sum(1 for pr in pages.values() for kind, _, _ in pr.refs if kind == "img")
+images_dropped = md_imgs > 0 and built_imgs < md_imgs // 2
+if images_dropped:
+    print(f"::error::The built site has {built_imgs} images, but the Markdown has about {md_imgs}. A build plugin is probably removing images; check recently updated packages.")
 for wrong, right in sorted(set(case_mismatch)):
     print(f"::error::Link case doesn't match the file (GitHub Pages is case-sensitive): {wrong} should be {right}")
-total = len(broken) + len(bad_anchor) + len(missing_alt) + len(set(case_mismatch))
-print(f"check_links: {len(pages)} pages, {len(broken)} broken, {len(bad_anchor)} bad anchors, {len(missing_alt)} missing alt, {len(set(case_mismatch))} case mismatches")
+total = len(broken) + len(bad_anchor) + len(missing_alt) + len(set(case_mismatch)) + images_dropped
+print(f"check_links: {len(pages)} pages, {built_imgs} images, {len(broken)} broken, {len(bad_anchor)} bad anchors, {len(missing_alt)} missing alt, {len(set(case_mismatch))} case mismatches")
 sys.exit(1 if total else 0)
