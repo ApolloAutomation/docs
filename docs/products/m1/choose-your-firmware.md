@@ -34,3 +34,9 @@ On a Rev6 controller you can move to stock WLED over the air and keep your setti
 [hub75-studio](https://github.com/pavlov-net/hub75-studio) replaces WLED entirely with an ESPHome firmware built for the M-1. You get native Home Assistant entities and YAML you control, at the cost of the WLED effect library and app. Pick this one deliberately.
 
 [Set Up ESPHome](/products/m1/setup/getting-started-m1-esphome.md){: .md-button }
+
+## Game Day Scoreboard
+
+[Game Day Scoreboard](https://github.com/ApolloAutomation/gameday-scoreboard-main) turns the M-1 into a live sports scoreboard for your team: the next game, the live score and clock, and a splash in your team's color when they score, across the NFL, college football, MLB, the NBA, the WNBA, men's college basketball, the NHL, MLS, and the Premier League. It reads the scores from ESPN by itself, serves its own settings page, and shows up in Home Assistant as an ESPHome device. It needs a **Rev6** controller.
+
+[Set Up Game Day Scoreboard](/products/m1/setup/getting-started-m1-game-day.md){: .md-button }
