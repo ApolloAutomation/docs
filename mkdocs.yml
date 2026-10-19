@@ -490,6 +490,9 @@ nav:
             - Examples:
               - Media Proxy: products/m1/examples/media-proxy.md
               - SendSpin: products/m1/examples/sendspin.md
+          - Game Day Scoreboard:
+            - Set Up Game Day Scoreboard: products/m1/setup/getting-started-m1-game-day.md
+            - Flash Lights When Your Team Scores: products/m1/examples/game-day-score-lights.md
           - Reviews: products/m1/m1-reviews.md
       - mmWave Sensors:
           - MSR-1:
