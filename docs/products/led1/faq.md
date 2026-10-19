@@ -39,6 +39,6 @@ description: Frequently asked questions about the LED-1 controller.
 
 9\. **Can I reflash this with stock WLED firmware?**
 
-* Yes! Our devices do not need custom compiled firmware, any esp32 8MB or technically 4MB firmware should work.
+* Yes! The LED-1 runs regular WLED. Flash it with the [LED-1 reflash guide](../troubleshooting/led1-reflash/), then set the pins in WLED from the [LED-1 pinout guide](../setup/led1-pinout-guide/).
 
 &nbsp;
