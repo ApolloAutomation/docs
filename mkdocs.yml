@@ -149,6 +149,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       base_path: "docs"
+      # Fail the build when an included file is missing, instead of silently
+      # publishing a page without that content.
+      check_paths: true
   - admonition
   - pymdownx.arithmatex:
       generic: true
