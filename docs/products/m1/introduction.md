@@ -8,7 +8,7 @@ The Apollo Automation M-1 LED Matrix is a vibrant, high-performance display feat
 
 Pre-flashed with WLED firmware, the M-1 offers a fun user experience right out of the box. Customize your display with animations, effects, and colors, or use Pixel Forge, built into WLED, to turn your own images and scrolling text into displays without leaving the device. You can also connect up to four panels, either in a row or as a 2x2 square, though extra power injection will be needed for the full effect.
 
-New units ship with WLED 16.0.1. Older units shipped WLED-MM 14.5.1, and the M-1 can also run ESPHome. See [Choose Your Firmware](/products/m1/choose-your-firmware.md) to find the right setup guide.
+New units ship with WLED 16.0.1. Older units shipped WLED-MM 14.5.1, and the M-1 can also run ESPHome, including the Game Day Scoreboard, which turns it into a live scoreboard for your team. See [Choose Your Firmware](/products/m1/choose-your-firmware.md) to find the right setup guide.
 
 **Use Cases:**
 
