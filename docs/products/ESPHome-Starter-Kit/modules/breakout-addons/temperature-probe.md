@@ -32,6 +32,8 @@ In your device config, add two components:
 1. The <a href="https://esphome.io/components/one_wire/" target="_blank" rel="noreferrer nofollow noopener">One Wire</a> component, set to **GPIO6**. This sets up the bus the probe talks on.
 2. A <a href="https://esphome.io/components/sensor/dallas_temp/" target="_blank" rel="noreferrer nofollow noopener">Dallas Temperature</a> sensor, which reads the probe on that bus.
 
+Both rely on the **Accessory Power** switch that powers the Breakout Module. Projects created from the Apollo ESPHome Starter Kit board already have it. If yours doesn't, add the [Accessory Power Rail](/products/ESPHome-Starter-Kit/learning-the-basics/core-components.md#accessory-power-rail) component first, or the probe won't get enough power to answer on the bus.
+
 Flash the device, and the temperature reading shows up alongside your other entities. You can wire more than one probe to the same 1Wire port and read each one separately.
 
 ??? example "Working YAML"

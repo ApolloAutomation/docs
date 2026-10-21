@@ -66,6 +66,10 @@ description: Frequently asked questions about the ESPHome Starter Kit, ESPHome D
 
 * The ESP32-C6 is a modern microcontroller from Espressif that brings Wi-Fi, Bluetooth LE, and Thread support to a single chip. It is the same family of silicon used in commercially certified smart home products, and gives learners a future-ready platform that supports the same open standards used in production smart home devices.
 
+16\. **Why won't my LEDs light up, my buzzer play, or my module respond?**
+
+* Check the **Accessory Power Rail** first. The Onboard RGB LED and every module get their power from it, so if your project doesn't include it, or its **Accessory Power** switch is off, they don't get enough power to work. Projects created from the ESPHome Starter Kit board include the rail and turn it on at boot. If yours is missing it, see [Accessory Power Rail](learning-the-basics/core-components.md#accessory-power-rail) to add it back.
+
 [Click here to join our Discord for fast support! :simple-discord:](https://link.apolloautomation.com/discord){ .md-button .md-button--primary }
 
 
