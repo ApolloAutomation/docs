@@ -42,10 +42,19 @@ Connect the LED & Buzzer module to the ESP32-C6 using one of the FPC ribbon cabl
 ESPHome Device Builder ships an **Add Component** flow that knows the pin layout for every Apollo Starter Kit module. Use it instead of writing the LED strip and buzzer config by hand, and you'll get the right GPIOs, chipset, and PWM setup on the first try.
 
 1. Open your starter kit device in Device Builder and click **Edit**.
-2. In the ESPHome Device Builder, navigate to the **Components** section.
-3. Click **Add Component** in the editor toolbar.
-4. Select the **RGB LED + Buzzer Module Bundle** at the top.
-5. Click **Add** -&gt; Click **Add** -&gt; Click **Add** -&gt; Click **Add**. Each section lets you make changes but we will leave them at defaults for now. Device Builder inserts the light, output, and rtttl blocks into your YAML.
+2.  Navigate to the **Components** section and look for a **GPIO Switch** named **Accessory Power**. The LED & Buzzer module gets its power from that switch, so without it the LEDs and buzzer don't get enough power to work. (1)
+    { .annotate }
+
+    1.  Projects you created from the Apollo ESPHome Starter Kit board already include it, and the component picker hides it once your device has it. That's why it isn't in the list of components you can add.
+
+3.  If it isn't there, click **Add Component**, find the **Accessory Power Rail** card, and click **Add**. (1)
+    { .annotate }
+
+    1.  [Accessory Power Rail](/products/ESPHome-Starter-Kit/learning-the-basics/core-components.md#accessory-power-rail) covers what the switch does and the settings worth knowing about.
+
+4. Click **Add Component** in the editor toolbar.
+5. Select the **RGB LED + Buzzer Module Bundle** at the top.
+6. Click **Add** -&gt; Click **Add** -&gt; Click **Add** -&gt; Click **Add**. Each section lets you make changes but we will leave them at defaults for now. Device Builder inserts the light, output, and rtttl blocks into your YAML.
 
 ![ESPHome Device Builder adding the RGB LED + Buzzer Module bundle and clicking Add through each step](../../../assets/esphome-device-builder-add-rgb-buzzer-bundle-module.gif)
 
@@ -123,6 +132,10 @@ With the device back online, the RGB LED light entity is live on the web server.
 1. There's a lot you can do with a light entity. See the [Light Effects tutorial](/products/ESPHome-Starter-Kit/tutorials/light-effects.md) for advanced configurations, or the [ESPHome light strip effects documentation](https://esphome.io/components/light/#strip-animations) to go deeper.
 
 ![Starter kit web server turning on the RGB LEDs and picking a new color](../../../assets/esphome-device-builder-test-rgb-leds.gif)
+
+!!! tip "LEDs stay dark?"
+
+    Check that the **Accessory Power** switch on the same web page is on, and that it's still in your project's **Components** section. The module runs off the [Accessory Power Rail](/products/ESPHome-Starter-Kit/learning-the-basics/core-components.md#accessory-power-rail), so without it the LEDs and buzzer don't get enough power to work.
 
 !!! success "Your LED & Buzzer notification module is wired up!"
 

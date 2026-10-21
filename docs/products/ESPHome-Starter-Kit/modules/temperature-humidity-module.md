@@ -43,13 +43,22 @@ Connect the Temperature and Humidity module to the ESP32-C6 using one of the FPC
 ESPHome Device Builder ships an **Add Component** flow that knows the pin layout for every Apollo Starter Kit module. Use it instead of writing the I2C bus and sensor block by hand, and you'll get the right pins, address, and variant on the first try.
 
 1. Open your starter kit device in Device Builder and click **Edit**.
-2. In the ESPHome Device Builder, navigate to the **Components** section.
-3. Click **Add Component** in the editor toolbar.
-4. Select the **I2C** component.
-5. Click **Add**. Device Builder inserts the I2C bus into your YAML.
-6. Search for **Temperature and Humidity** and select the Apollo Starter Kit temperature and humidity component.
-7. Toggle the **Humidity** and **Temperature** selections on.
-8. Click **Add**. Device Builder inserts the AHT20F sensor block into your YAML.
+2.  Navigate to the **Components** section and look for a **GPIO Switch** named **Accessory Power**. The temperature and humidity module gets its power from that switch, so without it the sensor doesn't get enough power to answer on the I2C bus. (1)
+    { .annotate }
+
+    1.  Projects you created from the Apollo ESPHome Starter Kit board already include it, and the component picker hides it once your device has it. That's why it isn't in the list of components you can add.
+
+3.  If it isn't there, click **Add Component**, find the **Accessory Power Rail** card, and click **Add**. (1)
+    { .annotate }
+
+    1.  [Accessory Power Rail](/products/ESPHome-Starter-Kit/learning-the-basics/core-components.md#accessory-power-rail) covers what the switch does and the settings worth knowing about.
+
+4. Click **Add Component** in the editor toolbar.
+5. Select the **I2C** component.
+6. Click **Add**. Device Builder inserts the I2C bus into your YAML.
+7. Search for **Temperature and Humidity** and select the Apollo Starter Kit temperature and humidity component.
+8. Toggle the **Humidity** and **Temperature** selections on.
+9. Click **Add**. Device Builder inserts the AHT20F sensor block into your YAML.
 
 ![ESPHome Device Builder adding the I2C bus, then the AHT20 module with Humidity and Temperature on](../../../assets/esphome-device-builder-add-i2c-temp-hum-component.gif)
 

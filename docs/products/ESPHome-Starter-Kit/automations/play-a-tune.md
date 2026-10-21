@@ -17,6 +17,7 @@ This tutorial uses the Button module and the LED & Buzzer module connected to th
     * [First Steps](../setup/first-steps.md) to create your starter kit device in ESPHome Device Builder.
     * [Adding the Button Module](../modules/button-module.md) to wire up the input.
     * [Adding the LED & Buzzer Module](../modules/rgb-buzzer-module.md) to wire up the buzzer output.
+    * [Accessory Power Rail](../learning-the-basics/core-components.md#accessory-power-rail) to confirm your project includes it. The LED & Buzzer module gets its power from the rail, and the buzzer doesn't get enough power to play without it.
 
 ## How the buzzer plays tunes
 
@@ -114,7 +115,10 @@ With the device back online, press the button on the Button module. You should h
 
 !!! tip "No sound?"
 
-    The buzzer is an output, not a switch, so it has no web server control of its own. The only way to hear it is to trigger it, like the button click above. If it stays silent, confirm the LED & Buzzer module is connected and that the install finished without errors.
+    The buzzer is an output, not a switch, so it has no web server control of its own. The only way to hear it is to trigger it, like the button click above. If it stays silent:
+
+    * Check that the **Accessory Power** switch is on in the web server and still in your project's **Components** section. The LED & Buzzer module gets its power from the [Accessory Power Rail](../learning-the-basics/core-components.md#accessory-power-rail), and the buzzer doesn't get enough power to play without it.
+    * Confirm the LED & Buzzer module is connected and that the install finished without errors.
 
 ## Find more tunes
 
