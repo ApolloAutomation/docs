@@ -647,6 +647,7 @@ With the device back online, press the button on the Button module. The Onboard 
 ### Troubleshooting
 
 - **The colors don't reflect what I just did to the sensor.** The temp and humidity sensors publish on a schedule (every 60 seconds by default), so the colors show the most recent reading, not a fresh check at the moment of the press. Lower the sensor's `update_interval` while testing for snappier feedback.
+- **The LED never lights up.** The Onboard RGB LED gets its power from the [Accessory Power Rail](../learning-the-basics/core-components.md#accessory-power-rail). Check that the **Accessory Power** switch is on in the web server and still in your project's **Components** section.
 - **First press after boot does nothing.** Right after boot, the sensor hasn't published a reading yet, so the `If` comparisons silently come back false and the LED stays as-is. Wait one publish cycle (60 seconds by default) and try again.
 
 ### Next steps

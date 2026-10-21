@@ -177,6 +177,10 @@ With the app installed, it's time to tell it about your kit. If you took the gui
 
 When you create a new ESPHome Starter Kit project in ESPHome Device Builder, the **Web Server** and **Accessory Power Rail** components are already configured for you, so there's nothing extra to do for those. In this tutorial we'll add one more component: the **Onboard RGB LED**.
 
+!!! warning "Keep the Accessory Power Rail in every project"
+
+    The Onboard RGB LED and every module you plug in get their power from the **Accessory Power Rail**. Leave it in your project. Without it, the LED and modules don't get enough power to work. [Core components](../learning-the-basics/core-components.md#accessory-power-rail) explains what it does.
+
 ### Onboard RGB LED
 
 The Onboard RGB LED is a small LED above the Reset button of your ESP32-C6. Useful for testing automations and doubles as a status light.

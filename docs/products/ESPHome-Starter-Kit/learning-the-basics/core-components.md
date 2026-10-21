@@ -49,6 +49,8 @@ The **Accessory Power Rail** is a software switch that controls power to the kit
 
 When the rail is **on**, your modules and the Onboard RGB LED have power and respond. When the rail is **off**, those accessories go dark. The ESP32-C6 itself stays on.
 
+That makes the rail a requirement for any project that uses the Onboard RGB LED or a module. Without it, they don't get enough power to work, even when the rest of your config is correct.
+
 Apollo ships the rail enabled and set to come back on after a reboot, so the kit "just works" out of the box. The reason it exists as a switch (rather than always-on) is that turning the rail off briefly is the cleanest way to reset a misbehaving module without unplugging the kit, and it can be automated from Home Assistant.
 
 ### Common settings
@@ -69,6 +71,8 @@ If you remove the rail, **the Onboard RGB LED and any plugged-in modules will st
 1. In **ESPHome Device Builder**, open your device and go to the **Components** section.
 2. Click **Add component**, scroll to **Accessory Power Rail**, and click **Add**.
 3. Click **Add** once more to confirm.
+
+The component picker only lists **Accessory Power Rail** when your project doesn't already have it. If you can't find the card, look in your **Components** section for a **GPIO Switch** named **Accessory Power**. If it's there, your project already has the rail.
 
 <a href="https://esphome.io/components/switch/gpio/" target="_blank" rel="noreferrer nofollow noopener" class="md-button md-button--primary"><img src="/assets/esphome-logo.svg" alt="ESPHome logo" /> ESPHome GPIO Switch docs</a>
 

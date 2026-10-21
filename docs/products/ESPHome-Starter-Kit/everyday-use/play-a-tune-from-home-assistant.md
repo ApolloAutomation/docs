@@ -357,6 +357,10 @@ With the device back online, each action you added shows up in Home Assistant. T
 
     1.  For a slot, pick its action (like `esphome.esphome_starter_kit_play_song_2`) with no extra data. For `esphome.esphome_starter_kit_play_buzzer`, set a **song_str** to any RTTTL string, for example `scale_up:d=32,o=5,b=100:c,c#,d,d#,e,f,f#,g,g#,a,a#,b`. Handy triggers: a doorbell chime, a wash cycle finishing, or a morning wake-up scale.
 
+!!! tip "No sound?"
+
+    If the action runs but the buzzer stays silent, check that your kit's **Accessory Power** switch is on in Home Assistant. The LED & Buzzer module gets its power from the [Accessory Power Rail](../learning-the-basics/core-components.md#accessory-power-rail), so with the switch off the buzzer doesn't get enough power to play.
+
 ## Find more tunes
 
 Any valid RTTTL line works as a tune. The [Play a Tune page](../automations/play-a-tune.md#find-more-tunes) has a set of ready-to-paste songs (Mario, Cantina, the Imperial March) and links for browsing and previewing more. For seasonal ones, see the [Holiday Songs](https://wiki.apolloautomation.com/products/general/holiday-songs/) collection.

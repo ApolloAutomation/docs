@@ -137,7 +137,11 @@ The Breakout Module is covered in connectors, each labeled on the board. Most of
 
 ## Add to ESPHome Device Builder
 
-The Breakout Module is different from the other starter kit modules. There's no single **Add Component** entry to select, because the module doesn't have a fixed sensor on it. Instead it breaks the ESP32-C6's pins out so you can wire up your own parts. Pick the component that matches what you connected:
+The Breakout Module is different from the other starter kit modules. There's no single **Add Component** entry to select, because the module doesn't have a fixed sensor on it. Instead it breaks the ESP32-C6's pins out so you can wire up your own parts.
+
+Whatever you connect, the Breakout Module gets its power from the **Accessory Power Rail**. Before you add anything, check your project's **Components** section for a **GPIO Switch** named **Accessory Power**. If it isn't there, click **Add component**, find the **Accessory Power Rail** card, and click **Add**. Without it, nothing plugged into the breakout gets enough power to work. See [Accessory Power Rail](/products/ESPHome-Starter-Kit/learning-the-basics/core-components.md#accessory-power-rail) for what the switch does.
+
+Then pick the component that matches what you connected:
 
 * For I2C devices (most sensor breakouts), add the component for your sensor, set SCL to pin 0 and SDA to pin 1, and turn on the pullup toggle for both pins.
 * For a DS18B20 probe on the 1Wire connector, add the <a href="https://esphome.io/components/one_wire/" target="_blank" rel="noreferrer nofollow noopener">One Wire</a> component on GPIO6, then a <a href="https://esphome.io/components/sensor/dallas_temp/" target="_blank" rel="noreferrer nofollow noopener">Dallas temperature sensor</a>.
