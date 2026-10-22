@@ -15,18 +15,17 @@ Follow these steps to put your TEMP Pro-1 in boot mode, flash the factory firmwa
 
 1\. <a href="https://wiki.apolloautomation.com/products/temppro1/troubleshooting/temp-pro1-boot-mode/" target="_blank" rel="noopener">Put your TEMP Pro-1 in boot mode</a>: hold down the boot button, then plug in the USB cable.
 
-2\. Open the [Apollo TEMP Pro-1 Installer](https://apolloautomation.github.io/TEMP_PRO-1/) page.
+2\. Open the [Apollo TEMP Pro-1 installer](https://install.apolloautomation.com/#/temp-pro-1) page.
 
-3\. Pick the firmware that matches how your TEMP Pro-1 connects:
+3\. Choose **WiFi** if your TEMP Pro-1 connects over Wi-Fi, or **Ethernet** if it connects over PoE or Ethernet. Then click **Connect & Install**.
 
-* **Wi-Fi:** click **Connect** under **Wifi Firmware**.
-* **Ethernet (PoE):** click **Connect** under **Ethernet Firmware**.
+![TEMP_PRO-1 page of the Apollo installer with the WiFi variant and the Connect & Install button outlined in red](/assets/installer-temp-pro-1-wifi.png)
 
 4\. In the browser's serial port pop-up, select the open COM port (**USB JTAG/serial debug unit** in the screenshot below), then click **Connect**.
 
 ![Browser serial port dialog with the USB JTAG/serial debug unit port selected, cursor on Connect](/assets/temp-1-reflash-pic-2.png)
 
-5\. Click **Install ApolloAutomation.TEMP_PRO-1-W**. If you picked Ethernet Firmware, click **Install ApolloAutomation.TEMP_PRO-1-ETH** instead.
+5\. Click **Install ApolloAutomation.TEMP_PRO-1-W**. If you chose **Ethernet**, click **Install ApolloAutomation.TEMP_PRO-1-ETH** instead.
 
 6\. Click **INSTALL**.
 

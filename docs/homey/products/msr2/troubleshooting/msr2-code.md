@@ -26,7 +26,7 @@ If your device has already been added to Homey, please <a href="https://wiki.apo
 
 ![Browser serial port dialog listing the USB JTAG serial debug unit with the Connect button](/assets/msr-2-reflash-pic-2.png)
 
-6\. Click **Install ApolloAutomation.MSR-2**.
+6\. Click **Install ApolloAutomation.MSR-2_Factory**.
 
 ![Installer Device Dashboard menu with INSTALL MSR-2 highlighted](/assets/msr-2-reflash-pic-3.png)
 
