@@ -168,8 +168,8 @@ then **Connect & Install**, and the firmware option in the next dialog
 exactly as listed (for example **Install ApolloAutomation.AIR-1**). The
 B models use their parent's page with **Battery Power** (TEMP-1B on
 `#/temp-1`, PLT-1B on `#/plt-1`). Keep the older installer link only
-where the Apollo installer has no equivalent: the TEMP Pro-1, and TEMP-1
-Revision 1 firmware. The LED-1 uses the official WLED installer at
+where the Apollo installer has no equivalent: TEMP-1 Revision 1
+firmware. The LED-1 uses the official WLED installer at
 `https://install.wled.me/`.
 
 ---

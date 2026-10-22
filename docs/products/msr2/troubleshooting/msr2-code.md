@@ -26,7 +26,7 @@ If your device has already been connected to Home Assistant please <a href="http
 
 ![Browser serial port prompt with the USB JTAG/serial debug unit selected and Connect clicked](/assets/msr-2-reflash-pic-2.png)
 
-6\. Click **Install ApolloAutomation.MSR-2**.
+6\. Click **Install ApolloAutomation.MSR-2_Factory**.
 
 ![Device Dashboard menu with the Install MSR-2 option selected](/assets/msr-2-reflash-pic-3.png)
 
