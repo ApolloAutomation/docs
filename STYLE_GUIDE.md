@@ -172,6 +172,16 @@ where the Apollo installer has no equivalent: TEMP-1 Revision 1
 firmware. The LED-1 uses the official WLED installer at
 `https://install.wled.me/`.
 
+**Boot mode with two buttons.** When a step uses both the boot and reset
+buttons, write the order as three bullets (press and hold **boot**; while
+still holding it, press and release **reset**; let go of **boot**), then a
+`warning` admonition titled "Keep holding boot the whole time" that says
+pressing **reset** alone only restarts the device. Put both before the
+photo or clip. Clips of the sequence carry step captions ("1 Press and hold
+BOOT", "2 Keep holding BOOT. Tap RESET.", "3 Let go of BOOT") so a reader
+who only watches still holds boot. A customer once watched an uncaptioned
+clip, saw a finger resting on the board, and pressed reset alone.
+
 ---
 
 ## 6. Voice and structure

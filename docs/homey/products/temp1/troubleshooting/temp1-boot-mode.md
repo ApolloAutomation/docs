@@ -28,12 +28,20 @@ If you prefer, please remove the lid by gently prying up on the small slit by th
 
 ## Method 2: Boot and reset buttons
 
-You can also open the case and use the boot and reset buttons together to put your device into boot mode.
+You can also open the case and put your device into boot mode by holding the boot button down while you press and release the reset button.
 
 1\. Unplug the device and remove the case as shown in the images above
 
 2\. Plug it into your computer.
 
-3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
+3\. Put your TEMP-1 in boot mode. Use both buttons, in this order:
+
+- Press and hold the **boot** button (labeled BOOT, shown above). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (labeled RST, at the opposite end of the board from **boot**).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the TEMP-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
 
 4\. Continue with [uploading the firmware document](https://wiki.apolloautomation.com/homey/products/temp1/troubleshooting/temp1-code/).

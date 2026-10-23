@@ -17,9 +17,17 @@ description: Step by step guide for reflashing The CAST-1.
 
 ![CAST-1 case with labels pointing to the boot button on the left and the reset button on the right](/assets/cast-1-boot-reset-buttons.webp)
 
-3\. Put the CAST-1 into boot mode. Hold down the **boot** button (on the left), then press and release the **reset** button (on the right) while keeping the boot button pressed. Finally, release the boot button.
+3\. Put your CAST-1 in boot mode. Use both buttons, in this order:
 
-![Holding the CAST-1 boot button while pressing and releasing the reset button beside it](/assets/cast-1-boot-mode-method-2.webp)
+- Press and hold the **boot** button (on the left). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (on the right).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the CAST-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
+
+![Animation with step captions: press and hold boot on the CAST-1, keep holding it while you tap reset, then let go of boot](/assets/cast-1-boot-mode-method-2.webp)
 
 4\. Open the <a href="https://install.apolloautomation.com/#/cast-1" target="_blank" rel="noreferrer nofollow noopener">Apollo CAST-1 Installer</a>.
 

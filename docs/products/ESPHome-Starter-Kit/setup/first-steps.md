@@ -203,9 +203,17 @@ The device is required to be flashed via USB using the bootloader mode the very 
 
 ![Plugging the USB-C cable into the ESP32-C6 board](../../../assets/esphome-starter-kit-plug-in-usb-c.webp)
 
-2\. Hold down the boot button. While still holding the boot button, press and release the reset button, then release the boot button.
+2\. Put your ESP32-C6 in boot mode. Use both buttons, in this order:
 
-![Holding the BOOT button on the ESP32-C6 while pressing and releasing RESET](../../../assets/esphome-starter-kit-boot-mode.webp)
+- Press and hold the **Boot** button (labeled BOOT on the board, to the left of the USB-C port when the cable points toward you). Keep holding it.
+- While you're still holding **Boot**, press and release the **Reset** button (labeled RESET, to the right of the USB-C port).
+- Let go of **Boot**.
+
+!!! warning "Keep holding Boot the whole time"
+
+    Pressing **Reset** by itself only restarts the ESP32-C6. It goes into boot mode only when **Boot** is held down while you press and release **Reset**.
+
+![Animation with step captions: press and hold Boot on the ESP32-C6, keep holding it while you tap Reset, then let go of Boot](../../../assets/esphome-starter-kit-boot-mode.webp)
 
 3\. Your device is now in boot mode. The ESP32-C6 will now stay in bootloader mode until you flash it.
 

@@ -22,6 +22,14 @@ You can also enter boot mode with the boot and reset buttons while the device is
 
 1\. Plug in the device
 
-2\. Press and hold the boot button, while holding it press and release the reset button, then release the boot button
+2\. Put your H-1 in boot mode. Use both buttons, in this order:
+
+- Press and hold the **boot** button (circled in the photo above). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (also circled in the photo above).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the H-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
 
 3\. Continue with [uploading the firmware](https://wiki.apolloautomation.com/products/h1/reflash/)
