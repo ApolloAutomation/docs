@@ -30,7 +30,7 @@ You'll open the case, then hold the boot button while you plug in the USB-C cabl
 
 ## Method 2: Boot and reset buttons
 
-You'll open the case, then use the boot and reset buttons together to put the device into boot mode.
+You'll open the case, plug the board into your computer, then hold the boot button down while you press and release the reset button.
 
 1\. Unplug your R PRO-1 from power and remove the back.
 
@@ -48,6 +48,14 @@ You'll open the case, then use the boot and reset buttons together to put the de
 
 ![Tool pointing to the RST1 reset button at the bottom left of the R PRO-1 PCB](/assets/r-pro-1-reset-button.jpg)
 
-5\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
+5\. Plug your R PRO-1 into your computer, then put it in boot mode. Use both buttons, in this order:
+
+- Press and hold the **boot** button (the right button, shown in step 3). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (the left button, shown in step 4).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the R PRO-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
 
 6\. Continue with <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-code/" rel="noreferrer nofollow">uploading the firmware document</a>.

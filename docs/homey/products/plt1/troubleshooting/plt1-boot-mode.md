@@ -22,13 +22,21 @@ You can put your device into boot mode with only the boot button and a USB-C cab
 
 ## Method 2: Boot and reset buttons
 
-You can also put your device into boot mode by pressing the reset button while you hold the boot button.
+You can also put your device into boot mode by holding the boot button down while you press and release the reset button.
 
 1\. Unplug the device and locate the boot button (on the side, shown in the image above) and the reset button (near the USB-C port, shown in the image below).
 
 2\. Plug it into your computer.
 
-3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
+3\. Put your PLT-1 in boot mode. Use both buttons, in this order:
+
+- Press and hold the **boot** button (on the side, shown in the image above). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (near the USB-C port, shown in the image below).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the PLT-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
 
 ![Top of the PLT-1 with the reset button circled next to the plugged in USB-C cable](/assets/screenshot-2024-10-23-at-12-35-01-pm.png)
 

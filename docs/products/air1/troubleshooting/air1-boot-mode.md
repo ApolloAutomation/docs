@@ -22,13 +22,21 @@ With this method, you hold the boot button while you plug in the USB-C cable.
 
 ## Method 2: Boot and reset buttons
 
-With this method, you use the boot and reset buttons while the device is plugged into your computer.
+With this method, you plug the device into your computer, then hold the boot button down while you press and release the reset button.
 
 1\. Unplug the device and locate the boot and reset buttons as shown in the image below.
 
 2\. Plug it into your computer.
 
-3\. Hold down the boot button, then press and release the reset button while keeping the boot button pressed. Finally, release the boot button.
+3\. Put your AIR-1 in boot mode. Use both buttons, in this order:
+
+- Press and hold the **boot** button (the right button, next to the USB-C port). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (the left button).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the AIR-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
 
 ![AIR-1 case with arrows labeling the reset button on the left and the boot button on the right](/assets/air-1-reset-boot-buttons-arrows.jpg)
 
