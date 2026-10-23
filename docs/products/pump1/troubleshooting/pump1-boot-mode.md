@@ -36,9 +36,17 @@ You'll use the boot and reset buttons together while the device is plugged into 
 
 ![PUMP-1 with red arrows labeling the reset button on the left and the boot button on the right](/assets/pump-1-buttons-labeled.jpg)
 
-2\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
+2\. Put your PUMP-1 in boot mode. Use both buttons, in this order:
 
-![Holding the PUMP-1 boot button while pressing and releasing the reset button](/assets/pump-1-hold-boot-and-reset-button-video.webp)
+- Press and hold the **boot** button (the right button). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (the left button).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the PUMP-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
+
+![Animation with step captions: press and hold boot on the PUMP-1, keep holding it while you tap reset, then let go of boot](/assets/pump-1-hold-boot-and-reset-button-video.webp)
 
 3\. You are now ready to reflash your device!
 

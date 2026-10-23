@@ -34,9 +34,17 @@ You can also enter boot mode with the boot and reset buttons while the device is
 
 ![H-2 board with arrows marking the Reset button on the left and the Boot button on the right](/assets/h-2-reset-and-boot-buttons-labeled.png)
 
-2\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
+2\. Put your H-2 in boot mode. Use both buttons, in this order:
 
-![Holding the H-2 boot button while pressing and releasing the reset button, with USB-C connected](/assets/h-2-boot-mode-method-2-boot-reset-buttons.webp)
+- Press and hold the **boot** button (the right button). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (the left button).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the H-2. It goes into boot mode only when **boot** is held down while you press and release **reset**.
+
+![Animation with step captions: press and hold boot on the H-2, keep holding it while you tap reset, then let go of boot](/assets/h-2-boot-mode-method-2-boot-reset-buttons.webp)
 
 3\. You are now ready to reflash your device!
 

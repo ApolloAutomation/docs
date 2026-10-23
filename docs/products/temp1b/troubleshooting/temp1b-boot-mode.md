@@ -28,13 +28,21 @@ If you prefer, please remove the lid by gently prying up on the small slit by th
 
 ## Method 2: Boot and reset buttons
 
-You'll open the case and use the boot and reset buttons together while the device is plugged into your computer.
+You'll open the case, plug the device into your computer, then hold the boot button down while you press and release the reset button.
 
 1\. Unplug the device and remove the case as shown in the images above
 
 2\. Plug it into your computer.
 
-3\. Hold down the boot button (shown above), then press and release the reset button (shown below) while keeping the boot button pressed. Finally, release the boot button.
+3\. Put your TEMP-1B in boot mode. Use both buttons, in this order:
+
+- Press and hold the **boot** button (labeled BOOT, shown above). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (labeled RST, shown below).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the TEMP-1B. It goes into boot mode only when **boot** is held down while you press and release **reset**.
 
 ![TEMP-1B with the lid off, tool pointing at the RST reset button](/assets/temp-1-reset-button-lid-off.jpg)
 

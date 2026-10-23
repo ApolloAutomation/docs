@@ -26,13 +26,21 @@ You'll remove the lid, then hold the boot button while you plug in the USB-C cab
 
 ## Method 2: Boot and reset buttons
 
-You'll open the case and use the boot and reset buttons together while the device is plugged into your computer.
+You'll open the case, plug the device into your computer, then hold the boot button down while you press and release the reset button.
 
 1\. Unplug the device and remove the case as shown in the images above
 
 2\. Plug it into your computer.
 
-3\. Hold down the boot button (shown above), then press and release the reset button (shown below) while keeping the boot button pressed. Finally, release the boot button.
+3\. Put your TEMP Pro-1 in boot mode. Use both buttons, in this order:
+
+- Press and hold the **boot** button (labeled BOOT, shown above). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (labeled RST, shown below).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the TEMP Pro-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
 
 ![Tool pointing at the RST reset button on the TEMP Pro-1 board](/assets/temp-pro-1-reset-button.jpeg)
 

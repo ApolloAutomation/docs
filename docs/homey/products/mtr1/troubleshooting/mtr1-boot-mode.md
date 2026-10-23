@@ -22,13 +22,21 @@ You'll hold the boot button while you plug in the USB-C cable.
 
 ## Method 2: Boot and reset buttons
 
-You'll use the boot and reset buttons together while the device is plugged into your computer.
+You'll plug the device into your computer, then hold the boot button down while you press and release the reset button.
 
 1\. Unplug the device and locate the boot button (the right opening, shown in the image above) and the reset button (the left opening, shown in the image below).
 
 2\. Plug it into your computer.
 
-3\. Hold down the boot button (the right button), then press and release the reset button (the left button) while keeping the boot button pressed. Finally, release the boot button.
+3\. Put your MTR-1 in boot mode. Use both buttons, in this order:
+
+- Press and hold the **boot** button (the right button). Keep holding it.
+- While you're still holding **boot**, press and release the **reset** button (the left button).
+- Let go of **boot**.
+
+!!! warning "Keep holding boot the whole time"
+
+    Pressing **reset** by itself only restarts the MTR-1. It goes into boot mode only when **boot** is held down while you press and release **reset**.
 
 ![Tool pointing to the reset button opening on the side of the MTR-1 case](/assets/mtr-1-reset-button.jpg)
 
