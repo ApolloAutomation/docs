@@ -67,9 +67,9 @@ The job runs inside Home Assistant, so closing the browser or putting your phone
 | Checking | **Checking that the radar accepted the new values...** | About 3 seconds |
 | Done | **Thresholds updated** | |
 
-Here is a whole run on an MSR-1, sped up: the countdown, the listen with the highest energy of each gate so far, the writing and checking stages, and the result.
+Here is a whole run on an MSR-1, sped up: turning on Radar Engineering Mode, the countdown, the listen with the highest energy of each gate so far, the writing and checking stages, and the result.
 
-<video src="/assets/apollo-mmwave-calibrate.mp4" poster="/assets/apollo-mmwave-calibrate-poster.jpg" autoplay loop muted playsinline aria-label="A calibration on the Auto-calibrate card, sped up: Leave the room now with a 15 second countdown, Listening to the empty room with the highest energy of each gate, Writing 18 thresholds to the radar, Checking that the radar accepted the new values, and Thresholds updated with the result table"></video>
+<video src="/assets/apollo-mmwave-calibrate.mp4" poster="/assets/apollo-mmwave-calibrate-poster.jpg" autoplay loop muted playsinline aria-label="A calibration on the Auto-calibrate card, sped up: Turning on Radar Engineering Mode, Leave the room now with a 15 second countdown, Listening to the empty room with the highest energy of each gate, Writing 18 thresholds to the radar, Checking that the radar accepted the new values, and Thresholds updated with the result table"></video>
 
 From the countdown through the listen, the card also reminds you: **Leave Radar Engineering Mode on until this finishes.** Turning it off during the listen stops the calibration without changing anything.
 
@@ -77,7 +77,7 @@ A **Stop** button sits under the progress bar until the checking stage. Press it
 
 Not ready to change anything yet? **Preview only** runs the same countdown and listen and shows you the thresholds it would set. The card explains: **Computes new thresholds without changing any of them. Radar Engineering Mode is still turned on for the listen.** The preview ends with **Preview: no threshold was changed.** and **These are the thresholds calibration would set:** above the result table, and two buttons: **Calibrate and apply** starts a full calibration (with a fresh countdown and listen), and **Close** returns the card to its start.
 
-![A preview on the Auto-calibrate card: Preview: no threshold was changed., the line These are the thresholds calibration would set:, a table of nine gates with each old and new threshold, G2 marked 100 → 15 (was off), and the Calibrate and apply and Close buttons](/assets/apollo-mmwave-calibrate-preview.png)
+![A preview on the Auto-calibrate card: Preview: no threshold was changed., the line These are the thresholds calibration would set:, a table of nine gates with each peak and the threshold it would set, such as G0 move 36 → 39 and G1 move 35 (unchanged), and the Calibrate and apply and Close buttons](/assets/apollo-mmwave-calibrate-preview.png)
 
 ### Read the result
 
@@ -85,7 +85,7 @@ When the run finishes, the card shows **Thresholds updated** and a summary such 
 
 Below the summary is a table with one row per gate and the columns **Gate**, **Move peak**, **Move threshold**, **Still peak**, and **Still threshold**. The peak is the highest energy that gate reached while the room was empty. The new threshold is that peak plus some headroom, capped at 100. From Apollo mmWave 2.2.4, the headroom is 15 points or 35% of the peak, whichever is larger: a move peak of 14 becomes a threshold of 29, and a still peak of 60 becomes 81. Earlier versions used 10 points or a quarter of the peak, so calibrate again after updating to get the extra headroom.
 
-![The result of a calibration on an MSR-1: Thresholds updated, Calibrated at 02:54 AM from 60 samples. 18 of 18 thresholds changed., the result table, a warning that the G2 still threshold was turned back on, the walk-test line, and the Undo (restore your previous values), Calibrate again, and Close buttons](/assets/apollo-mmwave-calibrate-result.png)
+![The result of a calibration on an MSR-1: Thresholds updated, Calibrated at 01:04 PM from 60 samples. 18 of 18 thresholds changed., the result table with each gate's peak and its old and new threshold, such as G2 move peak 6 and 16 → 21, the walk-test line, and the Undo (restore your previous values), Calibrate again, and Close buttons](/assets/apollo-mmwave-calibrate-result.png)
 
 What the threshold cells mean:
 
