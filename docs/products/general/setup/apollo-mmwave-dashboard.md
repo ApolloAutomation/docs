@@ -83,7 +83,7 @@ Not ready to change anything yet? **Preview only** runs the same countdown and l
 
 When the run finishes, the card shows **Thresholds updated** and a summary such as **Calibrated at 02:32 PM from 60 samples. 16 of 18 thresholds changed.** Times appear in your browser's format, so you might see 14:32 instead of 02:32 PM. An MSR-1 or MSR-2 has 18 thresholds (9 gates, move and still); an R PRO-1 has 28 (14 gates).
 
-Below the summary is a table with one row per gate and the columns **Gate**, **Move peak**, **Move threshold**, **Still peak**, and **Still threshold**. The peak is the highest energy that gate reached while the room was empty. The new threshold is that peak plus some headroom: 15 points or 35% of the peak, whichever is larger, capped at 100. A move peak of 14 becomes a threshold of 29, and a still peak of 60 becomes 81. Versions before 2.2.4 used 10 points or a quarter of the peak, so calibrate again after updating to get the extra headroom.
+Below the summary is a table with one row per gate and the columns **Gate**, **Move peak**, **Move threshold**, **Still peak**, and **Still threshold**. The peak is the highest energy that gate reached while the room was empty. The new threshold is that peak plus some headroom, capped at 100. From Apollo mmWave 2.2.4, the headroom is 15 points or 35% of the peak, whichever is larger: a move peak of 14 becomes a threshold of 29, and a still peak of 60 becomes 81. Earlier versions used 10 points or a quarter of the peak, so calibrate again after updating to get the extra headroom.
 
 ![The result of a calibration on an MSR-1: Thresholds updated, Calibrated at 02:54 AM from 60 samples. 18 of 18 thresholds changed., the result table, a warning that the G2 still threshold was turned back on, the walk-test line, and the Undo (restore your previous values), Calibrate again, and Close buttons](/assets/apollo-mmwave-calibrate-result.png)
 
@@ -298,9 +298,25 @@ Each call calibrates one radar. Two related actions round it out: `apollo_mmwave
 A calibration sets each threshold a margin above the highest energy it heard during a one-minute listen. Something that moves now and then, like a fan that cycles or the heating coming on, may not have moved during that minute.
 
 1. Update Apollo mmWave to 2.2.4 or newer and press **Calibrate with empty room** again. 2.2.4 leaves more headroom above the room's noise (15 points instead of 10).
-2. Calibrate while whatever usually runs in the room is running: the fan on, the heating or air conditioning cycling.
-3. Still too sensitive? Give the calibration more headroom. On your own dashboard, add a `calibration` block to the Auto-calibrate card's YAML, for example `margin: 20` (points) or `margin_pct: 50` (percent of each gate's peak), then calibrate again. The same two fields work on the `apollo_mmwave.calibrate_gates` action in [Calibrate from an automation](#calibrate-from-an-automation).
-4. If only one spot misbehaves, raise just that gate's threshold, as described in [Fine-tune gates by hand](#fine-tune-gates-by-hand).
+2. Calibrate while whatever usually runs in the room is running: the fan on, the heating or air conditioning cycling. If it only comes on now and then, listen for longer so a cycle falls inside the listen, for example 5 minutes (`duration_s: 300`, set the same way as `margin` in step 3).
+3. Still too sensitive? Raise `margin`, the points added above each gate's peak, for example to 20 or 25, and calibrate again. It sets the headroom on most gates. The percentage (`margin_pct`) only takes over on gates whose peak is 43 or more at the defaults, such as gates right at the sensor, so raising it changes little in most rooms. There are two places to set it:
+    - **For one run, on any dashboard:** open **Settings → Tools → Actions**, pick **Calibrate gate thresholds (empty room)**, choose your radar under **Radar Device**, tick **Headroom (points)** and set it to 20 (and **Listen for (seconds)** for a longer listen), then press **Perform action** and leave the room. The Auto-calibrate card shows the run as it goes.
+
+        [![Open your Home Assistant instance and show your action tools with a specific action selected.](https://my.home-assistant.io/badges/tools_perform_action.svg)](https://my.home-assistant.io/redirect/tools_perform_action/?service=apollo_mmwave.calibrate_gates)
+
+    - **For every run, on your own dashboard:** add a `calibration` block to the Auto-calibrate card's YAML. **Calibrate with empty room** then uses it each time:
+
+        ```yaml
+        type: custom:apollo-radar-calibrate-card
+        device_id: your_device_id
+        calibration:
+          margin: 20
+          duration_s: 300
+        ```
+
+        The keys go under `calibration:`. Typed at the card's top level, they are ignored. On the Apollo mmWave dashboard, the same block can go under `strategy:` in its raw configuration; the [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#auto-calibration) has the details.
+
+4. If only one spot misbehaves, raise only that gate's threshold, as described in [Fine-tune gates by hand](#fine-tune-gates-by-hand).
 
 If the radar now misses you instead, press **Undo (restore your previous values)**, or calibrate again with a smaller `margin`.
 
