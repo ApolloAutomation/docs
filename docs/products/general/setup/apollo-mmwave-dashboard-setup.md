@@ -37,6 +37,8 @@ If you built the [MSR-2 tuning dashboard](/products/msr2/setup/msr2-tuning-dashb
 
 Apollo mmWave installs from its GitHub repository, so you add that repository to HACS once as a custom repository. From then on HACS tracks updates for it like any other integration. The button under step 1 covers steps 1 to 5: it adds the repository, after HACS asks you to confirm, and opens Apollo mmWave so you can go on at step 6.
 
+If you installed Apollo mmWave from the original repository, bharvey88/apollo-mmwave, which is no longer on GitHub, follow [From the original Apollo mmWave repository](#from-the-original-apollo-mmwave-repository) instead. It switches HACS over without setting anything up again.
+
 1. Open **HACS** from your Home Assistant sidebar.
 
     [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=apollo-mmwave-main&category=integration)
@@ -126,6 +128,10 @@ Want to rearrange the cards? Click the pencil icon in the upper right corner of 
 
 If this is your first Apollo dashboard, skip this section and [calibrate your radar](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room). [Troubleshooting](#troubleshooting) is at the end of this page if something didn't load.
 
+Before any upgrade, make a full Home Assistant backup under **Settings → System → Backups**, so you can go back if something goes wrong. After HACS updates Apollo mmWave, restart Home Assistant, then refresh the dashboard in your browser so it loads the new cards.
+
+[![Open your Home Assistant instance and show an overview of your backups.](https://my.home-assistant.io/badges/backup.svg)](https://my.home-assistant.io/redirect/backup/)
+
 ### From the MSR-2 tuning dashboard
 
 Your thresholds, detection range, and every other setting live on the sensor itself, and the new dashboard reads the same entities. There's nothing to migrate: once your MSR-2 tab works in the Apollo mmWave dashboard, you can delete the old view.
@@ -149,6 +155,40 @@ Your thresholds, detection range, and every other setting live on the sensor its
 5. Click **Save**.
 
 If no other cards use them, you can also remove Streamline Card and Plotly Graph Card from HACS. Apollo mmWave doesn't need either.
+
+### From the original Apollo mmWave repository
+
+Apollo mmWave used to install from the original repository, bharvey88/apollo-mmwave, which is no longer on GitHub. If HACS installed your copy from there, point HACS at the new repository, ApolloAutomation/apollo-mmwave-main, so you keep getting updates. It's the same integration in the same folder, so nothing needs to be set up again: your Apollo mmWave entry, its dashboard, your zones, the saved calibration values that **Undo** uses, and your entity IDs all carry over. The switch takes one Home Assistant restart.
+
+If the old copy is version 1.x or 2.0, read the [upgrade notes in the changelog](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/CHANGELOG.md#upgrading-to-20) first. Some cards and automations need a change by hand, and [From Apollo mmWave 1.x zone mapping](#from-apollo-mmwave-1x-zone-mapping) below sums them up.
+
+!!! warning "Don't delete Apollo mmWave in Home Assistant"
+
+    The switch happens in HACS only. If you choose **Delete** from the three-dot menu on the entry under **Settings → Devices & services → Apollo mmWave**, Home Assistant asks **Delete Apollo mmWave?** and warns that its devices and entities will be permanently deleted. Deleting it also deletes the Apollo mmWave dashboard, every zone, and the saved calibration values that **Undo** uses. Setting it up again starts from nothing.
+
+!!! warning "Don't press Remove or Redownload in HACS"
+
+    Both Apollo mmWave entries in HACS use the same `custom_components/apollo_mmwave` folder. **Remove**, on either entry, first shows **Integration is configured** and tells you to delete the configuration. Don't: **Navigate** leads to the integrations page, where **Delete** wipes your zones. **Ignore**, or closing the box, opens a **Remove** box whose **Remove** button deletes the folder, new download included, so Apollo mmWave won't load after the next restart. **Redownload** on the old entry fails because its repository is gone, and the folder can end up missing. Step 3 takes the old entry off the list without touching any files.
+
+1. Check two versions first. Home Assistant needs to be 2026.8.1 or newer (**Settings → About**). In **HACS**, click the three-dot menu in the upper right corner, choose **About HACS**, and check that **Integration version** is 2.0.5 or newer. The new repository won't download on older versions. Then make a full Home Assistant backup, as described at the start of this section.
+2. In **HACS**, click the three-dot menu in the upper right corner and choose **Custom repositories**.
+3. Find the row whose second line reads **bharvey88/apollo-mmwave (integration)** and click the trash can icon on that row. There's no confirmation, so read the second line before you click: removing the wrong row deletes no files, but you have to add that repository again. This only takes the old entry off the HACS list. The files in `custom_components/apollo_mmwave` stay where they are, and Apollo mmWave keeps running.
+    - If you already added the new repository, there are two rows. Remove only the bharvey88/apollo-mmwave one.
+    - If there's no bharvey88/apollo-mmwave row, there's nothing to remove. Go on to step 4.
+4. Paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **Repository** field, set **Type** to **Integration**, click **Add**, and close the dialog. If the dialog closed after step 3, open **Custom repositories** again first. Or use the button below instead: it shows an **Add custom repository** box, and clicking **Add** there opens the repository page in HACS for you.
+
+    [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=apollo-mmwave-main&category=integration)
+
+5. Search HACS for **Apollo mmWave** and open it. Only one entry is left, and if you used the button in step 4, it's already open. Click **Download** in the lower right corner, then click **Download** again in the dialog. The dialog says the files go to `/config/custom_components/apollo_mmwave`, the same folder as before. Wait for it to finish.
+    - If it shows an error, don't restart. Fix the cause and click **Download** again until it finishes with no error. On a first download HACS saves no backup copy of the folder, so a download that stops partway can leave old and new files mixed together.
+6. Look at the HACS list. **Apollo mmWave** now shows **Pending restart**, and the old entry is gone.
+7. Restart Home Assistant: go to **Settings → System**, click the power icon in the upper right corner, choose **Restart Home Assistant**, then click **Restart**. The **Restart required** repair that HACS adds does the same when you click **Submit**.
+
+    [![Open your Home Assistant instance and show the system dashboard.](https://my.home-assistant.io/badges/system_dashboard.svg)](https://my.home-assistant.io/redirect/system_dashboard/)
+
+After the restart, HACS shows one **Apollo mmWave** entry with the status **Downloaded**. Everything else is where you left it: your same entry under **Settings → Devices & services → Apollo mmWave**, the Apollo mmWave dashboard in the sidebar, your zones on the zone map, your previous calibration values behind **Undo**, and the same entity IDs. If a card looks old or doesn't load, do a hard refresh with **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac). From here on, HACS updates Apollo mmWave from the new repository.
+
+HACS may leave its own update entity for the old repository behind, showing as unavailable. It belongs to HACS, not Apollo mmWave, so deleting it is optional and doesn't touch your zones.
 
 ### From Apollo mmWave 1.x zone mapping
 
