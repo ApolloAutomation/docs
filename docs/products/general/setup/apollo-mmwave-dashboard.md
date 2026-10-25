@@ -212,7 +212,9 @@ The card shows your radar's name, a grid with the radar's view cone, and a dot f
 
 ### Lock and unlock
 
-The bottom-right corner has a lock toggle that reads **Unlocked** or **Locked**. The map starts locked once the radar has zones, and your browser remembers your choice for each radar. Drawing on a locked map shows **Unlock the grid before drawing.**
+The bottom-right corner has a lock toggle that reads **Unlocked** or **Locked**. The map starts locked once the radar has zones, and your browser remembers your choice for each radar. Drawing on a locked map shows **Unlock the grid before drawing.** The lock only stops drawing: **Clear All Zones**, double-clicking a zone's button, ↶ (**Undo last zone change**), and **Configure → Zones** still change your zones while the map is locked.
+
+On a phone or tablet, the grid takes every touch, so a swipe on it doesn't scroll the page, even while the map is locked. Scroll with your finger outside the grid, for example on the zone buttons. Keep the map on **Locked** when you're not drawing: on an unlocked map, a swipe across the grid can draw a new shape for the selected zone and replace its old one.
 
 ### Add a zone
 
@@ -244,6 +246,8 @@ Under **Configure**, drag **Cone rotation:** (from -180° to 180°) until the vi
 ### Use the zone sensors
 
 Each zone gets an occupancy sensor named **Zone 1 presence** (and so on) on the radar's device page in Home Assistant. It turns on when a tracked person is inside the zone, ready to use in your automations. When you rename a zone on the card, its sensors follow, so a zone named Couch gets **Zone 1 presence - Couch**. A name you gave the sensor yourself in Home Assistant is kept.
+
+While the radar is offline, or still reconnecting after a restart, zone presence reads off, not unavailable. An automation that waits for a zone to be clear for some minutes can't tell that apart from an empty zone, so have it also check that the radar itself is online.
 
 ## Calibrate from an automation
 
