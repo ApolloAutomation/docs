@@ -48,7 +48,7 @@ If you installed Apollo mmWave from the original repository, bharvey88/apollo-mm
 4. Set **Type** to **Integration** and click **Add**. The repository shows up in the list; close the dialog.
 5. Search HACS for **Apollo mmWave** and open it.
 6. Click **Download**, then confirm with **Download** in the dialog that opens.
-7. Restart Home Assistant: go to **Settings → System**, click the power icon in the upper right corner, and choose **Restart Home Assistant**. Wait for it to come back.
+7. Restart Home Assistant: go to **Settings → System**, click the power icon in the upper right corner, choose **Restart Home Assistant**, then click **Restart**. Wait for it to come back.
 
     [![Open your Home Assistant instance and show the system dashboard.](https://my.home-assistant.io/badges/system_dashboard.svg)](https://my.home-assistant.io/redirect/system_dashboard/)
 
