@@ -158,9 +158,9 @@ If no other cards use them, you can also remove Streamline Card and Plotly Graph
 
 ### From the original Apollo mmWave repository
 
-Apollo mmWave used to install from the original repository, bharvey88/apollo-mmwave, which is no longer on GitHub. If HACS installed your copy from there, point HACS at the new repository, ApolloAutomation/apollo-mmwave-main, so you keep getting updates. It's the same integration in the same folder, so nothing needs to be set up again: your Apollo mmWave entry, its dashboard, your zones, the saved calibration values that **Undo** uses, and your entity IDs all carry over. The switch takes one Home Assistant restart.
+Apollo mmWave used to install from the original repository, bharvey88/apollo-mmwave, which is no longer on GitHub. If HACS installed your copy from there, point HACS at the new repository, ApolloAutomation/apollo-mmwave-main, so you keep getting updates. It's the same integration in the same folder, so nothing needs to be set up again: what you already have carries over, such as your Apollo mmWave entry, its dashboard, your zones, the saved calibration values that **Undo** uses, and your entity IDs. The switch takes one Home Assistant restart.
 
-If the old copy is version 1.x or 2.0, read the [upgrade notes in the changelog](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/CHANGELOG.md#upgrading-to-20) first. Some cards and automations need a change by hand, and [From Apollo mmWave 1.x zone mapping](#from-apollo-mmwave-1x-zone-mapping) below sums them up.
+If the old copy is version 1.x or 2.0, not everything carries over on its own. Read the [upgrade notes in the changelog](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/CHANGELOG.md#upgrading-to-20) first. Some cards and automations need a change by hand, and [From Apollo mmWave 1.x zone mapping](#from-apollo-mmwave-1x-zone-mapping) below sums them up.
 
 !!! warning "Don't delete Apollo mmWave in Home Assistant"
 
