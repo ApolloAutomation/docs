@@ -162,11 +162,11 @@ Apollo mmWave used to install from the original repository, bharvey88/apollo-mmw
 
 If the old copy is version 1.x or 2.0, not everything carries over on its own. Read the [upgrade notes in the changelog](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/CHANGELOG.md#upgrading-to-20) first. Some cards and automations need a change by hand, and [From Apollo mmWave 1.x zone mapping](#from-apollo-mmwave-1x-zone-mapping) below sums them up.
 
-!!! warning "Don't delete Apollo mmWave in Home Assistant"
+!!! warning "Keep your Apollo mmWave entry in Home Assistant"
 
     The switch happens in HACS only. If you choose **Delete** from the three-dot menu on the entry under **Settings → Devices & services → Apollo mmWave**, Home Assistant asks **Delete Apollo mmWave?** and warns that its devices and entities will be permanently deleted. Deleting it also deletes the Apollo mmWave dashboard, every zone, and the saved calibration values that **Undo** uses. Setting it up again starts from nothing.
 
-!!! warning "Don't press Remove or Redownload in HACS"
+!!! warning "Leave Remove and Redownload alone in HACS"
 
     Both Apollo mmWave entries in HACS use the same `custom_components/apollo_mmwave` folder. **Remove**, on either entry, first shows **Integration is configured** and tells you to delete the configuration. Don't: **Navigate** leads to the integrations page, where **Delete** wipes your zones. **Ignore**, or closing the box, opens a **Remove** box whose **Remove** button deletes the folder, new download included, so Apollo mmWave won't load after the next restart. **Redownload** on the old entry fails because its repository is gone, and the folder can end up missing. Step 3 takes the old entry off the list without touching any files.
 
