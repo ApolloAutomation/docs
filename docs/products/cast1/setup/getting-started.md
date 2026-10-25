@@ -86,6 +86,10 @@ Open the ESPHome Integration, then click **Add** and **Submit**. Edit the name a
 
 The CAST-1 streams through <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>. Once Music Assistant is running, your CAST-1 shows up as a player automatically, no extra configuration needed.
 
+!!! note "Use Music Assistant 2.10.7 or newer"
+
+    Newer CAST-1 firmware needs Music Assistant 2.10.7 or newer to connect. If Music Assistant is already installed, update it from its app page first.
+
 ### Install Music Assistant
 
 You'll install the Music Assistant app, then add its integration in Home Assistant.
