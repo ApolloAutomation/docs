@@ -4,7 +4,7 @@ description: Documentation for CAST PRO-1, including setup, usage, and best prac
 ---
 # Introduction
 
-**Make Any Speakers Smart:** Connect the CAST PRO-1 to your speakers, receiver or soundbar, add it to Home Assistant, and it shows up in Music Assistant as a player you can stream to.
+**Make Any Speakers Smart:** Connect the CAST PRO-1 to your speakers, receiver or soundbar, add it to Home Assistant, and it shows up in Music Assistant as a player you can stream to. It needs Music Assistant 2.10.7 or newer.
 
 **Analog or Optical Output:** Use the analog output for powered speakers, or the optical output for a receiver or soundbar. Pick which one plays with the **Audio Output** setting on the device page.
 
