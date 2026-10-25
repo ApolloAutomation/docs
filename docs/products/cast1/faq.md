@@ -73,4 +73,8 @@ description: Frequently asked questions about the CAST-1 audio caster.
 
 * Set **Firmware Channel** to **Beta** on your CAST-1's device page, then select **Press** next to **Firmware Update**. See [Switch to Beta Firmware](../general/setup/switch-to-beta-branch.md) for a step-by-step guide.
 
+17\. **My CAST-1 doesn't show up in Music Assistant after a firmware update. What do I do?**
+
+* Update Music Assistant to 2.10.7 or newer. Newer CAST-1 firmware uses an updated Sendspin connection that older Music Assistant versions can't connect to.
+
 [Join our Discord if you need more help! :simple-discord:](https://link.apolloautomation.com/discord){ .md-button }
