@@ -214,7 +214,7 @@ The card shows your radar's name, a grid with the radar's view cone, and a dot f
 
 The bottom-right corner has a lock toggle that reads **Unlocked** or **Locked**. The map starts locked once the radar has zones, and your browser remembers your choice for each radar. Drawing on a locked map shows **Unlock the grid before drawing.** The lock only stops drawing: **Clear All Zones**, double-clicking a zone's button, ↶ (**Undo last zone change**), and **Configure → Zones** still change your zones while the map is locked.
 
-On a phone or tablet, the grid takes every touch, so a swipe on it doesn't scroll the page, even while the map is locked. Scroll with your finger outside the grid, for example on the zone buttons. Keep the map on **Locked** when you're not drawing: on an unlocked map, a swipe across the grid can draw a new shape for the selected zone and replace its old one.
+On a phone or tablet, the grid takes every touch, so a swipe on it doesn't scroll the page, even while the map is locked. Scroll with your finger outside the grid, for example on the radar's name above it. Stay off the zone buttons while you scroll: a stray tap on **Clear All Zones** clears every zone's shape. Keep the map on **Locked** when you're not drawing: on an unlocked map, a swipe across the grid can draw a new shape for the selected zone and replace its old one.
 
 ### Add a zone
 
