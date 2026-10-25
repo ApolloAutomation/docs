@@ -128,7 +128,7 @@ Want to rearrange the cards? Click the pencil icon in the upper right corner of 
 
 If this is your first Apollo dashboard, skip this section and [calibrate your radar](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room). [Troubleshooting](#troubleshooting) is at the end of this page if something didn't load.
 
-Before any upgrade, make a full Home Assistant backup under **Settings → System → Backups**, so you can go back if something goes wrong. After HACS updates Apollo mmWave, restart Home Assistant, then refresh the dashboard in your browser so it loads the new cards.
+Before any upgrade, make a full Home Assistant backup under **Settings → System → Backups**, so you can go back if something goes wrong. After you update Apollo mmWave in HACS, restart Home Assistant, then refresh the dashboard in your browser so it loads the new cards.
 
 [![Open your Home Assistant instance and show an overview of your backups.](https://my.home-assistant.io/badges/backup.svg)](https://my.home-assistant.io/redirect/backup/)
 
@@ -186,7 +186,7 @@ If the old copy is version 1.x or 2.0, not everything carries over on its own. R
 
     [![Open your Home Assistant instance and show the system dashboard.](https://my.home-assistant.io/badges/system_dashboard.svg)](https://my.home-assistant.io/redirect/system_dashboard/)
 
-After the restart, HACS shows one **Apollo mmWave** entry with the status **Downloaded**. Everything else is where you left it: your same entry under **Settings → Devices & services → Apollo mmWave**, the Apollo mmWave dashboard in the sidebar, your zones on the zone map, your previous calibration values behind **Undo**, and the same entity IDs. If a card looks old or doesn't load, do a hard refresh with **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac). From here on, HACS updates Apollo mmWave from the new repository.
+After the restart, HACS shows one **Apollo mmWave** entry with the status **Downloaded**. Everything else is where you left it: your same entry under **Settings → Devices & services → Apollo mmWave**, the Apollo mmWave dashboard in the sidebar, your zones on the zone map, your previous calibration values behind **Undo**, and the same entity IDs. If a card looks old or doesn't load, do a hard refresh with **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac). From here on, HACS tracks updates from the new repository.
 
 HACS may leave its own update entity for the old repository behind, showing as unavailable. It belongs to HACS, not Apollo mmWave, so deleting it is optional and doesn't touch your zones.
 
