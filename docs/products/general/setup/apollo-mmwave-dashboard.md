@@ -132,7 +132,7 @@ Open **Apollo mmWave** from your sidebar and, if you have more than one radar, p
 ### First column
 
 - **Auto-calibrate**: the calibration card, always at the top of the tab. It shows the chip and the device name under its title, a short checklist, and the **Calibrate with empty room** button. Everything about it is in [Calibrate with an empty room](#calibrate-with-an-empty-room) above.
-- A help card with your radar's name and a **Start here** checklist of four steps: calibrate, set how far the radar should look, set how long presence stays on, then walk the room and watch the Gate Energy chart. It ends with a **Full tuning guide →** link to the manual tuning guide on this wiki: the MSR-2 guide on an MSR-1 or MSR-2, and the LD2412 section of the R PRO-1 guide on an R PRO-1.
+- A help card with your radar's name and a **Start here** checklist of four steps: calibrate, set how far the radar should look, set how long presence stays on, then walk the room and watch the Gate Energy chart. It ends with a **Full tuning guide →** link to this guide on the wiki. On an MSR-1 or MSR-2 it opens the general version of this guide, the one that covers every Apollo radar. On an R PRO-1 it opens [the R PRO-1 version](/products/rpro1/setup/apollo-mmwave-dashboard.md#r-pro-1-and-its-ld2412-radar) at its LD2412 section.
 - **LD2410 Controls**: the **Radar Engineering Mode** switch, plus **Bluetooth**, **Restart Radar**, **Factory Reset Radar**, and **ESP Reboot**. On an R PRO-1 the card also has **Start Dynamic Background Correction** and **Background Correction Running** (see [R PRO-1 and its LD2412 radar](#r-pro-1-and-its-ld2412-radar)). **Restart Radar** restarts the radar chip and **ESP Reboot** restarts the whole sensor; neither changes your settings. Leave **Factory Reset Radar** alone unless Apollo support asks you to press it: it puts the radar chip's settings, every threshold included, back to factory values. If you press it by accident, run **Calibrate with empty room** again.
 - **LD2410 Zone Config** (MSR-1 and MSR-2): **Start Zone 1**, **End Zone 1**, **End Zone 2**, and **End Zone 3** split the radar's range into three distance bands, each with its own occupancy sensor (**Radar Zone 1 Occupancy** to **Radar Zone 3 Occupancy**). These are distances from the sensor, not areas you draw like on the R PRO-1 and MTR-1 zone map. They're optional: leave them as they are unless you want separate sensors for, say, the couch and the far end of the room.
 
@@ -212,7 +212,9 @@ The card shows your radar's name, a grid with the radar's view cone, and a dot f
 
 ### Lock and unlock
 
-The bottom-right corner has a lock toggle that reads **Unlocked** or **Locked**. The map starts locked once the radar has zones, and your browser remembers your choice for each radar. Drawing on a locked map shows **Unlock the grid before drawing.**
+The bottom-right corner has a lock toggle that reads **Unlocked** or **Locked**. The map starts locked once the radar has zones, and your browser remembers your choice for each radar. Drawing on a locked map shows **Unlock the grid before drawing.** The lock only stops drawing: **Clear All Zones**, double-clicking a zone's button, ↶ (**Undo last zone change**), and **Configure → Zones** still change your zones while the map is locked.
+
+On a phone or tablet, the grid takes every touch, so a swipe on it doesn't scroll the page, even while the map is locked. Scroll with your finger outside the grid, for example on the radar's name above it. Stay off the zone buttons while you scroll: a stray tap on **Clear All Zones** clears every zone's shape. Keep the map on **Locked** when you're not drawing: on an unlocked map, a swipe across the grid can draw a new shape for the selected zone and replace its old one.
 
 ### Add a zone
 
@@ -244,6 +246,8 @@ Under **Configure**, drag **Cone rotation:** (from -180° to 180°) until the vi
 ### Use the zone sensors
 
 Each zone gets an occupancy sensor named **Zone 1 presence** (and so on) on the radar's device page in Home Assistant. It turns on when a tracked person is inside the zone, ready to use in your automations. When you rename a zone on the card, its sensors follow, so a zone named Couch gets **Zone 1 presence - Couch**. A name you gave the sensor yourself in Home Assistant is kept.
+
+While the radar is offline, or still reconnecting after a restart, zone presence reads off, not unavailable. An automation that waits for a zone to be clear for some minutes can't tell that apart from an empty zone, so have it also check that the radar itself is online.
 
 ## Calibrate from an automation
 
@@ -339,8 +343,10 @@ If the button works but the card answers with a line starting **Calibration fail
 - **Home Assistant could not turn Radar Engineering Mode on within 10 s. Is the radar online?** The radar did not respond to the switch.
 - **No gate energy readings arrived within 20 s of turning Radar Engineering Mode on.** Check that the radar is online and that **Radar Engineering Mode** on the Controls card brings the Gate Energy chart to life.
 - **Radar Engineering Mode turned off during the listen. Nothing was changed.** Someone, or an automation, turned it off during the listen. Leave it on and try again.
-- **The radar has not reported 18 of its threshold values yet.** The radar has not sent its thresholds to Home Assistant since it started, which can happen after it has been running for a long time. Press **Read settings from the radar**: the card asks the radar for its settings, shows **Reading settings from the radar...**, and tries again a few seconds later. If the card can't find the radar's query params button, it says **Open the radar's device page, press its Query Params button in the Diagnostic section, wait a few seconds, then try again.** On an R PRO-1 without the [LD2412 addon](/products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md), this message is expected: there's no radar to report thresholds, so reading the settings can't fix it. Skip the calibration and use the [zone map](#draw-zones-on-the-r-pro-1-and-mtr-1).
+- **The radar has not reported 18 of its threshold values yet.** The number is how many are missing: up to 18 on an MSR-1 or MSR-2, and up to 28 on an R PRO-1. The radar has not sent its thresholds to Home Assistant since it started, which can happen after it has been running for a long time. Press **Read settings from the radar**: the card asks the radar for its settings, shows **Reading settings from the radar...**, and tries again a few seconds later. If the card can't find the radar's query params button, it says **Open the radar's device page, press its Query Params button in the Diagnostic section, wait a few seconds, then try again.**
 - **Your Home Assistant user is not allowed to control this radar's entities.** Run the calibration from a Home Assistant user that can control the radar.
+
+On an R PRO-1 without the [LD2412 addon](/products/rpro1/addons/add-the-ld2412-mmwave-sensor-to-r-pro-1.md), there's no radar behind the LD2412 cards, so the Auto-calibrate card can't calibrate. Depending on what the sensor reports, the card either reads **Radar is offline. Calibration needs the radar online and its gate entities enabled.** with its buttons disabled, or answers **Calibrate with empty room** with **The radar has not reported 28 of its threshold values yet.** Reading the settings from the radar can't fix either one. Skip the calibration: the [zone map](#draw-zones-on-the-r-pro-1-and-mtr-1) is what that sensor uses.
 
 ### Radar Engineering Mode was left on
 
