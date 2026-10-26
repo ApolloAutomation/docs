@@ -11,7 +11,7 @@ This guide starts with a calibration, since it's the first thing a new MSR-1, MS
 
 !!! note "Before you start"
 
-    - The Apollo mmWave integration is installed and **Apollo mmWave** is in your Home Assistant sidebar. If not, follow the [Apollo mmWave dashboard setup guide](apollo-mmwave-dashboard-setup.md).
+    - The Apollo mmWave integration is installed and its **Apollo mmWave** dashboard is in your Home Assistant sidebar. If it isn't, sign in as an administrator (from Apollo mmWave 2.2.6, the dashboard is for administrators only unless you unticked that box), or follow the [Apollo mmWave dashboard setup guide](apollo-mmwave-dashboard-setup.md) to add it.
     - Your radar is online in Home Assistant through ESPHome.
     - Your sensor is mounted where it will stay. A calibration describes the room from the sensor's position, so moving the sensor later means calibrating again.
     - A calibration needs the room empty for about a minute and a half: people and pets out, robot vacuum docked.
@@ -215,6 +215,8 @@ The card shows your radar's name, a grid with the radar's view cone, and a dot f
 The bottom-right corner has a lock toggle that reads **Unlocked** or **Locked**. The map starts locked once the radar has zones, and your browser remembers your choice for each radar. Drawing on a locked map shows **Unlock the grid before drawing.** The lock only stops drawing: **Clear All Zones**, double-clicking a zone's button, ↶ (**Undo last zone change**), and **Configure → Zones** still change your zones while the map is locked.
 
 On a phone or tablet, the grid takes every touch, so a swipe on it doesn't scroll the page, even while the map is locked. Scroll with your finger outside the grid, for example on the radar's name above it. Stay off the zone buttons while you scroll: a stray tap on **Clear All Zones** clears every zone's shape. Keep the map on **Locked** when you're not drawing: on an unlocked map, a swipe across the grid can draw a new shape for the selected zone and replace its old one.
+
+From Apollo mmWave 2.2.6, only administrators can save zone changes. Other users still see the zones and their presence sensors, and a change they try to make shows a **Could not save** message.
 
 ### Add a zone
 
