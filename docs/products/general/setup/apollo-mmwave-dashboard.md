@@ -11,7 +11,7 @@ This guide starts with a calibration, since it's the first thing a new MSR-1, MS
 
 !!! note "Before you start"
 
-    - The Apollo mmWave integration is installed and **Apollo mmWave** is in your Home Assistant sidebar. If not, follow the [Apollo mmWave dashboard setup guide](apollo-mmwave-dashboard-setup.md).
+    - The Apollo mmWave integration is installed and its **Apollo mmWave** dashboard is in your Home Assistant sidebar. If it isn't, sign in as an administrator (from Apollo mmWave 2.2.6, the dashboard is for administrators only unless you unticked that box), or follow the [Apollo mmWave dashboard setup guide](apollo-mmwave-dashboard-setup.md) to add it.
     - Your radar is online in Home Assistant through ESPHome.
     - Your sensor is mounted where it will stay. A calibration describes the room from the sensor's position, so moving the sensor later means calibrating again.
     - A calibration needs the room empty for about a minute and a half: people and pets out, robot vacuum docked.
