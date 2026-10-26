@@ -216,6 +216,8 @@ The bottom-right corner has a lock toggle that reads **Unlocked** or **Locked**.
 
 On a phone or tablet, the grid takes every touch, so a swipe on it doesn't scroll the page, even while the map is locked. Scroll with your finger outside the grid, for example on the radar's name above it. Stay off the zone buttons while you scroll: a stray tap on **Clear All Zones** clears every zone's shape. Keep the map on **Locked** when you're not drawing: on an unlocked map, a swipe across the grid can draw a new shape for the selected zone and replace its old one.
 
+From Apollo mmWave 2.2.6, only administrators can save zone changes. Other users still see the zones and their presence sensors, and a change they try to make shows a **Could not save** message.
+
 ### Add a zone
 
 Open **Configure → Zones** and press **Add Zone**. The new zone is named **Zone 1** (then Zone 2, and so on), gets its own button under the grid, and is selected and ready to draw.
