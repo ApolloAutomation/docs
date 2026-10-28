@@ -391,11 +391,11 @@ If you don't know a device's IRK (Identity Resolving Key), you may have to wait 
 
 Once your Apollo devices are running as Bluetooth proxies, Home Assistant can tell you more than whether someone is home. Two free, open-source integrations, Bermuda and PadSpan, use the same proxies to work out which room each phone, watch or tag is in. Neither needs anything extra flashed onto your devices, and you can run both at once.
 
-Before you start:
+!!! note "Before you start"
 
-1. Put a proxy in each room you want to tell apart. One proxy is enough for home or away, but rooms need one each.
-2. Check that each Apollo device is in the right area in Home Assistant: open the device and set its **Area**. Both integrations use it as the room.
-3. Set up your phones once, because they keep changing their Bluetooth address. Add iPhones and Apple Watches to the **Private BLE Device** integration (see [Apple iPhone and Apple Watch](#apple-iphone-and-apple-watch) above), and on Android turn on the **BLE Transmitter** in the Home Assistant Companion app (see [Android](#android) above).
+    1. Put a proxy in each room you want to tell apart. One proxy is enough for home or away, but rooms need one each.
+    2. Check that each Apollo device is in the right area in Home Assistant: open the device and set its **Area**. Both integrations use it as the room.
+    3. Set up your phones once, because they keep changing their Bluetooth address. Add iPhones and Apple Watches to the **Private BLE Device** integration (see [Apple iPhone and Apple Watch](#apple-iphone-and-apple-watch) above), and on Android turn on the **BLE Transmitter** in the Home Assistant Companion app (see [Android](#android) above).
 
 ### Bermuda
 
