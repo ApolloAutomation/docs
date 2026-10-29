@@ -414,6 +414,8 @@ The settings are explained in [Bermuda's documentation](https://github.com/agitt
 
 PadSpan shows the same answer on a floor plan of your home: every phone, watch and tag in the room it's in, live, one floor at a time or all floors stacked. It also creates room, distance and home/away sensors for your automations. You can try it in your browser before you install anything, on the [PadSpan demo](https://padspan.traks.ca/demo/).
 
+PadSpan's room presence, sensors, floor plans and calibration are free. Some features need a paid PadSpan Pro license, such as placing lights and devices exactly on its Atlas map, the 3D view (Live Aboard), the wall screen, Forensics, Busy Times and Locate. You can try all of Pro free for 90 days, no card needed.
+
 1. Install PadSpan HA from HACS and restart Home Assistant.
 
     [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=gbroeckling&repository=padspanHA&category=integration)
