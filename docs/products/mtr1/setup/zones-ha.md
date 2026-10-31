@@ -6,7 +6,7 @@ description: Set up the three radar zones on your MTR-1 in Home Assistant by ent
 
 !!! tip "Prefer a guided dashboard?"
 
-    The Apollo mmWave integration gives your Apollo MTR-1 its own dashboard tab with a zone map where you draw zones over the radar's live targets, with no Plotly card or YAML to set up. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) walks you through it as a guided alternative to the manual steps below.
+    The Apollo mmWave integration gives your Apollo MTR-1 its own dashboard tab with a zone map where you draw zones over the radar's live targets, with no Plotly card or YAML to set up. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) walks you through it as a guided alternative to the manual steps below. If you draw zones there, leave **Zone Type** on **Disabled** instead of entering zones below: the dashboard's zone map replaces the radar's built-in zones, and its **Radar setup** card offers **Set Zone Type to Disabled** when it isn't.
 
 This guide shows you how to set up your MTR-1's three zones by entering the X and Y coordinates for each one. First you add a card to your dashboard that shows the radar's live targets, then you use it to work out the coordinates for each zone, in millimeters. You can enter the values in Home Assistant, as shown below, or directly on the device's web page by visiting its IP address or hostname.local.
 

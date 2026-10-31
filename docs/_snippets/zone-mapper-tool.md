@@ -1,3 +1,7 @@
+!!! tip "Using the Apollo mmWave integration?"
+
+    Its dashboard has a zone map built in, with a tab for each MTR-1 and R PRO-1, so you don't need Zone Mapper as well. See [Draw zones on the R PRO-1 and MTR-1](/products/general/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1). Either way, leave the radar's **Zone Type** (**LD2450 Zone Type** on an R PRO-1) on **Disabled**. On **Detection**, the radar reports only people inside its own built-in zones, and with none set it reports nobody.
+
 ![Zone Mapper card showing drawn zones and tracked targets on a grid](/assets/zonemappertool.png)
 
 Zone Mapper has two parts that work together:

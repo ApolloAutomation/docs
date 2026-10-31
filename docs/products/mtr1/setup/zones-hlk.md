@@ -40,6 +40,10 @@ With the app installed, you'll turn on the radar's Bluetooth, connect to it from
 
 ![HLKRadarTool LD2450 radar view with one target and the Set button circled in red](/assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)
 
+!!! tip "Drawing zones with the Apollo mmWave dashboard?"
+
+    In step 4, pick **Close detection** instead of **Area Detection** (Zone Type **Disabled** in Home Assistant). The dashboard's [zone map](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces the app's areas. On **Area Detection**, the radar reports only people inside the app's areas, so anyone else is missing from the map, and **Area Filtering** hides the people inside them.
+
 4\. Select **Area Detection**, then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
 
 !!! tip "There are three ways to use your MTR-1!"
@@ -47,10 +51,6 @@ With the app installed, you'll turn on the radar's Bluetooth, connect to it from
     You can use any of these three choices to control your MTR-1 differently. The most common option is **Area Detection**, which lets you set up three areas and track three targets within them.<br>**Close detection** (Disabled in Home Assistant): zone detection is off<br>**Area Detection** (Detection): only detects targets inside your zones<br>**Area Filtering** (Filter): ignores targets inside your zones
 
     Close detection lets you use the sensor as a basic presence sensor, and Area Filtering lets you filter out an area and detect everything else, which is useful to avoid a fan!
-
-!!! tip "Drawing zones with the Apollo mmWave dashboard?"
-
-    Pick **Close detection** here instead (Zone Type **Disabled** in Home Assistant). The dashboard's [zone map](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces these areas. On **Area Detection**, the radar reports only people inside your areas, so anyone else is missing from the map, and **Area Filtering** hides the people inside them.
 
 ![HLKRadarTool Parameter settings with Area Detection on, three zones drawn, and Setup successfully shown](/assets/screenshot-20240514-100512-hlkradartool.jpg)
 

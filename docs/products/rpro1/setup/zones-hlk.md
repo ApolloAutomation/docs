@@ -44,6 +44,10 @@ Follow these steps to turn on the LD2450's Bluetooth and set up its zones in the
 
 ![HLKRadarTool app LD2450 zone map with the Set button highlighted in the top right](/assets/r-pro-1-hlk-app-select-set.png)
 
+!!! tip "Drawing zones with the Apollo mmWave dashboard?"
+
+    In step 4, pick **Close detection** instead of **Area Detection** (**LD2450 Zone Type** **Disabled** in Home Assistant). The dashboard's [zone map](/products/rpro1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces the app's areas. On **Area Detection**, the radar reports only people inside the app's areas, so anyone else is missing from the map, and **Area Filtering** hides the people inside them.
+
 4\. Enable Area Detection, then toggle Area 1, 2, and 3 to display a colored box with the matching number. You can press and hold the box to move or resize it as needed. Once your zones are configured, click **Submit**. You should see a confirmation message: **"Setup successfully."**
 
 !!! tip "There are three ways to use your R PRO-1!"
