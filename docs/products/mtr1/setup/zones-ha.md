@@ -91,7 +91,7 @@ Now use the live targets on the card to find the coordinates for each zone, and 
     * Turn on **Multi Target Tracking** to help the MTR-1 detect up to three targets better.
     * **Zone Type** lets you select **Disabled**, **Detection**, or **Filter**:
         * **Disabled**: disables zone area detection.
-        * **Detection**: only detects targets in the specified zone.
+        * **Detection**: only detects targets in the specified zone. With no zones set, it detects nobody.
         * **Filter**: excludes the zone from detection.
 
 2\. Walk, sit, or stand in the area where you want a detection or non-detection zone, and watch where your target appears on the card. Then enter the Zone 1-3 X and Y values to draw zones around the targets you want to detect or filter out. X values go from -4860 mm to 4860 mm, and Y values go from 0 mm to 7560 mm.

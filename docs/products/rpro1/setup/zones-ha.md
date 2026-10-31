@@ -14,7 +14,7 @@ description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 
 !!! tip "Prefer a guided dashboard?"
 
-    The Apollo mmWave integration gives your R PRO-1 a dashboard tab where you draw LD2450 zones over live targets and tune the LD2412 gates with a **Calibrate with empty room** button. The [Apollo mmWave dashboard guide](/products/rpro1/setup/apollo-mmwave-dashboard.md) walks you through it as a guided alternative to the manual steps below.
+    The Apollo mmWave integration gives your R PRO-1 a dashboard tab where you draw LD2450 zones over live targets and tune the LD2412 gates with a **Calibrate with empty room** button. The [Apollo mmWave dashboard guide](/products/rpro1/setup/apollo-mmwave-dashboard.md) walks you through it as a guided alternative to the manual steps below. If you draw zones there, leave **LD2450 Zone Type** on **Disabled** instead of entering zones below: the dashboard's zone map replaces the radar's built-in zones, and its **Radar setup** card offers **Set Zone Type to Disabled** when it isn't.
 
 Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R PRO-1 LD2450.
 
@@ -57,7 +57,7 @@ Follow these steps to add a Plotly card that shows your LD2450 targets, then set
     * Multi Target Tracking toggled on helps it detect up to three targets better.
     * Zone Type allows you to select Disabled, Detection, or Filter.
     * Disabled: Disable zone area detection.
-    * Detection: Only detects targets in the specified zone.
+    * Detection: Only detects targets in the specified zone. With no zones set, it detects nobody.
     * Filter: Excludes a zone from detection.
 
 9\. Now we can input our Zone 1-3 X and Y values to make our zones. Using the visual card from above, we can walk, sit, or stand in the area where we want to create a detection or non-detection zone. Input values for X are -4860 mm to 4860 mm, and the Y values are 0 mm to 7560 mm.

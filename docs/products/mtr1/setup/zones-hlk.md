@@ -48,6 +48,10 @@ With the app installed, you'll turn on the radar's Bluetooth, connect to it from
 
     Close detection lets you use the sensor as a basic presence sensor, and Area Filtering lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
+!!! tip "Drawing zones with the Apollo mmWave dashboard?"
+
+    Pick **Close detection** here instead (Zone Type **Disabled** in Home Assistant). The dashboard's [zone map](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces these areas. On **Area Detection**, the radar reports only people inside your areas, so anyone else is missing from the map, and **Area Filtering** hides the people inside them.
+
 ![HLKRadarTool Parameter settings with Area Detection on, three zones drawn, and Setup successfully shown](/assets/screenshot-20240514-100512-hlkradartool.jpg)
 
 5\. If set up correctly the zones should be saved as different colors. You can double-check that the settings are saved by looking at your HA entities (picture below). You should be all set!
