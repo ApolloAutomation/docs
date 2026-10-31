@@ -59,7 +59,7 @@ Once added to Home Assistant you can configure different settings for your MTR-1
     | **ESP Reboot** | — | Restarts the device. Helpful for troubleshooting or refreshing the connection. |
     | **Multi Target Tracking** | from module | Turns multi-target tracking on or off. Initial state is read from the LD2450 at boot. |
     | **Timeout** | 5 s | How long presence stays detected after the target is lost. See the <a href="https://esphome.io/components/sensor/ld2450.html#ld2450-binary-sensors" target="_blank" rel="noopener">ESPHome LD2450 docs</a>. |
-    | **Zone Type** | Disabled | Zone detection mode: `Disabled`, `Detection` (only detect targets inside the zone), or `Filter` (exclude the zone from detection). |
+    | **Zone Type** | Disabled | Zone detection mode: `Disabled`, `Detection` (only detect targets inside the zone), or `Filter` (exclude the zone from detection). With `Detection` and no zones set, the radar detects nobody, so keep `Disabled` unless you use the radar's own zones (the **Zone-1 / Zone-2 / Zone-3** settings below). |
     | **Zone-1 / Zone-2 / Zone-3 X1, X2** | — | Start and end X coordinates of the zone in mm (-4860 left to 4860 right). |
     | **Zone-1 / Zone-2 / Zone-3 Y1, Y2** | — | Start and end Y coordinates of the zone in mm (0 to 7560). |
     | **DPS310 Pressure Offset** | 0.0 hPa | Calibration offset for the DPS310 pressure reading. Disabled by default. |

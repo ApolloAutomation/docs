@@ -6,7 +6,7 @@ description: Set up the three radar zones on your MTR-1 in Home Assistant by ent
 
 !!! tip "Prefer a guided dashboard?"
 
-    The Apollo mmWave integration gives your Apollo MTR-1 its own dashboard tab with a zone map where you draw zones over the radar's live targets, with no Plotly card or YAML to set up. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) walks you through it as a guided alternative to the manual steps below.
+    The Apollo mmWave integration gives your Apollo MTR-1 its own dashboard tab with a zone map where you draw zones over the radar's live targets, with no Plotly card or YAML to set up. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) walks you through it as a guided alternative to the manual steps below. If you draw zones there, leave **Zone Type** on **Disabled** instead of entering zones below: the dashboard's zone map replaces the radar's built-in zones, and its **Radar setup** card offers **Set Zone Type to Disabled** when it isn't.
 
 This guide shows you how to set up your MTR-1's three zones by entering the X and Y coordinates for each one. First you add a card to your dashboard that shows the radar's live targets, then you use it to work out the coordinates for each zone, in millimeters. You can enter the values in Home Assistant, as shown below, or directly on the device's web page by visiting its IP address or hostname.local.
 
@@ -91,7 +91,7 @@ Now use the live targets on the card to find the coordinates for each zone, and 
     * Turn on **Multi Target Tracking** to help the MTR-1 detect up to three targets better.
     * **Zone Type** lets you select **Disabled**, **Detection**, or **Filter**:
         * **Disabled**: disables zone area detection.
-        * **Detection**: only detects targets in the specified zone.
+        * **Detection**: only detects targets in the specified zone. With no zones set, it detects nobody.
         * **Filter**: excludes the zone from detection.
 
 2\. Walk, sit, or stand in the area where you want a detection or non-detection zone, and watch where your target appears on the card. Then enter the Zone 1-3 X and Y values to draw zones around the targets you want to detect or filter out. X values go from -4860 mm to 4860 mm, and Y values go from 0 mm to 7560 mm.
