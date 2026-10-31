@@ -9,6 +9,8 @@ The Apollo mmWave dashboard puts every setting your radar has on one screen, wit
 
 Every tab starts with a **Start here** card that lists your sensor's first steps in order, and this guide follows the same order: check the **Radar setup** card, calibrate, set how far the radar looks and how long presence stays on, then fine-tune by hand. If you only do one thing today, press **Calibrate with empty room** and leave the room: [Calibrate with an empty room](#calibrate-with-an-empty-room) shows what to expect. On an MTR-1, or an R PRO-1 without the LD2412, go straight to [drawing zones](#draw-zones-on-the-r-pro-1-and-mtr-1).
 
+Here's the **Start here** card on an MSR-1. On an MTR-1, or an R PRO-1 without the LD2412, it lists three zone map steps instead, and on an R PRO-1 with the LD2412 it covers both radars.
+
 ![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps: fix anything the Radar setup card flags, press Calibrate with empty room, set Max Move Gate and Max Still Gate (each gate is about 2.5 ft), set Radar Timeout, and walk the room while you watch the Gate Energy chart, followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
 
 !!! note "Before you start"
@@ -16,7 +18,7 @@ Every tab starts with a **Start here** card that lists your sensor's first steps
     - The Apollo mmWave integration is installed and its **Apollo mmWave** dashboard is in your Home Assistant sidebar. If it isn't, sign in as an administrator (from Apollo mmWave 2.2.6, the dashboard is for administrators only unless you unticked that box), or follow the [Apollo mmWave dashboard setup guide](apollo-mmwave-dashboard-setup.md) to add it.
     - This guide shows Apollo mmWave 2.3.0. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first.
     - Your radar is online in Home Assistant through ESPHome.
-    - Your sensor is mounted where it will stay. A calibration describes the room from the sensor's position, so moving the sensor later means calibrating again.
+    - Your sensor is mounted where it will stay. A calibration, and the zones you draw, describe the room from the sensor's position, so moving the sensor later means calibrating again or redrawing your zones.
     - A calibration needs the room empty for about a minute and a half: people and pets out, robot vacuum docked.
 
 ## How radar tuning works
@@ -44,7 +46,7 @@ The card changes nothing on its own. When it flags something, it says what's wro
 - A zone that can never turn on (MSR-1 and MSR-2), for example **Zone 2 can never turn on. End Zone 2 (150 cm) must be larger than End Zone 1 (200 cm).** The distances on the **LD2410 Zone Config** card are out of order, or a zone starts past how far the radar is set to look. Change the distances on the Zone Config card, or raise the max gates on the **Detection Range** card.
 - **Min Gate** at or above **Max Gate** (R PRO-1). The LD2412 only detects people from Min Gate out to Max Gate, so set Min Gate lower than Max Gate on the **LD2412 Detection Range** card.
 
-The last two have no button: the card explains them and leaves the new values to you. An R PRO-1 tab has a second **Radar setup** card above the zone map, for the LD2450; see [Check the LD2450's Radar setup card](#check-the-ld2450s-radar-setup-card).
+The last two have no button: the card explains them and leaves the new values to you. On an MTR-1, the **Radar setup** card under **Start here** checks the LD2450 instead, and an R PRO-1 tab has a second **Radar setup** card above the zone map for its LD2450. Both are covered in [Check the LD2450's Radar setup card](#check-the-ld2450s-radar-setup-card).
 
 ## Calibrate with an empty room
 
@@ -66,7 +68,7 @@ A threshold of 100 means that gate never triggers, so some people set a gate to 
 
 ### Run a calibration
 
-You start the calibration from the card, then stay out of the room for about a minute and a half while it listens.
+You start the calibration from the card, then stay out of the room for about a minute and a half while it listens. On an R PRO-1, first clear the room, press **Start Dynamic Background Correction** on the **LD2412 Controls** card, and wait for **Background Correction Running** to turn off (see [R PRO-1 and its LD2412 radar](#r-pro-1-and-its-ld2412-radar)).
 
 1. Press **Calibrate with empty room** on the **Auto-calibrate** card. Take your phone with you if you'd like to watch the countdown and the listen from outside the room.
 2. Leave the room while the countdown runs and close the door behind you. Then move away from the door and the walls: the radar can see through drywall and thin doors, so waiting right outside can count as someone in the room. If the room has no door, go to another room, out of the sensor's view.
@@ -123,7 +125,10 @@ Under the table, the card suggests a walk test:
 
 **Now walk around, then sit still for a minute: the Radar Target row in Target / Occupancy should stay on the whole time you are in the room and turn off a few seconds after you leave (Radar Timeout).**
 
-Walk through the room, then sit somewhere you usually sit and stay still for a minute or two. **Radar Target** covers still presence as well as movement, so it should stay on while you sit still, and turn off a few seconds after you leave, once **Radar Timeout** runs out. To watch the gates themselves, press **Turn on Radar Engineering Mode** on the Gate Energy chart: the bars of the gates you are standing in should be outlined, and no gate inside the radar's range should be outlined once you walk out. When you're done, turn **Radar Engineering Mode** off again on the **Controls** card, or press **Turn off Radar Engineering Mode** on the **Radar setup** card.
+1. Press **Turn on Radar Engineering Mode** on the Gate Energy chart if you'd like to watch the gates as well.
+2. Walk through the room, then sit where you usually sit and stay still for a minute or two. **Radar Target** covers still presence as well as movement, so it should stay on the whole time. With Radar Engineering Mode on, the bars of the gates you're in should be outlined.
+3. Leave the room. **Radar Target** should turn off a few seconds later, once **Radar Timeout** runs out, and no gate inside the radar's range should stay outlined.
+4. If you turned on Radar Engineering Mode, press **Turn off Radar Engineering Mode** on the **Radar setup** card, or use the switch on the **Controls** card.
 
 Below the walk-test line are three buttons: **Undo (restore your previous values)**, **Calibrate again** (a fresh calibration with a new countdown and listen), and **Close**. If the radar now misses you, or behaves worse than before, press **Undo (restore your previous values)**. The card shows **Restoring saved thresholds... 3 of 16** and then **Restored your previous values.** Undo saves the values it replaces first, so the button then reads **Redo (put the calibrated values back)**, and pressing it puts the calibrated values back. The saved copy survives a Home Assistant restart.
 
@@ -153,19 +158,22 @@ Open **Apollo mmWave** from your sidebar and, if you have more than one radar, p
 - **Radar setup**: checks the radar's settings and offers a fix (see [Start with the Radar setup card](#start-with-the-radar-setup-card)).
 - **Auto-calibrate**: the calibration card. It shows the chip and the device name under its title, a short checklist, and the **Calibrate with empty room** button. Everything about it is in [Calibrate with an empty room](#calibrate-with-an-empty-room) above.
 - **LD2410 Controls**: the **Radar Engineering Mode** switch, plus **Radar Bluetooth (HLK app)**, **Restart Radar**, and **Factory Reset Radar**. On an R PRO-1 the card also has **Start Dynamic Background Correction** and **Background Correction Running** (see [R PRO-1 and its LD2412 radar](#r-pro-1-and-its-ld2412-radar)). **Radar Bluetooth (HLK app)** is the radar chip's own Bluetooth for the HLK phone app, not your sensor's Bluetooth proxy. **Restart Radar** restarts the radar chip without changing any settings. Leave **Factory Reset Radar** alone unless Apollo support asks you to press it: it puts the radar chip's settings, every threshold included, back to factory values, so run **Calibrate with empty room** again if it happens. Both ask before they act. The restart for the whole sensor is on the **Device** card at the bottom of the tab.
-- **LD2410 Zone Config** (MSR-1 and MSR-2): **Start Zone 1**, **End Zone 1**, **End Zone 2**, and **End Zone 3** split the radar's range into three distance bands, each with its own occupancy sensor (**Radar Zone 1 Occupancy** to **Radar Zone 3 Occupancy**). These are distances from the sensor, not areas you draw like on the R PRO-1 and MTR-1 zone map. The boxes are in cm, even when Home Assistant uses feet, and the zones sit back to back: Zone 1 runs from Start Zone 1 to End Zone 1, Zone 2 from there to End Zone 2, and Zone 3 from there to End Zone 3. They're optional: leave them as they are unless you want separate sensors for, say, the couch and the far end of the room.
 
-![The LD2410 Controls card with the Radar Engineering Mode and Radar Bluetooth (HLK app) switches, a Restart button on the Restart Radar row, and a Reset button on the Factory Reset Radar row](/assets/apollo-mmwave-controls.png)
+    ![The LD2410 Controls card with the Radar Engineering Mode and Radar Bluetooth (HLK app) switches, a Restart button on the Restart Radar row, and a Reset button on the Factory Reset Radar row](/assets/apollo-mmwave-controls.png)
+
+- **LD2410 Zone Config** (MSR-1 and MSR-2): **Start Zone 1**, **End Zone 1**, **End Zone 2**, and **End Zone 3** split the radar's range into three distance bands, each with its own occupancy sensor (**Radar Zone 1 Occupancy** to **Radar Zone 3 Occupancy**). These are distances from the sensor, not areas you draw like on the R PRO-1 and MTR-1 zone map. The boxes are in cm, even when Home Assistant uses feet, and the zones sit back to back: Zone 1 runs from Start Zone 1 to End Zone 1, Zone 2 from there to End Zone 2, and Zone 3 from there to End Zone 3. They're optional: leave them as they are unless you want separate sensors for, say, the couch and the far end of the room.
 
 ### Second column
 
 - **LD2410 Distances**: a chart laid out along the radar's range. From top to bottom it can show a **Zones** row with your three distance bands (**Z1** to **Z3**, with a filled circle when someone is in that band), bars for the current **Detection**, **Moving**, and **Still** distance, the **Gates** row, and bars that mark how far the radar is set to look (**Max Move** and **Max Still**, or **Max Gate** and **Min Gate** on an R PRO-1). On a computer, hover over a row for a short explanation. Distances show in meters, or in inches if Home Assistant uses US units.
+
+    ![The LD2410 Distances chart with nobody in the room: the Zones row with Z1 to Z3, Detection, Moving and Still rows that read no target, the Gates row from G1 to G8, and the Max Move and Max Still bars, on a scale in inches](/assets/apollo-mmwave-distances.png)
+
 - **LD2410 Detection Range**: **Radar Timeout** (how long presence stays on after the last detection), the gate size (hidden until you enable its entity), and the sliders that set how far the radar looks: **Max Move Gate** and **Max Still Gate** on an MSR-1 or MSR-2, **Max Gate** and **Min Gate** on an R PRO-1. The sliders start locked under a **Sliders locked** row (see [Set the range and timeout](#set-the-range-and-timeout)). A note under the card explains each one and gives each gate's depth in your units.
+
+    ![The LD2410 Detection Range card with the Radar Timeout box set to 10s, the row Sliders locked, A scroll cannot move them. with an Unlock button, and the Max Move Gate and Max Still Gate sliders grayed out at 8](/assets/apollo-mmwave-detection-range-locked.png)
+
 - **LD2410 Target / Occupancy**: **Radar Target** (anyone detected), **Radar Moving Target**, **Radar Still Target**, and on an MSR-1 or MSR-2 **Radar Zone 1 Occupancy** to **Radar Zone 3 Occupancy** and **Any zone**, which is on while someone is in any of the three zones. A row lights up while it's on. On an R PRO-1 this card sits in the first column instead.
-
-![The LD2410 Detection Range card with the Radar Timeout box set to 10s, the row Sliders locked, A scroll cannot move them. with an Unlock button, and the Max Move Gate and Max Still Gate sliders grayed out at 8](/assets/apollo-mmwave-detection-range-locked.png)
-
-![The LD2410 Distances chart with nobody in the room: the Zones row with Z1 to Z3, Detection, Moving and Still rows that read no target, the Gates row from G1 to G8, and the Max Move and Max Still bars, on a scale in inches](/assets/apollo-mmwave-distances.png)
 
 ### Third column
 
@@ -174,12 +182,12 @@ Open **Apollo mmWave** from your sidebar and, if you have more than one radar, p
 
 ### Fourth column
 
-- **LD2410 Occupancy History**: the last 24 hours of **Detected**, **Moving**, and **Still** (and, on an MSR-1 or MSR-2, **Any zone** and **Zone 1** to **Zone 3**), so a false trigger overnight is still there in the morning. On an R PRO-1 it's titled **Occupancy History** and also shows **LD2450 Presence** and each zone you drew.
+- **LD2410 Occupancy History**: the last 24 hours of **Detected**, **Moving**, and **Still** (and, on an MSR-1 or MSR-2, **Any zone** and **Zone 1** to **Zone 3**), so a false trigger overnight is still there in the morning. On an R PRO-1 it's titled **Occupancy History**, its lines read **LD2412 Presence**, **LD2412 Moving**, and **LD2412 Still**, and it also shows **LD2450 Presence** and each zone you drew.
 - **LD2410 Still Thresholds**: one slider per gate for the still thresholds, named and locked the same way.
 
 ![The LD2410 Still Thresholds card with the Sliders locked row and an Unlock button above nine grayed-out sliders named G0 (at the sensor), G1 (about 2.5 ft), G2 (about 5 ft), and so on to G8 (about 20 ft), each with its percentage](/assets/apollo-mmwave-still-thresholds-locked.png)
 
-- **Device**: at the bottom of every tab. It shows **Apollo firmware**, the radar chip's firmware (**LD2410 firmware** on an MSR-1 or MSR-2; on an R PRO-1, both chips' versions are hidden until you enable them on the device page), and **Firmware update**, which opens Home Assistant's own update window when you tap it. **Restart device** restarts the whole sensor after you confirm; on an R PRO-1 it reads **Restart device (both radars)**. Under the rows are the **All settings for this device →** link and how to download a [support file](#send-apollo-a-support-file). While the Wi-Fi signal is below -75 dBm, a **Weak Wi-Fi** note appears too.
+- **Device**: at the bottom of every tab. It shows **Apollo firmware**, the radar chip's firmware (**LD2410 firmware** on an MSR-1 or MSR-2, **LD2450 firmware** on an MTR-1; on an R PRO-1, both chips' versions are hidden until you enable them on the device page), and **Firmware update**, which opens Home Assistant's own update window when you tap it. An MTR-1 has no Firmware update row. **Restart device** restarts the whole sensor after you confirm. On an R PRO-1 with the LD2412 it reads **Restart device (both radars)**, and on an MTR-1 or an R PRO-1 without the LD2412 it reads **Restart device (also restarts the radar)**. Under the rows are the **All settings for this device →** link and how to download a [support file](#send-apollo-a-support-file). While the Wi-Fi signal is below -75 dBm, a **Weak Wi-Fi** note appears too.
 
 ![The Device card for an MSR-1: Apollo firmware 26.10.12.1, LD2410 firmware 2.04.23022511, Firmware update Up-to-date, and a Restart button on the Restart device row](/assets/apollo-mmwave-device.png)
 
@@ -247,15 +255,15 @@ The **Detection Range** card helps too: [Set the range and timeout](#set-the-ran
 
 ## Draw zones on the R PRO-1 and MTR-1
 
-The LD2450 radar in the R PRO-1 and MTR-1 tracks where up to three people are in the room. The zone map lets you draw areas on that map, such as the couch or the desk, and gives each area its own occupancy sensor. On an MTR-1 the tab is built around the zone map: **Start here**, the **Radar setup** card, and the map come first, with the radar's live status and controls beside them. On an R PRO-1 the same cards sit under the **Zone Map** heading, right after the first column of LD2412 cards.
+The LD2450 radar in the R PRO-1 and MTR-1 tracks where up to three people are in the room. The zone map lets you draw areas on that map, such as the couch or the desk, and gives each area its own occupancy sensor. On an MTR-1 the tab is built around the zone map: **Start here**, the **Radar setup** card, and the map come first, with the radar's live status and controls beside them. On an R PRO-1, the LD2450's **Radar setup** card, the map, and the radar's live status and controls sit under the **Zone Map** heading, right after the first column of LD2412 cards, and its **Start here** card stays at the top of the tab.
 
 The MTR-1's **Start here** card has three steps, and this section follows them: fix anything the **Radar setup** card flags, set **Cone rotation** to match how the sensor is mounted, then draw a zone and walk into it. An R PRO-1 without the optional LD2412 gets the same steps.
 
 The zone map card shows your radar's name and the area the radar can see: a view cone 120 degrees wide and about 6 m (20 ft) out, with a caption at its edge such as **Radar range 6 m (20 ft), 120°**, and a dot for each person it tracks. The map fits that area, turned the way you set **Cone rotation**, plus any zone you drew outside it. Buttons sit in the bottom corners of the grid, with a row of zone buttons and a **Configure** section underneath.
 
-![The zone map for an R PRO-1 named R PRO-1 Server Rack, in feet: the radar's view cone fills the grid from -16 ft to 16 ft across, with the caption Radar range 20 ft (6 m), 120°, a rectangle named Zone 1 at the sensor, a circle named Zone 2, and a polygon named Zone 3. Along the bottom of the grid are the ✎ button, the m / ft switch with ft selected, and the Locked button, and under the grid the Zone 1, Zone 2, Zone 3, and Clear All Zones buttons and the collapsed Configure section](/assets/apollo-mmwave-zone-map.png)
+![The zone map for an R PRO-1 named R PRO-1 Server Rack, in feet: the radar's view cone fills the grid from -16 ft to 16 ft across, with the caption Radar range 20 ft (6 m), 120°, a rectangle named Zone 1 at the sensor, a circle named Zone 2, and a polygon named Zone 3. Along the bottom of the grid are the ✎ button, the m / ft switch with ft selected, the dimmed ↶ undo button, and the Locked button, and under the grid the Zone 1, Zone 2, Zone 3, and Clear All Zones buttons and the collapsed Configure section](/assets/apollo-mmwave-zone-map.png)
 
-The map is in feet when Home Assistant uses US customary units (**Settings → System → General**), and in meters otherwise. The **m / ft** switch next to the lock button changes it. When an administrator presses it, the choice is saved for that radar, so everyone who opens its map sees that unit. Anyone else changes only their own view, until they reload the page. Zones are stored in millimeters either way, so switching units never moves a zone.
+The map is in feet when Home Assistant uses US customary units (**Settings → System → General**), and in meters otherwise. The **m / ft** switch in the bottom-right corner of the map changes it. When an administrator presses it, the choice is saved for that radar, so everyone who opens its map sees that unit. Anyone else changes only their own view, until they reload the page. Zones are stored in millimeters either way, so switching units never moves a zone.
 
 ### Check the LD2450's Radar setup card
 
@@ -270,7 +278,11 @@ Press the button the card shows: **Set Zone Type to Disabled**, **Turn on Multi 
 
 ### Match the map to how the sensor is mounted
 
-Under **Configure**, drag **Cone rotation:** (from -180° to 180°) until the view cone points the way your sensor faces. If the slider is gray, the map is locked: press **Locked** on the map first (see [Lock and unlock](#lock-and-unlock)). The tracked dots rotate with the cone, the angle is saved for the radar, and the map fits the turned cone again when you let go. Double-click the slider to reset it.
+Turn the map so its view cone points the way your sensor faces. The tracked dots turn with it.
+
+1. Open **Configure** under the grid.
+2. If the **Cone rotation:** slider is gray, the map is locked: press **Locked** on the map first (see [Lock and unlock](#lock-and-unlock)).
+3. Drag **Cone rotation:** (from -180° to 180°) until the view cone points the way your sensor faces. When you let go, the angle is saved for the radar and the map fits the turned cone. Double-click the slider to reset it.
 
 ### Lock and unlock
 
@@ -468,7 +480,7 @@ Start with the LD2450's **Radar setup** card, right above the map.
 
 **No dot at all.** The usual cause is **Zone Type** set to **Detection**: the radar then reports only people inside its own built-in zones, and with none set it reports nobody. Press **Set Zone Type to Disabled**, or **Use recommended settings** if the card shows that instead. If Zone Type is already **Disabled** and **Presence** on the **LD2450 Live** card stays off with you in front of the sensor, the radar itself sees nobody: check that it's online and facing the room.
 
-**One dot with several people in the room.** Usually **Multi Target Tracking** is off. Press **Turn on Multi Target Tracking** on the Radar setup card. On an R PRO-1, Home Assistant hides that setting by default, so the card can't check it and shows no button. Enable it once:
+**One dot with several people in the room.** Usually **Multi Target Tracking** is off. Press **Turn on Multi Target Tracking** (or **Use recommended settings** if the card shows that instead) on the Radar setup card. On an R PRO-1, Home Assistant hides that setting by default, so the card can't check it and shows no button. Enable it once:
 
 1. Open the sensor's device page with **All settings for this device →** on the **Start here** card.
 2. Under **Configuration**, open the entities that aren't shown and select **LD2450 Multi Target Tracking**.

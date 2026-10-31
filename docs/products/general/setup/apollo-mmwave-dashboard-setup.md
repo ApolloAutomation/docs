@@ -91,9 +91,10 @@ Both sensors use the LD2410 radar chip, so their tabs look the same, and the tun
 - Under it, the **Radar setup** card checks the radar's settings and offers a fix when one is off. On a sensor that's ready to go it reads **Radar settings look good.**
 - **Auto-calibrate** comes next, with the **Calibrate with empty room** and **Preview only** buttons. If your sensor still has its factory thresholds and has never been calibrated, the card adds **These look like factory thresholds. Calibrating sets them for your room.**
 - The **LD2410 Gate Energy** chart is dimmed behind **Turn on Radar Engineering Mode to see gate energy values**, with a **Turn on Radar Engineering Mode** button below. That's expected: the radar only reports gate energy while **Radar Engineering Mode**, a diagnostic setting, is on. You don't need to press the button before calibrating; the calibration turns the mode on for its listen and puts it back the way it was afterward.
-- The other cards hold the radar's settings and live readings: controls, distances, detection range, occupancy, a threshold for each gate (from **G0 (at the sensor)** to **G8**, each named for how far out it reaches), and a day of occupancy history. The sliders on the range and threshold cards start locked, so a scroll can't move them: press **Unlock** above them to change one. The **Device** card at the bottom shows the firmware versions and restarts the sensor. The [tour of the radar tab](apollo-mmwave-dashboard.md#a-tour-of-the-radar-tab) explains each one.
 
-![The LD2410 Gate Energy chart dimmed, with the message Turn on Radar Engineering Mode to see gate energy values and a Turn on Radar Engineering Mode button](/assets/apollo-mmwave-gate-energy-engineering-off.png)
+    ![The LD2410 Gate Energy chart dimmed, with the message Turn on Radar Engineering Mode to see gate energy values and a Turn on Radar Engineering Mode button](/assets/apollo-mmwave-gate-energy-engineering-off.png)
+
+- The other cards hold the radar's settings and live readings: controls, distances, detection range, occupancy, a threshold for each gate (from **G0 (at the sensor)** to **G8**, each named for how far out it reaches), and a day of occupancy history. The sliders on the range and threshold cards start locked, so a scroll can't move them: press **Unlock** above them to change one. The **Device** card at the bottom shows the firmware versions and restarts the sensor. The [tour of the radar tab](apollo-mmwave-dashboard.md#a-tour-of-the-radar-tab) explains each one.
 
 ### R PRO-1 tabs
 
@@ -112,7 +113,7 @@ An MTR-1 tab is built around the zone map, with everything for its LD2450 radar 
 
 - **Start here** lists three steps (fix anything the Radar setup card flags, set **Cone rotation**, then draw a zone and walk into it), says which presence sensor to use in automations, and links to your sensor's own page.
 - **Radar setup** checks **Zone Type** and **Multi Target Tracking**, the two radar settings that decide whether the map can show people, and fixes them when you press its button. **Zone Type** should be **Disabled**, because the zone map replaces the radar's own built-in zones.
-- The zone map, titled with your sensor's name, shows the radar's 120 degree view, about 6 m (20 ft) out, with a dot for each target the LD2450 is tracking. It's in feet or meters to match Home Assistant, and the **m / ft** switch on the map changes it. A pencil button in the lower left opens the drawing tools, the lower right holds the unit switch and the undo and lock buttons, and a collapsed **Configure** section under the grid holds the cone rotation slider and the zone list.
+- The zone map, titled with your sensor's name, shows the radar's view, a cone 120 degrees wide and about 6 m (20 ft) out, with a dot for each target the LD2450 is tracking. It's in feet or meters to match Home Assistant, and the **m / ft** switch on the map changes it. A pencil button in the lower left opens the drawing tools, the lower right holds the unit switch and the undo and lock buttons, and a collapsed **Configure** section under the grid holds the cone rotation slider and the zone list.
 - **Zone presence**, **LD2450 Live**, and **Occupancy History** show each zone's presence sensor, what the radar reports right now, and the last 24 hours.
 - **LD2450 Controls**, the radar's built-in zones (only while Zone Type isn't **Disabled**), and the **Device** card end the tab.
 
@@ -125,12 +126,13 @@ The integration finds the sensor's target entities itself, so there's nothing to
 Your dashboard is working. Follow the **Start here** card on each tab, from the top:
 
 1. Look at the **Radar setup** card near the top of the tab. If it flags a setting, follow what it says: most problems have a button that fixes them, and the card changes nothing until you press one. An R PRO-1 tab has a second one above the zone map, for the LD2450.
-2. On an MSR-1, MSR-2, or R PRO-1 tab, press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to change a setting or turn anything on first. The [tuning guide](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room) walks you through it.
-3. On an MTR-1 or R PRO-1 tab, [draw your zones](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1). On an R PRO-1 without the LD2412, skip step 2.
+2. On an MSR-1 or MSR-2 tab, or an R PRO-1 tab with the LD2412 addon, calibrate the radar. Skip this step on an R PRO-1 without the LD2412. On an R PRO-1, first clear the room, press **Start Dynamic Background Correction** on the **LD2412 Controls** card, and wait for **Background Correction Running** to turn off. Then press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to turn on Radar Engineering Mode: the calibration does that for you. The [tuning guide](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room) walks you through it.
+
+    ![The Auto-calibrate card on an MSR-1, ready to run, with the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
+
+3. On an MTR-1 or R PRO-1 tab, [draw your zones](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1).
 
 The rest of this page covers managing the dashboard, upgrading from an older setup, and troubleshooting, so come back to it when you need it.
-
-![The Auto-calibrate card on an MSR-1, ready to run, with the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
 
 ## Manage the dashboard
 
@@ -163,13 +165,13 @@ A dashboard you add this way is yours from the start, and the integration option
 
 Want to rearrange the cards? Click the pencil icon in the upper right corner of the dashboard and choose **Take control** in the dialog that opens. From then on the layout is yours: the integration stops offering to remove the dashboard, writes no device selection into it, and leaves it in place when you remove the integration. The dashboard also stops adding and removing tabs as sensors come and go. Changed your mind? Delete the dashboard under **Settings → Dashboards**, then choose **Add the Apollo mmWave dashboard** in the integration options to get a fresh one. If you add the Apollo tabs to a dashboard of your own, take control of that dashboard before you edit them; editing an auto-built tab directly discards its cards.
 
-A dashboard you took control of keeps the cards it had, so it doesn't pick up new cards from later releases, such as the **Start here** steps, **Radar setup** cards, **Device** card, and slider lock that came with 2.3.0. To get them, delete it and add a fresh one from the options as described above.
+A dashboard you took control of keeps the cards it had, so it doesn't pick up new cards from later releases, such as the updated **Start here** steps, the **Radar setup** cards, the **Device** card, and the slider lock that came with 2.3.0. To get them, delete it and add a fresh one from the options as described above.
 
 The cards also work on their own: in the card picker they're listed as **Apollo Radar Auto-Calibrate**, **Apollo Radar Distance Chart**, **Apollo Radar Gate Energy Chart**, **Apollo Radar Setup**, and **Apollo Zone Map**. The [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#use-your-own-dashboards-instead) has the YAML for placing them.
 
 ## Upgrade from an older setup
 
-If this is your first Apollo dashboard, skip this section and [calibrate your radar](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room). [Troubleshooting](#troubleshooting) is at the end of this page if something didn't load.
+If this is your first Apollo dashboard, skip this section and [calibrate your radar](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room) or [draw your zones](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1). [Troubleshooting](#troubleshooting) is at the end of this page if something didn't load.
 
 Before any upgrade, make a full Home Assistant backup under **Settings → System → Backups**, so you can go back if something goes wrong. After you update Apollo mmWave in HACS, restart Home Assistant, then refresh the dashboard in your browser so it loads the new cards.
 
