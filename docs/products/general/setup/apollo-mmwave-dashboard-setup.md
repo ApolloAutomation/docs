@@ -183,7 +183,7 @@ In most setups 2.3.0 needs nothing from you. After the restart and a refresh, ea
 
 - **Zones drawn before 2.2.7 with Home Assistant in US customary units.** Before 2.2.7, the zone map read the radar's positions in inches as if they were millimeters, so the dots sat at or near the sensor. A zone drawn around those dots may not cover where people show up now. Walk through the room, watch the dots, and redraw any zone that's off.
 - **A dashboard you took control of** keeps the cards it had. To get the new ones, see [Use your own layout](#use-your-own-layout).
-- **A zone map card you added from the card picker before 2.3.0** keeps the fixed grid saved in its YAML, with no distance labels or range caption. Open the card's code editor, delete `grid` and `grid_units`, and set `unit_display: true` to get the map fitted to the radar's view, in your units.
+- **A zone map card you added from the card picker before 2.3.0** keeps the fixed grid saved in its YAML, with no distance labels or range caption. If you didn't choose that grid yourself (the card picker saved `x_min: -6000`, `x_max: 6000`, `y_min: 0`, `y_max: 12000` with `grid_units: mm`), open the card's code editor, delete `grid` and `grid_units`, and set `unit_display: true` to get the map fitted to the radar's view, in your units. A grid you set on purpose can stay.
 - **Dashboard resources managed in YAML.** Replace both `?v=` addresses with the ones the log warning lists (see [An Apollo card shows an error after an update](#an-apollo-card-shows-an-error-after-an-update)).
 
 ### From Apollo mmWave 2.2.5 or earlier

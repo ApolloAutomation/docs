@@ -507,3 +507,7 @@ Still stuck? Send Apollo a support file with your question. It holds the Apollo 
 
 2. Open the three-dot menu and choose **Download diagnostics**.
 3. Attach the file to your message to [Apollo support](/products/general/contact-us/contact-us-support.md), or to your issue on [GitHub](https://github.com/ApolloAutomation/apollo-mmwave-main/issues).
+
+!!! warning "Check the file before you post it publicly"
+
+    The file includes your zones and their names, which can show the layout of your home. Send it to Apollo support, or look through it before you attach it to a public GitHub issue.
