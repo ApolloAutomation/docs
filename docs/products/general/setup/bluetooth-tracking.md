@@ -4,7 +4,7 @@ description: Turn your Apollo device into a Bluetooth (BLE) tracker for your App
 ---
 # Bluetooth tracking
 
-Your Apollo device can listen for the Bluetooth Low Energy (BLE) signals that phones and watches send out, so Home Assistant can tell when you're nearby. This page covers three setups: tracking an Apple Watch in ESPHome, detecting an Android phone as an iBeacon, and running your Apollo MSR-1 as a Bluetooth proxy that also scans for iBeacons.
+Your Apollo device can listen for the Bluetooth Low Energy (BLE) signals that phones and watches send out, so Home Assistant can tell when you're nearby. This page covers three setups: tracking an Apple Watch in ESPHome, detecting an Android phone as an iBeacon, and running your Apollo MSR-1 as a Bluetooth proxy that also scans for iBeacons. The last section covers two integrations that tell you which room everyone is in.
 
 ## Apple iPhone and Apple Watch
 
@@ -386,3 +386,46 @@ After a few minutes near any iBeacon device within listening range of your MSR-1
     If a device has a blank name (for example, anything Android), click **Configure** and enter its UUID manually. Home Assistant doesn't allow devices with empty names, even though its own Companion app lets you turn an Android phone into an iBeacon without requiring a name.
 
 If you don't know a device's IRK (Identity Resolving Key), you may have to wait about 300 seconds while your iBeacon Tracker processes 10 different versions of the same UUID, each with the last four characters randomly changed. Once ten have appeared, the integration should recognize they're all the same device and combine them into a single tracker element. It can be a bit frustrating, so be patient.
+
+## Which room is everyone in?
+
+Once your Apollo devices are running as Bluetooth proxies, Home Assistant can tell you more than whether someone is home. Two free, open-source integrations, Bermuda and PadSpan, use the same proxies to work out which room each phone, watch or tag is in. Neither needs anything extra flashed onto your devices, and you can run both at once.
+
+!!! note "Before you start"
+
+    1. Put a proxy in each room you want to tell apart. One proxy is enough for home or away, but rooms need one each.
+    2. Check that each Apollo device is in the right area in Home Assistant: open the device and set its **Area**. Both integrations use it as the room.
+    3. Set up your phones once, because they keep changing their Bluetooth address. Add iPhones and Apple Watches to the **Private BLE Device** integration (see [Apple iPhone and Apple Watch](#apple-iphone-and-apple-watch) above), and on Android turn on the **BLE Transmitter** in the Home Assistant Companion app (see [Android](#android) above).
+
+### Bermuda
+
+Bermuda turns what your proxies hear into Home Assistant sensors: which area each device is in, and how far it is from the nearest proxy. It's quick to set up, and the sensors are easy to use in automations.
+
+1. Install Bermuda from HACS and restart Home Assistant.
+
+    [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=agittins&repository=bermuda&category=integration)
+
+2. Go to **Settings** > **Devices & services**, select **Add integration** and search for **Bermuda BLE Trilateration**.
+3. Select **Configure** on the Bermuda integration and pick the devices you want to track. Bermuda creates an area sensor and a distance sensor for each one.
+
+The settings are explained in [Bermuda's documentation](https://github.com/agittins/bermuda).
+
+### PadSpan
+
+PadSpan shows the same answer on a floor plan of your home: every phone, watch and tag in the room it's in, live, one floor at a time or all floors stacked. It also creates room, distance and home/away sensors for your automations. You can try it in your browser before you install anything, on the [PadSpan demo](https://padspan.traks.ca/demo/).
+
+PadSpan's room presence, sensors, floor plans and calibration are free. Some features need a paid PadSpan Pro license, such as placing lights and devices exactly on its Atlas map, the 3D view (Live Aboard), the wall screen, Forensics, Busy Times and Locate. You can try all of Pro free for 90 days, no card needed.
+
+1. Install PadSpan HA from HACS and restart Home Assistant.
+
+    [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=gbroeckling&repository=padspanHA&category=integration)
+
+2. Go to **Settings** > **Devices & services**, select **Add integration** and search for **PadSpan HA**.
+3. Open **PadSpan HA** in the sidebar. It finds your proxies by itself, and rooms work straight away from their areas.
+4. For the map, the setup wizard takes you through it: upload a floor plan, set its scale, draw your rooms, place your proxies where they really are, and calibrate by walking through the rooms with your phone.
+
+With three or more proxies placed on one floor, PadSpan can also put a device between them, even in a room without a proxy of its own. There's more in [PadSpan's documentation](https://github.com/gbroeckling/padspanHA).
+
+### Which one should I use?
+
+If you want room sensors for your automations and nothing more, start with Bermuda. If you'd like to see everyone on a map of your home, or fine-tune rooms with a calibration walk, try PadSpan. They don't get in each other's way, so you can install both and keep whichever suits you.
