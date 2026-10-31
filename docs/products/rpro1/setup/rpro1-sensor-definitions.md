@@ -110,7 +110,7 @@ The R PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
     | **LD2450 Bluetooth** | — | Toggles the LD2450's Bluetooth so you can connect with the <a href="https://wiki.apolloautomation.com/products/msr2/setup/zones-hlk/" target="_blank" rel="noopener">HLK Radartool phone app</a> for tuning. Turn it back off when finished. |
     | **LD2450 Multi Target Tracking** | from module | Turns multi-target tracking on or off. Initial state is read from the LD2450 at boot. Disabled by default. |
     | **LD2450 Timeout** | — | Seconds the LD2450 presence stays detected after the target is lost. |
-    | **LD2450 Zone Type** | Disabled | Zone detection mode: `Disabled`, `Detection` (only detect targets inside the zone), or `Filter` (exclude the zone from detection). |
+    | **LD2450 Zone Type** | Disabled | Zone detection mode: `Disabled`, `Detection` (only detect targets inside the zone), or `Filter` (exclude the zone from detection). With `Detection` and no zones set, the radar detects nobody, so keep `Disabled` unless you use the radar's own zones. |
     | **LD2450 Zone-1 / Zone-2 / Zone-3 X1, X2** | — | Start and end X coordinates of the zone in mm (-4860 left to 4860 right). |
     | **LD2450 Zone-1 / Zone-2 / Zone-3 Y1, Y2** | — | Start and end Y coordinates of the zone in mm (0 to 7560). |
     | **LD2450 Factory Reset** | — | Resets the LD2450 radar module to its factory settings. |

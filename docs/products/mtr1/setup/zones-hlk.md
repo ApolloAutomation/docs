@@ -40,7 +40,11 @@ With the app installed, you'll turn on the radar's Bluetooth, connect to it from
 
 ![HLKRadarTool LD2450 radar view with one target and the Set button circled in red](/assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)
 
-4\. Select **Area Detection**, then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
+!!! tip "Drawing zones with the Apollo mmWave dashboard?"
+
+    In step 4, pick **Close detection** instead of **Area Detection** (Zone Type **Disabled** in Home Assistant). The dashboard's [zone map](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces the app's areas. On **Area Detection**, the radar reports only people inside the app's areas, so anyone else is missing from the map, and **Area Filtering** hides the people inside them.
+
+4\. Select **Area Detection** (drawing zones on the Apollo mmWave dashboard instead? Pick **Close detection** and skip the areas; see the tip above), then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
 
 !!! tip "There are three ways to use your MTR-1!"
 
