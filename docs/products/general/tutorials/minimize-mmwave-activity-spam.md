@@ -66,7 +66,7 @@ Apollo mmWave sensors report frequently by design, which can cause internal rada
 
 The MTR-1 and the R PRO-1 have an LD2450 radar that tracks up to three people. For each one it reports X, Y, angle, distance, speed and direction several times a second, and the Home Assistant recorder saves every change to its database. In our testing, one R PRO-1 saved about 460,000 changes in a single day from Target 1 alone, while it tracked an object that never moved.
 
-The `logbook.exclude` block above only hides entities from Activity. A `recorder.exclude` block stops the saving. The Apollo mmWave zone map, the drawn zone presence sensors and the Apollo mmWave dashboard read the live values, so they keep working. The history graphs of these sensors stay empty from then on.
+The `logbook.exclude` block above only hides entities from Activity. A `recorder.exclude` block stops the saving. The Apollo mmWave zone map, the drawn zone presence sensors and the Apollo mmWave dashboard read the live values, so they keep working. From then on, the history graphs of these sensors get no new readings. Readings saved before stay until you delete them in step 5 or Home Assistant's regular cleanup removes them.
 
 !!! info "Home Assistant Recorder Documentation"
 
@@ -88,7 +88,7 @@ recorder:
 
     Do not add a second `recorder:` key. Merge the `exclude.entity_globs` entry into your existing section.
 
-3\. Check what the pattern matches before you restart. Go to **Developer tools → States** (**Settings → Tools → States** in Home Assistant 2026.8 and newer) and filter for `_target_`. The pattern matches sensors whose ID has `_target_`, then one character, then `_`, such as `sensor.office_r_pro_1_ld2450_target_1_x`. It skips target counts, presence and the LD2410 sensors of the MSR-1 and MSR-2. If it also matches a sensor from another device that you want to keep, list the Apollo sensors by name instead.
+3\. Check what the pattern matches before you restart. Go to **Developer tools → States** (**Settings → Tools → States** in Home Assistant 2026.8 and newer) and filter for `_target_`. The pattern matches sensors whose ID has `_target_`, then one character, then `_`, such as `sensor.office_r_pro_1_ld2450_target_1_x`. It skips target counts, presence and the LD2410 sensors of the MSR-1 and MSR-2. If it also matches a sensor from another device that you want to keep, list the Apollo sensors by name under `entities:` instead of `entity_globs:`.
 
 [![Open your Home Assistant instance and show your state tools.](https://my.home-assistant.io/badges/tools_states.svg)](https://my.home-assistant.io/redirect/tools_states/)
 
@@ -105,5 +105,19 @@ data:
     - sensor.*_target_?_*
   keep_days: 0
 ```
+
+!!! warning "If you listed the sensors by name in step 3"
+
+    The action above deletes the saved history of every sensor the pattern matches, including sensors you chose to keep. Purge the same list you put under `entities:` instead:
+
+    ```yaml
+    action: recorder.purge_entities
+    target:
+      entity_id:
+        - sensor.office_r_pro_1_ld2450_target_1_x
+        - sensor.office_r_pro_1_ld2450_target_1_y
+    data:
+      keep_days: 0
+    ```
 
 [![Open your Home Assistant instance and show your action tools.](https://my.home-assistant.io/badges/tools_actions.svg)](https://my.home-assistant.io/redirect/tools_actions/)
