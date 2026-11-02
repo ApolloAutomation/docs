@@ -177,7 +177,7 @@ device_id: your_device_id
 view_only: true
 ```
 
-<!-- MEDIA: apollo-mmwave-zone-map-view-only.png | Phone width: a view-only zone map with its title and the live map, a lit zone and a numbered dot with its trail, and no drawing buttons, unit switch, Coverage, zone buttons, or Configure -->
+![A view-only zone map at phone width: the title R PRO-1 Living Room and the live map, with no buttons on the map or under it. Dot 1 sits in the filled-in Couch zone with its red trail from the doorway behind it, and dot 2 sits in the filled-in Desk zone](/assets/apollo-mmwave-zone-map-view-only.png)
 
 ## Upgrade from an older setup
 
