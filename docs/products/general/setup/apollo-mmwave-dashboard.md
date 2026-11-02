@@ -259,7 +259,7 @@ The LD2450 radar in the R PRO-1 and MTR-1 tracks where up to three people are in
 
 The MTR-1's **Start here** card has three steps, and this section follows them: fix anything the **Radar setup** card flags, set **Cone rotation** to match how the sensor is mounted, then draw a zone and walk into it. An R PRO-1 without the optional LD2412 gets the same steps.
 
-The zone map card shows your radar's name and the area the radar can see: a view cone 120 degrees wide and about 6 m (20 ft) out, with a caption at its edge such as **Radar range 6 m (20 ft), 120°**, and a numbered dot for each person it tracks. The map fits that area, turned the way you set **Cone rotation**, plus any zone you drew outside it. Buttons sit in the bottom corners of the grid. Underneath are the **Coverage** button (and **History**, once an administrator turns on movement history), a row of zone buttons, and a **Configure** section.
+The zone map card shows your radar's name and the area the radar can see: a view cone 120 degrees wide and about 6 m (20 ft) out, with a caption at its edge such as **Radar range 6 m (20 ft), 120°**, and a numbered dot for each person it tracks. The map fits that area, turned the way you set **Cone rotation**, plus any zone you drew outside it. Buttons sit in the bottom corners of the grid. Underneath are the **Coverage** button (and, for administrators, **History** once movement history is on), a row of zone buttons, and a **Configure** section.
 
 ![The zone map for an R PRO-1 named R PRO-1 Server Rack, in feet: the radar's view cone fills the grid from -16 ft to 16 ft across, with the caption Radar range 20 ft (6 m), 120°, and a rectangle named Zone 1 at the sensor, a circle named Zone 2, and a polygon named Zone 3, each with a pale fill and a dashed outline because nobody is in it. Along the bottom of the grid are the ✎ button, the m / ft switch with ft selected, the dimmed ↶ undo button, and the Locked button, and under the grid are the Coverage button, the Zone 1, Zone 2, and Zone 3 buttons, the dimmed Clear All Zones button, and the collapsed Configure section](/assets/apollo-mmwave-zone-map.png)
 
@@ -296,7 +296,7 @@ Turn the map so its view cone points the way your sensor faces. The tracked dots
 1. Open **Configure** under the grid.
 2. If the **Cone rotation:** slider is gray, the map is locked: press **Locked** on the map first (see [Lock and unlock](#lock-and-unlock)).
 3. Drag **Cone rotation:** (from -180° to 180°) until the view cone points the way your sensor faces. When you let go, the angle is saved for the radar and the map fits the turned cone. Double-click the slider to reset it.
-4. Stand about 2 m (6 ft) in front of the sensor, facing it, and take a step to your right. If your dot moves the opposite way from you, tick **Flip the map left to right (display only)** under the slider.
+4. Hold your phone so the map's view cone points the way your sensor faces in the room (at **Cone rotation** 0°, that's with the sensor at the top of the screen while you face it). Stand about 2 m (6 ft) in front of the sensor and take a step to one side. If your dot moves the other way on the screen, tick **Flip the map left to right (display only)** under the slider.
 
 The flip mirrors the whole map, zones and dots alike, for everyone who opens it. It only changes how the map is drawn: your zones, their presence sensors, and movement history stay as they are. While it's on, the distances across the grid read from high to low, and **Cone rotation:** drags the other way, so the cone still follows your finger. Only administrators can change it; other users see it grayed out.
 
@@ -339,8 +339,8 @@ Can't tell where the couch ends on the map? Mark the zone's corners with your ow
 
 1. Unlock the map and press the zone's button to select it.
 2. Press ✎ (**Drawing modes**), then 🚶 (**Mark corners by walking**). A panel opens under the map with a hint, **Corner here**, **Undo corner**, **Finish**, and **Cancel**.
-3. Stand still in one corner of the area for a moment and press **Corner here**. The corner is where the radar placed you, on average, over the last 1.5 seconds.
-4. Walk along the edge to the next corner, stand still, and press **Corner here** again. Go around the zone in order, not across it. The map numbers each corner and draws a dashed preview of the shape with its size.
+3. Stand still in one corner of the area for about 3 seconds and press **Corner here**. The corner is where the radar placed you, on average, over the last 1.5 seconds, and the radar updates your position about once a second, so a corner pressed sooner can land short of where you stand.
+4. Walk along the edge to the next corner, stand still for about 3 seconds, and press **Corner here** again. Go around the zone in order, not across it. The map numbers each corner and draws a dashed preview of the shape with its size.
 5. Press **Finish**. Two corners make a rectangle, with the two as opposite corners, and three or more make a polygon of up to 32 corners. The zone saves like one you drew, and the card confirms it with the zone's name, such as **Couch saved**.
 
 <video src="/assets/apollo-mmwave-zone-map-walk.mp4" poster="/assets/apollo-mmwave-zone-map-walk-poster.jpg" autoplay loop muted playsinline aria-label="Marking the Couch zone's corners by walking, on the zone map for an R PRO-1 named R PRO-1 Living Room at phone width, with the map unlocked, the Couch zone selected, and 🚶 on. The panel under the map reads Stand still in one corner of the zone, then press Corner here., above the Corner here, Undo corner, Finish, and Cancel buttons. Corner here is pressed at four corners while dot 1 walks around the couch, and each corner gets a numbered ring. The hint changes to Corner 1 marked. Walk along the edge to the next corner, stand still, and press Corner here., then to Corner 2 marked. Keep going around the zone in order. Two corners make a rectangle, three or more a polygon. Press Finish when done., and on to Corner 4 marked. A dashed preview joins the corners, with its size at the top of the map: 3 ft 5 in × 0 ft after two corners, 3 ft 7 in × 5 ft 10 in after three, and 3 ft 7 in × 5 ft 11 in after four. Then Finish is pressed: the panel closes, the Couch zone appears on the map and fills in as dot 1 steps into it, and the message Couch saved shows"></video>
@@ -373,18 +373,21 @@ Under it, **LD2450 Live** shows what the radar reports right now. If the map sho
 
 **LD2450 Controls** holds **Zone Type**, **Multi Target Tracking**, **Radar Timeout**, **Radar Bluetooth (HLK app)**, **Restart Radar**, and **Factory Reset Radar**, whichever your sensor has (the MTR-1 has no Restart Radar). The restart and the reset ask before they act. **Radar Timeout** is how long **LD2450 Presence** stays on after the radar last sees someone. It doesn't hold the zones you draw: a zone turns off as soon as nobody is in it, unless you give it a hold time (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)). While Zone Type isn't **Disabled**, a **Radar's built-in zones** card shows the radar chip's own zones, which are not the zones on the map.
 
-While the radar is offline, its zones' presence sensors read unavailable. They also read unavailable after every Home Assistant restart until the radar connects, then off or on again from what the radar sees. Before Apollo mmWave 2.4.0 they read off. The **Zone presence** rows hide while the sensors are unavailable, and an ignore zone's sensor reads off the whole time. An automation triggered by a zone turning off, with `to: "off"` and no `from:`, also fires when the radar comes back, which happens after every restart. Add `from: "on"` so it fires only when the zone empties:
+While the radar is offline, its zones' presence sensors read unavailable. They also read unavailable after every Home Assistant restart until the radar connects, then off or on again from what the radar sees. Before Apollo mmWave 2.4.0 they read off. The **Zone presence** rows hide while the sensors are unavailable, and an ignore zone's sensor reads off the whole time.
+
+To turn something off once a zone empties, such as the lights, trigger on its presence sensor turning off:
 
 ```yaml
 triggers:
   - trigger: state
     entity_id: binary_sensor.apollo_mtr_1_abc123_zone_1_presence
-    from: "on"
     to: "off"
     for: "00:05:00"
 ```
 
-Replace `binary_sensor.apollo_mtr_1_abc123_zone_1_presence` with your zone's presence sensor. This trigger fires once the zone has been empty for 5 minutes.
+Replace `binary_sensor.apollo_mtr_1_abc123_zone_1_presence` with your zone's presence sensor. This trigger fires once the zone has been empty for 5 minutes. It also fires 5 minutes after the radar comes back with nobody in the zone, which happens after every restart. For lights, that extra off is harmless, and the same trigger catches a zone that emptied while the radar was offline, whose sensor went from on to unavailable to off.
+
+Where the trigger must see someone leave, such as for a notification or a counter, add `from: "on"` (or `not_from: unavailable`) under `entity_id`. It then fires only when the zone empties while the radar is online, not when the radar comes back after a restart, and not for a zone that emptied while the radar was offline.
 
 ### Ignore a spot or hold a zone
 
@@ -400,16 +403,23 @@ An ignore zone is not the radar's **Zone Type** setting (**LD2450 Zone Type** on
 
 **Hold a zone.** The LD2450 can lose someone who sits very still, such as on a couch, and the zone then turns off with them still in it. Pick a **Hold** time (**15 s**, **30 s**, **1 min**, **2 min**, **5 min**, **10 min**, or **30 min**), and the zone stays on for that long after the radar loses someone who sat still inside it, counted from when the zone emptied. While it holds, the zone's label on the map ends in **(held)**, and its presence sensor's `held` attribute reads `true`. **Off**, the default, turns the zone off as soon as nobody is in it. Ignore zones never hold.
 
-The zone still turns off at once, as it would without a hold, when everyone who was in it is accounted for: the radar lost them while they were walking near the zone's edge or the edge of its view, or, within 3 seconds, it picks up someone outside the zone near where they were. A hold also ends when someone is in the zone again, when the radar goes offline or reconnects, when Home Assistant restarts or Apollo mmWave reloads, and when you change the zone's shape, an ignore zone, or **Cone rotation**.
+A hold is for someone who sat still, so the zone doesn't wait out its hold when everyone who was in it walked out. Home Assistant sees someone walk out in two ways:
+
+- **Walking out into the room.** In the 3 seconds after the zone empties, the radar tracks a target outside the zone near where the person was, no farther than a brisk walk would have taken them by then. Walking out of a zone into the room turns it off within about 3 seconds, usually as soon as the radar reports you outside it.
+- **Walking out of the radar's view.** The radar loses the person while they're walking near the zone's edge or the edge of its view: within 0.3 m (1 ft), plus as far as they walk in a second or two, up to 1.5 m (5 ft). The zone then turns off as soon as the radar loses them, as it would without a hold. The radar reports each position about once a second, so Home Assistant needs about two seconds of walking in view, or a second of a brisk walk, to tell that someone is walking.
+
+A hold also ends when someone is in the zone again, when the radar goes offline or reconnects, when Home Assistant restarts or Apollo mmWave reloads, and when you change the zone's shape, an ignore zone, or **Cone rotation**.
 
 Home Assistant only sees positions, not who is who, so a hold has limits:
 
-- Anyone else the radar tracks within about 5 m (16 ft) in the 3 seconds after someone vanishes ends the hold, so people moving nearby can turn the zone off early.
+- A person or thing the radar was already tracking elsewhere when the zone emptied, such as someone across the room, a plant, a chair, or a ghost, ends a hold only if it comes within 0.6 m (2 ft) of where the person was. Someone it starts tracking in the next 3 seconds, such as a person walking into the room, can end it early from up to about 7 m (23 ft) away.
 - Someone walking through the zone ends the hold: when they leave, the zone turns off, even if the person who sat still never left.
 - If two people are in the zone and the radar loses one of them while the other stays, the zone turns off once the other one leaves.
-- When the radar swaps the numbers of two people inside the zone, it can look like movement for about a second, and losing one of them near the edge in that second turns the zone off.
+- When the radar swaps the numbers of two people inside the zone, it can look like movement for a second or two, and losing one of them near the edge right then turns the zone off.
 - A ghost target that shows up in the middle of the zone for about a second and vanishes holds the zone too. Put an ignore zone over whatever causes it.
-- Home Assistant takes the radar's view as 6 m (20 ft) and 120 degrees. Where a wall, or the radar's own built-in zones, end the view sooner, someone who walks out of view there holds the zone for the whole hold time.
+- Before it loses someone who sat still, the radar can shift their position about half a meter (1.5 ft) in its last report. That alone doesn't count as walking, but if the shift puts them outside the zone, they count as having walked out, so a seat within about half a meter of the zone's edge can still turn the zone off early. Draw the zone with at least that much room around the seat.
+- Someone the radar loses as they walk out of its view, or through a doorway at the zone's edge, before Home Assistant can tell they're walking, for example a few steps from a seat beside the door, can keep the zone held for the whole hold time.
+- Home Assistant takes the radar's view as 6 m (20 ft) and 120 degrees. Where a wall, or the radar's own built-in zones, end the view sooner, someone who walks out of view there, away from the zone's edge, holds the zone for the whole hold time.
 - A radar reconnect, even a short Wi-Fi drop, and a Home Assistant restart end every hold.
 
 For a hold time the list doesn't offer, such as 45 seconds, set `hold_s` (0 to 3600 seconds) with the `apollo_mmwave.update_zone` action, and the list then shows it too. The button below opens **Settings → Tools → Actions** with that action selected.
@@ -441,10 +451,10 @@ During a replay, the map's top-right corner reads **Replay** and the time, such 
 Before you turn it on, know what it keeps and where:
 
 - **Who can see it.** Only administrators can turn it on, open **History**, or clear it. That includes any dashboard signed in as an administrator, such as a wall tablet, so sign a shared screen in as a regular user, with a [view-only zone map](apollo-mmwave-dashboard-setup.md#use-your-own-layout) on its dashboard. Other users don't see the option or the **History** button, and nothing on their map says history is on.
-- **Where it's kept.** In `.storage/apollo_mmwave.movement` in your Home Assistant configuration folder, a private file only Home Assistant reads. Targets inside ignore zones aren't recorded.
+- **Where it's kept.** In `.storage/apollo_mmwave.movement` in your Home Assistant configuration folder. Home Assistant never serves it on the web, but anything that can open that folder can read it, such as the **Samba share** and **Terminal & SSH** apps. Targets inside ignore zones aren't recorded.
 - **How long.** Up to 24 hours. Each radar keeps at most 100,000 points and drops the oldest first, so a busy room keeps less: about 4.6 hours with three people moving all the time.
 - **Backups.** Home Assistant backups include the file, even backups that leave out the database. Turning history off doesn't remove it from backups you already made.
-- **Not the recorder.** It's separate from Home Assistant's recorder, which saves the history of your entities. A `recorder:` exclude or the `recorder.purge_entities` action, such as the ones in [Minimize activity spam](/products/general/tutorials/minimize-mmwave-activity-spam.md), neither stops it nor deletes it.
+- **Not the recorder.** It's separate from Home Assistant's recorder, which saves the history of your entities. A `recorder:` exclude or the `recorder.purge_entities` action, such as the ones in [Minimize activity spam](/products/general/tutorials/minimize-mmwave-activity-spam.md#stop-recording-ld2450-target-positions), neither stops it nor deletes it.
 - **Deleting it.** Untick **Movement history**, and the card warns **Turning this off deletes this radar's movement history from Home Assistant. Backups made while it was on keep their copy.** Press **Turn off and delete** to delete it, or **Keep it** to leave it on. **Clear history** in the panel deletes what's been recorded and keeps recording, once you confirm **Delete this radar's movement history?** with **Delete**. Removing the Apollo mmWave integration deletes the file, and removing a radar from Home Assistant deletes that radar's history. While the integration is disabled, the file stays as it was until the next start.
 - **SD cards.** While anyone is in view, Home Assistant writes the whole file again about once a minute. For a busy radar at its 100,000 points, that's about 1.3 MB a minute, which wears an SD card, so turn history on where you need it and off when you're done.
 - **Support file.** A [support file](#send-apollo-a-support-file) says only whether history is on and how many points it holds, never the positions.
@@ -613,7 +623,7 @@ Apollo mmWave 2.2.7 fixed this. Before it, when Home Assistant used US customary
 
 A zone you drew while the dots were in the wrong place may not cover where people show up now. Walk through the room, watch the dots, and redraw any zone that's off.
 
-**A dot moves the opposite way from you.** Tick **Flip the map left to right (display only)** under **Configure**, as [Match the map to how the sensor is mounted](#match-the-map-to-how-the-sensor-is-mounted) describes. It only changes how the map is drawn, so your zones flip with the dots and keep working as before.
+**A dot moves the opposite way from you.** First hold your phone so the map's view cone points the way your sensor faces in the room: turned any other way, a map that's right can look mirrored. If the dot still moves the other way, tick **Flip the map left to right (display only)** under **Configure**, as [Match the map to how the sensor is mounted](#match-the-map-to-how-the-sensor-is-mounted) describes. It only changes how the map is drawn, so your zones flip with the dots and keep working as before.
 
 ### Zone presence reads unavailable
 
@@ -625,7 +635,7 @@ If it stays unavailable, check the radar's power and Wi-Fi, and that it shows as
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
-An automation that fires by mistake when the radar comes back needs `from: "on"` in its trigger, as [Use the zone sensors](#use-the-zone-sensors) shows.
+An automation that must not fire when the radar comes back, such as a notification, needs `from: "on"` in its trigger, as [Use the zone sensors](#use-the-zone-sensors) shows. Leave it out of lights-off automations, so they still turn the lights off for a zone that emptied while the radar was offline.
 
 **A tab says the radar is offline, but it works.** The **Start here** card keeps the **Offline right now.** note it was built with, for example on a dashboard you opened while the radars were reconnecting after a restart. Reload the page.
 
@@ -633,7 +643,7 @@ An automation that fires by mistake when the radar comes back needs `from: "on"`
 
 Look at the zone on the map:
 
-- **Its label ends in (held).** The zone has a **Hold** time and is holding for someone the radar lost while they sat still (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)). It turns off when the hold time runs out, counted from when the zone emptied. If everyone had left, the radar lost the last person before it saw them walk out of the zone, or where a wall or the radar's own built-in zones end its view. Pick a shorter **Hold**, or **Off**, for that zone. **Settings → Tools → States** shows the hold too: the zone's presence sensor has a `held` attribute of `true` while it holds.
+- **Its label ends in (held).** The zone has a **Hold** time and is holding for someone the radar lost while they sat still (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)). It turns off when the hold time runs out, counted from when the zone emptied. If everyone had left, the radar lost the last person before it saw them walk out of the zone: they walked for less than about two seconds in its view, for example from a seat beside the door, or left where a wall or the radar's own built-in zones end its view. Pick a shorter **Hold**, or **Off**, for that zone. **Settings → Tools → States** shows the hold too: the zone's presence sensor has a `held` attribute of `true` while it holds.
 
     [![Open your Home Assistant instance and show your state tools.](https://my.home-assistant.io/badges/tools_states.svg)](https://my.home-assistant.io/redirect/tools_states/)
 
