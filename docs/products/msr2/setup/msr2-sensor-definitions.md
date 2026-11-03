@@ -10,6 +10,12 @@ Once added to Home Assistant you can configure different settings for your MSR-2
 
     The **Default Update** column is how often each entity refreshes. Radar entities update in real time as targets move. The **LTR390 Light** and **LTR390 UV Index** sensors use the interval set by the **LTR390 Update Interval** number (60s by default).
 
+!!! tip "Lights that turn off while someone sits still"
+
+    Run room lights from **Radar Target**. It's on while the radar detects anyone, moving or still. The zone sensors also depend on the distance readings, so they can drop out while Radar Target stays on. Use a zone sensor only when you need one part of the room, and then leave **Reduce DB Reporting** off.
+
+    If the lights still turn off while someone sits still, raise **Radar Timeout** to 60 seconds or more. A longer timeout carries **Radar Target** through short dips and only delays the lights going off after everyone leaves. Changing **Radar Timeout** restarts the radar, and the radar may not find someone sitting still again until they move, so change it while nobody's sitting in the room, or ask them to move once afterward.
+
 !!! note "Ensure that the LD2410 firmware version is V2.04.23022511 or later for proper integration functionality."
 
     The newer version of the firmware includes an "auto calibrate" function, so you might want to test it out.
@@ -42,7 +48,7 @@ Once added to Home Assistant you can configure different settings for your MSR-2
     | **Radar Still Target** | real-time | Whether a stationary target is currently detected. |
     | **Radar Moving Distance** | real-time | Distance to a moving target in cm. Reports *Unknown* when no moving target is present. |
     | **Radar Still Distance** | real-time | Distance to a still target in cm. Reports *Unknown* when no still target is present. |
-    | **Radar Detection Distance** | real-time | Last detected distance from the radar in cm. Holds the last value, so it can be misleading when nothing is present. |
+    | **Radar Detection Distance** | real-time | Distance to the target the radar detects, in cm. Reports *Unknown* when the radar detects nobody. |
     | **Radar Move Energy** | real-time | Amount of movement measured by the LD2410. Faster movement reads as a higher percentage. |
     | **Radar Still Energy** | real-time | Energy of the current still target. |
     | **Radar Zone 1 Occupancy** | real-time | Whether someone is in Zone 1. Zones are distance bands from the sensor, set with **Radar Zone 1 Start** and **Radar End Zone 1**. |
@@ -58,7 +64,7 @@ Once added to Home Assistant you can configure different settings for your MSR-2
     | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
     | **Factory Reset Radar** | — | Resets the LD2410 radar to its factory move and still thresholds. |
     | **Restart Radar** | — | Restarts the LD2410 radar module. |
-    | **Radar Timeout** | — | How long presence stays detected, in seconds, after the target is lost. |
+    | **Radar Timeout** | 5 s | How long **Radar Target** stays on, in seconds, after the radar last detects someone. Raise it to 60 s or more if lights turn off while someone sits still. Changing it restarts the radar (see the tip above). |
     | **Radar Max Move Distance** | — | Maximum distance gate for movement detection (gate 2 to 8). Use it to ignore movement past a chosen distance. |
     | **Radar Max Still Distance** | — | Maximum distance gate for still detection (gate 2 to 8). Use it to ignore still targets past a chosen distance. |
     | **Radar Zone 1 Start** | 0 cm | Start distance of Zone 1 from the sensor, in cm (0 to 800). |
@@ -74,7 +80,7 @@ Once added to Home Assistant you can configure different settings for your MSR-2
     | **DPS310 Pressure Offset** | 0.0 hPa | Calibration offset for the DPS310 pressure reading (-100 to +100 hPa in 0.1 hPa steps). Disabled by default. A small subset of devices do not include a DPS310 sensor; if this reads *Unknown*, your device may be one of these units. |
     | **DPS Temperature Offset** | 14.54 °C | Offsets heat from the ESP chip for a more accurate DPS310 temperature reading. A small subset of devices do not include a DPS310 sensor. |
     | **CO2 Auto Calibration** | On | Keeps the SCD40 CO₂ sensor calibrated automatically. The sensor assumes it sees fresh air (about <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/?intent=121" target="_blank" rel="noopener">420 ppm</a>) at least once a week and corrects its baseline to match. Turn it off if the device sits in a space that rarely gets fresh air, then calibrate manually with **Calibrate SCD40 To 420ppm** every 1 to 2 years. |
-    | **Reduce DB Reporting** | Off | Applies filters so many entities only report when they cross a threshold, using less Wi-Fi airtime and less Home Assistant database space. |
+    | **Reduce DB Reporting** | Off | Applies filters so many entities only report when they change by a set amount, using less Wi-Fi airtime and less Home Assistant database space. While it's on, **Radar Move Energy** and **Radar Still Energy** stop updating, the three distance sensors report only changes of 5 cm (2 in) or more, and the light, UV, pressure, and ESP temperature sensors only report larger changes, at least once an hour. **Radar Target**, **Radar Moving Target**, **Radar Still Target**, and the g0-g8 energies aren't affected. With it on, after the radar briefly loses someone and finds them again at almost the same distance, the distance sensors can stay *Unknown* and the zone sensors Clear while **Radar Still Target** is on, until the distance changes by 5 cm or more. Leave it off if you automate on the zone sensors. |
     | **Startup Light Blink** | On | Blinks the RGB LED during the MSR-2's initial boot. |
 
 === "Diagnostic"

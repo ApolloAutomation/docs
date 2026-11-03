@@ -10,6 +10,12 @@ Once added to Home Assistant you can configure different settings for your MSR-1
 
     The **Default Update** column is how often each entity refreshes. Radar entities update in real time as targets move. The **LTR390 Light** and **LTR390 UV Index** sensors use the interval set by the **LTR390 Update Interval** number (60s by default).
 
+!!! tip "Lights that turn off while someone sits still"
+
+    Run room lights from **Radar Target**. It's on while the radar detects anyone, moving or still. The zone sensors also depend on the distance readings, so they can drop out while Radar Target stays on. Use a zone sensor only when you need one part of the room, and then leave **Reduce DB Reporting** off.
+
+    If the lights still turn off while someone sits still, raise **Radar Timeout** to 60 seconds or more. A longer timeout carries **Radar Target** through short dips and only delays the lights going off after everyone leaves. Changing **Radar Timeout** restarts the radar, and the radar may not find someone sitting still again until they move, so change it while nobody's sitting in the room, or ask them to move once afterward.
+
 === "Controls"
 
     | Control | What it does |
@@ -38,9 +44,9 @@ Once added to Home Assistant you can configure different settings for your MSR-1
     | **Radar Target** | real-time | Whether the radar detects a still or moving target. Good for triggering occupancy automations. |
     | **Radar Moving Target** | real-time | Whether the radar currently has a moving target it is tracking. |
     | **Radar Still Target** | real-time | Whether the radar currently has a still target. |
-    | **Radar Moving Distance** | real-time | Distance to the moving target. Holds the last value when no moving target is present, so it can be misleading. |
-    | **Radar Still Distance** | real-time | Distance to the still target. Holds the last value when no still target is present, so it can be misleading. |
-    | **Radar Detection Distance** | real-time | The last detected distance by the radar. Holds the last known value, so it can sometimes be misleading. |
+    | **Radar Moving Distance** | real-time | Distance to the moving target in cm. Reports *Unknown* when no moving target is present. |
+    | **Radar Still Distance** | real-time | Distance to the still target in cm. Reports *Unknown* when no still target is present. |
+    | **Radar Detection Distance** | real-time | Distance to the target the radar detects, in cm. Reports *Unknown* when the radar detects nobody. |
     | **Radar Move Energy** | real-time | The amount of movement measured by the LD2410. Faster movements report a higher percentage. |
     | **Radar Still Energy** | real-time | The energy of the current still target. |
     | **Radar Zone 1 Occupancy** | real-time | Whether someone is in Zone 1, a configurable distance band from the sensor. Defined by **Radar Zone 1 Start** and **Radar End Zone 1**. |
@@ -58,7 +64,7 @@ Once added to Home Assistant you can configure different settings for your MSR-1
     | **BME280 Temperature Offset** | 14.54 °C | Calibrates the BME280 temperature reading to a known value. See the <a href="https://wiki.apolloautomation.com/products/general/temp-hum-calibration/" target="_blank" rel="noopener">temperature &amp; humidity calibration guide</a>. |
     | **BME280 Humidity Offset** | -18.86 % | Calibrates the BME280 humidity reading to a known value. See the <a href="https://wiki.apolloautomation.com/products/general/temp-hum-calibration/" target="_blank" rel="noopener">temperature &amp; humidity calibration guide</a>. |
     | **LTR390 Update Interval** | 60 s | How often the LTR390 light and UV sensors poll (1 to 300 seconds). Disabled by default. |
-    | **Radar Timeout** | — | The time in seconds that the radar's presence stays detected after the target is lost. |
+    | **Radar Timeout** | 5 s | How long **Radar Target** stays on, in seconds, after the radar last detects someone. Raise it to 60 s or more if lights turn off while someone sits still. Changing it restarts the radar (see the tip above). |
     | **Radar Max Move Distance** | — | Maximum distance gate for movement detection. Value between 2 and 8 inclusive. |
     | **Radar Max Still Distance** | — | Maximum distance gate for still detection. Value between 2 and 8 inclusive. |
     | **Radar Distance Resolution** | — | Best kept at 0.75 m in most cases. At 0.25 m the first few gates become very sensitive and the maximum detection distance shrinks a lot. Disabled by default. |
@@ -71,7 +77,7 @@ Once added to Home Assistant you can configure different settings for your MSR-1
     | **Radar Control Bluetooth** | Off | Turns on the LD2410's Bluetooth so you can connect with the HLK Radar phone app (for example, to update the radar chip's own firmware, not the MSR-1 in general). |
     | **Radar Engineering Mode** | — | Enables the radar's engineering mode, which exposes the per-gate energy readings used for tuning. |
     | **Startup Light Blink** | On | Blinks the RGB LED on startup to show the device's connection status. |
-    | **Reduce DB Reporting** | Off | Filters out small sensor changes so fewer values are logged to your Home Assistant database. |
+    | **Reduce DB Reporting** | Off | Sends fewer updates to Home Assistant, so its database grows more slowly. While it's on, **Radar Move Energy** and **Radar Still Energy** stop updating, the three distance sensors report only changes of 5 cm (2 in) or more, and the light, UV, and ESP temperature sensors only report larger changes, at least once an hour. **Radar Target**, **Radar Moving Target**, **Radar Still Target**, and the g0-g8 energies aren't affected. With it on, after the radar briefly loses someone and finds them again at almost the same distance, the distance sensors can stay *Unknown* and the zone sensors Clear while **Radar Still Target** is on, until the distance changes by 5 cm or more. Leave it off if you automate on the zone sensors. |
     | **query params** | — | Queries the LD2410 for its current parameters. |
     | **Factory Reset Radar** | — | Sets the radar's move and still thresholds back to the manufacturer's original values. |
     | **Factory Reset ESP** | — | Erases settings and returns the device to factory firmware defaults. Disabled by default. |
