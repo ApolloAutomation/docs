@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-label="An MTR-1 mounted in the corner of a room, seen from above. Its 120 degree view is aimed along the corner's diagonal, so 90 degrees of it fill the room and about 15 degrees spill past each wall a short way into the next rooms. A dashed Room zone sits about 30 cm (1 ft) inside both shared walls.">
+  <rect x="0" y="0" width="720" height="440" rx="16" fill="#f6f8fa"/>
+  <text x="360" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1b2530">MTR-1 mounted in a corner, seen from above</text>
+
+  <!-- Next rooms, beyond the two shared walls -->
+  <text x="560" y="100" text-anchor="middle" font-size="14" fill="#5b6670">Next room</text>
+  <text x="96" y="390" text-anchor="middle" font-size="14" fill="#5b6670" transform="rotate(-90 96 390)">Next room</text>
+  <text x="660" y="415" text-anchor="end" font-size="15" font-weight="600" fill="#1b2530">This room</text>
+
+  <!-- Radar view inside the room: 90 of its 120 degrees -->
+  <path d="M170,120 L470,120 A300,300 0 0 1 170,420 Z" fill="#cfe2f3" stroke="#4379AA" stroke-width="1.5"/>
+
+  <!-- The 15 degrees past each wall, drawn short: the view reaches less far at its edges -->
+  <path d="M170,120 L314.9,81.2 A150,150 0 0 1 320,120 Z" fill="#f2a65a" fill-opacity="0.85" stroke="#c0661d" stroke-width="1.5"/>
+  <path d="M170,120 L170,270 A150,150 0 0 1 131.2,264.9 Z" fill="#f2a65a" fill-opacity="0.85" stroke="#c0661d" stroke-width="1.5"/>
+  <text x="326" y="84" font-size="13" font-weight="600" fill="#9a4a0c">15°</text>
+  <text x="122" y="292" text-anchor="middle" font-size="13" font-weight="600" fill="#9a4a0c">15°</text>
+
+  <!-- The whole view, 90 degrees in the room plus 15 past each wall -->
+  <text x="186" y="402" font-size="14" font-weight="600" fill="#2c5a85">120° view</text>
+
+  <!-- Room zone, about 30 cm (1 ft) inside the shared walls -->
+  <rect x="185" y="135" width="195" height="195" fill="#2e7d32" fill-opacity="0.10" stroke="#2e7d32" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="372" y="320" text-anchor="end" font-size="14" font-weight="600" fill="#1f5e23">Room zone</text>
+  <line x1="260" y1="124" x2="260" y2="133" stroke="#1f5e23" stroke-width="1.5"/>
+  <text x="266" y="152" font-size="12" fill="#1f5e23">30 cm (1 ft)</text>
+
+  <!-- Shared walls -->
+  <path d="M690,120 L170,120 L170,430" fill="none" stroke="#4a5560" stroke-width="7" stroke-linejoin="miter" stroke-linecap="butt"/>
+
+  <!-- The sensor, facing along the corner's diagonal -->
+  <rect x="157" y="113" width="26" height="14" rx="3" fill="#1b2530" transform="rotate(45 170 120)"/>
+  <text x="196" y="164" font-size="13" font-weight="600" fill="#1b2530">MTR-1</text>
+
+  <!-- Callouts -->
+  <text x="500" y="190" font-size="13" fill="#9a4a0c">Sees about 15° past</text>
+  <text x="500" y="207" font-size="13" fill="#9a4a0c">each wall, a short way</text>
+  <text x="500" y="224" font-size="13" fill="#9a4a0c">into the next room</text>
+  <text x="500" y="262" font-size="13" fill="#1f5e23">Keep zones about</text>
+  <text x="500" y="279" font-size="13" fill="#1f5e23">30 cm (1 ft) inside</text>
+  <text x="500" y="296" font-size="13" fill="#1f5e23">shared walls</text>
+</svg>
