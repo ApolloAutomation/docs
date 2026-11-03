@@ -293,7 +293,10 @@ nav:
       - CAST PRO-1:
           - Introduction: products/castpro1/introduction.md
           - Examples:
+            - Line In: products/castpro1/examples/line-in.md
             - LED Strip: products/castpro1/examples/led-strip.md
+          - Troubleshooting:
+            - Status Check and Factory Reset: products/castpro1/troubleshooting/castpro1-status-check.md
       - Dev Boards & Breakouts:
           - DEV-1:
               - Introduction: products/dev1/introduction.md

@@ -4,15 +4,15 @@ description: "Connect an addressable LED strip to your CAST PRO-1 and control it
 ---
 # Add an LED strip
 
-Your CAST PRO-1 has LED strip terminals, **5V**, **GND** and **IO1**, for an addressable LED strip. There's no soldering: the strip's wires go straight into the terminals. Once it's connected, the strip shows up in Home Assistant as a light with effects, and it can switch on by itself whenever music is playing.
+Your CAST PRO-1 has LED strip terminals, **5V**, **GND**, and **IO1**, for an addressable LED strip. There's no soldering: the strip's wires go straight into the terminals. Once it's connected, the strip shows up in Home Assistant as a light with effects, and it can switch on by itself whenever music is playing.
 
-!!! note "Coming in a firmware update"
+!!! note "Firmware 26.11.3.2 or newer"
 
-    LED strip support for the CAST PRO-1 is coming in a firmware update. Once it's available, update your CAST PRO-1 from the **Firmware Update** entity on its device page.
+    LED strip support arrived in CAST PRO-1 firmware 26.11.3.2. If your CAST PRO-1 is on an older version, update it from the **Firmware Update** entity on its device page. Until this release reaches the Stable channel, [switch to the Beta channel](../../general/setup/switch-to-beta-branch.md) first.
 
 ## What you'll need
 
-- **An addressable RGB strip that uses a single data wire.** WS2812B is the most common. WS2812, SK6812 (RGB), WS2811, APA106 and SM16703 also work.
+- **An addressable RGB strip that uses a single data wire.** WS2812B is the most common. WS2812, SK6812 (RGB), WS2811, APA106, and SM16703 also work.
 - A strip with bare wire ends (or wires you can connect to its pads) for the terminals.
 
 Strips with separate data and clock wires (APA102, SK9822), RGBW strips, and plain 12V RGB strips with no data wire won't work.
@@ -30,11 +30,11 @@ Every LED draws current. A WS2812B LED pulls up to about 60 mA at full white, so
 
 ## Wiring
 
-You'll connect the strip's power, ground and data wires to the matching terminals on your device.
+You'll connect the strip's power, ground, and data wires to the matching terminals on your device.
 
 1\. Unplug your CAST PRO-1 from power.
 
-2\. Find the input end of the strip. Its pads are labelled **DIN** or **DI**, and the arrows printed on the strip point away from it. (1)
+2\. Find the input end of the strip. Its pads are labeled **DIN** or **DI**, and the arrows printed on the strip point away from it. (1)
 { .annotate }
 
 1.  Data only travels one way along the strip. Wired to the **DOUT** end, the strip stays dark.
@@ -53,18 +53,18 @@ You'll connect the strip's power, ground and data wires to the matching terminal
 
 The LED strip controls are hidden until you turn them on, so a CAST PRO-1 without a strip doesn't show extra controls.
 
-1\. In Home Assistant, go to **Settings** > **Devices & services** > **ESPHome** and open your CAST PRO-1.
+1\. In Home Assistant, go to **Settings → Devices & services → ESPHome** and open your CAST PRO-1.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
-2\. Under **Controls**, **Configuration** and **Diagnostic**, select **+N entities not shown** and turn on each entity whose name starts with **LED Strip**. Home Assistant adds them after about 30 seconds.
+2\. Under **Controls**, **Configuration**, and **Diagnostic**, select **+N entities not shown** and turn on each entity whose name starts with **LED Strip**. Home Assistant adds them after about 30 seconds.
 
 3\. Set **LED Strip Count** to the number of LEDs on your strip. (1)
 { .annotate }
 
 1.  Multiply the strip's length by its LEDs per meter. A 5 m roll of a 30 LEDs/m strip has 150 LEDs. LEDs past the count stay off.
 
-4\. Press **LED Strip Test**. The strip shows red, green, blue and white, then a rainbow, and turns off.
+4\. Press **LED Strip Test**. The strip shows red, green, blue, and white, then a rainbow, and turns off.
 
 If the colors come out in the wrong order (for example, green when the test shows red), change **LED Strip Color Order** until they match. GRB is right for most WS2812B strips.
 
@@ -72,14 +72,20 @@ If the colors come out in the wrong order (for example, green when the test show
 
 | Entity | What it does |
 | --- | --- |
-| **LED Strip** | The strip itself. Turn it on and off, pick a color and brightness, or choose an effect: Rainbow, Color Wipe, Scan, Twinkle, Random Twinkle, Fireworks, Flicker, Pulse or Strobe. |
+| **LED Strip** | The strip itself. Turn it on and off, pick a color and brightness, or choose an effect: Rainbow, Color Wipe, Scan, Twinkle, Random Twinkle, Fireworks, Flicker, Pulse, Strobe, Effect A, or Effect B. |
 | **LED Strip Count** | How many LEDs to drive, up to 300. |
 | **LED Strip Max Brightness** | Caps the brightness of every LED to keep the current draw down. Defaults to 50%. |
 | **LED Strip Color Order** | The order your strip expects its colors in. |
 | **LED Strip Chipset** | The type of LED on your strip. Leave it on **WS2812** unless the strip flickers or shows random colors. |
-| **LED Strip Music Mode** | Turns the strip on with the **Music Effect** whenever music is playing, and off about 3 seconds after it stops. |
+| **LED Strip Effect A Pattern**, **LED Strip Effect B Pattern** | The pattern **Effect A** or **Effect B** runs: Flicker, Strobe, Rainbow, Color Wipe, Scan, Twinkle, Pulse, or Fireworks. |
+| **LED Strip Effect A Speed**, **LED Strip Effect B Speed** | How fast that pattern runs, from 1 (slow) to 100 (fast). |
+| **LED Strip Music Mode** | Turns the strip on with the **Music Effect** whenever music or [Line In](line-in.md) is playing, and off about 3 seconds after it stops. |
 | **LED Strip Music Effect** | The effect Music Mode uses. |
 | **LED Strip Test** | Runs the color test from the steps above. |
+
+!!! tip "Effect A and Effect B have a speed setting"
+
+    Effect A and Effect B run the pattern you pick, in the strip's color (Rainbow uses its own colors), at the speed you set. Change the pattern or speed from an automation while the effect runs.
 
 !!! info "Music Mode follows playback, not the beat"
 
