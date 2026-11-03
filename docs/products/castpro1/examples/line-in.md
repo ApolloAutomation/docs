@@ -18,6 +18,16 @@ Plug your source into the CAST PRO-1's **Line In** jack with a 3.5 mm cable. Lin
 
 1.  Line In takes line-level audio, like a TV, CD player, or streamer. A turntable needs a phono preamp, built in or separate. If your source has RCA outputs, use a 3.5 mm-to-RCA cable.
 
+## Turn on the audio input
+
+Do this once, so Music Assistant can use your CAST PRO-1's Line In.
+
+1\. In Music Assistant, go to **Settings → Players** and open your CAST PRO-1.
+
+2\. Select **Turn on audio input**.
+
+If your CAST PRO-1 shows **Setup required** instead, finish its setup and choose **Connect unpaired with audio input** (or **Pair device**).
+
 ## Play it on a speaker
 
 Line In plays on any speaker or group in Music Assistant, Apollo or not.
@@ -26,30 +36,17 @@ Line In plays on any speaker or group in Music Assistant, Apollo or not.
 
 2\. Select the speaker or group where you want to hear it.
 
-3\. Open **Browse** and select your CAST PRO-1's Line In. It's named **Sendspin Source** with your CAST PRO-1's name, for example **Sendspin Source (Living Room)**. If you have more than one, open **Sendspin Source** first and pick it there.
+3\. Open **Browse** and select your CAST PRO-1's Line In. It's named **Sendspin Source** with your CAST PRO-1's name, for example **Sendspin Source (Living Room)**. If you have more than one, open **Sendspin Source** first and pick it there. On the CAST PRO-1's own player, it's also in the **Select source** menu.
 
 4\. Select **Play**.
 
-Your Line In now plays on that speaker. It plays in one place at a time, so picking it on another speaker moves it there. Not in the list? See [Troubleshooting](#troubleshooting).
+Your Line In now plays on that speaker until you stop it in Music Assistant. It plays in one place at a time, so picking it on another speaker moves it there. The Line In jack can't tell when your source starts or stops, so start and stop Line In from Music Assistant each time. Not in the list? See [Troubleshooting](#troubleshooting).
 
 !!! warning "On its own CAST PRO-1, Line In plays through Optical"
 
     While its Line In streams, the CAST PRO-1 plays through its optical output, even with **Audio Output** set to **Analog**. That's because Line In and the analog output share one audio connection inside the device. It goes back to Analog when the stream stops. This also applies to anything else it plays while its Line In streams to another room.
 
     Speakers on the analog output? Play Line In on another speaker, or connect this CAST PRO-1 to your receiver or soundbar with an optical cable.
-
-## Start it automatically with the Line In switch
-
-Your CAST PRO-1 can't tell when your source starts playing, so the **Line In** switch on its device page tells Music Assistant instead:
-
-- Turn **Line In** on, and Music Assistant starts playing it after about 2 seconds.
-- Turn it off, and Music Assistant stops it about a minute later.
-
-Line In starts on the CAST PRO-1 itself unless you pick somewhere else. To change it, go to **Settings → Players** in Music Assistant, open your CAST PRO-1, and set **Automatically play line-in on** to another speaker or group. Choose **Off** to only start Line In by hand.
-
-!!! tip "Turn on Line In from an automation"
-
-    Turn **Line In** on in an automation, for example when your TV turns on, and the sound starts in the room you picked.
 
 ## Line In Streaming
 
@@ -67,12 +64,7 @@ Changing it restarts your CAST PRO-1, which stops anything playing on it.
 **The Line In isn't in Music Assistant**
 
 - Check your CAST PRO-1 is on firmware 26.11.3.2 or newer, and Music Assistant on 2.10.7 or newer.
-- If your CAST PRO-1 shows **Setup required** in Music Assistant, finish its setup and choose **Connect unpaired with audio input** or **Pair device**.
-
-**Turning on Line In doesn't start it**
-
-- Check **Automatically play line-in on** isn't set to **Off**.
-- If **Line In** was already on when your CAST PRO-1 or Music Assistant restarted, turn it off and back on.
+- Turn on the audio input in your CAST PRO-1's player settings. See [Turn on the audio input](#turn-on-the-audio-input).
 
 **No sound from the CAST PRO-1's own speakers**
 

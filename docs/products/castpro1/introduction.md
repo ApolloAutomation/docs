@@ -31,7 +31,6 @@ You'll find these on your CAST PRO-1's device page in Home Assistant.
 | Entity | What it does |
 | --- | --- |
 | **Audio Output** | Plays through **Analog** or **Optical**. |
-| **Line In** | Tells Music Assistant your Line In source is playing, so it can start it for you. See [Start it automatically](examples/line-in.md#start-it-automatically-with-the-line-in-switch). |
 | **Line In Streaming** | How Line In travels over your network: **Compressed (best for WiFi)** or **Lossless (Ethernet or strong WiFi)**. Changing it restarts your CAST PRO-1. |
 | **Firmware Channel** | Gets updates from **Stable** or **Beta**. |
 | **LED Strip** entities | Hidden until you turn them on. See [Add an LED strip](examples/led-strip.md). |
