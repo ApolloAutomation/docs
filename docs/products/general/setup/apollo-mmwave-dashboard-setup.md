@@ -237,12 +237,12 @@ An update takes effect after a restart, and a browser or the Home Assistant app 
     - **Android**: **Settings → Companion app → Troubleshooting → Reset frontend cache**.
     - **iPhone and iPad**: **Settings → Companion app → Debugging → Clear web view cache**, then **Clear Cache**. Older versions of the app call it **Reset frontend cache**.
 
-From Apollo mmWave 2.4.0, the cards tell you when one of these steps is still to do. The **Radar setup** card shows a notice above its checks. A zone map card, view-only ones included, shows it under its title when it comes before any **Radar setup** card on the page, as on a dashboard of your own:
+On updates from Apollo mmWave 2.4.0 or later, the cards tell you when one of these steps is still to do. The **Radar setup** card shows a notice above its checks. A zone map card, view-only ones included, shows it under its title when it comes before any **Radar setup** card on the page, as on a dashboard of your own:
 
 - **Apollo mmWave was updated to 2.4.1, but this page still runs 2.4.0.**, with a **Reload** button and the line **In the Home Assistant app, if Reload does not help, close the app fully and open it again.** The page still runs the cards from before the update. Press **Reload**.
 - **Apollo mmWave 2.4.1 is installed, but Home Assistant still runs 2.4.0. Restart Home Assistant to finish updating.** The page already runs the new cards, but Home Assistant hasn't restarted since the update. Restart it as step 1 shows, and the notice turns into the **Reload** one if the page needs it.
 
-The version numbers are the ones on your system. Only one card on the page shows the notice, and it goes away once the page and Home Assistant run the same version.
+The version numbers are the ones on your system. Only one card on the page shows the notice, and it goes away once the page and Home Assistant run the same version. Cards from earlier releases have no such check, so on the update to 2.4.0 itself, no notice doesn't mean the page runs the new cards: do the steps above anyway.
 
 ### Updating to Apollo mmWave 2.4.0
 
@@ -413,7 +413,7 @@ The **Start here** card adds **Offline right now.**, and the **Radar setup** car
 
 ### An Apollo card shows an error after an update
 
-After you update Apollo mmWave and restart, a browser that still holds the previous version's files can show the Apollo cards as error boxes that read **Custom element doesn't exist**. Refresh the page. Each release loads its cards under a new versioned address, so a fresh page load picks up the current version. If the error is still there, do a hard refresh with **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac). In the Home Assistant app on a phone or tablet, close the app fully and open it again, then clear its cache if the error stays, as [Load the new cards](#load-the-new-cards) shows. From Apollo mmWave 2.4.0, a card that does load, such as the **Radar setup** card, or a zone map that shows an error instead of its map, says which version the page runs and which one Home Assistant runs, with a **Reload** button when a reload fixes it. If that doesn't clear it either, check **Settings → System → Logs** for a warning that starts with **Apollo mmWave:** about Lovelace resources. On a system that manages its dashboard resources in YAML, the warning lists the two resource addresses to add by hand.
+After you update Apollo mmWave and restart, a browser that still holds the previous version's files can show the Apollo cards as error boxes that read **Custom element doesn't exist**. Refresh the page. Each release loads its cards under a new versioned address, so a fresh page load picks up the current version. If the error is still there, do a hard refresh with **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac). In the Home Assistant app on a phone or tablet, close the app fully and open it again, then clear its cache if the error stays, as [Load the new cards](#load-the-new-cards) shows. On updates from Apollo mmWave 2.4.0 or later, a card that does load, such as the **Radar setup** card, or a zone map that shows an error instead of its map, says which version the page runs and which one Home Assistant runs, with a **Reload** button when a reload fixes it. If that doesn't clear it either, check **Settings → System → Logs** for a warning that starts with **Apollo mmWave:** about Lovelace resources. On a system that manages its dashboard resources in YAML, the warning lists the two resource addresses to add by hand.
 
 [![Open your Home Assistant instance and show your Home Assistant logs.](https://my.home-assistant.io/badges/logs.svg)](https://my.home-assistant.io/redirect/logs/)
 
