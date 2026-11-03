@@ -138,7 +138,7 @@ An MTR-1 tab is built around the zone map, with everything for its LD2450 radar 
 
 The integration finds the sensor's target entities itself, so there's nothing to pick before you start drawing. The R PRO-1's zone map and the cards beside it work the same way.
 
-![The Radar setup card above the zone map on an R PRO-1: the card reads LD2450 · R PRO-1 Server Rack and Zone Type is Filter. This radar ignores people inside its built-in zones. Disabled is recommended because the zone map replaces them., with a Set Zone Type to Disabled button, and the map below it shows the radar's view cone in feet, the caption Radar range 20 ft (6 m), 120°, three drawn zones with a pale fill and a dashed outline because nobody is in them, the m / ft switch and the Locked button, and under the grid the Coverage button, the Zone 1, Zone 2, and Zone 3 buttons, and the dimmed Clear All Zones button](/assets/apollo-mmwave-radar-setup-and-zone-map.png)
+![The Radar setup card above the zone map on an R PRO-1: the card reads LD2450 · R PRO-1 Server Rack and Zone Type is Filter. This radar ignores people inside its built-in zones. Disabled is recommended because the zone map replaces them., with a Set Zone Type to Disabled button, and the map below it shows the radar's view cone in feet, the caption Radar range 20 ft (6 m), 120°, three drawn zones with a pale fill and a dashed outline because nobody is in them, the zoom buttons (a dimmed minus, + and Fit) above the m / ft switch and the Locked button, and under the grid the Coverage button, the Zone 1, Zone 2, and Zone 3 buttons, and the dimmed Clear All Zones button](/assets/apollo-mmwave-radar-setup-and-zone-map.png)
 
 ### What to do first
 
