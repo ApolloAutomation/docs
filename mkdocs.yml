@@ -266,6 +266,7 @@ nav:
             - Bluetooth Proxy: products/btn1/additional-info/bluetooth-proxy.md
             - How To Wake Up Your Sensor: products/btn1/battery-sensors/wake-up-battery-sensor.md
             - Prevent Sleep: products/btn1/additional-info/prevent-sleep.md
+            - GPIO Pinout: products/btn1/additional-info/gpio-pinout.md
           - Examples:
             - Blueprint: products/btn1/examples/blueprint.md
           - Troubleshooting:
@@ -714,6 +715,7 @@ nav:
             - Sensor Definitions: homey/products/btn1/setup/sensor-definitions.md
             - How To Wake Up Your Sensor: homey/products/btn1/battery-sensors/wake-up-battery-sensor.md
             - Prevent Sleep: homey/products/btn1/additional-info/prevent-sleep.md
+            - GPIO Pinout: homey/products/btn1/additional-info/gpio-pinout.md
           - Addons:
             - BTN-1 Addon: homey/products/btn1/addons/btn1-addon.md
           - Examples:
