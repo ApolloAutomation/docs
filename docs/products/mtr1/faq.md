@@ -47,7 +47,8 @@ description: Frequently asked questions about the MTR-1 mmWave sensor.
 * The LD2450 radar in the MTR-1 has no sensitivity setting, and ESPHome has none to offer, so it can't be tuned gate by gate like the MSR-2. Here's what you can adjust instead:
     * **Where it's mounted and where it points.** This decides what the radar sees, including a little of the next room and reflections off mirrors and glass. See the [mounting tips](setup/general-tips.md#mounting).
     * **Zones.** Draw zones on the [Apollo mmWave zone map](setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) and automate on a zone's presence sensor: only someone inside the zone turns it on.
-    * **Spots to ignore.** Leave a spot outside every zone, such as a mirror, a fan, or the doorway to the next room, and nobody there turns a zone on.
+    * **Spots to ignore.** Draw an [ignore zone](setup/apollo-mmwave-dashboard.md#ignore-a-spot-or-hold-a-zone) over a spot such as a mirror, a fan, or the doorway to the next room (Apollo mmWave 2.4.0 or newer), or leave the spot outside every zone, and nobody there turns a zone on.
+    * **Hold.** Give a zone a [hold time](setup/apollo-mmwave-dashboard.md#ignore-a-spot-or-hold-a-zone) so it stays on for a while after the radar loses someone who sits still (Apollo mmWave 2.4.0 or newer).
     * **Timeout** (**Radar Timeout** on the Apollo mmWave dashboard). It sets how long **LD2450 Presence** stays on after the radar stops seeing anyone in its whole view. It doesn't hold the zones you draw.
     * **A delay in your automation.** Give the "turn off" trigger a delay, such as 2 minutes, so a short dropout doesn't turn the lights off.
 * Judge detection only while the MTR-1 is mounted where it will stay. Held in your hand, the whole room moves around the radar, so the dots and zones won't match the room.
