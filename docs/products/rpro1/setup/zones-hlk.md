@@ -52,7 +52,7 @@ Follow these steps to turn on the LD2450's Bluetooth and set up its zones in the
 
 !!! tip "There are three ways to use your R PRO-1!"
 
-    You can use any of these three choices to control your R PRO-1 differently. The most common option is "Detection" which lets you set up three areas and track three targets within them.<br>**Disabled**: Disables multi-zone area detection and tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
+    You can use any of these three choices to control your R PRO-1 differently. If you draw zones on the Apollo mmWave dashboard, pick **Close detection** (**LD2450 Zone Type** **Disabled**): the dashboard recommends it, because its zone map replaces the radar's built-in zones. Pick **Area Detection** (**Detection**) only when you use the app's three areas instead of the zone map.<br>**Disabled**: Disables multi-zone area detection and tracks one big area.<br>**Detection**: Only detects targets within each of the three zones.<br>**Filter**: Excludes a zone from detection and detects presence everywhere else.
 
     Disabled allows you to use the sensor as a "basic" presence sensor and "Filter" lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
