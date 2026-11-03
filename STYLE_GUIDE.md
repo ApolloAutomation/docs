@@ -105,7 +105,7 @@ Product IDs are always uppercase with a hyphen: **AIR-1**, **MTR-1**,
 Never `Air-1`, `air1`, or `AIR1` in body copy. mkdocs.yml is the source
 of truth for the canonical form.
 
-**R PRO-1** is the one exception: its name has a space after the R, not
+**R PRO-1** is an exception: its name has a space after the R, not
 a hyphen. Write **R PRO-1** in titles, headings, nav labels, and body
 copy, never `R-PRO-1`. The hyphenated and underscored forms survive
 only where a space isn't allowed or where you quote the device
@@ -116,6 +116,16 @@ literally, and those must not be changed:
 - The firmware repo and installer: `ApolloAutomation/R_PRO-1`
 - The device name Home Assistant and Homey show: **Apollo R_PRO-1**
 - The setup hotspot: **Apollo R PRO 1 Hotspot**
+
+**CAST PRO-1** follows the same pattern: a space after CAST, then
+**PRO-1**. Never `CAST-1 PRO`, `CAST-PRO-1`, or `Cast Pro`. It's a
+different product from the **CAST-1**, so don't shorten it to CAST-1.
+The same literal forms keep their own spelling:
+
+- File and folder names and URLs: `castpro1/`, `cast-pro-1-intro-image.webp`
+- Entity IDs: `media_player.apollo_cast_pro_1_xxxxxx_player`
+- The device name Home Assistant and Music Assistant show: **Apollo CAST_PRO-1**
+- The setup hotspot: **Apollo CAST_PRO-1 Hotspot**
 
 ### First mention per page
 
