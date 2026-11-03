@@ -48,7 +48,7 @@ With the app installed, you'll turn on the radar's Bluetooth, connect to it from
 
 !!! tip "There are three ways to use your MTR-1!"
 
-    You can use any of these three choices to control your MTR-1 differently. The most common option is **Area Detection**, which lets you set up three areas and track three targets within them.<br>**Close detection** (Disabled in Home Assistant): zone detection is off<br>**Area Detection** (Detection): only detects targets inside your zones<br>**Area Filtering** (Filter): ignores targets inside your zones
+    You can use any of these three choices to control your MTR-1 differently. If you draw zones on the Apollo mmWave dashboard, pick **Close detection** (Zone Type **Disabled**): the dashboard recommends it, because its zone map replaces the app's areas. Pick **Area Detection** only when you use the app's three areas instead of the zone map.<br>**Close detection** (Disabled in Home Assistant): zone detection is off<br>**Area Detection** (Detection): only detects targets inside your zones<br>**Area Filtering** (Filter): ignores targets inside your zones
 
     Close detection lets you use the sensor as a basic presence sensor, and Area Filtering lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
