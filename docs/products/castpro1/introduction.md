@@ -12,7 +12,7 @@ description: Documentation for CAST PRO-1, including setup, usage, and best prac
 
 **Built-In Ethernet:** The CAST PRO-1 has an Ethernet port on board, so it can run on a wired connection with no addon. Without a cable, it works over WiFi.
 
-**Multi-Room Audio:** Group the CAST PRO-1 with other CAST players to play the same music in sync across every room. Streaming runs locally through Music Assistant and Sendspin, so there's no cloud account and no subscription.
+**Multi-Room Audio:** Group the CAST PRO-1 with other CAST players to play the same music in sync across every room. Streaming runs locally through Music Assistant and Sendspin, so there's no cloud account and no subscription. If a soundbar or receiver makes one room play a little late, go to **Settings → Players** in Music Assistant, open that CAST PRO-1, and raise **Static playback delay (ms)** until the rooms line up. It starts at 0.
 
 **LED Strip Terminals:** Connect an addressable LED strip to the terminals, with no soldering. It shows up in Home Assistant as a light with effects and a Music Mode that follows playback. See [Add an LED strip](examples/led-strip.md).
 
@@ -20,9 +20,9 @@ description: Documentation for CAST PRO-1, including setup, usage, and best prac
 
 **WizMote Control:** Pair a WizMote for physical control over playback without opening an app. Each button is configurable in Home Assistant.
 
-!!! note "Line In, LED strip, and status check need firmware 26.11.3.2"
+!!! note "Needs firmware 26.11.3.2"
 
-    These arrive in CAST PRO-1 firmware 26.11.3.2. Update from the **Firmware Update** entity on the device page. Until this release reaches the Stable channel, [switch to the Beta channel](../general/setup/switch-to-beta-branch.md) first.
+    Line In, the LED strip, the status check, and the playback delay setting arrive in CAST PRO-1 firmware 26.11.3.2. Update from the **Firmware Update** entity on the device page. Until this release reaches the Stable channel, [switch to the Beta channel](../general/setup/switch-to-beta-branch.md) first.
 
 ## Device page controls
 
