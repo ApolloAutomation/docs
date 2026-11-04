@@ -8,7 +8,7 @@ Your CAST PRO-1 has LED strip terminals, **5V**, **GND** and **IO1**, for an add
 
 !!! note "Update your firmware first"
 
-    If you don't see any **LED Strip** entities on your CAST PRO-1's device page, update it from the **Firmware Update** entity first.
+    LED strip support needs firmware 26.11.3.2 or newer. If you don't see any **LED Strip** entities on your CAST PRO-1's device page, update it from the **Firmware Update** entity first.
 
 ## What you'll need
 
@@ -34,7 +34,7 @@ You'll connect the strip's power, ground and data wires to the matching terminal
 
 1\. Unplug your CAST PRO-1 from power.
 
-2\. Find the input end of the strip. Its pads are labelled **DIN** or **DI**, and the arrows printed on the strip point away from it. (1)
+2\. Find the input end of the strip. Its pads are labeled **DIN** or **DI**, and the arrows printed on the strip point away from it. (1)
 { .annotate }
 
 1.  Data only travels one way along the strip. Wired to the **DOUT** end, the strip stays dark.
@@ -53,7 +53,7 @@ You'll connect the strip's power, ground and data wires to the matching terminal
 
 The LED strip controls are hidden until you turn them on, so a CAST PRO-1 without a strip doesn't show extra controls.
 
-1\. In Home Assistant, go to **Settings** > **Devices & services** > **ESPHome** and open your CAST PRO-1.
+1\. In Home Assistant, go to **Settings → Devices & services → ESPHome** and open your CAST PRO-1.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
@@ -79,7 +79,7 @@ If the colors come out in the wrong order (for example, green when the test show
 | **LED Strip Chipset** | The type of LED on your strip. Leave it on **WS2812** unless the strip flickers or shows random colors. |
 | **LED Strip Effect A Pattern** and **LED Strip Effect A Speed** | The pattern **Effect A** runs, and how fast. |
 | **LED Strip Effect B Pattern** and **LED Strip Effect B Speed** | The pattern **Effect B** runs, and how fast. |
-| **LED Strip Music Mode** | Turns the strip on with the **Music Effect** whenever music is playing, and off about 3 seconds after it stops. |
+| **LED Strip Music Mode** | Turns the strip on with the **Music Effect** whenever music or the [Analog In (Line In)](../additional-info/analog-in.md) source is playing, and off about 3 seconds after it stops. |
 | **LED Strip Music Effect** | The effect Music Mode uses. |
 | **LED Strip Test** | Runs the color test from the steps above. Under **Diagnostic**. |
 

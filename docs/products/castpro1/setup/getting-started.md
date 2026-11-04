@@ -15,7 +15,7 @@ Every port is on the front of the CAST PRO-1. The two 3.5mm jacks each do a sing
 | Port | What it's for |
 | --- | --- |
 | **Reset** and **Boot** | Two recessed buttons. Press them with a pin or a small screwdriver. See [Boot button status check and factory reset](../troubleshooting/castpro1-boot-button.md) for what each hold does. |
-| **Analog In** | Audio in only. Connect a turntable (through a phono preamp), TV, or other source here to play it through Music Assistant. See [Play a source through Analog In](../additional-info/analog-in.md). |
+| **Analog In (Line In)** | Audio in only. Connect a turntable (through a phono preamp), TV, or other source here to play it through Music Assistant. See [Play a source through Analog In (Line In)](../additional-info/analog-in.md). |
 | **Analog/Optical Out** | Audio out only. Takes a regular 3.5mm audio cable for analog speakers, or a mini-TOSLINK optical cable for a receiver or soundbar. |
 | **USB-C** | Power. A 5V 1A supply, or 5V 3A if you run an LED strip from the screw terminals. |
 | **Ethernet** | Wired network. Data only, it doesn't take power over Ethernet (PoE). |
@@ -118,6 +118,10 @@ Your CAST PRO-1 needs to know whether the **Analog/Optical Out** jack is feeding
 
 The CAST PRO-1 streams through <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>. Once Music Assistant is running, your CAST PRO-1 shows up as a player automatically, no extra configuration needed.
 
+!!! note "Use Music Assistant 2.10.7 or newer"
+
+    Your CAST PRO-1 needs Music Assistant 2.10.7 or newer to connect. If Music Assistant is already installed, update it from its app page first.
+
 ### Install Music Assistant
 
 You'll install the Music Assistant app, then add its integration in Home Assistant.
@@ -158,8 +162,12 @@ Have more than one CAST player? Group your CAST PRO-1 with other CAST PRO-1s and
 
 <!-- TODO image: /assets/cast-pro-1-play-in-multiple-rooms.gif | alt: Grouping the CAST PRO-1 with other players from the Music Assistant players panel -->
 
-!!! success "Next step: play a source through Analog In"
+!!! tip "One room a little behind the others?"
 
-    Plug a turntable, TV, or other source into the **Analog In** jack and play it through Music Assistant.
+    A soundbar or receiver can add a short delay of its own. In Music Assistant, go to **Settings → Players**, open that CAST PRO-1, and raise **Static playback delay (ms)** until the rooms line up. It starts at 0 and needs firmware 26.11.3.3 or newer.
 
-    [Play a source through Analog In :material-audio-input-stereo-minijack:](../additional-info/analog-in.md){ .md-button .md-button--primary }
+!!! success "Next step: play a source through Analog In (Line In)"
+
+    Plug a turntable, TV, or other source into the **Analog In (Line In)** jack and play it through Music Assistant.
+
+    [Play a source through Analog In (Line In) :material-audio-input-stereo-minijack:](../additional-info/analog-in.md){ .md-button .md-button--primary }

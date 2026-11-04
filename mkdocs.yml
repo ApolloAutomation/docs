@@ -298,7 +298,7 @@ nav:
           - Additional Info:
             - Sensor Definitions: products/castpro1/setup/sensor-definitions.md
             - ESPHome Device Builder: products/castpro1/additional-info/esphome-device-builder.md
-            - Analog In: products/castpro1/additional-info/analog-in.md
+            - Analog In (Line In): products/castpro1/additional-info/analog-in.md
           - Examples:
             - LED Strip: products/castpro1/examples/led-strip.md
             - TTS and Announcements: products/castpro1/examples/tts-announcements.md

@@ -10,12 +10,12 @@ description: Frequently asked questions about the CAST PRO-1 audio caster.
 
 * **Built-in Ethernet:** no addon module needed for a wired connection.
 * **Optical output:** the output jack takes an optical cable as well as a regular 3.5mm audio cable.
-* **Analog In:** a second jack for audio in, so you can play a turntable or TV through Music Assistant.
+* **Analog In (Line In):** a second jack for audio in, so you can play a turntable or TV through Music Assistant.
 * **LED strip terminals:** screw terminals for an addressable LED strip, no soldering.
 
 3\. **Which jack is which?**
 
-* The left jack is **Analog In**, audio in only. Whatever you plug in shows up in Music Assistant as a **Sendspin Source**. See [Play a source through Analog In](additional-info/analog-in.md).
+* The left jack is **Analog In (Line In)**, audio in only. Whatever you plug in shows up in Music Assistant as a **Sendspin Source**. See [Play a source through Analog In (Line In)](additional-info/analog-in.md).
 * The right jack is **Analog/Optical Out**, audio out only. It takes a 3.5mm audio cable for analog or a mini-TOSLINK optical cable for digital.
 * The [Getting Started guide](setup/getting-started.md#know-your-ports) has a labeled photo of every port.
 
@@ -57,6 +57,7 @@ description: Frequently asked questions about the CAST PRO-1 audio caster.
 11\. **Can I play the same music in several rooms?**
 
 * Yes. Group your CAST PRO-1 with other CAST PRO-1s and CAST-1s in Music Assistant and they play in sync. Volume can be set for the whole group or per player.
+* One room a little behind the others, for example through a soundbar? Raise that CAST PRO-1's **Static playback delay (ms)** in Music Assistant. See [Play in multiple rooms](setup/getting-started.md#play-in-multiple-rooms).
 
 12\. **Does it need a cloud account or subscription?**
 
