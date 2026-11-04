@@ -22,16 +22,6 @@ The **Analog In (Line In)** jack on your CAST PRO-1 turns any line-level source 
 
 ![Plugging a USB-C power cable into the CAST PRO-1, then a 3.5mm cable into the Analog In jack](/assets/cast-pro-1-plug-in-audio-in.webp)
 
-## Turn on the audio input
-
-Do this once, so Music Assistant can use your CAST PRO-1's Analog In.
-
-1\. In Music Assistant, go to **Settings → Players** and open your CAST PRO-1.
-
-2\. Select **Turn on audio input**.
-
-If your CAST PRO-1 shows **Setup required** instead, finish its setup and choose **Connect unpaired with audio input** (or **Pair device**).
-
 ## Play it in Music Assistant
 
 !!! warning "Your CAST PRO-1 plays through Optical while its Analog In streams"
@@ -51,7 +41,7 @@ If your CAST PRO-1 shows **Setup required** instead, finish its setup and choose
 
 <!-- TODO image: /assets/cast-pro-1-sendspin-source.webp | alt: Music Assistant Browse page showing the Sendspin Source for the CAST PRO-1 -->
 
-Your source now plays until you stop it in Music Assistant. It plays on one player at a time, so picking it on another player moves it there. The jack can't tell when your source starts or stops, so start and stop it from Music Assistant each time. On your CAST PRO-1's own player, it's also in the **Select source** menu.
+Your source now plays until you stop it in Music Assistant. It plays on one player at a time, so picking it on another player moves it there. The jack can't tell when your source starts or stops, so start and stop it from Music Assistant each time. On your CAST PRO-1's own player, it's also in the **Select source** menu. No **Sendspin Source** in **Browse**? See [Troubleshooting](#troubleshooting).
 
 !!! tip "See a Line In switch?"
 
@@ -75,7 +65,7 @@ Changing it restarts your CAST PRO-1, which stops anything playing on it.
 **The Sendspin Source isn't in Music Assistant**
 
 - Check your CAST PRO-1 is on firmware 26.11.3.2 or newer, and Music Assistant on 2.10.7 or newer.
-- Turn on the audio input. See [Turn on the audio input](#turn-on-the-audio-input).
+- In Music Assistant, go to **Settings → Players** and open your CAST PRO-1. If it shows **Setup required**, select it to start the setup and choose **Connect unpaired with audio input**. If you picked **Connect unpaired without audio input** earlier, select **Turn on audio input**.
 
 **No sound from the speakers on your CAST PRO-1**
 

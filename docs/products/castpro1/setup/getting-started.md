@@ -116,7 +116,7 @@ Your CAST PRO-1 needs to know whether the **Analog/Optical Out** jack is feeding
 
 ## Music Assistant
 
-The CAST PRO-1 streams through <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>. Once Music Assistant is running, your CAST PRO-1 shows up as a player automatically, no extra configuration needed.
+The CAST PRO-1 streams through <a href="https://www.music-assistant.io/" target="_blank" rel="noreferrer nofollow noopener">Music Assistant</a>. Once Music Assistant is running, your CAST PRO-1 shows up as a player automatically.
 
 !!! note "Use Music Assistant 2.10.7 or newer"
 
@@ -145,6 +145,8 @@ With Music Assistant running, you can start playing music through your speakers.
 1\. Open **Music Assistant** from the Home Assistant sidebar.
 
 2\. Your CAST PRO-1 appears in the player list in Music Assistant. Select it as your player.
+
+If it shows **Setup required**, select it to start the setup and choose **Connect unpaired with audio input**. Picking the option with audio input lets you play its [Analog In (Line In)](../additional-info/analog-in.md) later.
 
 3\. Pick any song, playlist, or radio station and it plays through the speakers connected to your CAST PRO-1.
 

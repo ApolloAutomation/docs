@@ -8,7 +8,7 @@ Your CAST PRO-1 has LED strip terminals, **5V**, **GND** and **IO1**, for an add
 
 !!! note "Update your firmware first"
 
-    LED strip support needs firmware 26.11.3.2 or newer. If you don't see any **LED Strip** entities on your CAST PRO-1's device page, update it from the **Firmware Update** entity first.
+    LED strip support needs firmware 26.11.3.2 or newer. Check **Apollo Firmware Version** under **Diagnostic** on your CAST PRO-1's device page, and update from the **Firmware Update** entity if it's older. The **LED Strip** entities stay hidden until you [turn them on](#turn-on-the-led-strip-controls), even on current firmware.
 
 ## What you'll need
 
