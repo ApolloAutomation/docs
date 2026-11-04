@@ -68,7 +68,11 @@ There are three ways to get your CAST PRO-1 online. Pick whichever is easier, yo
 
         Still no hotspot? A [factory reset](../troubleshooting/castpro1-boot-button.md#factory-reset) makes it broadcast again.
 
-    2\. On your phone or PC, open the Wi-Fi settings and connect to "**Apollo CAST_PRO-1 Hotspot**". Once connected it should automatically open a dashboard for your CAST PRO-1. If it doesn't, open your web browser and go to [http://192.168.4.1/setup](http://192.168.4.1/setup)
+    2\. On your phone or PC, open the Wi-Fi settings and connect to "**Apollo CAST_PRO-1 Hotspot**".
+
+    !!! tip "Setup page didn't open?"
+
+        Your phone should open the Wi-Fi setup page on its own after you join the hotspot. If it doesn't, go to [http://192.168.4.1/setup](http://192.168.4.1/setup).
 
     3\. Select the Wi-Fi network that you would like your CAST PRO-1 to connect to and type in your Wi-Fi password, then click "**Save**".
 
