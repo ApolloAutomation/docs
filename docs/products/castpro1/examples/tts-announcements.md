@@ -41,13 +41,24 @@ data:
 
 ## What happens during an announcement
 
-The CAST PRO-1 ducks the music by 40 dB the instant an announcement starts, so speech stays clear without the music stopping. The onboard LEDs turn cyan while it's talking. When the message finishes, the music fades back over a second and the LEDs go out.
+The CAST PRO-1 ducks the music the instant an announcement starts, so speech stays clear without the music stopping. The onboard LEDs turn cyan while it's talking. When the message finishes, the music fades back over a second and the LEDs go out.
+
+Two settings under **Configuration** on the device page change this:
+
+| Setting | What it does |
+| --- | --- |
+| **Announcement Ducking** | How far the music drops, from -80 dB to 0 dB. Defaults to -40 dB. Set it to 0 to keep the music at full volume. |
+| **Announcement LED Brightness** | How bright the cyan LEDs glow, from 0% to 100%. Defaults to 100%. Set it to 0% to keep them off. |
+
+!!! note "Firmware 26.11.3.3 or newer"
+
+    These settings arrived in firmware 26.11.3.3. Older firmware ducks the music by 40 dB and lights the LEDs at 50%. Update from the **Firmware Update** entity on the device page to get them.
 
 That LED change is a handy way to tell an announcement from a glitch when you're across the room.
 
 ## Announce a sound instead of speech
 
-Anything you can play can be an announcement, not just speech. A doorbell chime works the same way, ducking the music and lighting the LEDs:
+Anything you can play can be an announcement, not only speech. A doorbell chime works the same way, ducking the music and lighting the LEDs:
 
 ```yaml
 action: media_player.play_media
