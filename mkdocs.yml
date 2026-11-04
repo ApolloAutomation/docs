@@ -293,11 +293,21 @@ nav:
             - Reset Wi-Fi Credentials: products/cast1/troubleshooting/cast1-reset-wi-fi-credentials.md
       - CAST PRO-1:
           - Introduction: products/castpro1/introduction.md
+          - FAQ: products/castpro1/faq.md
+          - Getting Started: products/castpro1/setup/getting-started.md
+          - Additional Info:
+            - Sensor Definitions: products/castpro1/setup/sensor-definitions.md
+            - ESPHome Device Builder: products/castpro1/additional-info/esphome-device-builder.md
+            - Analog In: products/castpro1/additional-info/analog-in.md
           - Examples:
-            - Line In: products/castpro1/examples/line-in.md
             - LED Strip: products/castpro1/examples/led-strip.md
+            - TTS and Announcements: products/castpro1/examples/tts-announcements.md
+            - WizMote Control: products/castpro1/examples/wizmote-blueprint.md
           - Troubleshooting:
-            - Status Check and Factory Reset: products/castpro1/troubleshooting/castpro1-status-check.md
+            - CAST PRO-1 Boot Mode: products/castpro1/troubleshooting/castpro1-boot-mode.md
+            - Factory Re-Flash CAST PRO-1: products/castpro1/troubleshooting/castpro1-reflash.md
+            - Status Check and Factory Reset: products/castpro1/troubleshooting/castpro1-boot-button.md
+            - Teardown and Reassembly Of CAST PRO-1: products/castpro1/troubleshooting/castpro1-teardown.md
       - Dev Boards & Breakouts:
           - DEV-1:
               - Introduction: products/dev1/introduction.md
