@@ -150,7 +150,7 @@ With Music Assistant running, you can start playing music through your speakers.
 
 2\. Your CAST PRO-1 appears in the player list in Music Assistant. Select it as your player.
 
-If it shows **Setup required**, select it to start the setup and choose **Connect unpaired with audio input**. Picking the option with audio input lets you play its [Analog In (Line In)](../additional-info/analog-in.md) later.
+If it shows **Setup required**, set it up once. Click it, or click **Review** on the **A new device was discovered that needs to be set up** banner and then **Start setup**. Under **How do you want to connect?**, choose **Connect unpaired with audio input**. It's one click with no code, and it lets you play the CAST PRO-1's [Analog In (Line In)](../additional-info/analog-in.md) later.
 
 3\. Pick any song, playlist, or radio station and it plays through the speakers connected to your CAST PRO-1.
 
