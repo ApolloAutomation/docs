@@ -4,7 +4,7 @@ description: Documentation for CAST PRO-1, including setup, usage, and best prac
 ---
 # Introduction
 
-![CAST PRO-1 glowing pink on a wooden table next to a turntable, with a Made for ESPHome badge](/assets/cast-pro-1-hero.webp)
+![CAST PRO-1 resting on a vinyl record on a wooden turntable, showing its front panel ports](/assets/cast-pro-1-hero.webp)
 
 **Make Any Speakers Smart:** Connect the CAST PRO-1 to your speakers, receiver or soundbar, add it to Home Assistant, and it shows up in Music Assistant as a player you can stream to.
 
