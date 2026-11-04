@@ -1,10 +1,10 @@
 ---
 title: CAST PRO-1 WizMote control
-description: Control your CAST PRO-1 with a WizMote using the Apollo CAST PRO-1 WizMote blueprint in Home Assistant.
+description: Control your CAST PRO-1 with a WizMote using the Apollo CAST-1 and CAST PRO-1 WizMote blueprint in Home Assistant.
 ---
 # WizMote control
 
-A WizMote gives you physical control over playback on your CAST PRO-1. The **Apollo CAST PRO-1 WizMote** blueprint maps each of the nine buttons to a playback action, a light toggle, or any Home Assistant action you want, all set up without leaving Home Assistant.
+A WizMote gives you physical control over playback on your CAST PRO-1. The **Apollo CAST-1 and CAST PRO-1 WizMote** blueprint maps each of the nine buttons to a playback action, a light toggle, or any Home Assistant action you want, all set up without leaving Home Assistant.
 
 Every button ships with a sensible default, so your WizMote works the moment you import the blueprint. Open any button's dropdown to change it, or set one to **Send HA Event** to run a custom action like playing a Music Assistant playlist.
 
@@ -49,13 +49,11 @@ You'll import the blueprint, pick your device, and choose what each WizMote butt
 
 1\. Click the Import Blueprint button below then click **Open link**.
 
-<!-- TODO: this links the CAST-1 blueprint. Confirm it lists CAST PRO-1 devices, or swap in a CAST PRO-1 blueprint URL and name. -->
-
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fraw.githubusercontent.com%2FApolloAutomation%2FBlueprints%2Frefs%2Fheads%2Fmain%2FCAST-1%2FCAST-1-WizMote.yaml)
 
 2\. Click **Preview** then click **Import Blueprint**.
 
-3\. Click on **Apollo CAST PRO-1 WizMote**, then click **Select a device** and choose your **Apollo CAST_PRO-1** from the dropdown.
+3\. Click on **Apollo CAST-1 and CAST PRO-1 WizMote**, then click **Select a device** and choose your **Apollo CAST_PRO-1** from the dropdown.
 
 4\. Every button already has a default, so your WizMote works right away. To change one, open its dropdown and pick a different action.
 
@@ -63,4 +61,4 @@ You'll import the blueprint, pick your device, and choose what each WizMote butt
 
 6\. Name your automation something like **Apollo CAST PRO-1 WizMote** and click **Save**. Your WizMote now controls your CAST PRO-1!
 
-<!-- TODO image: /assets/cast-pro-1-import-blueprint.gif | alt: Importing the Apollo CAST PRO-1 WizMote blueprint and selecting a CAST PRO-1 in Home Assistant -->
+<!-- TODO image: /assets/cast-pro-1-import-blueprint.gif | alt: Importing the Apollo CAST-1 and CAST PRO-1 WizMote blueprint and selecting a CAST PRO-1 in Home Assistant -->
