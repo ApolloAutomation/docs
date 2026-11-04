@@ -52,7 +52,7 @@ Two settings under **Configuration** on the device page change this:
 
 !!! note "Firmware 26.11.3.3 or newer"
 
-    These settings arrived in firmware 26.11.3.3. Older firmware ducks the music by 40 dB and lights the LEDs at 50%. Until 26.11.3.3 reaches the Stable channel, [switch to the Beta channel](../../general/setup/switch-to-beta-branch.md) to get them.
+    These settings arrived in firmware 26.11.3.3. Older firmware ducks the music by 40 dB and lights the LEDs at 50%. Update from the **Firmware Update** entity on the device page to get them.
 
 That LED change is a handy way to tell an announcement from a glitch when you're across the room.
 

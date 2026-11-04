@@ -45,7 +45,7 @@ Your source now plays until you stop it in Music Assistant. It plays on one play
 
 !!! tip "See a Line In switch?"
 
-    Firmware 26.11.3.2 has a **Line In** switch on the device page. You don't need it, so leave it off. Firmware 26.11.3.3 removes it.
+    That's firmware 26.11.3.2. Update from the **Firmware Update** entity, since 26.11.3.3 removes the switch. Until then, leave it off.
 
 ## Choose the streaming quality
 
