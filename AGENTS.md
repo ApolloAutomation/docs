@@ -28,9 +28,10 @@ Read the full style guide, but these are the ones worth checking twice:
 
 - Product IDs are uppercase with a hyphen: **AIR-1**, **MTR-1**, never
   `Air-1` or `air1`.
-- **R PRO-1** is the exception: a space after the R, not a hyphen, in
-  all display text. Keep `rpro1`, `r-pro-1`, and `R_PRO-1` only in file
-  names, URLs, hostnames, and literal device names.
+- **R PRO-1** and **CAST PRO-1** are the exceptions: a space before
+  PRO, not a hyphen, in all display text. Never `CAST-1 PRO`. Keep
+  `rpro1`, `r-pro-1`, `R_PRO-1`, `castpro1`, and `cast-pro-1` only in
+  file names, URLs, hostnames, entity IDs, and literal device names.
 - **US English** spelling: color, center, meter, behavior.
 - Flag must-know info with admonitions (`note` for prerequisites,
   `tip`, `warning`, `success` for a "Next step" box with a primary
