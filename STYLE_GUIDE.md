@@ -127,6 +127,11 @@ The same literal forms keep their own spelling:
 - The device name Home Assistant and Music Assistant show: **Apollo CAST_PRO-1**
 - The setup hotspot: **Apollo CAST_PRO-1 Hotspot**
 
+Call the CAST PRO-1's audio input jack **Analog In (Line In)** in titles,
+nav labels, headings, and its first mention on a page, then **Analog In**.
+Readers know it by either name. The firmware setting keeps its own label,
+**Line In Streaming**.
+
 ### First mention per page
 
 On the first mention of a product in body copy, use the full brand name:

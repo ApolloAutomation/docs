@@ -33,7 +33,11 @@ There are three ways to get your CAST-1 online. Pick whichever is easier, you on
 
         Still no hotspot? Follow the <a href="https://wiki.apolloautomation.com/products/cast1/troubleshooting/cast1-reset-wi-fi-credentials/" target="_blank" rel="noopener">Reset Wi-Fi Credentials</a> guide to make it broadcast again.
 
-    2\. On your phone or PC, open the Wi-Fi settings and connect to "**Apollo CAST 1 Hotspot**". Once connected it should automatically open a dashboard for your CAST-1. If it doesn't, open your web browser and go to [http://192.168.4.1](http://192.168.4.1)
+    2\. On your phone or PC, open the Wi-Fi settings and connect to "**Apollo CAST 1 Hotspot**".
+
+    !!! tip "Setup page didn't open?"
+
+        Your phone should open the Wi-Fi setup page on its own after you join the hotspot. If it doesn't, go to [http://192.168.4.1/setup](http://192.168.4.1/setup).
 
     3\. Select the Wi-Fi network that you would like your CAST-1 to connect to and type in your Wi-Fi password, then click "**Save**".
 

@@ -10,7 +10,7 @@ description: Documentation for CAST PRO-1, including setup, usage, and best prac
 
 **Analog or Optical Output:** The **Analog/Optical Out** jack takes a 3.5mm audio cable for powered speakers, or a mini-TOSLINK optical cable for a receiver or soundbar. Pick which one plays with the **Audio Output** setting on the device page.
 
-**Audio In:** Plug a turntable, TV or other source into the **Analog In** jack and it shows up in Music Assistant as a source you can play on any player in your home. See [Play a source through Analog In](additional-info/analog-in.md).
+**Audio In:** Plug a turntable, TV or other source into the **Analog In (Line In)** jack and it shows up in Music Assistant as a source you can play on any player in your home. See [Play a source through Analog In (Line In)](additional-info/analog-in.md).
 
 **Built-In Ethernet:** The CAST PRO-1 has an Ethernet port on board, so it can run on a wired connection with no addon. Without a cable, it works over Wi-Fi.
 
