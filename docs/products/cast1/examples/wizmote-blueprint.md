@@ -1,10 +1,10 @@
 ---
 title: CAST-1 WizMote control
-description: Control your CAST-1 with a WizMote using the Apollo CAST-1 WizMote blueprint in Home Assistant.
+description: Control your CAST-1 with a WizMote using the Apollo CAST-1 and CAST PRO-1 WizMote blueprint in Home Assistant.
 ---
 # WizMote control
 
-A WizMote gives you physical control over playback on your CAST-1. The **Apollo CAST-1 WizMote** blueprint maps each of the nine buttons to a playback action, a light toggle, or any Home Assistant action you want, all set up without leaving Home Assistant.
+A WizMote gives you physical control over playback on your CAST-1. The **Apollo CAST-1 and CAST PRO-1 WizMote** blueprint maps each of the nine buttons to a playback action, a light toggle, or any Home Assistant action you want, all set up without leaving Home Assistant.
 
 Every button ships with a sensible default, so your WizMote works the moment you import the blueprint. Open any button's dropdown to change it, or set one to **Send HA Event** to run a custom action like playing a Music Assistant playlist.
 
@@ -53,7 +53,7 @@ You'll import the blueprint, pick your device, and choose what each WizMote butt
 
 2\. Click **Preview** then click **Import Blueprint**.
 
-3\. Click on **Apollo CAST-1 WizMote**, then click **Select a device** and choose your **Apollo CAST-1** from the dropdown.
+3\. Click on **Apollo CAST-1 and CAST PRO-1 WizMote**, then click **Select a device** and choose your **Apollo CAST-1** from the dropdown.
 
 4\. Every button already has a default, so your WizMote works right away. To change one, open its dropdown and pick a different action.
 
