@@ -11,7 +11,7 @@ Every tab starts with a **Start here** card that lists your sensor's first steps
 
 Here's the **Start here** card on an MSR-1. On an MTR-1, or an R PRO-1 without the LD2412, it lists three zone map steps instead, and on an R PRO-1 with the LD2412 it covers both radars.
 
-![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps: fix anything the Radar setup card flags, press Calibrate with empty room, set Max Move Gate and Max Still Gate (each gate is about 2.5 ft), set Radar Timeout, and walk the room while you watch the Gate Energy chart, followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
+![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps: fix anything the Radar setup card flags, press Calibrate with empty room, set Max Move Gate and Max Still Gate (each gate is about 2.5 ft), set Radar Timeout, and walk the room while you watch the Gate Energy chart, then the line In automations, use Radar Target for the whole room. If it turns off while someone sits still, raise Radar Timeout to 60 s or more. To ignore people past End Zone 3, use Any zone instead., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
 
 !!! note "Before you start"
 
@@ -66,7 +66,7 @@ On an MSR-1 or MSR-2 that has never been tuned, the card may also say **These lo
 
 A threshold of 100 means that gate never triggers, so some people set a gate to 100 to turn it off. Calibration sets every gate the radar uses, including those, and the card warns you first, for example **The G2 still threshold is off (set to 100). Calibrating will turn it back on.** If you turned that gate off on purpose, calibrate anyway and set it back to 100 afterward on the **Still Thresholds** (or **Move Thresholds**) card.
 
-![The Auto-calibrate card on an MSR-1 before a run, with its checklist, the warning The G2 still threshold is off (set to 100). Calibrating will turn it back on., and the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
+![The Auto-calibrate card on an MSR-1 before a run, with its checklist, the warning The G2 still threshold is off (set to 100). Calibrating will turn it back on., the reminder If Radar Target turns off while someone sits still, raise Radar Timeout to 60 s or more on the Detection Range card., and the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
 
 ### Run a calibration
 
@@ -107,7 +107,7 @@ When the run finishes, the card shows **Thresholds updated** and a summary such 
 
 Below the summary is a table with one row per gate and the columns **Gate**, **Move peak**, **Move threshold**, **Still peak**, and **Still threshold**. The peak is the highest energy that gate reached while the room was empty. The new threshold is that peak plus some headroom, capped at 100. From Apollo mmWave 2.2.4, the headroom is 15 points or 35% of the peak, whichever is larger: a move peak of 14 becomes a threshold of 29, and a still peak of 60 becomes 81. Earlier versions used 10 points or a quarter of the peak, so calibrate again after updating to get the extra headroom.
 
-![The result of a calibration on an MSR-1: Thresholds updated, Calibrated at 01:04 PM from 60 samples. 18 of 18 thresholds changed., the result table with each gate's peak and its old and new threshold, such as G2 move peak 6 and 16 → 21, the walk-test line, and the Undo (restore your previous values), Calibrate again, and Close buttons](/assets/apollo-mmwave-calibrate-result.png)
+![The result of a calibration on an MSR-1: Thresholds updated, Calibrated at 01:04 PM from 60 samples. 18 of 18 thresholds changed., the result table with each gate's peak and its old and new threshold, such as G2 move peak 6 and 16 → 21, the walk-test line, the reminder to raise Radar Timeout to 60 s or more if Radar Target turns off while someone sits still, and the Undo (restore your previous values), Calibrate again, and Close buttons](/assets/apollo-mmwave-calibrate-result.png)
 
 What the threshold cells mean:
 
@@ -212,7 +212,7 @@ Every R PRO-1 has an LD2450 radar, and the optional LD2412 addon adds a second o
 - There is no Zone Config card, and the Distances chart shows the gates and the Max Gate and Min Gate bars without live distance bars.
 - Before it writes, the calibration asks the radar for its current thresholds (**Reading the radar's current thresholds...**), so what it saves for Undo matches the radar.
 
-![The Auto-calibrate card on an R PRO-1, titled LD2412 · R PRO-1 Server Rack, with a fourth checklist item asking you to run Start Dynamic Background Correction first](/assets/apollo-mmwave-calibrate-r-pro-1.png)
+![The Auto-calibrate card on an R PRO-1, titled LD2412 · R PRO-1 Server Rack, with a fourth checklist item asking you to run Start Dynamic Background Correction first, and under the checklist the reminder to raise Radar Timeout to 60 s or more if Radar Target turns off while someone sits still](/assets/apollo-mmwave-calibrate-r-pro-1.png)
 
 The LD2412 also has its own background learning, **Start Dynamic Background Correction** on the **LD2412 Controls** card. It runs on the radar chip and stores its result inside the radar. **Background Correction Running** shows whether it is still working. Use both, in this order:
 
@@ -435,7 +435,7 @@ To try a zone, walk into it: the zone fills in on the map while its sensor is on
 
 Under it, **LD2450 Live** shows what the radar reports right now. If the map shows no dot with you in the room, look here first: **LD2450 Presence** off means the radar itself reports nobody. It covers the radar's whole view, not one zone, and **Occupancy History** names its line **LD2450 Presence** too.
 
-![The LD2450 Live card on an R PRO-1 with nobody in the room: Presence, Moving Target, and Still Target read Clear, Target Count reads 0.0, and Target 1 to 3 Distance read Unknown with their Direction rows reading NA](/assets/apollo-mmwave-ld2450-live.png)
+![The LD2450 Live card on an R PRO-1 with nobody in the room: LD2450 Presence, Moving Target, and Still Target read Clear, Target Count reads 0.0, and Target 1 to 3 Distance read Unknown with their Direction rows reading NA](/assets/apollo-mmwave-ld2450-live.png)
 
 **LD2450 Controls** holds **Zone Type**, **Multi Target Tracking**, **Radar Timeout**, **Radar Bluetooth (HLK app)**, **Restart Radar**, and **Factory Reset Radar**, whichever your sensor has (the MTR-1 has no Restart Radar). The restart and the reset ask before they act. **Radar Timeout** is how long **LD2450 Presence** stays on after the radar last sees someone. It doesn't hold the zones you draw: a zone turns off as soon as nobody is in it, unless you give it a hold time (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)). While Zone Type isn't **Disabled**, a **Radar's built-in zones** card shows the radar chip's own zones, which are not the zones on the map.
 

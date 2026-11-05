@@ -105,7 +105,7 @@ Both sensors use the LD2410 radar chip, so their tabs look the same, and the tun
 
 - **Start here** sits at the top. It names your sensor and lists five steps, from **Fix anything the Radar setup card flags.** to walking the room while you watch the Gate Energy chart. Under the steps it says to use **Radar Target** in automations for the whole room, and to raise **Radar Timeout** to 60 s or more if it turns off while someone sits still. Its links open the tuning guide on this wiki and your sensor's own page in Home Assistant.
 
-    ![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps starting Fix anything the Radar setup card flags., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
+    ![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps starting Fix anything the Radar setup card flags., then the line In automations, use Radar Target for the whole room., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
 
 - Under it, the **Radar setup** card checks the radar's settings and offers a fix when one is off. On a sensor that's ready to go it reads **Radar settings look good.**
 - **Auto-calibrate** comes next, with the **Calibrate with empty room** and **Preview only** buttons. If your sensor still has its factory thresholds and has never been calibrated, the card adds **These look like factory thresholds. Calibrating sets them for your room.**
@@ -147,7 +147,7 @@ Your dashboard is working. Follow the **Start here** card on each tab, from the 
 1. Look at the **Radar setup** card near the top of the tab. If it flags a setting, follow what it says: most problems have a button that fixes them, and the card changes nothing until you press one. An R PRO-1 tab has a second one above the zone map, for the LD2450.
 2. On an MSR-1 or MSR-2 tab, or an R PRO-1 tab with the LD2412 addon, calibrate the radar. Skip this step on an R PRO-1 without the LD2412. On an R PRO-1, first clear the room, press **Start Dynamic Background Correction** on the **LD2412 Controls** card, and wait for **Background Correction Running** to turn off. Then press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to turn on Radar Engineering Mode: the calibration does that for you. The [tuning guide](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room) walks you through it.
 
-    ![The Auto-calibrate card on an MSR-1, ready to run, with the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
+    ![The Auto-calibrate card on an MSR-1, ready to run, with the reminder to raise Radar Timeout to 60 s or more if Radar Target turns off while someone sits still, and the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
 
 3. On an MTR-1 or R PRO-1 tab, press **Add zone** under the zone map and [draw your zones](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1).
 
