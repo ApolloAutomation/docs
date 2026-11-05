@@ -35,7 +35,7 @@ The R PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
 
     | Sensor | Default Update | Details |
     |--------|:--------------:|---------|
-    | **Combined Presence** | real-time | Combined occupancy: shows **Detected** when either the LD2450 or the LD2412 radar sees a target, and **Clear** when neither does. Use this entity for automations and dashboards instead of the individual radar presence sensors. |
+    | **Combined Presence** | real-time | Combined occupancy: shows **Detected** when either the LD2450 or the LD2412 radar sees a target, and **Clear** when neither does. Use this entity for automations and dashboards instead of the individual radar presence sensors. It comes with R PRO-1 firmware newer than 26.3.2.1. On 26.3.2.1 and earlier, use **LD2412 Presence** for the whole room, or **LD2450 Presence** on an R PRO-1 without the LD2412. |
 
     #### Radar presence (LD2412 mmWave)
 
@@ -55,7 +55,7 @@ The R PRO-1 pairs two radars: an **LD2450** that tracks the position of up to th
 
     | Sensor | Default Update | Details |
     |--------|:--------------:|---------|
-    | **LD2450 Presence** | real-time | Whether the radar currently detects any target. Great for occupancy automations. |
+    | **LD2450 Presence** | real-time | Whether the LD2450 currently detects any target, anywhere in its view. For automations, use **Combined Presence** where your firmware has it. |
     | **LD2450 Moving Target** | real-time | Whether a moving target is detected. |
     | **LD2450 Still Target** | real-time | Whether a stationary target is detected. |
     | **LD2450 Presence Target Count** | real-time | Count of all presence targets (max 3). |
