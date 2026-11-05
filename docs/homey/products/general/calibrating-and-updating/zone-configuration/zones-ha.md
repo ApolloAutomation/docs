@@ -4,4 +4,6 @@ description: "Tutorial for MTR-1 Home Assistant Zone Configuration."
 ---
 --8<-- "products/mtr1/setup/zones-ha.md:5:6"
 
---8<-- "products/mtr1/setup/zones-ha.md:11:"
+--8<-- "products/mtr1/setup/zones-ha.md:11:57"
+
+--8<-- "products/mtr1/setup/zones-ha.md:63:"

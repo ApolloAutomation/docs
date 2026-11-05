@@ -76,6 +76,10 @@ Follow these steps to add a Plotly card that shows your LD2450 targets, then set
     * The Plotly chart will still render the rectangles even if the X1/X2 and Y1/Y2 values are reversed.
     * The zones cannot overlap.
 
+!!! tip "Apollo mmWave does this for you"
+
+    With the Apollo mmWave integration 2.4.0 or newer, you can skip steps 10 to 13. Apollo mmWave shows your R PRO-1's Target X and Y in mm on its own: on a new R PRO-1 as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave: Target X and Y now in mm**. It leaves alone a sensor whose unit you picked in its settings and one that an automation, a script, or a helper uses. For those, the **Radar setup** card above the zone map offers administrators a **Show Target X and Y in mm** button. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. The [Apollo mmWave dashboard guide](/products/rpro1/setup/apollo-mmwave-dashboard.md#target-x-and-y-units) has the details.
+
 10\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 X and Y target values.
 
 ![LD2450 Target-1 X and Y sensors in Home Assistant with their inch values highlighted](/assets/r-pro-1-card-change-units-from-inches.png)
