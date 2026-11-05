@@ -179,7 +179,7 @@ Want a second dashboard, say one with only the bedroom sensors, or one at anothe
 2. Pick **Apollo Radar Tuning** under **Community dashboards**.
 3. Give it a title and a URL other than `apollo-mmwave`, then click **Create**.
 
-A dashboard you add this way is yours from the start, and the integration options never change it. It shows every detected Apollo mmWave device; to limit it, set `devices` in its raw configuration, as the [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#choosing-which-devices-appear) shows. The URL matters: if you delete the integration's dashboard and add one of these at `apollo-mmwave`, Apollo mmWave can mistake it for the dashboard it created, and its options and removal would then act on yours.
+A dashboard you add this way is yours from the start, and the integration options never change it. It shows every detected Apollo mmWave device; to limit it, set `devices` in its raw configuration, as the [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#choosing-which-devices-appear) shows. The URL matters. Apollo mmWave forgets its own dashboard when you delete it, but not while the integration isn't running, for example while it's disabled. If you delete the integration's dashboard then and add one of these at `apollo-mmwave`, Apollo mmWave can mistake it for the dashboard it created, and its options and removal would then act on yours.
 
 ### Use your own layout
 
@@ -222,7 +222,7 @@ If the restore can't finish, it says what happened, and the repair stays so you 
 - **Nothing was changed: your copy could not be saved as a separate dashboard, so the Apollo mmWave dashboard was left as it is.** No copy was made, and your dashboard is as it was.
 - **Your copy is saved as the Apollo mmWave (saved copy) dashboard under Settings > Dashboards, but the Apollo mmWave dashboard could not be restored and was left as it is.** The copy is kept, and your dashboard is as it was. Each try keeps another copy, so delete the extra ones under **Settings → Dashboards**.
 
-A dashboard you rebuilt with no Apollo mmWave cards on it is yours, and gets no repair. Removing the integration removes the repair and keeps the saved copy.
+A dashboard you rebuilt with no Apollo mmWave cards on it is yours, and gets no repair. When you delete the Apollo mmWave dashboard, the integration forgets it, so a dashboard you make at `apollo-mmwave` later gets no repair either. The exception is a dashboard you deleted while the integration wasn't running, for example while it was disabled: a new dashboard at that address with Apollo mmWave cards on it then gets the repair too, and still nothing changes until you click **Submit**. Removing the integration removes the repair and keeps the saved copy.
 
 **No repair, and no Restore in the options?** The check only looks at the dashboard Apollo mmWave recorded as the one it created, and it no longer knows yours if you took control of it under Apollo mmWave 2.2.5 or earlier, or saved the integration options after taking control of it, under a release before 2.4.0. To get the automatic dashboard back then:
 
