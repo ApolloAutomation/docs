@@ -357,7 +357,7 @@ Press **Add zone** beside the **Zones** heading. The new zone is named **Zone 1*
 
 ### Pick a zone in the Zones panel
 
-Each zone has a button under the **Zones** heading, with a dot in the zone's color on the map. The dot is hollow while the zone isn't drawn yet, and gray and hatched for an ignore zone. Press a zone's button to pick it. You can also tap the zone on the map: on a locked map, and in Rectangle or Ellipse mode on an unlocked one, a tap picks the zone under it, the smallest one where zones overlap. When the card opens, the first zone is picked. While the map is unlocked, the picked zone's outline is thicker.
+Each zone has a button under the **Zones** heading, with a dot in the zone's color on the map. The dot is hollow while the zone isn't drawn yet, and gray and hatched for an ignore zone. The picked zone's button has a colored ring around it. Press a zone's button to pick it. You can also tap the zone on the map: on a locked map, and in Rectangle or Ellipse mode on an unlocked one, a tap picks the zone under it, the smallest one where zones overlap. When the card opens, the first zone is picked. While the map is unlocked, the picked zone's outline is thicker.
 
 The picked zone's editor sits under the buttons, with the zone's number as its heading, such as **Zone 2**:
 
