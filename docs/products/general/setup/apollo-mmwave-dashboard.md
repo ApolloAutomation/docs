@@ -16,7 +16,7 @@ Here's the **Start here** card on an MSR-1. On an MTR-1, or an R PRO-1 without t
 !!! note "Before you start"
 
     - The Apollo mmWave integration is installed and its **Apollo mmWave** dashboard is in your Home Assistant sidebar. If it isn't, sign in as an administrator (from Apollo mmWave 2.2.6, the dashboard is for administrators only unless you unticked that box), or follow the [Apollo mmWave dashboard setup guide](apollo-mmwave-dashboard-setup.md) to add it.
-    - This guide shows Apollo mmWave 2.4.0. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first.
+    - This guide shows Apollo mmWave 2.4.0. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first. If a card this guide describes isn't on your tab, see [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards).
     - Your radar is online in Home Assistant through ESPHome.
     - Your sensor is mounted where it will stay. A calibration, and the zones you draw, describe the room from the sensor's position, so moving the sensor later means calibrating again or redrawing your zones.
     - A calibration needs the room empty for about a minute and a half: people and pets out, robot vacuum docked.
@@ -266,9 +266,13 @@ The **Detection Range** card helps too: [Set the range and timeout](#set-the-ran
 
 The LD2450 radar in the R PRO-1 and MTR-1 tracks where up to three people are in the room. The zone map lets you draw areas on that map, such as the couch or the desk, and gives each area its own occupancy sensor. On an MTR-1 the tab is built around the zone map: **Start here**, the **Radar setup** card, and the map come first, with the radar's live status and controls beside them. On an R PRO-1, the LD2450's **Radar setup** card, the map, and the radar's live status and controls sit under the **Zone Map** heading, right after the first column of LD2412 cards, and its **Start here** card stays at the top of the tab.
 
-The MTR-1's **Start here** card has three steps, and this section follows them: fix anything the **Radar setup** card flags, set **Cone rotation** to match how the sensor is mounted, then draw a zone and walk into it. An R PRO-1 without the optional LD2412 gets the same steps.
+The MTR-1's **Start here** card has three steps, and this section follows them: fix anything the **Radar setup** card flags, set **Cone rotation** under **Map settings** to match how the sensor is mounted, then press **Add zone** under the map, draw the zone, and walk into it. An R PRO-1 without the optional LD2412 gets the same steps.
 
-The zone map card shows your radar's name and the area the radar can see: a view cone 120 degrees wide and about 6 m (20 ft) out, with a caption at its edge such as **Radar range 6 m (20 ft), 120°**, and a numbered dot for each person it tracks. The map fits that area, turned the way you set **Cone rotation**, plus any zone you drew outside it. Buttons sit in the bottom corners of the grid, with the zoom buttons above the ones on the right. Underneath are the **Coverage** button (and, for administrators, **History** once movement history is on, and **🚶 Mark corners by walking** before it on a phone or tablet), a row of zone buttons, and a **Configure** section.
+The zone map card shows your radar's name and the area the radar can see: a view cone 120 degrees wide and about 6 m (20 ft) out, with a caption at its edge such as **Radar range 6 m (20 ft), 120°**, and a numbered dot for each person it tracks. The map fits that area, turned the way you set **Cone rotation**, plus any zone you drew outside it. Buttons sit in the bottom corners of the grid, with the zoom buttons above the ones on the right. Underneath are:
+
+- The **Coverage** button, and for administrators **History** once movement history is on, and **🚶 Mark corners by walking** before it on a phone or tablet.
+- The **Zones** panel, which is always open. It holds **Add zone**, a button for each zone, and an editor for the zone you picked: its name, size, **Type**, **Hold**, whether someone is in it right now, how to draw it, and **Delete zone** (see [Pick a zone in the Zones panel](#pick-a-zone-in-the-zones-panel)).
+- **Map settings**, a collapsed section at the bottom of the card, with **Cone rotation**, the left-to-right flip, **Movement history**, and **Clear all shapes**.
 
 On the Apollo mmWave dashboard the zone map's section is two columns wide, so on a computer the map is about twice as wide as the cards beside it. On a phone it fills the screen's one column as before. The map is never taller than the window less about 200 px, so the page around it stays in view. In a wide, short window it gets narrower instead and sits in the middle of the card, though that limit never makes it shorter than 240 px, so a phone on its side still gets a map.
 
@@ -281,7 +285,7 @@ The map is in feet when Home Assistant uses US customary units (**Settings → S
 The map follows the radar live, so you can watch people move through your zones:
 
 - **Numbered dots.** Each target the radar tracks is a dot with its number, so dot 2 is **Target 2** on the **LD2450 Live** card. A number belongs to the radar's target slot, not to a person: when two people cross, the radar can swap their numbers. A moving dot leaves a trail that fades over about 3 seconds.
-- **Zones that light up.** A zone fills in with a stronger color and a solid outline while its presence sensor is on, and goes back to a pale fill with a dashed outline when it's off. Each zone keeps its own color. While a zone holds for someone the radar lost, its label ends in **(held)** (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)).
+- **Zones that light up.** A zone fills in with a stronger color and a solid outline while its presence sensor is on, and goes back to a pale fill with a dashed outline when it's off. Each zone keeps its own color, the same as the dot on its button under **Zones**. While a zone holds for someone the radar lost, its label ends in **(held)** (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)).
 - **Ignore zones.** An ignore zone is hatched in gray with a dashed outline, and its label ends in **(ignored)**. A target inside one is a hollow gray ring with a gray number.
 - **Radar offline.** While the radar is offline, the zones turn gray with short dashes, and **Radar offline** shows in the top-left corner (see [Zone presence reads unavailable](#zone-presence-reads-unavailable)).
 
@@ -321,7 +325,7 @@ Press the button the card shows: **Set Zone Type to Disabled**, **Turn on Multi 
 
 Turn the map so its view cone points the way your sensor faces. The tracked dots turn with it. Mount the sensor where it will stay before you start: the radar can't tell the map how it's mounted, so the hint under the slider reads **Mount the sensor first, then set this. Zones match the room only while the sensor stays mounted that way.** Turn the sensor on its side, or pick it up, and the room moves under your zones.
 
-1. Open **Configure** under the grid.
+1. Open **Map settings** at the bottom of the card. On a radar with no zones yet, the **Zones** panel reminds you: **Is the sensor turned, or mounted in a corner? Set Cone rotation under Map settings first.**
 2. If the **Cone rotation:** slider is gray, the map is locked: press **Locked** on the map first (see [Lock and unlock](#lock-and-unlock)).
 3. Drag **Cone rotation:** (from -180° to 180°) until the view cone points the way your sensor faces. When you let go, the angle is saved for the radar and the map fits the turned cone. Double-click the slider to reset it.
 4. Hold your phone so the map's view cone points the way your sensor faces in the room (at **Cone rotation** 0°, that's with the sensor at the top of the screen while you face it). Stand about 2 m (6 ft) in front of the sensor and take a step to one side. If your dot moves the other way on the screen, tick **Flip the map left to right (display only)** under the slider. The hint under the box says the same: **Turn this on if, with the map turned the way the room is, a dot moves the opposite way from you.** With the phone turned any other way, a map that's right can look mirrored, so turn it to match the room before you decide.
@@ -334,30 +338,52 @@ The flip mirrors the whole map, zones and dots alike, for everyone who opens it.
 
 The bottom-right corner has a lock toggle that reads **Unlocked** (🔓) or **Locked** (🔒). Pressing it shows **Drawing and cone rotation locked. Unlock the map to change them.** or **Drawing and cone rotation unlocked. You can edit zones now.** The map starts locked once the radar has zones, and your browser remembers your choice for each radar. A radar with no zones yet starts unlocked, so you can set **Cone rotation** and draw right away. While the map is locked:
 
-- Drawing on it, or pressing 🚶 (**Mark corners by walking**), outlines **Locked** and shows **Unlock the map to draw zones.**
-- The **Cone rotation** slider is gray, and a scroll that starts on it scrolls the page. A tap or drag on it outlines **Locked** and shows **Cone rotation is locked. Press Locked on the map to change it.**
-- **Clear All Zones** is dimmed, and neither it nor a double-click on a zone's button clears anything: both outline **Locked** and show **Unlock the map to clear zones.** ↶ (**Undo last zone change**) and **Configure → Zones** still change your zones.
+- A tap on a zone picks it. Drawing anywhere else, or pressing 🚶 (**Mark corners by walking**), outlines **Locked** and shows **Unlock the map to draw zones.**
+- The **Cone rotation** slider under **Map settings** is gray, and a scroll that starts on it scrolls the page. A tap or drag on it outlines **Locked** and shows **Cone rotation is locked. Press Locked on the map to change it.**
+- **Clear all shapes** under **Map settings** is dimmed and clears nothing: it outlines **Locked** and shows **Unlock the map to clear zones.**
+- **Add zone**, a zone's **Name**, **Type**, and **Hold**, **Delete zone**, and ↶ (**Undo last zone change**) still work. Instead of how to draw, the zone's editor reads **The map is locked, so drawing is off. Unlock it to draw this zone or change its shape.**, and its **Unlock** button unlocks the map, as **Locked** does.
 
-On a phone or tablet, a one-finger swipe that starts on a locked map scrolls the page, and a tap on it shows the reminder. Two fingers zoom and move the map whether it's locked or not (see [Zoom in and move the map](#zoom-in-and-move-the-map)). An unlocked map takes every one-finger touch for drawing while a zone is selected. Scroll with your finger outside the grid then, for example on the radar's name above it, and stay off the zone buttons: on an unlocked map, a stray tap on **Clear All Zones** clears every zone's shape. Keep the map on **Locked** when you're not drawing: on an unlocked map, a swipe across the grid can draw a new shape for the selected zone and replace its old one. For a phone or a wall tablet where nobody draws zones, a view-only zone map has no drawing tools at all and always lets the page scroll (see [Use your own layout](apollo-mmwave-dashboard-setup.md#use-your-own-layout)).
+On a phone or tablet, a one-finger swipe that starts on a locked map scrolls the page. A tap on a zone picks it, and a tap anywhere else on the map shows the reminder. Two fingers zoom and move the map whether it's locked or not (see [Zoom in and move the map](#zoom-in-and-move-the-map)). An unlocked map takes every one-finger touch for drawing while a zone is selected. Scroll with your finger outside the grid then, for example on the radar's name above it or on the **Zones** panel under it. Keep the map on **Locked** when you're not drawing: on an unlocked map, a swipe across the grid can draw a new shape for the selected zone and replace its old one. For a phone or a wall tablet where nobody draws zones, a view-only zone map has no drawing tools at all and always lets the page scroll (see [Use your own layout](apollo-mmwave-dashboard-setup.md#use-your-own-layout)).
 
-From Apollo mmWave 2.2.6, only administrators can save zone changes. Other users still see the zones and their presence sensors, and a change they try to make shows a **Could not save** message. From 2.4.0 the card tells them up front: the **Type** and **Hold** lists and the flip are grayed out, with **Only an administrator can change these.** above the zone rows, and they get no 🚶 button and no movement history.
+From Apollo mmWave 2.2.6, only administrators can save zone changes. Other users still see the zones and their presence sensors, and a change they try to make shows a **Could not save** message. From 2.4.0 the card tells them up front: in the zone's editor, **Name**, **Type**, and **Hold** are grayed out, with **Only an administrator can change these.** under them, and the flip under **Map settings** is grayed out too. They get no **Add zone**, **Delete zone**, **Clear all shapes**, 🚶 button, or movement history. On a radar with no zones, the panel tells them **No zones yet. An administrator can add them.**
 
 ### Add a zone
 
-Open **Configure → Zones** and press **Add Zone**. The new zone is named **Zone 1** (then Zone 2, and so on), gets its own button under the grid, and is selected and ready to draw.
+The **Zones** panel sits right under the map, below **Coverage**. A radar with no zones yet reads **No zones yet. Press Add zone, then drag on the map to draw it.**, with the reminder about **Cone rotation** under it, and a press on its map shows **Press Add zone under the map first.**
+
+![The zone map for an R PRO-1 named R PRO-1 Living Room with no zones yet, in feet and unlocked: the radar's view cone with the caption Radar range 20 ft (6 m), 120°, the Coverage button under the grid, then the Zones heading with the Add zone button, the line No zones yet. Press Add zone, then drag on the map to draw it., the hint Is the sensor turned, or mounted in a corner? Set Cone rotation under Map settings first., and the collapsed Map settings section at the bottom of the card](/assets/apollo-mmwave-zone-map-empty.png)
+
+Press **Add zone** beside the **Zones** heading. The new zone is named **Zone 1** (then Zone 2, and so on), gets its own button under the heading, and is picked and ready to draw. Its sensors are created right away. The map holds up to 32 zones: after that, **Add zone** is grayed out and the panel reads **The map holds up to 32 zones. Delete one to add another.**
+
+### Pick a zone in the Zones panel
+
+Each zone has a button under the **Zones** heading, with a dot in the zone's color on the map. The dot is hollow while the zone isn't drawn yet, and gray and hatched for an ignore zone. Press a zone's button to pick it. You can also tap the zone on the map: on a locked map, and in Rectangle or Ellipse mode on an unlocked one, a tap picks the zone under it, the smallest one where zones overlap. When the card opens, the first zone is picked. While the map is unlocked, the picked zone's outline is thicker.
+
+The picked zone's editor sits under the buttons, with the zone's number as its heading, such as **Zone 2**:
+
+- **Name**. Type a new name and press Enter (see [Rename a zone](#rename-a-zone)).
+- The zone's size, such as **Size 2.4 m × 1.8 m**, or **Not drawn yet**.
+- **Type** and **Hold**, with a line under them that says what they do for this zone (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)).
+- **Now**, what the zone's presence sensor reads right now: **Someone is in this zone**, **On, held for someone who went still**, **Nobody is in this zone**, or **Radar offline**. An ignore zone reads **Never turns on, since it ignores targets**, a zone with no shape **Turns on once the zone is drawn**, and a zone whose sensor isn't there yet **No presence sensor yet**.
+- How to draw the zone in the drawing mode you picked with ✎, such as **Drag on the map to draw this zone as a rectangle. ✎ on the map offers an ellipse or a polygon. A tap on another zone picks it.** While the map is locked, the lock note and its **Unlock** button take its place.
+- **Delete zone** (see [Clear or delete a zone](#clear-or-delete-a-zone)).
+
+A name, a **Type**, or a **Hold** saves on its own, with no **Save** button. Beside the zone's heading the card shows **Saving...**, then **Saved**. A shape you draw shows a message with the zone's name instead, such as **Couch saved**.
+
+![The Zones panel under the zone map: the Zones heading with the Add zone button, then the Desk, Couch, Doorway, and Fan buttons, each with its zone's color dot and Fan's hatched, with Couch selected, and the Couch zone's editor, titled Zone 2 and edged in blue: the Name box reading Couch, Size 4 ft 3 in × 7 ft 10 in, the Type list at Detect and the Hold list at 5 min, the hint Detect: its presence sensor turns on while someone is inside. Hold keeps it on for a while after someone inside goes still and the radar loses them., Now Nobody is in this zone, the drawing hint To change its shape, drag on the map to draw this zone as a rectangle. ✎ on the map offers an ellipse or a polygon. A tap on another zone picks it., and a Delete zone button](/assets/apollo-mmwave-zone-list.png)
 
 ### Draw a zone
 
 You draw each zone on the grid as a rectangle, ellipse, or polygon, or mark its corners by walking them (see [Mark corners by walking](#mark-corners-by-walking)).
 
-1. Unlock the map and press the zone's button to select it.
-2. Press ✎ (**Drawing modes**) in the bottom-left corner and pick a shape: ▭ (**Rectangle**), ◯ (**Ellipse**), or ⬠ (**Polygon**).
-3. For a rectangle or ellipse, drag across the grid and let go to save.
+1. Unlock the map and pick the zone with its button under **Zones**.
+2. Press ✎ (**Drawing modes**) in the bottom-left corner and pick a shape: ▭ (**Rectangle**), ◯ (**Ellipse**), or ⬠ (**Polygon**). The zone's editor says how to draw in the mode you picked.
+3. For a rectangle or ellipse, drag across the grid and let go to save. A tap without a drag draws nothing, and a tap on another zone picks that zone.
 4. For a polygon, click each corner, then double-click or press ✓ (**Finish polygon**) to save. A polygon can have up to 32 points. ↺ (**Undo last point**) or **Backspace** removes the last point, and **Esc** cancels the shape.
 
 Corners snap to round values, about a tenth of the space between the grid lines you see: 10 cm at 1 m lines, 2 in at 2 ft lines, and finer as you zoom in, down to 1 cm or 1 in. So a corner lands on a round number instead of somewhere between two lines. Hold **Alt** (**Option** on a Mac) to place a corner exactly where the pointer is, even partway through a drag. Corners you mark by walking never snap.
 
-While you draw, a readout above the pointer shows the size the zone will get, width by depth, such as **2.4 m × 1.8 m**, or **7 ft 11 in × 9 ft 10 in** in feet. Zoomed in far enough that corners snap finer than 10 cm, it reads to the centimeter, such as **2.45 m × 1.80 m**. On a touchscreen it sits higher, clear of your finger, and near the top of the map, where there's no room above your finger, it moves beside your finger instead, on the side with more room. An ellipse's size is its full width and depth, and a polygon's is the box around it. Once the zone is saved, its row in **Configure → Zones** shows the same size to the tenth of a meter, such as **Size 2.4 m × 1.8 m**. A zone without a shape reads **No shape yet. Select the zone and draw it on the map.**
+While you draw, a readout above the pointer shows the size the zone will get, width by depth, such as **2.4 m × 1.8 m**, or **7 ft 11 in × 9 ft 10 in** in feet. Zoomed in far enough that corners snap finer than 10 cm, it reads to the centimeter, such as **2.45 m × 1.80 m**. On a touchscreen it sits higher, clear of your finger, and near the top of the map, where there's no room above your finger, it moves beside your finger instead, on the side with more room. An ellipse's size is its full width and depth, and a polygon's is the box around it. Once the zone is saved, its editor under **Zones** shows the same size to the tenth of a meter, such as **Size 2.4 m × 1.8 m**. A zone without a shape reads **Not drawn yet**.
 
 Finishing a polygon that can't be saved shows why: **A polygon needs at least 3 different points.** With no zone selected, it shows **Select a zone first.**
 
@@ -367,8 +393,8 @@ Drawing a new shape for a zone replaces its old one. Made a mistake? ↶ (**Undo
 
 Can't tell where the couch ends on the map? Mark the zone's corners with your own position: stand in each corner of the area while the radar tracks you, and the card turns your corners into the zone's shape. Take a phone or tablet with the dashboard open, and be the only person in the radar's view. Like drawing, it's for administrators, on an unlocked map.
 
-1. Unlock the map and press the zone's button to select it.
-2. Press ✎ (**Drawing modes**), then 🚶 (**Mark corners by walking**). On a phone or tablet, you can press **🚶 Mark corners by walking** under the map instead, before **Coverage**. A panel opens under the map with a hint, **Corner here**, **Undo corner**, **Finish**, and **Cancel**.
+1. Unlock the map and pick the zone with its button under **Zones**.
+2. Press ✎ (**Drawing modes**), then 🚶 (**Mark corners by walking**). On a phone or tablet, you can press **🚶 Mark corners by walking** under the map instead, before **Coverage**. A panel opens under the map with a hint, **Corner here**, **Undo corner**, **Finish**, and **Cancel**, and the zone's editor reads **Marking this zone's corners by walking. Follow the steps under the map.**
 3. Stand still in one corner of the area for about 3 seconds and press **Corner here**. The corner is where the radar placed you, on average, over the last 1.5 seconds, and the radar updates your position about once a second, so a corner pressed sooner can land short of where you stand.
 4. Walk along the edge to the next corner, stand still for about 3 seconds, and press **Corner here** again. Go around the zone in order, not across it. The map numbers each corner and draws a dashed preview of the shape with its size.
 5. Press **Finish**. Two corners make a rectangle, with the two as opposite corners, and three or more make a polygon of up to 32 corners. The zone saves like one you drew, and the card confirms it with the zone's name, such as **Couch saved**.
@@ -385,19 +411,27 @@ With no zone selected, **Finish** shows **Select a zone first.** and keeps your 
 
 ### Rename a zone
 
-In **Configure → Zones**, type a new name next to the zone and press **Save**. The name appears on the zone's button.
+1. Pick the zone with its button under **Zones**, or tap it on the map.
+2. Type the new name in the **Name** box of its editor.
+3. Press **Enter**, or click or tap outside the box. On a phone, the keyboard's Enter key also closes the keyboard.
+
+The name saves on its own: **Saving...** and then **Saved** show beside the zone's heading, and the zone's button and its label on the map change. **Esc** puts the saved name back, and an empty box saves the zone's default name, such as **Zone 2**. If the save fails, the card shows **Not saved** in red with a **Could not save** message, and what you typed stays in the box so you can try again. The name works whether the map is locked or not.
 
 ### Clear or delete a zone
 
-Double-click a zone's button to clear its shape, or press **Clear All Zones** to clear every shape while keeping the zones. Both need the map unlocked: on a locked map they clear nothing and show **Unlock the map to clear zones.** To remove a zone completely, along with its sensors, press **Delete** next to it in **Configure → Zones**, which works whether the map is locked or not.
+To remove a zone completely, along with its sensors, pick it and press **Delete zone** at the bottom of its editor. The card asks first. For a zone named Couch it reads **Delete Couch? Its sensors leave Home Assistant, so automations that use them stop working. This cannot be undone.** Press **Delete** to delete it, or **Keep it** (or **Esc**) to keep it. ↶ doesn't bring a deleted zone back. **Delete zone** works whether the map is locked or not.
 
-**Add Zone** takes the lowest zone number that's free, so a zone you add after deleting one can get the deleted zone's number. From Apollo mmWave 2.4.0, it starts with fresh sensor names: names Apollo mmWave gave the old zone, such as **Zone 1 presence - Couch**, are cleared, and a name you typed in the sensor's settings stays. Home Assistant gives the new zone's sensors the old ones' entity IDs, though, such as `binary_sensor.couch_presence` if you had changed it, and Apollo mmWave can't prevent that. An automation written for the deleted zone then follows the new one, so check those automations.
+To clear the shapes of every zone and keep the zones, open **Map settings** and press **Clear all shapes**. It's there while any zone has a shape, and it asks first: **Clear every zone's shape? The zones keep their names, types and hold times, and ↶ on the map brings the shapes back.** Press **Clear shapes** to clear them, and the card shows **All shapes cleared**, or press **Keep them**. On a locked map it's dimmed and clears nothing: it shows **Unlock the map to clear zones.**
+
+No button clears a single zone's shape. To change one, draw the new shape over it, which replaces the old one. A double-click on a zone's button doesn't clear it either.
+
+**Add zone** takes the lowest zone number that's free, so a zone you add after deleting one can get the deleted zone's number. From Apollo mmWave 2.4.0, it starts with fresh sensor names: names Apollo mmWave gave the old zone, such as **Zone 1 presence - Couch**, are cleared, and a name you typed in the sensor's settings stays. Home Assistant gives the new zone's sensors the old ones' entity IDs, though, such as `binary_sensor.couch_presence` if you had changed it, and Apollo mmWave can't prevent that. An automation written for the deleted zone then follows the new one, so check those automations.
 
 ### Use the zone sensors
 
 Each zone gets an occupancy sensor named **Zone 1 presence** (and so on) on the radar's device page in Home Assistant. It turns on when a tracked person is inside the zone, ready to use in your automations. When you rename a zone on the card, its sensors follow, so a zone named Couch gets **Zone 1 presence - Couch**. A name you gave the sensor yourself in Home Assistant is kept.
 
-To try a zone, walk into it: the zone fills in on the map while its sensor is on (see [Read the map](#read-the-map)). Reload the page after you draw a zone, and the **Zone presence** card next to the map lists its sensor too, colored while someone is in the zone, and **Occupancy History** adds a line for it, covering the last 24 hours.
+To try a zone, walk into it: the zone fills in on the map while its sensor is on (see [Read the map](#read-the-map)), and **Now** in its editor reads **Someone is in this zone**. Reload the page after you add a zone, and the **Zone presence** card next to the map lists its sensor too, colored while someone is in the zone, and **Occupancy History** adds a line for it, covering the last 24 hours. Until a radar has a zone, **Zone presence** reads **Press Add zone under the zone map to get a presence sensor for a zone. Reload this page to see it here.**
 
 Under it, **LD2450 Live** shows what the radar reports right now. If the map shows no dot with you in the room, look here first: **LD2450 Presence** off means the radar itself reports nobody. It covers the radar's whole view, not one zone, and **Occupancy History** names its line **LD2450 Presence** too.
 
@@ -425,9 +459,7 @@ Where the trigger must see someone leave, such as for a notification or a counte
 
 ### Ignore a spot or hold a zone
 
-Each zone's row in **Configure → Zones** has a second line with the zone's size and two lists, **Type** and **Hold**. The card sums them up above the rows: **Ignore drops targets inside that zone, such as a fan or a curtain, before the other zones are checked. Hold keeps a zone on for a while after the radar loses someone who sat still.** A change saves as soon as you pick it, and a zone keeps its type and hold when you redraw, clear, or undo it. Only administrators can change them.
-
-![The Zones panel under the zone map: the Zones heading with the Add zone button, then the Desk, Couch, Doorway, and Fan buttons, each with its zone's color dot and Fan's hatched, with Couch selected, and the Couch zone's editor, titled Zone 2 and edged in blue: the Name box reading Couch, Size 4 ft 3 in × 7 ft 10 in, the Type list at Detect and the Hold list at 5 min, the hint Detect: its presence sensor turns on while someone is inside. Hold keeps it on for a while after someone inside goes still and the radar loses them., Now Nobody is in this zone, the drawing hint To change its shape, drag on the map to draw this zone as a rectangle. ✎ on the map offers an ellipse or a polygon. A tap on another zone picks it., and a Delete zone button](/assets/apollo-mmwave-zone-list.png)
+Each zone's editor in the **Zones** panel has two lists, **Type** and **Hold**, and a line under them that says what they do for that zone. For a detect zone it reads **Detect: its presence sensor turns on while someone is inside. Hold keeps it on for a while after someone inside goes still and the radar loses them.**, and for an ignore zone **Ignore: targets inside, such as a fan or a curtain, are dropped before the other zones are checked. Ignore zones never hold.** A change saves as soon as you pick it, and **Saved** shows beside the zone's heading. A zone keeps its type and hold when you redraw, clear, or undo it. Only administrators can change them.
 
 **Ignore a spot.** Draw a zone over something that moves but isn't a person, such as a fan, a curtain, or a plant in a draft, and set its **Type** to **Ignore**. Home Assistant then drops every target inside that zone before it checks the radar's other zones, so nothing there turns a zone on, even where the zones overlap. On the map the zone is hatched and its label ends in **(ignored)**, and a target inside it is a hollow gray ring. The zone's own presence sensor always reads off, with a `zone_type` attribute of `ignore`, and never holds. Targets inside it don't count for walking corners and aren't recorded in movement history.
 
@@ -435,7 +467,7 @@ Each zone's row in **Configure → Zones** has a second line with the zone's siz
 
 An ignore zone is not the radar's **Zone Type** setting (**LD2450 Zone Type** on an R PRO-1), and nothing is written to the radar. The radar keeps reporting the target, so **LD2450 Presence** and the **LD2450 Live** card still count it. Keep **Zone Type** on **Disabled**, as the [Radar setup card](#check-the-ld2450s-radar-setup-card) recommends.
 
-**Hold a zone.** The LD2450 can lose someone who sits very still, such as on a couch, and the zone then turns off with them still in it. Pick a **Hold** time (**15 s**, **30 s**, **1 min**, **2 min**, **5 min**, **10 min**, or **30 min**), and the zone stays on for that long after the radar loses someone who sat still inside it, counted from when the zone emptied. While it holds, the zone's label on the map ends in **(held)**, and its presence sensor's `held` attribute reads `true`. **Off**, the default, turns the zone off as soon as nobody is in it. Ignore zones never hold.
+**Hold a zone.** The LD2450 can lose someone who sits very still, such as on a couch, and the zone then turns off with them still in it. Pick a **Hold** time (**15 s**, **30 s**, **1 min**, **2 min**, **5 min**, **10 min**, or **30 min**), and the zone stays on for that long after the radar loses someone who sat still inside it, counted from when the zone emptied. While it holds, the zone's label on the map ends in **(held)**, and its presence sensor's `held` attribute reads `true`. **Off**, the default, turns the zone off as soon as nobody is in it. Ignore zones never hold, so their **Hold** list is grayed out.
 
 A hold is for someone who sat still, so the zone doesn't wait out its hold when everyone who was in it walked out. Home Assistant sees someone walk out in two ways:
 
@@ -475,7 +507,7 @@ data:
 
 Movement history lets an administrator play back where the radar tracked people over the last day: to see where people walk and sit before you draw zones, or what turned a zone on in the night. It's off until you turn it on, one radar at a time.
 
-1. Open **Configure** under the map and tick **Movement history**. The card confirms **Movement history is on. Open History under the map to replay it.** From then on, Home Assistant records where each target the radar tracks is: up to twice a second while it moves, and every 15 seconds while it stays in view.
+1. Open **Map settings** at the bottom of the card and tick **Movement history**. The card confirms **Movement history is on. Open History under the map to replay it.** From then on, Home Assistant records where each target the radar tracks is: up to twice a second while it moves, and every 15 seconds while it stays in view.
 2. Press **History** under the map. The **Movement history** panel opens on the last hour.
 3. Press **Play**, or drag the slider to any moment. **1x**, **10x**, and **60x** set the speed, **1 h**, **6 h**, and **24 h** change the range, and the small chart above the slider shows when the radar saw people.
 
@@ -645,6 +677,10 @@ If the chart instead reads **Radar unavailable** and **Waiting for the device to
 
     The HLKRadarTool app connects over the radar's Bluetooth (the **Radar Bluetooth (HLK app)** row on the **Controls** card, or on **LD2450 Controls** for the LD2450) and has its own auto-calibration. Each sensor has its own guide: [MSR-1](/products/msr1/setup/zones-hlk.md), [MSR-2](/products/msr2/setup/zones-hlk.md), [R PRO-1](/products/rpro1/setup/zones-hlk.md), and [MTR-1](/products/mtr1/setup/zones-hlk.md).
 
+### Can't find a zone's name, Type, or Hold
+
+They're in the **Zones** panel right under the map. Press the zone's button there, or tap the zone on the map, and its editor opens under the buttons (see [Pick a zone in the Zones panel](#pick-a-zone-in-the-zones-panel)). **Cone rotation**, the flip, **Movement history**, and **Clear all shapes** are under **Map settings** at the bottom of the card. If the map shows a **Configure** section instead, with the zones inside it, the page still runs cards from an earlier release: reload it as [Load the new cards](apollo-mmwave-dashboard-setup.md#load-the-new-cards) shows.
+
 ### The zone map shows nobody, or only one person
 
 Start with the LD2450's **Radar setup** card, right above the map.
@@ -664,7 +700,7 @@ Apollo mmWave 2.2.7 fixed this. Before it, when Home Assistant used US customary
 
 A zone you drew while the dots were in the wrong place may not cover where people show up now. Walk through the room, watch the dots, and redraw any zone that's off.
 
-**A dot moves the opposite way from you.** First hold your phone so the map's view cone points the way your sensor faces in the room: turned any other way, a map that's right can look mirrored. If the dot still moves the other way, tick **Flip the map left to right (display only)** under **Configure**, as [Match the map to how the sensor is mounted](#match-the-map-to-how-the-sensor-is-mounted) describes. It only changes how the map is drawn, so your zones flip with the dots and keep working as before.
+**A dot moves the opposite way from you.** First hold your phone so the map's view cone points the way your sensor faces in the room: turned any other way, a map that's right can look mirrored. If the dot still moves the other way, tick **Flip the map left to right (display only)** under **Map settings**, as [Match the map to how the sensor is mounted](#match-the-map-to-how-the-sensor-is-mounted) describes. It only changes how the map is drawn, so your zones flip with the dots and keep working as before.
 
 ### Zone presence reads unavailable
 
@@ -692,7 +728,11 @@ Look at the zone on the map:
 
 ### A slider won't move
 
-The sliders on **Detection Range**, **Move Thresholds**, and **Still Thresholds** start locked. Press **Unlock** on the **Sliders locked** row above them (see [Set the range and timeout](#set-the-range-and-timeout)). The **Cone rotation** slider on the zone map locks with the map: press **Locked** on the map first.
+The sliders on **Detection Range**, **Move Thresholds**, and **Still Thresholds** start locked. Press **Unlock** on the **Sliders locked** row above them (see [Set the range and timeout](#set-the-range-and-timeout)). The **Cone rotation** slider under **Map settings** on the zone map locks with the map: press **Locked** on the map first.
+
+### A card this guide describes isn't on your tab
+
+If your tab has no **Radar setup** card, no **LD2450 Controls** or **Zone presence** card next to the zone map, or no **Device** card at the bottom, your Apollo mmWave dashboard is probably a saved copy from an older release, made with **Take control**. [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards) shows how to get the automatic dashboard back and keep your copy. A card that's there but has fewer rows than this guide shows is something else: a row only appears while its entity is enabled in Home Assistant.
 
 ### Send Apollo a support file
 
