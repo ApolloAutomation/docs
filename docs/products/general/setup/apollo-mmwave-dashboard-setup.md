@@ -103,9 +103,9 @@ The cards on each tab are laid out in columns that stack into one on a phone. He
 
 Both sensors use the LD2410 radar chip, so their tabs look the same, and the tuning card titles start with **LD2410**.
 
-- **Start here** sits at the top. It names your sensor and lists five steps, from **Fix anything the Radar setup card flags.** to walking the room while you watch the Gate Energy chart. Its links open the tuning guide on this wiki and your sensor's own page in Home Assistant.
+- **Start here** sits at the top. It names your sensor and lists five steps, from **Fix anything the Radar setup card flags.** to walking the room while you watch the Gate Energy chart. Under the steps it says to use **Radar Target** in automations for the whole room, and to raise **Radar Timeout** to 60 s or more if it turns off while someone sits still. Its links open the tuning guide on this wiki and your sensor's own page in Home Assistant.
 
-    ![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps starting Fix anything the Radar setup card flags., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
+    ![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps starting Fix anything the Radar setup card flags., then the line In automations, use Radar Target for the whole room., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
 
 - Under it, the **Radar setup** card checks the radar's settings and offers a fix when one is off. On a sensor that's ready to go it reads **Radar settings look good.**
 - **Auto-calibrate** comes next, with the **Calibrate with empty room** and **Preview only** buttons. If your sensor still has its factory thresholds and has never been calibrated, the card adds **These look like factory thresholds. Calibrating sets them for your room.**
@@ -119,26 +119,26 @@ Both sensors use the LD2410 radar chip, so their tabs look the same, and the tun
 
 The R PRO-1 tab starts with the same tuning cards, titled **LD2412** instead of **LD2410**, for the optional LD2412 radar addon, and adds a zone map for its LD2450 radar. Without the addon, the LD2412 cards still appear but have no radar behind them, so skip to the zone map, and **Start here** gives the zone map steps instead. The differences from an MSR-2 tab:
 
-- **Start here** says what each radar is for: the LD2412 senses people anywhere in range, even sitting still, and the LD2450 tracks where people are and drives the zone map.
+- **Start here** says what each radar is for: the LD2412 senses people anywhere in range, even sitting still, and the LD2450 tracks where people are and drives the zone map. For automations that cover the whole room, it names **Combined Presence** (on while either radar sees someone) on firmware newer than 26.3.2.1, which has that sensor, and **LD2412 Presence** on earlier firmware.
 - **LD2412 Controls** adds **Start Dynamic Background Correction** and **Background Correction Running**. The Auto-calibrate card reminds you to run background correction first, with the room empty, and wait for its status to turn off before you calibrate.
 - **LD2412 Detection Range** holds **Radar Timeout**, **Max Gate**, and **Min Gate**, plus **Distance Resolution** if you've enabled that entity (it's hidden on a new sensor).
 - The thresholds cards and the Gate Energy chart cover 14 gates, **G0** to **G13**.
 - There's no Zone Config card, and the **LD2412 Distances** chart shows the gates and your **Max Gate** and **Min Gate** limits without distance bars.
-- After the first column (**Start here**, the LD2412's **Radar setup** card, **Auto-calibrate**, **LD2412 Controls**, and **LD2412 Target / Occupancy**), a **Zone Map** heading introduces the LD2450's cards: its own **Radar setup** card, the zone map, **Zone presence**, **LD2450 Live**, and **LD2450 Controls**, described below. The rest of the LD2412 cards follow, so on a phone you reach the zone map before the 28 threshold rows.
+- After the first column (**Start here**, the LD2412's **Radar setup** card, **Auto-calibrate**, **LD2412 Controls**, and **LD2412 Target / Occupancy**), a **Zone Map** heading introduces the LD2450's cards: its own **Radar setup** card and the zone map, in a section two columns wide, then **Zone presence**, **LD2450 Live**, and **LD2450 Controls**, described below. The rest of the LD2412 cards follow, so on a phone you reach the zone map before the 28 threshold rows. On a screen wide enough for Home Assistant's four columns, the first column, the zone map, and the LD2450's cards make up the first row, and the LD2412's tuning cards fill the second. With room for only two columns, the LD2450's cards move up beside the first column, and the zone map spans the full width under them.
 
 ### MTR-1 tabs
 
-An MTR-1 tab is built around the zone map, with everything for its LD2450 radar beside it:
+An MTR-1 tab is built around the zone map, with everything for its LD2450 radar beside it. On a computer, **Start here** and **Radar setup** share the row above the zone map, and the map's section is two columns wide:
 
-- **Start here** lists three steps (fix anything the Radar setup card flags, set **Cone rotation**, then draw a zone and walk into it), says which presence sensor to use in automations, and links to your sensor's own page.
+- **Start here** lists three steps (fix anything the Radar setup card flags, set **Cone rotation** under **Map settings** on the zone map, then press **Add zone** under the map, draw the zone, and walk into it), says which presence sensor to use in automations, and links to your sensor's own page.
 - **Radar setup** checks **Zone Type** and **Multi Target Tracking**, the two radar settings that decide whether the map can show people, and fixes them when you press its button. **Zone Type** should be **Disabled**, because the zone map replaces the radar's own built-in zones.
-- The zone map, titled with your sensor's name, shows the radar's view, a cone 120 degrees wide and about 6 m (20 ft) out, with a dot for each target the LD2450 is tracking. It's in feet or meters to match Home Assistant, and the **m / ft** switch on the map changes it. A pencil button in the lower left opens the drawing tools, the lower right holds the unit switch and the undo and lock buttons, and a collapsed **Configure** section under the grid holds the cone rotation slider and the zone list.
-- **Zone presence**, **LD2450 Live**, and **Occupancy History** show each zone's presence sensor, what the radar reports right now, and the last 24 hours.
+- The zone map, titled with your sensor's name, shows the radar's view, a cone 120 degrees wide and about 6 m (20 ft) out, with a numbered dot for each target the LD2450 is tracking, and fills in each zone while someone is in it. It's in feet or meters to match Home Assistant, and the **m / ft** switch on the map changes it. A pencil button in the lower left opens the drawing tools, and the lower right holds the unit switch and the undo and lock buttons, with the zoom buttons (−, +, and **Fit**) above them. Under the grid are the **Coverage** button (on a phone or tablet, with **🚶 Mark corners by walking** before it for administrators), the **Zones** panel, and a collapsed **Map settings** section. **Zones** holds **Add zone**, a button for each zone, and an editor for the zone you pick, with its name, size, **Type**, **Hold** time, and **Delete zone**. **Map settings** holds the cone rotation slider with the hint to mount the sensor first, **Flip the map left to right (display only)**, **Movement history** (for administrators), and **Clear all shapes**. The expand button in the map's top-right corner (**Expand map**) gives the map the whole window when the card feels cramped.
+- **Zone presence**, **LD2450 Live**, and **Occupancy History** show each zone's presence sensor, what the radar reports right now, and the last 24 hours. **LD2450 Presence**, the first row of **LD2450 Live** and a line in **Occupancy History**, is on while the radar sees anyone anywhere in its view, whether or not they're in a zone.
 - **LD2450 Controls**, the radar's built-in zones (only while Zone Type isn't **Disabled**), and the **Device** card end the tab.
 
 The integration finds the sensor's target entities itself, so there's nothing to pick before you start drawing. The R PRO-1's zone map and the cards beside it work the same way.
 
-![The Radar setup card above the zone map on an R PRO-1: the card reads Zone Type is Filter. This radar ignores people inside its built-in zones. Disabled is recommended because the zone map replaces them., with a Set Zone Type to Disabled button, and the map below it shows the radar's view cone in feet, the caption Radar range 20 ft (6 m), 120°, three drawn zones, and the m / ft switch and Locked button](/assets/apollo-mmwave-radar-setup-and-zone-map.png)
+![The Radar setup card above the zone map on an R PRO-1: the card reads LD2450 · R PRO-1 Server Rack and Zone Type is Filter. This radar ignores people inside its built-in zones. Disabled is recommended because the zone map replaces them., with a Set Zone Type to Disabled button, and the map below it shows the radar's view cone in feet, the caption Radar range 20 ft (6 m), 120°, three drawn zones with a pale fill and a dashed outline because nobody is in them, the expand button in the map's top-right corner, the zoom buttons (a dimmed minus, + and Fit) above the m / ft switch and the Locked button, and under the grid the Coverage button, then the Zones heading with the Add zone button and the Zone 1, Zone 2, and Zone 3 buttons, each with its zone's color dot, with Zone 1 selected](/assets/apollo-mmwave-radar-setup-and-zone-map.png)
 
 ### What to do first
 
@@ -147,23 +147,24 @@ Your dashboard is working. Follow the **Start here** card on each tab, from the 
 1. Look at the **Radar setup** card near the top of the tab. If it flags a setting, follow what it says: most problems have a button that fixes them, and the card changes nothing until you press one. An R PRO-1 tab has a second one above the zone map, for the LD2450.
 2. On an MSR-1 or MSR-2 tab, or an R PRO-1 tab with the LD2412 addon, calibrate the radar. Skip this step on an R PRO-1 without the LD2412. On an R PRO-1, first clear the room, press **Start Dynamic Background Correction** on the **LD2412 Controls** card, and wait for **Background Correction Running** to turn off. Then press **Calibrate with empty room** on the **Auto-calibrate** card and leave the room for about a minute and a half. You don't need to turn on Radar Engineering Mode: the calibration does that for you. The [tuning guide](apollo-mmwave-dashboard.md#calibrate-with-an-empty-room) walks you through it.
 
-    ![The Auto-calibrate card on an MSR-1, ready to run, with the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
+    ![The Auto-calibrate card on an MSR-1, ready to run, with the reminder to raise Radar Timeout to 60 s or more if Radar Target turns off while someone sits still, and the Calibrate with empty room and Preview only buttons](/assets/apollo-mmwave-calibrate-idle.png)
 
-3. On an MTR-1 or R PRO-1 tab, [draw your zones](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1).
+3. On an MTR-1 or R PRO-1 tab, press **Add zone** under the zone map and draw your first zone. The [eight zone steps](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) take you from **Cone rotation** to a zone that lights up when you walk into it.
 
 The rest of this page covers managing the dashboard, upgrading from an older setup, and troubleshooting, so come back to it when you need it.
 
 ## Manage the dashboard
 
-After setup, Apollo mmWave changes its dashboard only when you ask it to, from the integration options: add the dashboard, remove it, or choose which sensors get a tab. Open **Settings → Devices & services → Apollo mmWave → Configure** to reach the **Apollo mmWave options** menu. It reads **These actions change only the Apollo mmWave dashboard this integration created. Dashboards you made yourself are never changed.** and lists the actions that fit:
+After setup, Apollo mmWave changes its dashboard only when you ask it to, from the integration options: add the dashboard, remove it, restore it, or choose which sensors get a tab. Open **Settings → Devices & services → Apollo mmWave → Configure** to reach the **Apollo mmWave options** menu. It reads **These actions change only the Apollo mmWave dashboard this integration created. A dashboard you made on another URL is never touched.** and lists the actions that fit:
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=apollo_mmwave)
 
 - **Add the Apollo mmWave dashboard** is listed while the integration has no dashboard of its own: you unticked the box during setup, setup couldn't create it, or you deleted it. It describes the dashboard it creates and asks **Only administrators can see it** again. Click **Submit** to create it, once, with the sensors you chose under **Choose the dashboard's devices**.
 - **Remove the Apollo mmWave dashboard** is listed while the integration has one. Click **Submit** to delete the **Apollo mmWave** dashboard at `/apollo-mmwave` that the integration created, along with any title, icon, or strategy options you changed on it. Your sensors, zones, and calibration values stay, and the cards still work on your own dashboards. You can add the dashboard again from the same menu.
+- **Restore the automatic dashboard** is listed instead of those two while the dashboard is a saved copy, made with **Take control**. Click **Submit** to keep your copy as a dashboard of its own and put the automatic one back, as [If your dashboard is missing cards](#if-your-dashboard-is-missing-cards) describes.
 - **Choose the dashboard's devices** opens **Dashboard devices**, which is empty by default and shows every Apollo mmWave device Home Assistant knows about, online or not. Select one or more devices to show exactly those and hide the rest; a selected device keeps its tab even while it's offline. Clear the selection to go back to automatic detection. The picker only lists Apollo MSR-1, MSR-2, MTR-1, and R PRO-1 sensors added through ESPHome.
 
-Each action takes effect as soon as you click **Submit**, with no restart, and an open dashboard picks up a new device selection without a reload. The device selection is written only into the dashboard the integration created. Without one, the selection is kept and used when you add the dashboard from the options.
+Each action takes effect as soon as you click **Submit**, with no restart, and an open dashboard picks up a new device selection without a reload. The device selection is written only into the dashboard the integration created, while it still builds itself. Otherwise the selection is kept and used when you add or restore the dashboard from the options.
 
 You can also delete the dashboard under **Settings → Dashboards**, like any other. It stays deleted until you add it again from the options.
 
@@ -178,15 +179,58 @@ Want a second dashboard, say one with only the bedroom sensors, or one at anothe
 2. Pick **Apollo Radar Tuning** under **Community dashboards**.
 3. Give it a title and a URL other than `apollo-mmwave`, then click **Create**.
 
-A dashboard you add this way is yours from the start, and the integration options never change it. It shows every detected Apollo mmWave device; to limit it, set `devices` in its raw configuration, as the [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#choosing-which-devices-appear) shows. The URL matters: if you delete the integration's dashboard and add one of these at `apollo-mmwave`, Apollo mmWave can mistake it for the dashboard it created, and its options and removal would then act on yours.
+A dashboard you add this way is yours from the start, and the integration options never change it. It shows every detected Apollo mmWave device; to limit it, set `devices` in its raw configuration, as the [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#choosing-which-devices-appear) shows. The URL matters. Apollo mmWave forgets its own dashboard when you delete it, but not while the integration isn't running, for example while it's disabled. If you delete the integration's dashboard then and add one of these at `apollo-mmwave`, Apollo mmWave can mistake it for the dashboard it created, and its options and removal would then act on yours.
 
 ### Use your own layout
 
-Want to rearrange the cards? Click the pencil icon in the upper right corner of the dashboard and choose **Take control** in the dialog that opens. From then on the layout is yours: the integration stops offering to remove the dashboard, writes no device selection into it, and leaves it in place when you remove the integration. The dashboard also stops adding and removing tabs as sensors come and go. Changed your mind? Delete the dashboard under **Settings → Dashboards**, then choose **Add the Apollo mmWave dashboard** in the integration options to get a fresh one. If you add the Apollo tabs to a dashboard of your own, take control of that dashboard before you edit them; editing an auto-built tab directly discards its cards.
+Want to rearrange the cards? Click the pencil icon in the upper right corner of the dashboard and choose **Take control** in the dialog that opens. From then on the layout is yours: the integration stops offering to remove the dashboard, writes no device selection into it, and leaves it in place when you remove the integration. The dashboard also stops adding and removing tabs as sensors come and go. Changed your mind? Choose **Restore the automatic dashboard** in the integration options: you get the automatic dashboard back, and your layout is kept as a dashboard of its own (see [If your dashboard is missing cards](#if-your-dashboard-is-missing-cards)). If you add the Apollo tabs to a dashboard of your own, take control of that dashboard before you edit them; editing an auto-built tab directly discards its cards.
 
-A dashboard you took control of keeps the cards it had, so it doesn't pick up new cards from later releases, such as the updated **Start here** steps, the **Radar setup** cards, the **Device** card, and the slider lock that came with 2.3.0. To get them, delete it and add a fresh one from the options as described above.
+A dashboard you took control of keeps the cards it had, so it doesn't pick up new cards from later releases, such as the updated **Start here** steps, the **Radar setup** cards, the **Device** card, and the slider lock that came with 2.3.0, or the wider zone map section, the **Radar Target** advice, the **LD2450 Presence** label, and **Target Count** as a whole number, which came with 2.4.0. Nothing on the dashboard says so, so from 2.4.0 Apollo mmWave checks for it and offers to restore it (see [If your dashboard is missing cards](#if-your-dashboard-is-missing-cards)). The zone map card itself always runs the current version, so its **Zones** panel and other new tools show up on a dashboard you took control of too.
 
 The cards also work on their own: in the card picker they're listed as **Apollo Radar Auto-Calibrate**, **Apollo Radar Distance Chart**, **Apollo Radar Gate Energy Chart**, **Apollo Radar Setup**, and **Apollo Zone Map**. The [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#use-your-own-dashboards-instead) has the YAML for placing them.
+
+For a phone or a wall tablet where nobody draws zones, use the zone map's view-only mode. Add the **Apollo Zone Map** card to a dashboard of your own, pick your sensor under **Radar**, and turn on **View only (the map without drawing tools)**, or set `view_only: true` in the card's YAML. The card then shows its title and the live map, with lit zones, numbered dots and their trails, and the **Radar offline** note, but no drawing tools, buttons, zoom, **Zones** panel, or **Map settings**, and a swipe on it scrolls the page. The Apollo mmWave dashboard keeps the full map.
+
+```yaml
+type: custom:apollo-radar-zone-map-card
+device_id: your_device_id
+view_only: true
+```
+
+![A view-only zone map at phone width: the title R PRO-1 Living Room and the live map, with no buttons on the map or under it. Dot 1 sits in the filled-in Couch zone with a short red trail back to the doorway behind it, and dot 2 sits in the filled-in Desk zone](/assets/apollo-mmwave-zone-map-view-only.png)
+
+### If your dashboard is missing cards
+
+Is your **Apollo mmWave** dashboard missing cards this guide describes, such as the **Radar setup** card, **LD2450 Controls** with **Zone Type** and **Multi Target Tracking**, **Zone presence**, or the **Device** card? Then someone used **Take control** on it under an earlier release, and it's a saved copy: it holds the cards it had at that moment and no longer builds itself.
+
+From Apollo mmWave 2.4.0, the integration checks for this each time it starts and whenever you save its options. While the dashboard it created is a saved copy, still made of Apollo mmWave cards, you get two ways to put the automatic dashboard back. Both say what they do, and neither changes anything until you click **Submit**:
+
+- **Settings → System → Repairs** lists **The Apollo mmWave dashboard is a saved copy**. Click it to open **Restore the automatic Apollo mmWave dashboard**.
+- The integration options (**Settings → Devices & services → Apollo mmWave → Configure**) list **Restore the automatic dashboard**.
+
+[![Open your Home Assistant instance and show your repairs.](https://my.home-assistant.io/badges/repairs.svg)](https://my.home-assistant.io/redirect/repairs/)
+
+When you click **Submit**:
+
+1. Your copy is saved first, as a new dashboard named **Apollo mmWave (saved copy)** at `apollo-mmwave-saved`, or `apollo-mmwave-saved-2` and so on when that address is taken. It isn't in the sidebar, so open it from **Settings → Dashboards**. It's for administrators only if your dashboard was.
+2. Only once the copy is saved does `apollo-mmwave` get the automatic dashboard back, with the sensors you chose under **Choose the dashboard's devices**. Its title, icon, sidebar setting, and admin-only setting stay as they were.
+
+The repair then reads **The issue is repaired!** and goes away. Open **Apollo mmWave** from the sidebar, or reload it if it's already open, to see every current card. Keep the saved copy as long as you want something from it, and delete it under **Settings → Dashboards** when you don't.
+
+If the restore can't finish, it says what happened, and the repair stays so you can try again. The log under **Settings → System → Logs** has a warning that starts with **Apollo mmWave:** and says why:
+
+- **Nothing was changed: your copy could not be saved as a separate dashboard, so the Apollo mmWave dashboard was left as it is.** No copy was made, and your dashboard is as it was.
+- **Your copy is saved as the Apollo mmWave (saved copy) dashboard under Settings > Dashboards, but the Apollo mmWave dashboard could not be restored and was left as it is.** The copy is kept, and your dashboard is as it was. Each try keeps another copy, so delete the extra ones under **Settings → Dashboards**.
+
+A dashboard you rebuilt with no Apollo mmWave cards on it is yours, and gets no repair. When you delete the Apollo mmWave dashboard, the integration forgets it, so a dashboard you make at `apollo-mmwave` later gets no repair either. The exception is a dashboard you deleted while the integration wasn't running, for example while it was disabled: a new dashboard at that address with Apollo mmWave cards on it then gets the repair too, and still nothing changes until you click **Submit**. Removing the integration removes the repair and keeps the saved copy.
+
+**No repair, and no Restore in the options?** The check only looks at the dashboard Apollo mmWave recorded as the one it created, and it no longer knows yours if you took control of it under Apollo mmWave 2.2.5 or earlier, or saved the integration options after taking control of it, under a release before 2.4.0. To get the automatic dashboard back then:
+
+1. Open your old dashboard, click **Edit dashboard**, open the three-dot menu, and choose **Raw configuration editor**. Copy its contents somewhere safe if you want to keep anything from it.
+2. Delete the dashboard under **Settings → Dashboards**.
+3. In the integration options, choose **Add the Apollo mmWave dashboard** (see [Manage the dashboard](#manage-the-dashboard)).
+
+Or keep your old dashboard as it is and add a second one that builds itself, at another address, as [Add another Apollo mmWave dashboard](#add-another-apollo-mmwave-dashboard) shows.
 
 ## Upgrade from an older setup
 
@@ -227,12 +271,33 @@ An update takes effect after a restart, and a browser or the Home Assistant app 
     - **Android**: **Settings → Companion app → Troubleshooting → Reset frontend cache**.
     - **iPhone and iPad**: **Settings → Companion app → Debugging → Clear web view cache**, then **Clear Cache**. Older versions of the app call it **Reset frontend cache**.
 
+On updates from Apollo mmWave 2.4.0 or later, the cards tell you when one of these steps is still to do. The **Radar setup** card shows a notice above its checks. A zone map card, view-only ones included, shows it under its title when it comes before any **Radar setup** card on the page, as on a dashboard of your own:
+
+- **Apollo mmWave was updated to 2.4.1, but this page still runs 2.4.0.**, with a **Reload** button and the line **In the Home Assistant app, if Reload does not help, close the app fully and open it again.** The page still runs the cards from before the update. Press **Reload**.
+- **Apollo mmWave 2.4.1 is installed, but Home Assistant still runs 2.4.0. Restart Home Assistant to finish updating.** The page already runs the new cards, but Home Assistant hasn't restarted since the update. Restart it as step 1 shows, and the notice turns into the **Reload** one if the page needs it.
+
+The version numbers are the ones on your system. Only one card on the page shows the notice, and it goes away once the page and Home Assistant run the same version. Cards from earlier releases have no such check, so on the update to 2.4.0 itself, no notice doesn't mean the page runs the new cards: do the steps above anyway.
+
+### Updating to Apollo mmWave 2.4.0
+
+After the restart and a reload, the zone map fills in each zone while someone is in it and numbers the dots, zooms in up to 8 times, and snaps the corners you draw to round values, and administrators get new tools: walking a zone's corners, ignore zones, hold times, a left-to-right flip, and movement history. The expand button in the map's top-right corner gives the map the whole window. Your zones move out of **Configure → Zones** into a **Zones** panel right under the map, with **Add zone**, a button for each zone, and an editor for the zone you pick. **Configure** is now **Map settings**, at the bottom of the card. Nothing changes on its own: every zone stays a detect zone with no hold, the map isn't flipped, and movement history stays off until an administrator turns it on. A dashboard you took control of gets these too, because they're part of the card. [Draw zones on the R PRO-1 and MTR-1](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) covers them.
+
+The Apollo mmWave dashboard also gives the zone map a section two columns wide on a computer, which a dashboard you took control of doesn't get. If the integration's own dashboard is one, Home Assistant lists a repair that restores it and keeps your copy (see [If your dashboard is missing cards](#if-your-dashboard-is-missing-cards)). Check these if they apply to you:
+
+- **Zone habits from 2.3.0.** A zone's name has no **Save** button any more: type it and press Enter, or leave the box. **Clear All Zones** is now **Clear all shapes** under **Map settings**. It and **Delete zone** ask before they act, and a double-click on a zone's button no longer clears its shape. [Pick a zone in the Zones panel](apollo-mmwave-dashboard.md#pick-a-zone-in-the-zones-panel) shows the rest.
+- **Automations that use zone presence.** A zone's presence sensor now reads unavailable while its radar is offline, and after every Home Assistant restart until the radar connects. Before 2.4.0 it read off. A trigger with `to: "off"` and no `from:` now also fires when the radar comes back, after every restart. That's harmless for lights-off automations, and such a trigger still catches a zone that emptied while the radar was offline. A trigger with `from: "on"` skips both, so use it only where the trigger must see someone leave, such as a notification or a counter. [Use the zone sensors](apollo-mmwave-dashboard.md#use-the-zone-sensors) shows both. A zone can also turn on up to about half a second later than under 2.3.0, because zone presence now waits for both halves of the radar's position report.
+- **Automations, templates, and history graphs that use Target X or Y.** Once after the update, Apollo mmWave shows an R PRO-1's or MTR-1's Target X and Y in mm instead of the inches Home Assistant picked on US customary units, and a notification titled **Apollo mmWave: Target X and Y now in mm** lists what it switched. It leaves alone a sensor that an automation, a script, or a helper uses. A YAML template sensor, a dashboard card, or another tool that reads them, such as Node-RED, reads mm from then on, 25.4 times the inch value. [Target X and Y units](apollo-mmwave-dashboard.md#target-x-and-y-units) shows how to go back.
+- **Automations on an MSR-1 or MSR-2's zone sensors.** The dashboard now recommends **Radar Target** for automations that cover the whole room, instead of **Any zone**: the zone sensors also need the radar's distance, which can read unknown while someone is there. Keep **Any zone** only where you want to ignore people past End Zone 3.
+- **A card still looks like 2.3.0.** Reload it as [Load the new cards](#load-the-new-cards) shows: **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac) in a browser, or close the Home Assistant app fully and open it again.
+- **Dashboard resources managed in YAML.** Replace both `?v=` addresses with the ones the log warning lists (see [An Apollo card shows an error after an update](#an-apollo-card-shows-an-error-after-an-update)).
+- **Going back to 2.3.0.** Before going back to 2.3.0, turn **Movement history** off on every radar. 2.3.0 neither reads nor deletes the history file, so it would stay on disk and in every later backup, even after you remove the integration. Under 2.3.0, ignore zones act as ordinary zones and no zone holds. A zone you redraw, clear, or undo there loses its type and hold, and 2.3.0 forgets the flip the next time it saves your zones. 2.3.0 also ignores view-only mode, so a view-only zone map shows the full map with its drawing tools again, and on a phone a swipe that starts on the map doesn't scroll the page: remove or replace those cards first. A saved copy that a restore kept stays a dashboard of its own.
+
 ### Updating to Apollo mmWave 2.3.0
 
 In most setups 2.3.0 needs nothing from you. After the restart and a reload, each tab gets the new layout: **Start here** and **Radar setup** at the top, locked sliders, the zone map in your units with the LD2450's cards beside it, and the **Device** card at the bottom. Check these if they apply to you:
 
 - **Zones drawn before 2.2.7 with Home Assistant in US customary units.** Before 2.2.7, the zone map read the radar's positions in inches as if they were millimeters, so the dots sat at or near the sensor. A zone drawn around those dots may not cover where people show up now. Walk through the room, watch the dots, and redraw any zone that's off.
-- **A dashboard you took control of** keeps the cards it had. To get the new ones, see [Use your own layout](#use-your-own-layout).
+- **A dashboard you took control of** keeps the cards it had. To get the new ones, see [If your dashboard is missing cards](#if-your-dashboard-is-missing-cards).
 - **A zone map card you added from the card picker before 2.3.0** keeps the fixed grid saved in its YAML, with no distance labels or range caption. If you didn't choose that grid yourself (the card picker saved `x_min: -6000`, `x_max: 6000`, `y_min: 0`, `y_max: 12000` with `grid_units: mm`), open the card's code editor, delete `grid` and `grid_units`, and set `unit_display: true` to get the map fitted to the radar's view, in your units. A grid you set on purpose can stay.
 - **Dashboard resources managed in YAML.** Replace both `?v=` addresses with the ones the log warning lists (see [An Apollo card shows an error after an update](#an-apollo-card-shows-an-error-after-an-update)).
 
@@ -373,20 +438,26 @@ The dashboard starts with **No Apollo mmWave devices found.** It found no radar 
 Work through these in order:
 
 - If **Dashboard devices** has any devices selected, the dashboard shows only those. Add the missing sensor under **Choose the dashboard's devices** in the integration options, or clear the selection to go back to automatic detection.
-- A dashboard you took control of no longer adds tabs on its own. Add the sensor's cards yourself, or delete the dashboard and add a fresh one from the integration options.
+- A dashboard you took control of no longer adds tabs on its own. Add the sensor's cards yourself, or restore the automatic dashboard as [If your dashboard is missing cards](#if-your-dashboard-is-missing-cards) shows.
 - The dashboard only picks up radars added through the ESPHome integration. A copy of the same sensor that another integration created (a network integration tracking it by its MAC address, for example) doesn't get a tab.
 - A sensor you added a moment ago gets its tab once Home Assistant has registered its entities. It appears on its own, without a page reload.
 - DIY builds that don't report an Apollo model only get a tab while one of their radar entities is live.
 
+### The dashboard is missing cards
+
+A tab without the **Radar setup** card, **LD2450 Controls** (with **Zone Type** and **Multi Target Tracking**), **Zone presence**, or the **Device** card, while your sensor has those settings, is on a saved copy: someone used **Take control** on the dashboard under an older release. Look under **Settings → System → Repairs** for **The Apollo mmWave dashboard is a saved copy**, or in the integration options for **Restore the automatic dashboard**. [If your dashboard is missing cards](#if-your-dashboard-is-missing-cards) explains both, and what to do when neither is there.
+
+If the cards are all there but one looks like an older release, the page still runs the old cards: reload it as [Load the new cards](#load-the-new-cards) shows.
+
 ### A tab says the sensor is offline
 
-The **Start here** card adds **Offline right now.**, and the **Radar setup** card reads **Radar is offline. Its settings are checked once it reconnects.** On an MSR-1, MSR-2, or R PRO-1 tab, the Auto-calibrate card reads **Radar is offline. Calibration needs the radar online and its gate entities enabled.** with its buttons disabled. On an MTR-1 or R PRO-1 tab, the zone map shows no targets until the sensor reconnects. The tab stays so the sensor isn't silently missing, and the cards fill in once it reconnects. Check its power and Wi-Fi, and that it shows as online on the ESPHome integration page. If you replaced or reflashed the sensor under a new name, the old device entry is what's showing as offline: delete the old device under **Settings → Devices & services** and its tab goes away.
+The **Start here** card adds **Offline right now.**, and the **Radar setup** card reads **Radar is offline. Its settings are checked once it reconnects.** On an MSR-1, MSR-2, or R PRO-1 tab, the Auto-calibrate card reads **Radar is offline. Calibration needs the radar online and its gate entities enabled.** with its buttons disabled. On an MTR-1 or R PRO-1 tab, the zone map shows **Radar offline** and no targets until the sensor reconnects. The tab stays so the sensor isn't silently missing, and the cards fill in once it reconnects. Check its power and Wi-Fi, and that it shows as online on the ESPHome integration page. If you replaced or reflashed the sensor under a new name, the old device entry is what's showing as offline: delete the old device under **Settings → Devices & services** and its tab goes away. If the sensor works but its tab still says **Offline right now.**, reload the page: from Apollo mmWave 2.4.0, a tab keeps that note until the page reloads, for example when you opened the dashboard while the radars were reconnecting after a restart.
 
 [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 ### An Apollo card shows an error after an update
 
-After you update Apollo mmWave and restart, a browser that still holds the previous version's files can show the Apollo cards as error boxes that read **Custom element doesn't exist**. Refresh the page. Each release loads its cards under a new versioned address, so a fresh page load picks up the current version. If the error is still there, do a hard refresh with **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac). In the Home Assistant app on a phone or tablet, close the app fully and open it again, then clear its cache if the error stays, as [Load the new cards](#load-the-new-cards) shows. If that doesn't clear it either, check **Settings → System → Logs** for a warning that starts with **Apollo mmWave:** about Lovelace resources. On a system that manages its dashboard resources in YAML, the warning lists the two resource addresses to add by hand.
+After you update Apollo mmWave and restart, a browser that still holds the previous version's files can show the Apollo cards as error boxes that read **Custom element doesn't exist**. Refresh the page. Each release loads its cards under a new versioned address, so a fresh page load picks up the current version. If the error is still there, do a hard refresh with **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac). In the Home Assistant app on a phone or tablet, close the app fully and open it again, then clear its cache if the error stays, as [Load the new cards](#load-the-new-cards) shows. On updates from Apollo mmWave 2.4.0 or later, a card that does load, such as the **Radar setup** card, or a zone map that shows an error instead of its map, says which version the page runs and which one Home Assistant runs, with a **Reload** button when a reload fixes it. If that doesn't clear it either, check **Settings → System → Logs** for a warning that starts with **Apollo mmWave:** about Lovelace resources. On a system that manages its dashboard resources in YAML, the warning lists the two resource addresses to add by hand.
 
 [![Open your Home Assistant instance and show your Home Assistant logs.](https://my.home-assistant.io/badges/logs.svg)](https://my.home-assistant.io/redirect/logs/)
 

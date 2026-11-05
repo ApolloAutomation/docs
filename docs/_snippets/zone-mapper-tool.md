@@ -110,6 +110,10 @@ The card needs to know which X/Y coordinate sensors to track:
 
     Changing the card's units instead also works, but then you need to adjust the grid distances to match, so converting the sensors is the recommended path.
 
+!!! tip "Apollo mmWave does this for you"
+
+    With the Apollo mmWave integration 2.4.0 or newer installed, you can skip the conversion above. Apollo mmWave shows the Target X and Y of an Apollo MTR-1 or R PRO-1 in mm on its own: on a new sensor as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave: Target X and Y now in mm**. Zone Mapper's card reads them in mm then too. Apollo mmWave leaves alone a sensor whose unit you picked in its settings, which you change there, and one that an automation, a script, or a helper uses. For a sensor in use, first change any number it's compared to into mm, 25.4 times as large, then, as an administrator, press **Show Target X and Y in mm** on the **Radar setup** card above its zone map. The button switches only sensors whose unit Home Assistant picked on its own, never one whose unit you picked. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. See [Target X and Y units](/products/general/setup/apollo-mmwave-dashboard.md#target-x-and-y-units).
+
 ### Add zones
 
 1. Click the **Configure** drop-down, then **Zones**.

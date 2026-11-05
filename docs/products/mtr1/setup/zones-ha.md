@@ -6,7 +6,7 @@ description: Set up the three radar zones on your MTR-1 in Home Assistant by ent
 
 !!! tip "Prefer a guided dashboard?"
 
-    The Apollo mmWave integration gives your Apollo MTR-1 its own dashboard tab with a zone map where you draw zones over the radar's live targets, with no Plotly card or YAML to set up. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) walks you through it as a guided alternative to the manual steps below. If you draw zones there, leave **Zone Type** on **Disabled** instead of entering zones below: the dashboard's zone map replaces the radar's built-in zones, and its **Radar setup** card offers **Set Zone Type to Disabled** when it isn't.
+    The Apollo mmWave integration gives your Apollo MTR-1 its own dashboard tab with a zone map where you draw zones over the radar's live targets, with no Plotly card or YAML to set up. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) walks you through it as a guided alternative to the manual steps below. If you draw zones there, leave **Zone Type** on **Disabled** instead of entering zones below: the dashboard's zone map replaces the radar's built-in zones, and its **Radar setup** card offers **Set Zone Type to Disabled** when it isn't. To keep a fan or a curtain from turning those zones on, draw an [ignore zone](/products/mtr1/setup/apollo-mmwave-dashboard.md#ignore-a-spot-or-hold-a-zone) over it on the map.
 
 This guide shows you how to set up your MTR-1's three zones by entering the X and Y coordinates for each one. First you add a card to your dashboard that shows the radar's live targets, then you use it to work out the coordinates for each zone, in millimeters. You can enter the values in Home Assistant, as shown below, or directly on the device's web page by visiting its IP address or hostname.local.
 
@@ -55,6 +55,10 @@ The target sensors and zone settings are on your MTR-1's page in the ESPHome int
 !!! note "Metric users can skip this section"
 
     If your Home Assistant uses the metric system, go straight to [Enter your zones](#enter-your-zones).
+
+!!! tip "Apollo mmWave does this for you"
+
+    With the Apollo mmWave integration 2.4.0 or newer, you can skip this section too. Apollo mmWave shows your MTR-1's Target X and Y in mm on its own: on a new MTR-1 as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave: Target X and Y now in mm**. It leaves alone a sensor whose unit you picked in its settings, which you change there, and one that an automation, a script, or a helper uses. For a sensor in use, first change any number it's compared to into mm, 25.4 times as large, then, as an administrator, press **Show Target X and Y in mm** on the **Radar setup** card above the zone map. The button switches only sensors whose unit Home Assistant picked on its own, never one whose unit you picked. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. The [Apollo mmWave dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#target-x-and-y-units) has the details.
 
 If you use the imperial system, your Target 1-3 X and Y sensors report in inches (in). For the targets to show up correctly on the card, change all three X and all three Y target sensors to millimeters (mm).
 
