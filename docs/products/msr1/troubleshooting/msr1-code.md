@@ -1,12 +1,12 @@
 ---
 title: Factory re-flash MSR-1
-description: "Reflash the MSR-1 back to factory firmware from a Chromium based browser when it stops responding."
+description: "Reflash the MSR-1 back to factory firmware from Chrome, Edge, or Firefox when it stops responding."
 ---
 # Factory re-flash MSR-1
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
-    This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
+    This factory re-flash needs to be done in Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
 
 If your device has already been connected to Home Assistant please <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 

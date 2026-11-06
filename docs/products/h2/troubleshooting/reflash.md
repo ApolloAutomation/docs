@@ -6,7 +6,7 @@ description: Step by step guide for re-flashing the H-2 back to factory firmware
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
-    This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
+    This factory re-flash needs to be done in Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
 
 1\. Disconnect your H-2 from power. With the device facing you, locate the boot button. It’s the small black button on the right.
 
@@ -16,7 +16,7 @@ description: Step by step guide for re-flashing the H-2 back to factory firmware
 
 ![Holding the boot button on the H-2 while plugging a USB-C cable into it](/assets/h-2-boot-mode-method-1-boot-button.webp)
 
-4\. Open the Apollo H-2 installer with the button below, using a Chromium-based browser such as Chrome or Edge. Under **Choose your firmware**, click **Smart (Wi-Fi)** to join your Wi-Fi and Home Assistant, or **Basic (No Wi-Fi)** to go back to the firmware the ornament ships with. Then click **Connect & Install**, select the open com port, and click **Connect**.
+4\. Open the Apollo H-2 installer with the button below, using Chrome, Edge, or a recent version of Firefox. Under **Choose your firmware**, click **Smart (Wi-Fi)** to join your Wi-Fi and Home Assistant, or **Basic (No Wi-Fi)** to go back to the firmware the ornament ships with. Then click **Connect & Install**, select the open com port, and click **Connect**.
 
 [Apollo H-2 installer](https://install.apolloautomation.com/#/h-2){   .md-button .md-button--primary }
 

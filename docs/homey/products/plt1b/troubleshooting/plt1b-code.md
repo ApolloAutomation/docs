@@ -8,7 +8,7 @@ If your PLT-1B becomes unresponsive and you've tried the other troubleshooting s
 
 !!! note "Before you start"
 
-    - Use Chrome, Edge, or another Chromium-based browser.
+    - Use Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
     - If your PLT-1B has already been added to Homey, <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before you continue.
 
 !!! warning "Remove the battery"

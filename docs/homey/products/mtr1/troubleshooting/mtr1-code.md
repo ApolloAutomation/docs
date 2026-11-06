@@ -6,7 +6,7 @@ description: "Step by step guide for re-flashing the MTR-1 back to factory firmw
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
-    This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
+    This factory re-flash needs to be done in Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
 
 If your device has already been added to Homey, please <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before continuing.
 

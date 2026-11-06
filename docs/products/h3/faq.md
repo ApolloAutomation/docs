@@ -4,7 +4,7 @@ description: "Frequently asked questions about the H-3."
 ---
 1\. **What songs are pre-loaded on the Apollo H-3?**
 
-* The H-3 comes with six holiday songs across the three buttons on the ornament. Press a button to play its first song, or hold it for about a second to play its second song. Button 1 plays Frosty the Snowman and Blue Christmas, button 2 plays Rudolph the Red-Nosed Reindeer and Do You Want to Build a Snowman, and button 3 plays Jingle Bells and Barbie Girl. Each song is paired with its own LED effect.
+* The H-3 comes with six holiday songs across the three buttons on the ornament. Press a button to play its first song. Double press it or hold it for about a second to play its second song. Button 1 plays Frosty the Snowman and Blue Christmas, button 2 plays Rudolph the Red-Nosed Reindeer and Do You Want to Build a Snowman, and button 3 plays Jingle Bells and Barbie Girl. Each song is paired with its own LED effect.
 
 2\. **Can I customize the songs and LED effects?**
 
@@ -16,11 +16,11 @@ description: "Frequently asked questions about the H-3."
 
 4\. **How do I activate the pre-loaded songs?**
 
-* Press one of the three buttons on the ornament. If the ornament is asleep, the same press wakes it and plays the song.
+* Make sure the switch on the back is set to **On**, then press one of the three buttons on the front of the snowman. If the ornament is asleep, the same press wakes it and plays the song. A double press only works while the ornament is awake, so if it's asleep, hold the button for about a second to play the second song.
 
 5\. **What does purchasing the Apollo H-3 support?**
 
-* 100% of the profits from the H-3 go to <a href="https://casaoflexington.org/" target="_blank" rel="noreferrer nofollow noopener">CASA of Lexington</a>, who advocate for children in the family court system, and to the <a href="https://www.openhomefoundation.org/" target="_blank" rel="noreferrer nofollow noopener">Open Home Foundation</a>. This is our way of giving back as a thank you for the support we receive from our customers, friends, and family.
+* 100% of the profit from the H-3 goes to <a href="https://www.stjude.org/" target="_blank" rel="noreferrer nofollow noopener">St. Jude Children's Research Hospital</a>. This is our way of giving back as a thank you for the support we receive from our customers, friends, and family. You can learn more about <a href="https://apolloautomation.com/pages/year-in-review-2026" target="_blank" rel="noreferrer nofollow noopener">our year and the charities</a>.
 
 6\. **Can the Apollo H-3 be used as a standard holiday ornament?**
 
@@ -32,7 +32,7 @@ description: "Frequently asked questions about the H-3."
 
 8\. **Does the ornament require any additional power source?**
 
-* The H-3 runs on two AA batteries, so you can hang it wherever you like. We suggest non-rechargeable AAs. It can also be powered by the USB-C port.
+* The H-3 runs on two AA batteries, so you can hang it wherever you like. We suggest non-rechargeable AAs. It can also be powered by the USB-C port. Please use all battery safety precautions, and we suggest removing the batteries if you store the ornament for long periods of time.
 
 9\. **Can I gift the Apollo H-3 to friends or family?**
 

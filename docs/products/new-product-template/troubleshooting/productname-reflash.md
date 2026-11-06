@@ -6,7 +6,7 @@ description: Step by step guide for reflashing The PUMP-1.
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
-    This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
+    This factory re-flash needs to be done in Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
 
 1\. Disconnect your PUMP-1 from power. With the device facing you, locate the boot button. It’s the button on the right.
 

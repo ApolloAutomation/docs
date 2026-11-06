@@ -1,6 +1,6 @@
 ---
 title: Factory re-flash AIR-1
-description: "Re-flash your AIR-1 back to its factory firmware from a Chromium-based browser, then set it up in Homey again."
+description: "Re-flash your AIR-1 back to its factory firmware from Chrome, Edge, or Firefox, then set it up in Homey again."
 ---
 # Factory re-flash AIR-1
 
@@ -8,7 +8,7 @@ If your Apollo AIR-1 becomes unresponsive and you've exhausted the other trouble
 
 !!! note "Before you start"
 
-    - Use Chrome, Edge, or another Chromium-based browser. The factory re-flash needs one.
+    - Use Chrome, Edge, another Chromium-based browser, or a recent version of Firefox. The factory re-flash needs one of these.
     - If your AIR-1 has already been added to Homey, <a href="https://wiki.apolloautomation.com/homey/products/general/troubleshooting/removing-device-from-homey/" target="_blank" rel="noreferrer nofollow noopener">remove it from Homey</a> before you continue.
 
 1\. <a href="https://wiki.apolloautomation.com/homey/products/air1/troubleshooting/air1-boot-mode/" target="_blank" rel="noreferrer nofollow noopener">Put your AIR-1 in boot mode</a>: hold down the boot button, then plug in the USB cable.
