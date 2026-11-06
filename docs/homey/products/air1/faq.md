@@ -65,7 +65,7 @@ description: "Answers to common questions about the AIR-1 air quality sensor wit
 
 14\. **How do I update the firmware on the AIR-1?**
 
-* Homey doesn't install firmware updates: the Apollo Automation app has no update action. On current firmware, the AIR-1's own web page has a **Firmware Update** button that downloads and installs the latest release over Wi-Fi. Open `http://apollo-air-1-xxxxxx.local` in a browser, where `xxxxxx` is the last 6 characters of the device's name in Homey, and press it. The sensor needs internet access to download the update.
+* Homey doesn't install firmware updates: the Apollo Automation app has no update action. On current firmware, the AIR-1's own web page has a **Firmware Update** button that downloads and installs the latest release over Wi-Fi. Open `http://apollo-air-1-xxxxxx.local` in a browser, where `xxxxxx` is the last 6 characters of the sensor's MAC address, and press it. With the Apollo Automation app 2.4.5 or newer, the device's settings in Homey show the full address under **Device information**. The sensor needs internet access to download the update.
 * You can also flash the latest firmware over USB with the Apollo installer, as described in [Factory re-flash AIR-1](../troubleshooting/air1-code/).
 
 15\. **How do I calibrate the CO2 sensor?**

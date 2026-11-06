@@ -88,7 +88,7 @@ description: "Answers to common questions about the MTR-1 multi-target mmWave se
 19\. **What is the reporting frequency of the MTR-1’s sensors?**
 
 * The radar reports as people move. The other sensors report on intervals set in the firmware: by default, CO2 every 60 seconds and pressure and temperature every 30 seconds. Homey has no setting for these intervals.
-* The light and UV interval is the one you can change without editing the firmware: set **LTR390 Update Interval** (1 to 300 seconds, 60 by default) on the sensor's own web page. In a browser, open `http://apollo-mtr-1-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the device's name in Homey. Changing the other intervals means editing the firmware with ESPHome.
+* The light and UV interval is the one you can change without editing the firmware: set **LTR390 Update Interval** (1 to 300 seconds, 60 by default) on the sensor's own web page. In a browser, open `http://apollo-mtr-1-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the sensor's MAC address. With the Apollo Automation app 2.4.5 or newer, the device's settings in Homey show the full address under **Device information**. Changing the other intervals means editing the firmware with ESPHome.
 
 20\. **Can I use multiple MTR-1 sensors in my smart home setup?**
 
