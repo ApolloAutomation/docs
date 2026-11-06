@@ -20,13 +20,15 @@ You can also run the ornament from a USB-C wall plug instead of batteries.
 
 Slide the switch on the back of the ornament to **On**. A new ornament lights all of its LEDs green for about 5 seconds, then turns them off. That green means the firmware started and every LED works.
 
+![Back of the H-3 with the On/Off switch on the lower right, beside the battery holder](/assets/h-3-back-boot-reset-switch.jpg)
+
 About 15 seconds after it powers on, the ornament goes to sleep to save its batteries. If the ornament is asleep, press one of the buttons on the front to wake it. That press also plays the button's song.
 
 **3\. Play Holiday Songs**
 
 Press one of the three buttons on the front of the snowman to play its first song. To play its second song, double press the button or hold it for about a second:
 
-![Front of the H-3 snowman with its three buttons running down the body](/assets/h-3-hero.jpg)
+![Front of the H-3 snowman with its three buttons running down the body](/assets/h-3-front.jpg)
 
 | Button | Single press | Double press or hold |
 | --- | --- | --- |
