@@ -44,7 +44,7 @@ description: "Answers to common questions about the PLT-1 plant sensor with Home
 
 9\. **How often does the PLT-1 send sensor data?**
 
-* Most readings update every 60 seconds by default. The intervals are set in the sensor's firmware, and Homey has no setting for them. The light and UV interval is the one you can change without editing the firmware: set **LTR390 Update Interval** (1 to 300 seconds) on the sensor's own web page. In a browser, open `http://apollo-plt-1-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the device's name in Homey. Changing the other intervals means editing the firmware with ESPHome.
+* Most readings update every 60 seconds by default. The intervals are set in the sensor's firmware, and Homey has no setting for them. The light and UV interval is the one you can change without editing the firmware: set **LTR390 Update Interval** (1 to 300 seconds) on the sensor's own web page. In a browser, open `http://apollo-plt-1-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the sensor's MAC address. With the Apollo Automation app 2.4.5 or newer, the device's settings in Homey show the full address under **Device information**. Changing the other intervals means editing the firmware with ESPHome.
 
 10\. **Can I customize the PLT-1’s functionality?**
 
