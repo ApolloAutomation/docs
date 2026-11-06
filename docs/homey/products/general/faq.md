@@ -18,7 +18,7 @@ description: "Answers to common questions about Apollo Automation sensors with H
 
 ## 3\. My MSR-2 is triggering and no one is there.
 
-* We have seen this happen before. First, restart the radar with **Restart radar** under **Maintenance** in the device's **Settings** in the Homey app. If that doesn't help, factory reset the radar with **Factory Reset Radar** on the sensor's own web page: in a browser, open `http://apollo-msr-2-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the device's name in Homey. If it still triggers, try a [factory re-flash](../../msr2/troubleshooting/msr2-code/). We also see success with users re-seating their LD2410B mmWave sensor.
+* We have seen this happen before. First, restart the radar with **Restart radar** under **Maintenance** in the device's **Settings** in the Homey app. If that doesn't help, factory reset the radar with **Factory Reset Radar** on the sensor's own web page: in a browser, open `http://apollo-msr-2-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the sensor's MAC address. With the Apollo Automation app 2.4.5 or newer, the device's settings in Homey show the full address under **Device information**. If it still triggers, try a [factory re-flash](../../msr2/troubleshooting/msr2-code/). We also see success with users re-seating their LD2410B mmWave sensor.
 
 ---
 
@@ -30,7 +30,7 @@ description: "Answers to common questions about Apollo Automation sensors with H
 
 ## 5\. My lux sensor doesn't seem to be working, how do I fix it?
 
-* The light reading updates every 60 seconds by default, which isn't great for flows that react to lux values. On the MSR-2, MTR-1, and PLT-1, shorten it to a more responsive 3 to 5 seconds with **LTR390 Update Interval** on the sensor's own web page. In a browser, open the sensor's address, such as `http://apollo-mtr-1-xxxxxx.local` for an MTR-1, where `xxxxxx` is the last 6 characters of the device's name in Homey. On the MSR-2, the page hides this setting at first, so click **Show All** to list it. Homey has no setting for it.
+* The light reading updates every 60 seconds by default, which isn't great for flows that react to lux values. On the MSR-2, MTR-1, and PLT-1, shorten it to a more responsive 3 to 5 seconds with **LTR390 Update Interval** on the sensor's own web page. In a browser, open the sensor's address, such as `http://apollo-mtr-1-xxxxxx.local` for an MTR-1, where `xxxxxx` is the last 6 characters of the sensor's MAC address. With the Apollo Automation app 2.4.5 or newer, the device's settings in Homey show the full address under **Device information**. On the MSR-2, the page hides this setting at first, so click **Show All** to list it. Homey has no setting for it.
 * On other sensors, the interval is fixed in the firmware, and changing it means editing the firmware with ESPHome. If you also run Home Assistant, [this short guide](../../../../products/general/tutorials/how-to-edit-your-sensor's-lux-update-interval/) shows how.
 
 ---
