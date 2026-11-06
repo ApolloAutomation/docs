@@ -470,6 +470,17 @@ nav:
                 - Factory Re-Flash H-2: products/h2/troubleshooting/reflash.md
                 - H-2 Boot Mode: products/h2/troubleshooting/boot-mode.md
               - Reviews: products/h2/h2-reviews.md
+          - H-3:
+              - Introduction: products/h3/introduction.md
+              - FAQ: products/h3/faq.md
+              - Getting Started: products/h3/setup/getting-started.md
+              - Additional Info:
+                - How To Wake Up Your Sensor: products/h3/battery-sensors/wake-up-battery-sensor.md
+              - Examples:
+                - Holiday Songs: products/h3/examples/holiday-songs.md
+              - Troubleshooting:
+                - Factory Re-Flash H-3: products/h3/troubleshooting/reflash.md
+                - H-3 Boot Mode: products/h3/troubleshooting/boot-mode.md
       - M-1 (LED Matrix):
           - Introduction: products/m1/introduction.md
           - FAQ: products/m1/faq.md

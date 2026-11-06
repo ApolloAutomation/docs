@@ -8,7 +8,7 @@ If your Apollo AIR-1 becomes unresponsive and you've exhausted the other trouble
 
 !!! note "Before you start"
 
-    - Do the factory re-flash in Chrome, Edge, or another Chromium-based browser.
+    - Do the factory re-flash in Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
     - If your AIR-1 has already been connected to Home Assistant, <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
 ## Re-flash the factory firmware

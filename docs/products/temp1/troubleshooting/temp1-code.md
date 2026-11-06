@@ -1,6 +1,6 @@
 ---
 title: Factory re-flash TEMP-1
-description: Step-by-step guide to re-flashing the TEMP-1 back to its factory firmware from Chrome, Edge, or another Chromium-based browser.
+description: Step-by-step guide to re-flashing the TEMP-1 back to its factory firmware from Chrome, Edge, or Firefox.
 ---
 # Factory re-flash TEMP-1
 
@@ -8,7 +8,7 @@ If your Apollo TEMP-1 becomes unresponsive and you've exhausted the other troubl
 
 !!! note "Before you start"
 
-    - Use Chrome, Edge, or another Chromium-based browser. The installer needs one of them.
+    - Use Chrome, Edge, another Chromium-based browser, or a recent version of Firefox. The installer needs one of them.
     - If your TEMP-1 has already been connected to Home Assistant, <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
 Follow these steps to put your TEMP-1 in boot mode, flash the factory firmware from the installer page, and set it up again.

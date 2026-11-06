@@ -1,6 +1,6 @@
 ---
 title: Factory re-flash H-1
-description: Step-by-step guide to re-flashing the H-1 back to its factory firmware from Chrome or Edge.
+description: Step-by-step guide to re-flashing the H-1 back to its factory firmware from Chrome, Edge, or Firefox.
 ---
 # Factory re-flash H-1
 
@@ -8,7 +8,7 @@ If your Apollo H-1 becomes unresponsive and you've exhausted the other troublesh
 
 !!! note "Before you start"
 
-    - Use Chrome or Edge. The install utility needs to run from one of them.
+    - Use Chrome, Edge, or a recent version of Firefox. The install utility needs to run from one of them.
     - Already added this H-1 to Home Assistant? [Remove it from Home Assistant](../../general/troubleshooting/removing-device-from-home-assistant/) first, then come back here.
 
 Follow these steps to flash fresh firmware onto your H-1 and find it again in Home Assistant.

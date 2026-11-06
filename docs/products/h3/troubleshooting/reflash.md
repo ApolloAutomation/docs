@@ -21,6 +21,8 @@ description: "Step by step guide for re-flashing the H-3 back to factory firmwar
 
 !!! warning "Power cycle your device before doing anything else!"
 
-    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode!
+    Your device is still in boot mode and needs to be power cycled aka power removed to make it boot in a normal mode! Unplug the USB-C cable, then plug it back in or put the batteries back in.
+
+<video src="/assets/h-3-unplug-usb-c.mp4" autoplay loop muted playsinline aria-label="A USB-C cable unplugged from the port on the back of the H-3"></video>
 
 [Head to the Getting Started article to set up your H-3 as a new device!](https://wiki.apolloautomation.com/products/h3/setup/getting-started/){                .md-button .md-button--primary }

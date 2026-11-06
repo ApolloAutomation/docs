@@ -6,7 +6,7 @@ description: Step by step guide for reflashing The BTN-1.
 
 !!! info "If your device becomes unresponsive and you've exhausted the other troubleshooting methods you can reflash the factory firmware by following the steps below."
 
-    This factory re-flash needs to be done in Chrome, Edge, or another Chromium based browser.
+    This factory re-flash needs to be done in Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
 
 1\. Plug in a USB cable that supports power and data into your computer and connect the other end to your BTN-1.
 
@@ -28,7 +28,7 @@ description: Step by step guide for reflashing The BTN-1.
 
 ![Animation with step captions: press and hold boot on the BTN-1, keep holding it while you tap reset, then let go of boot](/assets/btn-1-boot-mode-method-2.webp)
 
-4\. Open the <a href="https://install.apolloautomation.com/#/btn-1" target="_blank" rel="noreferrer nofollow noopener">Apollo BTN-1 installer</a> in a Chromium-based browser such as Chrome or Edge and click **Connect & Install**. Select the open com port and click **Connect**.
+4\. Open the <a href="https://install.apolloautomation.com/#/btn-1" target="_blank" rel="noreferrer nofollow noopener">Apollo BTN-1 installer</a> in Chrome, Edge, or a recent version of Firefox and click **Connect & Install**. Select the open com port and click **Connect**.
 
 ![BTN-1 page of the Apollo installer with the Connect & Install button outlined in red](/assets/installer-btn-1.png)
 
