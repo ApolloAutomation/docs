@@ -32,9 +32,9 @@ Press one of the three buttons on the front of the snowman to play its first son
 
 | Button | Single press | Double press or hold |
 | --- | --- | --- |
-| Button 1 | Frosty the Snowman | Blue Christmas |
-| Button 2 | Rudolph the Red-Nosed Reindeer | Do You Want to Build a Snowman |
-| Button 3 | Jingle Bells | Barbie Girl |
+| Button 1 (top) | Frosty the Snowman | Blue Christmas |
+| Button 2 (middle) | Rudolph the Red-Nosed Reindeer | Do You Want to Build a Snowman |
+| Button 3 (bottom) | Jingle Bells | Barbie Girl |
 
 A double press only works while the ornament is awake. If it's asleep, hold the button instead. Pressing a button during a song switches to the new song.
 

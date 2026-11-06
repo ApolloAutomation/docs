@@ -4,7 +4,7 @@ description: "Frequently asked questions about the H-3."
 ---
 1\. **What songs are pre-loaded on the Apollo H-3?**
 
-* The H-3 comes with six holiday songs across the three buttons on the ornament. Press a button to play its first song. Double press it or hold it for about a second to play its second song. Button 1 plays Frosty the Snowman and Blue Christmas, button 2 plays Rudolph the Red-Nosed Reindeer and Do You Want to Build a Snowman, and button 3 plays Jingle Bells and Barbie Girl. Each song is paired with its own LED effect.
+* The H-3 comes with six holiday songs across the three buttons on the ornament. Press a button to play its first song. Double press it or hold it for about a second to play its second song. Button 1 (top) plays Frosty the Snowman and Blue Christmas, button 2 (middle) plays Rudolph the Red-Nosed Reindeer and Do You Want to Build a Snowman, and button 3 (bottom) plays Jingle Bells and Barbie Girl. Each song is paired with its own LED effect.
 
 2\. **Can I customize the songs and LED effects?**
 

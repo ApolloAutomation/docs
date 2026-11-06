@@ -22,9 +22,9 @@ Each button has two songs, and each song comes with its own LED effect:
 
 | Button | Single press | Double press or hold |
 | --- | --- | --- |
-| Button 1 | Frosty the Snowman | Blue Christmas |
-| Button 2 | Rudolph the Red-Nosed Reindeer | Do You Want to Build a Snowman |
-| Button 3 | Jingle Bells | Barbie Girl |
+| Button 1 (top) | Frosty the Snowman | Blue Christmas |
+| Button 2 (middle) | Rudolph the Red-Nosed Reindeer | Do You Want to Build a Snowman |
+| Button 3 (bottom) | Jingle Bells | Barbie Girl |
 
 !!! tip "Hold the button when the ornament is asleep"
 
