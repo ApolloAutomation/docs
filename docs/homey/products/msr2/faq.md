@@ -50,7 +50,7 @@ description: "Answers to common questions about the MSR-2 mmWave sensor with Hom
 10\. **How do I adjust the sensitivity of the presence detection?**
 
 * In the device's **Settings** in the Homey app, the **Radar tuning (MSR-1 / MSR-2)** group has **Radar timeout** (how long presence holds after the last detection), **Radar max move distance gate**, and **Radar max still distance gate**. Each gate is 0.75 m, and gate 8 reaches 6 m, so lowering the max gates stops the radar from reacting to motion farther away.
-* Per-gate sensitivity (the move and still thresholds for each gate) isn't in Homey. Tune it with the [HLK Radar Tool app](../setup/zones-hlk/), or on the sensor's own web page: in a browser, open `http://apollo-msr-2-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the device's name in Homey.
+* Per-gate sensitivity (the move and still thresholds for each gate) isn't in Homey. Tune it with the [HLK Radar Tool app](../setup/zones-hlk/), or on the sensor's own web page: in a browser, open `http://apollo-msr-2-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the sensor's MAC address. With the Apollo Automation app 2.4.5 or newer, the device's settings in Homey show the full address under **Device information**.
 
 11\. **Does the mmWave sensor detect through walls?**
 
