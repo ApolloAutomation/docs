@@ -61,7 +61,7 @@ description: "Answers to common questions about the AIR-1 air quality sensor wit
 13\. **How can I use the RGB LED for notifications?**
 
 * The RGB LED is the AIR-1's light in Homey. Turn it on or off, dim it, or change its color from the device or in a flow: for example, turn it red when air quality is poor, green on trash night, or blue when CO2 levels are safe.
-* On current firmware, the LED can also follow air quality by itself. Choose **NowCast AQI**, **CO2**, or **VOC Index** under **Air Quality LED Source** on the sensor's own web page: in a browser, open `http://apollo-air-1-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the device's name in Homey. This setting isn't in Homey.
+* On current firmware, the LED can also follow air quality by itself. Choose **NowCast AQI**, **CO2**, or **VOC Index** under **Air Quality LED Source** on the sensor's own web page: in a browser, open `http://apollo-air-1-xxxxxx.local`, where `xxxxxx` is the last 6 characters of the sensor's MAC address. With the Apollo Automation app 2.4.5 or newer, the device's settings in Homey show the full address under **Device information**. This setting isn't in Homey.
 
 14\. **How do I update the firmware on the AIR-1?**
 

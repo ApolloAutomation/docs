@@ -58,7 +58,9 @@ The **U.S. Environmental Protection Agency (EPA)**<a href="https://www.airnow.go
 
 <a href="https://esphome.io/components/sensor/aqi/" target="_blank" rel="noreferrer nofollow noopener">NowCast AQI</a> takes your PM2.5 and PM10 readings and converts them into a single 0–500 number using the EPA's formula. That number maps directly to the AQI categories in the table above: bigger = worse.
 
-The AIR-1 calculates this automatically, and the Apollo Automation Homey app shows it as NowCast AQI on your AIR-1 device in Homey.
+The AIR-1 calculates this automatically on firmware 26.3.2.1 and newer, and the Apollo Automation Homey app shows it as **NowCast AQI** on your AIR-1. To use it in a flow, pick your AIR-1 under **When**, not the Apollo Automation app, and choose **NowCast AQI changed**.
+
+If your AIR-1 doesn't show NowCast AQI, update its firmware: press **Firmware Update** on the sensor's own web page. With the Apollo Automation app 2.4.5 or newer, the device's settings in Homey show that page's address under **Device information**.
 
 !!! tip "NowCast AQI is easier to automate and understand than raw PM"
 
