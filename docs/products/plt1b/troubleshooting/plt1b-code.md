@@ -1,6 +1,6 @@
 ---
 title: Factory re-flash PLT-1B
-description: Re-flash your PLT-1B with its factory firmware from a Chromium-based browser when the device stops responding.
+description: Re-flash your PLT-1B with its factory firmware from Chrome, Edge, or Firefox when the device stops responding.
 ---
 # Factory re-flash PLT-1B
 
@@ -8,7 +8,7 @@ If your Apollo PLT-1B becomes unresponsive and you've exhausted the other troubl
 
 !!! note "Before you start"
 
-    * Do the re-flash in Chrome, Edge, or another Chromium-based browser.
+    * Do the re-flash in Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
     * If your device has already been connected to Home Assistant, <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
 !!! warning "Remove the battery"

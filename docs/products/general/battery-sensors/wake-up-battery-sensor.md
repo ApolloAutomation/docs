@@ -2,7 +2,7 @@
 title: Apollo battery devices - Wake up battery device.
 description: How to wake up your Apollo device which is currently sleeping.
 ---
-To wake a sleeping Apollo battery sensor, press the reset button. A BTN-1 also wakes when you press Button 1, 2, 3, or 4, and an H-1 or H-2 wakes when you press a gold song button. The boot button can't wake a sleeping device. Select your device below for the button locations.
+To wake a sleeping Apollo battery sensor, press the reset button. A BTN-1 also wakes when you press Button 1, 2, 3, or 4, an H-1 or H-2 wakes when you press a gold song button, and an H-3 wakes when you press one of the song buttons on its front. The boot button can't wake a sleeping device. Select your device below for the button locations.
 
 === "TEMP-1B"
 
@@ -73,6 +73,18 @@ To wake a sleeping Apollo battery sensor, press the reset button. A BTN-1 also w
     ![H-2 snowflake-shaped circuit board with arrows marking the Reset and Boot buttons](/assets/h-2-reset-and-boot-buttons-labeled.png)
 
     Button locations: [H-2 boot mode](https://wiki.apolloautomation.com/products/h2/troubleshooting/boot-mode/).
+
+=== "H-3"
+
+    **Method 1: Reset button.** Press and release the reset (right) button on the back to restart the device.
+
+    **Method 2: Song buttons.** Press and release any of the three song buttons on the front of the H-3. The H-3 wakes and plays that button's song.
+
+    The boot (left) button can't wake a sleeping H-3. Once the H-3 is awake, you can use the boot button to keep it awake, as described below.
+
+    ![Back of the H-3 with the BOOT button to the left of the USB-C port and the RESET button to the right](/assets/h-3-back-boot-reset-switch.jpg)
+
+    Button locations: [H-3 boot mode](https://wiki.apolloautomation.com/products/h3/troubleshooting/boot-mode/).
 
 Your device is now awake, but it will not stay awake on its own yet. Click the **Prevent Sleep** button on your device page in Home Assistant, or directly on the device web server such as plt-1.local or its IP address.
 

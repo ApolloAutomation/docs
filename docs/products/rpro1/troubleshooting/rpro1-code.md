@@ -1,6 +1,6 @@
 ---
 title: Factory re-flash R PRO-1
-description: Re-flash your R PRO-1 with its factory firmware from a Chromium-based browser when the device stops responding.
+description: Re-flash your R PRO-1 with its factory firmware from Chrome, Edge, or Firefox when the device stops responding.
 ---
 # Factory re-flash R PRO-1
 
@@ -8,7 +8,7 @@ If your Apollo R PRO-1 becomes unresponsive and you've exhausted the other troub
 
 !!! note "Before you start"
 
-    * Do this factory re-flash in Chrome, Edge, or another Chromium-based browser.
+    * Do this factory re-flash in Chrome, Edge, another Chromium-based browser, or a recent version of Firefox.
     * If your device has already been connected to Home Assistant, <a href="https://wiki.apolloautomation.com/products/general/troubleshooting/removing-device-from-home-assistant" target="_blank" rel="noreferrer nofollow noopener">remove it from the ESPHome integration</a> and the ESPHome Device Builder before continuing.
 
 1\. Put your R PRO-1 in boot mode. The boot button is on the bottom right of the board, so first unplug the R PRO-1, remove the back, and take the board out of the case. The <a href="https://wiki.apolloautomation.com/products/rpro1/troubleshooting/rpro1-boot-mode/" rel="noreferrer nofollow">boot mode guide</a> shows each part.
