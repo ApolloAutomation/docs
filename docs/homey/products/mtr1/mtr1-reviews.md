@@ -4,7 +4,7 @@ description: "Video and written reviews of the Apollo MTR-1 from YouTubers and s
 ---
 # MTR-1 reviews
 
-These creators have reviewed the Apollo MTR-1. Each review below is a YouTube video, except Smart Home Scene, which is a written article.
+These creators have reviewed the Apollo MTR-1. Each review below is a YouTube video, except Smart Home Scene and DomotikPro, which are written articles.
 
 ## Home Tech Innovations
 
@@ -25,3 +25,7 @@ These creators have reviewed the Apollo MTR-1. Each review below is a YouTube vi
 ## Michael Leen
 
 [Watch the Michael Leen review on YouTube](https://www.youtube.com/watch?v=7qFvqRw1uds)
+
+## DomotikPro
+
+[Read the DomotikPro review (in Italian)](https://domotikpro.it/guida/apollo-mtr-1-radar-tracking-home-assistant-recensione)

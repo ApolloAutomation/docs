@@ -4,7 +4,7 @@ description: "Video and written reviews of the Apollo MSR-2 from YouTubers and s
 ---
 # MSR-2 reviews
 
-These creators have reviewed the Apollo MSR-2. Each review below is a YouTube video, except Smart Home Scene, which is a written article.
+These creators have reviewed the Apollo MSR-2. Each review below is a YouTube video, except Smart Home Scene and DomotikPro, which are written articles.
 
 ## Simon Says Home Assistant
 
@@ -29,3 +29,7 @@ These creators have reviewed the Apollo MSR-2. Each review below is a YouTube vi
 ## Michael Leen
 
 [Watch "Don't Be Fooled By Its Size: Apollo MSR-2 mmWave Multisensor" on YouTube](https://www.youtube.com/watch?v=VdVR8Gs002Q)
+
+## DomotikPro
+
+[Read "Recensione Apollo MSR-2: il radar di presenza piccolo come un Tic Tac per Home Assistant" on DomotikPro (in Italian)](https://domotikpro.it/guida/apollo-msr-2-radar-presenza-home-assistant-recensione)
