@@ -15,6 +15,8 @@ Open your M-1 in a browser and tap **Info**. The version is at the top.
 | 16.0.1 or newer | WLED |
 | 14.5.1 | WLED-MM |
 
+If the page that opens is titled **Game Day Scoreboard**, your M-1 runs [Game Day Scoreboard](#game-day-scoreboard), and its **Device** card shows the version.
+
 ## WLED
 
 The stock, upstream WLED release, and what new M-1 units ship with. HUB75 matrix support is now built into WLED itself, so the M-1 no longer needs a fork to drive the panel.
@@ -37,6 +39,6 @@ On a Rev6 controller you can move to stock WLED over the air and keep your setti
 
 ## Game Day Scoreboard
 
-[Game Day Scoreboard](https://github.com/ApolloAutomation/gameday-scoreboard-main) turns the M-1 into a live sports scoreboard for your team: the next game, the live score and clock, and a splash in your team's color when they score (in basketball, when they win), across the NFL, college football, MLB, the NBA, the WNBA, men's college basketball, the NHL, MLS, and the Premier League. It reads the scores from ESPN by itself, serves its own settings page, and shows up in Home Assistant as an ESPHome device. It needs a **Rev6** controller.
+[Game Day Scoreboard](https://github.com/ApolloAutomation/gameday-scoreboard-main) turns the M-1 into a live sports scoreboard for your teams: the next game, the live score and clock, and a splash with the team's logo and points when it scores or makes a big play. It follows the NFL, college football, MLB, minor league baseball, the NBA, the WNBA, men's college basketball, the NHL, the AHL, the ECHL, MLS, and the Premier League, plus golf's PGA Tour and LPGA Tour, Formula 1, and the NASCAR Cup Series. It reads the scores by itself, serves its own settings page, runs on one to four panels, and shows up in Home Assistant as an ESPHome device. It needs a **Rev6** controller.
 
 [Set Up Game Day Scoreboard](/products/m1/setup/getting-started-m1-game-day.md){: .md-button }

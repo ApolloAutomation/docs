@@ -1,6 +1,6 @@
 ---
 title: Getting started (Game Day Scoreboard)
-description: Turn your M-1 into a live sports scoreboard that follows your team from ESPN, with its own settings page and Home Assistant support.
+description: Turn your M-1 into a live sports scoreboard that follows your teams, with its own settings page, up to four panels, and Home Assistant support.
 ---
 # Getting started (Game Day Scoreboard)
 
@@ -8,15 +8,16 @@ description: Turn your M-1 into a live sports scoreboard that follows your team 
 
     M-1 units ship with WLED. If you want to keep it, the [Getting Started page](/products/m1/setup/getting-started-m1.md) covers it. You can come back to Game Day Scoreboard any time, and go back to WLED the same way.
 
-Game Day Scoreboard turns your Apollo M-1 LED Matrix into a scoreboard for your team. Before a game it shows the matchup, both records, the start time, the betting line, and the TV network. Once the game starts it switches to the live score and game clock, fills the panel with a splash in your team's color when they score (in basketball, when they win), and stays on the final for a while before it looks up the next game. It covers the NFL, college football, MLB, the NBA, the WNBA, men's college basketball, the NHL, MLS, and the Premier League.
+Game Day Scoreboard turns your Apollo M-1 LED Matrix into a scoreboard for your team. Before a game it shows the matchup, both records, the start time, the betting line, and the TV network. Once the game starts it switches to the live score and game clock, and when your team scores or makes a big play, it fills the panel with a splash in the team's color, with its logo and the points it gained. After the final it stays on the score for a while, then looks up the next game.
 
-The panel reads the scores from ESPN by itself, so there's no hub, account, or other computer to run. It serves its own settings page, and it shows up in Home Assistant as an ESPHome device if you want it there. Apollo Automation maintains the open-source firmware at [ApolloAutomation/gameday-scoreboard-main](https://github.com/ApolloAutomation/gameday-scoreboard-main).
+It follows the NFL, college football, MLB, minor league baseball, the NBA, the WNBA, men's college basketball, the NHL, the AHL, the ECHL, MLS, and the Premier League, plus golf's PGA Tour and LPGA Tour, Formula 1, and the NASCAR Cup Series. The panel reads the scores by itself (from ESPN, from MLB's stats service for minor league baseball, and from HockeyTech for the AHL and the ECHL), so there's no hub, account, or other computer to run. It serves its own settings page, it drives one to four panels, and it shows up in Home Assistant as an ESPHome device if you want it there. Apollo Automation maintains the open-source firmware at [ApolloAutomation/gameday-scoreboard-main](https://github.com/ApolloAutomation/gameday-scoreboard-main).
 
 !!! note "Before you start"
 
     - An M-1 with a **Rev6** controller. The revision is printed on the back of the board, and every M-1 sold today is Rev6.
     - A desktop or laptop computer with Chrome or Edge, and a USB-C cable that carries data.
     - A 2.4 GHz Wi-Fi network and its password. The panel can't join a 5 GHz network.
+    - A phone with a camera, to scan the panel's QR codes. Any iPhone or Android phone works, with no app to install.
 
 !!! warning "Rev6 controllers only"
 
@@ -33,14 +34,18 @@ Your M-1 LED Matrix and M-1 controller ship separately to keep them safe in tran
 The Game Day Scoreboard installer flashes the firmware from your browser, with nothing to install on your computer. Flashing replaces WLED, along with its presets and settings.
 
 1. Open the [Game Day Scoreboard DIY installer](https://apolloautomation.github.io/gameday-scoreboard-main/install/diy/) in Chrome or Edge.
-2. Click the picture that matches your setup:
-    - **One 64x64 panel** for a single M-1.
-    - **One 128x64 panel** (or two 64x64 side by side) for two M-1 panels in a row. See [Multiple Panels](/products/m1/setup/m1-multiple-panels.md) for chaining them.
+2. Click the picture that matches your setup. The **Install for MoonHub75** button appears once you pick.
+    - **One 64x64 panel** for a single M-1, and for three or four M-1 panels.
+    - **One 128x64 panel** (or two 64x64 side by side) for two M-1 panels in a row.
 3. Plug the M-1 controller into your computer with the USB-C cable.
 4. Click **Install for MoonHub75** and pick the M-1's port when the browser asks. This is the right build for the M-1: the two boards share a pin layout.
 5. Wait for the install to finish. Leave the cable plugged in until it does.
 
-The panel lights up with **GAME DAY** across the top and **Starting** under it, then shows **SETUP** while it waits for Wi-Fi. You can change the panel layout later on its settings page, so a wrong pick here costs you nothing.
+The panel lights up with **GAME DAY** across the top and **Starting** under it, then shows **SETUP** and a QR code while it waits for Wi-Fi. The picture you clicked only sets the layout the panel starts with. You can change it any time on the panel's settings page, with nothing to reflash.
+
+!!! tip "Three or four panels?"
+
+    The installer offers one or two panels. For three or four, pick **One 64x64 panel**, finish setting up, then choose **Three wide**, **Four wide**, or **Two rows of two** on the panel's settings page. The [Bigger boards guide](/products/m1/setup/game-day-bigger-boards.md) covers wiring, power, and the layout choice.
 
 !!! tip "The browser doesn't see your M-1?"
 
@@ -48,34 +53,52 @@ The panel lights up with **GAME DAY** across the top and **Starting** under it, 
 
 ## Connect to Wi-Fi
 
-Your M-1 needs your home Wi-Fi to read the scores. There are two ways to give it your network:
+Your M-1 needs your home Wi-Fi to read the scores. Use your main network, not a guest network: a guest network can let the panel join but keep your phone from reaching it afterward. There are two ways to give it your network:
 
-- **Right after the install,** the installer offers to put the panel on your Wi-Fi. Enter your network name and password there, and you're done with this section.
-- **From the panel's hotspot.** While it shows **SETUP**, the panel starts its own Wi-Fi network named **Game Day** plus six letters and numbers, like **Game Day 2f6a70**, and shows the name on screen.
+- **Right after the install,** the installer offers to put the panel on your Wi-Fi. Enter your network name and password there, and move on to [Pick your team](#pick-your-team).
+- **From the panel's hotspot.** While it shows **SETUP**, the panel runs its own Wi-Fi network named **Game Day** plus six letters and numbers, like **Game Day 2f6a70**, and shows a QR code that joins it.
 
 To use the hotspot:
 
-1. On your phone or laptop, join the **Game Day** network the panel shows. A setup page opens.
+1. Point your phone's camera at the QR code on the panel and tap to join, or pick the **Game Day** network from the Wi-Fi list on any phone or laptop. On a single 64x64 panel, the QR code takes turns with the words, so wait for its turn. A setup page opens.
 2. Pick your Wi-Fi network and enter the password.
-3. Tap **Save**.
+3. Save.
 
-The panel joins your Wi-Fi and shows its address, like **gameday-2f6a70.local**. Use your main network, not a guest network: a guest network can let the panel join but keep your phone from reaching it afterward.
+If the setup page doesn't open by itself, open `192.168.4.1` in a browser. If your phone warns that the network has no internet, choose to stay connected.
 
-!!! tip "About the QR code on the screen"
+The panel joins your Wi-Fi and shows a new QR code, this one for its own settings page, then its address, like **gameday-2f6a70.local**. For the first 30 seconds, the ticker along the bottom also shows its IP address and address, like **IP 192.168.1.50 | gameday-2f6a70.local**.
 
-    The QR code the panel shows during setup is for the separate Game Day phone app, which Apollo Automation doesn't maintain, and which may not find panels running this firmware. You don't need it: the hotspot and the panel's settings page do everything it does.
+!!! tip "About the QR codes on the screen"
+
+    Every QR code the panel shows works with your phone's camera. During setup it joins the panel's hotspot, and once the panel is on your Wi-Fi it opens the panel's settings page. The separate Game Day phone app isn't maintained by Apollo Automation and may not find panels running this firmware. You don't need it: the hotspot and the settings page do everything it does.
+
+The panel remembers up to five networks. If it loses Wi-Fi it says **Wi-Fi lost, reconnecting** while it tries to rejoin, and within a few minutes it brings its hotspot back with **Wi-Fi lost, scan to fix**. After a new router or Wi-Fi password, scan that QR code and give the panel the new network. A router that was only down needs nothing: the panel rejoins by itself.
 
 ## Pick your team
 
 The panel serves its own settings page, the device page. This is where you pick your team and set up everything else, from any phone or computer on your Wi-Fi.
 
-1. Open the address the panel shows, like `http://gameday-2f6a70.local`, in a browser.
+1. Scan the QR code the panel shows with your phone's camera, or open the address it shows, like `http://gameday-2f6a70.local`, in a browser. If your phone won't open `.local` names, use the IP address from the ticker instead.
 2. Tap **Change team**.
-3. Pick a league tab and tap a logo, or search for any team.
+3. Pick a league tab and tap a logo, or search for any team. The **On now** tab lists today's games: tap the side you want to follow.
 
-The page says **Now following the** and the team's name, and the panel switches to them. Until you pick a team, the ticker along the bottom asks you to and shows the panel's IP address, for phones that can't open `.local` names. To see the address again any time, hold the boot button on the controller for about 1.5 seconds.
+The page says **Now following the** and the team's name, and the panel switches to them within a few seconds. Until you pick a team, the ticker asks you to, with the panel's IP address. To see the address again any time, hold the boot button on the controller for about 1.5 seconds.
 
-From the same page you can follow up to 16 **Favorite teams** that take turns, or switch to **Live games**, which follows a game in progress in the leagues you pick. The timezone follows the browser you open the page in, so start times read right without setting anything.
+The league tabs are **NFL**, **NCAAF**, **MLB**, **MiLB**, **MLS**, **EPL**, **NBA**, **WNBA**, **NCAAM**, **NHL**, **AHL**, and **ECHL**, then **Golf** (the PGA Tour and the LPGA Tour) and **Racing** (Formula 1 and the NASCAR Cup Series). A golf tour or a racing series is followed like a team, with the week's tournament or race weekend in place of a game.
+
+The timezone follows the browser you open the page in, so start times read right without setting anything.
+
+## Find your way around the device page
+
+The top of the device page mirrors the panel: both logos, the score, the clock, and the ticker. Under it, the **Quick settings** card holds what you change most: **Panel on**, **Brightness**, **Follow this game** while there's a game to follow, and the **Idle display**. On three or four panels it also holds what the second area **Shows**.
+
+Next come the mode buttons, **My team**, **Live games**, and **Favorite teams**, and then the cards: **Panel**, **Favorites**, **Favorite players**, **Bets**, **Ticker**, **Celebrations**, **Remote**, **Setup**, and **Device**. Tap a card's name to open it, and tap again to fold it. Your browser remembers which cards you opened.
+
+!!! success "Next step: make the scoreboard yours"
+
+    Your team is on the board. Now choose how the panel spends its day: follow several teams or every live game, catch big plays in other games, make the clock bigger, dim it at night, and track your favorite players and bets.
+
+    [Use your scoreboard every day](/products/m1/setup/game-day-everyday-use.md){ .md-button .md-button--primary }
 
 ## Add it to Home Assistant
 
@@ -97,9 +120,11 @@ Not discovered? Add it by its address instead:
 2. Pick **ESPHome**.
 3. Enter the panel's `.local` name or IP address.
 
-Your scoreboard now shows up under the ESPHome integration with the entities worth automating: **Team**, **Mode**, **Power**, **Brightness**, **Scroll Speed**, **Game Status**, **Last Play**, **Firmware**, **Install Updates Automatically**, and the WizMote pairing controls. Favorites, the timezone, and the ticker options live on the device page only. The **Microphone Enabled** switch belongs to the [microphone addon](/products/m1/addons/adding-microphone-to-m-1.md); the scoreboard doesn't use the microphone.
+Your scoreboard now shows up under the ESPHome integration with the entities worth automating: **Team**, **Mode**, **Power**, **Brightness**, **Scroll Speed**, **Select Page**, **Game Status**, **Last Play**, **Firmware**, and **Install Updates Automatically**, the **Refresh Now**, **Check for Updates**, and **Reboot** buttons, and the WizMote pairing controls. The **Team** list covers every league except men's college basketball and minor league baseball, whose lists would make it too long; pick those teams on the device page.
 
-**Game Status** changes when a game starts, when someone scores, and when it ends, which makes it a great trigger for your own automations.
+Favorites, the timezone, the ticker and celebration switches, the Live games leagues, the panel layout, the idle display, night hours, the second area, favorite players, and bets live on the device page only. The **Microphone Enabled** switch belongs to the [microphone addon](/products/m1/addons/adding-microphone-to-m-1.md); the scoreboard doesn't use the microphone.
+
+**Game Status** changes when a game starts, when someone scores, and when it ends, which makes it a great trigger for your own automations. It stays on the game your mode follows, even while the panel visits a big play in another game.
 
 !!! success "Next step: celebrate scores with your lights"
 
@@ -122,17 +147,19 @@ The adopted firmware gets its own API encryption key, which Home Assistant picks
 
 ## Updates
 
-The scoreboard checks for a new release every six hours. When one is out, the **Firmware** box on the device page shows an **Install** button, and the update goes over Wi-Fi with your team and settings kept. Turn on **Install updates automatically** and the panel installs new releases by itself between 3 and 5 AM, never during a game it's following.
+The scoreboard checks for a new release every six hours. When one is out, the **Device** card on the device page opens by itself with an **Install** button in its **Firmware** box, and the update goes over Wi-Fi with your team, favorites, and settings kept. Turn on **Install updates automatically** in the same card and the panel installs new releases by itself between 3 and 5 AM, never during a game it's following. Home Assistant's **Firmware** entity offers the same update.
+
+If the power goes out partway through, the panel keeps running the firmware it had. Each release's changes are on the [Game Day Scoreboard changelog](https://apolloautomation.github.io/gameday-scoreboard-main/changelog/).
 
 ## Pair a WizMote remote
 
 Game Day Scoreboard works with a WiZ WizMote, the small battery remote sold for WiZ smart bulbs. Pair it once and you can run the panel from across the room.
 
-1. Open the **Remote** card on the device page.
+1. Open the **Remote** card on the device page. It starts folded, so tap **Remote** to open it.
 2. Turn on **Discovery**.
 3. Press any button on the remote.
 
-The card says **Paired:** and the remote's address. **ON** and **OFF** turn the panel on and off, the brightness buttons make it brighter or dimmer, **NIGHT** drops it to a night level, and buttons **1** to **4** jump to your first four favorite teams.
+The card says **Paired:** and the remote's address. **ON** and **OFF** turn the panel on and off, the brightness buttons make it brighter or dimmer, **NIGHT** drops it to a night level, and buttons **1** to **4** jump to your first four favorite teams. Pairing a second remote replaces the first, and **Unpair remote** forgets it.
 
 ## Go back to WLED
 
@@ -140,4 +167,8 @@ You can return your M-1 to WLED at any time with the Apollo M-1 installer. See [
 
 ## Learn more
 
-The [Game Day Scoreboard docs](https://github.com/ApolloAutomation/gameday-scoreboard-main/tree/main/docs/wiki/src/content/docs) cover every setting, each sport's board, the boot button's holds and resets, and fixes for the things that go wrong. Found a bug? [Open an issue on GitHub](https://github.com/ApolloAutomation/gameday-scoreboard-main/issues).
+- [Everyday use](/products/m1/setup/game-day-everyday-use.md) covers the modes, big plays, the idle display, night hours, favorite players, bets, and the ticker.
+- [Bigger boards](/products/m1/setup/game-day-bigger-boards.md) covers three and four panels in a row, two rows of two, and the second area.
+- The [Game Day Scoreboard docs](https://github.com/ApolloAutomation/gameday-scoreboard-main/tree/main/docs/wiki/src/content/docs) cover every setting, each sport's board, the boot button's holds and resets, and fixes for the things that go wrong.
+
+Found a bug? [Open an issue on GitHub](https://github.com/ApolloAutomation/gameday-scoreboard-main/issues).
