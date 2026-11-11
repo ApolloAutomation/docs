@@ -12,3 +12,5 @@ description: YouTuber reviews and feedback about the MTR-1 sensor from Apollo Au
 ## [Smart Home Scene MTR-1 review](https://smarthomescene.com/reviews/apollo-mtr-1-multi-target-tracking-radar-review/)
 
 ## [Michael Leen MTR-1 review](https://www.youtube.com/watch?v=7qFvqRw1uds)
+
+## [DomotikPro MTR-1 review (in Italian)](https://domotikpro.it/guida/apollo-mtr-1-radar-tracking-home-assistant-recensione)
