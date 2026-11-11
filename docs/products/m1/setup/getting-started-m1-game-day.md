@@ -66,7 +66,7 @@ To use the hotspot:
 
 If the setup page doesn't open by itself, open `192.168.4.1` in a browser. If your phone warns that the network has no internet, choose to stay connected.
 
-The panel joins your Wi-Fi and shows a new QR code, this one for its own settings page, then its address, like **gameday-2f6a70.local**. For the first 30 seconds, the ticker along the bottom also shows its IP address and address, like **IP 192.168.1.50 | gameday-2f6a70.local**.
+The panel joins your Wi-Fi and shows a new QR code, this one for its own settings page, then its address, like **gameday-2f6a70.local**. Until you pick a team, the ticker along the bottom also says **Pick a team at** and the panel's IP address, like **Pick a team at 192.168.1.50**.
 
 !!! tip "About the QR codes on the screen"
 
@@ -82,7 +82,7 @@ The panel serves its own settings page, the device page. This is where you pick 
 2. Tap **Change team**.
 3. Pick a league tab and tap a logo, or search for any team. The **On now** tab lists today's games: tap the side you want to follow.
 
-The page says **Now following the** and the team's name, and the panel switches to them within a few seconds. Until you pick a team, the ticker asks you to, with the panel's IP address. To see the address again any time, hold the boot button on the controller for about 1.5 seconds.
+The page says **Now following the** and the team's name, and the panel switches to them within a few seconds. From then on, each time the panel starts, the ticker leads with its IP address and `.local` name for 30 seconds once the QR code and the address go, like **IP 192.168.1.50 | gameday-2f6a70.local**. To see the address again any time, hold the boot button on the controller for about 1.5 seconds.
 
 The league tabs are **NFL**, **NCAAF**, **MLB**, **MiLB**, **MLS**, **EPL**, **NBA**, **WNBA**, **NCAAM**, **NHL**, **AHL**, and **ECHL**, then **Golf** (the PGA Tour and the LPGA Tour) and **Racing** (Formula 1 and the NASCAR Cup Series). A golf tour or a racing series is followed like a team, with the week's tournament or race weekend in place of a game.
 

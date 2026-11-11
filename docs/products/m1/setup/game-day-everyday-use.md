@@ -51,7 +51,7 @@ With a team picked and no live games on, the panel shows your team's card and sa
 
 ## Set how fast it moves on
 
-Every rotation on the panel has its own timing, and the quickest ones go down to 30 seconds:
+These settings decide how long the panel stays before it moves on, and the quickest choice for each is 30 seconds:
 
 | Setting | Where | Choices | Starts at |
 | --- | --- | --- | --- |
@@ -71,7 +71,7 @@ The switch only shows while there's a game to follow: a game Live games picked, 
 
 ## Celebrations and big plays
 
-When a team scores or makes a big play, the panel fills the screen with a splash in the team's color for about 7 seconds. The splash shows the team's logo and the points it gained, like **+6** for a touchdown or **+2 RUNS** for a two-run home run. On a single 64x64 panel there's room for the number only, like **+2**. A win gets a victory splash with fireworks.
+When a team scores or makes a big play, the panel fills the screen with a splash in the team's color for about 7 seconds. The splash shows the team's logo and the points it gained, like **+6** for a touchdown or **+2 RUNS** for a two-run home run. On a single 64x64 panel, or a board filling three or four panels in a row, there's room for the number only, like **+2**. A win gets a victory splash with fireworks.
 
 The **Celebrations** card has a switch for each kind of splash, all on to start. It lists only the sports your panel follows:
 
@@ -101,7 +101,7 @@ While the panel shows its game, it can keep an eye on other live games too. When
 | **Favorite teams** | Your other favorites' games |
 | **My team** | Your favorites' games, if you have any |
 
-Your team's live game is never left for another game's big play unless a favorite plays in it and **Switch from my team** is on. That switch starts off. Golf, racing, minor league baseball, AHL and ECHL games, and soccer cup matches aren't watched.
+Your team's live game is never left for another game's big play unless a favorite plays in that other game and **Switch from my team** is on. That switch starts off. Golf, racing, minor league baseball, AHL and ECHL games, and soccer cup matches aren't watched.
 
 !!! warning "Watching other games uses more data"
 

@@ -4,11 +4,12 @@ description: Run Game Day Scoreboard across two, three, or four M-1 panels in a 
 ---
 # Bigger boards (Game Day Scoreboard)
 
-One M-1 controller drives up to four 64x64 panels, and Game Day Scoreboard uses every one of them. Two panels side by side give you the wide board, with big scores, the records, and the timeout pips. Three or four in a row stretch it across the wall, and two rows of two put the board on top with a clock, today's scores, or a second game underneath. It's the same firmware for every arrangement: the layout is a setting on the device page, so you can grow your board later without reflashing.
+One Apollo M-1 controller drives up to four 64x64 panels, and Game Day Scoreboard uses every one of them. Two panels side by side give you the wide board, with big scores, the records, and the timeout pips. Three or four in a row stretch it across the wall, and two rows of two put the board on top with a clock, today's scores, or a second game underneath. It's the same firmware for every arrangement: the layout is a setting on the device page, so you can grow your board later without reflashing.
 
 !!! note "Before you start"
 
     - Your M-1 runs Game Day Scoreboard and is on your Wi-Fi. See [Getting started (Game Day Scoreboard)](/products/m1/setup/getting-started-m1-game-day.md).
+    - The settings in [Everyday use (Game Day Scoreboard)](/products/m1/setup/game-day-everyday-use.md) work the same on every size of board, so start there if you haven't.
     - Up to three more M-1 panels, a ribbon data cable and a Matrix Power Module for each extra panel, and a USB-C power supply for every panel. [Multiple Panels](/products/m1/setup/m1-multiple-panels.md) lists the parts.
     - Three or four panels? Set up Wi-Fi through the panel's hotspot. See [Bluetooth setup is off on bigger boards](#bluetooth-setup-is-off-on-bigger-boards).
 
@@ -35,7 +36,7 @@ A new install starts at about half brightness, 128 of 255. Raise it with **Brigh
 
 ## Chain and arrange the panels
 
-The wiring is the same whichever firmware you run, so the [Multiple Panels](/products/m1/setup/m1-multiple-panels.md) page has the step-by-step photos for each arrangement. Follow its **Hardware setup** section, then come back here: its **Software setup** and **Segment setup** sections are for WLED, and Game Day Scoreboard doesn't need them.
+The wiring is the same whichever firmware you run, so the [Multiple Panels](/products/m1/setup/m1-multiple-panels.md) page has the step-by-step photos for each arrangement. Follow its **Hardware setup** section, then come back here: its **Software setup** and **Segment setup** sections are for WLED, and Game Day Scoreboard doesn't need them. The **WLED only** warning at the top of its **2x2 Grid** tab compares WLED with WLED-MM: Game Day Scoreboard drives two rows of two with that same wiring.
 
 ### Panels in a row
 
@@ -55,7 +56,7 @@ Printed frames hold a row or a grid together as one flat piece. See [Wall mounti
 
 ## Set the layout on the device page
 
-The Game Day installer only offers one or two panels. Once your panels are wired and powered, tell the scoreboard what it's driving. This is also how you switch layouts later, with your team and settings kept.
+The Game Day installer only offers one or two panels, so for three or four, [flash the firmware](/products/m1/setup/getting-started-m1-game-day.md#flash-game-day-scoreboard) with the **One 64x64 panel** picture. Once your panels are wired and powered, tell the scoreboard what it's driving. This is also how you switch layouts later, with your team and settings kept.
 
 1. Open the device page and tap **Setup** to open the Setup card.
 2. Under **Matrix**, click the picture that matches your panels: **One 128x64 panel**, **Three wide**, **Four wide**, or **Two rows of two**.
@@ -88,7 +89,7 @@ Changing it restarts the panel. If part of the board still shows upside down, th
 | **Top row upside down** | Both halves upside down | **Bottom row upside down** |
 | **Top row upside down** | The top half upside down | **All upright** |
 
-If the bottom half's left and right sides are swapped, or each bottom panel shows its own part upside down, the bottom row runs the other way and no choice fixes it. Move the third panel under the first and the fourth under the second and pick **All upright**, or turn the bottom row upside down and pick **Bottom row upside down**.
+If the bottom half's left and right sides are swapped with **All upright**, or each bottom panel shows its own part upside down with **Bottom row upside down**, every panel stands upright but the third sits under the second. That bottom row runs the other way, and no choice fixes it. Move the third panel under the first and the fourth under the second and keep **All upright**, or turn the bottom row upside down and pick **Bottom row upside down**. Seeing either one any other way? The bottom panels don't sit where the first table puts them for your choice, so move them there.
 
 ## Add a second area
 
@@ -126,7 +127,7 @@ With three or four panels, the scoreboard keeps Bluetooth setup off to leave the
 
 ### Splashes and the ticker
 
-- **Three or four in a row:** a splash puts the team's logo at the left end, the words in the middle, and the points at the right end.
+- **Three or four in a row:** while the board fills the row, a splash puts the team's logo at the left end, the words in the middle, and the points at the right end, with the number only for runs, like **+2**. With a second area picked, the board's splashes look as they do on two panels, and the second area's own splashes stay inside it.
 - **Two rows of two:** the board's splashes cover all four panels, and the bottom half waits under them, then gets its whole turn. Under **Clock and date**, the bottom half has its own ticker in bigger letters, with your next games.
 
 ### A factory reset brings back the starting layout
