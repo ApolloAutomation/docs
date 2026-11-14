@@ -819,7 +819,9 @@ From Apollo mmWave 2.4.1, a drag draws only after you say which zone it draws. P
 
 ### A shape went to the wrong zone
 
-Press **Undo** in the message that names the zone, ↶ on the map, or **Restore previous shape** in that zone's editor, which also works after the page reloads (see [Undo a shape change](#undo-a-shape-change)). Then pick the zone you meant and press **Redraw shape**. The banner on the map names the zone your next drag draws.
+Press **Undo** in the message that names the zone, ↶ on the map, or **Restore previous shape** in that zone's editor, which also works after the page reloads (see [Undo a shape change](#undo-a-shape-change)). Then pick the zone you meant and press **Redraw shape** (**Draw shape** if it has no shape yet). The banner on the map names the zone your next drag draws.
+
+If the zone that got the shape had none before, its editor has no **Restore previous shape**, and **Undo** and ↶ don't survive a reload. After one, nothing in the card clears that zone's shape alone: draw the shape it should have with **Redraw shape**, delete the zone if you don't need it, or clear its shape with the `apollo_mmwave.update_zone` action and `shape: none`, which keeps its name, **Type**, and **Hold**.
 
 ### The zone map shows nobody, or only one person
 
