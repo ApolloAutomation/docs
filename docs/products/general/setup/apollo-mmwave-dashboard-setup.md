@@ -43,7 +43,7 @@ Apollo mmWave has been accepted into the community list that HACS and the Market
 
 If you installed Apollo mmWave from the original repository, bharvey88/apollo-mmwave, which is no longer on GitHub, follow [From the original Apollo mmWave repository](#from-the-original-apollo-mmwave-repository) instead. It switches HACS over without setting anything up again.
 
-=== "Marketplace (Home Assistant 2026.11 or newer)"
+=== "Marketplace (2026.11+)"
 
     1. Go to **Settings → Marketplace**. Or use the button below: it opens Apollo mmWave in the Marketplace, and if the Marketplace doesn't list it yet, it shows an **Add custom repository** box first. Click **Add** there and go on at step 4.
 
@@ -55,7 +55,7 @@ If you installed Apollo mmWave from the original repository, bharvey88/apollo-mm
 
     Adding a repository from a link needs a connected GitHub account. If yours isn't connected yet, **Add** opens **Connect GitHub** first, which gives you a code to enter on GitHub. The button above shows **Connect GitHub to add the custom repository ApolloAutomation/apollo-mmwave-main, then open the link again.** instead: connect GitHub, then click the button again.
 
-=== "HACS (Home Assistant 2026.10 or earlier)"
+=== "HACS (older)"
 
     1. Open **HACS** from your Home Assistant sidebar. Or use the button below: it opens Apollo mmWave in HACS, and if HACS doesn't list it yet, it shows an **Add custom repository** box first. Click **Add** there and go on at step 4.
 
@@ -242,16 +242,16 @@ Before any upgrade, make a full Home Assistant backup under **Settings → Syste
 
 ### Update Apollo mmWave
 
-Home Assistant lists an Apollo mmWave update with its other updates under **Settings → System → Updates**: open it and click **Update**. You can also update from the Marketplace or HACS, which is also where you pick a different version:
+Home Assistant lists an Apollo mmWave update with its other updates under **Settings → System → Updates**: open it and click **Update**. You can also update from the Marketplace on Home Assistant 2026.11 or newer, or from HACS on 2026.10 or earlier. Both also let you pick a different version:
 
-=== "Marketplace (Home Assistant 2026.11 or newer)"
+=== "Marketplace (2026.11+)"
 
     1. Go to **Settings → Marketplace** and open **Apollo mmWave**. The **Installed** tab lists it. When a new version is out, its page reads **Update available**.
     2. Click **Update**, then **Update** again in the dialog that opens.
 
     To install a different version, open the three-dot menu in the upper right corner of the Apollo mmWave page and choose **Install another version**. Pick the version under **Version**, then click **Update**. The dialog reminds you that restoring a backup is the safer way to go back to an earlier version, so use the backup you made when you can.
 
-=== "HACS (Home Assistant 2026.10 or earlier)"
+=== "HACS (older)"
 
     1. Open **HACS** and open **Apollo mmWave**. When a new version is out, HACS lists it as **Pending update**.
     2. Click the three-dot menu in the upper right corner, choose **Redownload**, and click **Download** in the dialog that opens. The dialog names the version it downloads.
