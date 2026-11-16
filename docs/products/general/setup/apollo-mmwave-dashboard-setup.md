@@ -43,16 +43,14 @@ If you installed Apollo mmWave from the original repository, bharvey88/apollo-mm
 
 === "Marketplace (2026.11+)"
 
-    1. Go to **Settings → Marketplace**. Or use the button below, which opens Apollo mmWave Dashboard in the Marketplace, and go on at step 3.
+    1. Go to **Settings → Marketplace**. Or use the button below, which opens Apollo mmWave Dashboard in the Marketplace, and go on at step 3. The first time, the Marketplace may show a warning: tick **I understand the risks and agree** and click **Continue**.
 
         [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=apollo-mmwave-main&category=integration)
 
-    2. Search for **Apollo mmWave Dashboard** and open it. Until 2.4.2 is out, the listing still reads **Apollo mmWave**, and searching for **Apollo mmWave** finds it under either name.
+    2. Search for **Apollo mmWave** and open **Apollo mmWave Dashboard**. Until 2.4.2 is out, the listing still reads **Apollo mmWave**.
     3. Click **Install**, then **Install** again in the dialog that opens.
 
-    The first time you open it, the Marketplace may show a warning: tick **I understand the risks and agree** and click **Continue**.
-
-    If the search doesn't find it, add the repository yourself: click **Add from link** (a link icon on a narrow screen), paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **GitHub link** field, and click **Add**. If a **Type** field appears, set it to **Integration** and click **Add** again. Then search again and go on at step 3. Adding a repository from a link needs a connected GitHub account. If yours isn't connected yet, **Add** opens **Connect GitHub** first, which gives you a code to enter on GitHub. In that case the button above shows **Connect GitHub to add the custom repository ApolloAutomation/apollo-mmwave-main, then open the link again.** instead: connect GitHub, then click the button again.
+    If the search doesn't find it, add the repository yourself: click **Add from link** (a link icon on a narrow screen), paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **GitHub link** field, and click **Add**. If a **Type** field appears, set it to **Integration** and click **Add** again. Then search again and go on at step 3. If the button above shows an **Add custom repository** box, clicking **Add** there does the same. Adding a repository from a link needs a connected GitHub account. If yours isn't connected yet, **Add** opens **Connect GitHub** first, which gives you a code to enter on GitHub. In that case the button above shows **Connect GitHub to add the custom repository ApolloAutomation/apollo-mmwave-main, then open the link again.** instead: connect GitHub, then click the button again.
 
 === "HACS (older)"
 
@@ -60,7 +58,7 @@ If you installed Apollo mmWave from the original repository, bharvey88/apollo-mm
 
         [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=apollo-mmwave-main&category=integration)
 
-    2. Search HACS for **Apollo mmWave Dashboard** and open it. Until 2.4.2 is out, the listing still reads **Apollo mmWave**, and searching for **Apollo mmWave** finds it under either name.
+    2. Search HACS for **Apollo mmWave** and open **Apollo mmWave Dashboard**. Until 2.4.2 is out, the listing still reads **Apollo mmWave**.
     3. Click **Download**, then confirm with **Download** in the dialog that opens.
 
     If the search doesn't find it, add the repository yourself: click the three-dot menu in the upper right corner and choose **Custom repositories**. Paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **Repository** field, set **Type** to **Integration**, and click **Add**. Close the dialog, then search again and go on at step 3. If the button above shows an **Add custom repository** box, clicking **Add** there does the same.
@@ -384,11 +382,11 @@ If the old copy is version 1.x or 2.0, not everything carries over on its own. R
 3. Find the row whose second line reads **bharvey88/apollo-mmwave (integration)** and click the trash can icon on that row. There's no confirmation, so read the second line before you click: removing the wrong row deletes no files, but you have to add that repository again. This only takes the old entry off the HACS list. The files in `custom_components/apollo_mmwave` stay where they are, and the integration keeps running.
     - If you already added the new repository, there are two rows. Remove only the bharvey88/apollo-mmwave one.
     - If there's no bharvey88/apollo-mmwave row, there's nothing to remove. Go on to step 4.
-4. If the dialog closed after step 3, open **Custom repositories** again. Paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **Repository** field, set **Type** to **Integration**, click **Add**, and close the dialog. Or use the button below instead: it shows an **Add custom repository** box, and clicking **Add** there opens the repository page in HACS for you.
+4. If the dialog closed after step 3, open **Custom repositories** again. Paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **Repository** field, set **Type** to **Integration**, click **Add**, and close the dialog. Or use the button below instead: it opens the repository page in HACS for you. If it shows an **Add custom repository** box first, click **Add** there.
 
     [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=apollo-mmwave-main&category=integration)
 
-5. Search HACS for **Apollo mmWave Dashboard** and open it. Only one entry is left, and if you used the button in step 4, it's already open. Click **Download** in the lower right corner, then click **Download** again in the dialog. The dialog says the files go to `/config/custom_components/apollo_mmwave`, the same folder as before. Wait for it to finish.
+5. Search HACS for **Apollo mmWave** and open **Apollo mmWave Dashboard** (**Apollo mmWave** until 2.4.2 is out). Only one entry is left, and if you used the button in step 4, it's already open. Click **Download** in the lower right corner, then click **Download** again in the dialog. The dialog says the files go to `/config/custom_components/apollo_mmwave`, the same folder as before. Wait for it to finish.
     - If it shows an error, don't restart. Fix the cause and click **Download** again until it finishes with no error. On a first download HACS saves no backup copy of the folder, so a download that stops partway can leave old and new files mixed together.
 6. Look at the HACS list. **Apollo mmWave Dashboard** now shows **Pending restart**, and the old entry is gone.
 7. Restart Home Assistant: go to **Settings → System**, click the power icon in the upper right corner, choose **Restart Home Assistant**, then click **Restart**. The **Restart required** repair that HACS adds does the same when you click **Submit**.
