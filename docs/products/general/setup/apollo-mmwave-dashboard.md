@@ -1,15 +1,20 @@
 ---
-title: Tune your radar with the Apollo mmWave dashboard
-description: Check the radar's settings, calibrate the radar in your Apollo MSR-1 or MSR-2, or the optional LD2412 addon in your R PRO-1, against an empty room, fine-tune each gate, and draw R PRO-1 and MTR-1 zones from the Apollo mmWave dashboard in Home Assistant.
+title: Tune your radar with the Apollo mmWave Dashboard
+description: Check the radar's settings, calibrate the radar in your Apollo MSR-1 or MSR-2, or the optional LD2412 addon in your R PRO-1, against an empty room, fine-tune each gate, and draw R PRO-1 and MTR-1 zones from the Apollo mmWave Dashboard in Home Assistant.
 ---
 
-# Tune your radar with the Apollo mmWave dashboard
+# Tune your radar with the Apollo mmWave Dashboard
 
-The Apollo mmWave dashboard puts every setting your radar has on one screen, with live charts that show what the radar sees. On an Apollo MSR-1, Apollo MSR-2, or Apollo R PRO-1 with the optional LD2412 radar addon, it can teach the radar what your empty room looks like in about a minute and a half, so it stops reacting to the room itself and starts reacting to people. On an R PRO-1 or an Apollo MTR-1 it is also where you draw occupancy zones on a map of the room.
+The Apollo mmWave Dashboard puts every setting your radar has on one screen, with live charts that show what the radar sees. On an Apollo MSR-1, Apollo MSR-2, or Apollo R PRO-1 with the optional LD2412 radar addon, it can teach the radar what your empty room looks like in about a minute and a half, so it stops reacting to the room itself and starts reacting to people. On an R PRO-1 or an Apollo MTR-1 it is also where you draw occupancy zones on a map of the room.
 
 Every tab starts with a **Start here** card that lists your sensor's first steps in order, and this guide follows the same order: check the **Radar setup** card, calibrate, set how far the radar looks and how long presence stays on, then fine-tune by hand. If you only do one thing today, press **Calibrate with empty room** and leave the room: [Calibrate with an empty room](#calibrate-with-an-empty-room) shows what to expect. On an MTR-1, or an R PRO-1 without the LD2412, go straight to the [eight steps to your first zone](#draw-zones-on-the-r-pro-1-and-mtr-1).
 
-!!! info "What's new in 2.4.1"
+!!! info "What's new in 2.4.2"
+
+    - **A new name.** Apollo mmWave is now called Apollo mmWave Dashboard. A setup from before 2.4.2 keeps **Apollo mmWave** as the name of its entry and its sidebar dashboard until you rename them: [Updating to Apollo mmWave Dashboard 2.4.2](apollo-mmwave-dashboard-setup.md#updating-to-apollo-mmwave-dashboard-242).
+    - **Shapes has its own button.** To draw an ellipse or a polygon, press **Shapes**, the shapes icon in the map's bottom-left corner. ✎ now only means **Draw shape**: [Draw a zone](#draw-a-zone).
+
+??? info "What's new in 2.4.1"
 
     2.4.1 is about the zone map of R PRO-1 and MTR-1 tabs, after feedback from people who draw zones on a phone and on a large monitor.
 
@@ -37,8 +42,8 @@ Here's the **Start here** card on an MSR-1. On an MTR-1, or an R PRO-1 without t
 
 !!! note "Before you start"
 
-    - The Apollo mmWave integration is installed and its **Apollo mmWave** dashboard is in your Home Assistant sidebar. If it isn't, sign in as an administrator (from Apollo mmWave 2.2.6, the dashboard is for administrators only unless you unticked that box), or follow the [Apollo mmWave dashboard setup guide](apollo-mmwave-dashboard-setup.md) to add it.
-    - This guide shows Apollo mmWave 2.4.1. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first. If a card this guide describes isn't on your tab, see [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards).
+    - The Apollo mmWave Dashboard integration is installed, and its dashboard is in your Home Assistant sidebar as **Apollo mmWave Dashboard** (**Apollo mmWave** on a setup from before 2.4.2). If it isn't, sign in as an administrator (from 2.2.6, the dashboard is for administrators only unless you unticked that box), or follow the [Apollo mmWave Dashboard setup guide](apollo-mmwave-dashboard-setup.md) to add it.
+    - This guide shows Apollo mmWave Dashboard 2.4.2. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first. If a card this guide describes isn't on your tab, see [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards).
     - Your radar is online in Home Assistant through ESPHome.
     - Your sensor is mounted where it will stay. A calibration, and the zones you draw, describe the room from the sensor's position, so moving the sensor later means calibrating again or redrawing your zones.
     - A calibration needs the room empty for about a minute and a half: people and pets out, robot vacuum docked.
@@ -70,7 +75,7 @@ The card changes nothing on its own. When it flags something, it says what's wro
 
 The last two have no button: the card explains them and leaves the new values to you. On an MTR-1, the **Radar setup** card under **Start here** checks the LD2450 instead, and an R PRO-1 tab has a second **Radar setup** card above the zone map for its LD2450. Both are covered in [Check the LD2450's Radar setup card](#check-the-ld2450s-radar-setup-card).
 
-After you update Apollo mmWave, the **Radar setup** card can also show a notice above its checks, such as **Apollo mmWave was updated to 2.4.1, but this page still runs 2.4.0.** with a **Reload** button. It means the page still runs the cards from before the update. [Load the new cards](apollo-mmwave-dashboard-setup.md#load-the-new-cards) explains each notice.
+After you update Apollo mmWave Dashboard, the **Radar setup** card can also show a notice above its checks, such as **Apollo mmWave Dashboard was updated to 2.4.2, but this page still runs 2.4.1.** with a **Reload** button. It means the page still runs the cards from before the update. [Load the new cards](apollo-mmwave-dashboard-setup.md#load-the-new-cards) explains each notice.
 
 ## Calibrate with an empty room
 
@@ -127,7 +132,7 @@ Not ready to change anything yet? **Preview only** runs the same countdown and l
 
 When the run finishes, the card shows **Thresholds updated** and a summary such as **Calibrated at 02:32 PM from 60 samples. 16 of 18 thresholds changed.** Times appear in your browser's format, so you might see 14:32 instead of 02:32 PM. An MSR-1 or MSR-2 has 18 thresholds (9 gates, move and still); an R PRO-1 has 28 (14 gates).
 
-Below the summary is a table with one row per gate and the columns **Gate**, **Move peak**, **Move threshold**, **Still peak**, and **Still threshold**. The peak is the highest energy that gate reached while the room was empty. The new threshold is that peak plus some headroom, capped at 100. From Apollo mmWave 2.2.4, the headroom is 15 points or 35% of the peak, whichever is larger: a move peak of 14 becomes a threshold of 29, and a still peak of 60 becomes 81. Earlier versions used 10 points or a quarter of the peak, so calibrate again after updating to get the extra headroom.
+Below the summary is a table with one row per gate and the columns **Gate**, **Move peak**, **Move threshold**, **Still peak**, and **Still threshold**. The peak is the highest energy that gate reached while the room was empty. The new threshold is that peak plus some headroom, capped at 100. From 2.2.4, the headroom is 15 points or 35% of the peak, whichever is larger: a move peak of 14 becomes a threshold of 29, and a still peak of 60 becomes 81. Earlier versions used 10 points or a quarter of the peak, so calibrate again after updating to get the extra headroom.
 
 ![The result of a calibration on an MSR-1: Thresholds updated, Calibrated at 01:04 PM from 60 samples. 18 of 18 thresholds changed., the result table with each gate's peak and its old and new threshold, such as G2 move peak 6 and 16 → 21, the walk-test line, the reminder to raise Radar Timeout to 60 s or more if Radar Target turns off while someone sits still, and the Undo (restore your previous values), Calibrate again, and Close buttons](/assets/apollo-mmwave-calibrate-result.png)
 
@@ -176,7 +181,7 @@ Warnings appear under the result table. Each one is a sign the result may not ma
 
 ## A tour of the radar tab
 
-Open **Apollo mmWave** from your sidebar and, if you have more than one radar, pick your radar's tab. On a wide screen the cards sit in columns; on a phone they stack in the order below. Card titles start with the name of the radar chip: **LD2410** on an MSR-1 or MSR-2, **LD2412** on an R PRO-1. A card only shows rows for entities Home Assistant has, so a setting the firmware hides has no row.
+Open **Apollo mmWave Dashboard** from your sidebar (**Apollo mmWave** on a setup from before 2.4.2) and, if you have more than one radar, pick your radar's tab. On a wide screen the cards sit in columns; on a phone they stack in the order below. Card titles start with the name of the radar chip: **LD2410** on an MSR-1 or MSR-2, **LD2412** on an R PRO-1. A card only shows rows for entities Home Assistant has, so a setting the firmware hides has no row.
 
 ### First column
 
@@ -290,14 +295,14 @@ The LD2450 radar in the R PRO-1 and MTR-1 tracks where up to three people are in
 
 Your first zone takes eight steps. The sections below follow them in order, each with a picture or a short clip of what you'll see:
 
-1. **Install Apollo mmWave and open its dashboard.** The [setup guide](apollo-mmwave-dashboard-setup.md) covers both, and your sensor's tab holds the zone map.
+1. **Install Apollo mmWave Dashboard and open it from the sidebar.** The [setup guide](apollo-mmwave-dashboard-setup.md) covers both, and your sensor's tab holds the zone map.
 2. **Fix anything the Radar setup card flags.** Its button sets the radar up for the map: [Check the LD2450's Radar setup card](#check-the-ld2450s-radar-setup-card).
 3. **Set Cone rotation** so the map faces the way the sensor does: [Match the map to how the sensor is mounted](#match-the-map-to-how-the-sensor-is-mounted).
 4. **Add a zone and draw it** over the spot it covers. **Add zone** gets the map ready to draw the new zone, and a banner on the map names it: [Add a zone](#add-a-zone), then [Draw a zone](#draw-a-zone). Drew it wrong? [Undo a shape change](#undo-a-shape-change) puts the old shape back.
 5. **Name the zone, and choose Detect or Ignore and a hold time** in its editor under the map: [Pick a zone in the Zones panel](#pick-a-zone-in-the-zones-panel), [Rename a zone](#rename-a-zone), and [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone).
 6. **Walk into the zone to check that it works.** It lights up on the map while you're in it: [Read the map](#read-the-map), then [Use the zone sensors](#use-the-zone-sensors) in your automations.
 7. **Expand the map** whenever the card feels cramped: [Expand the map](#expand-the-map).
-8. **Check the Target X and Y units.** Apollo mmWave shows them in mm for you, and for a radar you already had, a notification lists the sensors it switched: [Target X and Y units](#target-x-and-y-units).
+8. **Check the Target X and Y units.** The integration shows them in mm for you, and for a radar you already had, a notification lists the sensors it switched: [Target X and Y units](#target-x-and-y-units).
 
 The **Start here** card on an MTR-1, or on an R PRO-1 without the optional LD2412, lists steps 2, 3, 4, and 6 in short. After the steps come the map's other tools: [zoom](#zoom-in-and-move-the-map), [the lock](#lock-and-unlock), [marking corners by walking](#mark-corners-by-walking), [deleting zones](#clear-or-delete-a-zone), and [movement history](#replay-movement-history).
 
@@ -307,7 +312,7 @@ The zone map card shows your radar's name and the area the radar can see: a view
 - The **Zones** panel, which is always open. It holds **Add zone**, a button for each zone, and an editor for the zone you picked: its name, size, **Type**, **Hold**, whether someone is in it right now, how to draw it with **Draw shape** or **Redraw shape**, and **Delete zone** (see [Pick a zone in the Zones panel](#pick-a-zone-in-the-zones-panel)).
 - **Map settings**, a collapsed section at the bottom of the card, with **Cone rotation**, the left-to-right flip, **Movement history**, and **Clear all shapes**.
 
-On the Apollo mmWave dashboard the zone map's section is two columns wide, so on a computer the map is about twice as wide as the cards beside it. On a phone it fills the screen's one column as before. The map is never taller than the window less about 200 px, so the page around it stays in view. In a wide, short window it gets narrower instead and sits in the middle of the card, though that limit never makes it shorter than 240 px, so a phone on its side still gets a map.
+On the Apollo mmWave Dashboard the zone map's section is two columns wide, so on a computer the map is about twice as wide as the cards beside it. On a phone it fills the screen's one column as before. The map is never taller than the window less about 200 px, so the page around it stays in view. In a wide, short window it gets narrower instead and sits in the middle of the card, though that limit never makes it shorter than 240 px, so a phone on its side still gets a map.
 
 ![The zone map for an R PRO-1 named R PRO-1 Server Rack, in feet: the radar's view cone fills the grid from -16 ft to 16 ft across, with the caption Radar range 20 ft (6 m), 120°, and a rectangle named Zone 1 at the sensor, a circle named Zone 2, and a polygon named Zone 3, each with a pale fill and a dashed outline because nobody is in it. Expand, with its icon, sits in the map's top-right corner. Along the bottom of the grid are the ✎ button, the m / ft switch with ft selected, the dimmed ↶ undo button, and the Locked button, with the zoom buttons above those on the right: a dimmed minus, + and Fit. Under the grid are the Coverage button and the Zones panel: the Zones heading with the Add zone button, a button for each zone with its color dot, Zone 1 selected, and Zone 1's editor, edged in red, with the Name box reading Zone 1, Size 6 ft 7 in × 3 ft 3 in, the Type list at Detect and the Hold list at Off, the hint Detect: its presence sensor turns on while someone is inside. Hold keeps it on for a while after someone inside goes still and the radar loses them., Now Nobody is in this zone, the note The map is locked, so drawing is off. Unlock it to draw this zone or change its shape. with an Unlock button, and a Delete zone button. The collapsed Map settings section ends the card](/assets/apollo-mmwave-zone-map.png)
 
@@ -356,7 +361,7 @@ You draw each zone on the grid as a rectangle, ellipse, or polygon, or mark its 
 
     ![The zone map for an R PRO-1 named R PRO-1 Living Room, in feet and unlocked, ready to draw the Couch zone: the banner Drawing Couch, with a Cancel button at its left end, in the map's top-left corner, the Couch zone bright blue and dashed with a dot on each corner, and dot 1 a little outside its left edge. The Desk zone with dot 2 in it, the Doorway zone, and the Fan (ignored) zone are faint, with their names grayed. Expand sits in the map's top-right corner. Under the map are the Coverage button and the Zones heading with the Add zone button, above the Desk, Couch, Doorway, and Fan buttons, with Couch picked and ✕ (Cancel drawing) joined to it](/assets/apollo-mmwave-zone-map-armed.png)
 
-3. To draw an ellipse or a polygon, press ✎ (**Drawing modes**) in the bottom-left corner and pick a shape: ▭ (**Rectangle**), ◯ (**Ellipse**), or ⬠ (**Polygon**). The zone's editor says how to draw in the mode you picked. The map starts on **Rectangle** each time the page loads.
+3. To draw an ellipse or a polygon, press **Shapes**, the shapes icon in the bottom-left corner, and pick a shape: ▭ (**Rectangle**), ◯ (**Ellipse**), or ⬠ (**Polygon**). The zone's editor says how to draw in the mode you picked. The map starts on **Rectangle** each time the page loads.
 4. For a rectangle or ellipse, drag across the grid and let go to save. A tap without a drag draws nothing, and a tap on another zone picks that zone.
 5. For a polygon, click each corner, then double-click or press ✓ (**Finish polygon**) to save. A polygon can have up to 32 points. ↺ (**Undo last point**) or **Backspace** removes the last point, and **Esc** drops the shape and stops drawing.
 
@@ -391,7 +396,7 @@ Drew over the wrong zone, or don't like the new shape? There are three ways back
 
 - **Undo in the message.** After each shape saves, whether you dragged it, finished a polygon, finished marking corners by walking, or pressed **Clear all shapes**, the message says what changed, such as **Couch redrawn**, **Zone 2 drawn**, or **All shapes cleared**, and offers **Undo** for 10 seconds. **Undo** puts the old shape back and says **Undid the change to Couch** or **Undid Clear all shapes**. Home Assistant shows the message at the bottom of the screen, and the [expanded map](#expand-the-map) shows it at the bottom of the window.
 - **↶ on the map.** ↶ (**Undo last zone change**) in the map's bottom-right corner does the same for the last shape change made on this page, until you undo it or change another shape. It's grayed out while there's nothing to undo.
-- **Restore previous shape.** Apollo mmWave keeps the shape each zone had before its last shape change in Home Assistant, along with when it was replaced. While the zone had a shape before that change, its editor shows **Restore previous shape** under the zone's size, with when, such as **Replaced 5 min ago**. It works after the page reloads, after the Home Assistant app comes back from the background, and from another phone or computer. It swaps the two shapes and says **Previous shape of Couch restored**, with **Undo**, and pressed again, it swaps them back. Each zone keeps one previous shape, so the next change to its shape replaces it. After **Clear all shapes**, each zone's editor offers its old shape back.
+- **Restore previous shape.** The integration keeps the shape each zone had before its last shape change in Home Assistant, along with when it was replaced. While the zone had a shape before that change, its editor shows **Restore previous shape** under the zone's size, with when, such as **Replaced 5 min ago**. It works after the page reloads, after the Home Assistant app comes back from the background, and from another phone or computer. It swaps the two shapes and says **Previous shape of Couch restored**, with **Undo**, and pressed again, it swaps them back. Each zone keeps one previous shape, so the next change to its shape replaces it. After **Clear all shapes**, each zone's editor offers its old shape back.
 
 ![The Zones panel under the zone map with the Couch zone picked: the Zones heading with the Add zone button, the Desk, Couch, Doorway, and Fan buttons with ✎ joined to Couch, and the Couch zone's editor, titled Zone 2 and edged in blue: the Name box reading Couch, Size 4 ft 3 in × 7 ft 10 in, a Restore previous shape button with Replaced 5 min ago beside it, the Type list at Detect and the Hold list at 5 min, the Detect hint, Now Nobody is in this zone, the drawing hint Press Redraw shape, then drag on the map to give this zone a new rectangle. ✎ on the map offers an ellipse or a polygon. A tap on a zone on the map picks it. Expand, at the map's top right, fills the window with the map., a Redraw shape button, and a Delete zone button](/assets/apollo-mmwave-zone-restore.png)
 
@@ -413,10 +418,10 @@ The picked zone's editor sits under the buttons, with the zone's number as its h
 
 - **Name**. Type a new name and press Enter (see [Rename a zone](#rename-a-zone)).
 - The zone's size, such as **Size 2.4 m × 1.8 m**, or **Not drawn yet**.
-- **Restore previous shape**, with when the zone's shape was replaced, such as **Replaced 5 min ago**, while Apollo mmWave keeps an earlier shape for the zone (see [Undo a shape change](#undo-a-shape-change)).
+- **Restore previous shape**, with when the zone's shape was replaced, such as **Replaced 5 min ago**, while the integration keeps an earlier shape for the zone (see [Undo a shape change](#undo-a-shape-change)).
 - **Type** and **Hold**, with a line under them that says what they do for this zone (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)).
 - **Now**, what the zone's presence sensor reads right now: **Someone is in this zone**, **On, held for someone who went still**, **Nobody is in this zone**, or **Radar offline**. An ignore zone reads **Never turns on, since it ignores targets**, a zone with no shape **Turns on once the zone is drawn**, and a zone whose sensor isn't there yet **No presence sensor yet**.
-- How to draw the zone in the drawing mode you picked with ✎, above **Draw shape** (**Redraw shape** once the zone has a shape), such as **Press Redraw shape, then drag on the map to give this zone a new rectangle. ✎ on the map offers an ellipse or a polygon. A tap on a zone on the map picks it.** Where the map can expand, it ends with **Expand, at the map's top right, fills the window with the map.** While you draw, it reads **Drag on the map to draw this zone as a rectangle. Cancel drawing or Esc stops without a change.**, above **Cancel drawing**. While the map is locked, the lock note and its **Unlock** button take its place.
+- How to draw the zone in the drawing mode you picked with **Shapes**, above **Draw shape** (**Redraw shape** once the zone has a shape), such as **Press Redraw shape, then drag on the map to give this zone a new rectangle. Shapes, at the map's bottom left, offers an ellipse or a polygon. A tap on a zone on the map picks it.** Where the map can expand, it ends with **Expand, at the map's top right, fills the window with the map.** While you draw, it reads **Drag on the map to draw this zone as a rectangle. Cancel drawing or Esc stops without a change.**, above **Cancel drawing**. While the map is locked, the lock note and its **Unlock** button take its place.
 - **Delete zone** (see [Clear or delete a zone](#clear-or-delete-a-zone)).
 
 A name, a **Type**, or a **Hold** saves on its own, with no **Save** button. Beside the zone's heading the card shows **Saving...**, then **Saved**. A shape you draw shows a message with the zone's name and **Undo** instead, such as **Couch redrawn**.
@@ -454,7 +459,7 @@ An ignore zone is not the radar's **Zone Type** setting (**LD2450 Zone Type** on
     - **Walking out into the room.** In the 3 seconds after the zone empties, the radar tracks a target outside the zone near where the person was, no farther than a brisk walk would have taken them by then. Walking out of a zone into the room turns it off within about 3 seconds, usually as soon as the radar reports you outside it.
     - **Walking out of the radar's view.** The radar loses the person while they're walking near the zone's edge or the edge of its view: within 0.3 m (1 ft), plus as far ahead as they walk in a second or two, up to 1.5 m (5 ft). An edge behind or beside them counts only within 0.3 m (1 ft). The zone then turns off as soon as the radar loses them, as it would without a hold. The radar reports each position about once a second, so Home Assistant needs about two seconds of walking in the zone to tell that someone is walking. Someone seen in the zone for under about 1.2 seconds counts only within 0.3 m (1 ft) of an edge, unless the radar saw them move at 0.85 m/s (2.8 ft/s) or faster. So someone who walks into a couch or bed zone and is lost as they sit down is held.
 
-    A hold also ends when someone is in the zone again, when the radar goes offline or reconnects, when Home Assistant restarts or Apollo mmWave reloads, and when you change the zone's shape, an ignore zone, or **Cone rotation**.
+    A hold also ends when someone is in the zone again, when the radar goes offline or reconnects, when Home Assistant restarts or the integration reloads, and when you change the zone's shape, an ignore zone, or **Cone rotation**.
 
     Home Assistant only sees positions, not who is who, so a hold has limits:
 
@@ -499,7 +504,7 @@ Press **Coverage** under the map to paint every spot where the radar has seen a 
 
 ### Use the zone sensors
 
-Each zone gets an occupancy sensor named **Zone 1 presence** (and so on) on the radar's device page in Home Assistant. It turns on when a tracked person is inside the zone, ready to use in your automations. When you rename a zone on the card, its sensors follow, so a zone named Couch gets **Zone 1 presence - Couch**. A name you gave the sensor yourself in Home Assistant is kept.
+Each zone gets an occupancy sensor named **Zone 1 presence** (and so on) on the radar's device page in Home Assistant. It turns on when a tracked person is inside the zone, ready to use in your automations. When you rename a zone on the card, its sensors follow, so a zone named Couch gets **Zone 1 presence - Couch**. A name you gave the sensor yourself in Home Assistant is kept. You can also change a zone sensor's entity ID in its settings: the zone map, zone presence, and a hold that's running follow the new ID, and the **Zone presence** card shows it after a page reload.
 
 Reload the page after you add a zone, and the **Zone presence** card next to the map lists its sensor too, colored while someone is in the zone, and **Occupancy History** adds a line for it, covering the last 24 hours. Until a radar has a zone, **Zone presence** reads **Press Add zone under the zone map to get a presence sensor for a zone. Reload this page to see it here.**
 
@@ -511,7 +516,7 @@ For an automation that covers the whole room rather than one zone, **Start here*
 
 **LD2450 Controls** holds **Zone Type**, **Multi Target Tracking**, **Radar Timeout**, **Radar Bluetooth (HLK app)**, **Restart Radar**, and **Factory Reset Radar**, whichever your sensor has (the MTR-1 has no Restart Radar). The restart and the reset ask before they act. **Radar Timeout** is how long **LD2450 Presence** stays on after the radar last sees someone. It doesn't hold the zones you draw: a zone turns off as soon as nobody is in it, unless you give it a hold time (see [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone)). While Zone Type isn't **Disabled**, a **Radar's built-in zones** card shows the radar chip's own zones, which are not the zones on the map: each zone's **X1**, **Y1**, **X2**, and **Y2** corners, and a table of how many targets each zone counts (**All**, **Still**, and **Moving**), in whole numbers.
 
-While the radar is offline, its zones' presence sensors read unavailable. They also read unavailable after every Home Assistant restart until the radar connects, then off or on again from what the radar sees. Before Apollo mmWave 2.4.0 they read off. The **Zone presence** rows hide while the sensors are unavailable, and an ignore zone's sensor reads off the whole time.
+While the radar is offline, its zones' presence sensors read unavailable. They also read unavailable after every Home Assistant restart until the radar connects, then off or on again from what the radar sees. Before 2.4.0 they read off. The **Zone presence** rows hide while the sensors are unavailable, and an ignore zone's sensor reads off the whole time.
 
 Home Assistant gets each target's position from the radar as two separate updates, X and Y. On an R PRO-1 each comes about once a second, with Y usually about half a second after X. Zone presence waits for both halves of a report before it checks your zones, so a zone beside a path people walk along doesn't turn on for a point between two reports, where nobody was. That wait can delay a zone turning on by up to about half a second. When someone moves along only one axis, the radar sends only that one, and zone presence counts the move about half a second after it arrives. Both apply to every zone, with or without a hold, with one exception: when the radar loses someone between their X and Y updates, a zone with a hold time checks their last X with the old Y once, as the spot where they were lost. So a zone with a hold time beside a walking path can still turn on there and stay on for its hold time.
 
@@ -552,23 +557,23 @@ The expand button isn't on a view-only map, in the card editor's preview, on a d
 
 ### Target X and Y units
 
-The LD2450 reports each target's position as a **Target X** and a **Target Y** sensor, six in all for its three targets, and it reports them in mm. Home Assistant picks the unit a distance sensor shows on its own, and with US customary units it picks inches. The zone map and zone presence read either unit, but the radar's built-in zone corners and Apollo's zone guides use mm, so from Apollo mmWave 2.4.0 the integration shows the Target X and Y of every Apollo R PRO-1 and MTR-1 in mm for you:
+The LD2450 reports each target's position as a **Target X** and a **Target Y** sensor, six in all for its three targets, and it reports them in mm. Home Assistant picks the unit a distance sensor shows on its own, and with US customary units it picks inches. The zone map and zone presence read either unit, but the radar's built-in zone corners and Apollo's zone guides use mm, so from 2.4.0 the integration shows the Target X and Y of every Apollo R PRO-1 and MTR-1 in mm for you:
 
 - **A new radar** shows mm about 2 seconds after Home Assistant adds it, with no message.
-- **A radar you already had** is switched once, after Home Assistant starts with 2.4.0. A notification titled **Apollo mmWave: Target X and Y now in mm** lists each radar and the sensors it switched, and says **Nothing was written to the radar.**
+- **A radar you already had** is switched once, after Home Assistant starts with 2.4.0 or later. A notification titled **Apollo mmWave Dashboard: Target X and Y now in mm** lists each radar and the sensors it switched, and says **Nothing was written to the radar.**
 - **Left as they are:** a sensor whose unit you picked in its settings, a sensor that an automation, a script, or a helper uses, the sensors of a metric install, which show mm already, and every other sensor and device, such as a radar's Target Distance and Speed.
-- **Once only.** Apollo mmWave decides each sensor once and never changes it again, also one it left alone. A disabled sensor is decided after you enable it, the next time Home Assistant starts or Apollo mmWave reloads.
+- **Once only.** The integration decides each sensor once and never changes it again, also one it left alone. A disabled sensor is decided after you enable it, the next time Home Assistant starts or the integration reloads.
 
 After the switch, automations, templates, and history graphs read these sensors in mm. A number an automation compares Target X or Y to in inches needs to be in mm, 25.4 times as large, and a history graph that spans the switch shows a step of 25.4 times. A YAML template sensor, a dashboard card, or another tool that reads them, such as Node-RED, reads mm from then on too. The zone map's **m / ft** switch changes only the map, never the sensors, and the grid line at the bottom of **Map settings** names the unit they show, such as **Target sensors: mm.**
 
-When some of a radar's Target X and Y still show another unit because Apollo mmWave left them alone, the **Radar setup** card above the zone map tells administrators so under its checks, with a **Show Target X and Y in mm** button. The line above the button says **After the change, automations and templates that use these sensors read mm.**, and when an automation, a script, or a helper uses them, it adds **An automation, a script or a helper uses them: check any number it compares them to.**
+When some of a radar's Target X and Y still show another unit because the integration left them alone, the **Radar setup** card above the zone map tells administrators so under its checks, with a **Show Target X and Y in mm** button. The line above the button says **After the change, automations and templates that use these sensors read mm.**, and when an automation, a script, or a helper uses them, it adds **An automation, a script or a helper uses them: check any number it compares them to.**
 
 ![The Radar setup card on an R PRO-1, with LD2450 · R PRO-1 Living Room under the title and the line Radar settings look good., then the note Home Assistant shows this radar's Target X and Y in inches. The zone map reads them either way. In mm they match the radar's built-in zone corners and Apollo's zone guides., the hint After the change, automations and templates that use these sensors read mm. An automation, a script or a helper uses them: check any number it compares them to., and a Show Target X and Y in mm button](/assets/apollo-mmwave-radar-setup-target-units-in-use.png)
 
 1. Check the automations, scripts, and helpers that use the radar's Target X or Y, and change any number they compare them to into mm.
 2. Press **Show Target X and Y in mm**. It switches the sensors whose unit Home Assistant picked on its own, never one whose unit you picked in its settings, and the note goes away.
 
-To go back to inches, open the sensor on the radar's device page, open its settings (⚙), choose **in** under **Unit of measurement**, and select **Update**. Apollo mmWave leaves it that way. Other users don't see the note or the button.
+To go back to inches, open the sensor on the radar's device page, open its settings (⚙), choose **in** under **Unit of measurement**, and select **Update**. The integration leaves it that way. Other users don't see the note or the button.
 
 ### Zoom in and move the map
 
@@ -599,16 +604,16 @@ The bottom-right corner has a lock toggle that reads **Unlocked** (🔓) or **Lo
 - **Add zone**, a zone's **Name**, **Type**, and **Hold**, and **Delete zone** still work. A zone you add on a locked map waits for **Unlock** before it's ready to draw.
 - Every zone is drawn alike, with no faded zones, so you can watch them all light up.
 
-On a phone or tablet, a one-finger swipe that starts on a locked map scrolls the page. A tap on a zone picks it, and a tap anywhere else on the map shows the reminder. Two fingers zoom and move the map whether it's locked or not (see [Zoom in and move the map](#zoom-in-and-move-the-map)). From Apollo mmWave 2.4.1, a one-finger swipe scrolls the page on an unlocked map too, until you press **Draw shape** or **Redraw shape**, so a swipe across the grid can't replace a zone's shape by accident. While the map is ready to draw, it takes every one-finger touch for drawing that zone: scroll with your finger outside the grid then, for example on the radar's name above it or on the **Zones** panel under it. For a phone or a wall tablet where nobody draws zones, a view-only zone map has no drawing tools at all and always lets the page scroll (see [Use your own layout](apollo-mmwave-dashboard-setup.md#use-your-own-layout)).
+On a phone or tablet, a one-finger swipe that starts on a locked map scrolls the page. A tap on a zone picks it, and a tap anywhere else on the map shows the reminder. Two fingers zoom and move the map whether it's locked or not (see [Zoom in and move the map](#zoom-in-and-move-the-map)). From 2.4.1, a one-finger swipe scrolls the page on an unlocked map too, until you press **Draw shape** or **Redraw shape**, so a swipe across the grid can't replace a zone's shape by accident. While the map is ready to draw, it takes every one-finger touch for drawing that zone: scroll with your finger outside the grid then, for example on the radar's name above it or on the **Zones** panel under it. For a phone or a wall tablet where nobody draws zones, a view-only zone map has no drawing tools at all and always lets the page scroll (see [Use your own layout](apollo-mmwave-dashboard-setup.md#use-your-own-layout)).
 
-From Apollo mmWave 2.2.6, only administrators can save zone changes. Other users still see the zones and their presence sensors. From 2.4.0 the card tells them up front: in the zone's editor, **Name**, **Type**, and **Hold** are grayed out, with **Only an administrator can change these.** under them, and the flip under **Map settings** is grayed out too. They get no **Add zone**, **Draw shape**, **Restore previous shape**, **Delete zone**, **Clear all shapes**, 🚶 button, or movement history, and from 2.4.1 the map never draws for them, so a swipe on it scrolls the page. On a radar with no zones, the panel tells them **No zones yet. An administrator can add them.**
+From 2.2.6, only administrators can save zone changes. Other users still see the zones and their presence sensors. From 2.4.0 the card tells them up front: in the zone's editor, **Name**, **Type**, and **Hold** are grayed out, with **Only an administrator can change these.** under them, and the flip under **Map settings** is grayed out too. They get no **Add zone**, **Draw shape**, **Restore previous shape**, **Delete zone**, **Clear all shapes**, 🚶 button, or movement history, and from 2.4.1 the map never draws for them, so a swipe on it scrolls the page. On a radar with no zones, the panel tells them **No zones yet. An administrator can add them.**
 
 ### Mark corners by walking
 
 Can't tell where the couch ends on the map? Mark the zone's corners with your own position: stand in each corner of the area while the radar tracks you, and the card turns your corners into the zone's shape. Take a phone or tablet with the dashboard open, and be the only person in the radar's view. Like drawing, it's for administrators, on an unlocked map.
 
 1. Unlock the map and pick the zone with its button under **Zones**.
-2. Press ✎ (**Drawing modes**), then 🚶 (**Mark corners by walking**). On a phone or tablet, you can press **🚶 Mark corners by walking** under the map instead, before **Coverage**. A panel opens under the map with a hint, **Corner here**, **Undo corner**, **Finish**, and **Cancel**, a banner in the map's top-left corner names the zone, such as **Marking Couch by walking**, with **Cancel**, and the zone's editor reads **Marking this zone's corners by walking. Follow the steps under the map.** You don't press **Draw shape** first: the corners always go to the picked zone.
+2. Press **Shapes**, then 🚶 (**Mark corners by walking**). On a phone or tablet, you can press **🚶 Mark corners by walking** under the map instead, before **Coverage**. A panel opens under the map with a hint, **Corner here**, **Undo corner**, **Finish**, and **Cancel**, a banner in the map's top-left corner names the zone, such as **Marking Couch by walking**, with **Cancel**, and the zone's editor reads **Marking this zone's corners by walking. Follow the steps under the map.** You don't press **Draw shape** first: the corners always go to the picked zone.
 3. Stand still in one corner of the area for about 3 seconds and press **Corner here**. The corner is where the radar placed you, on average, over the last 1.5 seconds, and the radar updates your position about once a second, so a corner pressed sooner can land short of where you stand.
 4. Walk along the edge to the next corner, stand still for about 3 seconds, and press **Corner here** again. Go around the zone in order, not across it. The map numbers each corner and draws a dashed preview of the shape with its size.
 5. Press **Finish**. Two corners make a rectangle, with the two as opposite corners, and three or more make a polygon of up to 32 corners. The zone saves like one you drew, and the message names it with **Undo**, such as **Couch drawn** (see [Undo a shape change](#undo-a-shape-change)).
@@ -631,7 +636,7 @@ To clear the shapes of every zone and keep the zones, open **Map settings** and 
 
 No button clears a single zone's shape. To change one, press **Redraw shape** and draw the new shape, which replaces the old one. A double-click on a zone's button doesn't clear it either.
 
-**Add zone** takes the lowest zone number that's free, so a zone you add after deleting one can get the deleted zone's number. From Apollo mmWave 2.4.0, it starts with fresh sensor names: names Apollo mmWave gave the old zone, such as **Zone 1 presence - Couch**, are cleared, and a name you typed in the sensor's settings stays. Home Assistant gives the new zone's sensors the old ones' entity IDs, though, such as `binary_sensor.couch_presence` if you had changed it, and Apollo mmWave can't prevent that. An automation written for the deleted zone then follows the new one, so check those automations.
+**Add zone** takes the lowest zone number that's free, so a zone you add after deleting one can get the deleted zone's number. From 2.4.0, it starts with fresh sensor names: names the integration gave the old zone, such as **Zone 1 presence - Couch**, are cleared, and a name you typed in the sensor's settings stays. Home Assistant gives the new zone's sensors the old ones' entity IDs, though, such as `binary_sensor.couch_presence` if you had changed it, and the integration can't prevent that. An automation written for the deleted zone then follows the new one, so check those automations.
 
 ### Replay movement history
 
@@ -652,11 +657,11 @@ Before you turn it on, know what it keeps and where:
 - **How long.** Up to 24 hours. Each radar keeps about 100,000 records (up to 105,000 before the oldest are dropped back to 100,000) and drops the oldest first, so a busy room keeps less: as little as about 4.6 hours with three people moving all the time.
 - **Backups.** Home Assistant backups include the file, even backups that leave out the database. Turning history off doesn't remove it from backups you already made.
 - **Not the recorder.** It's separate from Home Assistant's recorder, which saves the history of your entities. A `recorder:` exclude or the `recorder.purge_entities` action, such as the ones in [Minimize activity spam](/products/general/tutorials/minimize-mmwave-activity-spam.md#stop-recording-ld2450-target-positions), neither stops it nor deletes it.
-- **Deleting it.** Untick **Movement history**, and the card warns **Turning this off deletes this radar's movement history from Home Assistant. Backups made while it was on keep their copy.** Press **Turn off and delete** to delete it, or **Keep it** to leave it on. **Clear history** in the panel deletes what's been recorded and keeps recording, once you confirm **Delete this radar's movement history?** with **Delete**. Removing the Apollo mmWave integration deletes the file, and removing a radar from Home Assistant deletes that radar's history. While the integration is disabled, the file stays as it was until the next start.
+- **Deleting it.** Untick **Movement history**, and the card warns **Turning this off deletes this radar's movement history from Home Assistant. Backups made while it was on keep their copy.** Press **Turn off and delete** to delete it, or **Keep it** to leave it on. **Clear history** in the panel deletes what's been recorded and keeps recording, once you confirm **Delete this radar's movement history?** with **Delete**. Removing the Apollo mmWave Dashboard integration deletes the file, and removing a radar from Home Assistant deletes that radar's history. While the integration is disabled, the file stays as it was until the next start.
 - **SD cards.** While anyone is in view, Home Assistant writes the whole file again about once a minute. For a busy radar at its cap, that's about 1.3 MB a minute, which wears an SD card, so turn history on where you need it and off when you're done.
 - **Support file.** A [support file](#send-apollo-a-support-file) says only whether history is on and how many points it holds, never the positions.
 
-Because Home Assistant saves the history about once a minute, a crash or a power cut can lose up to the last minute of it. If Home Assistant ever finds the file damaged, it sets the file aside and raises a repair, **Storage corruption detected for apollo_mmwave.movement**, that suggests restoring a backup. You don't need to: Apollo mmWave deletes the damaged copy, because it holds positions, and starts a new history. Open the repair under **Settings → System → Repairs** and select **Submit** to dismiss it.
+Because Home Assistant saves the history about once a minute, a crash or a power cut can lose up to the last minute of it. If Home Assistant ever finds the file damaged, it sets the file aside and raises a repair, **Storage corruption detected for apollo_mmwave.movement**, that suggests restoring a backup. You don't need to: the integration deletes the damaged copy, because it holds positions, and starts a new history. Open the repair under **Settings → System → Repairs** and select **Submit** to dismiss it.
 
 [![Open your Home Assistant instance and show your repairs.](https://my.home-assistant.io/badges/repairs.svg)](https://my.home-assistant.io/redirect/repairs/)
 
@@ -712,7 +717,7 @@ Each call calibrates one radar. Two related actions round it out: `apollo_mmwave
 
 A calibration sets each threshold a margin above the highest energy it heard during a one-minute listen. Something that moves now and then, like a fan that cycles or the heating coming on, may not have moved during that minute.
 
-1. Update Apollo mmWave to 2.2.4 or newer and press **Calibrate with empty room** again. 2.2.4 leaves more headroom above the room's noise (15 points instead of 10).
+1. Update Apollo mmWave Dashboard to 2.2.4 or newer and press **Calibrate with empty room** again. 2.2.4 leaves more headroom above the room's noise (15 points instead of 10).
 2. Calibrate while whatever usually runs in the room is running: the fan on, the heating or air conditioning cycling. If it only comes on now and then, listen for longer so a cycle falls inside the listen, for example 5 minutes (`duration_s: 300`, set the same way as `margin` in step 3).
 3. Still too sensitive? Raise `margin`, the points added above each gate's peak, for example to 20 or 25, and calibrate again. It sets the headroom on most gates. The percentage (`margin_pct`) only takes over on gates whose peak is 43 or more at the defaults, such as gates right at the sensor, so raising it changes little in most rooms. There are two places to set it:
     - **For one run, on any dashboard:** open **Settings → Tools → Actions**, pick **Calibrate gate thresholds (empty room)**, choose your radar under **Radar Device**, tick **Headroom (points)** and set it to 20 (and **Listen for (seconds)** for a longer listen), then press **Perform action** and leave the room. The Auto-calibrate card shows the run as it goes.
@@ -729,7 +734,7 @@ A calibration sets each threshold a margin above the highest energy it heard dur
           duration_s: 300
         ```
 
-        The keys go under `calibration:`. Typed at the card's top level, they are ignored. On the Apollo mmWave dashboard, the same block can go under `strategy:` in its raw configuration; the [Apollo mmWave configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#auto-calibration) has the details.
+        The keys go under `calibration:`. Typed at the card's top level, they are ignored. On the Apollo mmWave Dashboard, the same block can go under `strategy:` in its raw configuration; the [Apollo mmWave Dashboard configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#auto-calibration) has the details.
 
 4. If only one spot misbehaves, raise only that gate's threshold, as described in [Fine-tune gates by hand](#fine-tune-gates-by-hand).
 
@@ -752,7 +757,7 @@ The **Calibrate with empty room** button is disabled when the card cannot run a 
     [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=esphome)
 
 - **Background correction is running on the LD2412. Wait for its status to turn off.** (R PRO-1) Wait for **Background Correction Running** to turn off.
-- **Apollo mmWave is still loading...** The integration is starting or reloading, and the card keeps trying on its own. If it changes to **Apollo mmWave is not loaded, so calibration is unavailable.**, press **Retry**. If that keeps happening, check **Settings → Devices & services** for an error on the Apollo mmWave integration.
+- **Apollo mmWave Dashboard is still loading...** The integration is starting or reloading, and the card keeps trying on its own. If it changes to **Apollo mmWave Dashboard is not loaded, so calibration is unavailable.**, press **Retry**. If that keeps happening, check **Settings → Devices & services** for an error on the Apollo mmWave Dashboard integration.
 
     [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=apollo_mmwave)
 
@@ -815,7 +820,7 @@ They're in the **Zones** panel right under the map. Press the zone's button ther
 
 ### A drag on the map draws nothing
 
-From Apollo mmWave 2.4.1, a drag draws only after you say which zone it draws. Pick the zone, press **Redraw shape** in its editor (**Draw shape** for a zone with no shape yet) or ✎ beside its button, and drag once the banner, such as **Drawing Couch**, shows on the map. Until then, a press on the map says **To redraw Couch, press Redraw shape first.** If the button in the map's bottom-right corner reads **Locked**, press it first (see [Lock and unlock](#lock-and-unlock)). Drawing ends with each shape, so press **Redraw shape** again for the next one. Only administrators can draw.
+From 2.4.1, a drag draws only after you say which zone it draws. Pick the zone, press **Redraw shape** in its editor (**Draw shape** for a zone with no shape yet) or ✎ beside its button, and drag once the banner, such as **Drawing Couch**, shows on the map. Until then, a press on the map says **To redraw Couch, press Redraw shape first.** If the button in the map's bottom-right corner reads **Locked**, press it first (see [Lock and unlock](#lock-and-unlock)). Drawing ends with each shape, so press **Redraw shape** again for the next one. Only administrators can draw.
 
 ### A shape went to the wrong zone
 
@@ -838,7 +843,7 @@ Start with the LD2450's **Radar setup** card, right above the map.
 
 ### The dots sit at the sensor, or a zone misses you
 
-Apollo mmWave 2.2.7 fixed this. Before it, when Home Assistant used US customary units (or you changed a Target X or Target Y sensor's unit), the zone map read the radar's positions in inches as if they were millimeters. The dots sat at or right around the sensor, and zone presence didn't turn on. Update Apollo mmWave (see [Upgrade from an older setup](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup)) and the dots land where people are. From 2.4.0, Apollo mmWave also shows the radar's Target X and Y in mm itself (see [Target X and Y units](#target-x-and-y-units)).
+2.2.7 fixed this. Before it, when Home Assistant used US customary units (or you changed a Target X or Target Y sensor's unit), the zone map read the radar's positions in inches as if they were millimeters. The dots sat at or right around the sensor, and zone presence didn't turn on. Update Apollo mmWave Dashboard (see [Upgrade from an older setup](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup)) and the dots land where people are. From 2.4.0, the integration also shows the radar's Target X and Y in mm itself (see [Target X and Y units](#target-x-and-y-units)).
 
 A zone you drew while the dots were in the wrong place may not cover where people show up now. Walk through the room, watch the dots, and redraw any zone that's off.
 
@@ -846,14 +851,14 @@ A zone you drew while the dots were in the wrong place may not cover where peopl
 
 ### Target X or Y reads 25.4 times larger, or still shows inches
 
-- **An automation or a history graph shows Target X or Y 25.4 times larger.** From 2.4.0, Apollo mmWave shows an R PRO-1's or MTR-1's Target X and Y in mm instead of the inches Home Assistant picked, and its notification **Apollo mmWave: Target X and Y now in mm** names the sensors it switched. Change the numbers your automation compares them to into mm. Or, to keep inches, open the sensor's settings (⚙), choose **in** under **Unit of measurement**, and select **Update**: Apollo mmWave doesn't change it again. A history graph shows the step only where it spans the switch.
-- **Target X and Y still show inches.** Apollo mmWave left them as they were: you picked their unit in their settings, an automation, a script, or a helper uses them, Home Assistant used metric units when Apollo mmWave decided them and US customary units later, or a sensor was disabled then. As an administrator, check those automations, then press **Show Target X and Y in mm** on the **Radar setup** card above the zone map. It switches the ones Home Assistant picked on its own; a unit you picked changes only in the sensor's settings. The zone map and zone presence work in either unit.
+- **An automation or a history graph shows Target X or Y 25.4 times larger.** From 2.4.0, the integration shows an R PRO-1's or MTR-1's Target X and Y in mm instead of the inches Home Assistant picked, and its notification **Apollo mmWave Dashboard: Target X and Y now in mm** names the sensors it switched. Change the numbers your automation compares them to into mm. Or, to keep inches, open the sensor's settings (⚙), choose **in** under **Unit of measurement**, and select **Update**: the integration doesn't change it again. A history graph shows the step only where it spans the switch.
+- **Target X and Y still show inches.** The integration left them as they were: you picked their unit in their settings, an automation, a script, or a helper uses them, Home Assistant used metric units when the integration decided them and US customary units later, or a sensor was disabled then. As an administrator, check those automations, then press **Show Target X and Y in mm** on the **Radar setup** card above the zone map. It switches the ones Home Assistant picked on its own; a unit you picked changes only in the sensor's settings. The zone map and zone presence work in either unit.
 
-[Target X and Y units](#target-x-and-y-units) explains what Apollo mmWave switches and what it leaves alone.
+[Target X and Y units](#target-x-and-y-units) explains what the integration switches and what it leaves alone.
 
 ### Zone presence reads unavailable
 
-From Apollo mmWave 2.4.0, a zone's presence sensor reads unavailable while its radar is offline, and after every Home Assistant restart until the radar connects. Then it reads off or on again from what the radar sees. While it's unavailable, the map turns the zones gray with short dashes and shows **Radar offline** in its top-left corner, and the **Zone presence** rows on the dashboard hide. Ignore zones read off the whole time.
+From 2.4.0, a zone's presence sensor reads unavailable while its radar is offline, and after every Home Assistant restart until the radar connects. Then it reads off or on again from what the radar sees. While it's unavailable, the map turns the zones gray with short dashes and shows **Radar offline** in its top-left corner, and the **Zone presence** rows on the dashboard hide. Ignore zones read off the whole time.
 
 ![The zone map for an R PRO-1 named R PRO-1 Living Room while the radar is offline: the note Radar offline in the top-left corner, under the top row of distance labels, no dots, the Couch, Desk, and Doorway zones gray with short dashes, and the Fan (ignored) zone still hatched. The expand button sits in the map's top-right corner. Under the map are the Coverage button and the Zones heading with the Add zone button, above the Desk, Couch, Doorway, and Fan buttons, with Desk selected](/assets/apollo-mmwave-zone-map-offline.png)
 
@@ -881,13 +886,13 @@ The sliders on **Detection Range**, **Move Thresholds**, and **Still Thresholds*
 
 ### A card this guide describes isn't on your tab
 
-If your tab has no **Radar setup** card, no **LD2450 Controls** or **Zone presence** card next to the zone map, or no **Device** card at the bottom, your Apollo mmWave dashboard is probably a saved copy from an older release, made with **Take control**. [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards) shows how to get the automatic dashboard back and keep your copy. A card that's there but has fewer rows than this guide shows is something else: a row only appears while its entity is enabled in Home Assistant.
+If your tab has no **Radar setup** card, no **LD2450 Controls** or **Zone presence** card next to the zone map, or no **Device** card at the bottom, the dashboard at `/apollo-mmwave` is probably a saved copy from an older release, made with **Take control**. [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards) shows how to get the automatic dashboard back and keep your copy. A card that's there but has fewer rows than this guide shows is something else: a row only appears while its entity is enabled in Home Assistant.
 
 ### Send Apollo a support file
 
-Still stuck? Send Apollo a support file with your question. It holds the Apollo mmWave and Home Assistant versions, the dashboard's state, and each radar's model, firmware, settings, zones, and last calibration. For movement history it says only whether it's on and how many points it holds, never the positions. It leaves out MAC and IP addresses, Wi-Fi network names, and tokens, and downloading it changes nothing. Only administrators can download it.
+Still stuck? Send Apollo a support file with your question. It holds the Apollo mmWave Dashboard and Home Assistant versions, the dashboard's state, and each radar's model, firmware, settings, zones, and last calibration. For movement history it says only whether it's on and how many points it holds, never the positions. It leaves out MAC and IP addresses, Wi-Fi network names, and tokens, and downloading it changes nothing. Only administrators can download it.
 
-1. Go to **Settings → Devices & services** and open **Apollo mmWave**. The **Device** card at the bottom of each tab links there too.
+1. Go to **Settings → Devices & services** and open **Apollo mmWave Dashboard**. The **Device** card at the bottom of each tab links there too.
 
     [![Open your Home Assistant instance and show an integration.](https://my.home-assistant.io/badges/integration.svg)](https://my.home-assistant.io/redirect/integration/?domain=apollo_mmwave)
 

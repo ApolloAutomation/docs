@@ -66,7 +66,7 @@ Apollo mmWave sensors report frequently by design, which can cause internal rada
 
 The MTR-1 and the R PRO-1 have an LD2450 radar that tracks up to three people. For each one it reports X, Y, angle, distance, speed and direction several times a second, and the Home Assistant recorder saves every change to its database. In our testing, one R PRO-1 saved about 460,000 changes in a single day from Target 1 alone, while it tracked an object that never moved.
 
-The `logbook.exclude` block above only hides entities from Activity. A `recorder.exclude` block stops the saving. The Apollo mmWave zone map, the drawn zone presence sensors and the Apollo mmWave dashboard read the live values, so they keep working. From then on, the history graphs of these sensors get no new readings. Readings saved before stay until you delete them in step 5 or Home Assistant's regular cleanup removes them.
+The `logbook.exclude` block above only hides entities from Activity. A `recorder.exclude` block stops the saving. The Apollo mmWave Dashboard, its zone map, and the drawn zone presence sensors read the live values, so they keep working. From then on, the history graphs of these sensors get no new readings. Readings saved before stay until you delete them in step 5 or Home Assistant's regular cleanup removes them.
 
 !!! info "Home Assistant Recorder Documentation"
 

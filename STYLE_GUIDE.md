@@ -163,6 +163,16 @@ Always capitalized exactly **ESPHome**. Never `esphome`, `ESPhome`,
 When introducing the broader project, prefer **ESPHome ecosystem** over
 "the ESPHome project" or "ESPHome firmware".
 
+### Apollo mmWave Dashboard
+
+The integration is **Apollo mmWave Dashboard** from 2.4.2, and its sidebar
+dashboard has the same name. Apollo's radar sensors are **Apollo mmWave
+sensors**. Text about 2.4.1 and earlier releases keeps **Apollo mmWave**.
+
+A setup from before 2.4.2 keeps **Apollo mmWave** as the name of its entry
+and its sidebar dashboard. Where a step has to work for both, name that
+dashboard by its address, **the dashboard at `/apollo-mmwave`**.
+
 ### Flashing firmware
 
 **Flash** is the preferred verb for putting firmware on a device:
