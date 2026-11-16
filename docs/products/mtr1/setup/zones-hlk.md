@@ -40,15 +40,15 @@ With the app installed, you'll turn on the radar's Bluetooth, connect to it from
 
 ![HLKRadarTool LD2450 radar view with one target and the Set button circled in red](/assets/Esxscreenshot-20240514-100250-hlkradartool.jpg)
 
-!!! tip "Drawing zones with the Apollo mmWave dashboard?"
+!!! tip "Drawing zones with the Apollo mmWave Dashboard?"
 
     In step 4, pick **Close detection** instead of **Area Detection** (Zone Type **Disabled** in Home Assistant). The dashboard's [zone map](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces the app's areas. On **Area Detection**, the radar reports only people inside the app's areas, so anyone else is missing from the map, and **Area Filtering** hides the people inside them. To keep a fan or a curtain from turning the map's zones on, draw an [ignore zone](/products/mtr1/setup/apollo-mmwave-dashboard.md#ignore-a-spot-or-hold-a-zone) over it on the map.
 
-4\. Select **Area Detection** (drawing zones on the Apollo mmWave dashboard instead? Pick **Close detection** and skip the areas; see the tip above), then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
+4\. Select **Area Detection** (drawing zones on the Apollo mmWave Dashboard instead? Pick **Close detection** and skip the areas; see the tip above), then toggle Area 1, 2, or 3 and you will see a box with the corresponding number pop up. Then you can press and hold the box to move it and resize it. When your zones are set then select Submit and you should see Setup successfully.
 
 !!! tip "There are three ways to use your MTR-1!"
 
-    You can use any of these three choices to control your MTR-1 differently. If you draw zones on the Apollo mmWave dashboard, pick **Close detection** (Zone Type **Disabled**): the dashboard recommends it, because its zone map replaces the app's areas. Pick **Area Detection** only when you use the app's three areas instead of the zone map.<br>**Close detection** (Disabled in Home Assistant): zone detection is off<br>**Area Detection** (Detection): only detects targets inside your zones<br>**Area Filtering** (Filter): ignores targets inside your zones
+    You can use any of these three choices to control your MTR-1 differently. If you draw zones on the Apollo mmWave Dashboard, pick **Close detection** (Zone Type **Disabled**): the dashboard recommends it, because its zone map replaces the app's areas. Pick **Area Detection** only when you use the app's three areas instead of the zone map.<br>**Close detection** (Disabled in Home Assistant): zone detection is off<br>**Area Detection** (Detection): only detects targets inside your zones<br>**Area Filtering** (Filter): ignores targets inside your zones
 
     Close detection lets you use the sensor as a basic presence sensor, and Area Filtering lets you filter out an area and detect everything else, which is useful to avoid a fan!
 
