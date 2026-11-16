@@ -28,7 +28,7 @@ If you built the [MSR-2 tuning dashboard](/products/msr2/setup/msr2-tuning-dashb
         [![Open your Home Assistant instance and show your Home Assistant version information.](https://my.home-assistant.io/badges/info.svg)](https://my.home-assistant.io/redirect/info/)
 
     - You have a way to install community integrations like this one. Which one depends on your Home Assistant version:
-        - **Home Assistant 2026.11 or newer** has the **Marketplace** built in, under **Settings → Marketplace**. It replaces HACS, and it moves an existing HACS setup over on its own, Apollo mmWave Dashboard included. Adding a repository from a link needs a free GitHub account, which the Marketplace asks you to connect the first time. A GitHub connection you made for HACS carries over.
+        - **Home Assistant 2026.11 or newer** has the **Marketplace** built in, under **Settings → Marketplace**. It replaces HACS, and it moves an existing HACS setup over on its own, Apollo mmWave Dashboard included. Installing from a search needs nothing more. Only adding a repository from a link needs a free GitHub account, which the Marketplace asks you to connect then. A GitHub connection you made for HACS carries over.
         - **Home Assistant 2026.10 or earlier** needs HACS 2.0.5 or newer, installed and set up. HACS is a community store for Home Assistant that installs and updates custom integrations. If you don't have it yet, follow the [HACS download guide](https://hacs.xyz/docs/use/download/download/) and then the [initial configuration guide](https://hacs.xyz/docs/configuration/basic). Setup asks you to sign in with a free GitHub account. On Home Assistant OS, the button below opens the **Get HACS** app that the download guide uses.
 
             [![Open your Home Assistant instance and show the dashboard of an app.](https://my.home-assistant.io/badges/supervisor_app.svg)](https://my.home-assistant.io/redirect/supervisor_app/?app=cb646a50_get&repository_url=https%3A%2F%2Fgithub.com%2Fhacs%2Faddons)
@@ -37,33 +37,33 @@ If you built the [MSR-2 tuning dashboard](/products/msr2/setup/msr2-tuning-dashb
 
 ## Install Apollo mmWave Dashboard through HACS or the Marketplace { #install-apollo-mmwave-through-hacs }
 
-Apollo mmWave Dashboard installs from its GitHub repository. On Home Assistant 2026.11 or newer you install it from the built-in **Marketplace**, and on older versions from HACS, so pick the tab for your version (**Settings → About** shows it). The button under step 1 works with both.
-
-Apollo mmWave Dashboard has been accepted into the community list that HACS and the Marketplace both search, but it may not show up in a search yet. Until it does, you add its repository once yourself. From then on, updates arrive like any other integration's.
+Apollo mmWave Dashboard is in the community list that HACS and the Marketplace both search, so you find it with a search and install it like any other integration. On Home Assistant 2026.11 or newer you install it from the built-in **Marketplace**, and on older versions from HACS, so pick the tab for your version (**Settings → About** shows it). The button under step 1 works with both. Updates arrive the same way as for any other integration.
 
 If you installed Apollo mmWave from the original repository, bharvey88/apollo-mmwave, which is no longer on GitHub, follow [From the original Apollo mmWave repository](#from-the-original-apollo-mmwave-repository) instead. It switches HACS over without setting anything up again.
 
 === "Marketplace (2026.11+)"
 
-    1. Go to **Settings → Marketplace**. Or use the button below: it opens Apollo mmWave Dashboard in the Marketplace, and if the Marketplace doesn't list it yet, it shows an **Add custom repository** box first. Click **Add** there and go on at step 4.
+    1. Go to **Settings → Marketplace**. Or use the button below, which opens Apollo mmWave Dashboard in the Marketplace, and go on at step 3.
 
         [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=apollo-mmwave-main&category=integration)
 
-    2. Search for **Apollo mmWave Dashboard**. If it's listed, open it and go on at step 4.
-    3. If it isn't listed, click **Add from link**. Paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **GitHub link** field and click **Add**. If a **Type** field appears, set it to **Integration** and click **Add** again. Then search for **Apollo mmWave Dashboard** and open it.
-    4. Click **Install**, then **Install** again in the dialog that opens.
+    2. Search for **Apollo mmWave Dashboard** and open it. Until 2.4.2 is out, the listing still reads **Apollo mmWave**, and searching for **Apollo mmWave** finds it under either name.
+    3. Click **Install**, then **Install** again in the dialog that opens.
 
-    Adding a repository from a link needs a connected GitHub account. If yours isn't connected yet, **Add** opens **Connect GitHub** first, which gives you a code to enter on GitHub. The button above shows **Connect GitHub to add the custom repository ApolloAutomation/apollo-mmwave-main, then open the link again.** instead: connect GitHub, then click the button again.
+    The first time you open it, the Marketplace may show a warning: tick **I understand the risks and agree** and click **Continue**.
+
+    If the search doesn't find it, add the repository yourself: click **Add from link** (a link icon on a narrow screen), paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **GitHub link** field, and click **Add**. If a **Type** field appears, set it to **Integration** and click **Add** again. Then search again and go on at step 3. Adding a repository from a link needs a connected GitHub account. If yours isn't connected yet, **Add** opens **Connect GitHub** first, which gives you a code to enter on GitHub. In that case the button above shows **Connect GitHub to add the custom repository ApolloAutomation/apollo-mmwave-main, then open the link again.** instead: connect GitHub, then click the button again.
 
 === "HACS (older)"
 
-    1. Open **HACS** from your Home Assistant sidebar. Or use the button below: it opens Apollo mmWave Dashboard in HACS, and if HACS doesn't list it yet, it shows an **Add custom repository** box first. Click **Add** there and go on at step 4.
+    1. Open **HACS** from your Home Assistant sidebar. Or use the button below, which opens Apollo mmWave Dashboard in HACS, and go on at step 3.
 
         [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=apollo-mmwave-main&category=integration)
 
-    2. Search HACS for **Apollo mmWave Dashboard**. If it's listed, open it and go on at step 4.
-    3. If it isn't listed, click the three-dot menu in the upper right corner and choose **Custom repositories**. Paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **Repository** field, set **Type** to **Integration**, and click **Add**. The repository shows up in the list. Close the dialog, then search HACS for **Apollo mmWave Dashboard** and open it.
-    4. Click **Download**, then confirm with **Download** in the dialog that opens.
+    2. Search HACS for **Apollo mmWave Dashboard** and open it. Until 2.4.2 is out, the listing still reads **Apollo mmWave**, and searching for **Apollo mmWave** finds it under either name.
+    3. Click **Download**, then confirm with **Download** in the dialog that opens.
+
+    If the search doesn't find it, add the repository yourself: click the three-dot menu in the upper right corner and choose **Custom repositories**. Paste `https://github.com/ApolloAutomation/apollo-mmwave-main` into the **Repository** field, set **Type** to **Integration**, and click **Add**. Close the dialog, then search again and go on at step 3. If the button above shows an **Add custom repository** box, clicking **Add** there does the same.
 
 The Marketplace can usually load a new integration without a restart. If it opens the Apollo mmWave Dashboard setup dialog after the install, skip the restart and go on at step 3 of [Add the integration](#add-the-integration).
 
