@@ -177,7 +177,11 @@ Want a second dashboard, say one with only the bedroom sensors, or one at anothe
 2. Pick **Apollo mmWave Dashboard** under **Community dashboards**.
 3. Give it a title and a URL other than `apollo-mmwave`, then click **Create**.
 
-A dashboard you add this way is yours from the start, and the integration options never change it. It shows every detected Apollo mmWave device; to limit it, set `devices` in its raw configuration, as the [Apollo mmWave Dashboard configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#choosing-which-devices-appear) shows. The URL matters. The integration forgets its own dashboard when you delete it, but not while it isn't running, for example while it's disabled. If you delete the integration's dashboard then and add one of these at `apollo-mmwave`, the integration can mistake it for the dashboard it created, and its options and removal would then act on yours.
+A dashboard you add this way is yours from the start, and the integration options never change it. It shows every detected Apollo mmWave device; to limit it, set `devices` in its raw configuration, as the [Apollo mmWave Dashboard configuration guide](https://github.com/ApolloAutomation/apollo-mmwave-main/blob/main/docs/configuration.md#choosing-which-devices-appear) shows.
+
+!!! warning "Give it a URL other than the integration's"
+
+    The integration forgets its own dashboard when you delete it, but not while it isn't running, for example while it's disabled. If you delete the integration's dashboard then and add one of these at `apollo-mmwave`, the integration can mistake it for the dashboard it created, and its options and removal would then act on yours.
 
 ### Use your own layout
 
