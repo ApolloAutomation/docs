@@ -36,9 +36,9 @@ Every tab starts with a **Start here** card that lists your sensor's first steps
     - **On MSR-1 and MSR-2 tabs**, a line under the Gate Energy chart says whether the radar reports a target: [Third column](#third-column).
     - **After an update**, the cards tell you when the page needs a reload: [Load the new cards](apollo-mmwave-dashboard-setup.md#load-the-new-cards).
 
-Here's the **Start here** card on an MSR-1. On an MTR-1, or an R PRO-1 without the LD2412, it lists three zone map steps instead, and on an R PRO-1 with the LD2412 it covers both radars.
+Here's the **Start here** card on an R PRO-1 with the LD2412, which covers both radars. On an MSR-1 or MSR-2 it lists five steps for its one radar, and on an MTR-1, or an R PRO-1 without the LD2412, three zone map steps.
 
-![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps: fix anything the Radar setup card flags, press Calibrate with empty room, set Max Move Gate and Max Still Gate (each gate is about 2.5 ft), set Radar Timeout, and walk the room while you watch the Gate Energy chart, then the line In automations, use Radar Target for the whole room. If it turns off while someone sits still, raise Radar Timeout to 60 s or more. To ignore people past End Zone 3, use Any zone instead., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
+![The Start here card for an R PRO-1 named R PRO-1 Normal Temperature Test, Apollo mmWave with two radars: the LD2412 senses people anywhere in range, even sitting still, and the LD2450 tracks where people are and drives the zone map. Six numbered steps follow: fix anything the LD2412's Radar setup card flags, press Calibrate with empty room on the Auto-calibrate card and leave the room, set Max Gate and Min Gate on the Detection Range card (each gate is about 2.5 ft), set Radar Timeout on the same card, walk the room while you watch the Gate Energy chart, and for the LD2450 fix anything Radar setup flags above the zone map, set Cone rotation under Map settings, then press Add zone, draw the zone, and walk into it. Then the line In automations, use LD2412 Presence (Radar Target on this tab) for the whole room, or a zone's presence sensor for one part of it., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
 
 !!! note "Before you start"
 
@@ -239,7 +239,7 @@ Every R PRO-1 has an LD2450 radar, and the optional LD2412 addon adds a second o
 - There is no Zone Config card, and the Distances chart shows the gates and the Max Gate and Min Gate bars without live distance bars.
 - Before it writes, the calibration asks the radar for its current thresholds (**Reading the radar's current thresholds...**), so what it saves for Undo matches the radar.
 
-![The Auto-calibrate card on an R PRO-1, titled LD2412 · R PRO-1 Server Rack, with a fourth checklist item asking you to run Start Dynamic Background Correction first, and under the checklist the reminder to raise Radar Timeout to 60 s or more if Radar Target turns off while someone sits still](/assets/apollo-mmwave-calibrate-r-pro-1.png)
+![The Auto-calibrate card on an R PRO-1, titled LD2412 · R PRO-1 Normal Temperature Test, with a fourth checklist item asking you to run Start Dynamic Background Correction first, the reminder to raise Radar Timeout to 60 s or more if Radar Target turns off while someone sits still, the Calibrate with empty room and Preview only buttons, then Last calibrated Oct 21, 08:02 AM, 7 of 28 thresholds changed., the Undo (restore your previous values) button with Saved Oct 21, 08:02 AM. under it, and Show last result](/assets/apollo-mmwave-calibrate-r-pro-1.png)
 
 The LD2412 also has its own background learning, **Start Dynamic Background Correction** on the **LD2412 Controls** card. It runs on the radar chip and stores its result inside the radar. **Background Correction Running** shows whether it is still working. Use both, in this order:
 
@@ -510,7 +510,7 @@ Reload the page after you add a zone, and the **Zone presence** card next to the
 
 Under it, **LD2450 Live** shows what the radar reports right now, with the radar's **Target Count** under its rows as a whole number. If the map shows no dot with you in the room, look here first: **LD2450 Presence** off means the radar itself reports nobody. It covers the radar's whole view, not one zone, and **Occupancy History** names its line **LD2450 Presence** too.
 
-![The LD2450 Live card on an R PRO-1 with nobody in the room: LD2450 Presence, Moving Target, and Still Target read Clear, and Target 1 to 3 Distance read Unknown with their Direction rows reading NA. A second card under it reads Target Count: 0, with the 0 in bold](/assets/apollo-mmwave-ld2450-live-count.png)
+![The LD2450 Live card on an R PRO-1 with one person in the room: LD2450 Presence, Moving Target, and Still Target read Detected, Target 1 Distance reads 15.6 in and Target 1 Direction reads Approaching, and Target 2 and 3 Distance read Unknown with their Direction rows reading NA. A second card under it reads Target Count: 1, with the 1 in bold](/assets/apollo-mmwave-ld2450-live-count.png)
 
 For an automation that covers the whole room rather than one zone, **Start here** names the sensor to use. On an MTR-1 it's **LD2450 Presence**. On an R PRO-1 whose firmware has **Combined Presence** (firmware newer than 26.3.2.1), it's **Combined Presence**, which is on while either radar sees someone. On earlier R PRO-1 firmware it's **LD2412 Presence**, or **LD2450 Presence** on an R PRO-1 without the LD2412.
 
