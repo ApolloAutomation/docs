@@ -102,9 +102,6 @@ The cards on each tab are laid out in columns that stack into one on a phone. He
 Both sensors use the LD2410 radar chip, so their tabs look the same, and the tuning card titles start with **LD2410**.
 
 - **Start here** sits at the top. It names your sensor and lists five steps, from **Fix anything the Radar setup card flags.** to walking the room while you watch the Gate Energy chart. Under the steps it says to use **Radar Target** in automations for the whole room, and to raise **Radar Timeout** to 60 s or more if it turns off while someone sits still. Its links open the tuning guide on this wiki and your sensor's own page in Home Assistant.
-
-    ![The Start here card for an MSR-1 named MSR-1 Kitchen, with five numbered steps starting Fix anything the Radar setup card flags., then the line In automations, use Radar Target for the whole room., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
-
 - Under it, the **Radar setup** card checks the radar's settings and offers a fix when one is off. On a sensor that's ready to go it reads **Radar settings look good.**
 - **Auto-calibrate** comes next, with the **Calibrate with empty room** and **Preview only** buttons. If your sensor still has its factory thresholds and has never been calibrated, the card adds **These look like factory thresholds. Calibrating sets them for your room.**
 - The **LD2410 Gate Energy** chart is dimmed behind **Turn on Radar Engineering Mode to see gate energy values**, with a **Turn on Radar Engineering Mode** button below. That's expected: the radar only reports gate energy while **Radar Engineering Mode**, a diagnostic setting, is on. You don't need to press the button before calibrating; the calibration turns the mode on for its listen and puts it back the way it was afterward.
@@ -118,6 +115,9 @@ Both sensors use the LD2410 radar chip, so their tabs look the same, and the tun
 The R PRO-1 tab starts with the same tuning cards, titled **LD2412** instead of **LD2410**, for the optional LD2412 radar addon, and adds a zone map for its LD2450 radar. Without the addon, the LD2412 cards still appear but have no radar behind them, so skip to the zone map, and **Start here** gives the zone map steps instead. The differences from an MSR-2 tab:
 
 - **Start here** says what each radar is for: the LD2412 senses people anywhere in range, even sitting still, and the LD2450 tracks where people are and drives the zone map. For automations that cover the whole room, it names **Combined Presence** (on while either radar sees someone) on firmware newer than 26.3.2.1, which has that sensor, and **LD2412 Presence** on earlier firmware.
+
+    ![The Start here card for an R PRO-1 named R PRO-1 Normal Temperature Test, Apollo mmWave with two radars: the LD2412 senses people anywhere in range, even sitting still, and the LD2450 tracks where people are and drives the zone map. Six numbered steps follow, from Fix anything the LD2412's Radar setup card flags. to the LD2450's zone map steps, then the line In automations, use LD2412 Presence (Radar Target on this tab) for the whole room, or a zone's presence sensor for one part of it., followed by the Full tuning guide and All settings for this device links](/assets/apollo-mmwave-start-here.png)
+
 - **LD2412 Controls** adds **Start Dynamic Background Correction** and **Background Correction Running**. The Auto-calibrate card reminds you to run background correction first, with the room empty, and wait for its status to turn off before you calibrate.
 - **LD2412 Detection Range** holds **Radar Timeout**, **Max Gate**, and **Min Gate**, plus **Distance Resolution** if you've enabled that entity (it's hidden on a new sensor).
 - The thresholds cards and the Gate Energy chart cover 14 gates, **G0** to **G13**.
