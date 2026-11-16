@@ -115,7 +115,7 @@ The MSR-2's three distance zones are on the same screen, under **Radar zones for
 ## Other ways to tune
 
 - **Let the radar set the thresholds.** The HLKRadarTool phone app can measure your room's background noise and set every gate for you. See [How to tune mmWave using HLKRadarTool](../zones-hlk/).
-- **Also use Home Assistant?** The same controls are on your MSR-2's device page in Home Assistant, and the Apollo mmWave integration adds a guided tuning dashboard. See the [Home Assistant version of this guide](../../../../../products/msr2/setup/zones-ha/).
+- **Also use Home Assistant?** The same controls are on your MSR-2's device page in Home Assistant, and the Apollo mmWave Dashboard integration adds a guided tuning dashboard. See the [Home Assistant version of this guide](../../../../../products/msr2/setup/zones-ha/).
 
 ## Further reading
 

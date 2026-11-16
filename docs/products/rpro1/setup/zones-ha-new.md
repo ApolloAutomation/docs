@@ -20,7 +20,7 @@ You can enter the X and Y coordinates for each LD2450 zone manually in Home Assi
 
     It's much easier to tune using the [HLK Radartool App](zones-hlk.md), and we suggest using that to set up your LD2450 instead.
 
-!!! tip "Drawing zones with the Apollo mmWave dashboard?"
+!!! tip "Drawing zones with the Apollo mmWave Dashboard?"
 
     Skip these steps and leave **LD2450 Zone Type** on **Disabled**. The dashboard's [zone map](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces the radar's built-in zones. On **Detection**, the radar reports only people inside the zones you enter here, and with none set it reports nobody, so the map stays empty.
 

@@ -6,7 +6,7 @@ description: "Tune the MSR-1 mmWave radar from Home Assistant using Radar Engine
 
 !!! tip "Prefer a guided dashboard?"
 
-    The Apollo mmWave integration gives your Apollo MSR-1 a tuning dashboard with a Gate Energy chart and a **Calibrate with empty room** button that sets the gate thresholds for you. The [Apollo mmWave dashboard guide](/products/msr1/setup/apollo-mmwave-dashboard.md) walks you through it as a guided alternative to the manual steps below.
+    The Apollo mmWave Dashboard integration gives your Apollo MSR-1 a tuning dashboard with a Gate Energy chart and a **Calibrate with empty room** button that sets the gate thresholds for you. The [Apollo mmWave Dashboard guide](/products/msr1/setup/apollo-mmwave-dashboard.md) walks you through it as a guided alternative to the manual steps below.
 
 If you're experiencing false triggers, use Radar Engineering Mode (REM) to track them down. REM shows the move and still energy the radar picks up in each gate, so you can see which gates cause the false triggers and adjust their thresholds to eliminate them.
 

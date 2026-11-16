@@ -97,7 +97,7 @@ To set up zones, follow the guide for your device: [MTR-1 zones](https://wiki.ap
 
 !!! tip "Draw zones on a live map"
 
-    Instead of typing coordinates, you can draw zones over the radar's live targets and get an occupancy sensor for each one. In Home Assistant, the [Apollo mmWave dashboard](/products/general/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) has a zone map for every MTR-1 and R PRO-1, where you draw rectangles, ellipses, or polygons.
+    Instead of typing coordinates, you can draw zones over the radar's live targets and get an occupancy sensor for each one. In Home Assistant, the [Apollo mmWave Dashboard](/products/general/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) has a zone map for every MTR-1 and R PRO-1, where you draw rectangles, ellipses, or polygons.
 
 ## Still detection (MSR-2 and R PRO-1 with the LD2412)
 
