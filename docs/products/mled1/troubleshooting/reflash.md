@@ -10,7 +10,7 @@ The Apollo installer puts the latest MLED-1 firmware on your device over USB. Us
 
     You need a computer with Chrome or Edge, and a USB cable that carries data, not only power.
 
-!!! tip "Update from the installer, not WLED's update page"
+!!! tip "WLED's update button can't fetch MLED-1 builds yet"
 
     WLED's own update button can't fetch Apollo's MLED-1 builds yet. The Apollo installer always has the latest one.
 
@@ -20,7 +20,7 @@ The Apollo installer puts the latest MLED-1 firmware on your device over USB. Us
 
 3\. Pick the MLED-1's serial port in the browser popup and click **Connect**.
 
-4\. Click **Install Apollo MLED-1**, or **Update Apollo MLED-1** if the installer offers it.
+4\. Click **Install Apollo MLED-1**.
 
 5\. When the installer asks whether to erase the device, choose what you want to keep:
 

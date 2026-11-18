@@ -20,7 +20,7 @@ The MLED-1 drives the strip's data line from GPIO 13, and the firmware already h
 
 ## Connect to your network
 
-There are two ways to get your MLED-1 on Wi-Fi. Pick whichever suits you, you only need to do one.
+There are two ways to get your MLED-1 on Wi-Fi. Pick whichever suits you; you only need to do one.
 
 - **USB** uses the Apollo installer in your browser. It installs the latest firmware and then sets up Wi-Fi over the same cable.
 - **Hotspot** works on any phone or computer. The MLED-1 broadcasts its own Wi-Fi network, you join it, then enter your Wi-Fi details.
@@ -72,7 +72,7 @@ There are two ways to get your MLED-1 on Wi-Fi. Pick whichever suits you, you on
 
 ## Set it up for your strip
 
-WLED starts out set for a 30-LED WS2812B strip. Match it to the strip you wired up so every LED lights in the right color.
+WLED starts out set for a 30-LED **WS281x RGB** strip. Match it to the strip you wired up so every LED lights in the right color.
 
 1\. Open the MLED-1's WLED page in a browser at its IP address or mDNS address, or open it in the WLED app.
 
