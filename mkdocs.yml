@@ -637,6 +637,13 @@ nav:
                 - Reset Wi-Fi Credentials: products/rpro1/troubleshooting/rpro1-reset-wi-fi-credentials.md
                 - Teardown and Reassembly Of R PRO-1: products/rpro1/troubleshooting/rpro1-teardown.md
               - Reviews: products/rpro1/rpro1-reviews.md
+      - NFC-1:
+          - Introduction: products/nfc1/introduction.md
+          - Getting Started: products/nfc1/setup/getting-started.md
+          - Additional Info:
+            - Sensor Definitions: products/nfc1/setup/sensor-definitions.md
+          - Examples:
+            - Read and Write Tags: products/nfc1/examples/read-and-write-tags.md
       - Plant Sensors:
           - PLT-1:
               - Introduction: products/plt1/introduction.md
