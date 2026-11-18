@@ -521,6 +521,11 @@ nav:
             - Bigger Boards: products/m1/setup/game-day-bigger-boards.md
             - Flash Lights When Your Team Scores: products/m1/examples/game-day-score-lights.md
           - Reviews: products/m1/m1-reviews.md
+      - MLED-1 (LED Controller):
+          - Introduction: products/mled1/introduction.md
+          - Getting Started: products/mled1/setup/getting-started.md
+          - Troubleshooting:
+            - Update or Reflash: products/mled1/troubleshooting/reflash.md
       - mmWave Sensors:
           - MSR-1:
               - Introduction: products/msr1/introduction.md
