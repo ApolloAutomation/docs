@@ -46,7 +46,7 @@ Once your NFC-1 is in Home Assistant, its device page has controls, sensors, and
     | **LED Feedback** | On | Turns the LED flashes for scans, tasks, and errors on or off. While it's off, the NFC-1 leaves the **RGB Light** alone. |
     | **Feedback Brightness** | 80% | How bright the LED feedback flashes are, from 1 to 100%. |
     | **Bluetooth Proxy** | Off | Lets the NFC-1 act as a [Bluetooth proxy](../../general/setup/bluetooth-proxy.md) for Home Assistant, extending Bluetooth range to nearby devices. |
-    | **Tag Polling** | On | Turns tag reading on or off. Disabled by default. |
+    | **Tag Polling** | On | Turns tag reading on or off. The entity is disabled in Home Assistant by default; enable it to see it. |
     | **Firmware Channel** | Stable | Which firmware channel the NFC-1 updates from. **Beta** gets new features earlier but is less tested than **Stable**. See [Switch to beta firmware](../../general/setup/switch-to-beta-branch.md). |
     | **Firmware Update** | n/a | Shows whether a newer firmware is available on the selected channel and installs it, straight from Home Assistant. See [Updating firmware](../../general/calibrating-and-updating/updating-firmware.md). |
     | **Reinstall Firmware** | n/a | Installs the firmware from the selected channel, even if it's the version you already have. Press it after you change **Firmware Channel**. |

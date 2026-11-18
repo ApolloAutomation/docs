@@ -34,7 +34,7 @@ There are three ways to get your NFC-1 on Wi-Fi. Pick whichever suits you, you o
 
 === "USB"
 
-    !!! note "Use Chrome, Edge, or Firefox on a computer"
+    !!! note "Use Chrome, Edge, or a recent version of Firefox on a computer"
 
         The installer needs a browser that can talk to the USB serial port, and a USB cable that carries data, not only power.
 

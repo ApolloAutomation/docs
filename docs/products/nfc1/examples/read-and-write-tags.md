@@ -4,6 +4,8 @@ description: Run Home Assistant automations from NFC tag scans, write URLs, text
 ---
 # Read and write tags with the NFC-1
 
+<span class="difficulty lvl-1">Difficulty: Level 1</span>
+
 Your NFC-1 does more than read tags. This guide covers running automations from a scan, writing your own tags from Home Assistant, reusing old tags, and letting phones tap the NFC-1 itself.
 
 !!! note "Before you start"
@@ -89,14 +91,16 @@ To stop an armed write, clean, or format, press **Cancel Tag Operation** or set 
 | Last Operation | What it means |
 | --- | --- |
 | **Waiting for tag** | A write, clean, or format is armed. Hold a tag on the reader. |
-| **Write done, verifying** | The tag was written. Keep it on the reader while the NFC-1 checks it. |
+| **Write done, verifying**, **Clean done, verifying**, **Format done, verifying** | The task ran. Keep the tag on the reader while the NFC-1 checks it. |
 | **Write verified** | The NFC-1 read the tag back and the data matches. |
 | **Write mismatch** | The tag was read back, but the data doesn't match. Try writing it again. |
 | **Write failed (tag not formatted or unsupported)** | The write didn't go through. Clean or format the tag, or try another tag. |
-| **Write refused: nothing to write** | **Write URL** is empty. Fill it in and try again. |
+| **Write refused: nothing to write** | There was nothing to write, for example **Write URL** is empty. Fill it in and try again. |
+| **Write refused: no message set** | The NFC-1 couldn't arm the write. Try again. |
 | **Clean done (no readable data)**, **Format done (no readable data)** | The tag is empty and ready to reuse. |
 | **Clean failed (data remains)**, **Format failed (data remains)** | Data is still on the tag. Try again. |
-| **Write unverified (tag removed)** | The tag was lifted before the NFC-1 could check it. Scan it to see what's on it. |
+| **Write unverified (tag removed)**, **Clean unverified (tag removed)**, **Format unverified (tag removed)** | The tag was lifted before the NFC-1 could check it. Scan it to see what's on it. |
+| **Write unverified (cancelled)**, **Clean unverified (cancelled)**, **Format unverified (cancelled)** | The task was cancelled before the NFC-1 could check the tag. Scan it to see what's on it. |
 | **Timed out** | No tag was presented before **Mode Timeout** ran out. |
 | **Cancelled** | The task was cancelled. |
 | **Emulation off: Emulation URL is empty** | **Card Emulation** was turned on without an **Emulation URL**. |
@@ -147,10 +151,10 @@ data:
 | Pulsing blue | Two rising notes | A write is armed and waiting for a tag. |
 | Pulsing orange | Two rising notes | A clean is armed and waiting for a tag. |
 | Pulsing magenta | Two rising notes | A format is armed and waiting for a tag. |
-| Two green flashes | Three rising notes | The write, clean, or format went through. |
+| Two green flashes | Three rising notes | The write, clean, or format ran. Keep the tag on the reader while it's checked. |
 | Three red flashes | Two falling notes | The task failed or the check didn't match. |
 | Two orange flashes | Two beeps | The armed task timed out. |
-| No change | Two falling notes | The armed task was cancelled. |
+| Pulse stops | Two falling notes | The armed task was cancelled. |
 
 Turn the sounds off with **Buzzer** or lower them with **Volume**. Turn the flashes off with **LED Feedback** or dim them with **Feedback Brightness**.
 
