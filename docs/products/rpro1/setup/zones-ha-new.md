@@ -18,7 +18,7 @@ You can enter the X and Y coordinates for each LD2450 zone manually in Home Assi
 
 !!! tip "Prefer a phone app?"
 
-    It's much easier to tune using the [HLK Radartool App](zones-hlk.md), and we suggest using that to set up your LD2450 instead.
+    If you'd rather use a phone app, you can set up the LD2450 with the [HLK Radartool App](zones-hlk.md). The tip below covers the zone map on the Apollo mmWave Dashboard, the method we suggest.
 
 !!! tip "Drawing zones with the Apollo mmWave Dashboard?"
 

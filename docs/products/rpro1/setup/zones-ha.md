@@ -16,15 +16,15 @@ description: Tutorial for R PRO-1 Home Assistant Zone Configuration.
 
     The Apollo mmWave Dashboard integration gives your R PRO-1 a dashboard tab where you draw LD2450 zones over live targets and tune the LD2412 gates with a **Calibrate with empty room** button. The [Apollo mmWave Dashboard guide](/products/rpro1/setup/apollo-mmwave-dashboard.md) walks you through it as a guided alternative to the manual steps below. If you draw zones there, leave **LD2450 Zone Type** on **Disabled** instead of entering zones below: the dashboard's zone map replaces the radar's built-in zones, and its **Radar setup** card offers **Set Zone Type to Disabled** when it isn't. To keep a fan or a curtain from turning those zones on, draw an [ignore zone](/products/rpro1/setup/apollo-mmwave-dashboard.md#ignore-a-spot-or-hold-a-zone) over it on the map.
 
-Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. It's much easier to <a href="https://wiki.apolloautomation.com/products/rpro1/setup/zones-hlk/" rel="noreferrer nofollow">tune using the HLK Radartool App</a> and we suggest using that to set up your R PRO-1 LD2450.
+Manually enter in the X and Y coordinates for each zone in Home Assistant or directly from the device's webserver by visiting the IP address or hostname.local. We suggest drawing zones on the zone map of the [Apollo mmWave Dashboard](/products/rpro1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1). If you'd rather use a phone app, set up the LD2450 with the [HLK Radartool app](/products/rpro1/setup/zones-hlk.md).
 
 ## LD2450 configuration
 
 Follow these steps to add a Plotly card that shows your LD2450 targets, then set up your zones in Home Assistant.
 
-1\. Install [HACS](https://hacs.xyz/docs/use/).
+1\. On Home Assistant 2026.10 or earlier, install [HACS](https://hacs.xyz/docs/use/) 2.0.5 or newer. On 2026.11 or later, HACS is built in as the **Marketplace** under **Settings → Marketplace**, so skip this step.
 
-2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
+2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS or the Marketplace.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
 
@@ -78,7 +78,7 @@ Follow these steps to add a Plotly card that shows your LD2450 targets, then set
 
 !!! tip "Apollo mmWave Dashboard does this for you"
 
-    With the Apollo mmWave integration 2.4.0 or newer, you can skip steps 10 to 13. The integration shows your R PRO-1's Target X and Y in mm on its own: on a new R PRO-1 as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave Dashboard: Target X and Y now in mm** (**Apollo mmWave: Target X and Y now in mm** before 2.4.2). It leaves alone a sensor whose unit you picked in its settings, which you change there, and one that an automation, a script, or a helper uses. For a sensor in use, first change any number it's compared to into mm, 25.4 times as large, then, as an administrator, press **Show Target X and Y in mm** on the **Radar setup** card above the zone map. The button switches only sensors whose unit Home Assistant picked on its own, never one whose unit you picked. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. The [Apollo mmWave Dashboard guide](/products/rpro1/setup/apollo-mmwave-dashboard.md#target-x-and-y-units) has the details.
+    With the Apollo mmWave Dashboard integration 2.4.0 or newer, you can skip steps 10 to 13. The integration shows your R PRO-1's Target X and Y in mm on its own: on a new R PRO-1 as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave Dashboard: Target X and Y now in mm** (**Apollo mmWave: Target X and Y now in mm** before 2.4.2). It leaves alone a sensor whose unit you picked in its settings, which you change there, and one that an automation, a script, or a helper uses. For a sensor in use, first change any number it's compared to into mm, 25.4 times as large, then, as an administrator, press **Show Target X and Y in mm** on the **Radar setup** card above the zone map. The button switches only sensors whose unit Home Assistant picked on its own, never one whose unit you picked. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. The [Apollo mmWave Dashboard guide](/products/rpro1/setup/apollo-mmwave-dashboard.md#target-x-and-y-units) has the details.
 
 10\. If you use the imperial system (Freedom Units) then you will need to do this step. Metric users can skip this. For the targets to show up correctly we first need to update the Target 1-3 X and Y measurements from inches (in) to millimeters (mm). Find Target 1-3 X and Y under the Sensors section and select them. You will want to update all 3 X and Y target values.
 

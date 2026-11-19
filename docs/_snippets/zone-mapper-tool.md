@@ -21,11 +21,13 @@ MostlyChris covers the full setup, from installation to drawing your first zones
 
 ## Install with HACS (recommended)
 
-HACS is a community store for Home Assistant that handles installing and updating custom integrations and cards. If you don't have it yet, follow the [HACS download guide](https://hacs.xyz/docs/use/download/download/) and [initial configuration guide](https://hacs.xyz/docs/configuration/basic).
+HACS is a community store for Home Assistant that handles installing and updating custom integrations and cards. On Home Assistant 2026.10 or earlier, if you don't have it yet, follow the [HACS download guide](https://hacs.xyz/docs/use/download/download/) and [initial configuration guide](https://hacs.xyz/docs/configuration/basic).
 
 With HACS in place, both Zone Mapper parts install in one pass. The two buttons under step 1 cover steps 1 to 5: the first opens the integration and the second opens the card. Each one adds its repository, after HACS asks you to confirm, and opens it so you can click **Download** right there. Use both, then go on at step 6.
 
-1. Open **HACS** from your Home Assistant sidebar.
+On Home Assistant 2026.11 or later, HACS is built in as the **Marketplace** under **Settings → Marketplace**, so there is nothing to install. If it shows a warning first, tick **I understand the risks and agree** and press **Continue**. Instead of steps 2 to 4, press **Add from link**, paste each repository link in **GitHub link** and press **Add**, then press **Install** for each part. Adding a repository there needs a GitHub account.
+
+1. Open **HACS** from your Home Assistant sidebar (**Settings → Marketplace** on 2026.11 or later).
 
     [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ApolloAutomation&repository=zone-mapper&category=integration)
 
@@ -112,7 +114,7 @@ The card needs to know which X/Y coordinate sensors to track:
 
 !!! tip "Apollo mmWave Dashboard does this for you"
 
-    With the Apollo mmWave integration 2.4.0 or newer installed, you can skip the conversion above. The integration shows the Target X and Y of an Apollo MTR-1 or R PRO-1 in mm on its own: on a new sensor as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave Dashboard: Target X and Y now in mm** (**Apollo mmWave: Target X and Y now in mm** before 2.4.2). Zone Mapper's card reads them in mm then too. The integration leaves alone a sensor whose unit you picked in its settings, which you change there, and one that an automation, a script, or a helper uses. For a sensor in use, first change any number it's compared to into mm, 25.4 times as large, then, as an administrator, press **Show Target X and Y in mm** on the **Radar setup** card above its zone map. The button switches only sensors whose unit Home Assistant picked on its own, never one whose unit you picked. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. See [Target X and Y units](/products/general/setup/apollo-mmwave-dashboard.md#target-x-and-y-units).
+    With the Apollo mmWave Dashboard integration 2.4.0 or newer installed, you can skip the conversion above. The integration shows the Target X and Y of an Apollo MTR-1 or R PRO-1 in mm on its own: on a new sensor as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave Dashboard: Target X and Y now in mm** (**Apollo mmWave: Target X and Y now in mm** before 2.4.2). Zone Mapper's card reads them in mm then too. The integration leaves alone a sensor whose unit you picked in its settings, which you change there, and one that an automation, a script, or a helper uses. For a sensor in use, first change any number it's compared to into mm, 25.4 times as large, then, as an administrator, press **Show Target X and Y in mm** on the **Radar setup** card above its zone map. The button switches only sensors whose unit Home Assistant picked on its own, never one whose unit you picked. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. See [Target X and Y units](/products/general/setup/apollo-mmwave-dashboard.md#target-x-and-y-units).
 
 ### Add zones
 
