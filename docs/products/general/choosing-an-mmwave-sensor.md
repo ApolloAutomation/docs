@@ -39,7 +39,7 @@ Apollo mmWave sensors detect the **moving** and **still** energy of people and a
 | | MSR-2 | MTR-1 | R PRO-1 |
 |---|:---:|:---:|:---:|
 | **Targets tracked** | 1 | Up to 3 | Up to 3 |
-| **Multi-zone tracking** | :material-minus: | :material-check: 3 zones | :material-check: 3 zones |
+| **Multi-zone tracking** | :material-minus: | :material-check: 3 built-in zones, up to 32 on the [Apollo mmWave Dashboard](/products/general/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) | :material-check: 3 built-in zones, up to 32 on the [Apollo mmWave Dashboard](/products/general/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) |
 | **Still detection** | :material-check: Excellent | :material-minus: Limited | :material-check: With LD2412 add-on |
 | **PoE / Ethernet** | :material-minus: | :material-minus: | :material-check: |
 | **Horizontal FoV** | 120° | 120° | 120°<br>150° with LD2412 |
@@ -91,7 +91,7 @@ The LD2450 module tracks up to three moving targets and reports each one's X and
     - The X axis is where you can get tripped up, especially when both values are negative: -3456 is less than -2345.
     - The Y axis is easier since it is never negative.
     - The Plotly chart still draws the rectangles even if the X1/X2 or Y1/Y2 values are reversed, so double-check the order.
-    - Zones cannot overlap.
+    - The radar's built-in zones cannot overlap.
 
 To set up zones, follow the guide for your device: [MTR-1 zones](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/) or [R PRO-1 (LD2450) zones](https://wiki.apolloautomation.com/products/rpro1/setup/zones-ha/).
 
@@ -112,6 +112,6 @@ mmWave detects motion, so things that move or reflect the radar signal can trigg
 - Moving air from HVAC vents and registers
 - Curtains, blinds, or plants swaying in a draft
 
-The **MSR-2 (LD2410)** and the **R PRO-1 with the LD2412** let you tune the sensitivity of each gate, so you can dial down the distance bands where a fan or vent sits and tune these false positives out. With the **LD2450 (MTR-1 and R PRO-1)** you can instead draw your zones to exclude the problem area.
+The **MSR-2 (LD2410)** and the **R PRO-1 with the LD2412** let you tune the sensitivity of each gate, so you can dial down the distance bands where a fan or vent sits and tune these false positives out. With the **LD2450 (MTR-1 and R PRO-1)** you can instead draw an [ignore zone](/products/general/setup/apollo-mmwave-dashboard.md#ignore-a-spot-or-hold-a-zone) over the problem area on the Apollo mmWave Dashboard.
 
-See the [Radar Tuning guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/radar-tuning/zones-ha/) to adjust sensitivity.
+To adjust the sensitivity of an MSR-2 or an R PRO-1 with the LD2412, press **Calibrate with empty room** on the [Apollo mmWave Dashboard](/products/general/setup/apollo-mmwave-dashboard.md#calibrate-with-an-empty-room), or tune by hand with the [Radar Tuning guide](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/radar-tuning/zones-ha/).

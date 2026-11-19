@@ -91,6 +91,8 @@ plugins:
   - meta
   - redirects:
       redirect_maps:
+        # mmWave spam tutorial renamed from logbook to activity
+        'products/general/tutorials/minimize-mmwave-logbook-spam.md': 'products/general/tutorials/minimize-mmwave-activity-spam.md'
         # Wiki cleanup round 2: orphan Homey copies of Home Assistant pages and the old contact page
         'products/general/mmwave-presence-sensor-comparison.md': 'products/general/comparisons.md'
         'homey/products/general/mmwave-presence-sensor-comparison.md': 'homey/products/general/comparisons.md'

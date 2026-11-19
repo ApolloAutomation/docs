@@ -14,7 +14,7 @@ This setup started with a grandmother who wanted an alert if anything moved in h
 
 Alarmo runs the alarm system itself, and the Alarmo Card puts arm and disarm buttons on your dashboard. Both install through HACS.
 
-1\. Install [HACS](https://hacs.xyz/docs/use/download/download/) if you don't have it yet.
+1\. On Home Assistant 2026.10 or earlier, install [HACS](https://hacs.xyz/docs/use/download/download/) if you don't have it yet. On 2026.11 or later, HACS is built in as the **Marketplace** under **Settings → Marketplace**.
 
 2\. Install [Alarmo](https://github.com/nielsfaber/alarmo?tab=readme-ov-file#installation) and the [Alarmo Card](https://github.com/nielsfaber/alarmo-card). The first button below opens Alarmo in HACS, and the second opens the Alarmo Card:
 
