@@ -178,4 +178,4 @@ The Homey widget covers the same job as the [Zone Mapper tool for Home Assistant
 
 !!! warning "Running both platforms on one sensor"
 
-    Draw your zones in one platform only. **Sync regions to sensor** changes the radar's Zone Type from Disabled, so the radar stops reporting some people and they disappear from the Home Assistant zone map. **Clear sensor zones** turns that off again.
+    You can draw zones in both platforms, as long as you don't sync them to the radar. **Sync regions to sensor** changes the radar's Zone Type from Disabled, so the radar stops reporting some people and they disappear from the Home Assistant zone map. **Clear sensor zones** turns that off again.

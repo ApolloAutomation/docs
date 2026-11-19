@@ -246,6 +246,10 @@ Before any upgrade, make a full Home Assistant backup under **Settings → Syste
 
 Home Assistant lists an Apollo mmWave Dashboard update with its other updates under **Settings → System → Updates**: open it and click **Update**. You can also update from the Marketplace on Home Assistant 2026.11 or newer, or from HACS on 2026.10 or earlier. Both also let you pick a different version:
 
+!!! warning "HACS 2.0.5: retry a failed download before you restart"
+
+    On Home Assistant 2026.10 or earlier, every update path downloads through HACS. If a download fails, don't restart: retry it until it finishes with no error, because a failed download on HACS 2.0.5 can remove the installed files. Update one integration at a time.
+
 === "Marketplace (2026.11+)"
 
     1. Go to **Settings → Marketplace** and open **Apollo mmWave Dashboard**. The **Installed** tab lists it. When a new version is out, its page reads **Update available**.

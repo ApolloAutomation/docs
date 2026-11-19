@@ -55,7 +55,7 @@ description: Frequently asked questions about the MTR-1 mmWave sensor.
 
 12\. **Can the MTR-1 detect motion through walls?**
 
-* Yes, the mmWave radar in the MTR-1 can detect movement through certain materials, such as light walls or thin furniture, though you may need to draw an [ignore zone](setup/apollo-mmwave-dashboard.md#ignore-a-spot-or-hold-a-zone) over the doorway, or keep it outside every zone, to prevent false positives from nearby rooms (see question 11). [Please visit the tuning articles for more info](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)!
+* Yes, the mmWave radar in the MTR-1 can detect movement through certain materials, such as light walls or thin furniture, though you may need to draw an [ignore zone](setup/apollo-mmwave-dashboard.md#ignore-a-spot-or-hold-a-zone) over the spot on the map where the unwanted target shows up, or keep that spot outside every zone, to prevent false positives from nearby rooms (see question 11). [Please visit the tuning articles for more info](https://wiki.apolloautomation.com/products/mtr1/setup/zones-ha/)!
 
 13\. **Can the MTR-1 be used outdoors?**
 

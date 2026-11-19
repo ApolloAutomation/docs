@@ -25,7 +25,7 @@ HACS is a community store for Home Assistant that handles installing and updatin
 
 With HACS in place, both Zone Mapper parts install in one pass. The two buttons under step 1 cover steps 1 to 5: the first opens the integration and the second opens the card. Each one adds its repository, after HACS asks you to confirm, and opens it so you can click **Download** right there. Use both, then go on at step 6.
 
-On Home Assistant 2026.11 or later, HACS is built in as the **Marketplace** under **Settings → Marketplace**, so there is nothing to install. If it shows a warning first, tick **I understand the risks and agree** and press **Continue**. Instead of steps 2 to 4, press **Add from link**, paste each repository link in **GitHub link** and press **Add**, then press **Install** for each part. Adding a repository there needs a GitHub account.
+On Home Assistant 2026.11 or later, HACS is built in as the **Marketplace** under **Settings → Marketplace**, so there is nothing to install. If it shows a warning first, tick **I understand the risks and agree** and press **Continue**. Instead of steps 2 to 5, press **Add from link**, paste each repository link in **GitHub link** and press **Add**, then press **Install** for each part. Adding a repository there needs a GitHub account.
 
 1. Open **HACS** from your Home Assistant sidebar (**Settings → Marketplace** on 2026.11 or later).
 

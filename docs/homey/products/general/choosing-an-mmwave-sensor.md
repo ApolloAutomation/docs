@@ -3,7 +3,7 @@ title: Choosing an mmWave Sensor
 description: Compare the Apollo MSR-2, MTR-1, and R PRO-1 mmWave presence sensors and pick the right one for your space.
 ---
 --8<-- "products/general/choosing-an-mmwave-sensor.md:5:41"
-| **Multi-zone tracking** | :material-minus: | :material-check: 3 zones | :material-check: 3 zones |
+| **Multi-zone tracking** | :material-minus: | :material-check: 3 built-in zones, up to 32 Homey regions | :material-check: 3 built-in zones, up to 32 Homey regions |
 --8<-- "products/general/choosing-an-mmwave-sensor.md:43:97"
 
 --8<-- "products/general/choosing-an-mmwave-sensor.md:102:114"
