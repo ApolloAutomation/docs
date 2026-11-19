@@ -14,17 +14,17 @@ description: Tutorial on creating an MSR-2 tuning dashboard.
 
 This guide will create a beautiful and helpful dashboard to simplify configuration of your MSR-2 sensor. You can view the current gate and zone thresholds which will help tune your sensor for your environment!
 
-1\. First make sure you have HACS installed. If not, <a href="https://hacs.xyz/docs/use/download/download/" target="_blank" rel="noreferrer nofollow noopener">download it here</a> and install it.
+1\. On Home Assistant 2026.10 or earlier, make sure HACS 2.0.5 or newer is installed (<a href="https://hacs.xyz/docs/use/download/download/" target="_blank" rel="noreferrer nofollow noopener">download guide</a>). On 2026.11 or later, use **Settings → Marketplace** instead; it is built in.
 
-2\. Install the Streamline Card in HACS <a href="https://github.com/brunosabot/streamline-card/?tab=readme-ov-file#with-hacs-recommended" target="_blank" rel="noreferrer nofollow noopener">here</a> which is required for the steps below.
+2\. Install the Streamline Card in HACS or the Marketplace <a href="https://github.com/brunosabot/streamline-card/?tab=readme-ov-file#with-hacs-recommended" target="_blank" rel="noreferrer nofollow noopener">here</a> which is required for the steps below.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=brunosabot&repository=streamline-card&category=plugin)
 
-3\. Install the Plotly Graph Card in HACS <a href="https://github.com/dbuezas/lovelace-plotly-graph-card" target="_blank" rel="noreferrer nofollow noopener">here</a> which is also required for the steps below.
+3\. Install the Plotly Graph Card in HACS or the Marketplace <a href="https://github.com/dbuezas/lovelace-plotly-graph-card" target="_blank" rel="noreferrer nofollow noopener">here</a> which is also required for the steps below.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
 
-4\. Open your Home Assistant dashboard and <a href="https://www.home-assistant.io/getting-started/onboarding_dashboard/#creating-a-new-dashboard-and-edit-cards" target="_blank" rel="noreferrer nofollow noopener"><strong>Take control</strong> of your dashboard</a> by clicking **Edit Dashboard** in the top right then the 3 dots from the **Edit Dashboard** menu and click **Take control**. (this step is only necessary for new Home Assistant users).
+4\. Open your Home Assistant dashboard and <a href="https://www.home-assistant.io/getting-started/onboarding_dashboard/#creating-a-new-dashboard-and-edit-cards" target="_blank" rel="noreferrer nofollow noopener"><strong>Take control</strong> of your dashboard</a> by clicking **Edit Dashboard** in the top right then the 3 dots from the **Edit Dashboard** menu and click **Take control**. (this step is only necessary for new Home Assistant users). Do this on your own dashboard, such as Overview, never on the Apollo mmWave Dashboard: taking control of that one stops it from updating.
 
 ![Opening the Home Assistant Edit dashboard 3 dots menu and choosing Take control](/assets/home-assistant-take-control-gif.gif)
 

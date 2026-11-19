@@ -10,15 +10,15 @@ description: Set up the three radar zones on your MTR-1 in Home Assistant by ent
 
 This guide shows you how to set up your MTR-1's three zones by entering the X and Y coordinates for each one. First you add a card to your dashboard that shows the radar's live targets, then you use it to work out the coordinates for each zone, in millimeters. You can enter the values in Home Assistant, as shown below, or directly on the device's web page by visiting its IP address or hostname.local.
 
-Tuning with the [HLK Radartool app](/products/mtr1/setup/zones-hlk.md) is much easier, and it's the method we suggest for setting up your MTR-1.
+Drawing zones on the zone map of the [Apollo mmWave Dashboard](/products/mtr1/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) is the method we suggest for setting up your MTR-1. If you'd rather use a phone app, the [HLK Radartool app](/products/mtr1/setup/zones-hlk.md) lets you drag the radar's three zones into place.
 
 ## Add the target card to your dashboard
 
 Start by adding a Plotly card that draws the radar's coverage area, your three zones, and the targets the radar sees.
 
-1\. Install [HACS](https://hacs.xyz/docs/use/).
+1\. On Home Assistant 2026.10 or earlier, install [HACS](https://hacs.xyz/docs/use/) 2.0.5 or newer. On 2026.11 or later, HACS is built in as the **Marketplace** under **Settings → Marketplace**, so skip this step.
 
-2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
+2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS or the Marketplace.
 
 3\. In the tool below, enter your device's full name and, if you like, rename the three zones. Then click **Generate YAML** and **Copy YAML**.
 
@@ -58,7 +58,7 @@ The target sensors and zone settings are on your MTR-1's page in the ESPHome int
 
 !!! tip "Apollo mmWave Dashboard does this for you"
 
-    With the Apollo mmWave integration 2.4.0 or newer, you can skip this section too. The integration shows your MTR-1's Target X and Y in mm on its own: on a new MTR-1 as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave Dashboard: Target X and Y now in mm** (**Apollo mmWave: Target X and Y now in mm** before 2.4.2). It leaves alone a sensor whose unit you picked in its settings, which you change there, and one that an automation, a script, or a helper uses. For a sensor in use, first change any number it's compared to into mm, 25.4 times as large, then, as an administrator, press **Show Target X and Y in mm** on the **Radar setup** card above the zone map. The button switches only sensors whose unit Home Assistant picked on its own, never one whose unit you picked. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. The [Apollo mmWave Dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#target-x-and-y-units) has the details.
+    With the Apollo mmWave Dashboard integration 2.4.0 or newer, you can skip this section too. The integration shows your MTR-1's Target X and Y in mm on its own: on a new MTR-1 as soon as you add it, and on one you already had once, after Home Assistant starts, with the notification **Apollo mmWave Dashboard: Target X and Y now in mm** (**Apollo mmWave: Target X and Y now in mm** before 2.4.2). It leaves alone a sensor whose unit you picked in its settings, which you change there, and one that an automation, a script, or a helper uses. For a sensor in use, first change any number it's compared to into mm, 25.4 times as large, then, as an administrator, press **Show Target X and Y in mm** on the **Radar setup** card above the zone map. The button switches only sensors whose unit Home Assistant picked on its own, never one whose unit you picked. To go back to inches, choose **in** under **Unit of measurement** in the sensor's settings. The [Apollo mmWave Dashboard guide](/products/mtr1/setup/apollo-mmwave-dashboard.md#target-x-and-y-units) has the details.
 
 If you use the imperial system, your Target 1-3 X and Y sensors report in inches (in). For the targets to show up correctly on the card, change all three X and all three Y target sensors to millimeters (mm).
 

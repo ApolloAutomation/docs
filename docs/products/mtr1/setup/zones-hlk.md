@@ -76,9 +76,9 @@ With the app installed, you'll turn on the radar's Bluetooth, connect to it from
 
 Next, you'll add a Plotly card to a Home Assistant dashboard so you can see your sensor's targets and zones.
 
-1\. Install [HACS](https://hacs.xyz/docs/use/).
+1\. On Home Assistant 2026.10 or earlier, install [HACS](https://hacs.xyz/docs/use/) 2.0.5 or newer. On 2026.11 or later, HACS is built in as the **Marketplace** under **Settings → Marketplace**, so skip this step.
 
-2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS.
+2\. Download [Plotly](https://github.com/dbuezas/lovelace-plotly-graph-card "Click here to install Plotly!") inside HACS or the Marketplace.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dbuezas&repository=lovelace-plotly-graph-card&category=plugin)
 
