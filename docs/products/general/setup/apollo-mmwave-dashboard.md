@@ -1,15 +1,22 @@
 ---
 title: Tune your radar with the Apollo mmWave Dashboard
-description: Check the radar's settings, calibrate the radar in your Apollo MSR-1 or MSR-2, or the optional LD2412 addon in your R PRO-1, against an empty room, fine-tune each gate, and draw R PRO-1 and MTR-1 zones from the Apollo mmWave Dashboard in Home Assistant.
+description: Check the radar's settings, calibrate the radar in your Apollo MSR-1 or MSR-2, or the optional LD2412 addon in your R PRO-1, against an empty room, fine-tune each gate, and draw R PRO-1 and MTR-1 zones on a wall, high up, or on the ceiling from the Apollo mmWave Dashboard in Home Assistant.
 ---
 
 # Tune your radar with the Apollo mmWave Dashboard
 
-The Apollo mmWave Dashboard puts every setting your radar has on one screen, with live charts that show what the radar sees. On an Apollo MSR-1, Apollo MSR-2, or Apollo R PRO-1 with the optional LD2412 radar addon, it can teach the radar what your empty room looks like in about a minute and a half, so it stops reacting to the room itself and starts reacting to people. On an R PRO-1 or an Apollo MTR-1 it is also where you draw occupancy zones on a map of the room.
+The Apollo mmWave Dashboard puts every setting your radar has on one screen, with live charts that show what the radar sees. On an Apollo MSR-1, Apollo MSR-2, or Apollo R PRO-1 with the optional LD2412 radar addon, it can teach the radar what your empty room looks like in about a minute and a half, so it stops reacting to the room itself and starts reacting to people. On an R PRO-1 or an Apollo MTR-1 it is also where you draw occupancy zones on a map of the room, with the sensor on a wall, high up and tilted down, or on the ceiling ([Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md)).
 
 Every tab starts with a **Start here** card that lists your sensor's first steps in order, and this guide follows the same order: check the **Radar setup** card, calibrate, set how far the radar looks and how long presence stays on, then fine-tune by hand. If you only do one thing today, press **Calibrate with empty room** and leave the room: [Calibrate with an empty room](#calibrate-with-an-empty-room) shows what to expect. On an MTR-1, or an R PRO-1 without the LD2412, go straight to the [eight steps to your first zone](#draw-zones-on-the-r-pro-1-and-mtr-1).
 
-!!! info "What's new in 2.4.2"
+!!! info "What's new in 2.5.0"
+
+    - **High and Ceiling mounts.** Under **Map settings** on the zone map, **Mounted on** offers **Wall**, **High**, and **Ceiling** for the LD2450 in an R PRO-1 or MTR-1. On **High** and **Ceiling** the map takes the mount height out of every position, so dots, zones, hold times, Walk, and History match where people are on the floor: [Choose Wall, High, or Ceiling](#choose-wall-high-or-ceiling).
+    - **A guide for each mount.** [Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md) walks you through the heights, the room side of a ceiling sensor, **Add coverage zone**, and a test of where the radar's view starts and ends.
+    - **LD2460 tracking radars.** ESPHome devices that use the `ld2460` component get a tab with the zone map for up to 5 people, on a wall or the ceiling, with **Add whole-room zone** and **Test center and edge**.
+    - **The support file** shows each radar's mount and the settings in use: [Send Apollo a support file](#send-apollo-a-support-file).
+
+??? info "What's new in 2.4.2"
 
     - **A new name.** Apollo mmWave is now called Apollo mmWave Dashboard. A setup from before 2.4.2 keeps **Apollo mmWave** as the name of its entry and its sidebar dashboard until you rename them: [Updating to Apollo mmWave Dashboard 2.4.2](apollo-mmwave-dashboard-setup.md#updating-to-apollo-mmwave-dashboard-242).
     - **Shapes has its own button.** To draw an ellipse or a polygon, press **Shapes**, the icon with a triangle over a square and a circle in the map's bottom-left corner. ✎ now only means **Draw shape**: [Draw a zone](#draw-a-zone).
@@ -43,7 +50,7 @@ Here's the **Start here** card on an R PRO-1 with the LD2412, which covers both 
 !!! note "Before you start"
 
     - The Apollo mmWave Dashboard integration is installed, and its dashboard is in your Home Assistant sidebar as **Apollo mmWave Dashboard** (**Apollo mmWave** on a setup from before 2.4.2). If it isn't, sign in as an administrator (from 2.2.6, the dashboard is for administrators only unless you unticked that box), or follow the [Apollo mmWave Dashboard setup guide](apollo-mmwave-dashboard-setup.md) to add it.
-    - This guide shows Apollo mmWave Dashboard 2.4.2. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first. If a card this guide describes isn't on your tab, see [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards).
+    - This guide shows Apollo mmWave Dashboard 2.5.0. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first. If a card this guide describes isn't on your tab, see [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards).
     - Your radar is online in Home Assistant through ESPHome.
     - Your sensor is mounted where it will stay. A calibration, and the zones you draw, describe the room from the sensor's position, so moving the sensor later means calibrating again or redrawing your zones.
     - A calibration needs the room empty for about a minute and a half: people and pets out, robot vacuum docked.
@@ -291,13 +298,13 @@ The **Detection Range** card helps too: [Set the range and timeout](#set-the-ran
 
 ## Draw zones on the R PRO-1 and MTR-1
 
-The LD2450 radar in the R PRO-1 and MTR-1 tracks where up to three people are in the room. The zone map lets you draw areas on that map, such as the couch or the desk, and gives each area its own occupancy sensor. On an MTR-1 the tab is built around the zone map: **Start here**, the **Radar setup** card, and the map come first, with the radar's live status and controls beside them. On an R PRO-1, the LD2450's **Radar setup** card, the map, and the radar's live status and controls sit under the **Zone Map** heading, right after the first column of LD2412 cards, and its **Start here** card stays at the top of the tab.
+The LD2450 radar in the R PRO-1 and MTR-1 tracks where up to three people are in the room, and an LD2460 tracking radar up to five. The zone map lets you draw areas on that map, such as the couch or the desk, and gives each area its own occupancy sensor. On an MTR-1 the tab is built around the zone map: **Start here**, the **Radar setup** card, and the map come first, with the radar's live status and controls beside them. On an R PRO-1, the LD2450's **Radar setup** card, the map, and the radar's live status and controls sit under the **Zone Map** heading, right after the first column of LD2412 cards, and its **Start here** card stays at the top of the tab.
 
 Your first zone takes eight steps. The sections below follow them in order, each with a picture or a short clip of what you'll see:
 
 1. **Install Apollo mmWave Dashboard and open it from the sidebar.** The [setup guide](apollo-mmwave-dashboard-setup.md) covers both, and your sensor's tab holds the zone map.
 2. **Fix anything the Radar setup card flags.** Its button sets the radar up for the map: [Check the LD2450's Radar setup card](#check-the-ld2450s-radar-setup-card).
-3. **Set Cone rotation** so the map faces the way the sensor does: [Match the map to how the sensor is mounted](#match-the-map-to-how-the-sensor-is-mounted).
+3. **Choose how the sensor is mounted, then set Cone rotation** so the map faces the way the sensor does: [Choose Wall, High, or Ceiling](#choose-wall-high-or-ceiling), then [Match the map to how the sensor is mounted](#match-the-map-to-how-the-sensor-is-mounted).
 4. **Add a zone and draw it** over the spot it covers. **Add zone** gets the map ready to draw the new zone, and a banner on the map names it: [Add a zone](#add-a-zone), then [Draw a zone](#draw-a-zone). Drew it wrong? [Undo a shape change](#undo-a-shape-change) puts the old shape back.
 5. **Name the zone, and choose Detect or Ignore and a hold time** in its editor under the map: [Pick a zone in the Zones panel](#pick-a-zone-in-the-zones-panel), [Rename a zone](#rename-a-zone), and [Ignore a spot or hold a zone](#ignore-a-spot-or-hold-a-zone).
 6. **Walk into the zone to check that it works.** It lights up on the map while you're in it: [Read the map](#read-the-map), then [Use the zone sensors](#use-the-zone-sensors) in your automations.
@@ -308,9 +315,9 @@ The **Start here** card on an MTR-1, or on an R PRO-1 without the optional LD241
 
 The zone map card shows your radar's name and the area the radar can see: a view cone 120 degrees wide and about 6 m (20 ft) out, with a caption at its edge such as **Radar range 6 m (20 ft), 120°**, and a numbered dot for each person it tracks. The map fits that area, turned the way you set **Cone rotation**, plus any zone you drew outside it. Buttons sit in the bottom corners of the grid, with the zoom buttons above the ones on the right, and **Expand** sits in its top-right corner (see [Expand the map](#expand-the-map)). Underneath are:
 
-- The **Coverage** button, and for administrators **History** once movement history is on, and **🚶 Mark corners by walking** before it on a phone or tablet.
+- The **Coverage** button, and for administrators **History** once movement history is on, and **🚶 Mark corners by walking** before it on a phone or tablet. On a **High** or **Ceiling** mount, and on an LD2460, a test button follows **Coverage** (see [Test the edges](/products/general/setup/apollo-mmwave-mounting.md#test-the-edges)).
 - The **Zones** panel, which is always open. It holds **Add zone**, a button for each zone, and an editor for the zone you picked: its name, size, **Type**, **Hold**, whether someone is in it right now, how to draw it with **Draw shape** or **Redraw shape**, and **Delete zone** (see [Pick a zone in the Zones panel](#pick-a-zone-in-the-zones-panel)).
-- **Map settings**, a collapsed section at the bottom of the card, with **Cone rotation**, the left-to-right flip, **Movement history**, and **Clear all shapes**.
+- **Map settings**, a collapsed section at the bottom of the card, with **Mounted on** and the heights it asks for, **Cone rotation**, the left-to-right flip, **Movement history**, and **Clear all shapes**.
 
 On the Apollo mmWave Dashboard the zone map's section is two columns wide, so on a computer the map is about twice as wide as the cards beside it. On a phone it fills the screen's one column as before. The map is never taller than the window less about 200 px, so the page around it stays in view. In a wide, short window it gets narrower instead and sits in the middle of the card, though that limit never makes it shorter than 240 px, so a phone on its side still gets a map.
 
@@ -330,6 +337,20 @@ The **Radar setup** card right above the map checks the two LD2450 settings that
 Press the button the card shows: **Set Zone Type to Disabled**, **Turn on Multi Target Tracking**, or **Use recommended settings** when both need fixing. The card changes nothing until you press one, and reads **Radar settings look good.** once both are right. On an R PRO-1, Home Assistant hides Multi Target Tracking by default, so the card checks only Zone Type until you enable that setting (see [The zone map shows nobody, or only one person](#the-zone-map-shows-nobody-or-only-one-person)).
 
 For administrators, the card can also show a note about the radar's **Target X** and **Target Y** units under its checks, with a **Show Target X and Y in mm** button. The map works with either unit, and [Target X and Y units](#target-x-and-y-units) explains when to press it.
+
+### Choose Wall, High, or Ceiling
+
+**Mounted on**, at the top of **Map settings**, tells the map how the radar hangs. It's saved for the radar, so everyone who opens its map sees the same, and only administrators change it. An LD2450 starts on **Wall**, the way every earlier release drew it, and nothing changes until you pick another:
+
+- **Wall**: on a wall at about chest height, looking straight out. The map shows the radar's view cone.
+- **High**: high on a wall or in a ceiling corner, tilted down. Enter **Mount height**, **Tilt down:**, and **Person height** (the height of a person's chest, 1 m or 3.3 ft by default). The map draws what the radar covers, from a near edge to a far edge, with a line such as **Covers from about 1.8 ft to 19.3 ft out from the wall.**
+- **Ceiling**: on the ceiling, looking straight down. Enter **Ceiling height** and **Person height**. An LD2450 sees a strip along a wall from there, and can't tell which side of it someone is on, so mount it near a wall and use **Flip room side** if people show up past the wall line.
+
+The LD2450 measures how far away someone is, but not how far below it they are. On **High** and **Ceiling**, the map takes the drop from the radar to a person's chest out of every position, so someone 1 m from the wall under a radar 2.2 m up shows 1 m out instead of about 1.6 m. Zone presence, hold times, the live dots, trails, Walk, History, and ignore zones all use those positions. An LD2460 corrects its own readings and offers **Wall** and **Ceiling**; when it reports its **Installation Mode**, that decides.
+
+<video src="/assets/apollo-mmwave-mount-switch.mp4" poster="/assets/apollo-mmwave-mount-switch-poster.jpg" autoplay loop muted playsinline aria-label="Map settings on an LD2450 zone map in feet, with two people tracked. With Mounted on set to Wall, the map shows the radar's 120 degree view cone and the line In use: Wall, the default. Choose High or Ceiling if the sensor is mounted up high. Pressing High turns the cone into a fan that starts a little out from the wall, adds the Test near and far edge button and Add coverage zone under the map, and the line reads In use: High, as chosen here. Pressing Ceiling turns it into a strip along a dashed wall line, with Test wall line and edge, and the line reads In use: Ceiling, as chosen here. Pressing Wall brings the cone back."></video>
+
+The radar's own built-in zones work in its uncorrected readings, so on **High** or **Ceiling** they don't line up with the map: leave **Zone Type** on **Disabled** and draw zones on the map. Positions are least accurate close under the radar and for people sitting or lying down. [Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md) has a step-by-step guide for each mount, what each one covers, **Add coverage zone**, the edge tests, and what accuracy to expect.
 
 ### Match the map to how the sensor is mounted
 
@@ -626,6 +647,8 @@ The hint tells you what to do next, and **Corner here** stays grayed out until e
 - **That is where you started. Press Finish to save the zone.** You don't need to walk back to the first corner: **Finish** closes the shape.
 - **Those corners make a zone too thin to use. Mark corners on opposite sides of the area.** This one comes from **Finish**. For a rectangle, mark two corners diagonally across from each other.
 
+On a **High** or **Ceiling** mount, and on an LD2460, the corners land where you stood on the floor, worked out from the mount settings. Set **Mounted on** and its heights before you walk.
+
 With no zone selected, **Finish** shows **Select a zone first.** and keeps your corners, so press the zone's button and **Finish** again. **Undo corner** removes the last corner, and **Cancel** leaves without saving. With two or more corners marked, **Cancel** asks **Drop the corners you marked?** first: press **Drop them** to leave, or **Keep marking** to go on. Locking the map or picking another drawing mode also leaves, and drops the corners without asking. While you walk, **History** is closed and grayed out, **🚶 Mark corners by walking** under the map is hidden, and a one-finger swipe on the map scrolls the page. A zoomed map moves along with your dot, so you stay in view.
 
 ### Clear or delete a zone
@@ -646,7 +669,7 @@ Movement history lets an administrator play back where the radar tracked people 
 2. Press **History** under the map. The **Movement history** panel opens on the last hour.
 3. Press **Play**, or drag the slider to any moment. **1x**, **10x**, and **60x** set the speed, **1 h**, **6 h**, and **24 h** change the range, and the small chart above the slider shows when the radar saw people.
 
-During a replay, the map's top-right corner reads **Replay** and the time, such as **Replay 2:14:05 PM**. Each target is a numbered dot with a short trail, and a zone fills in while a replayed dot is inside it. **Heatmap** paints where people spent their time over the whole range, so a spot where someone sat outweighs one they walked through. The panel reminds you: **Zones are drawn with their current shapes, rotation and flip.** A zone you redrew today lights up by its new shape. **Back to live** closes the panel. Opening **History** stops drawing, and pressing **Draw shape** or **Redraw shape** closes the replay. A range with nothing in it reads **No movement recorded in this range yet.**
+During a replay, the map's top-right corner reads **Replay** and the time, such as **Replay 2:14:05 PM**. Each target is a numbered dot with a short trail, and a zone fills in while a replayed dot is inside it. **Heatmap** paints where people spent their time over the whole range, so a spot where someone sat outweighs one they walked through. The panel reminds you: **Zones are drawn with their current shapes, rotation and flip.** A zone you redrew today lights up by its new shape. On a **High** or **Ceiling** mount, the panel also reads **History is drawn with the mount settings in use now.** Positions are saved as the radar reported them and placed with the mount settings you have today. **Back to live** closes the panel. Opening **History** stops drawing, and pressing **Draw shape** or **Redraw shape** closes the replay. A range with nothing in it reads **No movement recorded in this range yet.**
 
 <video src="/assets/apollo-mmwave-zone-map-history.mp4" poster="/assets/apollo-mmwave-zone-map-history-poster.jpg" autoplay loop muted playsinline aria-label="A movement history replay at 10x on the zone map for an R PRO-1 named R PRO-1 Living Room. Under the map are the Coverage and History buttons and the Movement history panel with Back to live, the 1 h, 6 h, 24 h, and Heatmap buttons, a small bar chart of when the radar saw people over the hour, a slider, Play, the 1x, 10x, and 60x buttons, the time 2:13:40 PM, 1 h 0 min ago, the line Zones are drawn with their current shapes, rotation and flip., and Clear history. 10x and Play are pressed, Play turns into Pause, the slider creeps along, and the top-right corner of the map, under the top row of distance labels and beside Expand, counts up from Replay 2:13:40 PM past Replay 2:14:05 PM. Dots 1, 2, and 3 move with short trails, and the Doorway, Couch, and Desk zones fill in while a replayed dot is inside them. Then Heatmap is pressed, and orange squares mark where people spent their time over the hour"></video>
 
@@ -870,6 +893,10 @@ An automation that must not fire when the radar comes back, such as a notificati
 
 **A tab says the radar is offline, but it works.** The **Start here** card keeps the **Offline right now.** note it was built with, for example on a dashboard you opened while the radars were reconnecting after a restart. Reload the page.
 
+### Dots sit too far out on a high or ceiling sensor
+
+Check **Mounted on** under **Map settings**. On **Wall**, a sensor that hangs high shows people farther from it than they are, because the radar's distance includes the drop down to them. Pick **High** or **Ceiling** and enter the heights, as [Choose Wall, High, or Ceiling](#choose-wall-high-or-ceiling) shows. For dots on the wrong side of a ceiling sensor, or people lost close under one, see [Troubleshooting](/products/general/setup/apollo-mmwave-mounting.md#troubleshooting) in the mounting guide.
+
 ### A zone stays on after everyone left
 
 Look at the zone on the map:
@@ -882,7 +909,7 @@ Look at the zone on the map:
 
 ### A slider won't move
 
-The sliders on **Detection Range**, **Move Thresholds**, and **Still Thresholds** start locked. Press **Unlock** on the **Sliders locked** row above them (see [Set the range and timeout](#set-the-range-and-timeout)). The **Cone rotation** slider under **Map settings** on the zone map locks with the map: press **Locked** on the map first.
+The sliders on **Detection Range**, **Move Thresholds**, and **Still Thresholds** start locked. Press **Unlock** on the **Sliders locked** row above them (see [Set the range and timeout](#set-the-range-and-timeout)). The **Cone rotation** (**Map rotation** on a ceiling) and **Tilt down:** sliders under **Map settings** on the zone map lock with the map: press **Locked** on the map first.
 
 ### A card this guide describes isn't on your tab
 
@@ -890,7 +917,7 @@ If your tab has no **Radar setup** card, no **LD2450 Controls** or **Zone presen
 
 ### Send Apollo a support file
 
-Still stuck? Send Apollo a support file with your question. It holds the Apollo mmWave Dashboard and Home Assistant versions, the dashboard's state, and each radar's model, firmware, settings, zones, and last calibration. For movement history it says only whether it's on and how many points it holds, never the positions. It leaves out MAC and IP addresses, Wi-Fi network names, and tokens, and downloading it changes nothing. Only administrators can download it.
+Still stuck? Send Apollo a support file with your question. It holds the Apollo mmWave Dashboard and Home Assistant versions, the dashboard's state, and each radar's model, firmware, settings, mount and the mount settings in use, zones, and last calibration. For movement history it says only whether it's on and how many points it holds, never the positions. It leaves out MAC and IP addresses, Wi-Fi network names, and tokens, and downloading it changes nothing. Only administrators can download it.
 
 1. Go to **Settings → Devices & services** and open **Apollo mmWave Dashboard**. The **Device** card at the bottom of each tab links there too.
 
