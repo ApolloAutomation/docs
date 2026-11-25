@@ -361,6 +361,12 @@ Turn the map so its view cone points the way your sensor faces. The tracked dots
 3. Drag **Cone rotation:** (from -180° to 180°) until the view cone points the way your sensor faces. When you let go, the angle is saved for the radar and the map fits the turned cone. Double-click the slider to reset it.
 4. Hold your phone so the map's view cone points the way your sensor faces in the room (at **Cone rotation** 0°, that's with the sensor at the top of the screen while you face it). Stand about 2 m (6 ft) in front of the sensor and take a step to one side. If your dot moves the other way on the screen, tick **Flip the map left to right (display only)** under the slider. The hint under the box says the same: **Turn this on if, with the map turned the way the room is, a dot moves the opposite way from you.** With the phone turned any other way, a map that's right can look mirrored, so turn it to match the room before you decide.
 
+On a ceiling mount (an LD2450 on **Ceiling**, or an LD2460 on a ceiling), the slider is **Map rotation:** instead, and there's no view cone to point. The radar sits on the map's wall line, or in the middle of an LD2460's circle, and the whole map turns around it:
+
+1. Open **Map settings**, and unlock the map if **Map rotation:** is gray.
+2. Drag **Map rotation:** until the map's grid lines up with the room's walls. The hint under it reads **Turn the map until its grid lines up with the room's walls. Zones match the room only while the sensor stays mounted that way.**
+3. Walk along one wall and check that your dot moves along a grid line. On an LD2450 ceiling, the room side also has to be right: see [Mount an LD2450 on the ceiling](/products/general/setup/apollo-mmwave-mounting.md#mount-an-ld2450-on-the-ceiling).
+
 The flip mirrors the whole map, zones and dots alike, for everyone who opens it. It only changes how the map is drawn: your zones, their presence sensors, and movement history stay as they are. While it's on, the distances across the grid read from high to low, and **Cone rotation:** drags the other way, so the cone still follows your finger. Only administrators can change it; other users see it grayed out.
 
 ![The zone map's Map settings section opened at the bottom of the card: the Cone rotation: slider at 0° with the hint Mount the sensor first, then set this. Zones match the room only while the sensor stays mounted that way., an unticked Flip the map left to right (display only) box with the hint Turn this on if, with the map turned the way the room is, a dot moves the opposite way from you., a ticked Movement history box with the hint Keeps up to 24 hours of target positions so administrators can replay them here. Backups include them. Turning it off deletes them from Home Assistant., the line Using this radar's own detected targets (3)., the Clear all shapes button, and the line Grid units: ft (X: -18..18, Y: 0..28). Target sensors: mm. Radar range: 20 ft (6 m), 120°](/assets/apollo-mmwave-zone-map-configure.png)
@@ -895,7 +901,9 @@ An automation that must not fire when the radar comes back, such as a notificati
 
 ### Dots sit too far out on a high or ceiling sensor
 
-Check **Mounted on** under **Map settings**. On **Wall**, a sensor that hangs high shows people farther from it than they are, because the radar's distance includes the drop down to them. Pick **High** or **Ceiling** and enter the heights, as [Choose Wall, High, or Ceiling](#choose-wall-high-or-ceiling) shows. For dots on the wrong side of a ceiling sensor, or people lost close under one, see [Troubleshooting](/products/general/setup/apollo-mmwave-mounting.md#troubleshooting) in the mounting guide.
+On an LD2450, check **Mounted on** under **Map settings**. On **Wall**, a sensor that hangs high shows people farther from it than they are, because the radar's distance includes the drop down to them. Pick **High** or **Ceiling** and enter the heights, as [Choose Wall, High, or Ceiling](#choose-wall-high-or-ceiling) shows. For dots on the wrong side of a ceiling sensor, or people lost close under one, see [Troubleshooting](/products/general/setup/apollo-mmwave-mounting.md#troubleshooting) in the mounting guide.
+
+An LD2460 corrects its own readings and has no **High**. Check that its **Installation Mode** under **LD2460 Live** matches how it hangs (**side** for a wall, **top** for a ceiling), and that **Ceiling height** is right on a ceiling. While it reports a mode, the **Mounted on** buttons are grayed out and the radar decides; see [The mount buttons are grayed out](/products/general/setup/apollo-mmwave-mounting.md#the-mount-buttons-are-grayed-out).
 
 ### A zone stays on after everyone left
 

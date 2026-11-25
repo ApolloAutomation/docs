@@ -16,6 +16,10 @@ This guide covers the LD2450 radar in the Apollo R PRO-1 and Apollo MTR-1, and L
     - Your sensor's tab has a zone map. If it doesn't, start with the [Apollo mmWave Dashboard setup guide](apollo-mmwave-dashboard-setup.md).
     - You have a tape measure, and a phone or tablet with the dashboard open for the tests.
 
+!!! warning "Check the zones you already have"
+
+    Choosing **High** or **Ceiling** moves the dots to where people are on the floor, closer to the sensor than before. Zones keep the shape you drew, so a zone drawn on **Wall** for a sensor that hangs high no longer covers the same people. After you set the mount, walk through each zone and redraw any that's off (see [A zone drawn before the change is in the wrong place](#a-zone-drawn-before-the-change-is-in-the-wrong-place)).
+
 ## Choose a mount
 
 | Mount | Radars | Where the sensor goes | What it covers | Best for |
@@ -103,8 +107,8 @@ The strip is now on the map, on the room side of the wall line. Next, check wher
 An LD2460 tracks up to 5 people. Its tab works like an LD2450 tab, and its **Map settings** offer **Wall** and **Ceiling**. The radar corrects its own readings for its height and tilt, so you don't enter a mount height or a person height.
 
 1. On a wall, mount the radar 2.2 to 2.7 m (7 to 9 ft) up, tilted down 25 to 40 degrees. On the ceiling, mount it 2.5 to 3 m (8.2 to 9.8 ft) up, looking straight down, near the middle of the room.
-2. Check **Installation Mode** under **LD2460 Live** on the tab: **side** for a wall, **top** for a ceiling. When the radar reports it, the zone map follows it, and the buttons under **Mounted on** are grayed out with **In use: Ceiling. The radar reports a ceiling mount.** (or **Wall**).
-3. If **Installation Mode** is missing or unknown, open **Map settings** and press **Wall** or **Ceiling** yourself.
+2. Check **Installation Mode** under **LD2460 Live** on the tab: **side** for a wall, **top** for a ceiling. The radar reports it when the device starts, and while it reports one, the zone map follows it: the buttons under **Mounted on** are grayed out, with **In use: Ceiling. The radar reports a ceiling mount.** (or **Wall**). The dashboard can't change the mode. If it doesn't match how the radar now hangs, change the installation setting on the radar itself, where your device's firmware offers one.
+3. If **Installation Mode** is missing or unknown, the buttons under **Mounted on** are available: open **Map settings** and press **Wall** or **Ceiling** yourself. An LD2460 has no **High**: on a wall, the radar corrects its own readings for its height and tilt.
 4. On a ceiling, enter **Ceiling height**. The line under it says how far the radar sees, such as **The radar covers up to 13.1 ft out from the spot under it, its most.** Above 3 m (9.8 ft), people far from the center may be missed.
 5. Drag **Map rotation:** until the grid lines up with the room's walls.
 
@@ -135,7 +139,7 @@ Each mount has a test that shows where the radar sees you and where its view end
 
 <video src="/assets/apollo-mmwave-mount-ceiling-test.mp4" poster="/assets/apollo-mmwave-mount-ceiling-test-poster.jpg" autoplay loop muted playsinline aria-label="Test wall line and edge on an LD2450 zone map on a Ceiling mount in feet. The strip gets a thick outline, and the checks Wall line and At the edge appear under the map. Dot 1 stands under the radar on the dashed wall line, Wall line gets a check mark, and the line reads You are right under the radar, on the wall line. The dot walks out into the room to the strip's far edge, At the edge gets a check mark, and the line reads You are at the far edge, about 3.9 ft out. It then walks along the strip to its side edge, and the line reads You are at the side edge of what the radar sees. Leaving from here counts as leaving."></video>
 
-If the test loses you in the middle of the view, something blocks the radar there, or you stood still too long. A tick on both checks means the mount is set up: your zones, hold times, and the map now match the room.
+If the test loses you in the middle of the view, something blocks the radar there, or you stood still too long. A tick on both checks means the mount is set up: the map and hold times now match where the radar's view starts and ends. The tests don't check your zones, so walk through each zone you drew before the change and redraw any that's off.
 
 !!! success "Next step: use your zones in automations"
 
@@ -173,7 +177,7 @@ Check that **Mounted on** matches how the sensor hangs: on **Wall**, a sensor up
 
 ### The mount buttons are grayed out
 
-On an LD2460 that reports its **Installation Mode**, the radar decides, and the line under the buttons says which mount it reports. It reads the mode when the device starts, so restart the device after you move it. Only administrators can change the mount, so check that you're signed in as one. If **Tilt down:** is grayed out, the map is locked: press **Locked** on the map to change it.
+On an LD2460 that reports its **Installation Mode**, the radar decides, and the line under the buttons says which mount it reports. The buttons become available only while **Installation Mode** is missing or unknown. If the reported mode doesn't match how the radar hangs, change the installation setting on the radar itself, where your device's firmware offers one; the dashboard can't change it. An LD2460 has no **High** in any case. Only administrators can change the mount, so check that you're signed in as one. If **Tilt down:** is grayed out, the map is locked: press **Locked** on the map to change it.
 
 ### A zone drawn before the change is in the wrong place
 
