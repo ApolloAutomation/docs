@@ -52,7 +52,7 @@ An LD2460 corrects its own readings for how it's mounted, so it only needs to kn
 A high mount keeps the sensor out of reach and lets it look over furniture, so it sees the whole room instead of the back of the couch. Here's how to set it up:
 
 1. Mount the sensor 2 to 2.7 m (6.5 to 9 ft) up, on a wall or in a ceiling corner, facing into the room. Keep it level from side to side, so it isn't rolled, and tilt it down 25 to 35 degrees.
-2. On the sensor's tab, open **Map settings** at the bottom of the zone map. If the map reads **Locked**, press it to unlock first (see [Lock and unlock](apollo-mmwave-dashboard.md#lock-and-unlock)).
+2. On the sensor's tab, open **Map settings** at the bottom of the zone map. **Tilt down:** and **Cone rotation:** lock with the map, so if the map reads **Locked**, press it to unlock (see [Lock and unlock](apollo-mmwave-dashboard.md#lock-and-unlock)).
 3. Under **Mounted on**, press **High**. The card shows **Map set to a high mount**, and the line under the buttons reads **In use: High, as chosen here.**
 4. Measure from the floor to the sensor and enter it in **Mount height** (1.2 to 4 m, or 3.9 to 13.1 ft). The field uses the map's units.
 5. Drag **Tilt down:** to roughly how far the sensor points down from level, from 0 to 60 degrees. A rough guess is fine: the hint under it reads **How far the sensor points down from level. Tilt changes what it covers, not where it places people.**
@@ -84,13 +84,13 @@ Here's how to set it up:
 
 1. Pick the strip to watch, and the wall beside it. Mount the sensor on the ceiling close to that wall, looking straight down.
 2. Turn the sensor so that its long side runs along the wall. You'll check this in step 7.
-3. On the sensor's tab, open **Map settings** at the bottom of the zone map, unlocked, and press **Ceiling** under **Mounted on**. The card shows **Map set to a ceiling mount**.
+3. On the sensor's tab, open **Map settings** at the bottom of the zone map and press **Ceiling** under **Mounted on**. The card shows **Map set to a ceiling mount**.
 4. Measure from the floor to the ceiling and enter it in **Ceiling height** (2 to 4 m, or 6.6 to 13.1 ft).
 5. Leave **Person height** at 1 m (3.3 ft) unless people there are mostly sitting or lying down.
 6. Read the coverage line, such as **Covers a strip about 5.9 m along the wall and 1.2 m into the room.** The box above **Flip room side** explains the one-side rule in the card's own words.
 7. Walk along the wall under the sensor. Your dot should move left and right along the dashed wall line. If it moves up and down instead, turn the sensor a quarter turn on the ceiling and try again.
 8. Step away from the wall into the room. If your dot shows up past the wall line, on the side where the room isn't, tick **Flip room side**. Zones stay where they are when you flip it, so redraw any zone drawn for the other side.
-9. Drag **Map rotation:** until the map's grid lines up with the room's walls. On a ceiling the whole map turns, not a cone.
+9. Drag **Map rotation:** until the map's grid lines up with the room's walls. On a ceiling the whole map turns, not a cone. The slider locks with the map, so unlock it first if it's gray.
 
 ![Map settings on an LD2450 zone map in feet with Ceiling picked under Mounted on: In use: Ceiling, as chosen here., Ceiling height 8.9 ft, Person height 3.3 ft with its hint, then a box that reads Looking straight down, this radar cannot tell which side of it someone is on, so it shows everyone on one side. Mount it near a wall, turned so walking along the wall moves your dot left and right. Everyone in the room is then on the room side. If people show up past the wall line, turn on Flip room side., an unticked Flip room side box with the line Zones stay where they are, so redraw any zone drawn for the other side., the lines Covers a strip about 19.3 ft along the wall and 3.9 ft into the room., A ceiling sensor of this kind sees a narrow strip. For a whole room, mount it high on a wall and choose High., the accuracy and built-in zones notes, and the Map rotation: slider at 0 degrees](/assets/apollo-mmwave-mount-ceiling-settings.png)
 
