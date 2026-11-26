@@ -110,6 +110,7 @@ flowchart LR
 * [Tuning out false positives with the MSR-2](https://wiki.apolloautomation.com/products/general/calibrating-and-updating/mmwave-videos/)
 * [Setting up zones on MTR-1 with the HLK app](https://wiki.apolloautomation.com/products/mtr1/setup/zones-hlk/)
 * [Draw zones on your R PRO-1 or MTR-1 with the zone map on the Apollo mmWave Dashboard](products/general/setup/apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1)
+* [Mount your radar high on a wall or on the ceiling and set up its zone map](products/general/setup/apollo-mmwave-mounting.md)
 * [Tune your new R PRO-1 PoE mmWave sensor](https://wiki.apolloautomation.com/products/rpro1/setup/zones-ha/)
 
 ### Quick references
