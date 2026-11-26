@@ -5,7 +5,7 @@ description: A step-by-step guide to telling the Apollo mmWave Dashboard zone ma
 
 # Mount your radar high or on the ceiling
 
-Your radar doesn't have to sit at chest height on a wall. It can hang high up and look down over the furniture, or sit on the ceiling. Tell the zone map how it hangs, and the dots on the map land where people really are on the floor. Your zones, hold times, Walk, and History all follow.
+Your radar doesn't have to sit at chest height on a wall. It can hang high up and look down over the furniture, or sit on the ceiling. Tell the zone map how it hangs, and the dots on the map land where people really are on the floor. Your zones and their presence sensors then match the room.
 
 You don't need to know anything about radar to do this. Each step below says what to do and shows what you should see. Plan on about ten minutes once the sensor is up.
 
@@ -16,7 +16,7 @@ This guide covers the LD2450 radar in the Apollo R PRO-1 and Apollo MTR-1, and L
 Find where your sensor is, then follow its steps.
 
 - **On a wall at about chest height, looking straight out:** keep **Wall**, the default. It watches a wedge about 6 m (20 ft) out. There's nothing to change.
-- **High on a wall or in a ceiling corner, 2 to 2.7 m (6.5 to 9 ft) up, tilted down:** choose **High**. It watches most of the room, from a little out from the wall to about 5.9 m (19.3 ft) out. Go to [Mount an LD2450 high on a wall](#mount-an-ld2450-high-on-a-wall).
+- **High on a wall or in a ceiling corner, 2 to 2.7 m (6.6 to 8.9 ft) up, tilted down:** choose **High**. It watches most of the room, from a little out from the wall to about 5.9 m (19.3 ft) out. Go to [Mount an LD2450 high on a wall](#mount-an-ld2450-high-on-a-wall).
 - **On the ceiling near a wall, looking straight down:** choose **Ceiling**. It watches a narrow strip along that wall, about 5.9 m (19.3 ft) long and 1.2 m (3.9 ft) deep under a 2.7 m (8.9 ft) ceiling. Go to [Mount an LD2450 on the ceiling](#mount-an-ld2450-on-the-ceiling).
 - **An ESPHome device with an LD2460 radar, on a wall or the ceiling:** choose **Wall** or **Ceiling**. On the ceiling it watches a circle up to 4 m (13.1 ft) out. Go to [Set up an LD2460 tracking radar](#set-up-an-ld2460-tracking-radar).
 
@@ -26,13 +26,14 @@ Find where your sensor is, then follow its steps.
 
 Here's how the map changes on a real R PRO-1 as you switch between **Wall**, **High**, and **Ceiling**:
 
-<video src="/assets/apollo-mmwave-mount-switch.mp4" poster="/assets/apollo-mmwave-mount-switch-poster.jpg" autoplay loop muted playsinline aria-label="The zone map card for an R PRO-1 named R PRO-1 Unified Test in Home Assistant, in feet and locked, with Zone 1 drawn by the radar. On Wall, the map shows a wedge 120 degrees wide with the caption Radar range 20 ft (6 m), 120°. On High, the wedge becomes a fan that starts a little out from the wall, with the caption Coverage 1.8 ft to 19.3 ft out, and a Test near and far edge button appears under the map. On Ceiling, the map turns short and wide around a strip under a dashed wall line, with the radar as a green dot on the line, the caption Coverage 0.0 ft to 3.9 ft out, and a Test wall line and edge button. Then Wall brings the wedge back."></video>
+<video src="/assets/apollo-mmwave-mount-switch.mp4" poster="/assets/apollo-mmwave-mount-switch-poster.jpg" autoplay loop muted playsinline aria-label="The zone map card for an R PRO-1 in Home Assistant, in feet and locked, with one zone, Zone 1, drawn next to the radar. On Wall, the map shows a wedge 120 degrees wide with the caption Radar range 20 ft (6 m), 120°. On High, the wedge becomes a fan that starts a little out from the wall, with the caption Coverage 1.8 ft to 19.3 ft out, and a Test near and far edge button appears under the map. On Ceiling, the map turns short and wide around a strip under a dashed wall line, with the radar as a green dot on the line, the caption Coverage 0.0 ft to 3.9 ft out, and a Test wall line and edge button. Then Wall brings the wedge back."></video>
 
 !!! note "Before you start"
 
-    - **Apollo mmWave Dashboard 2.5.1 or later.** If **Settings → System → Updates** lists an Apollo mmWave Dashboard update, install it first, as [Update Apollo mmWave Dashboard](apollo-mmwave-dashboard-setup.md#update-apollo-mmwave) shows. Version 2.4.2 and earlier have no mounts, and on 2.5.0 a ceiling map is tall with empty space under the strip.
+    - **Apollo mmWave Dashboard 2.5.1 or later.** To see your version, open **Apollo mmWave Dashboard** under **Settings → Marketplace** (or in **HACS** on Home Assistant 2026.10 and earlier). If **Settings → System → Updates** lists an Apollo mmWave Dashboard update, install it first, as [Update Apollo mmWave Dashboard](apollo-mmwave-dashboard-setup.md#update-apollo-mmwave) shows. Then restart Home Assistant and reload the page, as [Load the new cards](apollo-mmwave-dashboard-setup.md#load-the-new-cards) shows. Version 2.4.2 and earlier have no mounts, and on 2.5.0 a ceiling map is tall with empty space under the strip.
     - **You're signed in to Home Assistant as an administrator.** Other users see the mount but can't change it.
     - **Your sensor's tab has a zone map.** If it doesn't, start with the [Apollo mmWave Dashboard setup guide](apollo-mmwave-dashboard-setup.md).
+    - **The Radar setup card on that tab shows no problems.** If it offers a button such as **Set Zone Type to Disabled**, press it first. Otherwise the map can't show people.
     - **A tape measure**, to measure how high the sensor is.
     - **A phone or tablet** with the dashboard open, so you can watch the map while you walk around the room.
 
@@ -44,11 +45,11 @@ Here's how the map changes on a real R PRO-1 as you switch between **Wall**, **H
 
 Every mount is set in **Map settings**, at the very bottom of the zone map card. Start here whichever mount you picked.
 
-1. Click **Apollo mmWave Dashboard** in the Home Assistant sidebar, then click your sensor's tab along the top. You should see the zone map card, with your sensor's name at the top.
+1. Click **Apollo mmWave Dashboard** in the Home Assistant sidebar, then click your sensor's tab along the top. Scroll down to the **Zone Map** heading. You should see the zone map card under it, with your sensor's name at the top.
 
 2. Scroll down past the map and the **Zones** panel to the bottom of the same card. Click **Map settings**. The section opens, and you should see **Mounted on** with three buttons: **Wall**, **High**, and **Ceiling**.
 
-    ![The whole zone map card for R PRO-1 Unified Test: the map at the top, then the Zones panel with Zone 1's editor, and at the very bottom of the card a row that reads Map settings with a small arrow at its right end, outlined in orange to show where to click](/assets/apollo-mmwave-mount-find-settings.png)
+    ![The whole zone map card for an R PRO-1: the map at the top, then the Zones panel with Zone 1's editor, and at the very bottom of the card a row that reads Map settings with a small arrow at its right end, outlined in orange to show where to click](/assets/apollo-mmwave-mount-find-settings.png)
 
     ![Map settings opened on an LD2450 zone map: the Mounted on heading over three buttons, Wall, High, and Ceiling, with Wall highlighted in blue, and the line In use: Wall, the default. Choose High or Ceiling if the sensor is mounted up high. Below it are the Cone rotation: slider at 0° with the note Locked with the map. Press Locked on the map to change it., the Flip the map left to right (display only) box, and the Movement history box](/assets/apollo-mmwave-mount-wall-settings.png)
 
@@ -62,38 +63,41 @@ Keep this section open. The next steps happen here.
 
 Up high, the sensor stays out of reach and looks over the couch instead of at the back of it. The map then shows how far each person is from the wall across the floor.
 
-1. Mount the sensor 2 to 2.7 m (6.5 to 9 ft) up, on a wall or in a ceiling corner, facing into the room. Tilt it down 25 to 35 degrees, and keep it level from side to side. You should see its front pointing at the middle of the room's floor.
+1. Mount the sensor 2 to 2.7 m (6.6 to 8.9 ft) up, on a wall or in a ceiling corner, facing into the room. Tilt it down 25 to 35 degrees, and keep it level from side to side. You should see its front pointing at the middle of the room's floor.
 2. Under **Mounted on**, press **High**. You should see **High** turn blue, the line **In use: High, as chosen here.**, and three new settings: **Mount height**, **Tilt down:**, and **Person height**.
 
     ![Map settings with High picked under Mounted on: the line In use: High, as chosen here., Mount height 7.2 ft, the Tilt down: slider at 30° with the hint How far the sensor points down from level. Tilt changes what it covers, not where it places people. and the note Locked with the map. Press Locked on the map to change it., Person height 3.3 ft with the hint The height of a person's chest, where the radar sees them best. 1 m (3.3 ft) suits most adults standing., then the lines Covers from about 1.8 ft to 19.3 ft out from the wall., Closer than that, people are under the radar's view. Tilt it down more to see closer., a note that positions are least accurate close under the radar and for people sitting or lying down, and a note that the radar's built-in zones don't line up with this map](/assets/apollo-mmwave-mount-high-settings.png)
 
-3. Measure from the floor to the sensor. Type that number in **Mount height**, then click outside the box. You should see the number stay, in the same units as the map (ft or m).
+3. Measure from the floor to the sensor. Type that number in **Mount height**, then click outside the box or press Enter. You should see **Saved** next to the box. The number is in the same units as the map (ft or m).
 
     !!! tip "If the number changes by itself"
 
-        **Mount height** takes 1.2 to 4 m (3.9 to 13.1 ft). A number outside that range changes to the nearest limit, with a note that starts **Enter a height from**. Check that you typed it in the units shown beside the box. The **m** and **ft** buttons in the map's bottom-right corner switch the units.
+        **Mount height** takes 1.2 to 4 m (3.9 to 13.1 ft). A number outside that range changes to the nearest limit, with a note that starts **Enter a mount height from**. Check that you typed it in the units shown beside the box. The **m** and **ft** buttons in the map's bottom-right corner switch the units.
 
-4. Drag the **Tilt down:** slider to roughly how far the sensor points down. A rough guess is fine. You should see the number after **Tilt down:** change, and the shape on the map stretch or shrink.
+4. Scroll up to the map and press **Locked**, the button with a padlock in the map's bottom-right corner. You should see it change to **Unlocked**. The sliders in the next steps only move while the map is unlocked. Then scroll back down to **Map settings**.
+5. Drag the **Tilt down:** slider to roughly how far the sensor points down. A rough guess is fine. You should see the number after **Tilt down:** change, and the numbers in the **Covers from about** line change with it.
 
     !!! tip "If the slider is gray"
 
-        The map is locked. Press **Locked**, the button with a padlock in the map's bottom-right corner. It changes to **Unlocked**, and the slider works. Press it again when you're done.
+        The map is still locked. Do step 4 again: press **Locked** on the map so it reads **Unlocked**.
 
-5. Leave **Person height** at 3.3 ft (1 m). It's how high a standing adult's chest is, and the radar sees people best at the chest. You should see **3.3** (or **1** in meters). If people in this room mostly sit, as in a home theater, change it to 2.3 ft (0.7 m).
-6. Read the line **Covers from about 1.8 ft to 19.3 ft out from the wall.** (your numbers depend on your heights). You should see where the radar starts and stops seeing people. In this example, that's from about 0.6 m to 5.9 m out. Anyone closer to the wall than the first number is under the radar's view.
+6. Leave **Person height** at 3.3 ft (1 m). It's how high a standing adult's chest is, and the radar sees people best at the chest. You should see **3.3** (or **1** in meters). If people in this room mostly sit, as in a home theater, change it to 2.3 ft (0.7 m).
+7. Read the line **Covers from about 1.8 ft to 19.3 ft out from the wall.** (your numbers depend on your heights). You should see where the radar starts and stops seeing people. In this example, that's from about 0.6 m to 5.9 m out. Anyone closer to the wall than the first number is too close for the radar to see.
 
     !!! tip "If the first number is too far out"
 
         Tilt the sensor down a little more, then move **Tilt down:** to match. At 45 degrees down, a sensor 2.2 m (7.2 ft) up sees from about 0.2 m (0.7 ft) out.
 
-7. Drag **Cone rotation:** until the shape on the map points the way the sensor faces in the room, as [Match the map to how the sensor is mounted](apollo-mmwave-dashboard.md#match-the-map-to-how-the-sensor-is-mounted) shows. If your sensor faces straight into the room, leave it at 0°.
-8. Look at the map. You should see a fan in place of the wedge, starting a little out from the wall, with a caption such as **Coverage 1.8 ft to 19.3 ft out**. A **Test near and far edge** button appears under the map.
+8. Find **Cone rotation:**, lower in **Map settings**, under the coverage lines and notes. If your sensor faces straight into the room, leave it at 0°. Otherwise drag it until the shape on the map points the way the sensor faces in the room, as [Match the map to how the sensor is mounted](apollo-mmwave-dashboard.md#match-the-map-to-how-the-sensor-is-mounted) shows. You should see the number after **Cone rotation:** match the way the sensor faces.
+9. Scroll up to the map. You should see a fan in place of the wedge, starting a little out from the wall, with a caption such as **Coverage 1.8 ft to 19.3 ft out**. A **Test near and far edge** button appears under the map.
 
     ![The zone map on a High mount, in feet and locked: a green fan that starts about 2 ft out from the wall and spreads to about 19 ft out, with the caption Coverage 1.8 ft to 19.3 ft out, Zone 1 next to the radar, and the Mark corners by walking, Coverage, History, and Test near and far edge buttons under the map](/assets/apollo-mmwave-mount-high-map.png)
 
-9. Walk into the room. You should see your dot show how far you are from the wall across the floor, and a zone fill in while you're inside it.
+10. Walk into the room. You should see a numbered dot follow you, closer to the top of the map when you're near the wall. If you already have a zone, it fills in while you're inside it.
 
     <video src="/assets/apollo-mmwave-mount-high.mp4" poster="/assets/apollo-mmwave-mount-high-poster.jpg" autoplay loop muted playsinline aria-label="An LD2450 zone map on a High mount, locked, in feet, with the radar's coverage drawn as a fan from a near edge a little out from the wall to a far edge, and a zone named Desk in the middle of it. Dot 1 starts at the near edge and walks straight out from the wall, leaving a short trail. While the dot is inside Desk, the zone fills in solid with a solid outline, and once the dot walks past it, Desk goes back to a pale fill with a dashed outline."></video>
+
+11. Press **Unlocked** on the map. You should see it read **Locked** again. This keeps a stray scroll or tap from moving the map.
 
 Your sensor is now mapped from up high. Next, [check that it works](#test-the-edges).
 
@@ -106,15 +110,15 @@ From the ceiling, an LD2450 watches a strip of floor along one wall. That's a go
     Looking straight down, the radar can tell how far along the wall you are and how far from it, but not which side of it you're on. So the map puts everyone on one side, the room side. With the sensor close to a wall, everyone in the room really is on that side, and the map is right.
 
 1. Pick the strip you want to watch and the wall beside it. Mount the sensor on the ceiling close to that wall, looking straight down. You should see its front facing the floor.
-2. Turn the sensor so its long side runs along the wall. You'll check this in step 8.
+2. Turn the sensor so the edge that would face up on a wall points toward the wall (or straight away from it). Walking along the wall then moves your dot left and right. Don't worry about getting it right now: step 8 checks it.
 3. Under **Mounted on**, press **Ceiling**. You should see **Ceiling** turn blue, the line **In use: Ceiling, as chosen here.**, **Ceiling height**, **Person height**, and a box that explains the room side.
 
     ![Map settings with Ceiling picked under Mounted on: the line In use: Ceiling, as chosen here., Ceiling height 8.9 ft, Person height 3.3 ft with its hint, a box that reads Looking straight down, this radar cannot tell which side of it someone is on, so it shows everyone on one side. Mount it near a wall, turned so walking along the wall moves your dot left and right. Everyone in the room is then on the room side. If people show up past the wall line, turn on Flip room side., an unticked Flip room side box with the line Zones stay where they are, so redraw any zone drawn for the other side., then the lines Covers a strip about 19.3 ft along the wall and 3.9 ft into the room. and A ceiling sensor of this kind sees a narrow strip. For a whole room, mount it high on a wall and choose High., and notes on accuracy and the radar's built-in zones](/assets/apollo-mmwave-mount-ceiling-settings.png)
 
-4. Measure from the floor to the ceiling. Type that number in **Ceiling height**, then click outside the box. It takes 2 to 4 m (6.6 to 13.1 ft). You should see the strip on the map change size.
+4. Measure from the floor to the ceiling. Type that number in **Ceiling height**, then click outside the box or press Enter. It takes 2 to 4 m (6.6 to 13.1 ft). You should see **Saved** next to the box, and the numbers in the **Covers a strip about** line change.
 5. Leave **Person height** at 3.3 ft (1 m), the chest height of a standing adult. If people there mostly sit or lie down, as at a desk or a bed, change it to 2.3 ft (0.7 m).
 6. Read the line **Covers a strip about 19.3 ft along the wall and 3.9 ft into the room.** You should see how big the strip is. Under a 2.7 m (8.9 ft) ceiling, that's about 5.9 m along the wall and 1.2 m into the room.
-7. Look at the map. You should see a short, wide map: the radar as a green dot on a dashed wall line at the top, and the strip under it. A **Test wall line and edge** button appears under the map.
+7. Scroll up to the map. You should see a short, wide map: the radar as a green dot on a dashed wall line at the top, and the strip under it. A **Test wall line and edge** button appears under the map.
 
     ![The zone map on a Ceiling mount, in feet and locked: a short, wide map with the radar as a green dot on a dashed green wall line near the top, a strip of coverage under the line about 19 ft wide and 4 ft deep with the caption Coverage 0.0 ft to 3.9 ft out, Zone 1 under the radar, and the Mark corners by walking, Coverage, History, and Test wall line and edge buttons under the map](/assets/apollo-mmwave-mount-ceiling-map.png)
 
@@ -132,7 +136,7 @@ From the ceiling, an LD2450 watches a strip of floor along one wall. That's a go
 
     <video src="/assets/apollo-mmwave-mount-ceiling.mp4" poster="/assets/apollo-mmwave-mount-ceiling-poster.jpg" autoplay loop muted playsinline aria-label="An LD2450 zone map on a Ceiling mount in feet, under a caption that reads Map settings: Flip room side is off. The map is short and wide: the radar is a green dot on a dashed wall line near its top, and its coverage is a strip under the line. Dot 1 walks along the strip from left to right, leaving a trail. The caption changes to Map settings: Flip room side is on, the strip and the dot move above the wall line, and the dot walks back from right to left. The caption changes back to off, and the strip returns under the wall line."></video>
 
-10. Drag **Map rotation:** until the map's grid lines up with the room's walls. On a ceiling the whole map turns around the radar. You should see your dot move along a grid line when you walk along a wall. If the slider is gray, press **Locked** on the map first.
+10. Leave **Map rotation:** in **Map settings** at 0° if your dot moved left and right along the wall line in step 8. Turn it only if you want the map to face another way. If the slider is gray, press **Locked** on the map so it reads **Unlocked** first, and press it again when you're done. You should see **Map rotation:** at the angle you want.
 
 The strip is now on the map, on the room side of the wall line. Next, [check that it works](#test-the-edges).
 
@@ -154,21 +158,21 @@ An LD2460 tracks up to 5 people. Its tab works like an LD2450 tab, and its **Map
 
 5. Drag **Map rotation:** until the grid lines up with the room's walls. You should see the radar in the middle of a circle on a ceiling mount.
 
-With no zones yet and the map unlocked, **Add whole-room zone** under the **Zones** heading adds one zone over everything the radar sees. Next, [check that it works](#test-the-edges).
+On a ceiling, with no zones yet and the map unlocked, **Add whole-room zone** under the **Zones** heading adds one zone over everything the radar sees. Next, [check that it works](#test-the-edges).
 
 ## Check that it works { #test-the-edges }
 
 Each mount has a test that shows where the radar sees you and where its view ends. It takes a minute. Be the only person in the room, and carry your phone or tablet with the dashboard open.
 
-Why it matters: when someone walks out at the edge of the view, the zone turns off right away. When someone vanishes in the middle, a zone with a hold time stays on, because they're probably sitting still. The test shows you where those edges are in your room.
+The test shows where the radar stops seeing you in your room.
 
 === "High"
 
-    1. Press **Test near and far edge** under the map. You should see the fan get a thick yellow outline, the checks **Near edge** and **Far edge**, and the line **Nobody is in view. Walk into the room to start.**
+    1. Press **Test near and far edge** under the map. You should see the fan get a thick yellow or orange outline, the checks **Near edge** and **Far edge**, and the line **Nobody is in view. Walk into the room to start.**
 
         ![The High test started on a real R PRO-1: the fan outlined in thick yellow, the Near edge and Far edge checks under the map, the line Nobody is in view. Walk into the room to start., and the Test near and far edge button highlighted in blue](/assets/apollo-mmwave-mount-high-test-start.png)
 
-    2. Walk toward the wall until **Near edge** gets a check mark. You should see **You are at the near edge. Any closer and the radar loses you.**
+    2. Walk into the middle of the room until your dot shows. Then walk slowly toward the wall under the sensor until **Near edge** gets a check mark. You should see **You are at the near edge. Any closer and the radar loses you.**
     3. Walk slowly straight out into the room. You should see lines such as **You are 9.2 ft out, 7.3 ft from the edge of what the radar sees.**
     4. Keep going until **Far edge** gets a check mark. You should see **You are at the far edge, about 19.3 ft out.** (about 5.9 m).
 
@@ -176,7 +180,7 @@ Why it matters: when someone walks out at the edge of the view, the zone turns o
 
 === "Ceiling (LD2450)"
 
-    1. Press **Test wall line and edge** under the map. You should see the strip get a thick yellow outline, a dashed circle around the radar, the checks **Wall line** and **At the edge**, and the line **Nobody is in view. Walk under the radar to start.**
+    1. Press **Test wall line and edge** under the map. You should see the strip get a thick yellow or orange outline, a dashed circle around the radar, the checks **Wall line** and **At the edge**, and the line **Nobody is in view. Walk under the radar to start.**
 
         ![The Ceiling test started on a real R PRO-1: the short strip outlined in thick yellow, a dashed green circle around the radar on the wall line, the Wall line and At the edge checks under the map, the line Nobody is in view. Walk under the radar to start., and the Test wall line and edge button highlighted in blue](/assets/apollo-mmwave-mount-ceiling-test-start.png)
 
@@ -211,7 +215,7 @@ On **High** and **Ceiling**, one press gives you a zone over everything the rada
 
 <video src="/assets/apollo-mmwave-coverage-zone.mp4" poster="/assets/apollo-mmwave-coverage-zone-poster.jpg" autoplay loop muted playsinline aria-label="An LD2450 zone map on a High mount in feet, with no zones yet and the radar's coverage drawn as a fan. Add coverage zone is pressed, and Zone 1 appears with the fan's shape, a dot on each corner, and its button under Zones. Dot 1 walks into the room from the far left, and Zone 1 fills in solid while it's inside."></video>
 
-Already have a zone? Open it in the **Zones** panel and press **Coverage** under **Draw shape**. On an LD2460 ceiling, the choices are **Whole room**, **Square**, and **Circle**.
+Already have a zone? Open it in the **Zones** panel and press **Coverage** under **Draw shape**. On an LD2460 ceiling, press **Square** or **Circle** beside **Whole room** under **Draw shape**.
 
 To draw smaller zones over the couch, the desk, or the bed, see [Add a zone](apollo-mmwave-dashboard.md#add-a-zone) and [Draw a zone](apollo-mmwave-dashboard.md#draw-a-zone). [Mark corners by walking](apollo-mmwave-dashboard.md#mark-corners-by-walking) works on every mount, and the corners land where you stood on the floor.
 
@@ -245,8 +249,8 @@ An LD2460 works differently: the map uses the positions it reports as they are. 
 
 The heights turn a slanted distance into a distance across the floor, and a small error in the reading grows a little on the way:
 
-- **Close under the radar** is least accurate. On a ceiling 2.7 m (8.9 ft) up, a 10 cm (4 in) error in the reading moves a dot about 28 cm (11 in) when you're 0.5 m (1.6 ft) from the wall line, and about 11 cm (4 in) at 3 m (9.8 ft). Errors shrink with distance.
-- **Sitting or lying down** puts the chest lower than **Person height**, so people show a little farther out than they are. Someone seated (chest about 0.7 m or 2.3 ft) under a radar 2.7 m (8.9 ft) up, with the default 1 m (3.3 ft), shows about 1.2 m (3.9 ft) out when they're 0.5 m (1.6 ft) out. Lower **Person height** if the room is mostly seated.
+- **Close under the radar** is least accurate. On a ceiling 2.7 m (8.9 ft) up, a 10 cm (4 in) error in the reading moves a dot about 28 cm (11 in) when you're 0.5 m (1.6 ft) from the wall line, and about 17 cm (7 in) at the strip's far edge, 1.2 m (3.9 ft) out. Errors shrink with distance.
+- **Sitting or lying down** puts the chest lower than **Person height**, so people show a little farther out than they are. Someone seated (chest about 0.7 m or 2.3 ft) under a radar 2.7 m (8.9 ft) up, with the default 1 m (3.3 ft), shows about 1.2 m (3.8 ft) out when they're 0.5 m (1.6 ft) out. Lower **Person height** if the room is mostly seated.
 - **The edges are soft.** A radar beam fades out rather than stopping at a line, so the coverage on the map is close, not exact. The test in [Check that it works](#test-the-edges) shows where the edges are in your room.
 - **History** is drawn with the mount settings in use now, not the ones in use when it was recorded. The panel reads **History is drawn with the mount settings in use now.**
 
@@ -266,7 +270,7 @@ That's how 2.5.0 draws it. Update to 2.5.1 or later, as [Update Apollo mmWave Da
 
 ### People vanish close to a high sensor
 
-They're closer than the near edge, under the radar's view. The line **Covers from about 1.8 ft to 19.3 ft out from the wall.** says where the view starts. Tilt the sensor down more, then set **Tilt down:** to match. At 45 degrees down, a sensor 2.2 m (7.2 ft) up sees from about 0.2 m (0.7 ft) out.
+They're closer to the wall than the near edge, too close for the radar to see. The line **Covers from about 1.8 ft to 19.3 ft out from the wall.** says where the view starts. Tilt the sensor down more, then set **Tilt down:** to match. At 45 degrees down, a sensor 2.2 m (7.2 ft) up sees from about 0.2 m (0.7 ft) out.
 
 ### Dots sit too far out, or a zone turns on late
 
