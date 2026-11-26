@@ -5,6 +5,6 @@ description: Draw occupancy zones for your Apollo MTR-1 over the radar's live ta
 
 # Draw MTR-1 zones with the Apollo mmWave Dashboard
 
-On an Apollo MTR-1, the dashboard tab is built around the zone map, so [Draw zones on the R PRO-1 and MTR-1](#draw-zones-on-the-r-pro-1-and-mtr-1) is the section you need: its eight steps take you from a new sensor to a zone that lights up when you walk into it. Its troubleshooting starts at [Can't find a zone's name, Type, or Hold](#cant-find-a-zones-name-type-or-hold), and [The zone map shows nobody, or only one person](#the-zone-map-shows-nobody-or-only-one-person) covers a map with no dots. The calibration and tuning sections are for the Apollo MSR-1, MSR-2, and R PRO-1.
+On an Apollo MTR-1, the dashboard tab is built around the zone map, so [Draw zones on the R PRO-1 and MTR-1](#draw-zones-on-the-r-pro-1-and-mtr-1) is the section you need: its eight steps take you from a new sensor to a zone that lights up when you walk into it. Its troubleshooting starts at [Can't find a zone's name, Type, or Hold](#cant-find-a-zones-name-type-or-hold), and [The zone map shows nobody, or only one person](#the-zone-map-shows-nobody-or-only-one-person) covers a map with no dots. The calibration and tuning sections are for the Apollo MSR-1, MSR-2, and R PRO-1. Mounted your MTR-1 high on a wall or on the ceiling? [Mount your MTR-1 high or on the ceiling](apollo-mmwave-mounting.md) sets up the map for it, step by step.
 
 --8<-- "products/general/setup/apollo-mmwave-dashboard.md:7:"

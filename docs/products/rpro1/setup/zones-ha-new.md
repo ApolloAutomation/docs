@@ -22,7 +22,7 @@ You can enter the X and Y coordinates for each LD2450 zone manually in Home Assi
 
 !!! tip "Drawing zones with the Apollo mmWave Dashboard?"
 
-    Skip these steps and leave **LD2450 Zone Type** on **Disabled**. The dashboard's [zone map](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces the radar's built-in zones. On **Detection**, the radar reports only people inside the zones you enter here, and with none set it reports nobody, so the map stays empty.
+    Skip these steps and leave **LD2450 Zone Type** on **Disabled**. The dashboard's [zone map](apollo-mmwave-dashboard.md#draw-zones-on-the-r-pro-1-and-mtr-1) replaces the radar's built-in zones. On **Detection**, the radar reports only people inside the zones you enter here, and with none set it reports nobody, so the map stays empty. With the R PRO-1 [mounted high or on the ceiling](apollo-mmwave-mounting.md), the built-in zones don't line up with the zone map, because the radar works them out from its uncorrected readings.
 
 1\. Go to **Settings → Devices & services**, open the <a href="http://homeassistant.local:8123/config/integrations/integration/esphome" target="_blank" rel="noopener">ESPHome integration</a>, and click the name of your new device.
 

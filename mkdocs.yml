@@ -223,6 +223,7 @@ nav:
                 - (Best) Apollo mmWave Dashboard:
                   - Setup: products/general/setup/apollo-mmwave-dashboard-setup.md
                   - Calibrate, Tune, and Draw Zones: products/general/setup/apollo-mmwave-dashboard.md
+                  - Mount High or on the Ceiling: products/general/setup/apollo-mmwave-mounting.md
                 - Home Assistant: products/general/calibrating-and-updating/radar-tuning/zones-ha.md
                 - HLK Radar Tool App: products/general/calibrating-and-updating/radar-tuning/zones-hlk.md
                 - mmWave Tuning Videos: products/general/calibrating-and-updating/mmwave-videos.md
@@ -595,6 +596,7 @@ nav:
                 - (Best) Apollo mmWave Dashboard:
                   - Setup: products/mtr1/setup/apollo-mmwave-dashboard-setup.md
                   - Draw Zones: products/mtr1/setup/apollo-mmwave-dashboard.md
+                  - Mount High or on the Ceiling: products/mtr1/setup/apollo-mmwave-mounting.md
                 - (Good) Home Assistant: products/mtr1/setup/zones-ha.md
                 - (Better) HLK Radar Tool App: products/mtr1/setup/zones-hlk.md
                 - (Better) Zone Mapper Tool: products/mtr1/setup/mtr-1-zone-mapper-tool.md
@@ -625,6 +627,7 @@ nav:
                 - (Best) Apollo mmWave Dashboard:
                   - Setup: products/rpro1/setup/apollo-mmwave-dashboard-setup.md
                   - Calibrate, Tune, and Draw Zones: products/rpro1/setup/apollo-mmwave-dashboard.md
+                  - Mount High or on the Ceiling: products/rpro1/setup/apollo-mmwave-mounting.md
                 - (Good) Home Assistant: products/rpro1/setup/zones-ha.md
                 - (Better) HLK Radar Tool App: products/rpro1/setup/zones-hlk.md
                 - (Better) Zone Mapper Tool: products/rpro1/setup/r-pro-1-zone-mapper-tool.md
