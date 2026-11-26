@@ -15,7 +15,7 @@ This guide covers the LD2450 radar in the Apollo R PRO-1 and Apollo MTR-1, and L
 
 Find where your sensor is, then follow its steps.
 
-- **On a wall at about chest height, looking straight out:** keep **Wall**, the default. It watches a wedge about 6 m (20 ft) out. There's nothing to change.
+- **On a wall at about chest height, looking straight out:** keep **Wall**, the default. It watches a wedge about 6 m (20 ft) out. There's nothing else to change. If you moved the sensor down from up high, open [Map settings](#open-map-settings), press **Wall** under **Mounted on**, and check your zones.
 - **High on a wall or in a ceiling corner, 2 to 2.7 m (6.6 to 8.9 ft) up, tilted down:** choose **High**. It watches most of the room, from a little out from the wall to about 5.9 m (19.3 ft) out. Go to [Mount an LD2450 high on a wall](#mount-an-ld2450-high-on-a-wall).
 - **On the ceiling near a wall, looking straight down:** choose **Ceiling**. It watches a narrow strip along that wall, about 5.9 m (19.3 ft) long and 1.2 m (3.9 ft) deep under a 2.7 m (8.9 ft) ceiling. Go to [Mount an LD2450 on the ceiling](#mount-an-ld2450-on-the-ceiling).
 - **An ESPHome device with an LD2460 radar, on a wall or the ceiling:** choose **Wall** or **Ceiling**. On the ceiling it watches a circle up to 4 m (13.1 ft) out. Go to [Set up an LD2460 tracking radar](#set-up-an-ld2460-tracking-radar).
@@ -160,11 +160,11 @@ An LD2460 tracks up to 5 people. Its tab works like an LD2450 tab, and its **Map
 
 On a ceiling, with no zones yet and the map unlocked, **Add whole-room zone** under the **Zones** heading adds one zone over everything the radar sees. Next, [check that it works](#test-the-edges).
 
+On a wall, there's no test button. Walk around the room instead. You should see a numbered dot follow you, moving away from the radar on the map as you walk away from it.
+
 ## Check that it works { #test-the-edges }
 
 Each mount has a test that shows where the radar sees you and where its view ends. It takes a minute. Be the only person in the room, and carry your phone or tablet with the dashboard open.
-
-The test shows where the radar stops seeing you in your room.
 
 === "High"
 
@@ -200,6 +200,10 @@ The test shows where the radar stops seeing you in your room.
     <video src="/assets/apollo-mmwave-ld2460-ceiling.mp4" poster="/assets/apollo-mmwave-ld2460-ceiling-poster.jpg" autoplay loop muted playsinline aria-label="An LD2460 zone map on a ceiling mount in feet, with the radar as a green dot in the middle of a circle of coverage and two people tracked. Add whole-room zone is pressed, and Zone 1 fills the circle and lights up. Test center and edge is pressed: the checks Right under the radar and At the edge appear with the line More than one person is in view. Only the person testing should be in the room. Once one person is left, they walk to the spot under the radar, Right under the radar gets a check mark, and the line reads You are right under the radar. It sees you here. They walk out toward the edge, with lines such as You are 10.2 ft from the spot under the radar, 2.9 ft from the edge., and at the edge At the edge gets a check mark and the line reads You are at the edge of what the radar sees, about 13.1 ft out. Leaving from here counts as leaving, so held zones turn off without waiting."></video>
 
 A check mark on both checks means the mount is set up. Press the test button again to end the test.
+
+!!! tip "If a wall stops you before the far edge"
+
+    That's fine. The radar sees past that wall, so the whole room is covered. Check that your dot followed you all the way to the wall, then end the test. The edge check can stay unchecked.
 
 !!! tip "If the test loses you in the middle"
 
