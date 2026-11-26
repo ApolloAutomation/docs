@@ -18,7 +18,7 @@ What each tab holds depends on the radar inside the sensor:
 | Apollo MTR-1 | LD2450 | A zone map, with the radar's setup check, live status, and controls beside it |
 | An ESPHome device with an LD2460 tracking radar | LD2460 (ESPHome's `ld2460` component), with or without an LD2412 | A zone map for up to 5 people on a wall or the ceiling, with the radar's live status beside it, plus the LD2412 tuning cards when it has one |
 
-Every tab starts with a **Start here** card that lists your sensor's first steps, and ends with a **Device** card that shows its firmware versions and restarts it. LD2410, LD2412, LD2450, and LD2460 are the model numbers of the radar chips, and the card titles use them. From 2.5.0, an LD2450 zone map works with the sensor on a wall, high up, or on the ceiling (see [Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md)).
+Every tab starts with a **Start here** card that lists your sensor's first steps, and ends with a **Device** card that shows its firmware versions and restarts it. LD2410, LD2412, LD2450, and LD2460 are the model numbers of the radar chips, and the card titles use them. From 2.5.0, an LD2450 zone map works with the sensor on a wall, high up, or on the ceiling, and 2.5.1 fits a ceiling map to its strip (see [Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md)).
 
 If you built the [MSR-2 tuning dashboard](/products/msr2/setup/msr2-tuning-dashboard.md) by hand, this replaces it. The integration ships its own cards and updates them along with itself, so Streamline Card, Plotly Graph Card, and the YAML generator are no longer needed.
 
@@ -285,6 +285,10 @@ On updates from 2.4.0 or later, the cards tell you when one of these steps is st
 - **Apollo mmWave Dashboard 2.5.0 is installed, but Home Assistant still runs 2.4.2. Restart Home Assistant to finish updating.** The page already runs the new cards, but Home Assistant hasn't restarted since the update. Restart it as step 1 shows, and the notice turns into the **Reload** one if the page needs it.
 
 The version numbers are the ones on your system. Only one card on the page shows the notice, and it goes away once the page and Home Assistant run the same version. Cards from earlier releases have no such check, so on the update to 2.4.0 itself, no notice doesn't mean the page runs the new cards: do the steps above anyway.
+
+### Updating to Apollo mmWave Dashboard 2.5.1
+
+2.5.1 fits the zone map of an LD2450 on **Ceiling** to the strip it covers: the map is short and wide around the strip, instead of nearly square with empty space under it. Nothing else changes, and your zones and mount settings carry over as they are. Coming from 2.4.2 or earlier? Read the 2.5.0 notes below too. [Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md) asks for 2.5.1 or later.
 
 ### Updating to Apollo mmWave Dashboard 2.5.0
 

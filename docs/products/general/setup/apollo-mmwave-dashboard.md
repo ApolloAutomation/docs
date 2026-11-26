@@ -9,10 +9,14 @@ The Apollo mmWave Dashboard puts every setting your radar has on one screen, wit
 
 Every tab starts with a **Start here** card that lists your sensor's first steps in order, and this guide follows the same order: check the **Radar setup** card, calibrate, set how far the radar looks and how long presence stays on, then fine-tune by hand. If you only do one thing today, press **Calibrate with empty room** and leave the room: [Calibrate with an empty room](#calibrate-with-an-empty-room) shows what to expect. On an MTR-1, or an R PRO-1 without the LD2412, go straight to the [eight steps to your first zone](#draw-zones-on-the-r-pro-1-and-mtr-1).
 
-!!! info "What's new in 2.5.0"
+!!! info "What's new in 2.5.1"
+
+    - **A ceiling map that fits.** On **Ceiling**, an LD2450's zone map is now short and wide around the strip the radar covers, instead of nearly square with empty space under the strip. It fits again when you change the heights, resize the card, or open and close **Expand**: [Mount an LD2450 on the ceiling](/products/general/setup/apollo-mmwave-mounting.md#mount-an-ld2450-on-the-ceiling).
+
+???+ info "What's new in 2.5.0"
 
     - **High and Ceiling mounts.** Under **Map settings** on the zone map, **Mounted on** offers **Wall**, **High**, and **Ceiling** for the LD2450 in an R PRO-1 or MTR-1. On **High** and **Ceiling** the map takes the mount height out of every position, so dots, zones, hold times, Walk, and History match where people are on the floor: [Choose Wall, High, or Ceiling](#choose-wall-high-or-ceiling).
-    - **A guide for each mount.** [Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md) walks you through the heights, the room side of a ceiling sensor, **Add coverage zone**, and a test of where the radar's view starts and ends.
+    - **A guide for each mount.** [Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md) walks you through each mount step by step: the heights, the room side of a ceiling sensor, **Add coverage zone**, and a test of where the radar's view starts and ends.
     - **LD2460 tracking radars.** ESPHome devices that use the `ld2460` component get a tab with the zone map for up to 5 people, on a wall or the ceiling, with **Add whole-room zone** and **Test center and edge**.
     - **The support file** shows each radar's mount and the settings in use: [Send Apollo a support file](#send-apollo-a-support-file).
 
@@ -50,7 +54,7 @@ Here's the **Start here** card on an R PRO-1 with the LD2412, which covers both 
 !!! note "Before you start"
 
     - The Apollo mmWave Dashboard integration is installed, and its dashboard is in your Home Assistant sidebar as **Apollo mmWave Dashboard** (**Apollo mmWave** on a setup from before 2.4.2). If it isn't, sign in as an administrator (from 2.2.6, the dashboard is for administrators only unless you unticked that box), or follow the [Apollo mmWave Dashboard setup guide](apollo-mmwave-dashboard-setup.md) to add it.
-    - This guide shows Apollo mmWave Dashboard 2.5.0. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first. If a card this guide describes isn't on your tab, see [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards).
+    - This guide shows Apollo mmWave Dashboard 2.5.1. On an older version some cards look different, so [update it](apollo-mmwave-dashboard-setup.md#upgrade-from-an-older-setup) first. If a card this guide describes isn't on your tab, see [If your dashboard is missing cards](apollo-mmwave-dashboard-setup.md#if-your-dashboard-is-missing-cards).
     - Your radar is online in Home Assistant through ESPHome.
     - Your sensor is mounted where it will stay. A calibration, and the zones you draw, describe the room from the sensor's position, so moving the sensor later means calibrating again or redrawing your zones.
     - A calibration needs the room empty for about a minute and a half: people and pets out, robot vacuum docked.
@@ -344,11 +348,11 @@ For administrators, the card can also show a note about the radar's **Target X**
 
 - **Wall**: on a wall at about chest height, looking straight out. The map shows the radar's view cone.
 - **High**: high on a wall or in a ceiling corner, tilted down. Enter **Mount height**, **Tilt down:**, and **Person height** (the height of a person's chest, 1 m or 3.3 ft by default). The map draws what the radar covers, from a near edge to a far edge, with a line such as **Covers from about 1.8 ft to 19.3 ft out from the wall.**
-- **Ceiling**: on the ceiling, looking straight down. Enter **Ceiling height** and **Person height**. An LD2450 sees a strip along a wall from there, and can't tell which side of it someone is on, so mount it near a wall and use **Flip room side** if people show up past the wall line.
+- **Ceiling**: on the ceiling, looking straight down. Enter **Ceiling height** and **Person height**. An LD2450 sees a strip along a wall from there, and from 2.5.1 the map is short and wide to fit it. It can't tell which side of it someone is on, so mount it near a wall and use **Flip room side** if people show up past the wall line.
 
 The LD2450 measures how far away someone is, but not how far below it they are. On **High** and **Ceiling**, the map takes the drop from the radar to a person's chest out of every position, so someone 1 m from the wall under a radar 2.2 m up shows 1 m out instead of about 1.6 m. Zone presence, hold times, the live dots, trails, Walk, History, and ignore zones all use those positions. An LD2460 offers **Wall** and **Ceiling**, and the map uses its positions as the radar reports them; when it reports its **Installation Mode**, that decides.
 
-<video src="/assets/apollo-mmwave-mount-switch.mp4" poster="/assets/apollo-mmwave-mount-switch-poster.jpg" autoplay loop muted playsinline aria-label="Map settings on an LD2450 zone map in feet, with two people tracked. With Mounted on set to Wall, the map shows the radar's 120 degree view cone and the line In use: Wall, the default. Choose High or Ceiling if the sensor is mounted up high. Pressing High turns the cone into a fan that starts a little out from the wall, adds the Test near and far edge button and Add coverage zone under the map, and the line reads In use: High, as chosen here. Pressing Ceiling turns it into a strip along a dashed wall line, with Test wall line and edge, and the line reads In use: Ceiling, as chosen here. Pressing Wall brings the cone back."></video>
+<video src="/assets/apollo-mmwave-mount-switch.mp4" poster="/assets/apollo-mmwave-mount-switch-poster.jpg" autoplay loop muted playsinline aria-label="The zone map card for an R PRO-1 named R PRO-1 Unified Test in Home Assistant, in feet and locked, with Zone 1 drawn by the radar. On Wall, the map shows a wedge 120 degrees wide with the caption Radar range 20 ft (6 m), 120°. On High, the wedge becomes a fan that starts a little out from the wall, with the caption Coverage 1.8 ft to 19.3 ft out, and a Test near and far edge button appears under the map. On Ceiling, the map turns short and wide around a strip under a dashed wall line, with the radar as a green dot on the line, the caption Coverage 0.0 ft to 3.9 ft out, and a Test wall line and edge button. Then Wall brings the wedge back."></video>
 
 The radar's own built-in zones work in its uncorrected readings, so on **High** or **Ceiling** they don't line up with the map: leave **Zone Type** on **Disabled** and draw zones on the map. Positions are least accurate close under the radar and for people sitting or lying down. [Mount your radar high or on the ceiling](/products/general/setup/apollo-mmwave-mounting.md) has a step-by-step guide for each mount, what each one covers, **Add coverage zone**, the edge tests, and what accuracy to expect.
 
