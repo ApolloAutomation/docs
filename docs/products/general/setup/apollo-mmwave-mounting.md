@@ -203,7 +203,7 @@ A check mark on both checks means the mount is set up. Press the test button aga
 
 !!! tip "If a wall stops you before the far edge"
 
-    That's fine. The radar sees past that wall, so the whole room is covered. Check that your dot followed you all the way to the wall, then end the test. The edge check can stay unchecked.
+    That's fine: your room ends before the radar's view does, and the edge check can stay unchecked. Walk slowly through every part of the room you want covered, including behind furniture. You should see your dot follow you the whole way. Then end the test.
 
 !!! tip "If the test loses you in the middle"
 
