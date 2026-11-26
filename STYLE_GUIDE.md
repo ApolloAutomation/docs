@@ -192,10 +192,10 @@ the installer shows them: the variant (**USB Power**, **Battery Power**,
 then **Connect & Install**, and the firmware option in the next dialog
 exactly as listed (for example **Install ApolloAutomation.AIR-1**). The
 B models use their parent's page with **Battery Power** (TEMP-1B on
-`#/temp-1`, PLT-1B on `#/plt-1`). Keep the older installer link only
-where the Apollo installer has no equivalent: TEMP-1 Revision 1
-firmware. The LED-1 uses the official WLED installer at
-`https://install.wled.me/`.
+`#/temp-1`, PLT-1B on `#/plt-1`). Revision 1 TEMP-1 and TEMP-1B builds
+are the **(R1, support only)** options on `#/temp-1`; mention them only
+as a support-confirmed exception. The LED-1 uses the official WLED
+installer at `https://install.wled.me/`.
 
 **Boot mode with two buttons.** When a step uses both the boot and reset
 buttons, write the order as three bullets (press and hold **boot**; while
