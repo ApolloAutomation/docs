@@ -23,7 +23,7 @@ Follow these steps to put your TEMP-1 in boot mode, flash the factory firmware f
 
 !!! tip "Use R2 unless support tells you to use R1"
 
-    The Apollo installer installs the Revision 2 (R2) firmware. R2 is what all of our devices use, except a very small batch of TEMP-1 and TEMP-1B boards. Support will tell you if yours needs Revision 1 (R1). If it does, click **Connect** under **Non Battery Firmware Revision 1** on the [classic TEMP-1 installer](https://apolloautomation.github.io/TEMP-1/) instead. In the next steps, the firmware option is named **Install ApolloAutomation.TEMP-1**.
+    The **USB Power** option installs the Revision 2 (R2) firmware, which nearly every TEMP-1 uses. A very small batch of early TEMP-1 and TEMP-1B boards needs Revision 1 (R1). Only if Apollo support confirms yours is one of them, choose **USB Power (R1, support only)** instead. On an R2 board, the R1 firmware makes the Food Probe read far off. With R1, the firmware option in the next steps is named **Install ApolloAutomation.TEMP-1**.
 
 4\. In the browser's serial port pop-up, select the open COM port (**USB JTAG/serial debug unit** in the screenshot below), then click **Connect**.
 

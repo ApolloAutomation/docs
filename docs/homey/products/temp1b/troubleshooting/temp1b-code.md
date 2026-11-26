@@ -24,7 +24,7 @@ If your device has already been added to Homey, please <a href="https://wiki.apo
 
 !!! tip "Use R2 version unless instructed to use R1 by support!"
 
-    The Apollo installer installs the Revision 2 (R2) firmware. R2 is what all of our devices use except a very small batch of TEMP-1 and TEMP-1B boards. If support tells you your board needs Revision 1 (R1), click **Connect** under **Battery Firmware Revision 1** on the [classic TEMP-1 installer](https://apolloautomation.github.io/TEMP-1/) instead. In the next steps, the firmware option is named **Install ApolloAutomation.TEMP-1B**.
+    The **Battery Power** option installs the Revision 2 (R2) firmware, which nearly every TEMP-1B uses. A very small batch of early TEMP-1 and TEMP-1B boards needs Revision 1 (R1). Only if Apollo support confirms yours is one of them, choose **Battery Power (R1, support only)** instead. On an R2 board, the R1 firmware makes the Food Probe read far off. With R1, the firmware option in the next steps is named **Install ApolloAutomation.TEMP-1B**.
 
 4\. Select the open com port then click Connect.
 
