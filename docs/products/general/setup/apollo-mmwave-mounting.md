@@ -30,7 +30,7 @@ Here's how the map changes on a real R PRO-1 as you switch between **Wall**, **H
 
 !!! note "Before you start"
 
-    - **Apollo mmWave Dashboard 2.5.1 or later.** To see your version, open **Apollo mmWave Dashboard** under **Settings → Marketplace** (or in **HACS** on Home Assistant 2026.10 and earlier). If **Settings → System → Updates** lists an Apollo mmWave Dashboard update, install it first, as [Update Apollo mmWave Dashboard](apollo-mmwave-dashboard-setup.md#update-apollo-mmwave) shows. Then restart Home Assistant and reload the page, as [Load the new cards](apollo-mmwave-dashboard-setup.md#load-the-new-cards) shows. Version 2.4.2 and earlier have no mounts, and on 2.5.0 a ceiling map is tall with empty space under the strip. On 2.5.1, a ceiling map turned with **Map rotation:** is a big square that's mostly empty, so update to 2.5.2 if you plan to turn it.
+    - **Apollo mmWave Dashboard 2.5.1 or later.** To see your version, open **Apollo mmWave Dashboard** under **Settings → Marketplace** (or in **HACS** on Home Assistant 2026.10 and earlier). If **Settings → System → Updates** lists an Apollo mmWave Dashboard update, install it first, as [Update Apollo mmWave Dashboard](apollo-mmwave-dashboard-setup.md#update-apollo-mmwave) shows. Then restart Home Assistant and reload the page, as [Load the new cards](apollo-mmwave-dashboard-setup.md#load-the-new-cards) shows. Version 2.4.2 and earlier have no mounts, and on 2.5.0 a ceiling map is tall with empty space under the strip. On 2.5.1, a ceiling map turned with **Map rotation:** stays square, so update to 2.5.2 if you plan to turn it.
     - **You're signed in to Home Assistant as an administrator.** Other users see the mount but can't change it.
     - **Your sensor's tab has a zone map.** If it doesn't, start with the [Apollo mmWave Dashboard setup guide](apollo-mmwave-dashboard-setup.md).
     - **The Radar setup card on that tab shows no problems.** If it offers a button such as **Set Zone Type to Disabled**, press it first. Otherwise the map can't show people.
@@ -140,11 +140,11 @@ From the ceiling, an LD2450 watches a strip of floor along one wall. That's a go
 
     !!! tip "Turned the map? It gets taller"
 
-        From 2.5.2, the map fits a turned strip. Near 90°, the strip runs down the map instead of across it, so the map gets taller than it is wide, up to 1.5 times its width. At 180°, the room for the buttons in the map's bottom corners stays under the strip. On a phone, **Expand** keeps the turned map above its panel. You should see the strip run down the map, with the radar as a green dot on the dashed wall line, as here at 90°:
+        From 2.5.2, the map changes shape to fit a turned strip. Near 90°, the strip runs down the map instead of across it, so the map gets taller than it is wide, up to 1.5 times its width. At 180°, the zoom and **Locked** buttons stay clear of the strip. On a phone, after you press **Expand**, the map stays at the top with the rest of the card under it. You should see the strip run down the map, with the radar as a green dot on the dashed wall line, as here at 90°:
 
-        ![The zone map on a Ceiling mount with Map rotation at 90 degrees, in feet and locked, on a dark theme: the map is taller than it is wide, the dashed green wall line runs down its left side with the radar as a green dot on it, the strip of coverage runs down beside the line, about 4 ft wide and 19 ft long, with the caption Coverage 0.0 ft to 3.9 ft out, Zone 1 next to the radar, and the Mark corners by walking, Coverage, History, and Test wall line and edge buttons under the map](/assets/apollo-mmwave-mount-ceiling-map-rotated.png)
+        ![The zone map on a Ceiling mount with Map rotation at 90 degrees, in feet and locked, on a dark theme: the map is taller than it is wide, the dashed green wall line runs down the map near its left edge with the radar as a green dot on it, the strip of coverage runs down beside the line on the room side, and the Coverage and Test wall line and edge buttons are under the map](/assets/apollo-mmwave-mount-ceiling-map-rotated.png)
 
-        On 2.5.1, a turned map is a big square with the strip in a small part of it. [Update to 2.5.2](apollo-mmwave-dashboard-setup.md#update-apollo-mmwave) to fix it.
+        The strip may fill only part of the map's width. That's expected: use **+** to zoom in on it. On 2.5.1, a turned map stays square. [Update to 2.5.2](apollo-mmwave-dashboard-setup.md#update-apollo-mmwave) to get the taller map.
 
 The strip is now on the map, on the room side of the wall line. Next, [check that it works](#test-the-edges).
 
@@ -162,7 +162,7 @@ An LD2460 tracks up to 5 people. Its tab works like an LD2450 tab, and its **Map
 
     !!! tip "If the line reads Wall but you picked Ceiling"
 
-        You may have pressed **Ceiling** while **Installation Mode** was missing, and the radar now reports **side**. The radar's report wins, so the map uses Wall. From 2.5.2, a note under **Mounted on** says so. You should see **In use: Wall. The radar reports a wall mount.** and a note that starts **Ceiling is saved here, but the radar reports a side (wall) mount, so Wall is used.** To use Ceiling, set the radar to **top**, as [Map settings says Ceiling is saved, but Wall is used](#ceiling-saved-but-wall-used) shows.
+        You may have pressed **Ceiling** while **Installation Mode** was missing, and the radar now reports **side**. The radar's report wins, so the map uses Wall. From 2.5.2, a note under **Mounted on** says so. You should see **In use: Wall. The radar reports a wall mount.** and a note that starts **Ceiling is saved here, but the radar reports a side (wall) mount, so Wall is used.** To use Ceiling, set the radar to **top** and restart the device, as [Map settings says Ceiling is saved, but Wall is used](#ceiling-saved-but-wall-used) shows.
 
 4. On a ceiling, type the floor-to-ceiling height in **Ceiling height**. You should see a line such as **The radar covers up to 13.1 ft out from the spot under it, its most.** (about 4 m). Above 3 m (9.8 ft), people far from the middle may be missed.
 
@@ -302,12 +302,13 @@ This note shows on an LD2460 when **Ceiling** was saved for the radar (for examp
 
 **Ceiling is saved here, but the radar reports a side (wall) mount, so Wall is used. Its Installation Mode is set on the radar itself and only read here, under LD2460 Live. Ceiling is used when the radar reports top (ceiling), and again if it reports no mode at all, since Ceiling stays saved. While the radar is unavailable, its last report is kept.**
 
-![Map settings on an LD2460 zone map: Mounted on with Wall and Ceiling grayed out and Wall picked, the line In use: Wall. The radar reports a wall mount., and under it the note Ceiling is saved here, but the radar reports a side (wall) mount, so Wall is used. Its Installation Mode is set on the radar itself and only read here, under LD2460 Live. Ceiling is used when the radar reports top (ceiling), and again if it reports no mode at all, since Ceiling stays saved. While the radar is unavailable, its last report is kept.](/assets/apollo-mmwave-ld2460-mount-conflict.png)
+![Map settings on an LD2460 zone map: Mounted on with Wall picked in blue and Ceiling in gray, both locked by the radar, the line In use: Wall. The radar reports a wall mount., and under it the note Ceiling is saved here, but the radar reports a side (wall) mount, so Wall is used. Its Installation Mode is set on the radar itself and only read here, under LD2460 Live. Ceiling is used when the radar reports top (ceiling), and again if it reports no mode at all, since Ceiling stays saved. While the radar is unavailable, its last report is kept.](/assets/apollo-mmwave-ld2460-mount-conflict.png)
 
-1. Check how the radar really hangs. If it's on a wall, the map is right. Nothing else to do.
-2. If it's on the ceiling, change the installation setting on the radar itself to top (ceiling), where your device's firmware offers one. The dashboard can't change it.
-3. On the sensor's tab, find **Installation Mode** on the **LD2460 Live** card. You should see **top**.
-4. Open **Map settings**. You should see **In use: Ceiling. The radar reports a ceiling mount.**, and the note is gone.
+1. Check how the radar really hangs. If it's on a wall, the map is right and there's nothing to fix. You should see the note stay. That's fine: the map uses Wall, and the note only reminds you that Ceiling is saved.
+2. If it's on the ceiling, set the radar's own installation setting to top (ceiling). The dashboard can't change it. Open **Settings → Devices & services → ESPHome**, then your sensor, and look for an installation setting under **Configuration**. If there's none, your device's firmware sets the mode, so check its own guide. You should see the setting read top (ceiling).
+3. Restart the device, because the radar's mode is read when the device starts. On the **Device** card at the bottom of the sensor's tab, press **Restart** on the row that starts with **Restart device**, then confirm. You should see the sensor go offline for a short while and come back.
+4. On the sensor's tab, find **Installation Mode** on the **LD2460 Live** card. You should see **top**.
+5. Open **Map settings**. You should see **In use: Ceiling. The radar reports a ceiling mount.**, and the note is gone.
 
 If the radar stops reporting a mode at all, the saved **Ceiling** is used again. While the radar is unavailable, the card keeps its last report, so the note can stay until the radar is back.
 

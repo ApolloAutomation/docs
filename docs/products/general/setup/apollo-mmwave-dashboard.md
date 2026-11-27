@@ -11,7 +11,7 @@ Every tab starts with a **Start here** card that lists your sensor's first steps
 
 !!! info "What's new in 2.5.2"
 
-    - **A turned ceiling map that fits.** With **Map rotation:** turned on a ceiling LD2450, the map now fits the strip as it's turned. Near 90° the strip runs down the map, and the map is taller than it is wide (up to 1.5 times its width) instead of a big square that was mostly empty. At 180° the room for the buttons in the map's bottom corners is under the strip again. On a phone, **Expand** keeps a turned map above its panel: [Mount an LD2450 on the ceiling](/products/general/setup/apollo-mmwave-mounting.md#mount-an-ld2450-on-the-ceiling).
+    - **A turned ceiling map that fits.** When you turn **Map rotation:** away from 0° on a ceiling LD2450, the map now changes shape to fit the turned strip. Near 90° the strip runs down the map, and the map is taller than it is wide (up to 1.5 times its width) instead of square. At 180°, the zoom and **Locked** buttons stay clear of the strip. On a phone, after you press **Expand**, the map stays at the top with the rest of the card under it: [Mount an LD2450 on the ceiling](/products/general/setup/apollo-mmwave-mounting.md#mount-an-ld2450-on-the-ceiling).
     - **Adding a zone closes History.** Pressing **Add whole-room zone** or **Add coverage zone** now closes the History replay first, as **Draw shape** does.
     - **A note when an LD2460 overrides a saved Ceiling.** If **Ceiling** is saved but the radar reports a side (wall) mount, **Map settings** now explains that Wall is used and how to change it: [Map settings says Ceiling is saved, but Wall is used](/products/general/setup/apollo-mmwave-mounting.md#ceiling-saved-but-wall-used).
 
