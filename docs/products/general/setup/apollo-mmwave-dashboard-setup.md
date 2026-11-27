@@ -288,9 +288,13 @@ The version numbers are the ones on your system. Only one card on the page shows
 
 ### Updating to Apollo mmWave Dashboard 2.5.2
 
+!!! warning "Make a backup first"
+
+    Make a full Home Assistant backup under **Settings → System → Backups** before you update, as [Upgrade from an older setup](#upgrade-from-an-older-setup) shows, so you can go back if something goes wrong.
+
 Update as [Update Apollo mmWave Dashboard](#update-apollo-mmwave) shows, then restart Home Assistant and reload the page as [Load the new cards](#load-the-new-cards) shows. Your zones and mount settings carry over as they are. 2.5.2 changes three things:
 
-- **A turned ceiling map fits its strip.** On an LD2450 on **Ceiling**, turning **Map rotation:** now fits the map to the turned strip. Near 90° the map is taller than it is wide instead of a big, mostly empty square. See [Mount an LD2450 on the ceiling](/products/general/setup/apollo-mmwave-mounting.md#mount-an-ld2450-on-the-ceiling).
+- **A turned ceiling map fits its strip.** On an LD2450 on **Ceiling**, turning **Map rotation:** now fits the map to the turned strip. Near 90° the map is taller than it is wide instead of square. See [Mount an LD2450 on the ceiling](/products/general/setup/apollo-mmwave-mounting.md#mount-an-ld2450-on-the-ceiling).
 - **Adding a zone closes History.** Pressing **Add whole-room zone** or **Add coverage zone** closes the History replay first.
 - **A note for an LD2460 that reports a wall mount while Ceiling is saved.** The note under **Mounted on** in **Map settings** explains that Wall is used and how to change it. See [Map settings says Ceiling is saved, but Wall is used](/products/general/setup/apollo-mmwave-mounting.md#ceiling-saved-but-wall-used).
 
